@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactRequest;
+use App\Models\ContactSubmission;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -19,13 +22,20 @@ class ContactController extends Controller
             'request_type'  => 'required|string|in:contract,rental,breakdown,parts,equipment_quote',
             'urgency'       => 'required|string|in:today,24_48h,this_week,planning',
             'message'       => 'nullable|string|max:2000',
+            'utm_source'    => 'nullable|string|max:100',
+            'utm_medium'    => 'nullable|string|max:100',
+            'utm_campaign'  => 'nullable|string|max:100',
+            'utm_content'   => 'nullable|string|max:100',
+            'utm_term'      => 'nullable|string|max:100',
+            'page_source'   => 'nullable|string|max:255',
         ]);
 
-        // In production: Mail::to('info@irishlaunderysystems.ie')->send(new ContactRequest($validated));
-        // For now, store in session and flash success message
+        // Persist to database
+        ContactSubmission::create($validated);
 
-        session()->flash('contact_success', true);
-        session()->flash('contact_data', $validated);
+        // Send email notification
+        Mail::to(config('mail.to_address', 'info@irishlaunderysystems.ie'))
+            ->send(new ContactRequest($validated));
 
         return back()->with(
             'success',

@@ -131,8 +131,15 @@
                     </div>
                     @endif
 
-                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5">
+                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5" data-utm>
                         @csrf
+                        {{-- UTM tracking fields (populated by JS) --}}
+                        <input type="hidden" name="utm_source">
+                        <input type="hidden" name="utm_medium">
+                        <input type="hidden" name="utm_campaign">
+                        <input type="hidden" name="utm_content">
+                        <input type="hidden" name="utm_term">
+                        <input type="hidden" name="page_source">
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             <div>

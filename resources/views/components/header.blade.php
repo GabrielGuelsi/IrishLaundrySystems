@@ -94,7 +94,8 @@
                     Call an Engineer
                 </a>
                 <a href="{{ route('request-assessment') }}"
-                   class="bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                   class="bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap"
+                   data-ga-cta="header_request_assessment">
                     Request Assessment
                 </a>
             </div>
@@ -177,7 +178,8 @@
                 </svg>
                 Call an Engineer
             </a>
-            <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3 bg-orange hover:bg-orange-dark text-white rounded-lg font-semibold font-body text-sm transition-colors cursor-pointer">
+            <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3 bg-orange hover:bg-orange-dark text-white rounded-lg font-semibold font-body text-sm transition-colors cursor-pointer"
+               data-ga-cta="mobile_header_request_assessment">
                 Request Assessment
             </a>
         </div>

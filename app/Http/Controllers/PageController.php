@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Equipment;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -97,25 +98,41 @@ class PageController extends Controller
     public function equipmentCategory($category)
     {
         $categoryName = ucwords(str_replace('-', ' ', $category));
+        $products = Equipment::where('category', $category)
+                             ->where('is_active', true)
+                             ->orderBy('sort_order')
+                             ->orderBy('name')
+                             ->get();
+
         return view('pages.equipment-category', [
             'title' => "{$categoryName} Equipment | Commercial Laundry Ireland | ILS",
             'metaDescription' => "Commercial {$categoryName} equipment supplied and supported by ILS — expert installation, service and parts across Ireland.",
             'category' => $categoryName,
             'categorySlug' => $category,
+            'products' => $products,
         ]);
     }
 
     public function equipmentProduct($category, $product)
     {
+        $item = Equipment::where('category', $category)
+                         ->where('slug', $product)
+                         ->where('is_active', true)
+                         ->firstOrFail();
+
         $categoryName = ucwords(str_replace('-', ' ', $category));
-        $productName = ucwords(str_replace('-', ' ', $product));
+
         return view('pages.equipment-product', [
-            'title' => "{$productName} | {$categoryName} | ILS",
-            'metaDescription' => "{$productName} — commercial laundry equipment supplied, installed and supported by Irish Laundry Systems.",
+            'title' => "{$item->name} | {$categoryName} | ILS",
+            'metaDescription' => "{$item->name} — commercial laundry equipment supplied, installed and supported by Irish Laundry Systems.",
             'category' => $categoryName,
             'categorySlug' => $category,
-            'product' => $productName,
+            'product' => $item->name,
             'productSlug' => $product,
+            'item' => $item,
+            'specs' => $item->specs ?? [],
+            'summary' => $item->summary,
+            'imagePath' => $item->image_path,
         ]);
     }
 

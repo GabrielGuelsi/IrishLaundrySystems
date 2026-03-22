@@ -175,7 +175,7 @@
                     ILS engineers install and commission all equipment we supply. We don't just deliver — we ensure the equipment is set up correctly, running to specification, and that your team understands how to use it.
                 </p>
                 <ul class="space-y-3 text-sm font-body text-gray-300">
-                    @foreach (['Site survey and utilities check before installation', 'Delivery, positioning and connection by ILS engineers', 'Commissioning and test cycles to confirm correct operation', 'Staff handover and operation guidance', 'Equipment added to service contract or maintenance plan']) as $item)
+                    @foreach (['Site survey and utilities check before installation', 'Delivery, positioning and connection by ILS engineers', 'Commissioning and test cycles to confirm correct operation', 'Staff handover and operation guidance', 'Equipment added to service contract or maintenance plan'] as $item)
                     <li class="flex items-start gap-3">
                         <svg class="w-4 h-4 text-orange flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                         {{ $item }}

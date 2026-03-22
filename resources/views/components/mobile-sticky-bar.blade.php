@@ -8,7 +8,8 @@
             <span>Call an Engineer</span>
         </a>
         <a href="{{ route('request-assessment') }}"
-           class="flex items-center justify-center gap-2 py-4 bg-orange hover:bg-orange-dark text-white font-body font-semibold text-sm transition-colors active:bg-orange-dark">
+           class="flex items-center justify-center gap-2 py-4 bg-orange hover:bg-orange-dark text-white font-body font-semibold text-sm transition-colors active:bg-orange-dark"
+           data-ga-cta="mobile_sticky_request_assessment">
             <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
             </svg>

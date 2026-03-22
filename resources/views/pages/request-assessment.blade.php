@@ -61,9 +61,15 @@
                     </div>
                     @endif
 
-                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-6">
+                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-6" data-utm>
                         @csrf
-                        <input type="hidden" name="request_type" value="contract">
+                        {{-- UTM tracking fields (populated by JS) --}}
+                        <input type="hidden" name="utm_source">
+                        <input type="hidden" name="utm_medium">
+                        <input type="hidden" name="utm_campaign">
+                        <input type="hidden" name="utm_content">
+                        <input type="hidden" name="utm_term">
+                        <input type="hidden" name="page_source">
 
                         <!-- Basic info -->
                         <fieldset>

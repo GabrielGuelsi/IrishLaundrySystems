@@ -18,7 +18,8 @@
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="{{ $primaryHref }}"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer"
+               data-ga-cta="cta_band_{{ Str::slug($primaryText) }}">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                 </svg>

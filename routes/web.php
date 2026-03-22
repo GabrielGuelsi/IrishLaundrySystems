@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Admin;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
 Route::get('/solutions', [PageController::class, 'solutions'])->name('solutions');
@@ -24,3 +25,18 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
 Route::get('/brand-protection', [PageController::class, 'brandProtection'])->name('brand-protection');
 Route::get('/request-assessment', [PageController::class, 'requestAssessment'])->name('request-assessment');
+
+// Admin
+Route::prefix('admin')->name('admin.')->group(function () {
+    Route::get('login',  [Admin\AuthController::class, 'showLogin'])->name('login');
+    Route::post('login', [Admin\AuthController::class, 'login'])->name('login.post');
+
+    Route::middleware('admin.auth')->group(function () {
+        Route::get('/', fn () => redirect()->route('admin.equipment.index'));
+        Route::post('logout', [Admin\AuthController::class, 'logout'])->name('logout');
+        Route::patch('equipment/{equipment}/toggle', [Admin\EquipmentController::class, 'toggleActive'])->name('equipment.toggle');
+        Route::resource('equipment', Admin\EquipmentController::class);
+        Route::get('submissions',       [Admin\SubmissionController::class, 'index'])->name('submissions.index');
+        Route::get('submissions/{sub}', [Admin\SubmissionController::class, 'show'])->name('submissions.show');
+    });
+});

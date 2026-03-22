@@ -14,6 +14,12 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div>
+                @if (!empty($imagePath))
+                <div class="aspect-video bg-navy-light border border-white/10 rounded-xl overflow-hidden">
+                    <img src="{{ asset('storage/' . $imagePath) }}" alt="{{ $product }}"
+                         class="w-full h-full object-cover">
+                </div>
+                @else
                 <!-- Placeholder product image -->
                 <div class="aspect-video bg-navy-light border border-white/10 rounded-xl flex items-center justify-center">
                     <svg class="w-24 h-24 text-white/20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5">
@@ -22,6 +28,7 @@
                     </svg>
                 </div>
                 <p class="text-center text-xs text-gray-500 font-body mt-2">Product image for illustration — contact ILS for full specifications</p>
+                @endif
             </div>
             <div>
                 <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 mb-4">
@@ -29,7 +36,7 @@
                 </div>
                 <h1 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">{{ $product }}</h1>
                 <p class="font-body text-gray-300 leading-relaxed mb-6">
-                    Commercial laundry equipment from the Electrolux Professional range — supplied, installed and supported by Irish Laundry Systems. Engineering-led supply with long-term service capability built in.
+                    {{ !empty($summary) ? $summary : 'Commercial laundry equipment from the Electrolux Professional range — supplied, installed and supported by Irish Laundry Systems. Engineering-led supply with long-term service capability built in.' }}
                 </p>
 
                 <!-- Electrolux Badge -->
@@ -72,23 +79,43 @@
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm font-body">
                             <tbody class="divide-y divide-border">
-                                @foreach ([
-                                    ['Category', $category],
-                                    ['Model', $product],
-                                    ['Capacity (indicative)', 'Contact ILS for exact specification'],
-                                    ['Power', 'Contact ILS for exact specification'],
-                                    ['Dimensions', 'Contact ILS for exact specification'],
-                                    ['Sectors', 'Healthcare, Hospitality, Care, Commercial'],
-                                    ['Supply', 'Available for outright purchase or rental/lease'],
-                                    ['Installation', 'By ILS engineers — included in supply price'],
-                                    ['Service contract', 'Available — Core, Priority or Assured tier'],
-                                    ['Parts', 'Genuine Electrolux Professional parts'],
-                                ] as [$key, $val])
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">{{ $key }}</td>
-                                    <td class="py-3 text-gray-600">{{ $val }}</td>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Category</td>
+                                    <td class="py-3 text-gray-600">{{ $category }}</td>
                                 </tr>
-                                @endforeach
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Model</td>
+                                    <td class="py-3 text-gray-600">{{ $product }}</td>
+                                </tr>
+                                @if (!empty($specs))
+                                    @foreach ($specs as $key => $val)
+                                    <tr>
+                                        <td class="py-3 pr-4 font-semibold text-navy w-1/3">{{ $key }}</td>
+                                        <td class="py-3 text-gray-600">{{ $val }}</td>
+                                    </tr>
+                                    @endforeach
+                                @else
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Specifications</td>
+                                    <td class="py-3 text-gray-600">Contact ILS for full specification details</td>
+                                </tr>
+                                @endif
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Supply</td>
+                                    <td class="py-3 text-gray-600">Available for outright purchase or rental/lease</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Installation</td>
+                                    <td class="py-3 text-gray-600">By ILS engineers — included in supply price</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Service contract</td>
+                                    <td class="py-3 text-gray-600">Available — Core, Priority or Assured tier</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Parts</td>
+                                    <td class="py-3 text-gray-600">Genuine Electrolux Professional parts</td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -134,9 +161,16 @@
                 <div class="bg-white border border-border rounded-xl p-6 sticky top-24">
                     <h3 class="font-heading font-bold text-navy text-lg mb-2">Request a Quote</h3>
                     <p class="font-body text-gray-500 text-xs mb-5 leading-relaxed">Tell us your requirements and we'll come back with a proposal.</p>
-                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
+                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4" data-utm>
                         @csrf
                         <input type="hidden" name="request_type" value="equipment_quote">
+                        {{-- UTM tracking fields (populated by JS) --}}
+                        <input type="hidden" name="utm_source">
+                        <input type="hidden" name="utm_medium">
+                        <input type="hidden" name="utm_campaign">
+                        <input type="hidden" name="utm_content">
+                        <input type="hidden" name="utm_term">
+                        <input type="hidden" name="page_source">
                         <div>
                             <label class="block text-xs font-body font-semibold text-navy mb-1">Name <span class="text-red-500">*</span></label>
                             <input type="text" name="name" required placeholder="Your name"
