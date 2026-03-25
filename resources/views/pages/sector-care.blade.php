@@ -2,6 +2,8 @@
 
 @section('content')
 
+@include('components.sector-tabs')
+
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

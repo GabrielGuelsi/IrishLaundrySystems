@@ -1,102 +1,117 @@
-<header class="sticky top-0 z-50 bg-navy shadow-lg" x-data="{ open: false, sectorsOpen: false, equipOpen: false }">
+<header class="sticky top-0 z-50 bg-navy shadow-lg" x-data="{ open: false, equipOpen: false }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16 lg:h-18">
+        <div class="flex items-center justify-between h-16 lg:h-[4.5rem]">
 
             <!-- Logo -->
             <div class="flex items-center gap-3 flex-shrink-0">
-                <a href="{{ route('home') }}" class="flex flex-col leading-tight">
-                    <span class="font-heading font-bold text-white text-lg leading-tight tracking-tight">Irish Laundry Systems</span>
-                    <span class="text-steel-light text-xs font-body tracking-wide">Commercial Laundry Engineering</span>
+                <a href="{{ route('home') }}" class="flex items-center gap-3">
+                    {{-- Real logo image: drop /public/images/ils-logo.png to activate --}}
+                    <img src="{{ asset('images/ils-logo.png') }}"
+                         alt="Irish Laundry Systems"
+                         class="h-10 w-auto"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    {{-- SVG emblem fallback (shown when no logo image exists) --}}
+                    <span class="flex items-center justify-center w-10 h-10 rounded-full bg-steel/30 border border-steel flex-shrink-0" style="display:none;">
+                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                        </svg>
+                    </span>
+                    <span class="flex flex-col leading-tight">
+                        <span class="font-heading font-bold text-white text-lg leading-tight tracking-tight">Irish Laundry Systems</span>
+                        <span class="text-steel-light text-xs font-body tracking-wide">Commercial Laundry Engineering</span>
+                    </span>
                 </a>
             </div>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden lg:flex items-center gap-1" role="navigation" aria-label="Main navigation">
+            <nav class="hidden lg:flex items-center gap-0.5" role="navigation" aria-label="Main navigation">
 
                 <a href="{{ route('solutions') }}"
-                   class="text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('solutions') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
                     Solutions
                 </a>
 
                 <a href="{{ route('service-contracts') }}"
-                   class="text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('service-contracts') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
                     Service Contracts
                 </a>
 
                 <a href="{{ route('repairs') }}"
-                   class="text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
-                    Repairs
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('repairs') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
+                    Repairs &amp; Call-outs
                 </a>
 
                 <a href="{{ route('rental') }}"
-                   class="text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('rental') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
                     Rental
                 </a>
 
                 <!-- Equipment Dropdown -->
                 <div class="relative" x-data="{ equipOpen: false }" @mouseenter="equipOpen = true" @mouseleave="equipOpen = false">
                     <button @click="equipOpen = !equipOpen"
-                            class="flex items-center gap-1 text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap cursor-pointer"
+                            class="flex items-center gap-1 px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap cursor-pointer
+                                   {{ request()->routeIs('equipment*') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}"
                             aria-haspopup="true" :aria-expanded="equipOpen">
                         Equipment
                         <svg class="w-4 h-4 transition-transform duration-200" :class="equipOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
                         </svg>
                     </button>
-                    <div x-show="equipOpen" x-cloak x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
+                    <div x-show="equipOpen" x-cloak
+                         x-transition:enter="transition ease-out duration-100"
+                         x-transition:enter-start="opacity-0 scale-95"
+                         x-transition:enter-end="opacity-100 scale-100"
                          class="absolute left-0 mt-1 w-52 bg-white rounded-lg shadow-xl border border-border py-1 z-50">
-                        <a href="{{ route('equipment') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-steel font-semibold">Equipment Hub</a>
-                        <a href="{{ route('equipment.category', 'washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Commercial Washers</a>
-                        <a href="{{ route('equipment.category', 'dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Commercial Dryers</a>
-                        <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Barrier Washers</a>
-                        <a href="{{ route('equipment.category', 'ironers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Ironers</a>
-                        <a href="{{ route('rental') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Rental / Lease</a>
+                        <p class="px-4 pt-2 pb-1 text-xs font-body font-semibold text-gray-400 uppercase tracking-wider">Browse Equipment</p>
+                        <a href="{{ route('equipment') }}" class="block px-4 py-2 text-sm font-body text-navy hover:bg-bg hover:text-steel font-semibold">Equipment Hub</a>
+                        <div class="h-px bg-border mx-4 my-1"></div>
+                        <a href="{{ route('equipment.category', 'washers') }}" class="block px-4 py-2 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Commercial Washers</a>
+                        <a href="{{ route('equipment.category', 'dryers') }}" class="block px-4 py-2 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Commercial Dryers</a>
+                        <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Barrier Washers</a>
+                        <a href="{{ route('equipment.category', 'ironers') }}" class="block px-4 py-2 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Ironers</a>
+                        <div class="h-px bg-border mx-4 my-1"></div>
+                        <a href="{{ route('rental') }}" class="block px-4 py-2 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Rental / Lease</a>
                     </div>
                 </div>
 
-                <!-- Sectors Dropdown -->
-                <div class="relative" x-data="{ sectorsOpen: false }" @mouseenter="sectorsOpen = true" @mouseleave="sectorsOpen = false">
-                    <button @click="sectorsOpen = !sectorsOpen"
-                            class="flex items-center gap-1 text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap cursor-pointer"
-                            aria-haspopup="true" :aria-expanded="sectorsOpen">
-                        Sectors
-                        <svg class="w-4 h-4 transition-transform duration-200" :class="sectorsOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-                        </svg>
-                    </button>
-                    <div x-show="sectorsOpen" x-cloak x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
-                         class="absolute left-0 mt-1 w-52 bg-white rounded-lg shadow-xl border border-border py-1 z-50">
-                        <a href="{{ route('sectors.healthcare') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Healthcare</a>
-                        <a href="{{ route('sectors.hospitality') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Hospitality</a>
-                        <a href="{{ route('sectors.care') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Care Facilities</a>
-                        <a href="{{ route('sectors.commercial') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-steel">Commercial &amp; Industrial</a>
-                    </div>
-                </div>
+                <a href="{{ route('resources') }}"
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('resources') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
+                    Resources
+                </a>
 
                 <a href="{{ route('about') }}"
-                   class="text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('about') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
                     About
                 </a>
 
                 <a href="{{ route('contact') }}"
-                   class="text-gray-200 hover:text-white hover:bg-navy-light px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap
+                          {{ request()->routeIs('contact') ? 'text-white bg-navy-light' : 'text-gray-200 hover:text-white hover:bg-navy-light' }}">
                     Contact
                 </a>
             </nav>
 
             <!-- Desktop CTA + Phone -->
-            <div class="hidden lg:flex items-center gap-3">
+            <div class="hidden lg:flex items-center gap-4">
                 <a href="tel:+353000000000"
-                   class="flex items-center gap-2 text-gray-200 hover:text-white text-sm font-body font-semibold transition-colors duration-150">
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                    </svg>
-                    Call an Engineer
+                   class="flex flex-col items-end text-gray-200 hover:text-white transition-colors duration-150 group">
+                    <span class="flex items-center gap-1.5 text-sm font-body font-semibold">
+                        <svg class="w-4 h-4 text-steel-light group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                        </svg>
+                        Call an Engineer
+                    </span>
+                    <span class="text-xs text-steel-light font-body tracking-wide">+353 01 123 4567</span>
                 </a>
                 <a href="{{ route('request-assessment') }}"
-                   class="bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap"
-                   data-ga-cta="header_request_assessment">
-                    Request Assessment
+                   class="bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap shadow-sm">
+                    Request a Service Assessment
                 </a>
             </div>
 
@@ -126,15 +141,21 @@
          @click.away="open = false">
 
         <!-- Electrolux badge -->
-        <div class="px-4 py-2 border-b border-white/10">
-            <span class="text-xs text-steel-light font-body">Authorised Electrolux Professional Partner</span>
+        <div class="px-4 py-2.5 border-b border-white/10 flex items-center gap-2">
+            <span class="text-xs font-body font-semibold text-steel-light uppercase tracking-widest">Electrolux Professional</span>
+            <span class="text-white/30 text-xs">|</span>
+            <span class="text-xs font-body text-white/70">Authorised Partner</span>
         </div>
 
         <nav class="px-4 py-3 space-y-1 font-body">
-            <a href="{{ route('solutions') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5">Solutions</a>
-            <a href="{{ route('service-contracts') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5">Service Contracts</a>
-            <a href="{{ route('repairs') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5">Repairs &amp; Call-outs</a>
-            <a href="{{ route('rental') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5">Rental</a>
+            <a href="{{ route('solutions') }}" class="block py-2.5 font-semibold border-b border-white/5
+               {{ request()->routeIs('solutions') ? 'text-white' : 'text-gray-200 hover:text-white' }}">Solutions</a>
+            <a href="{{ route('service-contracts') }}" class="block py-2.5 font-semibold border-b border-white/5
+               {{ request()->routeIs('service-contracts') ? 'text-white' : 'text-gray-200 hover:text-white' }}">Service Contracts</a>
+            <a href="{{ route('repairs') }}" class="block py-2.5 font-semibold border-b border-white/5
+               {{ request()->routeIs('repairs') ? 'text-white' : 'text-gray-200 hover:text-white' }}">Repairs &amp; Call-outs</a>
+            <a href="{{ route('rental') }}" class="block py-2.5 font-semibold border-b border-white/5
+               {{ request()->routeIs('rental') ? 'text-white' : 'text-gray-200 hover:text-white' }}">Rental</a>
 
             <!-- Mobile Equipment -->
             <div x-data="{ eOpen: false }">
@@ -143,7 +164,7 @@
                     <svg class="w-4 h-4 transition-transform" :class="eOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                 </button>
                 <div x-show="eOpen" x-cloak class="pl-4 space-y-1 py-1">
-                    <a href="{{ route('equipment') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Equipment Hub</a>
+                    <a href="{{ route('equipment') }}" class="block py-2 text-sm text-gray-300 hover:text-white font-semibold">Equipment Hub</a>
                     <a href="{{ route('equipment.category', 'washers') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Commercial Washers</a>
                     <a href="{{ route('equipment.category', 'dryers') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Commercial Dryers</a>
                     <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Barrier Washers</a>
@@ -152,23 +173,12 @@
                 </div>
             </div>
 
-            <!-- Mobile Sectors -->
-            <div x-data="{ sOpen: false }">
-                <button @click="sOpen = !sOpen" class="flex items-center justify-between w-full py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5 cursor-pointer">
-                    Sectors
-                    <svg class="w-4 h-4 transition-transform" :class="sOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                </button>
-                <div x-show="sOpen" x-cloak class="pl-4 space-y-1 py-1">
-                    <a href="{{ route('sectors.healthcare') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Healthcare</a>
-                    <a href="{{ route('sectors.hospitality') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Hospitality</a>
-                    <a href="{{ route('sectors.care') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Care Facilities</a>
-                    <a href="{{ route('sectors.commercial') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Commercial &amp; Industrial</a>
-                </div>
-            </div>
-
-            <a href="{{ route('about') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5">About</a>
-            <a href="{{ route('contact') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold border-b border-white/5">Contact</a>
-            <a href="{{ route('resources') }}" class="block py-2.5 text-gray-200 hover:text-white font-semibold">Resources</a>
+            <a href="{{ route('resources') }}" class="block py-2.5 font-semibold border-b border-white/5
+               {{ request()->routeIs('resources') ? 'text-white' : 'text-gray-200 hover:text-white' }}">Resources</a>
+            <a href="{{ route('about') }}" class="block py-2.5 font-semibold border-b border-white/5
+               {{ request()->routeIs('about') ? 'text-white' : 'text-gray-200 hover:text-white' }}">About</a>
+            <a href="{{ route('contact') }}" class="block py-2.5 font-semibold
+               {{ request()->routeIs('contact') ? 'text-white' : 'text-gray-200 hover:text-white' }}">Contact</a>
         </nav>
 
         <div class="px-4 py-4 border-t border-white/10 space-y-3">
@@ -176,20 +186,34 @@
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
                 </svg>
-                Call an Engineer
+                Call an Engineer &mdash; +353 01 123 4567
             </a>
-            <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3 bg-orange hover:bg-orange-dark text-white rounded-lg font-semibold font-body text-sm transition-colors cursor-pointer"
-               data-ga-cta="mobile_header_request_assessment">
-                Request Assessment
+            <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3 bg-orange hover:bg-orange-dark text-white rounded-lg font-semibold font-body text-sm transition-colors cursor-pointer">
+                Request a Service Assessment
             </a>
         </div>
     </div>
 
-    <!-- Electrolux badge - desktop only -->
+    <!-- Electrolux badge — desktop only — styled like reference -->
     <div class="hidden lg:block bg-navy-dark border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex items-center justify-between">
-            <span class="text-xs text-steel-light font-body">Authorised Electrolux Professional Partner &mdash; Engineering-led commercial laundry since 1987</span>
-            <a href="{{ route('electrolux') }}" class="text-xs text-steel-light hover:text-white font-body transition-colors">Learn about our partnership &rarr;</a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
+            <div class="flex items-center gap-0">
+                {{-- Electrolux wordmark segment --}}
+                <span class="flex items-center gap-2 pr-4 border-r border-steel/40">
+                    {{-- Small Electrolux-style circle emblem --}}
+                    <span class="flex items-center justify-center w-5 h-5 rounded-full border border-steel-light/60 text-steel-light font-heading font-bold text-xs leading-none">E</span>
+                    <span class="text-xs font-heading font-semibold text-white/90 tracking-wider uppercase">Electrolux Professional</span>
+                </span>
+                {{-- Badge text --}}
+                <span class="flex items-center gap-1.5 pl-4">
+                    <span class="text-xs font-body font-bold text-white uppercase tracking-widest">Authorised</span>
+                    <span class="text-white/40 text-xs">|</span>
+                    <span class="text-xs font-body text-steel-light">Professional Partner &mdash; Engineering-led commercial laundry since 1987</span>
+                </span>
+            </div>
+            <a href="{{ route('electrolux') }}" class="text-xs text-steel-light hover:text-white font-body transition-colors duration-150">
+                Learn about our partnership &rarr;
+            </a>
         </div>
     </div>
 </header>

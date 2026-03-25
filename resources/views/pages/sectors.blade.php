@@ -15,9 +15,13 @@
 <!-- PROOF BAR -->
 @include('components.proof-bar')
 
+<!-- SECTOR SWITCHER -->
+@include('components.sector-switcher')
+
 <!-- SECTOR CARDS -->
 <section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-center font-body text-gray-500 text-sm mb-8 uppercase tracking-widest font-semibold">Or browse by sector</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
 
             <!-- Healthcare -->
