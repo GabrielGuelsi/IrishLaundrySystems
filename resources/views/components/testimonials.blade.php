@@ -1,14 +1,58 @@
-@props(['heading' => 'What our customers say'])
+@props(['heading' => 'What our customers say', 'light' => false])
 
+@if($light)
+<section class="py-16 lg:py-20 bg-bg border-y border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10">{{ $heading }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+
+            <div class="bg-white border border-border rounded-xl p-6 lg:p-8 flex flex-col">
+                <blockquote class="flex-1">
+                    <p class="font-body text-gray-700 text-base leading-relaxed">
+                        &ldquo;Clear communication and practical engineering support. They understand the pressure of healthcare operations and respond accordingly.&rdquo;
+                    </p>
+                </blockquote>
+                <div class="mt-6 pt-5 border-t border-border">
+                    <cite class="block text-sm font-body font-semibold text-navy not-italic">Operations Manager</cite>
+                    <span class="text-xs text-gray-400 font-body">Healthcare Group, Republic of Ireland</span>
+                </div>
+            </div>
+
+            <div class="bg-white border border-border rounded-xl p-6 lg:p-8 flex flex-col">
+                <blockquote class="flex-1">
+                    <p class="font-body text-gray-700 text-base leading-relaxed">
+                        &ldquo;We've had service contracts with ILS for several years. They show up, they communicate clearly, and they know the equipment. That's what we need.&rdquo;
+                    </p>
+                </blockquote>
+                <div class="mt-6 pt-5 border-t border-border">
+                    <cite class="block text-sm font-body font-semibold text-navy not-italic">Facilities Manager</cite>
+                    <span class="text-xs text-gray-400 font-body">Nursing Home Group, Munster</span>
+                </div>
+            </div>
+
+            <div class="bg-white border border-border rounded-xl p-6 lg:p-8 flex flex-col">
+                <blockquote class="flex-1">
+                    <p class="font-body text-gray-700 text-base leading-relaxed">
+                        &ldquo;Fast response when we had an unexpected breakdown during a busy period. Professionally handled — minimal disruption to our operation.&rdquo;
+                    </p>
+                </blockquote>
+                <div class="mt-6 pt-5 border-t border-border">
+                    <cite class="block text-sm font-body font-semibold text-navy not-italic">Hotel General Manager</cite>
+                    <span class="text-xs text-gray-400 font-body">4-Star Hotel, Leinster</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+@else
 <section class="py-16 lg:py-20 bg-navy">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl text-center mb-12">{{ $heading }}</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
-            <!-- Testimonial 1 -->
             <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
-                <!-- Stars -->
                 <div class="flex gap-1 mb-4">
                     @for ($i = 0; $i < 5; $i++)
                     <svg class="w-4 h-4 text-orange" fill="currentColor" viewBox="0 0 20 20">
@@ -36,7 +80,6 @@
                 </div>
             </div>
 
-            <!-- Testimonial 2 -->
             <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
                 <div class="flex gap-1 mb-4">
                     @for ($i = 0; $i < 5; $i++)
@@ -65,7 +108,6 @@
                 </div>
             </div>
 
-            <!-- Testimonial 3 -->
             <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
                 <div class="flex gap-1 mb-4">
                     @for ($i = 0; $i < 5; $i++)
@@ -97,3 +139,4 @@
         </div>
     </div>
 </section>
+@endif

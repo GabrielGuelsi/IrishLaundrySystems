@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts: Lexend + Source Sans 3 -->
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,9 +36,9 @@
                 extend: {
                     colors: {
                         navy: {
-                            DEFAULT: '#1a2744',
-                            light:   '#243259',
-                            dark:    '#111b30',
+                            DEFAULT: '#011E41',
+                            light:   '#0a2d5e',
+                            dark:    '#011530',
                         },
                         steel: {
                             DEFAULT: '#2d5f8a',
@@ -56,8 +56,8 @@
                         card:   '#FFFFFF',
                     },
                     fontFamily: {
-                        heading: ['Lexend', 'sans-serif'],
-                        body:    ['Source Sans 3', 'system-ui', 'sans-serif'],
+                        heading: ['Inter', 'sans-serif'],
+                        body:    ['Inter', 'system-ui', 'sans-serif'],
                     },
                     boxShadow: {
                         card: '0 1px 3px 0 rgba(0,0,0,0.08), 0 1px 2px -1px rgba(0,0,0,0.05)',
@@ -106,12 +106,12 @@
 
     <style>
         body {
-            font-family: 'Source Sans 3', system-ui, sans-serif;
+            font-family: 'Inter', system-ui, sans-serif;
             background-color: #F8FAFC;
             color: #0F172A;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Lexend', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
         .prose-ils p { margin-bottom: 1rem; line-height: 1.75; }
         [x-cloak] { display: none !important; }
