@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Commercial Laundry Resources | Guides, Checklists & Case Studies | ILS')
+@section('metaDescription', 'Practical guides to reduce downtime risk, plan preventive maintenance and select the right commercial laundry equipment.')
+
 @section('content')
 
 <!-- HERO -->

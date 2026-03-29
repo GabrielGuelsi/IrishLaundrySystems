@@ -183,4 +183,9 @@ class PageController extends Controller
             'metaDescription' => 'Request a service assessment from Irish Laundry Systems. Tell us about your operation and we will respond with the next best step.',
         ]);
     }
+
+    public function privacy()
+    {
+        return view('pages.privacy');
+    }
 }

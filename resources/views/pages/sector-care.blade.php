@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Care Home Laundry Equipment Service & Maintenance | Irish Laundry Systems')
+@section('metaDescription', 'Engineering-led service designed to protect continuity and hygiene governance in care environments.')
+
 @section('content')
 
 @include('components.sector-tabs')
@@ -20,11 +23,11 @@
                 <span class="text-sm font-body text-gray-200">Care facilities sector</span>
             </div>
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Laundry Reliability for Care Homes &amp; Facilities
+                Laundry Reliability for Care Facilities
             </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Continuity, safety and confidence.</p>
+            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Continuity, safety and confidence — built around uptime and structured service support.</p>
             <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-                In residential and nursing care, laundry is a daily operational need — resident dignity, hygiene and infection control all depend on it running reliably. ILS provides the structured support and rapid response that care operators require.
+                When laundry downtime hits a care environment, it impacts operations immediately. Build predictability with prevention and a clear response plan.
             </p>
             <a href="{{ route('request-assessment') }}"
                class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">

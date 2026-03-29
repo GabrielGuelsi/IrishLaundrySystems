@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     @yield('meta')
-    <title>{{ $title ?? 'Irish Laundry Systems | Commercial Laundry Engineering Ireland' }}</title>
-    <meta name="description" content="{{ $metaDescription ?? 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.' }}">
+    <title>@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')</title>
+    <meta name="description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
 
     <!-- Google Analytics 4 -->
     @if(env('GA4_MEASUREMENT_ID'))
@@ -23,8 +23,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts: Lexend + Source Sans 3 -->
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -36,9 +36,9 @@
                 extend: {
                     colors: {
                         navy: {
-                            DEFAULT: '#1a2744',
-                            light:   '#243259',
-                            dark:    '#111b30',
+                            DEFAULT: '#011E41',
+                            light:   '#0d2d5c',
+                            dark:    '#010f2a',
                         },
                         steel: {
                             DEFAULT: '#2d5f8a',
@@ -46,18 +46,23 @@
                             dark:    '#24507a',
                         },
                         orange: {
-                            DEFAULT: '#e87c32',
-                            light:   '#f08c47',
-                            dark:    '#d06b22',
+                            DEFAULT: '#1D4ED8',
+                            light:   '#3B82F6',
+                            dark:    '#1E40AF',
                         },
-                        muted:  '#E8ECF1',
+                        emerald: {
+                            DEFAULT: '#16A34A',
+                            light:   '#22C55E',
+                            dark:    '#15803D',
+                        },
+                        muted:  '#F3F4F6',
                         border: '#E2E8F0',
-                        bg:     '#F8FAFC',
+                        bg:     '#F9FAFB',
                         card:   '#FFFFFF',
                     },
                     fontFamily: {
-                        heading: ['Lexend', 'sans-serif'],
-                        body:    ['Source Sans 3', 'system-ui', 'sans-serif'],
+                        heading: ['Inter', 'system-ui', 'sans-serif'],
+                        body:    ['Inter', 'system-ui', 'sans-serif'],
                     },
                     boxShadow: {
                         card: '0 1px 3px 0 rgba(0,0,0,0.08), 0 1px 2px -1px rgba(0,0,0,0.05)',
@@ -106,12 +111,13 @@
 
     <style>
         body {
-            font-family: 'Source Sans 3', system-ui, sans-serif;
-            background-color: #F8FAFC;
+            font-family: 'Inter', system-ui, sans-serif;
+            background-color: #F9FAFB;
             color: #0F172A;
+            font-size: 17px;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Lexend', sans-serif;
+            font-family: 'Inter', system-ui, sans-serif;
         }
         .prose-ils p { margin-bottom: 1rem; line-height: 1.75; }
         [x-cloak] { display: none !important; }
@@ -121,7 +127,7 @@
 
         /* Focus styles */
         *:focus-visible {
-            outline: 2px solid #e87c32;
+            outline: 2px solid #1D4ED8;
             outline-offset: 2px;
         }
     </style>

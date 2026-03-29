@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Service Contracts Built Around Uptime | Irish Laundry Systems')
+@section('metaDescription', 'Prevent downtime risk. Improve predictability. We confirm scope and commitments per agreement.')
+
 @section('content')
 
 <!-- HERO -->
@@ -13,9 +16,9 @@
                 <span class="text-sm font-body text-gray-200">Planned maintenance &amp; structured support</span>
             </div>
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Service Contracts That Protect Your Operation
+                Service Contracts Built Around Uptime
             </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Prevent downtime. Control costs. Build continuity.</p>
+            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Prevent downtime risk. Improve predictability. Keep operations controlled.</p>
             <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
                 A structured ILS service contract puts planned maintenance in place before problems occur. You get scheduled visits, documented service history, remote support and — depending on your tier — priority response when you need it most.
             </p>
@@ -96,6 +99,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- DOWNTIME FRAMING BLOCK -->
+<section class="py-14 lg:py-18 bg-navy">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-4">Operational Risk Management</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-5 leading-tight">
+                Designed to Reduce Downtime Risk in Critical Laundry Operations
+            </h2>
+            <p class="font-body text-blue-200 text-lg leading-relaxed">
+                Unplanned breakdowns in healthcare, care and regulated environments don't just cost money — they create operational pressure, compliance risk and reputational exposure. A structured service contract puts the engineering infrastructure in place before problems occur.
+            </p>
         </div>
     </div>
 </section>

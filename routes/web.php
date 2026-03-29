@@ -25,6 +25,7 @@ Route::post('/contact', [ContactController::class, 'submit'])->name('contact.sub
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
 Route::get('/brand-protection', [PageController::class, 'brandProtection'])->name('brand-protection');
 Route::get('/request-assessment', [PageController::class, 'requestAssessment'])->name('request-assessment');
+Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
 
 // Admin
 Route::prefix('admin')->name('admin.')->group(function () {

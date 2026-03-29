@@ -23,5 +23,7 @@ class ContactSubmission extends Model
         'utm_content',
         'utm_term',
         'page_source',
+        'gdpr_consent',
+        'marketing_consent',
     ];
 }

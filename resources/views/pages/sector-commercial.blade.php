@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Commercial & Industrial Laundry Equipment Service | Irish Laundry Systems')
+@section('metaDescription', 'Prevent throughput loss with engineered preventive maintenance and a structured response model.')
+
 @section('content')
 
 @include('components.sector-tabs')
@@ -14,9 +17,9 @@
                 <span class="text-gray-300 text-sm font-body">Commercial &amp; Industrial</span>
             </div>
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Commercial &amp; Industrial Laundry Engineering
+                Commercial Laundry Uptime for High-Throughput Sites
             </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Throughput, lifecycle cost and uptime — engineered for commercial operations.</p>
+            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Reduce stoppages. Protect throughput. Control lifecycle cost with an engineering-led service model.</p>
             <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
                 Commercial laundries and industrial operators run under different pressures to other sectors. Volume throughput, machine utilisation rates and lifecycle cost are the primary concerns. ILS provides engineering support structured around maximising availability.
             </p>

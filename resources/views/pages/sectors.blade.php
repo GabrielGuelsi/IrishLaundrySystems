@@ -1,13 +1,16 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Commercial Laundry Sectors Served | Healthcare, Hospitality, Care & Industrial | ILS')
+@section('metaDescription', 'Explore sector-specific contracts, rental options and breakdown response — engineering-led and built around uptime.')
+
 @section('content')
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Choose Your Sector</h1>
+        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Commercial Laundry Support by Sector</h1>
         <p class="font-body text-blue-200 text-xl max-w-2xl mx-auto leading-relaxed mb-8">
-            ILS supports four commercial laundry sectors across the Republic of Ireland. Each has different demands — we work to understand yours.
+            Choose your environment to see the right service model, risk factors and recommended next step.
         </p>
     </div>
 </section>
@@ -179,7 +182,7 @@
 @include('components.cta-band', [
     'heading' => 'Not sure which sector applies to you?',
     'subheading' => 'Contact us directly and we will point you to the right support structure for your operation.',
-    'primaryText' => 'Request Assessment',
+    'primaryText' => 'Request a Service Assessment',
 ])
 
 @endsection

@@ -1,14 +1,40 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Contact Irish Laundry Systems | Request a Service Assessment')
+@section('metaDescription', 'Request an assessment for service contracts, rental options, breakdown support or equipment planning. We confirm next steps and availability once we have site details.')
+
 @section('content')
 
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4">Contact ILS</h1>
+        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4">Request a Service Assessment</h1>
         <p class="font-body text-blue-200 text-lg max-w-xl mx-auto leading-relaxed">
-            Tell us about your operation and we'll respond with the next best step. We cover the Republic of Ireland and aim to respond within 24 hours.
+            Share site location(s), equipment type/brand and urgency. We will confirm next steps and availability.
         </p>
+    </div>
+</section>
+
+<!-- WHAT HAPPENS NEXT -->
+<section class="py-10 lg:py-12 bg-white border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div class="flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white font-heading font-bold text-base mb-3">1</div>
+                <h3 class="font-heading font-semibold text-navy text-base mb-1">We review your details</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">We read every request and review your site, sector and equipment details before responding.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white font-heading font-bold text-base mb-3">2</div>
+                <h3 class="font-heading font-semibold text-navy text-base mb-1">We may ask triage questions</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Depending on your request, we may follow up by phone or email to clarify scope before confirming availability.</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white font-heading font-bold text-base mb-3">3</div>
+                <h3 class="font-heading font-semibold text-navy text-base mb-1">We confirm next steps and availability</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">We'll come back with a clear next step — a proposal, a scheduled visit, or a call-out confirmation.</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -235,6 +261,23 @@
                             <textarea id="message" name="message" rows="4"
                                       placeholder="Describe the problem, what the machine is doing or not doing, any error codes, and any other context that will help us respond appropriately."
                                       class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400 resize-none leading-relaxed">{{ old('message') }}</textarea>
+                        </div>
+
+                        <div class="space-y-3 pt-2">
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" name="gdpr_consent" required value="1" {{ old('gdpr_consent') ? 'checked' : '' }}
+                                       class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel flex-shrink-0 cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 leading-relaxed">
+                                    I agree to ILS processing my details to respond to this enquiry. <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>. <span class="text-red-500">*</span>
+                                </span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" name="marketing_consent" value="1" {{ old('marketing_consent') ? 'checked' : '' }}
+                                       class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel flex-shrink-0 cursor-pointer">
+                                <span class="font-body text-sm text-gray-500 leading-relaxed">
+                                    I'm happy to receive occasional service updates and relevant information from ILS. (Optional)
+                                </span>
+                            </label>
                         </div>
 
                         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2">

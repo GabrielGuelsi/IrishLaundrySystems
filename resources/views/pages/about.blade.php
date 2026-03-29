@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'About Irish Laundry Systems | Engineering-led Commercial Laundry Partner')
+@section('metaDescription', 'Established 1987. Engineering-led commercial laundry support across Ireland — contracts, rental and breakdown response built around uptime.')
+
 @section('content')
 
 <!-- HERO -->
@@ -13,9 +16,9 @@
                 <span class="text-sm font-body text-gray-200">Established 1987</span>
             </div>
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Engineering-Led Laundry Specialists Since 1987
+                Engineering-led Laundry Support Since 1987
             </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Built on reliability and responsiveness.</p>
+            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Built around uptime, risk control and long-term operational continuity.</p>
             <p class="font-body text-gray-300 text-lg leading-relaxed max-w-2xl">
                 Irish Laundry Systems was founded in 1987 with a straightforward purpose: to provide commercial laundry operators across Ireland with engineering-first service that actually works. Over three decades later, that purpose hasn't changed.
             </p>

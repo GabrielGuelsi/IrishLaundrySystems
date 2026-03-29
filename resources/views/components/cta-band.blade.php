@@ -3,7 +3,7 @@
     'subheading'  => 'Talk to an ILS engineer about service contracts, repairs or equipment. We cover the Republic of Ireland.',
     'primaryText' => 'Request a Service Assessment',
     'primaryHref' => '/request-assessment',
-    'secondaryText' => 'Call an Engineer',
+    'secondaryText' => 'Talk to an Engineer',
     'secondaryHref' => 'tel:+353000000000',
     'dark'        => true,
 ])

@@ -195,6 +195,23 @@
                             </div>
                         </fieldset>
 
+                        <div class="space-y-3 pt-2">
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" name="gdpr_consent" required value="1" {{ old('gdpr_consent') ? 'checked' : '' }}
+                                       class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel flex-shrink-0 cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 leading-relaxed">
+                                    I agree to ILS processing my details to respond to this assessment request. <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>. <span class="text-red-500">*</span>
+                                </span>
+                            </label>
+                            <label class="flex items-start gap-3 cursor-pointer">
+                                <input type="checkbox" name="marketing_consent" value="1" {{ old('marketing_consent') ? 'checked' : '' }}
+                                       class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel flex-shrink-0 cursor-pointer">
+                                <span class="font-body text-sm text-gray-500 leading-relaxed">
+                                    I'm happy to receive occasional service updates and relevant information from ILS. (Optional)
+                                </span>
+                            </label>
+                        </div>
+
                         <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 pt-2 border-t border-border">
                             <p class="text-xs font-body text-gray-400 leading-relaxed">
                                 Republic of Ireland only. We aim to respond within 24 hours.

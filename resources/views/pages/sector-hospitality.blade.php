@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('pageTitle', 'Hotel Laundry Equipment Service & Maintenance | Irish Laundry Systems')
+@section('metaDescription', 'Prevent downtime risk during peak occupancy with preventive maintenance and structured breakdown response.')
+
 @section('content')
 
 @include('components.sector-tabs')
@@ -22,9 +25,9 @@
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
                 Laundry Support for Hotels &amp; Hospitality
             </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Protect guest operations with predictable uptime.</p>
+            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Protect guest operations with predictable uptime — contracts, repairs and equipment planning built around peak demand.</p>
             <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-                Laundry failure in a hotel or hospitality property affects housekeeping schedules, room turnaround, guest experience and your reputation. ILS keeps your in-house laundry operation running with structured maintenance and rapid reactive support.
+                Peak occupancy exposes weak laundry uptime. Build predictability with preventive maintenance and a clear response model.
             </p>
             <a href="{{ route('request-assessment') }}"
                class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
