@@ -15,11 +15,11 @@ class PageController extends Controller
         ]);
     }
 
-    public function solutions()
+    public function services()
     {
-        return view('pages.solutions', [
-            'title' => 'Laundry Solutions | Contracts, Repairs & Equipment | ILS',
-            'metaDescription' => 'Outcomes-first solutions for critical laundry operations. Service contracts, reactive repairs, equipment supply and rental — all engineered for uptime.',
+        return view('pages.services', [
+            'title' => 'Commercial Laundry Services | Contracts, Repairs & Equipment | ILS',
+            'metaDescription' => 'Engineering-led commercial laundry services across Ireland. Service contracts, reactive repairs, equipment rental and parts & aftercare — structured around operational continuity.',
         ]);
     }
 
@@ -42,7 +42,7 @@ class PageController extends Controller
     public function repairs()
     {
         return view('pages.repairs', [
-            'title' => 'Commercial Laundry Repairs & Call-outs Ireland | Engineers Nationwide | ILS',
+            'title' => 'Commercial Laundry Repairs & Call-outs Ireland | Field Engineers | ILS',
             'metaDescription' => 'Commercial laundry breakdown repairs and call-outs across the Republic of Ireland. Experienced engineers, genuine parts, clear communication.',
         ]);
     }
@@ -67,7 +67,7 @@ class PageController extends Controller
     {
         return view('pages.sector-hospitality', [
             'title' => 'Hotel & Hospitality Laundry Support Ireland | ILS',
-            'metaDescription' => 'Protect guest operations with reliable laundry engineering. Service contracts and reactive call-outs for hotels, guesthouses and hospitality groups.',
+            'metaDescription' => 'Protect guest operations with engineering-led laundry support. Service contracts and reactive call-outs for hotels, guesthouses and hospitality groups.',
         ]);
     }
 
@@ -75,7 +75,7 @@ class PageController extends Controller
     {
         return view('pages.sector-care', [
             'title' => 'Care Home Laundry Engineering Ireland | ILS',
-            'metaDescription' => 'Reliable laundry engineering for care homes, nursing homes and residential facilities. Continuity, safety and confidence for care operators.',
+            'metaDescription' => 'Engineering-led laundry support for care homes, nursing homes and residential facilities. Continuity, safety and confidence for care operators.',
         ]);
     }
 

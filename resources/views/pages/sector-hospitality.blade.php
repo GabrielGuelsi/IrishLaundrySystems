@@ -31,7 +31,7 @@
             </p>
             <a href="{{ route('request-assessment') }}"
                class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                Request a Service Assessment
+                Discuss Contract Options
             </a>
         </div>
     </div>

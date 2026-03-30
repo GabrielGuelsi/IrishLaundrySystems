@@ -25,7 +25,7 @@
             </p>
             <a href="{{ route('request-assessment') }}"
                class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                Request a Service Assessment
+                Talk to an Engineer
             </a>
         </div>
     </div>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="bg-white border border-border rounded-xl p-4 text-center">
                         <div class="font-heading font-bold text-navy text-2xl mb-1">ROI</div>
-                        <div class="text-xs font-body text-gray-500">Nationwide coverage</div>
+                        <div class="text-xs font-body text-gray-500">Republic of Ireland</div>
                     </div>
                     <div class="bg-white border border-border rounded-xl p-4 text-center">
                         <div class="font-heading font-bold text-navy text-2xl mb-1">3</div>

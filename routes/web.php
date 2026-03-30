@@ -6,7 +6,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Admin;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
-Route::get('/solutions', [PageController::class, 'solutions'])->name('solutions');
+Route::get('/services', [PageController::class, 'services'])->name('services');
+Route::redirect('/solutions', '/services', 301);
 Route::get('/service-contracts', [PageController::class, 'serviceContracts'])->name('service-contracts');
 Route::get('/rental', [PageController::class, 'rental'])->name('rental');
 Route::get('/repairs-call-outs', [PageController::class, 'repairs'])->name('repairs');

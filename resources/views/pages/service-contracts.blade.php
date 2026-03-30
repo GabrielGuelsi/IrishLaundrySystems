@@ -25,7 +25,7 @@
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                    Request a Contract Review
+                    Request Contract Review
                 </a>
                 <a href="tel:+353000000000"
                    class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer hover:bg-white/10">

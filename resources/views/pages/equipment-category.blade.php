@@ -16,7 +16,7 @@
         </p>
         <a href="{{ route('contact') }}"
            class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-            Get a Quote
+            Request Equipment Quote
         </a>
     </div>
 </section>

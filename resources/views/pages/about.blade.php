@@ -23,7 +23,7 @@
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200"
                    data-ga-cta="about_talk_to_expert">
-                    Talk to an Expert
+                    Contact ILS
                 </a>
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">

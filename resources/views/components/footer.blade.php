@@ -42,7 +42,7 @@
                         <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        Nationwide support across the Republic of Ireland (excluding Northern Ireland)
+                        Service coverage across the Republic of Ireland (excluding Northern Ireland)
                     </li>
                 </ul>
 
