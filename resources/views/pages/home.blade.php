@@ -6,19 +6,12 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="bg-navy py-20 lg:py-32 relative overflow-hidden">
-    <div class="absolute inset-0 opacity-5">
-        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="1"/>
-                </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)"/>
-        </svg>
-    </div>
+<section
+    class="py-20 lg:py-32 relative overflow-hidden"
+    style="background-color: #011E41; background-image: linear-gradient(90deg, rgba(1, 30, 65, 0.95) 0%, rgba(1, 30, 65, 0.75) 50%, rgba(1, 30, 65, 0.15) 85%, rgba(1, 30, 65, 0) 100%), url('/images/hero/hero-placeholder.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;"
+>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

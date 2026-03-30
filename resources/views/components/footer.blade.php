@@ -28,8 +28,11 @@
 
             <!-- Trust block -->
             <div>
-                <span class="font-heading font-bold text-white text-xl tracking-tight">Irish Laundry Systems</span>
-                <span class="block text-steel-light text-xs font-body mt-1 mb-5 uppercase tracking-widest">Commercial Laundry Engineering</span>
+                <img src="/images/logo/ILS-LOGO-HORIZONTAL-WHITE.svg"
+                     alt="Irish Laundry Systems"
+                     class="h-10 w-auto mb-5"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+                <span style="display:none" class="font-heading font-bold text-white text-xl tracking-tight block mb-5">Irish Laundry Systems</span>
 
                 <ul class="space-y-2.5 text-sm font-body text-gray-400">
                     <li class="flex items-center gap-2">

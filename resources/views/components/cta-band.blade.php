@@ -8,17 +8,17 @@
     'dark'        => true,
 ])
 
-<section class="{{ $dark ? 'bg-navy' : 'bg-steel' }} py-16 lg:py-20">
+<section class="bg-orange py-16 lg:py-20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
             {{ $heading }}
         </h2>
-        <p class="font-body text-blue-200 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+        <p class="font-body text-white/80 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
             {{ $subheading }}
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a href="{{ $primaryHref }}"
-               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer"
+               class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer"
                data-ga-cta="cta_band_{{ Str::slug($primaryText) }}">
                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
@@ -33,7 +33,7 @@
                 {{ $secondaryText }}
             </a>
         </div>
-        <p class="mt-6 text-sm text-blue-300 font-body">
+        <p class="mt-6 text-sm text-white/60 font-body">
             We aim to respond within 24 hours. Republic of Ireland only (excluding Northern Ireland).
         </p>
     </div>

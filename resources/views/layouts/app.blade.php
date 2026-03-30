@@ -37,27 +37,27 @@
                     colors: {
                         navy: {
                             DEFAULT: '#011E41',
-                            light:   '#0d2d5c',
+                            light:   '#0d3568',
                             dark:    '#010f2a',
                         },
                         steel: {
-                            DEFAULT: '#2d5f8a',
-                            light:   '#3a72a6',
-                            dark:    '#24507a',
+                            DEFAULT: '#148af4',
+                            light:   '#5babf7',
+                            dark:    '#0f70cc',
                         },
                         orange: {
-                            DEFAULT: '#1D4ED8',
-                            light:   '#3B82F6',
-                            dark:    '#1E40AF',
+                            DEFAULT: '#148af4',
+                            light:   '#5babf7',
+                            dark:    '#0f70cc',
                         },
                         emerald: {
                             DEFAULT: '#16A34A',
                             light:   '#22C55E',
                             dark:    '#15803D',
                         },
-                        muted:  '#F3F4F6',
-                        border: '#E2E8F0',
-                        bg:     '#F9FAFB',
+                        muted:  '#b2b2b2',
+                        border: '#b2b2b2',
+                        bg:     '#eaeff5',
                         card:   '#FFFFFF',
                     },
                     fontFamily: {
@@ -112,8 +112,8 @@
     <style>
         body {
             font-family: 'Inter', system-ui, sans-serif;
-            background-color: #F9FAFB;
-            color: #0F172A;
+            background-color: #eaeff5;
+            color: #1d1d1b;
             font-size: 17px;
         }
         h1, h2, h3, h4, h5, h6 {
@@ -127,7 +127,7 @@
 
         /* Focus styles */
         *:focus-visible {
-            outline: 2px solid #1D4ED8;
+            outline: 2px solid #148af4;
             outline-offset: 2px;
         }
     </style>
