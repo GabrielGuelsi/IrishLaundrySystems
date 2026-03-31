@@ -20,13 +20,13 @@
                 Healthcare laundry operations can't afford downtime.
             </h1>
             <p class="font-body text-gray-300 text-lg leading-relaxed mb-8">
-                ILS understands the clinical governance expectations, hygiene standards and operational pressures that healthcare facilities operate under. Our service model is structured around that reality — prevention first, priority response when issues arise, and documented records throughout.
+                Engineering-led laundry support for healthcare operations — prevention first, priority response when it matters, and documentation that holds up to audit.
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200"
                    data-ga-cta="healthcare_request_assessment">
-                    Request a Service Assessment
+                    Request Healthcare Assessment
                 </a>
                 <a href="tel:+353000000000"
                    class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
@@ -139,7 +139,7 @@
                     </svg>
                 </div>
                 <h3 class="font-heading font-semibold text-navy text-base mb-2">Priority Response</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">Healthcare customers at Priority and Assured tiers receive priority triage and dispatch. We aim to be on-site within 24 hours (subject to location and parts availability).</p>
+                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">Healthcare customers at Priority and Assured tiers receive priority triage and dispatch. Response targets are agreed at contract stage based on your site location and operational requirements.</p>
                 <a href="{{ route('repairs') }}" class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
                     Repairs &amp; call-outs
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
@@ -196,86 +196,119 @@
     </div>
 </section>
 
-<!-- 5. PROOF — HEALTHCARE TESTIMONIALS (navy anchor) -->
+{{-- Service tier comparison removed — tier names and inclusions require client approval before publishing. --}}
+
+<!-- 5. PROOF — HEALTHCARE TESTIMONIALS ⚠️ PLACEHOLDER — replace with real approved quotes before go-live -->
 <section class="py-16 lg:py-20 bg-navy">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-10">What healthcare customers say</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
             <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
                 <blockquote class="flex-1">
                     <p class="font-body text-gray-300 text-base leading-relaxed">
-                        &ldquo;Clear communication and practical engineering support. They understand the pressure of healthcare operations and respond accordingly.&rdquo;
-                    </p>
-                </blockquote>
-                <div class="mt-6 pt-5 border-t border-white/10">
-                    <cite class="block text-sm font-body font-semibold text-white not-italic">Operations Manager</cite>
-                    <span class="text-xs text-gray-400 font-body">Healthcare Group, Republic of Ireland</span>
-                </div>
-            </div>
-            <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
-                <blockquote class="flex-1">
-                    <p class="font-body text-gray-300 text-base leading-relaxed">
-                        &ldquo;We've had service contracts with ILS for several years. They show up, they communicate clearly, and they know the equipment. That's what we need.&rdquo;
+                        &ldquo;We had recurring issues with our previous provider — slow response, no paperwork after visits. ILS came in, assessed everything on day one, and we've had documented service reports from every visit since.&rdquo;
                     </p>
                 </blockquote>
                 <div class="mt-6 pt-5 border-t border-white/10">
                     <cite class="block text-sm font-body font-semibold text-white not-italic">Facilities Manager</cite>
-                    <span class="text-xs text-gray-400 font-body">Nursing Home Group, Munster</span>
+                    <span class="text-xs text-gray-400 font-body">Public Hospital, Dublin</span>
                 </div>
             </div>
+
             <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
                 <blockquote class="flex-1">
                     <p class="font-body text-gray-300 text-base leading-relaxed">
-                        &ldquo;No documented maintenance history was one of our biggest problems. ILS resolved that from the first visit — every service report is on file.&rdquo;
+                        &ldquo;Managing laundry across five nursing homes under one contract was a problem before ILS. Now we have consistent standards and one point of contact across all sites.&rdquo;
                     </p>
                 </blockquote>
                 <div class="mt-6 pt-5 border-t border-white/10">
-                    <cite class="block text-sm font-body font-semibold text-white not-italic">Compliance Lead</cite>
-                    <span class="text-xs text-gray-400 font-body">Private Hospital Group, Leinster</span>
+                    <cite class="block text-sm font-body font-semibold text-white not-italic">Operations Director</cite>
+                    <span class="text-xs text-gray-400 font-body">Care Group, Munster</span>
                 </div>
             </div>
+
+            <div class="bg-navy-light border border-white/10 rounded-xl p-6 lg:p-8 flex flex-col">
+                <blockquote class="flex-1">
+                    <p class="font-body text-gray-300 text-base leading-relaxed">
+                        &ldquo;Our HIQA inspection was coming up and we had gaps in our maintenance records. ILS got us up to date quickly and showed us how to maintain that going forward.&rdquo;
+                    </p>
+                </blockquote>
+                <div class="mt-6 pt-5 border-t border-white/10">
+                    <cite class="block text-sm font-body font-semibold text-white not-italic">Compliance Officer</cite>
+                    <span class="text-xs text-gray-400 font-body">Private Nursing Home, Leinster</span>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-<!-- 6. FAQs + HSE NOTE -->
-@php
-$faqs = [
-    [
-        'question' => 'Do you work with HSE sites and public healthcare procurement?',
-        'answer' => 'ILS has experience working with HSE sites and healthcare group procurement across the Republic of Ireland. If you have specific procurement requirements or approval processes, please mention this when you contact us and we will work within your framework.',
-    ],
-    [
-        'question' => 'Can you support multiple hospital or care sites under one contract?',
-        'answer' => 'Yes. ILS structures multi-site service contracts for healthcare groups — covering multiple facilities under a single arrangement, with consistent reporting and maintenance standards across all sites.',
-    ],
-    [
-        'question' => 'How quickly can you respond to a healthcare breakdown?',
-        'answer' => 'We aim to be on-site within 24 hours for reported breakdowns (subject to location and parts availability). Healthcare customers at Priority and Assured tiers receive priority triage and dispatch.',
-    ],
-];
-@endphp
-@include('components.faq', ['faqs' => $faqs, 'heading' => 'Healthcare laundry — common questions'])
+{{-- FAQs removed — content requires client approval before publishing. --}}
 
-<!-- HSE NOTE (moved to end — relevant context, not an interruption) -->
-<section class="py-6 bg-white border-t border-border">
+<!-- 7. EQUIPMENT RELEVANCE BLOCK -->
+<section class="py-16 lg:py-20 bg-bg border-y border-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="border border-border rounded-xl p-5 flex items-start gap-4">
-            <svg class="w-5 h-5 text-navy flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/>
-            </svg>
-            <p class="font-body text-gray-600 text-sm leading-relaxed">
-                <strong class="font-semibold text-navy">HSE and healthcare group operators:</strong> ILS has experience working with HSE sites and healthcare group procurement arrangements across the Republic of Ireland. If you have specific procurement or governance requirements, please mention this when you contact us and we will address them directly in our proposal.
-            </p>
+        <div class="max-w-3xl mb-10">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">Equipment that fits healthcare</h2>
+            <p class="font-body text-gray-500 text-lg">The right machine matters as much as the right service. ILS supplies and supports commercial laundry equipment suited to healthcare environments.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
+            @foreach([
+                ['Barrier Washer-Extractors', 'Physical separation of soiled and clean zones — essential for infection control in hospitals and care facilities.'],
+                ['High-Capacity Washers', 'Throughput-matched machines for high-volume linen cycles in larger healthcare sites and laundry rooms.'],
+                ['Commercial Dryers & Ironers', 'Full-cycle support — from wash through to finishing — for ward linen, patient clothing and theatre textiles.'],
+            ] as [$title, $desc])
+            <div class="bg-white border border-border rounded-xl p-6">
+                <h3 class="font-heading font-semibold text-navy text-base mb-2">{{ $title }}</h3>
+                <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $desc }}</p>
+            </div>
+            @endforeach
+        </div>
+        <p class="font-body text-gray-500 text-sm mb-6">ILS is an Authorised Electrolux Professional Partner — giving access to manufacturer-grade equipment, genuine parts and technical documentation. Equipment scope is confirmed per site during the assessment process.</p>
+        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
+            Browse the equipment library
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
+    </div>
+</section>
+
+<!-- 8. EQUIPMENT & RENTAL CROSS-LINK -->
+<section class="py-12 bg-white border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="font-heading font-semibold text-navy text-lg mb-6">Also relevant for healthcare operators</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <a href="{{ route('equipment') }}" class="group flex items-start gap-5 bg-bg border border-border rounded-xl p-6 hover:border-navy/30 transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-semibold text-navy text-base mb-1 group-hover:text-steel transition-colors">Equipment Sales</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Browse the ILS equipment library — washers, dryers, barrier washers, ironers and finishing equipment.</p>
+                </div>
+            </a>
+            <a href="{{ route('rental') }}" class="group flex items-start gap-5 bg-bg border border-border rounded-xl p-6 hover:border-navy/30 transition-colors">
+                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-semibold text-navy text-base mb-1 group-hover:text-steel transition-colors">Equipment Rental</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial laundry equipment on a structured rental arrangement — inclusive of maintenance and support.</p>
+                </div>
+            </a>
         </div>
     </div>
 </section>
 
-<!-- 7. FINAL CTA -->
+<!-- 9. FINAL CTA -->
 @include('components.cta-band', [
-    'heading' => 'Supporting healthcare laundry operations since 1987',
-    'subheading' => 'Request a service assessment and we will propose the right contract structure for your operation.',
-    'primaryText' => 'Request a Service Assessment',
+    'heading' => 'Talk to an ILS engineer about your healthcare operation.',
+    'subheading' => 'We will assess your site, review your current setup, and propose a contract structure matched to your risk profile — no obligation.',
+    'primaryText' => 'Request Healthcare Assessment',
 ])
 
 @endsection
