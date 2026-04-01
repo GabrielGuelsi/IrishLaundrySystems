@@ -1,4 +1,7 @@
 {
+  "enabledPlugins": {
+    "claude-code-preview@claude-plugins-official": false
+  },
   "permissions": {
     "allow": [
       "Bash(php artisan:*)",
