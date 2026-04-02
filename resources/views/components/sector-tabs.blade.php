@@ -4,7 +4,7 @@
     Displays a sticky tab strip directly below the header so users can
     switch between sector views without going back to the sectors hub.
 --}}
-<div class="bg-navy-dark border-b border-white/10 sticky top-[4.5rem] z-40">
+<div class="bg-navy-dark border-b border-white/10">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav class="flex overflow-x-auto scrollbar-hide -mb-px" aria-label="Sector navigation">
 

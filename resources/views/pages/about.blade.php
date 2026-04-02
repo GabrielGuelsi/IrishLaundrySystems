@@ -6,38 +6,30 @@
 
 @section('content')
 
-<!-- 1. HERO — DARK -->
-<section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div>
-                @include('components.pretitle', ['label' => 'About ILS', 'color' => '#148af4'])
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
-                    Engineering-led laundry support since 1987.
-                </h1>
-                <p class="font-body text-gray-300 text-xl leading-relaxed mb-8">
-                    Irish Laundry Systems was built around one principle: critical laundry operations deserve proper engineering support — not just reactive call-outs when something fails.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200"
-                       data-ga-cta="about_talk_to_expert">
-                        Talk to an Expert
-                    </a>
-                    <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Request a Service Assessment
-                    </a>
-                </div>
-            </div>
-            <!-- IMAGE 1: about-team.jpg -->
-            <div class="relative hidden lg:block reveal reveal-right">
-                <div class="aspect-[4/3] rounded-2xl overflow-hidden bg-navy-light border border-white/10 flex items-center justify-center">
-                    <img src="{{ asset('images/about/about-team.jpg') }}"
-                         alt="ILS engineering team"
-                         class="w-full h-full object-cover"
-                         onerror="this.style.display='none'; this.parentElement.insertAdjacentHTML('beforeend', '<span class=\'font-body text-gray-500 text-sm\'>about-team.jpg</span>')">
-                </div>
+<!-- 1. HERO — DARK with background image -->
+<section
+    class="py-20 lg:py-32 relative overflow-hidden"
+    style="background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="max-w-2xl">
+            @include('components.pretitle', ['label' => 'About ILS', 'color' => '#148af4'])
+            <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
+                Engineering-led laundry support since 1987.
+            </h1>
+            <p class="font-body text-gray-300 text-xl leading-relaxed mb-8">
+                Irish Laundry Systems was built around one principle: critical laundry operations deserve proper engineering support — not just reactive call-outs when something fails.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200"
+                   data-ga-cta="about_talk_to_expert">
+                    Talk to an Expert
+                </a>
+                <a href="{{ route('request-assessment') }}"
+                   class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
+                    Request a Service Assessment
+                </a>
             </div>
         </div>
     </div>

@@ -3,7 +3,7 @@
     CSS-only marquee (no JS). Pauses on hover. Fades at edges.
     Placeholder logo loop (ILS + Electrolux) with continuous marquee.
 --}}
-<section class="bg-steel py-4 overflow-hidden relative" aria-label="Trusted by operations across Ireland">
+<section class="bg-steel py-1 overflow-hidden relative" aria-label="Trusted by operations across Ireland">
 
     <style>
         @keyframes ils-marquee {
@@ -41,7 +41,7 @@
         }
     </style>
 
-    <p class="text-center text-[11px] font-body text-blue-100 uppercase tracking-[0.22em] mb-3 px-4">
+    <p class="text-center text-[10px] font-body text-blue-100 uppercase tracking-[0.18em] mb-1 px-4">
         Trusted by operations across Ireland
     </p>
 
@@ -74,8 +74,8 @@
 
                 @foreach([1, 2, 3] as $repeat)
                     @foreach($logos as $logo)
-                    <div class="flex items-center justify-center h-10 px-2" @if($primary) role="listitem" @endif>
-                        <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] }}" class="{{ $logo['class'] }} w-auto opacity-80 grayscale brightness-0 invert" loading="lazy" decoding="async">
+                    <div class="flex items-center justify-center h-7 px-2" @if($primary) role="listitem" @endif>
+                        <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] }}" class="h-5 w-auto opacity-80 grayscale brightness-0 invert" loading="lazy" decoding="async">
                     </div>
                     @endforeach
                 @endforeach
