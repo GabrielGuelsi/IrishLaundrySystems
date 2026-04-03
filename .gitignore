@@ -16,11 +16,15 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-/project docs
-Scope and Proposal/ILS_Full_Website_Copy_Pack_v1.docx
-Scope and Proposal/ILS_Master_Website_Guide_BUILD_READY_EN.pdf
-Scope and Proposal/Project_QA_IrishLaundrySystems.pdf
-Scope and Proposal/Proposal for Web Page (1).pdf
-Scope and Proposal/Proposal_ILS_Updated_2026.pdf
 
-Scope and Proposal/ILS_Website_Bible_Gold_Premium_v5_1_FINAL_NoRisk.docx
+# Claude AI — local only, never commit
+.claude/
+
+# Scope & proposal documents — keep locally, not in repo
+Scope and Proposal/
+
+# Screenshots — working folder, not for repo
+screenshots/
+
+# WhatsApp / misc images dropped in root
+WhatsApp Image*

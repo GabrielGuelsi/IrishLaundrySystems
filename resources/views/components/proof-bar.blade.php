@@ -1,90 +1,54 @@
 {{--
-    Proof Bar — "Trusted by" infinite logo loop
-    CSS-only marquee (no JS). Pauses on hover. Fades at edges.
-    Placeholder logo loop (ILS + Electrolux) with continuous marquee.
+    Proof · Trust Strip
+    Logos left · stat right. Electrolux badge now lives inside the hero.
 --}}
-<section class="bg-steel py-4 overflow-hidden relative" aria-label="Trusted by operations across Ireland">
+<section class="bg-white border-b border-gray-100 py-5" aria-label="Trusted partner credentials">
 
-    <style>
-        @keyframes ils-marquee {
-            from { transform: translateX(0); }
-            to   { transform: translateX(-50%); }
-        }
-        .ils-marquee-track {
-            animation: ils-marquee 18s linear infinite;
-            will-change: transform;
-            user-select: none;
-        }
-        .ils-marquee-track:hover {
-            animation-play-state: paused;
-        }
-        .ils-marquee-wrap::before,
-        .ils-marquee-wrap::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 80px;
-            pointer-events: none;
-            z-index: 10;
-        }
-        .ils-marquee-wrap::before {
-            left: 0;
-            background: linear-gradient(to right, #148af4, transparent);
-        }
-        .ils-marquee-wrap::after {
-            right: 0;
-            background: linear-gradient(to left, #148af4, transparent);
-        }
-        @media (prefers-reduced-motion: reduce) {
-            .ils-marquee-track { animation: none; }
-        }
-    </style>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-    <p class="text-center text-[11px] font-body text-blue-100 uppercase tracking-[0.22em] mb-3 px-4">
-        Trusted by operations across Ireland
-    </p>
+        {{-- Logos + stat row --}}
+        <div class="flex items-center justify-between gap-6 flex-wrap">
 
-    @php
-        $logos = [
-            [
-                'src' => '/images/logo/ILS-LOGO-HORIZONTAL-WHITE.png',
-                'alt' => 'Irish Laundry Systems',
-                'class' => 'h-7 md:h-8',
-            ],
-            [
-                'src' => '/images/logo/Electrolux_logo.svg.png',
-                'alt' => 'Electrolux Professional',
-                'class' => 'h-6 md:h-7',
-            ],
-            [
-                'src' => '/images/logo/HSE-Logo-Green-NEW-no-background.png',
-                'alt' => 'Health Service Executive',
-                'class' => 'h-6 md:h-7',
-            ],
-        ];
-    @endphp
+            {{-- Left: trusted by label + logos --}}
+            <div class="flex items-center gap-6 flex-wrap">
+                <p class="font-body text-[10px] font-semibold text-gray-400 uppercase tracking-[0.22em] whitespace-nowrap">
+                    Trusted by
+                </p>
+                <div class="w-px h-5 bg-gray-200 hidden sm:block"></div>
 
-    <div class="ils-marquee-wrap relative overflow-hidden">
-        {{-- Track contains 2 identical lists — when list 1 scrolls off the left, list 2 is seamlessly in view --}}
-        <div class="ils-marquee-track flex items-center w-max" role="list" aria-label="Partner logos">
+                {{-- Real logo --}}
+                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png"
+                     alt="Health Service Executive"
+                     class="h-6 w-auto"
+                     style="filter: brightness(0) saturate(100%) invert(44%) sepia(69%) saturate(1200%) hue-rotate(195deg) brightness(105%);"
+                     loading="lazy" decoding="async">
 
-            @foreach([true, false] as $primary)
-            <div class="flex items-center gap-8 px-6 flex-nowrap" @if(!$primary) aria-hidden="true" @endif role="presentation">
-
-                @foreach([1, 2, 3] as $repeat)
-                    @foreach($logos as $logo)
-                    <div class="flex items-center justify-center h-10 px-2" @if($primary) role="listitem" @endif>
-                        <img src="{{ $logo['src'] }}" alt="{{ $logo['alt'] }}" class="{{ $logo['class'] }} w-auto opacity-80 grayscale brightness-0 invert" loading="lazy" decoding="async">
-                    </div>
-                    @endforeach
-                @endforeach
-
+                {{-- Placeholder logos — replace with real client logos when supplied --}}
+                <div class="h-6 w-24 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
+                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
+                </div>
+                <div class="h-6 w-20 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
+                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
+                </div>
+                <div class="h-6 w-28 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
+                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
+                </div>
+                <div class="h-6 w-24 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
+                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
+                </div>
+                <div class="h-6 w-20 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
+                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
+                </div>
             </div>
-            @endforeach
+
+            {{-- Right: single proof stat --}}
+            <div class="flex items-baseline gap-2">
+                <span class="font-heading font-bold text-navy text-2xl leading-none">37+</span>
+                <span class="font-body text-[11px] text-gray-400 uppercase tracking-[0.18em]">Years Service</span>
+            </div>
 
         </div>
+
     </div>
 
 </section>
-
