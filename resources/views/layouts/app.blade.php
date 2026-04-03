@@ -130,6 +130,70 @@
             outline: 2px solid #148af4;
             outline-offset: 2px;
         }
+
+        /* ── Card hover — navy wipe from bottom ── */
+        .card-hover {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+        .card-hover::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: #011E41;
+            transform: translateY(100%);
+            transition: transform 0.55s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            z-index: 0;
+        }
+        .card-hover:hover::before,
+        .card-hover.is-visible:hover::before {
+            transform: translateY(0);
+        }
+        .card-hover > * {
+            position: relative;
+            z-index: 1;
+        }
+        .card-hover:hover,
+        .card-hover.is-visible:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 16px 40px rgba(1, 30, 65, 0.20);
+        }
+        .card-hover:hover h3,
+        .card-hover.is-visible:hover h3,
+        .card-hover:hover p,
+        .card-hover.is-visible:hover p,
+        .card-hover:hover span,
+        .card-hover.is-visible:hover span {
+            color: rgba(255, 255, 255, 0.9);
+        }
+        .card-hover:hover a,
+        .card-hover.is-visible:hover a {
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .card-hover:hover svg,
+        .card-hover.is-visible:hover svg {
+            stroke: rgba(255, 255, 255, 0.85);
+        }
+        .card-hover:hover .border-border,
+        .card-hover.is-visible:hover .border-border {
+            border-color: rgba(255, 255, 255, 0.15);
+        }
+
+        /* ── Scroll reveal ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 1.1s ease, transform 1.1s ease;
+        }
+        .reveal.is-visible {
+            opacity: 1;
+            transform: none;
+        }
+        .reveal-left  { transform: translateX(-48px); }
+        .reveal-right { transform: translateX(48px); }
+        .reveal-left.is-visible,
+        .reveal-right.is-visible { transform: none; }
     </style>
 </head>
 <body class="antialiased">
@@ -174,6 +238,23 @@
                 });
             });
         })();
+    </script>
+
+    <!-- Scroll reveal -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var observer = new IntersectionObserver(function (entries) {
+                entries.forEach(function (entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12 });
+            document.querySelectorAll('.reveal').forEach(function (el) {
+                observer.observe(el);
+            });
+        });
     </script>
 
 </body>

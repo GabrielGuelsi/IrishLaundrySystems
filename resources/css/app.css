@@ -5,6 +5,53 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
+/* ── Card hover flip ── */
+.card-hover {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, opacity 0.65s ease;
+}
+/* Use higher specificity (.is-visible:hover) so it beats .reveal.is-visible's transform:none */
+.card-hover:hover,
+.card-hover.is-visible:hover {
+    background-color: #011E41;
+    transform: translateY(-4px) !important;
+    box-shadow: 0 16px 40px rgba(1, 30, 65, 0.20);
+}
+.card-hover:hover h3,
+.card-hover.is-visible:hover h3,
+.card-hover:hover p,
+.card-hover.is-visible:hover p,
+.card-hover:hover span,
+.card-hover.is-visible:hover span {
+    color: rgba(255, 255, 255, 0.9);
+}
+.card-hover:hover a,
+.card-hover.is-visible:hover a {
+    color: rgba(255, 255, 255, 0.7);
+}
+.card-hover:hover svg,
+.card-hover.is-visible:hover svg {
+    stroke: rgba(255, 255, 255, 0.85);
+}
+.card-hover:hover .border-border,
+.card-hover.is-visible:hover .border-border {
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ── Scroll reveal ── */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+.reveal-left  { transform: translateX(-48px); }
+.reveal-right { transform: translateX(48px); }
+.reveal-left.is-visible,
+.reveal-right.is-visible { transform: none; }
+
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
