@@ -41,7 +41,7 @@
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Both have their place. Here's what makes rental the right choice for some operations.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-bg border-2 border-orange rounded-xl p-6 lg:p-8">
+            <div class="bg-bg border-2 border-orange rounded-2xl p-6 lg:p-8">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-lg bg-orange/10 flex items-center justify-center">
                         <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -68,7 +68,7 @@
                     @endforeach
                 </ul>
             </div>
-            <div class="bg-bg border border-border rounded-xl p-6 lg:p-8">
+            <div class="bg-bg border border-border rounded-2xl p-6 lg:p-8">
                 <div class="flex items-center gap-3 mb-5">
                     <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center">
                         <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

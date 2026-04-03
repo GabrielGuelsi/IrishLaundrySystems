@@ -6,7 +6,7 @@
 
         <div class="space-y-3" x-data="{ open: null }">
             @foreach ($faqs as $i => $faq)
-            <div class="bg-white border border-border rounded-xl overflow-hidden shadow-card">
+            <div class="bg-white border border-border rounded-2xl overflow-hidden shadow-card">
                 <button
                     @click="open === {{ $i }} ? open = null : open = {{ $i }}"
                     class="w-full flex items-center justify-between gap-4 px-6 py-4 text-left cursor-pointer hover:bg-bg transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange focus-visible:ring-offset-2"

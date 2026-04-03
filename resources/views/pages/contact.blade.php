@@ -46,7 +46,7 @@
             <!-- LEFT: Contact info + map -->
             <div class="lg:col-span-1 space-y-6">
                 <!-- Contact details -->
-                <div class="bg-white border border-border rounded-xl p-6">
+                <div class="bg-white border border-border rounded-2xl p-6">
                     <h2 class="font-heading font-bold text-navy text-lg mb-5">Get in Touch</h2>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
@@ -89,7 +89,7 @@
                 </div>
 
                 <!-- Response statement -->
-                <div class="bg-steel text-white rounded-xl p-5">
+                <div class="bg-steel text-white rounded-2xl p-5">
                     <div class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-orange flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -104,7 +104,7 @@
                 </div>
 
                 <!-- Map placeholder -->
-                <div class="bg-white border border-border rounded-xl overflow-hidden">
+                <div class="bg-white border border-border rounded-2xl overflow-hidden">
                     <div class="bg-muted h-48 flex items-center justify-center">
                         <div class="text-center">
                             <svg class="w-10 h-10 text-gray-300 mx-auto mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
@@ -121,7 +121,7 @@
                 </div>
 
                 <!-- Electrolux badge -->
-                <div class="bg-navy rounded-xl p-4 flex items-center gap-3">
+                <div class="bg-navy rounded-2xl p-4 flex items-center gap-3">
                     <svg class="w-8 h-8 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
                     </svg>
@@ -134,12 +134,12 @@
 
             <!-- RIGHT: Contact Form -->
             <div class="lg:col-span-2">
-                <div class="bg-white border border-border rounded-xl p-6 lg:p-8">
+                <div class="bg-white border border-border rounded-2xl p-6 lg:p-8">
                     <h2 class="font-heading font-bold text-navy text-xl mb-2">Send a Request</h2>
                     <p class="font-body text-gray-500 text-sm mb-6">Fill in as much detail as you can — the more context you provide, the better we can respond.</p>
 
                     @if (session('success'))
-                    <div class="bg-green-50 border border-green-200 rounded-xl p-4 mb-6 flex items-start gap-3">
+                    <div class="bg-green-50 border border-green-200 rounded-2xl p-4 mb-6 flex items-start gap-3">
                         <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
@@ -148,7 +148,7 @@
                     @endif
 
                     @if ($errors->any())
-                    <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
+                    <div class="bg-red-50 border border-red-200 rounded-2xl p-4 mb-6">
                         <ul class="space-y-1">
                             @foreach ($errors->all() as $error)
                             <li class="font-body text-red-700 text-sm">{{ $error }}</li>

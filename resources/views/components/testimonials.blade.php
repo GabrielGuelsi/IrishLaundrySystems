@@ -6,7 +6,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10">{{ $heading }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
-            <div class="bg-white border border-border rounded-xl flex flex-col overflow-hidden">
+            <div class="bg-white border border-border rounded-2xl flex flex-col overflow-hidden">
                 <img src="/images/about/testimonial-1.jpg" alt="Operations Manager" class="w-full h-52 object-cover object-top">
                 <div class="p-6 lg:p-8 flex flex-col flex-1">
                     <blockquote class="flex-1">
@@ -21,7 +21,7 @@
                 </div>
             </div>
 
-            <div class="bg-white border border-border rounded-xl flex flex-col overflow-hidden">
+            <div class="bg-white border border-border rounded-2xl flex flex-col overflow-hidden">
                 <img src="/images/about/testimonial-2.jpg" alt="Facilities Manager" class="w-full h-52 object-cover object-top">
                 <div class="p-6 lg:p-8 flex flex-col flex-1">
                     <blockquote class="flex-1">
@@ -36,7 +36,7 @@
                 </div>
             </div>
 
-            <div class="bg-white border border-border rounded-xl flex flex-col overflow-hidden">
+            <div class="bg-white border border-border rounded-2xl flex flex-col overflow-hidden">
                 <img src="/images/about/testimonial-3.jpg" alt="Hotel General Manager" class="w-full h-52 object-cover object-top">
                 <div class="p-6 lg:p-8 flex flex-col flex-1">
                     <blockquote class="flex-1">
@@ -61,7 +61,7 @@
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
-            <div class="bg-navy-light border border-white/10 rounded-xl flex flex-col overflow-hidden">
+            <div class="bg-navy-light border border-white/10 rounded-2xl flex flex-col overflow-hidden">
                 <img src="/images/about/testimonial-1.jpg" alt="Operations Manager" class="w-full h-52 object-cover object-top">
                 <div class="p-6 lg:p-8 flex flex-col flex-1">
                     <div class="flex gap-1 mb-4">
@@ -83,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="bg-navy-light border border-white/10 rounded-xl flex flex-col overflow-hidden">
+            <div class="bg-navy-light border border-white/10 rounded-2xl flex flex-col overflow-hidden">
                 <img src="/images/about/testimonial-2.jpg" alt="Facilities Manager" class="w-full h-52 object-cover object-top">
                 <div class="p-6 lg:p-8 flex flex-col flex-1">
                     <div class="flex gap-1 mb-4">
@@ -105,7 +105,7 @@
                 </div>
             </div>
 
-            <div class="bg-navy-light border border-white/10 rounded-xl flex flex-col overflow-hidden">
+            <div class="bg-navy-light border border-white/10 rounded-2xl flex flex-col overflow-hidden">
                 <img src="/images/about/testimonial-3.jpg" alt="Hotel General Manager" class="w-full h-52 object-cover object-top">
                 <div class="p-6 lg:p-8 flex flex-col flex-1">
                     <div class="flex gap-1 mb-4">

@@ -31,7 +31,7 @@
 
             <!-- Filter Sidebar -->
             <aside class="lg:w-64 flex-shrink-0">
-                <div class="bg-white border border-border rounded-xl p-5 sticky top-24" x-data="{ typeOpen: true, capacityOpen: true, sectorOpen: true }">
+                <div class="bg-white border border-border rounded-2xl p-5 sticky top-24" x-data="{ typeOpen: true, capacityOpen: true, sectorOpen: true }">
                     <h3 class="font-heading font-semibold text-navy text-base mb-4">Filter Equipment</h3>
 
                     <!-- Type filter -->
@@ -102,7 +102,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
                     @forelse ($products as $product)
                     <a href="{{ route('equipment.product', [$categorySlug, $product->slug]) }}"
-                       class="group bg-white border border-border rounded-xl overflow-hidden hover:border-navy hover:shadow-card-hover transition-all duration-200">
+                       class="group bg-white border border-border rounded-2xl overflow-hidden hover:border-navy hover:shadow-card-hover transition-all duration-200">
                         <!-- Product image -->
                         <div class="aspect-video bg-bg border-b border-border flex items-center justify-center overflow-hidden">
                             @if ($product->image_path)

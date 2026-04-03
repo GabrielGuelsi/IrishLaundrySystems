@@ -181,7 +181,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
             <!-- Service Contracts -->
-            <div class="bg-bg border border-border rounded-xl p-6 flex flex-col card-hover reveal">
+            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/>
@@ -196,7 +196,7 @@
             </div>
 
             <!-- Repairs & Call-outs -->
-            <div class="bg-bg border border-border rounded-xl p-6 flex flex-col card-hover reveal">
+            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
@@ -211,7 +211,7 @@
             </div>
 
             <!-- Equipment Supply -->
-            <div class="bg-bg border border-border rounded-xl p-6 flex flex-col card-hover reveal">
+            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
@@ -226,7 +226,7 @@
             </div>
 
             <!-- Equipment Rental -->
-            <div class="bg-bg border border-border rounded-xl p-6 flex flex-col card-hover reveal">
+            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
@@ -307,25 +307,25 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
             <!-- White -->
-            <div class="bg-white border border-border rounded-xl p-6 reveal">
+            <div class="bg-white border border-border rounded-2xl p-6 reveal">
                 <h3 class="font-heading font-bold text-navy text-lg mb-2">Throughput First</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Maintenance structured around your shift patterns and production schedule.</p>
             </div>
 
             <!-- Navy -->
-            <div class="bg-navy rounded-xl p-6 reveal">
+            <div class="bg-navy rounded-2xl p-6 reveal">
                 <h3 class="font-heading font-bold text-white text-lg mb-2">First Visit Fix</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">Engineers dispatched with genuine OEM parts — focused on resolution, not callbacks.</p>
             </div>
 
             <!-- White -->
-            <div class="bg-white border border-border rounded-xl p-6 reveal">
+            <div class="bg-white border border-border rounded-2xl p-6 reveal">
                 <h3 class="font-heading font-bold text-navy text-lg mb-2">Lifecycle Data</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Service history per machine — making the maintain-versus-replace decision visible.</p>
             </div>
 
             <!-- Navy -->
-            <div class="bg-navy rounded-xl p-6 reveal">
+            <div class="bg-navy rounded-2xl p-6 reveal">
                 <h3 class="font-heading font-bold text-white text-lg mb-2">Multi-Site</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">One contract covering all your locations — consistent standards, single point of contact.</p>
             </div>
@@ -339,7 +339,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
-            <a href="{{ route('equipment') }}" class="block bg-white border border-border rounded-xl p-6 card-hover reveal">
+            <a href="{{ route('equipment') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
@@ -354,7 +354,7 @@
                 </span>
             </a>
 
-            <a href="{{ route('service-contracts') }}" class="block bg-white border border-border rounded-xl p-6 card-hover reveal">
+            <a href="{{ route('service-contracts') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/>
@@ -369,7 +369,7 @@
                 </span>
             </a>
 
-            <a href="{{ route('contact') }}" class="block bg-white border border-border rounded-xl p-6 card-hover reveal">
+            <a href="{{ route('contact') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
                 <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4">
                     <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"/>

@@ -363,14 +363,14 @@
                     Door opening, loading height, and unloading flow affect every shift. These are buying arguments, not footnotes.
                 </p>
                 <div class="grid grid-cols-2 gap-3 mb-6">
-                    <div class="bg-bg rounded-xl overflow-hidden h-36"></div>
-                    <div class="bg-bg rounded-xl overflow-hidden h-36">
+                    <div class="bg-bg rounded-2xl overflow-hidden h-36"></div>
+                    <div class="bg-bg rounded-2xl overflow-hidden h-36">
                         <img src="/images/healthcare/hero-panel.jpg" alt="Door access detail" class="w-full h-full object-cover">
                     </div>
-                    <div class="bg-bg rounded-xl overflow-hidden h-36">
+                    <div class="bg-bg rounded-2xl overflow-hidden h-36">
                         <img src="/images/healthcare/operator.jpg" alt="Operator at machine" class="w-full h-full object-cover">
                     </div>
-                    <div class="bg-bg rounded-xl overflow-hidden h-36">
+                    <div class="bg-bg rounded-2xl overflow-hidden h-36">
                         <img src="/images/healthcare/engineer.jpg" alt="Control panel detail" class="w-full h-full object-cover">
                     </div>
                 </div>
@@ -412,7 +412,7 @@
                     </li>
                     @endforeach
                 </ul>
-                <div class="rounded-xl overflow-hidden h-52 bg-white/5">
+                <div class="rounded-2xl overflow-hidden h-52 bg-white/5">
                     <img src="/images/healthcare/plant-room.jpg" alt="Healthcare plant room" class="w-full h-full object-cover">
                 </div>
             </div>

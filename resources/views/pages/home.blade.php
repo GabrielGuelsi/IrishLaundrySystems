@@ -84,7 +84,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
             <!-- 01 — Service Contracts -->
-            <div class="relative bg-white rounded-xl shadow-sm border-l-4 border-orange p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+            <div class="relative bg-white rounded-2xl shadow-sm border-l-4 border-orange p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
                 <span class="absolute top-4 right-5 font-heading font-bold text-6xl text-navy/5 select-none leading-none" aria-hidden="true">01</span>
                 <div class="w-11 h-11 rounded-lg bg-orange/10 flex items-center justify-center mb-5">
                     <x-icon class="w-6 h-6 text-orange">
@@ -104,7 +104,7 @@
             </div>
 
             <!-- 02 — Repairs & Call-outs -->
-            <div class="relative bg-white rounded-xl shadow-sm border-l-4 border-steel p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+            <div class="relative bg-white rounded-2xl shadow-sm border-l-4 border-steel p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
                 <span class="absolute top-4 right-5 font-heading font-bold text-6xl text-navy/5 select-none leading-none" aria-hidden="true">02</span>
                 <div class="w-11 h-11 rounded-lg bg-steel/10 flex items-center justify-center mb-5">
                     <x-icon class="w-6 h-6 text-steel">
@@ -124,7 +124,7 @@
             </div>
 
             <!-- 03 — Equipment Rental -->
-            <div class="relative bg-white rounded-xl shadow-sm border-l-4 border-navy p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
+            <div class="relative bg-white rounded-2xl shadow-sm border-l-4 border-navy p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
                 <span class="absolute top-4 right-5 font-heading font-bold text-6xl text-navy/5 select-none leading-none" aria-hidden="true">03</span>
                 <div class="w-11 h-11 rounded-lg bg-navy/10 flex items-center justify-center mb-5">
                     <x-icon class="w-6 h-6 text-navy">
@@ -163,8 +163,8 @@
             </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                <div class="w-12 h-12 rounded-xl bg-orange/20 flex items-center justify-center mx-auto mb-4">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 rounded-2xl bg-orange/20 flex items-center justify-center mx-auto mb-4">
                     <x-icon class="w-6 h-6 text-orange">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/>
                     </x-icon>
@@ -172,8 +172,8 @@
                 <h3 class="font-heading font-semibold text-white text-base mb-2">Electrolux Professional</h3>
                 <p class="font-body text-gray-400 text-sm leading-relaxed">Manufacturer platform, engineering standards, genuine parts network and technical documentation across the full equipment range.</p>
             </div>
-            <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                <div class="w-12 h-12 rounded-xl bg-steel/30 flex items-center justify-center mx-auto mb-4">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 rounded-2xl bg-steel/30 flex items-center justify-center mx-auto mb-4">
                     <x-icon class="w-6 h-6 text-steel-light">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
@@ -182,8 +182,8 @@
                 <h3 class="font-heading font-semibold text-white text-base mb-2">ILS — Local Execution</h3>
                 <p class="font-body text-gray-400 text-sm leading-relaxed">Field response, structured service contracts, preventive maintenance and reactive support delivered by engineers who know Irish laundry operations.</p>
             </div>
-            <div class="bg-white/5 border border-white/10 rounded-xl p-6 text-center">
-                <div class="w-12 h-12 rounded-xl bg-emerald/20 flex items-center justify-center mx-auto mb-4">
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
+                <div class="w-12 h-12 rounded-2xl bg-emerald/20 flex items-center justify-center mx-auto mb-4">
                     <x-icon class="w-6 h-6 text-emerald">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                     </x-icon>
@@ -211,7 +211,7 @@
             <p class="font-body text-gray-600 text-lg max-w-xl mx-auto">Commercial laundry equipment supplied, installed and supported across the Republic of Ireland.</p>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 mb-10">
-            <a href="{{ route('equipment.category', 'washers') }}" class="bg-white border border-border rounded-xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
+            <a href="{{ route('equipment.category', 'washers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
                 <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
                     <x-icon class="w-5 h-5 text-steel">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
@@ -219,7 +219,7 @@
                 </div>
                 <p class="font-heading font-semibold text-navy text-sm group-hover:text-steel transition-colors">Commercial Washers</p>
             </a>
-            <a href="{{ route('equipment.category', 'dryers') }}" class="bg-white border border-border rounded-xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
+            <a href="{{ route('equipment.category', 'dryers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
                 <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
                     <x-icon class="w-5 h-5 text-steel">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
@@ -227,7 +227,7 @@
                 </div>
                 <p class="font-heading font-semibold text-navy text-sm group-hover:text-steel transition-colors">Commercial Dryers</p>
             </a>
-            <a href="{{ route('equipment.category', 'barrier-washers') }}" class="bg-white border border-border rounded-xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
+            <a href="{{ route('equipment.category', 'barrier-washers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
                 <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
                     <x-icon class="w-5 h-5 text-steel">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
@@ -235,7 +235,7 @@
                 </div>
                 <p class="font-heading font-semibold text-navy text-sm group-hover:text-steel transition-colors">Barrier Washers</p>
             </a>
-            <a href="{{ route('equipment.category', 'ironers') }}" class="bg-white border border-border rounded-xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
+            <a href="{{ route('equipment.category', 'ironers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
                 <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
                     <x-icon class="w-5 h-5 text-steel">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z"/>
@@ -290,7 +290,7 @@
                     </a>
                 </div>
             </div>
-            <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
+            <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-card">
                 <h3 class="font-heading font-bold text-navy text-lg mb-1">Request a Service Assessment</h3>
                 <p class="font-body text-gray-500 text-sm mb-6">We aim to respond within 24 hours.</p>
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
