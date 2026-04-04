@@ -245,7 +245,7 @@
             <div class="flex items-center gap-0 mb-6">
                 @foreach($milestones as $i => $m)
                 <button class="tl-dot flex-1 group flex flex-col items-center gap-2 py-2 cursor-pointer" data-index="{{ $i }}">
-                    <span class="tl-dot-label font-body font-bold text-xs sm:text-sm transition-colors {{ $i === 0 ? 'text-[#148af4]' : 'text-white group-hover:text-white' }}" style="{{ $i !== 0 ? 'opacity:0.5' : '' }}">{{ $m['year'] }}</span>
+                    <span class="tl-dot-label font-body font-bold text-xs sm:text-sm text-white transition-colors" style="{{ $i !== 0 ? 'opacity:0.5' : '' }}">{{ $m['year'] }}</span>
                     <span class="tl-dot-pip w-3 h-3 rounded-full border-2 transition-all {{ $i === 0 ? 'border-[#148af4] bg-[#148af4]' : 'border-white/30 bg-transparent group-hover:border-white/60' }}"></span>
                 </button>
                 @if(!$loop->last)
@@ -281,7 +281,6 @@
         slides[current].classList.replace('opacity-100','opacity-0');
         slides[current].classList.replace('pointer-events-auto','pointer-events-none');
 
-        labels[current].classList.remove('text-[#148af4]');
         labels[current].style.opacity = '0.5';
         pips[current].classList.remove('border-[#148af4]','bg-[#148af4]');
         pips[current].classList.add('border-white/30','bg-transparent');
@@ -291,7 +290,6 @@
         slides[current].classList.replace('opacity-0','opacity-100');
         slides[current].classList.replace('pointer-events-none','pointer-events-auto');
 
-        labels[current].classList.add('text-[#148af4]');
         labels[current].style.opacity = '1';
         pips[current].classList.add('border-[#148af4]','bg-[#148af4]');
         pips[current].classList.remove('border-white/30','bg-transparent');
