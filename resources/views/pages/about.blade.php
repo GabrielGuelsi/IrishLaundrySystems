@@ -213,62 +213,56 @@
         ];
         @endphp
 
-        <!-- Main slide area -->
-        <div class="relative">
+        <!-- Slides -->
+        <div id="tl-slides" class="relative min-h-[360px] lg:min-h-[340px]">
+            @foreach($milestones as $i => $m)
+            <div class="tl-slide absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center transition-opacity duration-500 {{ $i === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}">
 
-            <!-- Prev / Next arrows -->
-            <button id="tl-prev" aria-label="Previous"
-                class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-            </button>
-            <button id="tl-next" aria-label="Next"
-                class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-            </button>
-
-            <!-- Slides -->
-            <div id="tl-slides" class="relative min-h-[340px] px-16 lg:px-20">
-                @foreach($milestones as $i => $m)
-                <div class="tl-slide absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center transition-opacity duration-500 {{ $i === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}">
-
-                    <!-- Left: year + text -->
-                    <div>
-                        <div class="font-heading font-bold text-[#148af4] text-6xl lg:text-8xl leading-none mb-2">{{ $m['year'] }}</div>
-                        <div class="w-12 h-1 bg-[#148af4] mb-6 rounded-full"></div>
-                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1">
-                            {{ $m['title'] }}
-                            <span class="text-white/50 font-normal"> — {{ $m['subtitle'] }}</span>
-                        </h3>
-                        <p class="font-body text-white/70 text-base leading-relaxed mt-4 max-w-lg">{{ $m['body'] }}</p>
-                    </div>
-
-                    <!-- Right: circular image -->
-                    <div class="flex justify-center lg:justify-end">
-                        <div class="w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-white/10 flex-shrink-0">
-                            <img src="{{ $m['img'] }}" alt="{{ $m['title'] }}" class="w-full h-full object-cover">
-                        </div>
-                    </div>
-
+                <!-- Left: year + text -->
+                <div>
+                    <div class="font-heading font-bold text-[#148af4] text-6xl lg:text-8xl leading-none mb-2">{{ $m['year'] }}</div>
+                    <div class="w-12 h-1 bg-[#148af4] mb-6 rounded-full"></div>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1">
+                        {{ $m['title'] }}
+                        <span class="text-white font-normal opacity-70"> — {{ $m['subtitle'] }}</span>
+                    </h3>
+                    <p class="font-body text-white text-base leading-relaxed mt-4 max-w-lg opacity-80">{{ $m['body'] }}</p>
                 </div>
-                @endforeach
-            </div>
 
+                <!-- Right: circular image — hidden on mobile -->
+                <div class="hidden lg:flex justify-end">
+                    <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-white/10 flex-shrink-0">
+                        <img src="{{ $m['img'] }}" alt="{{ $m['title'] }}" class="w-full h-full object-cover">
+                    </div>
+                </div>
+
+            </div>
+            @endforeach
         </div>
 
-        <!-- Year bar -->
-        <div class="mt-16 flex items-center gap-0">
-            @foreach($milestones as $i => $m)
-            <button class="tl-dot flex-1 group flex flex-col items-center gap-2 py-2 cursor-pointer" data-index="{{ $i }}">
-                <span class="tl-dot-label font-body font-bold text-sm transition-colors {{ $i === 0 ? 'text-[#148af4]' : 'text-white/40 group-hover:text-white/70' }}">{{ $m['year'] }}</span>
-                <span class="tl-dot-pip w-3 h-3 rounded-full border-2 transition-all {{ $i === 0 ? 'border-[#148af4] bg-[#148af4]' : 'border-white/30 bg-transparent group-hover:border-white/60' }}"></span>
+        <!-- Prev / Next + Year bar -->
+        <div class="mt-12">
+            <div class="flex items-center gap-0 mb-6">
+                @foreach($milestones as $i => $m)
+                <button class="tl-dot flex-1 group flex flex-col items-center gap-2 py-2 cursor-pointer" data-index="{{ $i }}">
+                    <span class="tl-dot-label font-body font-bold text-xs sm:text-sm transition-colors {{ $i === 0 ? 'text-[#148af4]' : 'text-white group-hover:text-white' }}" style="{{ $i !== 0 ? 'opacity:0.5' : '' }}">{{ $m['year'] }}</span>
+                    <span class="tl-dot-pip w-3 h-3 rounded-full border-2 transition-all {{ $i === 0 ? 'border-[#148af4] bg-[#148af4]' : 'border-white/30 bg-transparent group-hover:border-white/60' }}"></span>
+                </button>
                 @if(!$loop->last)
-                <span class="sr-only">—</span>
+                <div class="tl-line flex-1 h-px bg-white/20 mb-2"></div>
                 @endif
-            </button>
-            @if(!$loop->last)
-            <div class="tl-line flex-1 h-px bg-white/20 mb-2"></div>
-            @endif
-            @endforeach
+                @endforeach
+            </div>
+            <div class="flex items-center gap-4">
+                <button id="tl-prev" aria-label="Previous"
+                    class="w-11 h-11 rounded-full border border-white/30 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors flex-shrink-0">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                </button>
+                <button id="tl-next" aria-label="Next"
+                    class="w-11 h-11 rounded-full border border-white/30 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors flex-shrink-0">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                </button>
+            </div>
         </div>
 
     </div>
@@ -288,7 +282,7 @@
         slides[current].classList.replace('pointer-events-auto','pointer-events-none');
 
         labels[current].classList.remove('text-[#148af4]');
-        labels[current].classList.add('text-white/40');
+        labels[current].style.opacity = '0.5';
         pips[current].classList.remove('border-[#148af4]','bg-[#148af4]');
         pips[current].classList.add('border-white/30','bg-transparent');
 
@@ -298,7 +292,7 @@
         slides[current].classList.replace('pointer-events-none','pointer-events-auto');
 
         labels[current].classList.add('text-[#148af4]');
-        labels[current].classList.remove('text-white/40');
+        labels[current].style.opacity = '1';
         pips[current].classList.add('border-[#148af4]','bg-[#148af4]');
         pips[current].classList.remove('border-white/30','bg-transparent');
     }
