@@ -218,16 +218,16 @@
 
             <!-- Prev / Next arrows -->
             <button id="tl-prev" aria-label="Previous"
-                class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-10 z-10 w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors">
+                class="absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors">
                 <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
             </button>
             <button id="tl-next" aria-label="Next"
-                class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-10 z-10 w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors">
+                class="absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 rounded-full border border-white/20 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors">
                 <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </button>
 
             <!-- Slides -->
-            <div id="tl-slides" class="relative min-h-[340px]">
+            <div id="tl-slides" class="relative min-h-[340px] px-16 lg:px-20">
                 @foreach($milestones as $i => $m)
                 <div class="tl-slide absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center transition-opacity duration-500 {{ $i === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}">
 
