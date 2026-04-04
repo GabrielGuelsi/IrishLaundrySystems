@@ -449,7 +449,7 @@
                 ['washer-extractor',    'Washer-Extractors',          'High-spin extraction for faster drying cycles and lower energy consumption.'],
             ] as [$img, $name, $desc])
             <div class="group reveal">
-                <div class="h-72 flex items-end justify-center mb-4">
+                <div class="h-96 flex items-end justify-center mb-4">
                     <img src="/images/equipment/{{ $img }}.jpg"
                          alt="{{ $name }}"
                          class="max-h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500">
