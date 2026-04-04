@@ -272,24 +272,30 @@
             @foreach([
                 [
                     'title' => 'Barrier Washer-Extractors',
+                    'img'   => 'barrier-washer',
                     'desc'  => 'Physical separation of soiled and clean zones — the infection control standard for care and nursing home environments.',
                 ],
                 [
                     'title' => 'High-Capacity Washers',
+                    'img'   => 'high-capacity-washer',
                     'desc'  => 'Machines sized to continuous resident linen demand — processing clothing, bedding and staff uniforms without bottleneck.',
                 ],
                 [
                     'title' => 'Commercial Tumble Dryers',
+                    'img'   => 'commercial-dryer',
                     'desc'  => 'Fast-cycle drying to maintain uninterrupted linen flow across a seven-day operation.',
                 ],
                 [
                     'title' => 'Flatwork Ironers',
+                    'img'   => 'flatwork-ironer',
                     'desc'  => 'Finishing equipment for care facilities maintaining consistent linen standards for residents and staff.',
                 ],
             ] as $item)
             <a href="{{ route('equipment') }}" class="bg-bg border border-border rounded-2xl overflow-hidden card-hover flex flex-col reveal">
-                <div class="h-48 bg-bg flex items-center justify-center border-b border-border">
-                    <span class="font-body text-xs text-gray-400">Equipment image</span>
+                <div class="h-48 overflow-hidden border-b border-border">
+                    <img src="/images/equipment/{{ $item['img'] }}.jpg"
+                         alt="{{ $item['title'] }}"
+                         class="w-full h-full object-cover">
                 </div>
                 <div class="p-6 flex-1 flex flex-col">
                     <h3 class="font-heading font-semibold text-navy text-base mb-2">{{ $item['title'] }}</h3>

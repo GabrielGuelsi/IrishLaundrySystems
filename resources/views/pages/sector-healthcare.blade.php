@@ -446,9 +446,10 @@
                 ['Washer-Extractor', 'Washer-Extractors', 'High-spin extraction for faster drying cycles and lower energy consumption.'],
             ] as [$category, $name, $desc])
             <div class="bg-bg border border-border rounded-2xl overflow-hidden flex flex-col card-hover reveal" style="transition-delay: {{ $loop->index * 0.08 }}s;">
-                <!-- Image placeholder — replace with product image -->
-                <div class="h-48 bg-bg flex items-center justify-center border-b border-border">
-                    <span class="font-body text-xs text-gray-400">{{ $category }} image</span>
+                <div class="h-48 overflow-hidden border-b border-border">
+                    <img src="/images/equipment/{{ strtolower(str_replace([' ', '/'], ['-', ''], $category)) }}.jpg"
+                         alt="{{ $name }}"
+                         class="w-full h-full object-cover">
                 </div>
                 <div class="p-5 flex flex-col flex-1">
                     <p class="text-xs font-body font-bold uppercase tracking-widest text-gray-400 mb-2">{{ $category }}</p>
