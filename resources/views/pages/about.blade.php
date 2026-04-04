@@ -224,9 +224,9 @@
                     <div class="w-12 h-1 bg-[#148af4] mb-6 rounded-full"></div>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1">
                         {{ $m['title'] }}
-                        <span class="text-white font-normal opacity-70"> — {{ $m['subtitle'] }}</span>
+                        <span class="text-white font-normal"> — {{ $m['subtitle'] }}</span>
                     </h3>
-                    <p class="font-body text-white text-base leading-relaxed mt-4 max-w-lg opacity-80">{{ $m['body'] }}</p>
+                    <p class="font-body text-white text-base leading-relaxed mt-4 max-w-lg">{{ $m['body'] }}</p>
                 </div>
 
                 <!-- Right: circular image — hidden on mobile -->
