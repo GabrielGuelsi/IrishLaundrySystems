@@ -470,39 +470,6 @@
     </div>
 </section>
 
-<!-- 8. PROOF POINTS -->
-<section class="py-16 lg:py-20 bg-white border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-2xl mb-10 reveal">
-            <div class="flex items-center gap-2 mb-4">
-                <span class="w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                <span class="font-body text-xs font-bold uppercase tracking-widest text-gray-400">Healthcare Proof Points</span>
-            </div>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">
-                Stronger, fewer proof blocks — not a row of generic benefits.
-            </h2>
-        </div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="bg-white border border-border rounded-2xl p-6 reveal" style="transition-delay: 0.0s;">
-                <p class="font-heading font-bold text-navy text-4xl mb-2">4-star</p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">ERGOCERT ergonomic rating — operator-centred design.</p>
-            </div>
-            <div class="bg-navy rounded-2xl p-6 reveal" style="transition-delay: 0.1s;">
-                <p class="font-heading font-bold text-white text-4xl mb-2">40N</p>
-                <p class="font-body text-gray-300 text-sm leading-relaxed">Easier door handling. Measurably reduced operator effort.</p>
-            </div>
-            <div class="bg-white border border-border rounded-2xl p-6 reveal" style="transition-delay: 0.2s;">
-                <p class="font-heading font-bold text-navy text-3xl mb-2">Clean / Dirty</p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Separation logic made explicit — not assumed.</p>
-            </div>
-            <div class="bg-navy rounded-2xl p-6 reveal" style="transition-delay: 0.3s;">
-                <p class="font-heading font-bold text-white text-3xl mb-2">Traceability</p>
-                <p class="font-body text-gray-300 text-sm leading-relaxed">Monitored cycle records. Holds up to audit.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- 8. HEALTHCARE ROUTE -->
 <section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
