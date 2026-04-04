@@ -421,64 +421,6 @@
     </div>
 </section>
 
-<!-- 7. HEALTHCARE EQUIPMENT -->
-<section class="py-16 lg:py-24 bg-white border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
-        <div class="max-w-2xl mb-12 reveal">
-            <x-pretitle label="Healthcare Equipment" />
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-                Everything your healthcare laundry needs, in a single partner.
-            </h2>
-            <p class="font-body text-gray-500 leading-relaxed">
-                Electrolux Professional equipment — specified, installed, and maintained by ILS.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
-
-            @foreach([
-                ['Barrier Washer', 'Barrier Washer-Extractors', 'Physical separation of soiled and clean zones — essential for infection control.'],
-                ['High-Capacity Washer', 'High-Capacity Washers', 'Throughput-matched machines for high-volume linen cycles in larger healthcare sites.'],
-                ['Commercial Dryer', 'Commercial Tumble Dryers', '4-star ERGOCERT rating. Moisture Balance for precise drying without overdrying.'],
-                ['Flatwork Ironer', 'Flatwork Ironers', 'High-performance finishing with DIAMMS™ technology and Hygiene Guard compliance.'],
-                ['Chest Ironer', 'Chest & Roller Ironers', 'Compact and flexible ironing solutions for smaller healthcare laundry rooms.'],
-                ['Washer-Extractor', 'Washer-Extractors', 'High-spin extraction for faster drying cycles and lower energy consumption.'],
-            ] as [$category, $name, $desc])
-            <div class="bg-bg border border-border rounded-2xl overflow-hidden flex flex-col card-hover reveal" style="transition-delay: {{ $loop->index * 0.08 }}s;">
-                <div class="h-48 overflow-hidden border-b border-border">
-                    <img src="/images/equipment/{{ strtolower(str_replace([' ', '/'], ['-', ''], $category)) }}.jpg"
-                         alt="{{ $name }}"
-                         class="w-full h-full object-cover">
-                </div>
-                <div class="p-5 flex flex-col flex-1">
-                    <p class="text-xs font-body font-bold uppercase tracking-widest text-gray-400 mb-2">{{ $category }}</p>
-                    <h3 class="font-heading font-bold text-navy text-base mb-2">{{ $name }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">{{ $desc }}</p>
-                    <a href="{{ route('equipment') }}" class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                        View equipment
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                </div>
-            </div>
-            @endforeach
-
-        </div>
-
-        <div class="flex items-center gap-4">
-            <a href="{{ route('equipment') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
-                Browse all healthcare equipment
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-            </a>
-            <a href="{{ route('contact') }}" class="font-body text-sm text-gray-500 hover:text-navy transition-colors">
-                Not sure what you need? Talk to an engineer →
-            </a>
-        </div>
-
-    </div>
-</section>
-
 <!-- 8. PROOF POINTS -->
 <section class="py-16 lg:py-20 bg-white border-y border-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
