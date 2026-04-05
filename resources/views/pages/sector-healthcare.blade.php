@@ -376,37 +376,6 @@
     </div>
 </section>
 
-<!-- STATEMENT SECTION -->
-<section class="relative min-h-[480px] flex items-center py-20 lg:py-28 overflow-hidden">
-    <div class="absolute inset-0">
-        <img src="/images/healthcare/plant-room.jpg" alt="" class="w-full h-full object-cover object-center">
-        <div class="absolute inset-0" style="background:linear-gradient(90deg,rgba(1,30,65,0.93) 0%,rgba(1,30,65,0.80) 55%,rgba(1,30,65,0.30) 100%);"></div>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div class="max-w-2xl reveal reveal-left">
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
-                Laundry is a direct cost.<br>Get it wrong and it becomes a clinical risk.
-            </h2>
-            <ul class="space-y-4 mb-10">
-                @foreach([
-                    'Full control over hygiene discipline and contamination separation.',
-                    'No hidden charges or unexpected price rises from outsourcing.',
-                    'Engineering support and response built around your operation.',
-                    'Compliance and HACCP requirements met from day one.',
-                ] as $point)
-                <li class="flex items-start gap-3 font-body text-gray-300 text-base leading-relaxed">
-                    <span class="mt-1.5 w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                    {{ $point }}
-                </li>
-                @endforeach
-            </ul>
-            <a href="#healthcare-assessment"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Request a Healthcare Assessment
-            </a>
-        </div>
-    </div>
-</section>
 
 <!-- 6. ERGONOMICS + PRODUCTIVITY -->
 <section class="py-16 lg:py-24 bg-bg">
