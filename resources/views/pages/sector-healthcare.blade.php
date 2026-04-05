@@ -366,22 +366,25 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         {{-- 1. Maximise hygiene --}}
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center reveal border-b border-border pb-8">
-            <div class="flex justify-center">
+        <div class="reveal border-b border-border pb-8">
+            <h3 class="font-heading font-bold text-navy text-xl mb-6">Maximise hygiene in healthcare applications</h3>
+            <div class="flex flex-col lg:flex-row gap-6 items-start">
                 <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                      alt="Barrier washer hygiene illustration"
-                     class="max-h-48 w-auto object-contain">
-            </div>
-            <div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">Maximise hygiene in healthcare applications</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
-                    Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management. Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
-                </p>
-                <div class="flex items-center gap-3 mt-3">
-                    <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-12 h-12 object-contain flex-shrink-0">
-                    <p class="font-body text-gray-600 text-xs leading-relaxed">
-                        The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
+                     class="w-full lg:w-2/5 h-auto object-contain flex-shrink-0">
+                <div class="lg:pt-2">
+                    <p class="font-body text-gray-600 text-sm leading-relaxed mb-2">
+                        Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management.
                     </p>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
+                        Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-16 h-16 object-contain flex-shrink-0">
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">
+                            The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
