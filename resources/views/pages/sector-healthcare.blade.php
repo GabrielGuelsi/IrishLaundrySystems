@@ -107,7 +107,7 @@
 </section>
 
 {{-- Video band --}}
-<section style="background-color: #148af4;" class="py-14 lg:py-20">
+<section class="bg-navy py-14 lg:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
