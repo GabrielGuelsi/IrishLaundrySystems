@@ -377,8 +377,8 @@
                 <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
                     Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management. Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
                 </p>
-                <div class="flex items-start gap-3 bg-white border border-border rounded-xl p-4">
-                    <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-10 h-10 object-contain flex-shrink-0">
+                <div class="flex items-center gap-3 mt-3">
+                    <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-12 h-12 object-contain flex-shrink-0">
                     <p class="font-body text-gray-600 text-xs leading-relaxed">
                         The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
                     </p>
@@ -393,8 +393,8 @@
                 <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
                     All Line 6000 Barrier Washers feature the Ergocent 4-star rating with ergonomic door handles and optimised door height. Models over 50kg include a dual-compartment partition drum that auto-positions at the end of each cycle.
                 </p>
-                <div class="flex items-start gap-3 bg-white border border-border rounded-xl p-4">
-                    <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-10 h-10 object-contain flex-shrink-0">
+                <div class="flex items-center gap-3 mt-3">
+                    <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-12 h-12 object-contain flex-shrink-0">
                     <p class="font-body text-gray-600 text-xs leading-relaxed">
                         The <strong class="text-navy">Auto Inner Door Opening</strong> feature pre-opens inner drum doors at the end of each wash cycle.
                     </p>
