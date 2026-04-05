@@ -439,26 +439,62 @@
             </a>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            @foreach([
-                ['line6000-barrier-washer', 'Line 6000 Barrier Washers',  'Physical separation of soiled and clean zones — essential for infection control in hospitals and care facilities.'],
-                ['line6000-tumble-dryer',   'Line 6000 Tumble Dryers',    '4-star ERGOCERT rating. Moisture Balance for precise drying without overdrying.'],
-                ['line6000-ironer',         'Line 6000 Ironers',          'High-performance finishing with DIAMMS™ technology and Hygiene Guard compliance.'],
-            ] as [$img, $name, $desc])
-            <div class="group reveal">
-                <div class="h-96 w-full flex items-center justify-center mb-5">
-                    <img src="/images/equipment/{{ $img }}.webp"
-                         alt="{{ $name }}"
-                         class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+        <div x-data="{ open: 0 }" class="divide-y divide-border border-t border-b border-border">
+
+            @php $items = [
+                [
+                    'img'     => 'line6000-barrier-washer',
+                    'name'    => 'Line 6000 Barrier Washers',
+                    'heading' => 'Hygienic separation without compromise.',
+                    'body'    => 'The Line 6000 Barrier Washer range is the first commercial washer to achieve third-party ERGOCERT ergonomic certification — engineered to ease operator strain while maintaining the strictest hygiene standards. The clean/dirty barrier is built into the machine itself, not managed by procedure. Physical separation of soiled and clean zones eliminates cross-contamination risk at source — the standard required by healthcare environments operating under infection control protocols.',
+                ],
+                [
+                    'img'     => 'line6000-tumble-dryer',
+                    'name'    => 'Line 6000 Tumble Dryers',
+                    'heading' => 'Precision drying for high-demand healthcare cycles.',
+                    'body'    => 'The Line 6000 Tumble Dryer range carries a 4-star ERGOCERT rating and features Moisture Balance technology — automatically sensing residual moisture in each load and adjusting the cycle to dry precisely without overdrying. This protects textile integrity across high-volume linen cycles, reduces energy consumption, and supports the continuous throughput healthcare laundry demands around the clock.',
+                ],
+                [
+                    'img'     => 'line6000-ironer',
+                    'name'    => 'Line 6000 Ironers',
+                    'heading' => 'Finishing equipment built for healthcare throughput.',
+                    'body'    => 'The Line 6000 Ironer range is equipped with DIAMMS™ — Direct Adaptive Ironing Motor Management System — which adjusts roller pressure and speed in real time to the textile being processed. Hygiene Guard certification confirms the system meets the hygiene standards required for linen finishing in clinical and care environments. Designed for consistent output, shift after shift.',
+                ],
+            ]; @endphp
+
+            @foreach($items as $i => $item)
+            <div>
+                <button @click="open = (open === {{ $i }}) ? null : {{ $i }}"
+                        class="w-full flex items-center justify-between py-6 text-left group cursor-pointer">
+                    <span class="font-heading font-bold text-navy text-lg lg:text-xl group-hover:text-steel transition-colors">{{ $item['name'] }}</span>
+                    <span class="flex-shrink-0 ml-6 text-gray-400 group-hover:text-navy transition-colors">
+                        <svg x-show="open !== {{ $i }}" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                        <svg x-show="open === {{ $i }}" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15"/></svg>
+                    </span>
+                </button>
+                <div x-show="open === {{ $i }}"
+                     x-transition:enter="transition ease-out duration-300"
+                     x-transition:enter-start="opacity-0 -translate-y-2"
+                     x-transition:enter-end="opacity-100 translate-y-0"
+                     class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pb-10">
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">{{ $item['heading'] }}</h3>
+                        <p class="font-body text-gray-600 leading-relaxed mb-8">{{ $item['body'] }}</p>
+                        <a href="{{ route('equipment') }}"
+                           class="inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors">
+                            View equipment
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-center h-72 lg:h-96">
+                        <img src="/images/equipment/{{ $item['img'] }}.webp"
+                             alt="{{ $item['name'] }}"
+                             class="max-h-full w-auto object-contain">
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base mb-1.5">{{ $name }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-3">{{ $desc }}</p>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    View equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
             @endforeach
+
         </div>
 
     </div>
