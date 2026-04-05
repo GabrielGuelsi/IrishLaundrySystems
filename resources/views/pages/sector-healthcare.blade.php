@@ -441,19 +441,14 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach([
-                ['barrier-washer',      'Barrier Washer-Extractors', 'Physical separation of soiled and clean zones — essential for infection control in hospitals and care facilities.'],
-                ['high-capacity-washer','High-Capacity Washers',      'Throughput-matched machines for high-volume linen cycles in larger healthcare sites and laundry rooms.'],
-                ['commercial-dryer',    'Commercial Tumble Dryers',   '4-star ERGOCERT rating. Moisture Balance for precise drying without overdrying.'],
-                ['flatwork-ironer',     'Flatwork Ironers',           'High-performance finishing with DIAMMS™ technology and Hygiene Guard compliance.'],
-                ['chest-ironer',        'Chest & Roller Ironers',     'Compact and flexible ironing solutions for smaller healthcare laundry rooms.'],
-                ['washer-extractor',    'Washer-Extractors',          'High-spin extraction for faster drying cycles and lower energy consumption.'],
-            ] as [$img, $name, $desc])
-            <div class="group reveal">
-                <div class="h-96 flex items-end justify-center mb-4">
-                    <img src="/images/equipment/{{ $img }}.jpg"
-                         alt="{{ $name }}"
-                         class="max-h-full w-auto object-contain group-hover:scale-105 transition-transform duration-500">
-                </div>
+                ['Barrier Washer-Extractors', 'Physical separation of soiled and clean zones — essential for infection control in hospitals and care facilities.'],
+                ['High-Capacity Washers',      'Throughput-matched machines for high-volume linen cycles in larger healthcare sites and laundry rooms.'],
+                ['Commercial Tumble Dryers',   '4-star ERGOCERT rating. Moisture Balance for precise drying without overdrying.'],
+                ['Flatwork Ironers',           'High-performance finishing with DIAMMS™ technology and Hygiene Guard compliance.'],
+                ['Chest & Roller Ironers',     'Compact and flexible ironing solutions for smaller healthcare laundry rooms.'],
+                ['Washer-Extractors',          'High-spin extraction for faster drying cycles and lower energy consumption.'],
+            ] as [$name, $desc])
+            <div class="reveal">
                 <h3 class="font-heading font-bold text-navy text-base mb-1.5">{{ $name }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-3">{{ $desc }}</p>
                 <a href="{{ route('equipment') }}" class="inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
