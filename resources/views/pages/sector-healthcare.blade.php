@@ -98,7 +98,7 @@
         </div>
 
         <div class="reveal w-full">
-            <img src="/images/healthcare/laundry-cycle.jpg"
+            <img src="/images/healthcare/laundry-cycle.png"
                  alt="Healthcare laundry cycle management"
                  class="w-full h-auto object-contain">
         </div>
