@@ -138,60 +138,144 @@
     </div>
 </section>
 
-<!-- 5. WHY HEALTHCARE IS DIFFERENT -->
+<!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
+
+{{-- A: Split hero --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            <!-- Left: headline + bullets + CTA -->
             <div class="reveal reveal-left">
-                <x-pretitle label="Why Healthcare Laundry Is Different" />
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-3">
-                    Why do so many healthcare facilities choose an on-premise laundry?
+                <x-pretitle label="Professional Barrier Washers" />
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                    Take total control of contamination in sensitive laundry environments.
                 </h2>
-                <p class="font-body text-gray-500 text-sm mb-8">The main reasons are:</p>
-
-                <ul class="space-y-5 mb-10">
-                    @foreach([
-                        'Guarantees greater control over hygiene and quality throughout every wash cycle.',
-                        'Reduces the risk of cross-infection and contamination between wards.',
-                        'Improves operational efficiency with layouts tailored to your facility.',
-                        'Cuts costs and removes dependency on external laundry providers.',
-                        'Includes expert engineering support at every stage — from installation to maintenance.',
-                    ] as $point)
-                    <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                        </svg>
-                        <span class="font-body text-gray-600 text-sm leading-relaxed">{{ $point }}</span>
-                    </li>
-                    @endforeach
-                </ul>
-
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 border-2 border-navy text-navy hover:bg-navy hover:text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200">
-                    Talk to our team for a customised solution
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+                    <strong>Implement failsafe laundry cycle management programmes in high-risk applications.</strong>
+                </p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">
+                    A wide range of high productivity Barrier Washers designed to remove human error and protect against accidental contamination — built specifically for the demands of Irish healthcare environments.
+                </p>
+                <a href="{{ route('equipment') }}"
+                   class="inline-flex items-center gap-2 bg-navy text-white hover:bg-navy/90 font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200">
+                    Go to Products
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </a>
             </div>
 
-            <!-- Right: image grid — 2 stacked left, 1 tall right -->
-            <div class="grid grid-cols-2 gap-3 reveal reveal-right">
-                <div class="flex flex-col gap-3">
-                    <div class="rounded-2xl overflow-hidden h-52">
-                        <img src="/images/healthcare/operator.jpg" alt="Healthcare operator" class="w-full h-full object-cover">
-                    </div>
-                    <div class="rounded-2xl overflow-hidden h-52">
-                        <img src="/images/healthcare/contamination.jpg" alt="Contamination control" class="w-full h-full object-cover">
-                    </div>
-                </div>
-                <div class="rounded-2xl overflow-hidden h-full min-h-[424px]">
-                    <img src="/images/healthcare/engineer.jpg" alt="ILS engineer on site" class="w-full h-full object-cover">
-                </div>
+            <div class="reveal reveal-right flex justify-center items-center">
+                <img src="/images/equipment/line6000-barrier-washer.webp"
+                     alt="Line 6000 Barrier Washer"
+                     class="max-h-80 w-auto object-contain drop-shadow-xl">
             </div>
 
+        </div>
+    </div>
+</section>
+
+{{-- B: Metric bar --}}
+<div class="bg-[#e8f0e0] py-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-6">
+        <div class="flex-shrink-0 text-center">
+            <span class="block font-heading font-bold text-navy text-4xl leading-none">50%</span>
+            <span class="block font-body text-xs font-bold uppercase tracking-widest text-gray-500 mt-1">Water Savings</span>
+        </div>
+        <div class="w-px h-12 bg-gray-300 hidden sm:block"></div>
+        <p class="font-body text-gray-700 text-sm leading-relaxed">
+            Reduce water consumption by 50% with a Barrier Washer fitted with a second drain valve — without compromising hygiene performance.
+        </p>
+    </div>
+</div>
+
+{{-- C: Features + Download/Discover --}}
+<section class="py-16 lg:py-24 bg-white border-t border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
+            Enhanced usability, superior safety
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            {{-- Left: 3 features --}}
+            <div class="lg:col-span-2 flex flex-col gap-8">
+                @foreach([
+                    [
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>',
+                        'title' => 'Maximise hygiene in healthcare applications',
+                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
+                    ],
+                    [
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>',
+                        'title' => 'Operator support in high-output laundries',
+                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
+                    ],
+                    [
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 15V5.25m19.5 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 7.409A2.25 2.25 0 012.25 5.493V5.25"/>',
+                        'title' => 'Intelligent control',
+                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
+                    ],
+                ] as $feature)
+                <div class="flex items-start gap-5 reveal">
+                    <div class="w-11 h-11 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            {!! $feature['icon'] !!}
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1">{{ $feature['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Right: Download + Discover stacked --}}
+            <div class="flex flex-col gap-5 reveal reveal-right">
+
+                {{-- Download box --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                    <ul class="space-y-3">
+                        @foreach([
+                            'Line 6000 Evolution Barrier Washers',
+                            'Line 6000 Pullman Barrier Washers',
+                            'Clean, Sanitize, Decontaminate Brochure',
+                        ] as $pdf)
+                        <li>
+                            <a href="#" class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+                                </svg>
+                                {{ $pdf }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+                {{-- Discover box --}}
+                <div class="bg-bg border border-border rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                    <ul class="space-y-3">
+                        @foreach([
+                            ['label' => 'Service & Maintenance Contracts', 'route' => 'service-contracts'],
+                            ['label' => 'Full Equipment Range',            'route' => 'equipment'],
+                            ['label' => 'Request a Site Assessment',       'route' => 'contact'],
+                        ] as $link)
+                        <li>
+                            <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-semibold transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                                </svg>
+                                {{ $link['label'] }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
