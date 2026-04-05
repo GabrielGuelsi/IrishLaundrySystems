@@ -300,15 +300,15 @@
             </div>
             <div class="lg:pt-2">
                 <h3 class="font-heading font-bold text-navy text-xl mb-4">Maximise hygiene in healthcare applications</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-2">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-3">
                     Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management.
                 </p>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-6">
                     Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
                 </p>
                 <div class="flex items-center gap-4">
                     <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-16 h-16 object-contain flex-shrink-0">
-                    <p class="font-body text-gray-600 text-sm leading-relaxed">
+                    <p class="font-body text-gray-600 text-base leading-relaxed">
                         The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
                     </p>
                 </div>
@@ -319,12 +319,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start reveal border-b border-border pb-8">
             <div class="lg:pt-2">
                 <h3 class="font-heading font-bold text-navy text-xl mb-4">Operator support in high-output laundries</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-6">
                     All Line 6000 Barrier Washers feature the Ergocent 4-star rating with ergonomic door handles and optimised door height. Models over 50kg include a dual-compartment partition drum that auto-positions at the end of each cycle.
                 </p>
                 <div class="flex items-center gap-4">
                     <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-16 h-16 object-contain flex-shrink-0">
-                    <p class="font-body text-gray-600 text-sm leading-relaxed">
+                    <p class="font-body text-gray-600 text-base leading-relaxed">
                         The <strong class="text-navy">Auto Inner Door Opening</strong> feature pre-opens inner drum doors at the end of each wash cycle.
                     </p>
                 </div>
@@ -345,10 +345,10 @@
             </div>
             <div class="lg:pt-2">
                 <h3 class="font-heading font-bold text-navy text-xl mb-4">Intelligent control</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-2">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-3">
                     The new ClarusVibe control comes pre-set with self-explanatory programs to improve productivity and reduce running costs.
                 </p>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-2">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-3">
                     Both dirty and clean sides feature their own display to avoid operators crossing zones.
                 </p>
                 <p class="font-body text-gray-400 text-xs italic mt-3">* Only available on Pullman line</p>
