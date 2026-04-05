@@ -143,6 +143,59 @@
     </div>
 </section>
 
+{{-- Brochure download band --}}
+<section class="py-16 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start reveal">
+
+            <div>
+                <x-pretitle label="Hygienic and Ergonomic Laundry Solutions for Hospitals" />
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">
+                    Total control for sensitive laundry environments
+                </h2>
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-8">
+                    Used or soiled linen is one of the chief transmitters of infection in hospitals and healthcare sites. However, the <strong class="text-navy">barrier concept</strong> provides staff and patients with the <strong class="text-navy">highest</strong> possible <strong class="text-navy">hygiene standards</strong> to protect against the inadvertent spread of infection while avoiding cross contamination.
+                </p>
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200 uppercase tracking-widest">
+                    Contact Us
+                </a>
+            </div>
+
+            <div class="bg-navy rounded-2xl p-6">
+                <h4 class="font-heading font-bold text-white text-xl mb-5">Download</h4>
+                <ul class="space-y-4">
+                    @foreach([
+                        ['label' => 'Line 6000 Evolution Barrier Washers', 'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                        ['label' => 'Line 6000 Pullman Barrier Washers',   'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+                        ['label' => 'Line 6000 Tumble Dryers',             'file' => ''],
+                        ['label' => 'Line 6000 Hot Cylinder Ironers',      'file' => ''],
+                    ] as $pdf)
+                    <li>
+                        @if($pdf['file'])
+                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download
+                           class="flex items-center gap-3 font-body font-semibold text-white hover:text-orange transition-colors">
+                        @else
+                        <span class="flex items-center gap-3 font-body font-semibold text-white/50 cursor-not-allowed">
+                        @endif
+                            <svg class="w-5 h-5 flex-shrink-0 {{ $pdf['file'] ? 'text-orange' : 'text-white/30' }}" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
+                            </svg>
+                            {{ $pdf['label'] }}
+                        @if($pdf['file'])
+                        </a>
+                        @else
+                        </span>
+                        @endif
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
 
 {{-- A: Split hero --}}
