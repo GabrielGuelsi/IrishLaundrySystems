@@ -405,7 +405,7 @@
 
         <div class="divide-y divide-white/10 border-t border-b border-white/10">
             @foreach($items as $i => $item)
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-10 {{ $i % 2 === 1 ? 'lg:flex lg:flex-row-reverse' : '' }}">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-10">
                 <div>
                     <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">{{ $item['name'] }}</p>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-5">{{ $item['heading'] }}</h3>
