@@ -288,7 +288,7 @@
 
 
 <!-- FEATURE DETAILS: Maximise hygiene / Operator support / Intelligent control -->
-<section class="py-10 bg-bg border-b border-border">
+<section class="py-10 bg-white border-b border-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         {{-- 1. Maximise hygiene --}}
@@ -365,18 +365,18 @@
 </section>
 
 <!-- 7. HEALTHCARE EQUIPMENT -->
-<section class="py-16 lg:py-24 bg-bg border-y border-border">
+<section class="py-16 lg:py-24 bg-navy border-y border-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 reveal">
             <div class="max-w-2xl">
                 <x-pretitle label="Healthcare Equipment" />
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl">
                     Everything your healthcare laundry needs, in a single partner.
                 </h2>
             </div>
             <a href="{{ route('equipment') }}"
-               class="flex-shrink-0 inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
+               class="flex-shrink-0 inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
                 Browse all equipment
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -403,15 +403,15 @@
             ],
         ]; @endphp
 
-        <div class="divide-y divide-border border-t border-b border-border">
+        <div class="divide-y divide-white/10 border-t border-b border-white/10">
             @foreach($items as $i => $item)
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-10 {{ $i % 2 === 1 ? 'lg:flex lg:flex-row-reverse' : '' }}">
                 <div>
                     <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">{{ $item['name'] }}</p>
-                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">{{ $item['heading'] }}</h3>
-                    <p class="font-body text-gray-600 leading-relaxed mb-8">{{ $item['body'] }}</p>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-5">{{ $item['heading'] }}</h3>
+                    <p class="font-body text-gray-300 leading-relaxed mb-8">{{ $item['body'] }}</p>
                     <a href="{{ route('equipment') }}"
-                       class="inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors">
+                       class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors">
                         View equipment
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
@@ -429,7 +429,7 @@
 </section>
 
 <!-- 9. ASSESSMENT FORM -->
-<section id="healthcare-assessment" class="py-16 lg:py-24 bg-bg">
+<section id="healthcare-assessment" class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
 
