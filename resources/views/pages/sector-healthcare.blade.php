@@ -382,51 +382,6 @@
     </div>
 </section>
 
-<!-- 8. HEALTHCARE ROUTE -->
-<section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-2xl mb-12 reveal">
-            <x-pretitle label="Healthcare Route Within ILS" />
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">
-                Equipment, contracts, and response — one healthcare support system.
-            </h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-
-            <div class="bg-white border border-border rounded-2xl p-6 flex flex-col card-hover reveal" style="transition-delay: 0.1s;">
-                <p class="text-xs font-body font-bold uppercase tracking-widest text-gray-400 mb-3">Equipment Route</p>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">Barrier washers and healthcare-ready equipment</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">Machine categories matched to healthcare-specific applications.</p>
-                <a href="{{ route('equipment') }}" class="mt-6 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Explore Healthcare Equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-
-            <div class="bg-white border border-border rounded-2xl p-6 flex flex-col card-hover reveal" style="transition-delay: 0.2s;">
-                <p class="text-xs font-body font-bold uppercase tracking-widest text-gray-400 mb-3">Service Route</p>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">Planned support for continuity and controlled maintenance</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">Preventive maintenance and service contracts — part of the proposition, not an afterthought.</p>
-                <a href="{{ route('service-contracts') }}" class="mt-6 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Request Contract Review
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-
-            <div class="bg-white border border-border rounded-2xl p-6 flex flex-col card-hover reveal" style="transition-delay: 0.3s;">
-                <p class="text-xs font-body font-bold uppercase tracking-widest text-gray-400 mb-3">Engineering Route</p>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">Site assessment, review, and response</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">A direct path into an engineering conversation — no generic copy in the way.</p>
-                <a href="{{ route('contact') }}" class="mt-6 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Talk to an Engineer
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
 <!-- 9. ASSESSMENT FORM -->
 <section id="healthcare-assessment" class="py-16 lg:py-24 bg-bg">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
