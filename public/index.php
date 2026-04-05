@@ -11,6 +11,9 @@ if (!extension_loaded('mbstring')) {
         return preg_split('/' . $pattern . '/u', $string, $limit) ?: false;
     }
     function mb_strlen(string $string, ?string $encoding = null): int {
+        if ($encoding !== null && strtolower($encoding) === '8bit') {
+            return strlen($string);
+        }
         return preg_match_all('/./us', $string);
     }
     function mb_strtolower(string $string, ?string $encoding = null): string {
