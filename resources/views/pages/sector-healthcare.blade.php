@@ -98,7 +98,7 @@
         </div>
 
         <div class="reveal w-full max-w-4xl mx-auto">
-            <img src="/images/healthcare/laundry-cycle.png"
+            <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
                  alt="Healthcare laundry cycle management"
                  class="w-full h-auto object-contain">
         </div>
