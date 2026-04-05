@@ -97,10 +97,21 @@
             </h2>
         </div>
 
-        <div class="reveal w-full">
+        <div class="reveal w-full max-w-4xl mx-auto">
             <img src="/images/healthcare/laundry-cycle.png"
                  alt="Healthcare laundry cycle management"
                  class="w-full h-auto object-contain">
+        </div>
+
+        <div class="reveal w-full max-w-4xl mx-auto mt-10">
+            <div class="relative w-full" style="padding-bottom: 56.25%;">
+                <iframe class="absolute inset-0 w-full h-full rounded-xl"
+                        src="https://www.youtube.com/embed/26g9u4GPRVc"
+                        title="Laundry Cycle Management"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </div>
         </div>
 
     </div>
