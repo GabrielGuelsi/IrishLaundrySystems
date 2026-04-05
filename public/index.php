@@ -5,6 +5,11 @@ use Illuminate\Http\Request;
 
 define('LARAVEL_START', microtime(true));
 
+// Load mbstring extension if not already loaded (shared hosting workaround)
+if (!extension_loaded('mbstring')) {
+    @dl('mbstring.so');
+}
+
 // Determine if the application is in maintenance mode...
 if (file_exists($maintenance = __DIR__.'/../storage/framework/maintenance.php')) {
     require $maintenance;
