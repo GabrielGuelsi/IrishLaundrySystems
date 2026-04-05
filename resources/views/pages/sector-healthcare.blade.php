@@ -103,15 +103,36 @@
                  class="w-full h-auto object-contain">
         </div>
 
-        <div class="reveal w-full max-w-4xl mx-auto mt-10">
-            <div class="relative w-full" style="padding-bottom: 56.25%;">
-                <iframe class="absolute inset-0 w-full h-full rounded-xl"
-                        src="https://www.youtube.com/embed/26g9u4GPRVc"
-                        title="Laundry Cycle Management"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+        <div class="reveal w-full max-w-4xl mx-auto mt-10 flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+            <div class="lg:w-2/5">
+                <x-pretitle label="See It In Action" />
+                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-4">
+                    Watch how the Line 6000 transforms healthcare laundry
+                </h3>
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-6">
+                    From barrier washing to hygienic drying and finishing — see the full cycle in operation and discover why leading hospitals trust Line 6000 to protect patients and staff every day.
+                </p>
+                <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank"
+                   class="inline-flex items-center gap-2 font-body font-semibold text-orange hover:text-orange/80 transition-colors">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Watch the full video
+                </a>
             </div>
+
+            <div class="lg:w-3/5 w-full">
+                <div class="relative w-full rounded-xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/26g9u4GPRVc"
+                            title="Laundry Cycle Management"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+
         </div>
 
     </div>
