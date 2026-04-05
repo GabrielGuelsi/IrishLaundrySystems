@@ -83,7 +83,38 @@
     </div>
 </section>
 
-<!-- 4. WHY HEALTHCARE IS DIFFERENT -->
+<!-- 4. LAUNDRY CYCLE MANAGEMENT -->
+<section class="py-16 lg:py-24 bg-bg border-y border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            <div class="reveal reveal-left">
+                <x-pretitle label="Laundry Cycle Management" />
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-6">
+                    Maximized hygiene guaranteed with Line 6000 laundry solutions.
+                </h2>
+                <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
+                    Effective laundry cycle management for hospitals and healthcare sites combines proper sorting, transport, washing, drying, finishing and storage to keep infection at bay while maximizing the safety of both patients and staff.
+                </p>
+                <a href="{{ route('request-assessment') }}"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-semibold px-6 py-3.5 rounded-lg text-sm transition-colors duration-200">
+                    Request a healthcare assessment
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+            </div>
+
+            <div class="reveal reveal-right rounded-2xl overflow-hidden h-80 lg:h-[480px] bg-white border border-border">
+                <img src="/images/healthcare/laundry-cycle.jpg"
+                     alt="Healthcare laundry cycle management"
+                     class="w-full h-full object-cover"
+                     onerror="this.style.display='none'">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- 5. WHY HEALTHCARE IS DIFFERENT -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
