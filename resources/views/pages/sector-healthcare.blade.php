@@ -65,10 +65,10 @@
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-700 text-xl leading-relaxed mb-4">
-                    ILS supports healthcare operations across Ireland — reducing breakdown risk, improving hygiene compliance, and keeping laundry systems <span style="color:#148af4;">operational.</span>
+                    ILS supports healthcare operations across Ireland — reducing <span style="color:#148af4;">breakdown risk</span>, improving hygiene compliance, and keeping laundry systems operational.
                 </p>
                 <p class="font-body text-gray-500 leading-relaxed mb-8">
-                    Whatever the site requires, we'll <span style="color:#148af4;">take care of it.</span>
+                    Whatever the site requires, <span style="color:#148af4;">we'll take care of it.</span>
                 </p>
                 <a href="{{ route('sectors.healthcare') }}#healthcare-equipment"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
