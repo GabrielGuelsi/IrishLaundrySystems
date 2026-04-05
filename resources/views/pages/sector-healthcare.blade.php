@@ -362,93 +362,67 @@
 </section>
 
 <!-- FEATURE DETAILS: Maximise hygiene / Operator support / Intelligent control -->
+<section class="py-10 bg-bg border-b border-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
-{{-- 1. Maximise hygiene --}}
-<section class="py-16 lg:py-20 bg-bg border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
-            Maximise hygiene in healthcare applications
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start reveal">
-            <div>
+        {{-- 1. Maximise hygiene --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center reveal border-b border-border pb-8">
+            <div class="flex justify-center">
                 <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                      alt="Barrier washer hygiene illustration"
-                     class="w-full h-auto object-contain">
+                     class="max-h-48 w-auto object-contain">
             </div>
             <div>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-3">
-                    Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management.
+                <h3 class="font-heading font-bold text-navy text-lg mb-2">Maximise hygiene in healthcare applications</h3>
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
+                    Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management. Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-8">
-                    Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
-                </p>
-                <div class="flex items-start gap-5 bg-white border border-border rounded-2xl p-5">
-                    <img src="/images/healthcare/HygieneWatch_png.webp"
-                         alt="Hygiene Watchdog"
-                         class="w-16 h-16 object-contain flex-shrink-0">
-                    <p class="font-body text-gray-600 text-sm leading-relaxed">
-                        The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination — an essential safeguard in high-risk healthcare environments.
+                <div class="flex items-start gap-3 bg-white border border-border rounded-xl p-4">
+                    <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-10 h-10 object-contain flex-shrink-0">
+                    <p class="font-body text-gray-600 text-xs leading-relaxed">
+                        The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
                     </p>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-{{-- 2. Operator support --}}
-<section class="py-16 lg:py-20 bg-white border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
-            Operator support in high-output laundries
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start reveal">
+        {{-- 2. Operator support --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center reveal border-b border-border pb-8">
             <div>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-8">
-                    All Line 6000 Barrier Washers feature the Ergocent 4-star rating and include ergonomic door handles and optimised door height for easy loading and unloading. Models with more than 50kg capacity include a dual-compartment partition drum which automatically assumes the correct unloading position at the end of each cycle.
+                <h3 class="font-heading font-bold text-navy text-lg mb-2">Operator support in high-output laundries</h3>
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
+                    All Line 6000 Barrier Washers feature the Ergocent 4-star rating with ergonomic door handles and optimised door height. Models over 50kg include a dual-compartment partition drum that auto-positions at the end of each cycle.
                 </p>
-                <div class="flex items-start gap-5 bg-bg border border-border rounded-2xl p-5">
-                    <img src="/images/healthcare/AutoInner_png.webp"
-                         alt="Auto Inner Door Opening"
-                         class="w-16 h-16 object-contain flex-shrink-0">
-                    <p class="font-body text-gray-600 text-sm leading-relaxed">
-                        The <strong class="text-navy">Auto Inner Door Opening</strong> feature maximises operator safety by pre-opening the inner drum doors at the end of each wash cycle.
+                <div class="flex items-start gap-3 bg-white border border-border rounded-xl p-4">
+                    <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-10 h-10 object-contain flex-shrink-0">
+                    <p class="font-body text-gray-600 text-xs leading-relaxed">
+                        The <strong class="text-navy">Auto Inner Door Opening</strong> feature pre-opens inner drum doors at the end of each wash cycle.
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="flex justify-center">
                 <img src="/images/healthcare/Foto-web-BW.jpg"
                      alt="Operator loading barrier washer drum"
-                     class="w-full h-auto rounded-2xl object-cover">
+                     class="max-h-48 w-auto rounded-xl object-cover">
             </div>
         </div>
-    </div>
-</section>
 
-{{-- 3. Intelligent control --}}
-<section class="py-16 lg:py-20 bg-bg border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
-            Intelligent control
-        </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center reveal">
-            <div>
+        {{-- 3. Intelligent control --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center reveal">
+            <div class="flex justify-center">
                 <img src="/images/healthcare/immagine-schermi-PullmannBW.webp"
                      alt="ClarusVibe intelligent control display"
-                     class="w-full h-auto object-contain">
+                     class="max-h-48 w-auto object-contain">
             </div>
             <div>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-3">
-                    The new ClarusVibe control is Electrolux Professional's most intuitive display to date.
+                <h3 class="font-heading font-bold text-navy text-lg mb-2">Intelligent control</h3>
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-1">
+                    The new ClarusVibe control comes pre-set with self-explanatory programs to improve productivity and reduce running costs. Both dirty and clean sides feature their own display to avoid operators crossing zones.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-3">
-                    It comes pre-set with a wide range of self-explanatory programs to improve productivity and reduce running costs.
-                </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-2">
-                    Both the dirty and clean side of the Barrier Washers feature their own display to avoid operators moving between different zones.
-                </p>
-                <p class="font-body text-gray-400 text-xs italic">* Only available on Pullman line</p>
+                <p class="font-body text-gray-400 text-xs italic mt-2">* Only available on Pullman line</p>
             </div>
         </div>
+
     </div>
 </section>
 
