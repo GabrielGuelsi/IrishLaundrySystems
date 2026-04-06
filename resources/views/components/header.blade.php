@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200" x-data="{ open: false, sectorsOpen: false, equipOpen: false }">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-18">
 
             <!-- Logo -->
@@ -216,7 +216,7 @@
 
     <!-- Electrolux badge - desktop only -->
     <div class="hidden lg:block bg-bg border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex items-center justify-between">
+        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex items-center justify-between">
             <span class="text-xs text-navy font-body">Authorised Electrolux Professional Partner &mdash; Engineering-led commercial laundry since 1987</span>
             <a href="{{ route('electrolux') }}" class="text-xs text-navy hover:text-orange font-body transition-colors">Learn about our partnership &rarr;</a>
         </div>

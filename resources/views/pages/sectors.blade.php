@@ -7,7 +7,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Commercial Laundry Support by Sector</h1>
         <p class="font-body text-blue-200 text-xl max-w-2xl mx-auto leading-relaxed mb-8">
             Choose your environment to see the right service model, risk factors and recommended next step.
@@ -23,7 +23,7 @@
 
 <!-- SECTOR CARDS -->
 <section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <p class="text-center font-body text-gray-500 text-sm mb-8 uppercase tracking-widest font-semibold">Or browse by sector</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
 
@@ -136,7 +136,7 @@
 
 <!-- HOW WE SUPPORT CRITICAL OPS -->
 <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-10">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">How We Support Critical Operations</h2>
         </div>

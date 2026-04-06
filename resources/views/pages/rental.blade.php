@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -35,7 +35,7 @@
 
 <!-- RENTAL VS PURCHASE -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Rental vs Outright Purchase</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Both have their place. Here's what makes rental the right choice for some operations.</p>
@@ -104,7 +104,7 @@
 
 <!-- HOW IT WORKS -->
 <section class="py-16 lg:py-24 bg-navy">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">How Rental Works</h2>
             <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">Three steps from enquiry to equipment in place.</p>

@@ -10,7 +10,7 @@
 
 <!-- 1. HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
@@ -57,7 +57,7 @@
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
@@ -88,7 +88,7 @@
 
 <!-- 4. WHY COMMERCIAL IS DIFFERENT -->
 <section class="py-16 lg:py-24 bg-white border-t border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
@@ -145,7 +145,7 @@
 <!-- 5. STATEMENT SECTION -->
 <section class="min-h-[480px] flex items-center py-20 lg:py-28 relative overflow-hidden"
     style="background-color:#011E41; background-image:linear-gradient(90deg,rgba(1,30,65,0.93) 0%,rgba(1,30,65,0.80) 55%,rgba(1,30,65,0.30) 100%), url('/images/commercial/statement-bg.jpg'); background-size:cover; background-position:right center;">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div class="max-w-2xl relative z-10 reveal reveal-left">
             <h2 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
                 Reactive maintenance is the most expensive way to run a commercial laundry.
@@ -173,7 +173,7 @@
 
 <!-- 6. HOW ILS SUPPORTS COMMERCIAL OPERATIONS -->
 <section class="py-16 lg:py-24 bg-bg border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10 reveal">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">How ILS supports commercial operations</h2>
             <p class="font-body text-gray-500 text-lg max-w-2xl">Our services mapped to throughput, lifecycle, and operational demands.</p>
@@ -246,7 +246,7 @@
 
 <!-- 7. EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="mb-10 reveal">
             <x-pretitle label="Commercial Equipment" />
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">Equipment built for commercial throughput.</h2>
@@ -303,7 +303,7 @@
 
 <!-- 8. PROOF POINTS -->
 <section class="py-16 lg:py-20 bg-bg border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
 
             <!-- White -->
@@ -336,7 +336,7 @@
 
 <!-- 9. COMMERCIAL ROUTE -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
 
             <a href="{{ route('equipment') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
@@ -390,7 +390,7 @@
 
 <!-- 10. ASSESSMENT FORM -->
 <section id="commercial-assessment" class="py-16 lg:py-24 bg-bg border-t border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
 
             <!-- Left navy card -->

@@ -7,7 +7,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4">Request a Service Assessment</h1>
         <p class="font-body text-blue-200 text-lg max-w-xl mx-auto leading-relaxed">
             Share site location(s), equipment type/brand and urgency. We will confirm next steps and availability.
@@ -17,7 +17,7 @@
 
 <!-- WHAT HAPPENS NEXT -->
 <section class="py-10 lg:py-12 bg-white border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
             <div class="flex flex-col items-center">
                 <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center text-white font-heading font-bold text-base mb-3">1</div>
@@ -40,7 +40,7 @@
 
 <!-- MAIN CONTENT -->
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
 
             <!-- LEFT: Contact info + map -->

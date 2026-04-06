@@ -1,5 +1,5 @@
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Service Contract Tiers</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto leading-relaxed">
