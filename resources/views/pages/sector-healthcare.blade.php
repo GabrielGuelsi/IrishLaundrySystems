@@ -335,16 +335,16 @@
                         All Line 6000 Barrier Washers feature the Ergocent 4-star rating with ergonomic door handles and optimised door height. Models over 50kg include a dual-compartment partition drum that auto-positions at the end of each cycle.
                     </p>
                     <div class="flex items-center gap-4">
-                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-14 h-14 object-contain flex-shrink-0">
+                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-40 h-40 object-contain flex-shrink-0">
                         <p class="font-body text-gray-600 text-base leading-relaxed">
                             The <strong class="text-navy">Auto Inner Door Opening</strong> feature pre-opens inner drum doors at the end of each wash cycle.
                         </p>
                     </div>
                 </div>
-                <div class="flex-shrink-0 lg:w-64">
+                <div class="flex-shrink-0">
                     <img src="/images/healthcare/Foto-web-BW.jpg"
                          alt="Operator loading barrier washer drum"
-                         class="w-full h-48 rounded-xl object-cover">
+                         class="w-[24rem] h-auto rounded-xl object-cover">
                 </div>
             </div>
         </div>
@@ -353,10 +353,10 @@
         <div class="reveal">
             <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Intelligent control</h3>
             <div class="flex flex-col lg:flex-row gap-8 items-center">
-                <div class="flex-shrink-0 flex justify-center lg:w-64">
+                <div class="flex-shrink-0 flex justify-center">
                     <img src="/images/healthcare/immagine-schermi-PullmannBW.webp"
                          alt="ClarusVibe intelligent control display"
-                         class="w-56 h-auto object-contain">
+                         class="w-[24rem] h-auto object-contain">
                 </div>
                 <div class="flex-1">
                     <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
