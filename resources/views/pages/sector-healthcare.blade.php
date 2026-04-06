@@ -225,7 +225,7 @@
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
                 ] as $feature)
-                <div class="flex items-start gap-6 reveal">
+                <div class="flex items-center gap-6 reveal">
                     <div class="flex-shrink-0">
                         <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain">
                     </div>
