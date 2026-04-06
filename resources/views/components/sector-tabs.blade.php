@@ -5,7 +5,7 @@
     switch between sector views without going back to the sectors hub.
 --}}
 <div class="bg-navy-dark border-b border-white/10">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <nav class="flex overflow-x-auto scrollbar-hide -mb-px" aria-label="Sector navigation">
 
             <a href="{{ route('sectors.healthcare') }}"

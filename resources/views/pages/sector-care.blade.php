@@ -11,7 +11,7 @@
 <!-- 1. HERO -->
 <section class="relative py-20 lg:py-32 overflow-hidden"
     style="background-color:#011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.80) 55%, rgba(1,30,65,0.25) 100%), url('/images/care/hero-main.jpg'); background-size:cover; background-position: right center; background-repeat:no-repeat;">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative z-10">
         <div class="max-w-2xl reveal">
             <x-pretitle label="Care Facilities" />
             <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
@@ -42,7 +42,7 @@
 
 <!-- 3. INTRO / TRUST BLOCK -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <x-pretitle label="What Care Facilities Need" />
@@ -85,7 +85,7 @@
 
 <!-- 4. WHAT ARE YOU LOOKING FOR — tabbed services -->
 <section class="py-16 lg:py-24 bg-bg border-y border-border" x-data="{ tab: 'contracts' }">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-2xl mb-10 reveal">
             <x-pretitle label="How ILS Supports Care Facilities" />
@@ -258,7 +258,7 @@
 
 <!-- 5. COMPLIANCE BLOCK -->
 <section class="py-16 lg:py-24 bg-navy">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <x-pretitle label="HIQA &amp; Compliance" color="#148af4" />
@@ -304,7 +304,7 @@
 
 <!-- 6. NATIONAL COVERAGE + ENGINEER TRUST -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="rounded-2xl overflow-hidden h-96 bg-bg border border-border reveal reveal-left">
                 <img src="/images/about/about-engineers.jpg" alt="ILS engineer" class="w-full h-full object-cover">
@@ -342,7 +342,7 @@
 
 <!-- 7. TESTIMONIALS -->
 <section class="py-16 lg:py-20 bg-bg border-y border-border">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">What care facility customers say</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             @foreach([
@@ -375,7 +375,7 @@
 
 <!-- 8. EQUIPMENT CROSS-LINK -->
 <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 reveal">
             <div class="max-w-2xl">
                 <x-pretitle label="Care Facility Equipment" />

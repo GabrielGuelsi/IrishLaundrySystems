@@ -10,7 +10,7 @@
 
 <!-- 1. HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
@@ -57,7 +57,7 @@
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
@@ -88,7 +88,7 @@
 
 <!-- 4. WHY HOSPITALITY IS DIFFERENT -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <!-- Left: headline + bullets + CTA -->
@@ -146,7 +146,7 @@
     <div class="absolute inset-0" style="background-image: url('/images/hospitality/statement-bg.jpg'); background-size: cover; background-position: center;">
         <div class="absolute inset-0" style="background: linear-gradient(90deg,rgba(1,30,65,0.93) 0%,rgba(1,30,65,0.80) 55%,rgba(1,30,65,0.30) 100%);"></div>
     </div>
-    <div class="relative max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
         <div class="max-w-2xl reveal reveal-left">
             <h2 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
                 Laundry is part of the guest experience. Get it wrong and everyone notices.
@@ -174,7 +174,7 @@
 
 <!-- 6. HOW ILS SUPPORTS HOSPITALITY — 4 SERVICE CARDS -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-2xl mb-12 reveal">
             <x-pretitle label="Hospitality Services" />
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
@@ -252,7 +252,7 @@
 
 <!-- 7. EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-bg border-y border-border">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-2xl mb-12 reveal">
             <x-pretitle label="Hospitality Equipment" />
@@ -332,7 +332,7 @@
 
 <!-- 8. PROOF POINTS -->
 <section class="py-16 lg:py-20 bg-white border-y border-border">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
             <div class="bg-white border border-border rounded-2xl p-6 reveal" style="transition-delay: 0.0s;">
                 <p class="font-heading font-bold text-navy text-3xl mb-2">Peak Season</p>
@@ -356,7 +356,7 @@
 
 <!-- 9. HOSPITALITY ROUTE -->
 <section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-2xl mb-12 reveal">
             <x-pretitle label="Hospitality Route Within ILS" />
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">
@@ -401,7 +401,7 @@
 
 <!-- 10. ASSESSMENT FORM -->
 <section id="hospitality-assessment" class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
 
             <div class="bg-navy rounded-2xl p-8 flex flex-col reveal reveal-left">

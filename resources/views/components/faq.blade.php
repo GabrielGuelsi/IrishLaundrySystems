@@ -1,7 +1,7 @@
 @props(['faqs' => [], 'heading' => 'Frequently Asked Questions'])
 
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-20">
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-10">{{ $heading }}</h2>
 
         <div class="space-y-3" x-data="{ open: null }">
