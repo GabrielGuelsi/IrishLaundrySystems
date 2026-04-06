@@ -174,7 +174,7 @@
             <div class="reveal reveal-right flex justify-center items-center">
                 <img src="/images/equipment/line6000-barrier-washer.webp"
                      alt="Line 6000 Barrier Washer"
-                     class="max-h-80 w-auto object-contain drop-shadow-xl">
+                     class="w-full h-auto object-contain drop-shadow-xl">
             </div>
 
         </div>
