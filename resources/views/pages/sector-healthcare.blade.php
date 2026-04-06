@@ -317,7 +317,7 @@
                         Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
                     </p>
                     <div class="flex items-center gap-3">
-                        <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-14 h-14 object-contain flex-shrink-0">
+                        <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-40 h-40 object-contain flex-shrink-0">
                         <p class="font-body text-gray-600 text-base leading-relaxed">
                             The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
                         </p>
