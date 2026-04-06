@@ -307,7 +307,7 @@
                 <div class="flex-shrink-0">
                     <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                          alt="Barrier washer hygiene illustration"
-                         class="w-[32rem] h-auto object-contain">
+                         class="w-[24rem] h-auto object-contain">
                 </div>
                 <div class="flex-1">
                     <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
