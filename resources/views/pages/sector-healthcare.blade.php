@@ -227,7 +227,7 @@
                 ] as $feature)
                 <div class="flex items-start gap-6 reveal">
                     <div class="flex-shrink-0">
-                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-32 h-32 object-contain">
+                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain">
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
