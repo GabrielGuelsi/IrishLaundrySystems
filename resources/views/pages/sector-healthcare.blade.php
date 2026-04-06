@@ -225,13 +225,13 @@
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
                 ] as $feature)
-                <div class="flex items-start gap-5 reveal">
+                <div class="flex items-start gap-6 reveal">
                     <div class="flex-shrink-0">
-                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-14 h-14 object-contain">
+                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-20 h-20 object-contain">
                     </div>
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-base mb-1">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
                     </div>
                 </div>
                 @endforeach
