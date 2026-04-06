@@ -207,24 +207,24 @@
             <div class="lg:col-span-2 flex flex-col gap-8">
                 @foreach([
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>',
+                        'icon' => '<circle cx="12" cy="12" r="10" stroke-width="1.5"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="9" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="8" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="14" r="0.8" fill="currentColor" stroke="none"/>',
                         'title' => 'Maximise hygiene in healthcare applications',
                         'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
                     ],
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>',
+                        'icon' => '<circle cx="12" cy="5" r="2" stroke-width="1.5"/><line x1="12" y1="7" x2="12" y2="14" stroke-width="1.5" stroke-linecap="round"/><line x1="7" y1="10" x2="17" y2="10" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="14" x2="8.5" y2="20" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="14" x2="15.5" y2="20" stroke-width="1.5" stroke-linecap="round"/>',
                         'title' => 'Operator support in high-output laundries',
                         'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
                     ],
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 15V5.25m19.5 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 7.409A2.25 2.25 0 012.25 5.493V5.25"/>',
+                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5V17a1 1 0 001 1h8a1 1 0 001-1v-5.5M7 11.5l1.5-5h7l1.5 5M7 11.5h10M10 7.5V6a2 2 0 014 0v1.5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.5 14.5l1.5 1.5 3-3"/>',
                         'title' => 'Intelligent control',
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
                 ] as $feature)
                 <div class="flex items-start gap-5 reveal">
-                    <div class="w-11 h-11 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0">
-                        <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <div class="w-14 h-14 rounded-full border-2 border-navy flex items-center justify-center flex-shrink-0">
+                        <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             {!! $feature['icon'] !!}
                         </svg>
                     </div>
