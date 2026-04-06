@@ -7,7 +7,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-24">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Resources for Commercial Laundry Reliability</h1>
         <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
             Guides, checklists and reference material to help commercial laundry operators manage their equipment and reduce downtime.
@@ -20,7 +20,7 @@
 
 <!-- GUIDES -->
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl">Guides</h2>
         </div>
@@ -53,7 +53,7 @@
 
 <!-- CHECKLISTS -->
 <section class="py-16 lg:py-20 bg-white border-t border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between mb-8">
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl">Checklists</h2>
         </div>
@@ -80,7 +80,7 @@
 
 <!-- SECTOR COLLECTIONS -->
 <section class="py-16 lg:py-20 bg-bg border-t border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-8">Sector Collections</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach ([

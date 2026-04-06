@@ -6,7 +6,7 @@
 <section class="bg-navy py-20 lg:py-28 relative overflow-hidden">
     <!-- Urgency accent line -->
     <div class="absolute top-0 left-0 right-0 h-1 bg-orange"></div>
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/40 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -46,7 +46,7 @@
 
 <!-- RESPONSE STATEMENT -->
 <section class="py-8 bg-orange">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="flex items-center gap-3">
                 <svg class="w-8 h-8 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -66,7 +66,7 @@
 
 <!-- WHAT TO EXPECT -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">What to Expect from an ILS Call-Out</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">A clear, professional process — from your first call to the job being resolved.</p>
@@ -91,7 +91,7 @@
 
 <!-- CONTRACT UPSELL -->
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="bg-navy rounded-2xl p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
                 <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/30 rounded-full px-3 py-1 mb-5">

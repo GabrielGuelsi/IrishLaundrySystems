@@ -6,7 +6,7 @@
     Healthcare is the cornerstone sector — active by default.
 --}}
 <section class="py-16 lg:py-24 bg-white" x-data="{ active: 'healthcare' }">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Section header -->
         <div class="text-center mb-10">

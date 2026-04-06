@@ -19,7 +19,7 @@
     </div>
 
     <!-- Content — left column only, stays within the dark zone -->
-    <div class="relative z-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-20">
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-16 lg:py-20">
         <div class="max-w-3xl">
 
             <!-- Eyebrow -->
@@ -72,7 +72,7 @@
 
 <!-- 3. THREE CORE PATHWAYS -->
 <section class="py-16 lg:py-24 bg-gray-50">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="text-center mb-12">
             <p class="font-body text-orange font-semibold text-xs uppercase tracking-[0.2em] mb-3">Built for Operational Continuity</p>
@@ -152,7 +152,7 @@
 
 <!-- 5. WHY ILS + ELECTROLUX -->
 <section class="py-16 lg:py-20 bg-navy">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-3">Platform + Local Execution</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
@@ -205,7 +205,7 @@
 
 <!-- 6. EQUIPMENT TEASER -->
 <section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Equipment Categories</h2>
             <p class="font-body text-gray-600 text-lg max-w-xl mx-auto">Commercial laundry equipment supplied, installed and supported across the Republic of Ireland.</p>
@@ -261,7 +261,7 @@
 
 <!-- 8. FINAL CTA + SHORT FORM -->
 <section class="py-16 lg:py-24 bg-navy">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">

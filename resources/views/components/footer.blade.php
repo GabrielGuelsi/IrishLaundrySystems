@@ -2,7 +2,7 @@
 
     <!-- Proof slot: testimonial + logo strip -->
     <div class="border-b border-white/10">
-        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
             <!-- Testimonial -->
             <blockquote class="text-center max-w-2xl mx-auto mb-8">
@@ -23,7 +23,7 @@
     </div>
 
     <!-- Main footer -->
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
 
             <!-- Trust block -->
@@ -89,7 +89,7 @@
 
     <!-- Legal bar -->
     <div class="border-t border-white/10 bg-black/20">
-        <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p class="text-xs text-gray-600 font-body">
                 &copy; {{ date('Y') }} Irish Laundry Systems Ltd. All rights reserved.
             </p>

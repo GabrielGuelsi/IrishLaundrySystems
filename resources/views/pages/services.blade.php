@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -37,7 +37,7 @@
 
 <!-- SERVICE ROUTE CARDS -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Three Core Services</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">The three service pathways that underpin every ILS customer relationship — structured around preventing and resolving downtime.</p>
@@ -85,7 +85,7 @@
 
 <!-- PARTS & AFTERCARE -->
 <section id="parts" class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Parts &amp; Aftercare</h2>

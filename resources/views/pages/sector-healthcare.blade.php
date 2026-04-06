@@ -10,7 +10,7 @@
 
 <!-- 1. HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
@@ -54,7 +54,7 @@
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
@@ -85,7 +85,7 @@
 
 <!-- 4. LAUNDRY CYCLE MANAGEMENT -->
 <section class="py-16 lg:py-24 bg-white border-y border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="max-w-3xl mb-10 reveal">
             <x-pretitle label="Laundry Cycle Management" />
@@ -108,7 +108,7 @@
 
 {{-- Video band --}}
 <section class="bg-navy py-14 lg:py-20">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="reveal flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
             <div class="lg:w-2/5">
@@ -148,7 +148,7 @@
 
 {{-- A: Split hero --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
@@ -183,7 +183,7 @@
 
 {{-- B: Metric bar --}}
 <div class="bg-[#e8f0e0] py-6">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-6">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-6">
         <div class="flex-shrink-0 text-center">
             <span class="block font-heading font-bold text-navy text-4xl leading-none">50%</span>
             <span class="block font-body text-xs font-bold uppercase tracking-widest text-gray-500 mt-1">Water Savings</span>
@@ -197,7 +197,7 @@
 
 {{-- C: Features + Download/Discover --}}
 <section class="py-16 lg:py-24 bg-white border-t border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
             Enhanced usability, superior safety
         </h2>
@@ -298,7 +298,7 @@
 
 <!-- FEATURE DETAILS: Maximise hygiene / Operator support / Intelligent control -->
 <section class="py-10 bg-white border-b border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
 
         {{-- 1. Maximise hygiene --}}
         <div class="reveal border-b border-border pb-10">
@@ -375,7 +375,7 @@
 
 <!-- 7. HEALTHCARE EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-navy border-y border-border">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 reveal">
             <div class="max-w-2xl">
@@ -439,7 +439,7 @@
 
 <!-- 9. ASSESSMENT FORM -->
 <section id="healthcare-assessment" class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
 
             <div class="bg-navy rounded-2xl p-8 flex flex-col reveal reveal-left">
