@@ -425,10 +425,10 @@
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center h-80">
                     <img src="/images/equipment/{{ $item['img'] }}.webp"
                          alt="{{ $item['name'] }}"
-                         class="w-full max-w-sm h-auto object-contain">
+                         class="max-h-full max-w-full object-contain">
                 </div>
             </div>
             @endforeach
