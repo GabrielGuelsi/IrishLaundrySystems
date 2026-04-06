@@ -203,37 +203,37 @@
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-            {{-- Left: 3 features --}}
-            <div class="lg:col-span-2 flex flex-col gap-8">
-                @foreach([
-                    [
-                        'icon' => '<circle cx="12" cy="12" r="7" stroke-width="1.5"/><line x1="6.5" y1="6.5" x2="17.5" y2="17.5" stroke-width="1.5" stroke-linecap="round"/>',
-                        'title' => 'Maximise hygiene in healthcare applications',
-                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
-                    ],
-                    [
-                        'icon' => '<circle cx="12" cy="5.5" r="2" stroke-width="1.5"/><line x1="12" y1="7.5" x2="12" y2="15" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="10.5" x2="16" y2="10.5" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="15" x2="9" y2="20" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="15" x2="15" y2="20" stroke-width="1.5" stroke-linecap="round"/>',
-                        'title' => 'Operator support in high-output laundries',
-                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
-                    ],
-                    [
-                        'icon' => '<rect x="7" y="4" width="10" height="16" rx="1.5" stroke-width="1.5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 4.5h4"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.5 13l1.5 1.5 3.5-3.5"/>',
-                        'title' => 'Intelligent control',
-                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
-                    ],
-                ] as $feature)
-                <div class="flex items-start gap-5 reveal">
-                    <div class="w-14 h-14 rounded-full border-2 border-navy flex items-center justify-center flex-shrink-0">
-                        <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            {!! $feature['icon'] !!}
-                        </svg>
-                    </div>
-                    <div>
+            {{-- Left: icons image + 3 feature texts --}}
+            <div class="lg:col-span-2 flex flex-col sm:flex-row gap-8 items-start">
+
+                <div class="flex-shrink-0 flex justify-center sm:justify-start">
+                    <img src="/images/healthcare/IconsHealthcare.png"
+                         alt="Healthcare feature icons"
+                         class="w-24 h-auto object-contain">
+                </div>
+
+                <div class="flex flex-col gap-8">
+                    @foreach([
+                        [
+                            'title' => 'Maximise hygiene in healthcare applications',
+                            'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
+                        ],
+                        [
+                            'title' => 'Operator support in high-output laundries',
+                            'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
+                        ],
+                        [
+                            'title' => 'Intelligent control',
+                            'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
+                        ],
+                    ] as $feature)
+                    <div class="reveal">
                         <h3 class="font-heading font-bold text-navy text-base mb-1">{{ $feature['title'] }}</h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
+
             </div>
 
             {{-- Right: Download + Discover stacked --}}
