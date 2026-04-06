@@ -9,42 +9,29 @@
 @include('components.sector-tabs')
 
 <!-- 1. HERO -->
-<section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            <div class="reveal reveal-left">
-                <x-pretitle label="Healthcare Laundry Support" />
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
-                    Healthcare laundry systems designed around hygiene control, workflow discipline, and operational continuity.
-                </h1>
-                <p class="font-body text-gray-300 text-lg leading-relaxed mb-8">
-                    Barrier washer solutions, service contracts, and engineering support — built for environments where hygiene and uptime are non-negotiable.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                    <a href="#healthcare-assessment"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Healthcare Assessment
-                    </a>
-                    <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to an Engineer
-                    </a>
-                </div>
+<section class="relative min-h-[600px] lg:min-h-[680px] flex items-center overflow-hidden">
+    <!-- Background image -->
+    <img src="/images/healthcare/hero-main.jpg" alt="Healthcare laundry installation"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-navy/75"></div>
+    <!-- Content -->
+    <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="max-w-3xl reveal reveal-left">
+            <x-pretitle label="Healthcare Laundry Support" />
+            <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
+                Hygiene control and<br>operational continuity<br>for healthcare laundry.
+            </h1>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#healthcare-assessment"
+                   class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                    Request Healthcare Assessment
+                </a>
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
+                    Talk to an Engineer
+                </a>
             </div>
-
-            <div class="grid grid-cols-2 gap-3 reveal reveal-right">
-                <div class="col-span-2 rounded-2xl overflow-hidden h-56">
-                    <img src="/images/healthcare/hero-main.jpg" alt="Healthcare laundry installation" class="w-full h-full object-cover">
-                </div>
-                <div class="rounded-2xl overflow-hidden h-40">
-                    <img src="/images/healthcare/hero-panel.jpg" alt="Machine control panel" class="w-full h-full object-cover">
-                </div>
-                <div class="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col justify-center h-40">
-                    <p class="font-heading font-bold text-white text-sm leading-snug">Built for sites where contamination control and continuity cannot be treated casually.</p>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
@@ -54,7 +41,7 @@
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
@@ -85,7 +72,7 @@
 
 <!-- 4. LAUNDRY CYCLE MANAGEMENT -->
 <section class="py-16 lg:py-24 bg-white border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl mb-10 reveal">
             <x-pretitle label="Laundry Cycle Management" />
@@ -108,7 +95,7 @@
 
 {{-- Video band --}}
 <section class="bg-navy py-14 lg:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="reveal flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
             <div class="lg:w-2/5">
@@ -148,7 +135,7 @@
 
 {{-- A: Split hero --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
@@ -174,7 +161,7 @@
             <div class="reveal reveal-right flex justify-center items-center">
                 <img src="/images/equipment/line6000-barrier-washer.webp"
                      alt="Line 6000 Barrier Washer"
-                     class="max-h-80 w-auto object-contain drop-shadow-xl">
+                     class="w-full h-auto object-contain drop-shadow-xl">
             </div>
 
         </div>
@@ -183,7 +170,7 @@
 
 {{-- B: Metric bar --}}
 <div class="bg-[#e8f0e0] py-6">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center gap-6">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex items-center gap-6">
         <div class="flex-shrink-0 text-center">
             <span class="block font-heading font-bold text-navy text-4xl leading-none">50%</span>
             <span class="block font-body text-xs font-bold uppercase tracking-widest text-gray-500 mt-1">Water Savings</span>
@@ -195,42 +182,43 @@
     </div>
 </div>
 
-{{-- C: Features + Download/Discover --}}
+{{-- D: Features + Download/Discover --}}
 <section class="py-16 lg:py-24 bg-white border-t border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
             Enhanced usability, superior safety
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-            {{-- Left: 3 features --}}
+            {{-- Left: 3 features with individual icons --}}
             <div class="lg:col-span-2 flex flex-col gap-8">
                 @foreach([
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>',
+                        'icon'  => '/images/healthcare/hygiene-icon.png',
+                        'alt'   => 'Hygiene icon',
                         'title' => 'Maximise hygiene in healthcare applications',
                         'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
                     ],
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>',
+                        'icon'  => '/images/healthcare/operator-icon.png',
+                        'alt'   => 'Operator icon',
                         'title' => 'Operator support in high-output laundries',
                         'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
                     ],
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H3.75A2.25 2.25 0 011.5 15V5.25m19.5 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 7.409A2.25 2.25 0 012.25 5.493V5.25"/>',
+                        'icon'  => '/images/healthcare/control-icon.png',
+                        'alt'   => 'Control icon',
                         'title' => 'Intelligent control',
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
                 ] as $feature)
-                <div class="flex items-start gap-5 reveal">
-                    <div class="w-11 h-11 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0">
-                        <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                            {!! $feature['icon'] !!}
-                        </svg>
+                <div class="flex items-center gap-6 reveal">
+                    <div class="flex-shrink-0">
+                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain">
                     </div>
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-base mb-1">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
                     </div>
                 </div>
                 @endforeach
@@ -247,8 +235,8 @@
                             ['label' => 'Line 6000 Evolution Barrier Washers',    'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
                             ['label' => 'Line 6000 Pullman Barrier Washers',      'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
                             ['label' => 'Clean, Sanitize, Decontaminate Brochure','file' => 'Electrolux_WhitePaper_CleaningSolution.pdf'],
-                            ['label' => 'Line 6000 Tumble Dryers',                'file' => ''],
-                            ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => ''],
+                            ['label' => 'Line 6000 Tumble Dryers',                'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                            ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
                         ] as $pdf)
                         <li>
                             @if($pdf['file'])
@@ -297,7 +285,7 @@
 
 <!-- FEATURE DETAILS: Maximise hygiene / Operator support / Intelligent control -->
 <section class="py-10 bg-white border-b border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 space-y-8">
 
         {{-- 1. Maximise hygiene --}}
         <div class="reveal border-b border-border pb-10">
@@ -306,7 +294,7 @@
                 <div class="flex-shrink-0">
                     <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                          alt="Barrier washer hygiene illustration"
-                         class="w-64 h-auto object-contain">
+                         class="w-[24rem] h-auto object-contain">
                 </div>
                 <div class="flex-1">
                     <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
@@ -316,7 +304,7 @@
                         Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
                     </p>
                     <div class="flex items-center gap-3">
-                        <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-14 h-14 object-contain flex-shrink-0">
+                        <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-40 h-40 object-contain flex-shrink-0">
                         <p class="font-body text-gray-600 text-base leading-relaxed">
                             The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
                         </p>
@@ -334,16 +322,16 @@
                         All Line 6000 Barrier Washers feature the Ergocent 4-star rating with ergonomic door handles and optimised door height. Models over 50kg include a dual-compartment partition drum that auto-positions at the end of each cycle.
                     </p>
                     <div class="flex items-center gap-4">
-                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-14 h-14 object-contain flex-shrink-0">
+                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-40 h-40 object-contain flex-shrink-0">
                         <p class="font-body text-gray-600 text-base leading-relaxed">
                             The <strong class="text-navy">Auto Inner Door Opening</strong> feature pre-opens inner drum doors at the end of each wash cycle.
                         </p>
                     </div>
                 </div>
-                <div class="flex-shrink-0 lg:w-64">
+                <div class="flex-shrink-0">
                     <img src="/images/healthcare/Foto-web-BW.jpg"
                          alt="Operator loading barrier washer drum"
-                         class="w-full h-48 rounded-xl object-cover">
+                         class="w-[24rem] h-auto rounded-xl object-cover">
                 </div>
             </div>
         </div>
@@ -352,10 +340,10 @@
         <div class="reveal">
             <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Intelligent control</h3>
             <div class="flex flex-col lg:flex-row gap-8 items-center">
-                <div class="flex-shrink-0 flex justify-center lg:w-64">
+                <div class="flex-shrink-0 flex justify-center">
                     <img src="/images/healthcare/immagine-schermi-PullmannBW.webp"
                          alt="ClarusVibe intelligent control display"
-                         class="w-56 h-auto object-contain">
+                         class="w-[24rem] h-auto object-contain">
                 </div>
                 <div class="flex-1">
                     <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
@@ -372,14 +360,59 @@
     </div>
 </section>
 
+<!-- ERGOCERT 4-STAR BAND -->
+<section class="relative py-20 lg:py-28 overflow-hidden">
+    <!-- Background: 4starpoints image -->
+    <img src="/images/healthcare/4starpoints.webp" alt=""
+         class="absolute inset-0 w-full h-full object-cover object-[30%_center]">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-navy/85"></div>
+    <!-- Content -->
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="text-center mb-12 reveal">
+            <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGOCERT 4-Star Certified</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight">
+                Engineered around the operator
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            @foreach([
+                [
+                    'title' => 'Designed with international standards of excellence in mind',
+                    'body'  => 'to achieve the highest level of safety and technical certifications.',
+                ],
+                [
+                    'title' => 'Proven to reduce musculoskeletal disorders',
+                    'body'  => 'as a result of body analysis trials whilst operating machinery.',
+                ],
+                [
+                    'title' => 'User-appliance synergy',
+                    'body'  => 'based on years of testing the interaction between operator and appliance to create an intuitive and effortless experience.',
+                ],
+                [
+                    'title' => '360° human-centered certified design',
+                    'body'  => 'at the core of the rigorous development process.',
+                ],
+            ] as $star)
+            <div class="reveal bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col gap-3 hover:bg-white/10 transition-colors duration-200">
+                <p class="font-body text-white text-sm leading-relaxed">
+                    <strong class="block text-white text-base mb-1">{{ $star['title'] }}</strong>
+                    {{ $star['body'] }}
+                </p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 <!-- 7. HEALTHCARE EQUIPMENT -->
-<section class="py-16 lg:py-24 bg-navy border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section class="py-16 lg:py-24 bg-white border-y border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10 reveal">
             <div class="max-w-2xl">
                 <x-pretitle label="Healthcare Equipment" />
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl">
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">
                     Everything your healthcare laundry needs, in a single partner.
                 </h2>
             </div>
@@ -411,25 +444,85 @@
             ],
         ]; @endphp
 
-        <div class="divide-y divide-white/10 border-t border-b border-white/10">
+        <div class="divide-y divide-gray-100 border-t border-b border-gray-100">
             @foreach($items as $i => $item)
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-10">
                 <div>
                     <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">{{ $item['name'] }}</p>
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-5">{{ $item['heading'] }}</h3>
-                    <p class="font-body text-gray-300 leading-relaxed mb-8">{{ $item['body'] }}</p>
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">{{ $item['heading'] }}</h3>
+                    <p class="font-body text-gray-600 leading-relaxed mb-8">{{ $item['body'] }}</p>
                     <a href="{{ route('equipment') }}"
                        class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors">
                         View equipment
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
-                <div class="flex items-center justify-center">
+                <div class="flex items-center justify-center h-80">
                     <img src="/images/equipment/{{ $item['img'] }}.webp"
                          alt="{{ $item['name'] }}"
-                         class="w-full max-w-sm h-auto object-contain">
+                         class="max-h-full max-w-full object-contain">
                 </div>
             </div>
+
+            @if($i === 0)
+            {{-- Enhanced usability block — barrier washers only --}}
+            <div class="py-10 px-8 -mx-8 bg-white rounded-2xl mt-6">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {{-- Left: 3 patches stacked --}}
+                    <div class="flex flex-col gap-4">
+                        {{-- Patch 1 --}}
+                        <div class="flex items-center gap-5 bg-gray-50 border border-gray-200 rounded-xl px-6 py-5 flex-1">
+                            <img src="/images/healthcare/automatic-door-locking.png" alt="Automatic Door Locking" class="w-28 h-28 object-contain flex-shrink-0">
+                            <div>
+                                <p class="font-heading font-bold text-navy text-base leading-snug mb-1">Lightening the workload</p>
+                                <p class="font-body text-gray-600 text-sm leading-relaxed">
+                                    Our external door handle with built-in locking device <strong class="text-navy">locks/unlocks automatically before/after the washing cycle</strong> — making loading and unloading much easier.
+                                </p>
+                            </div>
+                        </div>
+                        {{-- Patch 2: Hygiene Watchdog --}}
+                        <div class="flex items-center gap-5 bg-gray-50 border border-gray-200 rounded-xl px-6 py-5 flex-1">
+                            <img src="/images/healthcare/HygieneWatchdog.png" alt="Hygiene Watchdog" class="w-28 h-28 object-contain flex-shrink-0">
+                            <div>
+                                <p class="font-heading font-bold text-navy text-base leading-snug mb-1">Your Hygiene Partner</p>
+                                <p class="font-body text-gray-600 text-sm leading-relaxed">
+                                    The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all laundry is <strong class="text-navy">fully washed and thoroughly decontaminated</strong>. This guarantees maximum defence against the spread of microorganisms and cross infections, keeping germs at bay and your mind at rest.
+                                </p>
+                            </div>
+                        </div>
+                        {{-- Patch 3: Efficient Dosing --}}
+                        <div class="flex items-center gap-5 bg-gray-50 border border-gray-200 rounded-xl px-6 py-5 flex-1">
+                            <img src="/images/healthcare/EfficientDosing.png" alt="Efficient Dosing" class="w-28 h-28 object-contain flex-shrink-0">
+                            <div>
+                                <p class="font-heading font-bold text-navy text-base leading-snug mb-1">Precision dosage</p>
+                                <p class="font-body text-gray-600 text-sm leading-relaxed">
+                                    Reduce detergent consumption to a minimum for maximum efficiency, significant cost savings and a greener footprint. Thanks to our Efficient Dosing feature, the precise amount of <strong class="text-navy">detergent and water needed will be added automatically in proportion to the weight of the load</strong>, eliminating waste and boosting performance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Right: 5 features --}}
+                    <div class="flex flex-col divide-y divide-gray-100">
+                        @foreach([
+                            ['icon' => 'Optimal Height.png',                    'title' => 'Optimal height',                      'body' => 'The new ergonomic handle suits people of all heights, facilitating loading and unloading and reducing operator strain.'],
+                            ['icon' => 'Easy Fit, Easy Access.png',             'title' => 'Easy fit, easy access',               'body' => 'Ergonomically enhanced for easy access and optimal safety — the large stainless-steel door has a <strong class="text-navy">wide-angle opening of just under 180°</strong>.'],
+                            ['icon' => 'Built Around Your Needs.png',           'title' => 'Built around your needs',             'body' => 'All models can be ordered with either <strong class="text-navy">leftward or rightward</strong> opening options, fitting all room configurations.'],
+                            ['icon' => 'Space-saving Design.png',               'title' => 'Space-saving design',                 'body' => 'The compact footprint allows installation in the smallest of areas, optimising space and improving the working environment.'],
+                            ['icon' => 'Ergonomics meets smart technology.png', 'title' => 'Ergonomics meets smart technology',   'body' => 'The <strong class="text-navy">Indexing System</strong> auto-positions the inner drum at the end of each cycle, guaranteeing correct positioning during loading.'],
+                        ] as $feat)
+                        <div class="flex gap-5 py-5 first:pt-0">
+                            <img src="/images/healthcare/{{ $feat['icon'] }}" alt="{{ $feat['title'] }}" class="w-16 h-16 object-contain flex-shrink-0">
+                            <div>
+                                <p class="font-heading font-bold text-navy text-lg mb-1">{{ $feat['title'] }}</p>
+                                <p class="font-body text-gray-600 text-base leading-relaxed">{!! $feat['body'] !!}</p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            @endif
+
             @endforeach
         </div>
 
@@ -438,7 +531,7 @@
 
 <!-- 9. ASSESSMENT FORM -->
 <section id="healthcare-assessment" class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
 
             <div class="bg-navy rounded-2xl p-8 flex flex-col reveal reveal-left">
