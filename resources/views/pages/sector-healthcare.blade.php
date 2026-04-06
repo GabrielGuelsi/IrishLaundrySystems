@@ -207,17 +207,17 @@
             <div class="lg:col-span-2 flex flex-col gap-8">
                 @foreach([
                     [
-                        'icon' => '<circle cx="12" cy="12" r="10" stroke-width="1.5"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="9" r="1.5" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1" fill="currentColor" stroke="none"/><circle cx="8" cy="14" r="0.8" fill="currentColor" stroke="none"/><circle cx="16" cy="14" r="0.8" fill="currentColor" stroke="none"/>',
+                        'icon' => '<circle cx="12" cy="12" r="7" stroke-width="1.5"/><line x1="6.5" y1="6.5" x2="17.5" y2="17.5" stroke-width="1.5" stroke-linecap="round"/>',
                         'title' => 'Maximise hygiene in healthcare applications',
                         'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
                     ],
                     [
-                        'icon' => '<circle cx="12" cy="5" r="2" stroke-width="1.5"/><line x1="12" y1="7" x2="12" y2="14" stroke-width="1.5" stroke-linecap="round"/><line x1="7" y1="10" x2="17" y2="10" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="14" x2="8.5" y2="20" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="14" x2="15.5" y2="20" stroke-width="1.5" stroke-linecap="round"/>',
+                        'icon' => '<circle cx="12" cy="5.5" r="2" stroke-width="1.5"/><line x1="12" y1="7.5" x2="12" y2="15" stroke-width="1.5" stroke-linecap="round"/><line x1="8" y1="10.5" x2="16" y2="10.5" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="15" x2="9" y2="20" stroke-width="1.5" stroke-linecap="round"/><line x1="12" y1="15" x2="15" y2="20" stroke-width="1.5" stroke-linecap="round"/>',
                         'title' => 'Operator support in high-output laundries',
                         'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
                     ],
                     [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 11.5V17a1 1 0 001 1h8a1 1 0 001-1v-5.5M7 11.5l1.5-5h7l1.5 5M7 11.5h10M10 7.5V6a2 2 0 014 0v1.5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.5 14.5l1.5 1.5 3-3"/>',
+                        'icon' => '<rect x="7" y="4" width="10" height="16" rx="1.5" stroke-width="1.5"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 4.5h4"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.5 13l1.5 1.5 3.5-3.5"/>',
                         'title' => 'Intelligent control',
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
