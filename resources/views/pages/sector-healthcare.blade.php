@@ -203,37 +203,38 @@
         </h2>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-            {{-- Left: icons image + 3 feature texts --}}
-            <div class="lg:col-span-2 flex flex-col sm:flex-row gap-8 items-start">
-
-                <div class="flex-shrink-0 flex justify-center sm:justify-start">
-                    <img src="/images/healthcare/IconsHealthcare.png"
-                         alt="Healthcare feature icons"
-                         class="w-24 h-auto object-contain">
-                </div>
-
-                <div class="flex flex-col gap-8">
-                    @foreach([
-                        [
-                            'title' => 'Maximise hygiene in healthcare applications',
-                            'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
-                        ],
-                        [
-                            'title' => 'Operator support in high-output laundries',
-                            'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
-                        ],
-                        [
-                            'title' => 'Intelligent control',
-                            'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
-                        ],
-                    ] as $feature)
-                    <div class="reveal">
+            {{-- Left: 3 features with individual icons --}}
+            <div class="lg:col-span-2 flex flex-col gap-8">
+                @foreach([
+                    [
+                        'icon'  => '/images/healthcare/hygiene-icon.png',
+                        'alt'   => 'Hygiene icon',
+                        'title' => 'Maximise hygiene in healthcare applications',
+                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
+                    ],
+                    [
+                        'icon'  => '/images/healthcare/operator-icon.png',
+                        'alt'   => 'Operator icon',
+                        'title' => 'Operator support in high-output laundries',
+                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
+                    ],
+                    [
+                        'icon'  => '/images/healthcare/control-icon.png',
+                        'alt'   => 'Control icon',
+                        'title' => 'Intelligent control',
+                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
+                    ],
+                ] as $feature)
+                <div class="flex items-start gap-5 reveal">
+                    <div class="flex-shrink-0">
+                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-14 h-14 object-contain">
+                    </div>
+                    <div>
                         <h3 class="font-heading font-bold text-navy text-base mb-1">{{ $feature['title'] }}</h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
                     </div>
-                    @endforeach
                 </div>
-
+                @endforeach
             </div>
 
             {{-- Right: Download + Discover stacked --}}
