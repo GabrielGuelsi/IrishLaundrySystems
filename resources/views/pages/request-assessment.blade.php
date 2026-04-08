@@ -31,12 +31,12 @@
 
             <!-- Form -->
             <div class="lg:col-span-2">
-                <div class="bg-white border border-border rounded-xl p-6 lg:p-8">
+                <div class="bg-white border border-border rounded-2xl p-6 lg:p-8">
                     <h2 class="font-heading font-bold text-navy text-xl mb-2">Assessment Request Form</h2>
                     <p class="font-body text-gray-500 text-sm mb-6 leading-relaxed">Fill in what you know. The more context you provide, the better we can tailor our response. Fields marked * are required.</p>
 
                     @if (session('success'))
-                    <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-6 flex items-start gap-3">
+                    <div class="bg-green-50 border border-green-200 rounded-2xl p-5 mb-6 flex items-start gap-3">
                         <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
@@ -48,7 +48,7 @@
                     @endif
 
                     @if ($errors->any())
-                    <div class="bg-red-50 border border-red-200 rounded-xl p-4 mb-6">
+                    <div class="bg-red-50 border border-red-200 rounded-2xl p-4 mb-6">
                         <div class="font-heading font-semibold text-red-800 text-sm mb-2">Please correct the following:</div>
                         <ul class="space-y-1">
                             @foreach ($errors->all() as $error)
@@ -230,7 +230,7 @@
 
             <!-- Right sidebar -->
             <div class="lg:col-span-1 space-y-5">
-                <div class="bg-navy text-white rounded-xl p-6">
+                <div class="bg-navy text-white rounded-2xl p-6">
                     <h3 class="font-heading font-bold text-white text-lg mb-3">What Happens Next</h3>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
@@ -248,7 +248,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white border border-border rounded-xl p-5">
+                <div class="bg-white border border-border rounded-2xl p-5">
                     <h3 class="font-heading font-semibold text-navy text-base mb-3">Prefer to call?</h3>
                     <a href="tel:+353000000000" class="flex items-center gap-3 text-navy hover:text-steel transition-colors">
                         <div class="w-9 h-9 rounded-lg bg-navy flex items-center justify-center flex-shrink-0">
@@ -263,7 +263,7 @@
                     </a>
                 </div>
 
-                <div class="bg-steel text-white rounded-xl p-5">
+                <div class="bg-steel text-white rounded-2xl p-5">
                     <div class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-orange flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
@@ -275,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="bg-bg border border-border rounded-xl p-5">
+                <div class="bg-bg border border-border rounded-2xl p-5">
                     <div class="flex items-start gap-2 mb-2">
                         <svg class="w-4 h-4 text-gray-400 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>

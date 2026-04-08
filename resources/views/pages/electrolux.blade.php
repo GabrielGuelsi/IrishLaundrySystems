@@ -41,7 +41,7 @@
                 <p class="font-body text-gray-600 leading-relaxed mb-6">
                     For customers, it means they are working with an engineer who knows the equipment to the level the manufacturer expects — not an engineer working from generic training and non-genuine parts.
                 </p>
-                <div class="bg-navy/5 border border-navy/10 rounded-xl p-5">
+                <div class="bg-navy/5 border border-navy/10 rounded-2xl p-5">
                     <p class="font-body text-navy font-semibold text-sm">
                         ILS only uses the text designation "Authorised Electrolux Professional Partner" — we do not reproduce Electrolux trademarks or logos. For information about Electrolux Professional's equipment range, please visit their official website.
                     </p>
@@ -51,7 +51,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl mb-2">What Customers Get</h2>
 
                 <!-- 3 benefit cards -->
-                <div class="bg-white border border-border rounded-xl p-6">
+                <div class="bg-white border border-border rounded-2xl p-6">
                     <div class="flex items-start gap-4">
                         <div class="w-10 h-10 rounded-lg bg-orange/10 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white border border-border rounded-xl p-6">
+                <div class="bg-white border border-border rounded-2xl p-6">
                     <div class="flex items-start gap-4">
                         <div class="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -77,7 +77,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-white border border-border rounded-xl p-6">
+                <div class="bg-white border border-border rounded-2xl p-6">
                     <div class="flex items-start gap-4">
                         <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -103,15 +103,15 @@
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Why genuine parts matter — and what it means for your operation.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="bg-bg border border-border rounded-xl p-6">
+            <div class="bg-bg border border-border rounded-2xl p-6">
                 <h3 class="font-heading font-semibold text-navy text-base mb-2">First-Fix Rate</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Using genuine parts means the right component, correct specification, first time. This improves first-visit repair rates and reduces the time your equipment is out of service.</p>
             </div>
-            <div class="bg-bg border border-border rounded-xl p-6">
+            <div class="bg-bg border border-border rounded-2xl p-6">
                 <h3 class="font-heading font-semibold text-navy text-base mb-2">Equipment Longevity</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Commercial laundry equipment is a significant investment. Genuine OEM parts maintain the manufacturer's tolerances and contribute to equipment longevity and reliability over time.</p>
             </div>
-            <div class="bg-bg border border-border rounded-xl p-6">
+            <div class="bg-bg border border-border rounded-2xl p-6">
                 <h3 class="font-heading font-semibold text-navy text-base mb-2">Warranty &amp; Governance</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">For new equipment under manufacturer warranty, genuine parts are generally required to maintain warranty status. In regulated environments, parts provenance can also be a governance consideration.</p>
             </div>

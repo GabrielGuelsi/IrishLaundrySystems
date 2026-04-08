@@ -19,17 +19,6 @@
                 Healthcare
             </a>
 
-            <a href="{{ route('sectors.hospitality') }}"
-               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
-                      {{ request()->routeIs('sectors.hospitality')
-                          ? 'border-orange text-white'
-                          : 'border-transparent text-steel-light hover:text-white hover:border-white/30' }}">
-                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"/>
-                </svg>
-                Hospitality
-            </a>
-
             <a href="{{ route('sectors.care') }}"
                class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
                       {{ request()->routeIs('sectors.care')
@@ -39,6 +28,17 @@
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
                 </svg>
                 Care Facilities
+            </a>
+
+            <a href="{{ route('sectors.hospitality') }}"
+               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
+                      {{ request()->routeIs('sectors.hospitality')
+                          ? 'border-orange text-white'
+                          : 'border-transparent text-steel-light hover:text-white hover:border-white/30' }}">
+                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"/>
+                </svg>
+                Hospitality
             </a>
 
             <a href="{{ route('sectors.commercial') }}"

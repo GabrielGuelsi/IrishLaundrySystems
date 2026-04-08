@@ -112,8 +112,8 @@
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('sectors.healthcare') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Healthcare</a>
-                        <a href="{{ route('sectors.hospitality') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Hospitality</a>
                         <a href="{{ route('sectors.care') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Care Facilities</a>
+                        <a href="{{ route('sectors.hospitality') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Hospitality</a>
                         <a href="{{ route('sectors.commercial') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial &amp; Industrial</a>
                     </div></div>
                 </div>
@@ -216,11 +216,11 @@
                     Sectors
                     <svg class="w-4 h-4 text-navy/40 transition-transform duration-200" :class="sOpen ? 'rotate-90' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
                 </button>
-                <div x-show="sOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
-                    <a href="{{ route('sectors.healthcare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Healthcare</a>
-                    <a href="{{ route('sectors.hospitality') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Hospitality</a>
-                    <a href="{{ route('sectors.care') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Care Facilities</a>
-                    <a href="{{ route('sectors.commercial') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Commercial &amp; Industrial</a>
+                <div x-show="sOpen" x-cloak class="pl-4 space-y-1 py-1">
+                    <a href="{{ route('sectors.healthcare') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Healthcare</a>
+                    <a href="{{ route('sectors.care') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Care Facilities</a>
+                    <a href="{{ route('sectors.hospitality') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Hospitality</a>
+                    <a href="{{ route('sectors.commercial') }}" class="block py-2 text-sm text-gray-300 hover:text-white">Commercial &amp; Industrial</a>
                 </div>
             </div>
 

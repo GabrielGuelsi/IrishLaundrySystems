@@ -18,7 +18,7 @@
 <!-- CONTENT -->
 <section class="py-16 lg:py-20 bg-bg">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="bg-white border border-border rounded-xl p-8 lg:p-12 space-y-8 font-body text-gray-700 leading-relaxed">
+        <div class="bg-white border border-border rounded-2xl p-8 lg:p-12 space-y-8 font-body text-gray-700 leading-relaxed">
 
             <div>
                 <h2 class="font-heading font-bold text-navy text-xl mb-3">Who We Are</h2>

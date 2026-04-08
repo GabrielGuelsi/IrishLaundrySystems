@@ -73,7 +73,7 @@
                 </ul>
             </div>
             <div>
-                <div class="bg-bg border border-border rounded-xl p-6 lg:p-8 mb-6">
+                <div class="bg-bg border border-border rounded-2xl p-6 lg:p-8 mb-6">
                     <h3 class="font-heading font-bold text-navy text-lg mb-4">How Preventive Visits Work</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed mb-4">
                         At each scheduled visit, our engineers will inspect all contracted equipment, carry out cleaning and lubrication tasks, check safety features, identify wear and replace consumable parts where appropriate.
@@ -85,7 +85,7 @@
                         Visit frequency is agreed at the start of the contract and is based on your equipment type, usage profile and selected tier.
                     </p>
                 </div>
-                <div class="bg-amber-50 border border-amber-200 rounded-xl p-5">
+                <div class="bg-amber-50 border border-amber-200 rounded-2xl p-5">
                     <div class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/>

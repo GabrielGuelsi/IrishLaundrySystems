@@ -79,7 +79,7 @@
                 ['4', 'Repair & Report', 'Repair is completed where possible on the first visit. A service report is provided. If further work is needed, we agree the next steps with you.', 'text-orange'],
             ]; @endphp
             @foreach ($steps as [$num, $title, $body, $color])
-            <div class="bg-bg border border-border rounded-xl p-6">
+            <div class="bg-bg border border-border rounded-2xl p-6">
                 <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-4 text-white font-heading font-bold">{{ $num }}</div>
                 <h3 class="font-heading font-semibold text-navy text-base mb-2">{{ $title }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $body }}</p>

@@ -10,7 +10,7 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
 
             <!-- CORE -->
-            <div class="bg-white rounded-xl border border-border shadow-card flex flex-col">
+            <div class="bg-white rounded-2xl border border-border shadow-card flex flex-col">
                 <div class="p-6 lg:p-8 border-b border-border">
                     <div class="inline-block bg-muted text-navy text-xs font-heading font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Core</div>
                     <h3 class="font-heading font-bold text-navy text-2xl mb-2">Core Cover</h3>
@@ -61,7 +61,7 @@
             </div>
 
             <!-- PRIORITY (highlighted) -->
-            <div class="bg-white rounded-xl border-2 border-navy shadow-card-hover flex flex-col relative">
+            <div class="bg-white rounded-2xl border-2 border-navy shadow-card-hover flex flex-col relative">
                 <div class="absolute -top-3 left-1/2 -translate-x-1/2">
                     <span class="bg-orange text-white text-xs font-heading font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">Most Popular</span>
                 </div>
@@ -115,7 +115,7 @@
             </div>
 
             <!-- ASSURED -->
-            <div class="bg-white rounded-xl border border-border shadow-card flex flex-col">
+            <div class="bg-white rounded-2xl border border-border shadow-card flex flex-col">
                 <div class="p-6 lg:p-8 border-b border-border">
                     <div class="inline-block bg-steel text-white text-xs font-heading font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Assured</div>
                     <h3 class="font-heading font-bold text-navy text-2xl mb-2">Assured Cover</h3>
