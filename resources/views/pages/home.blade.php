@@ -45,7 +45,7 @@
 
     <!-- Text — vertically centered, aligned with nav -->
     <div class="relative z-10 flex-1 flex items-center w-full" style="padding-top: 70px;">
-        <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-2">
             <div style="max-width: 560px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-5" style="font-size: clamp(1.9rem, 3.0vw, 3.0rem);">
@@ -113,7 +113,7 @@
 
     <!-- Bottom strip — Electrolux partner showcase -->
     <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex items-center justify-between gap-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-4 flex items-center justify-between gap-6">
             <div class="flex items-center gap-5">
                 <div class="flex-shrink-0">
                     <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
@@ -180,46 +180,83 @@
 </style>
 
 <section class="py-16 lg:py-28 bg-gray-50 overflow-hidden">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
-            <!-- 01 — Service Contracts -->
-            <div class="relative bg-white rounded-2xl shadow-sm border-l-4 border-orange p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
-                <span class="absolute top-4 right-5 font-heading font-bold text-6xl text-navy/5 select-none leading-none" aria-hidden="true">01</span>
-                <div class="w-11 h-11 rounded-lg bg-orange/10 flex items-center justify-center mb-5">
-                    <x-icon class="w-6 h-6 text-orange">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/>
-                    </x-icon>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-xl mb-3">Service Contracts</h3>
-                <p class="font-body text-gray-600 leading-relaxed mb-5 flex-1">
-                    Structured preventive maintenance programmes across three tiers — Core, Priority and Assured. Designed to reduce unplanned stoppages and give operations managers predictable costs and documented maintenance history.
+            <!-- Left: heading + text -->
+            <div class="lg:w-5/12 flex-shrink-0">
+                <p class="font-body text-orange font-semibold text-xs uppercase tracking-[0.2em] mb-4">Built for Operational Continuity</p>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-6">
+                    3 pathways, <span class="text-orange">built around uptime</span>
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    Whether you need structured preventive maintenance, rapid-response repairs, or equipment with service included — ILS has a pathway built around keeping your operation running.
                 </p>
-                <a href="{{ route('service-contracts') }}" class="inline-flex items-center gap-2 text-orange font-body font-semibold hover:text-orange-dark transition-colors text-sm">
-                    View service contracts
-                    <x-icon class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-                    </x-icon>
-                </a>
-            </div>
-
-            <!-- 02 — Repairs & Call-outs -->
-            <div class="relative bg-white rounded-2xl shadow-sm border-l-4 border-steel p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
-                <span class="absolute top-4 right-5 font-heading font-bold text-6xl text-navy/5 select-none leading-none" aria-hidden="true">02</span>
-                <div class="w-11 h-11 rounded-lg bg-steel/10 flex items-center justify-center mb-5">
-                    <x-icon class="w-6 h-6 text-steel">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
-                    </x-icon>
+                <div class="flex flex-col gap-3 text-base font-body">
+                    <a href="{{ route('repairs') }}" class="flex items-center gap-3 text-navy/70 hover:text-orange transition-colors">
+                        <span class="w-1.5 h-1.5 rounded-full bg-steel flex-shrink-0"></span> Repairs &amp; Call-outs
+                    </a>
+                    <a href="{{ route('service-contracts') }}" class="flex items-center gap-3 text-navy/70 hover:text-orange transition-colors">
+                        <span class="w-1.5 h-1.5 rounded-full bg-orange flex-shrink-0"></span> Service Contracts
+                    </a>
+                    <a href="{{ route('rental') }}" class="flex items-center gap-3 text-navy/70 hover:text-orange transition-colors">
+                        <span class="w-1.5 h-1.5 rounded-full bg-navy flex-shrink-0"></span> Equipment Rental
+                    </a>
                 </div>
             </div>
 
-            <!-- 03 — Equipment Rental -->
-            <div class="relative bg-white rounded-2xl shadow-sm border-l-4 border-navy p-6 lg:p-8 flex flex-col hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 overflow-hidden">
-                <span class="absolute top-4 right-5 font-heading font-bold text-6xl text-navy/5 select-none leading-none" aria-hidden="true">03</span>
-                <div class="w-11 h-11 rounded-lg bg-navy/10 flex items-center justify-center mb-5">
-                    <x-icon class="w-6 h-6 text-navy">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/>
-                    </x-icon>
+            <!-- Right: CardSwap -->
+            <div class="lg:w-7/12 w-full relative" style="height: 580px;">
+                <div id="cs-container" style="position:absolute; bottom:0; left:50%; transform:translateX(-50%); perspective:900px; overflow:visible;">
+
+                    <!-- Card 01 — Repairs & Call-outs -->
+                    <div class="cs-card">
+                        <div class="cs-card-accent" style="background: #148af4;"></div>
+                        <div class="flex items-center gap-3 mb-5 mt-2">
+                            <span class="font-heading font-bold text-white/20 text-4xl leading-none select-none">01</span>
+                            <h3 class="font-heading font-bold text-white text-lg">Repairs &amp; Call-outs</h3>
+                        </div>
+                        <p class="font-body text-white/60 text-sm leading-relaxed mb-6">
+                            When breakdowns happen, you need engineers who know the equipment and carry the right parts. ILS provides reactive repair support across the Republic of Ireland.
+                        </p>
+                        <a href="{{ route('repairs') }}" class="inline-flex items-center gap-2 text-steel font-body font-semibold text-sm hover:opacity-80 transition-opacity">
+                            Repairs &amp; call-outs
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 02 — Service Contracts -->
+                    <div class="cs-card">
+                        <div class="cs-card-accent" style="background: #F4620F;"></div>
+                        <div class="flex items-center gap-3 mb-5 mt-2">
+                            <span class="font-heading font-bold text-white/20 text-4xl leading-none select-none">02</span>
+                            <h3 class="font-heading font-bold text-white text-lg">Service Contracts</h3>
+                        </div>
+                        <p class="font-body text-white/60 text-sm leading-relaxed mb-6">
+                            Structured preventive maintenance across three tiers — Core, Priority and Assured. Predictable costs, documented history, fewer unplanned stoppages.
+                        </p>
+                        <a href="{{ route('service-contracts') }}" class="inline-flex items-center gap-2 text-orange font-body font-semibold text-sm hover:opacity-80 transition-opacity">
+                            View service contracts
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+
+                    <!-- Card 03 — Equipment Rental -->
+                    <div class="cs-card">
+                        <div class="cs-card-accent" style="background: rgba(255,255,255,0.3);"></div>
+                        <div class="flex items-center gap-3 mb-5 mt-2">
+                            <span class="font-heading font-bold text-white/20 text-4xl leading-none select-none">03</span>
+                            <h3 class="font-heading font-bold text-white text-lg">Equipment Rental</h3>
+                        </div>
+                        <p class="font-body text-white/60 text-sm leading-relaxed mb-6">
+                            Electrolux Professional equipment supplied, installed and supported. Structured rental with maintenance included — managed cost and operational continuity.
+                        </p>
+                        <a href="{{ route('rental') }}" class="inline-flex items-center gap-2 text-white/80 font-body font-semibold text-sm hover:opacity-80 transition-opacity">
+                            Rental options
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
@@ -273,39 +310,52 @@
 
 <!-- 5. WHY ILS + ELECTROLUX -->
 <section class="py-20 lg:py-28 bg-navy overflow-hidden">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="text-center mb-12">
-            <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-3">Platform + Local Execution</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
-                Why ILS and Electrolux Professional Work Together
-            </h2>
-            <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto">
-                Manufacturer-grade capability delivered through field engineering. The combination that reduces friction and downtime risk in critical laundry operations.
-            </p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-                <div class="w-12 h-12 rounded-2xl bg-orange/20 flex items-center justify-center mx-auto mb-4">
-                    <x-icon class="w-6 h-6 text-orange">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/>
-                    </x-icon>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row gap-14 lg:gap-24 items-start">
+
+            <!-- LEFT — anchor column -->
+            <div class="lg:w-5/12 flex-shrink-0 lg:sticky lg:top-32">
+                <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-4">Platform + Local Execution</p>
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-5">
+                    Why ILS and Electrolux Professional Work Together
+                </h2>
+                <p class="font-body text-blue-200 text-base leading-relaxed mb-10">
+                    Manufacturer-grade capability delivered through field engineering. The combination that reduces friction and downtime risk in critical laundry operations.
+                </p>
+
+                <!-- Electrolux badge — prominent white card -->
+                <div class="bg-white rounded-xl px-6 py-5 inline-block mb-8 shadow-lg">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
+                         alt="Electrolux Professional Authorized Partner"
+                         class="h-12 w-auto">
                 </div>
-                <h3 class="font-heading font-semibold text-white text-base mb-2">Electrolux Professional</h3>
-                <p class="font-body text-gray-400 text-sm leading-relaxed">Manufacturer platform, engineering standards, genuine parts network and technical documentation across the full equipment range.</p>
-            </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-                <div class="w-12 h-12 rounded-2xl bg-steel/30 flex items-center justify-center mx-auto mb-4">
-                    <x-icon class="w-6 h-6 text-steel-light">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
-                    </x-icon>
+
+                <div>
+                    <a href="{{ route('electrolux') }}"
+                       class="inline-flex items-center gap-2 text-steel-light hover:text-white font-body font-semibold text-sm transition-colors duration-200">
+                        About our Electrolux partnership
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-                <div class="w-12 h-12 rounded-2xl bg-emerald/20 flex items-center justify-center mx-auto mb-4">
-                    <x-icon class="w-6 h-6 text-emerald">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                    </x-icon>
+
+            <!-- RIGHT — numbered editorial rows -->
+            <div class="lg:w-7/12 flex flex-col divide-y divide-white/10">
+
+                <!-- Row 01 -->
+                <div class="flex gap-6 lg:gap-8 py-8 first:pt-0">
+                    <span class="font-heading font-bold text-white/10 leading-none flex-shrink-0 select-none" style="font-size: 3.5rem; line-height: 1;">01</span>
+                    <div class="pt-1">
+                        <div class="flex items-center gap-2.5 mb-3">
+                            <svg class="w-5 h-5 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z"/>
+                            </svg>
+                            <h3 class="font-heading font-bold text-white text-lg">Electrolux Professional</h3>
+                        </div>
+                        <p class="font-body text-gray-400 text-sm leading-relaxed">Manufacturer platform, engineering standards, genuine parts network and technical documentation across the full equipment range.</p>
+                    </div>
                 </div>
 
                 <!-- Row 02 -->
@@ -431,42 +481,96 @@
 <section style="background: #fff; overflow: hidden;">
 
     <!-- Header -->
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 pt-14 pb-10 flex items-end justify-between gap-6">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 pt-14 pb-10 flex items-end justify-between gap-6">
         <div>
             <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment Categories</h2>
             <p class="font-body text-gray-500 text-base mt-3 max-w-lg">Commercial laundry equipment supplied, installed and supported across the Republic of Ireland.</p>
         </div>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 mb-10">
-            <a href="{{ route('equipment.category', 'washers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
-                <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
-                    <x-icon class="w-5 h-5 text-steel">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
-                    </x-icon>
+        <a href="{{ route('equipment') }}"
+           class="hidden lg:inline-flex items-center gap-2 border border-navy/20 hover:border-navy text-navy/60 hover:text-navy font-body font-semibold px-5 py-2.5 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
+            Browse All Equipment
+            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+    </div>
+
+    <!-- FlowingMenu -->
+    <div class="fm-wrap border-t border-gray-100">
+        <nav class="fm-nav">
+
+            <div class="fm-item">
+                <a class="fm-link" href="{{ route('equipment.category', 'washers') }}">
+                    Commercial Washers
+                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <div class="fm-marquee">
+                    <div class="fm-marquee-inner-wrap">
+                        <div class="fm-marquee-inner" data-speed="14">
+                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/hero/hero-placeholder.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/hero/hero-placeholder.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/hero/hero-placeholder.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/hero/hero-placeholder.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/hero/hero-placeholder.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/hero/hero-placeholder.jpg')"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <p class="font-heading font-semibold text-navy text-sm group-hover:text-steel transition-colors">Commercial Washers</p>
-            </a>
-            <a href="{{ route('equipment.category', 'dryers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
-                <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
-                    <x-icon class="w-5 h-5 text-steel">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/>
-                    </x-icon>
+            </div>
+
+            <div class="fm-item">
+                <a class="fm-link" href="{{ route('equipment.category', 'dryers') }}">
+                    Commercial Dryers
+                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <div class="fm-marquee">
+                    <div class="fm-marquee-inner-wrap">
+                        <div class="fm-marquee-inner" data-speed="16">
+                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-equipment.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-equipment.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-equipment.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-equipment.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-equipment.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-equipment.jpg')"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <p class="font-heading font-semibold text-navy text-sm group-hover:text-steel transition-colors">Commercial Dryers</p>
-            </a>
-            <a href="{{ route('equipment.category', 'barrier-washers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
-                <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
-                    <x-icon class="w-5 h-5 text-steel">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
-                    </x-icon>
+            </div>
+
+            <div class="fm-item">
+                <a class="fm-link" href="{{ route('equipment.category', 'barrier-washers') }}">
+                    Barrier Washers
+                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <div class="fm-marquee">
+                    <div class="fm-marquee-inner-wrap">
+                        <div class="fm-marquee-inner" data-speed="13">
+                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/healthcare/hero-main.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/healthcare/hero-main.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/healthcare/hero-main.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/healthcare/hero-main.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/healthcare/hero-main.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/healthcare/hero-main.jpg')"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <p class="font-heading font-semibold text-navy text-sm group-hover:text-steel transition-colors">Barrier Washers</p>
-            </a>
-            <a href="{{ route('equipment.category', 'ironers') }}" class="bg-white border border-border rounded-2xl p-5 text-center hover:shadow-card-hover hover:border-steel/30 transition-all duration-200 group">
-                <div class="w-10 h-10 rounded-lg bg-steel/10 flex items-center justify-center mx-auto mb-3">
-                    <x-icon class="w-5 h-5 text-steel">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 20.25h12m-7.5-3v3m3-3v3m-10.125-3h17.25c.621 0 1.125-.504 1.125-1.125V4.875c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125Z"/>
-                    </x-icon>
+            </div>
+
+            <div class="fm-item" style="border-bottom: 1px solid rgba(0,0,0,0.07);">
+                <a class="fm-link" href="{{ route('equipment.category', 'ironers') }}">
+                    Ironers
+                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <div class="fm-marquee">
+                    <div class="fm-marquee-inner-wrap">
+                        <div class="fm-marquee-inner" data-speed="15">
+                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-engineers.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-engineers.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-engineers.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-engineers.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-engineers.jpg')"></div></div>
+                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/about/about-engineers.jpg')"></div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -534,7 +638,7 @@
 
 <!-- 8. FINAL CTA + SHORT FORM -->
 <section class="py-16 lg:py-24 bg-navy">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
@@ -563,7 +667,7 @@
                     </a>
                 </div>
             </div>
-            <div class="bg-white rounded-2xl p-6 lg:p-8 shadow-card">
+            <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
                 <h3 class="font-heading font-bold text-navy text-lg mb-1">Request a Service Assessment</h3>
                 <p class="font-body text-gray-500 text-sm mb-6">We aim to respond within 24 hours.</p>
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
