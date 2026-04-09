@@ -11,7 +11,7 @@
 <!-- 1. HERO -->
 <section class="relative min-h-[600px] lg:min-h-[680px] flex items-center overflow-hidden">
     <!-- Background image -->
-    <img src="/images/healthcare/hero-main.jpg" alt="Healthcare laundry installation"
+    <img src="/images/healthcare/heathcarehero.avif" alt="Healthcare laundry installation"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <!-- Content -->
     <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
@@ -69,104 +69,71 @@
 </section>
 
 <!-- WORKING ROUTE SECTION -->
-<section class="relative py-20 lg:py-32 overflow-hidden">
+<section class="relative py-20 lg:py-28 overflow-hidden">
     <img src="/images/healthcare/workflow.jpg" alt="Healthcare laundry workflow" class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0 bg-navy/75"></div>
+    <div class="absolute inset-0 bg-navy/85"></div>
     <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
-            <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
-                    Built around how healthcare laundry rooms actually operate
-                </h2>
-            </div>
-
-            <div class="reveal reveal-right">
-                <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-4">
-                    Healthcare laundry needs a working route, not isolated process steps
-                </h3>
-                <p class="font-body text-gray-200 text-lg leading-relaxed mb-8">
-                    In healthcare environments, room layout, segregation logic, loading and unloading discipline, throughput pressure, and the support model all shape the real equipment decision.
-                </p>
-                <ul class="space-y-5">
-                    @foreach([
-                        'Dirty-side and clean-side handling discipline',
-                        'Room-aware equipment route',
-                        'Capacity and throughput pressure',
-                        'Service route from the start',
-                    ] as $n => $point)
-                    <li class="flex items-start gap-4">
-                        <span class="w-9 h-9 rounded-full bg-[#148af4] text-white font-heading font-bold text-base flex items-center justify-center flex-shrink-0 mt-0.5">{{ $n + 1 }}</span>
-                        <span class="font-body text-white text-xl">{{ $point }}</span>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- 4. LAUNDRY CYCLE MANAGEMENT -->
-<section class="py-16 lg:py-24 bg-white border-y border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="max-w-3xl mb-10 reveal">
-            <x-pretitle label="Laundry Cycle Management" />
-            <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
-                Effective laundry cycle management for hospitals and healthcare sites combines proper sorting, transport, washing, drying, finishing and storage to keep infection at bay while maximizing the safety of both patients and staff.
-            </p>
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight">
-                Maximized hygiene guaranteed with Line 6000 laundry solutions
+        <!-- Title -->
+        <div class="text-center mb-14 reveal">
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
+                Built around how healthcare laundry rooms
+                <span style="color:#148af4;">actually operate</span>
             </h2>
         </div>
 
-        <div class="reveal w-full max-w-4xl mx-auto">
-            <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
-                 alt="Healthcare laundry cycle management"
-                 class="w-full h-auto object-contain">
-        </div>
+        <!-- Steps -->
+        <div class="flex flex-col lg:flex-row items-start justify-center gap-0 reveal">
 
-    </div>
-</section>
+            @foreach([
+                [
+                    'n' => 1,
+                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5"/>',
+                    'label' => 'Dirty-side and clean-side handling discipline',
+                ],
+                [
+                    'n' => 2,
+                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"/>',
+                    'label' => 'Room-aware equipment route',
+                ],
+                [
+                    'n' => 3,
+                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"/>',
+                    'label' => 'Capacity and throughput pressure',
+                ],
+                [
+                    'n' => 4,
+                    'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l5.653-4.655m5.873-4.025a3 3 0 1 1 4.243 4.243"/>',
+                    'label' => 'Service route from the start',
+                ],
+            ] as $i => $step)
 
-{{-- Video band --}}
-<section class="bg-navy py-14 lg:py-20">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="reveal flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
-
-            <div class="lg:w-2/5">
-                <span class="inline-block font-body font-bold text-xs uppercase tracking-widest text-white mb-4">See It In Action</span>
-                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-snug mb-4">
-                    Watch how the Line 6000 transforms healthcare laundry
-                </h3>
-                <p class="font-body text-white text-base leading-relaxed mb-6">
-                    From barrier washing to hygienic drying and finishing — see the full cycle in operation and discover why leading hospitals trust Line 6000 to protect patients and staff every day.
-                </p>
-                <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank"
-                   class="inline-flex items-center gap-2 font-body font-semibold text-white hover:text-white transition-colors">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
+            <!-- Step -->
+            <div class="flex flex-col items-center text-center flex-1 px-6 lg:px-10">
+                <!-- Circle icon -->
+                <div class="relative w-24 h-24 rounded-full bg-white/10 border-2 border-white/20 flex items-center justify-center mb-5">
+                    <svg class="w-10 h-10 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        {!! $step['icon'] !!}
                     </svg>
-                    Watch the full video
-                </a>
+                </div>
+                <h3 class="font-heading font-bold text-white text-lg lg:text-xl mb-2">{{ $step['label'] }}</h3>
             </div>
 
-            <div class="lg:w-3/5 w-full">
-                <div class="relative w-full rounded-xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
-                    <iframe class="absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/26g9u4GPRVc"
-                            title="Laundry Cycle Management"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
+            @if($i < 3)
+            <!-- Arrow -->
+            <div class="hidden lg:flex items-center self-center pb-16">
+                <svg class="w-8 h-8 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
             </div>
+            @endif
+
+            @endforeach
 
         </div>
+
     </div>
 </section>
-
 
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
@@ -261,16 +228,57 @@
     </div>
 </section>
 
+<!-- 4. LAUNDRY CYCLE MANAGEMENT + VIDEO -->
+<section class="py-16 lg:py-24 bg-white border-y border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="max-w-3xl mb-10 reveal">
+            <x-pretitle label="Laundry Cycle Management" />
+            <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
+                Effective laundry cycle management for hospitals and healthcare sites combines proper sorting, transport, washing, drying, finishing and storage to keep infection at bay while maximizing the safety of both patients and staff.
+            </p>
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight">
+                Maximized hygiene guaranteed with Line 6000 laundry solutions
+            </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center reveal">
+
+            <!-- Infographic -->
+            <div>
+                <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
+                     alt="Healthcare laundry cycle management"
+                     class="w-full h-auto object-contain">
+            </div>
+
+            <!-- Video -->
+            <div>
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/26g9u4GPRVc"
+                            title="Laundry Cycle Management"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 <!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
 
 {{-- A2: Navy intro block --}}
 
-{{-- A2: Tumble Dryers + Ironers side by side --}}
+<!-- PRODUCTS: Barrier Washers / Tumble Dryers / Ironers -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <!-- Title -->
-        <div class="mb-12">
+        <div class="mb-16 reveal">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-2">
                 Control, traceability, and day-to-day continuity in the healthcare laundry room
             </h2>
@@ -279,80 +287,93 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-100">
+        <div class="flex flex-col divide-y divide-gray-100">
 
-            <!-- Tumble Dryers -->
-            <div class="flex flex-col pb-10 lg:pb-0 lg:pr-12 reveal reveal-left">
-                <div class="flex justify-center items-center h-64 mb-8">
+            <!-- 1. Barrier Washers — image left, text right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="flex justify-center">
+                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                         alt="Line 6000 Barrier Washer"
+                         class="w-full h-96 object-contain">
+                </div>
+                <div>
+                    <x-pretitle label="Line 6000 Barrier Washers" />
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                        Hygiene separation built into the machine design.
+                    </h3>
+                    <hr class="border-gray-200 mb-6">
+                    <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+                        <strong>A physical barrier between dirty and clean laundry zones, sitting flush with the wall for easy cleaning.</strong>
+                    </p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Line 6000 Barrier Washers prevent cross-contamination through effective and repeatable laundry cycle management — designed specifically for healthcare environments where segregation is non-negotiable.
+                    </p>
+                    <a href="{{ route('equipment') }}"
+                       class="inline-flex items-center gap-2 bg-navy text-white hover:bg-navy/90 font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
+                        Get a quote today
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 2. Tumble Dryers — text left, image right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="order-2 lg:order-1">
+                    <x-pretitle label="Line 6000 Tumble Dryers" />
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                        Precision drying for high-demand healthcare cycles.
+                    </h3>
+                    <hr class="border-gray-200 mb-6">
+                    <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+                        <strong>Automatic moisture sensing that stops the cycle exactly when hygienic dryness is reached.</strong>
+                    </p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        The Line 6000 Tumble Dryer range protects textile integrity across high-volume linen cycles, reduces energy consumption, and supports the continuous throughput healthcare laundry demands around the clock.
+                    </p>
+                    <a href="{{ route('equipment') }}"
+                       class="inline-flex items-center gap-2 bg-navy text-white hover:bg-navy/90 font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
+                        Get a quote today
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+                <div class="flex justify-center order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
-                         class="max-h-full max-w-full object-contain">
+                         class="w-full h-96 object-contain">
                 </div>
-                <x-pretitle label="Line 6000 Tumble Dryers" />
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                    Precision drying for high-demand healthcare cycles.
-                </h2>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
-                    <strong>Automatic moisture sensing that stops the cycle exactly when hygienic dryness is reached.</strong>
-                </p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">
-                    The Line 6000 Tumble Dryer range protects textile integrity across high-volume linen cycles, reduces energy consumption, and supports the continuous throughput healthcare laundry demands around the clock.
-                </p>
-                <a href="{{ route('equipment') }}"
-                   class="mt-auto inline-flex items-center gap-2 self-start bg-navy text-white hover:bg-navy/90 font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
-                    Go to Products
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
 
-            <!-- Ironers -->
-            <div class="flex flex-col pt-10 lg:pt-0 lg:pl-12 reveal reveal-right">
-                <div class="flex justify-center items-center h-64 mb-8">
+            <!-- 3. Ironers — image left, text right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="flex justify-center">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
-                         class="max-h-full max-w-full object-contain">
+                         class="w-full h-80 object-contain">
                 </div>
-                <x-pretitle label="Line 6000 Ironers" />
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                    Finishing equipment built for healthcare throughput.
-                </h2>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">
-                    <strong>Consistent output, shift after shift, with certified hygiene standards for linen finishing.</strong>
-                </p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">
-                    Equipped with DIAMMS™ and Hygiene Guard certification, the Line 6000 Ironer range adjusts roller pressure and speed in real time to the textile being processed — meeting the hygiene standards required in clinical and care environments.
-                </p>
-                <a href="{{ route('equipment') }}"
-                   class="mt-auto inline-flex items-center gap-2 self-start bg-navy text-white hover:bg-navy/90 font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
-                    Go to Products
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
+                <div>
+                    <x-pretitle label="Line 6000 Ironers" />
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                        Finishing equipment built for healthcare throughput.
+                    </h3>
+                    <hr class="border-gray-200 mb-6">
+                    <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+                        <strong>Consistent output, shift after shift, with certified hygiene standards for linen finishing.</strong>
+                    </p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Equipped with DIAMMS™ and Hygiene Guard certification, the Line 6000 Ironer range adjusts roller pressure and speed in real time to the textile being processed — meeting the hygiene standards required in clinical and care environments.
+                    </p>
+                    <a href="{{ route('equipment') }}"
+                       class="inline-flex items-center gap-2 bg-navy text-white hover:bg-navy/90 font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
+                        Get a quote today
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
             </div>
 
         </div>
     </div>
 </section>
 
-
-<!-- HEALTHCARE ROUTE STEPS -->
-<section class="py-16 lg:py-24 bg-white border-b border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <!-- Title -->
-        <div class="mb-12 reveal">
-            <x-pretitle label="Healthcare Route" />
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-3xl">
-                One healthcare route across service, equipment, and engineering action
-            </h2>
-        </div>
-
-        <!-- Illustration -->
-        <div class="reveal">
-            <img src="/images/healthcare/CleanZone.png" alt="Healthcare Clean Zone workflow diagram" class="w-full h-auto">
-        </div>
-
-    </div>
-</section>
 
 {{-- D: Features + Download/Discover --}}
 <section class="py-16 lg:py-24 bg-white border-t border-border">
@@ -454,83 +475,6 @@
 </section>
 
 
-
-<!-- FEATURE DETAILS: Maximise hygiene / Operator support / Intelligent control -->
-<section class="py-10 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 space-y-8">
-
-        {{-- 1. Maximise hygiene --}}
-        <div class="reveal border-b border-border pb-10">
-            <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Maximise hygiene in healthcare applications</h3>
-            <div class="flex flex-col lg:flex-row gap-8 items-start">
-                <div class="flex-shrink-0">
-                    <img src="/images/healthcare/illustration-barrier-washers-1.webp"
-                         alt="Barrier washer hygiene illustration"
-                         class="w-[24rem] h-auto object-contain">
-                </div>
-                <div class="flex-1">
-                    <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
-                        Barrier washing technology helps prevent the spread of infection through effective and repeatable laundry cycle management.
-                    </p>
-                    <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
-                        Line 6000 Barrier Washers provide a physical barrier between dirty and clean laundry zones and sit flush with the wall for easy cleaning.
-                    </p>
-                    <div class="flex items-center gap-3">
-                        <img src="/images/healthcare/HygieneWatch_png.webp" alt="Hygiene Watchdog" class="w-40 h-40 object-contain flex-shrink-0">
-                        <p class="font-body text-gray-600 text-base leading-relaxed">
-                            The <strong class="text-navy">Hygiene Watchdog</strong> feature stops accidental door openings to protect against cross-contamination.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        {{-- 2. Operator support --}}
-        <div class="reveal border-b border-border pb-10">
-            <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Operator support in high-output laundries</h3>
-            <div class="flex flex-col lg:flex-row gap-8 items-center">
-                <div class="flex-1">
-                    <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
-                        All Line 6000 Barrier Washers feature the Ergocent 4-star rating with ergonomic door handles and optimised door height. Models over 50kg include a dual-compartment partition drum that auto-positions at the end of each cycle.
-                    </p>
-                    <div class="flex items-center gap-4">
-                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-40 h-40 object-contain flex-shrink-0">
-                        <p class="font-body text-gray-600 text-base leading-relaxed">
-                            The <strong class="text-navy">Auto Inner Door Opening</strong> feature pre-opens inner drum doors at the end of each wash cycle.
-                        </p>
-                    </div>
-                </div>
-                <div class="flex-shrink-0">
-                    <img src="/images/healthcare/Foto-web-BW.jpg"
-                         alt="Operator loading barrier washer drum"
-                         class="w-[24rem] h-auto rounded-xl object-cover">
-                </div>
-            </div>
-        </div>
-
-        {{-- 3. Intelligent control --}}
-        <div class="reveal">
-            <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Intelligent control</h3>
-            <div class="flex flex-col lg:flex-row gap-8 items-center">
-                <div class="flex-shrink-0 flex justify-center">
-                    <img src="/images/healthcare/immagine-schermi-PullmannBW.webp"
-                         alt="ClarusVibe intelligent control display"
-                         class="w-[24rem] h-auto object-contain">
-                </div>
-                <div class="flex-1">
-                    <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
-                        The new ClarusVibe control comes pre-set with self-explanatory programs to improve productivity and reduce running costs.
-                    </p>
-                    <p class="font-body text-gray-600 text-lg leading-relaxed mb-3">
-                        Both dirty and clean sides feature their own display to avoid operators crossing zones.
-                    </p>
-                    <p class="font-body text-gray-400 text-sm italic mt-2">* Only available on Pullman line</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
 
 <!-- ERGOCERT 4-STAR BAND -->
 <section class="bg-navy border-y border-border overflow-hidden">
