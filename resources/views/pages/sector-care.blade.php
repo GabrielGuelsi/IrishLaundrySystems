@@ -43,13 +43,13 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    We'll keep your care facility laundry <span style="color:#148af4;">running.</span>
+                    Laundry and <span style="color:#148af4;">infection control</span> solutions
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-xl leading-relaxed mb-4">
-                    ILS supports care facilities across Ireland — reducing <span style="color:#148af4;">breakdown risk</span>, maintaining HIQA-compliant records, and keeping laundry operations running around the clock.
+                    ILS supplies, installs and maintains a range of <span style="color:#148af4;">HIQA-compliant</span> equipment including barrier washers and dryers — engineered to reduce infection risk and keep your facility running without interruption.
                 </p>
                 <p class="font-body text-gray-500 leading-relaxed mb-8">
                     Whatever the facility requires, <span style="color:#148af4;">we'll take care of it.</span>
