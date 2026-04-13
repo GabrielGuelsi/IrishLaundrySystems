@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -112,14 +112,17 @@
     </script>
 
     <style>
+        html, body, *, *::before, *::after {
+            font-family: 'Inter', system-ui, sans-serif !important;
+        }
         body {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-weight: 300;
             background-color: #eaeff5;
             color: #1d1d1b;
             font-size: 17px;
         }
         h1, h2, h3, h4, h5, h6 {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-weight: 700;
         }
         .prose-ils p { margin-bottom: 1rem; line-height: 1.75; }
         [x-cloak] { display: none !important; }
