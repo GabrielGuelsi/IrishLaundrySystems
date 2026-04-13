@@ -153,15 +153,15 @@
 </section>
 
 {{-- D: Features + Download/Discover --}}
-<section class="py-16 lg:py-24 bg-white border-t border-border">
+<section class="py-10 lg:py-14 bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
+        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-6 reveal">
             Enhanced usability, superior safety
         </h2>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
             {{-- Left: 3 features with individual icons --}}
-            <div class="lg:col-span-2 flex flex-col gap-8">
+            <div class="lg:col-span-2 flex flex-col gap-5">
                 @foreach([
                     [
                         'icon'  => '/images/healthcare/hygiene-icon.png',
@@ -182,13 +182,13 @@
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
                 ] as $feature)
-                <div class="flex items-center gap-6 reveal">
+                <div class="flex items-center gap-4 reveal">
                     <div class="flex-shrink-0">
-                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain">
+                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-16 h-16 object-contain">
                     </div>
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1">{{ $feature['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
                     </div>
                 </div>
                 @endforeach
@@ -254,16 +254,16 @@
 <!-- ERGOCERT 4-STAR BAND -->
 <section class="bg-navy border-y border-border overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-5 min-h-[480px]">
+        <div class="grid grid-cols-1 lg:grid-cols-5 min-h-[320px]">
 
             {{-- Left panel --}}
-            <div class="lg:col-span-2 flex flex-col justify-center py-16 lg:py-20 lg:pr-12 lg:border-r border-white/10">
-                <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-4">ERGOCERT 4-Star Certified</p>
-                <p class="font-heading font-bold text-white text-5xl lg:text-6xl leading-none mb-1">Experience</p>
-                <p class="font-heading font-bold text-white text-6xl lg:text-7xl leading-none mb-4">4-stars</p>
-                <div class="flex gap-1 mb-6">
+            <div class="lg:col-span-2 flex flex-col justify-center py-10 lg:py-12 lg:pr-12 lg:border-r border-white/10">
+                <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGOCERT 4-Star Certified</p>
+                <p class="font-heading font-bold text-white text-3xl lg:text-4xl leading-none mb-1">Experience</p>
+                <p class="font-heading font-bold text-white text-4xl lg:text-5xl leading-none mb-3">4-stars</p>
+                <div class="flex gap-1 mb-4">
                     @for($s = 0; $s < 4; $s++)
-                    <svg class="w-7 h-7 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     @endfor
                 </div>
                 <p class="font-body text-gray-300 text-base leading-relaxed mb-3">
@@ -278,20 +278,20 @@
             </div>
 
             {{-- Right panel: 4 icon rows --}}
-            <div class="lg:col-span-3 flex flex-col justify-center py-16 lg:py-20 lg:pl-12 divide-y divide-white/10">
+            <div class="lg:col-span-3 flex flex-col justify-center py-10 lg:py-12 lg:pl-12 divide-y divide-white/10">
                 @foreach([
                     ['icon' => 'International standards.png', 'title' => 'Designed with international standards of excellence in mind', 'body' => 'to achieve the highest level of safety and technical certifications.'],
                     ['icon' => 'Musculoskeletal.png',         'title' => 'Proven to reduce musculoskeletal disorders',                   'body' => 'as a result of body analysis trials whilst operating machinery.'],
                     ['icon' => 'User-appliance synergy.png',  'title' => 'User-appliance synergy',                                       'body' => 'based on years of testing the interaction between operator and appliance to create an intuitive and effortless experience.'],
                     ['icon' => 'Human-centered design.png',   'title' => '360° human-centered certified design',                         'body' => 'at the core of the rigorous development process.'],
                 ] as $star)
-                <div class="flex items-start gap-5 py-6 first:pt-0 last:pb-0">
-                    <div class="w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 border border-white/10">
+                <div class="flex items-start gap-4 py-4 first:pt-0 last:pb-0">
+                    <div class="w-10 h-10 rounded-lg overflow-hidden flex-shrink-0 border border-white/10">
                         <img src="/images/healthcare/{{ $star['icon'] }}" alt="{{ $star['title'] }}" class="w-full h-full object-cover">
                     </div>
                     <div>
-                        <p class="font-heading font-bold text-white text-base mb-1">{{ $star['title'] }}</p>
-                        <p class="font-body text-gray-300 text-sm leading-relaxed">{{ $star['body'] }}</p>
+                        <p class="font-heading font-bold text-white text-sm mb-0.5">{{ $star['title'] }}</p>
+                        <p class="font-body text-gray-300 text-xs leading-relaxed">{{ $star['body'] }}</p>
                     </div>
                 </div>
                 @endforeach
@@ -520,8 +520,8 @@
             <!-- 2. Tumble Dryers — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
-                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
-                        Precision <strong>drying</strong> for <strong>high-demand</strong> healthcare cycles.
+                    <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                        Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> healthcare cycles.
                     </h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
@@ -759,14 +759,13 @@
 
         <!-- Trusted by logos -->
         <div class="border-t border-gray-200 pt-8 reveal">
-            <div class="flex flex-wrap items-center gap-6 lg:gap-10">
+            <div class="flex flex-wrap items-center gap-14 lg:gap-24">
                 <p class="font-body text-xs text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
-                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-8 object-contain opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
-                @foreach(["St. Vincent's Healthcare", "St James's Hospital", "The Mater Hospital", "Maryfield Nursing Home"] as $org)
-                <div class="h-8 px-4 bg-gray-100 rounded flex items-center">
-                    <span class="font-body text-gray-400 text-xs whitespace-nowrap">{{ $org }}</span>
-                </div>
-                @endforeach
+                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-16 object-contain">
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-16 object-contain">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-16 object-contain">
+                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-16 object-contain">
+                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-16 object-contain">
             </div>
         </div>
 

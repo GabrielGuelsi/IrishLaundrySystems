@@ -2,7 +2,7 @@
 
     <!-- Proof slot: testimonial + logo strip -->
     <div class="border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-10">
 
             <!-- Testimonial -->
             <blockquote class="text-center max-w-2xl mx-auto mb-8">
@@ -12,18 +12,19 @@
                 <cite class="block mt-3 text-sm text-steel-light font-body not-italic">— Operations Manager, Healthcare Group, Republic of Ireland</cite>
             </blockquote>
 
-            <!-- Logo strip placeholder -->
-            <div class="flex flex-wrap items-center justify-center gap-8 opacity-40">
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
+            <!-- Logo strip -->
+            <div class="flex flex-wrap items-center justify-center gap-28">
+                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-8 object-contain brightness-0 invert opacity-60">
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 object-contain brightness-0 invert opacity-60">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 object-contain brightness-0 invert opacity-60">
+                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-8 object-contain brightness-0 invert opacity-60">
+                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 object-contain brightness-0 invert opacity-60">
             </div>
         </div>
     </div>
 
     <!-- Main footer -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
 
             <!-- Trust block -->
@@ -89,7 +90,7 @@
 
     <!-- Legal bar -->
     <div class="border-t border-white/10 bg-black/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
             <p class="text-xs text-gray-600 font-body">
                 &copy; {{ date('Y') }} Irish Laundry Systems Ltd. All rights reserved.
             </p>
