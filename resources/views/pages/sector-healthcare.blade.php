@@ -795,10 +795,10 @@
                     <p class="font-heading font-bold text-navy text-base leading-snug mb-1">{{ $eq['name'] }}</p>
                     <p class="font-body text-[#148af4] text-sm leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                <div class="flex-1 flex items-center justify-center h-56 rounded-lg overflow-hidden bg-white">
+                <div class="flex items-center justify-center h-56 rounded-lg overflow-hidden bg-white">
                     <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
                 </div>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-4 py-2.5 rounded-lg transition-colors">
+                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-4 py-2.5 rounded-lg transition-colors {{ $eq['img'] === 'line6000-tumble-dryer' ? 'mt-auto' : '' }}">
                     View Equipment
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
