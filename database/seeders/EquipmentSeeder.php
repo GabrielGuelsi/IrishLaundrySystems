@@ -36,6 +36,12 @@ class EquipmentSeeder extends Seeder
             ['name' => 'WH6-20',  'summary' => 'Front load washer 20 kg – WH6-20', 'capacity' => '20 kg', 'sort' => 180],
             ['name' => 'WH6-27',  'summary' => 'Front load washer 27 kg – WH6-27', 'capacity' => '27 kg', 'sort' => 190],
             ['name' => 'WH6-33',  'summary' => 'Front load washer 33 kg – WH6-33', 'capacity' => '33 kg', 'sort' => 200],
+
+            // ── Commercial Washers: WS6 series ───────────────────────────────
+            ['name' => 'WS6-8',  'summary' => 'Front load washer 8 kg – WS6-8',   'capacity' => '8 kg',  'sort' => 210],
+            ['name' => 'WS6-9',  'summary' => 'Front load washer 9 kg – WS6-9',   'capacity' => '9 kg',  'sort' => 220],
+            ['name' => 'WS6-11', 'summary' => 'Front load washer 11 kg – WS6-11', 'capacity' => '11 kg', 'sort' => 230],
+            ['name' => 'WS6-14', 'summary' => 'Front load washer 14 kg – WS6-14', 'capacity' => '14 kg', 'sort' => 240],
         ];
 
         foreach ($products as $product) {
