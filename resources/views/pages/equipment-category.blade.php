@@ -166,6 +166,66 @@
         </div>
     </div>
 </section>
+<!-- LONG-TERM SAVINGS & PRODUCTIVITY -->
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+            {{-- Left: text content --}}
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">
+                    Long-term savings &amp; Productivity
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    Minimize your <strong class="text-navy">cost per-load</strong> through the lowest possible water, energy and detergent consumption.
+                </p>
+
+                {{-- Intelligent Dosing --}}
+                <div class="flex items-start gap-5 mb-6">
+                    <div class="flex-shrink-0 w-20 h-20 rounded-xl bg-bg border border-border flex items-center justify-center p-2">
+                        <div class="text-center">
+                            <svg class="w-8 h-8 text-navy mx-auto mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15l-1.8 1.8m0 0A2.25 2.25 0 0116.5 18H7.5a2.25 2.25 0 01-1.5-.6m11.8-1.8L15 13.2M4.5 18l1.8-1.8m0 0L8 14.8"/></svg>
+                            <p class="font-body font-bold text-navy text-[10px] leading-tight">Intelligent<br>Dosing</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            With Intelligent Dosing, you can automatically add the <strong class="text-navy">precise amount of detergent</strong> and chemicals based on the dry weight of each load*.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6 pl-[100px]">
+                    Manual dosing is also easier than ever thanks to a front-mounted dispenser which can be tilted downwards to clearly see all six colour-coded compartments.
+                </p>
+
+                {{-- Integrated Savings --}}
+                <div class="bg-bg border border-border rounded-xl p-5 flex items-start gap-4 mb-5">
+                    <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <div class="text-center">
+                            <svg class="w-7 h-7 text-navy mx-auto mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+                            <p class="font-body font-bold text-navy text-[9px] leading-tight">Integrated<br>Savings</p>
+                        </div>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        The Integrated Savings feature measures and <strong class="text-navy">shows the load in real time</strong>, to avoid overloading and underloading of the machine. This not only reduces the amount of water and energy used when washing partial loads, but it can help to <strong class="text-navy">extend the lifetime of your washer</strong>.
+                    </p>
+                </div>
+
+                <p class="font-body text-gray-400 text-xs italic">*Only available on ClarusVibe models.</p>
+            </div>
+
+            {{-- Right: image --}}
+            <div class="flex justify-center items-start reveal reveal-right">
+                <img src="{{ asset('images/equipment/commercialwasher.webp') }}"
+                     alt="Intelligent Dosing"
+                     class="w-full max-w-sm rounded-2xl object-cover shadow-lg">
+            </div>
+
+        </div>
+    </div>
+</section>
+
 @endif
 
 <!-- FILTERS + PRODUCTS GRID -->
