@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="flex items-center gap-2 mb-4">
             <a href="{{ route('equipment') }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">Equipment</a>
             <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
@@ -24,9 +24,59 @@
 <!-- PROOF BAR -->
 @include('components.proof-bar')
 
+@if($categorySlug === 'washers')
+<!-- LINE 6000 COMMERCIAL WASHERS INTRO -->
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Split: text left, image right --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                    Line 6000 Commercial Washers
+                </h2>
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-3">
+                    Commercial Washers, built for people and the planet.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
+                </p>
+                <a href="#products"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                    GO TO PRODUCTS
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex justify-center reveal reveal-right">
+                <img src="{{ asset('images/equipment/commercialwasher.webp') }}"
+                     alt="Line 6000 Commercial Washer"
+                     class="w-full max-w-md object-contain drop-shadow-xl">
+            </div>
+        </div>
+
+        {{-- Green stat band --}}
+        <div class="rounded-2xl px-8 py-6 flex flex-col sm:flex-row items-center gap-6 reveal" style="background-color: #c8d8a8;">
+            {{-- Badge --}}
+            <div class="flex-shrink-0 w-20 h-20 rounded-full border-4 border-white/60 flex items-center justify-center" style="background-color: #a8bc7a;">
+                <span class="font-heading font-bold text-white text-lg leading-none text-center">40%<br><span class="text-xs font-body font-normal">Energy<br>Saving</span></span>
+            </div>
+            <div>
+                <p class="font-heading font-bold text-navy text-lg mb-1">Energy savings</p>
+                <p class="font-body text-navy/80 text-sm leading-relaxed">
+                    Reduce your operational expenditure by up to 40% without compromising on productivity with built-in technologies to optimize utilisation.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+@endif
+
 <!-- FILTERS + PRODUCTS GRID -->
-<section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<section id="products" class="py-16 lg:py-20 bg-bg">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="flex flex-col lg:flex-row gap-8">
 
             <!-- Filter Sidebar -->
