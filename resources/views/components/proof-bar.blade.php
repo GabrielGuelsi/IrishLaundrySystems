@@ -4,13 +4,13 @@
 --}}
 <section class="bg-white border-b border-gray-100 py-5" aria-label="Trusted partner credentials">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Logos + stat row --}}
         <div class="flex items-center justify-between gap-6 flex-wrap">
 
             {{-- Left: trusted by label + logos --}}
-            <div class="flex items-center gap-6 flex-wrap">
+            <div class="flex items-center gap-28 flex-wrap">
                 <p class="font-body text-[10px] font-semibold text-gray-400 uppercase tracking-[0.22em] whitespace-nowrap">
                     Trusted by
                 </p>
@@ -19,26 +19,14 @@
                 {{-- Real logo --}}
                 <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png"
                      alt="Health Service Executive"
-                     class="h-6 w-auto"
+                     class="h-8 w-auto"
                      style="filter: brightness(0) saturate(100%) invert(44%) sepia(69%) saturate(1200%) hue-rotate(195deg) brightness(105%);"
                      loading="lazy" decoding="async">
 
-                {{-- Placeholder logos — replace with real client logos when supplied --}}
-                <div class="h-6 w-24 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
-                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
-                </div>
-                <div class="h-6 w-20 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
-                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
-                </div>
-                <div class="h-6 w-28 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
-                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
-                </div>
-                <div class="h-6 w-24 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
-                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
-                </div>
-                <div class="h-6 w-20 rounded flex items-center justify-center" style="background-color: rgba(20,138,244,0.12);">
-                    <span class="font-body font-bold text-[9px] uppercase tracking-[0.18em]" style="color: #148af4;">Logo</span>
-                </div>
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 w-auto object-contain opacity-80">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 w-auto object-contain opacity-80">
+                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-8 w-auto object-contain opacity-80">
+                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 w-auto object-contain opacity-80">
             </div>
 
             {{-- Right: single proof stat --}}
