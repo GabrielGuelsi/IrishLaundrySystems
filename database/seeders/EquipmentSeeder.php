@@ -58,5 +58,50 @@ class EquipmentSeeder extends Seeder
                 'updated_at' => $now,
             ]);
         }
+
+        // ── Barrier Washers: WB6 series ──────────────────────────────────────
+        $barrierProducts = [
+            ['name' => 'WB6-13',  'summary' => 'Barrier washer 13 kg – WB6-13',   'capacity' => '13 kg',  'sort' => 10],
+            ['name' => 'WB6-18',  'summary' => 'Barrier washer 18 kg – WB6-18',   'capacity' => '18 kg',  'sort' => 20],
+            ['name' => 'WB6-20',  'summary' => 'Barrier washer 20 kg – WB6-20',   'capacity' => '20 kg',  'sort' => 30],
+            ['name' => 'WB6-27',  'summary' => 'Barrier washer 27 kg – WB6-27',   'capacity' => '27 kg',  'sort' => 40],
+            ['name' => 'WB6-35',  'summary' => 'Barrier washer 35 kg – WB6-35',   'capacity' => '35 kg',  'sort' => 50],
+            ['name' => 'WB6-50',  'summary' => 'Barrier washer 50 kg – WB6-50',   'capacity' => '50 kg',  'sort' => 60],
+            ['name' => 'WB6-70',  'summary' => 'Barrier washer 70 kg – WB6-70',   'capacity' => '70 kg',  'sort' => 70],
+            ['name' => 'WB6-90',  'summary' => 'Barrier washer 90 kg – WB6-90',   'capacity' => '90 kg',  'sort' => 80],
+            ['name' => 'WB6-110', 'summary' => 'Barrier washer 110 kg – WB6-110', 'capacity' => '110 kg', 'sort' => 90],
+        ];
+
+        foreach ($barrierProducts as $product) {
+            DB::table('equipment')->insert([
+                'name'       => $product['name'],
+                'slug'       => Str::slug($product['name']),
+                'category'   => 'barrier-washers',
+                'capacity'   => $product['capacity'],
+                'summary'    => $product['summary'],
+                'image_path' => 'images/equipment/line6000-barrier-washer.webp',
+                'is_active'  => 1,
+                'sort_order' => $product['sort'],
+                'created_at' => $now,
+                'updated_at' => $now,
+            ]);
+        }
+    }
+}
+
+        foreach ($products as $product) {
+            DB::table('equipment')->insert([
+                'name'       => $product['name'],
+                'slug'       => Str::slug($product['name']),
+                'category'   => 'washers',
+                'capacity'   => $product['capacity'],
+                'summary'    => $product['summary'],
+                'image_path' => 'images/equipment/commercialwasher.webp',
+                'is_active'  => 1,
+                'sort_order' => $product['sort'],
+                'created_at' => $now,
+                'updated_at' => $now,
+            ]);
+        }
     }
 }
