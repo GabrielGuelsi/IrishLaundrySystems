@@ -24,6 +24,57 @@
 <!-- PROOF BAR -->
 @include('components.proof-bar')
 
+@if($categorySlug === 'barrier-washers')
+<!-- BARRIER WASHERS INTRO -->
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Split: text left, image right --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5">
+                    Barrier Washers
+                </h2>
+                <p class="font-body font-bold text-navy text-base leading-relaxed mb-3">
+                    Take total control of contamination in sensitive laundry environments.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    Implement failsafe laundry cycle management programmes in high-risk applications. A wide range of high productivity Barrier Washers designed to remove human error and protect against accidental contamination.
+                </p>
+                <a href="#products"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                    GO TO PRODUCTS
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex justify-center reveal reveal-right">
+                <img src="{{ asset('images/equipment/line6000-barrier-washer.webp') }}"
+                     alt="Barrier Washer"
+                     class="w-full max-w-md object-contain drop-shadow-xl">
+            </div>
+        </div>
+
+        {{-- Green stat band --}}
+        <div class="rounded-2xl px-8 py-6 flex flex-col sm:flex-row items-center gap-6 reveal" style="background-color: #c8d8a8;">
+            <div class="flex-shrink-0 w-20 h-20 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
+                <span class="font-heading font-bold text-white text-xs leading-none">up to</span>
+                <span class="font-heading font-bold text-white text-xl leading-none">50%</span>
+                <span class="font-body text-white text-[9px] leading-tight text-center">Water<br>savings</span>
+            </div>
+            <div>
+                <p class="font-heading font-bold text-navy text-lg mb-1">Water savings</p>
+                <p class="font-body text-navy/80 text-sm leading-relaxed">
+                    Reduce water consumption by 50% with a Barrier Washer fitted with a second drain valve.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+@endif
+
 @if($categorySlug === 'washers')
 <!-- LINE 6000 COMMERCIAL WASHERS INTRO -->
 <section class="py-14 lg:py-20 bg-white border-b border-border">
