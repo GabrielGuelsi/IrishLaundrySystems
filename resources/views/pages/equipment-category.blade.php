@@ -226,6 +226,45 @@
     </div>
 </section>
 
+<!-- WHERE YOU CAN FIND OUR SOLUTIONS -->
+<section class="py-14 lg:py-20 bg-bg border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
+            Where you can find our Commercial Washers solutions
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @foreach([
+                [
+                    'img'   => '/images/about/testimonial-1.jpg',
+                    'title' => 'Multi-Housing Laundry',
+                    'body'  => 'Ensure tenant satisfaction by offering a quick, hassle-free, and eco-friendly laundry experience. Invest in energy-efficient machines and high-capacity dryers.',
+                ],
+                [
+                    'img'   => '/images/about/testimonial-2.jpg',
+                    'title' => 'On Premises Laundries',
+                    'body'  => 'Clean and dry at your convenience with our reliable, low-maintenance machines. Say goodbye to wait times and tough stains, while ensuring total hygiene.',
+                ],
+                [
+                    'img'   => '/images/equipment/commercialwasher.webp',
+                    'title' => 'Self service laundry',
+                    'body'  => 'We provide a comprehensive range of solutions, bringing together washers, dryers, and accessories to create the perfect combination.',
+                ],
+            ] as $card)
+            <div class="reveal">
+                <div class="rounded-2xl overflow-hidden mb-5 aspect-[4/3]">
+                    <img src="{{ asset($card['img']) }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['body'] }}</p>
+            </div>
+            @endforeach
+        </div>
+
+    </div>
+</section>
+
 @endif
 
 <!-- FILTERS + PRODUCTS GRID -->
