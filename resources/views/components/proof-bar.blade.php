@@ -29,12 +29,6 @@
                 <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 w-auto object-contain opacity-80">
             </div>
 
-            {{-- Right: single proof stat --}}
-            <div class="flex items-baseline gap-2">
-                <span class="font-heading font-bold text-navy text-2xl leading-none">37+</span>
-                <span class="font-body text-[11px] text-gray-400 uppercase tracking-[0.18em]">Years Service</span>
-            </div>
-
         </div>
 
     </div>
