@@ -109,6 +109,10 @@ class EquipmentSeeder extends Seeder
             ['name' => 'TD6-17S',          'summary' => 'Stacked Tumble Dryer 17 kg – TD6-17S',  'capacity' => '17 kg', 'sort' => 180],
             ['name' => 'TD6-24S',          'summary' => 'Stacked Tumble Dryer 24 kg – TD6-24S',  'capacity' => '24 kg', 'sort' => 190],
             ['name' => 'Quickdry Condense','summary' => 'Quick Dryer – Quickdry Condense',        'capacity' => null,    'sort' => 200],
+            ['name' => 'QuickDry QDC',    'summary' => 'Quick Dryer – QuickDry QDC',             'capacity' => null,    'sort' => 210],
+            ['name' => 'PD9C',            'summary' => 'PD9C',                                    'capacity' => null,    'sort' => 220],
+            ['name' => 'T4900CR',         'summary' => 'Tumble Dryer 45 kg – T4900CR',            'capacity' => '45 kg', 'sort' => 230],
+            ['name' => 'T41200CR',        'summary' => 'Tumble Dryer 60 kg – T41200CR',           'capacity' => '60 kg', 'sort' => 240],
         ];
 
         foreach ($dryerProducts as $product) {
