@@ -72,6 +72,100 @@
 
     </div>
 </section>
+
+<!-- ULTIMATE PEACE OF MIND -->
+<section class="py-14 lg:py-20 bg-bg border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">
+            Ultimate peace of mind
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            {{-- Left: 3 features --}}
+            <div class="lg:col-span-2 flex flex-col gap-8">
+                @foreach([
+                    [
+                        'title' => 'Intuitive operation',
+                        'body'  => 'Effortless user experience with ClarusVibe control',
+                        'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M6 6.878V6a2.25 2.25 0 012.25-2.25h7.5A2.25 2.25 0 0118 6v.878m-12 0c.235-.083.487-.128.75-.128h10.5c.263 0 .515.045.75.128m-12 0A2.25 2.25 0 004.5 9v.878m13.5-3A2.25 2.25 0 0119.5 9v.878m0 0a2.246 2.246 0 00-.75-.128H5.25c-.263 0-.515.045-.75.128m15 0A2.25 2.25 0 0121 12v6a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 18v-6c0-.98.626-1.813 1.5-2.122"/>',
+                    ],
+                    [
+                        'title' => 'Long-term savings & productivity',
+                        'body'  => 'Automatically adjust water and detergents to keep operational expenditure to a minimum',
+                        'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>',
+                    ],
+                    [
+                        'title' => 'Certified ergonomics',
+                        'body'  => "Reduce absenteeism by improving operators' well-being",
+                        'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>',
+                    ],
+                ] as $feat)
+                <div class="flex items-start gap-5 reveal">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-full border-2 border-navy flex items-center justify-center">
+                        <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $feat['icon'] !!}</svg>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-lg mb-1">{{ $feat['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feat['body'] }}</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Right: Download + Discover --}}
+            <div class="flex flex-col gap-5 reveal reveal-right">
+
+                {{-- Download --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                    <ul class="space-y-4">
+                        @foreach([
+                            ['label' => 'Line 6000 Washers & Dryers brochure',          'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                            ['label' => 'Discover the full range of Ecolabel Detergents','file' => ''],
+                            ['label' => 'Line 6000 High Spin Washers & Heat Pump Dryers','file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                        ] as $pdf)
+                        <li>
+                            @if($pdf['file'])
+                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-start gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </a>
+                            @else
+                            <span class="flex items-start gap-2 font-body text-sm text-white/40">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </span>
+                            @endif
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+                {{-- Discover --}}
+                <div class="bg-white border border-border rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                    <ul class="space-y-4">
+                        @foreach([
+                            ['label' => "What's in your detergents and cleaning products?", 'href' => '#'],
+                            ['label' => 'Ensuring Profitability With Efficient On-Premises Laundry', 'href' => '#'],
+                            ['label' => 'Essentia: the heart of customer service', 'href' => route('contact')],
+                        ] as $link)
+                        <li>
+                            <a href="{{ $link['href'] }}" class="flex items-start gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                                </svg>
+                                {{ $link['label'] }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
 @endif
 
 <!-- FILTERS + PRODUCTS GRID -->
