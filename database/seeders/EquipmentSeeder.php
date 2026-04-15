@@ -86,6 +86,45 @@ class EquipmentSeeder extends Seeder
                 'updated_at' => $now,
             ]);
         }
+
+        // ── Tumble Dryers: TD6 series ─────────────────────────────────────────
+        $dryerProducts = [
+            ['name' => 'TD6-6',            'summary' => 'Tumble Dryer 6 kg – TD6-6',             'capacity' => '6 kg',  'sort' => 10],
+            ['name' => 'TD6-7',            'summary' => 'Tumble Dryer 7 kg – TD6-7',             'capacity' => '7 kg',  'sort' => 20],
+            ['name' => 'TD6-7LAC',         'summary' => 'Tumble Dryer 7 kg – TD6-7LAC',          'capacity' => '7 kg',  'sort' => 30],
+            ['name' => 'TD6-11',           'summary' => 'Tumble Dryer 11 kg – TD6-11',           'capacity' => '11 kg', 'sort' => 40],
+            ['name' => 'TD6-14',           'summary' => 'Tumble Dryer 14 kg – TD6-14',           'capacity' => '14 kg', 'sort' => 50],
+            ['name' => 'TD6-14LAC',        'summary' => 'Tumble Dryer 14 kg – TD6-14LAC',        'capacity' => '14 kg', 'sort' => 60],
+            ['name' => 'TD6-16',           'summary' => 'Tumble Dryer 16 kg – TD6-16',           'capacity' => '16 kg', 'sort' => 70],
+            ['name' => 'TD6-20',           'summary' => 'Tumble Dryer 20 kg – TD6-20',           'capacity' => '20 kg', 'sort' => 80],
+            ['name' => 'TD6-20LAC',        'summary' => 'Tumble Dryer 20 kg – TD6-20LAC',        'capacity' => '20 kg', 'sort' => 90],
+            ['name' => 'TD6-30',           'summary' => 'Tumble Dryer 30 kg – TD6-30',           'capacity' => '30 kg', 'sort' => 100],
+            ['name' => 'TD6-30LAC',        'summary' => 'Tumble Dryer 30 kg – TD6-30LAC',        'capacity' => '30 kg', 'sort' => 110],
+            ['name' => 'TD6-37',           'summary' => 'Tumble Dryer 37 kg – TD6-37',           'capacity' => '37 kg', 'sort' => 120],
+            ['name' => 'TD6-37LAC',        'summary' => 'Tumble Dryer 37 kg – TD6-37LAC',        'capacity' => '37 kg', 'sort' => 130],
+            ['name' => 'TD6-45',           'summary' => 'Tumble Dryer 45 kg – TD6-45',           'capacity' => '45 kg', 'sort' => 140],
+            ['name' => 'TD6-45SLD',        'summary' => 'Tumble Dryer 45 kg – TD6-45SLD',        'capacity' => '45 kg', 'sort' => 150],
+            ['name' => 'TD6-60',           'summary' => 'Tumble Dryer 60 kg – TD6-60',           'capacity' => '60 kg', 'sort' => 160],
+            ['name' => 'TD6-60SLD',        'summary' => 'Tumble Dryer 60 kg – TD6-60SLD',        'capacity' => '60 kg', 'sort' => 170],
+            ['name' => 'TD6-17S',          'summary' => 'Stacked Tumble Dryer 17 kg – TD6-17S',  'capacity' => '17 kg', 'sort' => 180],
+            ['name' => 'TD6-24S',          'summary' => 'Stacked Tumble Dryer 24 kg – TD6-24S',  'capacity' => '24 kg', 'sort' => 190],
+            ['name' => 'Quickdry Condense','summary' => 'Quick Dryer – Quickdry Condense',        'capacity' => null,    'sort' => 200],
+        ];
+
+        foreach ($dryerProducts as $product) {
+            DB::table('equipment')->insert([
+                'name'       => $product['name'],
+                'slug'       => Str::slug($product['name']),
+                'category'   => 'tumble-dryers',
+                'capacity'   => $product['capacity'],
+                'summary'    => $product['summary'],
+                'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+                'is_active'  => 1,
+                'sort_order' => $product['sort'],
+                'created_at' => $now,
+                'updated_at' => $now,
+            ]);
+        }
     }
 }
 
