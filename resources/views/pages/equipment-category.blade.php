@@ -482,6 +482,246 @@
 
 @endif
 
+@if($categorySlug === 'tumble-dryers')
+<!-- TUMBLE DRYERS INTRO -->
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Split: text left, image right --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                    Line 6000 Tumble Dryers
+                </h2>
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-3">
+                    Professional drying, engineered for performance and efficiency.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    High-capacity tumble dryers designed to maximise throughput, minimise energy costs and keep your laundry operation running at full speed.
+                </p>
+                <a href="#products"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                    GO TO PRODUCTS
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex justify-center reveal reveal-right">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}"
+                     alt="Line 6000 Tumble Dryer"
+                     class="w-full max-w-md object-contain drop-shadow-xl">
+            </div>
+        </div>
+
+        {{-- Green stat band --}}
+        <div class="rounded-2xl px-8 py-6 flex flex-col sm:flex-row items-center gap-6 reveal" style="background-color: #c8d8a8;">
+            <div class="flex-shrink-0 w-20 h-20 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
+                <span class="font-heading font-bold text-white text-xs leading-none">up to</span>
+                <span class="font-heading font-bold text-white text-xl leading-none">60%</span>
+                <span class="font-body text-white text-[9px] leading-tight text-center">Energy<br>savings</span>
+            </div>
+            <div>
+                <p class="font-heading font-bold text-navy text-lg mb-1">Heat Pump Technology</p>
+                <p class="font-body text-navy/80 text-sm leading-relaxed">
+                    Reduce energy consumption by up to 60% with heat pump tumble dryers — without compromising on drying performance or cycle times.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{-- ① Outstanding drying performance --}}
+<section class="py-14 lg:py-20 bg-bg border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">Outstanding drying performance</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            {{-- Left: 3 features --}}
+            <div class="lg:col-span-2 flex flex-col gap-8">
+                @foreach([
+                    [
+                        'title' => 'Maximum throughput, minimum downtime',
+                        'body'  => 'High-capacity drums and fast cycle programmes keep your laundry operation running efficiently around the clock.',
+                        'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>',
+                    ],
+                    [
+                        'title' => 'Protect fabrics and extend linen life',
+                        'body'  => 'Precise temperature control and moisture sensing prevent over-drying, protecting textile quality and reducing replacement costs.',
+                        'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 4.875 7.5 11.25 9 11.25s9-6.375 9-11.25z"/>',
+                    ],
+                    [
+                        'title' => 'Certified ergonomics – Ergocert 4-star',
+                        'body'  => 'Designed for operator comfort with easy-access drum height, ergonomic door handles and an intuitive ClarusVibe control panel.',
+                        'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>',
+                    ],
+                ] as $feat)
+                <div class="flex items-start gap-5 reveal">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-full border-2 border-navy flex items-center justify-center">
+                        <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $feat['icon'] !!}</svg>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-lg mb-1">{{ $feat['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feat['body'] }}</p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Right: Download + Discover --}}
+            <div class="flex flex-col gap-5 reveal reveal-right">
+
+                {{-- Download --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                    <ul class="space-y-4">
+                        @foreach([
+                            ['label' => 'Line 6000 Washers & Dryers brochure',           'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                            ['label' => 'Line 6000 High Spin Washers & Heat Pump Dryers', 'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                            ['label' => 'Ergocert 4-star Certification',                  'file' => ''],
+                        ] as $pdf)
+                        <li>
+                            @if($pdf['file'])
+                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-start gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </a>
+                            @else
+                            <span class="flex items-start gap-2 font-body text-sm text-white/40">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </span>
+                            @endif
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+                {{-- Discover --}}
+                <div class="bg-white border border-border rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                    <ul class="space-y-4">
+                        @foreach([
+                            ['label' => 'Ensuring Profitability With Efficient On-Premises Laundry', 'href' => '#'],
+                            ['label' => 'Hotel & Hospitality laundry solutions',                     'href' => route('sectors.hospitality')],
+                            ['label' => 'Essentia: the heart of customer service',                   'href' => route('contact')],
+                        ] as $link)
+                        <li>
+                            <a href="{{ $link['href'] }}" class="flex items-start gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                                </svg>
+                                {{ $link['label'] }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- ② Feature deep-dives --}}
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-16">
+
+        {{-- Heat pump efficiency --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div>
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Heat pump technology for maximum efficiency</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Unlike conventional dryers, heat pump models recycle hot air rather than exhausting it — dramatically reducing energy consumption while maintaining consistent drying results.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Ideal for locations where venting is difficult or where energy costs are a priority.
+                </p>
+                <div class="bg-bg border border-border rounded-xl p-4 flex items-start gap-4">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <div class="text-center">
+                            <svg class="w-7 h-7 text-navy mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/></svg>
+                            <p class="font-body font-bold text-navy text-[9px] leading-tight mt-0.5">Heat Pump<br>Tech</p>
+                        </div>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        The <strong class="text-navy">Heat Pump</strong> system recovers and reuses thermal energy from exhaust air, cutting energy use by up to 60% compared to traditional vented dryers.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Heat pump tumble dryer" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+        </div>
+
+        {{-- Moisture sensing & fabric care --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div class="order-2 lg:order-1 flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Moisture sensing" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+            <div class="order-1 lg:order-2">
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Smart moisture sensing for perfect results</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Built-in residual moisture sensors detect when laundry has reached the ideal dryness level and automatically end the cycle — preventing over-drying, protecting fabrics and reducing energy waste.
+                </p>
+                <div class="bg-bg border border-border rounded-xl p-4 flex items-start gap-4">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <div class="text-center">
+                            <svg class="w-7 h-7 text-navy mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15l-1.8 1.8m0 0A2.25 2.25 0 0116.5 18H7.5a2.25 2.25 0 01-1.5-.6m11.8-1.8L15 13.2M4.5 18l1.8-1.8m0 0L8 14.8"/></svg>
+                            <p class="font-body font-bold text-navy text-[9px] leading-tight mt-0.5">Moisture<br>Sensor</p>
+                        </div>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        <strong class="text-navy">Automatic cycle termination</strong> based on real-time moisture readings extends linen life and lowers cost per load.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {{-- ClarusVibe control --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div>
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Intuitive control with ClarusVibe</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    The ClarusVibe touchscreen interface makes setting up and monitoring drying cycles effortless. Pre-loaded programmes cover a wide range of fabric types and load sizes.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Operators can track performance data in real time, helping laundry managers identify savings opportunities and improve productivity across every shift.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="ClarusVibe control" class="w-full max-w-xs object-contain drop-shadow-lg">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{-- ③ Where you can find our Tumble Dryer solutions --}}
+<section class="py-14 lg:py-20 bg-bg border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">Where you can find our Tumble Dryer solutions</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @foreach([
+                ['img' => '/images/about/testimonial-1.jpg',   'title' => 'Hotels & Hospitality',  'body' => 'Keep guests satisfied with fast linen turnaround and consistently high-quality results across towels, bedding and uniforms.'],
+                ['img' => '/images/healthcare/engineer.jpg',    'title' => 'Healthcare & Care',     'body' => 'Ensure safe and compliant drying of healthcare textiles with programmes designed to meet hygiene and infection control standards.'],
+                ['img' => '/images/about/testimonial-2.jpg',   'title' => 'On-Premises Laundries', 'body' => 'Maximise throughput and reduce cost per load with high-capacity tumble dryers built for demanding commercial environments.'],
+            ] as $card)
+            <div class="reveal">
+                <div class="rounded-2xl overflow-hidden mb-5 aspect-[4/3]">
+                    <img src="{{ asset($card['img']) }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['body'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+@endif
+
 <!-- FILTERS + PRODUCTS GRID -->
 <section id="products" class="py-16 lg:py-20 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
