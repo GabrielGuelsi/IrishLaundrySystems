@@ -804,7 +804,7 @@
                         <!-- Product image -->
                         <div class="aspect-video bg-bg border-b border-border flex items-center justify-center overflow-hidden">
                             @if ($product->image_path)
-                            <img src="{{ asset('storage/' . $product->image_path) }}"
+                            <img src="{{ asset($product->image_path) }}"
                                  alt="{{ $product->name }}"
                                  class="w-full h-full object-cover">
                             @else

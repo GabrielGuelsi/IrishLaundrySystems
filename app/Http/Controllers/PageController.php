@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Equipment;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -98,11 +97,8 @@ class PageController extends Controller
     public function equipmentCategory($category)
     {
         $categoryName = ucwords(str_replace('-', ' ', $category));
-        $products = Equipment::where('category', $category)
-                             ->where('is_active', true)
-                             ->orderBy('sort_order')
-                             ->orderBy('name')
-                             ->get();
+        $all = config('equipment.' . $category, []);
+        $products = collect($all)->map(fn($p) => (object) $p);
 
         return view('pages.equipment-category', [
             'title' => "{$categoryName} Equipment | Commercial Laundry Ireland | ILS",
@@ -115,11 +111,14 @@ class PageController extends Controller
 
     public function equipmentProduct($category, $product)
     {
-        $item = Equipment::where('category', $category)
-                         ->where('slug', $product)
-                         ->where('is_active', true)
-                         ->firstOrFail();
+        $all  = config('equipment.' . $category, []);
+        $data = collect($all)->firstWhere('slug', $product);
 
+        if (! $data) {
+            abort(404);
+        }
+
+        $item         = (object) $data;
         $categoryName = ucwords(str_replace('-', ' ', $category));
 
         return view('pages.equipment-product', [
