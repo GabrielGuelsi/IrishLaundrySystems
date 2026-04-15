@@ -38,7 +38,7 @@
                             <select name="category" required
                                     class="form-select @error('category') is-invalid @enderror">
                                 <option value="">Select category</option>
-                                @foreach (['washers' => 'Washers', 'dryers' => 'Dryers', 'barrier-washers' => 'Barrier Washers', 'ironers' => 'Ironers'] as $val => $label)
+                                @foreach (['washers' => 'Washers', 'tumble-dryers' => 'Tumble Dryers', 'barrier-washers' => 'Barrier Washers', 'ironers' => 'Ironers'] as $val => $label)
                                 <option value="{{ $val }}" {{ old('category') === $val ? 'selected' : '' }}>{{ $label }}</option>
                                 @endforeach
                             </select>

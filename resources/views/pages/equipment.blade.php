@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -38,7 +38,7 @@
 
 <!-- EQUIPMENT CATEGORIES -->
 <section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Equipment Categories</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">The full range of commercial laundry equipment — supplied, installed and maintained by ILS.</p>
@@ -59,16 +59,16 @@
                 </span>
             </a>
 
-            <a href="{{ route('equipment.category', 'dryers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
+            <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
                 <div class="w-12 h-12 rounded-2xl bg-orange/10 flex items-center justify-center mb-4 group-hover:bg-orange/20 transition-colors">
                     <svg class="w-7 h-7 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Commercial Dryers</h3>
+                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Tumble Dryers</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Gas and electric tumble dryers for commercial operations. Matched capacity to your washer fleet for optimised throughput.</p>
                 <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-semibold">
-                    View dryers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    View tumble dryers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </span>
             </a>
 
@@ -116,7 +116,7 @@
 
 <!-- TWO PATHS -->
 <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Two Ways to Access Equipment</h2>
         </div>
@@ -167,7 +167,7 @@
 
 <!-- INSTALLATION SECTION -->
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="bg-navy rounded-2xl p-8 lg:p-12 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
                 <h2 class="font-heading font-bold text-white text-3xl mb-4">Installation &amp; Commissioning</h2>
