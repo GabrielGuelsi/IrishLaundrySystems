@@ -70,52 +70,39 @@
     </div>
 </section>
 
-<!-- WORKING ROUTE SECTION -->
-<section class="py-16 lg:py-24 bg-white">
+<!-- COMMERCIAL WASHERS HIGHLIGHT -->
+<section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        <!-- Title -->
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                Built around how <strong>hospitality laundry rooms</strong> actually operate
-            </h2>
-        </div>
-
-        <!-- Image + Navy card overlay -->
-        <div class="relative reveal">
-
-            <!-- Image -->
-            <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/healthcare/workflow.jpg"
-                     alt="Hospitality laundry room"
-                     class="w-full h-[580px] object-cover object-center">
+            <!-- Image left -->
+            <div class="flex justify-center reveal reveal-left">
+                <img src="/images/equipment/commercialwasher.webp"
+                     alt="Commercial Washer"
+                     class="w-full max-w-sm object-contain drop-shadow-xl">
             </div>
 
-            <!-- Navy card overlapping left -->
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[420px] bg-navy rounded-2xl p-8 shadow-2xl">
-                <h3 class="font-heading font-bold text-white text-2xl leading-snug mb-4">
-                    Hospitality laundry needs a <strong>working route</strong>, not isolated process steps
-                </h3>
-                <p class="font-body text-white/70 text-sm leading-relaxed mb-6 border border-white/10 rounded-lg p-3">
-                    In hospitality environments, room layout, segregation logic, loading and unloading discipline, throughput pressure, and the support model all shape the real equipment decision.
+            <!-- Text right -->
+            <div class="text-center reveal reveal-right">
+                <h2 class="font-heading font-normal text-navy text-3xl lg:text-4xl mb-5">
+                    Commercial <strong>Washers</strong>
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-sm mx-auto">
+                    Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
                 </p>
-                <ul class="space-y-3">
-                    @foreach([
-                        'Dirty-side and clean-side handling discipline',
-                        'Room-aware equipment route',
-                        'Capacity and throughput pressure',
-                        'Service route from the start',
-                    ] as $n => $point)
-                    <li class="flex items-center gap-3">
-                        <span class="w-7 h-7 rounded-full bg-[#148af4] text-white font-heading font-bold text-xs flex items-center justify-center flex-shrink-0">{{ $n + 1 }}</span>
-                        <span class="font-body text-white text-sm">{{ $point }}</span>
-                    </li>
-                    @endforeach
-                </ul>
+                <div class="flex flex-col items-center gap-3">
+                    <a href="{{ route('equipment.category', 'washers') }}"
+                       class="w-full max-w-xs bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
+                        GO TO PRODUCTS
+                    </a>
+                    <a href="{{ route('contact') }}"
+                       class="w-full max-w-xs bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
+                        REQUEST ASSESSMENT
+                    </a>
+                </div>
             </div>
 
         </div>
-
     </div>
 </section>
 
