@@ -70,21 +70,21 @@
     </div>
 </section>
 
-<!-- ENERGY EFFICIENT INTRO -->
-<section class="py-16 lg:py-20 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 reveal">
-        <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight mb-5">
-            Energy efficient in-house<br>laundry systems
-        </h2>
-        <p class="font-body text-gray-500 text-lg leading-relaxed max-w-2xl">
-            Our range of reliable and efficient laundry equipment will continuously perform cycle after cycle in your hotel, B&amp;B or spa.
-        </p>
-    </div>
-</section>
-
-<!-- COMMERCIAL WASHERS HIGHLIGHT -->
+<!-- ENERGY EFFICIENT + COMMERCIAL WASHERS -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <!-- Intro heading -->
+        <div class="mb-12 reveal">
+            <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight mb-5">
+                Energy efficient in-house<br>laundry systems
+            </h2>
+            <p class="font-body text-gray-500 text-lg leading-relaxed max-w-2xl">
+                Our range of reliable and efficient laundry equipment will continuously perform cycle after cycle in your hotel, B&amp;B or spa.
+            </p>
+        </div>
+
+        <!-- Commercial Washers split -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <!-- Image left -->
@@ -96,9 +96,9 @@
 
             <!-- Text right -->
             <div class="text-center reveal reveal-right">
-                <h2 class="font-heading font-normal text-navy text-3xl lg:text-4xl mb-5">
+                <h3 class="font-heading font-normal text-navy text-3xl lg:text-4xl mb-5">
                     Commercial <strong>Washers</strong>
-                </h2>
+                </h3>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-sm mx-auto">
                     Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
                 </p>
