@@ -37,30 +37,26 @@
 @include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
+<section class="py-16 lg:py-24 bg-gray-50 border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    We'll keep your critical laundry equipment <span style="color:#148af4;">running.</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                    We work with hotels and hospitality businesses across Ireland.
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-xl leading-relaxed mb-4">
-                    ILS supports hospitality operations across Ireland — reducing <span style="color:#148af4;">breakdown risk</span>, improving hygiene compliance, and keeping laundry systems operational.
+                    With growing demand for quality guest experiences, you need laundry equipment that won't let you down.
                 </p>
-                <p class="font-body text-gray-500 leading-relaxed mb-8">
-                    Whatever the site requires, <span style="color:#148af4;">we'll take care of it.</span>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+                    Whether it's towels, bedding or staff uniforms, we know you need a consistently reliable laundry operation for your guests — which is why we provide fast, expert support across the Republic of Ireland.
                 </p>
-                <a href="{{ route('sectors.hospitality') }}#hospitality-equipment"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    See the equipment we provide
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">
+                    We've been keeping hotel laundry rooms running for over 37 years. If you need assistance, our network of engineers is just a phone call away.
+                </p>
             </div>
 
         </div>
