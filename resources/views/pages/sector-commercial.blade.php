@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('meta')
-<meta name="description" content="ILS provides engineering-led commercial laundry support for high-throughput and industrial operations across Ireland — service contracts, reactive repairs, equipment supply and lifecycle planning.">
+<meta name="description" content="Engineering-led commercial and industrial laundry support — service contracts, reactive repairs, equipment supply and lifecycle planning across Ireland.">
 @endsection
 
 @section('content')
@@ -10,25 +10,24 @@
 
 <!-- 1. HERO -->
 <section class="relative min-h-[600px] lg:min-h-[680px] flex items-center overflow-hidden">
-    <img src="/images/about/about-equipment.jpg" alt="Commercial laundry operation" class="absolute inset-0 w-full h-full object-cover object-center">
+    <!-- Background image -->
+    <img src="/images/about/about-equipment.jpg" alt="Commercial laundry operation"
+         class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0 bg-navy/60"></div>
-    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
-        <div class="max-w-2xl reveal">
-            <x-pretitle label="Commercial &amp; Industrial Laundry Support" />
-            <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
-                Commercial laundry downtime has a direct cost to throughput and output.
+    <!-- Content -->
+    <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="max-w-3xl reveal reveal-left">
+            <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
+                High-throughput laundry<br>engineering for commercial<br>and industrial operations.
             </h1>
-            <p class="font-body text-gray-200 text-xl leading-relaxed mb-8">
-                Structured preventive maintenance, fast breakdown response, and equipment lifecycle planning — built around the throughput demands of commercial and industrial laundry operations.
-            </p>
             <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('contact') }}"
+                <a href="#commercial-assessment"
                    class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                    Talk to an Engineer
+                    Request Commercial Assessment
                 </a>
                 <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                    Call an Engineer
+                   class="inline-flex items-center justify-center gap-2 border-2 border-navy hover:border-navy/70 text-navy font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-navy/10">
+                    Talk to an Engineer
                 </a>
             </div>
         </div>
@@ -39,26 +38,29 @@
 @include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-16 lg:py-24 bg-gray-50 border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    We'll keep your commercial operation at full throughput.
+                <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
+                    We work with commercial and industrial laundry operations across Ireland.
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-700 text-xl leading-relaxed mb-4">
-                    ILS supports commercial and industrial laundry operations across Ireland — reducing breakdown frequency, extending equipment life, and building the maintenance history that makes lifecycle decisions easier.
+                <p class="font-body text-gray-500 text-xl leading-relaxed mb-4">
+                    High-throughput environments need equipment and support that <span style="color:#148af4;">won't let you down.</span>
                 </p>
-                <p class="font-body text-gray-500 leading-relaxed mb-8">
-                    Whatever the production schedule demands, we'll take care of it.
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+                    Whether it's a linen hire operation, on-premises laundry or industrial facility, we know you need a <span style="color:#148af4;">consistently reliable laundry operation</span> — which is why we provide fast, expert support across the Republic of Ireland.
                 </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Talk to an Engineer
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">
+                    We've been keeping commercial laundry rooms running for over <span style="color:#148af4;">37 years.</span> If you need assistance, our network of engineers is just a phone call away.
+                </p>
+                <a href="{{ route('sectors.commercial') }}#commercial-equipment"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                    See the equipment we provide
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
@@ -69,100 +71,36 @@
     </div>
 </section>
 
-<!-- COMMERCIAL ROUTE STEPS -->
-<section class="py-16 lg:py-24 bg-white border-b border-gray-100">
+<!-- ENERGY EFFICIENT + COMMERCIAL WASHERS -->
+<section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-12 reveal">
-            <x-pretitle label="Commercial Route" />
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-3xl">
-                One route across throughput, service, and lifecycle planning
-            </h2>
-        </div>
-        <div class="reveal">
-            <div class="relative">
-                <div class="absolute left-0 right-0 h-0.5 bg-[#148af4] hidden lg:block" style="top: 38%;"></div>
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 relative z-10 mb-6">
-                    <div class="bg-white border-2 border-gray-300 p-6 flex flex-col gap-3">
-                        <span class="font-heading font-bold text-[#148af4] text-sm tracking-widest">01</span>
-                        <h3 class="font-heading font-extrabold text-navy text-base lg:text-lg uppercase leading-snug">Assess the operation</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">Shift patterns, throughput demand, machine utilisation, and current maintenance gaps.</p>
-                    </div>
-                    <div class="bg-white border-2 border-gray-300 p-6 flex flex-col gap-3">
-                        <span class="font-heading font-bold text-[#148af4] text-sm tracking-widest">02</span>
-                        <h3 class="font-heading font-extrabold text-navy text-base lg:text-lg uppercase leading-snug">Match the equipment</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">High-capacity machines specified to production throughput, shift requirements, and site layout.</p>
-                    </div>
-                    <div class="bg-white border-2 border-gray-300 p-6 flex flex-col gap-3">
-                        <span class="font-heading font-bold text-[#148af4] text-sm tracking-widest">03</span>
-                        <h3 class="font-heading font-extrabold text-navy text-base lg:text-lg uppercase leading-snug">Keep service close</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">Structured preventive maintenance, machine-level records, and priority response to minimise backlog.</p>
-                    </div>
-                    <div class="bg-white border-2 border-gray-300 p-6 flex flex-col gap-3">
-                        <span class="font-heading font-bold text-[#148af4] text-sm tracking-widest">04</span>
-                        <h3 class="font-heading font-extrabold text-navy text-base lg:text-lg uppercase leading-snug">Lifecycle planning</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">Documented service history makes the maintain-versus-replace decision visible and justified.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-5">
-                <div class="flex justify-center"><span class="bg-white border border-gray-300 rounded-full px-5 py-2 font-body text-gray-700 text-sm">Site assessment</span></div>
-                <div class="flex justify-center"><span class="bg-white border border-gray-300 rounded-full px-5 py-2 font-body text-gray-700 text-sm">Equipment route</span></div>
-                <div class="flex justify-center"><span class="bg-white border border-gray-300 rounded-full px-5 py-2 font-body text-gray-700 text-sm">Support structure</span></div>
-                <div class="flex justify-center"><span class="bg-white border border-gray-300 rounded-full px-5 py-2 font-body text-gray-700 text-sm">Lifecycle review</span></div>
-            </div>
-        </div>
-    </div>
-</section>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-<!-- 4. WHY COMMERCIAL IS DIFFERENT -->
-<section class="py-16 lg:py-24 bg-white border-t border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+            <!-- Image left -->
+            <div class="flex justify-center reveal reveal-left">
+                <img src="/images/equipment/commercialwasher.webp"
+                     alt="Commercial Washer"
+                     class="w-full max-w-sm object-contain drop-shadow-xl">
+            </div>
 
-            <div class="reveal reveal-left">
-                <x-pretitle label="Why Commercial Laundry Maintenance Is Different" />
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                    Why do commercial operators choose ILS for their laundry maintenance?
+            <!-- All text right -->
+            <div class="text-center reveal reveal-right">
+                <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight mb-4">
+                    Energy efficient in-house laundry systems
                 </h2>
-                <p class="font-body text-gray-600 leading-relaxed mb-6">The main reasons are:</p>
-                <ul class="space-y-4 mb-8">
-                    @foreach ([
-                        'Prevents the backlog that unplanned machine downtime creates across a high-volume operation.',
-                        'Builds the documented service history needed to make justified maintain-versus-replace decisions.',
-                        'Experienced engineers with genuine Electrolux Professional parts — focused on first-visit resolution.',
-                        'Structured preventive maintenance reduces failure frequency and extends equipment service life.',
-                        'Multi-site arrangements available for operations running across multiple locations.',
-                    ] as $bullet)
-                    <li class="flex items-start gap-3">
-                        <span class="flex-shrink-0 mt-0.5">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                            </svg>
-                        </span>
-                        <span class="font-body text-gray-700 text-sm leading-relaxed">{{ $bullet }}</span>
-                    </li>
-                    @endforeach
-                </ul>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 border-2 border-navy text-navy hover:bg-navy hover:text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
-                    Talk to our team about your operation
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="grid grid-cols-2 gap-3 reveal reveal-right">
-                <div class="flex flex-col gap-3">
-                    <div class="rounded-2xl overflow-hidden h-52 bg-gray-200">
-                        <img src="/images/commercial/plant.jpg" alt="Commercial laundry plant" class="w-full h-full object-cover" onerror="this.style.display='none'">
-                    </div>
-                    <div class="rounded-2xl overflow-hidden h-52 bg-gray-200">
-                        <img src="/images/commercial/operator.jpg" alt="Laundry operator at work" class="w-full h-full object-cover" onerror="this.style.display='none'">
-                    </div>
-                </div>
-                <div class="rounded-2xl overflow-hidden bg-gray-200" style="min-height:424px;">
-                    <img src="/images/commercial/engineer.jpg" alt="ILS engineer on site" class="w-full h-full object-cover" onerror="this.style.display='none'">
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-8">
+                    Our range of reliable and efficient laundry equipment will continuously perform cycle after cycle in your commercial laundry operation.
+                </p>
+                <div class="flex flex-col items-center gap-3">
+                    <p class="font-heading font-normal text-navy text-2xl mb-1">Commercial <strong>Washers</strong></p>
+                    <a href="{{ route('equipment.category', 'washers') }}"
+                       class="w-full max-w-xs bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
+                        GO TO PRODUCTS
+                    </a>
+                    <a href="{{ route('contact') }}"
+                       class="w-full max-w-xs bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
+                        REQUEST ASSESSMENT
+                    </a>
                 </div>
             </div>
 
@@ -170,368 +108,805 @@
     </div>
 </section>
 
-<!-- 5. STATEMENT SECTION -->
-<section class="min-h-[480px] flex items-center py-20 lg:py-28 relative overflow-hidden"
-    style="background-color:#011E41; background-image:linear-gradient(90deg,rgba(1,30,65,0.93) 0%,rgba(1,30,65,0.80) 55%,rgba(1,30,65,0.30) 100%), url('/images/commercial/statement-bg.jpg'); background-size:cover; background-position:right center;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
-        <div class="max-w-2xl relative z-10 reveal reveal-left">
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
-                Reactive maintenance is the most expensive way to run a commercial laundry.
+<!-- OUR EXPERTS WILL TAKE CARE OF IT -->
+<section class="relative py-20 lg:py-28 overflow-hidden">
+    <!-- Background image -->
+    <img src="/images/healthcare/engineer.jpg" alt="ILS engineer"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-navy/75"></div>
+
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="max-w-xl reveal">
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-6">
+                Our experts will take care of it
             </h2>
-            <ul class="space-y-4 mb-10">
-                @foreach ([
-                    'Every unplanned breakdown creates a backlog that takes hours or days to recover.',
-                    'Without a maintenance record, the maintain-versus-replace decision is made blind.',
-                    'Aging equipment costs more per year in repairs than a replacement — but only structured records prove it.',
-                    'ILS gives commercial operators the data, the support, and the response to make better decisions.',
-                ] as $point)
-                <li class="flex items-start gap-3">
-                    <span class="flex-shrink-0 w-2 h-2 rounded-full bg-[#148af4] mt-2"></span>
-                    <span class="font-body text-gray-300 leading-relaxed">{{ $point }}</span>
-                </li>
-                @endforeach
-            </ul>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-4">
+                Our dedicated team of engineers are here to give you peace of mind. Partnering with ILS takes the stress and hassle away from breakdowns.
+            </p>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-8">
+                Whatever the job calls for, we'll take <span class="text-[#148af4] font-semibold">care</span> of it.
+            </p>
             <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Talk to an Engineer
+               class="inline-flex items-center gap-2 border-2 border-[#148af4] text-white hover:bg-[#148af4] font-heading font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                Speak to us about your requirements
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
             </a>
         </div>
     </div>
 </section>
 
-<!-- 6. HOW ILS SUPPORTS COMMERCIAL OPERATIONS -->
-<section class="py-16 lg:py-24 bg-bg border-y border-border">
+{{-- D: Enhanced Usability + ERGOCERT — single unified section --}}
+<section class="py-10 lg:py-14 bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">How ILS supports commercial operations</h2>
-            <p class="font-body text-gray-500 text-lg max-w-2xl">Our services mapped to throughput, lifecycle, and operational demands.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-            <!-- Service Contracts -->
-            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/>
-                    </svg>
+        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
+            Enhanced usability, superior safety
+        </h2>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            {{-- Left col: 3 usability features + 4 ERGOCERT rows --}}
+            <div class="lg:col-span-2 flex flex-col gap-0">
+
+                {{-- 3 usability features --}}
+                @foreach([
+                    [
+                        'icon'  => '/images/healthcare/hygiene-icon.png',
+                        'alt'   => 'Hygiene icon',
+                        'title' => 'Maximise hygiene in commercial applications',
+                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
+                    ],
+                    [
+                        'icon'  => '/images/healthcare/operator-icon.png',
+                        'alt'   => 'Operator icon',
+                        'title' => 'Operator support in high-output laundries',
+                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy commercial laundry shifts.',
+                    ],
+                    [
+                        'icon'  => '/images/healthcare/control-icon.png',
+                        'alt'   => 'Control icon',
+                        'title' => 'Intelligent control',
+                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
+                    ],
+                ] as $feature)
+                <div class="flex items-center gap-4 py-4 border-b border-gray-100 reveal">
+                    <div class="flex-shrink-0">
+                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-14 h-14 object-contain">
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1">{{ $feature['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                    </div>
                 </div>
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">Service Contracts</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">Structured preventive maintenance — documented per machine, reducing failure frequency and producing the service history that supports lifecycle decisions.</p>
-                <a href="{{ route('service-contracts') }}" class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    View service contracts
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
+                @endforeach
+
+                {{-- ERGOCERT 4 icon rows --}}
+                <div class="mt-6 bg-navy rounded-2xl p-6 reveal">
+                    <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-4">ERGOCERT 4-Star Certified</p>
+                    <div class="divide-y divide-white/10">
+                        @foreach([
+                            ['icon' => 'International standards.png', 'title' => 'Designed with international standards of excellence in mind', 'body' => 'to achieve the highest level of safety and technical certifications.'],
+                            ['icon' => 'Musculoskeletal.png',         'title' => 'Proven to reduce musculoskeletal disorders',                   'body' => 'as a result of body analysis trials whilst operating machinery.'],
+                            ['icon' => 'User-appliance synergy.png',  'title' => 'User-appliance synergy',                                       'body' => 'based on years of testing the interaction between operator and appliance to create an intuitive and effortless experience.'],
+                            ['icon' => 'Human-centered design.png',   'title' => '360° human-centered certified design',                         'body' => 'at the core of the rigorous development process.'],
+                        ] as $star)
+                        <div class="flex items-start gap-4 py-3 first:pt-0 last:pb-0">
+                            <div class="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 border border-white/10">
+                                <img src="/images/healthcare/{{ $star['icon'] }}" alt="{{ $star['title'] }}" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <p class="font-heading font-bold text-white text-sm mb-0.5">{{ $star['title'] }}</p>
+                                <p class="font-body text-gray-300 text-xs leading-relaxed">{{ $star['body'] }}</p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
             </div>
 
-            <!-- Repairs & Call-outs -->
-            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>
-                    </svg>
-                </div>
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">Repairs &amp; Call-outs</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">Fast triage and engineer dispatch with genuine Electrolux Professional parts — focused on first-visit resolution to get throughput back without extended backlog.</p>
-                <a href="{{ route('repairs') }}" class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Repairs &amp; call-outs
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
+            {{-- Right col: ERGOCERT 4-star summary + Download + Discover --}}
+            <div class="flex flex-col gap-5 reveal reveal-right">
 
-            <!-- Equipment Supply -->
-            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
-                    </svg>
+                {{-- ERGOCERT summary card --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <div class="flex gap-1 mb-3">
+                        @for($s = 0; $s < 4; $s++)
+                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        @endfor
+                    </div>
+                    <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">
+                        Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.
+                    </p>
+                    <p class="font-body text-[#148af4] text-xs leading-relaxed">
+                        Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.
+                    </p>
                 </div>
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">Equipment Supply</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">Commercial laundry equipment from the Electrolux Professional range — supplied, installed, and commissioned for your site by engineers who understand high-throughput operations.</p>
-                <a href="{{ route('equipment') }}" class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Browse equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
 
-            <!-- Equipment Rental -->
-            <div class="bg-bg border border-border rounded-2xl p-6 flex flex-col card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4 flex-shrink-0">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
-                    </svg>
+                {{-- Download --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                    <ul class="space-y-3">
+                        @foreach([
+                            ['label' => 'Line 6000 Evolution Barrier Washers',    'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                            ['label' => 'Line 6000 Pullman Barrier Washers',      'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+                            ['label' => 'Clean, Sanitize, Decontaminate Brochure','file' => 'Electrolux_WhitePaper_CleaningSolution.pdf'],
+                            ['label' => 'Line 6000 Tumble Dryers',                'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                            ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+                        ] as $pdf)
+                        <li>
+                            @if($pdf['file'])
+                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </a>
+                            @else
+                            <span class="flex items-center gap-2 font-body text-sm text-white/30">
+                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </span>
+                            @endif
+                        </li>
+                        @endforeach
+                    </ul>
                 </div>
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">Equipment Rental</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">Access to new commercial equipment without capital outlay — inclusive of maintenance support, a practical path for sites where the maintain-versus-replace calculation is shifting.</p>
-                <a href="{{ route('rental') }}" class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Equipment rental
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
 
+                {{-- Discover --}}
+                <div class="bg-bg border border-border rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                    <ul class="space-y-3">
+                        @foreach([
+                            ['label' => 'Service & Maintenance Contracts', 'route' => 'service-contracts'],
+                            ['label' => 'Full Equipment Range',            'route' => 'equipment'],
+                            ['label' => 'Request a Site Assessment',       'route' => 'contact'],
+                        ] as $link)
+                        <li>
+                            <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                                </svg>
+                                {{ $link['label'] }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
 
 <!-- SUPPORT ROUTES -->
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <!-- Header -->
         <div class="mb-10 reveal">
-            <x-pretitle label="Support Routes" />
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-2xl">
-                Three clear routes into commercial laundry support.
+                Three clear routes into<br>
+                <span class="font-bold">commercial laundry support.</span>
             </h2>
         </div>
-        <div class="flex flex-col gap-5">
-            <div class="relative rounded-2xl overflow-hidden h-52 lg:h-56 reveal">
-                <img src="/images/about/about-engineers.jpg" alt="Service Contracts" class="absolute inset-0 w-full h-full object-cover object-center">
-                <div class="absolute inset-0 flex">
-                    <div class="w-full lg:w-3/5 bg-navy/85 flex flex-col justify-center px-8 lg:px-12 py-8">
-                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Service Contracts</h3>
-                        <p class="font-body text-gray-200 text-sm lg:text-base leading-relaxed mb-5">Structured preventive maintenance documented per machine — reducing failure frequency and building the service history that supports lifecycle decisions.</p>
-                        <a href="{{ route('service-contracts') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-semibold text-sm px-4 py-2 rounded-lg transition-colors">Review contract options<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="hidden lg:flex flex-1 items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-                    </div>
+
+        <!-- Square Cards Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+
+            <!-- Card 1: Service Contracts -->
+            <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
+                <img src="/images/healthcare/engineer.jpg" alt="Service Contracts" class="absolute inset-0 w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8">
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Service Contracts</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-5">
+                        Planned support built around installed commercial equipment, continuity targets, and the daily pressure of the room.
+                    </p>
+                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-bold text-sm px-4 py-2 rounded-lg transition-colors">
+                        Review contract options
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    </a>
                 </div>
             </div>
-            <div class="relative rounded-2xl overflow-hidden h-52 lg:h-56 reveal">
-                <img src="/images/about/about-equipment.jpg" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
-                <div class="absolute inset-0 flex flex-row-reverse">
-                    <div class="w-full lg:w-3/5 bg-navy/85 flex flex-col justify-center px-8 lg:px-12 py-8">
-                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Repairs &amp; Call-outs</h3>
-                        <p class="font-body text-gray-200 text-sm lg:text-base leading-relaxed mb-5">Fast triage and engineer dispatch with genuine OEM parts — focused on first-visit resolution to get throughput back without extended backlog.</p>
-                        <a href="{{ route('repairs') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-semibold text-sm px-4 py-2 rounded-lg transition-colors">Request support route<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="hidden lg:flex flex-1 items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-                    </div>
+
+            <!-- Card 2: Repairs & Call-outs -->
+            <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
+                <img src="/images/healthcare/workflow.jpg" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8">
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Repairs &amp; Call-outs</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-5">
+                        Urgent response path when breakdowns, performance issues, or pressure points interrupt commercial laundry operations.
+                    </p>
+                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-bold text-sm px-4 py-2 rounded-lg transition-colors">
+                        Request support route
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    </a>
                 </div>
             </div>
-            <div class="relative rounded-2xl overflow-hidden h-52 lg:h-56 reveal">
-                <img src="/images/about/about-team.jpg" alt="Parts & Aftercare" class="absolute inset-0 w-full h-full object-cover object-center">
-                <div class="absolute inset-0 flex">
-                    <div class="w-full lg:w-3/5 bg-navy/85 flex flex-col justify-center px-8 lg:px-12 py-8">
-                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Parts &amp; Aftercare</h3>
-                        <p class="font-body text-gray-200 text-sm lg:text-base leading-relaxed mb-5">Genuine OEM parts and lifecycle support — keeping commercial equipment at full throughput across its full service life.</p>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-semibold text-sm px-4 py-2 rounded-lg transition-colors">Discuss parts &amp; aftercare<svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a>
-                    </div>
-                    <div class="hidden lg:flex flex-1 items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-20 h-20 text-white/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1"><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
-                    </div>
+
+            <!-- Card 3: Parts & Aftercare -->
+            <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
+                <img src="/images/healthcare/plant-room.jpg" alt="Parts & Aftercare" class="absolute inset-0 w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="absolute inset-0 flex flex-col justify-end p-8">
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Parts &amp; Aftercare</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-5">
+                        Lifecycle support for wear items, parts planning, and continuity around the installed commercial base.
+                    </p>
+                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-bold text-sm px-4 py-2 rounded-lg transition-colors">
+                        Discuss parts &amp; aftercare
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                    </a>
                 </div>
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- 7. EQUIPMENT -->
+
+<!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
+
+{{-- A2: Navy intro block --}}
+
+<!-- PRODUCTS: Barrier Washers / Tumble Dryers / Ironers -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
-            <x-pretitle label="Commercial Equipment" />
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">Equipment built for commercial throughput.</h2>
-            <p class="font-body text-gray-500 text-lg max-w-2xl">Electrolux Professional equipment — specified, installed, and maintained by ILS.</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
 
-            @foreach ([
-                [
-                    'title' => 'High-Capacity Washers',
-                    'desc'  => 'Large-format washer-extractors for continuous high-volume operation — matched to the throughput requirements of commercial laundry sites running full shift patterns.',
-                ],
-                [
-                    'title' => 'Industrial Tumble Dryers',
-                    'desc'  => 'High-capacity dryers to maintain linen flow at production pace — keeping throughput consistent and preventing drying-stage bottlenecks.',
-                ],
-                [
-                    'title' => 'Finishing & Ironing Equipment',
-                    'desc'  => 'Flatwork ironers and finishing systems for commercial-scale linen processing — handling volume at the final stage without creating a queue.',
-                ],
-                [
-                    'title' => 'Washer-Extractors',
-                    'desc'  => 'High-spin extraction reducing drying time and energy cost — essential for operations where cycle time directly affects daily throughput.',
-                ],
-            ] as $item)
-            <div class="bg-bg border border-border rounded-2xl overflow-hidden card-hover reveal">
-                <div class="h-48 bg-bg flex items-center justify-center border-b border-border">
-                    <span class="font-body text-xs text-gray-400">Equipment image</span>
+        <!-- Title -->
+        <div class="mb-16 reveal">
+            <h2 class="font-heading text-navy text-3xl lg:text-4xl leading-tight mb-2">
+                Laundry and infection <strong>control solutions</strong>
+            </h2>
+            <p class="font-body text-navy text-base leading-relaxed">
+                Irish Laundry Systems sell/rent , installs and maintains a range of industry-standard equipment including washers and dryers.<br>
+                Take an extra load off your mind.
+            </p>
+        </div>
+
+        <div class="flex flex-col divide-y divide-gray-100">
+
+            <!-- 1. Barrier Washers — text left, image right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="text-center">
+                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Barrier washers sit at the centre of commercial laundry rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
+                    </p>
+                    <div class="flex flex-col items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
+                            VIEW EQUIPMENT
+                        </a>
+                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
+                            REQUEST ASSESSMENT
+                        </a>
+                    </div>
                 </div>
-                <div class="p-6">
-                    <h3 class="font-heading font-semibold text-navy text-base mb-2">{{ $item['title'] }}</h3>
-                    <p class="font-body text-gray-600 text-sm leading-relaxed mb-4">{{ $item['desc'] }}</p>
-                    <a href="{{ route('equipment') }}" class="inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                        View equipment
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </a>
+                <div class="flex justify-center">
+                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                         alt="Line 6000 Barrier Washer"
+                         class="w-full h-96 object-contain">
                 </div>
+            </div>
+
+            <!-- Barrier Washer: AIDO + Watchdog collapsible -->
+            <div x-data="{ open: false, tab: 'aido' }" class="py-6 border-t border-gray-100">
+                <button @click="open = !open"
+                        class="w-full flex items-center justify-end gap-3 text-right group">
+                    <span class="font-heading font-bold text-navy text-lg">System Features — AIDO &amp; Hygiene Watchdog</span>
+                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </button>
+
+                <div x-show="open" x-collapse class="mt-6">
+                    <!-- Tabs -->
+                    <div class="flex gap-6 border-b border-gray-200 mb-8">
+                        <button @click="tab = 'aido'"
+                                :class="tab === 'aido' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            AIDO System
+                        </button>
+                        <button @click="tab = 'watchdog'"
+                                :class="tab === 'watchdog' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            Watchdog System
+                        </button>
+                    </div>
+
+                    <!-- AIDO Tab -->
+                    <div x-show="tab === 'aido'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
+                                <span class="font-heading font-bold text-gray-500 text-sm text-center leading-tight">AIDO</span>
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                Our large inner-drum doors make loading and unloading the washer exceptionally easy, while our innovative opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables the easy manual handling of large loads of wet linen while minimizing potential strain for the operator.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
+                                        title="AIDO System"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Watchdog Tab -->
+                    <div x-show="tab === 'watchdog'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
+                                <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">Hygiene<br>Watchdog</span>
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                <strong>Your Hygiene Partner:</strong> The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all linen is <strong>fully washed and thoroughly decontaminated</strong>. This provides the maximum defense against the spread of microorganisms and cross-contamination, keeping germs at bay and your mind at rest.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
+                                        title="Hygiene Watchdog"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMMERCIAL WASHERS — image left, text right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="flex justify-center">
+                    <img src="/images/equipment/commercialwasher.webp"
+                         alt="Commercial Washer"
+                         class="w-full h-96 object-contain">
+                </div>
+                <div class="text-center">
+                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Commercial <strong>Washers</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
+                    </p>
+                    <div class="flex flex-col items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
+                            GO TO PRODUCTS
+                        </a>
+                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
+                            REQUEST ASSESSMENT
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Tumble Dryers — text left, image right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="order-2 lg:order-1">
+                    <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                        Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> commercial cycles.
+                    </h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
+                    </p>
+                    <div class="flex flex-col gap-3 mb-6">
+                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide text-center">
+                            GO TO PRODUCTS
+                        </a>
+                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide text-center">
+                            REQUEST ASSESSMENT
+                        </a>
+                    </div>
+                    <div class="font-body text-gray-500 text-sm leading-relaxed">
+                        <p class="font-body font-bold text-navy mb-1">Designed for humans, and the environment</p>
+                        <p class="font-body">Our Tumble Dryers stand out for their energy efficiency, speed, and certified ergonomic design, while easing the physical strain on laundry operators.<br>
+                        This unique combination distinguishes them from all other dryers on the market.</p>
+                    </div>
+                </div>
+                <div class="flex justify-center order-1 lg:order-2">
+                    <img src="/images/equipment/line6000-tumble-dryer.webp"
+                         alt="Line 6000 Tumble Dryer"
+                         class="w-full h-96 object-contain">
+                </div>
+            </div>
+
+            <!-- Tumble Dryers: collapsible features -->
+            <div x-data="{ open: false }" class="py-6 border-t border-gray-100">
+                <button @click="open = !open"
+                        class="w-full flex items-center justify-start gap-3 text-left group">
+                    <span class="font-heading font-bold text-navy text-lg">System Features — Moisture Balance</span>
+                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </button>
+
+                <div x-show="open" x-collapse class="mt-6">
+                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
+                    <div class="flex items-start gap-6 mb-8">
+                        <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
+                            <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">Moisture<br>Balance</span>
+                        </div>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                    src="https://www.youtube.com/embed/Xm2CpX95zDM"
+                                    title="Tumble Dryers Ergonomics"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h5 class="font-heading font-bold text-navy text-xl mb-3">Our dryers have earned the prestigious 4-star rating for ergonomics from ERGOCERT</h5>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">All models have been user-tested to ensure operators will feel less tension and strain, so they—and your commercial laundry—can thrive.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Ironers — image left, text right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+                <div class="flex justify-center">
+                    <img src="/images/equipment/line6000-ironer.webp"
+                         alt="Line 6000 Ironer"
+                         class="w-full h-80 object-contain">
+                </div>
+                <div class="text-center">
+                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-6">Ironers</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Deliver perfectly ironed linen to the highest hygiene standards
+                    </p>
+                    <div class="flex flex-col items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
+                            GO TO PRODUCTS
+                        </a>
+                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
+                            REQUEST ASSESSMENT
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ironers: collapsible features -->
+            <div x-data="{ open: false, tab: 'diamms' }" class="py-6 border-t border-gray-100">
+                <button @click="open = !open"
+                        class="w-full flex items-center justify-end gap-3 text-right group">
+                    <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
+                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </button>
+
+                <div x-show="open" x-collapse class="mt-6">
+                    <!-- Tabs -->
+                    <div class="flex gap-6 border-b border-gray-200 mb-8">
+                        <button @click="tab = 'diamms'"
+                                :class="tab === 'diamms' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            DIAMMS
+                        </button>
+                        <button @click="tab = 'hygiene'"
+                                :class="tab === 'hygiene' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            Hygiene Guard
+                        </button>
+                    </div>
+
+                    <!-- DIAMMS Tab -->
+                    <div x-show="tab === 'diamms'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Maximum hygiene and performance</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
+                                <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">DIAMMS</span>
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                Using DIAMMS™ technology, the Line 6000 Flatwork Ironers will automatically adapt the cylinder speed to the amount of moisture in the linen.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/KER1S0tcqeE"
+                                        title="Ironers DIAMMS"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next bed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hygiene Guard Tab -->
+                    <div x-show="tab === 'hygiene'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Pure Hygiene: Flawless Dry Linen Delivery</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
+                                <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">Hygiene<br>Guard</span>
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                Hygiene Guard, in conjunction with DIAMMS™, will automatically reject any linen if it does not comply with the prescribed humidity parameters set by the RABC standards.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/KER1S0tcqeE"
+                                        title="Ironers Hygiene Guard"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next bed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- HEALTHCARE ROUTE + AUTHORISED PARTNER -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-12">
+
+        <!-- Top: From room review -->
+        <div class="reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+                <!-- Left: title + subtitle -->
+                <div class="lg:col-span-1">
+                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From room review to the right next step</h2>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial laundry rooms work better when the equipment path and support model are aligned from the start.</p>
+                </div>
+                <!-- Right: 4 steps -->
+                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    @foreach([
+                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
+                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
+                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
+                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
+                    ] as $step)
+                    <div class="bg-[#eaeff5] rounded-xl p-6">
+                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
+                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
+                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom: Authorised Partner -->
+        <div class="border-t border-gray-200 pt-10 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-gray-200 items-center">
+                <!-- Left: logo + badge -->
+                <div class="flex flex-col items-center justify-center gap-3 pb-6 lg:pb-0 lg:pr-8">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg" alt="Electrolux Professional Authorized Partner" class="h-16 object-contain">
+                    <p class="font-heading font-bold text-xs tracking-widest text-gray-400 uppercase">Authorized Partner</p>
+                </div>
+                <!-- Middle: title + description -->
+                <div class="py-6 lg:py-0 lg:px-8">
+                    <p class="font-heading font-bold text-navy text-base leading-snug mb-2">Electrolux Professional Authorized Partner</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems combines local engineering support in Ireland with manufacturer-grade equipment standards, lifecycle continuity, and a more structured route into service and lifecycle support.</p>
+                </div>
+                <!-- Right: 3 feature tiles -->
+                <div class="pt-6 lg:pt-0 lg:pl-8 grid grid-cols-3 gap-4">
+                    @foreach([
+                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>',
+                          'label' => 'Local engineering execution'],
+                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>',
+                          'label' => 'Lifecycle support route'],
+                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>',
+                          'label' => 'Genuine parts continuity'],
+                    ] as $feat)
+                    <div class="flex flex-col items-center text-center gap-2">
+                        <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $feat['icon'] !!}</svg>
+                        </div>
+                        <p class="font-body text-gray-500 text-xs leading-tight">{{ $feat['label'] }}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
+        <!-- Trusted by logos -->
+        <div class="border-t border-gray-200 pt-8 reveal">
+            <div class="flex flex-wrap items-center gap-14 lg:gap-24">
+                <p class="font-body text-xs text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
+                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-16 object-contain">
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-16 object-contain">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-16 object-contain">
+                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-16 object-contain">
+                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-16 object-contain">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- SUGGESTED EQUIPMENT -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Header --}}
+        <div class="mb-10 text-center reveal">
+            <h2 class="font-heading font-bold text-gray-900 text-3xl lg:text-5xl leading-tight mb-4">Find the right solutions for your commercial and industrial operations</h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-xl mx-auto">Our laundry solutions will save you time and energy, keeping your operation running at full capacity.</p>
+        </div>
+
+        {{-- 4 equipment cards --}}
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reveal">
+            @foreach([
+                ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.'],
+                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.'],
+                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
+                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
+            ] as $eq)
+            <div class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col gap-4">
+                <div>
+                    <p class="font-heading font-bold text-navy text-base leading-snug mb-1">{{ $eq['name'] }}</p>
+                    <p class="font-body text-[#148af4] text-sm leading-relaxed">{{ $eq['desc'] }}</p>
+                </div>
+                <div class="flex items-center justify-center h-56 rounded-lg overflow-hidden bg-white">
+                    <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
+                </div>
+                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-4 py-2.5 rounded-lg transition-colors {{ $eq['img'] === 'line6000-tumble-dryer' ? 'mt-auto' : '' }}">
+                    View Equipment
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
             </div>
             @endforeach
-
         </div>
-        <div class="flex flex-col sm:flex-row gap-4 items-center reveal">
-            <a href="{{ route('equipment') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-steel text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
-                Browse all commercial equipment
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-            </a>
-            <a href="{{ route('contact') }}" class="font-body text-navy font-semibold text-sm hover:text-steel transition-colors">
-                Not sure what you need? Talk to an engineer &rarr;
-            </a>
+
+    </div>
+</section>
+
+<!-- SUPPORT CTA BANNER -->
+<section class="py-8 lg:py-10 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="relative rounded-2xl overflow-hidden" style="background-color: #148af4;">
+            <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[160px]">
+                <!-- Left: text + button -->
+                <div class="flex flex-col justify-center px-10 py-10 z-10 relative">
+                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight uppercase mb-6">
+                        We design the laundry equipment and solutions your business needs — together
+                    </h2>
+                    <div>
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors tracking-wide">
+                            Contact an Expert
+                        </a>
+                    </div>
+                </div>
+                <!-- Right: image with diagonal clip -->
+                <div class="hidden lg:block relative">
+                    <div class="absolute inset-0" style="clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);">
+                        <img src="/images/about/about-team.jpg" alt="Support team" class="w-full h-full object-cover opacity-80">
+                        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, transparent 30%);"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- 8. PROOF POINTS -->
-<section class="py-16 lg:py-20 bg-bg border-y border-border">
+<!-- ESSENTIA BAND -->
+<section class="py-6 bg-[#eaeff5]">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-
-            <!-- White -->
-            <div class="bg-white border border-border rounded-2xl p-6 reveal">
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">Throughput First</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">Maintenance structured around your shift patterns and production schedule.</p>
+        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <img src="/images/healthcare/essentia-logo.png" alt="Essentia" class="w-20 h-20 object-contain">
             </div>
-
-            <!-- Navy -->
-            <div class="bg-navy rounded-2xl p-6 reveal">
-                <h3 class="font-heading font-bold text-white text-lg mb-2">First Visit Fix</h3>
-                <p class="font-body text-gray-300 text-sm leading-relaxed">Engineers dispatched with genuine OEM parts — focused on resolution, not callbacks.</p>
+            <!-- Text -->
+            <div class="flex-1 text-center lg:text-left">
+                <p class="font-heading font-bold text-navy text-base mb-1">Essentia: the heart of customer service</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">Providing you with the support you need, taking care of your processes with a reliable service network, a range of tailored-made exclusive services and an innovative technology.</p>
             </div>
-
-            <!-- White -->
-            <div class="bg-white border border-border rounded-2xl p-6 reveal">
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">Lifecycle Data</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">Service history per machine — making the maintain-versus-replace decision visible.</p>
+            <!-- Button -->
+            <div class="flex-shrink-0">
+                <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                    Discover Essentia
+                </a>
             </div>
-
-            <!-- Navy -->
-            <div class="bg-navy rounded-2xl p-6 reveal">
-                <h3 class="font-heading font-bold text-white text-lg mb-2">Multi-Site</h3>
-                <p class="font-body text-gray-300 text-sm leading-relaxed">One contract covering all your locations — consistent standards, single point of contact.</p>
-            </div>
-
         </div>
     </div>
 </section>
 
-<!-- 9. COMMERCIAL ROUTE -->
-<section class="py-16 lg:py-24 bg-white">
+<!-- 9. ASSESSMENT FORM -->
+<section id="healthcommercial-assessment" class="py-16 lg:py-24 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal">
 
-            <a href="{{ route('equipment') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 7.5l-.625 10.632a2.25 2.25 0 01-2.247 2.118H6.622a2.25 2.25 0 01-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z"/>
-                    </svg>
-                </div>
-                <p class="font-body text-xs font-semibold text-[#148af4] uppercase tracking-wide mb-1">Equipment Route</p>
-                <h3 class="font-heading font-bold text-navy text-base mb-2">Commercial laundry equipment</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">High-capacity machines matched to commercial throughput and shift pattern demands.</p>
-                <span class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Browse equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
-            </a>
-
-            <a href="{{ route('service-contracts') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/>
-                    </svg>
-                </div>
-                <p class="font-body text-xs font-semibold text-[#148af4] uppercase tracking-wide mb-1">Service Route</p>
-                <h3 class="font-heading font-bold text-navy text-base mb-2">Service contracts for commercial operations</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">Preventive maintenance, machine-level records, and priority response — structured for production environments.</p>
-                <span class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    View service contracts
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
-            </a>
-
-            <a href="{{ route('contact') }}" class="block bg-white border border-border rounded-2xl p-6 card-hover reveal">
-                <div class="w-10 h-10 rounded-lg bg-navy/10 flex items-center justify-center mb-4">
-                    <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0M12 12.75h.008v.008H12v-.008z"/>
-                    </svg>
-                </div>
-                <p class="font-body text-xs font-semibold text-[#148af4] uppercase tracking-wide mb-1">Engineering Route</p>
-                <h3 class="font-heading font-bold text-navy text-base mb-2">Site assessment and lifecycle planning</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">Engineering advice on current equipment, maintenance cost, and the right point to invest in replacement.</p>
-                <span class="mt-4 inline-flex items-center gap-1 text-navy font-body font-semibold text-sm hover:text-steel transition-colors">
-                    Talk to an engineer
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
-            </a>
-
-        </div>
-    </div>
-</section>
-
-<!-- 10. ASSESSMENT FORM -->
-<section id="commercial-assessment" class="py-16 lg:py-24 bg-bg border-t border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
-
-            <!-- Left navy card -->
-            <div class="bg-navy rounded-2xl p-8 lg:p-10 reveal reveal-left">
-                <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-4">
-                    Talk to an ILS engineer about your operation.
-                </h2>
-                <p class="font-body text-gray-300 leading-relaxed mb-8">
-                    Site review, equipment assessment, and a maintenance structure matched to your throughput and lifecycle requirements.
-                </p>
-                <div class="flex flex-col gap-3">
-                    <button type="submit" form="commercial-form"
-                            class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Assessment
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </button>
-                    <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to an Engineer
-                    </a>
+            {{-- Left card: heading + bullets --}}
+            <div class="bg-navy rounded-3xl p-10 lg:p-14 flex flex-col justify-between">
+                <div>
+                    <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-6">
+                        Bring the commercial laundry room, the support route, and the equipment discussion into one next step
+                    </h2>
+                    <p class="font-body text-white/60 text-sm leading-relaxed mb-8">
+                        Use this route to review room layout, barrier relevance, current equipment route, installed-base pressure, and the support model around the commercial laundry room.
+                    </p>
+                    <div class="flex flex-col gap-3">
+                        @foreach([
+                            'Review room layout, workflow, and dirty-side / clean-side handling requirements.',
+                            'Assess barrier washer relevance alongside washers, dryers, ironers, and flatwork handling.',
+                            'Connect the installed base to Service Contracts, Repairs & Call-outs, and Parts & Aftercare where needed.',
+                        ] as $point)
+                        <div class="bg-white/10 rounded-xl px-5 py-3">
+                            <p class="font-body text-white text-sm leading-relaxed">{{ $point }}</p>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
 
-            <!-- Right white form -->
-            <div class="bg-white border border-border rounded-2xl p-8 lg:p-10 reveal reveal-right">
-                <form id="commercial-form" action="#" method="POST">
+            {{-- Right card: form --}}
+            <div class="bg-white border border-border rounded-3xl p-8 lg:p-10 flex flex-col">
+                <h3 class="font-heading font-bold text-navy text-xl mb-1">Request Commercial Assessment</h3>
+                <p class="font-body text-orange text-sm mb-5">Tell us about the environment, the current setup, and what needs review.</p>
+                <form id="commercial-form" action="{{ route('contact') }}" method="POST" class="flex flex-col gap-2 flex-1">
                     @csrf
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label class="block font-body text-sm font-semibold text-gray-700 mb-1.5" for="commercial-name">Name</label>
-                            <input type="text" id="commercial-name" name="name" placeholder="Your name"
-                                   class="w-full border border-border rounded-lg px-4 py-3 font-body text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#148af4]">
-                        </div>
-                        <div>
-                            <label class="block font-body text-sm font-semibold text-gray-700 mb-1.5" for="commercial-company">Company Name</label>
-                            <input type="text" id="commercial-company" name="company" placeholder="Your company"
-                                   class="w-full border border-border rounded-lg px-4 py-3 font-body text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#148af4]">
-                        </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" name="name" required placeholder="Full name"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                        <input type="text" name="organisation" placeholder="Organisation"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
                     </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                        <div>
-                            <label class="block font-body text-sm font-semibold text-gray-700 mb-1.5" for="commercial-phone">Phone</label>
-                            <input type="tel" id="commercial-phone" name="phone" placeholder="Your phone number"
-                                   class="w-full border border-border rounded-lg px-4 py-3 font-body text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#148af4]">
-                        </div>
-                        <div>
-                            <label class="block font-body text-sm font-semibold text-gray-700 mb-1.5" for="commercial-email">Email</label>
-                            <input type="email" id="commercial-email" name="email" placeholder="Your email address"
-                                   class="w-full border border-border rounded-lg px-4 py-3 font-body text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#148af4]">
-                        </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="email" name="email" required placeholder="Email"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                        <input type="tel" name="phone" placeholder="Phone"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
                     </div>
-                    <div class="mb-6">
-                        <label class="block font-body text-sm font-semibold text-gray-700 mb-1.5" for="commercial-message">Message</label>
-                        <textarea id="commercial-message" name="message" rows="5" placeholder="Tell us about your operation — number of machines, shift patterns, current maintenance arrangements…"
-                                  class="w-full border border-border rounded-lg px-4 py-3 font-body text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-[#148af4] resize-none"></textarea>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" name="site_type" placeholder="Site type"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                        <input type="text" name="review_needed" placeholder="What do you need reviewed?"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
                     </div>
-                    <button type="submit"
-                            class="w-full bg-navy hover:bg-steel text-white font-body font-bold py-3 rounded-lg text-sm transition-colors">
-                        Submit Enquiry
-                    </button>
+                    <input type="text" name="current_setup" placeholder="Current setup or requirement"
+                        class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                    <div class="flex flex-col gap-2 mt-auto pt-4">
+                        <button type="submit"
+                            class="w-full bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
+                            Request Commercial Assessment
+                        </button>
+                        <a href="{{ route('contact') }}"
+                           class="w-full text-center border border-gray-200 hover:border-navy text-navy font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
+                            Talk to an Engineer
+                        </a>
+                    </div>
                 </form>
             </div>
 
@@ -539,12 +914,73 @@
     </div>
 </section>
 
-<!-- 11. CTA BAND -->
-@include('components.cta-band', [
-    'heading'     => 'Talk to an ILS engineer about your commercial operation.',
-    'subheading'  => 'We will assess your site, review your current maintenance arrangements and equipment profile, and help you build a service structure that reduces downtime and controls lifecycle cost.',
-    'primaryText' => 'Talk to an Engineer',
-    'primaryHref' => route('contact'),
-])
+<!-- AFTERCARE SERVICE CARDS -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+
+            {{-- Left: heading + description --}}
+            <div class="lg:col-span-1 reveal">
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                    Keep the support matched to the equipment
+                </h2>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">
+                    The right support answer has to account for installed-base reality, operational continuity, and the next commercial step.
+                </p>
+            </div>
+
+            {{-- Right: 4 service cards --}}
+            <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+                @foreach([
+                    [
+                        'img'   => '/images/about/about-engineers.jpg',
+                        'title' => 'Service Network',
+                        'bold'  => 'You can count on',
+                        'body'  => 'more than 2,200 authorised service partners, always available, always on duty — committed to support you with a service network that makes your operations easier.',
+                    ],
+                    [
+                        'img'   => '/images/about/about-team.jpg',
+                        'title' => 'Service Agreements',
+                        'bold'  => 'You can choose from',
+                        'body'  => 'flexible tailored packages, according to your business needs, offering a variety of products maintenance and support services.',
+                    ],
+                    [
+                        'img'   => '/images/healthcare/engineer.jpg',
+                        'title' => 'Accessories & Consumables',
+                        'bold'  => 'You can rely on',
+                        'body'  => 'original Accessories & Consumables, rigorously tested by Electrolux Professional experts to ensure efficiency, durability, and the safety of your users.',
+                    ],
+                    [
+                        'img'   => '/images/about/about-equipment.jpg',
+                        'title' => 'Lifecycle Support',
+                        'bold'  => 'You can plan ahead',
+                        'body'  => 'with structured lifecycle continuity — keeping your installed base connected to repairs, call-outs, parts, and aftercare across Ireland.',
+                    ],
+                ] as $card)
+                <div class="flex flex-col">
+                    {{-- Circular image with small text circle overlay --}}
+                    <div class="flex justify-center mb-[-60px] relative z-10">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md relative">
+                            <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-24 h-24 rounded-full flex items-center justify-center text-center" style="background-color: rgba(100,160,210,0.65);">
+                                    <h4 class="font-heading font-bold text-white text-xs leading-snug px-2">{{ $card['title'] }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{-- Card body --}}
+                    <div class="bg-[#deeaf6] rounded-2xl pt-20 pb-6 px-5 flex-1">
+                        <p class="font-body text-navy/80 text-sm leading-relaxed">
+                            <strong class="font-bold text-navy">{{ $card['bold'] }}</strong> {{ $card['body'] }}
+                        </p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+        </div>
+    </div>
+</section>
 
 @endsection
