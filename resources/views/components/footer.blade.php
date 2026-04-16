@@ -15,10 +15,10 @@
             <!-- Logo strip -->
             <div class="flex flex-wrap items-center justify-center gap-28">
                 <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-8 object-contain brightness-0 invert opacity-70">
-                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 object-contain opacity-70" style="filter: grayscale(1) brightness(10);">
-                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 object-contain opacity-70" style="filter: grayscale(1) brightness(10);">
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 object-contain mix-blend-screen opacity-90">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 object-contain mix-blend-screen opacity-90">
                 <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-8 object-contain brightness-0 invert opacity-70">
-                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 object-contain opacity-70" style="filter: grayscale(1) brightness(10);">
+                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 object-contain mix-blend-screen opacity-90">
             </div>
         </div>
     </div>
