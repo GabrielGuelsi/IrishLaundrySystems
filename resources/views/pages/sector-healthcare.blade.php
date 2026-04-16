@@ -295,6 +295,157 @@
     </div>
 </section>
 
+<!-- INCREASINGLY SECURE DOORS -->
+<section class="py-14 lg:py-20 bg-bg border-t border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+            {{-- Left: heading + bullet list --}}
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">
+                    Increasingly secure doors for greater productivity
+                </h2>
+                <p class="font-body font-semibold text-navy text-sm mb-4">
+                    Easiest and fastest unloading in the industry thanks to:
+                </p>
+                <ul class="space-y-2 mb-8">
+                    @foreach([
+                        'Automatic drum positioning',
+                        'Automatic outer doors locking and unlocking',
+                        'Large door openings',
+                        'Easy to handle inner drum doors',
+                        'The drum is separated in 2 parts to split the load and to allow an easier and ergonomic unloading thanks to the gravity force',
+                        'Maximum ergonomics guaranteed thanks to our innovative opening mechanism that preopens the inner-drum doors automatically at the end of the wash cycle',
+                    ] as $point)
+                    <li class="flex items-start gap-2 font-body text-gray-600 text-sm leading-relaxed">
+                        <span class="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-navy"></span>
+                        {{ $point }}
+                    </li>
+                    @endforeach
+                </ul>
+                <div class="inline-flex items-center gap-3 bg-white border border-border rounded-xl px-5 py-3 shadow-sm">
+                    <div class="text-center">
+                        <p class="font-heading font-bold text-navy text-xs leading-tight">Auto Inner<br>Door Opening</p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- Right: ERGOCERT stats --}}
+            <div class="reveal reveal-right">
+                <div class="bg-white border border-border rounded-2xl p-8">
+                    <div class="flex items-start gap-6 mb-6">
+                        <div class="flex-shrink-0 text-center">
+                            <div class="w-20 h-20 bg-gray-100 rounded-xl flex flex-col items-center justify-center border border-gray-200 mb-2">
+                                <img src="/images/healthcare/4starpoints.webp" alt="ERGOCERT 4-star" class="w-full h-full object-contain p-1">
+                            </div>
+                            <p class="font-heading font-bold text-navy text-[10px] uppercase tracking-wide">ERGONOMICS<br>CERTIFIED ★★★★</p>
+                        </div>
+                        <div>
+                            <p class="font-body text-gray-600 text-sm leading-relaxed">
+                                Ergonomic interventions can reduce work-related musculoskeletal disorders (WMSDs) by <strong class="text-navy">59%</strong>, with an average decrease of <strong class="text-navy">75%</strong> in sick days and a <strong class="text-navy">25%</strong> increase in productivity.
+                            </p>
+                            <p class="font-body text-gray-400 text-xs mt-2 italic">Washington State Department of Labor &amp; Industries</p>
+                        </div>
+                    </div>
+                    <div class="bg-navy rounded-xl px-5 py-3 inline-flex items-center gap-2">
+                        <p class="font-heading font-bold text-white text-sm">UNIQUE</p>
+                        <p class="font-body text-white/60 text-xs">in the industry</p>
+                    </div>
+                </div>
+                <div class="mt-6 rounded-2xl overflow-hidden">
+                    <img src="/images/healthcare/illustration-barrier-washers-1.webp" alt="Barrier washer doors" class="w-full object-contain">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TOTAL SAFETY WITH EXCELLENT RESULTS -->
+<section class="py-14 lg:py-20 bg-white border-t border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {{-- Left: illustration --}}
+            <div class="reveal reveal-left">
+                <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
+                     alt="Barrier laundry hygiene zones"
+                     class="w-full object-contain">
+            </div>
+
+            {{-- Right: Hygiene Watchdog content --}}
+            <div class="reveal reveal-right">
+                <div class="inline-flex items-center gap-3 bg-gray-100 rounded-xl px-4 py-2 mb-6">
+                    <img src="/images/healthcare/HygieneWatchdog.png" alt="Hygiene Watchdog" class="w-10 h-10 object-contain">
+                    <span class="font-heading font-bold text-navy text-sm">Hygiene Watchdog</span>
+                </div>
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-4xl leading-tight mb-6">
+                    Total safety with excellent results
+                </h2>
+                <p class="font-body font-bold text-navy text-sm mb-3">Your Hygiene Partner</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+                    The Hygiene Watchdog (HW) ensures full cycle completion so that all laundry is fully washed and thoroughly decontaminated.
+                </p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">
+                    This guarantees maximum defense against the spread of microorganisms and cross infections.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- USABILITY MATTERS -->
+<section class="py-14 lg:py-20 bg-bg border-t border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+            {{-- Left: image --}}
+            <div class="reveal reveal-left">
+                <img src="/images/healthcare/operator.jpg"
+                     alt="Healthcare laundry operator"
+                     class="w-full rounded-2xl object-cover shadow-lg aspect-[4/3]">
+            </div>
+
+            {{-- Right: text + feature cards --}}
+            <div class="reveal reveal-right">
+                <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGONOMICS / USABILITY</p>
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">
+                    Usability matters when healthcare teams repeat the same handling tasks every day
+                </h2>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-3">
+                    Loading height, door arrangement, access space, control visibility, drum handling, and unloading position all affect how the laundry room performs in practice. A healthcare setup has to support the people using it as well as the hygiene outcome the facility needs.
+                </p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">
+                    Barrier washer relevance is not only about hygiene logic. It is also about how safely and consistently operators can work through the daily routine across both sides of the process.
+                </p>
+                <div class="flex flex-col gap-3">
+                    @foreach([
+                        ['title' => 'Door and access logic',       'body' => 'Wide access, clear loading positions, and practical room fit help reduce unnecessary handling strain.'],
+                        ['title' => 'Control visibility',          'body' => 'Operator control needs to stay clear and readable across the working day, especially in process-driven environments.'],
+                        ['title' => 'Room-aware specification',    'body' => 'Machine type, capacity, footprint, and workflow layout should match the room and the healthcare requirement, not a generic laundry setup.'],
+                    ] as $card)
+                    <div class="bg-white border border-border rounded-xl px-5 py-4">
+                        <p class="font-heading font-bold text-navy text-sm mb-1">{{ $card['title'] }}</p>
+                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $card['body'] }}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- GLOBAL LEADER STAT -->
+<section class="py-14 lg:py-20 bg-[#148af4]">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex items-center justify-center reveal">
+        <p class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight text-center max-w-2xl">
+            Global leader in barrier laundry solutions with more than <span class="underline decoration-white/40">190 installations</span> every year.
+        </p>
+    </div>
+</section>
+
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
