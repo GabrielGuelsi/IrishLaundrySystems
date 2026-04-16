@@ -127,7 +127,7 @@
                 Whatever the job calls for, we'll take <span class="text-[#148af4] font-semibold">care</span> of it.
             </p>
             <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 border-2 border-[#148af4] text-white hover:bg-[#148af4] font-heading font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                 Speak to us about your requirements
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
