@@ -727,9 +727,9 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Header --}}
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">Suggested equipment through the hospitality route</h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">The category choice should follow the room, the workflow, and the support model.</p>
+        <div class="mb-10 text-center reveal">
+            <h2 class="font-heading font-bold text-gray-900 text-3xl lg:text-5xl leading-tight mb-4">Find the right solutions for your hotel and spa</h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-xl mx-auto">Our laundry solutions will save you time and energy, leaving you to focus on your guests.</p>
         </div>
 
         {{-- 4 equipment cards --}}
