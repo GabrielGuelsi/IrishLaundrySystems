@@ -42,7 +42,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
                     We work with hotels and hospitality businesses across Ireland.
                 </h2>
             </div>
