@@ -37,22 +37,25 @@
 @include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
+<section class="py-16 lg:py-24 bg-gray-50 border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    We'll keep your critical laundry equipment <span style="color:#148af4;">running.</span>
+                <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
+                    We work with hotels and hospitality businesses across Ireland.
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-xl leading-relaxed mb-4">
-                    ILS supports hospitality operations across Ireland — reducing <span style="color:#148af4;">breakdown risk</span>, improving hygiene compliance, and keeping laundry systems operational.
+                    With growing demand for quality guest experiences, you need laundry equipment that <span style="color:#148af4;">won't let you down.</span>
                 </p>
-                <p class="font-body text-gray-500 leading-relaxed mb-8">
-                    Whatever the site requires, <span style="color:#148af4;">we'll take care of it.</span>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
+                    Whether it's towels, bedding or staff uniforms, we know you need a <span style="color:#148af4;">consistently reliable laundry operation</span> for your guests — which is why we provide fast, expert support across the Republic of Ireland.
+                </p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">
+                    We've been keeping hotel laundry rooms running for over <span style="color:#148af4;">37 years.</span> If you need assistance, our network of engineers is just a phone call away.
                 </p>
                 <a href="{{ route('sectors.hospitality') }}#hospitality-equipment"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -67,88 +70,70 @@
     </div>
 </section>
 
-<!-- WORKING ROUTE SECTION -->
-<section class="py-16 lg:py-24 bg-white">
+<!-- ENERGY EFFICIENT + COMMERCIAL WASHERS -->
+<section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-        <!-- Title -->
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                Built around how <strong>hospitality laundry rooms</strong> actually operate
-            </h2>
-        </div>
-
-        <!-- Image + Navy card overlay -->
-        <div class="relative reveal">
-
-            <!-- Image -->
-            <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/healthcare/workflow.jpg"
-                     alt="Hospitality laundry room"
-                     class="w-full h-[580px] object-cover object-center">
+            <!-- Image left -->
+            <div class="flex justify-center reveal reveal-left">
+                <img src="/images/equipment/commercialwasher.webp"
+                     alt="Commercial Washer"
+                     class="w-full max-w-sm object-contain drop-shadow-xl">
             </div>
 
-            <!-- Navy card overlapping left -->
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[420px] bg-navy rounded-2xl p-8 shadow-2xl">
-                <h3 class="font-heading font-bold text-white text-2xl leading-snug mb-4">
-                    Hospitality laundry needs a <strong>working route</strong>, not isolated process steps
-                </h3>
-                <p class="font-body text-white/70 text-sm leading-relaxed mb-6 border border-white/10 rounded-lg p-3">
-                    In hospitality environments, room layout, segregation logic, loading and unloading discipline, throughput pressure, and the support model all shape the real equipment decision.
+            <!-- All text right -->
+            <div class="text-center reveal reveal-right">
+                <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight mb-4">
+                    Energy efficient in-house laundry systems
+                </h2>
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-8">
+                    Our range of reliable and efficient laundry equipment will continuously perform cycle after cycle in your hotel, B&amp;B or spa.
                 </p>
-                <ul class="space-y-3">
-                    @foreach([
-                        'Dirty-side and clean-side handling discipline',
-                        'Room-aware equipment route',
-                        'Capacity and throughput pressure',
-                        'Service route from the start',
-                    ] as $n => $point)
-                    <li class="flex items-center gap-3">
-                        <span class="w-7 h-7 rounded-full bg-[#148af4] text-white font-heading font-bold text-xs flex items-center justify-center flex-shrink-0">{{ $n + 1 }}</span>
-                        <span class="font-body text-white text-sm">{{ $point }}</span>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- 4. LAUNDRY CYCLE MANAGEMENT + VIDEO -->
-<section class="py-16 lg:py-24 bg-white border-y border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="max-w-3xl mb-10 reveal">
-            <h2 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight">
-                <strong>Barrier workflow</strong> where <strong>dirty-side</strong> and <strong>clean-side</strong> handling need to stay separate
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center reveal">
-
-            <!-- Infographic -->
-            <div>
-                <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
-                     alt="Hospitality laundry cycle management"
-                     class="w-full h-auto object-contain">
-            </div>
-
-            <!-- Video -->
-            <div>
-                <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
-                    <iframe class="absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/26g9u4GPRVc"
-                            title="Laundry Cycle Management"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                <div class="flex flex-col items-center gap-3">
+                    <p class="font-heading font-normal text-navy text-2xl mb-1">Commercial <strong>Washers</strong></p>
+                    <a href="{{ route('equipment.category', 'washers') }}"
+                       class="w-full max-w-xs bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
+                        GO TO PRODUCTS
+                    </a>
+                    <a href="{{ route('contact') }}"
+                       class="w-full max-w-xs bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
+                        REQUEST ASSESSMENT
+                    </a>
                 </div>
             </div>
 
         </div>
+    </div>
+</section>
 
+<!-- OUR EXPERTS WILL TAKE CARE OF IT -->
+<section class="relative py-20 lg:py-28 overflow-hidden">
+    <!-- Background image -->
+    <img src="/images/healthcare/engineer.jpg" alt="ILS engineer"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-navy/75"></div>
+
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="max-w-xl reveal">
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-6">
+                Our experts will take care of it
+            </h2>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-4">
+                Our dedicated team of engineers are here to give you peace of mind. Partnering with ILS takes the stress and hassle away from breakdowns.
+            </p>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-8">
+                Whatever the job calls for, we'll take <span class="text-[#148af4] font-semibold">care</span> of it.
+            </p>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 border-2 border-[#148af4] text-white hover:bg-[#148af4] font-heading font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                Speak to us about your requirements
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -771,9 +756,9 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Header --}}
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">Suggested equipment through the hospitality route</h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">The category choice should follow the room, the workflow, and the support model.</p>
+        <div class="mb-10 text-center reveal">
+            <h2 class="font-heading font-bold text-gray-900 text-3xl lg:text-5xl leading-tight mb-4">Find the right solutions for your hotel and spa</h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-xl mx-auto">Our laundry solutions will save you time and energy, leaving you to focus on your guests.</p>
         </div>
 
         {{-- 4 equipment cards --}}
@@ -858,74 +843,72 @@
 </section>
 
 <!-- 9. ASSESSMENT FORM -->
-<section id="healthhospitality-assessment" class="py-16 lg:py-24 bg-white">
+<section id="healthhospitality-assessment" class="py-16 lg:py-24 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="bg-navy rounded-3xl overflow-hidden reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-2">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 reveal">
 
-                {{-- Left: heading + bullets --}}
-                <div class="p-10 lg:p-14 flex flex-col justify-between">
-                    <div>
-                        <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-6">
-                            Bring the hospitality laundry room, the support route, and the equipment discussion into one next step
-                        </h2>
-                        <p class="font-body text-white/60 text-sm leading-relaxed mb-8">
-                            Use this route to review room layout, barrier relevance, current equipment route, installed-base pressure, and the support model around the hospitality laundry room.
-                        </p>
-                        <div class="flex flex-col gap-3">
-                            @foreach([
-                                'Review room layout, workflow, and dirty-side / clean-side handling requirements.',
-                                'Assess barrier washer relevance alongside washers, dryers, ironers, and flatwork handling.',
-                                'Connect the installed base to Service Contracts, Repairs & Call-outs, and Parts & Aftercare where needed.',
-                            ] as $point)
-                            <div class="bg-white/10 rounded-xl px-5 py-3">
-                                <p class="font-body text-white text-sm leading-relaxed">{{ $point }}</p>
-                            </div>
-                            @endforeach
+            {{-- Left card: heading + bullets --}}
+            <div class="bg-navy rounded-3xl p-10 lg:p-14 flex flex-col justify-between">
+                <div>
+                    <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-6">
+                        Bring the hospitality laundry room, the support route, and the equipment discussion into one next step
+                    </h2>
+                    <p class="font-body text-white/60 text-sm leading-relaxed mb-8">
+                        Use this route to review room layout, barrier relevance, current equipment route, installed-base pressure, and the support model around the hospitality laundry room.
+                    </p>
+                    <div class="flex flex-col gap-3">
+                        @foreach([
+                            'Review room layout, workflow, and dirty-side / clean-side handling requirements.',
+                            'Assess barrier washer relevance alongside washers, dryers, ironers, and flatwork handling.',
+                            'Connect the installed base to Service Contracts, Repairs & Call-outs, and Parts & Aftercare where needed.',
+                        ] as $point)
+                        <div class="bg-white/10 rounded-xl px-5 py-3">
+                            <p class="font-body text-white text-sm leading-relaxed">{{ $point }}</p>
                         </div>
+                        @endforeach
                     </div>
                 </div>
-
-                {{-- Right: form card --}}
-                <div class="bg-white rounded-2xl m-2 p-6 flex flex-col">
-                    <h3 class="font-heading font-bold text-navy text-xl mb-1">Request Hospitality Assessment</h3>
-                    <p class="font-body text-gray-500 text-sm mb-4">Tell us about the environment, the current setup, and what needs review.</p>
-                    <form id="hospitality-form" action="{{ route('contact') }}" method="POST" class="flex flex-col gap-2">
-                        @csrf
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="text" name="name" required placeholder="Full name"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                            <input type="text" name="organisation" placeholder="Organisation"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="email" name="email" required placeholder="Email"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                            <input type="tel" name="phone" placeholder="Phone"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="text" name="site_type" placeholder="Site type"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                            <input type="text" name="review_needed" placeholder="What do you need reviewed?"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        </div>
-                        <input type="text" name="current_setup" placeholder="Current setup or requirement"
-                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        <div class="flex flex-col gap-2 mt-3">
-                            <button type="submit"
-                                class="w-full bg-[#148af4] hover:bg-[#148af4]/90 text-white font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
-                                Request Hospitality Assessment
-                            </button>
-                            <a href="{{ route('contact') }}"
-                               class="w-full text-center border border-gray-200 hover:border-navy text-navy font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
-                                Talk to an Engineer
-                            </a>
-                        </div>
-                    </form>
-                </div>
-
             </div>
+
+            {{-- Right card: form --}}
+            <div class="bg-white border border-border rounded-3xl p-8 lg:p-10 flex flex-col">
+                <h3 class="font-heading font-bold text-navy text-xl mb-1">Request Hospitality Assessment</h3>
+                <p class="font-body text-orange text-sm mb-5">Tell us about the environment, the current setup, and what needs review.</p>
+                <form id="hospitality-form" action="{{ route('contact') }}" method="POST" class="flex flex-col gap-2 flex-1">
+                    @csrf
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" name="name" required placeholder="Full name"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                        <input type="text" name="organisation" placeholder="Organisation"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="email" name="email" required placeholder="Email"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                        <input type="tel" name="phone" placeholder="Phone"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                    </div>
+                    <div class="grid grid-cols-2 gap-2">
+                        <input type="text" name="site_type" placeholder="Site type"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                        <input type="text" name="review_needed" placeholder="What do you need reviewed?"
+                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                    </div>
+                    <input type="text" name="current_setup" placeholder="Current setup or requirement"
+                        class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
+                    <div class="flex flex-col gap-2 mt-auto pt-4">
+                        <button type="submit"
+                            class="w-full bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
+                            Request Hospitality Assessment
+                        </button>
+                        <a href="{{ route('contact') }}"
+                           class="w-full text-center border border-gray-200 hover:border-navy text-navy font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
+                            Talk to an Engineer
+                        </a>
+                    </div>
+                </form>
+            </div>
+
         </div>
     </div>
 </section>
