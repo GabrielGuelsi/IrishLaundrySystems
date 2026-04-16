@@ -107,41 +107,6 @@
     </div>
 </section>
 
-<!-- 4. LAUNDRY CYCLE MANAGEMENT + VIDEO -->
-<section class="py-16 lg:py-24 bg-white border-y border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="max-w-3xl mb-10 reveal">
-            <h2 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight">
-                <strong>Barrier workflow</strong> where <strong>dirty-side</strong> and <strong>clean-side</strong> handling need to stay separate
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center reveal">
-
-            <!-- Infographic -->
-            <div>
-                <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
-                     alt="Hospitality laundry cycle management"
-                     class="w-full h-auto object-contain">
-            </div>
-
-            <!-- Video -->
-            <div>
-                <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
-                    <iframe class="absolute inset-0 w-full h-full"
-                            src="https://www.youtube.com/embed/26g9u4GPRVc"
-                            title="Laundry Cycle Management"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
 
 {{-- D: Enhanced Usability + ERGOCERT — single unified section --}}
 <section class="py-10 lg:py-14 bg-white border-t border-border">
