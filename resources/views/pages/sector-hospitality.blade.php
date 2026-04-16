@@ -107,6 +107,35 @@
     </div>
 </section>
 
+<!-- OUR EXPERTS WILL TAKE CARE OF IT -->
+<section class="relative py-20 lg:py-28 overflow-hidden">
+    <!-- Background image -->
+    <img src="/images/healthcare/engineer.jpg" alt="ILS engineer"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-navy/75"></div>
+
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="max-w-xl reveal">
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-6">
+                Our experts will take care of it
+            </h2>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-4">
+                Our dedicated team of engineers are here to give you peace of mind. Partnering with ILS takes the stress and hassle away from breakdowns.
+            </p>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-8">
+                Whatever the job calls for, we'll take <span class="text-[#148af4] font-semibold">care</span> of it.
+            </p>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 border-2 border-[#148af4] text-white hover:bg-[#148af4] font-heading font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                Speak to us about your requirements
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
 
 {{-- D: Enhanced Usability + ERGOCERT — single unified section --}}
 <section class="py-10 lg:py-14 bg-white border-t border-border">
