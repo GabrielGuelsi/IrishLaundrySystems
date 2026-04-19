@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Engineering-led commercial laundry support for healthcare — barrier washers, service contracts, and priority response across Ireland.">
+
 @endsection
 
 @section('content')
@@ -152,146 +153,185 @@
     </div>
 </section>
 
-{{-- D: Enhanced Usability + ERGOCERT — single unified section --}}
-<section class="py-10 lg:py-14 bg-white border-t border-border">
+{{-- D: Full Enhanced Usability — single unified section --}}
+<section class="bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
-            Enhanced usability, superior safety
-        </h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-            {{-- Left col: 3 usability features + 4 ERGOCERT rows --}}
-            <div class="lg:col-span-2 flex flex-col gap-0">
-
-                {{-- 3 usability features --}}
-                @foreach([
-                    [
-                        'icon'  => '/images/healthcare/hygiene-icon.png',
-                        'alt'   => 'Hygiene icon',
-                        'title' => 'Maximise hygiene in healthcare applications',
-                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/operator-icon.png',
-                        'alt'   => 'Operator icon',
-                        'title' => 'Operator support in high-output laundries',
-                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/control-icon.png',
-                        'alt'   => 'Control icon',
-                        'title' => 'Intelligent control',
-                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
-                    ],
-                ] as $feature)
-                <div class="flex items-center gap-4 py-4 border-b border-gray-100 reveal">
-                    <div class="flex-shrink-0">
-                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-14 h-14 object-contain">
-                    </div>
-                    <div>
-                        <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
-                    </div>
-                </div>
-                @endforeach
-
-                {{-- ERGOCERT 4 icon rows --}}
-                <div class="mt-6 bg-navy rounded-2xl p-6 reveal">
-                    <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-4">ERGOCERT 4-Star Certified</p>
-                    <div class="divide-y divide-white/10">
-                        @foreach([
-                            ['icon' => 'International standards.png', 'title' => 'Designed with international standards of excellence in mind', 'body' => 'to achieve the highest level of safety and technical certifications.'],
-                            ['icon' => 'Musculoskeletal.png',         'title' => 'Proven to reduce musculoskeletal disorders',                   'body' => 'as a result of body analysis trials whilst operating machinery.'],
-                            ['icon' => 'User-appliance synergy.png',  'title' => 'User-appliance synergy',                                       'body' => 'based on years of testing the interaction between operator and appliance to create an intuitive and effortless experience.'],
-                            ['icon' => 'Human-centered design.png',   'title' => '360° human-centered certified design',                         'body' => 'at the core of the rigorous development process.'],
-                        ] as $star)
-                        <div class="flex items-start gap-4 py-3 first:pt-0 last:pb-0">
-                            <div class="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 border border-white/10">
-                                <img src="/images/healthcare/{{ $star['icon'] }}" alt="{{ $star['title'] }}" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <p class="font-heading font-bold text-white text-sm mb-0.5">{{ $star['title'] }}</p>
-                                <p class="font-body text-gray-300 text-xs leading-relaxed">{{ $star['body'] }}</p>
-                            </div>
+        {{-- ① Enhanced usability, superior safety --}}
+        <div class="py-10 lg:py-14">
+            <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
+                Enhanced usability, superior safety
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="lg:col-span-2 flex flex-col">
+                    @foreach([
+                        ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in healthcare applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
+                        ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
+                        ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
+                    ] as $feature)
+                    <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
+                        <div>
+                            <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
+                            <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
                         </div>
-                        @endforeach
+                    </div>
+                    @endforeach
+                </div>
+                <div class="flex flex-col gap-5 reveal reveal-right">
+                    <div class="bg-navy rounded-2xl p-6">
+                        <div class="flex gap-1 mb-3">
+                            @for($s = 0; $s < 4; $s++)
+                            <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            @endfor
+                        </div>
+                        <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
+                        <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
+                        <p class="font-body text-[#148af4] text-xs leading-relaxed">Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.</p>
+                    </div>
+                    <div class="bg-navy rounded-2xl p-6">
+                        <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                        <ul class="space-y-3">
+                            @foreach([
+                                ['label' => 'Line 6000 Evolution Barrier Washers',    'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                                ['label' => 'Line 6000 Pullman Barrier Washers',      'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+                                ['label' => 'Clean, Sanitize, Decontaminate Brochure','file' => 'Electrolux_WhitePaper_CleaningSolution.pdf'],
+                                ['label' => 'Line 6000 Tumble Dryers',                'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                                ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+                            ] as $pdf)
+                            <li>
+                                <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                    {{ $pdf['label'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                    <div class="bg-bg border border-border rounded-2xl p-6">
+                        <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                        <ul class="space-y-3">
+                            @foreach([
+                                ['label' => 'Service & Maintenance Contracts', 'route' => 'service-contracts'],
+                                ['label' => 'Full Equipment Range',            'route' => 'equipment'],
+                                ['label' => 'Request a Site Assessment',       'route' => 'contact'],
+                            ] as $link)
+                            <li>
+                                <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
+                                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                                    {{ $link['label'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
-
             </div>
+        </div>
 
-            {{-- Right col: ERGOCERT 4-star summary + Download + Discover --}}
-            <div class="flex flex-col gap-5 reveal reveal-right">
 
-                {{-- ERGOCERT summary card --}}
-                <div class="bg-navy rounded-2xl p-6">
-                    <div class="flex gap-1 mb-3">
-                        @for($s = 0; $s < 4; $s++)
-                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        @endfor
+
+        {{-- ② Increasingly secure doors --}}
+        <div class="py-14 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-end">
+                <div class="reveal reveal-left">
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">Increasingly secure doors for greater productivity</h2>
+                    <p class="font-body font-semibold text-navy text-base mb-4">Easiest and fastest unloading in the industry thanks to:</p>
+                    <ul class="space-y-3 mb-6">
+                        @foreach([
+                            'Automatic drum positioning',
+                            'Automatic outer doors locking and unlocking',
+                            'Large door openings',
+                            'Easy to handle inner drum doors',
+                            'The drum is separated in 2 parts to split the load and to allow an easier and ergonomic unloading thanks to the gravity force',
+                            'Maximum ergonomics guaranteed thanks to our innovative opening mechanism that preopens the inner-drum doors automatically at the end of the wash cycle',
+                        ] as $point)
+                        <li class="flex items-start gap-2 font-body text-gray-600 text-base leading-relaxed">
+                            <span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-navy"></span>{{ $point }}
+                        </li>
+                        @endforeach
+                    </ul>
+                    <div class="inline-flex items-center gap-4">
+                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-32 h-32 object-contain">
+                        <p class="font-heading font-bold text-navy text-lg leading-tight">Auto Inner<br>Door Opening</p>
                     </div>
-                    <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
-                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">
-                        Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.
-                    </p>
-                    <p class="font-body text-[#148af4] text-xs leading-relaxed">
-                        Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.
-                    </p>
+                </div>
+                <div class="reveal reveal-right">
+                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="Ergonomics certified washer drum" class="w-3/4 mx-auto object-contain rounded-2xl">
+                </div>
+            </div>
+        </div>
+
+
+
+        {{-- ③ Total safety with excellent results --}}
+        <div class="py-14 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-5 rounded-2xl overflow-hidden reveal">
+
+                <!-- Left: illustration small -->
+                <div class="lg:col-span-2 bg-white flex items-center justify-center">
+                    <img src="/images/healthcare/illustration-barrier-washers-1.webp"
+                         alt="No bacteria gets through the barrier"
+                         class="w-full h-full object-contain">
                 </div>
 
-                {{-- Download --}}
-                <div class="bg-navy rounded-2xl p-6">
-                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
-                    <ul class="space-y-3">
-                        @foreach([
-                            ['label' => 'Line 6000 Evolution Barrier Washers',    'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                            ['label' => 'Line 6000 Pullman Barrier Washers',      'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
-                            ['label' => 'Clean, Sanitize, Decontaminate Brochure','file' => 'Electrolux_WhitePaper_CleaningSolution.pdf'],
-                            ['label' => 'Line 6000 Tumble Dryers',                'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                            ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
-                        ] as $pdf)
-                        <li>
-                            @if($pdf['file'])
-                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $pdf['label'] }}
-                            </a>
-                            @else
-                            <span class="flex items-center gap-2 font-body text-sm text-white/30">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $pdf['label'] }}
-                            </span>
-                            @endif
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-
-                {{-- Discover --}}
-                <div class="bg-bg border border-border rounded-2xl p-6">
-                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
-                    <ul class="space-y-3">
-                        @foreach([
-                            ['label' => 'Service & Maintenance Contracts', 'route' => 'service-contracts'],
-                            ['label' => 'Full Equipment Range',            'route' => 'equipment'],
-                            ['label' => 'Request a Site Assessment',       'route' => 'contact'],
-                        ] as $link)
-                        <li>
-                            <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                                </svg>
-                                {{ $link['label'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
+                <!-- Right: text big -->
+                <div class="lg:col-span-3 bg-white px-12 py-14 flex flex-col justify-center">
+                    <div class="inline-flex items-center gap-4 mb-8 self-start">
+                        <img src="/images/healthcare/HygieneWatchdog.png" alt="Hygiene Watchdog" class="w-24 h-24 object-contain">
+                        <span class="font-heading font-bold text-navy text-xl">Hygiene Watchdog</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
+                        Total safety with excellent results
+                    </h3>
+                    <p class="font-body font-bold text-navy text-base mb-3">Your Hygiene Partner</p>
+                    <p class="font-body text-gray-600 text-base leading-relaxed mb-4">The Hygiene Watchdog (HW) ensures full cycle completion so that all laundry is fully washed and thoroughly decontaminated.</p>
+                    <p class="font-body text-gray-600 text-base leading-relaxed">This guarantees maximum defense against the spread of microorganisms and cross infections.</p>
                 </div>
 
             </div>
         </div>
+
+
+
+        {{-- ④ Usability matters --}}
+        <div class="py-14 lg:py-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div class="reveal reveal-left">
+                    <img src="/images/healthcare/operator.jpg" alt="Healthcare laundry operator" class="w-full rounded-2xl object-cover shadow-lg aspect-[4/3]">
+                </div>
+                <div class="reveal reveal-right">
+                    <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGONOMICS / USABILITY</p>
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">Usability matters when healthcare teams repeat the same handling tasks every day</h2>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">The right equipment supports your operators as well as the hygiene outcome — every shift, every day.</p>
+                    <div class="grid grid-cols-1 gap-3">
+                        <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
+                            <svg class="w-6 h-6 flex-shrink-0 text-navy mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+                            <div>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">Door & access logic</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">Wide openings and clear loading positions reduce strain.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
+                            <svg class="w-6 h-6 flex-shrink-0 text-navy mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <div>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">Control visibility</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">Readable controls across the full working day.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
+                            <svg class="w-6 h-6 flex-shrink-0 text-navy mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+                            <div>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">Room-aware specification</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">Equipment matched to your room, not a generic setup.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </section>
 
@@ -805,34 +845,6 @@
     </div>
 </section>
 
-<!-- SUPPORT CTA BANNER -->
-<section class="py-8 lg:py-10 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="relative rounded-2xl overflow-hidden" style="background-color: #148af4;">
-            <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[160px]">
-                <!-- Left: text + button -->
-                <div class="flex flex-col justify-center px-10 py-10 z-10 relative">
-                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight uppercase mb-6">
-                        We design the laundry equipment and solutions your business needs — together
-                    </h2>
-                    <div>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors tracking-wide">
-                            Contact an Expert
-                        </a>
-                    </div>
-                </div>
-                <!-- Right: image with diagonal clip -->
-                <div class="hidden lg:block relative">
-                    <div class="absolute inset-0" style="clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);">
-                        <img src="/images/about/about-team.jpg" alt="Support team" class="w-full h-full object-cover opacity-80">
-                        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, transparent 30%);"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ESSENTIA BAND -->
 <section class="py-6 bg-[#eaeff5]">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -998,5 +1010,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection

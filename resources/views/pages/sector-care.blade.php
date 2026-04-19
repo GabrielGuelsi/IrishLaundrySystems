@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Engineering-led laundry support for nursing homes and care facilities across Ireland — structured maintenance, documented records, and priority response for HIQA-compliant operations.">
+
 @endsection
 
 @section('content')
@@ -152,9 +153,10 @@
     </div>
 </section>
 
-{{-- D: Enhanced Usability + ERGOCERT — single unified section --}}
-<section class="py-10 lg:py-14 bg-white border-t border-border">
+{{-- D: Enhanced Usability — matching healthcare style --}}
+<section class="bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="py-10 lg:py-14">
 
         <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
             Enhanced usability, superior safety
@@ -162,9 +164,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-            {{-- Left col: 3 usability features + 4 ERGOCERT rows --}}
-            <div class="lg:col-span-2 flex flex-col gap-0">
-
+            <div class="lg:col-span-2 flex flex-col">
                 @foreach([
                     [
                         'icon'  => '/images/healthcare/hygiene-icon.png',
@@ -185,58 +185,17 @@
                         'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
                     ],
                 ] as $feature)
-                <div class="flex items-center gap-4 py-4 border-b border-gray-100 reveal">
-                    <div class="flex-shrink-0">
-                        <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-14 h-14 object-contain">
-                    </div>
+                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
                     </div>
                 </div>
                 @endforeach
-
-                <div class="mt-6 bg-navy rounded-2xl p-6 reveal">
-                    <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-4">ERGOCERT 4-Star Certified</p>
-                    <div class="divide-y divide-white/10">
-                        @foreach([
-                            ['icon' => 'International standards.png', 'title' => 'Designed with international standards of excellence in mind', 'body' => 'to achieve the highest level of safety and technical certifications.'],
-                            ['icon' => 'Musculoskeletal.png',         'title' => 'Proven to reduce musculoskeletal disorders',                   'body' => 'as a result of body analysis trials whilst operating machinery.'],
-                            ['icon' => 'User-appliance synergy.png',  'title' => 'User-appliance synergy',                                       'body' => 'based on years of testing the interaction between operator and appliance to create an intuitive and effortless experience.'],
-                            ['icon' => 'Human-centered design.png',   'title' => '360° human-centered certified design',                         'body' => 'at the core of the rigorous development process.'],
-                        ] as $star)
-                        <div class="flex items-start gap-4 py-3 first:pt-0 last:pb-0">
-                            <div class="w-9 h-9 rounded-lg overflow-hidden flex-shrink-0 border border-white/10">
-                                <img src="/images/healthcare/{{ $star['icon'] }}" alt="{{ $star['title'] }}" class="w-full h-full object-cover">
-                            </div>
-                            <div>
-                                <p class="font-heading font-bold text-white text-sm mb-0.5">{{ $star['title'] }}</p>
-                                <p class="font-body text-gray-300 text-xs leading-relaxed">{{ $star['body'] }}</p>
-                            </div>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-
             </div>
 
-            {{-- Right col: ERGOCERT summary + Download + Discover --}}
             <div class="flex flex-col gap-5 reveal reveal-right">
-
-                <div class="bg-navy rounded-2xl p-6">
-                    <div class="flex gap-1 mb-3">
-                        @for($s = 0; $s < 4; $s++)
-                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        @endfor
-                    </div>
-                    <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
-                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">
-                        Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.
-                    </p>
-                    <p class="font-body text-[#148af4] text-xs leading-relaxed">
-                        Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.
-                    </p>
-                </div>
 
                 <div class="bg-navy rounded-2xl p-6">
                     <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
@@ -286,6 +245,7 @@
                 </div>
 
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -800,34 +760,6 @@
     </div>
 </section>
 
-<!-- SUPPORT CTA BANNER -->
-<section class="py-8 lg:py-10 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="relative rounded-2xl overflow-hidden" style="background-color: #148af4;">
-            <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[160px]">
-                <!-- Left: text + button -->
-                <div class="flex flex-col justify-center px-10 py-10 z-10 relative">
-                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight uppercase mb-6">
-                        We design the laundry equipment and solutions your business needs — together
-                    </h2>
-                    <div>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-full hover:bg-white/90 transition-colors tracking-wide">
-                            Contact an Expert
-                        </a>
-                    </div>
-                </div>
-                <!-- Right: image with diagonal clip -->
-                <div class="hidden lg:block relative">
-                    <div class="absolute inset-0" style="clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);">
-                        <img src="/images/about/about-team.jpg" alt="Support team" class="w-full h-full object-cover opacity-80">
-                        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, transparent 30%);"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- ESSENTIA BAND -->
 <section class="py-6 bg-[#eaeff5]">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -993,5 +925,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection

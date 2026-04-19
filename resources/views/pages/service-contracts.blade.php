@@ -7,7 +7,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -44,7 +44,7 @@
 
 <!-- WHAT'S INCLUDED -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-6">What's Included in a Service Contract</h2>
@@ -105,7 +105,7 @@
 
 <!-- DOWNTIME FRAMING BLOCK -->
 <section class="py-14 lg:py-18 bg-navy">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center">
             <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-4">Operational Risk Management</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-5 leading-tight">
@@ -123,7 +123,7 @@
 
 <!-- HOW IT WORKS -->
 <section class="py-16 lg:py-24 bg-navy">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">Getting a Contract in Place</h2>
             <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">Three steps from first contact to service contract active.</p>
@@ -177,5 +177,7 @@ $faqs = [
     'subheading' => 'Request a contract review and we will come back with a proposal tailored to your operation. No obligation.',
     'primaryText' => 'Request a Contract Review',
 ])
+
+@include('components.cta-combined-banner')
 
 @endsection

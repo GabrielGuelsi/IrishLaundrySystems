@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Established 1987. Engineering-led commercial laundry support across Ireland — contracts, rental and breakdown response built around uptime.">
+
 @endsection
 
 @section('content')
@@ -11,7 +12,7 @@
     class="py-20 lg:py-32 relative overflow-hidden"
     style="background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative z-10">
         <div class="max-w-2xl">
             @include('components.pretitle', ['label' => 'About ILS', 'color' => '#148af4'])
             <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
@@ -37,7 +38,7 @@
 
 <!-- 2. METRICS STRIP — DARK -->
 <section class="bg-navy border-t border-white/10 py-10">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-white/10">
 
             <div class="text-center lg:px-8 reveal" style="transition-delay:0ms">
@@ -69,7 +70,7 @@
 
 <!-- 4. WHAT DRIVES US — split layout -->
 <section class="bg-navy py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
             <!-- Left: text + bullets -->
@@ -106,7 +107,7 @@
 
 <!-- 5. WHY CHOOSE ILS — LIGHT -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="reveal">
             @include('components.pretitle', ['label' => 'What Sets Us Apart'])
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-12 max-w-3xl">
@@ -147,7 +148,7 @@
         <div class="absolute inset-0" style="background: linear-gradient(270deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.80) 45%, rgba(1,30,65,0.20) 100%);"></div>
     </div>
     <!-- Content aligned right -->
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
         <div class="max-w-xl ml-auto reveal reveal-right">
             @include('components.pretitle', ['label' => 'Electrolux Professional Partnership', 'color' => '#148af4'])
             <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-6">
@@ -171,7 +172,7 @@
 
 <!-- 7. HOW WE ENGAGE — LIGHT -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             @include('components.pretitle', ['label' => 'Our Process'])
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-2xl">
@@ -201,7 +202,7 @@
 
 <!-- 8. TIMELINE — interactive JLA-style -->
 <section class="py-16 lg:py-24 bg-navy overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         @php
         $milestones = [
@@ -316,5 +317,7 @@
     'secondaryText' => 'Request a Service Assessment',
     'secondaryHref' => route('request-assessment'),
 ])
+
+@include('components.cta-combined-banner')
 
 @endsection
