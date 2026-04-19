@@ -162,17 +162,17 @@
                 Enhanced usability, superior safety
             </h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                <div class="lg:col-span-2 flex flex-col gap-0">
+                <div class="lg:col-span-2 flex flex-col">
                     @foreach([
                         ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in healthcare applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
                         ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
                         ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                     ] as $feature)
-                    <div class="flex items-center gap-4 py-4 border-b border-gray-100 reveal">
-                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-14 h-14 object-contain"></div>
+                    <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
                         <div>
-                            <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1">{{ $feature['title'] }}</h3>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                            <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
+                            <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
                         </div>
                     </div>
                     @endforeach
@@ -228,15 +228,15 @@
             </div>
         </div>
 
-        <hr class="border-border">
+
 
         {{-- ② Increasingly secure doors --}}
         <div class="py-14 lg:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-end">
                 <div class="reveal reveal-left">
-                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">Increasingly secure doors for greater productivity</h2>
-                    <p class="font-body font-semibold text-navy text-sm mb-4">Easiest and fastest unloading in the industry thanks to:</p>
-                    <ul class="space-y-2 mb-8">
+                    <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-4">Increasingly secure doors for greater productivity</h2>
+                    <p class="font-body font-semibold text-navy text-sm mb-3">Easiest and fastest unloading in the industry thanks to:</p>
+                    <ul class="space-y-2 mb-6">
                         @foreach([
                             'Automatic drum positioning',
                             'Automatic outer doors locking and unlocking',
@@ -251,68 +251,70 @@
                         @endforeach
                     </ul>
                     <div class="inline-flex items-center gap-4">
-                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-32 h-32 object-contain">
-                        <p class="font-heading font-bold text-navy text-xs leading-tight">Auto Inner<br>Door Opening</p>
+                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-20 h-20 object-contain">
+                        <p class="font-heading font-bold text-navy text-sm leading-tight">Auto Inner<br>Door Opening</p>
                     </div>
                 </div>
                 <div class="reveal reveal-right">
-                    <img src="/images/healthcare/illustration-barrier-washers-1.webp" alt="Barrier washer doors" class="w-full object-contain rounded-2xl">
+                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="Ergonomics certified washer drum" class="w-3/4 mx-auto object-contain rounded-2xl">
                 </div>
             </div>
         </div>
 
-        <hr class="border-border">
+
 
         {{-- ③ Total safety with excellent results --}}
         <div class="py-14 lg:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-5 rounded-2xl overflow-hidden reveal">
 
-                <!-- Left: illustration (smaller) -->
-                <div class="lg:col-span-2 bg-[#eaeff5] flex items-center justify-center p-8">
+                <!-- Left: illustration small -->
+                <div class="lg:col-span-2 bg-white flex items-center justify-center">
                     <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                          alt="No bacteria gets through the barrier"
-                         class="w-full max-h-[320px] object-contain">
+                         class="w-full h-full object-contain">
                 </div>
 
-                <!-- Right: text panel (bigger) -->
-                <div class="lg:col-span-3 bg-[#eaeff5] px-10 py-12 flex flex-col justify-center border-l border-white/60">
-                    <div class="inline-flex items-center gap-3 bg-white/70 rounded-xl px-4 py-2 mb-6 self-start">
-                        <img src="/images/healthcare/HygieneWatchdog.png" alt="Hygiene Watchdog" class="w-14 h-14 object-contain">
-                        <span class="font-heading font-bold text-navy text-base">Hygiene Watchdog</span>
+                <!-- Right: text big -->
+                <div class="lg:col-span-3 bg-white px-12 py-14 flex flex-col justify-center">
+                    <div class="inline-flex items-center gap-4 mb-8 self-start">
+                        <img src="/images/healthcare/HygieneWatchdog.png" alt="Hygiene Watchdog" class="w-24 h-24 object-contain">
+                        <span class="font-heading font-bold text-navy text-xl">Hygiene Watchdog</span>
                     </div>
-                    <h3 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-6">
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
                         Total safety with excellent results
                     </h3>
-                    <p class="font-body font-bold text-navy text-sm mb-2">Your Hygiene Partner</p>
-                    <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">The Hygiene Watchdog (HW) ensures full cycle completion so that all laundry is fully washed and thoroughly decontaminated.</p>
-                    <p class="font-body text-gray-600 text-sm leading-relaxed">This guarantees maximum defense against the spread of microorganisms and cross infections.</p>
+                    <p class="font-body font-bold text-navy text-base mb-3">Your Hygiene Partner</p>
+                    <p class="font-body text-gray-600 text-base leading-relaxed mb-4">The Hygiene Watchdog (HW) ensures full cycle completion so that all laundry is fully washed and thoroughly decontaminated.</p>
+                    <p class="font-body text-gray-600 text-base leading-relaxed">This guarantees maximum defense against the spread of microorganisms and cross infections.</p>
                 </div>
 
             </div>
         </div>
 
-        <hr class="border-border">
+
 
         {{-- ④ Usability matters --}}
         <div class="py-14 lg:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <div class="reveal reveal-left">
                     <img src="/images/healthcare/operator.jpg" alt="Healthcare laundry operator" class="w-full rounded-2xl object-cover shadow-lg aspect-[4/3]">
                 </div>
                 <div class="reveal reveal-right">
                     <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGONOMICS / USABILITY</p>
-                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">Usability matters when healthcare teams repeat the same handling tasks every day</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-3">Loading height, door arrangement, access space, control visibility, drum handling, and unloading position all affect how the laundry room performs in practice. A healthcare setup has to support the people using it as well as the hygiene outcome the facility needs.</p>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">Barrier washer relevance is not only about hygiene logic. It is also about how safely and consistently operators can work through the daily routine across both sides of the process.</p>
-                    <div class="flex flex-col gap-3">
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">Usability matters when healthcare teams repeat the same handling tasks every day</h2>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">The right equipment supports your operators as well as the hygiene outcome — every shift, every day.</p>
+                    <div class="grid grid-cols-1 gap-3">
                         @foreach([
-                            ['title' => 'Door and access logic',    'body' => 'Wide access, clear loading positions, and practical room fit help reduce unnecessary handling strain.'],
-                            ['title' => 'Control visibility',       'body' => 'Operator control needs to stay clear and readable across the working day, especially in process-driven environments.'],
-                            ['title' => 'Room-aware specification', 'body' => 'Machine type, capacity, footprint, and workflow layout should match the room and the healthcare requirement, not a generic laundry setup.'],
+                            ['icon' => '🚪', 'title' => 'Door & access logic',      'body' => 'Wide openings and clear loading positions reduce strain.'],
+                            ['icon' => '👁',  'title' => 'Control visibility',       'body' => 'Readable controls across the full working day.'],
+                            ['icon' => '📐', 'title' => 'Room-aware specification', 'body' => 'Equipment matched to your room, not a generic setup.'],
                         ] as $card)
-                        <div class="bg-bg border border-border rounded-xl px-5 py-4">
-                            <p class="font-heading font-bold text-navy text-sm mb-1">{{ $card['title'] }}</p>
-                            <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $card['body'] }}</p>
+                        <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
+                            <span class="text-2xl flex-shrink-0">{{ $card['icon'] }}</span>
+                            <div>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">{{ $card['title'] }}</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $card['body'] }}</p>
+                            </div>
                         </div>
                         @endforeach
                     </div>
