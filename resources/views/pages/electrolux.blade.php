@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/40 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -28,7 +28,7 @@
 
 <!-- PARTNERSHIP OVERVIEW -->
 <section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-6">What the Partnership Means</h2>
@@ -97,7 +97,7 @@
 
 <!-- GENUINE PARTS & AFTERCARE -->
 <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-10">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Genuine Parts &amp; Aftercare</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Why genuine parts matter — and what it means for your operation.</p>
@@ -129,5 +129,7 @@
     'primaryText' => 'Talk to an Engineer',
     'primaryHref' => '/contact',
 ])
+
+@include('components.cta-combined-banner')
 
 @endsection

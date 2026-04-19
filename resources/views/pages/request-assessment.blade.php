@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-20">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-2xl">
             <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/40 rounded-full px-4 py-1.5 mb-5">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -26,7 +26,7 @@
 
 <!-- FORM -->
 <section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
 
             <!-- Form -->
@@ -289,5 +289,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection

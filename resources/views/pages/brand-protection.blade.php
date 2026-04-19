@@ -4,7 +4,7 @@
 
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-24">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
             <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
@@ -23,7 +23,7 @@
 
 <!-- DISAMBIGUATION -->
 <section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="bg-white border border-border rounded-2xl p-8 lg:p-10 mb-8">
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Disambiguation Statement</h2>
@@ -131,5 +131,7 @@
     'subheading' => 'You\'re in the right place. Request an assessment and we will respond within 24 hours.',
     'primaryText' => 'Request a Service Assessment',
 ])
+
+@include('components.cta-combined-banner')
 
 @endsection

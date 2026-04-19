@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Engineering-led commercial and industrial laundry support — service contracts, reactive repairs, equipment supply and lifecycle planning across Ireland.">
+
 @endsection
 
 @section('content')
@@ -982,5 +983,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection

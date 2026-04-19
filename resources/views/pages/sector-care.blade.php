@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Engineering-led laundry support for nursing homes and care facilities across Ireland — structured maintenance, documented records, and priority response for HIQA-compliant operations.">
+
 @endsection
 
 @section('content')
@@ -993,5 +994,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection

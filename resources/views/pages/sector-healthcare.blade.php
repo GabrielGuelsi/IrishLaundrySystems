@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Engineering-led commercial laundry support for healthcare — barrier washers, service contracts, and priority response across Ireland.">
+
 @endsection
 
 @section('content')
@@ -234,9 +235,9 @@
         <div class="py-14 lg:py-20">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-end">
                 <div class="reveal reveal-left">
-                    <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-4">Increasingly secure doors for greater productivity</h2>
-                    <p class="font-body font-semibold text-navy text-sm mb-3">Easiest and fastest unloading in the industry thanks to:</p>
-                    <ul class="space-y-2 mb-6">
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">Increasingly secure doors for greater productivity</h2>
+                    <p class="font-body font-semibold text-navy text-base mb-4">Easiest and fastest unloading in the industry thanks to:</p>
+                    <ul class="space-y-3 mb-6">
                         @foreach([
                             'Automatic drum positioning',
                             'Automatic outer doors locking and unlocking',
@@ -245,14 +246,14 @@
                             'The drum is separated in 2 parts to split the load and to allow an easier and ergonomic unloading thanks to the gravity force',
                             'Maximum ergonomics guaranteed thanks to our innovative opening mechanism that preopens the inner-drum doors automatically at the end of the wash cycle',
                         ] as $point)
-                        <li class="flex items-start gap-2 font-body text-gray-600 text-sm leading-relaxed">
-                            <span class="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-navy"></span>{{ $point }}
+                        <li class="flex items-start gap-2 font-body text-gray-600 text-base leading-relaxed">
+                            <span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-navy"></span>{{ $point }}
                         </li>
                         @endforeach
                     </ul>
                     <div class="inline-flex items-center gap-4">
-                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-20 h-20 object-contain">
-                        <p class="font-heading font-bold text-navy text-sm leading-tight">Auto Inner<br>Door Opening</p>
+                        <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-32 h-32 object-contain">
+                        <p class="font-heading font-bold text-navy text-lg leading-tight">Auto Inner<br>Door Opening</p>
                     </div>
                 </div>
                 <div class="reveal reveal-right">
@@ -304,19 +305,27 @@
                     <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">Usability matters when healthcare teams repeat the same handling tasks every day</h2>
                     <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">The right equipment supports your operators as well as the hygiene outcome — every shift, every day.</p>
                     <div class="grid grid-cols-1 gap-3">
-                        @foreach([
-                            ['icon' => '🚪', 'title' => 'Door & access logic',      'body' => 'Wide openings and clear loading positions reduce strain.'],
-                            ['icon' => '👁',  'title' => 'Control visibility',       'body' => 'Readable controls across the full working day.'],
-                            ['icon' => '📐', 'title' => 'Room-aware specification', 'body' => 'Equipment matched to your room, not a generic setup.'],
-                        ] as $card)
                         <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
-                            <span class="text-2xl flex-shrink-0">{{ $card['icon'] }}</span>
+                            <svg class="w-6 h-6 flex-shrink-0 text-navy mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
                             <div>
-                                <p class="font-heading font-bold text-navy text-sm mb-1">{{ $card['title'] }}</p>
-                                <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $card['body'] }}</p>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">Door & access logic</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">Wide openings and clear loading positions reduce strain.</p>
                             </div>
                         </div>
-                        @endforeach
+                        <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
+                            <svg class="w-6 h-6 flex-shrink-0 text-navy mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            <div>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">Control visibility</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">Readable controls across the full working day.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 bg-bg border border-border rounded-xl px-5 py-4">
+                            <svg class="w-6 h-6 flex-shrink-0 text-navy mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/></svg>
+                            <div>
+                                <p class="font-heading font-bold text-navy text-sm mb-1">Room-aware specification</p>
+                                <p class="font-body text-gray-500 text-xs leading-relaxed">Equipment matched to your room, not a generic setup.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1029,5 +1038,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection
