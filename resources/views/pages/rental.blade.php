@@ -3,31 +3,134 @@
 @section('content')
 
 <!-- HERO -->
-<section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
-                <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
-                </svg>
-                <span class="text-sm font-body text-gray-200">Equipment rental &amp; lease</span>
+<style>
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title { animation: heroFadeUp 0.7s ease forwards; }
+.hero-desc  { animation: heroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
+.hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
+</style>
+
+<section class="relative overflow-hidden flex flex-col" style="height: calc(100vh - 104px); max-height: 900px; min-height: 500px; background-color: #011E41;"
+    x-data="{
+        current: 0,
+        playing: true,
+        slides: [
+            '/images/hero/hero-placeholder.jpg',
+            '/images/healthcare/hero-main.jpg',
+            '/images/about/about-engineers.jpg',
+            '/images/about/about-equipment.jpg',
+            '/images/healthcare/engineer.jpg'
+        ],
+        prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length },
+        next() { this.current = (this.current + 1) % this.slides.length },
+        init() { setInterval(() => { if (this.playing) this.next() }, 5000) }
+    }">
+
+    <!-- Slides -->
+    <div class="absolute inset-0">
+        <template x-for="(slide, index) in slides" :key="index">
+            <img :src="slide"
+                 alt="ILS commercial laundry"
+                 class="absolute inset-0 w-full h-full object-cover object-right transition-opacity duration-1000 ease-in-out"
+                 :class="current === index ? 'opacity-100' : 'opacity-0'">
+        </template>
+        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 40%, rgba(1,30,65,0.40) 60%, transparent 100%);"></div>
+    </div>
+
+    <!-- Text — vertically centered -->
+    <div class="relative z-10 flex-1 flex items-center w-full" style="padding-top: 70px;">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-2">
+            <div style="max-width: 560px;">
+
+                <div class="hero-title inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-5">
+                    <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
+                    </svg>
+                    <span class="text-sm font-body text-gray-200">Equipment rental &amp; lease</span>
+                </div>
+
+                <h1 class="hero-desc font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">
+                    Equipment Rental &amp; Lease for Commercial Laundry
+                </h1>
+                <p class="font-body text-blue-200 text-lg mb-3 font-semibold">Managed equipment. Controlled costs. No capital outlay.</p>
+                <p class="font-body text-gray-300 text-base leading-relaxed mb-7 max-w-xl">
+                    Equipment rental and lease arrangements allow commercial laundry operators to access current Electrolux Professional equipment without significant capital investment — with planned maintenance built into the arrangement.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
+                        Request Rental Assessment
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                        </svg>
+                    </a>
+                </div>
+
             </div>
-            <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Equipment Rental &amp; Lease for Commercial Laundry
-            </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Managed equipment. Controlled costs. No capital outlay.</p>
-            <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-                Equipment rental and lease arrangements allow commercial laundry operators to access current Electrolux Professional equipment without significant capital investment — with planned maintenance built into the arrangement.
-            </p>
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                Request Rental Assessment
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+        </div>
+    </div>
+
+    <!-- Carousel controls -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
+        <button @click="prev()" aria-label="Previous slide"
+                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-5 py-3">
+            <button @click="playing = !playing" :aria-label="playing ? 'Pause' : 'Play'"
+                    class="w-6 h-6 flex items-center justify-center text-white transition-opacity duration-200 hover:opacity-70">
+                <svg x-show="playing" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+                </svg>
+                <svg x-show="!playing" x-cloak class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+            </button>
+            <template x-for="(slide, index) in slides" :key="index">
+                <button @click="current = index" :aria-label="'Slide ' + (index + 1)"
+                        class="h-2 rounded-full transition-all duration-300"
+                        :class="current === index ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/70 w-2'">
+                </button>
+            </template>
+        </div>
+        <button @click="next()" aria-label="Next slide"
+                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Bottom strip — Electrolux partner showcase -->
+    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-4 flex items-center justify-between gap-6">
+            <div class="flex items-center gap-5">
+                <div class="flex-shrink-0">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
+                         alt="Electrolux Professional Authorized Partner"
+                         class="h-12 w-auto">
+                </div>
+                <div class="hidden sm:block border-l border-gray-300 pl-5">
+                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
+                </div>
+            </div>
+            <a href="{{ route('electrolux') }}"
+               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+                Learn more
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
                 </svg>
             </a>
         </div>
     </div>
+
 </section>
 
 <!-- PROOF BAR -->
