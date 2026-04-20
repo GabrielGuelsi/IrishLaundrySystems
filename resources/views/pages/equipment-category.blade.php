@@ -296,7 +296,7 @@
                     All Line 6000 Barrier Washers feature the Ergocert 4-star rating and include ergonomic door handles and optimised door height for easy loading and unloading. Models with more than 50kg capacity include a dual-compartment partition drum which automatically assumes the correct unloading position at the end of each cycle.
                 </p>
                 <div class="inline-flex items-center gap-4">
-                    <img src="/images/healthcare/AutoInner_png.webp" alt="Auto Inner Door Opening" class="w-32 h-32 object-contain flex-shrink-0">
+                    <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="Auto Inner Door Opening" class="w-32 h-32 object-contain flex-shrink-0">
                     <p class="font-heading font-bold text-navy text-lg leading-tight">Auto Inner<br>Door Opening</p>
                 </div>
             </div>

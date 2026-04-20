@@ -197,6 +197,18 @@
 
             <div class="flex flex-col gap-5 reveal reveal-right">
 
+                {{-- ERGOCERT 4-star --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <div class="flex gap-1 mb-3">
+                        @for($s = 0; $s < 4; $s++)
+                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        @endfor
+                    </div>
+                    <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
+                    <p class="font-body text-[#148af4] text-xs leading-relaxed">Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.</p>
+                </div>
+
                 <div class="bg-navy rounded-2xl p-6">
                     <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
                     <ul class="space-y-3">
@@ -267,7 +279,7 @@
 
             <!-- Card 1: Service Contracts -->
             <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/engineer.jpg" alt="Service Contracts" class="absolute inset-0 w-full h-full object-cover object-center">
+                <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts" class="absolute inset-0 w-full h-full object-cover object-center">
                 <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-8">
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Service Contracts</h3>
@@ -283,7 +295,7 @@
 
             <!-- Card 2: Repairs & Call-outs -->
             <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/workflow.jpg" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
+                <img src="/images/healthcare/Repairs%20%26%20Call-outs.png" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
                 <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-8">
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Repairs &amp; Call-outs</h3>
@@ -299,7 +311,7 @@
 
             <!-- Card 3: Parts & Aftercare -->
             <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/plant-room.jpg" alt="Parts & Aftercare" class="absolute inset-0 w-full h-full object-cover object-center">
+                <img src="/images/healthcare/Parts%20%26%20Aftercare.png" alt="Parts & Aftercare" class="absolute inset-0 w-full h-full object-cover object-center">
                 <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-8">
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Parts &amp; Aftercare</h3>
@@ -391,8 +403,8 @@
                     <div x-show="tab === 'aido'">
                         <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
                         <div class="flex items-start gap-6 mb-8">
-                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
-                                <span class="font-heading font-bold text-gray-500 text-sm text-center leading-tight">AIDO</span>
+                            <div class="w-32 h-32 flex-shrink-0">
+                                <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
                             </div>
                             <p class="font-body text-gray-500 text-sm leading-relaxed">
                                 Our large inner-drum doors make loading and unloading the washer exceptionally easy, while our innovative opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables the easy manual handling of large loads of wet linen while minimizing potential strain for the operator.
@@ -418,8 +430,8 @@
                     <div x-show="tab === 'watchdog'">
                         <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog</h4>
                         <div class="flex items-start gap-6 mb-8">
-                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
-                                <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">Hygiene<br>Watchdog</span>
+                            <div class="w-32 h-32 flex-shrink-0">
+                                <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
                             </div>
                             <p class="font-body text-gray-500 text-sm leading-relaxed">
                                 <strong>Your Hygiene Partner:</strong> The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all linen is <strong>fully washed and thoroughly decontaminated</strong>. This provides the maximum defense against the spread of microorganisms and cross-contamination, keeping germs at bay and your mind at rest.
@@ -509,8 +521,8 @@
                 <div x-show="open" x-collapse class="mt-6">
                     <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
                     <div class="flex items-start gap-6 mb-8">
-                        <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
-                            <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">Moisture<br>Balance</span>
+                        <div class="w-32 h-32 flex-shrink-0">
+                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
                         </div>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">
                             The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
@@ -585,8 +597,8 @@
                     <div x-show="tab === 'diamms'">
                         <h4 class="font-heading font-bold text-navy text-xl mb-4">Maximum hygiene and performance</h4>
                         <div class="flex items-start gap-6 mb-8">
-                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
-                                <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">DIAMMS</span>
+                            <div class="w-32 h-32 flex-shrink-0">
+                                <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
                             </div>
                             <p class="font-body text-gray-500 text-sm leading-relaxed">
                                 Using DIAMMS™ technology, the Line 6000 Flatwork Ironers will automatically adapt the cylinder speed to the amount of moisture in the linen.
@@ -876,25 +888,25 @@
             <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
                 @foreach([
                     [
-                        'img'   => '/images/about/about-engineers.jpg',
+                        'img'   => '/images/healthcare/Service%20Network.png',
                         'title' => 'Service Network',
                         'bold'  => 'You can count on',
                         'body'  => 'more than 2,200 authorised service partners, always available, always on duty — committed to support you with a service network that makes your operations easier.',
                     ],
                     [
-                        'img'   => '/images/about/about-team.jpg',
+                        'img'   => '/images/healthcare/Service%20Agreements.png',
                         'title' => 'Service Agreements',
                         'bold'  => 'You can choose from',
                         'body'  => 'flexible tailored packages, according to your business needs, offering a variety of products maintenance and support services.',
                     ],
                     [
-                        'img'   => '/images/healthcare/engineer.jpg',
+                        'img'   => '/images/healthcare/Accessories%20%26%20Consumables.png',
                         'title' => 'Accessories & Consumables',
                         'bold'  => 'You can rely on',
                         'body'  => 'original Accessories & Consumables, rigorously tested by Electrolux Professional experts to ensure efficiency, durability, and the safety of your users.',
                     ],
                     [
-                        'img'   => '/images/about/about-equipment.jpg',
+                        'img'   => '/images/healthcare/Lifecycle%20Support.png',
                         'title' => 'Lifecycle Support',
                         'bold'  => 'You can plan ahead',
                         'body'  => 'with structured lifecycle continuity — keeping your installed base connected to repairs, call-outs, parts, and aftercare across Ireland.',
