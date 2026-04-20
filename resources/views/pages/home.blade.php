@@ -336,246 +336,102 @@
     </div>
 </section>
 
-<!-- 6. EQUIPMENT TEASER — FlowingMenu -->
-<style>
-.fm-wrap { width: 100%; overflow: hidden; }
-.fm-nav  { display: flex; flex-direction: column; margin: 0; padding: 0; }
+<!-- 6. EQUIPMENT TEASER — Product Category Grid -->
+<section class="py-16 lg:py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-.fm-item {
-    position: relative;
-    overflow: hidden;
-    border-top: 1px solid rgba(0,0,0,0.07);
-    height: 90px;
-    flex-shrink: 0;
-}
-
-.fm-link {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    padding: 0 24px 0 0;
-    padding-left: max(24px, calc((100vw - 1280px) / 2 + 8px));
-    text-decoration: none;
-    color: #011E41;
-    font-family: inherit;
-    font-size: clamp(1.05rem, 1.6vw, 1.4rem);
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    transition: color 0.2s ease;
-    cursor: pointer;
-}
-.fm-link:hover { color: #011E41; }
-
-.fm-link-arrow {
-    flex-shrink: 0;
-    opacity: 0.3;
-    transition: opacity 0.2s ease, transform 0.2s ease;
-}
-.fm-item:hover .fm-link-arrow {
-    opacity: 0.9;
-    transform: translateX(4px);
-}
-
-.fm-marquee {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    pointer-events: none;
-    transform: translateY(101%);
-    background: #011E41;
-    overflow: hidden;
-}
-.fm-marquee-inner-wrap { height: 100%; width: 100%; overflow: hidden; }
-.fm-marquee-inner {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: max-content;
-    will-change: transform;
-}
-.fm-marquee-part {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
-    padding: 0 2vw;
-}
-.fm-marquee-part span {
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: clamp(1.05rem, 1.6vw, 1.4rem);
-    letter-spacing: 0.06em;
-    color: #fff;
-    padding: 0 2vw;
-}
-.fm-marquee-img {
-    width: 160px;
-    height: 56px;
-    border-radius: 40px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.85;
-    flex-shrink: 0;
-}
-</style>
-
-<section style="background: #fff; overflow: hidden;">
-
-    <!-- Header -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 pt-14 pb-10 flex items-end justify-between gap-6">
-        <div>
-            <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment Categories</h2>
-            <p class="font-body text-gray-500 text-base mt-3 max-w-lg">Commercial laundry equipment supplied, installed and supported across the Republic of Ireland.</p>
+        <!-- Header -->
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10">
+            <div>
+                <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment Categories</h2>
+                <p class="font-body text-gray-500 text-base mt-3 max-w-lg">Commercial laundry equipment supplied, installed and supported across the Republic of Ireland.</p>
+            </div>
+            <a href="{{ route('equipment') }}"
+               class="inline-flex self-start lg:self-auto items-center gap-2 border border-navy/20 hover:border-navy text-navy/60 hover:text-navy font-body font-semibold px-5 py-2.5 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
+                Browse All Equipment
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
         </div>
-        <a href="{{ route('equipment') }}"
-           class="hidden lg:inline-flex items-center gap-2 border border-navy/20 hover:border-navy text-navy/60 hover:text-navy font-body font-semibold px-5 py-2.5 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
-            Browse All Equipment
-            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-        </a>
+
+        <!-- 4-across product grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- Commercial Washers -->
+            <a href="{{ route('equipment.category', 'washers') }}"
+               class="group flex flex-col bg-white rounded-xl border border-gray-200 hover:border-navy hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="relative bg-gray-100 aspect-[4/5] overflow-hidden flex items-center justify-center p-6">
+                    <img src="/images/equipment/commercialwasher.webp" alt="Commercial Washers"
+                         class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 flex flex-col gap-3 flex-1">
+                    <p class="font-body font-semibold text-orange text-[11px] uppercase tracking-widest">Equipment</p>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-tight">Commercial Washers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">High-performance washing across capacity and efficiency tiers.</p>
+                    <div class="flex items-center gap-2 mt-2 pt-4 border-t border-gray-100">
+                        <span class="font-body font-semibold text-navy text-sm uppercase tracking-wide group-hover:text-orange transition-colors">Discover</span>
+                        <svg class="w-4 h-4 text-navy group-hover:text-orange group-hover:translate-x-1 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Commercial Dryers -->
+            <a href="{{ route('equipment.category', 'tumble-dryers') }}"
+               class="group flex flex-col bg-white rounded-xl border border-gray-200 hover:border-navy hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="relative bg-gray-100 aspect-[4/5] overflow-hidden flex items-center justify-center p-6">
+                    <img src="/images/equipment/line6000-tumble-dryer.webp" alt="Commercial Dryers"
+                         class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 flex flex-col gap-3 flex-1">
+                    <p class="font-body font-semibold text-orange text-[11px] uppercase tracking-widest">Equipment</p>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-tight">Commercial Dryers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">Efficient drying for continuous high-volume operations.</p>
+                    <div class="flex items-center gap-2 mt-2 pt-4 border-t border-gray-100">
+                        <span class="font-body font-semibold text-navy text-sm uppercase tracking-wide group-hover:text-orange transition-colors">Discover</span>
+                        <svg class="w-4 h-4 text-navy group-hover:text-orange group-hover:translate-x-1 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Barrier Washers -->
+            <a href="{{ route('equipment.category', 'barrier-washers') }}"
+               class="group flex flex-col bg-white rounded-xl border border-gray-200 hover:border-navy hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="relative bg-gray-100 aspect-[4/5] overflow-hidden flex items-center justify-center p-6">
+                    <img src="/images/equipment/line6000-barrier-washer.webp" alt="Barrier Washers"
+                         class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 flex flex-col gap-3 flex-1">
+                    <p class="font-body font-semibold text-orange text-[11px] uppercase tracking-widest">Equipment</p>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-tight">Barrier Washers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">Hygiene-critical environments with clean/dirty segregation.</p>
+                    <div class="flex items-center gap-2 mt-2 pt-4 border-t border-gray-100">
+                        <span class="font-body font-semibold text-navy text-sm uppercase tracking-wide group-hover:text-orange transition-colors">Discover</span>
+                        <svg class="w-4 h-4 text-navy group-hover:text-orange group-hover:translate-x-1 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Ironers -->
+            <a href="{{ route('equipment.category', 'ironers') }}"
+               class="group flex flex-col bg-white rounded-xl border border-gray-200 hover:border-navy hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <div class="relative bg-gray-100 aspect-[4/5] overflow-hidden flex items-center justify-center p-6">
+                    <img src="/images/equipment/line6000-ironer.webp" alt="Ironers"
+                         class="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-105">
+                </div>
+                <div class="p-6 flex flex-col gap-3 flex-1">
+                    <p class="font-body font-semibold text-orange text-[11px] uppercase tracking-widest">Equipment</p>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-tight">Ironers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed flex-1">Flatwork finishing for linen at volume.</p>
+                    <div class="flex items-center gap-2 mt-2 pt-4 border-t border-gray-100">
+                        <span class="font-body font-semibold text-navy text-sm uppercase tracking-wide group-hover:text-orange transition-colors">Discover</span>
+                        <svg class="w-4 h-4 text-navy group-hover:text-orange group-hover:translate-x-1 transition-all duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </div>
+                </div>
+            </a>
+
+        </div>
     </div>
-
-    <!-- FlowingMenu -->
-    <div class="fm-wrap border-t border-gray-100">
-        <nav class="fm-nav">
-
-            <div class="fm-item">
-                <a class="fm-link" href="{{ route('equipment.category', 'washers') }}">
-                    Commercial Washers
-                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
-                <div class="fm-marquee">
-                    <div class="fm-marquee-inner-wrap">
-                        <div class="fm-marquee-inner" data-speed="14">
-                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fm-item">
-                <a class="fm-link" href="{{ route('equipment.category', 'dryers') }}">
-                    Commercial Dryers
-                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
-                <div class="fm-marquee">
-                    <div class="fm-marquee-inner-wrap">
-                        <div class="fm-marquee-inner" data-speed="16">
-                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-tumble-dryer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-tumble-dryer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-tumble-dryer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-tumble-dryer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-tumble-dryer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Commercial Dryers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-tumble-dryer.webp')"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fm-item">
-                <a class="fm-link" href="{{ route('equipment.category', 'barrier-washers') }}">
-                    Barrier Washers
-                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
-                <div class="fm-marquee">
-                    <div class="fm-marquee-inner-wrap">
-                        <div class="fm-marquee-inner" data-speed="13">
-                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Barrier Washers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-barrier-washer.webp')"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="fm-item" style="border-bottom: 1px solid rgba(0,0,0,0.07);">
-                <a class="fm-link" href="{{ route('equipment.category', 'ironers') }}">
-                    Ironers
-                    <svg class="fm-link-arrow w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
-                <div class="fm-marquee">
-                    <div class="fm-marquee-inner-wrap">
-                        <div class="fm-marquee-inner" data-speed="15">
-                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-ironer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-ironer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-ironer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-ironer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-ironer.webp')"></div></div>
-                            <div class="fm-marquee-part"><span>Ironers</span><div class="fm-marquee-img" style="background-image:url('/images/equipment/line6000-ironer.webp')"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-    </div>
-
-    <!-- Mobile browse button -->
-    <div class="lg:hidden text-center py-8 px-4">
-        <a href="{{ route('equipment') }}"
-           class="inline-flex items-center gap-2 border border-navy/30 text-navy font-body font-semibold px-6 py-3 text-sm uppercase tracking-wide hover:bg-navy/5 transition-colors">
-            Browse All Equipment →
-        </a>
-    </div>
-
 </section>
-
-<script>
-(function () {
-    if (typeof gsap === 'undefined') return;
-
-    function distSq(x, y, x2, y2) {
-        return (x - x2) ** 2 + (y - y2) ** 2;
-    }
-
-    function closestEdge(mouseX, mouseY, w, h) {
-        return distSq(mouseX, mouseY, w / 2, 0) < distSq(mouseX, mouseY, w / 2, h) ? 'top' : 'bottom';
-    }
-
-    document.querySelectorAll('.fm-item').forEach(function (item) {
-        const marquee      = item.querySelector('.fm-marquee');
-        const marqueeInner = item.querySelector('.fm-marquee-inner');
-        const firstPart    = item.querySelector('.fm-marquee-part');
-        const speed        = parseFloat(marqueeInner.dataset.speed) || 14;
-        const defaults     = { duration: 0.55, ease: 'expo.out' };
-
-        // Start continuous scroll after a brief layout pass
-        setTimeout(function () {
-            const w = firstPart ? firstPart.offsetWidth : 300;
-            if (w === 0) return;
-            gsap.to(marqueeInner, { x: -w, duration: speed, ease: 'none', repeat: -1 });
-        }, 80);
-
-        item.addEventListener('mouseenter', function (e) {
-            const r    = item.getBoundingClientRect();
-            const edge = closestEdge(e.clientX - r.left, e.clientY - r.top, r.width, r.height);
-            gsap.timeline({ defaults })
-                .set(marquee,      { y: edge === 'top' ? '-101%' : '101%' })
-                .set(marqueeInner, { y: edge === 'top' ?  '101%' : '-101%' })
-                .to([marquee, marqueeInner], { y: '0%' });
-        });
-
-        item.addEventListener('mouseleave', function (e) {
-            const r    = item.getBoundingClientRect();
-            const edge = closestEdge(e.clientX - r.left, e.clientY - r.top, r.width, r.height);
-            gsap.timeline({ defaults })
-                .to(marquee,      { y: edge === 'top' ? '-101%' : '101%' })
-                .to(marqueeInner, { y: edge === 'top' ?  '101%' : '-101%' }, 0);
-        });
-    });
-}());
-</script>
 
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials')
