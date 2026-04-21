@@ -664,10 +664,8 @@
 
                 {{-- Easy, healthy & safe operation --}}
                 <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0 w-20 h-20 rounded-full border-2 border-navy/20 flex items-center justify-center bg-white">
-                        <svg class="w-9 h-9 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
-                        </svg>
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Easy, healthy &amp; safe operation</h3>
@@ -677,10 +675,8 @@
 
                 {{-- Long-term savings --}}
                 <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0 w-20 h-20 rounded-full border-2 border-navy/20 flex items-center justify-center bg-white">
-                        <svg class="w-9 h-9 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21m-7.5-9H3m18 0h-1.5M6.343 6.343l-1.06-1.06m13.434 13.434l-1.06-1.06M6.343 17.657l-1.06 1.06M18.717 6.343l-1.06 1.06M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
-                        </svg>
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Long-term savings</h3>
@@ -690,10 +686,8 @@
 
                 {{-- Outstanding productivity --}}
                 <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0 w-20 h-20 rounded-full border-2 border-navy/20 flex items-center justify-center bg-white">
-                        <svg class="w-9 h-9 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
-                        </svg>
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/DrumSpeed.png" alt="Drum Speed" class="w-full h-full object-contain">
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Outstanding productivity</h3>
