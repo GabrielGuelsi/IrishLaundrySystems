@@ -222,6 +222,128 @@
     </div>
 </section>
 
+<!-- PRODUCTIVITY INFOGRAPHIC -->
+<section class="py-0 bg-[#011E41] overflow-hidden">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-24">
+
+        {{-- Header row --}}
+        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-14">
+            <div class="max-w-2xl">
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
+                    Washers and Dryers designed so thoughtfully<br class="hidden lg:block">
+                    <span class="text-[#148af4]">that every step is easy</span>
+                </h2>
+            </div>
+            {{-- Outstanding productivity badge --}}
+            <div class="flex-shrink-0">
+                <div class="inline-flex flex-col items-center justify-center bg-[#148af4] rounded-2xl px-6 py-4 text-center shadow-lg">
+                    <svg class="w-8 h-8 text-white mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+                    </svg>
+                    <p class="font-heading font-bold text-white text-base leading-tight">Outstanding</p>
+                    <p class="font-heading font-bold text-white text-base leading-tight">productivity</p>
+                </div>
+            </div>
+        </div>
+
+        {{-- Workflow diagram --}}
+        <div class="mb-14">
+            <div class="flex flex-col sm:flex-row items-center gap-0 sm:gap-0">
+
+                {{-- Node 1 --}}
+                <div class="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 bg-[#148af4] rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>
+                        </svg>
+                    </div>
+                    <p class="font-heading font-bold text-white text-base leading-tight">Wash &amp; Dry more,</p>
+                    <p class="font-heading font-bold text-white text-base leading-tight">in less time</p>
+                </div>
+
+                {{-- Arrow --}}
+                <div class="flex-shrink-0 text-[#148af4] px-2 rotate-90 sm:rotate-0">
+                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </div>
+
+                {{-- Node 2 --}}
+                <div class="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 bg-[#148af4] rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                        </svg>
+                    </div>
+                    <p class="font-heading font-bold text-white text-base leading-tight">Wash</p>
+                </div>
+
+                {{-- Arrow --}}
+                <div class="flex-shrink-0 text-[#148af4] px-2 rotate-90 sm:rotate-0">
+                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </div>
+
+                {{-- Node 3 --}}
+                <div class="flex-1 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 bg-[#148af4] rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <p class="font-heading font-bold text-white text-base leading-tight">Smart process</p>
+                </div>
+
+                {{-- Arrow --}}
+                <div class="flex-shrink-0 text-[#148af4] px-2 rotate-90 sm:rotate-0">
+                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </div>
+
+                {{-- Node 4 --}}
+                <div class="flex-1 bg-[#148af4]/20 border border-[#148af4]/50 rounded-2xl p-6 text-center">
+                    <div class="w-12 h-12 bg-[#148af4] rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                        </svg>
+                    </div>
+                    <p class="font-heading font-bold text-[#148af4] text-base leading-tight">Power Balance</p>
+                    <p class="font-heading font-bold text-[#148af4] text-base leading-tight">&amp; High Spinning</p>
+                </div>
+
+            </div>
+        </div>
+
+        {{-- 4 bottom feature chevrons --}}
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+            @foreach([
+                ['icon' => 'M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z', 'label' => 'Exceptional design', 'sub' => 'Ergonomic, award-winning form meets function'],
+                ['icon' => 'M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z', 'label' => 'Easy to use', 'sub' => 'Intuitive controls for any operator'],
+                ['icon' => 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99', 'label' => 'Effortless process', 'sub' => 'Automated cycles reduce manual effort'],
+                ['icon' => 'M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941', 'label' => 'Do more &amp; better in less time', 'sub' => 'Higher throughput without compromising results'],
+            ] as $feat)
+            <div class="bg-white/5 border border-white/10 rounded-2xl p-5 flex flex-col gap-3 hover:bg-white/10 transition-colors">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-[#148af4]/20 flex items-center justify-center flex-shrink-0">
+                        <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="{{ $feat['icon'] }}"/>
+                        </svg>
+                    </div>
+                    <p class="font-heading font-bold text-white text-sm leading-tight">{!! $feat['label'] !!}</p>
+                </div>
+                <p class="font-body text-gray-400 text-xs leading-relaxed">{{ $feat['sub'] }}</p>
+            </div>
+            @endforeach
+
+        </div>
+
+    </div>
+</section>
+
 <!-- TWO PATHS -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">

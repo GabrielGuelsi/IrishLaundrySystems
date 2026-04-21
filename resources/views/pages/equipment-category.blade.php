@@ -173,7 +173,7 @@
 
 {{-- Green stat full-width band --}}
 <div class="w-full py-8" style="background-color: #c8d8a8;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center justify-center gap-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center gap-12">
         <div class="flex-shrink-0 w-28 h-28 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
             <span class="font-heading font-bold text-white text-sm leading-none">up to</span>
             <span class="font-heading font-bold text-white text-3xl leading-none">50%</span>
@@ -383,7 +383,7 @@
 
 {{-- Green stat full-width band --}}
 <div class="w-full py-8" style="background-color: #c8d8a8;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center justify-center gap-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center gap-12">
         <div class="flex-shrink-0 w-28 h-28 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
             <span class="font-heading font-bold text-white text-sm leading-none">up to</span>
             <span class="font-heading font-bold text-white text-3xl leading-none">40%</span>
@@ -416,7 +416,7 @@
                         'body'  => 'Effortless user experience with ClarusVibe control — designed for fast, accurate programming in any laundry environment.',
                     ],
                     [
-                        'icon'  => '/images/healthcare/EfficientDosing.png',
+                        'icon'  => '/images/healthcare/hygiene-icon.png',
                         'alt'   => 'Savings icon',
                         'title' => 'Long-term savings & productivity',
                         'body'  => 'Automatically adjust water and detergents to keep operational expenditure to a minimum without compromising results.',
@@ -509,34 +509,41 @@
 
                 {{-- Intelligent Dosing --}}
                 <div class="flex items-start gap-5 mb-6">
-                    <div class="flex-shrink-0 w-20 h-20 rounded-xl bg-bg border border-border flex items-center justify-center p-2">
-                        <div class="text-center">
-                            <svg class="w-8 h-8 text-navy mx-auto mb-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15M14.25 3.104c.251.023.501.05.75.082M19.8 15l-1.8 1.8m0 0A2.25 2.25 0 0116.5 18H7.5a2.25 2.25 0 01-1.5-.6m11.8-1.8L15 13.2M4.5 18l1.8-1.8m0 0L8 14.8"/></svg>
-                            <p class="font-body font-bold text-navy text-[10px] leading-tight">Intelligent<br>Dosing</p>
-                        </div>
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/EfficientDosing.png" alt="Intelligent Dosing" class="w-full h-full object-contain">
                     </div>
                     <div>
+                        <h4 class="font-heading font-bold text-navy text-lg mb-2">The precise amount,<br>every load</h4>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">
-                            With Intelligent Dosing, you can automatically add the <strong class="text-navy">precise amount of detergent</strong> and chemicals based on the dry weight of each load*.
+                            With <strong class="text-navy">Intelligent Dosing</strong>, you can automatically add the <strong class="text-navy">precise amount of detergent</strong> and chemicals based on the dry weight of each load*.
                         </p>
                     </div>
                 </div>
 
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6 pl-[100px]">
-                    Manual dosing is also easier than ever thanks to a front-mounted dispenser which can be tilted downwards to clearly see all six colour-coded compartments.
-                </p>
+                {{-- Automatic Savings --}}
+                <div class="flex items-start gap-5 mb-6">
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/equipment/AutomaticSavings.png" alt="Automatic Savings" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-bold text-navy text-lg mb-2">Not a drop<br>of water wasted</h4>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            <strong class="text-navy">Automatic Savings</strong> weighs the linens and adjusts the water intake to the actual load. This <strong class="text-navy">saves water, energy and money</strong> at anything less than full loads.
+                        </p>
+                    </div>
+                </div>
 
                 {{-- Integrated Savings --}}
-                <div class="bg-bg border border-border rounded-xl p-5 flex items-start gap-4 mb-5">
-                    <div class="flex-shrink-0 w-16 h-16 rounded-lg bg-white border border-border flex items-center justify-center p-2">
-                        <div class="text-center">
-                            <svg class="w-7 h-7 text-navy mx-auto mb-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-                            <p class="font-body font-bold text-navy text-[9px] leading-tight">Integrated<br>Savings</p>
-                        </div>
+                <div class="flex items-start gap-5 mb-6">
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/equipment/IntegratedSavings.png" alt="Integrated Savings" class="w-full h-full object-contain">
                     </div>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">
-                        The Integrated Savings feature measures and <strong class="text-navy">shows the load in real time</strong>, to avoid overloading and underloading of the machine. This not only reduces the amount of water and energy used when washing partial loads, but it can help to <strong class="text-navy">extend the lifetime of your washer</strong>.
-                    </p>
+                    <div>
+                        <h4 class="font-heading font-bold text-navy text-lg mb-2">Always the right load,<br>never more</h4>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            The <strong class="text-navy">Integrated Savings</strong> feature measures and <strong class="text-navy">shows the load in real time</strong>, to avoid overloading and underloading of the machine — reducing water and energy used, and helping to <strong class="text-navy">extend the lifetime of your washer</strong>.
+                        </p>
+                    </div>
                 </div>
 
                 <p class="font-body text-gray-400 text-xs italic">*Only available on ClarusVibe models.</p>
@@ -544,8 +551,8 @@
 
             {{-- Right: image --}}
             <div class="flex justify-center items-start reveal reveal-right">
-                <img src="{{ asset('images/equipment/commercialwasher.webp') }}"
-                     alt="Intelligent Dosing"
+                <img src="{{ asset('images/equipment/ProfessionalLaundryOperator.png') }}"
+                     alt="Professional laundry operator"
                      class="w-full max-w-sm rounded-2xl object-cover shadow-lg">
             </div>
 
@@ -564,17 +571,17 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
             @foreach([
                 [
-                    'img'   => '/images/about/testimonial-1.jpg',
+                    'img'   => '/images/equipment/Multi-Housing%20Laundry.png',
                     'title' => 'Multi-Housing Laundry',
                     'body'  => 'Ensure tenant satisfaction by offering a quick, hassle-free, and eco-friendly laundry experience. Invest in energy-efficient machines and high-capacity dryers.',
                 ],
                 [
-                    'img'   => '/images/about/testimonial-2.jpg',
+                    'img'   => '/images/equipment/On%20Premises%20Laundries.png',
                     'title' => 'On Premises Laundries',
                     'body'  => 'Clean and dry at your convenience with our reliable, low-maintenance machines. Say goodbye to wait times and tough stains, while ensuring total hygiene.',
                 ],
                 [
-                    'img'   => '/images/equipment/commercialwasher.webp',
+                    'img'   => '/images/equipment/Self%20Service%20Laundry.png',
                     'title' => 'Self service laundry',
                     'body'  => 'We provide a comprehensive range of solutions, bringing together washers, dryers, and accessories to create the perfect combination.',
                 ],
@@ -596,11 +603,11 @@
 
 @if($categorySlug === 'tumble-dryers')
 <!-- TUMBLE DRYERS INTRO -->
-<section class="py-14 lg:py-20 bg-white border-b border-border">
+<section class="py-4 lg:py-6 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Split: text left, image right --}}
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mb-4">
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
                     Line 6000 Tumble Dryers
@@ -622,7 +629,7 @@
             <div class="flex justify-center reveal reveal-right">
                 <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}"
                      alt="Line 6000 Tumble Dryer"
-                     class="w-full max-w-md object-contain drop-shadow-xl">
+                     class="w-full max-w-[200px] object-contain drop-shadow-xl">
             </div>
         </div>
 
@@ -630,16 +637,16 @@
 </section>
 
 {{-- Green stat full-width band --}}
-<div class="w-full py-8" style="background-color: #c8d8a8;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center justify-center gap-8">
-        <div class="flex-shrink-0 w-28 h-28 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
+<div class="w-full py-5" style="background-color: #c8d8a8;">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center gap-8">
+        <div class="flex-shrink-0 w-24 h-24 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
             <span class="font-heading font-bold text-white text-sm leading-none">up to</span>
             <span class="font-heading font-bold text-white text-3xl leading-none">60%</span>
             <span class="font-body text-white text-xs leading-tight text-center">Energy<br>savings</span>
         </div>
-        <div class="text-center sm:text-left">
-            <p class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-2">Heat Pump Technology</p>
-            <p class="font-body text-navy/80 text-base lg:text-lg leading-relaxed max-w-xl">
+        <div class="flex-1 text-center sm:text-left">
+            <p class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-1">Heat Pump Technology</p>
+            <p class="font-body text-navy/80 text-base leading-relaxed">
                 Reduce energy consumption by up to 60% with heat pump tumble dryers — without compromising on drying performance or cycle times.
             </p>
         </div>
@@ -650,38 +657,50 @@
 <section class="bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="py-10 lg:py-14">
-        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">Outstanding drying performance</h2>
+        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">Shaping the sustainable laundry</h2>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
 
             <div class="lg:col-span-2 flex flex-col">
-                @foreach([
-                    [
-                        'icon'  => '/images/healthcare/DrumSpeed.png',
-                        'alt'   => 'Throughput icon',
-                        'title' => 'Maximum throughput, minimum downtime',
-                        'body'  => 'High-capacity drums and fast cycle programmes keep your laundry operation running efficiently around the clock.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/MoistureBalance.png',
-                        'alt'   => 'Fabric care icon',
-                        'title' => 'Protect fabrics and extend linen life',
-                        'body'  => 'Precise temperature control and moisture sensing prevent over-drying, protecting textile quality and reducing replacement costs.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/Ergonomics meets smart technology.png',
-                        'alt'   => 'Ergonomics icon',
-                        'title' => 'Certified ergonomics – Ergocert 4-star',
-                        'body'  => 'Designed for operator comfort with easy-access drum height, ergonomic door handles and an intuitive ClarusVibe control panel.',
-                    ],
-                ] as $feature)
+
+                {{-- Easy, healthy & safe operation --}}
                 <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
+                    <div class="flex-shrink-0 w-20 h-20 rounded-full border-2 border-navy/20 flex items-center justify-center bg-white">
+                        <svg class="w-9 h-9 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+                        </svg>
+                    </div>
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Easy, healthy &amp; safe operation</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">Human-centred design with certified ergonomics</p>
                     </div>
                 </div>
-                @endforeach
+
+                {{-- Long-term savings --}}
+                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0 w-20 h-20 rounded-full border-2 border-navy/20 flex items-center justify-center bg-white">
+                        <svg class="w-9 h-9 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m0 13.5V21m-7.5-9H3m18 0h-1.5M6.343 6.343l-1.06-1.06m13.434 13.434l-1.06-1.06M6.343 17.657l-1.06 1.06M18.717 6.343l-1.06 1.06M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Long-term savings</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">Intelligent moisture management to avoid wasted energy</p>
+                    </div>
+                </div>
+
+                {{-- Outstanding productivity --}}
+                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0 w-20 h-20 rounded-full border-2 border-navy/20 flex items-center justify-center bg-white">
+                        <svg class="w-9 h-9 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Outstanding productivity</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">Fast cycle times and even drying for a wide range of fabrics</p>
+                    </div>
+                </div>
+
             </div>
 
             {{-- Right: Download + Discover --}}
@@ -840,6 +859,9 @@
 
 <!-- FILTERS + PRODUCTS GRID -->
 <section id="products" class="py-16 lg:py-20 bg-bg">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 pb-10">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl">Discover the full range of {{ $category }}</h2>
+    </div>
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="flex flex-col lg:flex-row gap-8">
 

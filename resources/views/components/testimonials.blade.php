@@ -2,7 +2,7 @@
 
 @if($light)
 <section class="py-16 lg:py-20 bg-bg border-y border-border">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10">{{ $heading }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
 
@@ -56,7 +56,7 @@
 </section>
 @else
 <section class="py-16 lg:py-20 bg-navy">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl text-center mb-12">{{ $heading }}</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
