@@ -156,4 +156,6 @@ $faqs = [
     'secondaryHref' => 'tel:+353000000000',
 ])
 
+@include('components.cta-combined-banner')
+
 @endsection

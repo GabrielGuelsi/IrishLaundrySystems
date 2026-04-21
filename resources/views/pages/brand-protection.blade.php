@@ -132,4 +132,6 @@
     'primaryText' => 'Request a Service Assessment',
 ])
 
+@include('components.cta-combined-banner')
+
 @endsection

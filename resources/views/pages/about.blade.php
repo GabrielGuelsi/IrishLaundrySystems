@@ -2,6 +2,7 @@
 
 @section('meta')
 <meta name="description" content="Established 1987. Engineering-led commercial laundry support across Ireland — contracts, rental and breakdown response built around uptime.">
+
 @endsection
 
 @section('content')
@@ -316,5 +317,7 @@
     'secondaryText' => 'Request a Service Assessment',
     'secondaryHref' => route('request-assessment'),
 ])
+
+@include('components.cta-combined-banner')
 
 @endsection

@@ -92,7 +92,7 @@
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('equipment') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-semibold">Equipment Hub</a>
                         <a href="{{ route('equipment.category', 'washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Washers</a>
-                        <a href="{{ route('equipment.category', 'dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Dryers</a>
+                        <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Tumble Dryers</a>
                         <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Barrier Washers</a>
                         <a href="{{ route('equipment.category', 'ironers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Ironers</a>
                     </div></div>
@@ -204,7 +204,7 @@
                 <div x-show="eOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
                     <a href="{{ route('equipment') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Equipment Hub</a>
                     <a href="{{ route('equipment.category', 'washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Commercial Washers</a>
-                    <a href="{{ route('equipment.category', 'dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Commercial Dryers</a>
+                    <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Tumble Dryers</a>
                     <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Barrier Washers</a>
                     <a href="{{ route('equipment.category', 'ironers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Ironers</a>
                 </div>

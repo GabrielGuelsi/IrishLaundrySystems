@@ -26,7 +26,7 @@ class EquipmentController extends Controller
     {
         $validated = $request->validate([
             'name'       => 'required|string|max:255',
-            'category'   => 'required|in:washers,dryers,barrier-washers,ironers',
+            'category'   => 'required|in:washers,tumble-dryers,barrier-washers,ironers',
             'capacity'   => 'nullable|string|max:100',
             'summary'    => 'nullable|string',
             'sectors'    => 'nullable|array',
@@ -68,7 +68,7 @@ class EquipmentController extends Controller
     {
         $validated = $request->validate([
             'name'       => 'required|string|max:255',
-            'category'   => 'required|in:washers,dryers,barrier-washers,ironers',
+            'category'   => 'required|in:washers,tumble-dryers,barrier-washers,ironers',
             'capacity'   => 'nullable|string|max:100',
             'summary'    => 'nullable|string',
             'sectors'    => 'nullable|array',

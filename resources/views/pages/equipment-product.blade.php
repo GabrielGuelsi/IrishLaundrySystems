@@ -2,64 +2,144 @@
 
 @section('content')
 
-<!-- BREADCRUMB + HERO -->
-<section class="bg-navy py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="flex items-center gap-2 mb-4 flex-wrap">
-            <a href="{{ route('equipment') }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">Equipment</a>
-            <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-            <a href="{{ route('equipment.category', $categorySlug) }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">{{ $category }}</a>
-            <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-            <span class="text-gray-300 text-sm font-body">{{ $product }}</span>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <div>
-                @if (!empty($imagePath))
-                <div class="aspect-video bg-navy-light border border-white/10 rounded-2xl overflow-hidden">
-                    <img src="{{ asset('storage/' . $imagePath) }}" alt="{{ $product }}"
-                         class="w-full h-full object-cover">
+<!-- HERO -->
+<style>
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title { animation: heroFadeUp 0.7s ease forwards; }
+.hero-desc  { animation: heroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
+.hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
+</style>
+
+<section class="relative overflow-hidden flex flex-col" style="height: calc(100vh - 104px); max-height: 900px; min-height: 500px; background-color: #011E41;"
+    x-data="{
+        current: 0,
+        playing: true,
+        slides: [
+            '/images/hero/hero-placeholder.jpg',
+            '/images/healthcare/hero-main.jpg',
+            '/images/about/about-engineers.jpg',
+            '/images/about/about-equipment.jpg',
+            '/images/healthcare/engineer.jpg'
+        ],
+        prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length },
+        next() { this.current = (this.current + 1) % this.slides.length },
+        init() { setInterval(() => { if (this.playing) this.next() }, 5000) }
+    }">
+
+    <!-- Slides -->
+    <div class="absolute inset-0">
+        <template x-for="(slide, index) in slides" :key="index">
+            <img :src="slide"
+                 alt="ILS commercial laundry"
+                 class="absolute inset-0 w-full h-full object-cover object-right transition-opacity duration-1000 ease-in-out"
+                 :class="current === index ? 'opacity-100' : 'opacity-0'">
+        </template>
+        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 40%, rgba(1,30,65,0.40) 60%, transparent 100%);"></div>
+    </div>
+
+    <!-- Text — vertically centered, aligned with nav -->
+    <div class="relative z-10 flex-1 flex items-center w-full" style="padding-top: 70px;">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-2">
+            <div style="max-width: 560px;">
+
+                <div class="hero-title flex items-center gap-2 mb-4 flex-wrap">
+                    <a href="{{ route('equipment') }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">Equipment</a>
+                    <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    <a href="{{ route('equipment.category', $categorySlug) }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">{{ $category }}</a>
+                    <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    <span class="text-gray-300 text-sm font-body">{{ $product }}</span>
                 </div>
-                @else
-                <!-- Placeholder product image -->
-                <div class="aspect-video bg-navy-light border border-white/10 rounded-2xl flex items-center justify-center">
-                    <svg class="w-24 h-24 text-white/20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
-                </div>
-                <p class="text-center text-xs text-gray-500 font-body mt-2">Product image for illustration — contact ILS for full specifications</p>
-                @endif
-            </div>
-            <div>
-                <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 mb-4">
+
+                <div class="hero-desc inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 mb-4">
                     <span class="text-xs font-body text-gray-300">{{ $category }}</span>
                 </div>
-                <h1 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">{{ $product }}</h1>
-                <p class="font-body text-gray-300 leading-relaxed mb-6">
-                    {{ !empty($summary) ? $summary : 'Commercial laundry equipment from the Electrolux Professional range — supplied, installed and supported by Irish Laundry Systems. Engineering-led supply with long-term service capability built in.' }}
+                <h1 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4">{{ $product }}</h1>
+                <p class="font-body text-gray-300 leading-relaxed mb-6 max-w-xl">
+                    {{ !empty($summary) ? $summary : 'Commercial laundry equipment from the Electrolux Professional range — supplied, installed and supported by Irish Laundry Systems.' }}
                 </p>
 
-                <!-- Electrolux Badge -->
-                <div class="flex items-center gap-3 bg-white/10 border border-white/20 rounded-lg px-4 py-3 mb-6">
-                    <svg class="w-6 h-6 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-                    </svg>
-                    <span class="text-sm font-body text-gray-200">Authorised Electrolux Professional Partner — genuine parts &amp; manufacturer support</span>
-                </div>
-
-                <div class="flex flex-col sm:flex-row gap-3">
+                <div class="hero-btns flex flex-row gap-4">
                     <a href="#quote-form"
-                       class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 rounded-lg text-base transition-colors duration-200 cursor-pointer">
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
                         Request a Quote
                     </a>
                     <a href="{{ route('service-contracts') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white font-body font-semibold px-6 py-3.5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer text-sm">
+                       class="inline-flex items-center justify-center border-2 border-white/50 hover:border-white text-white font-body font-semibold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 hover:bg-white/10 rounded-md">
                         View Service Contracts
                     </a>
                 </div>
+
             </div>
         </div>
     </div>
+
+    <!-- Carousel controls — unified bottom-center row -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
+
+        <!-- Prev -->
+        <button @click="prev()" aria-label="Previous slide"
+                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+
+        <!-- Frosted pill: play + dots -->
+        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-5 py-3">
+            <button @click="playing = !playing" :aria-label="playing ? 'Pause' : 'Play'"
+                    class="w-6 h-6 flex items-center justify-center text-white transition-opacity duration-200 hover:opacity-70">
+                <svg x-show="playing" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+                </svg>
+                <svg x-show="!playing" x-cloak class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+            </button>
+            <template x-for="(slide, index) in slides" :key="index">
+                <button @click="current = index" :aria-label="'Slide ' + (index + 1)"
+                        class="h-2 rounded-full transition-all duration-300"
+                        :class="current === index ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/70 w-2'">
+                </button>
+            </template>
+        </div>
+
+        <!-- Next -->
+        <button @click="next()" aria-label="Next slide"
+                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+
+    </div>
+
+    <!-- Bottom strip — Electrolux partner showcase -->
+    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-4 flex items-center justify-between gap-6">
+            <div class="flex items-center gap-5">
+                <div class="flex-shrink-0">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
+                         alt="Electrolux Professional Authorized Partner"
+                         class="h-12 w-auto">
+                </div>
+                <div class="hidden sm:block border-l border-gray-300 pl-5">
+                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
+                </div>
+            </div>
+            <a href="{{ route('electrolux') }}"
+               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+                Learn more
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
 </section>
 
 <!-- PROOF BAR -->
@@ -270,5 +350,7 @@
         </div>
     </div>
 </section>
+
+@include('components.cta-combined-banner')
 
 @endsection

@@ -178,4 +178,6 @@ $faqs = [
     'primaryText' => 'Request a Contract Review',
 ])
 
+@include('components.cta-combined-banner')
+
 @endsection

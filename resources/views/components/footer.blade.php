@@ -12,12 +12,13 @@
                 <cite class="block mt-3 text-sm text-steel-light font-body not-italic">— Operations Manager, Healthcare Group, Republic of Ireland</cite>
             </blockquote>
 
-            <!-- Logo strip placeholder -->
-            <div class="flex flex-wrap items-center justify-center gap-8 opacity-40">
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
-                <span class="font-body text-xs text-gray-400 uppercase tracking-widest border border-white/20 rounded px-4 py-2">Client Logo</span>
+            <!-- Logo strip -->
+            <div class="flex flex-wrap items-center justify-center gap-28">
+                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-8 object-contain brightness-0 invert opacity-70">
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 object-contain mix-blend-screen opacity-90">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 object-contain mix-blend-screen opacity-90">
+                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-8 object-contain brightness-0 invert opacity-70">
+                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 object-contain mix-blend-screen opacity-90">
             </div>
         </div>
     </div>

@@ -290,4 +290,6 @@
     </div>
 </section>
 
+@include('components.cta-combined-banner')
+
 @endsection

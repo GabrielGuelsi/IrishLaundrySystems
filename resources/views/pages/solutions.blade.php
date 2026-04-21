@@ -190,4 +190,6 @@
     'subheading' => 'Tell us about your operation and we will recommend the right service structure. No obligation, no pressure.',
 ])
 
+@include('components.cta-combined-banner')
+
 @endsection

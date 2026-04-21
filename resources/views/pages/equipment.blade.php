@@ -3,34 +3,142 @@
 @section('content')
 
 <!-- HERO -->
-<section class="bg-navy py-20 lg:py-28">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
-                <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-                </svg>
-                <span class="text-sm font-body text-gray-200">Authorised Electrolux Professional Partner</span>
-            </div>
-            <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Commercial Laundry Equipment — Supplied and Supported
-            </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Engineering-first supply, installation and long-term support.</p>
-            <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-                ILS supplies commercial laundry equipment including the full Electrolux Professional range — with expert installation, commissioning and ongoing service support built in. We don't just sell equipment; we support it.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                    Request Equipment Quote
-                </a>
-                <a href="{{ route('rental') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer hover:bg-white/10">
-                    Rental Options
-                </a>
+<style>
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title { animation: heroFadeUp 0.7s ease forwards; }
+.hero-desc  { animation: heroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
+.hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
+</style>
+
+<section class="relative overflow-hidden flex flex-col" style="height: calc(100vh - 104px); max-height: 900px; min-height: 500px; background-color: #011E41;"
+    x-data="{
+        current: 0,
+        playing: true,
+        slides: [
+            '/images/hero/hero-placeholder.jpg',
+            '/images/healthcare/hero-main.jpg',
+            '/images/about/about-engineers.jpg',
+            '/images/about/about-equipment.jpg',
+            '/images/healthcare/engineer.jpg'
+        ],
+        prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length },
+        next() { this.current = (this.current + 1) % this.slides.length },
+        init() { setInterval(() => { if (this.playing) this.next() }, 5000) }
+    }">
+
+    <!-- Slides -->
+    <div class="absolute inset-0">
+        <template x-for="(slide, index) in slides" :key="index">
+            <img :src="slide"
+                 alt="ILS commercial laundry"
+                 class="absolute inset-0 w-full h-full object-cover object-right transition-opacity duration-1000 ease-in-out"
+                 :class="current === index ? 'opacity-100' : 'opacity-0'">
+        </template>
+        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 40%, rgba(1,30,65,0.40) 60%, transparent 100%);"></div>
+    </div>
+
+    <!-- Text — vertically centered, aligned with nav -->
+    <div class="relative z-10 flex-1 flex items-center w-full" style="padding-top: 70px;">
+        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-2">
+            <div style="max-width: 560px;">
+
+                <div class="hero-title inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-5">
+                    <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                    </svg>
+                    <span class="text-sm font-body text-gray-200">Authorised Electrolux Professional Partner</span>
+                </div>
+
+                <h1 class="hero-desc font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">
+                    Commercial Laundry Equipment — Supplied and Supported
+                </h1>
+                <p class="font-body text-blue-200 text-lg mb-3 font-semibold">Engineering-first supply, installation and long-term support.</p>
+                <p class="font-body text-gray-300 text-base leading-relaxed mb-7 max-w-xl">
+                    ILS supplies commercial laundry equipment including the full Electrolux Professional range — with expert installation, commissioning and ongoing service support built in.
+                </p>
+
+                <div class="hero-btns flex flex-row gap-4">
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
+                        Request Equipment Quote
+                    </a>
+                    <a href="{{ route('rental') }}"
+                       class="inline-flex items-center justify-center border-2 border-white/50 hover:border-white text-white font-body font-semibold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 hover:bg-white/10 rounded-md">
+                        Rental Options
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
+
+    <!-- Carousel controls — unified bottom-center row -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
+
+        <!-- Prev -->
+        <button @click="prev()" aria-label="Previous slide"
+                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+            </svg>
+        </button>
+
+        <!-- Frosted pill: play + dots -->
+        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-5 py-3">
+            <button @click="playing = !playing" :aria-label="playing ? 'Pause' : 'Play'"
+                    class="w-6 h-6 flex items-center justify-center text-white transition-opacity duration-200 hover:opacity-70">
+                <svg x-show="playing" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+                </svg>
+                <svg x-show="!playing" x-cloak class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                    <polygon points="5 3 19 12 5 21 5 3"/>
+                </svg>
+            </button>
+            <template x-for="(slide, index) in slides" :key="index">
+                <button @click="current = index" :aria-label="'Slide ' + (index + 1)"
+                        class="h-2 rounded-full transition-all duration-300"
+                        :class="current === index ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/70 w-2'">
+                </button>
+            </template>
+        </div>
+
+        <!-- Next -->
+        <button @click="next()" aria-label="Next slide"
+                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
+            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+            </svg>
+        </button>
+
+    </div>
+
+    <!-- Bottom strip — Electrolux partner showcase -->
+    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-4 flex items-center justify-between gap-6">
+            <div class="flex items-center gap-5">
+                <div class="flex-shrink-0">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
+                         alt="Electrolux Professional Authorized Partner"
+                         class="h-12 w-auto">
+                </div>
+                <div class="hidden sm:block border-l border-gray-300 pl-5">
+                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
+                </div>
+            </div>
+            <a href="{{ route('electrolux') }}"
+               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+                Learn more
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
 </section>
 
 <!-- PROOF BAR -->
@@ -59,16 +167,16 @@
                 </span>
             </a>
 
-            <a href="{{ route('equipment.category', 'dryers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
+            <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
                 <div class="w-12 h-12 rounded-2xl bg-orange/10 flex items-center justify-center mb-4 group-hover:bg-orange/20 transition-colors">
                     <svg class="w-7 h-7 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
                     </svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Commercial Dryers</h3>
+                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Tumble Dryers</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Gas and electric tumble dryers for commercial operations. Matched capacity to your washer fleet for optimised throughput.</p>
                 <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-semibold">
-                    View dryers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    View tumble dryers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </span>
             </a>
 
@@ -204,5 +312,7 @@
     'primaryText' => 'Get an Equipment Quote',
     'primaryHref' => '/contact',
 ])
+
+@include('components.cta-combined-banner')
 
 @endsection
