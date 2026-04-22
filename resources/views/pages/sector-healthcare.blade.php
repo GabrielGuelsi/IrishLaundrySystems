@@ -170,7 +170,7 @@
                     ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
                     ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                 ] as $feature)
-                <div class="bg-[#eaeff5] rounded-2xl p-6 flex flex-col gap-4">
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4">
                     <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-20 h-20 object-contain">
                     <h3 class="font-heading font-bold text-navy text-lg leading-tight">{{ $feature['title'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
