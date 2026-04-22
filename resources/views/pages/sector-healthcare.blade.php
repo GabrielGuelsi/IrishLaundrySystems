@@ -182,7 +182,7 @@
                     {{-- Content --}}
                     <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
                         <h3 class="font-heading font-bold text-white text-lg leading-tight mb-0 group-hover:mb-3 transition-all duration-300">{{ $feature['title'] }}</h3>
-                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
                             <p class="font-body text-white/75 text-sm leading-relaxed">{{ $feature['body'] }}</p>
                         </div>
                     </div>
@@ -202,7 +202,7 @@
                             @endfor
                         </div>
                         <p class="font-heading font-bold text-white text-xl leading-tight mb-0 group-hover:mb-3 transition-all duration-300">Experience<br>4-stars</p>
-                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
                             <p class="font-body text-white/75 text-sm leading-relaxed">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
                         </div>
                     </div>
