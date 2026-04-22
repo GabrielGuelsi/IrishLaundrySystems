@@ -10,32 +10,66 @@
 @include('components.sector-tabs')
 
 <!-- 1. HERO -->
-<section class="relative min-h-[600px] lg:min-h-[680px] flex items-center overflow-hidden">
+<section class="relative min-h-[600px] lg:min-h-[680px] flex flex-col overflow-hidden">
     <!-- Background image -->
     <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry installation"
          class="absolute inset-0 w-full h-full object-cover object-right">
     <!-- Content -->
-    <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
-        <div class="max-w-3xl reveal reveal-left">
-            <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-8">
-                Hygiene control and<br>operational continuity<br>for healthcare laundry.
-            </h1>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#healthcare-assessment"
-                   class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                    Request Healthcare Assessment
-                </a>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-navy hover:border-navy/70 text-navy font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-navy/10">
-                    Talk to an Engineer
-                </a>
+    <div class="relative z-10 flex-1 flex items-center w-full">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+            <div class="max-w-3xl reveal reveal-left">
+                <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-8">
+                    Hygiene control and<br>operational continuity<br>for healthcare laundry.
+                </h1>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#healthcare-assessment"
+                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                        Request Healthcare Assessment
+                    </a>
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center justify-center gap-2 border-2 border-navy hover:border-navy/70 text-navy font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-navy/10">
+                        Talk to an Engineer
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+    <!-- Partner strip -->
+    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex items-center justify-between gap-6">
+            <div class="flex items-center gap-5">
+                <div class="flex-shrink-0">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
+                         alt="Electrolux Professional Authorized Partner"
+                         class="h-12 w-auto">
+                </div>
+                <div class="hidden sm:block border-l border-gray-300 pl-5">
+                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
+                </div>
+            </div>
+            <a href="{{ route('electrolux') }}"
+               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+                Learn more
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <!-- Trusted by strip -->
+    <div class="relative z-10 w-full bg-white border-t border-gray-100">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-3 flex flex-wrap items-center gap-10">
+            <p class="font-body text-[10px] text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
+            <div class="w-px h-4 bg-gray-200 flex-shrink-0 hidden sm:block"></div>
+            <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-7 object-contain opacity-60">
+        </div>
+    </div>
 </section>
-
-<!-- 2. PROOF BAR -->
-@include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
@@ -802,18 +836,6 @@
                     </div>
                     @endforeach
                 </div>
-            </div>
-        </div>
-
-        <!-- Trusted by logos -->
-        <div class="border-t border-gray-200 pt-8 reveal">
-            <div class="flex flex-wrap items-center gap-14 lg:gap-24">
-                <p class="font-body text-xs text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
-                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-16 object-contain">
-                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-16 object-contain">
-                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-16 object-contain">
-                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-16 object-contain">
-                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-16 object-contain">
             </div>
         </div>
 
