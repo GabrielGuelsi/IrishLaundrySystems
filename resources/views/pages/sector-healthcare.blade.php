@@ -541,14 +541,9 @@
             <!-- 2. Tumble Dryers — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
-                    <div class="relative mb-4">
-                        <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight">
-                            Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> healthcare cycles.
-                        </h3>
-                        <div class="absolute right-0 top-1/2 -translate-y-1/2">
-                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
+                    <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                        Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> healthcare cycles.
+                    </h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
                     </p>
@@ -566,10 +561,13 @@
                         This unique combination distinguishes them from all other dryers on the market.</p>
                     </div>
                 </div>
-                <div class="flex justify-center order-1 lg:order-2">
+                <div class="relative flex justify-center order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-16 h-16 object-contain">
+                    </div>
                 </div>
             </div>
 
