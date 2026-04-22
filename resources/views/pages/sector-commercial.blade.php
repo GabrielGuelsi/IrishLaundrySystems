@@ -106,35 +106,190 @@
     </div>
 </section>
 
-<!-- FROM ROOM REVIEW -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <!-- Left: title + subtitle -->
-                <div class="lg:col-span-1">
-                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From room review to the right next step</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial laundry rooms work better when the equipment path and support model are aligned from the start.</p>
+<!-- FROM ROOM REVIEW — Scroll-pinned with changing images -->
+<style>
+.comm-scroll-section { position: relative; overflow: hidden; }
+.comm-scroll-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 75vh;
+    min-height: 480px;
+    max-height: 720px;
+    width: 100%;
+    overflow: hidden;
+}
+.comm-scroll-card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.comm-scroll-img {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+.comm-scroll-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.comm-scroll-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(1,30,65,0.9) 0%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.2) 100%);
+}
+.comm-scroll-title {
+    position: relative;
+    z-index: 20;
+    width: 40%;
+    flex-shrink: 0;
+}
+.comm-scroll-cards-wrap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.comm-card-inner {
+    width: 40%;
+    max-width: 440px;
+    margin-right: 5%;
+    background: rgba(248, 249, 251, 0.97);
+    border-radius: 1.25rem;
+    padding: 2rem 2.25rem;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+}
+@media (max-width: 1024px) {
+    .comm-scroll-title { display: none; }
+    .comm-card-inner { width: 88%; max-width: none; margin: 0 auto; }
+    .comm-scroll-card { justify-content: center; }
+}
+</style>
+
+<section class="comm-scroll-section">
+    <div class="comm-scroll-inner" id="comm-scroll-inner">
+
+        {{-- Fixed left title (sits above the stacked cards) --}}
+        <div class="comm-scroll-title" style="position:relative;z-index:20;padding-left:max(5%,calc((100vw - 1536px)/2 + 5rem));">
+            <h2 class="font-heading font-bold text-white leading-tight mb-3" style="font-size:clamp(1.5rem,2.6vw,2.4rem);">
+                From room review to the right next step
+            </h2>
+            <p class="font-body text-white/60 text-sm leading-relaxed">
+                Commercial laundry rooms work better when the equipment path and support model are aligned from the start.
+            </p>
+        </div>
+
+        {{-- Stacked cards with individual backgrounds --}}
+        <div class="comm-scroll-cards-wrap">
+
+            {{-- Card 1 — about-equipment.jpg --}}
+            <div class="comm-scroll-card">
+                <div class="comm-scroll-img">
+                    <img src="/images/about/about-equipment.jpg" alt="Commercial laundry equipment">
                 </div>
-                <!-- Right: 4 steps -->
-                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    @foreach([
-                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
-                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
-                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
-                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
-                    ] as $step)
-                    <div class="bg-[#eaeff5] rounded-xl p-6">
-                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
-                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
-                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
-                    </div>
-                    @endforeach
+                <div class="comm-card-inner">
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">01</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Assess the room</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Review flow, hygiene handling, throughput pressure, and the practical layout of the room.</p>
                 </div>
             </div>
+
+            {{-- Card 2 — plant-room.jpg --}}
+            <div class="comm-scroll-card">
+                <div class="comm-scroll-img">
+                    <img src="/images/healthcare/plant-room.jpg" alt="Plant room">
+                </div>
+                <div class="comm-card-inner">
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">02</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Match the equipment</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Match the room logic to the right barrier, washing, drying, and finishing route.</p>
+                </div>
+            </div>
+
+            {{-- Card 3 — about-engineers.jpg --}}
+            <div class="comm-scroll-card">
+                <div class="comm-scroll-img">
+                    <img src="/images/about/about-engineers.jpg" alt="Engineers">
+                </div>
+                <div class="comm-card-inner">
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">03</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Keep support close</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Keep the installed base connected to service contracts, repairs, and aftercare.</p>
+                </div>
+            </div>
+
+            {{-- Card 4 — workflow.jpg --}}
+            <div class="comm-scroll-card">
+                <div class="comm-scroll-img">
+                    <img src="/images/healthcare/workflow.jpg" alt="Laundry workflow">
+                </div>
+                <div class="comm-card-inner">
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">04</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Move to assessment</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Turn the room, the equipment path, and the support model into one practical next step.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
+<script>
+(function () {
+    function initCommScroll() {
+        if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+        gsap.registerPlugin(ScrollTrigger);
+        var inner = document.getElementById('comm-scroll-inner');
+        if (!inner) return;
+        var cards = inner.querySelectorAll('.comm-card-inner');
+        var imgs  = inner.querySelectorAll('.comm-scroll-img');
+
+        // Initial state: card 1 + img 1 visible, rest hidden
+        for (var i = 1; i < cards.length; i++) {
+            gsap.set(cards[i], { opacity: 0, y: 60 });
+            gsap.set(imgs[i],  { opacity: 0 });
+        }
+
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: inner,
+                pin: true,
+                scrub: 0.4,
+                start: 'center center',
+                end: 'top+=3000 center',
+                anticipatePin: 1,
+            }
+        });
+
+        // Card 1 → 2 (image + card swap)
+        tl.to(cards[0], { opacity: 0, y: -60, duration: 0.5 }, 0)
+          .to(imgs[0],   { opacity: 0,         duration: 0.8 }, 0)
+          .to(imgs[1],   { opacity: 1,         duration: 0.8 }, 0)
+          .to(cards[1],  { opacity: 1, y: 0,   duration: 0.5 }, 0.4)
+        // Card 2 → 3
+          .to(cards[1], { opacity: 0, y: -60, duration: 0.5 }, 1.4)
+          .to(imgs[1],  { opacity: 0,         duration: 0.8 }, 1.4)
+          .to(imgs[2],  { opacity: 1,         duration: 0.8 }, 1.4)
+          .to(cards[2], { opacity: 1, y: 0,   duration: 0.5 }, 1.8)
+        // Card 3 → 4
+          .to(cards[2], { opacity: 0, y: -60, duration: 0.5 }, 2.8)
+          .to(imgs[2],  { opacity: 0,         duration: 0.8 }, 2.8)
+          .to(imgs[3],  { opacity: 1,         duration: 0.8 }, 2.8)
+          .to(cards[3], { opacity: 1, y: 0,   duration: 0.5 }, 3.2);
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCommScroll);
+    } else {
+        initCommScroll();
+    }
+})();
+</script>
 
 <!-- KEEP THE SUPPORT MATCHED -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">

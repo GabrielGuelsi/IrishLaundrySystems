@@ -112,9 +112,9 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 100vh;
-    min-height: 560px;
-    max-height: 860px;
+    height: 75vh;
+    min-height: 480px;
+    max-height: 720px;
     width: 100%;
     overflow: hidden;
 }
@@ -157,34 +157,48 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 5%;
+}
+.hosp-scroll-card-img {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+.hosp-scroll-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.hosp-scroll-card-img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(1,30,65,0.9) 0%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.2) 100%);
 }
 .hosp-scroll-card-inner {
-    width: 42%;
-    max-width: 480px;
+    position: relative;
+    z-index: 2;
+    width: 40%;
+    max-width: 440px;
+    margin-right: 5%;
     background: rgba(248, 249, 251, 0.97);
     border-radius: 1.25rem;
-    padding: 2.5rem;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+    padding: 2rem 2.25rem;
+    box-shadow: 0 16px 48px rgba(0,0,0,0.22);
 }
 @media (max-width: 1024px) {
     .hosp-scroll-title { display: none; }
-    .hosp-scroll-card-inner { width: 88%; max-width: none; }
-    .hosp-scroll-card { padding-right: 0; justify-content: center; }
+    .hosp-scroll-card-inner { width: 88%; max-width: none; margin: 0 auto; }
+    .hosp-scroll-card { justify-content: center; }
 }
 </style>
 
 <section class="hosp-scroll-section">
     <div class="hosp-scroll-inner" id="hosp-scroll-inner">
 
-        {{-- Background image --}}
-        <div class="hosp-scroll-bg">
-            <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry">
-        </div>
-
         {{-- Left: fixed title --}}
-        <div class="hosp-scroll-title" style="padding-left: max(5%, calc((100vw - 1536px)/2 + 5rem));">
-            <h2 class="font-heading font-bold text-white leading-tight mb-4" style="font-size: clamp(1.75rem, 3vw, 2.75rem);">
+        <div class="hosp-scroll-title" style="position:relative;z-index:20;padding-left:max(5%,calc((100vw - 1536px)/2 + 5rem));">
+            <h2 class="font-heading font-bold text-white leading-tight mb-3" style="font-size:clamp(1.5rem,2.6vw,2.4rem);">
                 From room review to the right next step
             </h2>
             <p class="font-body text-white/60 text-sm leading-relaxed">
@@ -192,42 +206,54 @@
             </p>
         </div>
 
-        {{-- Stacked cards --}}
+        {{-- Stacked cards with individual backgrounds --}}
         <div class="hosp-scroll-cards">
 
-            {{-- Card 1 --}}
+            {{-- Card 1 — HeroHospitallity --}}
             <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-img">
+                    <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry">
+                </div>
                 <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">01</span>
-                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Assess the room</h3>
-                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Review flow, hygiene handling, throughput pressure, and the practical layout of the room.</p>
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">01</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Assess the room</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Review flow, hygiene handling, throughput pressure, and the practical layout of the room.</p>
                 </div>
             </div>
 
-            {{-- Card 2 --}}
+            {{-- Card 2 — about-equipment --}}
             <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-img">
+                    <img src="/images/about/about-equipment.jpg" alt="Laundry equipment">
+                </div>
                 <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">02</span>
-                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Match the equipment</h3>
-                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Match the room logic to the right barrier, washing, drying, and finishing route.</p>
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">02</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Match the equipment</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Match the room logic to the right barrier, washing, drying, and finishing route.</p>
                 </div>
             </div>
 
-            {{-- Card 3 --}}
+            {{-- Card 3 — about-engineers --}}
             <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-img">
+                    <img src="/images/about/about-engineers.jpg" alt="Engineers">
+                </div>
                 <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">03</span>
-                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Keep support close</h3>
-                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Keep the installed base connected to service contracts, repairs, and aftercare.</p>
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">03</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Keep support close</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Keep the installed base connected to service contracts, repairs, and aftercare.</p>
                 </div>
             </div>
 
-            {{-- Card 4 --}}
+            {{-- Card 4 — workflow --}}
             <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-img">
+                    <img src="/images/healthcare/workflow.jpg" alt="Laundry workflow">
+                </div>
                 <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">04</span>
-                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Move to assessment</h3>
-                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Turn the room, the equipment path, and the support model into one practical next step.</p>
+                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">04</span>
+                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Move to assessment</h3>
+                    <p class="font-body text-gray-500 leading-relaxed text-sm">Turn the room, the equipment path, and the support model into one practical next step.</p>
                 </div>
             </div>
 
@@ -243,11 +269,13 @@
         var inner = document.getElementById('hosp-scroll-inner');
         if (!inner) return;
         var cards = inner.querySelectorAll('.hosp-scroll-card-inner');
+        var imgs  = inner.querySelectorAll('.hosp-scroll-card-img');
         if (cards.length < 2) return;
 
-        // Initial state: only card 1 visible
+        // Initial state: only card 1 + img 1 visible
         for (var i = 1; i < cards.length; i++) {
-            gsap.set(cards[i], { opacity: 0, y: 80 });
+            gsap.set(cards[i], { opacity: 0, y: 60 });
+            gsap.set(imgs[i],  { opacity: 0 });
         }
 
         var tl = gsap.timeline({
@@ -256,20 +284,26 @@
                 pin: true,
                 scrub: 0.4,
                 start: 'center center',
-                end: 'top+=2800 center',
+                end: 'top+=3000 center',
                 anticipatePin: 1,
             }
         });
 
         // Card 1 → 2
-        tl.to(cards[0], { opacity: 0, y: -80, duration: 0.5 }, 0)
-          .to(cards[1], { opacity: 1, y: 0,   duration: 0.5 }, 0.25)
+        tl.to(cards[0], { opacity: 0, y: -60, duration: 0.5 }, 0)
+          .to(imgs[0],   { opacity: 0,         duration: 0.8 }, 0)
+          .to(imgs[1],   { opacity: 1,         duration: 0.8 }, 0)
+          .to(cards[1],  { opacity: 1, y: 0,   duration: 0.5 }, 0.4)
         // Card 2 → 3
-          .to(cards[1], { opacity: 0, y: -80, duration: 0.5 }, 1.25)
-          .to(cards[2], { opacity: 1, y: 0,   duration: 0.5 }, 1.5)
+          .to(cards[1], { opacity: 0, y: -60, duration: 0.5 }, 1.4)
+          .to(imgs[1],  { opacity: 0,         duration: 0.8 }, 1.4)
+          .to(imgs[2],  { opacity: 1,         duration: 0.8 }, 1.4)
+          .to(cards[2], { opacity: 1, y: 0,   duration: 0.5 }, 1.8)
         // Card 3 → 4
-          .to(cards[2], { opacity: 0, y: -80, duration: 0.5 }, 2.5)
-          .to(cards[3], { opacity: 1, y: 0,   duration: 0.5 }, 2.75);
+          .to(cards[2], { opacity: 0, y: -60, duration: 0.5 }, 2.8)
+          .to(imgs[2],  { opacity: 0,         duration: 0.8 }, 2.8)
+          .to(imgs[3],  { opacity: 1,         duration: 0.8 }, 2.8)
+          .to(cards[3], { opacity: 1, y: 0,   duration: 0.5 }, 3.2);
     }
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', initHospScroll);
