@@ -170,23 +170,23 @@
                     ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
                     ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                 ] as $feature)
-                <div class="bg-white border border-gray-200 rounded-2xl p-6 flex flex-col gap-4">
-                    <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-20 h-20 object-contain">
-                    <h3 class="font-heading font-bold text-navy text-lg leading-tight">{{ $feature['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                <div class="group bg-white border border-gray-200 hover:bg-navy hover:border-navy hover:shadow-xl rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 cursor-default">
+                    <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-20 h-20 object-contain transition-all duration-300 group-hover:[filter:brightness(0)_invert(1)]">
+                    <h3 class="font-heading font-bold text-navy group-hover:text-white text-lg leading-tight transition-colors duration-300">{{ $feature['title'] }}</h3>
+                    <p class="font-body text-sm leading-relaxed transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-white/80">{{ $feature['body'] }}</p>
                 </div>
                 @endforeach
 
                 {{-- 4th card: ERGOCERT 4-star --}}
-                <div class="bg-navy rounded-2xl p-6 flex flex-col">
+                <div class="group bg-navy hover:bg-[#148af4] rounded-2xl p-6 flex flex-col transition-all duration-300 cursor-default hover:shadow-xl">
                     <div class="flex gap-1 mb-3">
                         @for($s = 0; $s < 4; $s++)
-                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg class="w-5 h-5 text-[#148af4] group-hover:text-white transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         @endfor
                     </div>
                     <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
-                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
-                    <p class="font-body text-[#148af4] text-xs leading-relaxed">Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.</p>
+                    <p class="font-body text-gray-300 group-hover:text-white text-sm leading-relaxed mb-2 transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
+                    <p class="font-body text-white/70 text-xs leading-relaxed transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0">Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.</p>
                 </div>
             </div>
 
