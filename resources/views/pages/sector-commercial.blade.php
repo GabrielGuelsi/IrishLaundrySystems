@@ -35,32 +35,33 @@
             </div>
         </div>
     </div>
-    <!-- Combined partner + trusted by strip -->
-    <div class="relative z-10 w-full bg-white border-t border-white/20">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex items-center gap-6">
-            {{-- Electrolux logo --}}
-            <div class="flex-shrink-0">
-                <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg" alt="Electrolux Professional Authorized Partner" class="h-12 w-auto">
+    <!-- Partner strip -->
+    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex items-center justify-between gap-6">
+            <div class="flex items-center gap-5">
+                <div class="flex-shrink-0">
+                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg" alt="Electrolux Professional Authorized Partner" class="h-12 w-auto">
+                </div>
+                <div class="hidden sm:block border-l border-gray-300 pl-5">
+                    <p class="font-body text-sm text-gray-700">Authorised Electrolux Professional Partner — Engineering-led commercial laundry since 1987</p>
+                </div>
             </div>
-            {{-- Divider + partner text --}}
-            <div class="hidden sm:flex items-center gap-4 border-l border-gray-200 pl-5 flex-shrink-0">
-                <p class="font-body text-xs text-gray-600">Authorised Electrolux Professional Partner</p>
-            </div>
-            {{-- Divider + Trusted by logos --}}
-            <div class="hidden lg:flex items-center gap-6 border-l border-gray-200 pl-5 flex-1">
-                <p class="font-body text-[10px] text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
-                <div class="w-px h-4 bg-gray-200 flex-shrink-0"></div>
-                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-7 object-contain opacity-60">
-                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-7 object-contain opacity-60">
-                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-7 object-contain opacity-60">
-                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-7 object-contain opacity-60">
-                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-7 object-contain opacity-60">
-            </div>
-            {{-- Learn more link --}}
-            <a href="{{ route('electrolux') }}" class="flex-shrink-0 ml-auto text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+            <a href="{{ route('electrolux') }}" class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
                 Learn about our partnership
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
             </a>
+        </div>
+    </div>
+    <!-- Trusted by strip -->
+    <div class="relative z-10 w-full bg-white border-t border-gray-100">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-3 flex flex-wrap items-center gap-10">
+            <p class="font-body text-[10px] text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
+            <div class="w-px h-4 bg-gray-200 flex-shrink-0 hidden sm:block"></div>
+            <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-7 object-contain opacity-60">
         </div>
     </div>
 </section>
