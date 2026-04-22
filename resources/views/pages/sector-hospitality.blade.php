@@ -105,35 +105,179 @@
     </div>
 </section>
 
-<!-- FROM ROOM REVIEW -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <!-- Left: title + subtitle -->
-                <div class="lg:col-span-1">
-                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From room review to the right next step</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Hospitality laundry rooms work better when the equipment path and support model are aligned from the start.</p>
-                </div>
-                <!-- Right: 4 steps -->
-                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    @foreach([
-                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
-                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
-                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
-                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
-                    ] as $step)
-                    <div class="bg-[#eaeff5] rounded-xl p-6">
-                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
-                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
-                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
-                    </div>
-                    @endforeach
+<!-- FROM ROOM REVIEW — Scroll-pinned Hajster-style -->
+<style>
+.hosp-scroll-section { position: relative; overflow: hidden; }
+.hosp-scroll-inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    min-height: 560px;
+    max-height: 860px;
+    width: 100%;
+    overflow: hidden;
+}
+.hosp-scroll-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.hosp-scroll-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+.hosp-scroll-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.55) 50%, rgba(1,30,65,0.25) 100%);
+}
+.hosp-scroll-title {
+    position: relative;
+    z-index: 20;
+    width: 42%;
+    flex-shrink: 0;
+    padding: 3rem 4rem 3rem 0;
+}
+.hosp-scroll-cards {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+.hosp-scroll-card {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+.hosp-scroll-card-inner {
+    width: 42%;
+    max-width: 480px;
+    background: rgba(248, 249, 251, 0.97);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
+@media (max-width: 1024px) {
+    .hosp-scroll-title { display: none; }
+    .hosp-scroll-card-inner { width: 88%; max-width: none; }
+    .hosp-scroll-card { padding-right: 0; justify-content: center; }
+}
+</style>
+
+<section class="hosp-scroll-section">
+    <div class="hosp-scroll-inner" id="hosp-scroll-inner">
+
+        {{-- Background image --}}
+        <div class="hosp-scroll-bg">
+            <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry">
+        </div>
+
+        {{-- Left: fixed title --}}
+        <div class="hosp-scroll-title" style="padding-left: max(5%, calc((100vw - 1536px)/2 + 5rem));">
+            <h2 class="font-heading font-bold text-white leading-tight mb-4" style="font-size: clamp(1.75rem, 3vw, 2.75rem);">
+                From room review to the right next step
+            </h2>
+            <p class="font-body text-white/60 text-sm leading-relaxed">
+                Hospitality laundry rooms work better when the equipment path and support model are aligned from the start.
+            </p>
+        </div>
+
+        {{-- Stacked cards --}}
+        <div class="hosp-scroll-cards">
+
+            {{-- Card 1 --}}
+            <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-inner">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">01</span>
+                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Assess the room</h3>
+                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Review flow, hygiene handling, throughput pressure, and the practical layout of the room.</p>
                 </div>
             </div>
+
+            {{-- Card 2 --}}
+            <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-inner">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">02</span>
+                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Match the equipment</h3>
+                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Match the room logic to the right barrier, washing, drying, and finishing route.</p>
+                </div>
+            </div>
+
+            {{-- Card 3 --}}
+            <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-inner">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">03</span>
+                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Keep support close</h3>
+                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Keep the installed base connected to service contracts, repairs, and aftercare.</p>
+                </div>
+            </div>
+
+            {{-- Card 4 --}}
+            <div class="hosp-scroll-card">
+                <div class="hosp-scroll-card-inner">
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-navy text-white font-heading font-bold text-sm mb-5">04</span>
+                    <h3 class="font-heading font-bold text-navy mb-3" style="font-size:1.6rem; line-height:1.2;">Move to assessment</h3>
+                    <p class="font-body text-gray-500 leading-relaxed" style="font-size:0.95rem;">Turn the room, the equipment path, and the support model into one practical next step.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
+
+<script>
+(function () {
+    function initHospScroll() {
+        if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+        gsap.registerPlugin(ScrollTrigger);
+        var inner = document.getElementById('hosp-scroll-inner');
+        if (!inner) return;
+        var cards = inner.querySelectorAll('.hosp-scroll-card-inner');
+        if (cards.length < 2) return;
+
+        // Initial state: only card 1 visible
+        for (var i = 1; i < cards.length; i++) {
+            gsap.set(cards[i], { opacity: 0, y: 80 });
+        }
+
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: inner,
+                pin: true,
+                scrub: 0.4,
+                start: 'center center',
+                end: 'top+=2800 center',
+                anticipatePin: 1,
+            }
+        });
+
+        // Card 1 → 2
+        tl.to(cards[0], { opacity: 0, y: -80, duration: 0.5 }, 0)
+          .to(cards[1], { opacity: 1, y: 0,   duration: 0.5 }, 0.25)
+        // Card 2 → 3
+          .to(cards[1], { opacity: 0, y: -80, duration: 0.5 }, 1.25)
+          .to(cards[2], { opacity: 1, y: 0,   duration: 0.5 }, 1.5)
+        // Card 3 → 4
+          .to(cards[2], { opacity: 0, y: -80, duration: 0.5 }, 2.5)
+          .to(cards[3], { opacity: 1, y: 0,   duration: 0.5 }, 2.75);
+    }
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initHospScroll);
+    } else {
+        initHospScroll();
+    }
+})();
+</script>
 
 <!-- KEEP THE SUPPORT MATCHED -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
