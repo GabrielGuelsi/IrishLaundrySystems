@@ -234,63 +234,48 @@
 
 
         {{-- ② Increasingly secure doors --}}
-        <div class="py-14 lg:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-end">
-                <div class="reveal reveal-left">
-                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">Increasingly secure doors for greater productivity</h2>
-                    <p class="font-body font-semibold text-navy text-base mb-4">Easiest and fastest unloading in the industry thanks to:</p>
-                    <ul class="space-y-3 mb-6">
+        <div class="py-10 lg:py-14 border-t border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center reveal">
+                <div>
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">Increasingly secure doors for greater productivity</h2>
+                    <ul class="space-y-2 mb-6">
                         @foreach([
-                            'Automatic drum positioning',
-                            'Automatic outer doors locking and unlocking',
-                            'Large door openings',
-                            'Easy to handle inner drum doors',
-                            'The drum is separated in 2 parts to split the load and to allow an easier and ergonomic unloading thanks to the gravity force',
-                            'Maximum ergonomics guaranteed thanks to our innovative opening mechanism that preopens the inner-drum doors automatically at the end of the wash cycle',
+                            'Automatic drum positioning and outer door locking',
+                            'Large door openings for easy inner drum handling',
+                            'Auto inner-drum door pre-opening at end of wash cycle',
                         ] as $point)
-                        <li class="flex items-start gap-2 font-body text-gray-600 text-base leading-relaxed">
-                            <span class="mt-2 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-navy"></span>{{ $point }}
+                        <li class="flex items-start gap-2 font-body text-gray-600 text-sm leading-relaxed">
+                            <span class="mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>{{ $point }}
                         </li>
                         @endforeach
                     </ul>
-                    <div class="inline-flex items-center gap-4">
-                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="Auto Inner Door Opening" class="w-32 h-32 object-contain">
-                        <p class="font-heading font-bold text-navy text-lg leading-tight">Auto Inner<br>Door Opening</p>
+                    <div class="inline-flex items-center gap-3">
+                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-14 h-14 object-contain">
+                        <p class="font-heading font-bold text-navy text-sm leading-tight">Auto Inner<br>Door Opening</p>
                     </div>
                 </div>
-                <div class="reveal reveal-right">
-                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="Ergonomics certified washer drum" class="w-3/4 mx-auto object-contain rounded-2xl">
+                <div>
+                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="Ergonomics certified washer drum" class="w-full object-contain rounded-2xl">
                 </div>
             </div>
         </div>
 
-
-
         {{-- ③ Total safety with excellent results --}}
-        <div class="py-14 lg:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-5 rounded-2xl overflow-hidden reveal">
-
-                <!-- Left: illustration small -->
-                <div class="lg:col-span-2 bg-white flex items-center justify-center">
+        <div class="py-10 lg:py-14 border-t border-gray-100">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center reveal">
+                <div class="flex items-center justify-center">
                     <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                          alt="No bacteria gets through the barrier"
-                         class="w-full h-full object-contain">
+                         class="w-full max-w-sm object-contain">
                 </div>
-
-                <!-- Right: text big -->
-                <div class="lg:col-span-3 bg-white px-12 py-14 flex flex-col justify-center">
-                    <div class="inline-flex items-center gap-4 mb-8 self-start">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-32 h-32 object-contain">
-                        <span class="font-heading font-bold text-navy text-xl">Hygiene Watchdog</span>
+                <div>
+                    <div class="inline-flex items-center gap-3 mb-5">
+                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-16 h-16 object-contain">
+                        <span class="font-heading font-bold text-navy text-lg">Hygiene Watchdog</span>
                     </div>
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                        Total safety with excellent results
-                    </h3>
-                    <p class="font-body font-bold text-navy text-base mb-3">Your Hygiene Partner</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed mb-4">The Hygiene Watchdog (HW) ensures full cycle completion so that all laundry is fully washed and thoroughly decontaminated.</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">This guarantees maximum defense against the spread of microorganisms and cross infections.</p>
+                    <h3 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">Total safety with excellent results</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">The Hygiene Watchdog ensures full cycle completion so that all laundry is fully washed and thoroughly decontaminated — the maximum defence against the spread of microorganisms and cross infections.</p>
                 </div>
-
             </div>
         </div>
 
