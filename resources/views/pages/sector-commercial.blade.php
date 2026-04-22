@@ -52,6 +52,18 @@
             </a>
         </div>
     </div>
+    <!-- Trusted by strip -->
+    <div class="relative z-10 w-full bg-white border-t border-gray-100">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-3 flex flex-wrap items-center gap-10">
+            <p class="font-body text-[10px] text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
+            <div class="w-px h-4 bg-gray-200 flex-shrink-0 hidden sm:block"></div>
+            <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-7 object-contain opacity-60">
+            <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-7 object-contain opacity-60">
+        </div>
+    </div>
 </section>
 
 <!-- 2. PROOF BAR -->
@@ -739,18 +751,6 @@
                     </div>
                     @endforeach
                 </div>
-            </div>
-        </div>
-
-        <!-- Trusted by logos -->
-        <div class="border-t border-gray-200 pt-8 reveal">
-            <div class="flex flex-wrap items-center gap-14 lg:gap-24">
-                <p class="font-body text-xs text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
-                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-16 object-contain">
-                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-16 object-contain">
-                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-16 object-contain">
-                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-16 object-contain">
-                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-16 object-contain">
             </div>
         </div>
 
