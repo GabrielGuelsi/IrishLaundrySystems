@@ -408,10 +408,12 @@
             <!-- 1. Barrier Washers — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
                 <div class="text-center">
-                    <div class="flex items-center justify-center gap-3 mb-4">
+                    <div class="flex items-center justify-between mb-4">
                         <h3 class="font-heading text-navy text-3xl lg:text-4xl">Barrier <strong>washers</strong></h3>
-                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-12 h-12 object-contain flex-shrink-0">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-12 h-12 object-contain flex-shrink-0">
+                        <div class="flex items-center gap-2 flex-shrink-0">
+                            <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-12 h-12 object-contain">
+                            <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-12 h-12 object-contain">
+                        </div>
                     </div>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Barrier washers sit at the centre of healthcare rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
@@ -539,11 +541,11 @@
             <!-- 2. Tumble Dryers — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
-                    <div class="flex items-center gap-3 mb-4">
+                    <div class="flex items-center justify-between mb-4">
                         <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight">
                             Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> healthcare cycles.
                         </h3>
-                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-12 h-12 object-contain flex-shrink-0">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-12 h-12 object-contain flex-shrink-0 ml-4">
                     </div>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
@@ -614,10 +616,12 @@
                          class="w-full h-80 object-contain">
                 </div>
                 <div class="text-center">
-                    <div class="flex items-center justify-center gap-3 mb-6">
+                    <div class="flex items-center justify-between mb-6">
                         <h3 class="font-heading text-navy text-3xl lg:text-4xl">Ironers</h3>
-                        <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-12 h-12 object-contain flex-shrink-0">
-                        <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-12 h-12 object-contain flex-shrink-0">
+                        <div class="flex items-center gap-2 flex-shrink-0">
+                            <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-12 h-12 object-contain">
+                            <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-12 h-12 object-contain">
+                        </div>
                     </div>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Deliver perfectly ironed linen to the highest hygiene standards
