@@ -72,17 +72,25 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center reveal">
+        <!-- Title -->
+        <div class="mb-10 reveal">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
+                Built around how <strong>healthcare laundry rooms</strong> actually operate
+            </h2>
+        </div>
 
-            <!-- Left: Title -->
-            <div>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                    Built around how <strong>healthcare laundry rooms</strong> actually operate
-                </h2>
+        <!-- Image + Navy card overlay -->
+        <div class="relative reveal">
+
+            <!-- Image -->
+            <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
+                <img src="/images/healthcare/workflow.jpg"
+                     alt="Healthcare laundry room"
+                     class="w-full h-[580px] object-cover object-center">
             </div>
 
-            <!-- Right: Navy card -->
-            <div class="bg-navy rounded-2xl p-8 shadow-xl">
+            <!-- Navy card overlapping left -->
+            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[420px] bg-navy rounded-2xl p-8 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-2xl leading-snug mb-4">
                     Healthcare laundry needs a <strong>working route</strong>, not isolated process steps
                 </h3>
