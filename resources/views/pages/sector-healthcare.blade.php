@@ -254,8 +254,8 @@
                         <p class="font-heading font-bold text-navy text-sm leading-tight">Auto Inner<br>Door Opening</p>
                     </div>
                 </div>
-                <div>
-                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="Ergonomics certified washer drum" class="w-full object-contain rounded-2xl">
+                <div class="flex justify-center">
+                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="Ergonomics certified washer drum" class="w-1/2 object-contain rounded-2xl">
                 </div>
             </div>
         </div>
@@ -266,7 +266,7 @@
                 <div class="flex items-center justify-center">
                     <img src="/images/healthcare/illustration-barrier-washers-1.webp"
                          alt="No bacteria gets through the barrier"
-                         class="w-full max-w-sm object-contain">
+                         class="w-2/3 max-w-xs object-contain">
                 </div>
                 <div>
                     <div class="inline-flex items-center gap-3 mb-5">
