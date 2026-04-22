@@ -99,9 +99,6 @@
     </div>
 </section>
 
-<!-- 2. PROOF BAR -->
-@include('components.proof-bar')
-
 <!-- FROM ROOM REVIEW -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
