@@ -163,29 +163,49 @@
                 Enhanced usability, superior safety
             </h2>
 
-            {{-- 4-card horizontal grid --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+            {{-- 4-card horizontal grid — homepage card style --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
                 @foreach([
                     ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in healthcare applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
                     ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
                     ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                 ] as $feature)
-                <div class="group bg-white border border-gray-200 hover:bg-navy hover:border-navy hover:shadow-xl rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 cursor-default">
-                    <img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-20 h-20 object-contain transition-all duration-300 group-hover:[filter:brightness(0)_invert(1)]">
-                    <h3 class="font-heading font-bold text-navy group-hover:text-white text-lg leading-tight transition-colors duration-300">{{ $feature['title'] }}</h3>
-                    <p class="font-body text-sm leading-relaxed transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-white/80">{{ $feature['body'] }}</p>
+                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
+                    {{-- Icon faded in background --}}
+                    <img src="{{ $feature['icon'] }}" alt="" class="absolute inset-0 w-full h-full object-contain p-10 opacity-10 transition-transform duration-700 group-hover:scale-110">
+                    {{-- Default gradient overlay --}}
+                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
+                    {{-- Hover solid overlay --}}
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         style="background: rgba(1,30,65,0.92);"></div>
+                    {{-- Content --}}
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
+                        <h3 class="font-heading font-bold text-white text-lg leading-tight mb-0 group-hover:mb-3 transition-all duration-300">{{ $feature['title'] }}</h3>
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                            <p class="font-body text-white/75 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                        </div>
+                    </div>
                 </div>
                 @endforeach
 
-                {{-- 4th card: ERGOCERT 4-star --}}
-                <div class="group bg-white border border-gray-200 hover:bg-navy hover:border-navy hover:shadow-xl rounded-2xl p-6 flex flex-col gap-4 transition-all duration-300 cursor-default">
-                    <div class="flex gap-1">
-                        @for($s = 0; $s < 4; $s++)
-                        <svg class="w-5 h-5 text-[#148af4] transition-colors duration-300" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        @endfor
+                {{-- 4th card: ERGOCERT --}}
+                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
+                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         style="background: rgba(1,30,65,0.92);"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
+                        <div class="flex gap-1 mb-2">
+                            @for($s = 0; $s < 4; $s++)
+                            <svg class="w-4 h-4 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            @endfor
+                        </div>
+                        <p class="font-heading font-bold text-white text-xl leading-tight mb-0 group-hover:mb-3 transition-all duration-300">Experience<br>4-stars</p>
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                            <p class="font-body text-white/75 text-sm leading-relaxed">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
+                        </div>
                     </div>
-                    <p class="font-heading font-bold text-navy group-hover:text-white text-xl leading-tight transition-colors duration-300">Experience<br>4-stars</p>
-                    <p class="font-body text-sm leading-relaxed transition-all duration-300 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-hover:text-white/80">Our entire Line 6000 range has earned the prestigious <strong>4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
                 </div>
             </div>
 
