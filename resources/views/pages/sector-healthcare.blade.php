@@ -289,38 +289,22 @@
 
 
         {{-- ④ Usability matters --}}
-        <div class="py-14 lg:py-20">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                <div class="reveal reveal-left">
-                    <img src="/images/healthcare/femalelaundryoperator.png" alt="Healthcare laundry operator" class="w-full rounded-2xl object-cover shadow-lg aspect-[4/3]">
+        <div class="py-14 lg:py-20 reveal">
+            <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGONOMICS / USABILITY</p>
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">Usability matters when healthcare teams repeat the same handling tasks every day</h2>
+            <p class="font-body text-gray-500 text-sm leading-relaxed mb-8 max-w-2xl">The right equipment supports your operators as well as the hygiene outcome — every shift, every day.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                <div class="bg-[#eaeff5] rounded-2xl p-6">
+                    <p class="font-heading font-bold text-navy text-base mb-2">Door &amp; access logic</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Wide openings and clear loading positions reduce strain.</p>
                 </div>
-                <div class="reveal reveal-right">
-                    <p class="font-body text-xs font-bold uppercase tracking-widest text-[#148af4] mb-3">ERGONOMICS / USABILITY</p>
-                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-6">Usability matters when healthcare teams repeat the same handling tasks every day</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">The right equipment supports your operators as well as the hygiene outcome — every shift, every day.</p>
-                    <ul class="space-y-5">
-                        <li class="flex items-start gap-3">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                            <div>
-                                <p class="font-heading font-bold text-navy text-base mb-1">Door & access logic</p>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Wide openings and clear loading positions reduce strain.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                            <div>
-                                <p class="font-heading font-bold text-navy text-base mb-1">Control visibility</p>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Readable controls across the full working day.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="mt-2 w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                            <div>
-                                <p class="font-heading font-bold text-navy text-base mb-1">Room-aware specification</p>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment matched to your room, not a generic setup.</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="bg-[#eaeff5] rounded-2xl p-6">
+                    <p class="font-heading font-bold text-navy text-base mb-2">Control visibility</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Readable controls across the full working day.</p>
+                </div>
+                <div class="bg-[#eaeff5] rounded-2xl p-6">
+                    <p class="font-heading font-bold text-navy text-base mb-2">Room-aware specification</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment matched to your room, not a generic setup.</p>
                 </div>
             </div>
         </div>
