@@ -408,13 +408,7 @@
             <!-- 1. Barrier Washers — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
                 <div class="text-center">
-                    <div class="relative mb-4">
-                        <h3 class="font-heading text-navy text-3xl lg:text-4xl text-center">Barrier <strong>washers</strong></h3>
-                        <div class="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                            <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-12 h-12 object-contain">
-                            <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-12 h-12 object-contain">
-                        </div>
-                    </div>
+                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Barrier washers sit at the centre of healthcare rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
                     </p>
@@ -427,10 +421,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center">
+                <div class="relative flex justify-center">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4 flex items-center gap-2">
+                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-14 h-14 object-contain">
+                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-14 h-14 object-contain">
+                    </div>
                 </div>
             </div>
 
