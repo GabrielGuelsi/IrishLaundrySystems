@@ -12,7 +12,7 @@
 <!-- 1. HERO -->
 <section class="relative min-h-[600px] lg:min-h-[680px] flex items-center overflow-hidden">
     <!-- Background image -->
-    <img src="/images/hospitallity/HeroHospitallity.png" alt="Hospitality laundry installation"
+    <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry installation"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <!-- Content -->
     <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
