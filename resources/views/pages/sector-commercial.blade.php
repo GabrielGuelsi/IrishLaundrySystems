@@ -57,6 +57,103 @@
 <!-- 2. PROOF BAR -->
 @include('components.proof-bar')
 
+<!-- FROM ROOM REVIEW -->
+<section class="py-16 lg:py-24 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+                <!-- Left: title + subtitle -->
+                <div class="lg:col-span-1">
+                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From room review to the right next step</h2>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial laundry rooms work better when the equipment path and support model are aligned from the start.</p>
+                </div>
+                <!-- Right: 4 steps -->
+                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    @foreach([
+                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
+                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
+                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
+                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
+                    ] as $step)
+                    <div class="bg-[#eaeff5] rounded-xl p-6">
+                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
+                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
+                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- KEEP THE SUPPORT MATCHED -->
+<section class="py-16 lg:py-24 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+
+            {{-- Left: heading + description --}}
+            <div class="lg:col-span-1 reveal">
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                    Keep the support matched to the equipment
+                </h2>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">
+                    The right support answer has to account for installed-base reality, operational continuity, and the next commercial step.
+                </p>
+            </div>
+
+            {{-- Right: 4 service cards --}}
+            <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+                @foreach([
+                    [
+                        'img'   => '/images/healthcare/Service%20Network.png',
+                        'title' => 'Service Network',
+                        'bold'  => 'You can count on',
+                        'body'  => 'more than 2,200 authorised service partners, always available, always on duty — committed to support you with a service network that makes your operations easier.',
+                    ],
+                    [
+                        'img'   => '/images/healthcare/Service%20Agreements.png',
+                        'title' => 'Service Agreements',
+                        'bold'  => 'You can choose from',
+                        'body'  => 'flexible tailored packages, according to your business needs, offering a variety of products maintenance and support services.',
+                    ],
+                    [
+                        'img'   => '/images/healthcare/Accessories%20%26%20Consumables.png',
+                        'title' => 'Accessories & Consumables',
+                        'bold'  => 'You can rely on',
+                        'body'  => 'original Accessories & Consumables, rigorously tested by Electrolux Professional experts to ensure efficiency, durability, and the safety of your users.',
+                    ],
+                    [
+                        'img'   => '/images/healthcare/Lifecycle%20Support.png',
+                        'title' => 'Lifecycle Support',
+                        'bold'  => 'You can plan ahead',
+                        'body'  => 'with structured lifecycle continuity — keeping your installed base connected to repairs, call-outs, parts, and aftercare across Ireland.',
+                    ],
+                ] as $card)
+                <div class="flex flex-col">
+                    <div class="flex justify-center mb-[-60px] relative z-10">
+                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md relative">
+                            <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <div class="w-24 h-24 rounded-full flex items-center justify-center text-center" style="background-color: rgba(100,160,210,0.65);">
+                                    <h4 class="font-heading font-bold text-white text-xs leading-snug px-2">{{ $card['title'] }}</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#deeaf6] rounded-2xl pt-20 pb-6 px-5 flex-1">
+                        <p class="font-body text-navy/80 text-sm leading-relaxed">
+                            <strong class="font-bold text-navy">{{ $card['bold'] }}</strong> {{ $card['body'] }}
+                        </p>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-gray-50 border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -85,43 +182,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- ENERGY EFFICIENT + COMMERCIAL WASHERS -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-            <!-- Image left -->
-            <div class="flex justify-center reveal reveal-left">
-                <img src="/images/equipment/commercialwasher.webp"
-                     alt="Commercial Washer"
-                     class="w-full max-w-sm object-contain drop-shadow-xl">
-            </div>
-
-            <!-- All text right -->
-            <div class="text-center reveal reveal-right">
-                <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight mb-4">
-                    Energy efficient in-house laundry systems
-                </h2>
-                <p class="font-body text-gray-500 text-lg leading-relaxed mb-8">
-                    Our range of reliable and efficient laundry equipment will continuously perform cycle after cycle in your commercial laundry operation.
-                </p>
-                <div class="flex flex-col items-center gap-3">
-                    <p class="font-heading font-normal text-navy text-2xl mb-1">Commercial <strong>Washers</strong></p>
-                    <a href="{{ route('equipment.category', 'washers') }}"
-                       class="w-full max-w-xs bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
-                        GO TO PRODUCTS
-                    </a>
-                    <a href="{{ route('contact') }}"
-                       class="w-full max-w-xs bg-[#148af4] hover:bg-blue-600 text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors tracking-wide">
-                        REQUEST ASSESSMENT
-                    </a>
-                </div>
             </div>
 
         </div>
@@ -158,63 +218,59 @@
     </div>
 </section>
 
-{{-- D: Enhanced Usability — matching healthcare style --}}
+{{-- D: Enhanced Usability — 4-card hover grid --}}
 <section class="bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
         <div class="py-10 lg:py-14">
+            <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
+                Enhanced usability, superior safety
+            </h2>
 
-        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
-            Enhanced usability, superior safety
-        </h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-            <div class="lg:col-span-2 flex flex-col">
+            {{-- 4-card horizontal grid — homepage card style --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
                 @foreach([
-                    [
-                        'icon'  => '/images/healthcare/hygiene-icon.png',
-                        'alt'   => 'Hygiene icon',
-                        'title' => 'Maximise hygiene in commercial applications',
-                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/operator-icon.png',
-                        'alt'   => 'Operator icon',
-                        'title' => 'Operator support in high-output laundries',
-                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy commercial laundry shifts.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/control-icon.png',
-                        'alt'   => 'Control icon',
-                        'title' => 'Intelligent control',
-                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
-                    ],
+                    ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in commercial applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
+                    ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy commercial laundry shifts.'],
+                    ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                 ] as $feature)
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
-                    <div>
-                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
+                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
+                    <img src="{{ $feature['icon'] }}" alt="" class="absolute inset-0 w-full h-full object-contain p-10 opacity-10 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         style="background: rgba(1,30,65,0.92);"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
+                        <h3 class="font-heading font-bold text-white text-lg leading-tight mb-0 group-hover:mb-3 transition-all duration-300">{{ $feature['title'] }}</h3>
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
+                            <p class="font-body text-white/75 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                        </div>
                     </div>
                 </div>
                 @endforeach
+
+                {{-- 4th card: ERGOCERT --}}
+                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
+                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         style="background: rgba(1,30,65,0.92);"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
+                        <div class="flex gap-1 mb-2">
+                            @for($s = 0; $s < 4; $s++)
+                            <svg class="w-4 h-4 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            @endfor
+                        </div>
+                        <p class="font-heading font-bold text-white text-xl leading-tight mb-0 group-hover:mb-3 transition-all duration-300">Experience<br>4-stars</p>
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
+                            <p class="font-body text-white/75 text-sm leading-relaxed">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex flex-col gap-5 reveal reveal-right">
-
-                {{-- ERGOCERT 4-star --}}
-                <div class="bg-navy rounded-2xl p-6">
-                    <div class="flex gap-1 mb-3">
-                        @for($s = 0; $s < 4; $s++)
-                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        @endfor
-                    </div>
-                    <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
-                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
-                    <p class="font-body text-[#148af4] text-xs leading-relaxed">Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.</p>
-                </div>
-
-                {{-- Download --}}
+            {{-- Download + Discover row --}}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6 reveal">
                 <div class="bg-navy rounded-2xl p-6">
                     <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
                     <ul class="space-y-3">
@@ -226,23 +282,14 @@
                             ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
                         ] as $pdf)
                         <li>
-                            @if($pdf['file'])
                             <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
                                 <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
                                 {{ $pdf['label'] }}
                             </a>
-                            @else
-                            <span class="flex items-center gap-2 font-body text-sm text-white/30">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $pdf['label'] }}
-                            </span>
-                            @endif
                         </li>
                         @endforeach
                     </ul>
                 </div>
-
-                {{-- Discover --}}
                 <div class="bg-bg border border-border rounded-2xl p-6">
                     <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
                     <ul class="space-y-3">
@@ -253,18 +300,14 @@
                         ] as $link)
                         <li>
                             <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                                </svg>
+                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                                 {{ $link['label'] }}
                             </a>
                         </li>
                         @endforeach
                     </ul>
                 </div>
-
             </div>
-        </div>
         </div>
     </div>
 </section>
@@ -661,37 +704,11 @@
 </section>
 
 
-<!-- HEALTHCARE ROUTE + AUTHORISED PARTNER -->
+<!-- AUTHORISED PARTNER -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-12">
 
-        <!-- Top: From room review -->
-        <div class="reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <!-- Left: title + subtitle -->
-                <div class="lg:col-span-1">
-                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From room review to the right next step</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial laundry rooms work better when the equipment path and support model are aligned from the start.</p>
-                </div>
-                <!-- Right: 4 steps -->
-                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    @foreach([
-                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
-                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
-                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
-                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
-                    ] as $step)
-                    <div class="bg-[#eaeff5] rounded-xl p-6">
-                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
-                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
-                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-
-        <!-- Bottom: Authorised Partner -->
+        <!-- Authorised Partner -->
         <div class="border-t border-gray-200 pt-10 reveal">
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-gray-200 items-center">
                 <!-- Left: logo + badge -->
@@ -799,75 +816,6 @@
                     Discover Essentia
                 </a>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- AFTERCARE SERVICE CARDS -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-
-            {{-- Left: heading + description --}}
-            <div class="lg:col-span-1 reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
-                    Keep the support matched to the equipment
-                </h2>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">
-                    The right support answer has to account for installed-base reality, operational continuity, and the next commercial step.
-                </p>
-            </div>
-
-            {{-- Right: 4 service cards --}}
-            <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
-                @foreach([
-                    [
-                        'img'   => '/images/healthcare/Service%20Network.png',
-                        'title' => 'Service Network',
-                        'bold'  => 'You can count on',
-                        'body'  => 'more than 2,200 authorised service partners, always available, always on duty — committed to support you with a service network that makes your operations easier.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Service%20Agreements.png',
-                        'title' => 'Service Agreements',
-                        'bold'  => 'You can choose from',
-                        'body'  => 'flexible tailored packages, according to your business needs, offering a variety of products maintenance and support services.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Accessories%20%26%20Consumables.png',
-                        'title' => 'Accessories & Consumables',
-                        'bold'  => 'You can rely on',
-                        'body'  => 'original Accessories & Consumables, rigorously tested by Electrolux Professional experts to ensure efficiency, durability, and the safety of your users.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Lifecycle%20Support.png',
-                        'title' => 'Lifecycle Support',
-                        'bold'  => 'You can plan ahead',
-                        'body'  => 'with structured lifecycle continuity — keeping your installed base connected to repairs, call-outs, parts, and aftercare across Ireland.',
-                    ],
-                ] as $card)
-                <div class="flex flex-col">
-                    {{-- Circular image with small text circle overlay --}}
-                    <div class="flex justify-center mb-[-60px] relative z-10">
-                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md relative">
-                            <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-24 h-24 rounded-full flex items-center justify-center text-center" style="background-color: rgba(100,160,210,0.65);">
-                                    <h4 class="font-heading font-bold text-white text-xs leading-snug px-2">{{ $card['title'] }}</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- Card body --}}
-                    <div class="bg-[#deeaf6] rounded-2xl pt-20 pb-6 px-5 flex-1">
-                        <p class="font-body text-navy/80 text-sm leading-relaxed">
-                            <strong class="font-bold text-navy">{{ $card['bold'] }}</strong> {{ $card['body'] }}
-                        </p>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-
         </div>
     </div>
 </section>

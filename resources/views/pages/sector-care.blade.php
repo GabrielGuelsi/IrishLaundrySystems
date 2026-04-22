@@ -172,62 +172,59 @@
     </div>
 </section>
 
-{{-- D: Enhanced Usability — matching healthcare style --}}
+{{-- D: Enhanced Usability — 4-card hover grid --}}
 <section class="bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
         <div class="py-10 lg:py-14">
+            <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
+                Enhanced usability, superior safety
+            </h2>
 
-        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
-            Enhanced usability, superior safety
-        </h2>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-            <div class="lg:col-span-2 flex flex-col">
+            {{-- 4-card horizontal grid — homepage card style --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
                 @foreach([
-                    [
-                        'icon'  => '/images/healthcare/hygiene-icon.png',
-                        'alt'   => 'Hygiene icon',
-                        'title' => 'Maximise hygiene in care facility applications',
-                        'body'  => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/operator-icon.png',
-                        'alt'   => 'Operator icon',
-                        'title' => 'Operator support in high-output laundries',
-                        'body'  => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.',
-                    ],
-                    [
-                        'icon'  => '/images/healthcare/control-icon.png',
-                        'alt'   => 'Control icon',
-                        'title' => 'Intelligent control',
-                        'body'  => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.',
-                    ],
+                    ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in care facility applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
+                    ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',       'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy care facility laundry shifts.'],
+                    ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                             'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                 ] as $feature)
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
-                    <div>
-                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
-                        <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
+                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
+                    <img src="{{ $feature['icon'] }}" alt="" class="absolute inset-0 w-full h-full object-contain p-10 opacity-10 transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         style="background: rgba(1,30,65,0.92);"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
+                        <h3 class="font-heading font-bold text-white text-lg leading-tight mb-0 group-hover:mb-3 transition-all duration-300">{{ $feature['title'] }}</h3>
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
+                            <p class="font-body text-white/75 text-sm leading-relaxed">{{ $feature['body'] }}</p>
+                        </div>
                     </div>
                 </div>
                 @endforeach
+
+                {{-- 4th card: ERGOCERT --}}
+                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
+                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
+                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                         style="background: rgba(1,30,65,0.92);"></div>
+                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
+                        <div class="flex gap-1 mb-2">
+                            @for($s = 0; $s < 4; $s++)
+                            <svg class="w-4 h-4 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            @endfor
+                        </div>
+                        <p class="font-heading font-bold text-white text-xl leading-tight mb-0 group-hover:mb-3 transition-all duration-300">Experience<br>4-stars</p>
+                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
+                            <p class="font-body text-white/75 text-sm leading-relaxed">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex flex-col gap-5 reveal reveal-right">
-
-                {{-- ERGOCERT 4-star --}}
-                <div class="bg-navy rounded-2xl p-6">
-                    <div class="flex gap-1 mb-3">
-                        @for($s = 0; $s < 4; $s++)
-                        <svg class="w-5 h-5 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                        @endfor
-                    </div>
-                    <p class="font-heading font-bold text-white text-2xl leading-tight mb-3">Experience<br>4-stars</p>
-                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
-                    <p class="font-body text-[#148af4] text-xs leading-relaxed">Every product has been user-tested to ensure your operators feel reduced tension and strain — so they, and your business, can thrive.</p>
-                </div>
-
+            {{-- Download + Discover row --}}
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6 reveal">
                 <div class="bg-navy rounded-2xl p-6">
                     <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
                     <ul class="space-y-3">
@@ -239,22 +236,14 @@
                             ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
                         ] as $pdf)
                         <li>
-                            @if($pdf['file'])
                             <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
                                 <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
                                 {{ $pdf['label'] }}
                             </a>
-                            @else
-                            <span class="flex items-center gap-2 font-body text-sm text-white/30">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $pdf['label'] }}
-                            </span>
-                            @endif
                         </li>
                         @endforeach
                     </ul>
                 </div>
-
                 <div class="bg-bg border border-border rounded-2xl p-6">
                     <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
                     <ul class="space-y-3">
@@ -265,18 +254,14 @@
                         ] as $link)
                         <li>
                             <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                                </svg>
+                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                                 {{ $link['label'] }}
                             </a>
                         </li>
                         @endforeach
                     </ul>
                 </div>
-
             </div>
-        </div>
         </div>
     </div>
 </section>
