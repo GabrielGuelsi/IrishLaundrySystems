@@ -516,7 +516,7 @@
 
             <!-- Card 2: Repairs & Call-outs -->
             <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/Repairs%20%26%20Call-outs.png" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
+                <img src="/images/healthcare/Repairsandcallouts.jpeg" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
                 <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-8">
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Repairs &amp; Call-outs</h3>
