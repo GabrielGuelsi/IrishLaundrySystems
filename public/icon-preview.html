@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ILS brand icons — preview</title>
+<style>
+  body { font-family: system-ui, sans-serif; background: #f7f8fa; color: #011e41; margin: 0; padding: 32px; }
+  h1 { font-size: 18px; margin: 0 0 8px; }
+  p  { font-size: 13px; color: #555; margin: 0 0 24px; }
+  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; max-width: 1100px; }
+  .tile { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .tile .box { width: 64px; height: 64px; color: #011e41; }
+  .tile .box svg { width: 100%; height: 100%; }
+  .tile .num { font-size: 12px; font-weight: 600; }
+</style>
+</head>
+<body>
+<h1>ILS brand icon set — visual index</h1>
+<p>Tell me which numbers to use for <strong>Local engineering execution</strong> and <strong>Lifecycle support route</strong>. (Ativo 15 stays for Genuine parts continuity.)</p>
+<div class="grid" id="grid"></div>
+<script>
+const grid = document.getElementById('grid');
+for (let i = 1; i <= 20; i++) {
+  const tile = document.createElement('div');
+  tile.className = 'tile';
+  tile.innerHTML = `
+    <div class="box">
+      <object type="image/svg+xml" data="/images/icons/brand/Ativo ${i}.svg" style="width:100%;height:100%;pointer-events:none"></object>
+    </div>
+    <div class="num">Ativo ${i}</div>`;
+  grid.appendChild(tile);
+}
+</script>
+</body>
+</html>
