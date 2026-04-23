@@ -588,10 +588,18 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center">
+                <div class="relative flex justify-center">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4 flex items-center gap-2">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -722,10 +730,15 @@
                         This unique combination distinguishes them from all other dryers on the market.</p>
                     </div>
                 </div>
-                <div class="flex justify-center order-1 lg:order-2">
+                <div class="relative flex justify-center order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -768,10 +781,18 @@
 
             <!-- 3. Ironers — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
-                <div class="flex justify-center">
+                <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
+                    <div class="flex items-center gap-3">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
+                        </div>
+                    </div>
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-6">Ironers</h3>
