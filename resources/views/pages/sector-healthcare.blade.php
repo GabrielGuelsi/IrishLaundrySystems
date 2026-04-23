@@ -480,8 +480,12 @@
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-96 object-contain">
                     <div class="absolute bottom-4 right-4 flex items-center gap-2">
-                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-10 h-10 object-contain">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-10 h-10 object-contain">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
+                        </div>
                     </div>
                 </div>
             </div>
