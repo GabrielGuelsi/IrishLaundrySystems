@@ -662,11 +662,11 @@
 
             <!-- 3. Ironers — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
-                <div class="flex items-end gap-3">
+                <div class="flex flex-col items-center gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
-                         class="flex-1 h-80 object-contain object-left">
-                    <div class="flex-shrink-0 flex flex-col gap-2 pb-2">
+                         class="w-full h-80 object-contain">
+                    <div class="flex items-center gap-3">
                         <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-16 h-16 object-contain">
                         <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-16 h-16 object-contain">
                     </div>
