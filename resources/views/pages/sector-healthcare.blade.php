@@ -662,18 +662,18 @@
 
             <!-- 3. Ironers — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
-                <div class="flex justify-center">
+                <div class="relative flex justify-center">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
+                    <div class="absolute bottom-4 right-4 flex items-center gap-2">
+                        <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-16 h-16 object-contain">
+                        <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-16 h-16 object-contain">
+                    </div>
                 </div>
                 <div class="text-center">
-                    <div class="relative mb-6">
+                    <div class="mb-6">
                         <h3 class="font-heading text-navy text-3xl lg:text-4xl text-center">Ironers</h3>
-                        <div class="absolute right-0 top-1/2 -translate-y-1/2 flex items-center gap-2">
-                            <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-12 h-12 object-contain">
-                            <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-12 h-12 object-contain">
-                        </div>
                     </div>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Deliver perfectly ironed linen to the highest hygiene standards
