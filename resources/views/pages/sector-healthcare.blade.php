@@ -662,7 +662,7 @@
 
             <!-- 3. Ironers — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
-                <div class="flex flex-col items-center gap-4">
+                <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
