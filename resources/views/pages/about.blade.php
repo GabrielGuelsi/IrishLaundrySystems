@@ -65,7 +65,8 @@
     </div>
 </section>
 
-<!-- 3. PROOF BAR — LIGHT -->
+<!-- 3. PARTNER STRIP + PROOF BAR — LIGHT -->
+@include('components.partner-strip')
 @include('components.proof-bar')
 
 <!-- 4. WHAT DRIVES US — split layout -->

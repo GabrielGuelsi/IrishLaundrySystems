@@ -15,6 +15,9 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
+
 <!-- WHAT HAPPENS NEXT -->
 <section class="py-10 lg:py-12 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">

@@ -34,42 +34,10 @@
             </div>
         </div>
     </div>
-    <!-- Partner strip -->
-    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex items-center justify-between gap-6">
-            <div class="flex items-center gap-5">
-                <div class="flex-shrink-0">
-                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
-                         alt="Electrolux Professional Authorized Partner"
-                         class="h-12 w-auto">
-                </div>
-                <div class="hidden sm:block border-l border-gray-300 pl-5">
-                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
-                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
-                </div>
-            </div>
-            <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
-                Learn more
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-    <!-- Trusted by strip -->
-    <div class="relative z-10 w-full bg-white border-t border-gray-100">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-3 flex flex-wrap items-center gap-10">
-            <p class="font-body text-[10px] text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
-            <div class="w-px h-4 bg-gray-200 flex-shrink-0 hidden sm:block"></div>
-            <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-7 object-contain opacity-60">
-        </div>
-    </div>
 </section>
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-gray-50 border-b border-border">

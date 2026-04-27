@@ -41,7 +41,8 @@
     </div>
 </section>
 
-<!-- PROOF BAR -->
+<!-- PARTNER STRIP + PROOF BAR -->
+@include('components.partner-strip')
 @include('components.proof-bar')
 
 <!-- RESPONSE STATEMENT -->
