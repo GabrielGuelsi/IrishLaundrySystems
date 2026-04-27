@@ -564,7 +564,7 @@
                         <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
                              style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
                         <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
-                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
+                             style="width:52px;height:52px;object-fit:fill;flex-shrink:0;">
                     </div>
                 </div>
             </div>
