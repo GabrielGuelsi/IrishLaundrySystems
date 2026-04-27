@@ -747,37 +747,166 @@
 </section>
 
 
-<!-- HEALTHCARE ROUTE + AUTHORISED PARTNER -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-12">
+<!-- HEALTHCARE ROUTE — Gallery style -->
+<style>
+.ils-gallery-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    flex: 1 1 25%;
+}
+.ils-gallery-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+.ils-gallery-card:hover img {
+    transform: scale(1.06);
+}
+.ils-gallery-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.35) 55%, rgba(1,30,65,0.10) 100%);
+    z-index: 1;
+    transition: opacity 0.4s;
+}
+.ils-gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(1,30,65,0.90);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.ils-gallery-card:hover::before { opacity: 0; }
+.ils-gallery-card:hover::after  { opacity: 1; visibility: visible; }
 
-        <!-- Top: From room review -->
-        <div class="reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <!-- Left: title + subtitle -->
-                <div class="lg:col-span-1">
-                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From room review to the right next step</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Healthcare rooms work better when the equipment path and support model are aligned from the start.</p>
-                </div>
-                <!-- Right: 4 steps -->
-                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    @foreach([
-                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
-                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
-                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
-                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
-                    ] as $step)
-                    <div class="bg-[#eaeff5] rounded-xl p-6">
-                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
-                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
-                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
-                    </div>
-                    @endforeach
-                </div>
+/* Default caption — bottom-left */
+.ils-gcap1 {
+    position: absolute;
+    bottom: 28px;
+    left: 32px;
+    z-index: 3;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.ils-gcap1 .ils-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap1 h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gallery-card:hover .ils-gcap1 {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+/* Hover caption — vertically centered */
+.ils-gcap2 {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    right: 32px;
+    transform: translateY(-40%);
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.ils-gallery-card:hover .ils-gcap2 {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.ils-gcap2 .ils-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap2 h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap2 p {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.85rem;
+    line-height: 1.65;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+@media (max-width: 767px) {
+    .ils-gallery-card { min-height: 300px; flex: 1 1 50%; }
+}
+@media (max-width: 479px) {
+    .ils-gallery-card { min-height: 260px; flex: 1 1 100%; }
+}
+</style>
+
+<section class="w-full overflow-hidden">
+    <div style="display:flex; flex-wrap:wrap;">
+        @foreach([
+            [
+                'num'   => '01.',
+                'title' => 'Assess the room',
+                'body'  => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.',
+                'img'   => '/images/healthcare/healthcarehero.png',
+            ],
+            [
+                'num'   => '02.',
+                'title' => 'Match the equipment',
+                'body'  => 'Match the room logic to the right barrier, washing, drying, and finishing route.',
+                'img'   => '/images/about/about-equipment.jpg',
+            ],
+            [
+                'num'   => '03.',
+                'title' => 'Keep support close',
+                'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
+                'img'   => '/images/about/about-engineers.jpg',
+            ],
+            [
+                'num'   => '04.',
+                'title' => 'Move to assessment',
+                'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
+                'img'   => '/images/about/about-team.jpg',
+            ],
+        ] as $card)
+        <div class="ils-gallery-card">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <!-- Default caption -->
+            <div class="ils-gcap1">
+                <span class="ils-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+            </div>
+            <!-- Hover caption -->
+            <div class="ils-gcap2">
+                <span class="ils-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+                <p>{{ $card['body'] }}</p>
             </div>
         </div>
-
-
+        @endforeach
     </div>
 </section>
 
