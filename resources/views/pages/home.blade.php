@@ -130,7 +130,7 @@
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <!-- Default overlay: heavy at bottom -->
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background: linear-gradient(to bottom, rgba(1,30,65,0.72) 0%, transparent 28%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
                 <!-- Hover overlay: darker overall -->
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                      style="background: rgba(1,30,65,0.96);"></div>
@@ -174,7 +174,7 @@
                 <img src="/images/healthcare/line-6000-solutions.jpg" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background: linear-gradient(to bottom, rgba(1,30,65,0.72) 0%, transparent 28%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                      style="background: rgba(1,30,65,0.96);"></div>
 
@@ -214,7 +214,7 @@
                 <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background: linear-gradient(to bottom, rgba(1,30,65,0.72) 0%, transparent 28%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                      style="background: rgba(1,30,65,0.96);"></div>
 
