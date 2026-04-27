@@ -81,6 +81,10 @@
         .sc-step-node { left: 50%; transform: translate(-50%, 0); }
     }
 
+    /* ── Stepper sliding track ── */
+    .sc-stepper-track { transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1); }
+    @media (prefers-reduced-motion: reduce) { .sc-stepper-track { transition: none; } }
+
     /* ── Decorative animated check beside form heading ── */
     .sc-check-circle {
         stroke-dasharray: 64;
@@ -285,27 +289,88 @@
                 </div>
             </div>
 
-            {{-- TILE 6 · How preventive visits work (2×1, light, numbered checklist) --}}
-            <div class="relative md:col-span-2 lg:col-span-2 rounded-3xl overflow-hidden bg-bg border border-border p-5 lg:p-6 reveal" style="transition-delay:120ms;">
+            {{-- TILE 6 · How preventive visits work — interactive stepper (2×1, light) --}}
+            @php
+            $stepperSteps = [
+                ['title' => 'Inspect & assess',   'desc' => 'Engineer inspects all contracted equipment, checks safety features, identifies wear and flags any items needing attention.'],
+                ['title' => 'Service & replace',  'desc' => 'Cleaning, lubrication and consumable parts replacement where appropriate — keeping equipment operating to spec.'],
+                ['title' => 'Document on-site',   'desc' => 'Written service report completed during the visit and provided to your facilities or operations manager.'],
+                ['title' => 'Plan ahead',         'desc' => 'Visit frequency agreed up-front based on your equipment, usage profile and chosen tier — no surprises.'],
+            ];
+            @endphp
+            <div class="relative md:col-span-2 lg:col-span-2 rounded-3xl overflow-hidden bg-bg border border-border p-5 lg:p-6 reveal"
+                 style="transition-delay:120ms;"
+                 x-data="{ step: 0, total: {{ count($stepperSteps) }} }">
                 <div class="h-full flex flex-col">
-                    <div class="flex items-center gap-2 mb-2">
+                    {{-- Header --}}
+                    <div class="flex items-center gap-2 mb-4">
                         <div class="w-1 h-5 bg-orange rounded-full"></div>
                         <p class="text-steel font-body font-semibold text-[11px] uppercase tracking-widest">How preventive visits work</p>
                     </div>
-                    <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-3 leading-snug">Every visit, the same structured process</h3>
-                    <ul class="space-y-2 flex-1">
-                        @foreach ([
-                            'Inspect contracted equipment, check safety features, identify wear.',
-                            'Cleaning, lubrication and consumable parts replacement where appropriate.',
-                            'Written service report completed on-site for your facilities manager.',
-                            'Visit frequency agreed up-front — based on equipment and usage profile.',
-                        ] as $i => $line)
-                        <li class="flex items-start gap-2.5">
-                            <span class="w-5 h-5 rounded-full bg-navy text-white text-[10px] font-heading font-bold flex items-center justify-center flex-shrink-0 mt-0.5">{{ $i + 1 }}</span>
-                            <span class="font-body text-gray-700 text-[13px] lg:text-sm leading-relaxed">{{ $line }}</span>
-                        </li>
+
+                    {{-- Step indicators --}}
+                    <div class="flex items-center mb-4">
+                        @foreach ($stepperSteps as $i => $_)
+                            @if ($i > 0)
+                            <div class="flex-1 h-0.5 mx-2 transition-colors duration-500"
+                                 :class="step >= {{ $i }} ? 'bg-navy' : 'bg-border'"
+                                 aria-hidden="true"></div>
+                            @endif
+                            <button type="button"
+                                    @click="step = {{ $i }}"
+                                    :aria-current="step === {{ $i }} ? 'step' : null"
+                                    :aria-label="`Go to step {{ $i + 1 }}`"
+                                    :class="{
+                                        'bg-navy border-navy text-white shadow-md ring-4 ring-navy/10': step === {{ $i }},
+                                        'bg-steel border-steel text-white': step > {{ $i }},
+                                        'bg-white border-border text-gray-400 hover:border-navy/40': step < {{ $i }},
+                                    }"
+                                    class="w-9 h-9 rounded-full border-2 font-heading font-bold text-xs flex items-center justify-center transition-all duration-300 cursor-pointer flex-shrink-0 hover:scale-110">
+                                <template x-if="step > {{ $i }}">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                                </template>
+                                <template x-if="step <= {{ $i }}">
+                                    <span>{{ $i + 1 }}</span>
+                                </template>
+                            </button>
                         @endforeach
-                    </ul>
+                    </div>
+
+                    {{-- Sliding content --}}
+                    <div class="flex-1 overflow-hidden">
+                        <div class="flex h-full sc-stepper-track"
+                             :style="`transform: translateX(-${step * 100}%)`">
+                            @foreach ($stepperSteps as $i => $s)
+                            <div class="w-full flex-shrink-0 pr-1"
+                                 :aria-hidden="step !== {{ $i }}">
+                                <p class="text-orange font-body font-semibold text-[11px] uppercase tracking-widest mb-1.5">Step {{ $i + 1 }}</p>
+                                <h4 class="font-heading font-bold text-navy text-base lg:text-lg mb-2 leading-snug">{{ $s['title'] }}</h4>
+                                <p class="font-body text-gray-700 text-[13px] lg:text-sm leading-relaxed">{{ $s['desc'] }}</p>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+
+                    {{-- Controls --}}
+                    <div class="flex items-center justify-between gap-3 pt-3 mt-1 border-t border-border/60">
+                        <button type="button"
+                                @click="step = Math.max(step - 1, 0)"
+                                :disabled="step === 0"
+                                :class="step === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:text-navy cursor-pointer'"
+                                class="inline-flex items-center gap-1.5 text-xs font-body font-semibold text-gray-500 transition-colors px-1 py-1.5">
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+                            Back
+                        </button>
+                        <span class="font-body text-[11px] font-semibold text-gray-400 tabular-nums" x-text="`${step + 1} / ${total}`"></span>
+                        <button type="button"
+                                @click="step = Math.min(step + 1, total - 1)"
+                                :disabled="step === total - 1"
+                                :class="step === total - 1 ? 'opacity-40 cursor-not-allowed' : 'hover:bg-navy-dark cursor-pointer'"
+                                class="inline-flex items-center gap-1.5 text-xs font-body font-semibold bg-navy text-white px-3 py-1.5 rounded-md transition-colors">
+                            Next
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
