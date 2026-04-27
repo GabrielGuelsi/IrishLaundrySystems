@@ -777,42 +777,12 @@
             </div>
         </div>
 
-        <!-- Bottom: Authorised Partner -->
-        <div class="border-t border-gray-200 pt-10 reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-gray-200 items-center">
-                <!-- Left: logo + badge -->
-                <div class="flex flex-col items-center justify-center gap-3 pb-6 lg:pb-0 lg:pr-8">
-                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg" alt="Electrolux Professional Authorized Partner" class="h-16 object-contain">
-                    <p class="font-heading font-bold text-xs tracking-widest text-gray-400 uppercase">Authorized Partner</p>
-                </div>
-                <!-- Middle: title + description -->
-                <div class="py-6 lg:py-0 lg:px-8">
-                    <p class="font-heading font-bold text-navy text-base leading-snug mb-2">Electrolux Professional Authorized Partner</p>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems combines local engineering support in Ireland with manufacturer-grade equipment standards, lifecycle continuity, and a more structured route into service and lifecycle support.</p>
-                </div>
-                <!-- Right: 3 feature tiles -->
-                <div class="pt-6 lg:pt-0 lg:pl-8 grid grid-cols-3 gap-4">
-                    @foreach([
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>',
-                          'label' => 'Local engineering execution'],
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>',
-                          'label' => 'Lifecycle support route'],
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>',
-                          'label' => 'Genuine parts continuity'],
-                    ] as $feat)
-                    <div class="flex flex-col items-center text-center gap-2">
-                        <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $feat['icon'] !!}</svg>
-                        </div>
-                        <p class="font-body text-gray-500 text-xs leading-tight">{{ $feat['label'] }}</p>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
 
     </div>
 </section>
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">

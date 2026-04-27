@@ -126,6 +126,9 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
+
 <!-- CTA BAND -->
 @include('components.cta-band', [
     'heading' => 'Looking for a commercial laundry engineer?',

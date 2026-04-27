@@ -172,6 +172,9 @@ $faqs = [
 @endphp
 @include('components.faq', ['faqs' => $faqs, 'heading' => 'Service Contract FAQs'])
 
+@include('components.partner-strip')
+@include('components.proof-bar')
+
 <!-- CTA BAND -->
 @include('components.cta-band', [
     'heading' => 'Ready to put a contract in place?',

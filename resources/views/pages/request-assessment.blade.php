@@ -291,6 +291,8 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
 @include('components.cta-combined-banner')
 
 @endsection

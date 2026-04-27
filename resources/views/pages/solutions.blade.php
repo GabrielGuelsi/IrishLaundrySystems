@@ -185,6 +185,9 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
+
 <!-- CTA BAND -->
 @include('components.cta-band', [
     'heading' => 'Start with the right conversation',

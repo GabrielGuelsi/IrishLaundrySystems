@@ -310,6 +310,8 @@
 </section>
 
 <!-- 9. PROOF — TESTIMONIALS — LIGHT -->
+@include('components.partner-strip')
+@include('components.proof-bar')
 @include('components.testimonials', ['heading' => 'What long-term customers say', 'light' => true])
 
 <!-- 10. FINAL CTA — DARK -->
