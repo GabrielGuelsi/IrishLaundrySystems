@@ -125,7 +125,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
             <!-- Card 1 — Repairs & Call-outs -->
-            <div class="group relative overflow-hidden h-[420px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <!-- Default overlay: heavy at bottom -->
@@ -159,7 +159,7 @@
                     </div>
 
                     <!-- Bottom stack: big title, CTA right-aligned below -->
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
+                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
                     <div class="flex justify-end">
                         <a href="{{ route('repairs') }}"
                            class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
@@ -170,7 +170,7 @@
             </div>
 
             <!-- Card 2 — Equipment Rental -->
-            <div class="group relative overflow-hidden h-[420px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/line-6000-solutions.jpg" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -199,7 +199,7 @@
                         </ul>
                     </div>
 
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Equipment Rental</h3>
+                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
                     <div class="flex justify-end">
                         <a href="{{ route('rental') }}"
                            class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
@@ -210,7 +210,7 @@
             </div>
 
             <!-- Card 3 — Service Contracts -->
-            <div class="group relative overflow-hidden h-[420px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -239,7 +239,7 @@
                         </ul>
                     </div>
 
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Service Contracts</h3>
+                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Service Contracts</h3>
                     <div class="flex justify-end">
                         <a href="{{ route('service-contracts') }}"
                            class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
