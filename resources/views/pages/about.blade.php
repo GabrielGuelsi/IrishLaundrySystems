@@ -200,110 +200,113 @@
     </div>
 </section>
 
-<!-- 8. TIMELINE — interactive JLA-style -->
-<section class="py-16 lg:py-24 bg-navy overflow-hidden">
+<!-- 8. OUR HISTORY — Hajster-style vertical timeline -->
+<style>
+.ils-history-box {
+    transition: background 0.35s ease;
+    border-radius: 0.75rem;
+}
+.ils-history-box:hover {
+    background: rgba(1, 30, 65, 0.03);
+}
+.ils-history-img {
+    opacity: 0;
+    transform: translateY(-50%) scale(0.85);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    pointer-events: none;
+}
+.ils-history-box:hover .ils-history-img {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+    pointer-events: auto;
+}
+</style>
+
+<section class="py-24 lg:py-36 bg-white overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
+        @include('components.pretitle', ['label' => 'Our Story'])
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl mb-16 reveal">Our history</h2>
+
         @php
-        $milestones = [
-            ['year'=>'1987', 'title'=>'Founded',          'subtitle'=>'Irish Laundry Systems established.',        'body'=>'ILS was founded to serve a growing commercial laundry sector in Ireland — healthcare, hospitality, institutional care. The founders recognised these operations needed engineering-led support, not just equipment sales.',       'img'=>'/images/about/about-team.jpg'],
-            ['year'=>'1990s','title'=>'Sector expansion',  'subtitle'=>'Into healthcare and care facilities.',      'body'=>'Extended support into healthcare and care facility sectors, recognising the critical nature of laundry in these environments — infection control, compliance, and continuity requirements far beyond standard commercial demands.',    'img'=>'/images/about/about-engineers.jpg'],
-            ['year'=>'2000s','title'=>'National reach',    'subtitle'=>'Nationwide engineering coverage.',          'body'=>'Built nationwide engineering coverage and deepened technical capability across the full range of commercial equipment — establishing ILS as a reliable partner for operations across the Republic of Ireland.',                       'img'=>'/images/about/about-equipment.jpg'],
-            ['year'=>'2010s','title'=>'Partnership',       'subtitle'=>'Authorised Electrolux Professional Partner.','body'=>'Achieved Authorised Electrolux Professional Partner status — investment in manufacturer training, genuine OEM parts capability, and the technical documentation that backs every field visit with proper engineering resource.',   'img'=>'/images/about/about-team.jpg'],
-            ['year'=>'Today','title'=>'Continuing',        'subtitle'=>'Across all sectors, nationwide.',           'body'=>'Supporting healthcare groups, hospitality operations, care facilities and commercial operators across Ireland. Structured service contracts, equipment supply, and engineering response — built around uptime and continuity.',   'img'=>'/images/about/about-engineers.jpg'],
+        $history = [
+            [
+                'year'  => '1987',
+                'label' => 'year',
+                'title' => 'Foundation',
+                'body'  => 'Irish Laundry Systems established to serve a growing commercial laundry sector in Ireland — healthcare, hospitality, institutional care. The founders recognised these operations needed engineering-led support, not just equipment sales.',
+                'img'   => 'images/about/about-team.jpg',
+            ],
+            [
+                'year'  => '1990s',
+                'label' => 'decade',
+                'title' => 'Healthcare & care expansion',
+                'body'  => 'Extended support into healthcare and care facility sectors, recognising the critical nature of laundry in these environments — infection control, compliance, and continuity requirements far beyond standard commercial demands.',
+                'img'   => 'images/about/about-engineers.jpg',
+            ],
+            [
+                'year'  => '2000s',
+                'label' => 'decade',
+                'title' => 'Nationwide engineering coverage',
+                'body'  => 'Built nationwide engineering coverage and deepened technical capability across the full range of commercial equipment — establishing ILS as a reliable partner for operations across the Republic of Ireland.',
+                'img'   => 'images/about/about-equipment.jpg',
+            ],
+            [
+                'year'  => '2010s',
+                'label' => 'decade',
+                'title' => 'Electrolux Professional Partnership',
+                'body'  => 'Achieved Authorised Electrolux Professional Partner status — investment in manufacturer training, genuine OEM parts capability, and the technical documentation that backs every field visit with proper engineering resource.',
+                'img'   => 'images/about/about-team.jpg',
+            ],
+            [
+                'year'  => 'Today',
+                'label' => 'ongoing',
+                'title' => 'All sectors, nationwide',
+                'body'  => 'Supporting healthcare groups, hospitality operations, care facilities and commercial operators across Ireland. Structured service contracts, equipment supply, and engineering response — built around uptime and continuity.',
+                'img'   => 'images/about/about-engineers.jpg',
+            ],
         ];
         @endphp
 
-        <!-- Slides -->
-        <div id="tl-slides" class="relative min-h-[360px] lg:min-h-[340px]">
-            @foreach($milestones as $i => $m)
-            <div class="tl-slide absolute inset-0 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center transition-opacity duration-500 {{ $i === 0 ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none' }}">
+        <div class="ils-history-list relative">
 
-                <!-- Left: year + text -->
-                <div>
-                    <div class="font-heading font-bold text-[#148af4] text-6xl lg:text-8xl leading-none mb-2">{{ $m['year'] }}</div>
-                    <div class="w-12 h-1 bg-[#148af4] mb-6 rounded-full"></div>
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1">
-                        {{ $m['title'] }}
-                        <span class="text-white font-normal"> — {{ $m['subtitle'] }}</span>
-                    </h3>
-                    <p class="font-body text-white text-base leading-relaxed mt-4 max-w-lg">{{ $m['body'] }}</p>
+            <!-- Vertical connecting line (desktop only) -->
+            <div class="hidden lg:block absolute top-16 bottom-16 w-px bg-navy/10 rounded-full" style="left: 210px;"></div>
+
+            @foreach($history as $i => $m)
+            <div class="ils-history-box relative flex items-center py-14 px-4 lg:px-0 {{ !$loop->last ? 'border-b border-navy/8' : '' }} cursor-default reveal" style="transition-delay: {{ $i * 80 }}ms">
+
+                <!-- LEFT: year number + label (desktop) -->
+                <div class="hidden lg:block flex-shrink-0 text-right pr-10" style="width: 210px;">
+                    <div class="font-heading font-bold text-[#148af4] leading-none" style="font-size: 3.75rem; line-height: 1;">{{ $m['year'] }}</div>
+                    <div class="font-body text-navy/35 text-xs uppercase tracking-widest mt-2">{{ $m['label'] }}</div>
                 </div>
 
-                <!-- Right: circular image — hidden on mobile -->
-                <div class="hidden lg:flex justify-end">
-                    <div class="w-80 h-80 rounded-full overflow-hidden border-4 border-white/10 flex-shrink-0">
-                        <img src="{{ $m['img'] }}" alt="{{ $m['title'] }}" class="w-full h-full object-cover">
-                    </div>
+                <!-- Dot on the vertical line (desktop) -->
+                <div class="hidden lg:block absolute flex-shrink-0 z-10" style="left: 210px; transform: translateX(-50%);">
+                    <div class="w-3 h-3 rounded-full bg-[#148af4]" style="box-shadow: 0 0 0 5px rgba(20,138,244,0.18);"></div>
+                </div>
+
+                <!-- RIGHT: title + body text -->
+                <div class="flex-1 lg:pl-16 relative z-10">
+                    <!-- Year inline on mobile -->
+                    <div class="lg:hidden font-heading font-bold text-[#148af4] leading-none mb-3" style="font-size: 3rem;">{{ $m['year'] }}</div>
+                    <div class="font-heading font-bold text-navy text-xl lg:text-2xl mb-3">{{ $m['title'] }}</div>
+                    <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed max-w-xl">{{ $m['body'] }}</p>
+                </div>
+
+                <!-- Hover image — reveals from right on desktop -->
+                <div class="ils-history-img absolute hidden lg:block rounded-2xl overflow-hidden shadow-2xl" style="right: 0; top: 50%; width: 18.5rem; height: 20.5rem; z-index: 20;">
+                    <img src="{{ asset($m['img']) }}" alt="{{ $m['title'] }}" class="w-full h-full object-cover">
                 </div>
 
             </div>
             @endforeach
-        </div>
 
-        <!-- Prev / Next + Year bar -->
-        <div class="mt-12">
-            <div class="flex items-center gap-0 mb-6">
-                @foreach($milestones as $i => $m)
-                <button class="tl-dot flex-1 group flex flex-col items-center gap-2 py-2 cursor-pointer" data-index="{{ $i }}">
-                    <span class="tl-dot-label font-body font-bold text-xs sm:text-sm text-white transition-colors" style="{{ $i !== 0 ? 'opacity:0.5' : '' }}">{{ $m['year'] }}</span>
-                    <span class="tl-dot-pip w-3 h-3 rounded-full border-2 transition-all {{ $i === 0 ? 'border-[#148af4] bg-[#148af4]' : 'border-white/30 bg-transparent group-hover:border-white/60' }}"></span>
-                </button>
-                @if(!$loop->last)
-                <div class="tl-line flex-1 h-px bg-white/20 mb-2"></div>
-                @endif
-                @endforeach
-            </div>
-            <div class="flex items-center gap-4">
-                <button id="tl-prev" aria-label="Previous"
-                    class="w-11 h-11 rounded-full border border-white/30 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors flex-shrink-0">
-                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-                </button>
-                <button id="tl-next" aria-label="Next"
-                    class="w-11 h-11 rounded-full border border-white/30 bg-white/5 hover:bg-white/15 flex items-center justify-center transition-colors flex-shrink-0">
-                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                </button>
-            </div>
         </div>
 
     </div>
 </section>
-
-<script>
-(function(){
-    var slides  = document.querySelectorAll('.tl-slide');
-    var dots    = document.querySelectorAll('.tl-dot');
-    var labels  = document.querySelectorAll('.tl-dot-label');
-    var pips    = document.querySelectorAll('.tl-dot-pip');
-    var current = 0;
-    var total   = slides.length;
-
-    function goTo(n) {
-        slides[current].classList.replace('opacity-100','opacity-0');
-        slides[current].classList.replace('pointer-events-auto','pointer-events-none');
-
-        labels[current].style.opacity = '0.5';
-        pips[current].classList.remove('border-[#148af4]','bg-[#148af4]');
-        pips[current].classList.add('border-white/30','bg-transparent');
-
-        current = (n + total) % total;
-
-        slides[current].classList.replace('opacity-0','opacity-100');
-        slides[current].classList.replace('pointer-events-none','pointer-events-auto');
-
-        labels[current].style.opacity = '1';
-        pips[current].classList.add('border-[#148af4]','bg-[#148af4]');
-        pips[current].classList.remove('border-white/30','bg-transparent');
-    }
-
-    document.getElementById('tl-prev').addEventListener('click', function(){ goTo(current - 1); });
-    document.getElementById('tl-next').addEventListener('click', function(){ goTo(current + 1); });
-
-    dots.forEach(function(btn) {
-        btn.addEventListener('click', function(){ goTo(parseInt(btn.dataset.index)); });
-    });
-})();
-</script>
 
 <!-- 9. PROOF — TESTIMONIALS — LIGHT -->
 @include('components.testimonials', ['heading' => 'What long-term customers say', 'light' => true])

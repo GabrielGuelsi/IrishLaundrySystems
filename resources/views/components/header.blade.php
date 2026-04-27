@@ -1,11 +1,11 @@
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200" x-data="{ open: false, sectorsOpen: false, equipOpen: false }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-        <div class="flex items-center justify-between h-16 lg:h-18">
+        <div class="flex items-center justify-between h-16 lg:h-24">
 
             <!-- Logo -->
             <div class="flex items-center gap-3 flex-shrink-0">
                 <a href="{{ route('home') }}" class="flex items-center" aria-label="Irish Laundry Systems — Home">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1650 540" class="h-10 w-auto" aria-hidden="true" focusable="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1650 540" class="h-12 lg:h-16 w-auto" aria-hidden="true" focusable="false">
                       <style>.ils-logo{fill:#011e41}</style>
                       <g>
                         <g>
@@ -243,11 +243,4 @@
         </div>
     </div>
 
-    <!-- Electrolux badge - desktop only -->
-    <div class="hidden lg:block bg-bg border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-1 flex items-center justify-between">
-            <span class="text-xs text-navy font-body">Authorised Electrolux Professional Partner &mdash; Engineering-led commercial laundry since 1987</span>
-            <a href="{{ route('electrolux') }}" class="text-xs text-navy hover:text-orange font-body transition-colors">Learn about our partnership &rarr;</a>
-        </div>
-    </div>
 </header>
