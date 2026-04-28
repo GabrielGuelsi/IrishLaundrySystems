@@ -28,7 +28,7 @@
 
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full">
-        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 620px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-10 text-4xl lg:text-5xl xl:text-6xl">

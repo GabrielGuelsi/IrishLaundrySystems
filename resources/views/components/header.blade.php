@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200" x-data="{ open: false, sectorsOpen: false, equipOpen: false }">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-2 2xl:px-16">
         <div class="flex items-center justify-between h-16 lg:h-20">
 
             <!-- Logo -->
