@@ -54,7 +54,7 @@
 
 <!-- Electrolux Partner Strip -->
 <div class="bg-white border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 lg:py-2.5 flex items-center justify-center gap-6 lg:gap-10 flex-wrap">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 py-2 lg:py-2.5 flex items-center justify-center gap-6 lg:gap-10 flex-wrap">
 
         <!-- Logo -->
         <div class="flex-shrink-0">
@@ -109,7 +109,7 @@
 
 <!-- 1.5 LEADERS IN — JLA-style company info -->
 <section class="py-20 lg:py-28 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <h2 class="font-heading font-bold text-navy text-5xl lg:text-6xl xl:text-7xl leading-[1.05]">
                 Leaders in commercial laundry support <span class="text-orange">for over 35 years</span>.
@@ -132,7 +132,7 @@
 <!-- 3. THREE CORE PATHWAYS -->
 
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         <!-- Heading -->
         <div class="mb-10">
@@ -349,7 +349,7 @@
 
 <!-- 8. FINAL CTA + SHORT FORM -->
 <section class="py-16 lg:py-24 bg-navy">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
