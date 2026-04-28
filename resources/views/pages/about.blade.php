@@ -9,8 +9,8 @@
 
 <!-- 1. HERO — DARK with background image -->
 <section
-    class="py-20 lg:py-32 relative overflow-hidden"
-    style="background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
+    class="relative overflow-hidden flex items-center"
+    style="height:720px; min-height:560px; background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
 
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative z-10">
         <div class="max-w-2xl">
@@ -35,6 +35,8 @@
         </div>
     </div>
 </section>
+
+@include('components.partner-strip')
 
 <!-- 2. METRICS STRIP — DARK -->
 <section class="bg-navy border-t border-white/10 py-10">
@@ -65,8 +67,7 @@
     </div>
 </section>
 
-<!-- 3. PARTNER STRIP + PROOF BAR — LIGHT -->
-@include('components.partner-strip')
+<!-- 3. PROOF BAR — LIGHT -->
 @include('components.proof-bar')
 
 <!-- 4. WHAT DRIVES US — split layout -->

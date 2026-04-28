@@ -7,10 +7,8 @@
 
 @section('content')
 
-@include('components.sector-tabs')
-
 <!-- 1. HERO -->
-<section class="relative min-h-[600px] lg:min-h-[680px] flex flex-col overflow-hidden">
+<section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <!-- Background image -->
     <img src="/images/CareFacilities/CareFacilitiesHero.png" alt="Care facility laundry"
          class="absolute inset-0 w-full h-full object-cover object-center">
@@ -37,7 +35,6 @@
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
@@ -69,6 +66,8 @@
         </div>
     </div>
 </section>
+
+@include('components.proof-bar')
 
 <!-- WORKING ROUTE SECTION -->
 <section class="py-16 lg:py-24 bg-white">
@@ -155,99 +154,262 @@
     </div>
 </section>
 
-{{-- D: Enhanced Usability — 4-card hover grid --}}
-<section class="bg-white border-t border-border">
+{{-- D: Enhanced Usability — Apple-style horizontal scroll cards --}}
+<style>
+.ils-apple-wrap { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; cursor:grab; }
+.ils-apple-wrap:active { cursor:grabbing; }
+.ils-apple-wrap::-webkit-scrollbar { display:none; }
+.ils-apple-card { flex:0 0 320px; scroll-snap-align:start; background:#fff; border-radius:18px; padding:26px 26px 70px 26px; min-height:500px; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+.ils-apple-label { font-size:0.72rem; font-weight:600; color:#6e6e73; letter-spacing:0.03em; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; text-transform:uppercase; }
+.ils-apple-title { font-size:1.3rem; font-weight:700; color:#1d1d1f; line-height:1.25; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-body { font-size:0.83rem; color:#6e6e73; line-height:1.65; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-img { flex:1; display:flex; align-items:flex-end; justify-content:center; padding-top:24px; }
+.ils-apple-img img { max-height:200px; width:auto; max-width:100%; object-fit:contain; }
+.ils-apple-plus { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:#1d1d1f; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; transition:background 0.2s; flex-shrink:0; }
+.ils-apple-plus:hover { background:#011E41; }
+.ils-apple-plus svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transition:transform 0.3s ease; flex-shrink:0; }
+.ils-apple-plus.open svg { transform:rotate(45deg); }
+.ils-apple-overlay { position:absolute; inset:0; background:#011E41; border-radius:18px; padding:26px; display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity 0.3s ease; z-index:10; }
+.ils-apple-overlay.open { opacity:1; pointer-events:auto; }
+.ils-apple-overlay h4 { font-size:1.15rem; font-weight:700; color:#fff; margin-bottom:14px; font-family:'Inter',system-ui,sans-serif; line-height:1.3; }
+.ils-apple-overlay p, .ils-apple-overlay li { font-size:0.83rem; color:rgba(255,255,255,0.72); line-height:1.7; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-overlay ul { padding-left:0; list-style:none; }
+.ils-apple-overlay li { display:flex; gap:8px; margin-bottom:8px; }
+.ils-apple-overlay li::before { content:'–'; color:#148af4; flex-shrink:0; font-weight:700; }
+.ils-apple-close { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; }
+.ils-apple-close svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transform:rotate(45deg); }
+</style>
+
+<section class="py-14 lg:py-20" style="background:#f5f5f7;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="py-10 lg:py-14">
-            <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
-                Enhanced usability, superior safety
+        <div class="flex items-end justify-between mb-8 reveal">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">
+                Enhanced usability,<br>superior safety
             </h2>
-
-            {{-- 4-card horizontal grid — homepage card style --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
-                @foreach([
-                    ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in care facility applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
-                    ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',       'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy care facility laundry shifts.'],
-                    ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                             'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
-                ] as $feature)
-                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
-                    <img src="{{ $feature['icon'] }}" alt="" class="absolute inset-0 w-full h-full object-contain p-10 opacity-10 transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                         style="background: rgba(1,30,65,0.92);"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
-                        <h3 class="font-heading font-bold text-white text-lg leading-tight mb-0 group-hover:mb-3 transition-all duration-300">{{ $feature['title'] }}</h3>
-                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
-                            <p class="font-body text-white/75 text-sm leading-relaxed">{{ $feature['body'] }}</p>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-
-                {{-- 4th card: ERGOCERT --}}
-                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
-                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                         style="background: rgba(1,30,65,0.92);"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
-                        <div class="flex gap-1 mb-2">
-                            @for($s = 0; $s < 4; $s++)
-                            <svg class="w-4 h-4 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            @endfor
-                        </div>
-                        <p class="font-heading font-bold text-white text-xl leading-tight mb-0 group-hover:mb-3 transition-all duration-300">Experience<br>4-stars</p>
-                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
-                            <p class="font-body text-white/75 text-sm leading-relaxed">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {{-- Download + Discover row --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6 reveal">
-                <div class="bg-navy rounded-2xl p-6">
-                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
-                    <ul class="space-y-3">
-                        @foreach([
-                            ['label' => 'Line 6000 Evolution Barrier Washers',    'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                            ['label' => 'Line 6000 Pullman Barrier Washers',      'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
-                            ['label' => 'Clean, Sanitize, Decontaminate Brochure','file' => 'Electrolux_WhitePaper_CleaningSolution.pdf'],
-                            ['label' => 'Line 6000 Tumble Dryers',                'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                            ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
-                        ] as $pdf)
-                        <li>
-                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $pdf['label'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="bg-bg border border-border rounded-2xl p-6">
-                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
-                    <ul class="space-y-3">
-                        @foreach([
-                            ['label' => 'Service & Maintenance Contracts', 'route' => 'service-contracts'],
-                            ['label' => 'Full Equipment Range',            'route' => 'equipment'],
-                            ['label' => 'Request a Site Assessment',       'route' => 'contact'],
-                        ] as $link)
-                        <li>
-                            <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                                {{ $link['label'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
         </div>
+
+        <div class="ils-apple-wrap" id="ils-apple-wrap-care">
+
+            {{-- Card 1: Hygiene --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Hygiene</p>
+                <h3 class="ils-apple-title">Maximise hygiene in care facility applications</h3>
+                <p class="ils-apple-body">Robust infection prevention measures to eliminate contamination risk between dirty and clean zones — protecting residents and staff at every wash stage.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/hygiene-icon.png" alt="Hygiene">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Maximise hygiene in care facility applications</h4>
+                    <ul>
+                        <li>Dirty-side to clean-side contamination prevention at every wash stage</li>
+                        <li>Failsafe disinfection cycle — no partial completions reaching clean side</li>
+                        <li>Full audit trail and cycle logging for HIQA compliance</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 2: Productivity --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Productivity</p>
+                <h3 class="ils-apple-title">Operator support in care facility laundries</h3>
+                <p class="ils-apple-body">Dual-partition drum and auto-positioning for easy handling of heavy loads — reducing operator strain on busy care home laundry shifts.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/operator-icon.png" alt="Operator support">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Operator support in care facility laundries</h4>
+                    <ul>
+                        <li>Dual-partition drum for balanced heavy-load handling</li>
+                        <li>Auto-positioning reduces manual repositioning between cycles</li>
+                        <li>Large door openings designed around operator movement</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 3: Control --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Control</p>
+                <h3 class="ils-apple-title">Intelligent control</h3>
+                <p class="ils-apple-body">Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and a complete audit trail for HIQA compliance.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/control-icon.png" alt="Intelligent control">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Intelligent control</h4>
+                    <ul>
+                        <li>Independent zone control — dirty and clean side managed separately</li>
+                        <li>Readable panel across full shift conditions</li>
+                        <li>Cycle data logging for HIQA-compliant audit records</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 4: ERGOCERT --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">ERGOCERT Certified</p>
+                <h3 class="ils-apple-title">Experience 4-star ergonomics</h3>
+                <p class="ils-apple-body">The highest international ergonomics certification available — our entire Line 6000 range has earned the prestigious 4-star ERGOCERT rating.</p>
+                <div class="ils-apple-img" style="justify-content:flex-start;align-items:center;padding-top:32px;">
+                    <div class="flex gap-2">
+                        @for($s = 0; $s < 4; $s++)
+                        <svg style="width:40px;height:40px;color:#148af4;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        @endfor
+                    </div>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>4-star ERGOCERT — the highest level</h4>
+                    <ul>
+                        <li>Certified for reduced operator strain across full working shifts</li>
+                        <li>Door and drum geometry designed for repeated handling tasks</li>
+                        <li>Recognised internationally as the benchmark for laundry ergonomics</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 5: AIDO --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">AIDO System</p>
+                <h3 class="ils-apple-title">Increasingly secure doors for greater productivity</h3>
+                <p class="ils-apple-body">Automatic drum positioning and outer door locking — large openings for easy inner drum handling with auto pre-opening at end of wash cycle.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="AIDO door system" style="max-height:200px;border-radius:12px;object-fit:cover;width:100%;">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" style="width:40px;height:40px;object-fit:fill;flex-shrink:0;">
+                        <span style="font-size:0.75rem;font-weight:700;color:#148af4;text-transform:uppercase;letter-spacing:0.05em;">Auto Inner Door Opening</span>
+                    </div>
+                    <h4>Increasingly secure doors</h4>
+                    <ul>
+                        <li>Automatic drum positioning and outer door locking</li>
+                        <li>Large door openings for easy inner drum handling</li>
+                        <li>Auto inner-drum door pre-opening at end of wash cycle</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 6: Hygiene Watchdog --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Hygiene Watchdog</p>
+                <h3 class="ils-apple-title">Total safety with excellent results</h3>
+                <p class="ils-apple-body">Ensures full cycle completion so all laundry is fully washed and thoroughly decontaminated — the maximum defence against cross infections.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/illustration-barrier-washers-1.webp" alt="Hygiene Watchdog">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" style="width:36px;height:36px;object-fit:fill;flex-shrink:0;">
+                        <span style="font-size:0.75rem;font-weight:700;color:#148af4;text-transform:uppercase;letter-spacing:0.05em;">Hygiene Watchdog</span>
+                    </div>
+                    <h4>Total safety with excellent results</h4>
+                    <ul>
+                        <li>Full cycle completion monitoring — no partial wash passes</li>
+                        <li>Maximum defence against microorganism spread and cross infection</li>
+                        <li>Compatible with HIQA documentation and audit requirements</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 7: Compliance & Usability --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Compliance & Usability</p>
+                <h3 class="ils-apple-title">Usability matters when care teams run the same cycles every day</h3>
+                <p class="ils-apple-body">The right equipment protects your residents and supports your operators — every shift, every day.</p>
+                <div class="ils-apple-img" style="align-items:flex-start;padding-top:20px;flex-direction:column;gap:12px;">
+                    @foreach([
+                        ['title'=>'HIQA audit readiness','body'=>'Cycle logs and documentation built into every wash programme.'],
+                        ['title'=>'Room-aware specification','body'=>'Equipment matched to your layout and resident linen demand.'],
+                        ['title'=>'Operator-friendly controls','body'=>'Readable interfaces for repeated use across long shifts.'],
+                    ] as $pt)
+                    <div class="flex gap-2 items-start">
+                        <span style="width:6px;height:6px;border-radius:50%;background:#148af4;flex-shrink:0;margin-top:6px;"></span>
+                        <div>
+                            <p style="font-size:0.8rem;font-weight:700;color:#1d1d1f;font-family:'Inter',system-ui,sans-serif;">{{ $pt['title'] }}</p>
+                            <p style="font-size:0.75rem;color:#6e6e73;line-height:1.55;font-family:'Inter',system-ui,sans-serif;">{{ $pt['body'] }}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Compliance and usability built in</h4>
+                    <ul>
+                        <li>HIQA audit trail built into every wash programme</li>
+                        <li>Equipment specified to your care facility room layout</li>
+                        <li>ERGOCERT 4-star rating confirms real-world usability for care staff</li>
+                        <li>Readable controls designed for visibility across full working shifts</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>{{-- end apple-wrap --}}
+
     </div>
 </section>
+
+<script>
+function ilsCardToggle(btn) {
+    var card = btn.closest('.ils-apple-card');
+    var overlay = card.querySelector('.ils-apple-overlay');
+    var isOpen = overlay.classList.contains('open');
+    document.querySelectorAll('.ils-apple-overlay.open').forEach(function(o) {
+        o.classList.remove('open');
+        o.closest('.ils-apple-card').querySelector('.ils-apple-plus').classList.remove('open');
+    });
+    if (!isOpen) { overlay.classList.add('open'); btn.classList.add('open'); }
+}
+(function() {
+    var wrap = document.getElementById('ils-apple-wrap-care');
+    if (!wrap) return;
+    var isDown = false, startX, scrollLeft;
+    wrap.addEventListener('mousedown', function(e) { isDown = true; startX = e.pageX - wrap.offsetLeft; scrollLeft = wrap.scrollLeft; });
+    wrap.addEventListener('mouseleave', function() { isDown = false; });
+    wrap.addEventListener('mouseup', function() { isDown = false; });
+    wrap.addEventListener('mousemove', function(e) { if (!isDown) return; e.preventDefault(); wrap.scrollLeft = scrollLeft - (e.pageX - wrap.offsetLeft - startX); });
+})();
+</script>
 
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
@@ -660,42 +822,170 @@
 </section>
 
 
-<!-- HEALTHCARE ROUTE + AUTHORISED PARTNER -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-12">
+<!-- CARE ROUTE — Gallery style -->
+<style>
+.ils-gallery-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    flex: 1 1 25%;
+}
+.ils-gallery-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+.ils-gallery-card:hover img {
+    transform: scale(1.06);
+}
+.ils-gallery-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.35) 55%, rgba(1,30,65,0.10) 100%);
+    z-index: 1;
+    transition: opacity 0.4s;
+}
+.ils-gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(1,30,65,0.90);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.ils-gallery-card:hover::before { opacity: 0; }
+.ils-gallery-card:hover::after  { opacity: 1; visibility: visible; }
 
-        <!-- Top: From room review -->
-        <div class="reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-                <!-- Left: title + subtitle -->
-                <div class="lg:col-span-1">
-                    <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">From facility review to the right next step</h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Care facilities work better when the equipment path and support model are aligned from the start.</p>
-                </div>
-                <!-- Right: 4 steps -->
-                <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                    @foreach([
-                        ['num' => '01', 'title' => 'Assess the room',      'body' => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.'],
-                        ['num' => '02', 'title' => 'Match the equipment',  'body' => 'Match the room logic to the right barrier, washing, drying, and finishing route.'],
-                        ['num' => '03', 'title' => 'Keep support close',   'body' => 'Keep the installed base connected to service contracts, repairs, and aftercare.'],
-                        ['num' => '04', 'title' => 'Move to assessment',   'body' => 'Turn the room, the equipment path, and the support model into one practical next step.'],
-                    ] as $step)
-                    <div class="bg-[#eaeff5] rounded-xl p-6">
-                        <span class="w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm flex items-center justify-center mb-4">{{ $step['num'] }}</span>
-                        <h4 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h4>
-                        <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $step['body'] }}</p>
-                    </div>
-                    @endforeach
-                </div>
+/* Default caption — bottom-left */
+.ils-gcap1 {
+    position: absolute;
+    bottom: 28px;
+    left: 32px;
+    z-index: 3;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.ils-gcap1 .ils-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap1 h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gallery-card:hover .ils-gcap1 {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+/* Hover caption — vertically centered */
+.ils-gcap2 {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    right: 32px;
+    transform: translateY(-40%);
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.ils-gallery-card:hover .ils-gcap2 {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.ils-gcap2 .ils-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap2 h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap2 p {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.85rem;
+    line-height: 1.65;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+@media (max-width: 767px) {
+    .ils-gallery-card { min-height: 300px; flex: 1 1 50%; }
+}
+@media (max-width: 479px) {
+    .ils-gallery-card { min-height: 260px; flex: 1 1 100%; }
+}
+</style>
+
+<section class="w-full overflow-hidden">
+    <div style="display:flex; flex-wrap:wrap;">
+        @foreach([
+            [
+                'num'   => '01.',
+                'title' => 'Assess the room',
+                'body'  => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.',
+                'img'   => '/images/CareFacilities/CareFacilitiesHero.png',
+            ],
+            [
+                'num'   => '02.',
+                'title' => 'Match the equipment',
+                'body'  => 'Match the room logic to the right barrier, washing, drying, and finishing route.',
+                'img'   => '/images/about/about-equipment.jpg',
+            ],
+            [
+                'num'   => '03.',
+                'title' => 'Keep support close',
+                'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
+                'img'   => '/images/about/about-engineers.jpg',
+            ],
+            [
+                'num'   => '04.',
+                'title' => 'Move to assessment',
+                'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
+                'img'   => '/images/about/about-team.jpg',
+            ],
+        ] as $card)
+        <div class="ils-gallery-card">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <!-- Default caption -->
+            <div class="ils-gcap1">
+                <span class="ils-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+            </div>
+            <!-- Hover caption -->
+            <div class="ils-gcap2">
+                <span class="ils-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+                <p>{{ $card['body'] }}</p>
             </div>
         </div>
-
-
+        @endforeach
     </div>
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
@@ -736,29 +1026,7 @@
     </div>
 </section>
 
-<!-- ESSENTIA BAND -->
-<section class="py-6 bg-[#eaeff5]">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-                <img src="/images/healthcare/essentia-logo.png" alt="Essentia" class="w-20 h-20 object-contain">
-            </div>
-            <!-- Text -->
-            <div class="flex-1 text-center lg:text-left">
-                <p class="font-heading font-bold text-navy text-base mb-1">Essentia: the heart of customer service</p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">Providing you with the support you need, taking care of your processes with a reliable service network, a range of tailored-made exclusive services and an innovative technology.</p>
-            </div>
-            <!-- Button -->
-            <div class="flex-shrink-0">
-                <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                    Discover Essentia
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+@include('components.proof-bar')
 
 <!-- AFTERCARE SERVICE CARDS -->
 <section class="py-16 lg:py-24 bg-white">
