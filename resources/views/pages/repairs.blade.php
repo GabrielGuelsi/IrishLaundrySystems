@@ -41,7 +41,8 @@
     </div>
 </section>
 
-<!-- PROOF BAR -->
+<!-- PARTNER STRIP + PROOF BAR -->
+@include('components.partner-strip')
 @include('components.proof-bar')
 
 <!-- RESPONSE STATEMENT -->
@@ -145,6 +146,9 @@ $faqs = [
 ];
 @endphp
 @include('components.faq', ['faqs' => $faqs, 'heading' => 'Repairs &amp; Call-out FAQs'])
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- CTA BAND -->
 @include('components.cta-band', [

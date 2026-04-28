@@ -232,6 +232,9 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
+
 <!-- CTA BAND -->
 @include('components.cta-band', [
     'heading' => 'Discuss rental or lease options',

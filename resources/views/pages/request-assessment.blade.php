@@ -21,7 +21,8 @@
     </div>
 </section>
 
-<!-- PROOF BAR -->
+<!-- PARTNER STRIP + PROOF BAR -->
+@include('components.partner-strip')
 @include('components.proof-bar')
 
 <!-- FORM -->
@@ -290,6 +291,8 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
 @include('components.cta-combined-banner')
 
 @endsection

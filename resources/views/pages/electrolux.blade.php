@@ -219,6 +219,9 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+@include('components.proof-bar')
+
 <!-- TESTIMONIALS -->
 @include('components.testimonials', ['heading' => 'What customers say about our service'])
 

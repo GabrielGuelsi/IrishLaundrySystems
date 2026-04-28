@@ -35,42 +35,10 @@
             </div>
         </div>
     </div>
-    <!-- Partner strip -->
-    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex items-center justify-between gap-6">
-            <div class="flex items-center gap-5">
-                <div class="flex-shrink-0">
-                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
-                         alt="Electrolux Professional Authorized Partner"
-                         class="h-12 w-auto">
-                </div>
-                <div class="hidden sm:block border-l border-gray-300 pl-5">
-                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
-                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
-                </div>
-            </div>
-            <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
-                Learn more
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-    <!-- Trusted by strip -->
-    <div class="relative z-10 w-full bg-white border-t border-gray-100">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-3 flex flex-wrap items-center gap-10">
-            <p class="font-body text-[10px] text-gray-400 uppercase tracking-widest flex-shrink-0">trusted by</p>
-            <div class="w-px h-4 bg-gray-200 flex-shrink-0 hidden sm:block"></div>
-            <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-7 object-contain opacity-60">
-            <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-7 object-contain opacity-60">
-        </div>
-    </div>
 </section>
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-[#f4f6f9] border-b border-border">
@@ -389,99 +357,262 @@
     </div>
 </section>
 
-{{-- D: Enhanced Usability — 4-card hover grid --}}
-<section class="bg-white border-t border-border">
+{{-- D: Enhanced Usability — Apple-style horizontal scroll cards --}}
+<style>
+.ils-apple-wrap { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; cursor:grab; }
+.ils-apple-wrap:active { cursor:grabbing; }
+.ils-apple-wrap::-webkit-scrollbar { display:none; }
+.ils-apple-card { flex:0 0 320px; scroll-snap-align:start; background:#fff; border-radius:18px; padding:26px 26px 70px 26px; min-height:500px; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+.ils-apple-label { font-size:0.72rem; font-weight:600; color:#6e6e73; letter-spacing:0.03em; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; text-transform:uppercase; }
+.ils-apple-title { font-size:1.3rem; font-weight:700; color:#1d1d1f; line-height:1.25; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-body { font-size:0.83rem; color:#6e6e73; line-height:1.65; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-img { flex:1; display:flex; align-items:flex-end; justify-content:center; padding-top:24px; }
+.ils-apple-img img { max-height:200px; width:auto; max-width:100%; object-fit:contain; }
+.ils-apple-plus { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:#1d1d1f; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; transition:background 0.2s; flex-shrink:0; }
+.ils-apple-plus:hover { background:#011E41; }
+.ils-apple-plus svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transition:transform 0.3s ease; flex-shrink:0; }
+.ils-apple-plus.open svg { transform:rotate(45deg); }
+.ils-apple-overlay { position:absolute; inset:0; background:#011E41; border-radius:18px; padding:26px; display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity 0.3s ease; z-index:10; }
+.ils-apple-overlay.open { opacity:1; pointer-events:auto; }
+.ils-apple-overlay h4 { font-size:1.15rem; font-weight:700; color:#fff; margin-bottom:14px; font-family:'Inter',system-ui,sans-serif; line-height:1.3; }
+.ils-apple-overlay p, .ils-apple-overlay li { font-size:0.83rem; color:rgba(255,255,255,0.72); line-height:1.7; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-overlay ul { padding-left:0; list-style:none; }
+.ils-apple-overlay li { display:flex; gap:8px; margin-bottom:8px; }
+.ils-apple-overlay li::before { content:'–'; color:#148af4; flex-shrink:0; font-weight:700; }
+.ils-apple-close { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; }
+.ils-apple-close svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transform:rotate(45deg); }
+</style>
+
+<section class="py-14 lg:py-20" style="background:#f5f5f7;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="py-10 lg:py-14">
-            <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
-                Enhanced usability, superior safety
+        <div class="flex items-end justify-between mb-8 reveal">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">
+                Enhanced usability,<br>superior safety
             </h2>
-
-            {{-- 4-card horizontal grid — homepage card style --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
-                @foreach([
-                    ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in commercial applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
-                    ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy commercial laundry shifts.'],
-                    ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
-                ] as $feature)
-                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
-                    <img src="{{ $feature['icon'] }}" alt="" class="absolute inset-0 w-full h-full object-contain p-10 opacity-10 transition-transform duration-700 group-hover:scale-110">
-                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                         style="background: rgba(1,30,65,0.92);"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
-                        <h3 class="font-heading font-bold text-white text-lg leading-tight mb-0 group-hover:mb-3 transition-all duration-300">{{ $feature['title'] }}</h3>
-                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
-                            <p class="font-body text-white/75 text-sm leading-relaxed">{{ $feature['body'] }}</p>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
-
-                {{-- 4th card: ERGOCERT --}}
-                <div class="group relative overflow-hidden rounded-2xl h-64 cursor-pointer bg-navy">
-                    <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                         style="background: linear-gradient(to top, rgba(1,30,65,1) 0%, rgba(1,30,65,0.4) 60%, transparent 100%);"></div>
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                         style="background: rgba(1,30,65,0.92);"></div>
-                    <div class="absolute inset-0 p-6 flex flex-col justify-end group-hover:justify-start transition-all duration-300">
-                        <div class="flex gap-1 mb-2">
-                            @for($s = 0; $s < 4; $s++)
-                            <svg class="w-4 h-4 text-[#148af4]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                            @endfor
-                        </div>
-                        <p class="font-heading font-bold text-white text-xl leading-tight mb-0 group-hover:mb-3 transition-all duration-300">Experience<br>4-stars</p>
-                        <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-[900ms]">
-                            <p class="font-body text-white/75 text-sm leading-relaxed">Our entire Line 6000 range has earned the prestigious <strong class="text-white">4-star ERGOCERT rating for ergonomics</strong> — the highest international certification available.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            {{-- Download + Discover row --}}
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-6 reveal">
-                <div class="bg-navy rounded-2xl p-6">
-                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
-                    <ul class="space-y-3">
-                        @foreach([
-                            ['label' => 'Line 6000 Evolution Barrier Washers',    'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                            ['label' => 'Line 6000 Pullman Barrier Washers',      'file' => 'EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
-                            ['label' => 'Clean, Sanitize, Decontaminate Brochure','file' => 'Electrolux_WhitePaper_CleaningSolution.pdf'],
-                            ['label' => 'Line 6000 Tumble Dryers',                'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                            ['label' => 'Line 6000 Hot Cylinder Ironers',         'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
-                        ] as $pdf)
-                        <li>
-                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $pdf['label'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-                <div class="bg-bg border border-border rounded-2xl p-6">
-                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
-                    <ul class="space-y-3">
-                        @foreach([
-                            ['label' => 'Service & Maintenance Contracts', 'route' => 'service-contracts'],
-                            ['label' => 'Full Equipment Range',            'route' => 'equipment'],
-                            ['label' => 'Request a Site Assessment',       'route' => 'contact'],
-                        ] as $link)
-                        <li>
-                            <a href="{{ route($link['route']) }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                                {{ $link['label'] }}
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
         </div>
+
+        <div class="ils-apple-wrap" id="ils-apple-wrap-commercial">
+
+            {{-- Card 1: Hygiene --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Hygiene</p>
+                <h3 class="ils-apple-title">Maximise hygiene in commercial applications</h3>
+                <p class="ils-apple-body">Robust infection prevention measures to eliminate contamination risk between dirty and clean zones — protecting staff and maintaining standards at every wash stage.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/hygiene-icon.png" alt="Hygiene">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Maximise hygiene in commercial applications</h4>
+                    <ul>
+                        <li>Dirty-side to clean-side contamination prevention at every wash stage</li>
+                        <li>Failsafe disinfection cycle — no partial completions passing through</li>
+                        <li>Full audit trail and cycle logging for operational compliance</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 2: Productivity --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Productivity</p>
+                <h3 class="ils-apple-title">Operator support in high-output laundries</h3>
+                <p class="ils-apple-body">Dual-partition drum and auto-positioning for easy handling of heavy loads — reducing operator strain on busy commercial and industrial laundry shifts.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/operator-icon.png" alt="Operator support">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Operator support in high-output laundries</h4>
+                    <ul>
+                        <li>Dual-partition drum for balanced heavy-load handling</li>
+                        <li>Auto-positioning reduces manual repositioning between cycles</li>
+                        <li>Large door openings designed around operator throughput</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 3: Control --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Control</p>
+                <h3 class="ils-apple-title">Intelligent control</h3>
+                <p class="ils-apple-body">Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and a complete audit trail for compliance records.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/control-icon.png" alt="Intelligent control">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Intelligent control</h4>
+                    <ul>
+                        <li>Independent zone control — dirty and clean side managed separately</li>
+                        <li>Readable panel across full shift conditions</li>
+                        <li>Cycle data logging for compliance and operational audit records</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 4: ERGOCERT --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">ERGOCERT Certified</p>
+                <h3 class="ils-apple-title">Experience 4-star ergonomics</h3>
+                <p class="ils-apple-body">The highest international ergonomics certification available — our entire Line 6000 range has earned the prestigious 4-star ERGOCERT rating.</p>
+                <div class="ils-apple-img" style="justify-content:flex-start;align-items:center;padding-top:32px;">
+                    <div class="flex gap-2">
+                        @for($s = 0; $s < 4; $s++)
+                        <svg style="width:40px;height:40px;color:#148af4;" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        @endfor
+                    </div>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>4-star ERGOCERT — the highest level</h4>
+                    <ul>
+                        <li>Certified for reduced operator strain across full working shifts</li>
+                        <li>Door and drum geometry designed for repeated handling tasks</li>
+                        <li>Recognised internationally as the benchmark for laundry ergonomics</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 5: AIDO --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">AIDO System</p>
+                <h3 class="ils-apple-title">Increasingly secure doors for greater productivity</h3>
+                <p class="ils-apple-body">Automatic drum positioning and outer door locking — large openings for easy inner drum handling with auto pre-opening at end of wash cycle.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/Foto-web-BW.jpg" alt="AIDO door system" style="max-height:200px;border-radius:12px;object-fit:cover;width:100%;">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" style="width:40px;height:40px;object-fit:fill;flex-shrink:0;">
+                        <span style="font-size:0.75rem;font-weight:700;color:#148af4;text-transform:uppercase;letter-spacing:0.05em;">Auto Inner Door Opening</span>
+                    </div>
+                    <h4>Increasingly secure doors</h4>
+                    <ul>
+                        <li>Automatic drum positioning and outer door locking</li>
+                        <li>Large door openings for easy inner drum handling</li>
+                        <li>Auto inner-drum door pre-opening at end of wash cycle</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 6: Hygiene Watchdog --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Hygiene Watchdog</p>
+                <h3 class="ils-apple-title">Total safety with excellent results</h3>
+                <p class="ils-apple-body">Ensures full cycle completion so all laundry is fully washed and thoroughly decontaminated — the maximum defence against cross contamination.</p>
+                <div class="ils-apple-img">
+                    <img src="/images/healthcare/illustration-barrier-washers-1.webp" alt="Hygiene Watchdog">
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" style="width:36px;height:36px;object-fit:fill;flex-shrink:0;">
+                        <span style="font-size:0.75rem;font-weight:700;color:#148af4;text-transform:uppercase;letter-spacing:0.05em;">Hygiene Watchdog</span>
+                    </div>
+                    <h4>Total safety with excellent results</h4>
+                    <ul>
+                        <li>Full cycle completion monitoring — no partial wash passes</li>
+                        <li>Maximum defence against microorganism spread and cross contamination</li>
+                        <li>Compatible with operational documentation and audit requirements</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            {{-- Card 7: Efficiency & Throughput --}}
+            <div class="ils-apple-card">
+                <p class="ils-apple-label">Efficiency & Throughput</p>
+                <h3 class="ils-apple-title">Built for operators running high-volume commercial cycles every day</h3>
+                <p class="ils-apple-body">The right equipment supports throughput, operator efficiency, and compliance — every shift, every day.</p>
+                <div class="ils-apple-img" style="align-items:flex-start;padding-top:20px;flex-direction:column;gap:12px;">
+                    @foreach([
+                        ['title'=>'High-capacity cycle management','body'=>'Optimised drum sizes and programme flexibility for volume demands.'],
+                        ['title'=>'Operator-friendly controls','body'=>'Readable interfaces designed for repeated use across long industrial shifts.'],
+                        ['title'=>'Compliance audit trail','body'=>'Cycle logs and documentation built into every wash programme.'],
+                    ] as $pt)
+                    <div class="flex gap-2 items-start">
+                        <span style="width:6px;height:6px;border-radius:50%;background:#148af4;flex-shrink:0;margin-top:6px;"></span>
+                        <div>
+                            <p style="font-size:0.8rem;font-weight:700;color:#1d1d1f;font-family:'Inter',system-ui,sans-serif;">{{ $pt['title'] }}</p>
+                            <p style="font-size:0.75rem;color:#6e6e73;line-height:1.55;font-family:'Inter',system-ui,sans-serif;">{{ $pt['body'] }}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                </button>
+                <div class="ils-apple-overlay">
+                    <h4>Efficiency and throughput built in</h4>
+                    <ul>
+                        <li>High-capacity drum and programme flexibility for commercial volume</li>
+                        <li>Equipment specified to your room layout and operational demand</li>
+                        <li>ERGOCERT 4-star rating confirms real-world usability for laundry operators</li>
+                        <li>Readable controls designed for visibility across full working shifts</li>
+                    </ul>
+                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
+                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>{{-- end apple-wrap --}}
+
     </div>
 </section>
+
+<script>
+function ilsCardToggle(btn) {
+    var card = btn.closest('.ils-apple-card');
+    var overlay = card.querySelector('.ils-apple-overlay');
+    var isOpen = overlay.classList.contains('open');
+    document.querySelectorAll('.ils-apple-overlay.open').forEach(function(o) {
+        o.classList.remove('open');
+        o.closest('.ils-apple-card').querySelector('.ils-apple-plus').classList.remove('open');
+    });
+    if (!isOpen) { overlay.classList.add('open'); btn.classList.add('open'); }
+}
+(function() {
+    var wrap = document.getElementById('ils-apple-wrap-commercial');
+    if (!wrap) return;
+    var isDown = false, startX, scrollLeft;
+    wrap.addEventListener('mousedown', function(e) { isDown = true; startX = e.pageX - wrap.offsetLeft; scrollLeft = wrap.scrollLeft; });
+    wrap.addEventListener('mouseleave', function() { isDown = false; });
+    wrap.addEventListener('mouseup', function() { isDown = false; });
+    wrap.addEventListener('mousemove', function(e) { if (!isDown) return; e.preventDefault(); wrap.scrollLeft = scrollLeft - (e.pageX - wrap.offsetLeft - startX); });
+})();
+</script>
 
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
@@ -516,7 +647,7 @@
 
             <!-- Card 2: Repairs & Call-outs -->
             <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/Repairs%20%26%20Call-outs.png" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
+                <img src="/images/healthcare/Repairsandcallouts.jpeg" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
                 <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
                 <div class="absolute inset-0 flex flex-col justify-end p-8">
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Repairs &amp; Call-outs</h3>
@@ -588,10 +719,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex justify-center">
+                <div class="relative flex justify-center">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4 flex items-center gap-2">
+                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
+                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
+                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
+                             style="width:52px;height:52px;object-fit:fill;flex-shrink:0;">
+                    </div>
                 </div>
             </div>
 
@@ -722,10 +859,15 @@
                         This unique combination distinguishes them from all other dryers on the market.</p>
                     </div>
                 </div>
-                <div class="flex justify-center order-1 lg:order-2">
+                <div class="relative flex justify-center order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -768,10 +910,18 @@
 
             <!-- 3. Ironers — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
-                <div class="flex justify-center">
+                <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
+                    <div class="flex items-center gap-3">
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
+                        </div>
+                        <div class="w-16 h-16 flex items-center justify-center">
+                            <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
+                        </div>
+                    </div>
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-6">Ironers</h3>
@@ -879,42 +1029,12 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-12">
 
-        <!-- Authorised Partner -->
-        <div class="border-t border-gray-200 pt-10 reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-0 divide-y lg:divide-y-0 lg:divide-x divide-gray-200 items-center">
-                <!-- Left: logo + badge -->
-                <div class="flex flex-col items-center justify-center gap-3 pb-6 lg:pb-0 lg:pr-8">
-                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg" alt="Electrolux Professional Authorized Partner" class="h-16 object-contain">
-                    <p class="font-heading font-bold text-xs tracking-widest text-gray-400 uppercase">Authorized Partner</p>
-                </div>
-                <!-- Middle: title + description -->
-                <div class="py-6 lg:py-0 lg:px-8">
-                    <p class="font-heading font-bold text-navy text-base leading-snug mb-2">Electrolux Professional Authorized Partner</p>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems combines local engineering support in Ireland with manufacturer-grade equipment standards, lifecycle continuity, and a more structured route into service and lifecycle support.</p>
-                </div>
-                <!-- Right: 3 feature tiles -->
-                <div class="pt-6 lg:pt-0 lg:pl-8 grid grid-cols-3 gap-4">
-                    @foreach([
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>',
-                          'label' => 'Local engineering execution'],
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>',
-                          'label' => 'Lifecycle support route'],
-                        ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>',
-                          'label' => 'Genuine parts continuity'],
-                    ] as $feat)
-                    <div class="flex flex-col items-center text-center gap-2">
-                        <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $feat['icon'] !!}</svg>
-                        </div>
-                        <p class="font-body text-gray-500 text-xs leading-tight">{{ $feat['label'] }}</p>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
 
     </div>
 </section>
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">

@@ -32,7 +32,8 @@
     </div>
 </section>
 
-<!-- PROOF BAR -->
+<!-- PARTNER STRIP + PROOF BAR -->
+@include('components.partner-strip')
 @include('components.proof-bar')
 
 <!-- OUTCOME CARDS -->
@@ -183,6 +184,9 @@
         </div>
     </div>
 </section>
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- CTA BAND -->
 @include('components.cta-band', [

@@ -15,7 +15,8 @@
     </div>
 </section>
 
-<!-- PROOF BAR -->
+<!-- PARTNER STRIP + PROOF BAR -->
+@include('components.partner-strip')
 @include('components.proof-bar')
 
 <!-- GUIDES -->
@@ -102,6 +103,9 @@
         </div>
     </div>
 </section>
+
+@include('components.partner-strip')
+@include('components.proof-bar')
 
 <!-- CTA BAND -->
 @include('components.cta-band', [
