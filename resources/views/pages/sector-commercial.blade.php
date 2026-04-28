@@ -38,7 +38,6 @@
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-[#f4f6f9] border-b border-border">
@@ -73,6 +72,8 @@
         </div>
     </div>
 </section>
+
+@include('components.proof-bar')
 
 <!-- FROM ROOM REVIEW — Scroll-pinned with changing images -->
 <style>

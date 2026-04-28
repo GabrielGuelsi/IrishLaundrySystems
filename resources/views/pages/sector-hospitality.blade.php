@@ -37,7 +37,6 @@
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-gray-50 border-b border-border">
@@ -72,6 +71,8 @@
         </div>
     </div>
 </section>
+
+@include('components.proof-bar')
 
 <!-- FROM ROOM REVIEW — Scroll-pinned Hajster-style -->
 <style>

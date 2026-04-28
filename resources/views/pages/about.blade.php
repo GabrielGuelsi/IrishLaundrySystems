@@ -36,6 +36,8 @@
     </div>
 </section>
 
+@include('components.partner-strip')
+
 <!-- 2. METRICS STRIP — DARK -->
 <section class="bg-navy border-t border-white/10 py-10">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -65,8 +67,7 @@
     </div>
 </section>
 
-<!-- 3. PARTNER STRIP + PROOF BAR — LIGHT -->
-@include('components.partner-strip')
+<!-- 3. PROOF BAR — LIGHT -->
 @include('components.proof-bar')
 
 <!-- 4. WHAT DRIVES US — split layout -->
