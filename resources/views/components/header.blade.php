@@ -1,6 +1,6 @@
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200" x-data="{ open: false, sectorsOpen: false, equipOpen: false }">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
-        <div class="flex items-center justify-between h-16 lg:h-24">
+        <div class="flex items-center justify-between h-16 lg:h-20">
 
             <!-- Logo -->
             <div class="flex items-center gap-3 flex-shrink-0">
@@ -65,9 +65,9 @@
                     <div x-show="servicesOpen" x-cloak x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
+                        <a href="{{ route('repairs') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Repairs &amp; Call-outs</a>
                         <a href="{{ route('services') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-semibold">Services Overview</a>
                         <a href="{{ route('service-contracts') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Service Contracts</a>
-                        <a href="{{ route('repairs') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Repairs &amp; Call-outs</a>
                         <a href="{{ route('services') }}#parts" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Parts &amp; Aftercare</a>
                     </div></div>
                 </div>
@@ -186,9 +186,9 @@
                     <svg class="w-4 h-4 text-navy/40 transition-transform duration-200" :class="svOpen ? 'rotate-90' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
                 </button>
                 <div x-show="svOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
+                    <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Repairs &amp; Call-outs</a>
                     <a href="{{ route('services') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Services Overview</a>
                     <a href="{{ route('service-contracts') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Service Contracts</a>
-                    <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Repairs &amp; Call-outs</a>
                     <a href="{{ route('services') }}#parts" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Parts &amp; Aftercare</a>
                 </div>
             </div>

@@ -15,8 +15,7 @@
         {{-- Right: image with diagonal clip --}}
         <div class="hidden lg:block relative">
             <div class="absolute inset-0" style="clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);">
-                <img src="/images/about/about-team.jpg" alt="Support team" class="w-full h-full object-cover opacity-80">
-                <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, transparent 30%);"></div>
+                <img src="/images/about/about-team.jpg" alt="Support team" class="w-full h-full object-cover">
             </div>
         </div>
     </div>

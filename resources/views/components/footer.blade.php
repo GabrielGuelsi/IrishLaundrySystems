@@ -31,7 +31,7 @@
             <div>
                 <img src="/images/logo/ILS-LOGO-HORIZONTAL-WHITE.svg"
                      alt="Irish Laundry Systems"
-                     class="h-10 w-auto mb-5"
+                     class="h-16 lg:h-20 w-auto mb-6"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
                 <span style="display:none" class="font-heading font-bold text-white text-xl tracking-tight block mb-5">Irish Laundry Systems</span>
 

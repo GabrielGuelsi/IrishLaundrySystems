@@ -9,9 +9,9 @@
 
         <!-- Heading -->
         <div class="mb-10">
-            <h2 class="font-heading text-navy text-4xl lg:text-5xl leading-tight">
-                <span class="font-bold">Support for</span> healthcare, Care Facilities,<br class="hidden lg:block">
-                Hospitality, and Industrial Sites.
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                Support for <span class="text-orange">healthcare, Care Facilities,<br class="hidden lg:block">
+                Hospitality, and Industrial Sites</span>.
             </h2>
         </div>
 
@@ -75,7 +75,7 @@
             <!-- Commercial & Industrial -->
             <a href="{{ route('sectors.commercial') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/commercial-industrial.jpg" alt="Commercial and industrial laundry support"
+                <img src="/images/healthcare/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
