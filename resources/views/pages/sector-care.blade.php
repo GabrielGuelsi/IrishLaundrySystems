@@ -7,8 +7,6 @@
 
 @section('content')
 
-@include('components.sector-tabs')
-
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <!-- Background image -->
