@@ -1033,7 +1033,6 @@ function ilsCardToggle(btn) {
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
@@ -1074,29 +1073,7 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
-<!-- ESSENTIA BAND -->
-<section class="py-6 bg-[#eaeff5]">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
-            <!-- Logo -->
-            <div class="flex-shrink-0">
-                <img src="/images/healthcare/essentia-logo.png" alt="Essentia" class="w-20 h-20 object-contain">
-            </div>
-            <!-- Text -->
-            <div class="flex-1 text-center lg:text-left">
-                <p class="font-heading font-bold text-navy text-base mb-1">Essentia: the heart of customer service</p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">Providing you with the support you need, taking care of your processes with a reliable service network, a range of tailored-made exclusive services and an innovative technology.</p>
-            </div>
-            <!-- Button -->
-            <div class="flex-shrink-0">
-                <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                    Discover Essentia
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+@include('components.proof-bar')
 
 @include('components.cta-combined-banner')
 
