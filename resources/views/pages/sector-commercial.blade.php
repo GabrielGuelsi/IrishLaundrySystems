@@ -10,7 +10,7 @@
 @include('components.sector-tabs')
 
 <!-- 1. HERO -->
-<section class="relative min-h-[600px] lg:min-h-[680px] flex flex-col overflow-hidden">
+<section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <!-- Background image -->
     <img src="/images/about/about-equipment.jpg" alt="Commercial laundry operation"
          class="absolute inset-0 w-full h-full object-cover object-center">

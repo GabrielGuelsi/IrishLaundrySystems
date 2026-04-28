@@ -9,8 +9,8 @@
 
 <!-- 1. HERO — DARK with background image -->
 <section
-    class="py-20 lg:py-32 relative overflow-hidden"
-    style="background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
+    class="relative overflow-hidden flex items-center"
+    style="height:720px; min-height:560px; background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
 
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative z-10">
         <div class="max-w-2xl">
