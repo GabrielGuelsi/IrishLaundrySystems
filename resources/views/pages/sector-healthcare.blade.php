@@ -1223,6 +1223,35 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
+{{-- "We help match" navy strip --}}
+<section class="relative overflow-hidden bg-navy">
+    <div class="grid grid-cols-1 lg:grid-cols-2 min-h-[160px]">
+        <div class="flex flex-col justify-center px-10 lg:px-20 py-10 z-10 relative">
+            <div class="w-12 h-12 rounded-md bg-white/10 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
+                </svg>
+            </div>
+            <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-6">
+                We help match the room, the workflow and the equipment.
+            </h2>
+            <div>
+                <a href="{{ route('request-assessment') }}" class="inline-flex items-center gap-2 text-white font-body font-semibold text-base hover:opacity-80 transition-opacity">
+                    Site planning support
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="hidden lg:block relative">
+            <div class="absolute inset-0" style="clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);">
+                <img src="/images/about/about-team.jpg" alt="Planning support" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- 9. ASSESSMENT FORM -->
 <section id="healthcare-assessment" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
