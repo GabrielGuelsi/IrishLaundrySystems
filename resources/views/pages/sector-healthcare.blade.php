@@ -812,7 +812,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- COMMERCIAL WASHERS — image left, text right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex justify-center">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
@@ -835,7 +835,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- 2. Tumble Dryers — text left, image right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
                         Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> healthcare cycles.
@@ -905,7 +905,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- 3. Ironers — image left, text right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
