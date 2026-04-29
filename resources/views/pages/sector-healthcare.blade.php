@@ -85,7 +85,7 @@
 
             <!-- Image -->
             <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/healthcare/workflow.jpg"
+                <img src="/images/healthcare/barrierwasherelectrolux.png"
                      alt="Healthcare laundry room"
                      class="w-full h-[580px] object-cover object-center">
             </div>
@@ -95,9 +95,6 @@
                 <h3 class="font-heading font-bold text-white text-2xl leading-snug mb-4">
                     Healthcare laundry needs a <strong>working route</strong>, not isolated process steps
                 </h3>
-                <p class="font-body text-white/70 text-sm leading-relaxed mb-6 border border-white/10 rounded-lg p-3">
-                    In healthcare environments, room layout, segregation logic, loading and unloading discipline, throughput pressure, and the support model all shape the real equipment decision.
-                </p>
                 <ul class="space-y-3">
                     @foreach([
                         'Dirty-side and clean-side handling discipline',
