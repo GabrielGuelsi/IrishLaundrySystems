@@ -955,7 +955,7 @@ function ilsCardToggle(btn) {
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col items-center gap-3">
                         <div class="w-16 h-16 flex items-center justify-center">
                             <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
                         </div>
