@@ -1367,6 +1367,8 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
+@include('components.testimonials')
+
 @include('components.cta-combined-banner')
 
 @endsection
