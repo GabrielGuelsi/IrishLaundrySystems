@@ -120,8 +120,9 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl mb-10 reveal">
-            <h2 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight">
-                <strong>Barrier workflow</strong> where <strong>dirty-side</strong> and <strong>clean-side</strong> handling need to stay separate
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                Barrier workflow<br>
+                <span style="color:#148af4;">where dirty-side and clean-side handling need to stay separate.</span>
             </h2>
         </div>
 
