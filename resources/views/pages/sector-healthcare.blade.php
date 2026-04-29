@@ -121,8 +121,8 @@
 
         <div class="max-w-3xl mb-10 reveal">
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                Barrier workflow<br>
-                <span style="color:#2a6db5;">where dirty-side and clean-side handling need to stay separate.</span>
+                Barrier workflow where dirty-side<br>
+                <span style="color:#148af4;">and clean-side handling need to stay separate.</span>
             </h2>
         </div>
 
