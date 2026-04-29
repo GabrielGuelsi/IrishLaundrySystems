@@ -34,7 +34,9 @@
     </div>
 </section>
 
-@include('components.cta-combined-banner')
+@include('components.partner-strip')
+
+@include('components.proof-bar')
 
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
