@@ -72,213 +72,168 @@
 
 @include('components.proof-bar')
 
-<!-- FROM ROOM REVIEW — Scroll-pinned Hajster-style -->
+<!-- HOSPITALITY ROUTE — Gallery style -->
 <style>
-.hosp-scroll-section { position: relative; overflow: hidden; }
-.hosp-scroll-inner {
+.ils-gallery-card {
     position: relative;
-    display: flex;
-    align-items: center;
-    height: 75vh;
-    min-height: 480px;
-    max-height: 720px;
-    width: 100%;
     overflow: hidden;
+    min-height: 520px;
+    flex: 1 1 25%;
 }
-.hosp-scroll-bg {
+.ils-gallery-card img {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-.hosp-scroll-bg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center 20%;
-}
-.hosp-scroll-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.55) 50%, rgba(1,30,65,0.25) 100%);
-}
-.hosp-scroll-title {
-    position: relative;
-    z-index: 20;
-    width: 42%;
-    flex-shrink: 0;
-    padding: 3rem 4rem 3rem 0;
-}
-.hosp-scroll-cards {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}
-.hosp-scroll-card {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-}
-.hosp-scroll-card-img {
-    position: absolute;
-    inset: 0;
-    overflow: hidden;
-}
-.hosp-scroll-card-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: transform 0.6s ease;
 }
-.hosp-scroll-card-img::after {
+.ils-gallery-card:hover img {
+    transform: scale(1.06);
+}
+.ils-gallery-card::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to right, rgba(1,30,65,0.9) 0%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.2) 100%);
+    background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.35) 55%, rgba(1,30,65,0.10) 100%);
+    z-index: 1;
+    transition: opacity 0.4s;
 }
-.hosp-scroll-card-inner {
-    position: relative;
+.ils-gallery-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(1,30,65,0.90);
     z-index: 2;
-    width: 40%;
-    max-width: 440px;
-    margin-right: 5%;
-    background: rgba(248, 249, 251, 0.97);
-    border-radius: 1.25rem;
-    padding: 2rem 2.25rem;
-    box-shadow: 0 16px 48px rgba(0,0,0,0.22);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
 }
-@media (max-width: 1024px) {
-    .hosp-scroll-title { display: none; }
-    .hosp-scroll-card-inner { width: 88%; max-width: none; margin: 0 auto; }
-    .hosp-scroll-card { justify-content: center; }
+.ils-gallery-card:hover::before { opacity: 0; }
+.ils-gallery-card:hover::after  { opacity: 1; visibility: visible; }
+
+/* Default caption — bottom-left */
+.ils-gcap1 {
+    position: absolute;
+    bottom: 28px;
+    left: 32px;
+    z-index: 3;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.ils-gcap1 .ils-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap1 h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gallery-card:hover .ils-gcap1 {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+/* Hover caption — vertically centered */
+.ils-gcap2 {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    right: 32px;
+    transform: translateY(-40%);
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.ils-gallery-card:hover .ils-gcap2 {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.ils-gcap2 .ils-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap2 h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+.ils-gcap2 p {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.85rem;
+    line-height: 1.65;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+@media (max-width: 767px) {
+    .ils-gallery-card { min-height: 300px; flex: 1 1 50%; }
+}
+@media (max-width: 479px) {
+    .ils-gallery-card { min-height: 260px; flex: 1 1 100%; }
 }
 </style>
 
-<section class="hosp-scroll-section">
-    <div class="hosp-scroll-inner" id="hosp-scroll-inner">
-
-        {{-- Left: fixed title --}}
-        <div class="hosp-scroll-title" style="position:relative;z-index:20;padding-left:max(5%,calc((100vw - 1536px)/2 + 5rem));">
-            <h2 class="font-heading font-bold text-white leading-tight mb-3" style="font-size:clamp(1.5rem,2.6vw,2.4rem);">
-                From room review to the right next step
-            </h2>
-            <p class="font-body text-white/60 text-sm leading-relaxed">
-                Hospitality laundry rooms work better when the equipment path and support model are aligned from the start.
-            </p>
+<section class="w-full overflow-hidden">
+    <div style="display:flex; flex-wrap:wrap;">
+        @foreach([
+            [
+                'num'   => '01.',
+                'title' => 'Assess the room',
+                'body'  => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.',
+                'img'   => '/images/Hospitallity/HeroHospitallity.png',
+            ],
+            [
+                'num'   => '02.',
+                'title' => 'Match the equipment',
+                'body'  => 'Match the room logic to the right barrier, washing, drying, and finishing route.',
+                'img'   => '/images/about/about-equipment.jpg',
+            ],
+            [
+                'num'   => '03.',
+                'title' => 'Keep support close',
+                'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
+                'img'   => '/images/about/about-engineers.jpg',
+            ],
+            [
+                'num'   => '04.',
+                'title' => 'Move to assessment',
+                'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
+                'img'   => '/images/healthcare/workflow.jpg',
+            ],
+        ] as $card)
+        <div class="ils-gallery-card">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <!-- Default caption -->
+            <div class="ils-gcap1">
+                <span class="ils-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+            </div>
+            <!-- Hover caption -->
+            <div class="ils-gcap2">
+                <span class="ils-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+                <p>{{ $card['body'] }}</p>
+            </div>
         </div>
-
-        {{-- Stacked cards with individual backgrounds --}}
-        <div class="hosp-scroll-cards">
-
-            {{-- Card 1 — HeroHospitallity --}}
-            <div class="hosp-scroll-card">
-                <div class="hosp-scroll-card-img">
-                    <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry">
-                </div>
-                <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">01</span>
-                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Assess the room</h3>
-                    <p class="font-body text-gray-500 leading-relaxed text-sm">Review flow, hygiene handling, throughput pressure, and the practical layout of the room.</p>
-                </div>
-            </div>
-
-            {{-- Card 2 — about-equipment --}}
-            <div class="hosp-scroll-card">
-                <div class="hosp-scroll-card-img">
-                    <img src="/images/about/about-equipment.jpg" alt="Laundry equipment">
-                </div>
-                <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">02</span>
-                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Match the equipment</h3>
-                    <p class="font-body text-gray-500 leading-relaxed text-sm">Match the room logic to the right barrier, washing, drying, and finishing route.</p>
-                </div>
-            </div>
-
-            {{-- Card 3 — about-engineers --}}
-            <div class="hosp-scroll-card">
-                <div class="hosp-scroll-card-img">
-                    <img src="/images/about/about-engineers.jpg" alt="Engineers">
-                </div>
-                <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">03</span>
-                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Keep support close</h3>
-                    <p class="font-body text-gray-500 leading-relaxed text-sm">Keep the installed base connected to service contracts, repairs, and aftercare.</p>
-                </div>
-            </div>
-
-            {{-- Card 4 — workflow --}}
-            <div class="hosp-scroll-card">
-                <div class="hosp-scroll-card-img">
-                    <img src="/images/healthcare/workflow.jpg" alt="Laundry workflow">
-                </div>
-                <div class="hosp-scroll-card-inner">
-                    <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-navy text-white font-heading font-bold text-sm mb-4">04</span>
-                    <h3 class="font-heading font-bold text-navy mb-2" style="font-size:1.45rem;line-height:1.2;">Move to assessment</h3>
-                    <p class="font-body text-gray-500 leading-relaxed text-sm">Turn the room, the equipment path, and the support model into one practical next step.</p>
-                </div>
-            </div>
-
-        </div>
+        @endforeach
     </div>
 </section>
-
-<script>
-(function () {
-    function initHospScroll() {
-        if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-        gsap.registerPlugin(ScrollTrigger);
-        var inner = document.getElementById('hosp-scroll-inner');
-        if (!inner) return;
-        var cards = inner.querySelectorAll('.hosp-scroll-card-inner');
-        var imgs  = inner.querySelectorAll('.hosp-scroll-card-img');
-        if (cards.length < 2) return;
-
-        // Initial state: only card 1 + img 1 visible
-        for (var i = 1; i < cards.length; i++) {
-            gsap.set(cards[i], { opacity: 0, y: 60 });
-            gsap.set(imgs[i],  { opacity: 0 });
-        }
-
-        var tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: inner,
-                pin: true,
-                scrub: 0.4,
-                start: 'center center',
-                end: 'top+=3000 center',
-                anticipatePin: 1,
-            }
-        });
-
-        // Card 1 → 2
-        tl.to(cards[0], { opacity: 0, y: -60, duration: 0.5 }, 0)
-          .to(imgs[0],   { opacity: 0,         duration: 0.8 }, 0)
-          .to(imgs[1],   { opacity: 1,         duration: 0.8 }, 0)
-          .to(cards[1],  { opacity: 1, y: 0,   duration: 0.5 }, 0.4)
-        // Card 2 → 3
-          .to(cards[1], { opacity: 0, y: -60, duration: 0.5 }, 1.4)
-          .to(imgs[1],  { opacity: 0,         duration: 0.8 }, 1.4)
-          .to(imgs[2],  { opacity: 1,         duration: 0.8 }, 1.4)
-          .to(cards[2], { opacity: 1, y: 0,   duration: 0.5 }, 1.8)
-        // Card 3 → 4
-          .to(cards[2], { opacity: 0, y: -60, duration: 0.5 }, 2.8)
-          .to(imgs[2],  { opacity: 0,         duration: 0.8 }, 2.8)
-          .to(imgs[3],  { opacity: 1,         duration: 0.8 }, 2.8)
-          .to(cards[3], { opacity: 1, y: 0,   duration: 0.5 }, 3.2);
-    }
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initHospScroll);
-    } else {
-        initHospScroll();
-    }
-})();
-</script>
 
 <!-- KEEP THE SUPPORT MATCHED -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
