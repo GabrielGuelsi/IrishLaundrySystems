@@ -1076,7 +1076,11 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
+@include('components.why-choose-strip')
+
 @include('components.cta-combined-banner')
+
+@include('components.aftercare-service-cards')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
