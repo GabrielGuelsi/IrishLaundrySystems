@@ -91,20 +91,20 @@
             </div>
 
             <!-- Navy card overlapping left -->
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[580px] bg-navy rounded-2xl p-12 shadow-2xl">
-                <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-snug mb-8">
+            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-10 shadow-2xl">
+                <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
                     Healthcare laundry needs a <strong>working route</strong>, not isolated process steps
                 </h3>
-                <ul class="space-y-4">
+                <ul class="space-y-3">
                     @foreach([
                         'Dirty-side and clean-side handling discipline',
                         'Room-aware equipment route',
                         'Capacity and throughput pressure',
                         'Service route from the start',
                     ] as $n => $point)
-                    <li class="flex items-center gap-4">
-                        <span class="w-9 h-9 rounded-full bg-[#148af4] text-white font-heading font-bold text-sm flex items-center justify-center flex-shrink-0">{{ $n + 1 }}</span>
-                        <span class="font-body text-white text-base">{{ $point }}</span>
+                    <li class="flex items-center gap-3">
+                        <span class="w-8 h-8 rounded-full bg-[#148af4] text-white font-heading font-bold text-sm flex items-center justify-center flex-shrink-0">{{ $n + 1 }}</span>
+                        <span class="font-body text-white text-sm">{{ $point }}</span>
                     </li>
                     @endforeach
                 </ul>
