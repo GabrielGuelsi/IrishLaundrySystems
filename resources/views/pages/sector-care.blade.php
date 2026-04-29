@@ -1183,8 +1183,6 @@ function ilsCardToggle(btn) {
 
 @include('components.testimonials')
 
-@include('components.cta-combined-banner')
-
 <!-- 9. ASSESSMENT FORM -->
 <section id="care-assessment" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
