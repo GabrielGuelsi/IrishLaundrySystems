@@ -35,9 +35,7 @@
     </div>
 </section>
 
-@include('components.partner-strip')
-
-@include('components.proof-bar')
+@include('components.cta-combined-banner')
 
 <!-- SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-[#f4f6f9] border-b border-border">
@@ -1076,9 +1074,7 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
-@include('components.partner-strip')
-
-@include('components.proof-bar')
+@include('components.cta-combined-banner')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
