@@ -1184,65 +1184,6 @@ function ilsCardToggle(btn) {
 
 @include('components.cta-combined-banner')
 
-<!-- SUGGESTED EQUIPMENT -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        {{-- Header --}}
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">Suggested equipment through the healthcare route</h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">The category choice should follow the room, the workflow, and the support model.</p>
-        </div>
-
-        {{-- 4 equipment cards --}}
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reveal">
-            @foreach([
-                ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.'],
-                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.'],
-                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
-                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
-            ] as $eq)
-            <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-6">
-                <div class="min-h-[100px]">
-                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $eq['name'] }}</p>
-                    <p class="font-body text-[#148af4] text-base leading-relaxed">{{ $eq['desc'] }}</p>
-                </div>
-                <div class="flex items-center justify-center h-80 rounded-lg overflow-hidden bg-white">
-                    <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
-                </div>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
-                    View Equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-            </div>
-            @endforeach
-        </div>
-
-    </div>
-</section>
-
-{{-- "We help match" navy strip --}}
-<section class="bg-navy">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-8 flex items-center gap-6">
-        <div class="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center flex-shrink-0">
-            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
-            </svg>
-        </div>
-        <p class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">
-            We help match the room, the workflow and the equipment.
-        </p>
-        <a href="{{ route('request-assessment') }}" class="ml-auto flex-shrink-0 inline-flex items-center gap-2 text-white font-body font-semibold text-sm hover:opacity-80 transition-opacity whitespace-nowrap">
-            Site planning support
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-            </svg>
-        </a>
-    </div>
-</section>
-
 <!-- AFTERCARE SERVICE CARDS -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -1309,6 +1250,65 @@ function ilsCardToggle(btn) {
             </div>
 
         </div>
+    </div>
+</section>
+
+<!-- SUGGESTED EQUIPMENT -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Header --}}
+        <div class="mb-10 reveal">
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">Suggested equipment through the healthcare route</h2>
+            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">The category choice should follow the room, the workflow, and the support model.</p>
+        </div>
+
+        {{-- 4 equipment cards --}}
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reveal">
+            @foreach([
+                ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.'],
+                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.'],
+                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
+                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
+            ] as $eq)
+            <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-6">
+                <div class="min-h-[100px]">
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $eq['name'] }}</p>
+                    <p class="font-body text-[#148af4] text-base leading-relaxed">{{ $eq['desc'] }}</p>
+                </div>
+                <div class="flex items-center justify-center h-80 rounded-lg overflow-hidden bg-white">
+                    <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
+                </div>
+                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
+                    View Equipment
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+            @endforeach
+        </div>
+
+    </div>
+</section>
+
+{{-- "We help match" navy strip --}}
+<section class="bg-navy">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-8 flex items-center gap-6">
+        <div class="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
+            </svg>
+        </div>
+        <p class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">
+            We help match the room, the workflow and the equipment.
+        </p>
+        <a href="{{ route('request-assessment') }}" class="ml-auto flex-shrink-0 inline-flex items-center gap-2 text-white font-body font-semibold text-sm hover:opacity-80 transition-opacity whitespace-nowrap">
+            Site planning support
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+        </a>
     </div>
 </section>
 
