@@ -702,7 +702,7 @@ function ilsCardToggle(btn) {
         <div class="flex flex-col divide-y divide-gray-100">
 
             <!-- 1. Barrier Washers — text left, image right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="text-center">
                     <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
