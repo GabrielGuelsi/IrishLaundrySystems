@@ -37,6 +37,8 @@
 
 @include('components.partner-strip')
 
+@include('components.proof-bar')
+
 <!-- SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-[#f4f6f9] border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -70,8 +72,6 @@
         </div>
     </div>
 </section>
-
-@include('components.proof-bar')
 
 <!-- COMMERCIAL ROUTE — Gallery style -->
 <style>
