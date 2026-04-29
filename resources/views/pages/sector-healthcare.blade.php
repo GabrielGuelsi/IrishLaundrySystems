@@ -1186,6 +1186,8 @@ function ilsCardToggle(btn) {
 
 @include('components.partner-strip')
 
+@include('components.proof-bar')
+
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -1224,8 +1226,6 @@ function ilsCardToggle(btn) {
 
     </div>
 </section>
-
-@include('components.proof-bar')
 
 <!-- 9. ASSESSMENT FORM -->
 <section id="healthcare-assessment" class="py-16 lg:py-24 bg-white">
