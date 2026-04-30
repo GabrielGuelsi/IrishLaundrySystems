@@ -566,117 +566,7 @@ function ilsCardToggle(btn) {
 
         <div class="flex flex-col divide-y divide-gray-100">
 
-            <!-- 1. Barrier Washers — text left, image right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
-                <div class="text-center">
-                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                        Barrier washers sit at the centre of care facility rooms where controlled dirty-side loading and clean-side unloading are part of the infection control logic.
-                    </p>
-                    <div class="flex flex-col items-center gap-3">
-                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
-                            VIEW EQUIPMENT
-                        </a>
-                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
-                            REQUEST ASSESSMENT
-                        </a>
-                    </div>
-                </div>
-                <div class="relative flex justify-center">
-                    <img src="/images/equipment/line6000-barrier-washer.webp"
-                         alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain">
-                    <div class="absolute bottom-4 right-4 flex flex-col items-center gap-2">
-                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
-                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
-                             style="width:52px;height:52px;object-fit:fill;flex-shrink:0;">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Barrier Washer: AIDO + Watchdog collapsible -->
-            <div x-data="{ open: false, tab: 'aido' }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-end gap-3 text-right group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — AIDO &amp; Hygiene Watchdog</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
-                    <!-- Tabs -->
-                    <div class="flex gap-6 border-b border-gray-200 mb-8">
-                        <button @click="tab = 'aido'"
-                                :class="tab === 'aido' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                                class="font-heading text-sm pb-3 transition-colors">
-                            AIDO System
-                        </button>
-                        <button @click="tab = 'watchdog'"
-                                :class="tab === 'watchdog' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                                class="font-heading text-sm pb-3 transition-colors">
-                            Watchdog System
-                        </button>
-                    </div>
-
-                    <!-- AIDO Tab -->
-                    <div x-show="tab === 'aido'">
-                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
-                        <div class="flex items-start gap-6 mb-8">
-                            <div class="w-32 h-32 flex-shrink-0">
-                                <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
-                            </div>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">
-                                Our large inner-drum doors make loading and unloading the washer exceptionally easy, while our innovative opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables the easy manual handling of large loads of wet linen while minimizing potential strain for the operator.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                                <iframe class="absolute inset-0 w-full h-full"
-                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
-                                        title="AIDO System"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                            </div>
-                            <div>
-                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Watchdog Tab -->
-                    <div x-show="tab === 'watchdog'">
-                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog</h4>
-                        <div class="flex items-start gap-6 mb-8">
-                            <div class="w-32 h-32 flex-shrink-0">
-                                <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
-                            </div>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">
-                                <strong>Your Hygiene Partner:</strong> The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all linen is <strong>fully washed and thoroughly decontaminated</strong>. This provides the maximum defense against the spread of microorganisms and cross-contamination, keeping germs at bay and your mind at rest.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                                <iframe class="absolute inset-0 w-full h-full"
-                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
-                                        title="Hygiene Watchdog"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                            </div>
-                            <div>
-                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- COMMERCIAL WASHERS — image left, text right -->
+            <!-- 1. COMMERCIAL WASHERS — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex justify-center">
                     <img src="/images/equipment/commercialwasher.webp"
@@ -883,6 +773,116 @@ function ilsCardToggle(btn) {
                 </div>
             </div>
 
+            <!-- 4. Barrier Washers — text left, image right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
+                <div class="text-center">
+                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Barrier washers sit at the centre of care facility rooms where controlled dirty-side loading and clean-side unloading are part of the infection control logic.
+                    </p>
+                    <div class="flex flex-col items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
+                            VIEW EQUIPMENT
+                        </a>
+                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
+                            REQUEST ASSESSMENT
+                        </a>
+                    </div>
+                </div>
+                <div class="relative flex justify-center">
+                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                         alt="Line 6000 Barrier Washer"
+                         class="w-full h-96 object-contain">
+                    <div class="absolute bottom-4 right-4 flex flex-col items-center gap-2">
+                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
+                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
+                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
+                             style="width:52px;height:52px;object-fit:fill;flex-shrink:0;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barrier Washer: AIDO + Watchdog collapsible -->
+            <div x-data="{ open: false, tab: 'aido' }" class="py-6 border-t border-gray-100">
+                <button @click="open = !open"
+                        class="w-full flex items-center justify-end gap-3 text-right group">
+                    <span class="font-heading font-bold text-navy text-lg">System Features — AIDO &amp; Hygiene Watchdog</span>
+                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </span>
+                </button>
+
+                <div x-show="open" x-collapse class="mt-6">
+                    <!-- Tabs -->
+                    <div class="flex gap-6 border-b border-gray-200 mb-8">
+                        <button @click="tab = 'aido'"
+                                :class="tab === 'aido' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            AIDO System
+                        </button>
+                        <button @click="tab = 'watchdog'"
+                                :class="tab === 'watchdog' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            Watchdog System
+                        </button>
+                    </div>
+
+                    <!-- AIDO Tab -->
+                    <div x-show="tab === 'aido'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-32 h-32 flex-shrink-0">
+                                <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                Our large inner-drum doors make loading and unloading the washer exceptionally easy, while our innovative opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables the easy manual handling of large loads of wet linen while minimizing potential strain for the operator.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
+                                        title="AIDO System"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Watchdog Tab -->
+                    <div x-show="tab === 'watchdog'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-32 h-32 flex-shrink-0">
+                                <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                <strong>Your Hygiene Partner:</strong> The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all linen is <strong>fully washed and thoroughly decontaminated</strong>. This provides the maximum defense against the spread of microorganisms and cross-contamination, keeping germs at bay and your mind at rest.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
+                                        title="Hygiene Watchdog"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -1057,64 +1057,12 @@ function ilsCardToggle(btn) {
 
 @include('components.aftercare-service-cards')
 
-<!-- SUGGESTED EQUIPMENT -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        {{-- Header --}}
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">Suggested equipment through the care facility route</h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-lg">The category choice should follow the room, the workflow, and the support model.</p>
-        </div>
-
-        {{-- 4 equipment cards --}}
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 reveal">
-            @foreach([
-                ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.'],
-                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.'],
-                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
-                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
-            ] as $eq)
-            <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-6">
-                <div class="min-h-[100px]">
-                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $eq['name'] }}</p>
-                    <p class="font-body text-[#148af4] text-base leading-relaxed">{{ $eq['desc'] }}</p>
-                </div>
-                <div class="flex items-center justify-center h-80 rounded-lg overflow-hidden bg-white">
-                    <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
-                </div>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
-                    View Equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-            </div>
-            @endforeach
-        </div>
-
-    </div>
-</section>
-
-{{-- "We help match" navy strip --}}
-<section class="bg-navy">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-8 flex items-center gap-6">
-        <div class="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center flex-shrink-0">
-            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
-            </svg>
-        </div>
-        <p class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">
-            We help match the room, the workflow and the equipment.
-        </p>
-        <a href="{{ route('request-assessment') }}" class="ml-auto flex-shrink-0 inline-flex items-center gap-2 text-white font-body font-semibold text-sm hover:opacity-80 transition-opacity whitespace-nowrap">
-            Site planning support
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-            </svg>
-        </a>
-    </div>
-</section>
+@include('components.equipment-categories', ['equipment' => [
+    ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
+    ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.',                          'scale' => '1'],
+    ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
+    ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
+]])
 
 @include('components.testimonials')
 
