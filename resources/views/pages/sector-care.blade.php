@@ -36,6 +36,8 @@
 
 @include('components.partner-strip')
 
+@include('components.proof-bar')
+
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -66,8 +68,6 @@
         </div>
     </div>
 </section>
-
-@include('components.proof-bar')
 
 <!-- WORKING ROUTE SECTION -->
 <section class="py-16 lg:py-24 bg-white">
@@ -413,64 +413,130 @@ function ilsCardToggle(btn) {
 
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
-        <!-- Header -->
-        <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-2xl">
+        <!-- Heading -->
+        <div class="mb-10">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
                 Three clear routes into<br>
-                <span class="font-bold">care facility laundry support.</span>
+                <span class="text-orange">the main commercial pathways</span>.
             </h2>
         </div>
 
-        <!-- Square Cards Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <!-- 3-column card grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-            <!-- Card 1: Service Contracts -->
-            <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts" class="absolute inset-0 w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
-                <div class="absolute inset-0 flex flex-col justify-end p-8">
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Service Contracts</h3>
-                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-5">
-                        Planned support built around installed care facility equipment, continuity targets, and the daily pressure of the room.
-                    </p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-bold text-sm px-4 py-2 rounded-lg transition-colors">
-                        Review contract options
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                    </a>
+            <!-- Card 1 — Repairs & Call-outs -->
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Urgent support for breakdowns and performance issues where operational pressure demands a fast, practical route.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Triage-first breakdown support
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Fast route into contact and follow-up
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Built for critical laundry environments
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('repairs') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            Request Call-out
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 2: Repairs & Call-outs -->
-            <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/Repairsandcallouts.jpeg" alt="Repairs & Call-outs" class="absolute inset-0 w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
-                <div class="absolute inset-0 flex flex-col justify-end p-8">
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Repairs &amp; Call-outs</h3>
-                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-5">
-                        Urgent response path when breakdowns, performance issues, or pressure points interrupt care facility laundry operations.
-                    </p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-bold text-sm px-4 py-2 rounded-lg transition-colors">
-                        Request support route
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                    </a>
+            <!-- Card 2 — Equipment Rental -->
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Electrolux Professional equipment supplied, installed and supported. Structured rental with maintenance included — managed cost and operational continuity.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Equipment with service built in
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Predictable monthly cost
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Electrolux Professional standard
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('rental') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            See Rental Options
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Card 3: Parts & Aftercare -->
-            <div class="relative rounded-2xl overflow-hidden aspect-square reveal">
-                <img src="/images/healthcare/Parts%20%26%20Aftercare.png" alt="Parts & Aftercare" class="absolute inset-0 w-full h-full object-cover object-center">
-                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
-                <div class="absolute inset-0 flex flex-col justify-end p-8">
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-3">Parts &amp; Aftercare</h3>
-                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-5">
-                        Lifecycle support for wear items, parts planning, and continuity around the installed care facility base.
-                    </p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 self-start bg-white/15 hover:bg-white/25 border border-white/30 text-white font-heading font-bold text-sm px-4 py-2 rounded-lg transition-colors">
-                        Discuss parts &amp; aftercare
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                    </a>
+            <!-- Card 3 — Service Contracts -->
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Structured preventive maintenance across three tiers — Core, Priority and Assured. Predictable costs, documented history, fewer unplanned stoppages.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Three maintenance tiers
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Documented service records
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Fewer unplanned stoppages
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Service Contracts</h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('service-contracts') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            View Contracts
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -501,7 +567,7 @@ function ilsCardToggle(btn) {
         <div class="flex flex-col divide-y divide-gray-100">
 
             <!-- 1. Barrier Washers — text left, image right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="text-center">
                     <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
@@ -520,7 +586,7 @@ function ilsCardToggle(btn) {
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-96 object-contain">
-                    <div class="absolute bottom-4 right-4 flex items-center gap-2">
+                    <div class="absolute bottom-4 right-4 flex flex-col items-center gap-2">
                         <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
                              style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
                         <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
@@ -611,7 +677,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- COMMERCIAL WASHERS — image left, text right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex justify-center">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
@@ -634,7 +700,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- 2. Tumble Dryers — text left, image right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
                         Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> care cycles.
@@ -706,12 +772,12 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- 3. Ironers — image left, text right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col items-center gap-3">
                         <div class="w-16 h-16 flex items-center justify-center">
                             <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
                         </div>
@@ -985,7 +1051,11 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
-@include('components.partner-strip')
+@include('components.why-choose-strip')
+
+@include('components.cta-combined-banner')
+
+@include('components.aftercare-service-cards')
 
 <!-- SUGGESTED EQUIPMENT -->
 <section class="py-16 lg:py-24 bg-white">
@@ -1005,15 +1075,15 @@ function ilsCardToggle(btn) {
                 ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
                 ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
             ] as $eq)
-            <div class="bg-white border border-gray-100 rounded-xl p-5 flex flex-col gap-4">
-                <div>
-                    <p class="font-heading font-bold text-navy text-base leading-snug mb-1">{{ $eq['name'] }}</p>
-                    <p class="font-body text-[#148af4] text-sm leading-relaxed">{{ $eq['desc'] }}</p>
+            <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-6">
+                <div class="min-h-[100px]">
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $eq['name'] }}</p>
+                    <p class="font-body text-[#148af4] text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                <div class="flex items-center justify-center h-56 rounded-lg overflow-hidden bg-white">
+                <div class="flex items-center justify-center h-80 rounded-lg overflow-hidden bg-white">
                     <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
                 </div>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-4 py-2.5 rounded-lg transition-colors {{ $eq['img'] === 'line6000-tumble-dryer' ? 'mt-auto' : '' }}">
+                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
                     View Equipment
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -1026,150 +1096,28 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
-@include('components.proof-bar')
-
-<!-- AFTERCARE SERVICE CARDS -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-
-            {{-- Left: heading + description --}}
-            <div class="lg:col-span-1 reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
-                    Keep the support matched to the equipment
-                </h2>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">
-                    The right support answer has to account for installed-base reality, operational continuity, and the next commercial step.
-                </p>
-            </div>
-
-            {{-- Right: 4 service cards --}}
-            <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
-                @foreach([
-                    [
-                        'img'   => '/images/healthcare/Service%20Network.png',
-                        'title' => 'Service Network',
-                        'bold'  => 'You can count on',
-                        'body'  => 'more than 2,200 authorised service partners, always available, always on duty — committed to support you with a service network that makes your operations easier.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Service%20Agreements.png',
-                        'title' => 'Service Agreements',
-                        'bold'  => 'You can choose from',
-                        'body'  => 'flexible tailored packages, according to your business needs, offering a variety of products maintenance and support services.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Accessories%20%26%20Consumables.png',
-                        'title' => 'Accessories & Consumables',
-                        'bold'  => 'You can rely on',
-                        'body'  => 'original Accessories & Consumables, rigorously tested by Electrolux Professional experts to ensure efficiency, durability, and the safety of your users.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Lifecycle%20Support.png',
-                        'title' => 'Lifecycle Support',
-                        'bold'  => 'You can plan ahead',
-                        'body'  => 'with structured lifecycle continuity — keeping your installed base connected to repairs, call-outs, parts, and aftercare across Ireland.',
-                    ],
-                ] as $card)
-                <div class="flex flex-col">
-                    {{-- Circular image with small text circle overlay --}}
-                    <div class="flex justify-center mb-[-60px] relative z-10">
-                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md relative">
-                            <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-24 h-24 rounded-full flex items-center justify-center text-center" style="background-color: rgba(100,160,210,0.65);">
-                                    <h4 class="font-heading font-bold text-white text-xs leading-snug px-2">{{ $card['title'] }}</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    {{-- Card body --}}
-                    <div class="bg-[#deeaf6] rounded-2xl pt-20 pb-6 px-5 flex-1">
-                        <p class="font-body text-navy/80 text-sm leading-relaxed">
-                            <strong class="font-bold text-navy">{{ $card['bold'] }}</strong> {{ $card['body'] }}
-                        </p>
-                    </div>
-                </div>
-                @endforeach
-            </div>
-
+{{-- "We help match" navy strip --}}
+<section class="bg-navy">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-8 flex items-center gap-6">
+        <div class="w-10 h-10 rounded-md bg-white/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
+            </svg>
         </div>
+        <p class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">
+            We help match the room, the workflow and the equipment.
+        </p>
+        <a href="{{ route('request-assessment') }}" class="ml-auto flex-shrink-0 inline-flex items-center gap-2 text-white font-body font-semibold text-sm hover:opacity-80 transition-opacity whitespace-nowrap">
+            Site planning support
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+        </a>
     </div>
 </section>
 
-@include('components.cta-combined-banner')
+@include('components.testimonials')
 
-<!-- 9. ASSESSMENT FORM -->
-<section id="care-assessment" class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="bg-navy rounded-3xl overflow-hidden reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-2">
-
-                {{-- Left: heading + bullets --}}
-                <div class="p-10 lg:p-14 flex flex-col justify-between">
-                    <div>
-                        <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-6">
-                            Bring the care facility room, the support route, and the equipment discussion into one next step
-                        </h2>
-                        <p class="font-body text-white/60 text-sm leading-relaxed mb-8">
-                            Use this route to review room layout, resident linen demand, infection control requirements, installed-base pressure, and the support model around the care facility laundry room.
-                        </p>
-                        <div class="flex flex-col gap-3">
-                            @foreach([
-                                'Review room layout, workflow, and resident linen and infection control handling requirements.',
-                                'Assess barrier washer relevance alongside washers, dryers, ironers, and flatwork for care throughput.',
-                                'Connect the installed base to Service Contracts, Repairs & Call-outs, and Parts & Aftercare where needed.',
-                            ] as $point)
-                            <div class="bg-white/10 rounded-xl px-5 py-3">
-                                <p class="font-body text-white text-sm leading-relaxed">{{ $point }}</p>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-                </div>
-
-                {{-- Right: form card --}}
-                <div class="bg-white rounded-2xl m-2 p-6 flex flex-col">
-                    <h3 class="font-heading font-bold text-navy text-xl mb-1">Request Care Assessment</h3>
-                    <p class="font-body text-gray-500 text-sm mb-4">Tell us about the environment, the current setup, and what needs review.</p>
-                    <form id="care-form" action="{{ route('contact') }}" method="POST" class="flex flex-col gap-2">
-                        @csrf
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="text" name="name" required placeholder="Full name"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                            <input type="text" name="organisation" placeholder="Organisation"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="email" name="email" required placeholder="Email"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                            <input type="tel" name="phone" placeholder="Phone"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        </div>
-                        <div class="grid grid-cols-2 gap-2">
-                            <input type="text" name="site_type" placeholder="Site type"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                            <input type="text" name="review_needed" placeholder="What do you need reviewed?"
-                                class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        </div>
-                        <input type="text" name="current_setup" placeholder="Current setup or requirement"
-                            class="w-full border border-gray-200 rounded-xl px-4 py-2.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-navy transition-colors">
-                        <div class="flex flex-col gap-2 mt-3">
-                            <button type="submit"
-                                class="w-full bg-[#148af4] hover:bg-[#148af4]/90 text-white font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
-                                Request Care Assessment
-                            </button>
-                            <a href="{{ route('contact') }}"
-                               class="w-full text-center border border-gray-200 hover:border-navy text-navy font-heading font-bold px-8 py-3 rounded-xl text-sm transition-colors duration-200">
-                                Talk to an Engineer
-                            </a>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
+@include('components.cta-downtime-form', ['pageSource' => 'care_cta'])
 
 @endsection
