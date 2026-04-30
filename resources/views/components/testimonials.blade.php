@@ -58,61 +58,85 @@
 @php
     $items = [
         [
-            'img'   => '/images/about/testimonial-1.jpg',
-            'alt'   => 'Operations Manager',
-            'quote' => 'Reliable, clear communication and practical engineering support. They understand the pressure of healthcare operations and respond accordingly.',
-            'name'  => 'Operations Manager',
-            'role'  => 'Healthcare Group, Republic of Ireland',
+            'img'       => '/images/about/testimonial-1.jpg',
+            'alt'       => 'Operations Manager',
+            'headline'  => 'They understand the pressure of healthcare operations and',
+            'highlight' => 'respond accordingly.',
+            'body'      => 'Reliable, clear communication and practical engineering support. We can plan around them.',
+            'name'      => 'Operations Manager',
+            'role'      => 'Healthcare Group, Republic of Ireland',
         ],
         [
-            'img'   => '/images/about/testimonial-2.jpg',
-            'alt'   => 'Facilities Manager',
-            'quote' => "We've had service contracts with ILS for several years. They show up, they communicate clearly, and they know the equipment. That's what we need.",
-            'name'  => 'Facilities Manager',
-            'role'  => 'Nursing Home Group, Munster',
+            'img'       => '/images/about/testimonial-2.jpg',
+            'alt'       => 'Facilities Manager',
+            'headline'  => 'They show up, they communicate clearly, and',
+            'highlight' => 'they know the equipment.',
+            'body'      => "We've had service contracts with ILS for several years. That's what we need from a service partner.",
+            'name'      => 'Facilities Manager',
+            'role'      => 'Nursing Home Group, Munster',
         ],
         [
-            'img'   => '/images/about/testimonial-3.jpg',
-            'alt'   => 'Hotel General Manager',
-            'quote' => 'Fast response when we had an unexpected breakdown during a busy period. Professionally handled — minimal disruption to our operation. Would recommend without hesitation.',
-            'name'  => 'Hotel General Manager',
-            'role'  => '4-Star Hotel, Leinster',
+            'img'       => '/images/about/testimonial-3.jpg',
+            'alt'       => 'Hotel General Manager',
+            'headline'  => 'Fast response when we had an unexpected breakdown —',
+            'highlight' => 'minimal disruption to our operation.',
+            'body'      => 'Professionally handled during a busy period. Would recommend ILS without hesitation.',
+            'name'      => 'Hotel General Manager',
+            'role'      => '4-Star Hotel, Leinster',
         ],
     ];
 @endphp
-<section class="py-16 lg:py-20 bg-navy"
+<section class="py-16 lg:py-24 bg-white"
          x-data="{ active: 0, total: {{ count($items) }}, paused: false, timer: null, start() { this.timer = setInterval(() => { if (!this.paused) this.active = (this.active + 1) % this.total; }, 6000); } }"
          x-init="start()"
          @mouseenter="paused = true"
          @mouseleave="paused = false">
-    <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-8">
-        <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl text-center mb-12">{{ $heading }}</h2>
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-6 sm:px-10 lg:px-8 2xl:px-16">
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-14">{{ $heading }}</h2>
 
         <div class="relative">
             {{-- Carousel viewport --}}
-            <div class="overflow-hidden rounded-2xl">
+            <div class="overflow-hidden">
                 <div class="flex transition-transform duration-500 ease-out"
                      :style="`transform: translateX(-${active * 100}%)`">
                     @foreach($items as $t)
                     <div class="flex-shrink-0 w-full">
-                        <div class="bg-navy-light border border-white/10 rounded-2xl flex flex-col md:flex-row overflow-hidden">
-                            <img src="{{ $t['img'] }}" alt="{{ $t['alt'] }}" class="w-full md:w-1/3 h-52 md:h-auto object-cover object-top">
-                            <div class="p-6 lg:p-10 flex flex-col flex-1">
-                                <div class="flex gap-1 mb-4">
-                                    @for ($i = 0; $i < 5; $i++)
-                                    <svg class="w-4 h-4 text-orange" fill="currentColor" viewBox="0 0 20 20">
-                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                                    </svg>
-                                    @endfor
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center px-2 lg:px-12">
+                            {{-- Image side with play overlay --}}
+                            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] group cursor-pointer">
+                                <img src="{{ $t['img'] }}" alt="{{ $t['alt'] }}"
+                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/25"></div>
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="w-20 h-20 rounded-full border-2 border-white/80 backdrop-blur-sm bg-white/10 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                                        <svg class="w-7 h-7 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M8 5v14l11-7z"/>
+                                        </svg>
+                                    </div>
                                 </div>
-                                <blockquote class="flex-1">
-                                    <p class="font-body text-gray-200 text-lg leading-relaxed italic">
-                                        &ldquo;{{ $t['quote'] }}&rdquo;
-                                    </p>
-                                </blockquote>
-                                <div class="mt-6 pt-5 border-t border-white/10">
-                                    <cite class="block text-base font-body font-semibold text-white not-italic">{{ $t['name'] }}</cite>
-                                    <span class="text-sm text-gray-400 font-body">{{ $t['role'] }}</span>
+                            </div>
+
+                            {{-- Text side --}}
+                            <div class="flex flex-col">
+                                {{-- Decorative quote mark --}}
+                                <svg class="w-12 h-12 text-orange mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                    <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
+                                </svg>
+
+                                {{-- Headline quote with bold emphasis --}}
+                                <p class="font-heading text-navy text-2xl lg:text-3xl xl:text-4xl leading-tight mb-6">
+                                    {{ $t['headline'] }} <span class="font-bold">{{ $t['highlight'] }}</span>
+                                </p>
+
+                                {{-- Body --}}
+                                <p class="font-body text-navy/70 text-base lg:text-lg leading-relaxed mb-8">
+                                    {{ $t['body'] }}
+                                </p>
+
+                                {{-- Attribution --}}
+                                <div>
+                                    <cite class="block font-body font-semibold text-orange text-base lg:text-lg not-italic mb-1">{{ $t['name'] }}</cite>
+                                    <span class="font-heading font-bold text-navy text-base">{{ $t['role'] }}</span>
                                 </div>
                             </div>
                         </div>
@@ -125,28 +149,28 @@
             <button type="button"
                     @click="active = (active - 1 + total) % total"
                     aria-label="Previous testimonial"
-                    class="absolute top-1/2 -translate-y-1/2 -left-4 lg:-left-12 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    class="absolute top-1/2 -translate-y-1/2 -left-2 lg:-left-6 w-11 h-11 rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-200 flex items-center justify-center transition-colors z-10">
+                <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/>
                 </svg>
             </button>
             <button type="button"
                     @click="active = (active + 1) % total"
                     aria-label="Next testimonial"
-                    class="absolute top-1/2 -translate-y-1/2 -right-4 lg:-right-12 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 flex items-center justify-center transition-colors">
-                <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    class="absolute top-1/2 -translate-y-1/2 -right-2 lg:-right-6 w-11 h-11 rounded-full bg-gray-100 hover:bg-gray-200 border border-gray-200 flex items-center justify-center transition-colors z-10">
+                <svg class="w-5 h-5 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/>
                 </svg>
             </button>
         </div>
 
         {{-- Dot indicators --}}
-        <div class="flex justify-center gap-2 mt-8">
+        <div class="flex justify-center gap-2 mt-12">
             @foreach($items as $i => $t)
             <button type="button"
                     @click="active = {{ $i }}"
                     aria-label="Go to testimonial {{ $i + 1 }}"
-                    :class="active === {{ $i }} ? 'bg-orange w-8' : 'bg-white/30 hover:bg-white/50 w-2'"
+                    :class="active === {{ $i }} ? 'bg-orange w-8' : 'bg-gray-300 hover:bg-gray-400 w-2'"
                     class="h-2 rounded-full transition-all duration-300"></button>
             @endforeach
         </div>

@@ -105,38 +105,35 @@
 </style>
 
 <!-- HERO -->
-<section class="relative overflow-hidden" style="height: 580px; min-height: 460px; background-color: #011E41;">
+<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
     {{-- Background image --}}
-    <img src="/images/healthcare/Service%20Contracts.png"
-         alt="ILS engineer reviewing a commercial laundry service contract"
+    <img src="/images/healthcare/service-contracts-hero.jpg"
+         alt="Two Electrolux Professional engineers discussing service equipment"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+         class="absolute inset-0 w-full h-full object-cover object-[center_25%]">
 
-    {{-- Gradient overlay — tight, clears by 75% --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+
+    {{-- Gradient overlay — fades faster so both engineers come through --}}
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.78) 18%, rgba(1,30,65,0.40) 35%, rgba(1,30,65,0.10) 55%, transparent 70%);"></div>
 
     {{-- Text — vertically centered --}}
     <div class="relative z-10 h-full flex items-center w-full">
-        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
-            <div style="max-width: 460px;">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
+            <div style="max-width: 620px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-5 text-3xl lg:text-4xl xl:text-[2.75rem]">
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-10 text-4xl lg:text-5xl xl:text-6xl">
                     Service contracts built around <span class="text-orange">uptime</span>.
                 </h1>
 
-                <p class="hero-desc font-body text-white/80 leading-relaxed mb-8" style="font-size: 1.05rem;">
-                    A structured ILS service contract puts planned maintenance in place before problems occur — scheduled visits, documented service history, remote support and priority response when you need it most.
-                </p>
-
-                <div class="hero-btns flex flex-row gap-3">
+                <div class="hero-btns flex flex-row gap-4">
                     <a href="#contract-review-form"
                        data-ga-cta="hero-contract-review"
-                       class="pulse-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                       class="pulse-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Contract Review
                     </a>
                     <a href="tel:+353000000000"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to an Engineer
                     </a>
                 </div>
@@ -245,7 +242,20 @@
                             <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-snug">Scheduled preventive visits</h3>
                         </div>
                     </div>
-                    <p class="font-body text-blue-200 text-sm lg:text-base leading-relaxed">Regular planned visits to inspect, clean and service your laundry equipment — reducing the likelihood of unplanned breakdowns.</p>
+                    <ul class="font-body text-blue-200 text-sm lg:text-base leading-relaxed space-y-2">
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0"></span>
+                            <span>Regular planned visits scheduled around your operation</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0"></span>
+                            <span>Inspect, clean and service your laundry equipment</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0"></span>
+                            <span>Reduces the likelihood of unplanned breakdowns</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -398,26 +408,30 @@
 </section>
 
 <!-- DOWNTIME FRAMING BLOCK -->
-<section class="relative py-14 lg:py-20 bg-navy overflow-hidden">
-    {{-- Backdrop image --}}
+<section class="relative py-20 lg:py-32 bg-navy overflow-hidden">
+    {{-- Backdrop image at full opacity with subtle vignette --}}
     <div class="absolute inset-0" aria-hidden="true">
-        <img src="/images/healthcare/plant-room.jpg"
+        <img src="/images/sectors/commercial-hero.jpg"
              alt=""
              loading="lazy" decoding="async"
-             class="absolute inset-0 w-full h-full object-cover opacity-25">
+             class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0"
-             style="background: linear-gradient(to bottom, #011E41 0%, rgba(1,30,65,0.85) 50%, #011E41 100%);"></div>
+             style="background: linear-gradient(to bottom, rgba(1,30,65,0.55) 0%, rgba(1,30,65,0.35) 50%, rgba(1,30,65,0.55) 100%);"></div>
     </div>
+
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mx-auto text-center reveal">
-            <div class="w-16 h-1 bg-steel mx-auto mb-6 rounded-full"></div>
-            <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-4">Operational Risk Management</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-5 leading-tight">
-                Designed to Reduce Downtime Risk in Critical Laundry Operations
-            </h2>
-            <p class="font-body text-blue-200 text-lg leading-relaxed">
-                Unplanned breakdowns in healthcare, care and regulated environments don't just cost money — they create operational pressure, compliance risk and reputational exposure. A structured service contract puts the engineering infrastructure in place before problems occur.
-            </p>
+        <div class="max-w-3xl mx-auto reveal">
+            <div class="rounded-2xl p-8 lg:p-12 text-center"
+                 style="background: rgba(1,30,65,0.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
+                <div class="w-16 h-1 bg-steel mx-auto mb-6 rounded-full"></div>
+                <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-4">Operational Risk Management</p>
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-5 leading-tight">
+                    Designed to Reduce Downtime Risk in Critical Laundry Operations
+                </h2>
+                <p class="font-body text-blue-200 text-lg leading-relaxed">
+                    Unplanned breakdowns in healthcare, care and regulated environments don't just cost money — they create operational pressure, compliance risk and reputational exposure. A structured service contract puts the engineering infrastructure in place before problems occur.
+                </p>
+            </div>
         </div>
     </div>
 </section>
@@ -439,25 +453,28 @@
         @php
         $steps = [
             [
-                'title' => 'Tell Us About Your Equipment',
-                'desc'  => 'Submit an assessment request or call us. Tell us your equipment types, site count and any existing service arrangements.',
-                'image' => '/images/healthcare/operator.jpg',
-                'alt'   => 'Operator preparing commercial laundry equipment for an assessment',
-                'meta'  => 'Step 1 · Discovery',
+                'title'    => 'Tell Us About Your Equipment',
+                'desc'     => 'Submit an assessment request or call us. Tell us your equipment types, site count and any existing service arrangements.',
+                'image'    => '/images/equipment/td6-multihousing-room.jpg',
+                'alt'      => 'Clean laundry room with TD6 equipment ready for assessment',
+                'meta'     => 'Step 1 · Discovery',
+                'position' => 'center',
             ],
             [
-                'title' => 'We Propose a Contract',
-                'desc'  => "We'll recommend the right tier and structure for your operation and provide a written contract proposal. No obligation.",
-                'image' => '/images/healthcare/Service Agreements.png',
-                'alt'   => 'Tailored service agreement proposal',
-                'meta'  => 'Step 2 · Proposal',
+                'title'    => 'We Propose a Contract',
+                'desc'     => "We'll recommend the right tier and structure for your operation and provide a written contract proposal. No obligation.",
+                'image'    => '/images/healthcare/Service Agreements.png',
+                'alt'      => 'Tailored service agreement proposal',
+                'meta'     => 'Step 2 · Proposal',
+                'position' => 'center 25%',
             ],
             [
-                'title' => 'Contract Activates',
-                'desc'  => 'Once agreed, we schedule the first preventive visit, set up service reporting and put your operation under cover.',
-                'image' => '/images/healthcare/engineer.jpg',
-                'alt'   => 'ILS engineer performing a scheduled preventive maintenance visit',
-                'meta'  => 'Step 3 · Activation',
+                'title'    => 'Contract Activates',
+                'desc'     => 'Once agreed, we schedule the first preventive visit, set up service reporting and put your operation under cover.',
+                'image'    => '/images/about/about-engineers.jpg',
+                'alt'      => 'ILS engineers on site performing a scheduled preventive maintenance visit',
+                'meta'     => 'Step 3 · Activation',
+                'position' => 'center',
             ],
         ];
         @endphp
@@ -488,6 +505,7 @@
                                     <img src="{{ $step['image'] }}"
                                          alt="{{ $step['alt'] }}"
                                          loading="lazy" decoding="async"
+                                         style="object-position: {{ $step['position'] ?? 'center' }};"
                                          class="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105">
                                 </div>
                                 <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none"></div>

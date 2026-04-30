@@ -546,6 +546,8 @@ function ilsCardToggle(btn) {
 })();
 </script>
 
+@include('components.cta-combined-banner')
+
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">

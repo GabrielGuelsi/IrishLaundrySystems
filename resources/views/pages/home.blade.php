@@ -107,6 +107,9 @@
     </div>
 </div>
 
+<!-- 2. TRUST ANCHORS — Electrolux credibility line + proof strip -->
+@include('components.proof-bar')
+
 <!-- 1.5 LEADERS IN — JLA-style company info -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
@@ -125,9 +128,6 @@
         </div>
     </div>
 </section>
-
-<!-- 2. TRUST ANCHORS — Electrolux credibility line + proof strip -->
-@include('components.proof-bar')
 
 <!-- 3. THREE CORE PATHWAYS -->
 
@@ -192,7 +192,7 @@
 
             <!-- Card 2 — Equipment Rental -->
             <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
+                <img src="/images/healthcare/lagoon-advanced-care.webp" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
@@ -295,48 +295,55 @@
             </a>
         </div>
 
-        {{-- 4 equipment cards + 1 help/site-planning card --}}
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-6">
+        {{-- 4 equipment cards --}}
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
-                ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.'],
-                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.'],
-                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
-                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
+                ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.',                  'scale' => '1.55'],
+                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                       'scale' => '1.75'],
+                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.',                              'scale' => '1'],
+                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.',     'scale' => '1.4'],
             ] as $eq)
-            <div class="bg-white border border-gray-100 rounded-xl p-7 flex flex-col gap-6">
-                <div class="min-h-[100px]">
-                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $eq['name'] }}</p>
+            <div class="bg-white border border-gray-100 rounded-xl p-8 flex flex-col gap-6">
+                <div class="min-h-[112px]">
+                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-[#148af4] text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                <div class="flex items-center justify-center h-80 rounded-lg overflow-hidden bg-white">
-                    <img src="/images/equipment/{{ $eq['img'] }}.webp" alt="{{ $eq['name'] }}" class="max-h-full max-w-full object-contain p-4">
+                <div class="flex items-center justify-center h-96 rounded-lg overflow-hidden bg-white">
+                    <img src="/images/equipment/{{ $eq['img'] }}.webp"
+                         alt="{{ $eq['name'] }}"
+                         class="max-h-full max-w-full object-contain"
+                         style="transform: scale({{ $eq['scale'] }}); transform-origin: center;">
                 </div>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
+                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
                     View Equipment
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-            </div>
-            @endforeach
-
-            {{-- 5th card — Site planning / help --}}
-            <div class="bg-navy rounded-xl p-7 lg:p-8 flex flex-col col-span-2 lg:col-span-1">
-                <div class="w-12 h-12 rounded-md bg-white/10 flex items-center justify-center mb-6">
-                    <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
-                    </svg>
-                </div>
-                <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-6">
-                    We help match the room, the workflow and the equipment.
-                </h3>
-                <a href="{{ route('request-assessment') }}" class="inline-flex items-center gap-2 text-white font-body font-semibold text-base hover:opacity-80 transition-opacity mt-auto">
-                    Site planning support
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </a>
             </div>
+            @endforeach
+        </div>
+
+        {{-- Site planning / help banner --}}
+        <div class="mt-8 bg-navy rounded-xl p-8 lg:p-10 flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
+            <!-- Icon -->
+            <div class="w-14 h-14 flex-shrink-0 rounded-md bg-white/10 flex items-center justify-center">
+                <svg class="w-7 h-7 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897l11.07-11.07zm0 0L19.5 7.125"/>
+                </svg>
+            </div>
+            <!-- Heading -->
+            <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight flex-1">
+                We help match the room, the workflow and the equipment.
+            </h3>
+            <!-- CTA -->
+            <a href="{{ route('request-assessment') }}"
+               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-6 py-3.5 rounded-md text-sm whitespace-nowrap transition-colors">
+                Site planning support
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
         </div>
     </div>
 </section>
