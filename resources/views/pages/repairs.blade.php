@@ -3,10 +3,18 @@
 @section('content')
 
 <!-- HERO -->
-<section class="bg-navy py-20 lg:py-28 relative overflow-hidden">
+<section class="py-20 lg:py-28 relative overflow-hidden" style="background-color: #011E41;">
+    <!-- Background image -->
+    <img src="/images/healthcare/customer-care-line6000.jpg"
+         alt=""
+         aria-hidden="true"
+         loading="eager" decoding="async"
+         class="absolute inset-0 w-full h-full object-cover">
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 35%, rgba(1,30,65,0.45) 60%, rgba(1,30,65,0.10) 100%);"></div>
     <!-- Urgency accent line -->
-    <div class="absolute top-0 left-0 right-0 h-1 bg-orange"></div>
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="absolute top-0 left-0 right-0 h-1 bg-orange z-10"></div>
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/40 rounded-full px-4 py-1.5 mb-6">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
