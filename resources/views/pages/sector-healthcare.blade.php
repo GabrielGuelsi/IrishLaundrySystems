@@ -679,6 +679,7 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
+@include('components.cta-combined-banner')
 
 <!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
 
@@ -1183,8 +1184,6 @@ function ilsCardToggle(btn) {
 </section>
 
 @include('components.why-choose-strip')
-
-@include('components.cta-combined-banner')
 
 @include('components.aftercare-service-cards')
 
