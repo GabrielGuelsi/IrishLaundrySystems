@@ -546,7 +546,9 @@ function ilsCardToggle(btn) {
 })();
 </script>
 
-@include('components.cta-combined-banner')
+<div class="py-10 bg-white"></div>
+@include('components.why-choose-strip')
+<div class="py-10 bg-white"></div>
 
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
