@@ -341,14 +341,16 @@
         <div class="ils-apple-wrap" id="ils-apple-wrap-hospitality">
 
             {{-- Card 1: Prevent Peak-Load Failures --}}
-            <div class="ils-apple-card">
-                <p class="ils-apple-label">Reliability</p>
-                <h3 class="ils-apple-title">Prevent Peak-Load Failures</h3>
-                <p class="ils-apple-body">Dependable, on-time delivery even during busy times — equipment and service designed to keep your laundry running when occupancy pressure is highest.</p>
-                <div class="ils-apple-img">
-                    <img src="/images/about/about-team.jpg" alt="Prevent Peak-Load Failures" style="max-height:200px;border-radius:12px;object-fit:cover;width:100%;">
+            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
+                <div style="position:absolute;inset:0;">
+                    <img src="/images/Hospitallity/HeroHospitallity.png" alt="Prevent Peak-Load Failures" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
                 </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
+                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Reliability</p>
+                    <h3 class="ils-apple-title" style="color:#fff;">Prevent Peak-Load Failures</h3>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
                 </button>
                 <div class="ils-apple-overlay">
@@ -365,14 +367,16 @@
             </div>
 
             {{-- Card 2: Avoid Guest Impact --}}
-            <div class="ils-apple-card">
-                <p class="ils-apple-label">Guest Experience</p>
-                <h3 class="ils-apple-title">Avoid Guest Impact</h3>
-                <p class="ils-apple-body">Rapid issue triage and resolution to keep guests content — fast support routes that resolve laundry problems before they reach the guest experience.</p>
-                <div class="ils-apple-img">
-                    <img src="/images/sectors/hospitality-hero.jpg" alt="Avoid Guest Impact" style="max-height:200px;border-radius:12px;object-fit:cover;width:100%;">
+            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
+                <div style="position:absolute;inset:0;">
+                    <img src="/images/sectors/hospitality-hero.jpg" alt="Avoid Guest Impact" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
                 </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
+                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Guest Experience</p>
+                    <h3 class="ils-apple-title" style="color:#fff;">Avoid Guest Impact</h3>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
                 </button>
                 <div class="ils-apple-overlay">
@@ -389,14 +393,16 @@
             </div>
 
             {{-- Card 3: Maintain Cleanliness --}}
-            <div class="ils-apple-card">
-                <p class="ils-apple-label">Cleanliness</p>
-                <h3 class="ils-apple-title">Maintain Cleanliness</h3>
-                <p class="ils-apple-body">High standards in washing and hygiene to meet regulations — consistent linen quality that reflects your hotel's standards in every guest-facing room.</p>
-                <div class="ils-apple-img">
-                    <img src="/images/about/about-equipment.jpg" alt="Maintain Cleanliness" style="max-height:200px;border-radius:12px;object-fit:cover;width:100%;">
+            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
+                <div style="position:absolute;inset:0;">
+                    <img src="/images/healthcare/contamination.jpg" alt="Maintain Cleanliness" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
                 </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
+                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Cleanliness</p>
+                    <h3 class="ils-apple-title" style="color:#fff;">Maintain Cleanliness</h3>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
                 </button>
                 <div class="ils-apple-overlay">
@@ -412,17 +418,17 @@
                 </div>
             </div>
 
-            {{-- Card 4: Peak-Load Resilience — GRADIENT TEST --}}
-            <div class="ils-apple-card" style="background: linear-gradient(135deg, #011E41 0%, #148af4 100%);">
-                <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Resilience</p>
-                <h3 class="ils-apple-title" style="color:#fff;">Peak-Load Resilience</h3>
-                <p class="ils-apple-body" style="color:rgba(255,255,255,0.75);">Handle busy periods without failures — equipment specified and serviced to absorb the full throughput demand of peak hotel occupancy.</p>
-                <div class="ils-apple-img" style="align-items:center;justify-content:center;">
-                    <svg style="width:80px;height:80px;opacity:0.25;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
-                    </svg>
+            {{-- Card 4: Peak-Load Resilience --}}
+            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
+                <div style="position:absolute;inset:0;">
+                    <img src="/images/healthcare/commercial-industrial.jpg" alt="Peak-Load Resilience" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
                 </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="background:rgba(255,255,255,0.2);">
+                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
+                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Resilience</p>
+                    <h3 class="ils-apple-title" style="color:#fff;">Peak-Load Resilience</h3>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
                 </button>
                 <div class="ils-apple-overlay">
@@ -438,16 +444,15 @@
                 </div>
             </div>
 
-            {{-- Card 5: Faster Recovery — IMAGE AS BACKGROUND TEST --}}
+            {{-- Card 5: Faster Recovery From Breakdowns --}}
             <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
                 <div style="position:absolute;inset:0;">
                     <img src="/images/hero/hero-technician-inspection.png" alt="Faster Recovery" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.6) 55%, rgba(1,30,65,0.2) 100%);"></div>
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
                 </div>
                 <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
                     <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Recovery</p>
                     <h3 class="ils-apple-title" style="color:#fff;">Faster Recovery From Breakdowns</h3>
-                    <p class="ils-apple-body" style="color:rgba(255,255,255,0.75);">Rapid triage and repair to minimise guest disruptions — engineers and parts available to get your laundry back running with minimal downtime.</p>
                 </div>
                 <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
@@ -466,14 +471,16 @@
             </div>
 
             {{-- Card 6: Predictable Maintenance --}}
-            <div class="ils-apple-card">
-                <p class="ils-apple-label">Maintenance</p>
-                <h3 class="ils-apple-title">Predictable Maintenance</h3>
-                <p class="ils-apple-body">Scheduled care to avoid unexpected problems — structured service agreements that keep your equipment in peak condition all year round.</p>
-                <div class="ils-apple-img">
-                    <img src="/images/about/about-equipment.jpg" alt="Predictable Maintenance" style="max-height:200px;border-radius:12px;object-fit:cover;width:100%;filter:hue-rotate(180deg) saturate(0.7);">
+            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
+                <div style="position:absolute;inset:0;">
+                    <img src="/images/about/about-engineers.jpg" alt="Predictable Maintenance" style="width:100%;height:100%;object-fit:cover;object-position:center;">
+                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
                 </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
+                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
+                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Maintenance</p>
+                    <h3 class="ils-apple-title" style="color:#fff;">Predictable Maintenance</h3>
+                </div>
+                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
                     <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
                 </button>
                 <div class="ils-apple-overlay">
@@ -873,116 +880,6 @@ function ilsCardToggle(btn) {
                             <div>
                                 <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next bed.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Barrier Washers — text left, image right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
-                <div class="text-center">
-                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                        Barrier washers sit at the centre of hospitality laundry rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
-                    </p>
-                    <div class="flex flex-col items-center gap-3">
-                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
-                            VIEW EQUIPMENT
-                        </a>
-                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
-                            REQUEST ASSESSMENT
-                        </a>
-                    </div>
-                </div>
-                <div class="relative flex justify-center">
-                    <img src="/images/equipment/line6000-barrier-washer.webp"
-                         alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain">
-                    <div class="absolute bottom-4 right-4 flex flex-col items-center gap-2">
-                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
-                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
-                             style="width:52px;height:52px;object-fit:fill;flex-shrink:0;">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Barrier Washer: AIDO + Watchdog collapsible -->
-            <div x-data="{ open: false, tab: 'aido' }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-end gap-3 text-right group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — AIDO &amp; Hygiene Watchdog</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
-                    <!-- Tabs -->
-                    <div class="flex gap-6 border-b border-gray-200 mb-8">
-                        <button @click="tab = 'aido'"
-                                :class="tab === 'aido' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                                class="font-heading text-sm pb-3 transition-colors">
-                            AIDO System
-                        </button>
-                        <button @click="tab = 'watchdog'"
-                                :class="tab === 'watchdog' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                                class="font-heading text-sm pb-3 transition-colors">
-                            Watchdog System
-                        </button>
-                    </div>
-
-                    <!-- AIDO Tab -->
-                    <div x-show="tab === 'aido'">
-                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
-                        <div class="flex items-start gap-6 mb-8">
-                            <div class="w-32 h-32 flex-shrink-0">
-                                <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
-                            </div>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">
-                                Our large inner-drum doors make loading and unloading the washer exceptionally easy, while our innovative opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables the easy manual handling of large loads of wet linen while minimizing potential strain for the operator.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                                <iframe class="absolute inset-0 w-full h-full"
-                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
-                                        title="AIDO System"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                            </div>
-                            <div>
-                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Watchdog Tab -->
-                    <div x-show="tab === 'watchdog'">
-                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog</h4>
-                        <div class="flex items-start gap-6 mb-8">
-                            <div class="w-32 h-32 flex-shrink-0">
-                                <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
-                            </div>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">
-                                <strong>Your Hygiene Partner:</strong> The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all linen is <strong>fully washed and thoroughly decontaminated</strong>. This provides the maximum defense against the spread of microorganisms and cross-contamination, keeping germs at bay and your mind at rest.
-                            </p>
-                        </div>
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                                <iframe class="absolute inset-0 w-full h-full"
-                                        src="https://www.youtube.com/embed/4MAlhxGZj88"
-                                        title="Hygiene Watchdog"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                        allowfullscreen></iframe>
-                            </div>
-                            <div>
-                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is our top priority</h5>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Whatever your technological requirements, our machines are designed to help your operators work in a safe and ergonomic way.</p>
                             </div>
                         </div>
                     </div>
