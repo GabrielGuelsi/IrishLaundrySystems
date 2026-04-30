@@ -546,10 +546,6 @@ function ilsCardToggle(btn) {
 })();
 </script>
 
-<div class="py-10 bg-white"></div>
-@include('components.why-choose-strip')
-<div class="py-10 bg-white"></div>
-
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
