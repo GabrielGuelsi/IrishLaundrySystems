@@ -144,6 +144,9 @@
 
 </section>
 
+<!-- ELECTROLUX PARTNER STRIP -->
+@include('components.partner-strip')
+
 <!-- PROOF BAR -->
 <div class="reveal">
     @include('components.proof-bar')
