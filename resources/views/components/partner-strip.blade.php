@@ -4,7 +4,7 @@
     Use directly below the hero section on every page.
 --}}
 <div class="bg-white border-b border-gray-200">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16 py-2 lg:py-2.5 flex items-center justify-center gap-6 lg:gap-10 flex-wrap">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-2 lg:py-2.5 flex items-center justify-center gap-10 lg:gap-14 flex-wrap">
 
         <!-- Logo -->
         <div class="flex-shrink-0">
@@ -17,27 +17,27 @@
         <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
 
         <!-- 3 feature icons -->
-        <div class="hidden lg:flex flex-shrink-0 items-center gap-8">
+        <div class="hidden lg:flex items-center gap-24">
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 13.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width: 80px;">Local engineering execution</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:80px;">Local engineering execution</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width: 80px;">Lifecycle support route</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:80px;">Lifecycle support route</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width: 80px;">Genuine parts continuity</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:80px;">Genuine parts continuity</span>
             </div>
 
         </div>

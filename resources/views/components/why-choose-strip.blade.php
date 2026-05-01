@@ -28,9 +28,9 @@
         {{-- Bullet points --}}
         <ul class="flex flex-col gap-2.5 mb-7">
             @foreach([
-                'Global Equipment Expertise',
-                'Coinless, heavy-duty design',
-                'Data-driven spare parts supply',
+                'Engineering-led — not sales-led',
+                'Same-day emergency response across Ireland',
+                'Authorised Electrolux Professional partner',
             ] as $point)
             <li class="flex items-center gap-2.5">
                 <svg class="w-4 h-4 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
