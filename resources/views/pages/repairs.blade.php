@@ -3,50 +3,95 @@
 @section('content')
 
 <!-- HERO -->
-<section class="py-20 lg:py-28 relative overflow-hidden" style="background-color: #011E41;">
+<style>
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title { animation: heroFadeUp 0.7s ease forwards; }
+.hero-desc  { animation: heroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
+.hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
+
+/* Subtle dot-grid pattern for navy backgrounds */
+.expect-dotgrid {
+    background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+    background-size: 22px 22px;
+}
+
+/* Vertical alternating timeline */
+.expect-timeline { position: relative; }
+.expect-timeline-track {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 18px;
+    width: 2px;
+    background: rgba(255,255,255,0.12);
+}
+.expect-timeline-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, #148af4 0%, #5babf7 100%);
+    transition: height 0.1s linear;
+}
+@media (min-width: 768px) {
+    .expect-timeline-track { left: 50%; transform: translateX(-50%); }
+}
+.expect-step-node {
+    position: absolute;
+    left: 18px;
+    width: 56px;
+    height: 56px;
+    transform: translate(-50%, 0);
+    z-index: 10;
+}
+@media (min-width: 768px) {
+    .expect-step-node { left: 50%; transform: translate(-50%, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-title, .hero-desc, .hero-btns { animation: none; opacity: 1; transform: none; }
+    .expect-timeline-fill { transition: none; }
+}
+</style>
+
+<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
+
     <!-- Background image -->
-    <img src="/images/healthcare/customer-care-line6000.jpg"
-         alt=""
-         aria-hidden="true"
+    <img src="/images/healthcare/repairs-hero.jpg"
+         alt="ILS engineer providing reactive repair and call-out support on commercial laundry equipment"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover">
-    <!-- Gradient overlay -->
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 35%, rgba(1,30,65,0.45) 60%, rgba(1,30,65,0.10) 100%);"></div>
-    <!-- Urgency accent line -->
-    <div class="absolute top-0 left-0 right-0 h-1 bg-orange z-10"></div>
-    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl">
-            <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/40 rounded-full px-4 py-1.5 mb-6">
-                <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
-                </svg>
-                <span class="text-sm font-body text-orange font-semibold">Breakdown? Call us now</span>
-            </div>
-            <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
-                Repairs and Call-outs When Breakdowns Happen
-            </h1>
-            <p class="font-body text-blue-200 text-xl mb-4 font-semibold">Experienced engineers. Genuine parts. Clear communication.</p>
-            <p class="font-body text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl">
-                When commercial laundry equipment fails, you need engineers who know the equipment, carry the right parts and can communicate clearly about what they've found and what comes next. ILS provides reactive repair and call-out support across the Republic of Ireland.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                    </svg>
-                    Request Call-out
-                </a>
-                <a href="tel:+353000000000"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer hover:bg-white/10">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                    </svg>
-                    Talk to an Engineer
-                </a>
+         class="absolute inset-0 w-full h-full object-cover object-right">
+
+    <!-- Gradient overlay — tight, clears by 70% -->
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+
+    <!-- Text — vertically centered -->
+    <div class="relative z-10 h-full flex items-center w-full">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
+            <div style="max-width: 620px;">
+
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-10 text-4xl lg:text-5xl xl:text-6xl">
+                    Repairs and call-outs <span class="text-orange">when breakdowns happen</span>.
+                </h1>
+
+                <div class="hero-btns flex flex-row gap-4">
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                        Request Call-out
+                    </a>
+                    <a href="tel:+353000000000"
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                        Talk to an Engineer
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- PARTNER STRIP + PROOF BAR -->
@@ -74,29 +119,125 @@
 </section>
 
 <!-- WHAT TO EXPECT -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="text-center mb-12">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">What to Expect from an ILS Call-Out</h2>
-            <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">A clear, professional process — from your first call to the job being resolved.</p>
+@php
+$expectSteps = [
+    [
+        'title'    => 'Contact Us',
+        'desc'     => 'Call our engineer line or submit a repair request online. Tell us the machine type, fault symptoms and your location. We triage from there.',
+        'image'    => '/images/healthcare/operator.jpg',
+        'alt'      => 'Operator placing a call about a commercial laundry breakdown',
+        'meta'     => 'Step 1 · Contact',
+        'position' => 'center',
+    ],
+    [
+        'title'    => 'Engineer Dispatch',
+        'desc'     => 'We schedule the nearest available engineer and confirm an estimated arrival window. Contract customers receive priority triage.',
+        'image'    => '/images/healthcare/customer-care-line6000.jpg',
+        'alt'      => 'ILS engineer providing customer care on Electrolux Line 6000 equipment',
+        'meta'     => 'Step 2 · Dispatch',
+        'position' => 'center',
+    ],
+    [
+        'title'    => 'On-Site Diagnosis',
+        'desc'     => 'Our engineer diagnoses the fault and advises on repair options — clearly, without technical jargon. If parts are needed, we confirm availability.',
+        'image'    => '/images/hero/hero-technician-inspection.png',
+        'alt'      => 'ILS technician inspecting a commercial washing machine drum during diagnosis',
+        'meta'     => 'Step 3 · Diagnosis',
+        'position' => 'center',
+    ],
+    [
+        'title'    => 'Repair & Report',
+        'desc'     => 'Repair is completed where possible on the first visit. A service report is provided. If further work is needed, we agree the next steps with you.',
+        'image'    => '/images/healthcare/repairs-callouts.jpg',
+        'alt'      => 'ILS engineer completing a reactive repair on commercial laundry equipment',
+        'meta'     => 'Step 4 · Resolution',
+        'position' => 'center',
+    ],
+];
+@endphp
+
+<section class="relative py-16 lg:py-24 bg-navy expect-dotgrid overflow-hidden">
+    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="text-center mb-14 lg:mb-20 reveal">
+            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">A clear journey</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">What to Expect from an ILS Call-Out</h2>
+            <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">A clear, professional process — from your first call to the job being resolved.</p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @php $steps = [
-                ['1', 'Contact Us', 'Call our engineer line or submit a repair request online. Tell us the machine type, fault symptoms and your location. We triage from there.', 'text-orange'],
-                ['2', 'Engineer Dispatch', 'We schedule the nearest available engineer and confirm an estimated arrival window. Contract customers receive priority triage.', 'text-orange'],
-                ['3', 'On-Site Diagnosis', 'Our engineer diagnoses the fault and advises on repair options — clearly, without technical jargon. If parts are needed, we confirm availability.', 'text-orange'],
-                ['4', 'Repair & Report', 'Repair is completed where possible on the first visit. A service report is provided. If further work is needed, we agree the next steps with you.', 'text-orange'],
-            ]; @endphp
-            @foreach ($steps as [$num, $title, $body, $color])
-            <div class="bg-bg border border-border rounded-2xl p-6">
-                <div class="w-10 h-10 rounded-full bg-navy flex items-center justify-center mb-4 text-white font-heading font-bold">{{ $num }}</div>
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">{{ $title }}</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $body }}</p>
+
+        <div class="expect-timeline">
+            {{-- Vertical track + scroll-driven fill --}}
+            <div class="expect-timeline-track" aria-hidden="true">
+                <div class="expect-timeline-fill" data-expect-timeline-fill></div>
             </div>
-            @endforeach
+
+            <div class="space-y-14 md:space-y-24">
+                @foreach ($expectSteps as $i => $step)
+                @php $isEven = $i % 2 === 1; @endphp
+                <div class="relative pl-16 md:pl-0">
+                    {{-- Numbered node --}}
+                    <div class="expect-step-node" style="top: 0;">
+                        <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center text-white font-heading font-bold text-xl ring-4 ring-navy shadow-lg">
+                            {{ $i + 1 }}
+                        </div>
+                    </div>
+
+                    {{-- Two-column row, alternating --}}
+                    <div class="grid grid-cols-1 md:grid-cols-2 md:gap-16 items-center">
+                        {{-- Image side --}}
+                        <div class="{{ $isEven ? 'md:order-2 md:pl-12' : 'md:order-1 md:pr-12 md:text-right' }} reveal {{ $isEven ? 'reveal-right' : 'reveal-left' }}">
+                            <div class="relative rounded-2xl overflow-hidden bg-navy-light shadow-2xl group">
+                                <div class="aspect-[16/10]">
+                                    <img src="{{ $step['image'] }}"
+                                         alt="{{ $step['alt'] }}"
+                                         loading="lazy" decoding="async"
+                                         style="object-position: {{ $step['position'] ?? 'center' }};"
+                                         class="w-full h-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105">
+                                </div>
+                                <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none"></div>
+                                <div class="absolute inset-x-0 bottom-0 h-1/3"
+                                     style="background: linear-gradient(to top, rgba(1,15,42,0.85) 0%, transparent 100%);"
+                                     aria-hidden="true"></div>
+                            </div>
+                        </div>
+
+                        {{-- Text side --}}
+                        <div class="mt-6 md:mt-0 {{ $isEven ? 'md:order-1 md:pr-12 md:text-right' : 'md:order-2 md:pl-12' }} reveal {{ $isEven ? 'reveal-left' : 'reveal-right' }}">
+                            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
+                            <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4">{{ $step['title'] }}</h3>
+                            <p class="font-body text-blue-200 text-base leading-relaxed">{{ $step['desc'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
         </div>
     </div>
 </section>
+
+<script>
+    (function () {
+        var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        var hasGsap = typeof window.gsap !== 'undefined';
+        var hasScrollTrigger = hasGsap && typeof window.ScrollTrigger !== 'undefined';
+        if (hasScrollTrigger) gsap.registerPlugin(ScrollTrigger);
+
+        var timeline = document.querySelector('.expect-timeline');
+        var fill = document.querySelector('[data-expect-timeline-fill]');
+        if (timeline && fill && hasScrollTrigger && !prefersReduced) {
+            ScrollTrigger.create({
+                trigger: timeline,
+                start: 'top 70%',
+                end: 'bottom 30%',
+                scrub: true,
+                onUpdate: function (self) {
+                    fill.style.height = (self.progress * 100).toFixed(2) + '%';
+                },
+            });
+        } else if (fill) {
+            fill.style.height = '100%';
+        }
+    })();
+</script>
 
 <!-- CONTRACT UPSELL -->
 <section class="py-16 lg:py-20 bg-bg">
