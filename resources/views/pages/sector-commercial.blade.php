@@ -12,7 +12,7 @@
     <!-- Background image -->
     <img src="/images/healthcare/service-contracts-hero.jpg" alt="Commercial laundry operation"
          class="absolute inset-0 w-full h-full object-cover object-[center_25%]">
-    <div class="absolute inset-0 bg-navy/60"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.75) 0%, rgba(1,30,65,0.4) 50%, transparent 100%);"></div>
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
