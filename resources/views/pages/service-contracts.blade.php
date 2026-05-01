@@ -474,8 +474,8 @@
             [
                 'title'    => 'Contract Activates',
                 'desc'     => 'Once agreed, we schedule the first preventive visit, set up service reporting and put your operation under cover.',
-                'image'    => '/images/about/about-engineers.jpg',
-                'alt'      => 'ILS engineers on site performing a scheduled preventive maintenance visit',
+                'image'    => '/images/healthcare/customer-care-line6000.jpg',
+                'alt'      => 'ILS engineer providing customer care on Electrolux Line 6000 equipment',
                 'meta'     => 'Step 3 · Activation',
                 'position' => 'center',
             ],

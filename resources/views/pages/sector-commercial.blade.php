@@ -209,17 +209,19 @@
                 'num'   => '03.',
                 'title' => 'Keep support close',
                 'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
-                'img'   => '/images/about/about-engineers.jpg',
+                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+                'pos'   => '20% center',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Move to assessment',
                 'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
-                'img'   => '/images/healthcare/workflow.jpg',
+                'img'   => '/images/healthcare/repairs-callouts.jpg',
             ],
         ] as $card)
         <div class="ils-gallery-card">
-            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
+                 @if(!empty($card['pos'])) style="object-position: {{ $card['pos'] }};" @endif>
             <!-- Default caption -->
             <div class="ils-gcap1">
                 <span class="ils-num">{{ $card['num'] }}</span>

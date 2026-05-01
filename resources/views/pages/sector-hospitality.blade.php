@@ -10,12 +10,12 @@
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <!-- Background image -->
-    <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry installation"
-         class="absolute inset-0 w-full h-full object-cover object-[80%_20%]">
+    <img src="/images/Hospitallity/HospitallityHero1.png" alt="Hospitality laundry installation"
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: 50% 20%;">
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
-            <div class="max-w-3xl reveal reveal-left">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32 flex justify-end">
+            <div class="max-w-2xl reveal reveal-right">
                 <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-8">
                     Hygiene control and<br>operational continuity<br>for hospitality laundry.
                 </h1>
@@ -202,23 +202,25 @@
                 'num'   => '02.',
                 'title' => 'Match the equipment',
                 'body'  => 'Match the room logic to the right barrier, washing, drying, and finishing route.',
-                'img'   => '/images/about/about-equipment.jpg',
+                'img'   => '/images/healthcare/Line 6000 laundry photoshooting - february 2022_014.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Keep support close',
                 'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
-                'img'   => '/images/about/about-engineers.jpg',
+                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+                'pos'   => '20% center',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Move to assessment',
                 'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
-                'img'   => '/images/healthcare/workflow.jpg',
+                'img'   => '/images/healthcare/repairs-callouts.jpg',
             ],
         ] as $card)
         <div class="ils-gallery-card">
-            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
+                 @if(!empty($card['pos'])) style="object-position: {{ $card['pos'] }};" @endif>
             <!-- Default caption -->
             <div class="ils-gcap1">
                 <span class="ils-num">{{ $card['num'] }}</span>

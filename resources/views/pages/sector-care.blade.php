@@ -200,23 +200,25 @@
                 'num'   => '02.',
                 'title' => 'Match the equipment',
                 'body'  => 'Match the room logic to the right barrier, washing, drying, and finishing route.',
-                'img'   => '/images/about/about-equipment.jpg',
+                'img'   => '/images/healthcare/Line 6000 laundry photoshooting - february 2022_014.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Keep support close',
                 'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
-                'img'   => '/images/about/about-engineers.jpg',
+                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+                'pos'   => '20% center',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Move to assessment',
                 'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
-                'img'   => '/images/about/about-team.jpg',
+                'img'   => '/images/healthcare/repairs-callouts.jpg',
             ],
         ] as $card)
         <div class="ils-gallery-card">
-            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
+                 @if(!empty($card['pos'])) style="object-position: {{ $card['pos'] }};" @endif>
             <!-- Default caption -->
             <div class="ils-gcap1">
                 <span class="ils-num">{{ $card['num'] }}</span>

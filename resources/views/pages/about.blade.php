@@ -2,329 +2,189 @@
 
 @section('meta')
 <meta name="description" content="Established 1987. Engineering-led commercial laundry support across Ireland — contracts, rental and breakdown response built around uptime.">
-
 @endsection
 
 @section('content')
 
-<!-- 1. HERO — DARK with background image -->
-<section
-    class="relative overflow-hidden flex items-center"
-    style="height:720px; min-height:560px; background-color: #011E41; background-image: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%), url('/images/about/about-team.jpg'); background-size: cover; background-position: right center; background-repeat: no-repeat;">
-
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative z-10">
-        <div class="max-w-2xl">
-            @include('components.pretitle', ['label' => 'About ILS', 'color' => '#148af4'])
-            <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
-                Engineering-led laundry support since 1987.
-            </h1>
-            <p class="font-body text-white text-xl leading-relaxed mb-8">
-                Irish Laundry Systems was built around one principle: critical laundry operations deserve proper engineering support — not just reactive call-outs when something fails.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200"
-                   data-ga-cta="about_talk_to_expert">
-                    Talk to an Expert
-                </a>
-                <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                    Request a Service Assessment
-                </a>
+<!-- ══════════════════════════════════════════
+     1. HERO
+══════════════════════════════════════════ -->
+<section class="relative flex flex-col" style="min-height:720px;">
+    <img src="/images/about/about-team.jpg" alt="ILS engineering team"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    <div class="absolute inset-0"
+         style="background:linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.85) 50%, rgba(1,30,65,0.30) 100%);"></div>
+    <div class="relative z-10 flex-1 flex items-center w-full">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+            <div class="max-w-3xl reveal reveal-left">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-8">
+                    Engineering-led laundry<br>support since 1987.
+                </h1>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                        Talk to an Expert
+                    </a>
+                    <a href="{{ route('request-assessment') }}"
+                       class="inline-flex items-center justify-center gap-2 border-2 border-white/40 hover:border-white text-white font-body font-semibold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
+                        Request a Service Assessment
+                    </a>
+                </div>
             </div>
         </div>
     </div>
+
 </section>
 
 @include('components.partner-strip')
-
-<!-- 2. METRICS STRIP — DARK -->
-<section class="bg-navy border-t border-white/10 py-10">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 lg:divide-x lg:divide-white/10">
-
-            <div class="text-center lg:px-8 reveal" style="transition-delay:0ms">
-                <div class="font-heading font-bold text-white text-3xl lg:text-4xl mb-1">35+</div>
-                <div class="font-body text-white text-sm">Years in commercial laundry</div>
-            </div>
-
-            <div class="text-center lg:px-8 reveal" style="transition-delay:100ms">
-                <div class="font-heading font-bold text-white text-3xl lg:text-4xl mb-1">4</div>
-                <div class="font-body text-white text-sm">Sectors — healthcare, hospitality, care, commercial</div>
-            </div>
-
-            <div class="text-center lg:px-8 reveal" style="transition-delay:200ms">
-                <div class="font-heading font-bold text-white text-xl lg:text-2xl mb-1">Electrolux</div>
-                <div class="font-body text-white text-sm">Authorised Professional Partner</div>
-            </div>
-
-            <div class="text-center lg:px-8 reveal" style="transition-delay:300ms">
-                <div class="font-heading font-bold text-white text-xl lg:text-2xl mb-1">Nationwide</div>
-                <div class="font-body text-white text-sm">Engineering coverage across Ireland</div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- 3. PROOF BAR — LIGHT -->
 @include('components.proof-bar')
 
-<!-- 4. WHAT DRIVES US — split layout -->
-<section class="bg-navy py-16 lg:py-24">
+<!-- ══════════════════════════════════════════
+     3. STATS — four huge numbers
+══════════════════════════════════════════ -->
+<section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-            <!-- Left: text + bullets -->
-            <div class="reveal reveal-left">
-                @include('components.pretitle', ['label' => 'What Drives Us', 'color' => '#148af4'])
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-8">
-                    The engineering outcome is the only outcome that matters.
-                </h2>
-                <ul class="space-y-4">
-                    @foreach([
-                        'Founded in 1987 to serve healthcare, hospitality, and care operations across Ireland.',
-                        'Built on technical depth and straight communication — engineers who show up and explain the problem clearly.',
-                        'Authorised Electrolux Professional Partner — genuine parts, manufacturer standards, and technical support.',
-                        'Supporting healthcare groups, hotel properties, care facilities, and commercial operators nationwide.',
-                    ] as $point)
-                    <li class="flex items-start gap-3">
-                        <span class="mt-1.5 w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                        <span class="font-body text-white leading-relaxed">{{ $point }}</span>
-                    </li>
-                    @endforeach
-                </ul>
+        <div class="grid grid-cols-2 lg:grid-cols-4 divide-x divide-border">
+            @foreach([
+                ['37+',        'Years in commercial laundry'],
+                ['4',          'Sectors — healthcare, hospitality, care, commercial'],
+                ['26',         'Counties covered across Ireland'],
+                ['1987',       'The year ILS was founded'],
+            ] as [$num, $label])
+            <div class="px-6 lg:px-10 first:pl-0 last:pr-0 py-4">
+                <div class="font-heading font-bold text-navy text-5xl lg:text-7xl leading-none mb-3">{{ $num }}</div>
+                <p class="font-body text-gray-500 text-sm leading-snug max-w-[140px]">{{ $label }}</p>
             </div>
-
-            <!-- Right: image -->
-            <div class="rounded-2xl overflow-hidden reveal reveal-right" style="height:480px;">
-                <img src="{{ asset('images/about/about-engineers.jpg') }}"
-                     alt="ILS engineer at work"
-                     class="w-full h-full object-cover object-center">
-            </div>
-
+            @endforeach
         </div>
     </div>
 </section>
 
-<!-- 5. WHY CHOOSE ILS — LIGHT -->
-<section class="py-16 lg:py-24 bg-white">
+<!-- ══════════════════════════════════════════
+     4. BOLD STATEMENT
+══════════════════════════════════════════ -->
+<section class="bg-navy py-20 lg:py-32">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="reveal">
-            @include('components.pretitle', ['label' => 'What Sets Us Apart'])
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-12 max-w-3xl">
-                Why operators across Ireland choose ILS as their laundry partner.
-            </h2>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <p class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight max-w-4xl">
+            Critical laundry operations deserve proper engineering support —
+            <span class="text-[#148af4]">not just reactive call-outs when something fails.</span>
+        </p>
+    </div>
+</section>
 
+<!-- ══════════════════════════════════════════
+     5. WHAT WE DO — three columns
+══════════════════════════════════════════ -->
+<section class="bg-white py-16 lg:py-24 border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-border">
             @foreach([
-                ['Engineering First', 'Every recommendation is driven by what the equipment and site actually require — not by what is easiest to sell. Diagnosis before proposals. Evidence before action.', 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z'],
-                ['Rapid Response', 'When critical operations call with a breakdown, we triage fast and dispatch engineers. We aim to be on site and working — not acknowledging a ticket. Downtime in healthcare or hospitality is not a scheduling matter.', 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z'],
-                ['Sector Knowledge', 'Healthcare is not hospitality. Care facilities are not commercial operators. We take time to understand the operating environment — compliance, throughput, risk — before proposing anything.', 'M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z'],
-                ['Authorised Partnership', 'As an Authorised Electrolux Professional Partner, ILS has access to manufacturer training, genuine OEM parts and technical documentation — backing every field visit with the right resources to resolve faults properly.', 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z'],
-            ] as $i => [$title, $desc, $icon])
-            <div class="bg-bg border border-border rounded-2xl p-7 flex flex-col reveal card-hover" style="transition-delay: {{ $i * 120 }}ms">
-                <div class="mb-5">
-                    <svg class="w-10 h-10 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="{{ $icon }}"/>
+                ['Supply',   'Commercial laundry equipment for every sector — washers, dryers, ironers, barrier machines. Authorised Electrolux Professional partner.'],
+                ['Service',  'Planned maintenance contracts and same-day emergency call-outs across all 26 counties of the Republic of Ireland.'],
+                ['Support',  'Ongoing aftercare, genuine OEM parts, and manufacturer-trained engineers. Built around uptime, not scheduling convenience.'],
+            ] as [$title, $desc])
+            <div class="py-10 md:py-0 md:px-10 first:pl-0 last:pr-0">
+                <div class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-6">{{ $title }}.</div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-xs">{{ $desc }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     7. SECOND FULL-WIDTH PHOTO
+══════════════════════════════════════════ -->
+<div class="w-full overflow-hidden" style="height:55vh;min-height:360px;">
+    <img src="{{ asset('images/about/about-equipment.jpg') }}"
+         alt="ILS laundry equipment"
+         class="w-full h-full object-cover object-center">
+</div>
+
+<!-- ══════════════════════════════════════════
+     8. ELECTROLUX — short statement
+══════════════════════════════════════════ -->
+<section class="bg-white py-16 lg:py-24 border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
+            <div>
+                <p class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
+                    Platform credibility.<br>Local execution.
+                </p>
+            </div>
+            <div>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+                    Electrolux Professional provides manufacturer-grade standards, genuine parts and technical documentation. ILS provides local engineering execution, field response, and operational knowledge of Irish sites.
+                </p>
+                <a href="{{ route('electrolux') }}"
+                   class="inline-flex items-center gap-2 font-body font-semibold text-navy hover:text-[#148af4] text-sm transition-colors">
+                    About the partnership
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-3">{{ $title }}</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed flex-1">{{ $desc }}</p>
+                </a>
             </div>
-            @endforeach
-
         </div>
     </div>
 </section>
 
-<!-- 6. ELECTROLUX CAPABILITY — DARK, full gradient image overlay -->
-<section class="relative min-h-[520px] flex items-center py-20 lg:py-24">
-    <!-- Background image -->
-    <div class="absolute inset-0">
-        <img src="{{ asset('images/about/about-equipment.jpg') }}"
-             alt=""
-             class="w-full h-full object-cover object-center">
-        <!-- Navy gradient: solid right → transparent left -->
-        <div class="absolute inset-0" style="background: linear-gradient(270deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.80) 45%, rgba(1,30,65,0.20) 100%);"></div>
-    </div>
-    <!-- Content aligned right -->
-    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 w-full">
-        <div class="max-w-xl ml-auto reveal reveal-right">
-            @include('components.pretitle', ['label' => 'Electrolux Professional Partnership', 'color' => '#148af4'])
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-6">
-                Platform credibility. Local execution.
-            </h2>
-            <p class="font-body text-white text-lg leading-relaxed mb-4">
-                Electrolux Professional provides manufacturer-grade equipment standards, genuine parts access and technical documentation. ILS provides local engineering execution, field response, and operational understanding of Irish commercial sites.
-            </p>
-            <p class="font-body text-white leading-relaxed mb-8">
-                Together: lower friction, faster resolution, and lower downtime risk for critical operations across healthcare, hospitality and care.
-            </p>
-            <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-2 text-white font-body font-semibold hover:text-white transition-colors">
-                About the Electrolux partnership
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-
-<!-- 7. HOW WE ENGAGE — LIGHT -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-12 reveal">
-            @include('components.pretitle', ['label' => 'Our Process'])
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-2xl">
-                From first contact to service in place.
-            </h2>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-x-8 gap-y-10">
-            @foreach([
-                ['01', 'Intro call', 'We take time to understand your operation — sector, site count, equipment types and current challenges.'],
-                ['02', 'Stakeholder interview', 'We speak to the right people: facilities managers, operations leads, or whoever owns the laundry risk.'],
-                ['03', 'Technical evaluation', 'Where needed, we carry out an on-site assessment of equipment condition, usage patterns and history.'],
-                ['04', 'Results review', 'We present what we found — clearly and without jargon — and discuss the right options for your operation.'],
-                ['05', 'Proposal', 'A structured proposal matched to your site: contract tier, equipment recommendations, response levels and cost.'],
-            ] as [$num, $title, $body])
-            <div class="reveal" style="transition-delay: {{ $loop->index * 100 }}ms">
-                <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none mb-4">{{ $num }}</div>
-                <div class="border-t-2 border-navy/15 pt-4">
-                    <h3 class="font-heading font-bold text-navy text-sm mb-2">{{ $title }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $body }}</p>
-                </div>
-            </div>
-            @endforeach
-        </div>
-        <p class="font-body text-gray-400 text-sm mt-12 border-t border-border pt-6">We support sites across Ireland. Availability and next steps are confirmed once we understand location, urgency and constraints.</p>
-    </div>
-</section>
-
-<!-- 8. OUR HISTORY — Hajster-style vertical timeline -->
+<!-- ══════════════════════════════════════════
+     9. OUR HISTORY — timeline (unchanged)
+══════════════════════════════════════════ -->
 <style>
-.ils-history-box {
-    transition: background 0.35s ease;
-    border-radius: 0.75rem;
-}
-.ils-history-box:hover {
-    background: rgba(1, 30, 65, 0.03);
-}
-.ils-history-img {
-    opacity: 0;
-    transform: translateY(-50%) scale(0.85);
-    transition: opacity 0.45s ease, transform 0.45s ease;
-    pointer-events: none;
-}
-.ils-history-box:hover .ils-history-img {
-    opacity: 1;
-    transform: translateY(-50%) scale(1);
-    pointer-events: auto;
-}
+.ils-history-box { transition:background 0.35s ease; border-radius:0.75rem; }
+.ils-history-box:hover { background:rgba(1,30,65,0.03); }
+.ils-history-img { opacity:0; transform:translateY(-50%) scale(0.85); transition:opacity 0.45s ease, transform 0.45s ease; pointer-events:none; }
+.ils-history-box:hover .ils-history-img { opacity:1; transform:translateY(-50%) scale(1); pointer-events:auto; }
 </style>
 
 <section class="py-24 lg:py-36 bg-white overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        @include('components.pretitle', ['label' => 'Our Story'])
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl mb-16 reveal">Our history</h2>
 
         @php
         $history = [
-            [
-                'year'  => '1987',
-                'label' => 'year',
-                'title' => 'Foundation',
-                'body'  => 'Irish Laundry Systems established to serve a growing commercial laundry sector in Ireland — healthcare, hospitality, institutional care. The founders recognised these operations needed engineering-led support, not just equipment sales.',
-                'img'   => 'images/about/about-team.jpg',
-            ],
-            [
-                'year'  => '1990s',
-                'label' => 'decade',
-                'title' => 'Healthcare & care expansion',
-                'body'  => 'Extended support into healthcare and care facility sectors, recognising the critical nature of laundry in these environments — infection control, compliance, and continuity requirements far beyond standard commercial demands.',
-                'img'   => 'images/about/about-engineers.jpg',
-            ],
-            [
-                'year'  => '2000s',
-                'label' => 'decade',
-                'title' => 'Nationwide engineering coverage',
-                'body'  => 'Built nationwide engineering coverage and deepened technical capability across the full range of commercial equipment — establishing ILS as a reliable partner for operations across the Republic of Ireland.',
-                'img'   => 'images/about/about-equipment.jpg',
-            ],
-            [
-                'year'  => '2010s',
-                'label' => 'decade',
-                'title' => 'Electrolux Professional Partnership',
-                'body'  => 'Achieved Authorised Electrolux Professional Partner status — investment in manufacturer training, genuine OEM parts capability, and the technical documentation that backs every field visit with proper engineering resource.',
-                'img'   => 'images/about/about-team.jpg',
-            ],
-            [
-                'year'  => 'Today',
-                'label' => 'ongoing',
-                'title' => 'All sectors, nationwide',
-                'body'  => 'Supporting healthcare groups, hospitality operations, care facilities and commercial operators across Ireland. Structured service contracts, equipment supply, and engineering response — built around uptime and continuity.',
-                'img'   => 'images/about/about-engineers.jpg',
-            ],
+            ['year'=>'1987','label'=>'year','title'=>'Foundation','body'=>'Irish Laundry Systems established to serve a growing commercial laundry sector in Ireland — healthcare, hospitality, institutional care. The founders recognised these operations needed engineering-led support, not just equipment sales.','img'=>'images/about/about-team.jpg'],
+            ['year'=>'1990s','label'=>'decade','title'=>'Healthcare & care expansion','body'=>'Extended support into healthcare and care facility sectors, recognising the critical nature of laundry in these environments — infection control, compliance, and continuity requirements far beyond standard commercial demands.','img'=>'images/about/about-engineers.jpg'],
+            ['year'=>'2000s','label'=>'decade','title'=>'Nationwide engineering coverage','body'=>'Built nationwide engineering coverage and deepened technical capability across the full range of commercial equipment — establishing ILS as a reliable partner for operations across the Republic of Ireland.','img'=>'images/about/about-equipment.jpg'],
+            ['year'=>'2010s','label'=>'decade','title'=>'Electrolux Professional Partnership','body'=>'Achieved Authorised Electrolux Professional Partner status — investment in manufacturer training, genuine OEM parts capability, and the technical documentation that backs every field visit with proper engineering resource.','img'=>'images/about/about-team.jpg'],
+            ['year'=>'Today','label'=>'ongoing','title'=>'All sectors, nationwide','body'=>'Supporting healthcare groups, hospitality operations, care facilities and commercial operators across Ireland. Structured service contracts, equipment supply, and engineering response — built around uptime and continuity.','img'=>'images/about/about-engineers.jpg'],
         ];
         @endphp
 
         <div class="ils-history-list relative">
-
-            <!-- Vertical connecting line (desktop only) -->
-            <div class="hidden lg:block absolute top-16 bottom-16 w-px bg-navy/10 rounded-full" style="left: 210px;"></div>
-
+            <div class="hidden lg:block absolute top-16 bottom-16 w-px bg-navy/10 rounded-full" style="left:210px;"></div>
             @foreach($history as $i => $m)
-            <div class="ils-history-box relative flex items-center py-14 px-4 lg:px-0 {{ !$loop->last ? 'border-b border-navy/8' : '' }} cursor-default reveal" style="transition-delay: {{ $i * 80 }}ms">
-
-                <!-- LEFT: year number + label (desktop) -->
-                <div class="hidden lg:block flex-shrink-0 text-right pr-10" style="width: 210px;">
-                    <div class="font-heading font-bold text-[#148af4] leading-none" style="font-size: 3.75rem; line-height: 1;">{{ $m['year'] }}</div>
+            <div class="ils-history-box relative flex items-center py-14 px-4 lg:px-0 {{ !$loop->last ? 'border-b border-navy/8' : '' }} cursor-default reveal" style="transition-delay:{{ $i * 80 }}ms">
+                <div class="hidden lg:block flex-shrink-0 text-right pr-10" style="width:210px;">
+                    <div class="font-heading font-bold text-[#148af4] leading-none" style="font-size:3.75rem;line-height:1;">{{ $m['year'] }}</div>
                     <div class="font-body text-navy/35 text-xs uppercase tracking-widest mt-2">{{ $m['label'] }}</div>
                 </div>
-
-                <!-- Dot on the vertical line (desktop) -->
-                <div class="hidden lg:block absolute flex-shrink-0 z-10" style="left: 210px; transform: translateX(-50%);">
-                    <div class="w-3 h-3 rounded-full bg-[#148af4]" style="box-shadow: 0 0 0 5px rgba(20,138,244,0.18);"></div>
+                <div class="hidden lg:block absolute flex-shrink-0 z-10" style="left:210px;transform:translateX(-50%);">
+                    <div class="w-3 h-3 rounded-full bg-[#148af4]" style="box-shadow:0 0 0 5px rgba(20,138,244,0.18);"></div>
                 </div>
-
-                <!-- RIGHT: title + body text -->
                 <div class="flex-1 lg:pl-16 relative z-10">
-                    <!-- Year inline on mobile -->
-                    <div class="lg:hidden font-heading font-bold text-[#148af4] leading-none mb-3" style="font-size: 3rem;">{{ $m['year'] }}</div>
+                    <div class="lg:hidden font-heading font-bold text-[#148af4] leading-none mb-3" style="font-size:3rem;">{{ $m['year'] }}</div>
                     <div class="font-heading font-bold text-navy text-xl lg:text-2xl mb-3">{{ $m['title'] }}</div>
                     <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed max-w-xl">{{ $m['body'] }}</p>
                 </div>
-
-                <!-- Hover image — reveals from right on desktop -->
-                <div class="ils-history-img absolute hidden lg:block rounded-2xl overflow-hidden shadow-2xl" style="right: 0; top: 50%; width: 18.5rem; height: 20.5rem; z-index: 20;">
+                <div class="ils-history-img absolute hidden lg:block rounded-2xl overflow-hidden shadow-2xl" style="right:0;top:50%;width:18.5rem;height:20.5rem;z-index:20;">
                     <img src="{{ asset($m['img']) }}" alt="{{ $m['title'] }}" class="w-full h-full object-cover">
                 </div>
-
             </div>
             @endforeach
-
         </div>
 
     </div>
 </section>
 
-<!-- 9. PROOF — TESTIMONIALS — LIGHT -->
-@include('components.partner-strip')
-@include('components.proof-bar')
+<!-- ══════════════════════════════════════════
+     10. TESTIMONIALS
+══════════════════════════════════════════ -->
 @include('components.testimonials', ['heading' => 'What long-term customers say', 'light' => true])
 
-<!-- 10. FINAL CTA — DARK -->
-@include('components.cta-band', [
-    'heading'       => 'Ready to work with ILS?',
-    'subheading'    => 'Request a service assessment and let us propose the right structure for your operation.',
-    'primaryText'   => 'Talk to an Expert',
-    'primaryHref'   => route('contact'),
-    'secondaryText' => 'Request a Service Assessment',
-    'secondaryHref' => route('request-assessment'),
-])
-
-@include('components.cta-combined-banner')
+@include('components.cta-downtime-form')
 
 @endsection
