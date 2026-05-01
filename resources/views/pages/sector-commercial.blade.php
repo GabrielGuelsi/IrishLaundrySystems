@@ -10,8 +10,8 @@
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <!-- Background image -->
-    <img src="/images/about/about-equipment.jpg" alt="Commercial laundry operation"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+    <img src="/images/healthcare/service-contracts-hero.jpg" alt="Commercial laundry operation"
+         class="absolute inset-0 w-full h-full object-cover object-[center_25%]">
     <div class="absolute inset-0 bg-navy/60"></div>
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
