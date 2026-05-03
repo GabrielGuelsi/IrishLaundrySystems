@@ -14,8 +14,8 @@
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 50% 20%;">
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32 flex justify-end">
-            <div class="max-w-2xl reveal reveal-right">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+            <div class="max-w-2xl reveal reveal-left">
                 <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-8">
                     Hygiene control and<br>operational continuity<br>for hospitality laundry.
                 </h1>
@@ -705,6 +705,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- 2. Tumble Dryers — text left, image right -->
+            <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
@@ -727,68 +728,62 @@ function ilsCardToggle(btn) {
                         This unique combination distinguishes them from all other dryers on the market.</p>
                     </div>
                 </div>
-                <div class="relative flex justify-center order-1 lg:order-2">
+                <div class="flex flex-col order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain">
-                    <div class="absolute bottom-4 right-4">
-                        <div class="w-16 h-16 flex items-center justify-center">
-                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
-                        </div>
+                    <div class="mt-1 pt-3 border-t border-gray-100">
+                        <button @click="open = !open"
+                                class="w-full flex items-center justify-start gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features — Moisture Balance</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
-
-            <!-- Tumble Dryers: collapsible features -->
-            <div x-data="{ open: false }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-start gap-3 text-left group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — Moisture Balance</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
-                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
-                    <div class="flex items-start gap-6 mb-8">
-                        <div class="w-32 h-32 flex-shrink-0">
-                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
-                        </div>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">
-                            The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
-                        </p>
+            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
+                <div class="flex items-start gap-6 mb-8">
+                    <div class="w-32 h-32 flex-shrink-0">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                            <iframe class="absolute inset-0 w-full h-full"
-                                    src="https://www.youtube.com/embed/Xm2CpX95zDM"
-                                    title="Tumble Dryers Ergonomics"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <h5 class="font-heading font-bold text-navy text-xl mb-3">Our dryers have earned the prestigious 4-star rating for ergonomics from ERGOCERT</h5>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">All models have been user-tested to ensure operators will feel less tension and strain, so they—and your hotel laundry—can thrive.</p>
-                        </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/Xm2CpX95zDM"
+                                title="Tumble Dryers Ergonomics"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <h5 class="font-heading font-bold text-navy text-xl mb-3">Our dryers have earned the prestigious 4-star rating for ergonomics from ERGOCERT</h5>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">All models have been user-tested to ensure operators will feel less tension and strain, so they—and your hotel laundry—can thrive.</p>
                     </div>
                 </div>
+            </div>
             </div>
 
             <!-- 3. Ironers — image left, text right -->
+            <div x-data="{ open: false, tab: 'diamms' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
-                    <div class="flex flex-col items-center gap-3">
-                        <div class="w-16 h-16 flex items-center justify-center">
-                            <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
-                        </div>
-                        <div class="w-16 h-16 flex items-center justify-center">
-                            <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
-                        </div>
+                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
                 <div class="text-center">
@@ -808,16 +803,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- Ironers: collapsible features -->
-            <div x-data="{ open: false, tab: 'diamms' }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-end gap-3 text-right group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
+                <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
                     <!-- Tabs -->
                     <div class="flex gap-6 border-b border-gray-200 mb-8">
                         <button @click="tab = 'diamms'"
@@ -886,6 +872,7 @@ function ilsCardToggle(btn) {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
 
         </div>

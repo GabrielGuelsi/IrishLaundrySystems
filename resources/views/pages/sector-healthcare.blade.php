@@ -45,7 +45,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    We'll keep your critical laundry equipment <span style="color:#148af4;">running.</span>
+                    Built around how healthcare laundry rooms <span style="color:#148af4;">actually operate</span>
                 </h2>
             </div>
 
@@ -75,9 +75,23 @@
 
         <!-- Title -->
         <div class="mb-10 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                Built around how <strong>healthcare laundry rooms</strong> actually operate
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
+                Laundry and infection <strong>control solutions</strong>
             </h2>
+            <ul class="space-y-2">
+                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
+                    Supply, rental, installation and maintenance — all under one provider
+                </li>
+                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
+                    CQC-compliant washers, dryers and finishing equipment
+                </li>
+                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
+                    Take an extra load off your mind
+                </li>
+            </ul>
         </div>
 
         <!-- Image + Navy card overlay -->
@@ -85,7 +99,7 @@
 
             <!-- Image -->
             <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/healthcare/barrierwasherelectrolux.png"
+                <img src="/images/healthcare/render-double-page_72dpi.jpg"
                      alt="Healthcare laundry room"
                      class="w-full h-[580px] object-cover object-center">
             </div>
@@ -445,34 +459,6 @@
                 </div>
             </div>
 
-            {{-- Card 6: Hygiene Watchdog --}}
-            <div class="ils-apple-card">
-                <p class="ils-apple-label">Hygiene Watchdog</p>
-                <h3 class="ils-apple-title">Total safety with excellent results</h3>
-                <p class="ils-apple-body">Ensures full cycle completion so all laundry is fully washed and thoroughly decontaminated — the maximum defence against cross infections.</p>
-                <div class="ils-apple-img">
-                    <img src="/images/healthcare/illustration-barrier-washers-1.webp" alt="Hygiene Watchdog">
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <div class="flex items-center gap-3 mb-4">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" style="width:36px;height:36px;object-fit:fill;flex-shrink:0;">
-                        <span style="font-size:0.75rem;font-weight:700;color:#148af4;text-transform:uppercase;letter-spacing:0.05em;">Hygiene Watchdog</span>
-                    </div>
-                    <h4>Total safety with excellent results</h4>
-                    <ul>
-                        <li>Full cycle completion monitoring — no partial wash passes</li>
-                        <li>Maximum defence against microorganism spread and cross infection</li>
-                        <li>Compatible with HIQA documentation and audit requirements</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
-                </div>
-            </div>
-
             {{-- Card 7: Usability / Ergonomics --}}
             <div class="ils-apple-card">
                 <p class="ils-apple-label">Ergonomics / Usability</p>
@@ -689,20 +675,10 @@ function ilsCardToggle(btn) {
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <!-- Title -->
-        <div class="mb-16 reveal">
-            <h2 class="font-heading text-navy text-3xl lg:text-4xl leading-tight mb-2">
-                Laundry and infection <strong>control solutions</strong>
-            </h2>
-            <p class="font-body text-navy text-base leading-relaxed">
-                Irish Laundry Systems sell/rent , installs and maintains a range of CQC-compliant equipment including washers and dryers.<br>
-                Take an extra load off your mind.
-            </p>
-        </div>
-
         <div class="flex flex-col divide-y divide-gray-100">
 
             <!-- 1. Barrier Washers — text left, image right -->
+            <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="text-center">
                     <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Barrier <strong>washers</strong></h3>
@@ -718,30 +694,23 @@ function ilsCardToggle(btn) {
                         </a>
                     </div>
                 </div>
-                <div class="relative flex justify-center">
+                <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-96 object-contain">
-                    <div class="absolute bottom-4 right-4 flex flex-col items-center gap-2">
-                        <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO"
-                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
-                        <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog"
-                             style="width:64px;height:64px;object-fit:fill;flex-shrink:0;">
+                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features — AIDO &amp; Hygiene Watchdog</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
 
             <!-- Barrier Washer: AIDO + Watchdog collapsible -->
-            <div x-data="{ open: false, tab: 'aido' }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-end gap-3 text-right group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — AIDO &amp; Hygiene Watchdog</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
+                <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
                     <!-- Tabs -->
                     <div class="flex gap-6 border-b border-gray-200 mb-8">
                         <button @click="tab = 'aido'"
@@ -836,6 +805,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- 2. Tumble Dryers — text left, image right -->
+            <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
@@ -858,62 +828,62 @@ function ilsCardToggle(btn) {
                         This unique combination distinguishes them from all other dryers on the market.</p>
                     </div>
                 </div>
-                <div class="relative flex justify-center order-1 lg:order-2">
+                <div class="flex flex-col order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain">
-                    <div class="absolute bottom-4 right-4">
-                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-16 h-16 object-contain">
+                    <div class="mt-1 pt-3 border-t border-gray-100">
+                        <button @click="open = !open"
+                                class="w-full flex items-center justify-start gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features — Moisture Balance</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
-
-            <!-- Tumble Dryers: collapsible features -->
-            <div x-data="{ open: false }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-start gap-3 text-left group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — Moisture Balance</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
-                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
-                    <div class="flex items-start gap-6 mb-8">
-                        <div class="w-32 h-32 flex-shrink-0">
-                            <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
-                        </div>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">
-                            The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
-                        </p>
+            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
+                <div class="flex items-start gap-6 mb-8">
+                    <div class="w-32 h-32 flex-shrink-0">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
                     </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                            <iframe class="absolute inset-0 w-full h-full"
-                                    src="https://www.youtube.com/embed/Xm2CpX95zDM"
-                                    title="Tumble Dryers Ergonomics"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <h5 class="font-heading font-bold text-navy text-xl mb-3">Our dryers have earned the prestigious 4-star rating for ergonomics from ERGOCERT</h5>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">All models have been user-tested to ensure operators will feel less tension and strain, so they—and your hospital laundry—can thrive.</p>
-                        </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/Xm2CpX95zDM"
+                                title="Tumble Dryers Ergonomics"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <h5 class="font-heading font-bold text-navy text-xl mb-3">Our dryers have earned the prestigious 4-star rating for ergonomics from ERGOCERT</h5>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">All models have been user-tested to ensure operators will feel less tension and strain, so they—and your hospital laundry—can thrive.</p>
                     </div>
                 </div>
+            </div>
             </div>
 
             <!-- 3. Ironers — image left, text right -->
+            <div x-data="{ open: false, tab: 'diamms' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col items-start gap-4">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
                          class="w-full h-80 object-contain">
-                    <div class="flex flex-col items-center gap-3">
-                        <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-16 h-16 object-contain">
-                        <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-16 h-16 object-contain">
+                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
                 <div class="text-center">
@@ -935,16 +905,7 @@ function ilsCardToggle(btn) {
             </div>
 
             <!-- Ironers: collapsible features -->
-            <div x-data="{ open: false, tab: 'diamms' }" class="py-6 border-t border-gray-100">
-                <button @click="open = !open"
-                        class="w-full flex items-center justify-end gap-3 text-right group">
-                    <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
-                    <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                    </span>
-                </button>
-
-                <div x-show="open" x-collapse class="mt-6">
+                <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
                     <!-- Tabs -->
                     <div class="flex gap-6 border-b border-gray-200 mb-8">
                         <button @click="tab = 'diamms'"
