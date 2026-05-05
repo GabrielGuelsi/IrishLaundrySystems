@@ -17,7 +17,7 @@
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Rental supports replacement, expansion and operational continuity — no upfront investment required.
+            Rental supports replacement, expansion and operational continuity —<br>no upfront investment required.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
