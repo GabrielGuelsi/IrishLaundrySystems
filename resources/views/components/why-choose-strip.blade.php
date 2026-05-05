@@ -17,7 +17,7 @@
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Rental supports replacement, expansion and operational continuity —<br>no upfront investment required.
+            Rental supports replacement, expansion and operational<br>continuity — no upfront investment required.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
@@ -39,7 +39,7 @@
         </div>
 
         <a href="{{ route('rental') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide w-fit ml-24">
+           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide w-fit self-end">
             Explore Equipment Rental
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
