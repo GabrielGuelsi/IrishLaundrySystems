@@ -9,7 +9,7 @@
     </div>
 
     {{-- RIGHT: content — 50% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; max-width:50%;">
+    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Keep operations running</span>
