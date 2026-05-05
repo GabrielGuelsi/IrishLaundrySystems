@@ -17,7 +17,7 @@
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Planned support, genuine parts supply, and practical aftercare to keep equipment, service and aftercare connected.
+            Planned support, genuine parts supply, and practical aftercare<br>to keep equipment, service and aftercare connected.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
