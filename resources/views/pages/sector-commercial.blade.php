@@ -916,9 +916,9 @@ function ilsCardToggle(btn) {
 </section>
 
 
-@include('components.service-contracts-strip')
-
 @include('components.why-choose-strip')
+
+@include('components.service-contracts-strip')
 
 @include('components.equipment-categories')
 

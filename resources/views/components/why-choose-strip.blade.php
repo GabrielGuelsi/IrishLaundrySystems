@@ -38,7 +38,7 @@
             @endforeach
         </div>
 
-        <div class="w-full flex justify-end">
+        <div class="w-full flex" style="justify-content: center; padding-left: 33%;">
             <a href="{{ route('rental') }}"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                 Explore Equipment Rental

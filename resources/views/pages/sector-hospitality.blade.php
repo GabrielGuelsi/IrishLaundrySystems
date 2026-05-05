@@ -888,9 +888,9 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
-@include('components.service-contracts-strip')
-
 @include('components.why-choose-strip')
+
+@include('components.service-contracts-strip')
 
 @include('components.equipment-categories', ['equipment' => [
     ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
