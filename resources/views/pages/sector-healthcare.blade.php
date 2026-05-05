@@ -1148,9 +1148,9 @@ function ilsCardToggle(btn) {
 
 <div class="py-12 bg-white"></div>
 
-@include('components.why-choose-strip')
-
 @include('components.service-contracts-strip')
+
+@include('components.why-choose-strip')
 
 <div class="py-12 bg-white"></div>
 
