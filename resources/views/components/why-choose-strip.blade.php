@@ -8,8 +8,8 @@
         <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.4) 40%, transparent 100%);"></div>
     </div>
 
-    {{-- RIGHT: content — 60% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:40%;">
+    {{-- RIGHT: content — 50% width --}}
+    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Keep operations running</span>
