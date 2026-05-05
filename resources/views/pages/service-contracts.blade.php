@@ -107,11 +107,12 @@
 <!-- HERO -->
 <section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
-    {{-- Background image --}}
-    <img src="/images/healthcare/service-contracts-hero.jpg"
-         alt="Two Electrolux Professional engineers discussing service equipment"
+    {{-- Background image (mirrored so the engineers sit on the right; anchored to the top so heads stay in frame) --}}
+    <img src="/images/healthcare/Customer-Care_Line-6000-_001.jpg"
+         alt="ILS engineer reviewing Line 6000 commercial laundry equipment"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-[center_25%]">
+         class="absolute inset-0 w-full h-full object-cover object-top"
+         style="transform: scaleX(-1);">
 
 
     {{-- Gradient overlay — fades faster so both engineers come through --}}
@@ -153,7 +154,7 @@
 </div>
 
 <!-- STAT BAND -->
-<section class="relative bg-navy sc-dotgrid py-14 lg:py-16 overflow-hidden">
+<section class="relative bg-navy sc-dotgrid py-8 lg:py-10 overflow-hidden">
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -165,20 +166,20 @@
             ['target' => 100, 'suffix' => '%',  'label' => 'Genuine Electrolux parts',      'sub' => 'Authorised Professional Partner'],
         ];
         @endphp
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
             @foreach ($stats as $i => $stat)
             <div class="relative reveal text-center lg:text-left" style="transition-delay:{{ $i * 90 }}ms;">
                 @if ($i > 0)
-                <div class="hidden lg:block absolute left-0 top-2 bottom-2 w-px bg-white/10" aria-hidden="true"></div>
+                <div class="hidden lg:block absolute left-0 top-1 bottom-1 w-px bg-white/10" aria-hidden="true"></div>
                 @endif
                 <div class="lg:pl-6">
-                    <div class="font-heading font-bold text-white text-4xl lg:text-5xl mb-2 sc-stat-num">
+                    <div class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1 sc-stat-num leading-none">
                         <span data-counter
                               data-target="{{ $stat['target'] }}"
                               data-suffix="{{ $stat['suffix'] }}">0{{ $stat['suffix'] }}</span>
                     </div>
-                    <div class="font-body font-semibold text-orange text-sm uppercase tracking-wider mb-1">{{ $stat['label'] }}</div>
-                    <div class="font-body text-blue-200 text-xs leading-relaxed">{!! $stat['sub'] !!}</div>
+                    <div class="font-body font-semibold text-orange text-xs uppercase tracking-wider mb-0.5">{{ $stat['label'] }}</div>
+                    <div class="font-body text-blue-200 text-[11px] leading-snug">{!! $stat['sub'] !!}</div>
                 </div>
             </div>
             @endforeach
@@ -191,8 +192,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         {{-- Heading row --}}
         <div class="max-w-3xl mb-12 lg:mb-16">
-            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3 reveal">Inside the contract</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-5 reveal" style="transition-delay:80ms;">What's Included in a Service Contract</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 reveal">What's <span class="text-orange">included</span> in a service contract.</h2>
             <p class="font-body text-gray-600 leading-relaxed reveal" style="transition-delay:140ms;">
                 All ILS service contracts include a core set of structured support elements. Higher tiers add additional layers of priority, documentation and escalation support.
             </p>
@@ -284,8 +284,8 @@
                 </div>
             </div>
 
-            {{-- TILE 5 · Preferential rates — featured (2×1, navy with glow) --}}
-            <div class="group relative md:col-span-2 lg:col-span-2 rounded-3xl overflow-hidden text-white p-6 lg:p-8 reveal"
+            {{-- TILE 5 · Preferential rates — featured (4×1, full row, navy with glow) --}}
+            <div class="group relative md:col-span-2 lg:col-span-4 rounded-3xl overflow-hidden text-white p-6 lg:p-8 reveal"
                  style="background: radial-gradient(circle at top right, rgba(20,138,244,0.32) 0%, transparent 55%), #011E41; transition-delay:60ms;">
                 <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none"></div>
                 <div class="relative z-10 h-full flex flex-col sm:flex-row items-start sm:items-center gap-5 lg:gap-7">
@@ -302,107 +302,20 @@
                 </div>
             </div>
 
-            {{-- TILE 6 · How preventive visits work — interactive stepper (2×1, light) --}}
-            @php
-            $stepperSteps = [
-                ['title' => 'Inspect & assess',   'desc' => 'Engineer inspects all contracted equipment, checks safety features, identifies wear and flags any items needing attention.'],
-                ['title' => 'Service & replace',  'desc' => 'Cleaning, lubrication and consumable parts replacement where appropriate — keeping equipment operating to spec.'],
-                ['title' => 'Document on-site',   'desc' => 'Written service report completed during the visit and provided to your facilities or operations manager.'],
-                ['title' => 'Plan ahead',         'desc' => 'Visit frequency agreed up-front based on your equipment, usage profile and chosen tier — no surprises.'],
-            ];
-            @endphp
-            <div class="relative md:col-span-2 lg:col-span-2 rounded-3xl overflow-hidden bg-bg border border-border p-5 lg:p-6 reveal"
-                 style="transition-delay:120ms;"
-                 x-data="{ step: 0, total: {{ count($stepperSteps) }} }">
-                <div class="h-full flex flex-col">
-                    {{-- Header --}}
-                    <div class="flex items-center gap-2 mb-4">
-                        <div class="w-1 h-5 bg-orange rounded-full"></div>
-                        <p class="text-steel font-body font-semibold text-[11px] uppercase tracking-widest">How preventive visits work</p>
-                    </div>
-
-                    {{-- Step indicators --}}
-                    <div class="flex items-center mb-4">
-                        @foreach ($stepperSteps as $i => $_)
-                            @if ($i > 0)
-                            <div class="flex-1 h-0.5 mx-2 transition-colors duration-500"
-                                 :class="step >= {{ $i }} ? 'bg-navy' : 'bg-border'"
-                                 aria-hidden="true"></div>
-                            @endif
-                            <button type="button"
-                                    @click="step = {{ $i }}"
-                                    :aria-current="step === {{ $i }} ? 'step' : null"
-                                    :aria-label="`Go to step {{ $i + 1 }}`"
-                                    :class="{
-                                        'bg-navy border-navy text-white shadow-md ring-4 ring-navy/10': step === {{ $i }},
-                                        'bg-steel border-steel text-white': step > {{ $i }},
-                                        'bg-white border-border text-gray-400 hover:border-navy/40': step < {{ $i }},
-                                    }"
-                                    class="w-9 h-9 rounded-full border-2 font-heading font-bold text-xs flex items-center justify-center transition-all duration-300 cursor-pointer flex-shrink-0 hover:scale-110">
-                                <template x-if="step > {{ $i }}">
-                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-                                </template>
-                                <template x-if="step <= {{ $i }}">
-                                    <span>{{ $i + 1 }}</span>
-                                </template>
-                            </button>
-                        @endforeach
-                    </div>
-
-                    {{-- Sliding content --}}
-                    <div class="flex-1 overflow-hidden">
-                        <div class="flex h-full sc-stepper-track"
-                             :style="`transform: translateX(-${step * 100}%)`">
-                            @foreach ($stepperSteps as $i => $s)
-                            <div class="w-full flex-shrink-0 pr-1"
-                                 :aria-hidden="step !== {{ $i }}">
-                                <p class="text-orange font-body font-semibold text-[11px] uppercase tracking-widest mb-1.5">Step {{ $i + 1 }}</p>
-                                <h4 class="font-heading font-bold text-navy text-base lg:text-lg mb-2 leading-snug">{{ $s['title'] }}</h4>
-                                <p class="font-body text-gray-700 text-[13px] lg:text-sm leading-relaxed">{{ $s['desc'] }}</p>
-                            </div>
-                            @endforeach
-                        </div>
-                    </div>
-
-                    {{-- Controls --}}
-                    <div class="flex items-center justify-between gap-3 pt-3 mt-1 border-t border-border/60">
-                        <button type="button"
-                                @click="step = Math.max(step - 1, 0)"
-                                :disabled="step === 0"
-                                :class="step === 0 ? 'opacity-30 cursor-not-allowed' : 'hover:text-navy cursor-pointer'"
-                                class="inline-flex items-center gap-1.5 text-xs font-body font-semibold text-gray-500 transition-colors px-1 py-1.5">
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
-                            Back
-                        </button>
-                        <span class="font-body text-[11px] font-semibold text-gray-400 tabular-nums" x-text="`${step + 1} / ${total}`"></span>
-                        <button type="button"
-                                @click="step = Math.min(step + 1, total - 1)"
-                                :disabled="step === total - 1"
-                                :class="step === total - 1 ? 'opacity-40 cursor-not-allowed' : 'hover:bg-navy-dark cursor-pointer'"
-                                class="inline-flex items-center gap-1.5 text-xs font-body font-semibold bg-navy text-white px-3 py-1.5 rounded-md transition-colors">
-                            Next
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
 
         {{-- "What's Not Included" — slim banner below the bento --}}
-        <div class="mt-4 bg-amber-50 border border-amber-200 rounded-3xl p-5 lg:p-6 reveal" style="transition-delay:60ms;">
-            <div class="flex items-start gap-4">
-                <div class="w-10 h-10 rounded-xl bg-amber-100 border border-amber-200 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-5 h-5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <div class="mt-4 bg-amber-50 border border-amber-200 rounded-2xl p-3 lg:p-4 reveal" style="transition-delay:60ms;">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-amber-100 border border-amber-200 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-4 h-4 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/>
                     </svg>
                 </div>
-                <div class="min-w-0">
-                    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-1">
-                        <p class="font-body font-semibold text-amber-800 text-[11px] uppercase tracking-widest">What's not included</p>
-                        <span class="font-heading font-semibold text-amber-900 text-sm">Parts, major repairs &amp; misuse damage</span>
-                    </div>
-                    <p class="font-body text-amber-800 text-xs lg:text-sm leading-relaxed">
-                        Service contracts cover planned preventive maintenance and scheduled labour. Parts, major repairs and damage from misuse or third-party interference are separate. Your contract document will clearly state what is and is not covered.
+                <div class="min-w-0 flex-1">
+                    <p class="font-body text-amber-800 text-[11px] lg:text-xs leading-snug">
+                        <span class="font-semibold uppercase tracking-widest text-amber-700">What's not included:</span>
+                        Parts, major repairs and damage from misuse or third-party interference are separate. Your contract document will clearly state what is and is not covered.
                     </p>
                 </div>
             </div>
@@ -410,26 +323,185 @@
     </div>
 </section>
 
+<!-- HOW PREVENTIVE VISITS WORK — gallery (matches hospitality pattern) -->
+<style>
+.sc-visit-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    flex: 1 1 25%;
+}
+.sc-visit-card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+.sc-visit-card:hover img { transform: scale(1.06); }
+.sc-visit-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.35) 55%, rgba(1,30,65,0.10) 100%);
+    z-index: 1;
+    transition: opacity 0.4s;
+}
+.sc-visit-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(1,30,65,0.90);
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+.sc-visit-card:hover::before { opacity: 0; }
+.sc-visit-card:hover::after  { opacity: 1; visibility: visible; }
+
+.sc-vcap1 {
+    position: absolute;
+    bottom: 28px;
+    left: 32px;
+    z-index: 3;
+    transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.sc-vcap1 .sc-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 6px;
+}
+.sc-vcap1 h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+}
+.sc-visit-card:hover .sc-vcap1 {
+    opacity: 0;
+    transform: translateY(16px);
+}
+
+.sc-vcap2 {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    right: 32px;
+    transform: translateY(-40%);
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.sc-visit-card:hover .sc-vcap2 {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+.sc-vcap2 .sc-num {
+    color: #148af4;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+}
+.sc-vcap2 h4 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.sc-vcap2 p {
+    color: rgba(255,255,255,0.72);
+    font-size: 0.85rem;
+    line-height: 1.65;
+}
+
+@media (max-width: 767px) {
+    .sc-visit-card { min-height: 300px; flex: 1 1 50%; }
+}
+@media (max-width: 479px) {
+    .sc-visit-card { min-height: 260px; flex: 1 1 100%; }
+}
+</style>
+
+<section class="w-full overflow-hidden pb-16 lg:pb-24">
+    {{-- Section header (matches home heading pattern) --}}
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight max-w-3xl">
+            How <span class="text-orange">preventive visits</span> work.
+        </h2>
+        <p class="font-body text-gray-600 text-lg leading-relaxed mt-4 max-w-2xl">
+            Four practical stages that turn a service contract into operational continuity.
+        </p>
+    </div>
+
+    {{-- Full-width 4-card gallery --}}
+    <div style="display:flex; flex-wrap:wrap;">
+        @foreach([
+            [
+                'num'   => '01.',
+                'title' => 'Inspect & assess',
+                'body'  => 'Engineer inspects all contracted equipment, checks safety features, identifies wear and flags any items needing attention.',
+                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+            ],
+            [
+                'num'   => '02.',
+                'title' => 'Service & replace',
+                'body'  => 'Cleaning, lubrication and consumable parts replacement where appropriate — keeping equipment operating to spec.',
+                'img'   => '/images/healthcare/repairs-hero.jpg',
+            ],
+            [
+                'num'   => '03.',
+                'title' => 'Document on-site',
+                'body'  => 'Written service report completed during the visit and provided to your facilities or operations manager.',
+                'img'   => '/images/healthcare/service-contracts-hero.jpg',
+            ],
+            [
+                'num'   => '04.',
+                'title' => 'Plan ahead',
+                'body'  => 'Visit frequency agreed up-front based on your equipment, usage profile and chosen tier — no surprises.',
+                'img'   => '/images/equipment/td6-multihousing-room.jpg',
+            ],
+        ] as $card)
+        <div class="sc-visit-card">
+            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy">
+            <div class="sc-vcap1">
+                <span class="sc-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+            </div>
+            <div class="sc-vcap2">
+                <span class="sc-num">{{ $card['num'] }}</span>
+                <h4>{{ $card['title'] }}</h4>
+                <p>{{ $card['body'] }}</p>
+            </div>
+        </div>
+        @endforeach
+    </div>
+</section>
+
 <!-- DOWNTIME FRAMING BLOCK -->
 <section class="relative py-20 lg:py-32 bg-navy overflow-hidden">
-    {{-- Backdrop image at full opacity with subtle vignette --}}
+    {{-- Backdrop image at full opacity, no blue overlay --}}
     <div class="absolute inset-0" aria-hidden="true">
         <img src="/images/sectors/commercial-hero.jpg"
              alt=""
              loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
-        <div class="absolute inset-0"
-             style="background: linear-gradient(to bottom, rgba(1,30,65,0.55) 0%, rgba(1,30,65,0.35) 50%, rgba(1,30,65,0.55) 100%);"></div>
     </div>
 
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto reveal">
             <div class="rounded-2xl p-8 lg:p-12 text-center"
                  style="background: rgba(1,30,65,0.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
-                <div class="w-16 h-1 bg-steel mx-auto mb-6 rounded-full"></div>
-                <p class="text-orange font-body font-semibold text-sm uppercase tracking-widest mb-4">Operational Risk Management</p>
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-5 leading-tight">
-                    Designed to Reduce Downtime Risk in Critical Laundry Operations
+                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5 leading-tight">
+                    Designed to reduce <span class="text-orange">downtime risk</span> in critical laundry operations.
                 </h2>
                 <p class="font-body text-blue-200 text-lg leading-relaxed">
                     Unplanned breakdowns in healthcare, care and regulated environments don't just cost money — they create operational pressure, compliance risk and reputational exposure. A structured service contract puts the engineering infrastructure in place before problems occur.
@@ -448,8 +520,7 @@
 <section class="relative py-16 lg:py-24 bg-navy sc-dotgrid overflow-hidden">
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
-            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">How it works</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">Getting a Contract in Place</h2>
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">Getting a <span class="text-orange">contract in place</span>.</h2>
             <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">Three steps from first contact to service contract active.</p>
         </div>
 
@@ -532,6 +603,81 @@
     </div>
 </section>
 
+<!-- TESTIMONIALS — smaller, contract-impact focused -->
+<section class="py-16 lg:py-20 bg-white border-t border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Heading --}}
+        <div class="max-w-2xl mb-12 reveal">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                What a service contract <span class="text-orange">changes</span> day-to-day.
+            </h2>
+            <p class="font-body text-gray-600 text-base leading-relaxed">
+                How ILS customers describe the operational shift after putting a contract in place.
+            </p>
+        </div>
+
+        {{-- 3-card grid (compact) --}}
+        @php
+        $contractTestimonials = [
+            [
+                'highlight' => 'Predictable maintenance instead of constant breakdowns.',
+                'body'      => 'Before the contract we were calling for urgent repairs every couple of weeks. Now we plan around scheduled visits — the equipment just runs.',
+                'name'      => 'Operations Manager',
+                'role'      => 'Healthcare Group, Republic of Ireland',
+                'img'       => '/images/about/testimonial-1.jpg',
+            ],
+            [
+                'highlight' => 'Service history that made compliance audits straightforward.',
+                'body'      => 'The documented service reports gave us everything we needed for audit. No scrambling for paperwork — it was already there.',
+                'name'      => 'Facilities Manager',
+                'role'      => 'Nursing Home Group, Munster',
+                'img'       => '/images/about/testimonial-2.jpg',
+            ],
+            [
+                'highlight' => 'We stopped fearing peak season.',
+                'body'      => 'Priority response under the Assured tier means a breakdown during full occupancy is no longer a crisis. The team gets there fast.',
+                'name'      => 'General Manager',
+                'role'      => '4-Star Hotel, Leinster',
+                'img'       => '/images/about/testimonial-3.jpg',
+            ],
+        ];
+        @endphp
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
+            @foreach ($contractTestimonials as $i => $t)
+            <article class="bg-bg border border-border rounded-2xl p-6 lg:p-7 flex flex-col reveal" style="transition-delay:{{ $i * 80 }}ms;">
+                {{-- Quote mark --}}
+                <svg class="w-7 h-7 text-orange mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                    <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
+                </svg>
+
+                {{-- Headline highlight --}}
+                <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-3">
+                    {{ $t['highlight'] }}
+                </p>
+
+                {{-- Body --}}
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 flex-1">
+                    {{ $t['body'] }}
+                </p>
+
+                {{-- Attribution --}}
+                <div class="flex items-center gap-3 pt-5 border-t border-border">
+                    <img src="{{ $t['img'] }}" alt="{{ $t['name'] }}"
+                         class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
+                         loading="lazy" decoding="async">
+                    <div class="min-w-0">
+                        <cite class="block font-body font-semibold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
+                        <span class="font-body text-gray-500 text-xs leading-tight">{{ $t['role'] }}</span>
+                    </div>
+                </div>
+            </article>
+            @endforeach
+        </div>
+
+    </div>
+</section>
+
 <!-- FAQs -->
 @php
 $faqs = [
@@ -563,18 +709,11 @@ $faqs = [
         <div class="relative bg-navy rounded-3xl overflow-hidden reveal">
             <div class="grid grid-cols-1 lg:grid-cols-5">
 
-                {{-- Left: heading + bullets --}}
-                <div class="relative lg:col-span-2 p-8 lg:p-12 flex flex-col justify-between overflow-hidden">
-                    {{-- Decorative background graphic --}}
-                    <img src="/images/healthcare/Service%20Contracts.png"
-                         alt=""
-                         aria-hidden="true"
-                         loading="lazy" decoding="async"
-                         class="hidden lg:block pointer-events-none absolute -bottom-10 -right-10 w-64 opacity-[0.08] select-none">
+                {{-- Left: heading + bullets + photo --}}
+                <div class="relative lg:col-span-2 p-8 lg:p-12 flex flex-col gap-6 overflow-hidden">
                     <div>
-                        <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">Next step</p>
-                        <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-5">
-                            Request a Contract Review
+                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
+                            Request a <span class="text-orange">contract review</span>.
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7">
                             Tell us about your equipment, site count and operational profile. We'll review and come back with a tailored proposal — no obligation.
@@ -591,6 +730,17 @@ $faqs = [
                             </div>
                             @endforeach
                         </div>
+                    </div>
+
+                    {{-- Bottom photo block --}}
+                    <div class="hidden lg:block relative rounded-2xl overflow-hidden mt-auto">
+                        <div class="aspect-[16/9]">
+                            <img src="/images/healthcare/service-contracts-hero.jpg"
+                                 alt="ILS engineers reviewing service equipment"
+                                 loading="lazy" decoding="async"
+                                 class="w-full h-full object-cover object-[center_25%]">
+                        </div>
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.55) 0%, transparent 60%);"></div>
                     </div>
                 </div>
 
