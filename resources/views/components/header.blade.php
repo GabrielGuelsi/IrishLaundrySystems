@@ -1,11 +1,11 @@
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200" x-data="{ open: false, sectorsOpen: false, equipOpen: false }">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-2 2xl:px-16">
-        <div class="flex items-center justify-between h-16 lg:h-20">
+        <div class="flex items-center justify-between h-[68px] lg:h-20">
 
             <!-- Logo -->
             <div class="flex items-center gap-3 flex-shrink-0">
                 <a href="{{ route('home') }}" class="flex items-center" aria-label="Irish Laundry Systems — Home">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1650 540" class="h-12 lg:h-16 w-auto" aria-hidden="true" focusable="false">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1650 540" class="h-14 lg:h-16 w-auto" aria-hidden="true" focusable="false">
                       <style>.ils-logo{fill:#011e41}</style>
                       <g>
                         <g>

@@ -62,7 +62,7 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
-            <h2 class="font-heading font-bold text-navy text-5xl lg:text-6xl xl:text-7xl leading-[1.05]">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
                 Leaders in commercial laundry support <span class="text-orange">for over 35 years</span>.
             </h2>
             <div class="space-y-6">

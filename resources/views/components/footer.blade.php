@@ -1,28 +1,5 @@
 <footer class="bg-navy-dark text-white">
 
-    <!-- Proof slot: testimonial + logo strip -->
-    <div class="border-b border-white/10">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-10">
-
-            <!-- Testimonial -->
-            <blockquote class="text-center max-w-2xl mx-auto mb-8">
-                <p class="font-body text-gray-300 text-base italic leading-relaxed">
-                    &ldquo;Reliable, clear communication and practical engineering support. They understand the pressure of healthcare operations and respond accordingly.&rdquo;
-                </p>
-                <cite class="block mt-3 text-sm text-steel-light font-body not-italic">— Operations Manager, Healthcare Group, Republic of Ireland</cite>
-            </blockquote>
-
-            <!-- Logo strip -->
-            <div class="flex flex-wrap items-center justify-center gap-28">
-                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png" alt="HSE" class="h-8 object-contain brightness-0 invert opacity-70">
-                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 object-contain mix-blend-screen opacity-90">
-                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 object-contain mix-blend-screen opacity-90">
-                <img src="/images/healthcare/TheMaterhospital.png" alt="The Mater Hospital" class="h-8 object-contain brightness-0 invert opacity-70">
-                <img src="/images/healthcare/maryfieldlogo.png" alt="Maryfield Nursing Home" class="h-8 object-contain mix-blend-screen opacity-90">
-            </div>
-        </div>
-    </div>
-
     <!-- Main footer -->
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
