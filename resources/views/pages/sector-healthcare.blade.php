@@ -1148,8 +1148,6 @@ function ilsCardToggle(btn) {
 
 <div class="py-12 bg-white"></div>
 
-@include('components.service-contracts-strip')
-
 @include('components.why-choose-strip')
 
 <div class="py-12 bg-white"></div>
@@ -1157,6 +1155,8 @@ function ilsCardToggle(btn) {
 @include('components.aftercare-service-cards')
 
 @include('components.equipment-categories')
+
+@include('components.service-contracts-strip')
 
 @include('components.testimonials')
 

@@ -916,11 +916,11 @@ function ilsCardToggle(btn) {
 </section>
 
 
-@include('components.service-contracts-strip')
-
 @include('components.why-choose-strip')
 
 @include('components.equipment-categories')
+
+@include('components.service-contracts-strip')
 
 @include('components.testimonials')
 
