@@ -9,7 +9,7 @@
     </div>
 
     {{-- RIGHT: content — 50% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%;">
+    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; max-width:50%;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Keep operations running</span>
@@ -38,7 +38,7 @@
             @endforeach
         </div>
 
-        <div class="flex justify-end">
+        <div class="w-full flex justify-end">
             <a href="{{ route('rental') }}"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                 Explore Equipment Rental

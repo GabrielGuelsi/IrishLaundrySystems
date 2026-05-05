@@ -438,6 +438,8 @@
     'primaryHref' => '/contact',
 ])
 
+@include('components.service-contracts-strip')
+
 @include('components.cta-combined-banner')
 
 @endsection

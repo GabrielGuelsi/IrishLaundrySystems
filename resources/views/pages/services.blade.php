@@ -145,6 +145,8 @@
     'subheading' => 'Tell us about your operation and we will recommend the right service structure.',
 ])
 
+@include('components.service-contracts-strip')
+
 @include('components.cta-combined-banner')
 
 @endsection
