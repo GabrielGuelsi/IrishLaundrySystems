@@ -22,17 +22,16 @@
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
-                ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>', 'label' => 'No upfront investment'],
-                ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766m0 0 3.024 3.024c.37-.14.716-.363 1.002-.67L21 11.25a2.25 2.25 0 0 0-2.25-2.25H15M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63"/>', 'label' => 'Installed and supported'],
-                ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>', 'label' => 'Flexible terms'],
+                ['icon' => 'ativo-2',  'label' => 'No upfront investment'],
+                ['icon' => 'ativo-1',  'label' => 'Installed and supported'],
+                ['icon' => 'ativo-13', 'label' => 'Flexible terms'],
             ] as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-7 bg-white/20 mx-4 flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-2">
-                <svg class="w-4 h-4 flex-shrink-0 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    {!! $feat['icon'] !!}
-                </svg>
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                     class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
                 <span class="font-body text-white text-xs font-semibold whitespace-nowrap">{{ $feat['label'] }}</span>
             </div>
             @endforeach

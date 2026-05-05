@@ -22,17 +22,16 @@
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
-                ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766m0 0 3.024 3.024c.37-.14.716-.363 1.002-.67L21 11.25a2.25 2.25 0 0 0-2.25-2.25H15M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63"/>', 'label' => 'Planned maintenance'],
-                ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>', 'label' => 'Parts continuity'],
-                ['icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>', 'label' => 'Practical aftercare'],
+                ['icon' => 'ativo-7', 'label' => 'Planned maintenance'],
+                ['icon' => 'ativo-8', 'label' => 'Parts continuity'],
+                ['icon' => 'ativo-4', 'label' => 'Practical aftercare'],
             ] as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-7 bg-white/20 mx-4 flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-2">
-                <svg class="w-4 h-4 flex-shrink-0 text-white/80" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    {!! $feat['icon'] !!}
-                </svg>
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                     class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
                 <span class="font-body text-white text-xs font-semibold whitespace-nowrap">{{ $feat['label'] }}</span>
             </div>
             @endforeach
