@@ -1156,6 +1156,8 @@ function ilsCardToggle(btn) {
 
 @include('components.equipment-categories')
 
+@include('components.service-contracts-strip')
+
 @include('components.testimonials')
 
 @include('components.cta-downtime-form', ['pageSource' => 'healthcare_cta'])

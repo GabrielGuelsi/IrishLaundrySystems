@@ -950,6 +950,8 @@ function ilsCardToggle(btn) {
     ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
 ]])
 
+@include('components.service-contracts-strip')
+
 @include('components.testimonials')
 
 @include('components.cta-downtime-form', ['pageSource' => 'care_cta'])

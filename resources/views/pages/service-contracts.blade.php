@@ -894,7 +894,9 @@ $faqs = [
 </section>
 
 <div class="reveal">
-    @include('components.cta-combined-banner')
+    @include('components.service-contracts-strip')
+
+@include('components.cta-combined-banner')
 </div>
 
 <script>

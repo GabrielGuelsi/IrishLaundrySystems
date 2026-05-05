@@ -8,8 +8,8 @@
         <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.4) 40%, transparent 100%);"></div>
     </div>
 
-    {{-- RIGHT: content — 60% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:40%;">
+    {{-- RIGHT: content — 50% width --}}
+    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Keep operations running</span>
@@ -17,7 +17,7 @@
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Rental supports replacement, expansion and operational continuity — no upfront investment required.
+            Rental supports replacement, expansion and operational<br>continuity — no upfront investment required.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
@@ -38,13 +38,15 @@
             @endforeach
         </div>
 
-        <a href="{{ route('rental') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide w-fit">
-            Explore Equipment Rental
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-            </svg>
-        </a>
+        <div class="w-full flex" style="justify-content: center; padding-left: 33%;">
+            <a href="{{ route('rental') }}"
+               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                Explore Equipment Rental
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
 
     </div>
 
