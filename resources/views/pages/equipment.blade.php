@@ -222,6 +222,8 @@
     </div>
 </section>
 
+@include('components.service-contracts-strip')
+
 <!-- PRODUCTIVITY INFOGRAPHIC -->
 <section class="py-0 bg-[#011E41] overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-24">
@@ -438,7 +440,6 @@
     'primaryHref' => '/contact',
 ])
 
-@include('components.service-contracts-strip')
 
 @include('components.cta-combined-banner')
 

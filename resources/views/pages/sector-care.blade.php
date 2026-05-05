@@ -614,8 +614,6 @@ function ilsCardToggle(btn) {
 </section>
 
 
-@include('components.service-contracts-strip')
-
 @include('components.cta-combined-banner')
 
 <!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
@@ -942,6 +940,8 @@ function ilsCardToggle(btn) {
     </div>
 </section>
 
+
+@include('components.service-contracts-strip')
 
 @include('components.why-choose-strip')
 
