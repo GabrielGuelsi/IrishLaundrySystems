@@ -26,17 +26,20 @@
         {{-- 3 horizontal features --}}
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Workflow & layout'],
-                ['icon' => 'ativo-9',  'label' => 'Equipment selection'],
-                ['icon' => 'ativo-10', 'label' => 'Capacity planning'],
+                ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
+                ['icon' => 'ativo-9',  'label' => 'Equipment<br>selection'],
+                ['icon' => 'ativo-10', 'label' => 'Capacity<br>planning'],
             ] as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-7 bg-white/30 mx-4 hidden sm:block flex-shrink-0"></div>
+                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
-            <div class="flex items-center gap-2 py-1">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
-                <span class="font-body text-white text-xs font-semibold whitespace-nowrap">{{ $feat['label'] }}</span>
+            <div class="flex items-center gap-3">
+                <div class="flex-shrink-0 flex items-center justify-center rounded-full"
+                     style="width:52px;height:52px;border:2px dashed rgba(255,255,255,0.5);">
+                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                         style="width:1.6rem;height:1.6rem;" alt="">
+                </div>
+                <span class="font-body text-white text-xs font-semibold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>
