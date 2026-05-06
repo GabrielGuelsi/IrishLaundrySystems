@@ -107,12 +107,11 @@
 <!-- HERO -->
 <section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
-    {{-- Background image (mirrored so the engineers sit on the right; anchored to the top so heads stay in frame) --}}
-    <img src="/images/healthcare/Customer-Care_Line-6000-_001.jpg"
-         alt="ILS engineer reviewing Line 6000 commercial laundry equipment"
+    {{-- Background image --}}
+    <img src="/images/healthcare/service-contracts-hero.png"
+         alt="ILS engineer reviewing a commercial laundry service contract with a customer"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-top"
-         style="transform: scaleX(-1);">
+         class="absolute inset-0 w-full h-full object-cover object-right">
 
 
     {{-- Gradient overlay — fades faster so both engineers come through --}}
@@ -203,8 +202,8 @@
 
             {{-- TILE 1 · Engineer photo (2×2) --}}
             <div class="group relative md:col-span-2 lg:col-span-2 lg:row-span-2 rounded-3xl overflow-hidden bg-navy reveal min-h-[400px] lg:min-h-0">
-                <img src="/images/about/about-engineers.jpg"
-                     alt="ILS engineering team on site"
+                <img src="/images/healthcare/service-contracts-hero.jpg"
+                     alt="ILS engineers in conversation about service equipment"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-105">
                 {{-- Top scrim for badge legibility --}}

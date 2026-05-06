@@ -8,11 +8,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->
-        <div class="mb-10">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                Support for <span class="text-orange">healthcare, Care Facilities,<br class="hidden lg:block">
-                Hospitality, and Industrial Sites</span>.
+        <div class="mb-10 max-w-3xl">
+            <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
+                Support shaped around <span class="text-orange">real operating environments</span>.
             </h2>
+            <p class="font-body text-gray-600 text-lg leading-relaxed">
+                Different sites carry different pressures. The right support depends on hygiene requirements, throughput, staffing, presentation standards, installed equipment and service needs.
+            </p>
         </div>
 
         <!-- 2×2 grid -->
@@ -28,7 +31,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
-                        Engineering-led support for healthcare laundry environments where contamination control, continuity, and process discipline are central.
+                        Engineering-led support for healthcare laundry environments where room logic, process discipline and continuity matter every day.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Request Healthcare Assessment
@@ -46,10 +49,10 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Care Facilities</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
-                        Continuity-focused laundry support for care environments and installed bases where uptime and practical maintenance matter.
+                        Practical support for care environments where daily laundry demand, smaller teams and maintenance structure need to stay manageable.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
-                        View Care Facility Solutions
+                        View Care Facility Support
                     </span>
                 </div>
             </a>
@@ -64,10 +67,10 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Hospitality</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
-                        Support for guest-facing operations where room turnover, presentation, and dependable service response affect the business.
+                        Support for guest-facing operations where linen flow, finishing quality, turnaround and service response affect the wider business.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
-                        View Hospitality Solutions
+                        View Hospitality Support
                     </span>
                 </div>
             </a>
@@ -82,7 +85,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial<br>&amp; Industrial</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
-                        Support for larger or high-throughput sites where lifecycle cost, uptime, and robust engineering support matter every day.
+                        Support for higher-throughput sites where output, lifecycle cost and engineering response carry more operational weight.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Talk to an Engineer

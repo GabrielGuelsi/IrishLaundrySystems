@@ -41,8 +41,8 @@
 <section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
     {{-- Background image --}}
-    <img src="/images/healthcare/Customer-Care_Line-6000-_001.jpg"
-         alt="ILS engineer reviewing commercial laundry equipment"
+    <img src="/images/healthcare/services-overview-hero.jpg"
+         alt="ILS engineer shaking hands with a customer in a laundry room"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-top">
 
@@ -55,11 +55,11 @@
             <div style="max-width: 680px;">
 
                 <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Support routes built around <span class="text-orange">your site and equipment</span>.
+                    Support built around <span class="text-orange">your site and equipment</span>.
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
-                    From urgent call-outs to planned support, genuine parts and rental cover — this page helps operators find the right route for the installed base and day-to-day pressure.
+                    From urgent call-outs to planned maintenance, rental, parts and practical aftercare, Irish Laundry Systems helps operators choose the right support for the installed base and the pressure on site.
                 </p>
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
@@ -94,19 +94,19 @@
                     How support <span class="text-orange">starts</span>.
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Most service decisions begin with site pressure, the installed equipment, and the support route needed next.
+                    Most service decisions begin with the site, the equipment already installed and the help needed next.
                 </p>
             </div>
 
             {{-- Right: 3-step horizontal flow --}}
             <div class="lg:col-span-9 flex items-start justify-between gap-3 sm:gap-4 lg:gap-6 flex-wrap sm:flex-nowrap">
 
-                {{-- Step 1 --}}
+                {{-- Step 1 — Site pressure (Ativo 7 — placeholder, swap after visual preview at /icon-preview.html) --}}
                 <div class="svc-step flex-1 min-w-[140px] text-center">
                     <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-7 h-7 lg:w-9 lg:h-9 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/>
-                        </svg>
+                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                            {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
+                        </div>
                     </div>
                     <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Site pressure</p>
                     <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Understand breakdown risk, utilisation and urgency.</p>
@@ -119,15 +119,15 @@
                     </svg>
                 </div>
 
-                {{-- Step 2 --}}
+                {{-- Step 2 — Installed equipment (Ativo 18 placeholder) --}}
                 <div class="svc-step flex-1 min-w-[140px] text-center">
                     <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-7 h-7 lg:w-9 lg:h-9 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 7.5l3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0021 18V6a2.25 2.25 0 00-2.25-2.25H5.25A2.25 2.25 0 003 6v12a2.25 2.25 0 002.25 2.25z"/>
-                        </svg>
+                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                            {!! file_get_contents(public_path('images/icons/brand/Ativo 9.svg')) !!}
+                        </div>
                     </div>
                     <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Installed equipment</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Identify model, age, capacity and spare parts continuity.</p>
+                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Identify model, age, capacity and parts access.</p>
                 </div>
 
                 {{-- Arrow 2 --}}
@@ -137,15 +137,15 @@
                     </svg>
                 </div>
 
-                {{-- Step 3 --}}
+                {{-- Step 3 — Support route (Ativo 4 placeholder) --}}
                 <div class="svc-step flex-1 min-w-[140px] text-center">
                     <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-7 h-7 lg:w-9 lg:h-9 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z"/>
-                        </svg>
+                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                            {!! file_get_contents(public_path('images/icons/brand/Ativo 6.svg')) !!}
+                        </div>
                     </div>
-                    <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Support route</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Select the right mix of support for your site.</p>
+                    <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Next step</p>
+                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Select the right support for the site.</p>
                 </div>
 
             </div>
@@ -157,10 +157,13 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
-        <div class="text-center mb-12 lg:mb-16">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                Choose the route that fits <span class="text-orange">your site</span>.
+        <div class="text-center mb-12 lg:mb-16 max-w-3xl mx-auto">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
+                Choose the right support for <span class="text-orange">your site</span>.
             </h2>
+            <p class="font-body text-gray-500 text-base lg:text-lg leading-relaxed">
+                Four practical ways to get the right help for faults, planned maintenance, rental, parts access and aftercare around the installed base.
+            </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
@@ -177,7 +180,7 @@
 
                 <div class="absolute inset-0 p-6 lg:p-7 flex flex-col justify-end">
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">Urgent response when breakdowns interrupt healthcare and high-pressure operations.</p>
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">Engineering support for faults, breakdowns and performance issues where equipment pressure affects the laundry room.</p>
                         <ul class="space-y-2 mb-4">
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Triage-first response</li>
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Fast contact and follow-up</li>
@@ -187,8 +190,9 @@
 
                     <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Repairs &amp; Call-outs</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 group-hover:bg-orange transition-colors duration-200">
-                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            Request Call-out
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
                     </div>
                 </div>
@@ -206,7 +210,7 @@
 
                 <div class="absolute inset-0 p-6 lg:p-7 flex flex-col justify-end">
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">Planned preventive maintenance keeping operations stable and downtime predictable.</p>
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">Planned maintenance and service structure for sites that need better control over recurring issues and the installed base.</p>
                         <ul class="space-y-2 mb-4">
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Three maintenance tiers</li>
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Documented service records</li>
@@ -216,8 +220,9 @@
 
                     <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Service Contracts</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 group-hover:bg-orange transition-colors duration-200">
-                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            View Contracts
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
                     </div>
                 </div>
@@ -235,7 +240,7 @@
 
                 <div class="absolute inset-0 p-6 lg:p-7 flex flex-col justify-end">
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">Short or long-term rental to cover breakdowns, upgrades or operational growth.</p>
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">A supported option for replacement pressure, expansion or capital control, with equipment installed and maintained.</p>
                         <ul class="space-y-2 mb-4">
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Equipment with service built in</li>
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Predictable monthly cost</li>
@@ -245,8 +250,9 @@
 
                     <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Equipment Rental</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 group-hover:bg-orange transition-colors duration-200">
-                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            See Rental Options
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
                     </div>
                 </div>
@@ -264,7 +270,7 @@
 
                 <div class="absolute inset-0 p-6 lg:p-7 flex flex-col justify-end">
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">Genuine parts supply and practical aftercare for the installed Electrolux base.</p>
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">Genuine parts access, service history context and practical follow-up support around commercial laundry equipment.</p>
                         <ul class="space-y-2 mb-4">
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Genuine Electrolux parts</li>
                             <li class="flex items-center gap-2 font-body text-white text-sm"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>Lifecycle support</li>
@@ -274,8 +280,9 @@
 
                     <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Parts &amp; Aftercare</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/20 group-hover:bg-orange transition-colors duration-200">
-                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/></svg>
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            Explore Support Options
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
                     </div>
                 </div>
@@ -292,27 +299,22 @@
     <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="relative max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         @php
-        $svcStats = [
-            ['target' => 38,  'suffix' => '+',  'label' => 'Years engineering-led',         'sub' => 'Specialist commercial laundry since 1987'],
-            ['target' => 26,  'suffix' => '',   'label' => 'Counties covered',              'sub' => 'Full Republic of Ireland coverage'],
-            ['target' => 48,  'suffix' => 'h',  'label' => 'Priority response window',      'sub' => 'On Priority &amp; Assured tiers'],
-            ['target' => 100, 'suffix' => '%',  'label' => 'Genuine Electrolux parts',      'sub' => 'Authorised Professional Partner'],
+        $svcCapabilities = [
+            ['label' => '38+ years',               'body' => 'Specialist commercial laundry support since 1987.'],
+            ['label' => 'Ireland-wide support',    'body' => 'Service coverage across the Republic of Ireland.'],
+            ['label' => 'Support options',         'body' => 'Repairs, contracts, rental, parts and aftercare.'],
+            ['label' => 'Electrolux parts access', 'body' => 'Access to genuine Electrolux Professional parts where applicable.'],
         ];
         @endphp
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-8">
-            @foreach ($svcStats as $i => $stat)
-            <div class="relative text-center lg:text-left">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
+            @foreach ($svcCapabilities as $i => $item)
+            <div class="relative">
                 @if ($i > 0)
                 <div class="hidden lg:block absolute left-0 top-1 bottom-1 w-px bg-white/10" aria-hidden="true"></div>
                 @endif
                 <div class="lg:pl-6">
-                    <div class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1 svc-stat-num leading-none">
-                        <span data-counter
-                              data-target="{{ $stat['target'] }}"
-                              data-suffix="{{ $stat['suffix'] }}">0{{ $stat['suffix'] }}</span>
-                    </div>
-                    <div class="font-body font-semibold text-orange text-xs uppercase tracking-wider mb-0.5">{{ $stat['label'] }}</div>
-                    <div class="font-body text-blue-200 text-[11px] leading-snug">{!! $stat['sub'] !!}</div>
+                    <p class="font-heading font-bold text-orange text-base lg:text-lg uppercase tracking-wider mb-1.5 leading-tight">{{ $item['label'] }}</p>
+                    <p class="font-body text-blue-200 text-sm leading-relaxed">{{ $item['body'] }}</p>
                 </div>
             </div>
             @endforeach
@@ -325,10 +327,10 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="text-center mb-12 lg:mb-14">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">
-                How the routes <span class="text-orange">work together</span>.
+                How the services <span class="text-orange">work together</span>.
             </h2>
-            <p class="font-body text-gray-500 text-base mt-3 max-w-xl mx-auto leading-relaxed">
-                The four routes aren't silos — they connect into one continuous support story for the installed base.
+            <p class="font-body text-gray-500 text-base mt-3 max-w-2xl mx-auto leading-relaxed">
+                Repairs, contracts, rental, parts and aftercare should not sit in separate conversations. Together, they create a clearer support structure around the installed base.
             </p>
         </div>
 
@@ -340,18 +342,19 @@
 
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 @foreach([
-                    ['icon' => 'M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z', 'label' => 'Call-out identifies pressure'],
-                    ['icon' => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z', 'label' => 'Contract reduces repeat issues'],
-                    ['icon' => 'M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z', 'label' => 'Parts support the installed base'],
-                    ['icon' => 'M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z', 'label' => 'Rental helps with replacement or growth'],
+                    ['ativo' => 11, 'label' => 'Call-out identifies pressure',          'desc' => 'A fault, breakdown or recurring issue shows what is under strain.'],
+                    ['ativo' => 17, 'label' => 'Contract reduces repeat issues',        'desc' => 'Planned maintenance gives the site a clearer service structure.'],
+                    ['ativo' => 14, 'label' => 'Parts support the installed base',      'desc' => 'Genuine parts access and service history keep equipment decisions connected.'],
+                    ['ativo' => 19, 'label' => 'Rental helps with replacement or growth','desc' => 'Rental can support capacity gaps, replacement pressure or expansion without a capital purchase route.'],
                 ] as $node)
                 <div class="svc-link-node text-center">
                     <div class="svc-link-icon relative z-10 w-20 h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <svg class="w-8 h-8 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="{{ $node['icon'] }}"/>
-                        </svg>
+                        <div class="w-9 h-9 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                            {!! file_get_contents(public_path('images/icons/brand/Ativo ' . $node['ativo'] . '.svg')) !!}
+                        </div>
                     </div>
-                    <p class="font-body text-navy text-sm font-semibold leading-snug max-w-[160px] mx-auto">{{ $node['label'] }}</p>
+                    <p class="font-heading font-bold text-navy text-sm leading-snug max-w-[180px] mx-auto mb-2">{{ $node['label'] }}</p>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[200px] mx-auto">{{ $node['desc'] }}</p>
                 </div>
                 @endforeach
             </div>
@@ -359,16 +362,17 @@
     </div>
 </section>
 
-<!-- 7. PARTS & AFTERCARE — DEEP SECTION -->
+<!-- 7. PARTS & AFTERCARE — BRIDGE -->
 <section id="parts-aftercare" class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-12 lg:mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
+                <p class="font-body font-semibold text-orange text-xs uppercase tracking-widest mb-4">Installed Base Support</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
                     Parts &amp; aftercare for the <span class="text-orange">installed base</span>.
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
-                    As an Authorised Electrolux Professional Partner, ILS supplies genuine manufacturer parts and structured aftercare across the full Electrolux range — supporting faster diagnosis, first-visit resolution, and equipment lifecycle continuity.
+                    As an Authorised Electrolux Professional Partner, Irish Laundry Systems supports genuine manufacturer parts and structured aftercare across the installed base, helping keep diagnosis, service history and equipment decisions connected.
                 </p>
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-semibold text-sm transition-colors">
@@ -379,10 +383,10 @@
             <div class="bg-bg rounded-2xl p-7 lg:p-8 border border-border">
                 <ul class="space-y-3">
                     @foreach ([
-                        'Genuine Electrolux Professional parts',
-                        'Preferential parts rates for contract customers',
+                        'Genuine Electrolux Professional parts access',
+                        'Preferential parts access for contract customers',
                         'Technical documentation and service history',
-                        'Parts supply for both contract and non-contract customers',
+                        'Parts supply for contract and non-contract customers',
                     ] as $bullet)
                     <li class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-orange mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -395,43 +399,35 @@
     </div>
 </section>
 
-@include('components.aftercare-service-cards')
-
 <!-- 8. COMPACT TESTIMONIALS — operational impact focus -->
 <section class="py-16 lg:py-20 bg-bg border-t border-border">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         <div class="max-w-2xl mb-12">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                What the routes <span class="text-orange">change</span> day-to-day.
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">
+                What the services <span class="text-orange">change</span> day-to-day.
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed">
-                How ILS customers describe the operational shift after picking the right support route.
-            </p>
         </div>
 
         @php
         $svcTestimonials = [
             [
-                'highlight' => 'Predictable maintenance instead of constant breakdowns.',
-                'body'      => 'After putting a contract in place, the equipment just runs. We plan around scheduled visits.',
-                'name'      => 'Operations Manager',
-                'role'      => 'Healthcare Group, Republic of Ireland',
-                'img'       => '/images/about/testimonial-1.jpg',
+                'quote' => 'Predictable maintenance instead of constant breakdowns.',
+                'name'  => 'Operations Manager',
+                'role'  => 'Healthcare Group, Republic of Ireland',
+                'img'   => '/images/about/testimonial-1.jpg',
             ],
             [
-                'highlight' => 'A clear path when something breaks.',
-                'body'      => 'Fast triage, the right engineer, the right parts. The repair route is structured — not chaotic.',
-                'name'      => 'Facilities Manager',
-                'role'      => 'Nursing Home Group, Munster',
-                'img'       => '/images/about/testimonial-2.jpg',
+                'quote' => 'A clear path when something breaks.',
+                'name'  => 'Facilities Manager',
+                'role'  => 'Nursing Home Group, Munster',
+                'img'   => '/images/about/testimonial-2.jpg',
             ],
             [
-                'highlight' => 'Rental solved the gap before the next install.',
-                'body'      => 'When we needed extra capacity over peak season, the rental came in fast and was supported throughout.',
-                'name'      => 'General Manager',
-                'role'      => '4-Star Hotel, Leinster',
-                'img'       => '/images/about/testimonial-3.jpg',
+                'quote' => 'Rental solved the gap before the next install.',
+                'name'  => 'General Manager',
+                'role'  => 'Hotel Group, Leinster',
+                'img'   => '/images/about/testimonial-3.jpg',
             ],
         ];
         @endphp
@@ -441,8 +437,7 @@
                 <svg class="w-7 h-7 text-orange mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                     <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
                 </svg>
-                <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-3">{{ $t['highlight'] }}</p>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 flex-1">{{ $t['body'] }}</p>
+                <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-6 flex-1">{{ $t['quote'] }}</p>
                 <div class="flex items-center gap-3 pt-5 border-t border-border">
                     <img src="{{ $t['img'] }}" alt="{{ $t['name'] }}"
                          class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
@@ -465,7 +460,7 @@
         {{-- Left: text + CTAs --}}
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                Need the right support route for <span class="text-orange">your site</span>?
+                Need the right support for <span class="text-orange">your site</span>?
             </h2>
             <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
                 Speak with an engineer about breakdown risk, installed equipment, parts continuity and the best next step for your site.
