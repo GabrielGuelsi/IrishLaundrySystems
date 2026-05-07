@@ -719,23 +719,25 @@ function ilsCardToggle(btn) {
         <div class="flex flex-col divide-y divide-gray-100">
 
             <!-- COMMERCIAL WASHERS — image left, text right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
-                <div class="flex justify-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
+                <div class="flex flex-col">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
-                         class="w-full h-96 object-contain">
+                         class="w-full h-96 object-contain object-top">
                 </div>
-                <div class="text-center">
-                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-4">Commercial <strong>Washers</strong></h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
                     </p>
-                    <div class="flex flex-col items-center gap-3">
-                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
-                            GO TO PRODUCTS
+                    <div class="flex flex-col gap-3">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
-                            REQUEST ASSESSMENT
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
                 </div>
@@ -743,20 +745,22 @@ function ilsCardToggle(btn) {
 
             <!-- 2. Tumble Dryers — text left, image right -->
             <div x-data="{ open: false }">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1">
-                    <h3 class="font-heading font-normal text-navy text-2xl lg:text-3xl leading-tight mb-4">
-                        Precision <strong class="font-bold">drying</strong> for <strong class="font-bold">high-demand</strong> commercial cycles.
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">
+                        Precision <strong>drying</strong> for <strong>high-demand</strong> commercial cycles.
                     </h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
                     </p>
                     <div class="flex flex-col gap-3 mb-6">
-                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide text-center">
-                            GO TO PRODUCTS
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide text-center">
-                            REQUEST ASSESSMENT
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
                     <div class="font-body text-gray-500 text-sm leading-relaxed">
@@ -768,7 +772,7 @@ function ilsCardToggle(btn) {
                 <div class="flex flex-col order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
-                         class="w-full h-96 object-contain">
+                         class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3 border-t border-gray-100">
                         <button @click="open = !open"
                                 class="w-full flex items-center justify-start gap-3 text-left group">
@@ -809,11 +813,11 @@ function ilsCardToggle(btn) {
 
             <!-- 3. Ironers — image left, text right -->
             <div x-data="{ open: false, tab: 'diamms' }">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-start py-12 lg:py-16 reveal">
-                <div class="flex flex-col items-start gap-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
+                <div class="flex flex-col">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain">
+                         class="w-full h-80 object-contain object-top">
                     <div class="mt-1 pt-3 border-t border-gray-100 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
                             <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
@@ -823,17 +827,19 @@ function ilsCardToggle(btn) {
                         </button>
                     </div>
                 </div>
-                <div class="text-center">
-                    <h3 class="font-heading text-navy text-3xl lg:text-4xl mb-6">Ironers</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Ironers</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Deliver perfectly ironed linen to the highest hygiene standards
                     </p>
-                    <div class="flex flex-col items-center gap-3">
-                        <a href="{{ route('equipment') }}" class="w-full max-w-xs bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide">
-                            GO TO PRODUCTS
+                    <div class="flex flex-col gap-3">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="w-full max-w-xs bg-[#148af4] text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-[#148af4]/90 transition-colors tracking-wide">
-                            REQUEST ASSESSMENT
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
                 </div>
