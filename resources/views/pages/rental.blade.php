@@ -55,7 +55,7 @@
                 <h1 class="hero-desc font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">
                     Equipment Rental &amp; Lease for Commercial Laundry
                 </h1>
-                <p class="font-body text-blue-200 text-lg mb-3 font-semibold">Managed equipment. Controlled costs. No capital outlay.</p>
+                <p class="font-body text-blue-200 text-lg mb-3 font-bold">Managed equipment. Controlled costs. No capital outlay.</p>
                 <p class="font-body text-gray-300 text-base leading-relaxed mb-7 max-w-xl">
                     Equipment rental and lease arrangements allow commercial laundry operators to access current Electrolux Professional equipment without significant capital investment — with planned maintenance built into the arrangement.
                 </p>
@@ -117,12 +117,12 @@
                          class="h-12 w-auto">
                 </div>
                 <div class="hidden sm:block border-l border-gray-300 pl-5">
-                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[11px] font-body font-bold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
                     <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
                 </div>
             </div>
             <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+               class="flex-shrink-0 text-xs font-body font-bold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
                 Learn more
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
@@ -215,17 +215,17 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">
                 <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">1</div>
-                <h3 class="font-heading font-semibold text-white text-lg mb-3">Tell Us What You Need</h3>
+                <h3 class="font-heading font-bold text-white text-lg mb-3">Tell Us What You Need</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">Equipment type, capacity requirements, sector and preferred rental term. We'll assess what's right for your operation.</p>
             </div>
             <div class="text-center">
                 <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">2</div>
-                <h3 class="font-heading font-semibold text-white text-lg mb-3">We Propose an Arrangement</h3>
+                <h3 class="font-heading font-bold text-white text-lg mb-3">We Propose an Arrangement</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">We'll put together a rental or lease proposal — including equipment spec, term, maintenance cover and what's included.</p>
             </div>
             <div class="text-center">
                 <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">3</div>
-                <h3 class="font-heading font-semibold text-white text-lg mb-3">Installation &amp; Commissioning</h3>
+                <h3 class="font-heading font-bold text-white text-lg mb-3">Installation &amp; Commissioning</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">ILS engineers install and commission the equipment. Ongoing maintenance is managed through the rental arrangement.</p>
             </div>
         </div>

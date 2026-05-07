@@ -64,11 +64,11 @@
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap gap-2">
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap gap-2">
                         Talk to an Engineer
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
@@ -188,9 +188,9 @@
                         </ul>
                     </div>
 
-                    <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Repairs &amp; Call-outs</h3>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Repairs &amp; Call-outs</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             Request Call-out
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
@@ -218,9 +218,9 @@
                         </ul>
                     </div>
 
-                    <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Service Contracts</h3>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Service Contracts</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             View Contracts
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
@@ -248,9 +248,9 @@
                         </ul>
                     </div>
 
-                    <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Equipment Rental</h3>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Equipment Rental</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             See Rental Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
@@ -278,9 +278,9 @@
                         </ul>
                     </div>
 
-                    <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Parts &amp; Aftercare</h3>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">Parts &amp; Aftercare</h3>
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-semibold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             Explore Support Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
@@ -367,7 +367,7 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-                <p class="font-body font-semibold text-orange text-xs uppercase tracking-widest mb-4">Installed Base Support</p>
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-widest mb-4">Installed Base Support</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
                     Parts &amp; aftercare for the <span class="text-orange">installed base</span>.
                 </h2>
@@ -375,7 +375,7 @@
                     As an Authorised Electrolux Professional Partner, Irish Laundry Systems supports genuine manufacturer parts and structured aftercare across the installed base, helping keep diagnosis, service history and equipment decisions connected.
                 </p>
                 <a href="{{ route('electrolux') }}"
-                   class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-semibold text-sm transition-colors">
+                   class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-bold text-sm transition-colors">
                     About the Electrolux partnership
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -443,7 +443,7 @@
                          class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
                          loading="lazy" decoding="async">
                     <div class="min-w-0">
-                        <cite class="block font-body font-semibold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
+                        <cite class="block font-body font-bold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
                         <span class="font-body text-gray-500 text-xs leading-tight">{{ $t['role'] }}</span>
                     </div>
                 </div>
@@ -467,12 +467,12 @@
             </p>
             <div class="flex flex-row flex-wrap gap-3">
                 <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-body font-semibold px-6 py-3.5 rounded-full text-sm transition-colors duration-200 whitespace-nowrap gap-2">
+                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-body font-bold px-6 py-3.5 rounded-full text-sm transition-colors duration-200 whitespace-nowrap gap-2">
                     Talk to an Engineer
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
                 <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white font-body font-semibold px-6 py-3.5 rounded-full text-sm transition-colors duration-200 whitespace-nowrap gap-2 hover:bg-white/10">
+                   class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white font-body font-bold px-6 py-3.5 rounded-full text-sm transition-colors duration-200 whitespace-nowrap gap-2 hover:bg-white/10">
                     Request Service Assessment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>

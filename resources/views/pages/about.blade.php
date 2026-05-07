@@ -217,7 +217,7 @@
                 </div>
                 <div class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-4">Supply.</div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial laundry equipment for every sector — washers, dryers, ironers, barrier machines. Authorised Electrolux Professional partner.</p>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center gap-1.5 font-body font-semibold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
+                <a href="{{ route('equipment') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
                     View equipment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -231,7 +231,7 @@
                 </div>
                 <div class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-4">Service.</div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Planned maintenance contracts and same-day emergency call-outs across all 26 counties of the Republic of Ireland.</p>
-                <a href="{{ route('service-contracts') }}" class="inline-flex items-center gap-1.5 font-body font-semibold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
+                <a href="{{ route('service-contracts') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
                     Service contracts
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -245,7 +245,7 @@
                 </div>
                 <div class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-4">Support.</div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Ongoing aftercare, genuine OEM parts, and manufacturer-trained engineers. Built around uptime, not scheduling convenience.</p>
-                <a href="{{ route('repairs') }}" class="inline-flex items-center gap-1.5 font-body font-semibold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
+                <a href="{{ route('repairs') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
                     Repairs & call-outs
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -269,7 +269,7 @@
                     Electrolux Professional provides manufacturer-grade standards, genuine parts and technical documentation. ILS provides local engineering execution, field response, and operational knowledge of Irish sites.
                 </p>
                 <a href="{{ route('electrolux') }}"
-                   class="inline-flex items-center gap-2 font-body font-semibold text-navy hover:text-[#148af4] text-sm transition-colors">
+                   class="inline-flex items-center gap-2 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors">
                     About the partnership
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>

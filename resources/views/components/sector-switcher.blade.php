@@ -9,7 +9,7 @@
 
         <!-- Heading -->
         <div class="mb-10 max-w-3xl">
-            <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
                 Support shaped around <span class="text-orange">real operating environments</span>.
             </h2>
@@ -29,11 +29,11 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
+                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
                         Engineering-led support for healthcare laundry environments where room logic, process discipline and continuity matter every day.
                     </p>
-                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
+                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Request Healthcare Assessment
                     </span>
                 </div>
@@ -47,11 +47,11 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Care Facilities</h3>
+                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Care Facilities</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
                         Practical support for care environments where daily laundry demand, smaller teams and maintenance structure need to stay manageable.
                     </p>
-                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
+                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         View Care Facility Support
                     </span>
                 </div>
@@ -65,11 +65,11 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Hospitality</h3>
+                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Hospitality</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
                         Support for guest-facing operations where linen flow, finishing quality, turnaround and service response affect the wider business.
                     </p>
-                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
+                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         View Hospitality Support
                     </span>
                 </div>
@@ -83,11 +83,11 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-extrabold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial<br>&amp; Industrial</h3>
+                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial<br>&amp; Industrial</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
                         Support for higher-throughput sites where output, lifecycle cost and engineering response carry more operational weight.
                     </p>
-                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-semibold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
+                    <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Talk to an Engineer
                     </span>
                 </div>

@@ -29,7 +29,7 @@
                 </blockquote>
 
                 <div>
-                    <cite class="block font-body font-semibold text-orange text-base lg:text-lg not-italic mb-1">Facilities Manager</cite>
+                    <cite class="block font-body font-bold text-orange text-base lg:text-lg not-italic mb-1">Facilities Manager</cite>
                     <span class="font-heading font-bold text-navy text-base">Nursing Home Group, Munster</span>
                 </div>
             </div>

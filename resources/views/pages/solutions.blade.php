@@ -15,7 +15,7 @@
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
                 Outcomes-First Solutions for Critical Laundry Operations
             </h1>
-            <p class="font-body text-white text-xl mb-4 font-semibold leading-relaxed">
+            <p class="font-body text-white text-xl mb-4 font-bold leading-relaxed">
                 Structured, engineered and delivered around your operational requirements.
             </p>
             <p class="font-body text-white text-lg leading-relaxed mb-8 max-w-2xl">

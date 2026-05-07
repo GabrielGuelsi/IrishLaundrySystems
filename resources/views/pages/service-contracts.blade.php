@@ -129,11 +129,11 @@
                 <div class="hero-btns flex flex-row gap-4">
                     <a href="#contract-review-form"
                        data-ga-cta="hero-contract-review"
-                       class="pulse-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="pulse-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Contract Review
                     </a>
                     <a href="tel:+353000000000"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to an Engineer
                     </a>
                 </div>
@@ -177,7 +177,7 @@
                               data-target="{{ $stat['target'] }}"
                               data-suffix="{{ $stat['suffix'] }}">0{{ $stat['suffix'] }}</span>
                     </div>
-                    <div class="font-body font-semibold text-orange text-xs uppercase tracking-wider mb-0.5">{{ $stat['label'] }}</div>
+                    <div class="font-body font-bold text-orange text-xs uppercase tracking-wider mb-0.5">{{ $stat['label'] }}</div>
                     <div class="font-body text-blue-200 text-[11px] leading-snug">{!! $stat['sub'] !!}</div>
                 </div>
             </div>
@@ -218,7 +218,7 @@
                 <div class="relative z-10 h-full flex flex-col justify-between p-6 lg:p-8">
                     <div class="inline-flex items-center gap-2 self-start bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1">
                         <svg class="w-3.5 h-3.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        <span class="text-[11px] font-body font-semibold text-white uppercase tracking-wider">Engineering-led since 1987</span>
+                        <span class="text-[11px] font-body font-bold text-white uppercase tracking-wider">Engineering-led since 1987</span>
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">Specialist commercial laundry engineers</h3>
@@ -240,7 +240,7 @@
                             <svg class="w-5 h-5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
                         </div>
                         <div>
-                            <p class="text-orange font-body font-semibold text-[11px] uppercase tracking-widest mb-1">Core inclusion</p>
+                            <p class="text-orange font-body font-bold text-[11px] uppercase tracking-widest mb-1">Core inclusion</p>
                             <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-snug">Scheduled preventive visits</h3>
                         </div>
                     </div>
@@ -294,7 +294,7 @@
                         </div>
                     </div>
                     <div class="min-w-0">
-                        <p class="text-orange font-body font-semibold text-[11px] uppercase tracking-widest mb-1">Cost control</p>
+                        <p class="text-orange font-body font-bold text-[11px] uppercase tracking-widest mb-1">Cost control</p>
                         <h3 class="font-heading font-bold text-white text-xl lg:text-2xl mb-2 leading-snug">Preferential call-out rates</h3>
                         <p class="font-body text-blue-200 text-sm lg:text-base leading-relaxed">Contract customers receive preferential labour rates for reactive call-outs — helping control unexpected costs.</p>
                     </div>
@@ -313,7 +313,7 @@
                 </div>
                 <div class="min-w-0 flex-1">
                     <p class="font-body text-amber-800 text-[11px] lg:text-xs leading-snug">
-                        <span class="font-semibold uppercase tracking-widest text-amber-700">What's not included:</span>
+                        <span class="font-bold uppercase tracking-widest text-amber-700">What's not included:</span>
                         Parts, major repairs and damage from misuse or third-party interference are separate. Your contract document will clearly state what is and is not covered.
                     </p>
                 </div>
@@ -590,7 +590,7 @@
 
                         {{-- Text side --}}
                         <div class="mt-6 md:mt-0 {{ $isEven ? 'md:order-1 md:pr-12 md:text-right' : 'md:order-2 md:pl-12' }} reveal {{ $isEven ? 'reveal-left' : 'reveal-right' }}">
-                            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
+                            <p class="text-orange font-body font-bold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
                             <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4">{{ $step['title'] }}</h3>
                             <p class="font-body text-blue-200 text-base leading-relaxed">{{ $step['desc'] }}</p>
                         </div>
@@ -666,7 +666,7 @@
                          class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
                          loading="lazy" decoding="async">
                     <div class="min-w-0">
-                        <cite class="block font-body font-semibold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
+                        <cite class="block font-body font-bold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
                         <span class="font-body text-gray-500 text-xs leading-tight">{{ $t['role'] }}</span>
                     </div>
                 </div>
@@ -724,7 +724,7 @@ $faqs = [
                                 ['Republic of Ireland coverage', 'Local engineering support across the Republic.'],
                             ] as [$bullet, $sub])
                             <div class="bg-white/10 rounded-xl px-5 py-3">
-                                <div class="font-body text-white text-sm font-semibold">{{ $bullet }}</div>
+                                <div class="font-body text-white text-sm font-bold">{{ $bullet }}</div>
                                 <div class="font-body text-blue-200 text-xs mt-0.5">{{ $sub }}</div>
                             </div>
                             @endforeach
@@ -787,13 +787,13 @@ $faqs = [
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="cr_name" class="block text-xs font-body font-semibold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
+                                <label for="cr_name" class="block text-xs font-body font-bold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
                                 <input type="text" id="cr_name" name="name" required value="{{ old('name') }}"
                                        placeholder="Your full name"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
-                                <label for="cr_company" class="block text-xs font-body font-semibold text-navy mb-1.5">Company / Organisation <span class="text-red-500">*</span></label>
+                                <label for="cr_company" class="block text-xs font-body font-bold text-navy mb-1.5">Company / Organisation <span class="text-red-500">*</span></label>
                                 <input type="text" id="cr_company" name="company" required value="{{ old('company') }}"
                                        placeholder="Company or facility"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
@@ -802,13 +802,13 @@ $faqs = [
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="cr_email" class="block text-xs font-body font-semibold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
+                                <label for="cr_email" class="block text-xs font-body font-bold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
                                 <input type="email" id="cr_email" name="email" required value="{{ old('email') }}"
                                        placeholder="you@company.ie"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
-                                <label for="cr_phone" class="block text-xs font-body font-semibold text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
+                                <label for="cr_phone" class="block text-xs font-body font-bold text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
                                 <input type="tel" id="cr_phone" name="phone" required value="{{ old('phone') }}"
                                        placeholder="+353 (0)..."
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
@@ -817,13 +817,13 @@ $faqs = [
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="cr_location" class="block text-xs font-body font-semibold text-navy mb-1.5">Site Location(s) <span class="text-red-500">*</span></label>
+                                <label for="cr_location" class="block text-xs font-body font-bold text-navy mb-1.5">Site Location(s) <span class="text-red-500">*</span></label>
                                 <input type="text" id="cr_location" name="location" required value="{{ old('location') }}"
                                        placeholder="e.g. Dublin, Cork"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
-                                <label for="cr_sector" class="block text-xs font-body font-semibold text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
+                                <label for="cr_sector" class="block text-xs font-body font-bold text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
                                 <select id="cr_sector" name="sector" required
                                         class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
                                     <option value="">Select sector</option>
@@ -836,14 +836,14 @@ $faqs = [
                         </div>
 
                         <div>
-                            <label for="cr_equipment" class="block text-xs font-body font-semibold text-navy mb-1.5">Equipment Type(s) &amp; Brand</label>
+                            <label for="cr_equipment" class="block text-xs font-body font-bold text-navy mb-1.5">Equipment Type(s) &amp; Brand</label>
                             <input type="text" id="cr_equipment" name="equipment" value="{{ old('equipment') }}"
                                    placeholder="e.g. Electrolux WH6-18, washers and dryers x4..."
                                    class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                         </div>
 
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1.5">Timeline <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1.5">Timeline <span class="text-red-500">*</span></label>
                             <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                 @foreach ([
                                     ['today', 'Urgent'],
@@ -853,7 +853,7 @@ $faqs = [
                                 ] as [$val, $label])
                                 <label class="cursor-pointer">
                                     <input type="radio" name="urgency" value="{{ $val }}" class="sr-only peer" {{ old('urgency', 'planning') === $val ? 'checked' : '' }}>
-                                    <div class="border-2 border-border rounded-lg px-3 py-2 text-center text-xs font-body font-semibold text-gray-600 peer-checked:border-steel peer-checked:bg-steel peer-checked:text-white hover:border-steel transition-all">
+                                    <div class="border-2 border-border rounded-lg px-3 py-2 text-center text-xs font-body font-bold text-gray-600 peer-checked:border-steel peer-checked:bg-steel peer-checked:text-white hover:border-steel transition-all">
                                         {{ $label }}
                                     </div>
                                 </label>
@@ -862,7 +862,7 @@ $faqs = [
                         </div>
 
                         <div>
-                            <label for="cr_message" class="block text-xs font-body font-semibold text-navy mb-1.5">Message</label>
+                            <label for="cr_message" class="block text-xs font-body font-bold text-navy mb-1.5">Message</label>
                             <textarea id="cr_message" name="message" rows="3"
                                       placeholder="Tell us about your operation — site count, current arrangement, anything we should know."
                                       class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400 resize-none leading-relaxed">{{ old('message') }}</textarea>

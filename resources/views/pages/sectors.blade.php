@@ -25,7 +25,7 @@
 <!-- SECTOR CARDS -->
 <section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="text-center font-body text-gray-500 text-sm mb-8 uppercase tracking-widest font-semibold">Or browse by sector</p>
+        <p class="text-center font-body text-gray-500 text-sm mb-8 uppercase tracking-widest font-bold">Or browse by sector</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
 
             <!-- Healthcare -->
@@ -38,7 +38,7 @@
                     </div>
                     <div class="flex-1">
                         <h2 class="font-heading font-bold text-navy text-xl mb-1 group-hover:text-steel transition-colors">Healthcare</h2>
-                        <p class="font-body text-gray-600 text-sm font-semibold">Hospitals, HSE sites &amp; healthcare groups</p>
+                        <p class="font-body text-gray-600 text-sm font-bold">Hospitals, HSE sites &amp; healthcare groups</p>
                     </div>
                     <svg class="w-5 h-5 text-gray-300 group-hover:text-steel transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -48,9 +48,9 @@
                     Uptime, hygiene compliance and governance — without the noise. We work with hospitals, HSE sites, nursing homes and multi-site healthcare groups across the Republic of Ireland.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
-                    <span class="text-xs font-body font-semibold bg-red-50 text-red-700 px-2.5 py-1 rounded-full">Priority support</span>
-                    <span class="text-xs font-body font-semibold bg-red-50 text-red-700 px-2.5 py-1 rounded-full">Compliance docs</span>
-                    <span class="text-xs font-body font-semibold bg-red-50 text-red-700 px-2.5 py-1 rounded-full">Multi-site contracts</span>
+                    <span class="text-xs font-body font-bold bg-red-50 text-red-700 px-2.5 py-1 rounded-full">Priority support</span>
+                    <span class="text-xs font-body font-bold bg-red-50 text-red-700 px-2.5 py-1 rounded-full">Compliance docs</span>
+                    <span class="text-xs font-body font-bold bg-red-50 text-red-700 px-2.5 py-1 rounded-full">Multi-site contracts</span>
                 </div>
             </a>
 
@@ -64,7 +64,7 @@
                     </div>
                     <div class="flex-1">
                         <h2 class="font-heading font-bold text-navy text-xl mb-1 group-hover:text-steel transition-colors">Hospitality</h2>
-                        <p class="font-body text-gray-600 text-sm font-semibold">Hotels, guesthouses &amp; leisure operators</p>
+                        <p class="font-body text-gray-600 text-sm font-bold">Hotels, guesthouses &amp; leisure operators</p>
                     </div>
                     <svg class="w-5 h-5 text-gray-300 group-hover:text-steel transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -74,9 +74,9 @@
                     Protect guest operations with predictable laundry uptime. Laundry failure in hospitality affects housekeeping, guest experience and reputation — ILS keeps operations moving.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
-                    <span class="text-xs font-body font-semibold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">Planned maintenance</span>
-                    <span class="text-xs font-body font-semibold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">Emergency call-outs</span>
-                    <span class="text-xs font-body font-semibold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">Equipment supply</span>
+                    <span class="text-xs font-body font-bold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">Planned maintenance</span>
+                    <span class="text-xs font-body font-bold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">Emergency call-outs</span>
+                    <span class="text-xs font-body font-bold bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full">Equipment supply</span>
                 </div>
             </a>
 
@@ -90,7 +90,7 @@
                     </div>
                     <div class="flex-1">
                         <h2 class="font-heading font-bold text-navy text-xl mb-1 group-hover:text-steel transition-colors">Care Facilities</h2>
-                        <p class="font-body text-gray-600 text-sm font-semibold">Nursing homes &amp; residential care</p>
+                        <p class="font-body text-gray-600 text-sm font-bold">Nursing homes &amp; residential care</p>
                     </div>
                     <svg class="w-5 h-5 text-gray-300 group-hover:text-steel transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -100,9 +100,9 @@
                     Continuity, safety and confidence. In residential care environments, laundry is a hygiene-critical service. ILS provides the structured support that care operators need to maintain standards.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
-                    <span class="text-xs font-body font-semibold bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Hygiene focus</span>
-                    <span class="text-xs font-body font-semibold bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Service contracts</span>
-                    <span class="text-xs font-body font-semibold bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Barrier washers</span>
+                    <span class="text-xs font-body font-bold bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Hygiene focus</span>
+                    <span class="text-xs font-body font-bold bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Service contracts</span>
+                    <span class="text-xs font-body font-bold bg-green-50 text-green-700 px-2.5 py-1 rounded-full">Barrier washers</span>
                 </div>
             </a>
 
@@ -116,7 +116,7 @@
                     </div>
                     <div class="flex-1">
                         <h2 class="font-heading font-bold text-navy text-xl mb-1 group-hover:text-steel transition-colors">Commercial &amp; Industrial</h2>
-                        <p class="font-body text-gray-600 text-sm font-semibold">Commercial laundries &amp; industrial operators</p>
+                        <p class="font-body text-gray-600 text-sm font-bold">Commercial laundries &amp; industrial operators</p>
                     </div>
                     <svg class="w-5 h-5 text-gray-300 group-hover:text-steel transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -126,9 +126,9 @@
                     Throughput, lifecycle cost and uptime. Commercial laundry operations require maximum machine availability. We support operators with engineering-led maintenance and rapid reactive response.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
-                    <span class="text-xs font-body font-semibold bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">High throughput</span>
-                    <span class="text-xs font-body font-semibold bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">Lifecycle focus</span>
-                    <span class="text-xs font-body font-semibold bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">Equipment supply</span>
+                    <span class="text-xs font-body font-bold bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">High throughput</span>
+                    <span class="text-xs font-body font-bold bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">Lifecycle focus</span>
+                    <span class="text-xs font-body font-bold bg-orange-50 text-orange-700 px-2.5 py-1 rounded-full">Equipment supply</span>
                 </div>
             </a>
         </div>
@@ -149,7 +149,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-semibold text-navy text-base mb-2">Structured service contracts</h3>
+                    <h3 class="font-heading font-bold text-navy text-base mb-2">Structured service contracts</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">Preventive maintenance programmes that reduce reactive failures and build documented maintenance history.</p>
                 </div>
             </div>
@@ -160,7 +160,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-semibold text-navy text-base mb-2">Priority reactive response</h3>
+                    <h3 class="font-heading font-bold text-navy text-base mb-2">Priority reactive response</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">Aiming for on-site attendance within 24 hours. Contract customers receive priority triage and dispatch.</p>
                 </div>
             </div>
@@ -171,7 +171,7 @@
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-semibold text-navy text-base mb-2">Compliance documentation</h3>
+                    <h3 class="font-heading font-bold text-navy text-base mb-2">Compliance documentation</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">Service records, maintenance logs and compliance support for regulated and inspected environments.</p>
                 </div>
             </div>

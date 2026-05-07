@@ -43,7 +43,7 @@
                      style="width:52px;height:52px;border:2px dashed rgba(255,255,255,0.5);">
                     {!! $feat['icon'] !!}
                 </div>
-                <span class="font-body text-white text-xs font-semibold leading-snug">{!! $feat['label'] !!}</span>
+                <span class="font-body text-white text-xs font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>

@@ -16,7 +16,7 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="max-w-3xl reveal reveal-left">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
                     Healthcare laundry support for <span style="color:#148af4;">controlled rooms</span>,<br>linen flow and day-to-day pressure.
                 </h1>
@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Healthcare</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Healthcare</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
                     Built around how healthcare laundry rooms <span style="color:#148af4;">actually operate.</span>
                 </h2>
@@ -139,7 +139,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl mb-10 reveal">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Workflow Matters</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Workflow Matters</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
                 Barrier workflow where dirty-side<br>
                 <span style="color:#148af4;">and clean-side handling need to stay separate.</span>
@@ -333,7 +333,7 @@
                     </div>
                     {{-- Title + arrow (always visible) --}}
                     <div class="flex items-end justify-between gap-3">
-                        <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-tight">{!! $card['title'] !!}</h3>
+                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight">{!! $card['title'] !!}</h3>
                         <div class="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 group-hover:bg-[#148af4] flex items-center justify-center transition-colors duration-300">
                             <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -359,7 +359,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
                 Engineered for healthcare environments.
             </h2>

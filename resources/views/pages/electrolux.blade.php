@@ -49,13 +49,13 @@
                     <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
                     </svg>
-                    <span class="text-sm font-body text-orange font-semibold">Authorised Electrolux Professional Partner</span>
+                    <span class="text-sm font-body text-orange font-bold">Authorised Electrolux Professional Partner</span>
                 </div>
 
                 <h1 class="hero-desc font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">
                     Why Irish Laundry Systems + Electrolux Professional Works
                 </h1>
-                <p class="font-body text-blue-200 text-lg mb-3 font-semibold">Manufacturer-backed support. Genuine parts. Engineering expertise.</p>
+                <p class="font-body text-blue-200 text-lg mb-3 font-bold">Manufacturer-backed support. Genuine parts. Engineering expertise.</p>
                 <p class="font-body text-gray-300 text-base leading-relaxed max-w-xl">
                     ILS is an Authorised Electrolux Professional Partner — which means our engineers are trained to manufacturer standards, we stock and source genuine OEM parts, and our customers get access to the full Electrolux Professional range.
                 </p>
@@ -107,12 +107,12 @@
                          class="h-12 w-auto">
                 </div>
                 <div class="hidden sm:block border-l border-gray-300 pl-5">
-                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[11px] font-body font-bold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
                     <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
                 </div>
             </div>
             <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+               class="flex-shrink-0 text-xs font-body font-bold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
                 Learn more
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
@@ -142,7 +142,7 @@
                     For customers, it means they are working with an engineer who knows the equipment to the level the manufacturer expects — not an engineer working from generic training and non-genuine parts.
                 </p>
                 <div class="bg-navy/5 border border-navy/10 rounded-2xl p-5">
-                    <p class="font-body text-navy font-semibold text-sm">
+                    <p class="font-body text-navy font-bold text-sm">
                         ILS only uses the text designation "Authorised Electrolux Professional Partner" — we do not reproduce Electrolux trademarks or logos. For information about Electrolux Professional's equipment range, please visit their official website.
                     </p>
                 </div>
@@ -159,7 +159,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-heading font-semibold text-navy text-base mb-1">Manufacturer-Trained Engineers</h3>
+                            <h3 class="font-heading font-bold text-navy text-base mb-1">Manufacturer-Trained Engineers</h3>
                             <p class="font-body text-gray-600 text-sm leading-relaxed">ILS engineers are trained to Electrolux Professional standards — meaning they diagnose and repair the equipment to the specification the manufacturer expects.</p>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-heading font-semibold text-navy text-base mb-1">Genuine OEM Parts</h3>
+                            <h3 class="font-heading font-bold text-navy text-base mb-1">Genuine OEM Parts</h3>
                             <p class="font-body text-gray-600 text-sm leading-relaxed">We source and fit genuine Electrolux Professional parts — not generic alternatives. This matters for equipment longevity, warranty considerations and first-fix rate.</p>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
                             </svg>
                         </div>
                         <div>
-                            <h3 class="font-heading font-semibold text-navy text-base mb-1">Full Equipment Range</h3>
+                            <h3 class="font-heading font-bold text-navy text-base mb-1">Full Equipment Range</h3>
                             <p class="font-body text-gray-600 text-sm leading-relaxed">Access to the full Electrolux Professional commercial laundry range — washers, dryers, barrier washers, ironers and drying cabinets — through ILS supply and installation.</p>
                         </div>
                     </div>
@@ -204,15 +204,15 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-bg border border-border rounded-2xl p-6">
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">First-Fix Rate</h3>
+                <h3 class="font-heading font-bold text-navy text-base mb-2">First-Fix Rate</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Using genuine parts means the right component, correct specification, first time. This improves first-visit repair rates and reduces the time your equipment is out of service.</p>
             </div>
             <div class="bg-bg border border-border rounded-2xl p-6">
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">Equipment Longevity</h3>
+                <h3 class="font-heading font-bold text-navy text-base mb-2">Equipment Longevity</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Commercial laundry equipment is a significant investment. Genuine OEM parts maintain the manufacturer's tolerances and contribute to equipment longevity and reliability over time.</p>
             </div>
             <div class="bg-bg border border-border rounded-2xl p-6">
-                <h3 class="font-heading font-semibold text-navy text-base mb-2">Warranty &amp; Governance</h3>
+                <h3 class="font-heading font-bold text-navy text-base mb-2">Warranty &amp; Governance</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">For new equipment under manufacturer warranty, genuine parts are generally required to maintain warranty status. In regulated environments, parts provenance can also be a governance consideration.</p>
             </div>
         </div>

@@ -10,7 +10,7 @@
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                 </svg>
-                <span class="text-sm font-body text-orange font-semibold">No obligation assessment</span>
+                <span class="text-sm font-body text-orange font-bold">No obligation assessment</span>
             </div>
             <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">Request a Service Assessment</h1>
             <p class="font-body text-blue-200 text-lg leading-relaxed mb-2">
@@ -42,7 +42,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                         <div>
-                            <div class="font-heading font-semibold text-green-800 text-base mb-1">Assessment Request Received</div>
+                            <div class="font-heading font-bold text-green-800 text-base mb-1">Assessment Request Received</div>
                             <p class="font-body text-green-700 text-sm leading-relaxed">{{ session('success') }}</p>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
 
                     @if ($errors->any())
                     <div class="bg-red-50 border border-red-200 rounded-2xl p-4 mb-6">
-                        <div class="font-heading font-semibold text-red-800 text-sm mb-2">Please correct the following:</div>
+                        <div class="font-heading font-bold text-red-800 text-sm mb-2">Please correct the following:</div>
                         <ul class="space-y-1">
                             @foreach ($errors->all() as $error)
                             <li class="font-body text-red-700 text-sm flex items-start gap-2">
@@ -77,22 +77,22 @@
                             <legend class="font-heading font-bold text-navy text-sm uppercase tracking-wider mb-4 pb-2 border-b border-border w-full">Your Details</legend>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
-                                    <label for="name" class="block text-sm font-body font-semibold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
+                                    <label for="name" class="block text-sm font-body font-bold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
                                     <input type="text" id="name" name="name" required value="{{ old('name') }}" placeholder="Your full name"
                                            class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                                 </div>
                                 <div>
-                                    <label for="company" class="block text-sm font-body font-semibold text-navy mb-1.5">Company / Organisation <span class="text-red-500">*</span></label>
+                                    <label for="company" class="block text-sm font-body font-bold text-navy mb-1.5">Company / Organisation <span class="text-red-500">*</span></label>
                                     <input type="text" id="company" name="company" required value="{{ old('company') }}" placeholder="Company or facility name"
                                            class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                                 </div>
                                 <div>
-                                    <label for="email" class="block text-sm font-body font-semibold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
+                                    <label for="email" class="block text-sm font-body font-bold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
                                     <input type="email" id="email" name="email" required value="{{ old('email') }}" placeholder="you@company.ie"
                                            class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                                 </div>
                                 <div>
-                                    <label for="phone" class="block text-sm font-body font-semibold text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
+                                    <label for="phone" class="block text-sm font-body font-bold text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
                                     <input type="tel" id="phone" name="phone" required value="{{ old('phone') }}" placeholder="+353 (0)..."
                                            class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                                 </div>
@@ -105,7 +105,7 @@
                             <div class="space-y-5">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
-                                        <label for="sector" class="block text-sm font-body font-semibold text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
+                                        <label for="sector" class="block text-sm font-body font-bold text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
                                         <select id="sector" name="sector" required class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
                                             <option value="">Select sector</option>
                                             <option value="healthcare" {{ old('sector') === 'healthcare' ? 'selected' : '' }}>Healthcare</option>
@@ -115,7 +115,7 @@
                                         </select>
                                     </div>
                                     <div>
-                                        <label for="location" class="block text-sm font-body font-semibold text-navy mb-1.5">Site Location(s) / County <span class="text-red-500">*</span></label>
+                                        <label for="location" class="block text-sm font-body font-bold text-navy mb-1.5">Site Location(s) / County <span class="text-red-500">*</span></label>
                                         <input type="text" id="location" name="location" required value="{{ old('location') }}" placeholder="County / counties / region"
                                                class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                                     </div>
@@ -123,12 +123,12 @@
 
                                 <!-- Number of sites -->
                                 <div>
-                                    <label class="block text-sm font-body font-semibold text-navy mb-2">Number of Sites</label>
+                                    <label class="block text-sm font-body font-bold text-navy mb-2">Number of Sites</label>
                                     <div class="flex flex-wrap gap-3">
                                         @foreach ([['1', '1 site'], ['2-5', '2–5 sites'], ['6+', '6+ sites']] as [$val, $label])
                                         <label class="cursor-pointer">
                                             <input type="radio" name="site_count" value="{{ $val }}" class="sr-only peer" {{ old('site_count') === $val ? 'checked' : '' }}>
-                                            <div class="border-2 border-border rounded-lg px-4 py-2 text-sm font-body font-semibold text-gray-600 peer-checked:border-navy peer-checked:bg-navy peer-checked:text-white hover:border-navy transition-all cursor-pointer">
+                                            <div class="border-2 border-border rounded-lg px-4 py-2 text-sm font-body font-bold text-gray-600 peer-checked:border-navy peer-checked:bg-navy peer-checked:text-white hover:border-navy transition-all cursor-pointer">
                                                 {{ $label }}
                                             </div>
                                         </label>
@@ -137,7 +137,7 @@
                                 </div>
 
                                 <div>
-                                    <label for="equipment" class="block text-sm font-body font-semibold text-navy mb-1.5">Equipment Summary (brands / models if known)</label>
+                                    <label for="equipment" class="block text-sm font-body font-bold text-navy mb-1.5">Equipment Summary (brands / models if known)</label>
                                     <input type="text" id="equipment" name="equipment" value="{{ old('equipment') }}"
                                            placeholder="e.g. 3x Electrolux washers, 2x dryers — or 'unknown, please advise'"
                                            class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
@@ -150,7 +150,7 @@
                             <legend class="font-heading font-bold text-navy text-sm uppercase tracking-wider mb-4 pb-2 border-b border-border w-full">What You Need</legend>
                             <div class="space-y-5">
                                 <div>
-                                    <label class="block text-sm font-body font-semibold text-navy mb-2">What Are You Looking For? <span class="text-red-500">*</span></label>
+                                    <label class="block text-sm font-body font-bold text-navy mb-2">What Are You Looking For? <span class="text-red-500">*</span></label>
                                     <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
                                         @foreach ([
                                             ['contract', 'Service Contract'],
@@ -161,7 +161,7 @@
                                         ] as [$val, $label])
                                         <label class="cursor-pointer">
                                             <input type="radio" name="request_type" value="{{ $val }}" class="sr-only peer" {{ old('request_type', 'contract') === $val ? 'checked' : '' }}>
-                                            <div class="border-2 border-border rounded-lg px-3 py-2.5 text-center text-xs font-body font-semibold text-gray-600 peer-checked:border-steel peer-checked:bg-steel peer-checked:text-white hover:border-steel transition-all cursor-pointer leading-tight">
+                                            <div class="border-2 border-border rounded-lg px-3 py-2.5 text-center text-xs font-body font-bold text-gray-600 peer-checked:border-steel peer-checked:bg-steel peer-checked:text-white hover:border-steel transition-all cursor-pointer leading-tight">
                                                 {{ $label }}
                                             </div>
                                         </label>
@@ -170,7 +170,7 @@
                                 </div>
 
                                 <div>
-                                    <label for="urgency" class="block text-sm font-body font-semibold text-navy mb-2">Urgency <span class="text-red-500">*</span></label>
+                                    <label for="urgency" class="block text-sm font-body font-bold text-navy mb-2">Urgency <span class="text-red-500">*</span></label>
                                     <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                         @foreach ([
                                             ['today', 'Today'],
@@ -180,7 +180,7 @@
                                         ] as [$val, $label])
                                         <label class="cursor-pointer">
                                             <input type="radio" name="urgency" value="{{ $val }}" class="sr-only peer" {{ old('urgency') === $val ? 'checked' : '' }}>
-                                            <div class="border-2 border-border rounded-lg px-3 py-2.5 text-center text-xs font-body font-semibold text-gray-600 peer-checked:border-orange peer-checked:bg-orange peer-checked:text-white hover:border-orange transition-all cursor-pointer">
+                                            <div class="border-2 border-border rounded-lg px-3 py-2.5 text-center text-xs font-body font-bold text-gray-600 peer-checked:border-orange peer-checked:bg-orange peer-checked:text-white hover:border-orange transition-all cursor-pointer">
                                                 {{ $label }}
                                             </div>
                                         </label>
@@ -189,7 +189,7 @@
                                 </div>
 
                                 <div>
-                                    <label for="message" class="block text-sm font-body font-semibold text-navy mb-1.5">Additional Notes (optional)</label>
+                                    <label for="message" class="block text-sm font-body font-bold text-navy mb-1.5">Additional Notes (optional)</label>
                                     <textarea id="message" name="message" rows="4" placeholder="Any other context — existing contracts, renewal dates, specific requirements, or questions."
                                               class="w-full border border-border rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400 resize-none leading-relaxed">{{ old('message') }}</textarea>
                                 </div>
@@ -250,7 +250,7 @@
                 </div>
 
                 <div class="bg-white border border-border rounded-2xl p-5">
-                    <h3 class="font-heading font-semibold text-navy text-base mb-3">Prefer to call?</h3>
+                    <h3 class="font-heading font-bold text-navy text-base mb-3">Prefer to call?</h3>
                     <a href="tel:+353000000000" class="flex items-center gap-3 text-navy hover:text-steel transition-colors">
                         <div class="w-9 h-9 rounded-lg bg-navy flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -258,7 +258,7 @@
                             </svg>
                         </div>
                         <div>
-                            <div class="font-body font-semibold text-navy text-sm">+353 (0) 00 000 0000</div>
+                            <div class="font-body font-bold text-navy text-sm">+353 (0) 00 000 0000</div>
                             <div class="text-xs text-gray-400 font-body">Mon–Fri, 8am–5pm</div>
                         </div>
                     </a>
@@ -270,7 +270,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
                         </svg>
                         <div>
-                            <div class="font-heading font-semibold text-white text-sm mb-1">Authorised Electrolux Professional Partner</div>
+                            <div class="font-heading font-bold text-white text-sm mb-1">Authorised Electrolux Professional Partner</div>
                             <p class="font-body text-blue-200 text-xs leading-relaxed">Genuine parts, manufacturer-trained engineers and access to the full Electrolux Professional equipment range.</p>
                         </div>
                     </div>
@@ -282,7 +282,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
                             <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
                         </svg>
-                        <div class="font-body font-semibold text-navy text-xs">Coverage</div>
+                        <div class="font-body font-bold text-navy text-xs">Coverage</div>
                     </div>
                     <p class="text-xs font-body text-gray-500 leading-relaxed">Republic of Ireland only. We do not provide services in Northern Ireland.</p>
                 </div>

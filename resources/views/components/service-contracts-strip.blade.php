@@ -32,7 +32,7 @@
             <div class="flex items-center gap-2">
                 <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
                      class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
-                <span class="font-body text-white text-xs font-semibold whitespace-nowrap">{{ $feat['label'] }}</span>
+                <span class="font-body text-white text-xs font-bold whitespace-nowrap">{{ $feat['label'] }}</span>
             </div>
             @endforeach
         </div>

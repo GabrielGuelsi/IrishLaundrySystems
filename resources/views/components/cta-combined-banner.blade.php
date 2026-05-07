@@ -39,7 +39,7 @@
                     <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
                          style="width:1.6rem;height:1.6rem;" alt="">
                 </div>
-                <span class="font-body text-white text-xs font-semibold leading-snug">{!! $feat['label'] !!}</span>
+                <span class="font-body text-white text-xs font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>

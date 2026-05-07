@@ -17,7 +17,7 @@
                             </x-icon>
                         </div>
                         <div>
-                            <p class="font-body font-semibold text-white text-sm">+353 01 123 4567</p>
+                            <p class="font-body font-bold text-white text-sm">+353 01 123 4567</p>
                             <p class="font-body text-gray-400 text-xs">Mon–Fri, 8am–5pm</p>
                         </div>
                     </a>
@@ -36,13 +36,13 @@
                     @csrf
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label for="cta_name" class="block text-sm font-body font-medium text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
+                            <label for="cta_name" class="block text-sm font-body font-light text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
                             <input type="text" id="cta_name" name="name" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="Your name">
                         </div>
                         <div>
-                            <label for="cta_company" class="block text-sm font-body font-medium text-navy mb-1.5">Organisation <span class="text-red-500">*</span></label>
+                            <label for="cta_company" class="block text-sm font-body font-light text-navy mb-1.5">Organisation <span class="text-red-500">*</span></label>
                             <input type="text" id="cta_company" name="company" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="Company or organisation">
@@ -50,13 +50,13 @@
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
-                            <label for="cta_phone" class="block text-sm font-body font-medium text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
+                            <label for="cta_phone" class="block text-sm font-body font-light text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
                             <input type="tel" id="cta_phone" name="phone" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="+353...">
                         </div>
                         <div>
-                            <label for="cta_sector" class="block text-sm font-body font-medium text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
+                            <label for="cta_sector" class="block text-sm font-body font-light text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
                             <select id="cta_sector" name="sector" required
                                     class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
                                 <option value="" disabled selected>Select sector</option>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div>
-                        <label for="cta_request_type" class="block text-sm font-body font-medium text-navy mb-1.5">Request Type <span class="text-red-500">*</span></label>
+                        <label for="cta_request_type" class="block text-sm font-body font-light text-navy mb-1.5">Request Type <span class="text-red-500">*</span></label>
                         <select id="cta_request_type" name="request_type" required
                                 class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
                             <option value="" disabled selected>What do you need?</option>

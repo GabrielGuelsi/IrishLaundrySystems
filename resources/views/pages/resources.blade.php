@@ -76,7 +76,7 @@
 
         <div class="flex items-center justify-between mb-8">
             <h2 class="font-heading font-bold text-navy text-xs uppercase tracking-widest">Featured Resource</h2>
-            <a href="{{ route('contact') }}" class="font-body font-semibold text-[#148af4] text-sm hover:underline">Request any guide →</a>
+            <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline">Request any guide →</a>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-5 rounded-3xl overflow-hidden border border-[#e4eaf4] shadow-sm reveal" style="min-height:380px;">
@@ -136,7 +136,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl">Guides</h2>
                 <p class="font-body text-gray-400 text-sm mt-1">Practical reference material for operators and facilities managers</p>
             </div>
-            <a href="{{ route('contact') }}" class="font-body font-semibold text-[#148af4] text-sm hover:underline whitespace-nowrap">Request a guide →</a>
+            <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline whitespace-nowrap">Request a guide →</a>
         </div>
 
         @php

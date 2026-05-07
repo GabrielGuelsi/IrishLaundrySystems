@@ -311,7 +311,7 @@
 .ils-apple-wrap:active { cursor:grabbing; }
 .ils-apple-wrap::-webkit-scrollbar { display:none; }
 .ils-apple-card { flex:0 0 320px; scroll-snap-align:start; background:#fff; border-radius:18px; padding:26px 26px 70px 26px; min-height:500px; display:flex; flex-direction:column; position:relative; overflow:hidden; }
-.ils-apple-label { font-size:0.72rem; font-weight:600; color:#6e6e73; letter-spacing:0.03em; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; text-transform:uppercase; }
+.ils-apple-label { font-size:0.72rem; font-weight:300; color:#6e6e73; letter-spacing:0.03em; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; text-transform:uppercase; }
 .ils-apple-title { font-size:1.3rem; font-weight:700; color:#1d1d1f; line-height:1.25; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; }
 .ils-apple-body { font-size:0.83rem; color:#6e6e73; line-height:1.65; font-family:'Inter',system-ui,sans-serif; }
 .ils-apple-img { flex:1; display:flex; align-items:flex-end; justify-content:center; padding-top:24px; }
@@ -568,10 +568,10 @@ function ilsCardToggle(btn) {
                             </li>
                         </ul>
                     </div>
-                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
                     <div class="flex justify-end">
                         <a href="{{ route('repairs') }}"
-                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
                             Request Call-out
                         </a>
                     </div>
@@ -606,10 +606,10 @@ function ilsCardToggle(btn) {
                             </li>
                         </ul>
                     </div>
-                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
                     <div class="flex justify-end">
                         <a href="{{ route('rental') }}"
-                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
                             See Rental Options
                         </a>
                     </div>
@@ -644,10 +644,10 @@ function ilsCardToggle(btn) {
                             </li>
                         </ul>
                     </div>
-                    <h3 class="font-heading font-extrabold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Service Contracts</h3>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Service Contracts</h3>
                     <div class="flex justify-end">
                         <a href="{{ route('service-contracts') }}"
-                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
                             View Contracts
                         </a>
                     </div>
