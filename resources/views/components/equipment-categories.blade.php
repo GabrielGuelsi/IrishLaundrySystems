@@ -20,7 +20,7 @@
             ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling.'],
             ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.'],
             ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.'],
-            ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
+            ['img' => 'ELS_PH_255x255_IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
         ];
         @endphp
 
@@ -35,7 +35,7 @@
                 </div>
                 {{-- Floating image — no card box --}}
                 <div class="flex items-center justify-center h-52">
-                    <img src="/images/equipment/{{ $eq['img'] }}.webp"
+                    <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
                          alt="{{ $eq['name'] }}"
                          class="w-full h-full object-contain transition-transform duration-500 hover:-translate-y-2"
                          style="mix-blend-mode: multiply;">
