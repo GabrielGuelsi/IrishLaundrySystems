@@ -11,7 +11,7 @@
         <div class="mb-10 max-w-3xl">
             <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                Support shaped around <span class="text-orange">real operating environments</span>.
+                Support shaped around <span class="text-[#148af4]">real operating environments</span>.
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed">
                 Different sites carry different pressures. The right support depends on hygiene requirements, throughput, staffing, presentation standards, installed equipment and service needs.

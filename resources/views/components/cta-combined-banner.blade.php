@@ -12,15 +12,14 @@
     {{-- Content — 60% width matching strip proportion --}}
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
 
-        {{-- Two-tone heading --}}
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Designed around your</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">site, workflow and capacity</span>
+        {{-- Heading — "site" + "workflow" highlighted in navy on the blue strip --}}
+        <h2 class="font-heading font-bold leading-tight mb-4 text-3xl lg:text-5xl text-white">
+            Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and capacity.
         </h2>
 
         {{-- Description --}}
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            We define layout, equipment fit and workflow based on your space, volume and day-to-day operational use.
+            We define layout, equipment fit and capacity around your space, volume and day-to-day use.
         </p>
 
         {{-- 3 horizontal features --}}

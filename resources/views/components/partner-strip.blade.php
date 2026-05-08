@@ -16,28 +16,36 @@
         <!-- Vertical divider -->
         <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
 
+        <!-- Trust line -->
+        <p class="hidden lg:block font-body text-navy text-xs leading-snug max-w-[200px]">
+            Authorised Electrolux Professional Partner. Irish engineering support since 1987.
+        </p>
+
+        <!-- Vertical divider -->
+        <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
+
         <!-- 3 feature icons -->
-        <div class="hidden lg:flex items-center gap-24">
+        <div class="hidden lg:flex items-center gap-20">
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 13.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:80px;">Local engineering execution</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:90px;">Local engineering team</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:80px;">Lifecycle support route</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:90px;">Genuine parts access</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:80px;">Genuine parts continuity</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:90px;">Ongoing support</span>
             </div>
 
         </div>

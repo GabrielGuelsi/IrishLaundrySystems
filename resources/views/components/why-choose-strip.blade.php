@@ -12,19 +12,19 @@
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Keep operations running</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#22d3ee;">without capital pressure</span>
+            <span class="text-white text-3xl lg:text-5xl block">Keep laundry moving</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#148af4;">without capital pressure</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Rental supports replacement, expansion and operational<br>continuity — no upfront investment required.
+            Rental supports replacement, expansion and continuity when the next equipment decision needs to stay practical.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
                 [
                     'icon' => '<span style="font-size:1.5rem;font-weight:700;color:white;line-height:1;">€</span>',
-                    'label' => 'No upfront<br>investment',
+                    'label' => 'No capital<br>purchase',
                 ],
                 [
                     'icon' => '<svg style="width:1.6rem;height:1.6rem;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/></svg>',
