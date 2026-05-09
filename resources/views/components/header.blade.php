@@ -55,7 +55,7 @@
                 <!-- Services Dropdown -->
                 <div class="relative" x-data="{ servicesOpen: false }" @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
                     <button @click="servicesOpen = !servicesOpen"
-                            class="flex items-center gap-1 text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap cursor-pointer"
+                            class="flex items-center gap-1 text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap cursor-pointer"
                             aria-haspopup="true" :aria-expanded="servicesOpen">
                         Services
                         <svg class="w-4 h-4 transition-transform duration-200" :class="servicesOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -66,21 +66,21 @@
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('repairs') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Repairs &amp; Call-outs</a>
-                        <a href="{{ route('services') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-semibold">Services Overview</a>
+                        <a href="{{ route('services') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-bold">Services Overview</a>
                         <a href="{{ route('service-contracts') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Service Contracts</a>
                         <a href="{{ route('services') }}#parts" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Parts &amp; Aftercare</a>
                     </div></div>
                 </div>
 
                 <a href="{{ route('rental') }}"
-                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap">
                     Rental
                 </a>
 
                 <!-- Equipment Dropdown -->
                 <div class="relative" x-data="{ equipOpen: false }" @mouseenter="equipOpen = true" @mouseleave="equipOpen = false">
                     <button @click="equipOpen = !equipOpen"
-                            class="flex items-center gap-1 text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap cursor-pointer"
+                            class="flex items-center gap-1 text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap cursor-pointer"
                             aria-haspopup="true" :aria-expanded="equipOpen">
                         Equipment
                         <svg class="w-4 h-4 transition-transform duration-200" :class="equipOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -90,7 +90,7 @@
                     <div x-show="equipOpen" x-cloak x-transition:enter="transition ease-out duration-100" x-transition:enter-start="opacity-0 scale-95" x-transition:enter-end="opacity-100 scale-100"
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
-                        <a href="{{ route('equipment') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-semibold">Equipment Hub</a>
+                        <a href="{{ route('equipment') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-bold">Equipment Hub</a>
                         <a href="{{ route('equipment.category', 'washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Washers</a>
                         <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Tumble Dryers</a>
                         <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Barrier Washers</a>
@@ -101,7 +101,7 @@
                 <!-- Sectors Dropdown -->
                 <div class="relative" x-data="{ sectorsOpen: false }" @mouseenter="sectorsOpen = true" @mouseleave="sectorsOpen = false">
                     <button @click="sectorsOpen = !sectorsOpen"
-                            class="flex items-center gap-1 text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap cursor-pointer"
+                            class="flex items-center gap-1 text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap cursor-pointer"
                             aria-haspopup="true" :aria-expanded="sectorsOpen">
                         Sectors
                         <svg class="w-4 h-4 transition-transform duration-200" :class="sectorsOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -119,17 +119,17 @@
                 </div>
 
                 <a href="{{ route('about') }}"
-                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap">
                     About
                 </a>
 
                 <a href="{{ route('resources') }}"
-                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap">
                     Resources
                 </a>
 
                 <a href="{{ route('contact') }}"
-                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-semibold transition-colors duration-150 whitespace-nowrap">
+                   class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap">
                     Contact
                 </a>
             </nav>
@@ -138,7 +138,7 @@
             <div class="hidden lg:flex items-center gap-3">
                 <a href="tel:+353000000000"
                    class="flex flex-col items-end text-navy hover:text-orange transition-colors duration-150 group">
-                    <span class="flex items-center gap-1.5 text-sm font-body font-semibold">
+                    <span class="flex items-center gap-1.5 text-sm font-body font-bold">
                         <svg class="w-4 h-4 text-orange group-hover:text-orange-dark transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
                         </svg>
@@ -147,7 +147,7 @@
                     <span class="text-xs text-muted font-body tracking-wide">+353 01 123 4567</span>
                 </a>
                 <a href="{{ route('request-assessment') }}"
-                   class="bg-orange hover:bg-orange-dark text-white font-body font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap"
+                   class="bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap"
                    data-ga-cta="header_request_assessment">
                     Request Service Assessment
                 </a>
@@ -181,62 +181,62 @@
         <nav class="px-5 py-2 font-body">
             <!-- Mobile Services -->
             <div x-data="{ svOpen: false }">
-                <button @click="svOpen = !svOpen" class="flex items-center justify-between w-full py-4 text-navy font-semibold border-b border-gray-100 cursor-pointer">
+                <button @click="svOpen = !svOpen" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100 cursor-pointer">
                     Services
                     <svg class="w-4 h-4 text-navy/40 transition-transform duration-200" :class="svOpen ? 'rotate-90' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
                 </button>
                 <div x-show="svOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
-                    <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Repairs &amp; Call-outs</a>
-                    <a href="{{ route('services') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Services Overview</a>
-                    <a href="{{ route('service-contracts') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Service Contracts</a>
-                    <a href="{{ route('services') }}#parts" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Parts &amp; Aftercare</a>
+                    <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Repairs &amp; Call-outs</a>
+                    <a href="{{ route('services') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Services Overview</a>
+                    <a href="{{ route('service-contracts') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Service Contracts</a>
+                    <a href="{{ route('services') }}#parts" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Parts &amp; Aftercare</a>
                 </div>
             </div>
 
-            <a href="{{ route('rental') }}" class="flex items-center justify-between w-full py-4 text-navy font-semibold border-b border-gray-100">Rental</a>
+            <a href="{{ route('rental') }}" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100">Rental</a>
 
             <!-- Mobile Equipment -->
             <div x-data="{ eOpen: false }">
-                <button @click="eOpen = !eOpen" class="flex items-center justify-between w-full py-4 text-navy font-semibold border-b border-gray-100 cursor-pointer">
+                <button @click="eOpen = !eOpen" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100 cursor-pointer">
                     Equipment
                     <svg class="w-4 h-4 text-navy/40 transition-transform duration-200" :class="eOpen ? 'rotate-90' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
                 </button>
                 <div x-show="eOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
-                    <a href="{{ route('equipment') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Equipment Hub</a>
-                    <a href="{{ route('equipment.category', 'washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Commercial Washers</a>
-                    <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Tumble Dryers</a>
-                    <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Barrier Washers</a>
-                    <a href="{{ route('equipment.category', 'ironers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Ironers</a>
+                    <a href="{{ route('equipment') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Equipment Hub</a>
+                    <a href="{{ route('equipment.category', 'washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Washers</a>
+                    <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Tumble Dryers</a>
+                    <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Barrier Washers</a>
+                    <a href="{{ route('equipment.category', 'ironers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Ironers</a>
                 </div>
             </div>
 
             <!-- Mobile Sectors -->
             <div x-data="{ sOpen: false }">
-                <button @click="sOpen = !sOpen" class="flex items-center justify-between w-full py-4 text-navy font-semibold border-b border-gray-100 cursor-pointer">
+                <button @click="sOpen = !sOpen" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100 cursor-pointer">
                     Sectors
                     <svg class="w-4 h-4 text-navy/40 transition-transform duration-200" :class="sOpen ? 'rotate-90' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18l6-6-6-6"/></svg>
                 </button>
                 <div x-show="sOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
-                    <a href="{{ route('sectors.healthcare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Healthcare</a>
-                    <a href="{{ route('sectors.hospitality') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Hospitality</a>
-                    <a href="{{ route('sectors.care') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Care Facilities</a>
-                    <a href="{{ route('sectors.commercial') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-medium transition-colors">Commercial &amp; Industrial</a>
+                    <a href="{{ route('sectors.healthcare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Healthcare</a>
+                    <a href="{{ route('sectors.hospitality') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Hospitality</a>
+                    <a href="{{ route('sectors.care') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Care Facilities</a>
+                    <a href="{{ route('sectors.commercial') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial &amp; Industrial</a>
                 </div>
             </div>
 
-            <a href="{{ route('about') }}" class="flex items-center justify-between w-full py-4 text-navy font-semibold border-b border-gray-100">About</a>
-            <a href="{{ route('resources') }}" class="flex items-center justify-between w-full py-4 text-navy font-semibold border-b border-gray-100">Resources</a>
-            <a href="{{ route('contact') }}" class="flex items-center justify-between w-full py-4 text-navy font-semibold">Contact</a>
+            <a href="{{ route('about') }}" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100">About</a>
+            <a href="{{ route('resources') }}" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100">Resources</a>
+            <a href="{{ route('contact') }}" class="flex items-center justify-between w-full py-4 text-navy font-bold">Contact</a>
         </nav>
 
         <div class="px-5 py-5 border-t border-gray-100 space-y-3">
-            <a href="tel:+353000000000" class="flex items-center justify-center gap-2 w-full py-3.5 text-navy border border-navy/20 rounded-lg font-semibold font-body text-sm hover:bg-gray-50 transition-colors">
+            <a href="tel:+353000000000" class="flex items-center justify-center gap-2 w-full py-3.5 text-navy border border-navy/20 rounded-lg font-bold font-body text-sm hover:bg-gray-50 transition-colors">
                 <svg class="w-5 h-5 text-navy/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
                 </svg>
                 Talk to an Engineer &mdash; +353 01 123 4567
             </a>
-            <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3.5 bg-orange hover:bg-orange-dark text-white rounded-lg font-semibold font-body text-sm transition-colors cursor-pointer"
+            <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3.5 bg-orange hover:bg-orange-dark text-white rounded-lg font-bold font-body text-sm transition-colors cursor-pointer"
                data-ga-cta="mobile_header_request_assessment">
                 Request Service Assessment
             </a>

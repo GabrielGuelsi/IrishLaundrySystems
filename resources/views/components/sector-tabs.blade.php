@@ -9,7 +9,7 @@
         <nav class="flex overflow-x-auto scrollbar-hide -mb-px" aria-label="Sector navigation">
 
             <a href="{{ route('sectors.healthcare') }}"
-               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
+               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-bold whitespace-nowrap border-b-2 transition-colors duration-150
                       {{ request()->routeIs('sectors.healthcare')
                           ? 'border-orange text-white'
                           : 'border-transparent text-steel-light hover:text-white hover:border-white/30' }}">
@@ -20,7 +20,7 @@
             </a>
 
             <a href="{{ route('sectors.care') }}"
-               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
+               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-bold whitespace-nowrap border-b-2 transition-colors duration-150
                       {{ request()->routeIs('sectors.care')
                           ? 'border-orange text-white'
                           : 'border-transparent text-steel-light hover:text-white hover:border-white/30' }}">
@@ -31,7 +31,7 @@
             </a>
 
             <a href="{{ route('sectors.hospitality') }}"
-               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
+               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-bold whitespace-nowrap border-b-2 transition-colors duration-150
                       {{ request()->routeIs('sectors.hospitality')
                           ? 'border-orange text-white'
                           : 'border-transparent text-steel-light hover:text-white hover:border-white/30' }}">
@@ -42,7 +42,7 @@
             </a>
 
             <a href="{{ route('sectors.commercial') }}"
-               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-semibold whitespace-nowrap border-b-2 transition-colors duration-150
+               class="flex items-center gap-2 px-5 py-3 text-sm font-body font-bold whitespace-nowrap border-b-2 transition-colors duration-150
                       {{ request()->routeIs('sectors.commercial')
                           ? 'border-orange text-white'
                           : 'border-transparent text-steel-light hover:text-white hover:border-white/30' }}">

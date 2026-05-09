@@ -124,8 +124,35 @@
     </div>
 </section>
 
-<!-- COMMERCIAL & INDUSTRIAL PRIORITIES BENTO -->
-<section class="py-12 lg:py-16 bg-[#f4f6f9]">
+
+
+{{-- D: Enhanced Usability — Apple-style horizontal scroll cards --}}
+<style>
+.ils-apple-wrap { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; cursor:grab; }
+.ils-apple-wrap:active { cursor:grabbing; }
+.ils-apple-wrap::-webkit-scrollbar { display:none; }
+.ils-apple-card { flex:0 0 320px; scroll-snap-align:start; background:#fff; border-radius:18px; padding:26px 26px 70px 26px; min-height:500px; display:flex; flex-direction:column; position:relative; overflow:hidden; }
+.ils-apple-label { font-size:0.72rem; font-weight:300; color:#6e6e73; letter-spacing:0.03em; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; text-transform:uppercase; }
+.ils-apple-title { font-size:1.3rem; font-weight:700; color:#1d1d1f; line-height:1.25; margin-bottom:10px; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-body { font-size:0.83rem; color:#6e6e73; line-height:1.65; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-img { flex:1; display:flex; align-items:flex-end; justify-content:center; padding-top:24px; }
+.ils-apple-img img { max-height:200px; width:auto; max-width:100%; object-fit:contain; }
+.ils-apple-plus { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:#1d1d1f; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; transition:background 0.2s; flex-shrink:0; }
+.ils-apple-plus:hover { background:#011E41; }
+.ils-apple-plus svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transition:transform 0.3s ease; flex-shrink:0; }
+.ils-apple-plus.open svg { transform:rotate(45deg); }
+.ils-apple-overlay { position:absolute; inset:0; background:#011E41; border-radius:18px; padding:26px; display:flex; flex-direction:column; opacity:0; pointer-events:none; transition:opacity 0.3s ease; z-index:10; }
+.ils-apple-overlay.open { opacity:1; pointer-events:auto; }
+.ils-apple-overlay h4 { font-size:1.15rem; font-weight:700; color:#fff; margin-bottom:14px; font-family:'Inter',system-ui,sans-serif; line-height:1.3; }
+.ils-apple-overlay p, .ils-apple-overlay li { font-size:0.83rem; color:rgba(255,255,255,0.72); line-height:1.7; font-family:'Inter',system-ui,sans-serif; }
+.ils-apple-overlay ul { padding-left:0; list-style:none; }
+.ils-apple-overlay li { display:flex; gap:8px; margin-bottom:8px; }
+.ils-apple-overlay li::before { content:'–'; color:#148af4; flex-shrink:0; font-weight:700; }
+.ils-apple-close { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; }
+.ils-apple-close svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transform:rotate(45deg); }
+</style>
+
+<section class="py-14 lg:py-20" style="background:#f5f5f7;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Header --}}
@@ -225,50 +252,51 @@
             </p>
         </div>
 
-        <!-- 4-column card grid -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <!-- 3-column card grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-            @foreach([
-                [
-                    'title'  => 'Repairs &amp; Call-outs',
-                    'text'   => 'Engineering support when faults, breakdowns or performance issues put laundry output under pressure.',
-                    'cta'    => 'Request Call-out',
-                    'route'  => route('repairs'),
-                    'img'    => '/images/healthcare/repairs-callouts.jpg',
-                    'pos'    => 'center 40%',
-                ],
-                [
-                    'title'  => 'Service Contracts',
-                    'text'   => 'Planned maintenance and service structure for sites that need better control over recurring issues and the installed base.',
-                    'cta'    => 'View Contracts',
-                    'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Service Contracts.png',
-                    'pos'    => 'center 35%',
-                ],
-                [
-                    'title'  => 'Equipment Rental',
-                    'text'   => 'A practical option for replacement pressure, expansion, temporary capacity or capital control, with equipment installed and supported.',
-                    'cta'    => 'See Rental Options',
-                    'route'  => route('rental'),
-                    'img'    => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'    => 'center center',
-                ],
-                [
-                    'title'  => 'Parts &amp; Aftercare',
-                    'text'   => 'Genuine parts access, service history context and practical follow-up support around commercial laundry equipment.',
-                    'cta'    => 'Explore Support Options',
-                    'route'  => route('contact'),
-                    'img'    => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
-                    'pos'    => 'center 20%',
-                ],
-            ] as $card)
-            <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
-               style="height:400px;">
-                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                     style="object-position: {{ $card['pos'] }};">
-                {{-- Default gradient --}}
+            <!-- Card 1 — Repairs & Call-outs -->
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Urgent support for breakdowns and performance issues where operational pressure demands a fast, practical route.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Triage-first breakdown support
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Fast route into contact and follow-up
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Built for critical laundry environments
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('repairs') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            Request Call-out
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 — Equipment Rental -->
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.4) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
                 {{-- Hover overlay --}}
@@ -284,14 +312,50 @@
                             <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
                     </div>
-                    {{-- Title + arrow (always visible) --}}
-                    <div class="flex items-end justify-between gap-3">
-                        <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-tight">{!! $card['title'] !!}</h3>
-                        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 group-hover:bg-[#148af4] flex items-center justify-center transition-colors duration-300">
-                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                            </svg>
-                        </div>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('rental') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            See Rental Options
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 — Service Contracts -->
+            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Structured preventive maintenance across three tiers — Core, Priority and Assured. Predictable costs, documented history, fewer unplanned stoppages.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Three maintenance tiers
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Documented service records
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Fewer unplanned stoppages
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Service Contracts</h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('service-contracts') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            View Contracts
+                        </a>
                     </div>
                 </div>
             </a>

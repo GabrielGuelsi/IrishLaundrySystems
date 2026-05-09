@@ -185,7 +185,7 @@
                     {{-- Name + Company --}}
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Full name <span class="text-red-400">*</span>
                             </label>
                             <input type="text" name="name" required value="{{ old('name') }}"
@@ -195,7 +195,7 @@
                                           placeholder-gray-400 transition-all">
                         </div>
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Company <span class="text-red-400">*</span>
                             </label>
                             <input type="text" name="company" required value="{{ old('company') }}"
@@ -209,7 +209,7 @@
                     {{-- Email + Phone --}}
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Email <span class="text-red-400">*</span>
                             </label>
                             <input type="email" name="email" required value="{{ old('email') }}"
@@ -219,7 +219,7 @@
                                           placeholder-gray-400 transition-all">
                         </div>
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Phone <span class="text-red-400">*</span>
                             </label>
                             <input type="tel" name="phone" required value="{{ old('phone') }}"
@@ -233,7 +233,7 @@
                     {{-- Enquiry type + Sector --}}
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Enquiry type <span class="text-red-400">*</span>
                             </label>
                             <select name="request_type" required
@@ -249,7 +249,7 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Sector <span class="text-red-400">*</span>
                             </label>
                             <select name="sector" required
@@ -283,7 +283,7 @@
                     {{-- Location + Equipment --}}
                     <div class="grid grid-cols-2 gap-4">
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Site location / county <span class="text-red-400">*</span>
                             </label>
                             <input type="text" name="location" required value="{{ old('location') }}"
@@ -293,8 +293,8 @@
                                           placeholder-gray-400 transition-all">
                         </div>
                         <div>
-                            <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
-                                Equipment <span class="text-gray-400 font-normal text-xs">(if known)</span>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
+                                Equipment <span class="text-gray-400 font-light text-xs">(if known)</span>
                             </label>
                             <input type="text" name="equipment" value="{{ old('equipment') }}"
                                    placeholder="Brand / model"
@@ -306,8 +306,8 @@
 
                     {{-- Message --}}
                     <div>
-                        <label class="block font-body text-sm font-medium text-gray-700 mb-1.5">
-                            Details <span class="text-gray-400 font-normal text-xs">(symptoms, number of machines, urgency/impact)</span>
+                        <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
+                            Details <span class="text-gray-400 font-light text-xs">(symptoms, number of machines, urgency/impact)</span>
                         </label>
                         <textarea name="message" rows="5"
                                   placeholder="Describe the issue or what you need — the more context the better."
@@ -370,7 +370,7 @@
                     <div class="space-y-4">
                         <div>
                             <a href="tel:+353000000000"
-                               class="font-body text-gray-700 text-base hover:text-navy transition-colors block font-semibold">
+                               class="font-body text-gray-700 text-base hover:text-navy transition-colors block font-bold">
                                 +353 (0) 00 000 0000
                             </a>
                             <p class="font-body text-gray-400 text-sm mt-0.5">Mon – Fri, 8am – 5pm · Emergency line available</p>
@@ -415,7 +415,7 @@
                         <div>
                             <button @click="open = open === {{ $i }} ? null : {{ $i }}"
                                     class="w-full flex items-start justify-between gap-4 py-4 text-left group">
-                                <span class="font-body font-semibold text-navy text-sm leading-snug">{{ $faq['q'] }}</span>
+                                <span class="font-body font-bold text-navy text-sm leading-snug">{{ $faq['q'] }}</span>
                                 <span class="flex-shrink-0 text-gray-400 transition-transform duration-200 mt-0.5"
                                       :class="open === {{ $i }} ? 'rotate-45' : ''">
                                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

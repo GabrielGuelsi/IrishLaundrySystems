@@ -5,11 +5,11 @@
         <!-- Header -->
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-10">
             <div>
-                <p class="font-body font-semibold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment Categories</h2>
             </div>
             <a href="{{ route('equipment') }}"
-               class="inline-flex self-start lg:self-auto items-center gap-2 border border-navy/20 hover:border-navy text-navy/60 hover:text-navy font-body font-semibold px-5 py-2.5 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap rounded-lg">
+               class="inline-flex self-start lg:self-auto items-center gap-2 border border-navy/20 hover:border-navy text-navy/60 hover:text-navy font-body font-bold px-5 py-2.5 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap rounded-lg">
                 Browse All Equipment
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
             </a>

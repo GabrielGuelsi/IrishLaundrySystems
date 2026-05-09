@@ -79,11 +79,11 @@
 
                 <div class="hero-btns flex flex-row gap-4">
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Call-out
                     </a>
                     <a href="tel:+353000000000"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to an Engineer
                     </a>
                 </div>
@@ -140,7 +140,7 @@ $expectSteps = [
     [
         'title'    => 'On-Site Diagnosis',
         'desc'     => 'Our engineer diagnoses the fault and advises on repair options — clearly, without technical jargon. If parts are needed, we confirm availability.',
-        'image'    => '/images/hero/hero-technician-inspection.png',
+        'image'    => '/images/hero/on-site-diagnosis.jpeg',
         'alt'      => 'ILS technician inspecting a commercial washing machine drum during diagnosis',
         'meta'     => 'Step 3 · Diagnosis',
         'position' => 'center',
@@ -159,7 +159,7 @@ $expectSteps = [
 <section class="relative py-16 lg:py-24 bg-navy expect-dotgrid overflow-hidden">
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
-            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">A clear journey</p>
+            <p class="text-orange font-body font-bold text-xs uppercase tracking-widest mb-3">A clear journey</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">What to Expect from an ILS Call-Out</h2>
             <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">A clear, professional process — from your first call to the job being resolved.</p>
         </div>
@@ -202,7 +202,7 @@ $expectSteps = [
 
                         {{-- Text side --}}
                         <div class="mt-6 md:mt-0 {{ $isEven ? 'md:order-1 md:pr-12 md:text-right' : 'md:order-2 md:pl-12' }} reveal {{ $isEven ? 'reveal-left' : 'reveal-right' }}">
-                            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
+                            <p class="text-orange font-body font-bold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
                             <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4">{{ $step['title'] }}</h3>
                             <p class="font-body text-blue-200 text-base leading-relaxed">{{ $step['desc'] }}</p>
                         </div>
@@ -248,7 +248,7 @@ $expectSteps = [
                     <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
-                    <span class="text-xs text-orange font-body font-semibold">Reduce reactive costs</span>
+                    <span class="text-xs text-orange font-body font-bold">Reduce reactive costs</span>
                 </div>
                 <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4">Already dealing with repeat breakdowns?</h2>
                 <p class="font-body text-gray-300 leading-relaxed mb-4">
@@ -260,12 +260,12 @@ $expectSteps = [
             </div>
             <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
                 <a href="{{ route('service-contracts') }}"
-                   class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer">
+                   class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer">
                     View Service Contracts
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
                 <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-semibold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer hover:bg-white/10">
+                   class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer hover:bg-white/10">
                     Request Assessment
                 </a>
             </div>

@@ -13,7 +13,7 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="max-w-3xl reveal reveal-left">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry Support</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
                     Laundry support for care facilities, built around <span style="color:#148af4;">daily demand</span>, <span style="color:#148af4;">resident care</span> and site continuity.
                 </h1>
@@ -47,7 +47,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Care Facilities</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Care Facilities</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
                     Purpose-built laundry support for <span style="color:#148af4;">care facilities</span>.
                 </h2>
@@ -78,7 +78,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Room Pressure</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Room Pressure</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
                 Laundry support for <span style="color:#148af4;">resident items</span>, linen flow and daily use.
             </h2>
@@ -141,7 +141,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Laundry Priorities</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Laundry Priorities</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
                 Care facility laundry should support <span style="color:#148af4;">daily care</span>, not create another pressure point.
             </h2>
@@ -221,7 +221,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
                 Four ways we support <span style="color:#148af4;">care facility laundry</span>.
             </h2>
@@ -285,7 +285,7 @@
                         </span>
                     </div>
                     <div class="flex items-end justify-between gap-3">
-                        <h3 class="font-heading font-extrabold text-white text-2xl lg:text-3xl leading-tight">{!! $card['title'] !!}</h3>
+                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight">{!! $card['title'] !!}</h3>
                         <div class="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 group-hover:bg-[#148af4] flex items-center justify-center transition-colors duration-300">
                             <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -336,7 +336,7 @@
                     <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
                          style="width:1.6rem;height:1.6rem;" alt="">
                 </div>
-                <span class="font-body text-white text-xs font-semibold leading-snug">{!! $feat['label'] !!}</span>
+                <span class="font-body text-white text-xs font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>
@@ -355,7 +355,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 reveal">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
                 Equipment for <span style="color:#148af4;">care facility laundry</span>.
             </h2>
@@ -677,7 +677,7 @@
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
 
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
             Our process keeps the <span style="color:#148af4;">next step</span> clear.
         </h2>

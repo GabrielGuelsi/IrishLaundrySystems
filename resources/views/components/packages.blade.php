@@ -12,7 +12,7 @@
             <!-- CORE -->
             <div class="bg-white rounded-2xl border border-border shadow-card flex flex-col">
                 <div class="p-6 lg:p-8 border-b border-border">
-                    <div class="inline-block bg-muted text-navy text-xs font-heading font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Core</div>
+                    <div class="inline-block bg-muted text-navy text-xs font-heading font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Core</div>
                     <h3 class="font-heading font-bold text-navy text-2xl mb-2">Core Cover</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">
                         Structured preventive maintenance and baseline service support for operations with lower throughput or in-house engineering resource.
@@ -54,7 +54,7 @@
                 </div>
                 <div class="p-6 lg:p-8 pt-0">
                     <a href="{{ route('request-assessment') }}"
-                       class="block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-body font-semibold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
+                       class="block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-body font-bold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
                         Request Contract Review
                     </a>
                 </div>
@@ -66,7 +66,7 @@
                     <span class="bg-orange text-white text-xs font-heading font-bold px-4 py-1 rounded-full uppercase tracking-wider shadow">Most Popular</span>
                 </div>
                 <div class="p-6 lg:p-8 border-b border-border mt-3">
-                    <div class="inline-block bg-navy text-white text-xs font-heading font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Priority</div>
+                    <div class="inline-block bg-navy text-white text-xs font-heading font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Priority</div>
                     <h3 class="font-heading font-bold text-navy text-2xl mb-2">Priority Cover</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">
                         Enhanced scheduling, parts strategy and compliance support — for operations where laundry continuity is operationally critical.
@@ -95,7 +95,7 @@
                             <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
                             </svg>
-                            <span class="text-gray-700 font-medium">{{ $label }}</span>
+                            <span class="text-gray-700 font-light">{{ $label }}</span>
                             @else
                             <svg class="w-5 h-5 text-gray-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="p-6 lg:p-8 pt-0">
                     <a href="{{ route('request-assessment') }}"
-                       class="block w-full text-center bg-navy hover:bg-navy-dark text-white font-body font-semibold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
+                       class="block w-full text-center bg-navy hover:bg-navy-dark text-white font-body font-bold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
                         Request Contract Review
                     </a>
                 </div>
@@ -117,7 +117,7 @@
             <!-- ASSURED -->
             <div class="bg-white rounded-2xl border border-border shadow-card flex flex-col">
                 <div class="p-6 lg:p-8 border-b border-border">
-                    <div class="inline-block bg-steel text-white text-xs font-heading font-semibold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Assured</div>
+                    <div class="inline-block bg-steel text-white text-xs font-heading font-bold px-3 py-1 rounded-full mb-3 uppercase tracking-wider">Assured</div>
                     <h3 class="font-heading font-bold text-navy text-2xl mb-2">Assured Cover</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">
                         Our most comprehensive tier — dedicated reporting, out-of-hours escalation and tighter response paths for high-dependency operations.
@@ -159,7 +159,7 @@
                 </div>
                 <div class="p-6 lg:p-8 pt-0">
                     <a href="{{ route('request-assessment') }}"
-                       class="block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-body font-semibold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
+                       class="block w-full text-center border-2 border-navy text-navy hover:bg-navy hover:text-white font-body font-bold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
                         Request Contract Review
                     </a>
                 </div>

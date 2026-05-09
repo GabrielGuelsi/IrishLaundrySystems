@@ -13,11 +13,11 @@
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Service Contracts,</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#22d3ee;">Parts &amp; Aftercare</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#148af4;">Parts &amp; Aftercare</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Planned support, genuine parts supply, and practical aftercare<br>to keep equipment, service and aftercare connected.
+            Planned support, genuine parts supply and practical aftercare help keep equipment, service history and future decisions connected.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
@@ -32,7 +32,7 @@
             <div class="flex items-center gap-2">
                 <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
                      class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
-                <span class="font-body text-white text-xs font-semibold whitespace-nowrap">{{ $feat['label'] }}</span>
+                <span class="font-body text-white text-xs font-bold whitespace-nowrap">{{ $feat['label'] }}</span>
             </div>
             @endforeach
         </div>

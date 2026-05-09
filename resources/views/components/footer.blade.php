@@ -8,9 +8,13 @@
             <div>
                 <img src="/images/logo/ILS-LOGO-HORIZONTAL-WHITE.svg"
                      alt="Irish Laundry Systems"
-                     class="h-16 lg:h-20 w-auto mb-6"
+                     class="h-16 lg:h-20 w-auto mb-5"
                      onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
                 <span style="display:none" class="font-heading font-bold text-white text-xl tracking-tight block mb-5">Irish Laundry Systems</span>
+
+                <p class="text-sm font-body text-gray-300 leading-relaxed mb-6 max-w-sm">
+                    Built for healthcare, hospitality, care and commercial laundry environments where equipment and support need to stay connected.
+                </p>
 
                 <ul class="space-y-2.5 text-sm font-body text-gray-400">
                     <li class="flex items-center gap-2">
@@ -38,7 +42,7 @@
 
             <!-- Quick links -->
             <div>
-                <h3 class="font-heading font-semibold text-white text-xs uppercase tracking-widest mb-5 pb-2 border-b border-white/10">Quick Links</h3>
+                <h3 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-5 pb-2 border-b border-white/10">Quick Links</h3>
                 <ul class="space-y-3 font-body text-sm">
                     <li><a href="{{ route('service-contracts') }}" class="text-gray-400 hover:text-white transition-colors">Service Contracts</a></li>
                     <li><a href="{{ route('repairs') }}" class="text-gray-400 hover:text-white transition-colors">Repairs &amp; Call-outs</a></li>
@@ -50,10 +54,10 @@
 
             <!-- CTA -->
             <div>
-                <h3 class="font-heading font-semibold text-white text-xs uppercase tracking-widest mb-5 pb-2 border-b border-white/10">Need a fast response?</h3>
-                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">We aim to be on-site within 24 hours (subject to location and parts availability).</p>
+                <h3 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-5 pb-2 border-b border-white/10">Need a fast response?</h3>
+                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Need urgent support? Request a service assessment or talk to an engineer so the enquiry can be handled by the right team.</p>
                 <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-heading font-semibold text-sm px-5 py-3 rounded-lg transition-colors"
+                   class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-heading font-bold text-sm px-5 py-3 rounded-lg transition-colors"
                    data-ga-cta="footer_request_assessment">
                     Request a Service Assessment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

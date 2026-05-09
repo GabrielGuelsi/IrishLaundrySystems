@@ -24,7 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
 
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -125,7 +125,7 @@
         h1, h2, h3, h4, h5, h6 {
             font-weight: 700;
         }
-        .font-normal { font-weight: 300 !important; }
+        .font-light { font-weight: 300 !important; }
         .font-bold   { font-weight: 700 !important; }
         .prose-ils p { margin-bottom: 1rem; line-height: 1.75; }
         [x-cloak] { display: none !important; }

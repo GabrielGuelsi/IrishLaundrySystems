@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Service Contracts Built Around Uptime | Irish Laundry Systems')
-@section('metaDescription', 'Prevent downtime risk. Improve predictability. We confirm scope and commitments per agreement.')
+@section('pageTitle', 'Service Contracts | Irish Laundry Systems')
+@section('metaDescription', 'Service contracts scoped around your installed equipment and maintenance needs — planned visits, service reporting, parts access and practical aftercare.')
 
 @section('content')
 
@@ -107,12 +107,11 @@
 <!-- HERO -->
 <section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
-    {{-- Background image (mirrored so the engineers sit on the right; anchored to the top so heads stay in frame) --}}
-    <img src="/images/healthcare/Customer-Care_Line-6000-_001.jpg"
-         alt="ILS engineer reviewing Line 6000 commercial laundry equipment"
+    {{-- Background image --}}
+    <img src="/images/healthcare/service-contracts-hero.png"
+         alt="ILS engineer reviewing a commercial laundry service contract with a customer"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-top"
-         style="transform: scaleX(-1);">
+         class="absolute inset-0 w-full h-full object-cover object-right">
 
 
     {{-- Gradient overlay — fades faster so both engineers come through --}}
@@ -123,18 +122,22 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 620px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-10 text-4xl lg:text-5xl xl:text-6xl">
-                    Service contracts built around <span class="text-orange">uptime</span>.
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
+                    Service contracts scoped around your <span class="text-orange">installed equipment and maintenance needs</span>.
                 </h1>
+
+                <p class="hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
+                    Irish Laundry Systems supports commercial laundry sites with planned maintenance, service reporting, preferential call-out rates where applicable, parts access and practical aftercare around the equipment already in use.
+                </p>
 
                 <div class="hero-btns flex flex-row gap-4">
                     <a href="#contract-review-form"
                        data-ga-cta="hero-contract-review"
-                       class="pulse-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="pulse-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Contract Review
                     </a>
                     <a href="tel:+353000000000"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-semibold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to an Engineer
                     </a>
                 </div>
@@ -153,33 +156,28 @@
     @include('components.proof-bar')
 </div>
 
-<!-- STAT BAND -->
+<!-- SAFE AUTHORITY BAR -->
 <section class="relative bg-navy sc-dotgrid py-8 lg:py-10 overflow-hidden">
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         @php
-        $stats = [
-            ['target' => 38,  'suffix' => '+',  'label' => 'Years engineering-led',         'sub' => 'Specialist commercial laundry since 1987'],
-            ['target' => 26,  'suffix' => '',   'label' => 'Counties covered',              'sub' => 'Full Republic of Ireland coverage'],
-            ['target' => 48,  'suffix' => 'h',  'label' => 'Priority response window',      'sub' => 'On Priority &amp; Assured tiers'],
-            ['target' => 100, 'suffix' => '%',  'label' => 'Genuine Electrolux parts',      'sub' => 'Authorised Professional Partner'],
+        $authorityItems = [
+            ['label' => 'Since 1987',                    'text' => 'Commercial laundry engineering support across Ireland.'],
+            ['label' => 'Republic of Ireland coverage',  'text' => 'Engineering support for sites across the Republic.'],
+            ['label' => 'Authorised partner',            'text' => 'Electrolux Professional equipment and parts support where applicable.'],
+            ['label' => 'Planned maintenance support',   'text' => 'Contracts, call-outs, reporting, parts and aftercare connected.'],
         ];
         @endphp
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
-            @foreach ($stats as $i => $stat)
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
+            @foreach ($authorityItems as $i => $item)
             <div class="relative reveal text-center lg:text-left" style="transition-delay:{{ $i * 90 }}ms;">
                 @if ($i > 0)
                 <div class="hidden lg:block absolute left-0 top-1 bottom-1 w-px bg-white/10" aria-hidden="true"></div>
                 @endif
                 <div class="lg:pl-6">
-                    <div class="font-heading font-bold text-white text-2xl lg:text-3xl mb-1 sc-stat-num leading-none">
-                        <span data-counter
-                              data-target="{{ $stat['target'] }}"
-                              data-suffix="{{ $stat['suffix'] }}">0{{ $stat['suffix'] }}</span>
-                    </div>
-                    <div class="font-body font-semibold text-orange text-xs uppercase tracking-wider mb-0.5">{{ $stat['label'] }}</div>
-                    <div class="font-body text-blue-200 text-[11px] leading-snug">{!! $stat['sub'] !!}</div>
+                    <div class="font-heading font-bold text-orange text-sm lg:text-base mb-1.5 uppercase tracking-wider leading-tight">{{ $item['label'] }}</div>
+                    <div class="font-body text-blue-200 text-xs lg:text-sm leading-snug">{{ $item['text'] }}</div>
                 </div>
             </div>
             @endforeach
@@ -194,7 +192,7 @@
         <div class="max-w-3xl mb-12 lg:mb-16">
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 reveal">What's <span class="text-orange">included</span> in a service contract.</h2>
             <p class="font-body text-gray-600 leading-relaxed reveal" style="transition-delay:140ms;">
-                All ILS service contracts include a core set of structured support elements. Higher tiers add additional layers of priority, documentation and escalation support.
+                A service contract gives your site a clearer maintenance structure around the equipment already installed. The exact scope is reviewed around your machines, usage, site pressure and service history.
             </p>
         </div>
 
@@ -203,8 +201,8 @@
 
             {{-- TILE 1 · Engineer photo (2×2) --}}
             <div class="group relative md:col-span-2 lg:col-span-2 lg:row-span-2 rounded-3xl overflow-hidden bg-navy reveal min-h-[400px] lg:min-h-0">
-                <img src="/images/about/about-engineers.jpg"
-                     alt="ILS engineering team on site"
+                <img src="/images/healthcare/service-contracts-hero.jpg"
+                     alt="ILS engineers in conversation about service equipment"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-105">
                 {{-- Top scrim for badge legibility --}}
@@ -219,11 +217,11 @@
                 <div class="relative z-10 h-full flex flex-col justify-between p-6 lg:p-8">
                     <div class="inline-flex items-center gap-2 self-start bg-white/15 backdrop-blur-sm border border-white/25 rounded-full px-3 py-1">
                         <svg class="w-3.5 h-3.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        <span class="text-[11px] font-body font-semibold text-white uppercase tracking-wider">Engineering-led since 1987</span>
+                        <span class="text-[11px] font-body font-bold text-white uppercase tracking-wider">Engineering-led since 1987</span>
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-2 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">Specialist commercial laundry engineers</h3>
-                        <p class="font-body text-white/90 text-sm lg:text-base leading-relaxed max-w-md drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">Manufacturer-trained, Authorised Electrolux Professional Partner — not generalist field service.</p>
+                        <p class="font-body text-white/90 text-sm lg:text-base leading-relaxed max-w-md drop-shadow-[0_1px_4px_rgba(0,0,0,0.5)]">Planned maintenance carried out by engineers who understand commercial laundry equipment, site pressure and day-to-day operating needs.</p>
                     </div>
                 </div>
             </div>
@@ -240,25 +238,11 @@
                         <div class="w-11 h-11 rounded-xl bg-orange/20 border border-orange/40 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
                         </div>
-                        <div>
-                            <p class="text-orange font-body font-semibold text-[11px] uppercase tracking-widest mb-1">Core inclusion</p>
-                            <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-snug">Scheduled preventive visits</h3>
-                        </div>
+                        <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-snug">Scheduled preventive visits</h3>
                     </div>
-                    <ul class="font-body text-blue-200 text-sm lg:text-base leading-relaxed space-y-2">
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0"></span>
-                            <span>Regular planned visits scheduled around your operation</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0"></span>
-                            <span>Inspect, clean and service your laundry equipment</span>
-                        </li>
-                        <li class="flex items-start gap-2">
-                            <span class="w-1.5 h-1.5 rounded-full bg-orange mt-2 flex-shrink-0"></span>
-                            <span>Reduces the likelihood of unplanned breakdowns</span>
-                        </li>
-                    </ul>
+                    <p class="font-body text-blue-200 text-sm lg:text-base leading-relaxed">
+                        Planned visits are scheduled around your equipment, usage and site requirements to help identify issues before they become larger problems.
+                    </p>
                 </div>
             </div>
 
@@ -269,7 +253,7 @@
                         <svg class="w-5 h-5 text-navy group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
                     </div>
                     <h3 class="font-heading font-bold text-navy group-hover:text-white text-base lg:text-lg leading-snug transition-colors duration-300">Service reporting</h3>
-                    <p class="font-body text-gray-600 group-hover:text-blue-200 text-xs lg:text-sm leading-relaxed transition-colors duration-300">Written records every visit — a documented maintenance history for compliance.</p>
+                    <p class="font-body text-gray-600 group-hover:text-blue-200 text-xs lg:text-sm leading-relaxed transition-colors duration-300">Clear visit notes and service records help your team understand what was checked, what was adjusted and what may need attention next.</p>
                 </div>
             </div>
 
@@ -280,24 +264,23 @@
                         <svg class="w-5 h-5 text-navy group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
                     </div>
                     <h3 class="font-heading font-bold text-navy group-hover:text-white text-base lg:text-lg leading-snug transition-colors duration-300">Remote support &amp; triage</h3>
-                    <p class="font-body text-gray-600 group-hover:text-blue-200 text-xs lg:text-sm leading-relaxed transition-colors duration-300">Phone access to ILS engineers for guidance before dispatch.</p>
+                    <p class="font-body text-gray-600 group-hover:text-blue-200 text-xs lg:text-sm leading-relaxed transition-colors duration-300">Phone and remote support help assess the issue, prioritise the next step and direct the enquiry to the right route.</p>
                 </div>
             </div>
 
             {{-- TILE 5 · Preferential rates — featured (4×1, full row, navy with glow) --}}
-            <div class="group relative md:col-span-2 lg:col-span-4 rounded-3xl overflow-hidden text-white p-6 lg:p-8 reveal"
+            <div class="group relative md:col-span-2 lg:col-span-4 rounded-2xl overflow-hidden text-white p-4 lg:p-5 reveal"
                  style="background: radial-gradient(circle at top right, rgba(20,138,244,0.32) 0%, transparent 55%), #011E41; transition-delay:60ms;">
-                <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none"></div>
-                <div class="relative z-10 h-full flex flex-col sm:flex-row items-start sm:items-center gap-5 lg:gap-7">
+                <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none"></div>
+                <div class="relative z-10 h-full flex flex-col sm:flex-row items-start sm:items-center gap-4">
                     <div class="flex-shrink-0">
-                        <div class="w-14 h-14 rounded-2xl bg-orange/20 border border-orange/40 flex items-center justify-center">
-                            <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/></svg>
+                        <div class="w-10 h-10 rounded-xl bg-orange/20 border border-orange/40 flex items-center justify-center">
+                            <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/></svg>
                         </div>
                     </div>
                     <div class="min-w-0">
-                        <p class="text-orange font-body font-semibold text-[11px] uppercase tracking-widest mb-1">Cost control</p>
-                        <h3 class="font-heading font-bold text-white text-xl lg:text-2xl mb-2 leading-snug">Preferential call-out rates</h3>
-                        <p class="font-body text-blue-200 text-sm lg:text-base leading-relaxed">Contract customers receive preferential labour rates for reactive call-outs — helping control unexpected costs.</p>
+                        <h3 class="font-heading font-bold text-white text-base lg:text-lg mb-1 leading-snug">Preferential call-out rates</h3>
+                        <p class="font-body text-blue-200 text-xs lg:text-sm leading-relaxed">Contract customers may receive preferential labour rates for reactive call-outs, helping control unexpected service costs where this applies.</p>
                     </div>
                 </div>
             </div>
@@ -314,8 +297,8 @@
                 </div>
                 <div class="min-w-0 flex-1">
                     <p class="font-body text-amber-800 text-[11px] lg:text-xs leading-snug">
-                        <span class="font-semibold uppercase tracking-widest text-amber-700">What's not included:</span>
-                        Parts, major repairs and damage from misuse or third-party interference are separate. Your contract document will clearly state what is and is not covered.
+                        <span class="font-bold uppercase tracking-widest text-amber-700">Note:</span>
+                        Parts, major repairs and damage from misuse or third-party maintenance are quoted separately unless included in the agreed contract scope.
                     </p>
                 </div>
             </div>
@@ -438,7 +421,7 @@
             How <span class="text-orange">preventive visits</span> work.
         </h2>
         <p class="font-body text-gray-600 text-lg leading-relaxed mt-4 max-w-2xl">
-            Four practical stages that turn a service contract into operational continuity.
+            Four practical stages that turn planned maintenance into clearer equipment support.
         </p>
     </div>
 
@@ -448,25 +431,25 @@
             [
                 'num'   => '01.',
                 'title' => 'Inspect & assess',
-                'body'  => 'Engineer inspects all contracted equipment, checks safety features, identifies wear and flags any items needing attention.',
+                'body'  => 'Review equipment condition, visible wear, usage pressure and any issues reported by the site.',
                 'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
             ],
             [
                 'num'   => '02.',
                 'title' => 'Service & replace',
-                'body'  => 'Cleaning, lubrication and consumable parts replacement where appropriate — keeping equipment operating to spec.',
+                'body'  => 'Carry out planned maintenance tasks and replace agreed wear items where included or quoted.',
                 'img'   => '/images/healthcare/repairs-hero.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Document on-site',
-                'body'  => 'Written service report completed during the visit and provided to your facilities or operations manager.',
+                'body'  => 'Record the visit, findings, adjustments and recommendations for service history.',
                 'img'   => '/images/healthcare/service-contracts-hero.jpg',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Plan ahead',
-                'body'  => 'Visit frequency agreed up-front based on your equipment, usage profile and chosen tier — no surprises.',
+                'body'  => 'Highlight follow-up actions, parts requirements or future maintenance needs before they become urgent.',
                 'img'   => '/images/equipment/td6-multihousing-room.jpg',
             ],
         ] as $card)
@@ -501,53 +484,113 @@
             <div class="rounded-2xl p-8 lg:p-12 text-center"
                  style="background: rgba(1,30,65,0.78); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5 leading-tight">
-                    Designed to reduce <span class="text-orange">downtime risk</span> in critical laundry operations.
+                    Designed to reduce <span class="text-orange">downtime risk</span> around essential laundry equipment.
                 </h2>
                 <p class="font-body text-blue-200 text-lg leading-relaxed">
-                    Unplanned breakdowns in healthcare, care and regulated environments don't just cost money — they create operational pressure, compliance risk and reputational exposure. A structured service contract puts the engineering infrastructure in place before problems occur.
+                    A structured service contract helps keep planned maintenance, service records, parts access and follow-up support connected before small issues become larger operational pressure.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- PACKAGES -->
-<div class="reveal">
-    @include('components.packages')
-</div>
+<!-- CONTRACT SCOPE BLOCK -->
+<section class="py-16 lg:py-24 bg-bg">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Heading row --}}
+        <div class="max-w-3xl mb-12 lg:mb-16">
+            <p class="text-orange font-body font-bold text-xs uppercase tracking-widest mb-4 reveal">Contract Scope</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 reveal" style="transition-delay:80ms;">
+                Service contracts scoped around your <span class="text-orange">installed equipment and maintenance needs</span>.
+            </h2>
+            <p class="font-body text-gray-600 text-lg leading-relaxed reveal" style="transition-delay:160ms;">
+                Every contract is shaped around your site, your machines and your operational priorities.
+            </p>
+        </div>
+
+        {{-- 4 icon cards --}}
+        @php
+        $scopeCards = [
+            [
+                'title' => 'Scheduled preventive visits',
+                'text'  => 'Visit frequency is reviewed around equipment use, workload, condition and how critical each machine is to the site.',
+                'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>',
+            ],
+            [
+                'title' => 'Installed base review',
+                'text'  => 'We assess equipment type, age, usage pattern and service history before confirming the right contract scope.',
+                'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>',
+            ],
+            [
+                'title' => 'Service history context',
+                'text'  => 'Previous faults, repeat issues and visit records help focus attention where the installed base needs it most.',
+                'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>',
+            ],
+            [
+                'title' => 'Parts & aftercare connection',
+                'text'  => 'Genuine parts access, service reporting and practical aftercare keep support connected beyond the visit itself.',
+                'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/>',
+            ],
+        ];
+        @endphp
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
+            @foreach ($scopeCards as $i => $card)
+            <article class="bg-white rounded-2xl border border-border p-6 lg:p-7 flex flex-col gap-4 reveal hover:shadow-card-hover transition-shadow duration-300" style="transition-delay:{{ $i * 80 }}ms;">
+                <div class="w-12 h-12 rounded-xl bg-orange/10 border border-orange/30 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+                        {!! $card['svg'] !!}
+                    </svg>
+                </div>
+                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-600 text-sm lg:text-base leading-relaxed">{{ $card['text'] }}</p>
+            </article>
+            @endforeach
+        </div>
+
+    </div>
+</section>
 
 <!-- HOW IT WORKS — vertical alternating timeline -->
 <section class="relative py-16 lg:py-24 bg-navy sc-dotgrid overflow-hidden">
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">Getting a <span class="text-orange">contract in place</span>.</h2>
-            <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">Three steps from first contact to service contract active.</p>
+            <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">A clear process from first review to contract activation.</p>
         </div>
 
         @php
         $steps = [
             [
-                'title'    => 'Tell Us About Your Equipment',
-                'desc'     => 'Submit an assessment request or call us. Tell us your equipment types, site count and any existing service arrangements.',
+                'title'    => 'Tell us about your equipment',
+                'desc'     => 'Share your site details, equipment types, number of machines, usage pressure and any existing service arrangements.',
                 'image'    => '/images/equipment/td6-multihousing-room.jpg',
-                'alt'      => 'Clean laundry room with TD6 equipment ready for assessment',
+                'alt'      => 'Clean laundry room with installed equipment ready for review',
                 'meta'     => 'Step 1 · Discovery',
                 'position' => 'center',
             ],
             [
-                'title'    => 'We Propose a Contract',
-                'desc'     => "We'll recommend the right tier and structure for your operation and provide a written contract proposal. No obligation.",
+                'title'    => 'Review the installed base',
+                'desc'     => 'We assess the equipment mix, service history, site needs and maintenance priorities before recommending the contract scope.',
+                'image'    => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+                'alt'      => 'ILS engineer reviewing installed laundry equipment',
+                'meta'     => 'Step 2 · Review',
+                'position' => 'center',
+            ],
+            [
+                'title'    => 'Define the contract scope',
+                'desc'     => 'We confirm the planned maintenance structure, service route, reporting needs and any call-out or parts considerations.',
                 'image'    => '/images/healthcare/Service Agreements.png',
-                'alt'      => 'Tailored service agreement proposal',
-                'meta'     => 'Step 2 · Proposal',
+                'alt'      => 'Tailored service contract proposal',
+                'meta'     => 'Step 3 · Proposal',
                 'position' => 'center 25%',
             ],
             [
-                'title'    => 'Contract Activates',
-                'desc'     => 'Once agreed, we schedule the first preventive visit, set up service reporting and put your operation under cover.',
+                'title'    => 'Contract activates',
+                'desc'     => 'Once agreed, planned visits are scheduled and the service route is connected to your installed equipment.',
                 'image'    => '/images/healthcare/customer-care-line6000.jpg',
                 'alt'      => 'ILS engineer providing customer care on Electrolux Line 6000 equipment',
-                'meta'     => 'Step 3 · Activation',
+                'meta'     => 'Step 4 · Activation',
                 'position' => 'center',
             ],
         ];
@@ -591,7 +634,7 @@
 
                         {{-- Text side --}}
                         <div class="mt-6 md:mt-0 {{ $isEven ? 'md:order-1 md:pr-12 md:text-right' : 'md:order-2 md:pl-12' }} reveal {{ $isEven ? 'reveal-left' : 'reveal-right' }}">
-                            <p class="text-orange font-body font-semibold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
+                            <p class="text-orange font-body font-bold text-xs uppercase tracking-widest mb-3">{{ $step['meta'] }}</p>
                             <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4">{{ $step['title'] }}</h3>
                             <p class="font-body text-blue-200 text-base leading-relaxed">{{ $step['desc'] }}</p>
                         </div>
@@ -610,67 +653,49 @@
         {{-- Heading --}}
         <div class="max-w-2xl mb-12 reveal">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                What a service contract <span class="text-orange">changes</span> day-to-day.
+                What a <span class="text-orange">service contract</span> changes <span class="text-orange">day-to-day</span>.
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed">
-                How ILS customers describe the operational shift after putting a contract in place.
+                A planned contract gives your team a clearer route for maintenance, reporting and follow-up support around the installed base.
             </p>
         </div>
 
-        {{-- 3-card grid (compact) --}}
+        {{-- 3-card outcome grid --}}
         @php
-        $contractTestimonials = [
+        $outcomeCards = [
             [
-                'highlight' => 'Predictable maintenance instead of constant breakdowns.',
-                'body'      => 'Before the contract we were calling for urgent repairs every couple of weeks. Now we plan around scheduled visits — the equipment just runs.',
-                'name'      => 'Operations Manager',
-                'role'      => 'Healthcare Group, Republic of Ireland',
-                'img'       => '/images/about/testimonial-1.jpg',
+                'highlight' => 'More planned maintenance, fewer reactive surprises.',
+                'body'      => 'Regular visits help teams move from purely reactive support to a clearer maintenance rhythm.',
             ],
             [
-                'highlight' => 'Service history that made compliance audits straightforward.',
-                'body'      => 'The documented service reports gave us everything we needed for audit. No scrambling for paperwork — it was already there.',
-                'name'      => 'Facilities Manager',
-                'role'      => 'Nursing Home Group, Munster',
-                'img'       => '/images/about/testimonial-2.jpg',
+                'highlight' => 'Service history that makes decisions easier.',
+                'body'      => 'Visit records and service notes help the site understand equipment condition, repeat issues and recommended next steps.',
             ],
             [
-                'highlight' => 'We stopped fearing peak season.',
-                'body'      => 'Priority response under the Assured tier means a breakdown during full occupancy is no longer a crisis. The team gets there fast.',
-                'name'      => 'General Manager',
-                'role'      => '4-Star Hotel, Leinster',
-                'img'       => '/images/about/testimonial-3.jpg',
+                'highlight' => 'Better connection between servicing, parts and aftercare.',
+                'body'      => 'The contract helps keep maintenance, parts access and practical follow-up in the same support route.',
             ],
         ];
         @endphp
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-            @foreach ($contractTestimonials as $i => $t)
+            @foreach ($outcomeCards as $i => $card)
             <article class="bg-bg border border-border rounded-2xl p-6 lg:p-7 flex flex-col reveal" style="transition-delay:{{ $i * 80 }}ms;">
-                {{-- Quote mark --}}
-                <svg class="w-7 h-7 text-orange mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                    <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
-                </svg>
+                {{-- Outcome marker --}}
+                <div class="w-10 h-10 rounded-xl bg-orange/10 border border-orange/30 flex items-center justify-center mb-5 flex-shrink-0">
+                    <svg class="w-5 h-5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
 
                 {{-- Headline highlight --}}
                 <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-3">
-                    {{ $t['highlight'] }}
+                    {{ $card['highlight'] }}
                 </p>
 
                 {{-- Body --}}
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 flex-1">
-                    {{ $t['body'] }}
+                <p class="font-body text-gray-600 text-sm leading-relaxed">
+                    {{ $card['body'] }}
                 </p>
-
-                {{-- Attribution --}}
-                <div class="flex items-center gap-3 pt-5 border-t border-border">
-                    <img src="{{ $t['img'] }}" alt="{{ $t['name'] }}"
-                         class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
-                         loading="lazy" decoding="async">
-                    <div class="min-w-0">
-                        <cite class="block font-body font-semibold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
-                        <span class="font-body text-gray-500 text-xs leading-tight">{{ $t['role'] }}</span>
-                    </div>
-                </div>
             </article>
             @endforeach
         </div>
@@ -683,19 +708,23 @@
 $faqs = [
     [
         'question' => 'Can I get a contract for multiple sites?',
-        'answer' => 'Yes. ILS supports multi-site operations under group service contracts. If you manage a group of healthcare facilities, nursing homes or hotel properties, we can structure a single contract arrangement covering all sites. Contact us to discuss your requirements.',
+        'answer' => 'Yes. A contract review can cover one site or multiple locations. The scope should be reviewed around the equipment base, site count and service requirements.',
     ],
     [
         'question' => 'What equipment is covered under a service contract?',
-        'answer' => 'Contracts cover the specific equipment agreed at the time of signing — typically washers, dryers, barrier washers, ironers and drying cabinets. Equipment must be assessed before being added to a contract. We\'ll advise during the assessment process.',
+        'answer' => 'Coverage depends on the equipment installed, its condition, age, service history and the agreed contract scope. The review confirms what can be included.',
     ],
     [
-        'question' => 'Can I upgrade my contract tier if my needs change?',
-        'answer' => 'Yes. You can review and upgrade your contract tier at any time. If your operation grows or your risk profile changes, we\'ll work with you to adjust the arrangement accordingly.',
+        'question' => 'Are parts included in the contract?',
+        'answer' => 'Parts are not automatically included unless stated in the agreed contract. Genuine parts access and aftercare can be connected to the contract, with quoted parts handled separately where required.',
     ],
     [
-        'question' => 'What\'s the difference between Priority and Assured?',
-        'answer' => 'Priority tier adds priority scheduling, genuine parts strategy and compliance documentation support over Core. Assured tier adds out-of-hours escalation, tighter escalation paths and dedicated service reporting — designed for high-dependency operations where laundry continuity is critical.',
+        'question' => 'What happens if a machine breaks down between planned visits?',
+        'answer' => 'The issue can be triaged and directed to the appropriate call-out route. Contract customers may receive preferential labour rates where this applies.',
+    ],
+    [
+        'question' => 'Can the contract be reviewed if our needs change?',
+        'answer' => 'Yes. If equipment changes, site demand increases or maintenance needs shift, the contract scope can be reviewed.',
     ],
 ];
 @endphp
@@ -716,17 +745,19 @@ $faqs = [
                             Request a <span class="text-orange">contract review</span>.
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7">
-                            Tell us about your equipment, site count and operational profile. We'll review and come back with a tailored proposal — no obligation.
+                            Tell us about your site, equipment and service needs. Irish Laundry Systems will review the information and recommend the right contract scope.
                         </p>
                         <div class="flex flex-col gap-3">
                             @foreach ([
-                                ['Engineering-led', 'Specialist commercial laundry engineers, not generalist field service.'],
-                                ['Authorised Electrolux Professional Partner', 'Genuine parts and manufacturer-trained engineers.'],
-                                ['Republic of Ireland coverage', 'Local engineering support across the Republic.'],
-                            ] as [$bullet, $sub])
-                            <div class="bg-white/10 rounded-xl px-5 py-3">
-                                <div class="font-body text-white text-sm font-semibold">{{ $bullet }}</div>
-                                <div class="font-body text-blue-200 text-xs mt-0.5">{{ $sub }}</div>
+                                'No obligation',
+                                'Expert advice',
+                                'Focused on your operation',
+                            ] as $point)
+                            <div class="flex items-center gap-3 bg-white/10 rounded-xl px-5 py-3">
+                                <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                </svg>
+                                <div class="font-body text-white text-sm font-bold">{{ $point }}</div>
                             </div>
                             @endforeach
                         </div>
@@ -788,13 +819,13 @@ $faqs = [
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="cr_name" class="block text-xs font-body font-semibold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
+                                <label for="cr_name" class="block text-xs font-body font-bold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
                                 <input type="text" id="cr_name" name="name" required value="{{ old('name') }}"
                                        placeholder="Your full name"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
-                                <label for="cr_company" class="block text-xs font-body font-semibold text-navy mb-1.5">Company / Organisation <span class="text-red-500">*</span></label>
+                                <label for="cr_company" class="block text-xs font-body font-bold text-navy mb-1.5">Company / Organisation <span class="text-red-500">*</span></label>
                                 <input type="text" id="cr_company" name="company" required value="{{ old('company') }}"
                                        placeholder="Company or facility"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
@@ -803,13 +834,13 @@ $faqs = [
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="cr_email" class="block text-xs font-body font-semibold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
+                                <label for="cr_email" class="block text-xs font-body font-bold text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
                                 <input type="email" id="cr_email" name="email" required value="{{ old('email') }}"
                                        placeholder="you@company.ie"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
-                                <label for="cr_phone" class="block text-xs font-body font-semibold text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
+                                <label for="cr_phone" class="block text-xs font-body font-bold text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
                                 <input type="tel" id="cr_phone" name="phone" required value="{{ old('phone') }}"
                                        placeholder="+353 (0)..."
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
@@ -818,13 +849,13 @@ $faqs = [
 
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div>
-                                <label for="cr_location" class="block text-xs font-body font-semibold text-navy mb-1.5">Site Location(s) <span class="text-red-500">*</span></label>
+                                <label for="cr_location" class="block text-xs font-body font-bold text-navy mb-1.5">Site Location(s) <span class="text-red-500">*</span></label>
                                 <input type="text" id="cr_location" name="location" required value="{{ old('location') }}"
                                        placeholder="e.g. Dublin, Cork"
                                        class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
                             </div>
                             <div>
-                                <label for="cr_sector" class="block text-xs font-body font-semibold text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
+                                <label for="cr_sector" class="block text-xs font-body font-bold text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
                                 <select id="cr_sector" name="sector" required
                                         class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
                                     <option value="">Select sector</option>
@@ -836,25 +867,32 @@ $faqs = [
                             </div>
                         </div>
 
-                        <div>
-                            <label for="cr_equipment" class="block text-xs font-body font-semibold text-navy mb-1.5">Equipment Type(s) &amp; Brand</label>
-                            <input type="text" id="cr_equipment" name="equipment" value="{{ old('equipment') }}"
-                                   placeholder="e.g. Electrolux WH6-18, washers and dryers x4..."
-                                   class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="cr_equipment" class="block text-xs font-body font-bold text-navy mb-1.5">Equipment Type &amp; Brand</label>
+                                <input type="text" id="cr_equipment" name="equipment" value="{{ old('equipment') }}"
+                                       placeholder="e.g. Electrolux WH6-18 washer"
+                                       class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
+                            </div>
+                            <div>
+                                <label for="cr_machines" class="block text-xs font-body font-bold text-navy mb-1.5">Number of Machines</label>
+                                <input type="text" id="cr_machines" name="machines_count" value="{{ old('machines_count') }}"
+                                       placeholder="e.g. 4 washers + 2 dryers"
+                                       class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
+                            </div>
                         </div>
 
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1.5">Timeline <span class="text-red-500">*</span></label>
-                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            <label class="block text-xs font-body font-bold text-navy mb-1.5">Timeline</label>
+                            <div class="grid grid-cols-3 gap-2">
                                 @foreach ([
                                     ['today', 'Urgent'],
-                                    ['24_48h', '24–48 hrs'],
                                     ['this_week', 'This week'],
                                     ['planning', 'Planning'],
                                 ] as [$val, $label])
                                 <label class="cursor-pointer">
                                     <input type="radio" name="urgency" value="{{ $val }}" class="sr-only peer" {{ old('urgency', 'planning') === $val ? 'checked' : '' }}>
-                                    <div class="border-2 border-border rounded-lg px-3 py-2 text-center text-xs font-body font-semibold text-gray-600 peer-checked:border-steel peer-checked:bg-steel peer-checked:text-white hover:border-steel transition-all">
+                                    <div class="border-2 border-border rounded-lg px-3 py-2 text-center text-xs font-body font-bold text-gray-600 peer-checked:border-steel peer-checked:bg-steel peer-checked:text-white hover:border-steel transition-all">
                                         {{ $label }}
                                     </div>
                                 </label>
@@ -863,9 +901,16 @@ $faqs = [
                         </div>
 
                         <div>
-                            <label for="cr_message" class="block text-xs font-body font-semibold text-navy mb-1.5">Message</label>
+                            <label for="cr_issue" class="block text-xs font-body font-bold text-navy mb-1.5">Current Issue / Requirement</label>
+                            <input type="text" id="cr_issue" name="issue" value="{{ old('issue') }}"
+                                   placeholder="What prompted this enquiry?"
+                                   class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400">
+                        </div>
+
+                        <div>
+                            <label for="cr_message" class="block text-xs font-body font-bold text-navy mb-1.5">Message / Additional Details</label>
                             <textarea id="cr_message" name="message" rows="3"
-                                      placeholder="Tell us about your operation — site count, current arrangement, anything we should know."
+                                      placeholder="Anything else we should know about your site or equipment."
                                       class="w-full border border-border rounded-lg px-4 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent placeholder-gray-400 resize-none leading-relaxed">{{ old('message') }}</textarea>
                         </div>
 
@@ -893,11 +938,64 @@ $faqs = [
     </div>
 </section>
 
-<div class="reveal">
-    @include('components.service-contracts-strip')
+<!-- CLOSING STRIP — PARTS & AFTERCARE -->
+<section class="relative overflow-hidden reveal" style="background-color:#011E41; min-height:320px;">
 
-@include('components.cta-combined-banner')
-</div>
+    {{-- RIGHT: image pinned to 40% --}}
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/healthcare/repairs-callouts.jpg" alt="ILS engineer working near commercial laundry equipment with parts and service tools"
+             class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.5) 35%, transparent 100%);"></div>
+    </div>
+
+    {{-- LEFT: content — 60% width --}}
+    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="max-width:60%;">
+
+        <p class="text-orange font-body font-bold text-xs uppercase tracking-widest mb-4">Support Route</p>
+
+        <h2 class="font-heading font-bold leading-tight mb-4">
+            <span class="text-white text-3xl lg:text-5xl block">Parts &amp;</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#22d3ee;">Aftercare</span>
+        </h2>
+
+        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+            Genuine parts access, service history context and practical aftercare help keep maintenance decisions connected to the installed base.
+        </p>
+
+        <div class="flex items-center flex-nowrap gap-0 mb-7">
+            @foreach([
+                ['icon' => 'ativo-8', 'label' => 'Genuine parts access'],
+                ['icon' => 'ativo-7', 'label' => 'Installed-base support'],
+                ['icon' => 'ativo-4', 'label' => 'Practical aftercare'],
+            ] as $i => $feat)
+            @if($i > 0)
+                <div class="w-px h-7 bg-white/20 mx-4 flex-shrink-0"></div>
+            @endif
+            <div class="flex items-center gap-2">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                     class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
+                <span class="font-body text-white text-xs font-bold whitespace-nowrap">{{ $feat['label'] }}</span>
+            </div>
+            @endforeach
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+            <a href="{{ route('repairs') }}"
+               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                Explore Parts &amp; Aftercare
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 border border-white/40 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
+                Talk to an Engineer
+            </a>
+        </div>
+
+    </div>
+
+</section>
 
 <script>
     (function () {

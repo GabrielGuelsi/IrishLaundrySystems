@@ -67,7 +67,7 @@
                         Request a Quote
                     </a>
                     <a href="{{ route('service-contracts') }}"
-                       class="inline-flex items-center justify-center border-2 border-white/50 hover:border-white text-white font-body font-semibold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 hover:bg-white/10 rounded-md">
+                       class="inline-flex items-center justify-center border-2 border-white/50 hover:border-white text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 hover:bg-white/10 rounded-md">
                         View Service Contracts
                     </a>
                 </div>
@@ -126,12 +126,12 @@
                          class="h-12 w-auto">
                 </div>
                 <div class="hidden sm:block border-l border-gray-300 pl-5">
-                    <p class="text-[11px] font-body font-semibold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
+                    <p class="text-[11px] font-body font-bold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
                     <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
                 </div>
             </div>
             <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-semibold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+               class="flex-shrink-0 text-xs font-body font-bold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
                 Learn more
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
@@ -160,40 +160,40 @@
                         <table class="w-full text-sm font-body">
                             <tbody class="divide-y divide-border">
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Category</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Category</td>
                                     <td class="py-3 text-gray-600">{{ $category }}</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Model</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Model</td>
                                     <td class="py-3 text-gray-600">{{ $product }}</td>
                                 </tr>
                                 @if (!empty($specs))
                                     @foreach ($specs as $key => $val)
                                     <tr>
-                                        <td class="py-3 pr-4 font-semibold text-navy w-1/3">{{ $key }}</td>
+                                        <td class="py-3 pr-4 font-bold text-navy w-1/3">{{ $key }}</td>
                                         <td class="py-3 text-gray-600">{{ $val }}</td>
                                     </tr>
                                     @endforeach
                                 @else
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Specifications</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Specifications</td>
                                     <td class="py-3 text-gray-600">Contact ILS for full specification details</td>
                                 </tr>
                                 @endif
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Supply</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Supply</td>
                                     <td class="py-3 text-gray-600">Available for outright purchase or rental/lease</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Installation</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Installation</td>
                                     <td class="py-3 text-gray-600">By ILS engineers — included in supply price</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Service contract</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Service contract</td>
                                     <td class="py-3 text-gray-600">Available — Core, Priority or Assured tier</td>
                                 </tr>
                                 <tr>
-                                    <td class="py-3 pr-4 font-semibold text-navy w-1/3">Parts</td>
+                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Parts</td>
                                     <td class="py-3 text-gray-600">Genuine Electrolux Professional parts</td>
                                 </tr>
                             </tbody>
@@ -226,7 +226,7 @@
                 <div class="bg-white border border-border rounded-2xl p-6 lg:p-8">
                     <h2 class="font-heading font-bold text-navy text-xl mb-4">Documentation</h2>
                     <p class="font-body text-gray-600 text-sm leading-relaxed mb-4">Product datasheets and technical documentation are available on request. Contact ILS with your specific model requirements.</p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-steel font-body font-semibold text-sm hover:text-navy transition-colors">
+                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-steel font-body font-bold text-sm hover:text-navy transition-colors">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
                         </svg>
@@ -252,32 +252,32 @@
                         <input type="hidden" name="utm_term">
                         <input type="hidden" name="page_source">
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Name <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Name <span class="text-red-500">*</span></label>
                             <input type="text" name="name" required placeholder="Your name"
                                    class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Company <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Company <span class="text-red-500">*</span></label>
                             <input type="text" name="company" required placeholder="Company name"
                                    class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Email <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Email <span class="text-red-500">*</span></label>
                             <input type="email" name="email" required placeholder="you@company.ie"
                                    class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Phone <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Phone <span class="text-red-500">*</span></label>
                             <input type="tel" name="phone" required placeholder="+353..."
                                    class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Location / County <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Location / County <span class="text-red-500">*</span></label>
                             <input type="text" name="location" required placeholder="County / site location"
                                    class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Sector <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Sector <span class="text-red-500">*</span></label>
                             <select name="sector" required class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
                                 <option value="">Select sector</option>
                                 <option value="healthcare">Healthcare</option>
@@ -287,7 +287,7 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Urgency <span class="text-red-500">*</span></label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Urgency <span class="text-red-500">*</span></label>
                             <select name="urgency" required class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
                                 <option value="">Select urgency</option>
                                 <option value="today">Today</option>
@@ -297,7 +297,7 @@
                             </select>
                         </div>
                         <div>
-                            <label class="block text-xs font-body font-semibold text-navy mb-1">Message</label>
+                            <label class="block text-xs font-body font-bold text-navy mb-1">Message</label>
                             <textarea name="message" rows="3" placeholder="Additional requirements or questions..."
                                       class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent resize-none"></textarea>
                         </div>
@@ -332,7 +332,7 @@
                     <div>
                         <h3 class="font-heading font-bold text-navy text-base mb-2">Authorised Electrolux Professional Partner</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">ILS is an Authorised Electrolux Professional Partner — meaning genuine OEM parts, manufacturer-trained engineers and access to the full range of equipment and aftercare support.</p>
-                        <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-1 text-steel font-body font-semibold text-xs mt-3 hover:text-navy transition-colors">
+                        <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-1 text-steel font-body font-bold text-xs mt-3 hover:text-navy transition-colors">
                             About our partnership <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
