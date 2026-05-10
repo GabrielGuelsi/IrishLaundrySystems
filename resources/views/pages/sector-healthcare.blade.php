@@ -200,7 +200,9 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
                 <div class="flex items-center justify-center h-10">
-                    <img src="/images/healthcare/hygiene-icon.png" alt="Hygiene" class="h-10 w-auto object-contain">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+                    </svg>
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Hygiene-focused design</h3>
@@ -211,7 +213,7 @@
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
                 <div class="flex items-center justify-center h-10">
-                    <img src="/images/healthcare/operator-icon.png" alt="Operator support" class="h-10 w-auto object-contain">
+                    <img src="/images/icons/brand/Ativo%201.svg" alt="" style="width:2.5rem;height:2.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Operator support</h3>
@@ -222,7 +224,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
                 <div class="flex items-center justify-center h-10">
-                    <img src="/images/healthcare/control-icon.png" alt="Intelligent control" class="h-10 w-auto object-contain">
+                    <img src="/images/icons/brand/Ativo%2019.svg" alt="" style="width:2.5rem;height:2.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Intelligent control</h3>
@@ -246,7 +248,9 @@
             {{-- Card 5: AIDO --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-10">
-                    <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO" class="h-10 w-auto object-contain">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/>
+                    </svg>
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">AIDO secure door handling</h3>
@@ -378,12 +382,12 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers sit at the centre of healthcare rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
                     </p>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             View Equipment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit pl-7">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -392,9 +396,9 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain object-top">
-                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -482,9 +486,9 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
-                         class="w-full h-96 object-contain object-top">
-                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[89px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, Wash Programmes &amp; Dosing Control</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -492,17 +496,17 @@
                         </button>
                     </div>
                 </div>
-                <div>
+                <div class="lg:-ml-8 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support broader healthcare wash needs where barrier separation is not required for every load, but <span style="color:#148af4;">capacity</span>, consistency and daily handling still matter.
                     </p>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit pl-7">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -524,12 +528,12 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time</span>, residual moisture, operator handling and room throughput can affect clean-side flow through the day.
                     </p>
-                    <div class="flex flex-col gap-3 mb-6">
+                    <div class="flex flex-row flex-wrap items-center gap-4 mb-6">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit pl-7">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -538,10 +542,10 @@
                 <div class="flex flex-col order-1 lg:order-2">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
-                         class="w-full h-96 object-contain object-top">
-                    <div class="mt-1 pt-3 border-t border-gray-100">
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3">
                         <button @click="open = !open"
-                                class="w-full flex items-center justify-start gap-3 text-left group">
+                                class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Balance</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -583,9 +587,9 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain object-top">
-                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
+                         class="w-full h-80 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -598,12 +602,12 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Ironers and finishing equipment support <span style="color:#148af4;">flatwork flow</span>, linen presentation, drying consistency and storage readiness for healthcare and care environments.
                     </p>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit pl-7">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -686,6 +690,8 @@
         </div>
     </div>
 </section>
+
+@include('components.why-choose-strip')
 
 @include('components.equipment-categories')
 

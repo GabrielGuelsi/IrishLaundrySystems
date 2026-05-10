@@ -27,12 +27,15 @@
                 ['icon' => 'ativo-4', 'label' => 'Practical aftercare'],
             ] as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-7 bg-white/20 mx-4 flex-shrink-0"></div>
+                <div class="w-px h-10 bg-white/20 mx-5 flex-shrink-0"></div>
             @endif
-            <div class="flex items-center gap-2">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
-                <span class="font-body text-white text-xs font-bold whitespace-nowrap">{{ $feat['label'] }}</span>
+            <div class="flex items-center gap-3">
+                <div class="flex-shrink-0 flex items-center justify-center rounded-full"
+                     style="width:52px;height:52px;border:2px dashed rgba(255,255,255,0.5);">
+                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                         style="width:1.6rem;height:1.6rem;" alt="">
+                </div>
+                <span class="font-body text-white text-xs font-semibold whitespace-nowrap">{{ $feat['label'] }}</span>
             </div>
             @endforeach
         </div>

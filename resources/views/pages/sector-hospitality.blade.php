@@ -72,234 +72,34 @@
     </div>
 </section>
 
-<!-- HOSPITALITY ROUTE — Gallery style -->
-<style>
-.ils-gallery-card {
-    position: relative;
-    overflow: hidden;
-    min-height: 520px;
-    flex: 1 1 25%;
-}
-.ils-gallery-card img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.6s ease;
-}
-.ils-gallery-card:hover img {
-    transform: scale(1.06);
-}
-.ils-gallery-card::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.35) 55%, rgba(1,30,65,0.10) 100%);
-    z-index: 1;
-    transition: opacity 0.4s;
-}
-.ils-gallery-card::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(1,30,65,0.90);
-    z-index: 2;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s, visibility 0.4s;
-}
-.ils-gallery-card:hover::before { opacity: 0; }
-.ils-gallery-card:hover::after  { opacity: 1; visibility: visible; }
-
-/* Default caption — bottom-left */
-.ils-gcap1 {
-    position: absolute;
-    bottom: 28px;
-    left: 32px;
-    z-index: 3;
-    transition: opacity 0.35s ease, transform 0.35s ease;
-}
-.ils-gcap1 .ils-num {
-    color: #148af4;
-    font-size: 2.6rem;
-    font-weight: 700;
-    line-height: 1;
-    display: block;
-    margin-bottom: 6px;
-    font-family: 'Inter', system-ui, sans-serif;
-}
-.ils-gcap1 h4 {
-    color: #fff;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin: 0;
-    font-family: 'Inter', system-ui, sans-serif;
-}
-.ils-gallery-card:hover .ils-gcap1 {
-    opacity: 0;
-    transform: translateY(16px);
-}
-
-/* Hover caption — vertically centered */
-.ils-gcap2 {
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    right: 32px;
-    transform: translateY(-40%);
-    z-index: 5;
-    opacity: 0;
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
-.ils-gallery-card:hover .ils-gcap2 {
-    opacity: 1;
-    transform: translateY(-50%);
-}
-.ils-gcap2 .ils-num {
-    color: #148af4;
-    font-size: 2.6rem;
-    font-weight: 700;
-    line-height: 1;
-    display: block;
-    margin-bottom: 12px;
-    font-family: 'Inter', system-ui, sans-serif;
-}
-.ils-gcap2 h4 {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    font-family: 'Inter', system-ui, sans-serif;
-}
-.ils-gcap2 p {
-    color: rgba(255,255,255,0.72);
-    font-size: 0.85rem;
-    line-height: 1.65;
-    font-family: 'Inter', system-ui, sans-serif;
-}
-
-@media (max-width: 767px) {
-    .ils-gallery-card { min-height: 300px; flex: 1 1 50%; }
-}
-@media (max-width: 479px) {
-    .ils-gallery-card { min-height: 260px; flex: 1 1 100%; }
-}
-</style>
-
-<section class="w-full overflow-hidden">
-    <div style="display:flex; flex-wrap:wrap;">
-        @foreach([
-            [
-                'num'   => '01.',
-                'title' => 'Assess the room',
-                'body'  => 'Review flow, hygiene handling, throughput pressure, and the practical layout of the room.',
-                'img'   => '/images/Hospitallity/HeroHospitallity.png',
-            ],
-            [
-                'num'   => '02.',
-                'title' => 'Match the equipment',
-                'body'  => 'Match the room logic to the right barrier, washing, drying, and finishing route.',
-                'img'   => '/images/healthcare/Line 6000 laundry photoshooting - february 2022_014.jpg',
-            ],
-            [
-                'num'   => '03.',
-                'title' => 'Keep support close',
-                'body'  => 'Keep the installed base connected to service contracts, repairs, and aftercare.',
-                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
-                'pos'   => '20% center',
-            ],
-            [
-                'num'   => '04.',
-                'title' => 'Move to assessment',
-                'body'  => 'Turn the room, the equipment path, and the support model into one practical next step.',
-                'img'   => '/images/healthcare/repairs-callouts.jpg',
-            ],
-        ] as $card)
-        <div class="ils-gallery-card">
-            <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
-                 @if(!empty($card['pos'])) style="object-position: {{ $card['pos'] }};" @endif>
-            <!-- Default caption -->
-            <div class="ils-gcap1">
-                <span class="ils-num">{{ $card['num'] }}</span>
-                <h4>{{ $card['title'] }}</h4>
-            </div>
-            <!-- Hover caption -->
-            <div class="ils-gcap2">
-                <span class="ils-num">{{ $card['num'] }}</span>
-                <h4>{{ $card['title'] }}</h4>
-                <p>{{ $card['body'] }}</p>
-            </div>
-        </div>
-        @endforeach
-    </div>
-</section>
-
-<!-- KEEP THE SUPPORT MATCHED -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-
-            {{-- Left: heading + description --}}
-            <div class="lg:col-span-1 reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
-                    Keep the support matched to the equipment
-                </h2>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">
-                    The right support answer has to account for installed-base reality, operational continuity, and the next commercial step.
-                </p>
-            </div>
-
-            {{-- Right: 4 service cards --}}
-            <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
-                @foreach([
-                    [
-                        'img'   => '/images/healthcare/Service%20Network.png',
-                        'title' => 'Service Network',
-                        'bold'  => 'You can count on',
-                        'body'  => 'more than 2,200 authorised service partners, always available, always on duty — committed to support you with a service network that makes your operations easier.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Service%20Agreements.png',
-                        'title' => 'Service Agreements',
-                        'bold'  => 'You can choose from',
-                        'body'  => 'flexible tailored packages, according to your business needs, offering a variety of products maintenance and support services.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Accessories%20%26%20Consumables.png',
-                        'title' => 'Accessories & Consumables',
-                        'bold'  => 'You can rely on',
-                        'body'  => 'original Accessories & Consumables, rigorously tested by Electrolux Professional experts to ensure efficiency, durability, and the safety of your users.',
-                    ],
-                    [
-                        'img'   => '/images/healthcare/Lifecycle%20Support.png',
-                        'title' => 'Lifecycle Support',
-                        'bold'  => 'You can plan ahead',
-                        'body'  => 'with structured lifecycle continuity — keeping your installed base connected to repairs, call-outs, parts, and aftercare across Ireland.',
-                    ],
-                ] as $card)
-                <div class="flex flex-col">
-                    <div class="flex justify-center mb-[-60px] relative z-10">
-                        <div class="w-48 h-48 rounded-full overflow-hidden border-4 border-white shadow-md relative">
-                            <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 flex items-center justify-center">
-                                <div class="w-24 h-24 rounded-full flex items-center justify-center text-center" style="background-color: rgba(100,160,210,0.65);">
-                                    <h4 class="font-heading font-bold text-white text-xs leading-snug px-2">{{ $card['title'] }}</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-[#deeaf6] rounded-2xl pt-20 pb-6 px-5 flex-1">
-                        <p class="font-body text-navy/80 text-sm leading-relaxed">
-                            <strong class="font-bold text-navy">{{ $card['bold'] }}</strong> {{ $card['body'] }}
-                        </p>
-                    </div>
+<!-- PROCESS BLOCK -->
+<section class="py-14 lg:py-20 bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
+            Our process keeps the <span style="color:#148af4;">next step</span> clear.
+        </h2>
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
+            A clear four-step path from room review to the next practical recommendation.
+        </p>
+        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
+            @foreach([
+                ['title' => 'Assess the room',     'text' => 'Review linen flow, peak demand, housekeeping pressure and available space.',       'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>'],
+                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or guest-laundry setup.',          'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>'],
+                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',   'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>'],
+                ['title' => 'Move to assessment',  'text' => 'Turn the property, equipment setup and support needs into a practical next step.',  'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>'],
+            ] as $step)
+            <div class="flex flex-col items-center relative z-10">
+                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
+                        {!! $step['icon'] !!}
+                    </svg>
                 </div>
-                @endforeach
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
             </div>
-
+            @endforeach
         </div>
     </div>
 </section>
@@ -334,207 +134,98 @@
 <section class="py-14 lg:py-20" style="background:#f5f5f7;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="flex items-end justify-between mb-8 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">
-                Your Guests Are<br>Our Priority
+        <div class="mb-8 reveal">
+            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Priorities</p>
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
+                Hospitality laundry should protect <span style="color:#148af4;">guest experience</span>, not create pressure behind the scenes.
             </h2>
+            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+                The right laundry setup helps hotels manage linen availability, housekeeping pressure, peak periods, finishing standards and support around the installed base.
+            </p>
         </div>
 
-        <div class="ils-apple-wrap" id="ils-apple-wrap-hospitality">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
-            {{-- Card 1: Prevent Peak-Load Failures --}}
-            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;">
-                    <img src="/images/Hospitallity/HeroHospitallity.png" alt="Prevent Peak-Load Failures" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
+            {{-- Linen turnaround: clock --}}
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="flex items-center justify-center h-10">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
                 </div>
-                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
-                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Reliability</p>
-                    <h3 class="ils-apple-title" style="color:#fff;">Prevent Peak-Load Failures</h3>
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <h4>Prevent Peak-Load Failures</h4>
-                    <ul>
-                        <li>Heavy-duty equipment matched to peak occupancy throughput</li>
-                        <li>Service contracts that keep machines operational through busy seasons</li>
-                        <li>Priority response routes for breakdowns during high-demand periods</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Linen turnaround</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Bedding, towels, robes and flatwork need to move back into use quickly during busy periods.</p>
                 </div>
             </div>
 
-            {{-- Card 2: Avoid Guest Impact --}}
-            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;">
-                    <img src="/images/sectors/hospitality-hero.jpg" alt="Avoid Guest Impact" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
+            {{-- Housekeeping pressure: fire --}}
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="flex items-center justify-center h-10">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z"/>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z"/>
+                    </svg>
                 </div>
-                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
-                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Guest Experience</p>
-                    <h3 class="ils-apple-title" style="color:#fff;">Avoid Guest Impact</h3>
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <h4>Avoid Guest Impact</h4>
-                    <ul>
-                        <li>Fast breakdown response before linen shortages affect guest rooms</li>
-                        <li>Spare parts availability to resolve issues the same day</li>
-                        <li>Service routes designed around hospitality operational continuity</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Housekeeping pressure</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Laundry flow affects room readiness, team workload and the rhythm of daily hotel service.</p>
                 </div>
             </div>
 
-            {{-- Card 3: Maintain Cleanliness --}}
-            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;">
-                    <img src="/images/healthcare/contamination.jpg" alt="Maintain Cleanliness" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
+            {{-- Finishing and presentation: star --}}
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="flex items-center justify-center h-10">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z"/>
+                    </svg>
                 </div>
-                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
-                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Cleanliness</p>
-                    <h3 class="ils-apple-title" style="color:#fff;">Maintain Cleanliness</h3>
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <h4>Maintain Cleanliness</h4>
-                    <ul>
-                        <li>Full wash cycle completion — no partial cycles passing through</li>
-                        <li>Moisture Balance ensures perfectly dry, guest-ready linen every time</li>
-                        <li>Hygiene Watchdog monitors and logs every cycle for compliance</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Finishing and presentation</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Ironing and flatwork quality support the visual standard guests notice in rooms and service areas.</p>
                 </div>
             </div>
 
-            {{-- Card 4: Peak-Load Resilience --}}
-            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;">
-                    <img src="/images/healthcare/commercial-industrial.jpg" alt="Peak-Load Resilience" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
+            {{-- Peak occupancy planning: signal/wifi bars --}}
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="flex items-center justify-center h-10">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.348 14.652a3.75 3.75 0 0 1 0-5.304m5.304 0a3.75 3.75 0 0 1 0 5.304m-7.425 2.122a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.807-3.808-9.98 0-13.788m13.788 0c3.808 3.807 3.808 9.98 0 13.788M12 12h.008v.008H12V12Z"/>
+                    </svg>
                 </div>
-                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
-                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Resilience</p>
-                    <h3 class="ils-apple-title" style="color:#fff;">Peak-Load Resilience</h3>
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <h4>Peak-Load Resilience</h4>
-                    <ul>
-                        <li>Equipment capacity matched to your highest-demand periods</li>
-                        <li>Preventive maintenance timed around low-occupancy windows</li>
-                        <li>Backup support routes activated before failures escalate</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Peak occupancy planning</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">The laundry room should be planned around high-demand periods, not only average daily use.</p>
                 </div>
             </div>
 
-            {{-- Card 5: Faster Recovery From Breakdowns --}}
-            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;">
-                    <img src="/images/hero/hero-technician-inspection.png" alt="Faster Recovery" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
+            {{-- Service and parts support: lifebuoy --}}
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-10">
+                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+                    </svg>
                 </div>
-                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
-                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Recovery</p>
-                    <h3 class="ils-apple-title" style="color:#fff;">Faster Recovery From Breakdowns</h3>
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <h4>Faster Recovery From Breakdowns</h4>
-                    <ul>
-                        <li>Same-day engineer response for urgent hospitality call-outs</li>
-                        <li>Data-driven spare parts supply for fast on-site resolution</li>
-                        <li>Triage-first approach to get machines running before rooms are affected</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Service and parts support</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Maintenance, parts access and aftercare help keep equipment decisions connected after installation.</p>
                 </div>
             </div>
 
-            {{-- Card 6: Predictable Maintenance --}}
-            <div class="ils-apple-card" style="background:none;padding:0;overflow:hidden;">
-                <div style="position:absolute;inset:0;">
-                    <img src="/images/about/about-engineers.jpg" alt="Predictable Maintenance" style="width:100%;height:100%;object-fit:cover;object-position:center;">
-                    <div style="position:absolute;inset:0;background:linear-gradient(to bottom, rgba(1,30,65,0.82) 0%, rgba(1,30,65,0.25) 50%, rgba(1,30,65,0.75) 100%);"></div>
-                </div>
-                <div style="position:relative;z-index:2;padding:26px 26px 70px 26px;display:flex;flex-direction:column;height:100%;">
-                    <p class="ils-apple-label" style="color:rgba(255,255,255,0.6);">Maintenance</p>
-                    <h3 class="ils-apple-title" style="color:#fff;">Predictable Maintenance</h3>
-                </div>
-                <button class="ils-apple-plus" onclick="ilsCardToggle(this)" aria-label="More info" style="position:absolute;bottom:22px;right:22px;z-index:3;background:rgba(255,255,255,0.2);">
-                    <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                </button>
-                <div class="ils-apple-overlay">
-                    <h4>Predictable Maintenance</h4>
-                    <ul>
-                        <li>Planned service visits scheduled around your hotel's low-demand periods</li>
-                        <li>Three-tier service contract options — Core, Priority and Assured</li>
-                        <li>Documented service records and full maintenance history on file</li>
-                    </ul>
-                    <button class="ils-apple-close" onclick="ilsCardToggle(this.closest('.ils-apple-card').querySelector('.ils-apple-plus'))" aria-label="Close">
-                        <svg fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4"/></svg>
-                    </button>
-                </div>
-            </div>
-
-        </div>{{-- end apple-wrap --}}
-
+        </div>
     </div>
 </section>
 
-<script>
-function ilsCardToggle(btn) {
-    var card = btn.closest('.ils-apple-card');
-    var overlay = card.querySelector('.ils-apple-overlay');
-    var isOpen = overlay.classList.contains('open');
-    document.querySelectorAll('.ils-apple-overlay.open').forEach(function(o) {
-        o.classList.remove('open');
-        o.closest('.ils-apple-card').querySelector('.ils-apple-plus').classList.remove('open');
-    });
-    if (!isOpen) { overlay.classList.add('open'); btn.classList.add('open'); }
-}
-(function() {
-    var wrap = document.getElementById('ils-apple-wrap-hospitality');
-    if (!wrap) return;
-    var isDown = false, startX, scrollLeft;
-    wrap.addEventListener('mousedown', function(e) { isDown = true; startX = e.pageX - wrap.offsetLeft; scrollLeft = wrap.scrollLeft; });
-    wrap.addEventListener('mouseleave', function() { isDown = false; });
-    wrap.addEventListener('mouseup', function() { isDown = false; });
-    wrap.addEventListener('mousemove', function(e) { if (!isDown) return; e.preventDefault(); wrap.scrollLeft = scrollLeft - (e.pageX - wrap.offsetLeft - startX); });
-})();
-</script>
-
-<!-- SUPPORT ROUTES -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-
-        <!-- Heading -->
-        <div class="mb-10">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                Three clear routes into<br>
-                <span class="text-orange">the main commercial pathways</span>.
+<!-- FOUR SERVICE CARDS -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="mb-8">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                Four ways we support <span style="color:#148af4;">hospitality laundry</span>.
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
+                Hotels and hospitality sites often need equipment, maintenance, response and parts support to work together around linen flow and peak demand.
+            </p>
         </div>
 
         <!-- 3-column card grid -->
@@ -583,28 +274,16 @@ function ilsCardToggle(btn) {
                 <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.4) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                     style="background: rgba(1,30,65,0.96);"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">
-                            Electrolux Professional equipment supplied, installed and supported. Structured rental with maintenance included — managed cost and operational continuity.
-                        </p>
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Equipment with service built in
-                            </li>
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Predictable monthly cost
-                            </li>
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Electrolux Professional standard
-                            </li>
-                        </ul>
+                     style="background: rgba(1,30,65,0.88);"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <div class="opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 mb-4">
+                        <p class="font-body text-white/80 text-sm leading-relaxed mb-4">{!! $card['text'] !!}</p>
+                        <span class="inline-flex items-center gap-2 bg-[#148af4] text-white font-heading font-bold text-xs px-4 py-2 rounded-lg">
+                            {!! $card['cta'] !!}
+                            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </span>
                     </div>
                     <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
                     <div class="flex justify-end">
@@ -652,8 +331,8 @@ function ilsCardToggle(btn) {
                         </a>
                     </div>
                 </div>
-            </div>
-
+            </a>
+            @endforeach
         </div>
     </div>
 </section>
@@ -693,12 +372,12 @@ function ilsCardToggle(btn) {
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
                     </p>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -716,12 +395,12 @@ function ilsCardToggle(btn) {
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
                     </p>
-                    <div class="flex flex-col gap-3 mb-6">
+                    <div class="flex flex-row flex-wrap items-center gap-4 mb-6">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -736,10 +415,10 @@ function ilsCardToggle(btn) {
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3 border-t border-gray-100">
+                    <div class="mt-1 pt-3">
                         <button @click="open = !open"
-                                class="w-full flex items-center justify-start gap-3 text-left group">
-                            <span class="font-heading font-bold text-navy text-lg">System Features — Moisture Balance</span>
+                                class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Balance</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -780,10 +459,10 @@ function ilsCardToggle(btn) {
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain object-top">
-                    <div class="mt-1 pt-3 border-t border-gray-100 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group">
-                            <span class="font-heading font-bold text-navy text-lg">System Features — DIAMMS &amp; Hygiene Guard</span>
+                         class="w-full h-80 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -795,12 +474,12 @@ function ilsCardToggle(btn) {
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Deliver perfectly ironed linen to the highest hygiene standards
                     </p>
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-[#148af4] hover:text-blue-600 font-body font-bold text-sm transition-colors w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -899,7 +578,7 @@ function ilsCardToggle(btn) {
 @include('components.equipment-categories', ['equipment' => [
     ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
     ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.',                          'scale' => '1'],
-    ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
+    ['img' => 'ELS_PH_255x255_IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
     ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
 ]])
 
