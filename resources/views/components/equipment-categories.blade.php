@@ -41,7 +41,7 @@
                          style="mix-blend-mode: multiply;">
                 </div>
                 {{-- CTA --}}
-                <div class="mt-6 pt-4 border-t border-gray-200">
+                <div class="mt-6">
                     <a href="{{ route('equipment') }}"
                        class="inline-flex items-center gap-2 text-navy hover:text-[#148af4] font-heading font-bold text-sm transition-colors">
                         View Equipment

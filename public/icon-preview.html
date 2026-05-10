@@ -1,35 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>ILS brand icons — preview</title>
-<style>
-  body { font-family: system-ui, sans-serif; background: #f7f8fa; color: #011e41; margin: 0; padding: 32px; }
-  h1 { font-size: 18px; margin: 0 0 8px; }
-  p  { font-size: 13px; color: #555; margin: 0 0 24px; }
-  .grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; max-width: 1100px; }
-  .tile { background: white; border: 1px solid #e5e7eb; border-radius: 8px; padding: 20px 12px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
-  .tile .box { width: 64px; height: 64px; color: #011e41; }
-  .tile .box svg { width: 100%; height: 100%; }
-  .tile .num { font-size: 12px; font-weight: 600; }
-</style>
-</head>
+<html>
+<head><style>
+body{background:#011E41;padding:30px;margin:0;font-family:sans-serif;}
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:24px;}
+.item{text-align:center;color:white;font-size:13px;}
+.item img{width:80px;height:80px;display:block;margin:0 auto 8px;filter:invert(1);}
+</style></head>
 <body>
-<h1>ILS brand icon set — visual index</h1>
-<p>Tell me which numbers to use for <strong>Local engineering execution</strong> and <strong>Lifecycle support route</strong>. (Ativo 15 stays for Genuine parts continuity.)</p>
-<div class="grid" id="grid"></div>
-<script>
-const grid = document.getElementById('grid');
-for (let i = 1; i <= 20; i++) {
-  const tile = document.createElement('div');
-  tile.className = 'tile';
-  tile.innerHTML = `
-    <div class="box">
-      <object type="image/svg+xml" data="/images/icons/brand/Ativo ${i}.svg" style="width:100%;height:100%;pointer-events:none"></object>
-    </div>
-    <div class="num">Ativo ${i}</div>`;
-  grid.appendChild(tile);
-}
-</script>
-</body>
-</html>
+<div class="grid">
+<div class='item'><img src='/images/icons/brand/Ativo 1.svg'><span>1</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 2.svg'><span>2</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 3.svg'><span>3</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 4.svg'><span>4</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 5.svg'><span>5</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 6.svg'><span>6</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 7.svg'><span>7</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 8.svg'><span>8</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 9.svg'><span>9</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 10.svg'><span>10</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 11.svg'><span>11</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 12.svg'><span>12</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 13.svg'><span>13</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 14.svg'><span>14</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 15.svg'><span>15</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 16.svg'><span>16</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 17.svg'><span>17</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 18.svg'><span>18</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 19.svg'><span>19</span></div>
+<div class='item'><img src='/images/icons/brand/Ativo 20.svg'><span>20</span></div>
+</div></body></html>
