@@ -213,9 +213,7 @@
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
                 <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                    </svg>
+                    <img src="/images/icons/brand/Ativo%201.svg" alt="" style="width:2.5rem;height:2.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Operator support</h3>
@@ -226,9 +224,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
                 <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
-                    </svg>
+                    <img src="/images/icons/brand/Ativo%2019.svg" alt="" style="width:2.5rem;height:2.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Intelligent control</h3>

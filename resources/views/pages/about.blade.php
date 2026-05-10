@@ -256,18 +256,85 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     6. ELECTROLUX PARTNERSHIP
+     6a. THE PEOPLE
 ══════════════════════════════════════════ -->
 <section class="bg-[#f7f8fa] py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {{-- Image --}}
+            <div class="overflow-hidden rounded-2xl reveal" style="height:520px;">
+                <img src="{{ asset('images/about/about-engineers.jpg') }}"
+                     alt="ILS engineering team on site"
+                     class="w-full h-full object-cover object-center">
+            </div>
+
+            {{-- Content --}}
+            <div class="reveal">
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">The people</p>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-6">
+                    Manufacturer-trained engineers. Not contractors.
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-10">
+                    Every engineer who arrives on site is directly employed by ILS and trained to Electrolux Professional manufacturer specification. That means continuity — the same team, the same knowledge of your equipment, and accountability that doesn't end when a job is closed.
+                </p>
+
+                <div class="space-y-7">
+                    @foreach([
+                        ['title' => 'Directly employed, nationwide',    'body' => 'Field engineers covering all 26 counties — employed by ILS, not subcontracted out.'],
+                        ['title' => 'Trained to OEM standard',          'body' => 'Manufacturer certification backed by technical documentation and genuine parts. Not improvised fixes.'],
+                        ['title' => 'Continuity on every contract',     'body' => 'Service contract customers get consistent engineer coverage — so your site and equipment are known before we arrive.'],
+                    ] as $item)
+                    <div class="flex items-start gap-4">
+                        <div class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-full bg-[#148af4] flex items-center justify-center">
+                            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-heading font-bold text-navy text-sm mb-1">{{ $item['title'] }}</div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $item['body'] }}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     6b. ELECTROLUX PARTNERSHIP
+══════════════════════════════════════════ -->
+<section class="bg-white py-20 lg:py-28">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-24 items-center">
             <div>
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Our partnership</p>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-6">
                     Platform credibility.<br>Local execution.
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Electrolux Professional provides manufacturer-grade standards, genuine parts and technical documentation. ILS provides local engineering execution, field response, and operational knowledge of Irish sites.
                 </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-10">
+                    @foreach([
+                        'Genuine OEM parts guaranteed',
+                        'Manufacturer-trained engineers',
+                        'Full technical documentation access',
+                        'Authorised partner status',
+                    ] as $point)
+                    <div class="flex items-center gap-2.5">
+                        <svg class="w-4 h-4 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
+                        </svg>
+                        <span class="font-body text-navy text-sm font-medium">{{ $point }}</span>
+                    </div>
+                    @endforeach
+                </div>
+
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors">
                     About the partnership

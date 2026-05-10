@@ -26,8 +26,8 @@
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
                 ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
-                ['icon' => 'ativo-9',  'label' => 'Equipment<br>selection'],
-                ['icon' => 'ativo-10', 'label' => 'Capacity<br>planning'],
+                ['icon' => 'ativo-10', 'label' => 'Equipment<br>selection'],
+                ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
             ] as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
