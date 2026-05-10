@@ -372,7 +372,7 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
-                         class="w-full h-96 object-contain object-top">
+                         class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[89px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, Wash Programmes &amp; Dosing Control</span>
@@ -473,7 +473,7 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-ironer.webp"
                          alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain object-top">
+                         class="w-full h-80 object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
@@ -568,9 +568,22 @@
             </div>
             </div>
 
-            <!-- 4. BARRIER WASHERS — text left, image right -->
+            <!-- 4. BARRIER WASHERS — image left, text right -->
             <div x-data="{ open: false, tab: 'aido' }">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
+                <div class="flex flex-col">
+                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                         alt="Line 6000 Barrier Washer"
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
@@ -585,19 +598,6 @@
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                    </div>
-                </div>
-                <div class="flex flex-col">
-                    <img src="/images/equipment/line6000-barrier-washer.webp"
-                         alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
                     </div>
                 </div>
             </div>
