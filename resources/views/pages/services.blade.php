@@ -100,7 +100,7 @@
                         </div>
                     </div>
                     <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Site pressure</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Understand breakdown risk, utilisation and urgency.</p>
+                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Understand breakdown risk, utilisation&nbsp;and&nbsp;urgency.</p>
                 </div>
 
                 {{-- Arrow 1 --}}
@@ -118,7 +118,7 @@
                         </div>
                     </div>
                     <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Installed equipment</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Identify model, age, capacity and parts continuity.</p>
+                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Identify model, age, capacity and&nbsp;parts&nbsp;continuity.</p>
                 </div>
 
                 {{-- Arrow 2 --}}
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                     <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Support route</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Select the right mix of support for your site.</p>
+                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Select the right mix of support for&nbsp;your&nbsp;site.</p>
                 </div>
 
             </div>
@@ -306,11 +306,11 @@
 
 <section class="pt-16 lg:pt-20 pb-10 lg:pb-12 bg-bg">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="text-center max-w-3xl mx-auto">
+        <div class="text-center">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
                 How the support routes <span class="text-orange">work together</span>.
             </h2>
-            <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed">
+            <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto">
                 The four routes are not silos. They connect into one support story for the installed base.
             </p>
         </div>
@@ -390,67 +390,7 @@
     </div>
 </section>
 
-<!-- 8. COMPACT TESTIMONIALS — operational impact focus -->
-<section class="py-16 lg:py-20 bg-bg border-t border-border">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-
-        <div class="max-w-2xl mb-12">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                What the routes <span class="text-orange">change</span> day-to-day.
-            </h2>
-            <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed">
-                The right support route gives the site a clearer path for maintenance, faults, rental pressure, parts access and follow-up decisions.
-            </p>
-        </div>
-
-        @php
-        $svcTestimonials = [
-            [
-                'title' => 'Predictable maintenance instead of constant breakdowns.',
-                'body'  => 'Planned maintenance gives the site a clearer rhythm around the installed base.',
-                'name'  => 'Operations Manager',
-                'role'  => 'Healthcare Group, Republic of Ireland',
-                'img'   => '/images/about/testimonial-1.jpg',
-            ],
-            [
-                'title' => 'A clear path when something breaks.',
-                'body'  => 'The right route helps connect the fault, the engineer, the parts requirement and the next action.',
-                'name'  => 'Facilities Manager',
-                'role'  => 'Nursing Home Group, Munster',
-                'img'   => '/images/about/testimonial-2.jpg',
-            ],
-            [
-                'title' => 'Rental solved the gap before the next install.',
-                'body'  => 'When extra capacity is needed, rental can support the site while the next equipment decision is planned.',
-                'name'  => 'General Manager',
-                'role'  => 'Hotel Group, Leinster',
-                'img'   => '/images/about/testimonial-3.jpg',
-            ],
-        ];
-        @endphp
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-            @foreach ($svcTestimonials as $t)
-            <article class="bg-white border border-border rounded-2xl p-6 lg:p-7 flex flex-col">
-                <svg class="w-7 h-7 text-orange mb-4 flex-shrink-0" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                    <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
-                </svg>
-                <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-3">{{ $t['title'] }}</p>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-6 flex-1">{{ $t['body'] }}</p>
-                <div class="flex items-center gap-3 pt-5 border-t border-border">
-                    <img src="{{ $t['img'] }}" alt="{{ $t['name'] }}"
-                         class="w-10 h-10 rounded-full object-cover object-top flex-shrink-0"
-                         loading="lazy" decoding="async">
-                    <div class="min-w-0">
-                        <cite class="block font-body font-bold text-navy text-sm not-italic leading-tight">{{ $t['name'] }}</cite>
-                        <span class="font-body text-gray-500 text-xs leading-tight">{{ $t['role'] }}</span>
-                    </div>
-                </div>
-            </article>
-            @endforeach
-        </div>
-
-    </div>
-</section>
+@include('components.testimonials', ['light' => true])
 
 <!-- 9. FINAL CTA BANNER -->
 <section class="relative overflow-hidden bg-navy">

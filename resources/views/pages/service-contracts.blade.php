@@ -114,8 +114,8 @@
          class="absolute inset-0 w-full h-full object-cover object-right">
 
 
-    {{-- Gradient overlay — fades faster so both engineers come through --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.78) 18%, rgba(1,30,65,0.40) 35%, rgba(1,30,65,0.10) 55%, transparent 70%);"></div>
+    {{-- Gradient overlay — stronger left-side fade for text contrast, still lets engineers come through --}}
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
 
     {{-- Text — vertically centered --}}
     <div class="relative z-10 h-full flex items-center w-full">
@@ -123,7 +123,7 @@
             <div style="max-width: 620px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Service contracts scoped around your <span class="text-orange">installed equipment and maintenance needs</span>.
+                    Service contracts scoped&nbsp;around your <span class="text-orange">installed equipment and&nbsp;maintenance&nbsp;needs</span>.
                 </h1>
 
                 <p class="hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
@@ -201,8 +201,8 @@
 
             {{-- TILE 1 · Engineer photo (2×2) --}}
             <div class="group relative md:col-span-2 lg:col-span-2 lg:row-span-2 rounded-3xl overflow-hidden bg-navy reveal min-h-[400px] lg:min-h-0">
-                <img src="/images/healthcare/service-contracts-hero.jpg"
-                     alt="ILS engineers in conversation about service equipment"
+                <img src="/images/hero/on-site-diagnosis.jpeg"
+                     alt="ILS technician inspecting a commercial washing machine drum during diagnosis"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-105">
                 {{-- Top scrim for badge legibility --}}
@@ -261,30 +261,32 @@
             <div class="group relative rounded-3xl overflow-hidden bg-bg border border-border p-5 lg:p-6 reveal hover:bg-navy hover:border-navy transition-colors duration-300 cursor-default" style="transition-delay:180ms;">
                 <div class="h-full flex flex-col gap-3">
                     <div class="w-10 h-10 rounded-xl bg-white border border-border group-hover:bg-orange group-hover:border-orange flex items-center justify-center transition-colors duration-300">
-                        <svg class="w-5 h-5 text-navy group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                        <div class="w-5 h-5 text-navy group-hover:text-white transition-colors duration-300 [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                            {!! file_get_contents(public_path('images/icons/brand/Ativo 6.svg')) !!}
+                        </div>
                     </div>
                     <h3 class="font-heading font-bold text-navy group-hover:text-white text-base lg:text-lg leading-snug transition-colors duration-300">Remote support &amp; triage</h3>
                     <p class="font-body text-gray-600 group-hover:text-blue-200 text-xs lg:text-sm leading-relaxed transition-colors duration-300">Phone and remote support help assess the issue, prioritise the next step and direct the enquiry to the right route.</p>
                 </div>
             </div>
 
-            {{-- TILE 5 · Preferential rates — featured (4×1, full row, navy with glow) --}}
-            <div class="group relative md:col-span-2 lg:col-span-4 rounded-2xl overflow-hidden text-white p-4 lg:p-5 reveal"
-                 style="background: radial-gradient(circle at top right, rgba(20,138,244,0.32) 0%, transparent 55%), #011E41; transition-delay:60ms;">
-                <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none"></div>
-                <div class="relative z-10 h-full flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                    <div class="flex-shrink-0">
-                        <div class="w-10 h-10 rounded-xl bg-orange/20 border border-orange/40 flex items-center justify-center">
-                            <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"/><path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6z"/></svg>
-                        </div>
-                    </div>
-                    <div class="min-w-0">
-                        <h3 class="font-heading font-bold text-white text-base lg:text-lg mb-1 leading-snug">Preferential call-out rates</h3>
-                        <p class="font-body text-blue-200 text-xs lg:text-sm leading-relaxed">Contract customers may receive preferential labour rates for reactive call-outs, helping control unexpected service costs where this applies.</p>
+        </div>
+
+        {{-- Preferential rates — slim banner directly below the bento (was Tile 5) --}}
+        <div class="group relative mt-4 rounded-2xl overflow-hidden text-white p-4 lg:px-6 lg:py-4 reveal"
+             style="background: radial-gradient(circle at top right, rgba(20,138,244,0.32) 0%, transparent 55%), #011E41; transition-delay:60ms;">
+            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-2xl pointer-events-none"></div>
+            <div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                <div class="flex-shrink-0">
+                    <div class="w-11 h-11 rounded-xl bg-orange/20 border border-orange/40 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 7.756a4.5 4.5 0 100 8.488M7.5 10.5h5.25m-5.25 3h5.25M3 12a9 9 0 1118 0 9 9 0 01-18 0z"/></svg>
                     </div>
                 </div>
+                <div class="min-w-0">
+                    <h3 class="font-heading font-bold text-white text-base lg:text-lg mb-1 leading-snug">Preferential call-out rates</h3>
+                    <p class="font-body text-blue-200 text-xs lg:text-sm leading-relaxed">Contract customers may receive preferential labour rates for reactive call-outs, helping control unexpected service costs where this applies.</p>
+                </div>
             </div>
-
         </div>
 
         {{-- "What's Not Included" — slim banner below the bento --}}
@@ -536,14 +538,23 @@
         @endphp
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
             @foreach ($scopeCards as $i => $card)
-            <article class="bg-white rounded-2xl border border-border p-6 lg:p-7 flex flex-col gap-4 reveal hover:shadow-card-hover transition-shadow duration-300" style="transition-delay:{{ $i * 80 }}ms;">
-                <div class="w-12 h-12 rounded-xl bg-orange/10 border border-orange/30 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
+            <article class="group relative overflow-hidden bg-white rounded-3xl border border-navy/5 p-7 lg:p-8 flex flex-col gap-5 reveal transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.18)] hover:border-[#148af4]/30" style="transition-delay:{{ $i * 80 }}ms;">
+
+                {{-- Top accent line --}}
+                <span aria-hidden="true" class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#148af4] to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-300"></span>
+
+                {{-- Big numeral watermark --}}
+                <span aria-hidden="true" class="pointer-events-none absolute top-4 right-5 font-heading font-bold text-navy/[0.06] text-7xl lg:text-8xl leading-none tracking-tight select-none transition-all duration-500 group-hover:text-[#148af4]/[0.10] group-hover:scale-105">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</span>
+
+                {{-- Icon disc --}}
+                <div class="relative w-14 h-14 rounded-full flex items-center justify-center bg-gradient-to-br from-[#148af4]/15 via-[#148af4]/8 to-white ring-1 ring-inset ring-[#148af4]/25 shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_4px_12px_-4px_rgba(20,138,244,0.25)] transition-transform duration-300 group-hover:scale-110">
+                    <svg class="w-7 h-7 text-[#148af4] relative" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
                         {!! $card['svg'] !!}
                     </svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-600 text-sm lg:text-base leading-relaxed">{{ $card['text'] }}</p>
+
+                <h3 class="relative font-heading font-bold text-navy text-xl lg:text-2xl leading-snug">{{ $card['title'] }}</h3>
+                <p class="relative font-body text-gray-600 text-sm lg:text-base leading-relaxed">{{ $card['text'] }}</p>
             </article>
             @endforeach
         </div>
@@ -646,60 +657,58 @@
     </div>
 </section>
 
-<!-- TESTIMONIALS — smaller, contract-impact focused -->
+<!-- DAY-TO-DAY OUTCOMES — heading + 3 outcome columns -->
 <section class="py-16 lg:py-20 bg-white border-t border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        {{-- Heading --}}
-        <div class="max-w-2xl mb-12 reveal">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                What a <span class="text-orange">service contract</span> changes <span class="text-orange">day-to-day</span>.
-            </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed">
-                A planned contract gives your team a clearer route for maintenance, reporting and follow-up support around the installed base.
-            </p>
-        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
 
-        {{-- 3-card outcome grid --}}
-        @php
-        $outcomeCards = [
-            [
-                'highlight' => 'More planned maintenance, fewer reactive surprises.',
-                'body'      => 'Regular visits help teams move from purely reactive support to a clearer maintenance rhythm.',
-            ],
-            [
-                'highlight' => 'Service history that makes decisions easier.',
-                'body'      => 'Visit records and service notes help the site understand equipment condition, repeat issues and recommended next steps.',
-            ],
-            [
-                'highlight' => 'Better connection between servicing, parts and aftercare.',
-                'body'      => 'The contract helps keep maintenance, parts access and practical follow-up in the same support route.',
-            ],
-        ];
-        @endphp
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-6">
-            @foreach ($outcomeCards as $i => $card)
-            <article class="bg-bg border border-border rounded-2xl p-6 lg:p-7 flex flex-col reveal" style="transition-delay:{{ $i * 80 }}ms;">
-                {{-- Outcome marker --}}
-                <div class="w-10 h-10 rounded-xl bg-orange/10 border border-orange/30 flex items-center justify-center mb-5 flex-shrink-0">
-                    <svg class="w-5 h-5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
+            {{-- Left: heading --}}
+            <div class="lg:col-span-4 reveal">
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Day-to-day impact</p>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                    What a <span class="text-orange">service contract</span> changes <span class="text-orange">day-to-day</span>.
+                </h2>
+                <p class="font-body text-gray-600 text-base leading-relaxed">
+                    A planned contract gives your team a clearer route for maintenance, reporting and follow-up support around the installed base.
+                </p>
+            </div>
+
+            {{-- Right: 3 outcome columns with icon circles --}}
+            @php
+            $outcomeCards = [
+                [
+                    'highlight' => 'More planned maintenance, fewer reactive surprises.',
+                    'body'      => 'Regular visits help teams move from purely reactive support to a clearer maintenance rhythm.',
+                    'icon'      => '<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5M9 13.5l1.75 1.75L14.5 11.5"/>',
+                ],
+                [
+                    'highlight' => 'Service history that makes decisions easier.',
+                    'body'      => 'Visit records and service notes help the site understand equipment condition, repeat issues and recommended next steps.',
+                    'icon'      => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>',
+                ],
+                [
+                    'highlight' => 'Better connection between servicing, parts and aftercare.',
+                    'body'      => 'The contract helps keep maintenance, parts access and practical follow-up in the same support route.',
+                    'icon'      => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>',
+                ],
+            ];
+            @endphp
+            <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8">
+                @foreach ($outcomeCards as $i => $card)
+                <div class="text-center reveal" style="transition-delay:{{ ($i + 1) * 80 }}ms;">
+                    <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-5 flex items-center justify-center">
+                        <svg class="w-8 h-8 lg:w-10 lg:h-10 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+                            {!! $card['icon'] !!}
+                        </svg>
+                    </div>
+                    <p class="font-heading font-bold text-navy text-base lg:text-lg leading-snug mb-2">{{ $card['highlight'] }}</p>
+                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">{{ $card['body'] }}</p>
                 </div>
+                @endforeach
+            </div>
 
-                {{-- Headline highlight --}}
-                <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-3">
-                    {{ $card['highlight'] }}
-                </p>
-
-                {{-- Body --}}
-                <p class="font-body text-gray-600 text-sm leading-relaxed">
-                    {{ $card['body'] }}
-                </p>
-            </article>
-            @endforeach
         </div>
-
     </div>
 </section>
 
@@ -731,6 +740,8 @@ $faqs = [
 <div class="reveal">
     @include('components.faq', ['faqs' => $faqs, 'heading' => 'Service Contract FAQs'])
 </div>
+
+@include('components.testimonials', ['light' => true])
 
 <!-- INLINE CONTRACT REVIEW FORM -->
 <section id="contract-review-form" class="py-16 lg:py-24 bg-white">

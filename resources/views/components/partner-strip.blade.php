@@ -29,23 +29,23 @@
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 13.svg')) !!}
+                    {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:90px;">Local engineering team</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Local engineering team</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:90px;">Genuine parts access</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Genuine parts access</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug" style="max-width:90px;">Ongoing support</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Ongoing support</span>
             </div>
 
         </div>

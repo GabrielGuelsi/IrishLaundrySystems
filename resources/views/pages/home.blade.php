@@ -32,7 +32,7 @@
             <div style="max-width: 620px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Commercial laundry engineering support for sites where <span class="text-[#148af4]">downtime carries real cost</span>.
+                    Commercial laundry engineering support for sites where <span class="text-[#148af4]">downtime carries real cost</span>
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
@@ -68,17 +68,19 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Laundry support built around the <span class="text-[#148af4]">site</span>, the equipment and the next practical step.
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-[1.95]">
+                    Laundry support<br>built around<br>the <span class="text-[#148af4]">site</span>
                 </h2>
             </div>
-            <div class="space-y-6 lg:pt-8">
+            <div class="space-y-4 lg:space-y-0 lg:flex lg:flex-col lg:justify-between lg:pt-[2.6rem]">
+                <p class="font-body font-bold text-navy text-xl lg:text-2xl leading-snug">
+                    the equipment and the next practical step.
+                </p>
                 <p class="font-body text-gray-600 text-lg leading-relaxed">
                     Irish Laundry Systems is not just an equipment supplier. We connect equipment selection, installation, planned maintenance, call-outs, rental, parts continuity and aftercare into one practical plan for the site.
                 </p>
-                <a href="{{ route('services') }}" class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-bold text-base transition-colors">
-                    See how we support your site
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-base lg:text-lg leading-snug transition-colors">
+                    See how we <span class="text-[#148af4]">support</span> your site.
                 </a>
             </div>
         </div>
@@ -115,11 +117,11 @@
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <div class="max-w-2xl">
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Browse by type</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Equipment categories selected around <span class="text-[#148af4]">workflow and output</span>.</h2>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Equipment categories selected around<br class="hidden lg:inline"> <span class="text-[#148af4]">workflow and output</span>.</h2>
                 <p class="font-body text-gray-500 text-lg mt-4">The right equipment should follow the room, the load profile, the handling process and the support behind the installed base.</p>
             </div>
             <a href="{{ route('equipment') }}"
-               class="inline-flex self-start lg:self-auto items-center gap-2 border border-navy/20 hover:border-navy text-navy/60 hover:text-navy font-body font-bold px-5 py-3 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
+               class="inline-flex self-start lg:self-auto lg:mb-2 items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-full text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
                 Browse All Equipment
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -131,18 +133,18 @@
                 ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                  'scale' => '1.55'],
                 ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash needs, daily capacity and consistent performance across professional laundry environments.',  'scale' => '1.75'],
                 ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                              'scale' => '1'],
-                ['img' => 'line6000-ironer',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.',                          'scale' => '1.4'],
+                ['img' => 'IB623_FRONT_NEW',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.',                          'scale' => '1.15', 'ext' => 'jpg'],
             ] as $eq)
             <div class="bg-white border border-gray-100 rounded-xl p-8 flex flex-col gap-6">
                 <div class="min-h-[112px]">
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                <div class="flex items-center justify-center h-96 rounded-lg overflow-hidden bg-white">
-                    <img src="/images/equipment/{{ $eq['img'] }}.webp"
+                <div class="flex items-end justify-center h-96 rounded-lg overflow-hidden bg-white">
+                    <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
                          alt="{{ $eq['name'] }}"
                          class="max-h-full max-w-full object-contain"
-                         style="transform: scale({{ $eq['scale'] }}); transform-origin: center;">
+                         style="transform: scale({{ $eq['scale'] }}); transform-origin: bottom center;">
                 </div>
                 <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
                     View Equipment

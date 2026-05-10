@@ -982,6 +982,8 @@
 @include('components.partner-strip')
 @include('components.proof-bar')
 
+@include('components.testimonials', ['single' => 'abbvie', 'light' => true])
+
 <!-- CTA BAND -->
 @include('components.cta-band', [
     'heading' => 'Need spec advice?',

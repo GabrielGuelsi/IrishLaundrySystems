@@ -353,6 +353,9 @@
 
 @include('components.partner-strip')
 @include('components.proof-bar')
+
+@include('components.testimonials', ['single' => 'abbvie', 'light' => true])
+
 @include('components.service-contracts-strip')
 
 @include('components.cta-combined-banner')
