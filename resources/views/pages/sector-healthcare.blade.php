@@ -18,7 +18,7 @@
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                    Healthcare laundry support for <span style="color:#148af4;">controlled rooms</span>,<br>linen flow and day-to-day pressure.
+                    Healthcare laundry support<br>for <span style="color:#148af4;">controlled rooms</span>,<br>linen flow and day-to-day pressure.
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports healthcare sites with equipment selection, installation, service structure, parts access and practical aftercare where <span style="color:#148af4;">hygiene-sensitive workflow</span>, capacity and continuity matter every day.
@@ -50,7 +50,7 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Healthcare</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Built around how healthcare laundry rooms <span style="color:#148af4;">actually operate.</span>
+                    Built around how<br>healthcare laundry rooms<br><span style="color:#148af4;">actually operate.</span>
                 </h2>
             </div>
 
@@ -58,7 +58,7 @@
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                     Healthcare laundry is not only a machine decision. The room, the linen flow, the handling process and the support behind the equipment all affect whether the laundry can work safely and consistently through the day.
                 </p>
-                <p class="font-body text-gray-500 leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems connects equipment selection, installation, service contracts, call-outs, parts and aftercare into one <span style="color:#148af4;">practical support plan</span>.
                 </p>
                 <a href="{{ route('sectors.healthcare') }}#healthcare-equipment"
@@ -141,8 +141,9 @@
         <div class="max-w-3xl mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Workflow Matters</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                Barrier workflow where dirty-side<br>
-                <span style="color:#148af4;">and clean-side handling need to stay separate.</span>
+                Barrier workflow where<br>
+                <span style="color:#148af4;">dirty-side and clean-side</span><br>
+                handling need to stay separate.
             </h2>
         </div>
         <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-10">
@@ -269,7 +270,7 @@
         <!-- Heading -->
         <div class="mb-8">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support the healthcare laundry room.
+                Four ways we support<br>the healthcare laundry room.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 Healthcare sites often need equipment, maintenance, response and parts support to work together. These needs should not sit in separate conversations.
@@ -483,20 +484,20 @@
             <!-- COMMERCIAL WASHERS — image left, text right -->
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
-                <div class="flex flex-col">
+                <div class="flex flex-col lg:ml-28">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[89px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, Wash Programmes &amp; Dosing Control</span>
+                            <span class="font-heading font-bold text-navy text-base">System Features, Wash Programmes &amp; Dosing Control</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
                         </button>
                     </div>
                 </div>
-                <div class="lg:-ml-8 lg:mt-10">
+                <div class="lg:-ml-20 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support broader healthcare wash needs where barrier separation is not required for every load, but <span style="color:#148af4;">capacity</span>, consistency and daily handling still matter.
@@ -539,7 +540,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col order-1 lg:order-2">
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
@@ -700,7 +701,7 @@
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
 
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-            Our process keeps the <span style="color:#148af4;">next step clear.</span>
+            Our process keeps the <span style="color:#148af4;">next step</span> clear.
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
             From the initial room assessment through to ongoing support — each step connects to the next.

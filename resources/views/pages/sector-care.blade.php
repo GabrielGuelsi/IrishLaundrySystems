@@ -15,7 +15,7 @@
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                    Laundry support for care facilities, built around <span style="color:#148af4;">daily demand</span>, <span style="color:#148af4;">resident care</span> and site continuity.
+                    Laundry support for care facilities,<br>built around <span style="color:#148af4;">daily demand</span>,<br><span style="color:#148af4;">resident care</span> and site continuity.
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports care facilities with equipment selection, installation, rental, service contracts, repairs, parts access and practical aftercare for laundry rooms that carry daily pressure.
@@ -49,7 +49,7 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Care Facilities</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Purpose-built laundry support for <span style="color:#148af4;">care facilities</span>.
+                    Purpose-built laundry support<br>for <span style="color:#148af4;">care facilities</span>.
                 </h2>
             </div>
 
@@ -57,7 +57,7 @@
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                     Care facility laundry is part of daily care. Resident clothing, bedding, towels and linen need to move through the room without creating avoidable pressure for staff or delays for residents.
                 </p>
-                <p class="font-body text-gray-500 leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems connects equipment selection, installation, service contracts, call-outs, rental, parts and aftercare into one practical support plan for the site.
                 </p>
                 <a href="{{ route('equipment') }}"
@@ -80,7 +80,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Room Pressure</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                Laundry support for <span style="color:#148af4;">resident items</span>, linen flow and daily use.
+                Laundry support for <span style="color:#148af4;">resident items</span>,<br>linen flow and daily use.
             </h2>
             <ul class="space-y-2">
                 <li class="flex items-start gap-3 font-body text-gray-600 text-base">
@@ -143,7 +143,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Laundry Priorities</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                Care facility laundry should support <span style="color:#148af4;">daily care</span>, not create another pressure point.
+                Care facility laundry should support <span style="color:#148af4;">daily care</span>,<br>not create another pressure point.
             </h2>
             <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
                 The right laundry setup helps teams manage resident items, linen flow, staff handling, drying pressure and equipment support without turning the laundry room into a bottleneck.
@@ -223,7 +223,7 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support <span style="color:#148af4;">care facility laundry</span>.
+                Four ways we support<br><span style="color:#148af4;">care facility laundry</span>.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 Care facilities often need equipment, maintenance, response and parts support to work together around the laundry room.
@@ -369,20 +369,20 @@
             <!-- 1. COMMERCIAL WASHERS — image left, text right -->
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
-                <div class="flex flex-col">
+                <div class="flex flex-col lg:ml-28">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[89px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, Wash Programmes &amp; Dosing Control</span>
+                            <span class="font-heading font-bold text-navy text-base">System Features, Wash Programmes &amp; Dosing Control</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
                         </button>
                     </div>
                 </div>
-                <div>
+                <div class="lg:-ml-20 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support daily wash demand across resident clothing, bedding, towels and mixed loads where capacity, wash quality and garment care matter.
@@ -425,7 +425,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col order-1 lg:order-2">
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
@@ -570,7 +570,7 @@
 
             <!-- 4. BARRIER WASHERS — image left, text right -->
             <div x-data="{ open: false, tab: 'aido' }">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"

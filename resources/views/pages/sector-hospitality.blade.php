@@ -45,7 +45,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-gray-900 text-4xl lg:text-5xl leading-tight">
-                    We work with hotels and hospitality businesses across Ireland.
+                    We work with hotels<br>and hospitality businesses<br>across Ireland.
                 </h2>
             </div>
 
@@ -54,7 +54,7 @@
                     With growing demand for quality guest experiences, you need laundry equipment that <span style="color:#148af4;">won't let you down.</span>
                 </p>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
-                    Whether it's towels, bedding or staff uniforms, we know you need a <span style="color:#148af4;">consistently reliable laundry operation</span> for your guests — which is why we provide fast, expert support across the Republic of Ireland.
+                    Whether it's towels, bedding or staff uniforms, we know you need a <span style="color:#148af4;">consistently reliable</span> laundry operation for your guests — which is why we provide fast, expert support across the Republic of Ireland.
                 </p>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">
                     We've been keeping hotel laundry rooms running for over <span style="color:#148af4;">37 years.</span> If you need assistance, our network of engineers is just a phone call away.
@@ -137,7 +137,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Priorities</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                Hospitality laundry should protect <span style="color:#148af4;">guest experience</span>, not create pressure behind the scenes.
+                Hospitality laundry should protect <span style="color:#148af4;">guest experience</span>,<br>not create pressure behind the scenes.
             </h2>
             <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
                 The right laundry setup helps hotels manage linen availability, housekeeping pressure, peak periods, finishing standards and support around the installed base.
@@ -221,7 +221,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-8">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support <span style="color:#148af4;">hospitality laundry</span>.
+                Four ways we support<br><span style="color:#148af4;">hospitality laundry</span>.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 Hotels and hospitality sites often need equipment, maintenance, response and parts support to work together around linen flow and peak demand.
@@ -348,8 +348,8 @@
 
         <!-- Title -->
         <div class="mb-16 reveal">
-            <h2 class="font-heading text-navy text-3xl lg:text-4xl leading-tight mb-2">
-                Laundry and infection <strong>control solutions</strong>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-2">
+                Laundry and infection<br><strong>control solutions</strong>
             </h2>
             <p class="font-body text-navy text-base leading-relaxed">
                 Irish Laundry Systems sell/rent , installs and maintains a range of CQC-compliant equipment including washers and dryers.<br>
@@ -361,12 +361,12 @@
 
             <!-- 1. COMMERCIAL WASHERS — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
-                <div class="flex flex-col">
+                <div class="flex flex-col lg:ml-28">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-top">
                 </div>
-                <div>
+                <div class="lg:-ml-20 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
@@ -389,7 +389,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">
-                        Precision <strong>drying</strong> for <strong>high-demand</strong> hospitality cycles.
+                        Precision <strong>drying</strong><br>for <strong>high-demand</strong> hospitality cycles.
                     </h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
@@ -410,7 +410,7 @@
                         This unique combination distinguishes them from all other dryers on the market.</p>
                     </div>
                 </div>
-                <div class="flex flex-col order-1 lg:order-2">
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">

@@ -17,7 +17,7 @@
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry Support</p>
                 <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
-                    <span style="color:#148af4;">High-throughput</span> laundry<br>engineering for <span style="color:#148af4;">commercial<br>and industrial operations.</span>
+                    <span style="color:#148af4;">High-throughput</span> laundry engineering<br>for <span style="color:#148af4;">commercial and industrial</span> operations.
                 </h1>
                 <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports high-load laundry sites with equipment selection, installation, rental, service contracts, repairs, parts access and practical aftercare for operations where output, equipment load and continuity matter.
@@ -49,7 +49,7 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Commercial &amp; Industrial Sites</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Laundry support built around <span style="color:#148af4;">load</span>, <span style="color:#148af4;">workflow</span> and <span style="color:#148af4;">installed equipment</span>.
+                    Laundry support built around <span style="color:#148af4;">load</span>, <span style="color:#148af4;">workflow</span><br>and <span style="color:#148af4;">installed equipment</span>.
                 </h2>
             </div>
 
@@ -57,7 +57,7 @@
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                     Commercial and industrial laundry operations demand more than equipment. The right route depends on daily load, fabric mix, available space, utilities, operator handling and the support behind the installed base.
                 </p>
-                <p class="font-body text-gray-500 leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems connects equipment selection, installation, service contracts, call-outs, rental, parts and aftercare into one practical support plan for the site.
                 </p>
                 <a href="{{ route('equipment') }}"
@@ -79,7 +79,7 @@
         <div class="mb-12 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where This Fits</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                Built for sites with <span style="color:#148af4;">high laundry load</span>, mixed textiles or <span style="color:#148af4;">continuous use</span>.
+                Built for sites with <span style="color:#148af4;">high laundry load</span>,<br>mixed textiles or <span style="color:#148af4;">continuous use</span>.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 Commercial and industrial support should match the operating environment, not just the machine list.
@@ -245,7 +245,7 @@
         <!-- Heading -->
         <div class="mb-8">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support <span style="color:#148af4;">commercial and industrial laundry</span>.
+                Four ways we support<br><span style="color:#148af4;">commercial and industrial</span> laundry.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 High-load sites often need equipment, maintenance, response and parts support to work together around output pressure and installed equipment.
@@ -374,7 +374,7 @@
         <div class="mb-16 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                Equipment for <span style="color:#148af4;">high-throughput laundry environments</span>.
+                Equipment for <span style="color:#148af4;">high-throughput</span> laundry environments.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 The right equipment plan depends on load profile, fabric mix, throughput pressure, drying demand, finishing needs, available space and the support behind the installed base.
@@ -385,12 +385,12 @@
 
             <!-- COMMERCIAL WASHERS — image left, text right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
-                <div class="flex flex-col">
+                <div class="flex flex-col lg:ml-28">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-top">
                 </div>
-                <div>
+                <div class="lg:-ml-20 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support daily loads across workwear, towels, uniforms, bedding and mixed textiles where wash quality, capacity and cycle control matter.
@@ -429,7 +429,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col order-1 lg:order-2">
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
                     <img src="/images/equipment/line6000-tumble-dryer.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
@@ -553,7 +553,7 @@
 
             <!-- 4. Barrier Washers / Specialist Washing — image left, text right -->
             <div x-data="{ open: false }">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
