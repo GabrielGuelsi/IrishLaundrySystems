@@ -72,39 +72,6 @@
     </div>
 </section>
 
-<!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-white">
-    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-            Our process keeps the <span style="color:#148af4;">next step</span> clear.
-        </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
-            A clear four-step path from room review to the next practical recommendation.
-        </p>
-        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
-            @foreach([
-                ['title' => 'Assess the room',     'text' => 'Review linen flow, peak demand, housekeeping pressure and available space.',       'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>'],
-                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or guest-laundry setup.',          'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>'],
-                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',   'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>'],
-                ['title' => 'Move to assessment',  'text' => 'Turn the property, equipment setup and support needs into a practical next step.',  'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>'],
-            ] as $step)
-            <div class="flex flex-col items-center relative z-10">
-                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
-                        {!! $step['icon'] !!}
-                    </svg>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-
 {{-- D: Enhanced Usability — Apple-style horizontal scroll cards --}}
 <style>
 .ils-apple-wrap { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; cursor:grab; }
@@ -228,11 +195,11 @@
             </p>
         </div>
 
-        <!-- 3-column card grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- 4-column card grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             <!-- Card 1 — Repairs & Call-outs -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
                      class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -270,7 +237,7 @@
             </div>
 
             <!-- Card 2 — Equipment Rental -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -296,7 +263,7 @@
             </div>
 
             <!-- Card 3 — Service Contracts -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
                      class="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -328,6 +295,44 @@
                         <a href="{{ route('service-contracts') }}"
                            class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
                             View Contracts
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 — Parts & Aftercare -->
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/Customer-Care_Line-6000-_001.jpg" alt="Parts and Aftercare"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Genuine parts access, service history context and practical follow-up support around hospitality laundry equipment.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Genuine Electrolux Professional parts
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Service history and follow-up support
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Practical aftercare for the installed base
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Parts &amp; Aftercare</h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('service-contracts') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            Explore Support
                         </a>
                     </div>
                 </div>
@@ -573,6 +578,38 @@
 </section>
 
 @include('components.why-choose-strip')
+
+<!-- PROCESS BLOCK -->
+<section class="py-14 lg:py-20 bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
+            Our process keeps the <span style="color:#148af4;">next step</span> clear.
+        </h2>
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
+            A clear four-step path from room review to the next practical recommendation.
+        </p>
+        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
+            @foreach([
+                ['title' => 'Assess the room',     'text' => 'Review linen flow, peak demand, housekeeping pressure and available space.',       'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>'],
+                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or guest-laundry setup.',          'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>'],
+                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',   'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>'],
+                ['title' => 'Move to assessment',  'text' => 'Turn the property, equipment setup and support needs into a practical next step.',  'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>'],
+            ] as $step)
+            <div class="flex flex-col items-center relative z-10">
+                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
+                        {!! $step['icon'] !!}
+                    </svg>
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 @include('components.equipment-categories', ['equipment' => [
     ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
