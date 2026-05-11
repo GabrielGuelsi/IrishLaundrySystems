@@ -106,7 +106,7 @@
         <div class="relative reveal">
 
             <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/CareFacilities/CareFacilitiesHero.png"
+                <img src="/images/healthcare/render-double-page_72dpi.jpg"
                      alt="Care facility laundry room"
                      class="w-full h-[580px] object-cover object-center">
             </div>
