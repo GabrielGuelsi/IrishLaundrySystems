@@ -541,13 +541,6 @@
 
 @include('components.why-choose-strip')
 
-@include('components.equipment-categories', ['equipment' => [
-    ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
-    ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.',                          'scale' => '1'],
-    ['img' => 'ELS_PH_255x255_IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
-    ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
-]])
-
 <!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
@@ -579,6 +572,13 @@
         </div>
     </div>
 </section>
+
+@include('components.equipment-categories', ['equipment' => [
+    ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
+    ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.',                          'scale' => '1'],
+    ['img' => 'ELS_PH_255x255_IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
+    ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
+]])
 
 @include('components.service-contracts-strip')
 
