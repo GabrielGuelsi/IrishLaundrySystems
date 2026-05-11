@@ -126,30 +126,28 @@
 
             {{-- PART 1: What to include --}}
             <div class="bg-navy px-8 lg:px-12 py-10">
-                <div class="flex items-center gap-2 mb-4">
-                    <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(20,138,244,0.25);">
-                        <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25Z"/>
-                        </svg>
+                <div class="flex items-center gap-2.5 mb-5">
+                    <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(20,138,244,0.25);">
+                        <img src="/images/icons/brand/Ativo%206.svg" style="width:1.05rem;height:1.05rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);" alt="">
                     </div>
-                    <p class="font-heading font-bold text-white text-xs uppercase tracking-widest">What to include</p>
+                    <p class="font-heading font-bold text-white text-sm uppercase tracking-widest">What to include</p>
                 </div>
-                <div class="flex flex-wrap gap-2">
-                    <div class="flex items-center gap-1.5 rounded-lg px-3 py-1.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <svg class="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-                        <span class="font-body text-white/80 text-xs">Site location(s)</span>
+                <div class="flex flex-wrap gap-5">
+                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
+                        <span class="font-body text-white/80 text-sm">Site location(s)</span>
                     </div>
-                    <div class="flex items-center gap-1.5 rounded-lg px-3 py-1.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <svg class="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l5.653-4.655m5.867-5.867-3.03 2.496c-.14.468-.382.891-.766 1.208m0 0-5.867 5.867m5.867-5.867-5.867 5.867"/></svg>
-                        <span class="font-body text-white/80 text-xs">Equipment type &amp; brand</span>
+                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
+                        <img src="/images/icons/brand/Ativo%2010.svg" class="w-4 h-4 flex-shrink-0" style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);" alt="">
+                        <span class="font-body text-white/80 text-sm">Equipment type &amp; brand</span>
                     </div>
-                    <div class="flex items-center gap-1.5 rounded-lg px-3 py-1.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <svg class="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
-                        <span class="font-body text-white/80 text-xs">Symptoms &amp; urgency</span>
+                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
+                        <span class="font-body text-white/80 text-sm">Symptoms &amp; urgency</span>
                     </div>
-                    <div class="flex items-center gap-1.5 rounded-lg px-3 py-1.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <svg class="w-3 h-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 0 1 0 3.75H5.625a1.875 1.875 0 0 1 0-3.75Z"/></svg>
-                        <span class="font-body text-white/80 text-xs">Number of machines</span>
+                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
+                        <img src="/images/icons/brand/Ativo%2017.svg" class="w-4 h-4 flex-shrink-0" style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);" alt="">
+                        <span class="font-body text-white/80 text-sm">Number of machines</span>
                     </div>
                 </div>
             </div>
@@ -454,7 +452,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
                         </svg>
                     </div>
-                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-widest">What happens next</p>
+                    <p class="font-heading font-bold text-navy text-sm uppercase tracking-widest">What happens next</p>
                 </div>
                 <div class="flex gap-0">
                     @php $nextSteps = [
