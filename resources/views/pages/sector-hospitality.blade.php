@@ -1,7 +1,7 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('meta')
-<meta name="description" content="Engineering-led commercial laundry support for hotels and hospitality â€” barrier washers, service contracts, and priority response across Ireland.">
+<meta name="description" content="Engineering-led commercial laundry support for hotels and hospitality — barrier washers, service contracts, and priority response across Ireland.">
 
 @endsection
 
@@ -54,7 +54,7 @@
                     With growing demand for quality guest experiences, you need laundry equipment that <span style="color:#148af4;">won't let you down.</span>
                 </p>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">
-                    Whether it's towels, bedding or staff uniforms, we know you need a <span style="color:#148af4;">consistently reliable</span> laundry operation for your guests â€” which is why we provide fast, expert support across the Republic of Ireland.
+                    Whether it's towels, bedding or staff uniforms, we know you need a <span style="color:#148af4;">consistently reliable</span> laundry operation for your guests — which is why we provide fast, expert support across the Republic of Ireland.
                 </p>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-8">
                     We've been keeping hotel laundry rooms running for over <span style="color:#148af4;">37 years.</span> If you need assistance, our network of engineers is just a phone call away.
@@ -105,7 +105,7 @@
 </section>
 
 
-{{-- D: Enhanced Usability â€” Apple-style horizontal scroll cards --}}
+{{-- D: Enhanced Usability — Apple-style horizontal scroll cards --}}
 <style>
 .ils-apple-wrap { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; cursor:grab; }
 .ils-apple-wrap:active { cursor:grabbing; }
@@ -126,7 +126,7 @@
 .ils-apple-overlay p, .ils-apple-overlay li { font-size:0.83rem; color:rgba(255,255,255,0.72); line-height:1.7; font-family:'Inter',system-ui,sans-serif; }
 .ils-apple-overlay ul { padding-left:0; list-style:none; }
 .ils-apple-overlay li { display:flex; gap:8px; margin-bottom:8px; }
-.ils-apple-overlay li::before { content:'â€“'; color:#148af4; flex-shrink:0; font-weight:700; }
+.ils-apple-overlay li::before { content:'–'; color:#148af4; flex-shrink:0; font-weight:700; }
 .ils-apple-close { position:absolute; bottom:22px; right:22px; width:38px; height:38px; background:rgba(255,255,255,0.15); border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; border:none; }
 .ils-apple-close svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transform:rotate(45deg); }
 </style>
@@ -231,7 +231,7 @@
         <!-- 3-column card grid -->
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
-            <!-- Card 1 â€” Repairs & Call-outs -->
+            <!-- Card 1 — Repairs & Call-outs -->
             <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
                      class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105">
@@ -269,7 +269,7 @@
                 </div>
             </div>
 
-            <!-- Card 2 â€” Equipment Rental -->
+            <!-- Card 2 — Equipment Rental -->
             <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -279,7 +279,7 @@
                      style="background: rgba(1,30,65,0.88);"></div>
                 <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
                     <div class="opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 mb-4">
-                        <p class="font-body text-white/80 text-sm leading-relaxed mb-4">Flexible rental agreements that remove upfront capital cost. Equipment supplied, maintained and replaced â€” without the ownership burden.</p>
+                        <p class="font-body text-white/80 text-sm leading-relaxed mb-4">Flexible rental agreements that remove upfront capital cost. Equipment supplied, maintained and replaced — without the ownership burden.</p>
                         <span class="inline-flex items-center gap-2 bg-[#148af4] text-white font-heading font-bold text-xs px-4 py-2 rounded-lg">
                             See Rental Options
                             <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -295,7 +295,7 @@
                 </div>
             </div>
 
-            <!-- Card 3 â€” Service Contracts -->
+            <!-- Card 3 — Service Contracts -->
             <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
                      class="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105">
@@ -306,7 +306,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end">
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
                         <p class="font-body text-white text-sm leading-relaxed mb-4">
-                            Structured preventive maintenance across three tiers â€” Core, Priority and Assured. Predictable costs, documented history, fewer unplanned stoppages.
+                            Structured preventive maintenance across three tiers — Core, Priority and Assured. Predictable costs, documented history, fewer unplanned stoppages.
                         </p>
                         <ul class="space-y-2 mb-4">
                             <li class="flex items-center gap-2 font-body text-white text-sm">
@@ -338,13 +338,247 @@
 
 @include('components.cta-combined-banner')
 
+<!-- 5. BARRIER WASHERS PRODUCT BLOCK -->
+
+{{-- A2: Navy intro block --}}
+
+<!-- PRODUCTS: Barrier Washers / Tumble Dryers / Ironers -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <!-- Title -->
+        <div class="mb-16 reveal">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-2">
+                Laundry and infection<br><strong>control solutions</strong>
+            </h2>
+            <p class="font-body text-navy text-base leading-relaxed">
+                Irish Laundry Systems sell/rent , installs and maintains a range of CQC-compliant equipment including washers and dryers.<br>
+                Take an extra load off your mind.
+            </p>
+        </div>
+
+        <div class="flex flex-col divide-y divide-gray-100">
+
+            <!-- 1. COMMERCIAL WASHERS — image left, text right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
+                <div class="flex flex-col lg:ml-28">
+                    <img src="/images/equipment/commercialwasher.webp"
+                         alt="Commercial Washer"
+                         class="w-full h-96 object-contain object-top">
+                </div>
+                <div class="lg:-ml-20 lg:mt-10">
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+                        Commercial Washers, built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
+                    </p>
+                    <div class="flex flex-row flex-wrap items-center gap-4">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Tumble Dryers — text left, image right -->
+            <div x-data="{ open: false }">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
+                <div class="order-2 lg:order-1">
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">
+                        Precision <strong>drying</strong><br>for <strong>high-demand</strong> hospitality cycles.
+                    </h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                        Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.
+                    </p>
+                    <div class="flex flex-row flex-wrap items-center gap-4 mb-6">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                    <div class="font-body text-gray-500 text-sm leading-relaxed">
+                        <p class="font-body font-bold text-navy mb-1">Designed for humans, and the environment</p>
+                        <p class="font-body">Our Tumble Dryers stand out for their energy efficiency, speed, and certified ergonomic design, while easing the physical strain on laundry operators.<br>
+                        This unique combination distinguishes them from all other dryers on the market.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
+                    <img src="/images/equipment/line6000-tumble-dryer.webp"
+                         alt="Line 6000 Tumble Dryer"
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3">
+                        <button @click="open = !open"
+                                class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Balance</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
+                <div class="flex items-start gap-6 mb-8">
+                    <div class="w-32 h-32 flex-shrink-0">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                        <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/Xm2CpX95zDM"
+                                title="Tumble Dryers Ergonomics"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <h5 class="font-heading font-bold text-navy text-xl mb-3">Our dryers have earned the prestigious 4-star rating for ergonomics from ERGOCERT</h5>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">All models have been user-tested to ensure operators will feel less tension and strain, so they—and your hotel laundry—can thrive.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- 3. Ironers — image left, text right -->
+            <div x-data="{ open: false, tab: 'diamms' }">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
+                <div class="flex flex-col">
+                    <img src="/images/equipment/line6000-ironer.webp"
+                         alt="Line 6000 Ironer"
+                         class="w-full h-80 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Ironers</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+                        Deliver perfectly ironed linen to the highest hygiene standards
+                    </p>
+                    <div class="flex flex-row flex-wrap items-center gap-4">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ironers: collapsible features -->
+                <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                    <!-- Tabs -->
+                    <div class="flex gap-6 border-b border-gray-200 mb-8">
+                        <button @click="tab = 'diamms'"
+                                :class="tab === 'diamms' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            DIAMMS
+                        </button>
+                        <button @click="tab = 'hygiene'"
+                                :class="tab === 'hygiene' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                class="font-heading text-sm pb-3 transition-colors">
+                            Hygiene Guard
+                        </button>
+                    </div>
+
+                    <!-- DIAMMS Tab -->
+                    <div x-show="tab === 'diamms'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Maximum hygiene and performance</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-32 h-32 flex-shrink-0">
+                                <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                Using DIAMMS™ technology, the Line 6000 Flatwork Ironers will automatically adapt the cylinder speed to the amount of moisture in the linen.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/KER1S0tcqeE"
+                                        title="Ironers DIAMMS"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next bed.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hygiene Guard Tab -->
+                    <div x-show="tab === 'hygiene'">
+                        <h4 class="font-heading font-bold text-navy text-xl mb-4">Pure Hygiene: Flawless Dry Linen Delivery</h4>
+                        <div class="flex items-start gap-6 mb-8">
+                            <div class="w-24 h-24 flex-shrink-0 bg-gray-100 rounded-xl flex items-center justify-center">
+                                <span class="font-heading font-bold text-gray-500 text-xs text-center leading-tight">Hygiene<br>Guard</span>
+                            </div>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                Hygiene Guard, in conjunction with DIAMMS™, will automatically reject any linen if it does not comply with the prescribed humidity parameters set by the RABC standards.
+                            </p>
+                        </div>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                                <iframe class="absolute inset-0 w-full h-full"
+                                        src="https://www.youtube.com/embed/KER1S0tcqeE"
+                                        title="Ironers Hygiene Guard"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowfullscreen></iframe>
+                            </div>
+                            <div>
+                                <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next bed.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- AUTHORISED PARTNER -->
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-12">
+
+
+    </div>
+</section>
+
 @include('components.why-choose-strip')
 
 @include('components.equipment-categories', ['equipment' => [
-    ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'Commercial Washers built for people and the planet. High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.',                                      'scale' => '1.75'],
-    ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'Post-wash flow, drying, flatwork handling, and support continuity all affect whether the clean route remains stable through the day.',                                                              'scale' => '1'],
-    ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'Deliver perfectly ironed linen to the highest hygiene standards.',                                                                                                                            'scale' => '1.15'],
-    ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                                                                                                           'scale' => '1.55'],
+    ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash routes and capacity planning.',                   'scale' => '1.75'],
+    ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity and room flow.',                          'scale' => '1'],
+    ['img' => 'ELS_PH_255x255_IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
+    ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
 ]])
 
 @include('components.service-contracts-strip')
