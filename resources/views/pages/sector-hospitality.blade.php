@@ -72,39 +72,6 @@
     </div>
 </section>
 
-<!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-white">
-    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-            Our process keeps the <span style="color:#148af4;">next step</span> clear.
-        </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
-            A clear four-step path from room review to the next practical recommendation.
-        </p>
-        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
-            @foreach([
-                ['title' => 'Assess the room',     'text' => 'Review linen flow, peak demand, housekeeping pressure and available space.',       'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>'],
-                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or guest-laundry setup.',          'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>'],
-                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',   'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>'],
-                ['title' => 'Move to assessment',  'text' => 'Turn the property, equipment setup and support needs into a practical next step.',  'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>'],
-            ] as $step)
-            <div class="flex flex-col items-center relative z-10">
-                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
-                        {!! $step['icon'] !!}
-                    </svg>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-
 {{-- D: Enhanced Usability — Apple-style horizontal scroll cards --}}
 <style>
 .ils-apple-wrap { display:flex; gap:10px; overflow-x:auto; scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch; padding-bottom:4px; scrollbar-width:none; cursor:grab; }
@@ -580,6 +547,38 @@
     ['img' => 'ELS_PH_255x255_IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, hygiene presentation, and clean-route continuity.', 'scale' => '1.4'],
     ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',       'desc' => 'For controlled dirty-side and clean-side handling.',               'scale' => '1.55'],
 ]])
+
+<!-- PROCESS BLOCK -->
+<section class="py-14 lg:py-20 bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
+            Our process keeps the <span style="color:#148af4;">next step</span> clear.
+        </h2>
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
+            A clear four-step path from room review to the next practical recommendation.
+        </p>
+        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
+            @foreach([
+                ['title' => 'Assess the room',     'text' => 'Review linen flow, peak demand, housekeeping pressure and available space.',       'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>'],
+                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or guest-laundry setup.',          'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>'],
+                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',   'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>'],
+                ['title' => 'Move to assessment',  'text' => 'Turn the property, equipment setup and support needs into a practical next step.',  'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>'],
+            ] as $step)
+            <div class="flex flex-col items-center relative z-10">
+                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
+                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
+                        {!! $step['icon'] !!}
+                    </svg>
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 @include('components.service-contracts-strip')
 
