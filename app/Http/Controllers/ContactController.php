@@ -32,12 +32,20 @@ class ContactController extends Controller
             'page_source'   => 'nullable|string|max:255',
         ]);
 
-        // Persist to database
-        ContactSubmission::create($validated);
+        // Persist to database (best-effort — continues even if DB is unavailable)
+        try {
+            ContactSubmission::create($validated);
+        } catch (\Exception $e) {
+            \Log::error('Contact form DB save failed: ' . $e->getMessage());
+        }
 
         // Send email notification
-        Mail::to(config('mail.to_address', 'info@irishlaunderysystems.ie'))
-            ->send(new ContactRequest($validated));
+        try {
+            Mail::to(config('mail.to_address', 'info@irishlaunderysystems.ie'))
+                ->send(new ContactRequest($validated));
+        } catch (\Exception $e) {
+            \Log::error('Contact form mail failed: ' . $e->getMessage());
+        }
 
         return back()->with(
             'success',
