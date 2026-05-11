@@ -195,11 +195,11 @@
             </p>
         </div>
 
-        <!-- 3-column card grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- 4-column card grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             <!-- Card 1 — Repairs & Call-outs -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
                      class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -237,7 +237,7 @@
             </div>
 
             <!-- Card 2 — Equipment Rental -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -263,7 +263,7 @@
             </div>
 
             <!-- Card 3 — Service Contracts -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
                      class="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
@@ -295,6 +295,44 @@
                         <a href="{{ route('service-contracts') }}"
                            class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
                             View Contracts
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 — Parts & Aftercare -->
+            <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+                <img src="/images/healthcare/Customer-Care_Line-6000-_001.jpg" alt="Parts and Aftercare"
+                     class="absolute inset-0 w-full h-full object-cover object-[center_20%] transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.96);"></div>
+                <div class="absolute inset-0 p-8 flex flex-col justify-end">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
+                        <p class="font-body text-white text-sm leading-relaxed mb-4">
+                            Genuine parts access, service history context and practical follow-up support around hospitality laundry equipment.
+                        </p>
+                        <ul class="space-y-2 mb-4">
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Genuine Electrolux Professional parts
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Service history and follow-up support
+                            </li>
+                            <li class="flex items-center gap-2 font-body text-white text-sm">
+                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
+                                Practical aftercare for the installed base
+                            </li>
+                        </ul>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Parts &amp; Aftercare</h3>
+                    <div class="flex justify-end">
+                        <a href="{{ route('service-contracts') }}"
+                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
+                            Explore Support
                         </a>
                     </div>
                 </div>
