@@ -201,7 +201,7 @@
             <!-- Card 1 — Repairs & Call-outs -->
             <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
-                     class="absolute inset-0 w-full h-full object-cover object-[65%_40%] transition-transform duration-700 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-cover object-[60%_40%] transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -303,7 +303,7 @@
             <!-- Card 4 — Parts & Aftercare -->
             <div class="group relative overflow-hidden h-[420px] lg:h-[460px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/services-overview-hero.jpg" alt="Parts and Aftercare"
-                     class="absolute inset-0 w-full h-full object-cover object-[65%_40%] transition-transform duration-700 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-cover object-[60%_40%] transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
