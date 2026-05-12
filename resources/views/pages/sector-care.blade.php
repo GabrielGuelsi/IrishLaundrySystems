@@ -262,8 +262,8 @@
                     'text'   => 'Genuine parts access, service history context and practical follow-up support around laundry equipment.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
-                    'pos'    => 'center 20%',
+                    'img'    => '/images/healthcare/services-overview-hero.jpg',
+                    'pos'    => 'center 40%',
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
