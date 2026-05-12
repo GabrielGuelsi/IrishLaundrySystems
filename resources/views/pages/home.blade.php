@@ -65,21 +65,21 @@
 <!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl xl:text-5xl leading-tight">
-                    Laundry support built around the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span> and the <span class="text-[#148af4]">next practical step</span>.
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight">
+                    Laundry support built around<br>the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span><br>and the <span class="text-[#148af4]">next practical step</span>.
                 </h2>
             </div>
-            <div class="space-y-4 lg:space-y-0 lg:flex lg:flex-col lg:justify-between lg:pt-[2.6rem]">
-                <p class="font-body font-bold text-navy text-xl lg:text-2xl leading-snug">
+            <div class="flex flex-col gap-3 lg:pt-[2.6rem]">
+                <p class="font-body font-bold text-navy text-xl leading-snug whitespace-nowrap">
                     Irish Laundry Systems is not just an equipment supplier.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed">
-                    We connect equipment selection, installation, planned maintenance, call-outs, rental, parts continuity and aftercare into one practical plan for the site.
+                <p class="font-body text-gray-600 text-lg leading-relaxed whitespace-nowrap">
+                    We connect equipment selection, installation, planned maintenance,<br>call-outs, rental, parts continuity and aftercare.<br>into one practical plan for the site.
                 </p>
-                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-base lg:text-lg leading-snug transition-colors">
+                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors">
                     See how we <span class="text-[#148af4]">support</span> your site.
                 </a>
             </div>

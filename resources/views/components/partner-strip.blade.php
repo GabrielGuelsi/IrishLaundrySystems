@@ -4,7 +4,7 @@
     Use directly below the hero section on every page.
 --}}
 <div class="bg-white border-b border-gray-200">
-    <div class="max-w-screen-2xl mx-auto pl-[18px] pr-6 sm:pr-10 lg:pr-20 py-2 lg:py-2.5 flex items-center justify-between flex-wrap gap-4">
+    <div class="max-w-screen-2xl mx-auto pl-[52px] pr-[62px] py-2 lg:py-2.5 flex items-center justify-between flex-wrap gap-4">
 
         <!-- Logo -->
         <div class="flex-shrink-0">
