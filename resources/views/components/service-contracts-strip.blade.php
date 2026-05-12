@@ -1,11 +1,11 @@
 {{-- Service Contracts, Parts & Aftercare strip — content left, image right --}}
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- RIGHT: image pinned to 40% --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/healthcare/repairs-callouts.jpg" alt="ILS service and parts support"
              class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.82) 8%, rgba(1,30,65,0.45) 28%, rgba(1,30,65,0.18) 48%, transparent 65%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
 
     {{-- LEFT: content — 60% width --}}
@@ -13,7 +13,7 @@
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Service Contracts,</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#148af4;">Parts &amp; Aftercare</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">Parts &amp; Aftercare</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">

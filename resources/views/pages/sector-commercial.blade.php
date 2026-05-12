@@ -9,8 +9,8 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
-    <img src="/images/healthcare/service-contracts-hero.jpg" alt="Commercial laundry operation"
-         class="absolute inset-0 w-full h-full object-cover object-[center_25%]">
+    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry operation"
+         class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.75) 0%, rgba(1,30,65,0.4) 50%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
@@ -152,12 +152,11 @@
 .ils-apple-close svg { width:15px; height:15px; stroke:#fff; stroke-width:2.5; transform:rotate(45deg); }
 </style>
 
-<section class="py-14 lg:py-20" style="background:#f5f5f7;">
+<section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Header --}}
         <div class="mb-8 reveal">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial &amp; Industrial Priorities</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
                 Built around <span style="color:#148af4;">output</span>, <span style="color:#148af4;">equipment load</span> and operating rhythm.
             </h2>
@@ -170,67 +169,67 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
             {{-- Card 1: Throughput --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Throughput and daily load</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Equipment and support planned around volume, shifts, turnaround needs and repeated use.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Throughput and daily load</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment and support planned around volume, shifts, turnaround needs and repeated use.</p>
                 </div>
             </div>
 
             {{-- Card 2: Load profile --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Load profile and fabric mix</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Planning that considers workwear, towels, uniforms, bedding, flatwork, specialist items and mixed textiles.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Load profile and fabric mix</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Planning that considers workwear, towels, uniforms, bedding, flatwork, specialist items and mixed textiles.</p>
                 </div>
             </div>
 
             {{-- Card 3: Utility --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Utility and operating cost control</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Washer, dryer and dosing decisions shaped around water, energy, detergent use and cycle efficiency.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility and operating cost control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Washer, dryer and dosing decisions shaped around water, energy, detergent use and cycle efficiency.</p>
                 </div>
             </div>
 
             {{-- Card 4: Operator --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Operator handling and controls</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Loading access, clear controls and practical ergonomics that help teams work with less friction.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator handling and controls</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Loading access, clear controls and practical ergonomics that help teams work with less friction.</p>
                 </div>
             </div>
 
             {{-- Card 5: Service --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Service and parts continuity</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Maintenance, parts access and aftercare connected to the installed base before small issues become larger problems.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Service and parts continuity</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Maintenance, parts access and aftercare connected to the installed base before small issues become larger problems.</p>
                 </div>
             </div>
 
@@ -252,51 +251,50 @@
             </p>
         </div>
 
-        <!-- 3-column card grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <!-- 4-column card grid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
 
-            <!-- Card 1 — Repairs & Call-outs -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/repairs-callouts.jpg" alt="Repairs and Call-outs"
-                     class="absolute inset-0 w-full h-full object-cover object-[center_40%] transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                     style="background: rgba(1,30,65,0.96);"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">
-                            Urgent support for breakdowns and performance issues where operational pressure demands a fast, practical route.
-                        </p>
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Triage-first breakdown support
-                            </li>
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Fast route into contact and follow-up
-                            </li>
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Built for critical laundry environments
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Repairs &amp; <span class="whitespace-nowrap">Call-outs</span></h3>
-                    <div class="flex justify-end">
-                        <a href="{{ route('repairs') }}"
-                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
-                            Request Call-out
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 — Equipment Rental -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/commercial-industrial.jpg" alt="Equipment Rental"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+            @foreach([
+                [
+                    'title'  => 'Repairs &amp; Call-outs',
+                    'text'   => 'Fault response and practical engineering support when equipment issues put the laundry operation under pressure.',
+                    'cta'    => 'Request Call-out',
+                    'route'  => route('repairs'),
+                    'img'    => '/images/healthcare/repairs-callouts.jpg',
+                    'pos'    => 'center 40%',
+                ],
+                [
+                    'title'  => 'Equipment Rental',
+                    'text'   => 'Flexible rental agreements that remove upfront capital cost. Equipment supplied, maintained and supported without the ownership burden.',
+                    'cta'    => 'See Rental Options',
+                    'route'  => route('rental'),
+                    'img'    => '/images/healthcare/commercial-industrial.jpg',
+                    'pos'    => 'center center',
+                ],
+                [
+                    'title'  => 'Service Contracts',
+                    'text'   => 'Planned maintenance and service structure for commercial sites that need better control over the installed base and fewer unplanned stoppages.',
+                    'cta'    => 'View Contracts',
+                    'route'  => route('service-contracts'),
+                    'img'    => '/images/healthcare/Service Contracts.png',
+                    'pos'    => 'center 35%',
+                ],
+                [
+                    'title'  => 'Parts &amp; Aftercare',
+                    'text'   => 'Genuine parts access, consumables and practical aftercare support connected to the installed base — the right component to the right machine without delay.',
+                    'cta'    => 'Enquire Now',
+                    'route'  => route('contact'),
+                    'img'    => '/images/healthcare/Parts & Aftercare.png',
+                    'pos'    => 'center center',
+                ],
+            ] as $card)
+            <a href="{{ $card['route'] }}"
+               class="group relative overflow-hidden rounded-2xl block"
+               style="height:400px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] }};">
+                {{-- Default gradient --}}
                 <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.4) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
                 {{-- Hover overlay --}}
@@ -304,61 +302,22 @@
                      style="background: rgba(1,30,65,0.88);"></div>
                 {{-- Content --}}
                 <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    {{-- Description + CTA (hover) --}}
-                    <div class="opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 mb-4">
-                        <p class="font-body text-white/80 text-sm leading-relaxed mb-4">Flexible rental agreements that remove upfront capital cost. Equipment supplied, maintained and replaced — without the ownership burden.</p>
-                        <span class="inline-flex items-center gap-2 bg-[#148af4] text-white font-heading font-bold text-xs px-4 py-2 rounded-lg">
-                            See Rental Options
-                            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    {{-- Description (slides up on hover) --}}
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
+                        <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
+                    </div>
+                    {{-- Title (always visible) --}}
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    {{-- Button (always visible) --}}
+                    <div class="flex justify-end">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            {!! $card['cta'] !!}
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Equipment Rental</h3>
-                    <div class="flex justify-end">
-                        <a href="{{ route('rental') }}"
-                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
-                            See Rental Options
-                        </a>
-                    </div>
                 </div>
-            </div>
-
-            <!-- Card 3 — Service Contracts -->
-            <div class="group relative overflow-hidden h-[520px] lg:h-[560px] rounded-2xl cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/Service%20Contracts.png" alt="Service Contracts"
-                     class="absolute inset-0 w-full h-full object-cover object-[center_35%] transition-transform duration-700 group-hover:scale-105">
-                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.1) 60%, transparent 80%);"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                     style="background: rgba(1,30,65,0.96);"></div>
-                <div class="absolute inset-0 p-8 flex flex-col justify-end">
-                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-64 group-hover:opacity-100 transition-all duration-500">
-                        <p class="font-body text-white text-sm leading-relaxed mb-4">
-                            Structured preventive maintenance across three tiers — Core, Priority and Assured. Predictable costs, documented history, fewer unplanned stoppages.
-                        </p>
-                        <ul class="space-y-2 mb-4">
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Three maintenance tiers
-                            </li>
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Documented service records
-                            </li>
-                            <li class="flex items-center gap-2 font-body text-white text-sm">
-                                <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] flex-shrink-0"></span>
-                                Fewer unplanned stoppages
-                            </li>
-                        </ul>
-                    </div>
-                    <h3 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-5">Service Contracts</h3>
-                    <div class="flex justify-end">
-                        <a href="{{ route('service-contracts') }}"
-                           class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-md text-sm transition-colors duration-200 whitespace-nowrap">
-                            View Contracts
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </a>
+            @endforeach
 
         </div>
     </div>
@@ -617,29 +576,28 @@
                 [
                     'title' => 'Assess the site',
                     'text'  => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>',
+                    'icon'  => 'Ativo%203',
                 ],
                 [
                     'title' => 'Match the equipment',
                     'text'  => 'Recommend the right washing, drying, finishing or specialist route.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>',
+                    'icon'  => 'Ativo%2010',
                 ],
                 [
                     'title' => 'Keep support close',
                     'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>',
+                    'icon'  => 'Ativo%207',
                 ],
                 [
                     'title' => 'Move to assessment',
                     'text'  => 'Turn the site, equipment route and support needs into a practical next step.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>',
+                    'icon'  => 'Ativo%2020',
                 ],
             ] as $step)
             <div class="flex flex-col items-center relative z-10">
                 <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
-                        {!! $step['icon'] !!}
-                    </svg>
+                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
@@ -657,6 +615,17 @@
 @include('components.service-contracts-strip')
 
 @include('components.testimonials')
+
+@include('components.faq', [
+    'heading' => 'Commercial Laundry FAQs',
+    'faqs' => [
+        ['question' => 'What types of commercial sites do you support?',             'answer' => 'We support a wide range of commercial and industrial laundry sites including commercial laundries, industrial facilities, public-sector buildings, universities, emergency-service sites, gyms, spas and mixed-textile operations. Each site is assessed individually to match the right equipment and support structure.'],
+        ['question' => 'Can you supply and install equipment for high-volume operations?', 'answer' => 'Yes. We supply and install Electrolux Professional commercial washers, tumble dryers, ironers and barrier washers for high-throughput environments. Equipment selection is matched to load profile, fabric mix, available utilities and the daily operating rhythm of the site.'],
+        ['question' => 'What does a service contract cover for a commercial site?',  'answer' => 'Service contracts cover planned maintenance visits, priority call-out response, access to genuine parts and a service history record for the installed base. The structure is tailored to the site, equipment type and the level of cover required.'],
+        ['question' => 'How quickly can you respond to a breakdown call-out?',        'answer' => 'Response times depend on site location, contract level and the nature of the fault. Priority response is available under service contract. We aim to minimise downtime for commercial sites where equipment output directly affects daily operations.'],
+        ['question' => 'Is equipment rental available for commercial operations?',    'answer' => 'Yes. Equipment rental is available as an alternative to capital purchase. Rental agreements cover supply, installation and ongoing support under a single arrangement, which can suit sites managing cash flow, planned replacement or expansion without upfront capital commitment.'],
+    ],
+])
 
 @include('components.cta-downtime-form', ['pageSource' => 'commercial_cta'])
 

@@ -277,20 +277,18 @@
                 <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                      style="background: rgba(1,30,65,0.88);"></div>
                 <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
-                    <div class="opacity-0 group-hover:opacity-100 translate-y-3 group-hover:translate-y-0 transition-all duration-300 mb-4">
-                        <p class="font-body text-white/80 text-sm leading-relaxed mb-4">{!! $card['text'] !!}</p>
-                        <span class="inline-flex items-center gap-2 bg-[#148af4] text-white font-heading font-bold text-xs px-4 py-2 rounded-lg">
-                            {!! $card['cta'] !!}
-                            <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                        </span>
+                    {{-- Description (slides up on hover) --}}
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
+                        <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <div class="flex items-end justify-between gap-3">
-                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight">{!! $card['title'] !!}</h3>
-                        <div class="flex-shrink-0 w-9 h-9 rounded-full bg-white/20 group-hover:bg-[#148af4] flex items-center justify-center transition-colors duration-300">
-                            <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                            </svg>
-                        </div>
+                    {{-- Title (always visible) --}}
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    {{-- Button (always visible) --}}
+                    <div class="flex justify-end">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            {!! $card['cta'] !!}
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </span>
                     </div>
                 </div>
             </a>
@@ -693,29 +691,28 @@
                 [
                     'title' => 'Assess the room',
                     'text'  => 'Review layout, daily demand, staff handling and practical use of the laundry room.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/>',
+                    'icon'  => 'Ativo%203',
                 ],
                 [
                     'title' => 'Match the equipment',
                     'text'  => 'Recommend the right washing, drying, finishing or barrier setup.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>',
+                    'icon'  => 'Ativo%2010',
                 ],
                 [
                     'title' => 'Keep support close',
                     'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>',
+                    'icon'  => 'Ativo%207',
                 ],
                 [
                     'title' => 'Move to assessment',
                     'text'  => 'Turn the room, equipment setup and support needs into a practical next step.',
-                    'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>',
+                    'icon'  => 'Ativo%2020',
                 ],
             ] as $step)
             <div class="flex flex-col items-center relative z-10">
                 <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.6">
-                        {!! $step['icon'] !!}
-                    </svg>
+                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
@@ -735,6 +732,17 @@
 
 <!-- 12. Testimonial / Proof Block -->
 @include('components.testimonials')
+
+@include('components.faq', [
+    'heading' => 'Care Facility Laundry FAQs',
+    'faqs' => [
+        ['question' => 'What types of care facilities do you work with?',             'answer' => 'We work with residential care homes, nursing homes, assisted-living facilities and similar care settings across Ireland. Each site is assessed individually to match equipment and support to the laundry room size, daily demand, resident care requirements and available utilities.'],
+        ['question' => 'Can you supply machines suitable for a care home laundry room?', 'answer' => 'Yes. We supply commercial washers, tumble dryers and ironers sized and configured for care facility environments. Equipment is selected around daily load, linen type, room layout and the level of support needed behind the installed base.'],
+        ['question' => 'What maintenance support is available after installation?',   'answer' => 'We offer planned service contracts, priority call-out response and access to genuine parts for all equipment we supply. Support can be structured around the site\'s needs — from a basic service plan to a full maintenance agreement covering the entire installed base.'],
+        ['question' => 'How do service contracts work for care homes?',               'answer' => 'Service contracts are agreed at the site level and typically include scheduled maintenance visits, fault-response call-outs, parts access and a service history record. The structure is confirmed based on equipment type, site priorities and the level of cover required.'],
+        ['question' => 'Is rental an option instead of purchasing equipment outright?', 'answer' => 'Yes. Equipment rental is available as an alternative to capital purchase. This covers supply, installation and ongoing support under a single rental agreement — a practical option for care facilities managing budget constraints or planning for equipment replacement without upfront capital.'],
+    ],
+])
 
 <!-- 13. Final CTA / Form -->
 @include('components.cta-downtime-form', ['pageSource' => 'care_cta'])
