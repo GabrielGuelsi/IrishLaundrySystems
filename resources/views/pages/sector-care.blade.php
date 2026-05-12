@@ -262,8 +262,8 @@
                     'text'   => 'Genuine parts access, service history context and practical follow-up support around laundry equipment.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
-                    'pos'    => 'center 20%',
+                    'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'pos'    => 'center center',
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
@@ -574,7 +574,7 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain object-left-top">
+                         class="w-full h-[440px] object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
@@ -584,7 +584,7 @@
                         </button>
                     </div>
                 </div>
-                <div>
+                <div class="lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers support sites where controlled dirty-side loading and clean-side unloading are required as part of the laundry room setup.

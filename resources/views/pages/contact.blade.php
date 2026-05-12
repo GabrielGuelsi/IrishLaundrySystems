@@ -117,42 +117,101 @@
 
 </section>
 
+{{-- Spacer between hero and strip --}}
+<div class="bg-white h-10 lg:h-14"></div>
+
+{{-- FULL-WIDTH What to include strip --}}
+<div class="bg-navy px-6 sm:px-10 lg:px-20 py-10 lg:py-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+
+                    {{-- Left: heading --}}
+                    <div class="lg:col-span-3">
+                        <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-3">
+                            What to <span class="text-[#148af4]">include</span>.
+                        </h2>
+                        <p class="font-body text-white/60 text-sm leading-relaxed">
+                            Share these details to get the most accurate and fastest response.
+                        </p>
+                    </div>
+
+                    {{-- Right: 4-step horizontal flow --}}
+                    <div class="lg:col-span-9 flex items-start justify-between gap-2 sm:gap-3 flex-wrap sm:flex-nowrap">
+
+                        {{-- Step 1: Site location(s) --}}
+                        <div class="flex-1 min-w-[110px] text-center">
+                            <div class="flex justify-center mb-4">
+                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+                                </svg>
+                            </div>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Site location(s)</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">County, address or&nbsp;region</p>
+                        </div>
+
+                        {{-- Arrow --}}
+                        <div class="hidden sm:flex flex-shrink-0 items-center pt-6">
+                            <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
+                                <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="rgba(20,138,244,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        {{-- Step 2: Equipment type & brand --}}
+                        <div class="flex-1 min-w-[110px] text-center">
+                            <div class="flex justify-center mb-4">
+                                <img src="/images/icons/brand/Ativo%2010.svg"
+                                     class="w-14 h-14"
+                                     style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);"
+                                     alt="">
+                            </div>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Equipment type &amp; brand</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Make, model and age if&nbsp;known</p>
+                        </div>
+
+                        {{-- Arrow --}}
+                        <div class="hidden sm:flex flex-shrink-0 items-center pt-6">
+                            <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
+                                <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="rgba(20,138,244,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        {{-- Step 3: Symptoms & urgency --}}
+                        <div class="flex-1 min-w-[110px] text-center">
+                            <div class="flex justify-center mb-4">
+                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+                                </svg>
+                            </div>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Symptoms &amp; urgency</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">What's happening and how soon it's&nbsp;needed</p>
+                        </div>
+
+                        {{-- Arrow --}}
+                        <div class="hidden sm:flex flex-shrink-0 items-center pt-6">
+                            <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
+                                <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="rgba(20,138,244,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        {{-- Step 4: Number of machines --}}
+                        <div class="flex-1 min-w-[110px] text-center">
+                            <div class="flex justify-center mb-4">
+                                <img src="/images/icons/brand/Ativo%2017.svg"
+                                     class="w-14 h-14"
+                                     style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);"
+                                     alt="">
+                            </div>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Number of machines</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">How many units on site or&nbsp;affected</p>
+                        </div>
+
+                    </div>
+                </div>
+</div>
+
 {{-- FORM + SIDEBAR --}}
 <section id="contact-form" class="bg-white pt-14 pb-24 lg:pb-32">
     <div class="max-w-5xl mx-auto px-6 sm:px-10">
-
-        {{-- Infographic strip --}}
-        <div class="rounded-2xl overflow-hidden mb-10" style="box-shadow:0 1px 3px rgba(0,0,0,0.08);">
-
-            {{-- PART 1: What to include --}}
-            <div class="bg-navy px-8 lg:px-12 py-10">
-                <div class="flex items-center gap-2.5 mb-5">
-                    <div class="w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(20,138,244,0.25);">
-                        <img src="/images/icons/brand/Ativo%206.svg" style="width:1.05rem;height:1.05rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);" alt="">
-                    </div>
-                    <p class="font-heading font-bold text-white text-sm uppercase tracking-widest">What to include</p>
-                </div>
-                <div class="flex flex-wrap gap-5">
-                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
-                        <span class="font-body text-white/80 text-sm">Site location(s)</span>
-                    </div>
-                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <img src="/images/icons/brand/Ativo%2010.svg" class="w-4 h-4 flex-shrink-0" style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);" alt="">
-                        <span class="font-body text-white/80 text-sm">Equipment type &amp; brand</span>
-                    </div>
-                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/></svg>
-                        <span class="font-body text-white/80 text-sm">Symptoms &amp; urgency</span>
-                    </div>
-                    <div class="flex items-center gap-2 rounded-lg px-4 py-2.5" style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);">
-                        <img src="/images/icons/brand/Ativo%2017.svg" class="w-4 h-4 flex-shrink-0" style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);" alt="">
-                        <span class="font-body text-white/80 text-sm">Number of machines</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-20">
 
@@ -428,6 +487,24 @@
                         @endforeach
 
                     </div>
+                </div>
+
+                <div class="w-10 h-px bg-gray-200"></div>
+
+                {{-- Coverage map --}}
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-4">Coverage area</h3>
+                    <div class="rounded-xl overflow-hidden border border-gray-100" style="height:200px;">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-10.7%2C51.3%2C-5.8%2C55.5&amp;layer=mapnik"
+                            width="100%"
+                            height="200"
+                            style="border:0; display:block;"
+                            loading="lazy"
+                            title="Republic of Ireland coverage area">
+                        </iframe>
+                    </div>
+                    <p class="font-body text-gray-400 text-xs mt-2">Republic of Ireland — all 26 counties</p>
                 </div>
 
                 <div class="w-10 h-px bg-gray-200"></div>

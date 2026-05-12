@@ -199,63 +199,63 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
             {{-- Card 1: Hygiene --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Hygiene-focused design</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Barrier configurations support separated handling between soiled and clean linen routes.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier configurations support separated handling between soiled and clean linen routes.</p>
                 </div>
             </div>
 
             {{-- Card 2: Operator --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <img src="/images/icons/brand/Ativo%201.svg" alt="" style="width:2.5rem;height:2.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <img src="/images/icons/brand/Ativo%201.svg" alt="" style="width:3.5rem;height:3.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Operator support</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Door access, drum positioning and loading logic can reduce strain during repeated handling tasks.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator support</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Door access, drum positioning and loading logic can reduce strain during repeated handling tasks.</p>
                 </div>
             </div>
 
             {{-- Card 3: Control --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <img src="/images/icons/brand/Ativo%2019.svg" alt="" style="width:2.5rem;height:2.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <img src="/images/icons/brand/Ativo%2019.svg" alt="" style="width:3.5rem;height:3.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">Intelligent control</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Clearer control interfaces help teams monitor cycles, manage process steps and support daily decisions.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Clearer control interfaces help teams monitor cycles, manage process steps and support daily decisions.</p>
                 </div>
             </div>
 
             {{-- Card 4: ERGOCERT --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10 gap-1">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14 gap-1.5">
                     @for($s = 0; $s < 4; $s++)
-                    <svg style="width:18px;height:18px;" fill="#148af4" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg style="width:24px;height:24px;" fill="#148af4" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     @endfor
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">4-star ERGOCERT ergonomics</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Selected Electrolux Professional Line 6000 equipment carries 4-star ERGOCERT recognition for ergonomic design.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">4-star ERGOCERT ergonomics</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Selected Electrolux Professional Line 6000 equipment carries 4-star ERGOCERT recognition for ergonomic design.</p>
                 </div>
             </div>
 
             {{-- Card 5: AIDO --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">AIDO secure door handling</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Automatic Inner Door Opening (AIDO) supports controlled loading and unloading in barrier washer configurations.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">AIDO secure door handling</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Automatic Inner Door Opening (AIDO) supports controlled loading and unloading in barrier washer configurations.</p>
                 </div>
             </div>
 
@@ -310,8 +310,8 @@
                     'text'   => 'Genuine parts access, service history context and practical follow-up support around healthcare laundry equipment.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
-                    'pos'    => 'center 20%',
+                    'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'pos'    => 'center center',
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
@@ -378,7 +378,7 @@
             <!-- 1. Barrier Washers — text left, image right -->
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div>
+                <div class="lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers sit at the centre of healthcare rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
@@ -397,7 +397,7 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain object-left-top">
+                         class="w-full h-[440px] object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
@@ -753,6 +753,17 @@
 @include('components.service-contracts-strip')
 
 @include('components.testimonials')
+
+@include('components.faq', [
+    'heading' => 'Healthcare Laundry FAQs',
+    'faqs' => [
+        ['question' => 'What types of healthcare sites do you support?',             'answer' => 'We support a wide range of healthcare environments including hospitals, nursing homes, care homes and residential care facilities. Each site is assessed individually to determine the right equipment, workflow and service structure.'],
+        ['question' => 'Do you supply barrier washers for infection control laundry rooms?', 'answer' => 'Yes. Barrier washers are a core part of our healthcare offering. We supply, install and support Electrolux Professional barrier washer configurations designed for controlled dirty-side and clean-side handling.'],
+        ['question' => 'What does a service contract include for healthcare sites?',  'answer' => 'Service contracts cover planned maintenance visits, priority call-out response, access to genuine parts and a service history record for the installed base. The structure is agreed based on site needs and equipment type.'],
+        ['question' => 'How quickly can you respond to a breakdown call-out?',        'answer' => 'We aim to respond to healthcare call-outs as a priority. Response times are confirmed at the time of enquiry and depend on site location and contract level. Priority response is available under service contract.'],
+        ['question' => 'Can equipment be rented rather than purchased outright?',     'answer' => 'Yes. Equipment rental is available as an alternative to capital purchase. This covers supply, installation and ongoing support under a single agreement, which can suit sites managing budget constraints or planning for replacement.'],
+    ],
+])
 
 @include('components.cta-downtime-form', ['pageSource' => 'healthcare_cta'])
 
