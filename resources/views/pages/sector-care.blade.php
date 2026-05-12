@@ -137,7 +137,7 @@
 </section>
 
 <!-- 6. COMPACT CARE FACILITIES BENTO -->
-<section class="py-12 lg:py-16" style="background:#f5f5f7;">
+<section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -152,63 +152,61 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Daily laundry demand</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Resident clothing, bedding, towels and linen create repeated pressure across the week.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Daily laundry demand</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Resident clothing, bedding, towels and linen create repeated pressure across the week.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.05 4.575a1.575 1.575 0 1 0-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 0 1 3.15 0v1.5m-3.15 0 .075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 0 1 3.15 0V15M6.9 7.575a1.575 1.575 0 1 0-3.15 0v8.175a6.75 6.75 0 0 0 6.75 6.75h2.018a5.25 5.25 0 0 0 3.712-1.538l1.732-1.732a5.25 5.25 0 0 0 1.538-3.712l.003-2.024a.668.668 0 0 1 .198-.471 1.575 1.575 0 1 0-2.228-2.228 3.818 3.818 0 0 0-1.12 2.687M6.9 7.575V12m6.27 4.318A4.49 4.49 0 0 1 16.35 15m.002 0h-.002"/>
-                    </svg>
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <img src="/images/icons/brand/Ativo%201.svg" alt="" style="width:3.5rem;height:3.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Staff handling</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Equipment should support easier loading, unloading, drying and finishing for smaller care teams.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Staff handling</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment should support easier loading, unloading, drying and finishing for smaller care teams.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Garment care and resident items</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Professional washers help manage mixed loads, resident garments and hygiene-sensitive handling.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Garment care and resident items</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Professional washers help manage mixed loads, resident garments and hygiene-sensitive handling.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Drying and finishing flow</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Drying control and finishing capacity help keep clean items moving back into use.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing flow</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Drying control and finishing capacity help keep clean items moving back into use.</p>
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-10">
-                    <svg class="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5">
+            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
                     </svg>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-sm leading-snug">Service and parts support</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Maintenance, parts access and aftercare keep the installed base easier to manage.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Service and parts support</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Maintenance, parts access and aftercare keep the installed base easier to manage.</p>
                 </div>
             </div>
 
@@ -365,20 +363,11 @@
         <div class="flex flex-col divide-y divide-gray-100">
 
             <!-- 1. COMMERCIAL WASHERS — image left, text right -->
-            <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col lg:ml-28">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[89px]">
-                            <span class="font-heading font-bold text-navy text-base">System Features, Wash Programmes &amp; Dosing Control</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
-                    </div>
                 </div>
                 <div class="lg:-ml-20 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial Washers</h3>
@@ -386,7 +375,7 @@
                         Commercial washers support daily wash demand across resident clothing, bedding, towels and mixed loads where capacity, wash quality and garment care matter.
                     </p>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -396,12 +385,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
-                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
-                    Washer configuration should account for load profile, wash programmes, detergent control, garment care and the way the site manages daily laundry demand.
-                </p>
-            </div>
             </div>
 
             <!-- 2. TUMBLE DRYERS — text left, image right -->
@@ -413,7 +396,7 @@
                         Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time</span>, residual moisture and operator handling can affect turnaround through the day.
                     </p>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -487,7 +470,7 @@
                         Ironers and finishing equipment support linen presentation, drying consistency, <span style="color:#148af4;">flatwork flow</span> and storage readiness in care environments.
                     </p>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -572,9 +555,9 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-[440px] object-contain object-center">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
+                         class="w-full h-[440px] object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full flex justify-center">
+                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -588,7 +571,7 @@
                         Barrier washers support sites where controlled dirty-side loading and clean-side unloading are required as part of the laundry room setup.
                     </p>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors tracking-wide w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             View Equipment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -671,7 +654,11 @@
     </div>
 </section>
 
-<!-- 10. PROCESS BLOCK -->
+@include('components.why-choose-strip')
+
+@include('components.equipment-categories')
+
+<!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
 
@@ -691,29 +678,28 @@
                 [
                     'title' => 'Assess the room',
                     'text'  => 'Review layout, daily demand, staff handling and practical use of the laundry room.',
-                    'icon'  => 'Ativo%203',
+                    'icon'  => 'clipboard',
                 ],
                 [
                     'title' => 'Match the equipment',
                     'text'  => 'Recommend the right washing, drying, finishing or barrier setup.',
-                    'icon'  => 'Ativo%2010',
+                    'icon'  => 'Ativo%204',
                 ],
                 [
                     'title' => 'Keep support close',
                     'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => 'Ativo%207',
+                    'icon'  => 'Ativo%206',
                 ],
                 [
                     'title' => 'Move to assessment',
                     'text'  => 'Turn the room, equipment setup and support needs into a practical next step.',
-                    'icon'  => 'Ativo%2020',
+                    'icon'  => 'arrow-right-circle',
                 ],
             ] as $step)
             <div class="flex flex-col items-center relative z-10">
-                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
-                </div>
+                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                     class="mb-5"
+                     style="width:3.2rem;height:3.2rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
             </div>
@@ -722,10 +708,6 @@
         </div>
     </div>
 </section>
-
-@include('components.why-choose-strip')
-
-@include('components.equipment-categories')
 
 <!-- 11. Service Contracts, Parts & Aftercare Strip -->
 @include('components.service-contracts-strip')

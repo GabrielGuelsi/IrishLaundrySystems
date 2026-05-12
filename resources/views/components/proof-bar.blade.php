@@ -4,7 +4,7 @@
 --}}
 <section class="bg-white border-b border-gray-100 py-5" aria-label="Trusted partner credentials">
 
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="max-w-screen-2xl mx-auto pl-[32px] pr-6 sm:pr-10 lg:pr-20">
 
         {{-- Logos + stat row --}}
         <div class="flex items-center justify-between gap-6 flex-wrap">

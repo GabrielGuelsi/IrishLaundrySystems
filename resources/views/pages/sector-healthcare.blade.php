@@ -393,9 +393,9 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-[440px] object-contain object-center">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
+                         class="w-full h-[440px] object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full flex justify-center">
+                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
@@ -478,20 +478,11 @@
             </div>
 
             <!-- COMMERCIAL WASHERS — image left, text right -->
-            <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col lg:ml-28">
                     <img src="/images/equipment/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[89px]">
-                            <span class="font-heading font-bold text-navy text-base">System Features, Wash Programmes &amp; Dosing Control</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
-                    </div>
                 </div>
                 <div class="lg:-ml-20 lg:mt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
@@ -509,12 +500,6 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
-                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-2xl">
-                    Commercial washer configuration should account for load profile, wash programmes, detergent control, utility use and the way the site manages day-to-day laundry demand.
-                </p>
-            </div>
             </div>
 
             <!-- 2. Tumble Dryers — text left, image right -->
@@ -713,29 +698,28 @@
                 [
                     'title' => 'Assess the room',
                     'text'  => 'Review layout, workflow, hygiene handling and capacity needs.',
-                    'icon'  => 'Ativo%203',
+                    'icon'  => 'clipboard',
                 ],
                 [
                     'title' => 'Match the equipment',
                     'text'  => 'Recommend the right barrier, washing, drying and finishing setup.',
-                    'icon'  => 'Ativo%2010',
+                    'icon'  => 'Ativo%204',
                 ],
                 [
                     'title' => 'Keep support close',
                     'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => 'Ativo%207',
+                    'icon'  => 'Ativo%206',
                 ],
                 [
                     'title' => 'Move to assessment',
                     'text'  => 'Turn the room, equipment setup and support model into a practical next step.',
-                    'icon'  => 'Ativo%2020',
+                    'icon'  => 'arrow-right-circle',
                 ],
             ] as $step)
             <div class="flex flex-col items-center relative z-10">
-                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
-                </div>
+                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                     class="mb-5"
+                     style="width:3.2rem;height:3.2rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
             </div>
