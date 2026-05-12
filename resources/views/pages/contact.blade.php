@@ -117,6 +117,9 @@
 
 </section>
 
+{{-- Spacer between hero and strip --}}
+<div class="bg-white h-10 lg:h-14"></div>
+
 {{-- FULL-WIDTH What to include strip --}}
 <div class="bg-navy px-6 sm:px-10 lg:px-20 py-10 lg:py-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
@@ -484,6 +487,24 @@
                         @endforeach
 
                     </div>
+                </div>
+
+                <div class="w-10 h-px bg-gray-200"></div>
+
+                {{-- Coverage map --}}
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-4">Coverage area</h3>
+                    <div class="rounded-xl overflow-hidden border border-gray-100" style="height:200px;">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=-10.7%2C51.3%2C-5.8%2C55.5&amp;layer=mapnik"
+                            width="100%"
+                            height="200"
+                            style="border:0; display:block;"
+                            loading="lazy"
+                            title="Republic of Ireland coverage area">
+                        </iframe>
+                    </div>
+                    <p class="font-body text-gray-400 text-xs mt-2">Republic of Ireland — all 26 counties</p>
                 </div>
 
                 <div class="w-10 h-px bg-gray-200"></div>
