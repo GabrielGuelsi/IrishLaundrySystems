@@ -85,38 +85,65 @@
                 Commercial and industrial support should match the operating environment, not just the machine list.
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 reveal">
             @foreach([
                 [
                     'title' => 'High-volume laundry rooms',
-                    'text'  => 'Commercial laundries, industrial laundries and continuous-use laundry rooms with repeated daily output pressure.',
-                    'icon'  => 'M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 00-1-1h-2a1 1 0 00-1 1v5m0 0h4',
+                    'items' => ['Commercial laundries', 'Industrial laundries', 'Continuous-use laundry rooms'],
+                    'icon'  => 'ativo-9',
+                    'img'   => '/images/healthcare/commercial-industrial.jpg',
+                    'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Public and institutional sites',
-                    'text'  => 'Public-sector sites, universities, academies and accommodation settings with planned procurement and site constraints.',
-                    'icon'  => 'M8 14v3m4-3v3m4-3v3M3 21h18M3 10h18M3 7l9-4 9 4M4 10h16v11H4V10z',
+                    'items' => ['Education sites', 'Accommodation sites', 'Public-sector environments'],
+                    'icon'  => 'ativo-20',
+                    'img'   => '/images/healthcare/line-6000-solutions.jpg',
+                    'pos'   => 'center 30%',
                 ],
                 [
                     'title' => 'Specialist operating environments',
-                    'text'  => 'Emergency-service facilities, sports associations and specialist sites where textile load and operating rhythm vary by use.',
-                    'icon'  => 'M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z',
+                    'items' => ['Workwear and staff laundry', 'Controlled-use laundry rooms', 'Sites with specific process needs'],
+                    'icon'  => 'ativo-11',
+                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'pos'   => 'center 35%',
                 ],
                 [
                     'title' => 'Mixed-textile facilities',
-                    'text'  => 'Gyms, spas, wellness sites and workwear-heavy environments handling towels, uniforms and mixed loads.',
-                    'icon'  => 'M4 6h16M4 10h16M4 14h16M4 18h16',
+                    'items' => ['Gyms and leisure sites', 'Spas and wellness sites', 'Towels, uniforms and mixed linen'],
+                    'icon'  => 'towels',
+                    'img'   => '/images/healthcare/services-overview-hero.jpg',
+                    'pos'   => 'center center',
                 ],
             ] as $card)
-            <div class="bg-[#f4f6f9] rounded-2xl p-7 flex flex-col gap-4 reveal">
-                <div class="w-10 h-10 rounded-full bg-[#148af4]/10 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['icon'] }}"/>
-                    </svg>
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-lg mb-2">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['text'] }}</p>
+            <div class="group relative overflow-hidden rounded-2xl" style="height:420px;">
+                <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] }};">
+                {{-- Default gradient: lighter top so image shows, dark bottom for title --}}
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                {{-- Hover overlay: solid dark so bullets are readable --}}
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background:rgba(1,30,65,0.90);"></div>
+                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                    {{-- Bullets: hidden by default, slide in on hover --}}
+                    <ul class="font-body text-white/80 text-sm space-y-2 overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-5">
+                        @foreach($card['items'] as $item)
+                        <li class="flex items-start gap-2.5">
+                            <span class="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-white/60"></span>
+                            <span>{{ $item }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
+                    {{-- Icon circle: always visible, just above title --}}
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mb-4"
+                         style="background:rgba(255,255,255,0.15); border:1.5px solid rgba(255,255,255,0.35);">
+                        <img src="/images/icons/brand-white/{{ $card['icon'] }}.svg" alt=""
+                             style="width:2.2rem;height:2.2rem;">
+                    </div>
+                    {{-- Title: always visible at bottom --}}
+                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{{ $card['title'] }}</h3>
                 </div>
             </div>
             @endforeach
@@ -284,7 +311,7 @@
                     'text'   => 'Genuine parts access, consumables and practical aftercare support connected to the installed base — the right component to the right machine without delay.',
                     'cta'    => 'Enquire Now',
                     'route'  => route('contact'),
-                    'img'    => '/images/healthcare/Parts & Aftercare.png',
+                    'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
                     'pos'    => 'center center',
                 ],
             ] as $card)
@@ -554,6 +581,10 @@
     </div>
 </section>
 
+@include('components.why-choose-strip')
+
+@include('components.equipment-categories')
+
 <!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
@@ -576,29 +607,28 @@
                 [
                     'title' => 'Assess the site',
                     'text'  => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.',
-                    'icon'  => 'Ativo%203',
+                    'icon'  => 'clipboard',
                 ],
                 [
                     'title' => 'Match the equipment',
                     'text'  => 'Recommend the right washing, drying, finishing or specialist route.',
-                    'icon'  => 'Ativo%2010',
+                    'icon'  => 'Ativo%204',
                 ],
                 [
                     'title' => 'Keep support close',
                     'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => 'Ativo%207',
+                    'icon'  => 'Ativo%206',
                 ],
                 [
                     'title' => 'Move to assessment',
                     'text'  => 'Turn the site, equipment route and support needs into a practical next step.',
-                    'icon'  => 'Ativo%2020',
+                    'icon'  => 'arrow-right-circle',
                 ],
             ] as $step)
             <div class="flex flex-col items-center relative z-10">
-                <div class="w-14 h-14 rounded-full bg-white flex items-center justify-center mb-5 shadow-sm" style="border:1.5px solid rgba(20,138,244,0.25);">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
-                </div>
+                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                     class="mb-5"
+                     style="width:3.2rem;height:3.2rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
             </div>
@@ -607,10 +637,6 @@
         </div>
     </div>
 </section>
-
-@include('components.why-choose-strip')
-
-@include('components.equipment-categories')
 
 @include('components.service-contracts-strip')
 
