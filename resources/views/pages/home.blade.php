@@ -69,7 +69,7 @@
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Laundry support built around<br>the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span><br>and the <span class="text-[#148af4]">next practical step</span>.
+                    Laundry support built around the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span> and the <span class="text-[#148af4]">next practical step</span>.
                 </h2>
             </div>
             <div class="space-y-4 lg:space-y-0 lg:flex lg:flex-col lg:justify-between lg:pt-[2.6rem]">
