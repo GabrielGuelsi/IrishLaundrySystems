@@ -65,10 +65,10 @@
 <!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl xl:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight">
                     Laundry support built around the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span> and the <span class="text-[#148af4]">next practical step</span>.
                 </h2>
             </div>
