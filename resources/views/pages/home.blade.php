@@ -19,9 +19,9 @@
 <section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
     <!-- Background image -->
-    <img src="/images/hero/hero-technician-inspection.png"
-         alt="ILS technician inspecting a commercial washing machine drum during a service call"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg"
+         alt="Commercial laundry operation"
+         class="absolute inset-0 w-full h-full object-cover object-center">
 
     <!-- Gradient overlay — tight, clears by 70% -->
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
