@@ -112,8 +112,8 @@
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('sectors.healthcare') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Healthcare</a>
-                        <a href="{{ route('sectors.hospitality') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Hospitality</a>
                         <a href="{{ route('sectors.care') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Care Facilities</a>
+                        <a href="{{ route('sectors.hospitality') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Hospitality</a>
                         <a href="{{ route('sectors.commercial') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial &amp; Industrial</a>
                     </div></div>
                 </div>
@@ -218,8 +218,8 @@
                 </button>
                 <div x-show="sOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
                     <a href="{{ route('sectors.healthcare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Healthcare</a>
-                    <a href="{{ route('sectors.hospitality') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Hospitality</a>
                     <a href="{{ route('sectors.care') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Care Facilities</a>
+                    <a href="{{ route('sectors.hospitality') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Hospitality</a>
                     <a href="{{ route('sectors.commercial') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial &amp; Industrial</a>
                 </div>
             </div>
