@@ -14,7 +14,7 @@
     {{-- Extend gradient further right so the logo card area stays legible --}}
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.72) 55%, rgba(1,30,65,0.45) 80%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
 
             {{-- Two-column on desktop: text left, logo+button right --}}
             <div class="flex flex-col lg:flex-row lg:items-start lg:gap-16 xl:gap-24">
@@ -40,20 +40,6 @@
                     </div>
                 </div>
 
-                {{-- Right: Electrolux logo + button, top-aligned with the h1 title.
-                     pt-8 (32px) offsets past the tag-line height + its mb-4 so the
-                     logo top lands exactly at the same horizontal line as the title. --}}
-                <div class="hidden lg:flex flex-col items-stretch gap-4 w-56 xl:w-64 flex-shrink-0 lg:pt-8 reveal reveal-right">
-                    <div class="bg-white rounded-2xl px-5 py-4 shadow-xl">
-                        <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
-                             alt="Electrolux Professional Authorized Partner"
-                             class="h-14 xl:h-16 w-auto mx-auto">
-                    </div>
-                    <a href="#commercial-assessment"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-6 py-4 rounded-xl text-sm transition-colors duration-200">
-                        Request Assessment
-                    </a>
-                </div>
 
             </div>
         </div>
