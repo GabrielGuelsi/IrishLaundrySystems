@@ -263,7 +263,7 @@
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/services-overview-hero.jpg',
-                    'pos'    => 'center 40%',
+                    'pos'    => 'left 40%',
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
