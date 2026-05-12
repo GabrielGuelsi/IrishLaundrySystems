@@ -7,7 +7,9 @@
 @php
 $testimonials = [
     'grace' => [
-        'logo'      => '/images/logo/grace-healthcare.png',
+        'logo'      => '/images/logo/Logo_Grace_Healthcare_(2).png',
+        'logoClass'  => 'h-[280px] w-auto object-contain -mt-16',
+        'pillsClass' => '-mt-32',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
         'headline'  => 'A trusted partner providing consistent commitment that makes a real difference.',
@@ -83,10 +85,10 @@ $showChrome = ! $single && count($slides) > 1;
                                 <img
                                     src="{{ $t['logo'] }}"
                                     alt="{{ $t['name'] }} logo"
-                                    class="h-14 lg:h-16 w-auto object-contain"
+                                    class="{{ $t['logoClass'] ?? 'h-14 lg:h-16 w-auto object-contain' }}"
                                     onerror="this.outerHTML='<div class=&quot;inline-flex items-center h-14 lg:h-16 px-5 rounded-md bg-[#f7f8fa] border border-navy/10 font-heading font-bold uppercase tracking-wider text-navy text-sm&quot;>{{ $t['name'] }}</div>'"
                                 >
-                                <div class="mt-6 flex flex-wrap gap-2">
+                                <div class="{{ isset($t['pillsClass']) ? $t['pillsClass'] : 'mt-6' }} flex flex-wrap gap-2">
                                     @foreach ($t['pills'] as $pill)
                                         <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-body font-bold uppercase tracking-wider bg-[#148af4]/10 text-[#148af4]">
                                             {{ $pill }}
