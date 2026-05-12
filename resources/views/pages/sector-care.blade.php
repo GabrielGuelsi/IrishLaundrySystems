@@ -11,7 +11,7 @@
     <img src="/images/CareFacilities/CareFacilitiesHero.png" alt="Care facility laundry"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">

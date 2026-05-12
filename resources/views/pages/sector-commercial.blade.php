@@ -14,7 +14,7 @@
     {{-- Extend gradient further right so the logo card area stays legible --}}
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.72) 55%, rgba(1,30,65,0.45) 80%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
 
             {{-- Two-column on desktop: text left, logo+button right --}}
             <div class="flex flex-col lg:flex-row lg:items-start lg:gap-16 xl:gap-24">

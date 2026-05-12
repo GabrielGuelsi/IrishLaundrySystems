@@ -68,16 +68,16 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-[1.95]">
-                    Laundry support<br>built around<br>the <span class="text-[#148af4]">site</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                    Laundry support built around<br>the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span><br>and the <span class="text-[#148af4]">next practical step</span>.
                 </h2>
             </div>
             <div class="space-y-4 lg:space-y-0 lg:flex lg:flex-col lg:justify-between lg:pt-[2.6rem]">
                 <p class="font-body font-bold text-navy text-xl lg:text-2xl leading-snug">
-                    the equipment and the next practical step.
+                    Irish Laundry Systems is not just an equipment supplier.
                 </p>
                 <p class="font-body text-gray-600 text-lg leading-relaxed">
-                    Irish Laundry Systems is not just an equipment supplier. We connect equipment selection, installation, planned maintenance, call-outs, rental, parts continuity and aftercare into one practical plan for the site.
+                    We connect equipment selection, installation, planned maintenance, call-outs, rental, parts continuity and aftercare into one practical plan for the site.
                 </p>
                 <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-base lg:text-lg leading-snug transition-colors">
                     See how we <span class="text-[#148af4]">support</span> your site.
