@@ -6,7 +6,7 @@
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         {{-- Fade left edge into blue --}}
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
 
     {{-- Content — 60% width matching strip proportion --}}
@@ -33,12 +33,9 @@
                 <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
-                <div class="flex-shrink-0 flex items-center justify-center rounded-full"
-                     style="width:52px;height:52px;border:2px dashed rgba(255,255,255,0.5);">
-                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                         style="width:1.6rem;height:1.6rem;" alt="">
-                </div>
-                <span class="font-body text-white text-xs font-bold leading-snug">{!! $feat['label'] !!}</span>
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                     style="width:2.4rem;height:2.4rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>

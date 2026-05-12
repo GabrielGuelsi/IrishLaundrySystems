@@ -557,7 +557,7 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain object-left-top">
+                         class="w-full h-[440px] object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Specialist Handling</span>
@@ -567,7 +567,7 @@
                         </button>
                     </div>
                 </div>
-                <div>
+                <div class="lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier Washers / <strong>Specialist Washing</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers and specialist washing routes support sites where separation, hygiene-sensitive handling or specialist textile care is required as part of the laundry setup.

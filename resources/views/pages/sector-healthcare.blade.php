@@ -310,8 +310,8 @@
                     'text'   => 'Genuine parts access, service history context and practical follow-up support around healthcare laundry equipment.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/services-overview-hero.jpg',
-                    'pos'    => '60% 40%',
+                    'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'pos'    => 'center center',
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
@@ -378,7 +378,7 @@
             <!-- 1. Barrier Washers — text left, image right -->
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div>
+                <div class="lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers sit at the centre of healthcare rooms where controlled dirty-side loading and clean-side unloading are part of the process logic.
@@ -397,7 +397,7 @@
                 <div class="flex flex-col">
                     <img src="/images/equipment/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
-                         class="w-full h-96 object-contain object-left-top">
+                         class="w-full h-[440px] object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[76px]">
                             <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
@@ -753,6 +753,17 @@
 @include('components.service-contracts-strip')
 
 @include('components.testimonials')
+
+@include('components.faq', [
+    'heading' => 'Healthcare Laundry FAQs',
+    'faqs' => [
+        ['question' => 'What types of healthcare sites do you support?',             'answer' => 'We support a wide range of healthcare environments including hospitals, nursing homes, care homes and residential care facilities. Each site is assessed individually to determine the right equipment, workflow and service structure.'],
+        ['question' => 'Do you supply barrier washers for infection control laundry rooms?', 'answer' => 'Yes. Barrier washers are a core part of our healthcare offering. We supply, install and support Electrolux Professional barrier washer configurations designed for controlled dirty-side and clean-side handling.'],
+        ['question' => 'What does a service contract include for healthcare sites?',  'answer' => 'Service contracts cover planned maintenance visits, priority call-out response, access to genuine parts and a service history record for the installed base. The structure is agreed based on site needs and equipment type.'],
+        ['question' => 'How quickly can you respond to a breakdown call-out?',        'answer' => 'We aim to respond to healthcare call-outs as a priority. Response times are confirmed at the time of enquiry and depend on site location and contract level. Priority response is available under service contract.'],
+        ['question' => 'Can equipment be rented rather than purchased outright?',     'answer' => 'Yes. Equipment rental is available as an alternative to capital purchase. This covers supply, installation and ongoing support under a single agreement, which can suit sites managing budget constraints or planning for replacement.'],
+    ],
+])
 
 @include('components.cta-downtime-form', ['pageSource' => 'healthcare_cta'])
 

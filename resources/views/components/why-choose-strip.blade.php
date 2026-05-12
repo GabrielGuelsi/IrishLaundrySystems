@@ -5,7 +5,7 @@
     <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
         <img src="/images/equipment/strip2.jpeg" alt="ILS engineer with equipment"
              class="w-full h-full object-cover" style="object-position: center 15%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.4) 40%, transparent 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.82) 8%, rgba(1,30,65,0.45) 28%, rgba(1,30,65,0.18) 48%, transparent 65%);"></div>
     </div>
 
     {{-- RIGHT: content — 50% width --}}
@@ -23,15 +23,15 @@
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
                 [
-                    'icon' => '<span style="font-size:1.5rem;font-weight:700;color:white;line-height:1;">€</span>',
+                    'icon' => '<span style="font-size:2rem;font-weight:700;color:white;line-height:1;">€</span>',
                     'label' => 'No capital<br>purchase',
                 ],
                 [
-                    'icon' => '<svg style="width:1.6rem;height:1.6rem;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/></svg>',
+                    'icon' => '<svg style="width:2.4rem;height:2.4rem;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/></svg>',
                     'label' => 'Installed and<br>supported',
                 ],
                 [
-                    'icon' => '<svg style="width:1.6rem;height:1.6rem;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>',
+                    'icon' => '<svg style="width:2.4rem;height:2.4rem;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg>',
                     'label' => 'Flexible<br>terms',
                 ],
             ] as $i => $feat)
@@ -39,11 +39,10 @@
                 <div class="w-px h-10 bg-white/20 mx-5 flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
-                <div class="flex-shrink-0 flex items-center justify-center rounded-full"
-                     style="width:52px;height:52px;border:2px dashed rgba(255,255,255,0.5);">
+                <div class="flex-shrink-0" style="width:2.4rem;height:2.4rem;display:flex;align-items:center;justify-content:center;">
                     {!! $feat['icon'] !!}
                 </div>
-                <span class="font-body text-white text-xs font-bold leading-snug">{!! $feat['label'] !!}</span>
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>
