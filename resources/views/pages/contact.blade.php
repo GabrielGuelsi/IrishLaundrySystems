@@ -117,15 +117,8 @@
 
 </section>
 
-{{-- FORM + SIDEBAR --}}
-<section id="contact-form" class="bg-white pt-14 pb-24 lg:pb-32">
-    <div class="max-w-5xl mx-auto px-6 sm:px-10">
-
-        {{-- Infographic strip --}}
-        <div class="rounded-2xl overflow-hidden mb-10" style="box-shadow:0 1px 3px rgba(0,0,0,0.08);">
-
-            {{-- PART 1: What to include — horizontal flow --}}
-            <div class="bg-navy px-8 lg:px-14 py-10 lg:py-12">
+{{-- FULL-WIDTH What to include strip --}}
+<div class="bg-navy px-6 sm:px-10 lg:px-20 py-10 lg:py-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
                     {{-- Left: heading --}}
@@ -211,9 +204,11 @@
 
                     </div>
                 </div>
-            </div>
+</div>
 
-        </div>
+{{-- FORM + SIDEBAR --}}
+<section id="contact-form" class="bg-white pt-14 pb-24 lg:pb-32">
+    <div class="max-w-5xl mx-auto px-6 sm:px-10">
 
         <div class="grid grid-cols-1 lg:grid-cols-5 gap-16 lg:gap-20">
 
