@@ -18,7 +18,7 @@ $testimonials = [
         'cite_role' => 'Head of Group Facilities at Grace Healthcare',
     ],
     'hse' => [
-        'logo'      => '/images/logo/HSE-Logo-Green-NEW-no-background.png',
+        'logo'      => '',
         'name'      => 'HSE St. Mary\'s Hospital',
         'pills'     => ['Excellent Callouts', 'Annual Maintenance', 'Minimal Disruption', 'Peace of Mind'],
         'headline'  => 'Consistent, professional service that gives us real peace of mind.',
@@ -82,12 +82,14 @@ $showChrome = ! $single && count($slides) > 1;
 
                             {{-- LEFT: logo + pills --}}
                             <aside class="lg:col-span-4">
+                                @if (!empty($t['logo']))
                                 <img
                                     src="{{ $t['logo'] }}"
                                     alt="{{ $t['name'] }} logo"
                                     class="{{ $t['logoClass'] ?? 'h-14 lg:h-16 w-auto object-contain' }}"
                                     onerror="this.outerHTML='<div class=&quot;inline-flex items-center h-14 lg:h-16 px-5 rounded-md bg-[#f7f8fa] border border-navy/10 font-heading font-bold uppercase tracking-wider text-navy text-sm&quot;>{{ $t['name'] }}</div>'"
                                 >
+                                @endif
                                 <div class="{{ isset($t['pillsClass']) ? $t['pillsClass'] : 'mt-6' }} flex flex-wrap gap-2">
                                     @foreach ($t['pills'] as $pill)
                                         <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-body font-bold uppercase tracking-wider bg-[#148af4]/10 text-[#148af4]">
