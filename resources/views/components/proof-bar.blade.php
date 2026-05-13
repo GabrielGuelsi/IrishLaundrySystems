@@ -18,16 +18,11 @@
             </div>
 
             {{-- Logos spread across remaining width --}}
-            <div class="flex items-center justify-between flex-1 gap-6">
-                <img src="/images/logo/HSE-Logo-Green-NEW-no-background.png"
-                     alt="Health Service Executive"
-                     class="h-8 w-auto"
-                     style="filter: brightness(0) saturate(100%) invert(44%) sepia(69%) saturate(1200%) hue-rotate(195deg) brightness(105%);"
-                     loading="lazy" decoding="async">
-                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 w-auto object-contain opacity-80">
-                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 w-auto object-contain opacity-80">
-                <img src="/images/logo/Logo_Grace_Healthcare_(2).png" alt="Grace Healthcare" class="h-8 w-auto object-contain opacity-80" style="transform: translateY(35px) scale(7);">
+            <div class="flex items-center justify-between flex-1 gap-10">
+                <img src="/images/logo/Logo_Grace_Healthcare_(2).png" alt="Grace Healthcare" class="h-8 w-auto object-contain opacity-80" style="transform: translateX(130px) translateY(35px) scale(7);">
                 <img src="/images/logo/abbvie.png" alt="AbbVie" class="h-8 w-auto object-contain opacity-80">
+                <img src="/images/healthcare/stjameshospital.png" alt="St James's Hospital" class="h-8 w-auto object-contain opacity-80">
+                <img src="/images/healthcare/stvincent.png" alt="St. Vincent's Healthcare" class="h-8 w-auto object-contain opacity-80">
             </div>
 
         </div>

@@ -21,7 +21,7 @@
     <!-- Background image -->
     <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg"
          alt="Commercial laundry operation"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+         class="absolute inset-0 w-full h-full object-cover object-center" style="transform: scale(1.2) translateX(2%);">
 
     <!-- Gradient overlay — tight, clears by 70% -->
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
