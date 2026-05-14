@@ -46,7 +46,6 @@
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- ══════════════════════════════════════════
      2. WHO WE ARE — 2-col intro
@@ -409,6 +408,8 @@
      10. TESTIMONIALS
 ══════════════════════════════════════════ -->
 @include('components.testimonials', ['heading' => 'What long-term customers say', 'light' => true])
+
+@include('components.proof-bar')
 
 <!-- ══════════════════════════════════════════
      11. CTA

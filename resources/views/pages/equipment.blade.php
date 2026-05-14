@@ -141,9 +141,6 @@
 
 </section>
 
-<!-- PROOF BAR -->
-@include('components.proof-bar')
-
 <!-- EQUIPMENT CATEGORIES -->
 <section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -430,9 +427,10 @@
 </section>
 
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 @include('components.testimonials', ['single' => 'abbvie', 'light' => true])
+
+@include('components.proof-bar')
 
 <!-- CTA BAND -->
 @include('components.cta-band', [

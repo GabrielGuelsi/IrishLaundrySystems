@@ -100,9 +100,8 @@
 
 </section>
 
-<!-- PARTNER STRIP + PROOF BAR -->
+<!-- PARTNER STRIP -->
 @include('components.partner-strip')
-@include('components.proof-bar')
 
 <!-- REPAIR TRIAGE INTRO -->
 <section class="py-16 lg:py-20 bg-white">
@@ -351,9 +350,11 @@ $faqs = [
     ],
 ];
 @endphp
-@include('components.faq', ['faqs' => $faqs, 'heading' => 'Repairs &amp; Call-Out FAQs'])
-
 @include('components.testimonials', ['light' => true])
+
+@include('components.proof-bar')
+
+@include('components.faq', ['faqs' => $faqs, 'heading' => 'Repairs &amp; Call-Out FAQs'])
 
 <!-- NEED AN ENGINEER TODAY? — premium contained navy panel -->
 <section class="py-16 lg:py-20 bg-bg">

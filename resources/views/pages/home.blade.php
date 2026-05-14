@@ -59,9 +59,6 @@
 <!-- Electrolux Partner Strip -->
 @include('components.partner-strip')
 
-<!-- 2. TRUST ANCHORS — Electrolux credibility line + proof strip -->
-@include('components.proof-bar')
-
 <!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
@@ -164,6 +161,9 @@
 
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', ['heading' => 'What our customers say.'])
+
+<!-- 2. TRUST ANCHORS — proof strip -->
+@include('components.proof-bar')
 
 <!-- 6.6 SERVICE CONTRACTS, PARTS & AFTERCARE STRIP -->
 @include('components.service-contracts-strip')
