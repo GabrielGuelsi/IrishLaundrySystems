@@ -40,8 +40,6 @@
 
 @include('components.partner-strip')
 
-@include('components.proof-bar')
-
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -732,6 +730,8 @@
 @include('components.service-contracts-strip')
 
 @include('components.testimonials')
+
+@include('components.proof-bar')
 
 @include('components.faq', [
     'heading' => 'Healthcare Laundry FAQs',

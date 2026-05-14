@@ -1,15 +1,19 @@
-{{-- Ready to Reduce Downtime Risk — final CTA + short form (shared across all sector pages) --}}
+{{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            <div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+
+            {{-- LEFT: heading + contact methods + electrolux + map --}}
+            <div class="flex flex-col">
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
                     Ready to Reduce Downtime Risk?
                 </h2>
                 <p class="font-body text-blue-200 text-lg leading-relaxed mb-8">
                     Talk to an ILS engineer about service contracts, repairs or equipment. Tell us about your operation and we will confirm the right next step.
                 </p>
-                <div class="space-y-4">
+
+                <div class="space-y-4 mb-8">
+                    {{-- Phone --}}
                     <a href="tel:+353000000000" class="flex items-center gap-3 text-gray-200 hover:text-white transition-colors group">
                         <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
                             <x-icon class="w-5 h-5">
@@ -21,14 +25,53 @@
                             <p class="font-body text-gray-400 text-xs">Mon–Fri, 8am–5pm</p>
                         </div>
                     </a>
-                    <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-2 text-steel-light hover:text-white font-body text-sm transition-colors">
-                        Authorised Electrolux Professional Partner
-                        <x-icon class="w-4 h-4">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-                        </x-icon>
+
+                    {{-- Email --}}
+                    <a href="mailto:info@irishlaundrysystems.ie" class="flex items-center gap-3 text-gray-200 hover:text-white transition-colors group">
+                        <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-white/20 transition-colors">
+                            <x-icon class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+                            </x-icon>
+                        </div>
+                        <div>
+                            <p class="font-body font-bold text-white text-sm">info@irishlaundrysystems.ie</p>
+                            <p class="font-body text-gray-400 text-xs">We aim to respond within 24 hours</p>
+                        </div>
                     </a>
+
+                    {{-- Address --}}
+                    <div class="flex items-start gap-3 text-gray-200">
+                        <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                            <x-icon class="w-5 h-5">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
+                            </x-icon>
+                        </div>
+                        <div>
+                            <p class="font-body font-bold text-white text-sm">Irish Laundry Systems</p>
+                            <p class="font-body text-gray-400 text-xs leading-relaxed">Address to be confirmed<br>Dublin, Ireland</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-2 text-steel-light hover:text-white font-body text-sm transition-colors mb-6">
+                    Authorised Electrolux Professional Partner
+                    <x-icon class="w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                    </x-icon>
+                </a>
+
+                {{-- Map --}}
+                <div class="rounded-xl overflow-hidden mt-auto" style="height: 200px;">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152524.01771227377!2d-6.385785697656249!3d53.32480523015786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sie!4v1715000000000!5m2!1sen!2sie"
+                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Irish Laundry Systems location">
+                    </iframe>
                 </div>
             </div>
+
+            {{-- RIGHT: Form --}}
             <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
                 <h3 class="font-heading font-bold text-navy text-lg mb-1">Request a Service Assessment</h3>
                 <p class="font-body text-gray-500 text-sm mb-6">We aim to respond within 24 hours.</p>
@@ -90,6 +133,8 @@
                     <input type="hidden" name="utm_source" id="cta_utm_source">
                     <input type="hidden" name="utm_medium" id="cta_utm_medium">
                     <input type="hidden" name="utm_campaign" id="cta_utm_campaign">
+                    <input type="hidden" name="location" value="Not specified">
+                    <input type="hidden" name="urgency" value="this_week">
                     <input type="hidden" name="page_source" value="{{ $pageSource ?? 'sector_cta' }}">
                     <button type="submit"
                             class="w-full bg-[#148af4] hover:bg-[#148af4]/90 text-white font-body font-bold py-3.5 px-6 rounded-lg text-base transition-colors duration-200 cursor-pointer">
@@ -97,6 +142,7 @@
                     </button>
                 </form>
             </div>
+
         </div>
     </div>
 </section>

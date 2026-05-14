@@ -151,11 +151,6 @@
 <!-- ELECTROLUX PARTNER STRIP -->
 @include('components.partner-strip')
 
-<!-- PROOF BAR -->
-<div class="reveal">
-    @include('components.proof-bar')
-</div>
-
 <!-- SAFE AUTHORITY BAR -->
 <section class="relative bg-navy sc-dotgrid py-8 lg:py-10 overflow-hidden">
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
@@ -737,11 +732,13 @@ $faqs = [
     ],
 ];
 @endphp
+@include('components.testimonials', ['light' => true])
+
+@include('components.proof-bar')
+
 <div class="reveal">
     @include('components.faq', ['faqs' => $faqs, 'heading' => 'Service Contract FAQs'])
 </div>
-
-@include('components.testimonials', ['light' => true])
 
 <!-- INLINE CONTRACT REVIEW FORM -->
 <section id="contract-review-form" class="py-16 lg:py-24 bg-white">

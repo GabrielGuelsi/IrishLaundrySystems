@@ -71,9 +71,6 @@
 
 </section>
 
-<!-- 2. PROOF BAR -->
-@include('components.proof-bar')
-
 <!-- 3. HOW SUPPORT STARTS -->
 <section class="svc-process py-16 lg:py-20 bg-bg" data-svc-observe>
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
@@ -391,6 +388,8 @@
 </section>
 
 @include('components.testimonials', ['light' => true])
+
+@include('components.proof-bar')
 
 <!-- 9. FINAL CTA BANNER -->
 <section class="relative overflow-hidden bg-navy">

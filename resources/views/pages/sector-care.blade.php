@@ -38,9 +38,6 @@
 <!-- 2. Thin Electrolux Trust Strip -->
 @include('components.partner-strip')
 
-<!-- 3. Proof / Logo Strip -->
-@include('components.proof-bar')
-
 <!-- 4. INTRO COMMERCIAL BLOCK -->
 <section class="py-16 lg:py-24 bg-white border-b border-border">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -714,6 +711,8 @@
 
 <!-- 12. Testimonial / Proof Block -->
 @include('components.testimonials')
+
+@include('components.proof-bar')
 
 @include('components.faq', [
     'heading' => 'Care Facility Laundry FAQs',
