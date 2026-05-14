@@ -157,7 +157,7 @@
                 'tag'    => 'Guide',
                 'read'   => '10 min',
                 'img'    => 'images/healthcare/render-double-page_72dpi.jpg',
-                'color'  => '#0ea5e9',
+                'color'  => '#148af4',
             ],
             [
                 'title'  => 'Equipment Lifecycle Planning',
@@ -166,7 +166,7 @@
                 'tag'    => 'Guide',
                 'read'   => '7 min',
                 'img'    => 'images/healthcare/repairs-hero.jpg',
-                'color'  => '#6366f1',
+                'color'  => '#148af4',
             ],
             [
                 'title'  => 'Rental vs Purchase Decision Guide',
@@ -175,7 +175,7 @@
                 'tag'    => 'Guide',
                 'read'   => '5 min',
                 'img'    => 'images/equipment/td6-multihousing-room.jpg',
-                'color'  => '#f59e0b',
+                'color'  => '#148af4',
             ],
             [
                 'title'  => 'Compliance Documentation for Care',
@@ -184,7 +184,7 @@
                 'tag'    => 'Guide',
                 'read'   => '8 min',
                 'img'    => 'images/CareFacilities/CareFacilitiesHero.png',
-                'color'  => '#10b981',
+                'color'  => '#148af4',
             ],
             [
                 'title'  => 'Hospitality Laundry Room Setup',
@@ -193,7 +193,7 @@
                 'tag'    => 'Guide',
                 'read'   => '9 min',
                 'img'    => 'images/sectors/hospitality-hero.jpg',
-                'color'  => '#ec4899',
+                'color'  => '#148af4',
             ],
         ];
         @endphp
@@ -273,19 +273,19 @@
             [
                 'title' => 'Monthly Operator Checks — Dryers',
                 'desc'  => 'Essential monthly safety and performance checks for commercial tumble dryers — lint filters, temperatures, door seals.',
-                'color' => '#6366f1',
+                'color' => '#148af4',
                 'icon'  => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
             ],
             [
                 'title' => 'Pre-Service Preparation Checklist',
                 'desc'  => 'How to prepare your laundry room before an engineer visit — saving time, ensuring access and reducing call-out duration.',
-                'color' => '#10b981',
+                'color' => '#148af4',
                 'icon'  => 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766m0 0l3.024 3.024c.37-.14.716-.363 1.002-.67L21 11.25a2.25 2.25 0 00-2.25-2.25H15M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163.036 1.548.537l1.009 1.34c.386.5.393 1.187.02 1.695l-.007.01',
             ],
             [
                 'title' => 'Post-Breakdown Information Sheet',
                 'desc'  => 'Information to gather immediately after a breakdown — helps your engineer diagnose the fault and respond faster.',
-                'color' => '#f59e0b',
+                'color' => '#148af4',
                 'icon'  => 'M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z',
             ],
         ];
@@ -350,7 +350,7 @@
                     'desc'     => 'Hospitals, HSE and healthcare groups. Barrier washers, infection control, compliance documentation.',
                     'img'      => 'images/healthcare/hero-main.jpg',
                     'tag'      => 'Healthcare',
-                    'tagColor' => '#ef4444',
+                    'tagColor' => '#148af4',
                     'count'    => '6 resources',
                 ],
                 [
@@ -368,7 +368,7 @@
                     'desc'     => 'Nursing homes and residential care. HIQA compliance, barrier washing, equipment reliability.',
                     'img'      => 'images/CareFacilities/CareFacilitiesHero.png',
                     'tag'      => 'Care',
-                    'tagColor' => '#10b981',
+                    'tagColor' => '#148af4',
                     'count'    => '5 resources',
                 ],
                 [
@@ -377,7 +377,7 @@
                     'desc'     => 'Commercial laundries and industry. High-volume throughput, energy efficiency, machine uptime.',
                     'img'      => 'images/sectors/commercial-hero.jpg',
                     'tag'      => 'Commercial',
-                    'tagColor' => '#f59e0b',
+                    'tagColor' => '#148af4',
                     'count'    => '4 resources',
                 ],
             ];
@@ -458,9 +458,9 @@
                     <div class="grid grid-cols-2 gap-4 w-full max-w-xs">
                         @foreach([
                             ['label'=>'Guides', 'count'=>'6', 'color'=>'#148af4', 'icon'=>'M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25'],
-                            ['label'=>'Checklists', 'count'=>'4', 'color'=>'#6366f1', 'icon'=>'M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'],
-                            ['label'=>'Sector Guides', 'count'=>'4', 'color'=>'#10b981', 'icon'=>'M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'],
-                            ['label'=>'Coming Soon', 'count'=>'+8', 'color'=>'#f59e0b', 'icon'=>'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
+                            ['label'=>'Checklists', 'count'=>'4', 'color'=>'#148af4', 'icon'=>'M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'],
+                            ['label'=>'Sector Guides', 'count'=>'4', 'color'=>'#148af4', 'icon'=>'M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'],
+                            ['label'=>'Coming Soon', 'count'=>'+8', 'color'=>'#148af4', 'icon'=>'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
                         ] as $tile)
                         <div class="rounded-2xl p-5 border flex flex-col items-center text-center" style="background:{{ $tile['color'] }}08; border-color:{{ $tile['color'] }}18;">
                             <div class="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style="background:{{ $tile['color'] }}15;">
