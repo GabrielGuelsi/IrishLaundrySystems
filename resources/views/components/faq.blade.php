@@ -2,7 +2,7 @@
 
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-20">
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-10">{{ $heading }}</h2>
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-10">{!! $heading !!}</h2>
 
         <div class="space-y-3" x-data="{ open: null }">
             @foreach ($faqs as $i => $faq)

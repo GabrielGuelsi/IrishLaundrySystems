@@ -78,6 +78,18 @@
             @endif
         </div>
 
+        {{-- Parts detail (only when a parts request includes structured fields) --}}
+        @if(!empty($data['equipment_brand']) || !empty($data['machine_type']) || !empty($data['model_number']) || !empty($data['serial_number']) || !empty($data['part_required']))
+        <div class="section">
+            <div class="section-title">Parts Detail</div>
+            @if(!empty($data['equipment_brand']))<div class="row"><span class="label">Brand</span><span class="value">{{ $data['equipment_brand'] }}</span></div>@endif
+            @if(!empty($data['machine_type']))<div class="row"><span class="label">Machine Type</span><span class="value">{{ $data['machine_type'] }}</span></div>@endif
+            @if(!empty($data['model_number']))<div class="row"><span class="label">Model #</span><span class="value">{{ $data['model_number'] }}</span></div>@endif
+            @if(!empty($data['serial_number']))<div class="row"><span class="label">Serial #</span><span class="value">{{ $data['serial_number'] }}</span></div>@endif
+            @if(!empty($data['part_required']))<div class="row"><span class="label">Part Required</span><span class="value">{{ $data['part_required'] }}</span></div>@endif
+        </div>
+        @endif
+
         {{-- Message --}}
         @if(!empty($data['message']))
         <div class="section">
