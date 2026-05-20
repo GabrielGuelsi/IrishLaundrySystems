@@ -162,7 +162,7 @@
                 <!-- Credential chips -->
                 <div class="flex flex-wrap gap-2.5">
                     @foreach(['Safe Electric registered', 'Registered Gas Installer contractor capability', 'Electrolux Professional equipment experience', 'Installed-base knowledge'] as $chip)
-                    <span class="font-body text-sm font-medium text-white/70 border border-white/20 rounded-full px-5 py-2.5" style="background:rgba(255,255,255,0.05);">{{ $chip }}</span>
+                    <span class="font-body text-base font-medium text-white/70 border border-white/20 rounded-full px-6 py-3" style="background:rgba(255,255,255,0.05);">{{ $chip }}</span>
                     @endforeach
                 </div>
             </div>
