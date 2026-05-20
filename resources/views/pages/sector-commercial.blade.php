@@ -593,10 +593,10 @@
 @include('components.equipment-categories')
 
 <!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-white">
+<section class="py-14 lg:py-20 bg-[#f4f6f9]">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
 
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
             Our process keeps the <span style="color:#148af4;">next step</span> clear.
         </h2>
@@ -604,41 +604,32 @@
             A clear four-step path from site review to the next practical recommendation.
         </p>
 
-        {{-- Steps row with connector line --}}
-        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
-
-            {{-- Connector line (desktop only) --}}
-            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
+        <div class="flex flex-col sm:flex-row items-start justify-between">
 
             @foreach([
-                [
-                    'title' => 'Assess the site',
-                    'text'  => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.',
-                    'icon'  => 'clipboard',
-                ],
-                [
-                    'title' => 'Match the equipment',
-                    'text'  => 'Recommend the right washing, drying, finishing or specialist route.',
-                    'icon'  => 'Ativo%204',
-                ],
-                [
-                    'title' => 'Keep support close',
-                    'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => 'Ativo%206',
-                ],
-                [
-                    'title' => 'Move to assessment',
-                    'text'  => 'Turn the site, equipment route and support needs into a practical next step.',
-                    'icon'  => 'arrow-right-circle',
-                ],
-            ] as $step)
-            <div class="flex flex-col items-center relative z-10">
-                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                     class="mb-5"
-                     style="width:3.2rem;height:3.2rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
+                ['title' => 'Assess the site',     'text' => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.', 'icon' => 'clipboard'],
+                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or specialist route.',                          'icon' => 'Ativo%204'],
+                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',               'icon' => 'Ativo%206'],
+                ['title' => 'Move to assessment',  'text' => 'Turn the site, equipment route and support needs into a practical next step.',                  'icon' => 'Ativo%203'],
+            ] as $i => $step)
+
+            @if($i > 0)
+            <div class="hidden sm:flex flex-shrink-0 items-center pt-6 lg:pt-8 px-1 lg:px-2">
+                <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
+                    <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
+            @endif
+
+            <div class="flex flex-col items-center flex-1 min-w-0 mb-8 sm:mb-0">
+                <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-[#e2e8f0] shadow-sm mx-auto mb-4 flex items-center justify-center">
+                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[150px] mx-auto">{{ $step['text'] }}</p>
+            </div>
+
             @endforeach
 
         </div>
