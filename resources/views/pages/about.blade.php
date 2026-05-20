@@ -200,7 +200,7 @@
 
             <div>
                 <p class="font-heading font-bold text-white/60 text-xs uppercase tracking-widest mb-4">Site, Workflow & Capacity</p>
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight">
                     Designed around your <span class="text-white/80">site, workflow and capacity.</span>
                 </h2>
             </div>
@@ -228,8 +228,8 @@
 
         <div class="mb-14 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Connected Routes</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                Equipment supply, service and aftercare<br>connected around <span class="text-[#148af4]">real site needs.</span>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight max-w-3xl">
+                Equipment supply, service and aftercare connected around <span class="text-[#148af4]">real site needs.</span>
             </h2>
         </div>
 
@@ -306,13 +306,14 @@
 <section class="py-20 lg:py-28" style="background-color:#011E41; background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size:52px 52px;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-5">How We Work Around the Site</p>
-
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-14">
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
-                From site understanding to the <span class="text-[#148af4]">right next step.</span>
-            </h2>
-            <div class="lg:pt-4">
+            <div>
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-5">How We Work Around the Site</p>
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
+                    From site understanding to the <span class="text-[#148af4]">right next step.</span>
+                </h2>
+            </div>
+            <div class="lg:pt-14">
                 <p class="font-body text-white/55 text-base leading-relaxed">
                     Irish Laundry Systems starts with the room, the equipment and the pressure on the site. The aim is to choose the right route, keep records clear and make the next service decision easier.
                 </p>
@@ -458,16 +459,19 @@
 <section class="py-24 lg:py-36 bg-white overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-6 reveal">
-            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Company History</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                From electrical contracting<br>to <span class="text-[#148af4]">commercial laundry expertise.</span>
-            </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16 reveal">
+            <div>
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Company History</p>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
+                    From electrical contracting<br>to <span class="text-[#148af4]">commercial laundry expertise.</span>
+                </h2>
+            </div>
+            <div class="lg:pt-14">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Irish Laundry Systems was not built as a generic equipment supplier. The company grew from practical electrical contracting and Electrolux service experience, then developed into a commercial laundry partner for sites that need equipment, maintenance, repairs and aftercare to stay aligned.
+                </p>
+            </div>
         </div>
-
-        <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-16 reveal">
-            Irish Laundry Systems was not built as a generic equipment supplier. The company grew from practical electrical contracting and Electrolux service experience, then developed into a commercial laundry partner for sites that need equipment, maintenance, repairs and aftercare to stay aligned.
-        </p>
 
         @php
         $history = [
@@ -479,14 +483,14 @@
         @endphp
 
         <div class="ils-history-list relative">
-            <div class="hidden lg:block absolute top-16 bottom-16 w-px bg-navy/10 rounded-full" style="left:210px;"></div>
+            <div class="hidden lg:block absolute top-16 bottom-16 w-px bg-navy/10 rounded-full" style="left:270px;"></div>
             @foreach($history as $i => $m)
             <div class="ils-history-box relative flex items-center py-14 px-4 lg:px-0 {{ !$loop->last ? 'border-b border-navy/8' : '' }} cursor-default reveal" style="transition-delay:{{ $i * 80 }}ms">
-                <div class="hidden lg:block flex-shrink-0 text-right pr-10" style="width:210px;">
-                    <div class="font-heading font-bold text-[#148af4] leading-none" style="font-size:3rem;line-height:1;">{{ $m['year'] }}</div>
+                <div class="hidden lg:block flex-shrink-0 text-right pr-10" style="width:270px;">
+                    <div class="font-heading font-bold text-[#148af4] leading-none" style="font-size:2.5rem;line-height:1.1;word-break:break-word;">{{ $m['year'] }}</div>
                     <div class="font-body text-navy/35 text-xs uppercase tracking-widest mt-2">{{ $m['label'] }}</div>
                 </div>
-                <div class="hidden lg:block absolute flex-shrink-0 z-10" style="left:210px;transform:translateX(-50%);">
+                <div class="hidden lg:block absolute flex-shrink-0 z-10" style="left:270px;transform:translateX(-50%);">
                     <div class="w-3 h-3 rounded-full bg-[#148af4]" style="box-shadow:0 0 0 5px rgba(20,138,244,0.18);"></div>
                 </div>
                 <div class="flex-1 lg:pl-16 relative z-10">
