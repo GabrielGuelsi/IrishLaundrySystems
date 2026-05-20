@@ -111,16 +111,20 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach([
-                ['Since 1987',                      'Commercial laundry engineering roots in Ireland.'],
-                ['38 client locations',              'Commercial laundry locations served across Dublin and Ireland.'],
-                ['Electrolux Professional Partner',  'Authorised partner for a recognised professional laundry equipment platform.'],
-                ['Registered technical capability',  'Safe Electric registered and Registered Gas Installer (RGI) contractor capability.'],
-            ] as [$stat, $label])
-            <div class="border-b border-gray-200 pb-6 reveal">
-                <div class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-2">{{ $stat }}</div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $label }}</p>
+                ['1987', 'year',       'Since 1987',                      'Commercial laundry engineering roots in Ireland.'],
+                ['38',   'locations',  '38 client locations',              'Commercial laundry locations served across Dublin and Ireland.'],
+                ['EP',   'partner',    'Electrolux Professional Partner',  'Authorised partner for a recognised professional laundry equipment platform.'],
+                ['RGI',  'certified',  'Registered technical capability',  'Safe Electric registered and Registered Gas Installer (RGI) contractor capability.'],
+            ] as [$num, $sub, $title, $desc])
+            <div class="border-b border-gray-300 pb-5 reveal">
+                <div class="flex items-end gap-3 mb-3">
+                    <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $num }}</div>
+                    <p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $sub }}</p>
+                </div>
+                <p class="font-body font-bold text-navy text-sm mb-1">{{ $title }}</p>
+                <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $desc }}</p>
             </div>
             @endforeach
         </div>
@@ -134,25 +138,38 @@
 <section class="py-20 lg:py-28" style="background-color:#011E41; background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size:52px 52px;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-5">Technical Foundations</p>
+        <!-- 2-col: image left | content right -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-16">
 
-        <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight max-w-4xl mb-6">
-            <span class="text-[#148af4]">Electrical contracting roots.</span><br>
-            <span class="text-[#148af4]">Commercial laundry equipment experience.</span>
-        </h2>
+            <!-- Image -->
+            <div class="overflow-hidden rounded-2xl reveal" style="height:520px;">
+                <img src="{{ asset('images/about/about-engineers.jpg') }}"
+                     alt="ILS engineering team on site"
+                     class="w-full h-full object-cover object-center">
+            </div>
 
-        <p class="font-body text-white/60 text-base leading-relaxed max-w-2xl mb-10">
-            Irish Laundry Systems combines practical electrical knowledge, Electrolux Professional equipment experience and site-level laundry understanding. That background helps customers avoid disconnected decisions around specification, installation, maintenance, repairs and follow-up work.
-        </p>
+            <!-- Content -->
+            <div class="reveal">
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-5">Technical Foundations</p>
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-6">
+                    <span class="text-[#148af4]">Electrical contracting roots.</span><br>
+                    <span class="text-[#148af4]">Commercial laundry equipment experience.</span>
+                </h2>
+                <p class="font-body text-white/60 text-base leading-relaxed mb-8">
+                    Irish Laundry Systems combines practical electrical knowledge, Electrolux Professional equipment experience and site-level laundry understanding. That background helps customers avoid disconnected decisions around specification, installation, maintenance, repairs and follow-up work.
+                </p>
 
-        <!-- Credential chips -->
-        <div class="flex flex-wrap gap-3 mb-16">
-            @foreach(['Safe Electric registered', 'Registered Gas Installer contractor capability', 'Electrolux Professional equipment experience', 'Installed-base knowledge'] as $chip)
-            <span class="font-body text-xs font-medium text-white/70 border border-white/20 rounded-full px-4 py-2" style="background:rgba(255,255,255,0.05);">{{ $chip }}</span>
-            @endforeach
+                <!-- Credential chips -->
+                <div class="flex flex-wrap gap-2.5">
+                    @foreach(['Safe Electric registered', 'Registered Gas Installer contractor capability', 'Electrolux Professional equipment experience', 'Installed-base knowledge'] as $chip)
+                    <span class="font-body text-xs font-medium text-white/70 border border-white/20 rounded-full px-4 py-2" style="background:rgba(255,255,255,0.05);">{{ $chip }}</span>
+                    @endforeach
+                </div>
+            </div>
+
         </div>
 
-        <!-- 3 Proof Cards -->
+        <!-- 3 Proof Cards — full width below -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
             @foreach([
                 ['num' => '1', 'title' => 'Registered technical work',  'body' => 'Electrical and gas contractor capability for commercial laundry installation, servicing and safety-led work.'],
@@ -164,7 +181,7 @@
                 <span class="absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t border-r border-white/30 pointer-events-none"></span>
                 <span class="absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b border-l border-white/30 pointer-events-none"></span>
                 <span class="absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b border-r border-white/30 pointer-events-none"></span>
-                <p class="font-heading font-bold text-[#148af4]/50 text-xs mb-3"><span class="text-white/20">//</span>{{ $card['num'] }}</p>
+                <p class="font-heading font-bold text-[#148af4]/60 text-xs mb-3"><span class="text-white/20">//</span>{{ $card['num'] }}</p>
                 <div class="font-heading font-bold text-white text-lg mb-3">{{ $card['title'] }}</div>
                 <p class="font-body text-white/50 text-sm leading-relaxed">{{ $card['body'] }}</p>
             </div>
@@ -177,24 +194,24 @@
 <!-- ══════════════════════════════════════════
      6. SITE, WORKFLOW & CAPACITY STRIP
 ══════════════════════════════════════════ -->
-<section class="bg-[#f7f8fa] py-20 lg:py-28">
+<section class="py-20 lg:py-28" style="background-color:#148af4;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
 
             <div>
-                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Site, Workflow & Capacity</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight">
-                    Designed around your <span class="text-[#148af4]">site, workflow and capacity.</span>
+                <p class="font-heading font-bold text-white/60 text-xs uppercase tracking-widest mb-4">Site, Workflow & Capacity</p>
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight">
+                    Designed around your <span class="text-white/80">site, workflow and capacity.</span>
                 </h2>
             </div>
 
             <div class="lg:pt-10 space-y-6">
-                <p class="font-body text-gray-500 text-base leading-relaxed">
+                <p class="font-body text-white/80 text-base leading-relaxed">
                     Every laundry room has its own pressure points: space, utilities, equipment condition, workflow and daily volume. Irish Laundry Systems uses that site understanding to guide equipment supply, rental, maintenance, repairs and aftercare around what the room actually needs.
                 </p>
                 <div class="flex flex-wrap gap-3">
                     @foreach(['Room conditions', 'Equipment use', 'Capacity pressure', 'Practical next step'] as $point)
-                    <span class="font-body text-xs font-medium text-navy border border-navy/20 rounded-full px-4 py-2 bg-white">{{ $point }}</span>
+                    <span class="font-body text-xs font-medium text-white border border-white/40 rounded-full px-4 py-2" style="background:rgba(255,255,255,0.15);">{{ $point }}</span>
                     @endforeach
                 </div>
             </div>
@@ -204,7 +221,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     7. CONNECTED ROUTES
+     7. CONNECTED ROUTES — horizontal banners
 ══════════════════════════════════════════ -->
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -216,46 +233,68 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-16">
+        <!-- Stacked horizontal banner cards -->
+        <div class="flex flex-col gap-4">
 
-            <div class="flex flex-col reveal" style="transition-delay:0ms;">
-                <div class="overflow-hidden rounded-2xl mb-8" style="height:280px;">
-                    <img src="{{ asset('images/equipment/td6-multihousing-room.jpg') }}" alt="Plan, supply and install"
-                         class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700">
-                </div>
-                <div class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-4">Plan, Supply & Install.</div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Site planning, equipment selection, supply, delivery, installation and commissioning for commercial laundry rooms.</p>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
-                    View equipment
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
+            @php
+            $routes = [
+                [
+                    'num'   => '1',
+                    'title' => 'Plan, Supply & Install',
+                    'body'  => 'Site planning, equipment selection, supply, delivery, installation and commissioning for commercial laundry rooms.',
+                    'cta'   => 'View equipment',
+                    'href'  => route('equipment'),
+                    'img'   => 'images/equipment/td6-multihousing-room.jpg',
+                ],
+                [
+                    'num'   => '2',
+                    'title' => 'Rent & Maintain',
+                    'body'  => 'Equipment rental, planned inspections, service contracts, maintenance records and ongoing care around equipment use.',
+                    'cta'   => 'Service contracts',
+                    'href'  => route('service-contracts'),
+                    'img'   => 'images/healthcare/repairs-hero.jpg',
+                ],
+                [
+                    'num'   => '3',
+                    'title' => 'Repair & Support',
+                    'body'  => 'Call-outs, fault diagnosis, parts route, technical assistance and follow-up after work is completed.',
+                    'cta'   => 'Repairs & call-outs',
+                    'href'  => route('repairs'),
+                    'img'   => 'images/healthcare/Service Contracts.png',
+                ],
+            ];
+            @endphp
 
-            <div class="flex flex-col reveal" style="transition-delay:150ms;">
-                <div class="overflow-hidden rounded-2xl mb-8 md:mt-16" style="height:280px;">
-                    <img src="{{ asset('images/healthcare/repairs-hero.jpg') }}" alt="Rent and maintain"
-                         class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700">
-                </div>
-                <div class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-4">Rent & Maintain.</div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment rental, planned inspections, service contracts, maintenance records and ongoing care around equipment use.</p>
-                <a href="{{ route('service-contracts') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
-                    Service contracts
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
+            @foreach($routes as $i => $route)
+            <div class="relative overflow-hidden rounded-2xl reveal group" style="height:220px; transition-delay:{{ $i * 80 }}ms;">
 
-            <div class="flex flex-col reveal" style="transition-delay:300ms;">
-                <div class="overflow-hidden rounded-2xl mb-8" style="height:280px;">
-                    <img src="{{ asset('images/about/about-team.jpg') }}" alt="Repair and support"
-                         class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-700">
+                {{-- Background image --}}
+                <img src="{{ asset($route['img']) }}" alt="{{ $route['title'] }}"
+                     class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105">
+
+                {{-- Gradient overlay: dark left → transparent right --}}
+                <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 35%, rgba(1,30,65,0.45) 60%, transparent 85%);"></div>
+
+                {{-- Content --}}
+                <div class="relative z-10 h-full flex items-center px-8 lg:px-12">
+                    <div class="max-w-lg">
+                        <p class="font-heading font-bold text-[#148af4] text-xs mb-2">
+                            <span class="text-white/30">// </span>{{ $route['num'] }}
+                        </p>
+                        <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-2">{{ $route['title'] }}</h3>
+                        <p class="font-body text-white/60 text-sm leading-relaxed mb-4 max-w-sm">{{ $route['body'] }}</p>
+                        <a href="{{ $route['href'] }}"
+                           class="inline-flex items-center gap-2 font-body font-bold text-white hover:text-[#148af4] text-sm transition-colors">
+                            {{ $route['cta'] }}
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <div class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-4">Repair & Support.</div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Call-outs, fault diagnosis, parts route, technical assistance and follow-up after work is completed.</p>
-                <a href="{{ route('repairs') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors mt-6">
-                    Repairs & call-outs
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
+
             </div>
+            @endforeach
 
         </div>
     </div>
