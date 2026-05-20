@@ -135,7 +135,7 @@
 <!-- ══════════════════════════════════════════
      5. TECHNICAL FOUNDATIONS — navy bg
 ══════════════════════════════════════════ -->
-<section class="py-20 lg:py-28" style="background-color:#011E41; background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size:52px 52px;">
+<section class="py-20 lg:py-28" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <!-- 2-col: image left | content right -->
@@ -176,11 +176,7 @@
                 ['num' => '2', 'title' => 'Equipment knowledge',         'body' => 'Experience around washers, dryers, barrier washers, ironers and installed laundry rooms.'],
                 ['num' => '3', 'title' => 'Site-level judgement',        'body' => 'Understanding of utilities, access, usage pressure, service history, parts route and practical next steps.'],
             ] as $i => $card)
-            <div class="relative border border-white/[0.1] p-6 lg:p-8 flex flex-col reveal" style="background:rgba(255,255,255,0.03); transition-delay:{{ $i * 100 }}ms;">
-                <span class="absolute top-2.5 left-2.5 w-3.5 h-3.5 border-t border-l border-white/30 pointer-events-none"></span>
-                <span class="absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t border-r border-white/30 pointer-events-none"></span>
-                <span class="absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b border-l border-white/30 pointer-events-none"></span>
-                <span class="absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b border-r border-white/30 pointer-events-none"></span>
+            <div class="border border-white/[0.1] p-6 lg:p-8 flex flex-col reveal" style="background:rgba(255,255,255,0.03); transition-delay:{{ $i * 100 }}ms;">
                 <p class="font-heading font-bold text-[#148af4]/60 text-xs mb-3"><span class="text-white/20">//</span>{{ $card['num'] }}</p>
                 <div class="font-heading font-bold text-white text-lg mb-3">{{ $card['title'] }}</div>
                 <p class="font-body text-white/50 text-sm leading-relaxed">{{ $card['body'] }}</p>
@@ -266,17 +262,18 @@
             @endphp
 
             @foreach($routes as $i => $route)
+            @php $flipped = ($i === 1); @endphp
             <div class="relative overflow-hidden rounded-2xl reveal group" style="height:220px; transition-delay:{{ $i * 80 }}ms;">
 
                 {{-- Background image --}}
                 <img src="{{ asset($route['img']) }}" alt="{{ $route['title'] }}"
                      class="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105">
 
-                {{-- Gradient overlay: dark left → transparent right --}}
-                <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 35%, rgba(1,30,65,0.45) 60%, transparent 85%);"></div>
+                {{-- Gradient overlay: alternates direction per card --}}
+                <div class="absolute inset-0" style="background: linear-gradient({{ $flipped ? '270deg' : '90deg' }}, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 35%, rgba(1,30,65,0.45) 60%, transparent 85%);"></div>
 
                 {{-- Content --}}
-                <div class="relative z-10 h-full flex items-center px-8 lg:px-12">
+                <div class="relative z-10 h-full flex items-center {{ $flipped ? 'justify-end' : '' }} px-8 lg:px-12">
                     <div class="max-w-lg">
                         <p class="font-heading font-bold text-[#148af4] text-xs mb-2">
                             <span class="text-white/30">// </span>{{ $route['num'] }}
@@ -303,7 +300,7 @@
 <!-- ══════════════════════════════════════════
      8. HOW OUR SITE ROUTE WORKS — 4 steps
 ══════════════════════════════════════════ -->
-<section class="py-20 lg:py-28" style="background-color:#011E41; background-image:linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px); background-size:52px 52px;">
+<section class="py-20 lg:py-28" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-14">
@@ -341,11 +338,7 @@
             </div>
             @endif
 
-            <div class="relative flex-1 flex flex-col border border-white/[0.1] overflow-hidden" style="background:rgba(255,255,255,0.03);">
-                <span class="absolute top-2.5 left-2.5 w-3.5 h-3.5 border-t border-l border-white/30 pointer-events-none"></span>
-                <span class="absolute top-2.5 right-2.5 w-3.5 h-3.5 border-t border-r border-white/30 pointer-events-none"></span>
-                <span class="absolute bottom-2.5 left-2.5 w-3.5 h-3.5 border-b border-l border-white/30 pointer-events-none"></span>
-                <span class="absolute bottom-2.5 right-2.5 w-3.5 h-3.5 border-b border-r border-white/30 pointer-events-none"></span>
+            <div class="flex-1 flex flex-col border border-white/[0.1] overflow-hidden" style="background:rgba(255,255,255,0.03);">
                 <div class="overflow-hidden" style="height:200px;">
                     <img src="{{ asset($step['img']) }}" alt="{{ $step['title'] }}"
                          class="w-full h-full object-cover object-center transition-transform duration-700 hover:scale-105">

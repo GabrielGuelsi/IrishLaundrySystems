@@ -9,7 +9,7 @@
      1. HERO — dark navy, grid bg, search + category pills
 ═══════════════════════════════════════ --}}
 <section class="relative overflow-hidden py-20 lg:py-28"
-         style="background-color:#011E41; background-image:linear-gradient(rgba(255,255,255,0.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.035) 1px,transparent 1px); background-size:52px 52px;">
+         style="background-color:#011E41;">
 
     {{-- Radial glow --}}
     <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(20,138,244,0.12) 0%,transparent 70%);"></div>
@@ -330,7 +330,7 @@
      5. SECTOR COLLECTIONS — navy bg, image cards
 ═══════════════════════════════════════ --}}
 <section class="py-14 lg:py-20"
-         style="background-color:#011E41; background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px); background-size:52px 52px;">
+         style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="text-center mb-12 reveal">
