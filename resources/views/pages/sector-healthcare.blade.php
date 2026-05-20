@@ -41,7 +41,7 @@
 @include('components.partner-strip')
 
 <!-- 3. SPLIT STATEMENT -->
-<section class="py-16 lg:py-24 bg-white border-b border-border">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -133,7 +133,7 @@
 </section>
 
 <!-- 4. LAUNDRY CYCLE MANAGEMENT + VIDEO -->
-<section class="py-16 lg:py-24 bg-white border-y border-border">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl mb-10 reveal">

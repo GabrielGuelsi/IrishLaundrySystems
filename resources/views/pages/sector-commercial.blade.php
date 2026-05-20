@@ -49,7 +49,7 @@
 @include('components.partner-strip')
 
 <!-- INTRO COMMERCIAL BLOCK -->
-<section class="py-16 lg:py-24 bg-[#f4f6f9] border-b border-border">
+<section class="py-16 lg:py-24 bg-[#f4f6f9]">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
