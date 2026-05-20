@@ -48,13 +48,13 @@
         {{-- Category filter pills --}}
         <div class="flex flex-wrap items-center justify-center gap-2" x-data="{ active: 'all' }">
             @foreach([
-                ['key'=>'all',          'label'=>'All Resources'],
-                ['key'=>'guides',       'label'=>'Guides'],
-                ['key'=>'checklists',   'label'=>'Checklists'],
-                ['key'=>'healthcare',   'label'=>'Healthcare'],
-                ['key'=>'hospitality',  'label'=>'Hospitality'],
-                ['key'=>'care',         'label'=>'Care Facilities'],
-                ['key'=>'commercial',   'label'=>'Commercial'],
+                ['key'=>'all',       'label'=>'All Resources'],
+                ['key'=>'guides',    'label'=>'Guides'],
+                ['key'=>'checklists','label'=>'Checklists'],
+                ['key'=>'washers',   'label'=>'Washers'],
+                ['key'=>'dryers',    'label'=>'Tumble Dryers'],
+                ['key'=>'barrier',   'label'=>'Barrier Washers'],
+                ['key'=>'ironers',   'label'=>'Ironers'],
             ] as $pill)
             <button @click="active = '{{ $pill['key'] }}'"
                     :class="active === '{{ $pill['key'] }}' ? 'bg-[#148af4] text-white border-[#148af4]' : 'text-white/55 border-white/10 hover:border-white/30 hover:text-white'"
@@ -144,16 +144,16 @@
             [
                 'title'  => 'Preventive Maintenance Basics',
                 'desc'   => 'An overview of what a preventive maintenance programme for commercial laundry should include — and why it matters.',
-                'sector' => 'All sectors',
+                'sector' => 'All machines',
                 'tag'    => 'Guide',
                 'read'   => '6 min',
                 'img'    => 'images/healthcare/engineer.jpg',
                 'color'  => '#148af4',
             ],
             [
-                'title'  => 'Barrier Washer Guide for Healthcare',
-                'desc'   => 'Understanding barrier washer operation, infection control benefits and maintenance requirements in healthcare settings.',
-                'sector' => 'Healthcare · Care',
+                'title'  => 'Barrier Washer Guide',
+                'desc'   => 'Understanding barrier washer operation, infection control benefits and maintenance requirements.',
+                'sector' => 'Barrier Washers',
                 'tag'    => 'Guide',
                 'read'   => '10 min',
                 'img'    => 'images/healthcare/render-double-page_72dpi.jpg',
@@ -162,7 +162,7 @@
             [
                 'title'  => 'Equipment Lifecycle Planning',
                 'desc'   => 'When to repair and when to replace — a practical guide to commercial laundry equipment lifecycle decisions.',
-                'sector' => 'All sectors',
+                'sector' => 'All machines',
                 'tag'    => 'Guide',
                 'read'   => '7 min',
                 'img'    => 'images/healthcare/repairs-hero.jpg',
@@ -171,28 +171,28 @@
             [
                 'title'  => 'Rental vs Purchase Decision Guide',
                 'desc'   => 'A structured guide to deciding whether equipment rental or outright purchase makes more sense for your operation.',
-                'sector' => 'All sectors',
+                'sector' => 'All machines',
                 'tag'    => 'Guide',
                 'read'   => '5 min',
                 'img'    => 'images/equipment/td6-multihousing-room.jpg',
                 'color'  => '#148af4',
             ],
             [
-                'title'  => 'Compliance Documentation for Care',
-                'desc'   => 'What maintenance documentation you should have in place for HIQA inspection and care facility governance requirements.',
-                'sector' => 'Care Facilities',
+                'title'  => 'Tumble Dryer Maintenance Guide',
+                'desc'   => 'Key maintenance points, airflow checks and safety requirements for commercial tumble dryers in operational settings.',
+                'sector' => 'Tumble Dryers',
                 'tag'    => 'Guide',
                 'read'   => '8 min',
-                'img'    => 'images/CareFacilities/CareFacilitiesHero.png',
+                'img'    => 'images/equipment/line6000-tumble-dryer.webp',
                 'color'  => '#148af4',
             ],
             [
-                'title'  => 'Hospitality Laundry Room Setup',
-                'desc'   => 'How to size, plan and equip a commercial laundry room for hotel and hospitality operations — from capacity to workflow.',
-                'sector' => 'Hospitality',
+                'title'  => 'Ironer Setup & Throughput Guide',
+                'desc'   => 'How to size, set up and get consistent throughput from a flatwork ironer in a commercial laundry environment.',
+                'sector' => 'Ironers',
                 'tag'    => 'Guide',
                 'read'   => '9 min',
-                'img'    => 'images/sectors/hospitality-hero.jpg',
+                'img'    => 'images/equipment/line6000-ironer.webp',
                 'color'  => '#148af4',
             ],
         ];
@@ -265,28 +265,32 @@
         @php
         $checklists = [
             [
-                'title' => 'Monthly Operator Checks — Washers',
-                'desc'  => 'Routine checks your operators should carry out monthly on commercial washers to catch early signs of wear.',
-                'color' => '#148af4',
-                'icon'  => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
+                'title'   => 'Monthly Operator Checks — Washers',
+                'desc'    => 'Routine checks your operators should carry out monthly on commercial washers to catch early signs of wear.',
+                'machine' => 'Washers',
+                'color'   => '#148af4',
+                'icon'    => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
             ],
             [
-                'title' => 'Monthly Operator Checks — Dryers',
-                'desc'  => 'Essential monthly safety and performance checks for commercial tumble dryers — lint filters, temperatures, door seals.',
-                'color' => '#148af4',
-                'icon'  => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
+                'title'   => 'Monthly Operator Checks — Dryers',
+                'desc'    => 'Essential monthly safety and performance checks for commercial tumble dryers — lint filters, temperatures, door seals.',
+                'machine' => 'Tumble Dryers',
+                'color'   => '#148af4',
+                'icon'    => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
             ],
             [
-                'title' => 'Pre-Service Preparation Checklist',
-                'desc'  => 'How to prepare your laundry room before an engineer visit — saving time, ensuring access and reducing call-out duration.',
-                'color' => '#148af4',
-                'icon'  => 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766m0 0l3.024 3.024c.37-.14.716-.363 1.002-.67L21 11.25a2.25 2.25 0 00-2.25-2.25H15M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163.036 1.548.537l1.009 1.34c.386.5.393 1.187.02 1.695l-.007.01',
+                'title'   => 'Barrier Washer Operator Checks',
+                'desc'    => 'Monthly checks for barrier washer operation — door seals, programme completion, cycle logs and hygiene documentation.',
+                'machine' => 'Barrier Washers',
+                'color'   => '#148af4',
+                'icon'    => 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766m0 0l3.024 3.024c.37-.14.716-.363 1.002-.67L21 11.25a2.25 2.25 0 00-2.25-2.25H15M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163.036 1.548.537l1.009 1.34c.386.5.393 1.187.02 1.695l-.007.01',
             ],
             [
-                'title' => 'Post-Breakdown Information Sheet',
-                'desc'  => 'Information to gather immediately after a breakdown — helps your engineer diagnose the fault and respond faster.',
-                'color' => '#148af4',
-                'icon'  => 'M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z',
+                'title'   => 'Ironer Pre-Start Safety Checklist',
+                'desc'    => 'Safety and readiness checks before starting a flatwork ironer — chest temperature, ribbon condition, feed alignment.',
+                'machine' => 'Ironers',
+                'color'   => '#148af4',
+                'icon'    => 'M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z',
             ],
         ];
         @endphp
@@ -304,8 +308,11 @@
                 </div>
 
                 {{-- Tag --}}
-                <span class="font-heading font-bold text-xs px-2.5 py-1 rounded-full mb-4 self-start"
-                      style="background:{{ $item['color'] }}15; color:{{ $item['color'] }};">Checklist</span>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="font-heading font-bold text-xs px-2.5 py-1 rounded-full"
+                          style="background:{{ $item['color'] }}15; color:{{ $item['color'] }};">Checklist</span>
+                    <span class="font-body text-gray-400 text-xs">{{ $item['machine'] }}</span>
+                </div>
 
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-3">{{ $item['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1 mb-6">{{ $item['desc'] }}</p>
@@ -334,77 +341,73 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="text-center mb-12 reveal">
-            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-3">By Sector</p>
-            <h2 class="font-heading font-bold text-white text-2xl lg:text-4xl mb-3">Resources by sector</h2>
+            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-3">By Machine</p>
+            <h2 class="font-heading font-bold text-white text-2xl lg:text-4xl mb-3">Resources by machine type</h2>
             <p class="font-body text-white/40 text-sm max-w-xl mx-auto leading-relaxed">
-                Every sector has different compliance requirements, equipment types and operational patterns — find resources specific to yours.
+                Each machine type has its own maintenance requirements, operator checks and service considerations — find resources specific to your equipment.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @php
-            $sectors = [
+            $machines = [
                 [
-                    'href'     => route('sectors.healthcare'),
-                    'title'    => 'Healthcare',
-                    'desc'     => 'Hospitals, HSE and healthcare groups. Barrier washers, infection control, compliance documentation.',
-                    'img'      => 'images/healthcare/hero-main.jpg',
-                    'tag'      => 'Healthcare',
-                    'tagColor' => '#148af4',
-                    'count'    => '6 resources',
+                    'href'  => route('contact'),
+                    'title' => 'Washers',
+                    'desc'  => 'Washer-extractors and commercial washing machines. Drum checks, programme faults, bearing wear and parts continuity.',
+                    'img'   => 'images/equipment/commercialwasher.webp',
+                    'tag'   => 'Washers',
+                    'count' => '4 resources',
                 ],
                 [
-                    'href'     => route('sectors.hospitality'),
-                    'title'    => 'Hospitality',
-                    'desc'     => 'Hotels, guesthouses and leisure. High throughput, linen quality and minimal downtime.',
-                    'img'      => 'images/sectors/hospitality-hero.jpg',
-                    'tag'      => 'Hospitality',
-                    'tagColor' => '#148af4',
-                    'count'    => '4 resources',
+                    'href'  => route('contact'),
+                    'title' => 'Tumble Dryers',
+                    'desc'  => 'Commercial tumble dryers. Lint management, airflow checks, temperature calibration and door seal maintenance.',
+                    'img'   => 'images/equipment/line6000-tumble-dryer.webp',
+                    'tag'   => 'Tumble Dryers',
+                    'count' => '3 resources',
                 ],
                 [
-                    'href'     => route('sectors.care'),
-                    'title'    => 'Care Facilities',
-                    'desc'     => 'Nursing homes and residential care. HIQA compliance, barrier washing, equipment reliability.',
-                    'img'      => 'images/CareFacilities/CareFacilitiesHero.png',
-                    'tag'      => 'Care',
-                    'tagColor' => '#148af4',
-                    'count'    => '5 resources',
+                    'href'  => route('contact'),
+                    'title' => 'Barrier Washers',
+                    'desc'  => 'Infection control washers for healthcare and care. Cycle logs, hygiene validation, door seal checks and compliance records.',
+                    'img'   => 'images/equipment/line6000-barrier-washer.webp',
+                    'tag'   => 'Barrier Washers',
+                    'count' => '4 resources',
                 ],
                 [
-                    'href'     => route('sectors.commercial'),
-                    'title'    => 'Commercial',
-                    'desc'     => 'Commercial laundries and industry. High-volume throughput, energy efficiency, machine uptime.',
-                    'img'      => 'images/sectors/commercial-hero.jpg',
-                    'tag'      => 'Commercial',
-                    'tagColor' => '#148af4',
-                    'count'    => '4 resources',
+                    'href'  => route('contact'),
+                    'title' => 'Ironers',
+                    'desc'  => 'Flatwork ironers and chest ironers. Chest temperature, ribbon condition, feed alignment and throughput planning.',
+                    'img'   => 'images/equipment/line6000-ironer.webp',
+                    'tag'   => 'Ironers',
+                    'count' => '3 resources',
                 ],
             ];
             @endphp
 
-            @foreach($sectors as $i => $sector)
-            <a href="{{ $sector['href'] }}"
+            @foreach($machines as $i => $machine)
+            <a href="{{ $machine['href'] }}"
                class="group relative overflow-hidden rounded-3xl border border-white/[0.08] hover:border-[#148af4]/40 transition-all duration-300 hover:-translate-y-1.5 flex flex-col reveal"
                style="min-height:340px; transition-delay:{{ $i * 80 }}ms;">
 
                 {{-- Background image --}}
                 <div class="absolute inset-0">
-                    <img src="{{ asset($sector['img']) }}" alt="{{ $sector['title'] }}"
-                         class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <img src="{{ asset($machine['img']) }}" alt="{{ $machine['title'] }}"
+                         class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#011E41]/95 via-[#011E41]/50 to-[#011E41]/10"></div>
                 </div>
 
                 {{-- Content --}}
                 <div class="relative z-10 flex flex-col flex-1 p-6 justify-end">
                     <span class="font-heading font-bold text-xs px-3 py-1 rounded-full mb-3 self-start border"
-                          style="background:{{ $sector['tagColor'] }}22; color:{{ $sector['tagColor'] }}; border-color:{{ $sector['tagColor'] }}30;">
-                        {{ $sector['tag'] }}
+                          style="background:rgba(20,138,244,0.22); color:#148af4; border-color:rgba(20,138,244,0.3);">
+                        {{ $machine['tag'] }}
                     </span>
-                    <h3 class="font-heading font-bold text-white text-xl mb-2">{{ $sector['title'] }}</h3>
-                    <p class="font-body text-white/50 text-xs leading-relaxed mb-4">{{ $sector['desc'] }}</p>
+                    <h3 class="font-heading font-bold text-white text-xl mb-2">{{ $machine['title'] }}</h3>
+                    <p class="font-body text-white/50 text-xs leading-relaxed mb-4">{{ $machine['desc'] }}</p>
                     <div class="flex items-center justify-between">
-                        <span class="font-body text-white/35 text-xs">{{ $sector['count'] }}</span>
+                        <span class="font-body text-white/35 text-xs">{{ $machine['count'] }}</span>
                         <span class="inline-flex items-center gap-1.5 font-heading font-bold text-white/60 text-xs group-hover:text-white group-hover:gap-2.5 transition-all duration-200">
                             Explore
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
