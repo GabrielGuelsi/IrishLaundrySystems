@@ -172,14 +172,26 @@
         <!-- 3 Proof Cards — full width below -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
             @foreach([
-                ['num' => '1', 'title' => 'Registered technical work',  'body' => 'Electrical and gas contractor capability for commercial laundry installation, servicing and safety-led work.'],
-                ['num' => '2', 'title' => 'Equipment knowledge',         'body' => 'Experience around washers, dryers, barrier washers, ironers and installed laundry rooms.'],
-                ['num' => '3', 'title' => 'Site-level judgement',        'body' => 'Understanding of utilities, access, usage pressure, service history, parts route and practical next steps.'],
+                [
+                    'title' => 'Registered technical work',
+                    'body'  => 'Electrical and gas contractor capability for commercial laundry installation, servicing and safety-led work.',
+                    'icon'  => '<svg class="w-10 h-10 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.249-8.25-3.285Z"/></svg>',
+                ],
+                [
+                    'title' => 'Equipment knowledge',
+                    'body'  => 'Experience around washers, dryers, barrier washers, ironers and installed laundry rooms.',
+                    'icon'  => '<svg class="w-10 h-10 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M4.867 19.125h.008v.008h-.008v-.008Z"/></svg>',
+                ],
+                [
+                    'title' => 'Site-level judgement',
+                    'body'  => 'Understanding of utilities, access, usage pressure, service history, parts route and practical next steps.',
+                    'icon'  => '<svg class="w-10 h-10 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 0 1 15 0Z"/></svg>',
+                ],
             ] as $i => $card)
-            <div class="border border-white/[0.1] p-6 lg:p-8 flex flex-col reveal" style="background:rgba(255,255,255,0.03); transition-delay:{{ $i * 100 }}ms;">
-                <p class="font-heading font-bold text-[#148af4]/60 text-xs mb-3"><span class="text-white/20">//</span>{{ $card['num'] }}</p>
-                <div class="font-heading font-bold text-white text-lg mb-3">{{ $card['title'] }}</div>
-                <p class="font-body text-white/50 text-sm leading-relaxed">{{ $card['body'] }}</p>
+            <div class="border border-white/[0.1] p-8 lg:p-10 flex flex-col reveal" style="background:rgba(255,255,255,0.03); transition-delay:{{ $i * 100 }}ms;">
+                <div class="mb-6">{!! $card['icon'] !!}</div>
+                <div class="font-heading font-bold text-white text-xl lg:text-2xl mb-4">{{ $card['title'] }}</div>
+                <p class="font-body text-white/50 text-base leading-relaxed">{{ $card['body'] }}</p>
             </div>
             @endforeach
         </div>
