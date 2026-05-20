@@ -8,7 +8,7 @@
     'dark'        => true,
 ])
 
-<section class="bg-orange py-16 lg:py-20">
+<section class="bg-navy py-16 lg:py-20">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
             {{ $heading }}
