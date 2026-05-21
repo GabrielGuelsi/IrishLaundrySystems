@@ -1,4 +1,4 @@
-{{-- Service Contracts, Parts & Aftercare strip — content left, image right --}}
+{{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- RIGHT: image pinned to 40% --}}

@@ -777,7 +777,7 @@
     </div>
 </section>
 
-<!-- 11. Service Contracts, Parts & Aftercare Strip -->
+<!-- 11. Service Contracts, Support & Aftercare Strip -->
 @include('components.service-contracts-strip')
 
 <!-- 12. Testimonial / Proof Block -->
