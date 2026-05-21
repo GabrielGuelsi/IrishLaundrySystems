@@ -1,4 +1,4 @@
-{{-- Service Contracts, Parts & Aftercare strip — content left, image right --}}
+{{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- RIGHT: image pinned to 40% --}}
@@ -13,7 +13,7 @@
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Service Contracts,</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">Parts &amp; Aftercare</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">Support &amp; Aftercare</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">

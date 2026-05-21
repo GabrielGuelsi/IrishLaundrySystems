@@ -1,10 +1,10 @@
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
-    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                  'iw' => '400', 'ih' => '440'],
-    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader wash needs, daily capacity and consistent performance across professional laundry environments.', 'iw' => '400', 'ih' => '440'],
-    ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                             'iw' => '260', 'ih' => '300'],
-    ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation, and clean-route continuity.',                                   'iw' => '260', 'ih' => '300'],
+    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                  'box' => 270],
+    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader wash needs, daily capacity and consistent performance across professional laundry environments.', 'box' => 270],
+    ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                             'box' => 245],
+    ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
 ];
 @endphp
 
@@ -30,12 +30,24 @@ $equipmentList = $equipment ?? [
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                <div class="w-full flex items-center justify-center" style="height:320px;">
+                @if($loop->last)
+                {{-- Ironer: wide/flat — bottom-align so the base sits flush with the others --}}
+                <div class="w-full flex items-end justify-center" style="height:300px;">
                     <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
                          alt="{{ $eq['name'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="width:{{ $eq['iw'] ?? '300' }}px; height:{{ $eq['ih'] ?? '340' }}px; object-fit:contain;">
+                         style="width:100%; height:auto; object-fit:contain;">
                 </div>
+                @else
+                {{-- First 3: per-machine box size so actual machine visual size looks equal --}}
+                @php $box = $eq['box'] ?? 260; @endphp
+                <div class="w-full flex items-center justify-center" style="height:300px;">
+                    <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
+                         alt="{{ $eq['name'] }}"
+                         class="transition-transform duration-500 hover:-translate-y-2"
+                         style="width:{{ $box }}px; height:{{ $box }}px; object-fit:contain;">
+                </div>
+                @endif
                 <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
                     View Equipment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

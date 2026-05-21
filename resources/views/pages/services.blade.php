@@ -46,7 +46,7 @@
             <div style="max-width: 680px;">
 
                 <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Support routes built around <span class="text-orange">your site</span> and <span class="text-orange">equipment</span>.
+                    Support routes built around <span class="text-[#148af4]">your site</span> and <span class="text-[#148af4]">equipment</span>.
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
@@ -55,7 +55,7 @@
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
                     </a>
                     <a href="{{ route('contact') }}"
@@ -79,7 +79,7 @@
             {{-- Left: heading --}}
             <div class="lg:col-span-3">
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                    How support <span class="text-orange">starts</span>.
+                    How support <span class="text-[#148af4]">starts</span>.
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
                     Most service decisions begin with site pressure, the installed equipment and the support route needed next.
@@ -92,7 +92,7 @@
                 {{-- Step 1 — Site pressure (Ativo 7 — placeholder, swap after visual preview at /icon-preview.html) --}}
                 <div class="svc-step flex-1 min-w-[140px] text-center">
                     <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-[#148af4] [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                             {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                 {{-- Step 2 — Installed equipment (Ativo 18 placeholder) --}}
                 <div class="svc-step flex-1 min-w-[140px] text-center">
                     <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-[#148af4] [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                             {!! file_get_contents(public_path('images/icons/brand/Ativo 9.svg')) !!}
                         </div>
                     </div>
@@ -128,7 +128,7 @@
                 {{-- Step 3 — Support route (Ativo 4 placeholder) --}}
                 <div class="svc-step flex-1 min-w-[140px] text-center">
                     <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-orange [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
+                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-[#148af4] [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                             {!! file_get_contents(public_path('images/icons/brand/Ativo 6.svg')) !!}
                         </div>
                     </div>
@@ -152,7 +152,7 @@
         ['title' => 'Repairs & Call-outs', 'body' => 'Engineering support for faults, breakdowns and performance issues when the laundry room is under pressure.',                'bullets' => ['Triage-first response', 'Fast contact and follow-up', 'Built for critical environments'],   'cta' => 'Request Call-out',        'href' => route('repairs'),           'img' => '/images/healthcare/repairs-hero.jpg',                  'alt' => 'Repairs and Call-outs'],
         ['title' => 'Service Contracts',   'body' => 'Planned maintenance and service structure for sites that need better control over the installed base.',                       'bullets' => ['Three maintenance tiers', 'Documented service records', 'Fewer unplanned stoppages'],         'cta' => 'View Contracts',          'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.jpg',        'alt' => 'Service Contracts',     'pos' => 'center 25%'],
         ['title' => 'Equipment Rental',    'body' => 'A supported option for replacement pressure, extra capacity or capital control, with equipment installed and maintained.',  'bullets' => ['Equipment with service built in', 'Predictable monthly cost', 'Electrolux Professional standard'], 'cta' => 'See Rental Options',      'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',         'alt' => 'Equipment Rental'],
-        ['title' => 'Parts & Aftercare',   'body' => 'Genuine parts access, service history context and practical follow-up support around commercial laundry equipment.',         'bullets' => ['Genuine Electrolux parts', 'Lifecycle support', 'Manufacturer-trained engineers'],                'cta' => 'Explore Support Options', 'href' => '#parts-aftercare',         'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Parts & Aftercare',  'pos' => 'center center'],
+        ['title' => 'Support & Aftercare',   'body' => 'Genuine parts access, service history context and practical follow-up support around commercial laundry equipment.',         'bullets' => ['Genuine Electrolux parts', 'Lifecycle support', 'Manufacturer-trained engineers'],                'cta' => 'Explore Support Options', 'href' => '#parts-aftercare',         'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',  'pos' => 'center center'],
     ],
 ])
 
@@ -177,7 +177,7 @@
                 <div class="hidden lg:block absolute left-0 top-1 bottom-1 w-px bg-white/10" aria-hidden="true"></div>
                 @endif
                 <div class="lg:pl-6">
-                    <p class="font-heading font-bold text-orange text-base lg:text-lg uppercase tracking-wider mb-1.5 leading-tight">{{ $item['label'] }}</p>
+                    <p class="font-heading font-bold text-[#148af4] text-base lg:text-lg uppercase tracking-wider mb-1.5 leading-tight">{{ $item['label'] }}</p>
                     <p class="font-body text-blue-200 text-sm leading-relaxed">{{ $item['body'] }}</p>
                 </div>
             </div>
@@ -305,7 +305,7 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="text-center">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                How the support routes <span class="text-orange">work together</span>.
+                How the support routes <span class="text-[#148af4]">work together</span>.
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto">
                 The four routes are not silos. They connect into one support story for the installed base.
@@ -344,9 +344,9 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-                <p class="font-body font-bold text-orange text-xs uppercase tracking-widest mb-4">Installed Base Support</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Installed Base Support</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
-                    Parts &amp; aftercare for the <span class="text-orange">installed base</span>.
+                    Parts &amp; aftercare for the <span class="text-[#148af4]">installed base</span>.
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
                     As an Authorised Electrolux Professional Partner, Irish Laundry Systems connects parts access, service history and aftercare to the installed base, helping keep diagnosis, follow-up and equipment decisions clearer.
@@ -377,7 +377,7 @@
                         'Parts support for contract and non-contract customers',
                     ] as $bullet)
                     <li class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-orange mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                        <svg class="w-5 h-5 text-[#148af4] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                         <span class="font-body text-navy text-base leading-snug">{{ $bullet }}</span>
                     </li>
                     @endforeach
@@ -397,7 +397,7 @@
         {{-- Left: text + CTAs --}}
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                Need the right support route for <span class="text-orange">your site</span>?
+                Need the right support route for <span class="text-[#148af4]">your site</span>?
             </h2>
             <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
                 Speak with an engineer about breakdown risk, installed equipment, parts continuity and the best next step for your site.

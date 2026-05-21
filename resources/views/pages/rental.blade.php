@@ -46,7 +46,7 @@
             <div style="max-width: 560px;">
 
                 <div class="hero-title inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-5">
-                    <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 2.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125m16.5 5.625c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
                     </svg>
                     <span class="text-sm font-body text-gray-200">Equipment rental &amp; lease</span>
@@ -62,7 +62,7 @@
 
                 <div class="hero-btns">
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
+                       class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
                         Request Rental Assessment
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -122,7 +122,7 @@
                 </div>
             </div>
             <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-bold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
+               class="flex-shrink-0 text-xs font-body font-bold text-navy hover:text-[#148af4] uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
                 Learn more
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
@@ -141,10 +141,10 @@
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Both have their place. Here's what makes rental the right choice for some operations.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-bg border-2 border-orange rounded-2xl p-6 lg:p-8">
+            <div class="bg-bg border-2 border-[#148af4] rounded-2xl p-6 lg:p-8">
                 <div class="flex items-center gap-3 mb-5">
-                    <div class="w-10 h-10 rounded-lg bg-orange/10 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center">
+                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
@@ -211,17 +211,17 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">
-                <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">1</div>
+                <div class="w-14 h-14 rounded-full bg-[#148af4] flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">1</div>
                 <h3 class="font-heading font-bold text-white text-lg mb-3">Tell Us What You Need</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">Equipment type, capacity requirements, sector and preferred rental term. We'll assess what's right for your operation.</p>
             </div>
             <div class="text-center">
-                <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">2</div>
+                <div class="w-14 h-14 rounded-full bg-[#148af4] flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">2</div>
                 <h3 class="font-heading font-bold text-white text-lg mb-3">We Propose an Arrangement</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">We'll put together a rental or lease proposal — including equipment spec, term, maintenance cover and what's included.</p>
             </div>
             <div class="text-center">
-                <div class="w-14 h-14 rounded-full bg-orange flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">3</div>
+                <div class="w-14 h-14 rounded-full bg-[#148af4] flex items-center justify-center mx-auto mb-5 text-white font-heading font-bold text-xl">3</div>
                 <h3 class="font-heading font-bold text-white text-lg mb-3">Installation &amp; Commissioning</h3>
                 <p class="font-body text-gray-300 text-sm leading-relaxed">ILS engineers install and commission the equipment. Ongoing maintenance is managed through the rental arrangement.</p>
             </div>

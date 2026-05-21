@@ -119,7 +119,7 @@
                             <option value="contract">Service Contract</option>
                             <option value="rental">Equipment Rental</option>
                             <option value="breakdown">Breakdown / Repair</option>
-                            <option value="parts">Parts &amp; Aftercare</option>
+                            <option value="parts">Support &amp; Aftercare</option>
                             <option value="equipment_quote">Equipment Quote</option>
                         </select>
                     </div>

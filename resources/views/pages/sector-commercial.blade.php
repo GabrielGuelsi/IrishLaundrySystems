@@ -49,7 +49,7 @@
 @include('components.partner-strip')
 
 <!-- INTRO COMMERCIAL BLOCK -->
-<section class="py-16 lg:py-24 bg-[#f4f6f9] border-b border-border">
+<section class="py-16 lg:py-24 bg-[#f4f6f9]">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
@@ -271,6 +271,85 @@
     </div>
 </section>
 
+{{-- Financial Benefits Bento: 5-item grid, no cards --}}
+<section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8 reveal">
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
+                Financial benefits built into how we work.
+            </h2>
+            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+                From removing large capital outlays to reducing unplanned repair spend — the way we structure equipment, service and support is designed to make costs more predictable.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Predictable costs</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Service contracts convert unpredictable repair spend into fixed, planned maintenance costs across the year.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">No large capital outlay</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment rental removes the need for upfront purchase while keeping compliant, serviced equipment in place.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Lower running costs</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Modern Electrolux Professional equipment uses less water and energy per cycle — reducing utility spend on every wash.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Reduced downtime cost</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Planned maintenance reduces emergency call-out frequency and the operational disruption that comes with unplanned faults.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-2 lg:col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Parts cost continuity</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Access to genuine parts through a managed supply relationship reduces delays and the cost of sourcing outside normal channels.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- FOUR SERVICE CARDS -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -314,7 +393,7 @@
                     'pos'    => 'center 35%',
                 ],
                 [
-                    'title'  => 'Parts &amp; Aftercare',
+                    'title'  => 'Support &amp; Aftercare',
                     'text'   => 'Genuine parts access, consumables and practical aftercare support connected to the installed base — the right component to the right machine without delay.',
                     'cta'    => 'Enquire Now',
                     'route'  => route('contact'),
@@ -341,7 +420,7 @@
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
                     {{-- Title (always visible) --}}
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
@@ -596,7 +675,7 @@
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
 
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
             Our process keeps the <span style="color:#148af4;">next step</span> clear.
         </h2>
@@ -604,41 +683,31 @@
             A clear four-step path from site review to the next practical recommendation.
         </p>
 
-        {{-- Steps row with connector line --}}
-        <div class="relative grid grid-cols-2 lg:grid-cols-4 gap-8">
-
-            {{-- Connector line (desktop only) --}}
-            <div class="hidden lg:block absolute top-7 h-px z-0" style="left:12.5%; right:12.5%; background:#148af4; opacity:0.35;"></div>
+        <div class="flex flex-col sm:flex-row items-start justify-between">
 
             @foreach([
-                [
-                    'title' => 'Assess the site',
-                    'text'  => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.',
-                    'icon'  => 'clipboard',
-                ],
-                [
-                    'title' => 'Match the equipment',
-                    'text'  => 'Recommend the right washing, drying, finishing or specialist route.',
-                    'icon'  => 'Ativo%204',
-                ],
-                [
-                    'title' => 'Keep support close',
-                    'text'  => 'Connect the installed base to service contracts, parts and practical aftercare.',
-                    'icon'  => 'Ativo%206',
-                ],
-                [
-                    'title' => 'Move to assessment',
-                    'text'  => 'Turn the site, equipment route and support needs into a practical next step.',
-                    'icon'  => 'arrow-right-circle',
-                ],
-            ] as $step)
-            <div class="flex flex-col items-center relative z-10">
-                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                     class="mb-5"
-                     style="width:3.2rem;height:3.2rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[160px]">{{ $step['text'] }}</p>
+                ['title' => 'Assess the site',     'text' => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.', 'icon' => 'clipboard'],
+                ['title' => 'Match the equipment', 'text' => 'Recommend the right washing, drying, finishing or specialist route.',                          'icon' => 'Ativo%204'],
+                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',               'icon' => 'Ativo%206'],
+                ['title' => 'Move to assessment',  'text' => 'Turn the site, equipment route and support needs into a practical next step.',                  'icon' => 'Ativo%203'],
+            ] as $i => $step)
+
+            @if($i > 0)
+            <div class="hidden sm:flex flex-shrink-0 items-center pt-6 lg:pt-8 px-1 lg:px-2">
+                <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
+                    <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
+            @endif
+
+            <div class="flex flex-col items-center flex-1 min-w-0 mb-8 sm:mb-0">
+                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                     class="mx-auto mb-4"
+                     style="width:2.8rem;height:2.8rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[150px] mx-auto">{{ $step['text'] }}</p>
+            </div>
+
             @endforeach
 
         </div>

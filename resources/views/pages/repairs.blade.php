@@ -314,7 +314,7 @@ $expectSteps = [
                 </a>
                 <a href="{{ route('services') }}"
                    class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer hover:bg-white/10">
-                    Explore Parts &amp; Aftercare
+                    Explore Support &amp; Aftercare
                 </a>
             </div>
         </div>
