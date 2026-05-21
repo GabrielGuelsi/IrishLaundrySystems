@@ -198,8 +198,8 @@
 
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <img src="/images/icons/Hygiene-focused design.jpg" alt="" class="w-14 h-14 object-contain">
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Hygiene-focused design.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
@@ -209,8 +209,8 @@
 
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <img src="/images/icons/Operator support.jpg" alt="" class="w-14 h-14 object-contain">
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Operator support.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator support</h3>
@@ -220,8 +220,8 @@
 
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <img src="/images/icons/Intelligent control.jpg" alt="" class="w-14 h-14 object-contain">
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Intelligent control.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -231,9 +231,9 @@
 
             {{-- Card 4: ERGOCERT --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14 gap-1.5">
+                <div class="flex items-center justify-center h-24 gap-1.5">
                     @for($s = 0; $s < 4; $s++)
-                    <svg style="width:24px;height:24px;" fill="#148af4" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    <svg style="width:32px;height:32px;" fill="#148af4" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                     @endfor
                 </div>
                 <div>
@@ -244,8 +244,8 @@
 
             {{-- Card 5: AIDO --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <img src="/images/icons/AIDO secure door handling.jpg" alt="" class="w-14 h-14 object-contain">
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/AIDO secure door handling.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">AIDO secure door handling</h3>
