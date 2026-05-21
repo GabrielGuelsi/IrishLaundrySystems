@@ -68,7 +68,7 @@
                         <a href="{{ route('services') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-bold">Services Overview</a>
                         <a href="{{ route('repairs') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Repairs &amp; Call-outs</a>
                         <a href="{{ route('service-contracts') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Service Contracts</a>
-                        <a href="{{ route('services') }}#parts" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Support &amp; Aftercare</a>
+                        <a href="{{ route('parts-aftercare') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Parts &amp; Aftercare</a>
                     </div></div>
                 </div>
 
@@ -189,7 +189,7 @@
                     <a href="{{ route('services') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Services Overview</a>
                     <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Repairs &amp; Call-outs</a>
                     <a href="{{ route('service-contracts') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Service Contracts</a>
-                    <a href="{{ route('services') }}#parts" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Support &amp; Aftercare</a>
+                    <a href="{{ route('parts-aftercare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Parts &amp; Aftercare</a>
                 </div>
             </div>
 

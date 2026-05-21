@@ -11,6 +11,7 @@ Route::redirect('/solutions', '/services', 301);
 Route::get('/service-contracts', [PageController::class, 'serviceContracts'])->name('service-contracts');
 Route::get('/rental', [PageController::class, 'rental'])->name('rental');
 Route::get('/repairs-call-outs', [PageController::class, 'repairs'])->name('repairs');
+Route::get('/parts-aftercare', [PageController::class, 'partsAftercare'])->name('parts-aftercare');
 Route::get('/sectors', [PageController::class, 'sectors'])->name('sectors');
 Route::get('/sectors/healthcare', [PageController::class, 'sectorHealthcare'])->name('sectors.healthcare');
 Route::get('/sectors/hospitality', [PageController::class, 'sectorHospitality'])->name('sectors.hospitality');

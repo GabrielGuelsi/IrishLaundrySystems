@@ -46,6 +46,14 @@ class PageController extends Controller
         ]);
     }
 
+    public function partsAftercare()
+    {
+        return view('pages.parts-aftercare', [
+            'title' => 'Commercial Laundry Parts & Aftercare Ireland | Genuine Spares & Service | ILS',
+            'metaDescription' => 'Genuine parts access, service history context and practical aftercare from Irish Laundry Systems. Authorised Electrolux Professional Partner supporting commercial and industrial laundry sites across Ireland.',
+        ]);
+    }
+
     public function sectors()
     {
         return view('pages.sectors', [
