@@ -199,9 +199,7 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
-                    </svg>
+                    <img src="/images/icons/Hygiene-focused design.jpg" alt="" class="w-14 h-14 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
@@ -212,7 +210,7 @@
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-14">
-                    <img src="/images/icons/brand/Ativo%201.svg" alt="" style="width:3.5rem;height:3.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                    <img src="/images/icons/Operator support.jpg" alt="" class="w-14 h-14 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator support</h3>
@@ -223,7 +221,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-14">
-                    <img src="/images/icons/brand/Ativo%2019.svg" alt="" style="width:3.5rem;height:3.5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                    <img src="/images/icons/Intelligent control.jpg" alt="" class="w-14 h-14 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -247,9 +245,7 @@
             {{-- Card 5: AIDO --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z"/>
-                    </svg>
+                    <img src="/images/icons/AIDO secure door handling.jpg" alt="" class="w-14 h-14 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">AIDO secure door handling</h3>
