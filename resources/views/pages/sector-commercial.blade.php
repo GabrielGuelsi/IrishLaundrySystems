@@ -271,6 +271,85 @@
     </div>
 </section>
 
+{{-- Financial Benefits Bento: 5-item grid, no cards --}}
+<section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8 reveal">
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
+                Financial benefits built into how we work.
+            </h2>
+            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+                From removing large capital outlays to reducing unplanned repair spend — the way we structure equipment, service and support is designed to make costs more predictable.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Predictable costs</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Service contracts convert unpredictable repair spend into fixed, planned maintenance costs across the year.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">No large capital outlay</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment rental removes the need for upfront purchase while keeping compliant, serviced equipment in place.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Lower running costs</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Modern Electrolux Professional equipment uses less water and energy per cycle — reducing utility spend on every wash.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Reduced downtime cost</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Planned maintenance reduces emergency call-out frequency and the operational disruption that comes with unplanned faults.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-4 col-span-2 lg:col-span-1 p-5">
+                <div class="flex items-center justify-center h-14">
+                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Parts cost continuity</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Access to genuine parts through a managed supply relationship reduces delays and the cost of sourcing outside normal channels.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- FOUR SERVICE CARDS -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
