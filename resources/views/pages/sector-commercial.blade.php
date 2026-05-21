@@ -204,10 +204,8 @@
 
             {{-- Card 1: Throughput --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                    </svg>
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Throughput and daily load.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Throughput and daily load</h3>
@@ -217,10 +215,8 @@
 
             {{-- Card 2: Load profile --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3"/>
-                    </svg>
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Load profile and fabric mix.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Load profile and fabric mix</h3>
@@ -230,10 +226,8 @@
 
             {{-- Card 3: Utility --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
-                    </svg>
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Utility and operating cost control.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility and operating cost control</h3>
@@ -243,10 +237,8 @@
 
             {{-- Card 4: Operator --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
-                    </svg>
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Operator support.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator handling and controls</h3>
@@ -256,10 +248,8 @@
 
             {{-- Card 5: Service --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
-                    </svg>
+                <div class="flex items-center justify-center h-24">
+                    <img src="/images/icons/Service and parts support.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Service and parts continuity</h3>
