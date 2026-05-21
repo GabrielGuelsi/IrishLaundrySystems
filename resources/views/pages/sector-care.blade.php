@@ -332,7 +332,7 @@
                     'pos'    => 'center center',
                 ],
                 [
-                    'title'  => 'Parts &amp; Aftercare',
+                    'title'  => 'Support &amp; Aftercare',
                     'text'   => 'Genuine parts access, service history context and practical follow-up support around laundry equipment.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),

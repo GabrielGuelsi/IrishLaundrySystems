@@ -199,7 +199,7 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-10">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Genuine Parts &amp; Aftercare</h2>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Genuine Support &amp; Aftercare</h2>
             <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Why genuine parts matter — and what it means for your operation.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">

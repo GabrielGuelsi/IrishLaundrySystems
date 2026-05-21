@@ -393,7 +393,7 @@
                     'pos'    => 'center 35%',
                 ],
                 [
-                    'title'  => 'Parts &amp; Aftercare',
+                    'title'  => 'Support &amp; Aftercare',
                     'text'   => 'Genuine parts access, consumables and practical aftercare support connected to the installed base — the right component to the right machine without delay.',
                     'cta'    => 'Enquire Now',
                     'route'  => route('contact'),
