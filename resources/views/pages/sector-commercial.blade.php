@@ -622,10 +622,9 @@
             @endif
 
             <div class="flex flex-col items-center flex-1 min-w-0 mb-8 sm:mb-0">
-                <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-[#e2e8f0] shadow-sm mx-auto mb-4 flex items-center justify-center">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:1.9rem;height:1.9rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
-                </div>
+                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                     class="mx-auto mb-4"
+                     style="width:2.8rem;height:2.8rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[150px] mx-auto">{{ $step['text'] }}</p>
             </div>
