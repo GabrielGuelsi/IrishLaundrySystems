@@ -355,67 +355,68 @@
                     'href'  => route('contact'),
                     'title' => 'Washers',
                     'desc'  => 'Washer-extractors and commercial washing machines. Drum checks, programme faults, bearing wear and parts continuity.',
-                    'img'   => 'images/equipment/commercialwasher.webp',
                     'tag'   => 'Washers',
                     'count' => '4 resources',
+                    'icon'  => 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99',
                 ],
                 [
                     'href'  => route('contact'),
                     'title' => 'Tumble Dryers',
                     'desc'  => 'Commercial tumble dryers. Lint management, airflow checks, temperature calibration and door seal maintenance.',
-                    'img'   => 'images/equipment/line6000-tumble-dryer.webp',
                     'tag'   => 'Tumble Dryers',
                     'count' => '3 resources',
+                    'icon'  => 'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z',
                 ],
                 [
                     'href'  => route('contact'),
                     'title' => 'Barrier Washers',
                     'desc'  => 'Infection control washers for healthcare and care. Cycle logs, hygiene validation, door seal checks and compliance records.',
-                    'img'   => 'images/equipment/line6000-barrier-washer.webp',
                     'tag'   => 'Barrier Washers',
                     'count' => '4 resources',
+                    'icon'  => 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z',
                 ],
                 [
                     'href'  => route('contact'),
                     'title' => 'Ironers',
                     'desc'  => 'Flatwork ironers and chest ironers. Chest temperature, ribbon condition, feed alignment and throughput planning.',
-                    'img'   => 'images/equipment/line6000-ironer.webp',
                     'tag'   => 'Ironers',
                     'count' => '3 resources',
+                    'icon'  => 'M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z',
                 ],
             ];
             @endphp
 
             @foreach($machines as $i => $machine)
             <a href="{{ $machine['href'] }}"
-               class="group relative overflow-hidden rounded-3xl border border-white/[0.08] hover:border-[#148af4]/40 transition-all duration-300 hover:-translate-y-1.5 flex flex-col reveal"
-               style="min-height:340px; transition-delay:{{ $i * 80 }}ms;">
+               class="group rounded-3xl border border-white/[0.08] hover:border-[#148af4]/40 transition-all duration-300 hover:-translate-y-1.5 flex flex-col p-7 reveal"
+               style="background:rgba(255,255,255,0.04); transition-delay:{{ $i * 80 }}ms;">
 
-                {{-- Background image --}}
-                <div class="absolute inset-0">
-                    <img src="{{ asset($machine['img']) }}" alt="{{ $machine['title'] }}"
-                         class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-[#011E41]/95 via-[#011E41]/50 to-[#011E41]/10"></div>
+                {{-- Icon --}}
+                <div class="w-12 h-12 rounded-2xl flex items-center justify-center mb-5 flex-shrink-0"
+                     style="background:rgba(20,138,244,0.15);">
+                    <svg class="w-6 h-6" style="color:#148af4;" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="{{ $machine['icon'] }}"/>
+                    </svg>
                 </div>
 
-                {{-- Content --}}
-                <div class="relative z-10 flex flex-col flex-1 p-6 justify-end">
-                    <span class="font-heading font-bold text-xs px-3 py-1 rounded-full mb-3 self-start border"
-                          style="background:rgba(20,138,244,0.22); color:#148af4; border-color:rgba(20,138,244,0.3);">
+                {{-- Tag + count --}}
+                <div class="flex items-center justify-between mb-4">
+                    <span class="font-heading font-bold text-xs px-3 py-1 rounded-full border"
+                          style="background:rgba(20,138,244,0.18); color:#148af4; border-color:rgba(20,138,244,0.25);">
                         {{ $machine['tag'] }}
                     </span>
-                    <h3 class="font-heading font-bold text-white text-xl mb-2">{{ $machine['title'] }}</h3>
-                    <p class="font-body text-white/50 text-xs leading-relaxed mb-4">{{ $machine['desc'] }}</p>
-                    <div class="flex items-center justify-between">
-                        <span class="font-body text-white/35 text-xs">{{ $machine['count'] }}</span>
-                        <span class="inline-flex items-center gap-1.5 font-heading font-bold text-white/60 text-xs group-hover:text-white group-hover:gap-2.5 transition-all duration-200">
-                            Explore
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                            </svg>
-                        </span>
-                    </div>
+                    <span class="font-body text-white/35 text-xs">{{ $machine['count'] }}</span>
                 </div>
+
+                <h3 class="font-heading font-bold text-white text-xl mb-2">{{ $machine['title'] }}</h3>
+                <p class="font-body text-white/50 text-xs leading-relaxed mb-5 flex-1">{{ $machine['desc'] }}</p>
+
+                <span class="inline-flex items-center gap-1.5 font-heading font-bold text-white/50 text-xs group-hover:text-[#148af4] group-hover:gap-2.5 transition-all duration-200">
+                    Explore
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </span>
 
             </a>
             @endforeach
