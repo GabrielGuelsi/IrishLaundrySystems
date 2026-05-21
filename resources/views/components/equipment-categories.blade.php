@@ -30,11 +30,11 @@ $equipmentList = $equipment ?? [
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                <div class="w-full flex items-end justify-center" style="height:320px;">
+                <div class="w-full flex items-center justify-center" style="height:300px;">
                     <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
                          alt="{{ $eq['name'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain;">
+                         style="height:100%; width:auto; object-fit:contain;">
                 </div>
                 <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
                     View Equipment
