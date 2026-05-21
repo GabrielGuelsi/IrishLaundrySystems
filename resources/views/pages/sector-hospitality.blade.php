@@ -560,7 +560,7 @@
 @include('components.equipment-categories')
 
 <!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-[#f4f6f9]">
+<section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
