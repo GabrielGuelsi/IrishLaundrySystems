@@ -18,7 +18,7 @@
 
         <!-- Trust line -->
         <p class="hidden lg:block font-body text-navy text-xs leading-snug max-w-[200px]">
-            Authorised Electrolux Professional Partner. Irish engineering support since 1987.
+            Authorised Electrolux Professional Partner. Irish engineering presence since 1987.
         </p>
 
         <!-- Vertical divider -->
@@ -31,21 +31,21 @@
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Local engineering team</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Local technical team</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Genuine parts access</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Genuine parts route</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Ongoing support</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Ongoing aftercare</span>
             </div>
 
         </div>
@@ -53,7 +53,7 @@
         <!-- Learn more button -->
         <a href="{{ route('electrolux') }}"
            class="hidden md:inline-flex items-center gap-2 border border-navy/20 hover:border-navy text-navy/70 hover:text-navy font-body font-bold px-4 py-2 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap rounded">
-            Learn more
+            Our Partnership
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
             </svg>
