@@ -95,6 +95,7 @@
                         <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Tumble Dryers</a>
                         <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Barrier Washers</a>
                         <a href="{{ route('equipment.category', 'ironers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Ironers</a>
+                        <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Drying Cabinets</a>
                     </div></div>
                 </div>
 
@@ -207,6 +208,7 @@
                     <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Tumble Dryers</a>
                     <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Barrier Washers</a>
                     <a href="{{ route('equipment.category', 'ironers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Ironers</a>
+                    <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Drying Cabinets</a>
                 </div>
             </div>
 
