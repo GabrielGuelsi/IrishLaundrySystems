@@ -18,10 +18,10 @@
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                    Healthcare laundry support<br>for <span style="color:#148af4;">controlled rooms</span>,<br>linen flow and day-to-day pressure.
+                    Stop <span style="color:#148af4;">healthcare laundry pressure</span><br>from becoming a daily<br>cost problem.
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supports healthcare sites with equipment selection, installation, service structure, parts access and practical aftercare where <span style="color:#148af4;">hygiene-sensitive workflow</span>, capacity and continuity matter every day.
+                    Healthcare and care home laundry rooms carry hygiene, staff, linen flow and running-cost pressure every day. Irish Laundry Systems helps sites specify, maintain and support Electrolux Professional laundry equipment around the way the room actually operates.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#healthcare-assessment"
@@ -30,7 +30,7 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-navy hover:border-navy/70 text-navy font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-navy/10">
-                        Talk to an Engineer
+                        Talk to Our Team
                     </a>
                 </div>
             </div>
@@ -48,16 +48,16 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Healthcare</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Built around how<br>healthcare laundry rooms<br><span style="color:#148af4;">actually operate.</span>
+                    Healthcare laundry is not only<br>a hygiene issue. It is a<br><span style="color:#148af4;">cost-control issue.</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Healthcare laundry is not only a machine decision. The room, the linen flow, the handling process and the support behind the equipment all affect whether the laundry can work safely and consistently through the day.
+                    The wrong laundry setup can drain budget every day through energy use, water use, detergent waste, staff pressure, linen delays, reactive call-outs and replacement pressure.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems connects equipment selection, installation, service contracts, call-outs, parts and aftercare into one <span style="color:#148af4;">practical support plan</span>.
+                    Irish Laundry Systems helps healthcare sites make better laundry decisions by connecting room layout, workflow, capacity, equipment, maintenance, repairs, rental and aftercare into one practical plan.
                 </p>
                 <a href="{{ route('sectors.healthcare') }}#healthcare-equipment"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -78,21 +78,36 @@
 
         <!-- Title -->
         <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Infection Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                Laundry and <span style="color:#148af4;">infection control</span> support.
+                Laundry and <span style="color:#148af4;">infection control</span> need to work as one process.
             </h2>
+            <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+                In healthcare and care environments, laundry is not only about washing linen. Dirty-side handling, clean-side unloading, drying, finishing, transport and storage all affect how controlled the process remains.
+            </p>
+            <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
+                Electrolux Professional barrier systems are built around physical separation between soiled and clean linen handling, helping support hygiene control in laundry rooms where cross-contamination risk needs to be managed. Irish Laundry Systems helps connect that equipment logic with the room, workflow and service structure around it.
+            </p>
             <ul class="space-y-2">
                 <li class="flex items-start gap-3 font-body text-gray-600 text-base">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Equipment specified around controlled workflow and room configuration
+                    Dirty-side and clean-side separation
                 </li>
                 <li class="flex items-start gap-3 font-body text-gray-600 text-base">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Supply, installation, rental, service and maintenance under one service structure
+                    Barrier washer process logic
                 </li>
                 <li class="flex items-start gap-3 font-body text-gray-600 text-base">
                     <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Practical support for wash, dry, finish, parts and aftercare decisions
+                    Risk Analysis and Biocontamination Control (RABC)-aligned laundry process support
+                </li>
+                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
+                    Washing, drying, finishing and storage connected
+                </li>
+                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
+                    Service structure behind the installed equipment
                 </li>
             </ul>
         </div>
@@ -110,7 +125,7 @@
             <!-- Navy card overlapping left -->
             <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
-                    Healthcare laundry needs a <strong>connected process</strong>, not isolated steps.
+                    Healthcare laundry needs a <strong>connected process</strong>, not isolated equipment.
                 </h3>
                 <ul class="space-y-3">
                     @foreach([
@@ -185,11 +200,12 @@
 
         {{-- Header --}}
         <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                Enhanced usability, operator support and control.
+                Enhanced usability, <span style="color:#148af4;">operator wellbeing</span> and process control.
             </h2>
             <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
-                Selected Electrolux Professional features can support safer handling, clearer controls and more controlled laundry flow when matched to the right room and service structure.
+                Selected Electrolux Professional features support safer handling, clearer process control and more disciplined laundry flow when matched to the right healthcare room and service structure.
             </p>
         </div>
 
@@ -213,8 +229,8 @@
                     <img src="/images/icons/Operator support.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator support</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Door access, drum positioning and loading logic can reduce strain during repeated handling tasks.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Door access, drum positioning and loading logic help reduce strain during repeated handling tasks.</p>
                 </div>
             </div>
 
@@ -225,7 +241,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Clearer control interfaces help teams monitor cycles, manage process steps and support daily decisions.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe and CompassPro give operators guided programs, status messages, dirty-side and clean-side visibility and clearer day-to-day process control.</p>
                 </div>
             </div>
 
@@ -248,8 +264,8 @@
                     <img src="/images/icons/AIDO secure door handling.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">AIDO secure door handling</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Automatic Inner Door Opening (AIDO) supports controlled loading and unloading in barrier washer configurations.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Secure door handling with AIDO</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Auto Inner Door Opening (AIDO) supports controlled loading and unloading in barrier washer configurations.</p>
                 </div>
             </div>
 
@@ -257,85 +273,59 @@
     </div>
 </section>
 
-{{-- Financial Benefits Bento: 5-item grid, no cards --}}
+{{-- Financial Performance Bento: metric cards --}}
 <section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Header --}}
         <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                Financial benefits built into how we work.
+                Stop letting poor laundry setup <span style="color:#148af4;">drain your healthcare budget</span>.
             </h2>
             <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
-                From removing large capital outlays to reducing unplanned repair spend — the way we structure equipment, service and support is designed to make costs more predictable.
+                In healthcare, the wrong laundry setup can cost money every day through energy use, water use, detergent waste, staff strain, linen delays, reactive call-outs and replacement pressure.
             </p>
         </div>
 
-        {{-- 5-item grid --}}
+        {{-- 5-card grid --}}
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
-            {{-- Item 1: Predictable costs --}}
-            <div class="flex flex-col gap-4 col-span-1 p-5">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/>
-                    </svg>
-                </div>
+            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Predictable costs</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Service contracts convert unpredictable repair spend into fixed, planned maintenance costs across the year.</p>
+                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">Up to 65% dryer energy saving</h3>
+                    <p class="font-body text-white/70 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
                 </div>
             </div>
 
-            {{-- Item 2: No capital outlay --}}
-            <div class="flex flex-col gap-4 col-span-1 p-5">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 0 0 2.25-2.25V6.75A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25v10.5A2.25 2.25 0 0 0 4.5 19.5Z"/>
-                    </svg>
-                </div>
+            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">No large capital outlay</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment rental removes the need for upfront purchase while keeping compliant, serviced equipment in place.</p>
+                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">Up to 50% water saving</h3>
+                    <p class="font-body text-white/70 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
                 </div>
             </div>
 
-            {{-- Item 3: Energy efficiency --}}
-            <div class="flex flex-col gap-4 col-span-1 p-5">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
-                    </svg>
-                </div>
+            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
+                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Lower running costs</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Modern Electrolux Professional equipment uses less water and energy per cycle — reducing utility spend on every wash.</p>
+                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">75% fewer sick days</h3>
+                    <p class="font-body text-white/70 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
                 </div>
             </div>
 
-            {{-- Item 4: Reduced downtime --}}
-            <div class="flex flex-col gap-4 col-span-1 p-5">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                    </svg>
-                </div>
+            <div class="bg-gray-50 rounded-xl p-5 flex flex-col gap-3 col-span-1">
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Reduced downtime cost</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Planned maintenance reduces emergency call-out frequency and the operational disruption that comes with unplanned faults.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Less detergent and process waste</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
                 </div>
             </div>
 
-            {{-- Item 5: Parts continuity --}}
-            <div class="flex flex-col gap-4 col-span-2 lg:col-span-1 p-5">
-                <div class="flex items-center justify-center h-14">
-                    <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.3">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"/>
-                    </svg>
-                </div>
+            <div class="bg-gray-50 rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Parts cost continuity</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Access to genuine parts through a managed supply relationship reduces delays and the cost of sourcing outside normal channels.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Lower reactive cost pressure</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects specification, installation, preventive maintenance, repairs, rental and aftercare so laundry decisions are not only made after something fails.</p>
                 </div>
             </div>
 
@@ -349,11 +339,12 @@
 
         <!-- Heading -->
         <div class="mb-8">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
                 Four ways we support<br>the healthcare laundry room.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                Healthcare sites often need equipment, maintenance, response and parts support to work together. These needs should not sit in separate conversations.
+                Healthcare sites often need equipment, maintenance, response and aftercare to work from the same understanding of the room. These needs should not sit in separate conversations.
             </p>
         </div>
 
@@ -363,15 +354,15 @@
             @foreach([
                 [
                     'title'  => 'Repairs &amp; Call-outs',
-                    'text'   => 'Fault response and practical engineering support when equipment issues put the laundry room under pressure.',
+                    'text'   => 'For urgent equipment faults that can interrupt linen flow, increase staff pressure or affect day-to-day healthcare laundry routines.',
                     'cta'    => 'Request Call-out',
                     'route'  => route('repairs'),
                     'img'    => '/images/healthcare/repairs-callouts.jpg',
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Service Contracts',
-                    'text'   => 'Planned maintenance and service structure for healthcare sites that need better control over the installed base.',
+                    'title'  => 'Preventive Maintenance Contracts',
+                    'text'   => 'For healthcare sites that need planned visits, service visibility and fewer reactive maintenance decisions around critical laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/Service Contracts.png',
@@ -379,7 +370,7 @@
                 ],
                 [
                     'title'  => 'Equipment Rental',
-                    'text'   => 'A practical option for replacement pressure, expansion or budget constraints where equipment still needs to be installed and supported.',
+                    'text'   => 'For replacement pressure, capacity needs or continuity planning when outright capital purchase is not the best route for the site.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
                     'img'    => '/images/healthcare/commercial-industrial.jpg',
@@ -387,7 +378,7 @@
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
-                    'text'   => 'Genuine parts access, service history context and practical follow-up support around healthcare laundry equipment.',
+                    'text'   => 'For service history, parts access where needed, technical follow-up and clearer maintain, repair, rent or replace decisions.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
@@ -766,16 +757,16 @@
             Our process keeps the <span style="color:#148af4;">next step</span> clear.
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
-            From the initial room assessment through to ongoing support — each step connects to the next.
+            From the initial room assessment through to equipment, maintenance and aftercare, each step connects to the next.
         </p>
 
         <div class="flex flex-col sm:flex-row items-start justify-between">
 
             @foreach([
-                ['title' => 'Assess the room',     'text' => 'Review layout, workflow, hygiene handling and capacity needs.',                   'icon' => 'clipboard'],
-                ['title' => 'Match the equipment', 'text' => 'Recommend the right barrier, washing, drying and finishing setup.',               'icon' => 'Ativo%204'],
-                ['title' => 'Keep support close',  'text' => 'Connect the installed base to service contracts, parts and practical aftercare.',  'icon' => 'Ativo%206'],
-                ['title' => 'Move to assessment',  'text' => 'Turn the room, equipment setup and support model into a practical next step.',     'icon' => 'Ativo%203'],
+                ['title' => 'Understand the healthcare laundry room',   'text' => 'Review room layout, workflow, hygiene handling, utilities, capacity and day-to-day pressure.',          'icon' => 'clipboard'],
+                ['title' => 'Match equipment to clinical and cost pressure', 'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement plan.',           'icon' => 'Ativo%204'],
+                ['title' => 'Connect service, rental and aftercare',    'text' => 'Link the installed equipment to preventive maintenance, repairs, service history and follow-up.',       'icon' => 'Ativo%206'],
+                ['title' => 'Move to assessment',                       'text' => 'Turn the room, equipment setup and support model into a practical next step.',                          'icon' => 'Ativo%203'],
             ] as $i => $step)
 
             @if($i > 0)
@@ -809,11 +800,14 @@
 @include('components.faq', [
     'heading' => 'Healthcare Laundry FAQs',
     'faqs' => [
-        ['question' => 'What types of healthcare sites do you support?',             'answer' => 'We support a wide range of healthcare environments including hospitals, nursing homes, care homes and residential care facilities. Each site is assessed individually to determine the right equipment, workflow and service structure.'],
-        ['question' => 'Do you supply barrier washers for infection control laundry rooms?', 'answer' => 'Yes. Barrier washers are a core part of our healthcare offering. We supply, install and support Electrolux Professional barrier washer configurations designed for controlled dirty-side and clean-side handling.'],
-        ['question' => 'What does a service contract include for healthcare sites?',  'answer' => 'Service contracts cover planned maintenance visits, priority call-out response, access to genuine parts and a service history record for the installed base. The structure is agreed based on site needs and equipment type.'],
-        ['question' => 'How quickly can you respond to a breakdown call-out?',        'answer' => 'We aim to respond to healthcare call-outs as a priority. Response times are confirmed at the time of enquiry and depend on site location and contract level. Priority response is available under service contract.'],
-        ['question' => 'Can equipment be rented rather than purchased outright?',     'answer' => 'Yes. Equipment rental is available as an alternative to capital purchase. This covers supply, installation and ongoing support under a single agreement, which can suit sites managing budget constraints or planning for replacement.'],
+        ['question' => 'What types of healthcare sites do you support?',                       'answer' => 'Irish Laundry Systems supports healthcare, care home, clinical, residential care and related commercial laundry environments where hygiene, linen flow, equipment performance and service continuity matter.'],
+        ['question' => 'Do you supply barrier washers for infection-control laundry rooms?',   'answer' => 'Yes. Irish Laundry Systems supplies and supports Electrolux Professional barrier washer solutions for sites where dirty-side and clean-side handling need to remain separated.'],
+        ['question' => 'Can you help assess whether our existing laundry room is costing too much to run?', 'answer' => 'Yes. We can review room layout, machine type, capacity, utilities, service history, maintenance pressure and replacement needs to understand where costs may be building up.'],
+        ['question' => 'Can Electrolux Professional equipment reduce energy and water use?',   'answer' => 'Selected Electrolux Professional technologies can help reduce utility pressure. Examples include Heat Pump dryer technology, double-drain water recycling, Integrated Savings and Efficient Dosing, depending on the equipment and site configuration.'],
+        ['question' => 'What does a Preventive Maintenance Contract include for healthcare sites?', 'answer' => 'A contract can include scheduled preventive visits, inspection, service reporting, technical follow-up and preferential support conditions where applicable. Parts are not assumed to be included unless agreed.'],
+        ['question' => 'How quickly can you respond to a breakdown call-out?',                 'answer' => 'Breakdown calls are handled based on urgency, site pressure, equipment details and service context. Contract customers may receive preferential service and labour rates where applicable.'],
+        ['question' => 'Can equipment be rented rather than purchased outright?',              'answer' => 'Yes. Equipment Rental can be discussed where a healthcare site needs replacement, expansion or continuity without immediate capital purchase.'],
+        ['question' => 'Do you support equipment after installation?',                         'answer' => 'Yes. Support & Aftercare helps connect service history, technical follow-up, parts access where needed and future equipment decisions after installation, repair, rental or maintenance.'],
     ],
 ])
 
