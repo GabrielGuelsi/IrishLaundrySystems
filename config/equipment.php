@@ -79,4 +79,17 @@ return [
     // ── Ironers ───────────────────────────────────────────────────────────────
     'ironers' => [],
 
+    // ── Drying Cabinets ───────────────────────────────────────────────────────
+    'drying-cabinets' => [
+        ['name' => 'DC6-4',    'slug' => 'dc6-4',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-4',    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-4HP',  'slug' => 'dc6-4hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-4HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-8',    'slug' => 'dc6-8',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-8',    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-8HP',  'slug' => 'dc6-8hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-8HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-10HP', 'slug' => 'dc6-10hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-10HP', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-14',   'slug' => 'dc6-14',   'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-14',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Healthcare', 'Commercial']],
+        ['name' => 'DC6-14HP', 'slug' => 'dc6-14hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-14HP', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Healthcare', 'Commercial']],
+        ['name' => 'DC6-15WW', 'slug' => 'dc6-15ww', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Workwear – DC6-15WW', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Commercial']],
+        ['name' => 'DC7-4HP',  'slug' => 'dc7-4hp',  'capacity' => null, 'summary' => 'Line 7000 Drying Cabinet Heat Pump – DC7-4HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Commercial']],
+    ],
+
 ];

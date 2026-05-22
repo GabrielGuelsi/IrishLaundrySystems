@@ -851,6 +851,262 @@
 
 @endif
 
+@if($categorySlug === 'drying-cabinets')
+<!-- DRYING CABINETS INTRO -->
+<section class="py-4 lg:py-6 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Split: text left, image right --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center mb-4">
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                    Line 6000 Drying Cabinets
+                </h2>
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-3">
+                    Fast and efficient drying for bulky and sensitive items.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    Drying cabinets protect garment shape and finish while reducing throughput pressure on tumble dryers — ideal for workwear, PPE, delicate fabrics, sports clothing and hospitality items.
+                </p>
+                <a href="#products"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                    GO TO PRODUCTS
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex justify-center reveal reveal-right">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}"
+                     alt="Line 6000 Drying Cabinet"
+                     class="w-full max-w-[200px] object-contain drop-shadow-xl">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{-- Stat band --}}
+<div class="w-full py-5" style="background-color: #c8d8a8;">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center gap-8">
+        <div class="flex-shrink-0 w-24 h-24 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
+            <span class="font-heading font-bold text-white text-sm leading-none">up to</span>
+            <span class="font-heading font-bold text-white text-3xl leading-none">40%</span>
+            <span class="font-body text-white text-xs leading-tight text-center">Running<br>cost saving</span>
+        </div>
+        <div class="flex-1 text-center sm:text-left">
+            <p class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-1">Heat Pump Technology</p>
+            <p class="font-body text-navy/80 text-base leading-relaxed">
+                Reduce running costs by up to 40% with heat pump-powered drying cabinets — using just 0.33 kWh of energy per kg of laundry.
+            </p>
+        </div>
+    </div>
+</div>
+
+{{-- ① Key features --}}
+<section class="bg-white border-t border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="py-10 lg:py-14">
+        <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">Gentle and efficient drying solutions</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <div class="lg:col-span-2 flex flex-col">
+
+                {{-- Uninterrupted dry comfort --}}
+                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/HygieneGuard.png" alt="Dry comfort" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Uninterrupted dry comfort</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">Dry anything from skiwear and PPE to silk and delicate fabrics in a single unit — without the mechanical action of a tumble dryer.</p>
+                    </div>
+                </div>
+
+                {{-- Outstanding flexibility --}}
+                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/MoistureBalance.png" alt="Outstanding flexibility" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Outstanding flexibility</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">A broad range of models and programme options to cover mountain clothing, school items, workwear, uniforms, PPE and hotel garments — all in one cabinet range.</p>
+                    </div>
+                </div>
+
+                {{-- Easy and efficient operation --}}
+                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0 w-24 h-24">
+                        <img src="/images/healthcare/DrumSpeed.png" alt="Efficient operation" class="w-full h-full object-contain">
+                    </div>
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Easy and efficient operation</h3>
+                        <p class="font-body text-gray-500 text-base leading-relaxed">Auto-stop programmes end the cycle when items reach the correct dryness — protecting fabrics, reducing energy waste and requiring minimal operator intervention.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            {{-- Right: Download + Discover --}}
+            <div class="flex flex-col gap-5 reveal reveal-right">
+
+                {{-- Download --}}
+                <div class="bg-navy rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                    <ul class="space-y-4">
+                        @foreach([
+                            ['label' => 'Line 6000 Washers & Dryers Brochure', 'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                        ] as $pdf)
+                        <li>
+                            @if($pdf['file'])
+                            <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-start gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                {{ $pdf['label'] }}
+                            </a>
+                            @endif
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+                {{-- Discover --}}
+                <div class="bg-white border border-border rounded-2xl p-6">
+                    <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                    <ul class="space-y-4">
+                        @foreach([
+                            ['label' => 'Hotel & Hospitality laundry solutions',  'href' => route('sectors.hospitality')],
+                            ['label' => 'Care facilities laundry support',         'href' => route('sectors.care')],
+                            ['label' => 'Commercial & industrial laundry support', 'href' => route('sectors.commercial')],
+                        ] as $link)
+                        <li>
+                            <a href="{{ $link['href'] }}" class="flex items-start gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
+                                <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                                </svg>
+                                {{ $link['label'] }}
+                            </a>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+{{-- ② Feature deep-dives --}}
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-16">
+
+        {{-- Mountain & sports clothing --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div>
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">The best choice for mountain and school clothing</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Drying cabinets are an ideal solution for sports and outdoor clothing. After skiing or outdoor activity, bulky items — suits, boots and gloves — need to be dry and ready quickly, without the mechanical stress of a tumble dryer.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Schools and kindergartens use drying cabinets to dry children's jackets and shoes after outdoor play, reducing the risk of children remaining in wet clothing throughout the day.
+                </p>
+                <div class="bg-bg border border-border rounded-xl p-4 flex items-start gap-4">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <svg class="w-7 h-7 text-navy mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
+                        </svg>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        <strong class="text-navy">Fast drying times</strong> — a 6 kg cotton load dries in under 45 minutes, keeping operational flow moving even in high-demand environments.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Drying cabinet for mountain clothing" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+        </div>
+
+        {{-- Delicate fabrics --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div class="order-2 lg:order-1 flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Gentle drying for delicate fabrics" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+            <div class="order-1 lg:order-2">
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Gentle drying for delicate fabrics and fine clothing</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Wool, velvet, silk and linen can be damaged by the mechanical action of conventional drying — particularly long dresses and fine shirts. Drying cabinets suspend items on hangers or shelves and dry them with controlled airflow, preserving shape and finish.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Hotels, laundries and hospitality operators use drying cabinets to handle premium guest garments and offer a higher-quality laundry service alongside their standard linen operation.
+                </p>
+            </div>
+        </div>
+
+        {{-- Workwear & PPE --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div>
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Workwear and PPE — ready when needed</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Outdoor workers, construction teams and emergency services personnel regularly work in wet conditions. Drying cabinets allow uniforms and PPE to be dried quickly without washing — ensuring staff can return to work in dry, safe clothing.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Critically for high-visibility and protective garments, drying cabinets preserve the integrity of zips, reflective strips and protective coatings that can be compromised in a conventional tumble dryer.
+                </p>
+                <div class="bg-bg border border-border rounded-xl p-4 flex items-start gap-4">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <svg class="w-7 h-7 text-navy mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                        </svg>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        The <strong class="text-navy">DC6-15WW Workwear model</strong> is designed specifically for heavy-duty workwear applications — supporting commercial and industrial laundry operations where uniform integrity matters.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Workwear drying cabinet" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{-- ③ Where you can find our Drying Cabinet solutions --}}
+<section class="py-14 lg:py-20 bg-bg border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">Where you can find our Drying Cabinet solutions</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @foreach([
+                [
+                    'img'   => '/images/about/testimonial-1.jpg',
+                    'title' => 'Hotels & Hospitality',
+                    'body'  => 'Offer guests and housekeeping teams premium garment care alongside the standard linen operation — handling delicate items that cannot go in a tumble dryer.',
+                ],
+                [
+                    'img'   => '/images/healthcare/engineer.jpg',
+                    'title' => 'Workwear & PPE',
+                    'body'  => 'Dry outdoor uniforms, high-visibility clothing and protective equipment quickly and safely — preserving coatings, reflective strips and garment structure.',
+                ],
+                [
+                    'img'   => '/images/about/testimonial-2.jpg',
+                    'title' => 'Schools & Multi-Housing',
+                    'body'  => 'From children\'s outdoor clothing to resident items in care facilities and apartment laundries — drying cabinets handle a wide range of everyday drying needs.',
+                ],
+            ] as $card)
+            <div class="reveal">
+                <div class="rounded-2xl overflow-hidden mb-5 aspect-[4/3]">
+                    <img src="{{ asset($card['img']) }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['body'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+@endif
+
 <!-- FILTERS + PRODUCTS GRID -->
 <section id="products" class="py-16 lg:py-20 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 pb-10">
