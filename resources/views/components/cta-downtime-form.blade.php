@@ -5,11 +5,12 @@
 
             {{-- LEFT: heading + contact methods + electrolux + map --}}
             <div class="flex flex-col">
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Next Step</p>
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
-                    Ready to Reduce Downtime Risk?
+                    Start with the <span class="text-[#148af4]">right next step</span>.
                 </h2>
                 <p class="font-body text-blue-200 text-lg leading-relaxed mb-8">
-                    Talk to an ILS engineer about service contracts, repairs or equipment. Tell us about your operation and we will confirm the right next step.
+                    Tell us what is under pressure, what equipment is involved and what needs to happen next. Irish Laundry Systems will direct the enquiry to the right service, rental, equipment or aftercare conversation.
                 </p>
 
                 <div class="space-y-4 mb-8">
@@ -35,7 +36,7 @@
                         </div>
                         <div>
                             <p class="font-body font-bold text-white text-sm">info@irishlaundrysystems.ie</p>
-                            <p class="font-body text-gray-400 text-xs">We aim to respond within 24 hours</p>
+                            <p class="font-body text-gray-400 text-xs">Routed to the right team for your enquiry</p>
                         </div>
                     </a>
 
@@ -74,7 +75,7 @@
             {{-- RIGHT: Form --}}
             <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
                 <h3 class="font-heading font-bold text-navy text-lg mb-1">Request a Service Assessment</h3>
-                <p class="font-body text-gray-500 text-sm mb-6">We aim to respond within 24 hours.</p>
+                <p class="font-body text-gray-500 text-sm mb-6">Share the details that help direct the enquiry properly.</p>
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
                     @csrf
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -99,6 +100,14 @@
                                    placeholder="+353...">
                         </div>
                         <div>
+                            <label for="cta_email" class="block text-sm font-body font-light text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
+                            <input type="email" id="cta_email" name="email" required
+                                   class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
+                                   placeholder="you@company.ie">
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
                             <label for="cta_sector" class="block text-sm font-body font-light text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
                             <select id="cta_sector" name="sector" required
                                     class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
@@ -110,18 +119,24 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
+                        <div>
+                            <label for="cta_request_type" class="block text-sm font-body font-light text-navy mb-1.5">Request Type <span class="text-red-500">*</span></label>
+                            <select id="cta_request_type" name="request_type" required
+                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
+                                <option value="" disabled selected>What do you need?</option>
+                                <option value="contract">Preventive Maintenance</option>
+                                <option value="rental">Equipment Rental</option>
+                                <option value="breakdown">Breakdown / Repair</option>
+                                <option value="parts">Support &amp; Aftercare</option>
+                                <option value="equipment_quote">Equipment Quote</option>
+                            </select>
+                        </div>
                     </div>
                     <div>
-                        <label for="cta_request_type" class="block text-sm font-body font-light text-navy mb-1.5">Request Type <span class="text-red-500">*</span></label>
-                        <select id="cta_request_type" name="request_type" required
-                                class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
-                            <option value="" disabled selected>What do you need?</option>
-                            <option value="contract">Service Contract</option>
-                            <option value="rental">Equipment Rental</option>
-                            <option value="breakdown">Breakdown / Repair</option>
-                            <option value="parts">Support &amp; Aftercare</option>
-                            <option value="equipment_quote">Equipment Quote</option>
-                        </select>
+                        <label for="cta_message" class="block text-sm font-body font-light text-navy mb-1.5">Message / Requirement</label>
+                        <textarea id="cta_message" name="message" rows="3"
+                                  class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors resize-none"
+                                  placeholder="Tell us what is under pressure, what equipment is involved and what needs to happen next."></textarea>
                     </div>
                     <div class="flex items-start gap-2.5">
                         <input type="checkbox" id="cta_gdpr" name="gdpr_consent" value="1" required

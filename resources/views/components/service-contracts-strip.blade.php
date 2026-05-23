@@ -1,4 +1,4 @@
-{{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
+{{-- Preventive Maintenance & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- RIGHT: image pinned to 40% --}}
@@ -12,18 +12,18 @@
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="max-width:60%;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Service Contracts,</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">Support &amp; Aftercare</span>
+            <span class="text-white text-3xl lg:text-5xl block">Keep maintenance, service history</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">and next steps connected.</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Planned support, genuine parts supply and practical aftercare help keep equipment, service history and future decisions connected.
+            Planned maintenance, service history, parts routes where required and practical aftercare help keep equipment decisions clearer after installation, rental, repair or inspection.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
                 ['icon' => 'ativo-7', 'label' => 'Planned maintenance'],
-                ['icon' => 'ativo-8', 'label' => 'Parts continuity'],
+                ['icon' => 'ativo-8', 'label' => 'Service history'],
                 ['icon' => 'ativo-4', 'label' => 'Practical aftercare'],
             ] as $i => $feat)
             @if($i > 0)
@@ -37,9 +37,9 @@
             @endforeach
         </div>
 
-        <a href="{{ route('service-contracts') }}"
+        <a href="{{ route('parts-aftercare') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide w-fit">
-            Explore Support Options
+            Explore Aftercare
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
             </svg>

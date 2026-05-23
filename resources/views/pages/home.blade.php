@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Commercial Laundry Engineering Ireland | Service Contracts, Repairs & Equipment | Irish Laundry Systems')
-@section('metaDescription', 'Engineering-led commercial laundry support since 1987. Service contracts, repairs, equipment rental and parts across the Republic of Ireland. Request a service assessment.')
+@section('pageTitle', 'Commercial Laundry Engineering Ireland | Preventive Maintenance, Repairs & Equipment | Irish Laundry Systems')
+@section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
 
 @section('content')
 
@@ -32,11 +32,11 @@
             <div style="max-width: 620px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Commercial laundry engineering support for sites where <span class="text-[#148af4]">downtime carries real cost</span>
+                    Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real cost.
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
-                    Irish Laundry Systems supports healthcare, hospitality, care and commercial sites across Ireland with equipment supply, rental, installation, service contracts, repairs, parts access and practical aftercare.
+                    Irish Laundry Systems helps commercial laundry sites make the right decision around equipment, rental, maintenance, repairs and aftercare, so operational risk, budget pressure and service needs are handled through one clear route.
                 </p>
 
                 <div class="hero-btns flex flex-row gap-4">
@@ -46,7 +46,7 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
-                        Talk to an Engineer
+                        Talk to Our Team
                     </a>
                 </div>
 
@@ -59,25 +59,31 @@
 <!-- Electrolux Partner Strip -->
 @include('components.partner-strip')
 
+<!-- 2. TRUST ANCHORS — proof / "Trusted by" logo strip -->
+@include('components.proof-bar')
+
 <!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight">
-                    Laundry support built around<br>the <span class="text-[#148af4]">site</span>, the <span class="text-[#148af4]">equipment</span><br>and the <span class="text-[#148af4]">next practical step</span>.
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight text-balance">
+                    Laundry care built around the <span class="text-[#148af4]">site</span>, the equipment and the next practical step.
                 </h2>
             </div>
-            <div class="flex flex-col gap-3 lg:pt-[2.6rem]">
-                <p class="font-body font-bold text-navy text-xl leading-snug whitespace-nowrap">
+            <div class="flex flex-col gap-4">
+                <p class="font-body font-bold text-navy text-xl leading-snug">
                     Irish Laundry Systems is not just an equipment supplier.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed whitespace-nowrap">
-                    We connect equipment selection, installation, planned maintenance,<br>call-outs, rental, parts continuity and aftercare.<br>into one practical plan for the site.
+                <p class="font-body text-gray-600 text-lg leading-relaxed">
+                    We help commercial sites connect equipment selection, installation, planned maintenance, call-outs, rental and aftercare into one practical route.
                 </p>
-                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors">
-                    See how we <span class="text-[#148af4]">support</span> your site.
+                <p class="font-body text-gray-600 text-lg leading-relaxed">
+                    That matters when laundry output affects cost, staffing pressure, service continuity and the life of the installed equipment.
+                </p>
+                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
+                    See how we support your site →
                 </a>
             </div>
         </div>
@@ -87,16 +93,16 @@
 <!-- 3. THREE CORE PATHWAYS -->
 @include('components.services-cards', [
     'eyebrow'          => 'Services',
-    'headingLead'      => 'Choose the right support for ',
+    'headingLead'      => 'Choose the right route for ',
     'headingHighlight' => 'your site',
     'highlightClass'   => 'text-[#148af4]',
-    'intro'            => 'Four practical ways to get the right help for faults, planned maintenance, rental, parts access and aftercare.',
+    'intro'            => 'Four practical routes for breakdowns, planned maintenance, rental pressure and ongoing equipment care.',
     'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-outs', 'body' => 'Engineering support for faults, breakdowns and performance issues when the laundry is under pressure.',                            'cta' => 'Request Call-out',        'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs', 'pos' => 'center 40%'],
-        ['title' => 'Service Contracts',   'body' => 'Planned maintenance and service structure for sites that need better control over the installed base.',                              'cta' => 'View Contracts',          'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png',          'alt' => 'Service Contracts',     'pos' => 'center 35%'],
-        ['title' => 'Equipment Rental',    'body' => 'A supported option for replacement pressure, expansion or capital control, with equipment installed and maintained.',                'cta' => 'See Rental Options',      'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',        'alt' => 'Equipment Rental',      'pos' => 'center'],
-        ['title' => 'Support & Aftercare',   'body' => 'Genuine parts access, service history context and practical follow-up support around commercial laundry equipment.',                'cta' => 'Explore Support Options', 'href' => route('services'),          'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',  'pos' => 'center center'],
+        ['title' => 'Repairs & Call-outs',     'body' => 'Engineering response when faults, breakdowns or performance issues put the laundry under pressure.',                                              'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
+        ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts to help reduce downtime risk, improve service visibility and protect essential equipment over time.',                'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png',          'alt' => 'Preventive Maintenance',  'pos' => 'center 35%'],
+        ['title' => 'Equipment Rental',        'body' => 'A practical route for replacement pressure, expansion or capital control, with equipment installed and maintained.',                                'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',        'alt' => 'Equipment Rental',        'pos' => 'center'],
+        ['title' => 'Aftercare & Support',     'body' => 'Follow-up care for installed equipment, service history, parts routes where required and practical assistance after repairs, rental, contracts or installation.', 'cta' => 'Explore Aftercare', 'href' => route('parts-aftercare'),  'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Aftercare & Support', 'pos' => 'center center'],
     ],
 ])
 
@@ -115,7 +121,7 @@
             <div class="max-w-2xl">
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Browse by type</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Equipment categories selected around<br class="hidden lg:inline"> <span class="text-[#148af4]">workflow and output</span>.</h2>
-                <p class="font-body text-gray-500 text-lg mt-4">The right equipment should follow the room, the load profile, the handling process and the support behind the installed base.</p>
+                <p class="font-body text-gray-500 text-lg mt-4">The right equipment should follow the room, the load profile, the handling process, lifecycle cost and the care behind the installed base.</p>
             </div>
             <a href="{{ route('equipment') }}"
                class="inline-flex self-start lg:self-auto lg:mb-2 items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-full text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
@@ -128,12 +134,12 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
                 ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                  'scale' => '1.55'],
-                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For broader wash needs, daily capacity and consistent performance across professional laundry environments.',  'scale' => '1.75'],
+                ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For daily wash capacity, steady performance and broader laundry needs across professional environments.',  'scale' => '1.75'],
                 ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                              'scale' => '1'],
                 ['img' => 'IB623_FRONT_NEW',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.',                          'scale' => '1.15', 'ext' => 'jpg'],
             ] as $eq)
             <div class="bg-white border border-gray-100 rounded-xl p-8 flex flex-col gap-6">
-                <div class="min-h-[112px]">
+                <div class="h-[200px]">
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
@@ -156,17 +162,14 @@
     </div>
 </section>
 
-<!-- 6.5 EQUIPMENT RENTAL STRIP — Keep operations running without capital pressure -->
+<!-- 6.5 EQUIPMENT RENTAL STRIP — Keep laundry moving with capital control -->
 @include('components.why-choose-strip')
+
+<!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
+@include('components.service-contracts-strip')
 
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', ['heading' => 'What our customers say.'])
-
-<!-- 2. TRUST ANCHORS — proof strip -->
-@include('components.proof-bar')
-
-<!-- 6.6 SERVICE CONTRACTS, PARTS & AFTERCARE STRIP -->
-@include('components.service-contracts-strip')
 
 <!-- 8. FINAL CTA + SHORT FORM -->
 @include('components.cta-downtime-form', ['pageSource' => 'homepage_cta'])

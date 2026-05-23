@@ -45,114 +45,91 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 680px;">
 
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
+
                 <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Support routes built around <span class="text-[#148af4]">your site</span> and <span class="text-[#148af4]">equipment</span>.
+                    Find the <span class="text-[#148af4]">right service route</span> for your commercial laundry site.
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
-                    From urgent call-outs to planned support, genuine parts and rental cover, this page helps operators find the right route for the installed base and day-to-day pressure.
+                    Whether your site is dealing with an urgent fault, planned maintenance, rental need or aftercare around installed machines, Irish Laundry Systems helps identify the clearest next step for your laundry room.
                 </p>
 
-                <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
+                <div class="svc-hero-btns flex flex-row flex-wrap gap-4 mb-8">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="#service-routes"
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap gap-2">
-                        Talk to an Engineer
+                        View Service Routes
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
 
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-white/70 font-body text-sm">
+                    <span>Engineering-led since 1987</span>
+                    <span class="text-white/30">|</span>
+                    <span>Electrolux Professional Partner</span>
+                    <span class="text-white/30">|</span>
+                    <span>Commercial laundry specialists</span>
+                </div>
+
             </div>
         </div>
     </div>
 
 </section>
 
-<!-- 3. HOW SUPPORT STARTS -->
-<section class="svc-process py-16 lg:py-20 bg-bg" data-svc-observe>
+<!-- 1.5 COMMERCIAL INTRO / DECISION LOGIC -->
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-
-            {{-- Left: heading --}}
-            <div class="lg:col-span-3">
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                    How support <span class="text-[#148af4]">starts</span>.
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 mb-12 lg:mb-16">
+            <div>
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Services Overview</p>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight">
+                    Start with what is happening on-site,<br>then choose the <span class="text-[#148af4]">right route</span>.
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Most service decisions begin with site pressure, the installed equipment and the support route needed next.
+            </div>
+            <div class="flex flex-col gap-3 lg:pt-[2.6rem]">
+                <p class="font-body text-gray-600 text-lg leading-relaxed">
+                    Commercial laundry sites do not always need the same type of service. One site may need a fault diagnosed. Another may need planned inspections, rental equipment, follow-up work or a clearer aftercare path around machines already in use.
+                </p>
+                <p class="font-body text-gray-600 text-lg leading-relaxed">
+                    This page helps facilities managers, care home operators, hospitality teams and commercial laundry owners direct the enquiry to the right service route.
                 </p>
             </div>
+        </div>
 
-            {{-- Right: 3-step horizontal flow --}}
-            <div class="lg:col-span-9 flex items-start justify-between gap-3 sm:gap-4 lg:gap-6 flex-wrap sm:flex-nowrap">
-
-                {{-- Step 1 — Site pressure (Ativo 7 — placeholder, swap after visual preview at /icon-preview.html) --}}
-                <div class="svc-step flex-1 min-w-[140px] text-center">
-                    <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-[#148af4] [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                            {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
-                        </div>
-                    </div>
-                    <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Site pressure</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Understand breakdown risk, utilisation&nbsp;and&nbsp;urgency.</p>
-                </div>
-
-                {{-- Arrow 1 --}}
-                <div class="hidden sm:flex flex-shrink-0 items-center pt-6 lg:pt-7">
-                    <svg class="svc-arrow w-12 lg:w-16 h-3" viewBox="0 0 80 12" fill="none">
-                        <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                {{-- Step 2 — Installed equipment (Ativo 18 placeholder) --}}
-                <div class="svc-step flex-1 min-w-[140px] text-center">
-                    <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-[#148af4] [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                            {!! file_get_contents(public_path('images/icons/brand/Ativo 9.svg')) !!}
-                        </div>
-                    </div>
-                    <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Installed equipment</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Identify model, age, capacity and&nbsp;parts&nbsp;continuity.</p>
-                </div>
-
-                {{-- Arrow 2 --}}
-                <div class="hidden sm:flex flex-shrink-0 items-center pt-6 lg:pt-7">
-                    <svg class="svc-arrow w-12 lg:w-16 h-3" viewBox="0 0 80 12" fill="none">
-                        <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                {{-- Step 3 — Support route (Ativo 4 placeholder) --}}
-                <div class="svc-step flex-1 min-w-[140px] text-center">
-                    <div class="w-16 h-16 lg:w-20 lg:h-20 rounded-full bg-white border border-border shadow-sm mx-auto mb-4 flex items-center justify-center">
-                        <div class="w-8 h-8 lg:w-10 lg:h-10 text-[#148af4] [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                            {!! file_get_contents(public_path('images/icons/brand/Ativo 6.svg')) !!}
-                        </div>
-                    </div>
-                    <p class="font-heading font-bold text-navy text-sm lg:text-base mb-1">Support route</p>
-                    <p class="font-body text-gray-500 text-xs lg:text-sm leading-snug">Select the right mix of support for&nbsp;your&nbsp;site.</p>
-                </div>
-
+        {{-- Decision logic line --}}
+        <div class="border-t border-gray-200 pt-8">
+            <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 lg:gap-x-5 font-body font-bold text-navy text-sm lg:text-base">
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200">Site pressure</span>
+                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200">Installed equipment</span>
+                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200">Right service route</span>
+                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <span class="px-4 py-2 rounded-full bg-[#148af4] text-white border border-[#148af4]">Clear next step</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- 4. CHOOSE THE ROUTE — 4 PREMIUM PHOTO CARDS -->
+<!-- 3. SERVICE ROUTE CARDS -->
+<div id="service-routes"></div>
 @include('components.services-cards', [
-    'eyebrow'          => 'Services',
-    'headingLead'      => 'Choose the route that fits ',
-    'headingHighlight' => 'your site',
-    'intro'            => 'Four practical routes help operators move from pressure, faults or replacement needs into the right support conversation.',
-    'align'            => 'center',
+    'eyebrow'          => 'Service Routes',
+    'headingLead'      => 'Choose the route that matches the ',
+    'headingHighlight' => 'pressure on your site',
+    'highlightClass'   => 'text-[#148af4]',
+    'intro'            => 'Four practical routes for faults, planned maintenance, rental needs and aftercare around installed equipment.',
+    'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-outs', 'body' => 'Engineering support for faults, breakdowns and performance issues when the laundry room is under pressure.',                'bullets' => ['Triage-first response', 'Fast contact and follow-up', 'Built for critical environments'],   'cta' => 'Request Call-out',        'href' => route('repairs'),           'img' => '/images/healthcare/repairs-hero.jpg',                  'alt' => 'Repairs and Call-outs'],
-        ['title' => 'Service Contracts',   'body' => 'Planned maintenance and service structure for sites that need better control over the installed base.',                       'bullets' => ['Three maintenance tiers', 'Documented service records', 'Fewer unplanned stoppages'],         'cta' => 'View Contracts',          'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.jpg',        'alt' => 'Service Contracts',     'pos' => 'center 25%'],
-        ['title' => 'Equipment Rental',    'body' => 'A supported option for replacement pressure, extra capacity or capital control, with equipment installed and maintained.',  'bullets' => ['Equipment with service built in', 'Predictable monthly cost', 'Electrolux Professional standard'], 'cta' => 'See Rental Options',      'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',         'alt' => 'Equipment Rental'],
-        ['title' => 'Support & Aftercare',   'body' => 'Genuine parts access, service history context and practical follow-up support around commercial laundry equipment.',         'bullets' => ['Genuine Electrolux parts', 'Lifecycle support', 'Manufacturer-trained engineers'],                'cta' => 'Explore Support Options', 'href' => '#parts-aftercare',         'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',  'pos' => 'center center'],
+        ['title' => 'Repairs & Call-outs',                'body' => 'For urgent faults, breakdowns or equipment issues that need on-site diagnosis and a practical repair path.',                       'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-hero.jpg',                    'alt' => 'Repairs and Call-outs'],
+        ['title' => 'Preventive Maintenance Contracts',   'body' => 'For planned inspections, service records and fewer reactive maintenance decisions around essential laundry equipment.',           'cta' => 'View Preventive Maintenance Contracts', 'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.jpg',          'alt' => 'Preventive Maintenance Contracts', 'pos' => 'center 25%'],
+        ['title' => 'Equipment Rental',                   'body' => 'For replacement pressure, added capacity or access to commercial laundry equipment without upfront purchase.',                    'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',           'alt' => 'Equipment Rental'],
+        ['title' => 'Support & Aftercare',                'body' => 'For follow-up work, parts route, service history and decisions around equipment already installed on-site.',                      'cta' => 'View Support & Aftercare',              'href' => route('parts-aftercare'),   'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
     ],
 ])
 
@@ -387,7 +364,7 @@
     </div>
 </section>
 
-@include('components.testimonials', ['light' => true])
+@include('components.testimonials', ['heading' => 'What our customers say.'])
 
 @include('components.proof-bar')
 

@@ -29,7 +29,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
             @foreach ($cards as $card)
             <a href="{{ $card['href'] }}"
-               class="group relative overflow-hidden h-[480px] lg:h-[520px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+               class="group relative overflow-hidden h-[400px] lg:h-[440px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="{{ $card['img'] }}" alt="{{ $card['alt'] ?? $card['title'] }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: {{ $card['pos'] ?? 'center' }};">

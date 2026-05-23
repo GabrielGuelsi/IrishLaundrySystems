@@ -25,8 +25,8 @@ class PageController extends Controller
     public function serviceContracts()
     {
         return view('pages.service-contracts', [
-            'title' => 'Commercial Laundry Service Contracts Ireland | Preventive Maintenance | ILS',
-            'metaDescription' => 'Structured service contracts for commercial laundry — Core, Priority and Assured tiers. Preventive maintenance, compliance support and priority scheduling.',
+            'title' => 'Preventive Maintenance Contracts Ireland | Commercial Laundry | ILS',
+            'metaDescription' => 'Preventive Maintenance Contracts for commercial laundry — scheduled servicing, preferential call-out support, reporting and aftercare around the equipment already in operation.',
         ]);
     }
 

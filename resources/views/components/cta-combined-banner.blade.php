@@ -19,14 +19,14 @@
 
         {{-- Description --}}
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            We define layout, equipment fit and capacity around your space, volume and day-to-day use.
+            We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day laundry demand.
         </p>
 
         {{-- 3 horizontal features --}}
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>selection'],
+                ['icon' => 'ativo-20', 'label' => 'Site<br>layout'],
+                ['icon' => 'ativo-10', 'label' => 'Equipment<br>fit'],
                 ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
             ] as $i => $feat)
             @if($i > 0)
