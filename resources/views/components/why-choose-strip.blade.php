@@ -11,13 +11,15 @@
     {{-- RIGHT: content — 50% width --}}
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Rental</p>
+
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Keep laundry moving</span>
             <span class="text-3xl lg:text-5xl block" style="color:#148af4;">without capital pressure</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            Rental supports replacement, expansion and continuity when the next equipment decision needs to stay practical.
+            For healthcare sites facing replacement pressure, expansion needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into an immediate capital purchase.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">

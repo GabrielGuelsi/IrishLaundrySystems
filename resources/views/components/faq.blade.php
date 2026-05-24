@@ -1,8 +1,16 @@
-@props(['faqs' => [], 'heading' => 'Frequently Asked Questions'])
+@props(['faqs' => [], 'heading' => 'Frequently Asked Questions', 'eyebrow' => '', 'subheading' => ''])
 
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-20">
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-10">{!! $heading !!}</h2>
+        @if($eyebrow)
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] text-center mb-3">{{ $eyebrow }}</p>
+        @endif
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-3">{!! $heading !!}</h2>
+        @if($subheading)
+        <p class="font-body text-gray-500 text-base text-center leading-relaxed mb-10">{{ $subheading }}</p>
+        @else
+        <div class="mb-10"></div>
+        @endif
 
         <div class="space-y-3" x-data="{ open: null }">
             @foreach ($faqs as $i => $faq)
