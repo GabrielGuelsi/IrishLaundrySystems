@@ -1,10 +1,10 @@
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
-    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                  'box' => 270],
-    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader wash needs, daily capacity and consistent performance across professional laundry environments.', 'box' => 270],
-    ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                             'box' => 245],
-    ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation, and clean-route continuity.'],
+    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where hygiene process demands separation.',             'box' => 270],
+    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270],
+    ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
+    ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation and linen ready for storage or return to use.'],
 ];
 @endphp
 
@@ -14,7 +14,7 @@ $equipmentList = $equipment ?? [
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-10">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment Categories</h2>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment categories for healthcare laundry rooms</h2>
             </div>
             <a href="{{ route('equipment') }}"
                class="inline-flex self-start lg:self-auto lg:mb-2 items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-full text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
