@@ -1,3 +1,9 @@
+@props([
+    'heading'    => 'Ready to understand what your healthcare laundry room is costing you?',
+    'body'       => 'Talk to Irish Laundry Systems about your site, equipment, service history and laundry pressure. We will help confirm the right next step.',
+    'formTitle'  => 'Request a Healthcare Laundry Assessment',
+    'buttonText' => 'Request Healthcare Assessment',
+])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
@@ -6,10 +12,10 @@
             {{-- LEFT: heading + contact methods + electrolux + map --}}
             <div class="flex flex-col">
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
-                    Ready to understand what your healthcare laundry room is costing you?
+                    {{ $heading }}
                 </h2>
                 <p class="font-body text-blue-200 text-lg leading-relaxed mb-8">
-                    Talk to Irish Laundry Systems about your site, equipment, service history and laundry pressure. We will help confirm the right next step.
+                    {{ $body }}
                 </p>
 
                 <div class="space-y-4 mb-8">
@@ -73,7 +79,7 @@
 
             {{-- RIGHT: Form --}}
             <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
-                <h3 class="font-heading font-bold text-navy text-lg mb-1">Request a Healthcare Laundry Assessment</h3>
+                <h3 class="font-heading font-bold text-navy text-lg mb-1">{{ $formTitle }}</h3>
                 <p class="font-body text-gray-500 text-sm mb-6">We aim to respond within 24 hours.</p>
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
                     @csrf
@@ -138,7 +144,7 @@
                     <input type="hidden" name="page_source" value="{{ $pageSource ?? 'sector_cta' }}">
                     <button type="submit"
                             class="w-full bg-[#148af4] hover:bg-[#148af4]/90 text-white font-body font-bold py-3.5 px-6 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                        Request Healthcare Assessment
+                        {{ $buttonText }}
                     </button>
                 </form>
             </div>

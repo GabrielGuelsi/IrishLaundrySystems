@@ -1,3 +1,8 @@
+@props([
+    'headingLine1' => 'Service Contracts and Support &amp; Aftercare',
+    'headingLine2' => 'help protect the outcome',
+    'body'         => 'Planned maintenance, service history and aftercare help protect the savings, hygiene control and downtime-risk reduction built into the equipment decision.',
+])
 {{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4;">
 
@@ -14,12 +19,12 @@
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-2">After Installation</p>
 
         <h2 class="font-heading font-bold leading-tight mb-3">
-            <span class="text-white text-2xl lg:text-3xl block">Service Contracts and Support &amp; Aftercare</span>
-            <span class="text-2xl lg:text-3xl block" style="color:#011E41;">help protect the outcome</span>
+            <span class="text-white text-2xl lg:text-3xl block">{!! $headingLine1 !!}</span>
+            <span class="text-2xl lg:text-3xl block" style="color:#011E41;">{!! $headingLine2 !!}</span>
         </h2>
 
         <p class="font-body text-white/80 text-sm lg:text-base leading-relaxed mb-5">
-            Planned maintenance, service history and aftercare help protect the savings, hygiene control and downtime-risk reduction built into the equipment decision.
+            {{ $body }}
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-5">

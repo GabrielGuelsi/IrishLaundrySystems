@@ -1,3 +1,6 @@
+@props([
+    'body' => 'For healthcare sites facing replacement pressure, expansion needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into an immediate capital purchase.',
+])
 {{-- "Why teams choose ILS" strip — image left, content right --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:320px;">
 
@@ -19,7 +22,7 @@
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
-            For healthcare sites facing replacement pressure, expansion needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into an immediate capital purchase.
+            {{ $body }}
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
