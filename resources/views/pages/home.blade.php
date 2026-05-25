@@ -29,9 +29,9 @@
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div style="max-width: 620px;">
+            <div style="max-width: 760px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-5xl">
                     Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real&nbsp;cost
                 </h1>
 
@@ -117,9 +117,9 @@
     'subheading' => 'The right equipment should follow the room, the load profile, the handling process, lifecycle cost and the care behind the installed base.',
     'equipment' => [
         ['img' => 'line6000-barrier-washer',       'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                 'box' => 270, 'mb' => -40],
-        ['img' => 'commercialwasher',              'name' => 'Commercial Washers',   'desc' => 'For daily wash capacity, steady performance and broader laundry needs across professional environments.', 'box' => 270, 'mb' => -35],
+        ['img' => 'commercialwasher',              'name' => 'Commercial Washers',   'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
         ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',        'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                          'box' => 245],
-        ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist textiles where fabric care matters.', 'box' => 260, 'mb' => 0],
+        ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
         ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.'],
     ],
 ])
@@ -127,14 +127,14 @@
 <!-- 6.5 EQUIPMENT RENTAL STRIP — Keep laundry moving with capital control -->
 @include('components.why-choose-strip')
 
-<!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
-@include('components.service-contracts-strip')
-
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', ['heading' => 'What our <span class="text-[#148af4]">customers</span> say'])
 
 <!-- TRUST ANCHORS — proof / "Trusted by" logo strip -->
 @include('components.proof-bar')
+
+<!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
+@include('components.service-contracts-strip')
 
 <!-- 8. FINAL CTA + SHORT FORM -->
 @include('components.cta-downtime-form', [

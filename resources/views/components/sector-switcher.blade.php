@@ -29,7 +29,7 @@
                 <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.72) 40%, rgba(1,30,65,0.15) 78%, transparent 100%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Healthcare</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
@@ -47,7 +47,7 @@
                 <img src="/images/CareFacilities/CareFacilitiesHero.png" alt="Care facility laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.72) 40%, rgba(1,30,65,0.15) 78%, transparent 100%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Care Facilities</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
@@ -65,7 +65,7 @@
                 <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.72) 40%, rgba(1,30,65,0.15) 78%, transparent 100%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Hospitality</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
@@ -83,7 +83,7 @@
                 <img src="/images/healthcare/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
-                     style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.72) 40%, rgba(1,30,65,0.15) 78%, transparent 100%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Commercial &amp; Industrial</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
