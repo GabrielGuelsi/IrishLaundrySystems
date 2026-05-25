@@ -19,7 +19,7 @@ $testimonials = [
     'hse' => [
         'logo'      => '',
         'image'     => '/images/sectors/St-Marys-Hospital-Phooenix-Park-Dublin-Rainwater-System-old-Building.webp',
-        'name'      => 'HSE St. Mary\'s Hospital',
+        'name'      => 'St. Mary\'s Hospital Dublin',
         'pills'     => ['Excellent Callouts', 'Annual Maintenance', 'Minimal Disruption', 'Peace of Mind'],
         'headline'  => 'Consistent, professional service that gives us real peace of mind.',
         'body'      => 'We\'ve worked with Irish Laundry Systems for a number of years at St. Mary\'s Hospital, and their service has been consistently reliable and professional. Their response times for callouts are excellent, and any issues are dealt with quickly and efficiently. Their annual maintenance support ensures our equipment runs smoothly with minimal disruption, giving us real peace of mind. We value the long-term relationship we\'ve built and trust their team to deliver a high standard of service every time.',
@@ -116,12 +116,14 @@ $showChrome = ! $single && count($slides) > 1;
                                             onerror="this.outerHTML='<div class=&quot;font-heading font-bold uppercase tracking-wider text-navy text-sm px-5 py-3 rounded-lg bg-white border border-navy/10&quot;>{{ $logoFallback }}</div>'"
                                         >
                                     @elseif (!empty($t['image']))
-                                        <img
-                                            src="{{ $t['image'] }}"
-                                            alt="{{ $t['name'] }}"
-                                            class="w-full rounded-xl object-cover"
-                                            style="height:200px;"
-                                        >
+                                        <div class="flex flex-col items-center gap-3">
+                                            <img
+                                                src="{{ $t['image'] }}"
+                                                alt="{{ $t['name'] }}"
+                                                class="w-72 h-64 rounded-xl object-cover flex-shrink-0"
+                                            >
+                                            <p class="font-body font-bold text-navy text-sm text-center">{{ $t['name'] }}</p>
+                                        </div>
                                     @endif
                                 </div>
 
