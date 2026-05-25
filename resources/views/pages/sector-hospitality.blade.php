@@ -356,6 +356,21 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support bedding, towels, robes, uniforms, guest items and food and beverage linen where wash quality, capacity and repeatable results matter.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Automatic Savings',
+                            'Integrated Savings',
+                            'Intelligent Dosing',
+                            'Efficient Dosing',
+                            'Power Balance',
+                            'Reduced water, energy and detergent waste',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -377,6 +392,21 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Tumble dryers support linen turnaround where <span style="color:#148af4;">drying time</span>, residual moisture, energy use and fabric protection affect housekeeping flow through the day.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Up to 65% energy saving with Heat Pump technology',
+                            '35-minute Heat Pump drying cycle in suitable applications',
+                            'Moisture Balance to avoid overdrying',
+                            'Smart Energy Management',
+                            'Adaptive Fan for energy and drying control',
+                            'Certified ergonomic design',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4 mb-6">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -389,7 +419,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/equipment/line6000-tumble-dryer.webp"
+                    <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -431,6 +461,21 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Ironers and finishing equipment support <span style="color:#148af4;">linen presentation</span>, flatwork flow, table linen, bedding standards and storage readiness for hospitality service.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Flatwork finishing',
+                            'Linen presentation',
+                            'Drying consistency',
+                            'DIAMMS',
+                            'Hygiene Guard',
+                            'Finishing quality before storage or return to use',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -503,6 +548,19 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Drying cabinets support gentle drying for delicate garments, outdoor clothing, bulky items, shoes, staff items and guest garments where <span style="color:#148af4;">fabric care</span> matters.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Gentle non-mechanical drying',
+                            'Dry 6 kg cotton load in less than 45 minutes',
+                            'Heat Pump version available where suitable',
+                            'Protection for delicate and bulky items',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -515,7 +573,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/equipment/drying-cabinet.webp"
+                    <img src="/images/healthcare/Drying-cabinets_image.webp"
                          alt="Drying Cabinet"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -532,46 +590,6 @@
             <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
                 <p class="font-body text-gray-500 text-sm leading-relaxed max-w-2xl">
                     Drying cabinets provide gentle non-mechanical drying for delicate and bulky items. A Heat Pump version is available where suitable. A 6 kg cotton load can dry in less than 45 minutes, supporting guest services, staff garments and premium textile care needs.
-                </p>
-            </div>
-            </div>
-
-            <!-- 5. lagoon ADVANCED CARE — image left, text right -->
-            <div x-data="{ open: false }">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div class="flex flex-col">
-                    <img src="/images/equipment/lagoon-advanced-care.webp"
-                         alt="lagoon Advanced Care"
-                         class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
-                            <span class="font-heading font-bold text-navy text-lg">System features: lagoon Advanced Care, ClarusVibe, Integrated Savings, Intelligent Dosing</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">lagoon <strong>Advanced Care</strong></h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        lagoon Advanced Care supports <span style="color:#148af4;">premium textile care</span> for delicate garments, guest items, valet service, uniforms, leathers and shoes where hotels want to expand service quality and revenue potential.
-                    </p>
-                    <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Go to Products
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Assessment
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
-                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-2xl">
-                    lagoon Advanced Care delivers Dry-to-Dry in around 1 hour, with a total process of approximately 55 minutes for standard garments. It handles delicates, leathers and shoes, with less prespotting, easier finishing and faster process time. Integrated Savings and Intelligent Dosing support running-cost control. Programs are Woolmark-approved.
                 </p>
             </div>
             </div>
@@ -597,6 +615,20 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers support hospitality sites where controlled dirty-side loading and clean-side unloading are required for specific handling or separation needs.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Dirty-side and clean-side separation',
+                            'AIDO controlled loading and unloading',
+                            'Hygiene Watchdog full-cycle completion',
+                            'Double-drain water recycling where suitable',
+                            'Process support for controlled laundry routes',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             View Equipment
@@ -628,10 +660,9 @@
     'heading'   => 'Equipment categories for hospitality laundry.',
     'equipment' => [
         ['img' => 'commercialwasher',        'name' => 'Commercial Washers',   'desc' => 'For bedding, towels, robes, uniforms, guest items and food-and-beverage linen.',                          'box' => 270],
-        ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',        'desc' => 'For drying flow, energy control and steady linen turnaround through the day.',                            'box' => 245],
+        ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',        'desc' => 'For drying flow, energy control and steady linen turnaround through the day.',                            'box' => 245],
         ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers &amp; Flatwork', 'desc' => 'For linen finishing, presentation and storage readiness in hospitality service.'],
-        ['img' => 'drying-cabinet',          'name' => 'Drying Cabinets',      'desc' => 'For delicate garments, bulky items, shoes, guest items and fabric-care needs.',                           'box' => 260],
-        ['img' => 'lagoon-advanced-care',    'name' => 'lagoon Advanced Care', 'desc' => 'For premium guest garments, valet service, uniforms, delicates, leathers and shoes.',                    'box' => 260],
+        ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For delicate garments, bulky items, shoes, guest items and fabric-care needs.', 'box' => 260],
         ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',      'desc' => 'For sites where dirty-side and clean-side handling need controlled separation.',                          'box' => 270],
     ],
 ])

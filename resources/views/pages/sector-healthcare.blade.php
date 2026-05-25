@@ -60,7 +60,7 @@
                     Irish Laundry Systems helps healthcare sites make better laundry decisions by connecting room layout, workflow, capacity, equipment, maintenance, repairs, rental and aftercare into one practical plan.
                 </p>
                 <a href="{{ route('sectors.healthcare') }}#healthcare-equipment"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                   class="inline-flex items-start gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
                     See the equipment we provide
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -164,7 +164,7 @@
                             allowfullscreen></iframe>
                 </div>
                 <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank" rel="noopener"
-                   class="inline-flex items-center gap-2 text-navy hover:text-[#148af4] font-heading font-bold text-sm mt-4 transition-colors">
+                   class="inline-flex items-start gap-2 text-navy hover:text-[#148af4] font-heading font-bold text-sm mt-4 transition-colors">
                     Watch workflow video
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -272,50 +272,52 @@
 
             {{-- Metric 1 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">65%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">dryer energy saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
             {{-- Metric 2 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">50%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">water saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
             </div>
 
             {{-- Metric 3 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">75%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">fewer sick days</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
             </div>
 
             {{-- Business 4 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
-                <div class="h-4"></div>
-                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Less detergent<br>and process waste</h3>
+                <div class="flex items-start gap-2 mt-8">
+                    <h3 class="font-heading font-bold text-[#148af4] text-lg leading-snug">Less<br>detergent<br>and process waste</h3>
+                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
+                </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
 
             {{-- Business 5 --}}
             <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
-                <div class="h-4"></div>
-                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Lower reactive<br>cost pressure</h3>
+                <div class="flex items-start gap-2 mt-8">
+                    <h3 class="font-heading font-bold text-[#148af4] text-lg leading-snug">Lower<br>reactive<br>cost pressure</h3>
+                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects specification, installation, preventive maintenance, repairs, rental and aftercare so laundry decisions are not only made after something fails.</p>
             </div>
 
@@ -397,7 +399,7 @@
                     <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
-                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                        <span class="inline-flex items-start gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </span>
@@ -455,11 +457,11 @@
                         @endforeach
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-start gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             View Equipment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-start gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -579,11 +581,11 @@
                         @endforeach
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-start gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-start gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -614,18 +616,18 @@
                         @endforeach
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4 mb-6">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-start gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-start gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/equipment/line6000-tumble-dryer.webp"
+                    <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -702,11 +704,11 @@
                         @endforeach
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-start gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-start gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>

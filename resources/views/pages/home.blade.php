@@ -135,7 +135,7 @@
             @foreach([
                 ['img' => 'line6000-barrier-washer',  'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                  'scale' => '1.55'],
                 ['img' => 'commercialwasher',         'name' => 'Commercial Washers',    'desc' => 'For daily wash capacity, steady performance and broader laundry needs across professional environments.',  'scale' => '1.75'],
-                ['img' => 'line6000-tumble-dryer',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                              'scale' => '1'],
+                ['img' => 'Tumble-dryers_Heat-Pump_1-1',    'name' => 'Tumble Dryers',         'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                              'scale' => '1'],
                 ['img' => 'IB623_FRONT_NEW',          'name' => 'Ironers & Flatwork',    'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.',                          'scale' => '1.15', 'ext' => 'jpg'],
             ] as $eq)
             <div class="bg-white border border-gray-100 rounded-xl p-8 flex flex-col gap-6">

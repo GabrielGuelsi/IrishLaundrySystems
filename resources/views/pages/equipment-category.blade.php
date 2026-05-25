@@ -627,7 +627,7 @@
                 </a>
             </div>
             <div class="flex justify-center reveal reveal-right">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}"
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}"
                      alt="Line 6000 Tumble Dryer"
                      class="w-full max-w-[200px] object-contain drop-shadow-xl">
             </div>
@@ -780,14 +780,14 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Heat pump tumble dryer" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Heat pump tumble dryer" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
         </div>
 
         {{-- Moisture sensing & fabric care --}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
             <div class="order-2 lg:order-1 flex justify-center">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Moisture sensing" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Moisture sensing" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
             <div class="order-1 lg:order-2">
                 <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Smart moisture sensing for perfect results</h3>
@@ -820,7 +820,7 @@
                 </p>
             </div>
             <div class="flex justify-center">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="ClarusVibe control" class="w-full max-w-xs object-contain drop-shadow-lg">
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="ClarusVibe control" class="w-full max-w-xs object-contain drop-shadow-lg">
             </div>
         </div>
 
@@ -877,7 +877,7 @@
                 </a>
             </div>
             <div class="flex justify-center reveal reveal-right">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}"
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}"
                      alt="Line 6000 Drying Cabinet"
                      class="w-full max-w-[200px] object-contain drop-shadow-xl">
             </div>
@@ -1022,14 +1022,14 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Drying cabinet for mountain clothing" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Drying cabinet for mountain clothing" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
         </div>
 
         {{-- Delicate fabrics --}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
             <div class="order-2 lg:order-1 flex justify-center">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Gentle drying for delicate fabrics" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Gentle drying for delicate fabrics" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
             <div class="order-1 lg:order-2">
                 <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Gentle drying for delicate fabrics and fine clothing</h3>
@@ -1064,7 +1064,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="{{ asset('images/equipment/line6000-tumble-dryer.webp') }}" alt="Workwear drying cabinet" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Workwear drying cabinet" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
         </div>
 
