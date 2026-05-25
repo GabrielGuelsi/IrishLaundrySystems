@@ -183,7 +183,7 @@
                 'sector' => 'Tumble Dryers',
                 'tag'    => 'Guide',
                 'read'   => '8 min',
-                'img'    => 'images/equipment/line6000-tumble-dryer.webp',
+                'img'    => 'images/equipment/Tumble-dryers_Heat-Pump_1-1.webp',
                 'color'  => '#148af4',
             ],
             [

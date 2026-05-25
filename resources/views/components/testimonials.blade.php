@@ -8,8 +8,8 @@
 $testimonials = [
     'grace' => [
         'logo'      => '/images/logo/Logo_Grace_Healthcare_(2).png',
-        'logoClass'  => 'h-[280px] w-auto object-contain -mt-16',
-        'pillsClass' => '-mt-32',
+        'logoClass'  => 'w-full object-contain',
+        'pillsClass' => 'mt-4',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
         'headline'  => 'A trusted partner providing consistent commitment that makes a real difference.',
@@ -19,15 +19,40 @@ $testimonials = [
     ],
     'hse' => [
         'logo'      => '',
+        'image'     => '/images/sectors/St-Marys-Hospital-Phooenix-Park-Dublin-Rainwater-System-old-Building.webp',
         'name'      => 'HSE St. Mary\'s Hospital',
         'pills'     => ['Excellent Callouts', 'Annual Maintenance', 'Minimal Disruption', 'Peace of Mind'],
         'headline'  => 'Consistent, professional service that gives us real peace of mind.',
         'body'      => 'We\'ve worked with Irish Laundry Systems for a number of years at St. Mary\'s Hospital, and their service has been consistently reliable and professional. Their response times for callouts are excellent, and any issues are dealt with quickly and efficiently. Their annual maintenance support ensures our equipment runs smoothly with minimal disruption, giving us real peace of mind. We value the long-term relationship we\'ve built and trust their team to deliver a high standard of service every time.',
         'cite_name' => 'Larry Jordan',
-        'cite_role' => 'Operations at HSE Community Healthcare',
+        'cite_role' => 'Operations at St. Mary\'s Hospital',
+    ],
+    'charlemont' => [
+        'logo'      => '/images/sectors/charlemontgroupsquare.png',
+        'logoClass' => 'h-[280px] w-auto object-contain',
+        'pillsClass' => 'mt-4',
+        'name'      => 'Charlemont Group',
+        'pills'     => ['Long-Term Partnership', 'Reliable Service', 'Fast Response', 'Minimal Disruption'],
+        'headline'  => 'A reliable partner we can always count on to keep our operations running smoothly.',
+        'body'      => 'Irish Laundry Systems has been an outstanding partner for Charlemont Group. Their team consistently delivers a professional and efficient service, with response times that are second to none. Whether it is routine maintenance or an urgent callout, they handle everything with care and expertise. We have complete confidence in their ability to support our laundry operations and would not hesitate to recommend them.',
+        'cite_name' => 'Contact Name',
+        'cite_role' => 'Facilities Manager at Charlemont Group',
+    ],
+    'laundryonline' => [
+        'logo'      => '/images/sectors/laundryonlinesquare2.png',
+        'logoClass' => 'h-[280px] w-auto object-contain',
+        'pillsClass' => 'mt-4',
+        'name'      => 'Laundry Online',
+        'pills'     => ['Equipment Supply', 'Quick Turnaround', 'Dependable Support', 'Service Contract'],
+        'headline'  => 'Professional, knowledgeable and always quick to respond when it matters most.',
+        'body'      => 'Working with Irish Laundry Systems has been a straightforward and positive experience from the start. Their knowledge of commercial laundry equipment is excellent and their aftercare support has been dependable throughout. Any issues are resolved quickly and efficiently, and the team is always easy to reach. We value the relationship we have built and look forward to continuing to work together.',
+        'cite_name' => 'Contact Name',
+        'cite_role' => 'Operations Manager at Laundry Online',
     ],
     'abbvie' => [
         'logo'      => '/images/logo/abbvie.png',
+        'logoClass' => 'h-[160px] w-auto object-contain',
+        'pillsClass' => 'mt-4',
         'name'      => 'AbbVie',
         'pills'     => ['Fast Response', 'Maintenance & Repair', 'Service Contract', 'Dependable Support'],
         'headline'  => 'They provide excellent support and a dependable experience we can always count on.',
@@ -37,7 +62,7 @@ $testimonials = [
     ],
 ];
 
-$order  = ['grace', 'hse', 'abbvie'];
+$order  = ['grace', 'hse', 'charlemont', 'laundryonline', 'abbvie'];
 $slides = $single && isset($testimonials[$single])
     ? [$testimonials[$single]]
     : array_map(fn ($k) => $testimonials[$k], $order);
@@ -78,16 +103,24 @@ $showChrome = ! $single && count($slides) > 1;
                         class="transition-opacity duration-500 rounded-2xl bg-white shadow-sm border border-navy/5 p-8 lg:p-12"
                         :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                     >
-                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
 
                             {{-- LEFT: logo + pills --}}
-                            <aside class="lg:col-span-4">
+                            <aside class="lg:col-span-4 flex flex-col justify-center">
                                 @if (!empty($t['logo']))
                                 <img
                                     src="{{ $t['logo'] }}"
                                     alt="{{ $t['name'] }} logo"
                                     class="{{ $t['logoClass'] ?? 'h-14 lg:h-16 w-auto object-contain' }}"
                                     onerror="this.outerHTML='<div class=&quot;inline-flex items-center h-14 lg:h-16 px-5 rounded-md bg-[#f7f8fa] border border-navy/10 font-heading font-bold uppercase tracking-wider text-navy text-sm&quot;>{{ $t['name'] }}</div>'"
+                                >
+                                @endif
+                                @if (!empty($t['image']))
+                                <img
+                                    src="{{ $t['image'] }}"
+                                    alt="{{ $t['name'] }}"
+                                    class="w-full rounded-xl object-cover"
+                                    style="height:180px;"
                                 >
                                 @endif
                                 <div class="{{ isset($t['pillsClass']) ? $t['pillsClass'] : 'mt-6' }} flex flex-wrap gap-2">
@@ -101,16 +134,16 @@ $showChrome = ! $single && count($slides) > 1;
 
                             {{-- RIGHT: quote icon, headline, body, signature --}}
                             <div class="lg:col-span-8">
-                                <svg class="w-10 h-10 text-[#148af4] mb-4" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+                                <svg class="w-10 h-10 mb-4" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true" style="transform: rotate(180deg);">
                                     <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
                                 </svg>
 
                                 <blockquote class="font-heading font-bold text-navy text-2xl lg:text-3xl xl:text-4xl leading-tight mb-6">
-                                    <p>&ldquo;{{ $t['headline'] }}&rdquo;</p>
+                                    <p>{{ rtrim($t['headline'], '.') }}</p>
                                 </blockquote>
 
                                 <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-8">
-                                    {{ $t['body'] }}
+                                    {{ $t['body'] }}<svg display="inline" style="display:inline; vertical-align:middle; margin-left:4px;" width="40" height="40" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/></svg>
                                 </p>
 
                                 <cite class="not-italic block">

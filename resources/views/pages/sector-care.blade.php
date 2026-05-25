@@ -440,6 +440,21 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support daily wash demand across resident clothing, bedding, towels and mixed loads where capacity, wash quality and garment care matter.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Automatic Savings',
+                            'Integrated Savings',
+                            'Intelligent Dosing',
+                            'Efficient Dosing',
+                            'Power Balance',
+                            'Reduced water, energy and detergent waste',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -461,6 +476,21 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time</span>, residual moisture and operator handling can affect turnaround through the day.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Up to 65% energy saving with Heat Pump technology',
+                            '35-minute Heat Pump drying cycle in suitable applications',
+                            'Moisture Balance to avoid overdrying',
+                            'Smart Energy Management',
+                            'Adaptive Fan for energy and drying control',
+                            'Certified ergonomic design',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -473,7 +503,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/equipment/line6000-tumble-dryer.webp"
+                    <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -535,6 +565,21 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Ironers and finishing equipment support linen presentation, drying consistency, <span style="color:#148af4;">flatwork flow</span> and storage readiness in care environments.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Flatwork finishing',
+                            'Linen presentation',
+                            'Drying consistency',
+                            'DIAMMS',
+                            'Hygiene Guard',
+                            'Finishing quality before storage or return to use',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             Go to Products
@@ -636,6 +681,20 @@
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers support sites where controlled dirty-side loading and clean-side unloading are required as part of the laundry room setup.
                     </p>
+                    <ul class="space-y-2 mb-6">
+                        @foreach([
+                            'Dirty-side and clean-side separation',
+                            'AIDO controlled loading and unloading',
+                            'Hygiene Watchdog full-cycle completion',
+                            'Double-drain water recycling where suitable',
+                            'Process support for controlled laundry routes',
+                        ] as $point)
+                        <li class="flex items-start gap-2">
+                            <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $point }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
                             View Equipment

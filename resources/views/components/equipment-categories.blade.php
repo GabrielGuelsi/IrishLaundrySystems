@@ -2,9 +2,10 @@
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
-    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where hygiene process demands separation.',             'box' => 270],
-    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270],
-    ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
+    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where hygiene process demands separation.',             'box' => 270, 'mb' => -10],
+    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270, 'mb' => -35],
+    ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
+    ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist textiles where fabric care matters.', 'box' => 260, 'mb' => 20],
     ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation and linen ready for storage or return to use.'],
 ];
 @endphp
@@ -24,7 +25,10 @@ $equipmentList = $equipment ?? [
             </a>
         </div>
 
-        @php $cols = count($equipmentList) > 4 ? 3 : 4; @endphp
+        @php
+            $cnt  = count($equipmentList);
+            $cols = $cnt >= 6 ? 3 : $cnt;
+        @endphp
         <div class="grid grid-cols-2 lg:grid-cols-{{ $cols }} gap-6">
             @foreach($equipmentList as $eq)
             <div class="flex flex-col gap-6 h-full">
@@ -32,22 +36,23 @@ $equipmentList = $equipment ?? [
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
+                @php $imgSrc = $eq['src'] ?? '/images/equipment/' . $eq['img'] . '.' . ($eq['ext'] ?? 'webp'); @endphp
                 @if($loop->last)
                 {{-- Ironer: wide/flat — bottom-align so the base sits flush with the others --}}
                 <div class="w-full flex items-end justify-center" style="height:300px;">
-                    <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
+                    <img src="{{ $imgSrc }}"
                          alt="{{ $eq['name'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
                          style="width:100%; height:auto; object-fit:contain;">
                 </div>
                 @else
-                {{-- First 3: per-machine box size so actual machine visual size looks equal --}}
-                @php $box = $eq['box'] ?? 260; @endphp
-                <div class="w-full flex items-center justify-center" style="height:300px;">
-                    <img src="/images/equipment/{{ $eq['img'] }}.{{ $eq['ext'] ?? 'webp' }}"
+                {{-- Per-machine box size so actual machine visual size looks equal --}}
+                @php $box = $eq['box'] ?? 260; $mb = $eq['mb'] ?? 0; @endphp
+                <div class="w-full flex items-end justify-center" style="height:300px;">
+                    <img src="{{ $imgSrc }}"
                          alt="{{ $eq['name'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="width:{{ $box }}px; height:{{ $box }}px; object-fit:contain;">
+                         style="width:{{ $box }}px; height:{{ $box }}px; object-fit:contain; margin-bottom:{{ $mb }}px;">
                 </div>
                 @endif
                 <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
