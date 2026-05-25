@@ -146,68 +146,66 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
                 Stop hotel laundry costs quietly building into the <span style="color:#148af4;">guest experience</span>.
             </h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-sm leading-relaxed">
                 In hospitality, laundry cost can build through energy use, detergent waste, linen replacement, outsourcing, slow turnaround, staff time and reactive repairs.
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
+            {{-- Metric 1 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">Up to 65% dryer energy saving</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">65%</div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">dryer energy saving</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">30%+</div>
+            {{-- Metric 2 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">Over 30% detergent-cost saving</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Efficient Dosing can save over 30% on detergent costs by helping use only the right amount of detergent at each cycle.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base">Over</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">30%+</div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">detergent-cost saving</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient Dosing can save over 30% on detergent costs by helping use only the right amount of detergent at each cycle.</p>
             </div>
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">90%</div>
+            {{-- Metric 3 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">90% lifecycle cost pressure</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up the majority of lifecycle cost.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">90%</div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">lifecycle cost pressure</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up the majority of lifecycle cost.</p>
             </div>
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">35<span class="text-2xl">min</span></div>
+            {{-- Metric 4 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">35-minute Heat Pump drying cycle</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Line 6000 Heat Pump Dryers can complete a cycle in 35 minutes, supporting faster linen movement during busy service periods.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">35<span class="text-2xl">min</span></div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">Heat Pump drying cycle</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Line 6000 Heat Pump Dryers can complete a cycle in 35 minutes, supporting faster linen movement during busy service periods.</p>
             </div>
 
-            <div class="bg-gray-50 rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-[#148af4]/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Lower outsourcing and delay pressure</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment, rental, maintenance, repairs and aftercare so hotels are not forced to manage laundry only when linen flow is already under pressure.</p>
-                </div>
+            {{-- Business 5 --}}
+            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                <div class="h-4"></div>
+                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Lower outsourcing<br>and delay pressure</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment, rental, maintenance, repairs and aftercare so hotels are not forced to manage laundry only when linen flow is already under pressure.</p>
             </div>
 
         </div>
@@ -220,10 +218,10 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Routes</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support<br><span style="color:#148af4;">hospitality laundry</span>.
+                Four ways we support hospitality laundry.
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                Hotels and hospitality sites often need equipment, maintenance, response and aftercare to work around the same linen flow, guest standards and busy-period pressure.
+                Hotels and hospitality sites often need equipment, maintenance, response and aftercare to work around the same <span style="color:#148af4;">linen flow</span>, guest standards and busy-period pressure.
             </p>
         </div>
 
@@ -298,9 +296,10 @@
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Designed around your</span>
-            <span class="text-3xl lg:text-5xl block"><span style="color:#011E41;">property</span>, <span style="color:#011E41;">workflow</span> and capacity.</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">property, workflow and capacity.</span>
         </h2>
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
             Before equipment becomes a cost or service problem, linen volume, laundry room space, housekeeping rhythm, utilities, peak demand and service needs should be understood together.
@@ -496,7 +495,88 @@
             </div>
             </div>
 
-            <!-- 4. BARRIER WASHERS — image left, text right -->
+            <!-- 4. DRYING CABINETS — text left, image right -->
+            <div x-data="{ open: false }">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
+                <div class="order-2 lg:order-1">
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Drying <strong>Cabinets</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+                        Drying cabinets support gentle drying for delicate garments, outdoor clothing, bulky items, shoes, staff items and guest garments where <span style="color:#148af4;">fabric care</span> matters.
+                    </p>
+                    <div class="flex flex-row flex-wrap items-center gap-4">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
+                    <img src="/images/equipment/drying-cabinet.webp"
+                         alt="Drying Cabinet"
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3">
+                        <button @click="open = !open"
+                                class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
+                            <span class="font-heading font-bold text-navy text-lg">System features: Gentle drying, Heat Pump options, garment protection</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-2xl">
+                    Drying cabinets provide gentle non-mechanical drying for delicate and bulky items. A Heat Pump version is available where suitable. A 6 kg cotton load can dry in less than 45 minutes, supporting guest services, staff garments and premium textile care needs.
+                </p>
+            </div>
+            </div>
+
+            <!-- 5. lagoon ADVANCED CARE — image left, text right -->
+            <div x-data="{ open: false }">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
+                <div class="flex flex-col">
+                    <img src="/images/equipment/lagoon-advanced-care.webp"
+                         alt="lagoon Advanced Care"
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
+                            <span class="font-heading font-bold text-navy text-lg">System features: lagoon Advanced Care, ClarusVibe, Integrated Savings, Intelligent Dosing</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:pt-10">
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">lagoon <strong>Advanced Care</strong></h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+                        lagoon Advanced Care supports <span style="color:#148af4;">premium textile care</span> for delicate garments, guest items, valet service, uniforms, leathers and shoes where hotels want to expand service quality and revenue potential.
+                    </p>
+                    <div class="flex flex-row flex-wrap items-center gap-4">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Go to Products
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                            Request Assessment
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-2xl">
+                    lagoon Advanced Care delivers Dry-to-Dry in around 1 hour, with a total process of approximately 55 minutes for standard garments. It handles delicates, leathers and shoes, with less prespotting, easier finishing and faster process time. Integrated Savings and Intelligent Dosing support running-cost control. Programs are Woolmark-approved.
+                </p>
+            </div>
+            </div>
+
+            <!-- 6. BARRIER WASHERS — image left, text right -->
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="flex flex-col">
@@ -540,9 +620,21 @@
     </div>
 </section>
 
-@include('components.why-choose-strip')
+@include('components.why-choose-strip', [
+    'body' => 'For hotels facing replacement pressure, expansion, seasonal demand or outsourcing cost, rental can keep laundry moving without turning every equipment decision into an immediate capital purchase.',
+])
 
-@include('components.equipment-categories')
+@include('components.equipment-categories', [
+    'heading'   => 'Equipment categories for hospitality laundry.',
+    'equipment' => [
+        ['img' => 'commercialwasher',        'name' => 'Commercial Washers',   'desc' => 'For bedding, towels, robes, uniforms, guest items and food-and-beverage linen.',                          'box' => 270],
+        ['img' => 'line6000-tumble-dryer',   'name' => 'Tumble Dryers',        'desc' => 'For drying flow, energy control and steady linen turnaround through the day.',                            'box' => 245],
+        ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers &amp; Flatwork', 'desc' => 'For linen finishing, presentation and storage readiness in hospitality service.'],
+        ['img' => 'drying-cabinet',          'name' => 'Drying Cabinets',      'desc' => 'For delicate garments, bulky items, shoes, guest items and fabric-care needs.',                           'box' => 260],
+        ['img' => 'lagoon-advanced-care',    'name' => 'lagoon Advanced Care', 'desc' => 'For premium guest garments, valet service, uniforms, delicates, leathers and shoes.',                    'box' => 260],
+        ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',      'desc' => 'For sites where dirty-side and clean-side handling need controlled separation.',                          'box' => 270],
+    ],
+])
 
 <!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
@@ -585,14 +677,19 @@
     </div>
 </section>
 
-@include('components.service-contracts-strip')
+@include('components.service-contracts-strip', [
+    'headingLine1' => 'Keep equipment, service history and aftercare',
+    'headingLine2' => 'connected around guest standards',
+    'body'         => 'Planned maintenance, service history and aftercare help hospitality sites keep laundry equipment easier to manage after installation, rental, repair or replacement.',
+])
 
 @include('components.testimonials')
 
 @include('components.proof-bar')
 
 @include('components.faq', [
-    'heading' => 'Hospitality Laundry FAQs',
+    'eyebrow' => 'Hospitality Laundry FAQs',
+    'heading' => 'Questions before requesting a hospitality laundry assessment',
     'faqs' => [
         ['question' => 'What types of hospitality sites do you work with?',            'answer' => 'Irish Laundry Systems works with hotels, guesthouses, serviced apartments, hostels and hospitality sites where linen flow, guest standards, housekeeping rhythm and laundry equipment continuity matter.'],
         ['question' => 'Can you help us decide whether in-house laundry makes sense?', 'answer' => 'Yes. We can review linen volume, outsourcing pressure, room space, utilities, staffing rhythm, equipment needs and service requirements to understand whether purchase, rental or a phased approach is the right route.'],
@@ -605,6 +702,12 @@
     ],
 ])
 
-@include('components.cta-downtime-form', ['pageSource' => 'hospitality_cta'])
+@include('components.cta-downtime-form', [
+    'pageSource'  => 'hospitality_cta',
+    'heading'     => 'Ready to understand what your hotel laundry is costing you?',
+    'body'        => 'Talk to Irish Laundry Systems about your property, linen volume, current equipment, outsourcing pressure and service needs. We will help confirm the right next step.',
+    'formTitle'   => 'Request a Hospitality Laundry Assessment',
+    'buttonText'  => 'Request Hospitality Assessment',
+])
 
 @endsection

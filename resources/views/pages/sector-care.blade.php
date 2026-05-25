@@ -216,67 +216,63 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
                 Stop <span style="color:#148af4;">laundry costs</span> quietly building up in the care home.
             </h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-sm leading-relaxed">
                 In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
+            {{-- Metric 1 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">Up to 65% dryer energy saving</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">65%</div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">dryer energy saving</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
+            {{-- Metric 2 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">Up to 50% water saving</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">50%</div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">water saving</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
             </div>
 
-            <div class="bg-navy rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.015-4.5-4.5-4.5-1.75 0-3.27.973-4.065 2.407A4.501 4.501 0 007.5 3.75c-2.485 0-4.5 2.015-4.5 4.5 0 3.925 4.5 8.25 9 11.25 4.5-3 9-7.325 9-11.25z"/></svg>
-                </div>
-                <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
+            {{-- Metric 3 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
                 <div>
-                    <h3 class="font-heading font-bold text-white text-base leading-snug mb-1.5">75% fewer sick days</h3>
-                    <p class="font-body text-white/70 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
+                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">75%</div>
                 </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">fewer sick days</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
             </div>
 
-            <div class="bg-gray-50 rounded-xl p-5 flex flex-col gap-3 col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-[#148af4]/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Less detergent and process waste</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
-                </div>
+            {{-- Business 4 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
+                <div class="h-4"></div>
+                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Less detergent<br>and process waste</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
 
-            <div class="bg-gray-50 rounded-xl p-5 flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="w-8 h-8 rounded-lg bg-[#148af4]/10 flex items-center justify-center self-start">
-                    <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Lower reactive cost pressure</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects rental, preventive maintenance, repairs and aftercare so care homes are not forced to make every decision after something fails.</p>
-                </div>
+            {{-- Business 5 --}}
+            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
+                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                <div class="h-4"></div>
+                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Lower reactive<br>cost pressure</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects rental, preventive maintenance, repairs and aftercare so care homes are not forced to make every decision after something fails.</p>
             </div>
 
         </div>

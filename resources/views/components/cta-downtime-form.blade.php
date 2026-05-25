@@ -1,3 +1,11 @@
+@props([
+    'eyebrow'    => null,
+    'heading'    => 'Ready to understand what your healthcare laundry room is costing you?',
+    'body'       => 'Talk to Irish Laundry Systems about your site, equipment, service history and laundry pressure. We will help confirm the right next step.',
+    'formTitle'  => 'Request a Healthcare Laundry Assessment',
+    'formIntro'  => 'We aim to respond within 24 hours.',
+    'buttonText' => 'Request Healthcare Assessment',
+])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
@@ -5,12 +13,14 @@
 
             {{-- LEFT: heading + contact methods + electrolux + map --}}
             <div class="flex flex-col">
-                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Next Step</p>
+                @if ($eyebrow)
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
+                @endif
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
-                    Start with the <span class="text-[#148af4]">right next step</span>.
+                    {!! $heading !!}
                 </h2>
                 <p class="font-body text-blue-200 text-lg leading-relaxed mb-8">
-                    Tell us what is under pressure, what equipment is involved and what needs to happen next. Irish Laundry Systems will direct the enquiry to the right service, rental, equipment or aftercare conversation.
+                    {{ $body }}
                 </p>
 
                 <div class="space-y-4 mb-8">
@@ -36,7 +46,7 @@
                         </div>
                         <div>
                             <p class="font-body font-bold text-white text-sm">info@irishlaundrysystems.ie</p>
-                            <p class="font-body text-gray-400 text-xs">Routed to the right team for your enquiry</p>
+                            <p class="font-body text-gray-400 text-xs">We aim to respond within 24 hours</p>
                         </div>
                     </a>
 
@@ -74,8 +84,8 @@
 
             {{-- RIGHT: Form --}}
             <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
-                <h3 class="font-heading font-bold text-navy text-lg mb-1">Request a Service Assessment</h3>
-                <p class="font-body text-gray-500 text-sm mb-6">Share the details that help direct the enquiry properly.</p>
+                <h3 class="font-heading font-bold text-navy text-lg mb-1">{{ $formTitle }}</h3>
+                <p class="font-body text-gray-500 text-sm mb-6">{{ $formIntro }}</p>
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
                     @csrf
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -153,7 +163,7 @@
                     <input type="hidden" name="page_source" value="{{ $pageSource ?? 'sector_cta' }}">
                     <button type="submit"
                             class="w-full bg-[#148af4] hover:bg-[#148af4]/90 text-white font-body font-bold py-3.5 px-6 rounded-lg text-base transition-colors duration-200 cursor-pointer">
-                        Request Service Assessment
+                        {{ $buttonText }}
                     </button>
                 </form>
             </div>

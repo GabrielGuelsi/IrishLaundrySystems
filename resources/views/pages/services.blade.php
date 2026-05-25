@@ -18,12 +18,6 @@
         .svc-hero-title, .svc-hero-desc, .svc-hero-btns { animation: none; opacity: 1; transform: none; }
     }
 
-    /* ── Process strip animated arrows ── */
-    .svc-arrow path { stroke-dasharray: 100; stroke-dashoffset: 100; transition: stroke-dashoffset 1.4s ease 0.2s; }
-    .svc-process.in-view .svc-arrow path { stroke-dashoffset: 0; }
-    .svc-step { transition: transform 0.3s ease; }
-    .svc-step:hover { transform: translateY(-4px); }
-
     /* ── Smooth anchor scroll ── */
     html { scroll-behavior: smooth; }
 </style>
@@ -84,14 +78,14 @@
 <!-- 1.5 COMMERCIAL INTRO / DECISION LOGIC -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 mb-12 lg:mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Services Overview</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight">
-                    Start with what is happening on-site,<br>then choose the <span class="text-[#148af4]">right route</span>.
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight text-balance">
+                    Start with what is happening on-site, then choose the <span class="text-[#148af4]">right route</span>.
                 </h2>
             </div>
-            <div class="flex flex-col gap-3 lg:pt-[2.6rem]">
+            <div class="flex flex-col gap-4">
                 <p class="font-body text-gray-600 text-lg leading-relaxed">
                     Commercial laundry sites do not always need the same type of service. One site may need a fault diagnosed. Another may need planned inspections, rental equipment, follow-up work or a clearer aftercare path around machines already in use.
                 </p>
@@ -133,18 +127,27 @@
     ],
 ])
 
-<!-- 5. STAT BAND -->
-<section class="relative bg-navy py-10 lg:py-12 overflow-hidden"
+<!-- 4. PROOF / TRUST STRIP -->
+<section class="relative bg-navy py-14 lg:py-20 overflow-hidden"
          style="background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px); background-size: 22px 22px;">
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="relative max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+
+        {{-- Eyebrow + headline --}}
+        <div class="max-w-3xl mb-10 lg:mb-12">
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight">
+                Service routes shaped by equipment knowledge, <span class="text-[#148af4]">site experience</span> and long-term customers.
+            </h2>
+        </div>
+
         @php
         $svcCapabilities = [
-            ['label' => 'Since 1987',          'body' => 'Commercial laundry engineering support across Ireland.'],
-            ['label' => 'Ireland coverage',    'body' => 'Support for sites across the Republic of Ireland.'],
-            ['label' => 'Authorised partner',  'body' => 'Electrolux Professional equipment and parts support where applicable.'],
-            ['label' => 'Four support routes', 'body' => 'Repairs, contracts, rental, parts and aftercare connected around the installed base.'],
+            ['label' => 'Since 1987',                       'body' => 'Engineering-led commercial laundry work in Ireland.'],
+            ['label' => 'Electrolux Professional Partner',  'body' => 'Authorised partner for a recognised professional laundry equipment platform.'],
+            ['label' => 'Registered technical capability',  'body' => 'Safe Electric registered and Registered Gas Installer contractor capability.'],
+            ['label' => 'Four service routes',              'body' => 'Repairs, preventive maintenance, rental and aftercare organised around the same site context.'],
         ];
         @endphp
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
@@ -281,11 +284,12 @@
 <section class="pt-16 lg:pt-20 pb-10 lg:pb-12 bg-bg">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="text-center">
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">How It Works</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                How the support routes <span class="text-[#148af4]">work together</span>.
+                From site pressure to the <span class="text-[#148af4]">right next step</span>.
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto">
-                The four routes are not silos. They connect into one support story for the installed base.
+                The service route depends on what is happening in the laundry room. Irish Laundry Systems looks at the equipment, the site pressure and the practical next step before directing the enquiry.
             </p>
         </div>
     </div>
@@ -294,10 +298,10 @@
 <section class="w-full overflow-hidden">
     <div style="display:flex; flex-wrap:wrap;">
         @foreach ([
-            ['num' => '01.', 'title' => 'Identify the site pressure',      'body' => 'Understand the issue, urgency, equipment load and operational pressure before choosing the route.', 'img' => '/images/healthcare/operator.jpg'],
-            ['num' => '02.', 'title' => 'Choose the right support route',  'body' => 'Select repairs, contracts, rental or parts support based on what the site needs next.',           'img' => '/images/about/about-engineers.jpg'],
-            ['num' => '03.', 'title' => 'Connect service, parts or rental','body' => 'Keep the support route joined to the installed base, service history and next practical action.',  'img' => '/images/healthcare/Customer-Care_Line-6000-_001.jpg', 'pos' => '20% center'],
-            ['num' => '04.', 'title' => 'Move to the next step',           'body' => 'Direct the enquiry to the right team, assessment, service page or support conversation.',          'img' => '/images/healthcare/customer-care-line6000.jpg'],
+            ['num' => '01.', 'title' => 'Identify the site pressure',    'body' => 'Clarify whether the issue is a fault, recurring problem, maintenance requirement, rental need or follow-up around installed equipment.', 'img' => '/images/healthcare/operator.jpg'],
+            ['num' => '02.', 'title' => 'Review the equipment context',  'body' => 'Look at machine type, age, condition, usage, service history and how critical the equipment is to the site.',                          'img' => '/images/about/about-engineers.jpg'],
+            ['num' => '03.', 'title' => 'Choose the service route',      'body' => 'Direct the enquiry toward repairs, preventive maintenance, rental or aftercare depending on what the site actually needs.',             'img' => '/images/healthcare/Customer-Care_Line-6000-_001.jpg', 'pos' => '20% center'],
+            ['num' => '04.', 'title' => 'Keep the next step clear',      'body' => 'Use reports, service records, parts route and follow-up recommendations to keep decisions practical after the first visit.',           'img' => '/images/healthcare/customer-care-line6000.jpg'],
         ] as $card)
         <div class="svc-gallery-card">
             <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
@@ -316,17 +320,17 @@
     </div>
 </section>
 
-<!-- 7. PARTS & AFTERCARE — BRIDGE -->
+<!-- 6. INSTALLED BASE / SUPPORT & AFTERCARE BRIDGE -->
 <section id="parts-aftercare" class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Installed Base Support</p>
+                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Installed Base</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
-                    Parts &amp; aftercare for the <span class="text-[#148af4]">installed base</span>.
+                    <span class="text-[#148af4]">Support &amp; Aftercare</span> for equipment already working on-site.
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
-                    As an Authorised Electrolux Professional Partner, Irish Laundry Systems connects parts access, service history and aftercare to the installed base, helping keep diagnosis, follow-up and equipment decisions clearer.
+                    After a repair, service visit, rental decision or equipment recommendation, the next step often depends on what is already installed. Irish Laundry Systems helps keep service history, parts route, follow-up work and equipment decisions connected around the installed base.
                 </p>
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-bold text-sm transition-colors">
@@ -348,10 +352,10 @@
                 </div>
                 <ul class="space-y-3">
                     @foreach ([
-                        'Genuine Electrolux Professional parts access',
-                        'Service history context',
+                        'Service history and equipment context',
+                        'Genuine parts route where applicable',
                         'Technical documentation and service records',
-                        'Parts support for contract and non-contract customers',
+                        'Follow-up after repairs, rental or maintenance visits',
                     ] as $bullet)
                     <li class="flex items-start gap-3">
                         <svg class="w-5 h-5 text-[#148af4] mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
@@ -364,20 +368,36 @@
     </div>
 </section>
 
-@include('components.testimonials', ['heading' => 'What our customers say.'])
+<!-- 7. CUSTOMER TRUST / TESTIMONIALS -->
+<section class="pt-16 lg:pt-24 bg-white">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+        <div class="max-w-3xl mb-8 lg:mb-10">
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Customer Trust</p>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                Trusted by sites that need <span class="text-[#148af4]">clear technical direction</span>.
+            </h2>
+            <p class="font-body text-gray-600 text-lg leading-relaxed">
+                Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service continuity.
+            </p>
+        </div>
+    </div>
+</section>
+
+@include('components.testimonials', ['heading' => ''])
 
 @include('components.proof-bar')
 
-<!-- 9. FINAL CTA BANNER -->
+<!-- 8. FINAL CTA BANNER -->
 <section class="relative overflow-hidden bg-navy">
     <div class="grid grid-cols-1 lg:grid-cols-2">
         {{-- Left: text + CTAs --}}
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Request Service Assessment</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                Need the right support route for <span class="text-[#148af4]">your site</span>?
+                Not sure <span class="text-[#148af4]">which service route fits your site</span>?
             </h2>
             <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
-                Speak with an engineer about breakdown risk, installed equipment, parts continuity and the best next step for your site.
+                Tell us what is happening with your laundry equipment. Irish Laundry Systems will help direct the enquiry toward the right route, whether that means repairs, preventive maintenance, equipment rental or aftercare.
             </p>
             <div class="flex flex-row flex-wrap gap-3">
                 <a href="{{ route('contact') }}"
@@ -402,25 +422,5 @@
         </div>
     </div>
 </section>
-
-<script>
-(function () {
-    'use strict';
-
-    // Section in-view trigger for SVG path animations
-    var observed = document.querySelectorAll('[data-svc-observe]');
-    if (observed.length && 'IntersectionObserver' in window) {
-        var sectionObs = new IntersectionObserver(function (entries) {
-            entries.forEach(function (entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('in-view');
-                    sectionObs.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.25 });
-        observed.forEach(function (el) { sectionObs.observe(el); });
-    }
-}());
-</script>
 
 @endsection

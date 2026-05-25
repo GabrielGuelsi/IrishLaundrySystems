@@ -172,6 +172,14 @@
 @include('components.testimonials', ['heading' => 'What our customers say.'])
 
 <!-- 8. FINAL CTA + SHORT FORM -->
-@include('components.cta-downtime-form', ['pageSource' => 'homepage_cta'])
+@include('components.cta-downtime-form', [
+    'pageSource' => 'homepage_cta',
+    'eyebrow'    => 'Next Step',
+    'heading'    => 'Start with the <span class="text-[#148af4]">right next step</span>.',
+    'body'       => 'Tell us what is under pressure, what equipment is involved and what needs to happen next. Irish Laundry Systems will direct the enquiry to the right service, rental, equipment or aftercare conversation.',
+    'formTitle'  => 'Request a Service Assessment',
+    'formIntro'  => 'Share the details that help direct the enquiry properly.',
+    'buttonText' => 'Request Service Assessment',
+])
 
 @endsection
