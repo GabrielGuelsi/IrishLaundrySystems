@@ -1,4 +1,4 @@
-@props(['heading' => 'Equipment categories for healthcare laundry rooms'])
+@props(['heading' => 'Equipment categories for healthcare laundry rooms', 'subheading' => null, 'textMinH' => '112px'])
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
@@ -16,7 +16,10 @@ $equipmentList = $equipment ?? [
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-10">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">{{ $heading }}</h2>
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">{!! $heading !!}</h2>
+                @if($subheading)
+                <p class="font-body text-gray-500 text-lg mt-4 whitespace-nowrap">{{ $subheading }}</p>
+                @endif
             </div>
             <a href="{{ route('equipment') }}"
                class="inline-flex self-start lg:self-auto lg:mb-2 items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-full text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
@@ -32,7 +35,7 @@ $equipmentList = $equipment ?? [
         <div class="grid grid-cols-2 lg:grid-cols-{{ $cols }} gap-6">
             @foreach($equipmentList as $eq)
             <div class="flex flex-col gap-6 h-full">
-                <div class="min-h-[112px]">
+                <div style="min-height: {{ $textMinH }};">
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>

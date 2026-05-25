@@ -11,7 +11,7 @@
         <div class="mb-10">
             <div class="max-w-3xl">
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 whitespace-nowrap">
                     Care shaped around <span class="text-[#148af4]">real operating environments</span>
                 </h2>
             </div>
