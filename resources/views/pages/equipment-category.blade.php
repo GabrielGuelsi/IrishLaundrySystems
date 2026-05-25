@@ -198,9 +198,9 @@
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="lg:col-span-2 flex flex-col">
                     @foreach([
-                        ['icon' => '/images/healthcare/hygiene-icon.png',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in healthcare applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
+                        ['icon' => '/images/healthcare/hygiene-icon.jpg',  'alt' => 'Hygiene icon',  'title' => 'Maximise hygiene in healthcare applications', 'body' => 'Robust infection prevention measures to eliminate contamination risk between dirty and clean zones at every stage of the wash cycle.'],
                         ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
-                        ['icon' => '/images/healthcare/control-icon.png',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
+                        ['icon' => '/images/healthcare/control-icon.jpg',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                     ] as $feature)
                     <div class="flex items-center gap-8 flex-1 py-6 reveal">
                         <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
@@ -410,13 +410,13 @@
             <div class="lg:col-span-2 flex flex-col">
                 @foreach([
                     [
-                        'icon'  => '/images/healthcare/control-icon.png',
+                        'icon'  => '/images/healthcare/control-icon.jpg',
                         'alt'   => 'Control icon',
                         'title' => 'Intuitive operation',
                         'body'  => 'Effortless user experience with ClarusVibe control — designed for fast, accurate programming in any laundry environment.',
                     ],
                     [
-                        'icon'  => '/images/healthcare/hygiene-icon.png',
+                        'icon'  => '/images/healthcare/hygiene-icon.jpg',
                         'alt'   => 'Savings icon',
                         'title' => 'Long-term savings & productivity',
                         'body'  => 'Automatically adjust water and detergents to keep operational expenditure to a minimum without compromising results.',
