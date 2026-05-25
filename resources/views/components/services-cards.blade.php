@@ -20,10 +20,10 @@
             @if ($eyebrow)
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
             @endif
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 whitespace-nowrap">
                 {{ $headingLead }}<span class="{{ $highlightClass }}">{{ $headingHighlight }}</span>{{ $headingTrail }}
             </h2>
-            <p class="font-body {{ $align === 'center' ? 'text-gray-500 max-w-3xl mx-auto' : 'text-gray-600' }} text-lg leading-relaxed">{{ $intro }}</p>
+            <p class="font-body {{ $align === 'center' ? 'text-gray-500 max-w-3xl mx-auto' : 'text-gray-600' }} text-lg leading-relaxed whitespace-nowrap">{{ $intro }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
@@ -52,7 +52,7 @@
                         @endif
                     </div>
 
-                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-2xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {{ $card['cta'] }}
