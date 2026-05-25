@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('content')
 
@@ -76,7 +76,7 @@
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Commercial laundry repairs when equipment is under pressure.
+                    Commercial laundry repairs when equipment is under pressure
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
@@ -117,7 +117,7 @@
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repair Triage</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5">
-            When laundry equipment downtime is costing the site, the repair response needs <span class="text-[#148af4]">expert handling</span>.
+            When laundry equipment downtime is costing the site, the repair response needs <span class="text-[#148af4]">expert handling</span>
         </h2>
         <p class="font-body text-gray-600 text-lg leading-relaxed mb-4 max-w-2xl mx-auto">
             A commercial laundry fault can quickly affect linen flow, staff pressure, guests, residents or production. A poor diagnosis can mean repeat visits, missed parts, longer downtime and higher repair costs.
@@ -250,7 +250,7 @@ $expectSteps = [
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Call-Out Process</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">From fault report to the <span class="text-[#148af4]">right repair response</span>.</h2>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">From fault report to the <span class="text-[#148af4]">right repair response</span></h2>
             <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto">A clear call-out process helps Irish Laundry Systems understand the fault early, prepare the right technical response and keep the next step clear.</p>
         </div>
 
@@ -338,7 +338,7 @@ $expectSteps = [
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Temporary Laundry Support</p>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5">
-                    <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is down.
+                    <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is down
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-8">
                     When your on-site laundry is out of action, Irish Laundry Systems can discuss a temporary laundry processing route through Laundry Online locations across Dublin, where suitable and agreed in advance.
@@ -411,7 +411,7 @@ $expectSteps = [
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4 leading-tight">Repeated breakdowns usually need more than another call-out.</h2>
+                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4 leading-tight">Repeated breakdowns usually need more than another call-out</h2>
                     <p class="font-body text-gray-300 leading-relaxed">
                         If the same issue keeps returning, the fault may point to a wider maintenance, parts or service-history problem. Irish Laundry Systems can help review what keeps coming back and <span class="text-[#148af4]">what needs attention next</span>.
                     </p>
@@ -510,7 +510,7 @@ $faqs = [
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20 text-center mb-10">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Customer Trust</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5">
-            Trusted by sites where equipment issues affect <span class="text-[#148af4]">daily operations</span>.
+            Trusted by sites where equipment issues affect <span class="text-[#148af4]">daily operations</span>
         </h2>
         <p class="font-body text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto">
             Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where faults can create pressure for staff, linen flow, guests, residents or production.
@@ -536,7 +536,7 @@ $faqs = [
         <p class="font-body font-bold text-white/80 text-xs uppercase tracking-[0.22em] mb-3">After the Repair</p>
 
         <h2 class="font-heading font-bold leading-tight mb-4 text-3xl lg:text-5xl text-white">
-            Turn repair findings into the <span style="color:#011E41;">right next step</span>.
+            Turn repair findings into the <span style="color:#011E41;">right next step</span>
         </h2>
 
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-2xl">

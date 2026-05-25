@@ -7,9 +7,8 @@
 @php
 $testimonials = [
     'grace' => [
-        'logo'      => '/images/logo/Logo_Grace_Healthcare_(2).png',
-        'logoClass'  => 'w-full object-contain',
-        'pillsClass' => 'mt-4',
+        'logo'      => '/images/sectors/3.png',
+        'logoClass' => 'w-full object-contain',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
         'headline'  => 'A trusted partner providing consistent commitment that makes a real difference.',
@@ -28,9 +27,8 @@ $testimonials = [
         'cite_role' => 'Operations at St. Mary\'s Hospital',
     ],
     'charlemont' => [
-        'logo'      => '/images/sectors/charlemontgroupsquare.png',
+        'logo'      => '/images/sectors/charlemontgroup.png',
         'logoClass' => 'h-[280px] w-auto object-contain',
-        'pillsClass' => 'mt-4',
         'name'      => 'Charlemont Group',
         'pills'     => ['Long-Term Partnership', 'Reliable Service', 'Fast Response', 'Minimal Disruption'],
         'headline'  => 'A reliable partner we can always count on to keep our operations running smoothly.',
@@ -39,9 +37,8 @@ $testimonials = [
         'cite_role' => 'Facilities Manager at Charlemont Group',
     ],
     'laundryonline' => [
-        'logo'      => '/images/sectors/laundryonlinesquare2.png',
+        'logo'      => '/images/sectors/laundryonlinesquare.png',
         'logoClass' => 'h-[280px] w-auto object-contain',
-        'pillsClass' => 'mt-4',
         'name'      => 'Laundry Online',
         'pills'     => ['Equipment Supply', 'Quick Turnaround', 'Dependable Support', 'Service Contract'],
         'headline'  => 'Professional, knowledgeable and always quick to respond when it matters most.',
@@ -52,7 +49,6 @@ $testimonials = [
     'abbvie' => [
         'logo'      => '/images/logo/abbvie.png',
         'logoClass' => 'h-[160px] w-auto object-contain',
-        'pillsClass' => 'mt-4',
         'name'      => 'AbbVie',
         'pills'     => ['Fast Response', 'Maintenance & Repair', 'Service Contract', 'Dependable Support'],
         'headline'  => 'They provide excellent support and a dependable experience we can always count on.',
@@ -87,12 +83,13 @@ $showChrome = ! $single && count($slides) > 1;
             }"
             @keydown.arrow-right.window="next()"
             @keydown.arrow-left.window="prev()"
-            class="relative max-w-6xl mx-auto"
+            class="relative"
             role="region"
             aria-roledescription="carousel"
             aria-label="Customer testimonials"
             aria-live="polite"
         >
+            {{-- Slides stacked in the same grid cell --}}
             <div class="grid [&>*]:[grid-area:1/1]">
                 @foreach ($slides as $i => $t)
                     <article
@@ -100,65 +97,89 @@ $showChrome = ! $single && count($slides) > 1;
                         aria-roledescription="slide"
                         aria-label="{{ $i + 1 }} of {{ count($slides) }}"
                         :aria-hidden="active !== {{ $i }}"
-                        class="transition-opacity duration-500 rounded-2xl bg-white shadow-sm border border-navy/5 p-8 lg:p-12"
+                        class="transition-opacity duration-500 rounded-2xl overflow-hidden border border-navy/[0.07] shadow-sm"
                         :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                     >
-                        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
+                        <div class="grid grid-cols-1 lg:grid-cols-12">
 
-                            {{-- LEFT: logo + pills --}}
-                            <aside class="lg:col-span-4 flex flex-col justify-center">
-                                @if (!empty($t['logo']))
-                                <img
-                                    src="{{ $t['logo'] }}"
-                                    alt="{{ $t['name'] }} logo"
-                                    class="{{ $t['logoClass'] ?? 'h-14 lg:h-16 w-auto object-contain' }}"
-                                    onerror="this.outerHTML='<div class=&quot;inline-flex items-center h-14 lg:h-16 px-5 rounded-md bg-[#f7f8fa] border border-navy/10 font-heading font-bold uppercase tracking-wider text-navy text-sm&quot;>{{ $t['name'] }}</div>'"
-                                >
-                                @endif
-                                @if (!empty($t['image']))
-                                <img
-                                    src="{{ $t['image'] }}"
-                                    alt="{{ $t['name'] }}"
-                                    class="w-full rounded-xl object-cover"
-                                    style="height:180px;"
-                                >
-                                @endif
-                                <div class="{{ isset($t['pillsClass']) ? $t['pillsClass'] : 'mt-6' }} flex flex-wrap gap-2">
+                            {{-- ── LEFT PANEL: logo + pills ── --}}
+                            <aside class="lg:col-span-4 bg-white border-b lg:border-b-0 lg:border-r border-navy/[0.07] flex flex-col items-center justify-center gap-6 p-8 lg:p-10">
+
+                                {{-- Logo / Image --}}
+                                <div class="w-full flex items-center justify-center">
+                                    @if (!empty($t['logo']))
+                                        @php $logoFallback = $t['name']; @endphp
+                                        <img
+                                            src="{{ $t['logo'] }}"
+                                            alt="{{ $t['name'] }} logo"
+                                            class="{{ $t['logoClass'] ?? 'h-16 w-auto object-contain' }}"
+                                            onerror="this.outerHTML='<div class=&quot;font-heading font-bold uppercase tracking-wider text-navy text-sm px-5 py-3 rounded-lg bg-white border border-navy/10&quot;>{{ $logoFallback }}</div>'"
+                                        >
+                                    @elseif (!empty($t['image']))
+                                        <img
+                                            src="{{ $t['image'] }}"
+                                            alt="{{ $t['name'] }}"
+                                            class="w-full rounded-xl object-cover"
+                                            style="height:200px;"
+                                        >
+                                    @endif
+                                </div>
+
+                                {{-- Mini Pills --}}
+                                <div class="flex flex-wrap gap-2 justify-center">
                                     @foreach ($t['pills'] as $pill)
                                         <span class="inline-flex items-center rounded-full px-3 py-1 text-xs font-body font-bold uppercase tracking-wider bg-[#148af4]/10 text-[#148af4]">
                                             {{ $pill }}
                                         </span>
                                     @endforeach
                                 </div>
+
                             </aside>
 
-                            {{-- RIGHT: quote icon, headline, body, signature --}}
-                            <div class="lg:col-span-8">
-                                <svg class="w-10 h-10 mb-4" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true" style="transform: rotate(180deg);">
+                            {{-- ── RIGHT PANEL: pull-quote ── --}}
+                            <div class="lg:col-span-8 bg-white flex flex-col justify-center p-8 lg:p-12 xl:p-14">
+
+                                {{-- Opening quote mark (light blue) --}}
+                                <svg class="w-10 h-10 mb-5" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true" style="transform: rotate(180deg);">
                                     <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
                                 </svg>
 
-                                <blockquote class="font-heading font-bold text-navy text-2xl lg:text-3xl xl:text-4xl leading-tight mb-6">
-                                    <p>{{ rtrim($t['headline'], '.') }}</p>
+                                {{-- Headline (navy, bold, large) --}}
+                                <blockquote class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">
+                                    {{ rtrim($t['headline'], '.') }}
                                 </blockquote>
 
-                                <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-8">
-                                    {{ $t['body'] }}<svg display="inline" style="display:inline; vertical-align:middle; margin-left:4px;" width="40" height="40" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/></svg>
+                                {{-- Body (grey) + closing quote mark (inline blue) --}}
+                                <p class="font-body text-gray-500 text-base lg:text-lg leading-relaxed mb-8">
+                                    {{ $t['body'] }}<svg display="inline" style="display:inline; vertical-align:middle; margin-left:4px;" width="36" height="36" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/></svg>
                                 </p>
 
-                                <cite class="not-italic block">
-                                    <span class="block font-body font-bold text-[#148af4] text-base lg:text-lg">{{ $t['cite_name'] }}</span>
-                                    <span class="block font-heading font-bold text-navy text-sm lg:text-base">{{ $t['cite_role'] }}</span>
-                                </cite>
-                            </div>
+                                {{-- Divider --}}
+                                <div class="border-t border-navy/[0.07] mb-6"></div>
 
+                                {{-- Signature: avatar + name (blue) + role (navy) --}}
+                                <cite class="not-italic flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-full bg-[#148af4]/10 flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.5" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <span class="block font-body font-bold text-[#148af4] text-base">{{ $t['cite_name'] }}</span>
+                                        <span class="block font-heading font-bold text-navy text-sm">{{ $t['cite_role'] }}</span>
+                                    </div>
+                                </cite>
+
+                            </div>
                         </div>
                     </article>
                 @endforeach
             </div>
 
+            {{-- Carousel controls --}}
             @if ($showChrome)
                 <div class="mt-8 flex items-center justify-between">
+
                     {{-- Dot pager --}}
                     <div class="flex items-center gap-2">
                         @foreach ($slides as $i => $t)
@@ -166,7 +187,7 @@ $showChrome = ! $single && count($slides) > 1;
                                 type="button"
                                 @click="go({{ $i }})"
                                 :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
-                                class="h-2 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2"
+                                class="h-2 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2"
                                 aria-label="Go to slide {{ $i + 1 }}"
                                 :aria-current="active === {{ $i }} ? 'true' : 'false'"
                             ></button>
@@ -178,7 +199,7 @@ $showChrome = ! $single && count($slides) > 1;
                         <button
                             type="button"
                             @click="prev()"
-                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2 flex items-center justify-center"
+                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2 flex items-center justify-center"
                             aria-label="Previous testimonial"
                         >
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -188,7 +209,7 @@ $showChrome = ! $single && count($slides) > 1;
                         <button
                             type="button"
                             @click="next()"
-                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2 flex items-center justify-center"
+                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2 flex items-center justify-center"
                             aria-label="Next testimonial"
                         >
                             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
@@ -196,9 +217,10 @@ $showChrome = ! $single && count($slides) > 1;
                             </svg>
                         </button>
                     </div>
+
                 </div>
             @endif
-        </div>
 
+        </div>
     </div>
 </section>

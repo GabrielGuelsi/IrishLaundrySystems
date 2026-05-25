@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('pageTitle', 'Contact Irish Laundry Systems | Request a Service Assessment')
 @section('metaDescription', 'Request an assessment for service contracts, rental options, breakdown support or equipment planning. We confirm next steps and availability once we have site details.')
@@ -22,7 +22,7 @@
         </div>
 
         <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-widest mb-3">Request received</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-4">We'll be in touch shortly.</h2>
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-4">We'll be in touch shortly</h2>
         <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-12">
             Your request has been sent. One of our engineers will review your details and confirm the next step with you.
         </p>
@@ -127,7 +127,7 @@
                     {{-- Left: heading --}}
                     <div class="lg:col-span-3">
                         <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-3">
-                            What to <span class="text-[#148af4]">include</span>.
+                            What to <span class="text-[#148af4]">include</span>
                         </h2>
                         <p class="font-body text-white/60 text-sm leading-relaxed">
                             Share these details to get the most accurate and fastest response.

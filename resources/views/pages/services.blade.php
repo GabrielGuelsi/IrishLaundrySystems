@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('pageTitle', 'Commercial Laundry Services | Service Contracts, Repairs, Rental & Parts | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry services across Ireland — service contracts, repairs and call-outs, equipment rental, and genuine Electrolux parts and aftercare.')
@@ -42,7 +42,7 @@
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
                 <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Find the <span class="text-[#148af4]">right service route</span> for your commercial laundry site.
+                    Find the <span class="text-[#148af4]">right service route</span> for your commercial laundry site
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
@@ -82,7 +82,7 @@
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Services Overview</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight text-balance">
-                    Start with what is happening on-site, then choose the <span class="text-[#148af4]">right route</span>.
+                    Start with what is happening on-site, then choose the <span class="text-[#148af4]">right route</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -138,7 +138,7 @@
         <div class="max-w-3xl mb-10 lg:mb-12">
             <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight">
-                Service routes shaped by equipment knowledge, <span class="text-[#148af4]">site experience</span> and long-term customers.
+                Service routes shaped by equipment knowledge, <span class="text-[#148af4]">site experience</span> and long-term customers
             </h2>
         </div>
 
@@ -286,7 +286,7 @@
         <div class="text-center">
             <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">How It Works</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                From site pressure to the <span class="text-[#148af4]">right next step</span>.
+                From site pressure to the <span class="text-[#148af4]">right next step</span>
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed max-w-3xl mx-auto">
                 The service route depends on what is happening in the laundry room. Irish Laundry Systems looks at the equipment, the site pressure and the practical next step before directing the enquiry.
@@ -327,7 +327,7 @@
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Installed Base</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
-                    <span class="text-[#148af4]">Support &amp; Aftercare</span> for equipment already working on-site.
+                    <span class="text-[#148af4]">Support &amp; Aftercare</span> for equipment already working on-site
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-6">
                     After a repair, service visit, rental decision or equipment recommendation, the next step often depends on what is already installed. Irish Laundry Systems helps keep service history, parts route, follow-up work and equipment decisions connected around the installed base.
@@ -374,7 +374,7 @@
         <div class="max-w-3xl mb-8 lg:mb-10">
             <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Customer Trust</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                Trusted by sites that need <span class="text-[#148af4]">clear technical direction</span>.
+                Trusted by sites that need <span class="text-[#148af4]">clear technical direction</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed">
                 Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service continuity.

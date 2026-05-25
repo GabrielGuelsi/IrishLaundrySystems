@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('pageTitle', 'Resources | Guides, Checklists & Industry Insights | ILS')
 @section('metaDescription', 'Practical guides, checklists and reference material to help commercial laundry operators manage equipment, reduce downtime and stay compliant.')
@@ -441,7 +441,7 @@
                         Stay Informed
                     </span>
                     <h2 class="font-heading font-bold text-navy text-2xl lg:text-4xl leading-tight mb-4">
-                        Get new resources<br>as they're published.
+                        Get new resources<br>as they're published
                     </h2>
                     <p class="font-body text-gray-500 text-sm leading-relaxed max-w-md mb-8">
                         New guides, checklists and technical references — sent directly when available. No marketing, no frequency commitments.
