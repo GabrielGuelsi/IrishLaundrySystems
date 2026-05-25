@@ -196,7 +196,7 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/hygiene-icon.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/healthcare/hygiene-icon.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
@@ -218,7 +218,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/control-icon.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/healthcare/control-icon.jpg" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -433,8 +433,8 @@
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
                 Engineered for healthcare environments
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                The right equipment plan depends on room configuration, linen flow, wash demand, drying pressure, finishing requirements and the service structure behind the installed equipment.
+            <p class="font-body text-gray-500 text-base leading-relaxed whitespace-nowrap">
+                The right equipment plan depends on room configuration, linen flow, wash demand, drying pressure,<br>finishing requirements and the service structure behind the installed equipment.
             </p>
         </div>
 
