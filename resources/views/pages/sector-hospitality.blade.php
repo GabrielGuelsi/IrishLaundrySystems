@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('meta')
 <meta name="description" content="Hospitality laundry support for hotels and hospitality sites — equipment selection, installation, service contracts, repairs, parts and aftercare across Ireland.">
@@ -16,7 +16,7 @@
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Support</p>
                 <h1 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-4">
-                    Protect <span style="color:#148af4;">guest standards</span> when linen flow,<br>housekeeping and peak periods<br>are under pressure.
+                    Protect <span style="color:#148af4;">guest standards</span> when linen flow,<br>housekeeping and peak periods<br>are under pressure
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Hotels, guesthouses and hospitality sites depend on clean towels, bedding, robes, uniforms and guest items moving on time. Irish Laundry Systems helps properties specify, rent, maintain and support Electrolux Professional laundry equipment around guest standards, operating cost and daily service pressure.
@@ -41,12 +41,12 @@
 <!-- INTRO COMMERCIAL BLOCK -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Built for Hospitality</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Hospitality</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Hospitality laundry is not only a housekeeping task. It is a <span style="color:#148af4;">guest-standard and cost-control issue</span>.
+                    Hospitality laundry is not only a housekeeping task. It is a <span style="color:#148af4;">guest-standard and cost-control issue</span>
                 </h2>
             </div>
 
@@ -77,9 +77,9 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                Hospitality laundry should protect <span style="color:#148af4;">guest experience</span>,<br>not create pressure behind the scenes.
+                Hospitality laundry should protect <span style="color:#148af4;">guest experience</span>,<br>not create pressure behind the scenes
             </h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-sm leading-relaxed whitespace-nowrap">
                 The right laundry setup helps hotels manage linen availability, housekeeping pressure, peak periods, finishing standards and support around the installed base.
             </p>
         </div>
@@ -147,7 +147,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
-                Stop hotel laundry costs quietly building into the <span style="color:#148af4;">guest experience</span>.
+                Stop hotel laundry costs quietly building<br>into the <span style="color:#148af4;">guest experience</span>
             </h2>
             <p class="font-body text-gray-500 text-sm leading-relaxed">
                 In hospitality, laundry cost can build through energy use, detergent waste, linen replacement, outsourcing, slow turnaround, staff time and reactive repairs.
@@ -158,53 +158,57 @@
 
             {{-- Metric 1 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">65%</div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">dryer energy saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
             {{-- Metric 2 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base">Over</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">30%+</div>
+                <span class="font-body font-bold text-[#148af4] text-base">Over</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">30%+</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">detergent-cost saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">detergent-cost saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient Dosing can save over 30% on detergent costs by helping use only the right amount of detergent at each cycle.</p>
             </div>
 
             {{-- Metric 3 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">90%</div>
+                <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">90%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">lifecycle cost pressure</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">lifecycle cost pressure</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up the majority of lifecycle cost.</p>
             </div>
 
             {{-- Metric 4 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">35<span class="text-2xl">min</span></div>
+                <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">35<span class="text-2xl">min</span></div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">Heat Pump drying cycle</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">Heat Pump drying cycle</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Line 6000 Heat Pump Dryers can complete a cycle in 35 minutes, supporting faster linen movement during busy service periods.</p>
             </div>
 
             {{-- Business 5 --}}
             <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-                <div class="h-4"></div>
-                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Lower outsourcing<br>and delay pressure</h3>
+                <div class="flex items-center gap-2">
+                    <h3 class="font-heading font-bold text-[#148af4] leading-snug">
+                        <span class="text-2xl">Lower<br>outsourcing</span><br>
+                        <span class="text-base">and delay pressure</span>
+                    </h3>
+                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment, rental, maintenance, repairs and aftercare so hotels are not forced to manage laundry only when linen flow is already under pressure.</p>
             </div>
 
@@ -218,9 +222,9 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Routes</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support hospitality laundry.
+                Four ways we support hospitality laundry
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed whitespace-nowrap">
                 Hotels and hospitality sites often need equipment, maintenance, response and aftercare to work around the same <span style="color:#148af4;">linen flow</span>, guest standards and busy-period pressure.
             </p>
         </div>
@@ -236,7 +240,7 @@
                     'pos'    => '50% 35%',
                 ],
                 [
-                    'title'  => 'Preventive Maintenance Contracts',
+                    'title'  => 'Preventive Contracts',
                     'text'   => 'For hotels that need planned visits, service visibility and fewer reactive maintenance decisions around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
@@ -335,7 +339,7 @@
         <div class="mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                Equipment for <span style="color:#148af4;">hospitality laundry</span>.
+                Equipment for <span style="color:#148af4;">hospitality laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space, guest-facing requirements and the support behind the installed base.
@@ -672,7 +676,7 @@
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-            Our process keeps the <span style="color:#148af4;">next step</span> clear.
+            Our process keeps the <span style="color:#148af4;">next step</span> clear
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
             From the first property assessment through to equipment, rental, maintenance and aftercare, each step should make the next decision easier.
@@ -709,7 +713,7 @@
 </section>
 
 @include('components.service-contracts-strip', [
-    'headingLine1' => 'Keep equipment, service history and aftercare',
+    'headingLine1' => 'Keep equipment,<br>service history and aftercare',
     'headingLine2' => 'connected around guest standards',
     'body'         => 'Planned maintenance, service history and aftercare help hospitality sites keep laundry equipment easier to manage after installation, rental, repair or replacement.',
 ])

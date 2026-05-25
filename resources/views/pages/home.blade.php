@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('pageTitle', 'Commercial Laundry Engineering Ireland | Preventive Maintenance, Repairs & Equipment | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
@@ -32,7 +32,7 @@
             <div style="max-width: 620px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real cost.
+                    Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real cost
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
@@ -69,7 +69,7 @@
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight text-balance">
-                    Laundry care built around the <span class="text-[#148af4]">site</span>, the equipment and the next practical step.
+                    Laundry care built around the <span class="text-[#148af4]">site</span>, the equipment and the next practical step
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -120,7 +120,7 @@
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-14">
             <div class="max-w-2xl">
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Browse by type</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Equipment categories selected around<br class="hidden lg:inline"> <span class="text-[#148af4]">workflow and output</span>.</h2>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Equipment categories selected around<br class="hidden lg:inline"> <span class="text-[#148af4]">workflow and output</span></h2>
                 <p class="font-body text-gray-500 text-lg mt-4">The right equipment should follow the room, the load profile, the handling process, lifecycle cost and the care behind the installed base.</p>
             </div>
             <a href="{{ route('equipment') }}"

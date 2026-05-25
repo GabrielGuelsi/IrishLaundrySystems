@@ -1,4 +1,4 @@
-{{--
+﻿{{--
     Sector Grid — 2×2 image-card grid
     Used on: homepage.
     Title + description + CTA centered at bottom of each card, always visible.
@@ -12,7 +12,7 @@
             <div class="max-w-3xl">
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                    Care shaped around <span class="text-[#148af4]">real operating environments</span>.
+                    Care shaped around <span class="text-[#148af4]">real operating environments</span>
                 </h2>
             </div>
             <p class="font-body text-gray-600 text-lg leading-relaxed max-w-5xl">

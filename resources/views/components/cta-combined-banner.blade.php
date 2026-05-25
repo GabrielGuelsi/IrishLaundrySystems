@@ -1,4 +1,4 @@
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+﻿<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- Background image pinned to right 60% --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
@@ -17,7 +17,7 @@
 
         {{-- Heading --}}
         <h2 class="font-heading font-bold leading-tight mb-4 text-3xl lg:text-5xl text-white">
-            Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and capacity.
+            Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and capacity
         </h2>
 
         {{-- Description --}}

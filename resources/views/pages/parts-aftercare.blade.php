@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('pageTitle', $title ?? 'Parts & Aftercare | Irish Laundry Systems')
 @section('metaDescription', $metaDescription ?? 'Genuine parts access, service history context and practical aftercare from Irish Laundry Systems.')
@@ -67,7 +67,7 @@
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-5">Parts &amp; Aftercare</p>
 
                 <h1 class="pa-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Parts &amp; aftercare that keep your <span class="text-[#148af4]">installed base</span> connected.
+                    Parts &amp; aftercare that keep your <span class="text-[#148af4]">installed base</span> connected
                 </h1>
 
                 <p class="pa-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-xl">
@@ -116,7 +116,7 @@
 
         <div class="max-w-3xl mb-12 reveal">
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                How aftercare <span class="text-[#148af4]">support</span> starts.
+                How aftercare <span class="text-[#148af4]">support</span> starts
             </h2>
             <p class="font-body text-gray-600 leading-relaxed">
                 A simple start that connects your installed base, parts and service history to the right next action.
@@ -162,7 +162,7 @@
         <div class="max-w-3xl mb-12 lg:mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Parts &amp; Aftercare Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5">
-                Four ways Parts &amp; Aftercare keeps equipment support connected.
+                Four ways Parts &amp; Aftercare keeps equipment support connected
             </h2>
             <p class="font-body text-gray-600 leading-relaxed">
                 Parts support works best when the part, the equipment, the service history and the next support route stay connected.
@@ -284,7 +284,7 @@
         <div class="relative z-10 px-6 sm:px-10 lg:px-20 py-16 lg:py-20 lg:max-w-[60%]">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4 reveal">Beyond the Part</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl xl:text-5xl leading-tight mb-6 reveal">
-                More than a part. <span class="text-[#148af4]">The right outcome</span>.
+                More than a part. <span class="text-[#148af4]">The right outcome</span>
             </h2>
             <div class="space-y-4 max-w-xl reveal">
                 <p class="font-body text-gray-600 leading-relaxed">
@@ -314,7 +314,7 @@
     <div class="absolute inset-0 pa-dotgrid opacity-60"></div>
     <div class="relative max-w-4xl mx-auto px-6 sm:px-10 text-center">
         <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-5 reveal">
-            Parts support starts with the <span class="text-[#148af4]">right equipment context</span>.
+            Parts support starts with the <span class="text-[#148af4]">right equipment context</span>
         </h2>
         <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed max-w-2xl mx-auto reveal">
             The more accurate the information we have, the faster and more confidently we can identify the right part and the right solution.
@@ -342,7 +342,7 @@
             {{-- 10. CHECKLIST CARD --}}
             <div class="reveal bg-bg rounded-2xl p-8 lg:p-10">
                 <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                    What helps us identify the <span class="text-[#148af4]">right part</span>.
+                    What helps us identify the <span class="text-[#148af4]">right part</span>
                 </h2>
                 <p class="font-body text-gray-600 text-sm leading-relaxed mb-7">
                     Please share the following details so we can identify the right part and solution.
@@ -382,7 +382,7 @@
                 <div class="absolute inset-0 pa-dotgrid opacity-50"></div>
                 <div class="relative">
                     <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-3">
-                        How parts &amp; aftercare works <span class="text-[#148af4]">day-to-day</span>.
+                        How parts &amp; aftercare works <span class="text-[#148af4]">day-to-day</span>
                     </h2>
                     <p class="font-body text-blue-200 text-sm leading-relaxed mb-8">
                         A clear process to get the right part to the right place, faster.
@@ -453,7 +453,7 @@
             <div class="lg:col-span-3">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4 reveal">Installed Base Support</p>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl xl:text-5xl leading-tight mb-5 reveal">
-                    Authorised partner. <span class="text-[#148af4]">Connected aftercare</span>.
+                    Authorised partner. <span class="text-[#148af4]">Connected aftercare</span>
                 </h2>
                 <p class="font-body text-gray-600 leading-relaxed mb-7 max-w-xl reveal">
                     As an Authorised Electrolux Professional Partner, we give you the parts, service history and technical information that help keep your equipment performing.
@@ -515,7 +515,7 @@
                 </svg>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base lg:text-lg leading-tight mb-1">
-                        What parts &amp; aftercare changes <span class="text-[#148af4]">day-to-day</span>.
+                        What parts &amp; aftercare changes <span class="text-[#148af4]">day-to-day</span>
                     </h3>
                     <p class="font-body text-gray-600 text-xs lg:text-sm leading-snug">
                         The right information helps Irish Laundry Systems connect the part, service history and next support route before the issue becomes more time-consuming.
@@ -598,7 +598,7 @@ $partsFaqs = [
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Request Parts &amp; Aftercare Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                Tell us about your <span class="text-[#148af4]">equipment</span> and what you need.
+                Tell us about your <span class="text-[#148af4]">equipment</span> and what you need
             </h2>
             <p class="font-body text-gray-600 leading-relaxed">
                 Share the details that help us identify the right part, service history or support route.

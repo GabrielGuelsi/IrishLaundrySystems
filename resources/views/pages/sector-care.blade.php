@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 
 @section('meta')
 <meta name="description" content="Care facility laundry support — equipment selection, installation, service contracts, repairs, parts and aftercare for care facilities across Ireland.">
@@ -15,7 +15,7 @@
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                    Keep <span style="color:#148af4;">daily care moving</span><br>without laundry becoming<br>another management problem.
+                    Keep <span style="color:#148af4;">daily care moving</span><br>without laundry becoming<br>another management problem
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Care facility laundry rooms handle resident clothing, bedding, towels and staff items every day. Irish Laundry Systems helps care homes specify, rent, maintain and support Electrolux Professional laundry equipment around daily demand, hygiene needs, staff pressure and running cost.
@@ -41,12 +41,12 @@
 <!-- 4. INTRO COMMERCIAL BLOCK -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Built for Care</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Care</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Care home laundry is part of <span style="color:#148af4;">daily care</span>,<br>not a back-room task.
+                    Care home laundry is part of <span style="color:#148af4;">daily care</span>,<br>not a back-room task
                 </h2>
             </div>
 
@@ -77,33 +77,11 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Demand</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                Laundry support for <span style="color:#148af4;">resident items, linen flow</span><br>and day-to-day use.
+                Laundry support for <span style="color:#148af4;">resident items, linen flow</span><br>and day-to-day use
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
                 Care facility laundry needs to move through the week without creating extra strain for managers, care teams or residents. The right setup should account for clothing, bedding, towels, staff items, hygiene handling, drying pressure and service needs.
             </p>
-            <ul class="space-y-2">
-                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Resident clothing, bedding and towels
-                </li>
-                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Staff-friendly wash and dry routines
-                </li>
-                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Daily output planned around site use
-                </li>
-                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Barrier options where separation is required
-                </li>
-                <li class="flex items-start gap-3 font-body text-gray-600 text-base">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#148af4] mt-2 flex-shrink-0"></span>
-                    Service structure behind the installed equipment
-                </li>
-            </ul>
         </div>
 
         <!-- Image + Navy overlay card -->
@@ -117,15 +95,15 @@
 
             <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
-                    Care facility laundry needs a <span style="color:#148af4;">system designed for care</span>.
+                    Care facility laundry needs a <span style="color:#148af4;">system designed for care</span>
                 </h3>
                 <ul class="space-y-3">
                     @foreach([
-                        'Resident clothing and linen handled with practical separation',
-                        'Staff-friendly workflows that reduce unnecessary handling',
-                        'Fabric care that supports resident items',
-                        'Daily output planned around site pressure',
-                        'Local support and parts access for continuity',
+                        'Resident clothing, bedding and towels',
+                        'Staff-friendly wash and dry routines',
+                        'Daily output planned around site use',
+                        'Barrier options where separation is required',
+                        'Service structure behind the installed equipment',
                     ] as $point)
                     <li class="flex items-center gap-3">
                         <span class="w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
@@ -146,10 +124,10 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-3">
-                Care facility laundry should <span style="color:#148af4;">support daily care</span>,<br>not create another pressure point.
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
+                Care facility laundry should <span style="color:#148af4;">support daily care</span>, not create another pressure point
             </h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-sm leading-relaxed">
                 Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more manageable day-to-day laundry routines when matched to the right care setting.
             </p>
         </div>
@@ -178,7 +156,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Intelligent control.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/healthcare/control-icon.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -188,7 +166,9 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Drying and finishing flow.jpg" alt="" class="w-24 h-24 object-contain">
+                    <svg class="w-20 h-20 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+                    </svg>
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused process</h3>
@@ -198,11 +178,22 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Service and parts support.jpg" alt="" class="w-24 h-24 object-contain">
+                    <svg class="w-20 h-20 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <!-- Top folded piece -->
+                        <path d="M7 3.75h10a1.5 1.5 0 011.5 1.5v2.5a1.5 1.5 0 01-1.5 1.5H7a1.5 1.5 0 01-1.5-1.5v-2.5A1.5 1.5 0 017 3.75z"/>
+                        <!-- Fold crease line on top piece -->
+                        <path d="M5.5 6.5h13"/>
+                        <!-- Middle folded piece -->
+                        <path d="M4.5 10.25h15a1.5 1.5 0 011.5 1.5v2.5a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-2.5a1.5 1.5 0 011.5-1.5z"/>
+                        <!-- Fold crease line on middle piece -->
+                        <path d="M3 13h18"/>
+                        <!-- Bottom folded piece -->
+                        <path d="M2 16.75h20a1.5 1.5 0 011.5 1.5v2a1.5 1.5 0 01-1.5 1.5H2a1.5 1.5 0 01-1.5-1.5v-2A1.5 1.5 0 012 16.75z"/>
+                    </svg>
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance, DIAMMS and finishing features help support linen quality before storage or return to use.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance, Direct Ironer Advanced Moisture Management System (DIAMMS) and finishing features help support linen quality before storage or return to use.</p>
                 </div>
             </div>
 
@@ -217,7 +208,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
-                Stop <span style="color:#148af4;">laundry costs</span> quietly building up in the care home.
+                Stop <span style="color:#148af4;">laundry costs</span> quietly building up in the care home
             </h2>
             <p class="font-body text-gray-500 text-sm leading-relaxed">
                 In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.
@@ -228,50 +219,58 @@
 
             {{-- Metric 1 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">65%</div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">dryer energy saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
             {{-- Metric 2 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">50%</div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">water saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
             </div>
 
             {{-- Metric 3 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
-                <div>
-                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
-                    <div class="font-heading font-bold text-[#148af4] text-5xl leading-none">75%</div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
+                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">fewer sick days</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
             </div>
 
             {{-- Business 4 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
-                <div class="h-4"></div>
-                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Less detergent<br>and process waste</h3>
+                <div class="flex items-center gap-2">
+                    <h3 class="font-heading font-bold text-[#148af4] leading-snug">
+                        <span class="text-2xl">Less<br>detergent</span><br>
+                        <span class="text-base">and process waste</span>
+                    </h3>
+                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
+                </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
 
             {{-- Business 5 --}}
             <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <svg class="w-8 h-8 text-[#148af4] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
-                <div class="h-4"></div>
-                <h3 class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Lower reactive<br>cost pressure</h3>
+                <div class="flex items-center gap-2">
+                    <h3 class="font-heading font-bold text-[#148af4] leading-snug">
+                        <span class="text-2xl">Lower<br>reactive</span><br>
+                        <span class="text-base">cost pressure</span>
+                    </h3>
+                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects rental, preventive maintenance, repairs and aftercare so care homes are not forced to make every decision after something fails.</p>
             </div>
 
@@ -285,10 +284,10 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Routes</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Four ways we support<br><span style="color:#148af4;">care facility laundry</span>.
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
+                Four ways we support <span style="color:#148af4;">care facility laundry</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 Care facilities often need equipment, maintenance, response and aftercare to work around the same daily laundry routine. These needs should not sit in separate conversations.
             </p>
         </div>
@@ -305,7 +304,7 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Maintenance Contracts',
+                    'title'  => 'Preventive Contracts',
                     'text'   => 'For care homes that need planned visits, service visibility and fewer reactive maintenance decisions around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
@@ -375,7 +374,7 @@
 
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Designed around your</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">care facility, workflow and capacity</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">care facility, workflow<br>and capacity</span>
         </h2>
 
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
@@ -419,10 +418,10 @@
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Equipment for <span style="color:#148af4;">care facility laundry</span>.
+                Equipment for <span style="color:#148af4;">care facility laundry</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the support behind the installed base.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the service structure behind the installed equipment.
             </p>
         </div>
 
@@ -442,11 +441,10 @@
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
-                            'Automatic Savings',
                             'Integrated Savings',
-                            'Intelligent Dosing',
                             'Efficient Dosing',
                             'Power Balance',
+                            'Load control',
                             'Reduced water, energy and detergent waste',
                         ] as $point)
                         <li class="flex items-start gap-2">
@@ -474,16 +472,15 @@
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Tumble Dryers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time</span>, residual moisture and operator handling can affect turnaround through the day.
+                        Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time</span>, residual moisture, operator handling and energy use affect laundry turnaround through the day.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
                             'Up to 65% energy saving with Heat Pump technology',
-                            '35-minute Heat Pump drying cycle in suitable applications',
                             'Moisture Balance to avoid overdrying',
-                            'Smart Energy Management',
                             'Adaptive Fan for energy and drying control',
                             'Certified ergonomic design',
+                            'Lower drying-cost pressure',
                         ] as $point)
                         <li class="flex items-start gap-2">
                             <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
@@ -567,12 +564,11 @@
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
-                            'Flatwork finishing',
-                            'Linen presentation',
-                            'Drying consistency',
-                            'DIAMMS',
-                            'Hygiene Guard',
+                            'Direct Ironer Advanced Moisture Management System (DIAMMS)',
+                            'Hygiene Guard linen rejection when humidity parameters are not respected',
                             'Finishing quality before storage or return to use',
+                            'Ceramic Burner power increase up to 20% on selected gas-heated ironers',
+                            'Operator-friendly finishing flow',
                         ] as $point)
                         <li class="flex items-start gap-2">
                             <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
@@ -660,26 +656,13 @@
             </div>
             </div>
 
-            <!-- 4. BARRIER WASHERS — image left, text right -->
+            <!-- 4. BARRIER WASHERS — text left, image right -->
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div class="flex flex-col">
-                    <img src="/images/equipment/line6000-barrier-washer.webp"
-                         alt="Line 6000 Barrier Washer"
-                         class="w-full h-[440px] object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full flex justify-center">
-                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div class="lg:pt-10">
+                <div class="order-2 lg:order-1 lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Barrier washers support sites where controlled dirty-side loading and clean-side unloading are required as part of the laundry room setup.
+                        Barrier washers support sites where controlled dirty-side loading and clean-side unloading are required as part of the care laundry process.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -687,7 +670,7 @@
                             'AIDO controlled loading and unloading',
                             'Hygiene Watchdog full-cycle completion',
                             'Double-drain water recycling where suitable',
-                            'Process support for controlled laundry routes',
+                            'Risk Analysis and Biocontamination Control (RABC)-aligned process support',
                         ] as $point)
                         <li class="flex items-start gap-2">
                             <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
@@ -704,6 +687,19 @@
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
+                    </div>
+                </div>
+                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
+                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                         alt="Line 6000 Barrier Washer"
+                         class="w-full h-[440px] object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full flex justify-center">
+                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -784,18 +780,18 @@
 @include('components.equipment-categories')
 
 <!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-white">
-    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
+<section class="pt-4 lg:pt-6 pb-14 lg:pb-20 bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-            Our process keeps the <span style="color:#148af4;">next step</span> clear.
+            Our process keeps the <span style="color:#148af4;">next step clear</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed">
             From the first assessment through to equipment, rental, maintenance and aftercare, each step should make the next decision easier.
         </p>
 
-        <div class="flex flex-col sm:flex-row items-start justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
 
             @foreach([
                 ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine, resident-item flow, utilities, capacity and day-to-day pressure.',  'icon' => 'clipboard'],
@@ -804,20 +800,20 @@
                 ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and service model into a practical next step.',                         'icon' => 'Ativo%203'],
             ] as $i => $step)
 
-            @if($i > 0)
-            <div class="hidden sm:flex flex-shrink-0 items-center pt-6 lg:pt-8 px-1 lg:px-2">
-                <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
-                    <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            @endif
-
-            <div class="flex flex-col items-center flex-1 min-w-0 mb-8 sm:mb-0">
-                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                     class="mx-auto mb-4"
-                     style="width:2.8rem;height:2.8rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+            <div class="flex flex-col items-start text-left relative">
+                @if($i < 3)
+                <div class="hidden lg:block absolute -right-8 top-6 text-[#148af4]">
+                    <svg class="w-16 h-8" viewBox="0 0 120 30" fill="none">
+                        <path d="M0 15 L96 15 M78 4 L96 15 L78 26" stroke="#148af4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                @endif
+                <div class="w-full flex justify-center mb-4">
+                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                         style="width:4rem;height:4rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[150px] mx-auto">{{ $step['text'] }}</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
             </div>
 
             @endforeach
