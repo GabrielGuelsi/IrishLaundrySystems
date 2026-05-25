@@ -99,8 +99,8 @@
 
         <div class="mb-12 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Proof & Scale</p>
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight max-w-4xl">
-                Technical work, recognised partners<br>and <span class="text-[#148af4]">real sites served</span> over more than three decades
+            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight whitespace-nowrap">
+                Technical work, recognised partners and <span class="text-[#148af4]">real sites served</span> over more than three decades
             </h2>
         </div>
 
@@ -399,7 +399,7 @@
                         <img src="/images/logo/electrolux-partner.png"
                              alt="Authorised Electrolux Professional Partner"
                              class="h-12 w-auto object-contain flex-shrink-0">
-                        <p class="font-body text-navy text-sm leading-snug">
+                        <p class="font-body font-bold text-navy text-sm leading-snug">
                             Irish Laundry Systems is an <strong>Authorised Electrolux Professional Partner</strong>.
                         </p>
                     </div>

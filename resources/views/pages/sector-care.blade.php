@@ -244,7 +244,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+                    <img src="/images/healthcare/4efa7e72-db03-4f54-8035-2fe7e1a302f4.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>

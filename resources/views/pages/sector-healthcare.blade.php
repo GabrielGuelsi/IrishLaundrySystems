@@ -275,7 +275,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    <img src="/images/healthcare/23ed82a3-e002-4998-a86d-0d6c40858466.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
@@ -286,7 +286,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
+                    <img src="/images/healthcare/5f80d1d5-cddc-403b-a0da-aac2e32f7697.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
@@ -297,7 +297,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+                    <img src="/images/healthcare/4efa7e72-db03-4f54-8035-2fe7e1a302f4.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
@@ -310,7 +310,7 @@
                         <span class="text-2xl">Less<br>detergent</span><br>
                         <span class="text-base">and process waste</span>
                     </h3>
-                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
+                    <img src="/images/healthcare/632ce98e-fa77-44f5-be29-8738cc322e4b.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
