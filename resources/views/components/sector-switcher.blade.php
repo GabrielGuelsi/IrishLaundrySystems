@@ -31,8 +31,8 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
-                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
+                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Healthcare</h3>
+                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily service.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
@@ -49,8 +49,8 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Care Facilities</h3>
-                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
+                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Care Facilities</h3>
+                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
@@ -67,8 +67,8 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Hospitality</h3>
-                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
+                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Hospitality</h3>
+                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         Engineering care for guest-facing sites where linen availability, finishing quality, turnaround and response time affect the wider business.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
@@ -85,8 +85,8 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial<br>&amp; Industrial</h3>
-                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
+                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Commercial &amp; Industrial</h3>
+                    <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         Care for higher-throughput laundry sites where output, lifecycle cost and engineering response carry more operational weight.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">

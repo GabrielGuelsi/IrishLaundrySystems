@@ -8,7 +8,7 @@
 $testimonials = [
     'grace' => [
         'logo'      => '/images/sectors/3.png',
-        'logoClass' => 'w-full object-contain',
+        'logoClass' => 'h-[240px] w-auto object-contain',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
         'headline'  => 'A trusted partner providing consistent commitment that makes a real difference.',
@@ -70,7 +70,7 @@ $showChrome = ! $single && count($slides) > 1;
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         @if (! $single && ! empty($heading))
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-14">{{ $heading }}</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-center mb-14">{!! $heading !!}</h2>
         @endif
 
         <div

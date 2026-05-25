@@ -32,10 +32,10 @@
             <div style="max-width: 620px;">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real cost
+                    Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real&nbsp;cost
                 </h1>
 
-                <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl">
+                <p class="hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl">
                     Irish Laundry Systems helps commercial laundry sites make the right decision around equipment, rental, maintenance, repairs and aftercare, so operational risk, budget pressure and service needs are handled through one clear route.
                 </p>
 
@@ -92,6 +92,7 @@
     'eyebrow'          => 'Services',
     'headingLead'      => 'Choose the right route for ',
     'headingHighlight' => 'your site',
+    'headingTrail'     => '',
     'highlightClass'   => 'text-[#148af4]',
     'intro'            => 'Four practical routes for breakdowns, planned maintenance, rental pressure and ongoing equipment care.',
     'align'            => 'left',
@@ -130,7 +131,7 @@
 @include('components.service-contracts-strip')
 
 <!-- 7. PROOF — TESTIMONIALS -->
-@include('components.testimonials', ['heading' => 'What our customers say.'])
+@include('components.testimonials', ['heading' => 'What our <span class="text-[#148af4]">customers</span> say'])
 
 <!-- TRUST ANCHORS — proof / "Trusted by" logo strip -->
 @include('components.proof-bar')
