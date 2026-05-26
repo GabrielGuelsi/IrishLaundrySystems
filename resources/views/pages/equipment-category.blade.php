@@ -877,9 +877,9 @@
                 </a>
             </div>
             <div class="flex justify-center reveal reveal-right">
-                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}"
+                <img src="{{ asset('images/healthcare/Drying-cabinets_image.webp') }}"
                      alt="Line 6000 Drying Cabinet"
-                     class="w-full max-w-[200px] object-contain drop-shadow-xl">
+                     class="w-full max-w-md object-contain drop-shadow-xl">
             </div>
         </div>
 
@@ -1022,14 +1022,14 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Drying cabinet for mountain clothing" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/healthcare/Drying-cabinets_image.webp') }}" alt="Drying cabinet for mountain clothing" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
         </div>
 
         {{-- Delicate fabrics --}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
             <div class="order-2 lg:order-1 flex justify-center">
-                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Gentle drying for delicate fabrics" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/healthcare/Drying-cabinets_image.webp') }}" alt="Gentle drying for delicate fabrics" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
             <div class="order-1 lg:order-2">
                 <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Gentle drying for delicate fabrics and fine clothing</h3>
@@ -1064,7 +1064,7 @@
                 </div>
             </div>
             <div class="flex justify-center">
-                <img src="{{ asset('images/equipment/Tumble-dryers_Heat-Pump_1-1.webp') }}" alt="Workwear drying cabinet" class="w-full max-w-sm object-contain drop-shadow-lg">
+                <img src="{{ asset('images/healthcare/Drying-cabinets_image.webp') }}" alt="Workwear drying cabinet" class="w-full max-w-sm object-contain drop-shadow-lg">
             </div>
         </div>
 
@@ -1092,6 +1092,227 @@
                     'title' => 'Schools & Multi-Housing',
                     'body'  => 'From children\'s outdoor clothing to resident items in care facilities and apartment laundries — drying cabinets handle a wide range of everyday drying needs.',
                 ],
+            ] as $card)
+            <div class="reveal">
+                <div class="rounded-2xl overflow-hidden mb-5 aspect-[4/3]">
+                    <img src="{{ asset($card['img']) }}" alt="{{ $card['title'] }}" class="w-full h-full object-cover">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['body'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+@endif
+
+@if($categorySlug === 'ironers')
+<!-- IRONERS & FLATWORK INTRO -->
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Split: text left, image right --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-14">
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
+                    Line 6000 Ironers &amp; Flatwork
+                </h2>
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-3">
+                    Professional finishing for linen-heavy environments.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    High-capacity flatwork ironers and chest ironers designed to deliver consistent finishing results — reducing labour time and improving linen presentation across hospitality, healthcare and commercial laundry operations.
+                </p>
+                <a href="#products"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                    GO TO PRODUCTS
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="flex justify-center reveal reveal-right">
+                <img src="{{ asset('images/equipment/line6000-ironer.webp') }}"
+                     alt="Line 6000 Ironer"
+                     class="w-full max-w-md object-contain drop-shadow-xl">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{-- Green stat full-width band --}}
+<div class="w-full py-8" style="background-color: #c8d8a8;">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col sm:flex-row items-center gap-12">
+        <div class="flex-shrink-0 w-28 h-28 rounded-full border-4 border-white/60 flex flex-col items-center justify-center" style="background-color: #a8bc7a;">
+            <span class="font-heading font-bold text-white text-sm leading-none">up to</span>
+            <span class="font-heading font-bold text-white text-3xl leading-none">45m</span>
+            <span class="font-body text-white text-xs leading-tight text-center">Ironing<br>width</span>
+        </div>
+        <div class="text-center sm:text-left">
+            <p class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-2">Outstanding throughput</p>
+            <p class="font-body text-navy/80 text-base lg:text-lg leading-relaxed max-w-xl">
+                High-capacity flatwork ironers process large volumes of linen quickly — reducing finishing time and freeing staff for other tasks across the operation.
+            </p>
+        </div>
+    </div>
+</div>
+
+{{-- ① Key features --}}
+<section class="bg-white border-t border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="py-10 lg:py-14">
+            <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-8 reveal">
+                Finishing excellence across linen-heavy environments
+            </h2>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+                <div class="lg:col-span-2 flex flex-col">
+                    @foreach([
+                        ['icon' => '/images/healthcare/hygiene-icon.jpg', 'alt' => 'Productivity icon', 'title' => 'High-capacity throughput', 'body' => 'Large-roll flatwork ironers process high volumes of sheets, tablecloths and uniforms consistently — reducing manual finishing time and improving operational flow across busy laundry shifts.'],
+                        ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator-friendly design', 'body' => 'Ergonomic feed and fold systems reduce operator fatigue on high-output sites. Controls are designed for straightforward programming and consistent results with minimal training.'],
+                        ['icon' => '/images/healthcare/control-icon.jpg', 'alt' => 'Control icon', 'title' => 'Intelligent heat control', 'body' => 'Precise temperature management across the ironing surface delivers consistent results while protecting fabric quality and reducing energy consumption per load.'],
+                    ] as $feature)
+                    <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
+                        <div>
+                            <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
+                            <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+                {{-- Right: Download + Discover --}}
+                <div class="flex flex-col gap-5 reveal reveal-right">
+
+                    {{-- Download --}}
+                    <div class="bg-navy rounded-2xl p-6">
+                        <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
+                        <ul class="space-y-3">
+                            @foreach([
+                                ['label' => 'Line 6000 Hot Cylinder Ironers',  'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+                                ['label' => 'Line 6000 Tumble Dryers',         'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                            ] as $pdf)
+                            <li>
+                                <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                                    {{ $pdf['label'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+
+                    {{-- Discover --}}
+                    <div class="bg-bg border border-border rounded-2xl p-6">
+                        <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
+                        <ul class="space-y-3">
+                            @foreach([
+                                ['label' => 'Hospital & Healthcare laundry support',    'href' => route('sectors.healthcare')],
+                                ['label' => 'Hotel & Hospitality laundry solutions',    'href' => route('sectors.hospitality')],
+                                ['label' => 'Commercial & industrial laundry support',  'href' => route('sectors.commercial')],
+                            ] as $link)
+                            <li>
+                                <a href="{{ $link['href'] }}" class="flex items-center gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
+                                    <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                                    {{ $link['label'] }}
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{-- ② Feature deep-dives --}}
+<section class="py-14 lg:py-20 bg-white border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 flex flex-col gap-16">
+
+        {{-- Flatwork ironing --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div>
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Flatwork ironing for hotels and healthcare</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Large-roll flatwork ironers are designed for sheets, pillowcases, tablecloths and similar flat linen. Consistent heat and pressure across the full ironing width ensures an even finish at high throughput.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    For hotels and healthcare sites where linen presentation matters, flatwork ironers reduce reliance on manual finishing and deliver consistent results shift after shift.
+                </p>
+                <div class="bg-bg border border-border rounded-xl p-4 flex items-start gap-4">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <div class="text-center">
+                            <svg class="w-7 h-7 text-navy mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                            <p class="font-body font-bold text-navy text-[9px] leading-tight mt-0.5">High<br>Output</p>
+                        </div>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        <strong class="text-navy">Large-roll ironers</strong> deliver consistent finishing output across high volumes of flat linen — reducing manual labour and improving throughput per shift.
+                    </p>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-ironer.webp') }}" alt="Flatwork ironer" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+        </div>
+
+        {{-- Chest ironers --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div class="order-2 lg:order-1 flex justify-center">
+                <img src="{{ asset('images/equipment/IB623_FRONT_NEW.jpg') }}" alt="Chest ironer" class="w-full max-w-sm object-contain drop-shadow-lg">
+            </div>
+            <div class="order-1 lg:order-2">
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Chest ironers for uniforms and shaped garments</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Chest ironers handle uniforms, shirts and shaped garments that flatwork ironers cannot process. They deliver a professional finish on items that would otherwise require hand ironing — reducing time and improving consistency across uniform-heavy operations.
+                </p>
+                <div class="bg-bg border border-border rounded-xl p-4 flex items-start gap-4">
+                    <div class="flex-shrink-0 w-14 h-14 rounded-lg bg-white border border-border flex items-center justify-center p-2">
+                        <div class="text-center">
+                            <svg class="w-7 h-7 text-navy mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <p class="font-body font-bold text-navy text-[9px] leading-tight mt-0.5">Consistent<br>Finish</p>
+                        </div>
+                    </div>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">
+                        <strong class="text-navy">Uniform finishing</strong> at scale — chest ironers deliver a consistent, professional result on shaped garments without the labour cost of hand ironing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {{-- ClarusVibe / control --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center reveal">
+            <div>
+                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Intelligent temperature and speed control</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Line 6000 ironers feature programmable controls allowing operators to set and save ironing programmes for different fabric types and linen categories — reducing setup time and ensuring consistent results across every operator and every shift.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Temperature and feed speed are independently adjustable, giving laundry managers the control needed to protect fabric quality while maintaining throughput.
+                </p>
+            </div>
+            <div class="flex justify-center">
+                <img src="{{ asset('images/equipment/line6000-ironer.webp') }}" alt="Ironer control system" class="w-full max-w-xs object-contain drop-shadow-lg">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{{-- ③ Where you can find our Ironer solutions --}}
+<section class="py-14 lg:py-20 bg-bg border-b border-border">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-10 reveal">Where you can find our Ironer solutions</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            @foreach([
+                ['img' => '/images/about/testimonial-1.jpg',  'title' => 'Hotels & Hospitality', 'body' => 'Deliver consistently presented linen and uniforms across rooms and food service — flatwork ironers reduce manual finishing time and improve output quality.'],
+                ['img' => '/images/healthcare/engineer.jpg',   'title' => 'Healthcare & Care',    'body' => 'Process high volumes of flat linen in healthcare and care home environments — where consistent finishing and high throughput are both essential.'],
+                ['img' => '/images/about/testimonial-2.jpg',  'title' => 'Commercial Laundries', 'body' => 'On-premises and commercial laundry operations use flatwork and chest ironers to deliver a professional finish at volume, reducing per-item finishing cost.'],
             ] as $card)
             <div class="reveal">
                 <div class="rounded-2xl overflow-hidden mb-5 aspect-[4/3]">

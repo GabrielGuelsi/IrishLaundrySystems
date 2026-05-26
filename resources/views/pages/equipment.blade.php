@@ -150,71 +150,66 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <a href="{{ route('equipment.category', 'washers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
-                <div class="w-12 h-12 rounded-2xl bg-steel/10 flex items-center justify-center mb-4 group-hover:bg-steel/20 transition-colors">
-                    <svg class="w-7 h-7 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 011.37.49l1.296 2.247a1.125 1.125 0 01-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 010 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 01-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 01-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 01-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 01-1.369-.49l-1.297-2.247a1.125 1.125 0 01.26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 010-.255c.007-.378-.138-.75-.43-.992l-1.004-.827a1.125 1.125 0 01-.26-1.43l1.297-2.247a1.125 1.125 0 011.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28z"/>
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                    </svg>
+            <a href="{{ route('equipment.category', 'washers') }}" class="group relative rounded-2xl overflow-hidden aspect-[4/3] flex flex-col justify-end">
+                <img src="/images/equipment/commercialwasher.webp" alt="Commercial Washers" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-xl mb-1">Commercial Washers</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-3">Freestanding and built-in commercial washers — from 6kg to high-capacity industrial units. Electrolux Professional range available.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        View washers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Commercial Washers</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Freestanding and built-in commercial washers — from 6kg to high-capacity industrial units. Electrolux Professional range available.</p>
-                <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-bold">
-                    View washers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
             </a>
 
-            <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
-                <div class="w-12 h-12 rounded-2xl bg-orange/10 flex items-center justify-center mb-4 group-hover:bg-orange/20 transition-colors">
-                    <svg class="w-7 h-7 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
-                    </svg>
+            <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="group relative rounded-2xl overflow-hidden aspect-[4/3] flex flex-col justify-end">
+                <img src="/images/equipment/line6000-tumble-dryer.webp" alt="Tumble Dryers" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-xl mb-1">Tumble Dryers</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-3">Gas and electric tumble dryers for commercial operations. Matched capacity to your washer fleet for optimised throughput.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        View tumble dryers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Tumble Dryers</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Gas and electric tumble dryers for commercial operations. Matched capacity to your washer fleet for optimised throughput.</p>
-                <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-bold">
-                    View tumble dryers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
             </a>
 
-            <a href="{{ route('equipment.category', 'barrier-washers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
-                <div class="w-12 h-12 rounded-2xl bg-red-100 flex items-center justify-center mb-4 group-hover:bg-red-200 transition-colors">
-                    <svg class="w-7 h-7 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-                    </svg>
+            <a href="{{ route('equipment.category', 'barrier-washers') }}" class="group relative rounded-2xl overflow-hidden aspect-[4/3] flex flex-col justify-end">
+                <img src="/images/equipment/line6000-barrier-washer.webp" alt="Barrier Washers" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-xl mb-1">Barrier Washers</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-3">Pass-through barrier washers for healthcare and care environments — separating soiled and clean sides for infection control compliance.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        View barrier washers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Barrier Washers</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Pass-through barrier washers for healthcare and care environments — separating soiled and clean sides for infection control compliance.</p>
-                <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-bold">
-                    View barrier washers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
             </a>
 
-            <a href="{{ route('equipment.category', 'ironers') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
-                <div class="w-12 h-12 rounded-2xl bg-navy/10 flex items-center justify-center mb-4 group-hover:bg-navy/20 transition-colors">
-                    <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z"/>
-                    </svg>
+            <a href="{{ route('equipment.category', 'ironers') }}" class="group relative rounded-2xl overflow-hidden aspect-[4/3] flex flex-col justify-end">
+                <img src="/images/equipment/line6000-ironer.webp" alt="Ironers & Flatwork" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-xl mb-1">Ironers &amp; Flatwork</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-3">Commercial flatwork ironers and chest ironers — for linen, table linen and uniform finishing in hospitality and healthcare.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        View ironers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Ironers</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Commercial flatwork ironers and chest ironers — for linen, table linen and uniform finishing in hospitality and healthcare.</p>
-                <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-bold">
-                    View ironers <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
             </a>
 
-            <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="group bg-white border border-border rounded-2xl p-6 hover:border-navy hover:shadow-card-hover transition-all duration-200">
-                <div class="w-12 h-12 rounded-2xl bg-green-100 flex items-center justify-center mb-4 group-hover:bg-green-200 transition-colors">
-                    <svg class="w-7 h-7 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
-                    </svg>
+            <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="group relative rounded-2xl overflow-hidden aspect-[4/3] flex flex-col justify-end">
+                <img src="/images/healthcare/Drying-cabinets_image.webp" alt="Drying Cabinets" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/40 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-xl mb-1">Drying Cabinets</h3>
+                    <p class="font-body text-gray-200 text-sm leading-relaxed mb-3">Drying cabinets for garments, workwear and PPE — maintaining shape and finish while reducing tumble dryer throughput pressure.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        View drying cabinets <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2 group-hover:text-steel transition-colors">Drying Cabinets</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mb-3">Drying cabinets for garments, workwear and PPE — maintaining shape and finish while reducing tumble dryer throughput pressure.</p>
-                <span class="inline-flex items-center gap-1 text-steel text-sm font-body font-bold">
-                    View drying cabinets <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </span>
             </a>
+
         </div>
     </div>
 </section>
