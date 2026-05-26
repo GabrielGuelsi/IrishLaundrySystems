@@ -16,14 +16,14 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
-        <div class="{{ $align === 'center' ? 'text-center mb-12 lg:mb-16' : 'mb-10 lg:mb-12 max-w-3xl' }}">
+        <div class="{{ $align === 'center' ? 'text-center mb-12 lg:mb-16' : 'mb-10 lg:mb-12' }}">
             @if ($eyebrow)
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
             @endif
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 lg:whitespace-nowrap">
                 {{ $headingLead }}<span class="{{ $highlightClass }}">{{ $headingHighlight }}</span>{{ $headingTrail }}
             </h2>
-            <p class="font-body {{ $align === 'center' ? 'text-gray-500 max-w-3xl mx-auto' : 'text-gray-600' }} text-lg leading-relaxed whitespace-nowrap">{{ $intro }}</p>
+            <p class="font-body {{ $align === 'center' ? 'text-gray-500 max-w-3xl mx-auto' : 'text-gray-600 max-w-3xl' }} text-lg leading-relaxed">{{ $intro }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">

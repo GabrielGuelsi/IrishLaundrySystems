@@ -18,7 +18,7 @@
 
         <!-- Trust line -->
         <p class="hidden lg:block font-body text-navy text-xs leading-snug max-w-[200px]">
-            Authorised Electrolux Professional Partner. Irish engineering support since 1987.
+            Authorised Electrolux Professional Partner. Irish engineering expertise since 1987.
         </p>
 
         <!-- Vertical divider -->
@@ -31,21 +31,21 @@
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Local technical team</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Safe Electric registered</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Electrolux Professional equipment knowledge</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">Ongoing aftercare</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">38 Dublin client locations</span>
             </div>
 
         </div>
