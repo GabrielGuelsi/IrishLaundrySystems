@@ -639,7 +639,7 @@
             <div class="rounded-3xl p-8 lg:p-12 text-center"
                  style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-5">
-                    Designed to help <span class="text-steel">reduce operational downtime</span> around essential laundry equipment
+                    Designed to help <span class="text-steel">reduce operational downtime</span> around essential laundry&nbsp;equipment
                 </h2>
                 <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-5">
                     A structured service contract helps commercial sites maintain clearer maintenance planning, more consistent equipment support and improved visibility around equipment condition and servicing requirements.
