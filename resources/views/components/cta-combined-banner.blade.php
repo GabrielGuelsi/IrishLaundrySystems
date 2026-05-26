@@ -12,26 +12,22 @@
     {{-- Content — 60% width matching strip proportion --}}
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
 
-        {{-- Eyebrow --}}
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
-
         {{-- Heading --}}
         <h2 class="font-heading font-bold leading-tight mb-4 text-3xl lg:text-5xl text-white">
-            Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and capacity
+            Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and&nbsp;capacity
         </h2>
 
         {{-- Description --}}
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            Before equipment becomes a cost problem, the room, load profile, utilities, workflow and service needs should be understood together. Irish Laundry Systems helps healthcare sites plan equipment around daily pressure, not just machine capacity.
+            We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day laundry demand.
         </p>
 
-        {{-- 4 horizontal features --}}
+        {{-- 3 horizontal features --}}
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>selection'],
+                ['icon' => 'ativo-20', 'label' => 'Site<br>layout'],
+                ['icon' => 'ativo-10', 'label' => 'Equipment<br>fit'],
                 ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
-                ['icon' => 'ativo-6',  'label' => 'Service<br>structure'],
             ] as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
@@ -47,7 +43,7 @@
         {{-- CTA --}}
         <a href="{{ route('contact') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Talk to Our Team
+            Talk to an Engineer
         </a>
 
     </div>

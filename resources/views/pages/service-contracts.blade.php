@@ -188,10 +188,10 @@
                 </p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    <span class="text-steel">Keep your laundry operation running</span> without costly downtime
+                    <span class="text-steel">Keep your laundry operation running</span> without&nbsp;costly&nbsp;downtime
                 </h1>
 
-                <p class="hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-9 max-w-xl">
+                <p class="hero-desc font-body text-white text-base lg:text-lg leading-relaxed mb-9 max-w-xl">
                     Prevent unexpected breakdowns, reduce repair costs, and keep your commercial laundry equipment operating efficiently with an Irish Laundry Systems Preventive Maintenance Contract.
                 </p>
 
@@ -208,7 +208,7 @@
                     </a>
                 </div>
 
-                <div class="hero-trust mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-blue-200/90">
+                <div class="hero-trust mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-white">
                     <span class="inline-flex items-center gap-2">
                         <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
                         Fast engineer response
@@ -240,38 +240,38 @@
      3. COMMERCIAL INTRO / WHY PREVENTIVE MAINTENANCE CONTRACTS MATTER
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
+            Why Preventive Maintenance Contracts Matter
+        </p>
+        <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-20 items-start">
 
-            {{-- Left column --}}
-            <div class="lg:col-span-5 reveal">
-                <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-5">
-                    Why Preventive Maintenance Contracts Matter
-                </p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight">
-                    A <span class="text-steel">proactive protection plan</span><br class="hidden lg:block">
-                    for essential commercial<br class="hidden lg:block">
+            {{-- Left column: heading --}}
+            <div class="reveal">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl leading-tight">
+                    A <span class="text-steel">proactive protection plan</span><br>
+                    for essential commercial<br>
                     laundry equipment
                 </h2>
             </div>
 
-            {{-- Right column --}}
-            <div class="lg:col-span-7 reveal" style="transition-delay:120ms;">
-                <p class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-6">
+            {{-- Right column: lead + body + CTA --}}
+            <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
+                <p class="font-body font-bold text-navy text-xl leading-snug">
                     Equipment failures can disrupt operations, delay linen turnaround and create unnecessary pressure for staff.
                 </p>
-                <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-lg leading-relaxed">
                     Irish Laundry Systems Preventive Maintenance Contracts are designed to help businesses reduce downtime through planned maintenance, priority support and proactive servicing.
                 </p>
-                <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-8">
+                <p class="font-body text-gray-600 text-lg leading-relaxed">
                     With regular inspections and expert support, issues can often be identified before they become major breakdowns.
                 </p>
                 <a href="#book-visit-form"
                    data-ga-cta="intro-book-visit"
-                   class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-2 w-fit">
                     Book a Preventive Maintenance Visit
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </a>
             </div>
@@ -283,14 +283,13 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      4. WHAT YOU GAIN — 6 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-bg">
+<section class="py-12 lg:py-16 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-3xl mx-auto text-center mb-14 lg:mb-16">
+        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal" style="transition-delay:80ms;">
-                <span class="text-steel">What you gain</span> with an<br class="hidden md:block">
-                Irish Laundry Systems<br class="hidden md:block">
+                <span class="text-steel">What you gain</span> with an Irish Laundry Systems<br class="hidden md:block">
                 Preventive Maintenance Contract
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed reveal" style="transition-delay:160ms;">
@@ -333,20 +332,14 @@
         ];
         @endphp
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
             @foreach ($gainCards as $i => $card)
-            <article class="group relative overflow-hidden bg-white rounded-3xl border border-navy/5 p-7 lg:p-8 flex flex-col gap-5 reveal transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.18)] hover:border-steel/30" style="transition-delay:{{ $i * 60 }}ms;">
-                <span aria-hidden="true" class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-steel to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-300"></span>
-                <span aria-hidden="true" class="pointer-events-none absolute top-4 right-5 font-heading font-bold text-navy/[0.06] text-7xl lg:text-8xl leading-none tracking-tight select-none transition-all duration-500 group-hover:text-steel/[0.10] group-hover:scale-105">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</span>
-
-                <div class="relative w-14 h-14 rounded-full flex items-center justify-center bg-gradient-to-br from-steel/15 via-steel/10 to-white ring-1 ring-inset ring-steel/25 shadow-[inset_0_1px_2px_rgba(255,255,255,0.8),0_4px_12px_-4px_rgba(20,138,244,0.25)] transition-transform duration-300 group-hover:scale-110">
-                    <svg class="w-7 h-7 text-steel relative" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                        {!! $card['svg'] !!}
-                    </svg>
-                </div>
-
-                <h3 class="relative font-heading font-bold text-navy text-lg lg:text-xl leading-snug">{{ $card['title'] }}</h3>
-                <p class="relative font-body text-gray-600 text-sm lg:text-base leading-relaxed">{{ $card['text'] }}</p>
+            <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
+                <svg class="w-11 h-11 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                    {!! $card['svg'] !!}
+                </svg>
+                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['text'] }}</p>
             </article>
             @endforeach
         </div>
@@ -360,12 +353,10 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-3xl mb-12 lg:mb-14">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What's Included</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal" style="transition-delay:80ms;">
-                <span class="text-steel">What's included</span> in a<br class="hidden md:block">
-                Preventive Maintenance<br class="hidden md:block">
-                Contract
+        <div class="max-w-5xl mb-12 lg:mb-14">
+            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">What's Included</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal" style="transition-delay:80ms;">
+                <span class="text-steel">What's included</span> in a<br class="hidden lg:block">Preventive Maintenance Contract
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed reveal" style="transition-delay:160ms;">
                 A clear maintenance structure around the equipment already in operation.
@@ -390,12 +381,12 @@
             <div class="lg:col-span-7">
                 @php
                 $includedItems = [
-                    ['title' => 'Scheduled preventive maintenance visits',     'text' => 'Planned maintenance visits are scheduled around your equipment and site requirements to help identify wear, servicing needs and developing faults before they become larger operational issues.'],
+                    ['title' => 'Scheduled preventive maintenance visits',     'text' => 'Planned visits scheduled around your equipment and site needs to identify wear and developing faults early.'],
                     ['title' => 'Equipment inspections and testing',            'text' => 'Inspection and testing to check machine condition, performance and safety.'],
                     ['title' => 'Preferential call-out support',                'text' => 'Service contract customers benefit from structured engineering support, including preferential labour rates for reactive call-outs where applicable.'],
                     ['title' => 'Fault diagnosis',                              'text' => 'Engineer assessment when issues are identified during maintenance or reported between visits.'],
                     ['title' => 'Performance and safety checks',                'text' => 'Checks to help keep essential laundry equipment operating properly and safely.'],
-                    ['title' => 'Service reporting',                            'text' => 'Detailed engineer reporting and maintenance records help sites track servicing history, identify recurring equipment issues and maintain clearer documentation for operational audits and inspection processes.'],
+                    ['title' => 'Service reporting',                            'text' => 'Engineer reporting and maintenance records help track servicing history, recurring issues and audit documentation.'],
                     ['title' => 'Recommendations for wear-and-tear items',      'text' => 'Clear recommendations where wear-and-tear items or follow-up work may be needed.'],
                     ['title' => 'Technical support and assistance',             'text' => 'Direct access to experienced engineers for telephone support and practical assistance when equipment issues arise.'],
                 ];
@@ -415,167 +406,112 @@
                     </li>
                     @endforeach
                 </ul>
-
-                {{-- Parts clarification note --}}
-                <div class="mt-8 bg-amber-50 border border-amber-200 rounded-2xl p-4 lg:p-5 reveal" style="transition-delay:480ms;">
-                    <div class="flex items-start gap-3">
-                        <div class="w-9 h-9 rounded-lg bg-amber-100 border border-amber-200 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/>
-                            </svg>
-                        </div>
-                        <p class="font-body text-amber-900 text-sm leading-relaxed">
-                            <span class="font-bold uppercase tracking-widest text-amber-700 text-xs block mb-1">Parts clarification</span>
-                            Parts are charged separately where required. Preventive Maintenance Contracts do not include replacement parts unless separately agreed in the contract scope.
-                        </p>
-                    </div>
-                </div>
             </div>
 
         </div>
+
+        {{-- Parts clarification strip — thin horizontal, full-width below grid --}}
+        <div class="mt-10 bg-amber-50 border border-amber-200 rounded-xl px-5 py-3 flex items-center gap-3 reveal" style="transition-delay:480ms;">
+            <svg class="w-5 h-5 text-amber-600 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"/>
+            </svg>
+            <p class="font-body text-amber-900 text-sm leading-snug">
+                <span class="font-bold uppercase tracking-wider text-amber-700 text-xs">Parts clarification —</span>
+                Parts are charged separately where required. Preventive Maintenance Contracts do not include replacement parts unless separately agreed in the contract scope.
+            </p>
+        </div>
+
     </div>
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
      6. FINANCIAL VALUE — full-width diptych with imagery
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-bg">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="py-12 lg:py-16 bg-bg relative overflow-hidden">
 
-        {{-- Editorial header — compact, with expandable financial case --}}
-        <div class="max-w-3xl mb-10 lg:mb-12" x-data="{ open: false }">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Financial Value</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-6 reveal" style="transition-delay:80ms;">
-                <span class="text-steel">Protect your maintenance budget</span><br class="hidden lg:block">
-                before small problems become<br class="hidden lg:block">
-                expensive repairs
+    {{-- Decorative ambient blur --}}
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(20,138,244,0.06) 0%, transparent 60%);" aria-hidden="true"></div>
+
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 relative">
+
+        {{-- Centered header — 2-line title --}}
+        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
+            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Financial Value</p>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight tracking-tight mb-4 reveal" style="transition-delay:80ms;">
+                <span class="text-steel">Protect your maintenance budget</span><br>before small problems become expensive repairs
             </h2>
-
-            <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-6 reveal" style="transition-delay:140ms;">
+            <p class="font-body text-gray-600 text-base leading-relaxed reveal" style="transition-delay:140ms;">
                 Many businesses compare contract cost with doing nothing. Waiting for breakdowns can create emergency call-outs, longer downtime, production delays and unplanned repair costs.
             </p>
-
-            <button
-                type="button"
-                @click="open = !open"
-                :aria-expanded="open"
-                aria-controls="fv-disclosure"
-                class="inline-flex items-center gap-2 bg-white border border-steel/30 hover:border-steel text-steel font-body font-bold text-sm px-5 py-2.5 rounded-full transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-steel focus-visible:ring-offset-2 reveal"
-                style="transition-delay:200ms;">
-                <span x-text="open ? 'Hide the financial case' : 'Read the financial case'">Read the financial case</span>
-                <svg :class="open ? 'rotate-180' : ''" class="w-4 h-4 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-                </svg>
-            </button>
-
-            <div
-                id="fv-disclosure"
-                x-show="open"
-                x-cloak
-                x-transition:enter="transition ease-out duration-300"
-                x-transition:enter-start="opacity-0 -translate-y-2"
-                x-transition:enter-end="opacity-100 translate-y-0"
-                x-transition:leave="transition ease-in duration-200"
-                x-transition:leave-start="opacity-100 translate-y-0"
-                x-transition:leave-end="opacity-0 -translate-y-2"
-                class="mt-7 pt-7 border-t border-navy/10 space-y-5">
-                <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed">
-                    Preventive maintenance helps protect the money already invested in commercial laundry equipment. Planned servicing, earlier issue detection, preferential labour rates where applicable and clearer service records can help reduce avoidable repair costs, limit disruption and support longer equipment life.
-                </p>
-                <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed">
-                    For sites using Electrolux Professional equipment, this maintenance-led approach also helps protect performance benefits around energy use, water use, detergent control and lifecycle cost.
-                </p>
-                <div class="bg-white border-l-4 border-steel rounded-r-xl p-5 lg:p-6 shadow-[0_10px_30px_-15px_rgba(1,30,65,0.18)]">
-                    <p class="font-body text-navy text-sm lg:text-base leading-relaxed italic">
-                        Routine servicing can help identify developing issues early, reducing the likelihood of larger failures and helping maintain consistent laundry performance.
-                    </p>
-                </div>
-            </div>
         </div>
 
-        {{-- Diptych: two photo panes, no gap --}}
-        <div class="rounded-3xl overflow-hidden shadow-[0_30px_80px_-30px_rgba(1,30,65,0.35)] reveal" style="transition-delay:120ms;">
-            <div class="grid grid-cols-1 lg:grid-cols-2">
+        {{-- Two separate premium comparison cards --}}
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-7 items-start">
 
-                {{-- WITHOUT pane --}}
-                <article class="relative min-h-[520px] lg:min-h-[680px] overflow-hidden bg-navy">
-                    {{-- Background image --}}
-                    <img src="/images/equipment/td6-multihousing-room.jpg"
-                         alt="A commercial laundry room without active maintenance support"
-                         loading="lazy" decoding="async"
-                         class="absolute inset-0 w-full h-full object-cover"
-                         style="filter: brightness(0.7) saturate(0.85);">
+            {{-- WITHOUT card — neutral, white, subdued --}}
+            <article class="reveal relative bg-white rounded-2xl border border-navy/10 p-7 lg:p-8 flex flex-col gap-5 shadow-[0_8px_24px_-12px_rgba(1,30,65,0.10)]" style="transition-delay:120ms;">
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-100">
+                        <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                    </span>
+                    <span class="font-body font-bold text-gray-500 text-[11px] uppercase tracking-[0.22em]">Without a contract</span>
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight">
+                    The cost of doing nothing
+                </h3>
+                <div class="h-px w-12 bg-gradient-to-r from-gray-300 to-transparent"></div>
+                <ul class="space-y-3">
+                    @foreach (['Emergency call-outs', 'Longer downtime', 'Production delays', 'Unplanned repair costs', 'Potential equipment neglect'] as $item)
+                    <li class="flex items-center gap-3">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-100 ring-1 ring-gray-200 flex items-center justify-center">
+                            <svg class="w-3 h-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </span>
+                        <span class="font-body text-gray-700 text-sm lg:text-base leading-snug">{{ $item }}</span>
+                    </li>
+                    @endforeach
+                </ul>
+            </article>
 
-                    {{-- Cinematic fade-to-solid-navy --}}
-                    <div class="absolute inset-0"
-                         style="background: linear-gradient(180deg, rgba(1,30,65,0.20) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.92) 55%, rgba(1,30,65,1.0) 75%, rgba(1,30,65,1.0) 100%);"
-                         aria-hidden="true"></div>
+            {{-- WITH card — navy premium, recommended --}}
+            <article class="reveal relative rounded-2xl p-7 lg:p-8 flex flex-col gap-5 shadow-[0_24px_60px_-24px_rgba(1,30,65,0.45)] ring-1 ring-steel/30 overflow-hidden" style="background: linear-gradient(155deg, #011E41 0%, #02295A 60%, #011E41 100%); transition-delay:200ms;">
 
-                    {{-- Content sits directly over the solid navy lower band --}}
-                    <div class="relative z-10 h-full flex flex-col justify-end p-8 lg:p-12">
-                        <div class="inline-flex items-center self-start gap-2 bg-white/10 border border-white/15 rounded-full px-3 py-1 mb-6">
-                            <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
-                            <span class="text-[11px] font-body font-bold text-white/85 uppercase tracking-[0.18em]">Without a contract</span>
-                        </div>
-                        <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-7 drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
-                            The cost of doing nothing
-                        </h3>
-                        <ul class="space-y-3">
-                            @foreach (['Emergency call-outs', 'Longer downtime', 'Production delays', 'Unplanned repair costs', 'Potential equipment neglect'] as $item)
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-7 h-7 rounded-full bg-white/10 ring-1 ring-inset ring-white/20 flex items-center justify-center mt-0.5">
-                                    <svg class="w-3.5 h-3.5 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-                                    </svg>
-                                </span>
-                                <span class="font-body text-white/85 text-sm lg:text-base leading-snug pt-1 drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)]">{{ $item }}</span>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </article>
+                {{-- Top gradient accent --}}
+                <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-steel to-transparent" aria-hidden="true"></div>
 
-                {{-- WITH pane --}}
-                <article class="relative min-h-[520px] lg:min-h-[680px] overflow-hidden bg-navy">
-                    {{-- Top steel highlight bar --}}
-                    <div class="absolute inset-x-0 top-0 h-[3px] z-20 bg-gradient-to-r from-transparent via-steel to-transparent" aria-hidden="true"></div>
+                {{-- Recommended badge --}}
+                <span class="absolute top-5 right-5 inline-flex items-center gap-1.5 bg-steel/20 border border-steel/50 rounded-full px-2.5 py-1 text-[10px] font-body font-bold text-steel uppercase tracking-wider">
+                    <svg class="w-3 h-3 fill-steel" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 .587l3.668 7.568L24 9.748l-6 5.853L19.336 24 12 19.897 4.664 24 6 15.601 0 9.748l8.332-1.593z"/>
+                    </svg>
+                    Recommended
+                </span>
 
-                    {{-- Background image (full colour) --}}
-                    <img src="/images/healthcare/customer-care-line6000.jpg"
-                         alt="Irish Laundry Systems engineer providing planned maintenance support"
-                         loading="lazy" decoding="async"
-                         class="absolute inset-0 w-full h-full object-cover">
+                <div class="flex items-center gap-2">
+                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-steel/20 ring-1 ring-steel/40">
+                        <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
+                    </span>
+                    <span class="font-body font-bold text-steel text-[11px] uppercase tracking-[0.22em]">With a PM Contract</span>
+                </div>
+                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight">
+                    A predictable, protected operation
+                </h3>
+                <div class="h-px w-12 bg-gradient-to-r from-steel to-transparent"></div>
+                <ul class="space-y-3">
+                    @foreach (['Planned maintenance', 'Predictable support structure', 'Earlier issue detection', 'Reduced operational disruption', 'Preferential labour rates where applicable', 'Better equipment reliability', 'Clearer service records', 'Longer equipment life'] as $item)
+                    <li class="flex items-center gap-3">
+                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-steel/20 ring-1 ring-steel/50 flex items-center justify-center">
+                            <svg class="w-3 h-3 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                            </svg>
+                        </span>
+                        <span class="font-body text-white text-sm lg:text-base font-medium leading-snug">{{ $item }}</span>
+                    </li>
+                    @endforeach
+                </ul>
+            </article>
 
-                    {{-- Cinematic fade-to-solid-navy --}}
-                    <div class="absolute inset-0"
-                         style="background: linear-gradient(180deg, rgba(1,30,65,0.20) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.92) 55%, rgba(1,30,65,1.0) 75%, rgba(1,30,65,1.0) 100%);"
-                         aria-hidden="true"></div>
-
-                    {{-- Content sits directly over the solid navy lower band --}}
-                    <div class="relative z-10 h-full flex flex-col justify-end p-8 lg:p-12">
-                        <div class="inline-flex items-center self-start gap-2 bg-steel/25 border border-steel/50 rounded-full px-3 py-1 mb-6">
-                            <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
-                            <span class="text-[11px] font-body font-bold text-white uppercase tracking-[0.18em]">With a PM Contract</span>
-                        </div>
-                        <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-7 drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
-                            A predictable, protected operation
-                        </h3>
-                        <ul class="space-y-3">
-                            @foreach (['Planned maintenance', 'Predictable support structure', 'Earlier issue detection', 'Reduced operational disruption', 'Preferential labour rates where applicable', 'Better equipment reliability', 'Clearer service records', 'Longer equipment life'] as $item)
-                            <li class="flex items-start gap-3">
-                                <span class="flex-shrink-0 w-7 h-7 rounded-full bg-steel/25 ring-1 ring-inset ring-steel/50 flex items-center justify-center mt-0.5">
-                                    <svg class="w-3.5 h-3.5 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                                    </svg>
-                                </span>
-                                <span class="font-body text-white text-sm lg:text-base font-medium leading-snug pt-1 drop-shadow-[0_1px_3px_rgba(0,0,0,0.35)]">{{ $item }}</span>
-                            </li>
-                            @endforeach
-                        </ul>
-                    </div>
-                </article>
-
-            </div>
         </div>
 
     </div>
@@ -702,9 +638,8 @@
         <div class="max-w-3xl mx-auto reveal">
             <div class="rounded-3xl p-8 lg:p-12 text-center"
                  style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-5xl leading-tight mb-5">
-                    Designed to help <span class="text-steel">reduce operational downtime</span><br class="hidden md:block">
-                    around essential laundry equipment
+                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-5">
+                    Designed to help <span class="text-steel">reduce operational downtime</span> around essential laundry&nbsp;equipment
                 </h2>
                 <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-5">
                     A structured service contract helps commercial sites maintain clearer maintenance planning, more consistent equipment support and improved visibility around equipment condition and servicing requirements.
@@ -888,7 +823,7 @@ $faqs = [
     <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-20 pt-12 lg:pt-16 text-center">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Preventive Maintenance FAQs</p>
     </div>
-    @include('components.faq', ['faqs' => $faqs, 'heading' => 'Questions about <span class="text-steel">Preventive Maintenance Contracts</span>.'])
+    @include('components.faq', ['faqs' => $faqs, 'heading' => 'Questions about <span class="text-steel">Preventive Maintenance Contracts</span>'])
 </div>
 
 {{-- ════════════════════════════════════════════════════════════════════════
@@ -909,7 +844,7 @@ $faqs = [
 
         <h2 class="font-heading font-bold leading-tight mb-5">
             <span class="text-white text-3xl lg:text-5xl block">Turn preventive visit findings</span>
-            <span class="text-3xl lg:text-5xl block text-steel">into the right next step.</span>
+            <span class="text-3xl lg:text-5xl block text-steel">into the right next step</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
