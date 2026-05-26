@@ -141,6 +141,58 @@
 
 </section>
 
+<!-- FEATURED PRODUCT LINES -->
+<section class="py-16 lg:py-20 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="mb-10">
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Featured Range</p>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">Equipment built for commercial demand</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="group border border-border rounded-2xl overflow-hidden hover:shadow-card-hover transition-all duration-300">
+                <div class="aspect-[4/3] overflow-hidden bg-bg">
+                    <img src="/images/equipment/commercialwasher.webp" alt="High Spin Commercial Washers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-heading font-bold text-navy text-xl mb-2">High Spin Commercial Washers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">Front-load commercial washers with high-spin extraction — reducing drying time and energy consumption across every load.</p>
+                    <a href="{{ route('equipment.category', 'washers') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-orange text-sm transition-colors">
+                        Discover more <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group border border-border rounded-2xl overflow-hidden hover:shadow-card-hover transition-all duration-300">
+                <div class="aspect-[4/3] overflow-hidden bg-bg">
+                    <img src="/images/equipment/line6000-tumble-dryer.webp" alt="Heat Pump Tumble Dryers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-heading font-bold text-navy text-xl mb-2">Heat Pump Tumble Dryers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">Up to 60% energy saving over conventional vented dryers — with consistent drying results and moisture-sensing auto-stop.</p>
+                    <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-orange text-sm transition-colors">
+                        Discover more <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group border border-border rounded-2xl overflow-hidden hover:shadow-card-hover transition-all duration-300">
+                <div class="aspect-[4/3] overflow-hidden bg-bg">
+                    <img src="/images/equipment/line6000-barrier-washer.webp" alt="Barrier Washers" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-heading font-bold text-navy text-xl mb-2">Barrier Washers</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">Pass-through barrier washers for healthcare and care environments — physical separation between dirty and clean zones for infection control compliance.</p>
+                    <a href="{{ route('equipment.category', 'barrier-washers') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-orange text-sm transition-colors">
+                        Discover more <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- EQUIPMENT CATEGORIES -->
 <section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -206,6 +258,67 @@
                     <p class="font-body text-gray-200 text-sm leading-relaxed mb-3">Drying cabinets for garments, workwear and PPE — maintaining shape and finish while reducing tumble dryer throughput pressure.</p>
                     <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
                         View drying cabinets <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- INDUSTRY SEGMENTS -->
+<section class="py-16 lg:py-20 bg-[#011E41]">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="mb-10">
+            <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Industry Solutions</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl">Equipment matched to your sector</h2>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <a href="{{ route('sectors.healthcare') }}" class="group relative rounded-2xl overflow-hidden aspect-[3/4] flex flex-col justify-end">
+                <img src="/images/healthcare/hero-main.jpg" alt="Healthcare" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-lg mb-1">Healthcare</h3>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Barrier washers, hygiene compliance and planned maintenance for hospital and care environments.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="{{ route('sectors.hospitality') }}" class="group relative rounded-2xl overflow-hidden aspect-[3/4] flex flex-col justify-end">
+                <img src="/images/sectors/hospitality-hero.jpg" alt="Hospitality" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-lg mb-1">Hospitality</h3>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">High-capacity washers, dryers and ironers for hotels, restaurants and linen-heavy operations.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="{{ route('sectors.care') }}" class="group relative rounded-2xl overflow-hidden aspect-[3/4] flex flex-col justify-end">
+                <img src="/images/about/testimonial-2.jpg" alt="Care Facilities" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-lg mb-1">Care Facilities</h3>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">Reliable equipment, service contracts and rental options for residential care homes and supported living.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="{{ route('sectors.commercial') }}" class="group relative rounded-2xl overflow-hidden aspect-[3/4] flex flex-col justify-end">
+                <img src="/images/sectors/commercial-hero.jpg" alt="Commercial" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/30 to-transparent"></div>
+                <div class="relative p-6">
+                    <h3 class="font-heading font-bold text-white text-lg mb-1">Commercial</h3>
+                    <p class="font-body text-gray-300 text-sm leading-relaxed mb-3">On-premises laundries, workwear operations and high-volume commercial sites — equipment and support at scale.</p>
+                    <span class="inline-flex items-center gap-1 text-white text-sm font-body font-bold group-hover:gap-2 transition-all">
+                        Explore <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </span>
                 </div>
             </a>
