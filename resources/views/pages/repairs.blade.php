@@ -76,7 +76,7 @@
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl text-balance">
-                    Call-outs and repairs when commercial laundry equipment is <span class="text-[#148af4] whitespace-nowrap">under pressure</span>
+                    <span class="text-[#148af4]">Call-outs and repairs</span><br class="hidden lg:inline"> when commercial laundry<br class="hidden lg:inline"> equipment is under pressure
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl text-pretty">
@@ -109,7 +109,7 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repair Triage</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 text-balance">
-            Fast response works best with a <span class="text-[#148af4] whitespace-nowrap">professional diagnosis</span>
+            Fast response works best<br class="hidden lg:inline"> with a <span class="text-[#148af4] whitespace-nowrap">professional diagnosis</span>
         </h2>
         <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-10 max-w-3xl mx-auto text-pretty">
             The right response depends on knowing the machine type, the fault symptoms, how urgent the site is and any relevant service history. Tell us as much as you can so we can route your request correctly and get the right engineer to the right&nbsp;site.

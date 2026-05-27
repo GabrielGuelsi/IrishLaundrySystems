@@ -42,7 +42,7 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
                 <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    Find the <span class="text-[#148af4]">right service route</span> for your commercial laundry site
+                    Find the <span class="text-[#148af4]">right service route</span><br class="hidden lg:inline"> for your commercial<br class="hidden lg:inline"> laundry site
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl">
@@ -74,7 +74,7 @@
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Start with what is happening&nbsp;on-site,<br>then choose the <span class="text-[#148af4]">right&nbsp;route</span>
+                    Start with what is<br class="hidden lg:inline"> happening&nbsp;on-site,<br>then choose the<br class="hidden lg:inline"> <span class="text-[#148af4]">right&nbsp;route</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
