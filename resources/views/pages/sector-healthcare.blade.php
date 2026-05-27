@@ -20,7 +20,7 @@
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
                     Stop <span style="color:#148af4;">healthcare laundry pressure</span><br>from becoming a daily cost problem
                 </h1>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white text-base leading-relaxed mb-8 max-w-2xl">
                     Healthcare and care home laundry rooms carry hygiene, staff, linen flow and running-cost pressure every day. Irish Laundry Systems helps sites specify, maintain and support Electrolux Professional laundry equipment around the way the room actually operates.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
