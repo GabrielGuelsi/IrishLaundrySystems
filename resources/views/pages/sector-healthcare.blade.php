@@ -10,7 +10,7 @@
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <!-- Background image -->
-    <img src="/images/healthcare/Irish Laudry Systems is not an equipment suppplier..png" alt="Healthcare laundry installation"
+    <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry installation"
          class="absolute inset-0 w-full h-full object-cover object-right">
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
