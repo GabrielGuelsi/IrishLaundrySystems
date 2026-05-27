@@ -15,7 +15,7 @@
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                    Protect <span style="color:#148af4;">guest standards</span> when<br><span style="color:#6b7280;">linen flow</span>,<br>housekeeping and peak periods<br>are under pressure
+                    Protect <span style="color:#148af4;">guest standards</span> when <span style="color:#6b7280;">linen flow</span>,<br>housekeeping and peak periods<br>are under pressure
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Hotels, guesthouses and hospitality sites depend on clean towels, bedding, robes, uniforms and guest items moving on time. Irish Laundry Systems helps properties specify, rent, maintain and support Electrolux Professional laundry equipment around guest standards, operating cost and daily service pressure.

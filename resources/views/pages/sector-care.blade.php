@@ -816,7 +816,11 @@
 </section>
 
 <!-- 11. Service Contracts, Support & Aftercare Strip -->
-@include('components.service-contracts-strip')
+@include('components.service-contracts-strip', [
+    'headingLine1' => 'Keep equipment, service history<br>and aftercare connected',
+    'headingLine2' => 'around care facility needs',
+    'body'         => 'Planned maintenance, service history and aftercare help care facilities keep laundry equipment easier to manage after installation, rental, repair or replacement.',
+])
 
 <!-- 12. Testimonial / Proof Block -->
 @include('components.testimonials', [
