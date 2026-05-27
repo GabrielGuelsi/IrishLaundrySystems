@@ -170,7 +170,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused process</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier options and process control support separated handling where the site requires&nbsp;it.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier options and process control support separated handling where the site requires it.</p>
                 </div>
             </div>
 
@@ -206,40 +206,34 @@
 
             {{-- Metric 1 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+65%</div>
-                        <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
+                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
             {{-- Metric 2 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+50%</div>
-                        <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
+                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">water saving</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
             </div>
 
             {{-- Metric 3 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+75%</div>
-                        <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
+                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                <div class="flex items-center gap-3">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
+                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">fewer sick days</h3>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
             </div>
 
@@ -773,40 +767,40 @@
 @include('components.equipment-categories')
 
 <!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="pt-4 lg:pt-6 pb-14 lg:pb-20 bg-white">
+    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
-            Our process keeps the <span style="color:#148af4;">next step</span> clear
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
+        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
+            Our process keeps the <span style="color:#148af4;">next step clear</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed">
             From the first assessment through to equipment, rental, maintenance and aftercare, each step should make the next decision easier.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
 
             @foreach([
-                ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine,<br>resident-item flow, utilities,<br>capacity and day-to-day pressure.',  'icon' => 'clipboard'],
-                ['title' => 'Match equipment to<br>daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement&nbsp;plan.',               'icon' => 'Ativo%204'],
-                ['title' => 'Connect service, rental<br>and aftercare',      'text' => 'Link the installed equipment to<br>preventive maintenance, repairs,<br>service history and follow-up.',      'icon' => 'Ativo%206'],
+                ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine, resident-item flow, utilities, capacity and day-to-day pressure.',  'icon' => 'clipboard'],
+                ['title' => 'Match equipment to daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement plan.',               'icon' => 'Ativo%204'],
+                ['title' => 'Connect service, rental and aftercare',      'text' => 'Link the installed equipment to preventive maintenance, repairs, service history and follow-up.',      'icon' => 'Ativo%206'],
                 ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and service model into a practical next step.',                         'icon' => 'Ativo%203'],
             ] as $i => $step)
 
-            <div class="flex flex-col items-center text-center relative">
+            <div class="flex flex-col items-start text-left relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
-                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
+                <div class="hidden lg:block absolute -right-8 top-6 text-[#148af4]">
+                    <svg class="w-16 h-8" viewBox="0 0 120 30" fill="none">
                         <path d="M0 15 L96 15 M78 4 L96 15 L78 26" stroke="#148af4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
+                <div class="w-full flex justify-center mb-4">
                     <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                         style="width:4rem;height:4rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{!! $step['title'] !!}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{!! $step['text'] !!}</p>
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
             </div>
 
             @endforeach
@@ -816,18 +810,10 @@
 </section>
 
 <!-- 11. Service Contracts, Support & Aftercare Strip -->
-@include('components.service-contracts-strip', [
-    'headingLine1' => 'Keep equipment, service history<br>and aftercare connected',
-    'headingLine2' => 'around care facility needs',
-    'body'         => 'Planned maintenance, service history and aftercare help care facilities keep laundry equipment easier to manage after installation, rental, repair or replacement.',
-])
+@include('components.service-contracts-strip')
 
 <!-- 12. Testimonial / Proof Block -->
-@include('components.testimonials', [
-    'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted by sites where equipment<br>issues affect <span style="color:#148af4;">daily operations</span>',
-    'subheading' => 'Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites<br>where faults can create pressure for staff, linen flow, guests, residents or production.',
-])
+@include('components.testimonials')
 
 @include('components.proof-bar')
 
