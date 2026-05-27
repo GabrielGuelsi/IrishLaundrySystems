@@ -207,7 +207,7 @@
                         <span class="text-2xl">Lower<br>outsourcing</span><br>
                         <span class="text-base">and delay pressure</span>
                     </h3>
-                    <img src="/images/icons/16.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <img src="/images/icons/32.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment, rental, maintenance, repairs and aftercare so hotels are not forced to manage laundry only when linen flow is already under pressure.</p>
             </div>
