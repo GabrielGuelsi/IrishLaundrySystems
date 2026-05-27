@@ -75,8 +75,8 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where This Fits</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4 whitespace-nowrap">
-                Built for demanding commercial, <span style="color:#148af4;">shared-use and specialist</span> laundry environments
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
+                Built for demanding commercial,<br><span style="color:#148af4;">shared-use and specialist</span> laundry environments
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 From high-volume commercial laundries to self-service, managed residential, leisure, public-sector, workwear and specialist sites,<br>the setup should match how the laundry is actually used every day.
