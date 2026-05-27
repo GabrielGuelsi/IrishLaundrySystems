@@ -1,7 +1,9 @@
 @props([
-    'heading' => 'What our customers say.',
-    'light' => false,
-    'single' => null,
+    'heading'    => 'What our customers say.',
+    'eyebrow'    => null,
+    'subheading' => null,
+    'light'      => false,
+    'single'     => null,
 ])
 
 @php
@@ -70,7 +72,15 @@ $showChrome = ! $single && count($slides) > 1;
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         @if (! $single && ! empty($heading))
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-center mb-14">{!! $heading !!}</h2>
+            <div class="text-center mb-14">
+                @if($eyebrow)
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
+                @endif
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">{!! $heading !!}</h2>
+                @if($subheading)
+                    <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl mx-auto">{!! $subheading !!}</p>
+                @endif
+            </div>
         @endif
 
         <div

@@ -136,7 +136,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Daily laundry demand.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/13.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident-item handling</h3>
@@ -146,7 +146,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Staff handling.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/4.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
@@ -156,7 +156,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/control-icon.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -166,30 +166,17 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <svg class="w-20 h-20 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
-                    </svg>
+                    <img src="/images/icons/15.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused process</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier options and process control support separated handling where the site requires it.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier options and process control support separated handling where the site requires&nbsp;it.</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <svg class="w-20 h-20 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <!-- Top folded piece -->
-                        <path d="M7 3.75h10a1.5 1.5 0 011.5 1.5v2.5a1.5 1.5 0 01-1.5 1.5H7a1.5 1.5 0 01-1.5-1.5v-2.5A1.5 1.5 0 017 3.75z"/>
-                        <!-- Fold crease line on top piece -->
-                        <path d="M5.5 6.5h13"/>
-                        <!-- Middle folded piece -->
-                        <path d="M4.5 10.25h15a1.5 1.5 0 011.5 1.5v2.5a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-2.5a1.5 1.5 0 011.5-1.5z"/>
-                        <!-- Fold crease line on middle piece -->
-                        <path d="M3 13h18"/>
-                        <!-- Bottom folded piece -->
-                        <path d="M2 16.75h20a1.5 1.5 0 011.5 1.5v2a1.5 1.5 0 01-1.5 1.5H2a1.5 1.5 0 01-1.5-1.5v-2A1.5 1.5 0 012 16.75z"/>
-                    </svg>
+                    <img src="/images/icons/16.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
@@ -219,58 +206,64 @@
 
             {{-- Metric 1 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                <div class="flex items-center gap-3">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                <div class="flex flex-col gap-0 min-h-[4.5rem]">
+                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                    <div class="flex items-center gap-3">
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+65%</div>
+                        <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
             </div>
 
             {{-- Metric 2 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                <div class="flex items-center gap-3">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
+                <div class="flex flex-col gap-0 min-h-[4.5rem]">
+                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                    <div class="flex items-center gap-3">
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+50%</div>
+                        <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
             </div>
 
             {{-- Metric 3 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                <div class="flex items-center gap-3">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
-                    <img src="/images/healthcare/4efa7e72-db03-4f54-8035-2fe7e1a302f4.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                <div class="flex flex-col gap-0 min-h-[4.5rem]">
+                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
+                    <div class="flex items-center gap-3">
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+75%</div>
+                        <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
             </div>
 
             {{-- Business 4 --}}
             <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex items-center gap-2">
+                <div class="flex items-start gap-2 min-h-[4.5rem]">
                     <h3 class="font-heading font-bold text-[#148af4] leading-snug">
-                        <span class="text-2xl">Less<br>detergent</span><br>
-                        <span class="text-base">and process waste</span>
+                        <span class="text-2xl">Less<br>detergent</span>
                     </h3>
-                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
+                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
+                <p class="font-heading font-bold text-[#148af4] text-sm leading-snug">and process waste</p>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
 
             {{-- Business 5 --}}
             <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <div class="flex items-center gap-2">
+                <div class="flex items-start gap-2 min-h-[4.5rem]">
                     <h3 class="font-heading font-bold text-[#148af4] leading-snug">
-                        <span class="text-2xl">Lower<br>reactive</span><br>
-                        <span class="text-base">cost pressure</span>
+                        <span class="text-2xl">Lower<br>reactive</span>
                     </h3>
-                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
+                <p class="font-heading font-bold text-[#148af4] text-sm leading-snug">cost pressure</p>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects rental, preventive maintenance, repairs and aftercare so care homes are not forced to make every decision after something fails.</p>
             </div>
 
@@ -427,17 +420,12 @@
 
         <div class="flex flex-col divide-y divide-gray-100">
 
-            <!-- 1. COMMERCIAL WASHERS — image left, text right -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
-                <div class="flex flex-col lg:ml-28">
-                    <img src="/images/equipment/commercialwasher.webp"
-                         alt="Commercial Washer"
-                         class="w-full h-96 object-contain object-left-top">
-                </div>
-                <div class="lg:-ml-20 lg:mt-10">
+            <!-- 1. COMMERCIAL WASHERS — text left, image right -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center py-12 lg:py-16 reveal lg:pl-[10%]">
+                <div>
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Commercial washers support daily wash demand across resident clothing, bedding, towels and mixed loads where capacity, wash quality and garment care matter.
+                        Commercial washers support daily wash demand across resident clothing, bedding,<br>towels and mixed loads where capacity, wash quality and garment care matter.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -464,12 +452,31 @@
                         </a>
                     </div>
                 </div>
+                <div class="flex items-center justify-center -mt-16">
+                    <img src="/images/equipment/commercialwasher.webp"
+                         alt="Commercial Washer"
+                         class="w-full h-96 object-contain object-top">
+                </div>
             </div>
 
-            <!-- 2. TUMBLE DRYERS — text left, image right -->
+            <!-- 2. TUMBLE DRYERS — image left, text right -->
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div class="order-2 lg:order-1">
+                <div class="flex flex-col">
+                    <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp"
+                         alt="Line 6000 Tumble Dryer"
+                         class="w-full h-96 object-contain object-left-top">
+                    <div class="mt-1 pt-3">
+                        <button @click="open = !open"
+                                class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Control</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div>
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Tumble Dryers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time</span>, residual moisture, operator handling and energy use affect laundry turnaround through the day.
@@ -497,20 +504,6 @@
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                    </div>
-                </div>
-                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp"
-                         alt="Line 6000 Tumble Dryer"
-                         class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3">
-                        <button @click="open = !open"
-                                class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Control</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -541,22 +534,9 @@
             </div>
             </div>
 
-            <!-- 3. IRONERS & FINISHING — image left, text right -->
+            <!-- 3. IRONERS & FINISHING — text left, image right -->
             <div x-data="{ open: false, tab: 'diamms' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div class="flex flex-col">
-                    <img src="/images/equipment/line6000-ironer.webp"
-                         alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
-                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
-                    </div>
-                </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Ironers &amp; Finishing</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
@@ -585,6 +565,19 @@
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <img src="/images/equipment/line6000-ironer.webp"
+                         alt="Line 6000 Ironer"
+                         class="w-full h-80 object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full">
+                        <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -659,7 +652,20 @@
             <!-- 4. BARRIER WASHERS — text left, image right -->
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div class="order-2 lg:order-1 lg:pt-10">
+                <div class="flex flex-col">
+                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                         alt="Line 6000 Barrier Washer"
+                         class="w-full h-[440px] object-contain object-left-top">
+                    <div class="mt-1 pt-3 w-full flex justify-center">
+                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers support sites where controlled dirty-side loading and clean-side unloading are required as part of the care laundry process.
@@ -687,19 +693,6 @@
                             Request Assessment
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                    </div>
-                </div>
-                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/equipment/line6000-barrier-washer.webp"
-                         alt="Line 6000 Barrier Washer"
-                         class="w-full h-[440px] object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full flex justify-center">
-                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
-                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
-                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
-                            </span>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -780,40 +773,40 @@
 @include('components.equipment-categories')
 
 <!-- PROCESS BLOCK -->
-<section class="pt-4 lg:pt-6 pb-14 lg:pb-20 bg-white">
-    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="py-14 lg:py-20 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
-            Our process keeps the <span style="color:#148af4;">next step clear</span>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
+            Our process keeps the <span style="color:#148af4;">next step</span> clear
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed">
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
             From the first assessment through to equipment, rental, maintenance and aftercare, each step should make the next decision easier.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine, resident-item flow, utilities, capacity and day-to-day pressure.',  'icon' => 'clipboard'],
-                ['title' => 'Match equipment to daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement plan.',               'icon' => 'Ativo%204'],
-                ['title' => 'Connect service, rental and aftercare',      'text' => 'Link the installed equipment to preventive maintenance, repairs, service history and follow-up.',      'icon' => 'Ativo%206'],
+                ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine,<br>resident-item flow, utilities,<br>capacity and day-to-day pressure.',  'icon' => 'clipboard'],
+                ['title' => 'Match equipment to<br>daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement&nbsp;plan.',               'icon' => 'Ativo%204'],
+                ['title' => 'Connect service, rental<br>and aftercare',      'text' => 'Link the installed equipment to<br>preventive maintenance, repairs,<br>service history and follow-up.',      'icon' => 'Ativo%206'],
                 ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and service model into a practical next step.',                         'icon' => 'Ativo%203'],
             ] as $i => $step)
 
-            <div class="flex flex-col items-start text-left relative">
+            <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-8 top-6 text-[#148af4]">
-                    <svg class="w-16 h-8" viewBox="0 0 120 30" fill="none">
+                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
+                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
                         <path d="M0 15 L96 15 M78 4 L96 15 L78 26" stroke="#148af4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center mb-4">
+                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
                     <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:4rem;height:4rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{!! $step['title'] !!}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{!! $step['text'] !!}</p>
             </div>
 
             @endforeach

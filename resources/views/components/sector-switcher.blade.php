@@ -81,7 +81,8 @@
             <a href="{{ route('sectors.commercial') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-cover scale-125 transition-transform duration-700 group-hover:scale-[1.32]"
+                     style="object-position: center 60%;">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.72) 40%, rgba(1,30,65,0.15) 78%, transparent 100%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">

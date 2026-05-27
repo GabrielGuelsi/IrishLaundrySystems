@@ -62,11 +62,11 @@
 <!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Built Around the Operation</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around the Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-4xl 2xl:text-5xl leading-tight text-balance">
-                    Laundry care built around the <span class="text-[#148af4]">site</span>, the equipment and the next practical step
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
+                    Laundry care built around the <span class="text-[#148af4]">site</span>,<br>the equipment and the next practical step
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -79,8 +79,12 @@
                 <p class="font-body text-gray-600 text-lg leading-relaxed">
                     That matters when laundry output affects cost, staffing pressure, service continuity and the life of the installed equipment.
                 </p>
-                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
-                    See how we support your site →
+                <a href="{{ route('services') }}"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-2 w-fit">
+                    See how we support your site
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
                 </a>
             </div>
         </div>
