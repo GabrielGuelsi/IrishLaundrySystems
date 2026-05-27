@@ -170,7 +170,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Throughput and daily load.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/16.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Throughput and daily load</h3>
@@ -180,7 +180,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Load profile and fabric mix.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/34.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Load profile and fabric mix</h3>
@@ -190,7 +190,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Utility and operating cost control.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility and dosing control</h3>
@@ -200,7 +200,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Operator support.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator handling and controls</h3>
@@ -210,7 +210,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Service and parts support.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/36.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Specialist process control</h3>
@@ -243,7 +243,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">90%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/></svg>
+                    <img src="/images/icons/30.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">lifecycle cost pressure</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up the majority of lifecycle cost.</p>
@@ -254,7 +254,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
@@ -265,7 +265,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Over</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">30%+</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/></svg>
+                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">detergent-cost saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient Dosing can save over 30% on detergent costs by helping use the right amount of detergent at each cycle.</p>
@@ -276,7 +276,7 @@
                 <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Less</div>
                 <div class="flex items-center gap-4">
                     <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">strain,</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/></svg>
+                    <img src="/images/icons/4.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">better productivity</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
@@ -287,7 +287,7 @@
                 <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Lower</div>
                 <div class="flex items-center gap-4">
                     <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">reactive</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">cost pressure</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment, rental, preventive maintenance, repairs and aftercare so commercial sites are not forced to make every decision after something fails.</p>

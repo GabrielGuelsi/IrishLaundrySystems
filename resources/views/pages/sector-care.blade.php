@@ -136,7 +136,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Daily laundry demand.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/13.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident-item handling</h3>
@@ -146,7 +146,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Staff handling.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/4.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
@@ -156,7 +156,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/control-icon.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -166,9 +166,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <svg class="w-20 h-20 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
-                    </svg>
+                    <img src="/images/icons/15.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused process</h3>
@@ -178,18 +176,7 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <svg class="w-20 h-20 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <!-- Top folded piece -->
-                        <path d="M7 3.75h10a1.5 1.5 0 011.5 1.5v2.5a1.5 1.5 0 01-1.5 1.5H7a1.5 1.5 0 01-1.5-1.5v-2.5A1.5 1.5 0 017 3.75z"/>
-                        <!-- Fold crease line on top piece -->
-                        <path d="M5.5 6.5h13"/>
-                        <!-- Middle folded piece -->
-                        <path d="M4.5 10.25h15a1.5 1.5 0 011.5 1.5v2.5a1.5 1.5 0 01-1.5 1.5h-15a1.5 1.5 0 01-1.5-1.5v-2.5a1.5 1.5 0 011.5-1.5z"/>
-                        <!-- Fold crease line on middle piece -->
-                        <path d="M3 13h18"/>
-                        <!-- Bottom folded piece -->
-                        <path d="M2 16.75h20a1.5 1.5 0 011.5 1.5v2a1.5 1.5 0 01-1.5 1.5H2a1.5 1.5 0 01-1.5-1.5v-2A1.5 1.5 0 012 16.75z"/>
-                    </svg>
+                    <img src="/images/icons/16.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
@@ -222,7 +209,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
@@ -233,7 +220,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
-                    <svg class="w-7 h-7 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 2.25C8.25 6 5.25 9.75 5.25 13.5a6.75 6.75 0 0013.5 0C18.75 9.75 15.75 6 12 2.25z"/></svg>
+                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
@@ -244,7 +231,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
-                    <img src="/images/healthcare/4efa7e72-db03-4f54-8035-2fe7e1a302f4.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
@@ -257,7 +244,7 @@
                         <span class="text-2xl">Less<br>detergent</span><br>
                         <span class="text-base">and process waste</span>
                     </h3>
-                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.75h4.5M10.5 3.75v2.25l-2.25 3v11.25a1.5 1.5 0 001.5 1.5h4.5a1.5 1.5 0 001.5-1.5V9l-2.25-3V3.75"/></svg>
+                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
@@ -269,7 +256,7 @@
                         <span class="text-2xl">Lower<br>reactive</span><br>
                         <span class="text-base">cost pressure</span>
                     </h3>
-                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects rental, preventive maintenance, repairs and aftercare so care homes are not forced to make every decision after something fails.</p>
             </div>

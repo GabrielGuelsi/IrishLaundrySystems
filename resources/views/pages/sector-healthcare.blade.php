@@ -196,7 +196,7 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/hygiene-icon.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/2.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
@@ -207,7 +207,7 @@
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/Operator support.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/4.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
@@ -218,7 +218,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/control-icon.jpg" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
@@ -229,7 +229,7 @@
             {{-- Card 4: ERGOCERT --}}
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/ERGOCERT-4-stars-ClarusVibe_72dpi-1.webp" alt="4-star ERGOCERT" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/6.png" alt="4-star ERGOCERT" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">4-star ERGOCERT ergonomics</h3>
@@ -275,7 +275,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">65%</div>
-                    <img src="/images/healthcare/23ed82a3-e002-4998-a86d-0d6c40858466.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">dryer energy saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
@@ -286,7 +286,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">50%</div>
-                    <img src="/images/healthcare/5f80d1d5-cddc-403b-a0da-aac2e32f7697.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">water saving</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
@@ -297,7 +297,7 @@
                 <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
                 <div class="flex items-center gap-3">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">75%</div>
-                    <img src="/images/healthcare/4efa7e72-db03-4f54-8035-2fe7e1a302f4.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">fewer sick days</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
@@ -310,7 +310,7 @@
                         <span class="text-2xl">Less<br>detergent</span><br>
                         <span class="text-base">and process waste</span>
                     </h3>
-                    <img src="/images/healthcare/632ce98e-fa77-44f5-be29-8738cc322e4b.jpg" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
             </div>
@@ -322,7 +322,7 @@
                         <span class="text-2xl">Lower<br>reactive</span><br>
                         <span class="text-base">cost pressure</span>
                     </h3>
-                    <svg class="w-6 h-6 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg>
+                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects specification, installation, preventive maintenance, repairs, rental and aftercare so laundry decisions are not only made after something fails.</p>
             </div>
