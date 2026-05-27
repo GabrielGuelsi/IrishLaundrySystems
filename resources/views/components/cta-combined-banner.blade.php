@@ -1,4 +1,4 @@
-﻿<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- Background image pinned to right 60% --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
@@ -19,7 +19,7 @@
 
         {{-- Description --}}
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day laundry demand.
+            We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day&nbsp;laundry&nbsp;demand.
         </p>
 
         {{-- 3 horizontal features --}}

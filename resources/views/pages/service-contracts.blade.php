@@ -188,7 +188,7 @@
                 </p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl">
-                    <span class="text-steel">Keep your laundry operation running</span> without&nbsp;costly&nbsp;downtime
+                    <span class="text-steel">Keep your laundry<br class="hidden md:block">operation running</span><br class="hidden md:block">without costly downtime
                 </h1>
 
                 <p class="hero-desc font-body text-white text-base lg:text-lg leading-relaxed mb-9 max-w-xl">
@@ -250,8 +250,7 @@
             <div class="reveal">
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl leading-tight">
                     A <span class="text-steel">proactive protection plan</span><br>
-                    for essential commercial<br>
-                    laundry equipment
+                    for essential commercial laundry equipment
                 </h2>
             </div>
 
@@ -289,11 +288,11 @@
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal" style="transition-delay:80ms;">
-                <span class="text-steel">What you gain</span> with an Irish Laundry Systems<br class="hidden md:block">
+                <span class="text-steel">What you gain</span> with a<br class="hidden md:block">
                 Preventive Maintenance Contract
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed reveal" style="transition-delay:160ms;">
-                A Preventive Maintenance Contract gives your site a clearer route for planned care, fewer unexpected problems and better control around essential laundry equipment.
+                An Irish Laundry Systems Preventive Maintenance Contract gives your site a clearer route for planned care, fewer unexpected problems and better control around essential laundry equipment.
             </p>
         </div>
 
@@ -448,68 +447,85 @@
         {{-- Two separate premium comparison cards --}}
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-7 items-start">
 
-            {{-- WITHOUT card — neutral, white, subdued --}}
-            <article class="reveal relative bg-white rounded-2xl border border-navy/10 p-7 lg:p-8 flex flex-col gap-5 shadow-[0_8px_24px_-12px_rgba(1,30,65,0.10)]" style="transition-delay:120ms;">
-                <div class="flex items-center gap-2">
-                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-100">
-                        <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
-                    </span>
-                    <span class="font-body font-bold text-gray-500 text-[11px] uppercase tracking-[0.22em]">Without a contract</span>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight">
-                    The cost of doing nothing
-                </h3>
-                <div class="h-px w-12 bg-gradient-to-r from-gray-300 to-transparent"></div>
-                <ul class="space-y-3">
-                    @foreach (['Emergency call-outs', 'Longer downtime', 'Production delays', 'Unplanned repair costs', 'Potential equipment neglect'] as $item)
-                    <li class="flex items-center gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-gray-100 ring-1 ring-gray-200 flex items-center justify-center">
-                            <svg class="w-3 h-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-                            </svg>
+            {{-- WITHOUT card — photo bg, subdued/desaturated --}}
+            <article class="reveal relative rounded-2xl overflow-hidden p-7 lg:p-8 flex flex-col gap-4 shadow-[0_20px_50px_-20px_rgba(1,30,65,0.30)] min-h-[480px]" style="transition-delay:120ms;">
+                {{-- Background image desaturated --}}
+                <img src="/images/equipment/td6-multihousing-room.jpg"
+                     alt="A commercial laundry room without active maintenance support"
+                     loading="lazy" decoding="async"
+                     class="absolute inset-0 w-full h-full object-cover"
+                     style="filter: brightness(0.6) saturate(0.7);">
+                {{-- Cinematic fade to navy --}}
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(1,30,65,0.30) 0%, rgba(1,30,65,0.70) 35%, rgba(1,30,65,0.95) 65%, rgba(1,30,65,1.0) 100%);" aria-hidden="true"></div>
+
+                <div class="relative z-10 flex flex-col gap-4 mt-auto">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10 ring-1 ring-white/20">
+                            <span class="w-1.5 h-1.5 rounded-full bg-white/70"></span>
                         </span>
-                        <span class="font-body text-gray-700 text-sm lg:text-base leading-snug">{{ $item }}</span>
-                    </li>
-                    @endforeach
-                </ul>
+                        <span class="font-body font-bold text-white/80 text-[11px] uppercase tracking-[0.22em]">Without a contract</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
+                        The cost of doing nothing
+                    </h3>
+                    <ul class="space-y-2.5">
+                        @foreach (['Emergency call-outs', 'Longer downtime', 'Production delays', 'Unplanned repair costs', 'Potential equipment neglect'] as $item)
+                        <li class="flex items-center gap-3">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-white/10 ring-1 ring-white/20 flex items-center justify-center">
+                                <svg class="w-3 h-3 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+                                </svg>
+                            </span>
+                            <span class="font-body text-white/90 text-sm lg:text-base leading-snug">{{ $item }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
             </article>
 
-            {{-- WITH card — navy premium, recommended --}}
-            <article class="reveal relative rounded-2xl p-7 lg:p-8 flex flex-col gap-5 shadow-[0_24px_60px_-24px_rgba(1,30,65,0.45)] ring-1 ring-steel/30 overflow-hidden" style="background: linear-gradient(155deg, #011E41 0%, #02295A 60%, #011E41 100%); transition-delay:200ms;">
-
-                {{-- Top gradient accent --}}
-                <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-steel to-transparent" aria-hidden="true"></div>
+            {{-- WITH card — photo bg, vibrant, recommended --}}
+            <article class="reveal relative rounded-2xl overflow-hidden p-7 lg:p-8 flex flex-col gap-4 shadow-[0_24px_60px_-20px_rgba(20,138,244,0.35)] ring-1 ring-steel/40 min-h-[480px]" style="transition-delay:200ms;">
+                {{-- Background image full colour --}}
+                <img src="/images/healthcare/customer-care-line6000.jpg"
+                     alt="Irish Laundry Systems engineer providing planned maintenance support"
+                     loading="lazy" decoding="async"
+                     class="absolute inset-0 w-full h-full object-cover">
+                {{-- Cinematic fade to navy --}}
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(1,30,65,0.25) 0%, rgba(1,30,65,0.65) 35%, rgba(1,30,65,0.95) 65%, rgba(1,30,65,1.0) 100%);" aria-hidden="true"></div>
+                {{-- Top accent line --}}
+                <div class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-steel to-transparent z-20" aria-hidden="true"></div>
 
                 {{-- Recommended badge --}}
-                <span class="absolute top-5 right-5 inline-flex items-center gap-1.5 bg-steel/20 border border-steel/50 rounded-full px-2.5 py-1 text-[10px] font-body font-bold text-steel uppercase tracking-wider">
+                <span class="absolute top-5 right-5 z-20 inline-flex items-center gap-1.5 bg-steel/25 border border-steel/50 rounded-full px-2.5 py-1 text-[10px] font-body font-bold text-white uppercase tracking-wider">
                     <svg class="w-3 h-3 fill-steel" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 .587l3.668 7.568L24 9.748l-6 5.853L19.336 24 12 19.897 4.664 24 6 15.601 0 9.748l8.332-1.593z"/>
                     </svg>
                     Recommended
                 </span>
 
-                <div class="flex items-center gap-2">
-                    <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-steel/20 ring-1 ring-steel/40">
-                        <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
-                    </span>
-                    <span class="font-body font-bold text-steel text-[11px] uppercase tracking-[0.22em]">With a PM Contract</span>
-                </div>
-                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight">
-                    A predictable, protected operation
-                </h3>
-                <div class="h-px w-12 bg-gradient-to-r from-steel to-transparent"></div>
-                <ul class="space-y-3">
-                    @foreach (['Planned maintenance', 'Predictable support structure', 'Earlier issue detection', 'Reduced operational disruption', 'Preferential labour rates where applicable', 'Better equipment reliability', 'Clearer service records', 'Longer equipment life'] as $item)
-                    <li class="flex items-center gap-3">
-                        <span class="flex-shrink-0 w-6 h-6 rounded-full bg-steel/20 ring-1 ring-steel/50 flex items-center justify-center">
-                            <svg class="w-3 h-3 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                            </svg>
+                <div class="relative z-10 flex flex-col gap-4 mt-auto">
+                    <div class="flex items-center gap-2">
+                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-steel/30 ring-1 ring-steel/60">
+                            <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
                         </span>
-                        <span class="font-body text-white text-sm lg:text-base font-medium leading-snug">{{ $item }}</span>
-                    </li>
-                    @endforeach
-                </ul>
+                        <span class="font-body font-bold text-steel text-[11px] uppercase tracking-[0.22em]">With a PM Contract</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
+                        A predictable, protected operation
+                    </h3>
+                    <ul class="space-y-2.5">
+                        @foreach (['Planned maintenance', 'Predictable support structure', 'Earlier issue detection', 'Reduced operational disruption', 'Preferential labour rates where applicable', 'Better equipment reliability', 'Clearer service records', 'Longer equipment life'] as $item)
+                        <li class="flex items-center gap-3">
+                            <span class="flex-shrink-0 w-6 h-6 rounded-full bg-steel/25 ring-1 ring-steel/50 flex items-center justify-center">
+                                <svg class="w-3 h-3 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                                </svg>
+                            </span>
+                            <span class="font-body text-white text-sm lg:text-base font-medium leading-snug">{{ $item }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
+                </div>
             </article>
 
         </div>
@@ -577,18 +593,22 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      8. GETTING STARTED — compact 3-step navy strip
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative py-16 lg:py-20 bg-navy sc-dotgrid overflow-hidden">
+<section class="relative py-14 lg:py-20 bg-navy sc-dotgrid overflow-hidden">
+
+    {{-- Top + bottom hairlines --}}
     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
     <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
 
-    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    {{-- Ambient blur --}}
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1100px] h-[800px] rounded-full pointer-events-none" style="background: radial-gradient(ellipse, rgba(20,138,244,0.10) 0%, transparent 60%);" aria-hidden="true"></div>
 
-        <div class="max-w-2xl mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Getting Started</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-4">
-                Getting a <span class="text-steel">Preventive<br class="hidden md:block">
-                Maintenance Contract</span><br class="hidden md:block">
-                in place
+    <div class="relative max-w-7xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Centered header — 2 lines --}}
+        <div class="max-w-5xl mx-auto text-center mb-12 lg:mb-16 reveal">
+            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Getting Started</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight tracking-tight mb-4">
+                Getting a <span class="text-steel">Preventive&nbsp;Maintenance&nbsp;Contract</span> in&nbsp;place
             </h2>
             <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed">
                 A clear route from first visit to planned maintenance.
@@ -603,19 +623,42 @@
         ];
         @endphp
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        {{-- Premium step grid with connectors --}}
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-7 relative">
             @foreach ($startSteps as $i => $step)
-            <div class="relative bg-white/[0.04] border border-white/10 rounded-2xl p-6 lg:p-7 reveal" style="transition-delay:{{ $i * 100 }}ms;">
-                <div class="flex items-center gap-4 mb-4">
-                    <div class="w-12 h-12 rounded-full bg-steel/20 border border-steel/40 flex items-center justify-center text-steel font-heading font-bold text-lg">
-                        {{ $i + 1 }}
+            <div class="relative group reveal" style="transition-delay:{{ $i * 100 }}ms;">
+
+                {{-- Glass card --}}
+                <div class="relative h-full rounded-2xl p-7 lg:p-8 overflow-hidden transition-all duration-300 group-hover:-translate-y-1 group-hover:ring-steel/40"
+                     style="background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.10); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
+
+                    {{-- Top accent line on hover --}}
+                    <span aria-hidden="true" class="absolute inset-x-0 top-0 h-[2px] bg-gradient-to-r from-transparent via-steel to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+
+                    {{-- Big ghost number watermark --}}
+                    <span aria-hidden="true" class="pointer-events-none absolute -top-2 right-4 font-heading font-black text-white/[0.04] text-[8rem] lg:text-[9rem] leading-none tracking-tight select-none transition-all duration-500 group-hover:text-steel/[0.08]">
+                        0{{ $i + 1 }}
+                    </span>
+
+                    {{-- Step label --}}
+                    <div class="relative inline-flex items-center mb-6">
+                        <span class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em]">
+                            Step&nbsp;{{ ['One', 'Two', 'Three'][$i] }}
+                        </span>
                     </div>
-                    @if ($i < count($startSteps) - 1)
-                    <div class="hidden md:block flex-1 h-px bg-gradient-to-r from-steel/40 to-transparent" aria-hidden="true"></div>
-                    @endif
+
+                    <h3 class="relative font-heading font-bold text-white text-lg lg:text-xl leading-snug mb-2">{{ $step['title'] }}</h3>
+                    <p class="relative font-body text-blue-200 text-sm leading-relaxed">{{ $step['text'] }}</p>
                 </div>
-                <h3 class="font-heading font-bold text-white text-lg lg:text-xl leading-snug mb-2">{{ $step['title'] }}</h3>
-                <p class="font-body text-blue-200 text-sm lg:text-base leading-relaxed">{{ $step['text'] }}</p>
+
+                {{-- Arrow connector to next step --}}
+                @if ($i < count($startSteps) - 1)
+                <div class="hidden md:flex absolute top-1/2 -right-3 lg:-right-4 z-20 -translate-y-1/2 items-center justify-center w-9 h-9 rounded-full bg-navy ring-1 ring-steel/40 shadow-[0_4px_12px_rgba(0,0,0,0.4)]" aria-hidden="true">
+                    <svg class="w-4 h-4 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </div>
+                @endif
             </div>
             @endforeach
         </div>
@@ -697,7 +740,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-sm">
-                        Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily service.
+                        Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily&nbsp;service.
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Request Healthcare Assessment
@@ -819,12 +862,11 @@ $faqs = [
 ];
 @endphp
 
-<div class="reveal bg-white">
-    <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-20 pt-12 lg:pt-16 text-center">
-        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Preventive Maintenance FAQs</p>
-    </div>
-    @include('components.faq', ['faqs' => $faqs, 'heading' => 'Questions about <span class="text-steel">Preventive Maintenance Contracts</span>'])
-</div>
+@include('components.faq', [
+    'faqs'    => $faqs,
+    'eyebrow' => 'Preventive Maintenance FAQs',
+    'heading' => 'Questions about <span class="text-steel">Preventive Maintenance Contracts</span>',
+])
 
 {{-- ════════════════════════════════════════════════════════════════════════
      13. PARTS & AFTERCARE CLOSING STRIP (sits before the form)
@@ -848,7 +890,7 @@ $faqs = [
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
-            When a preventive visit identifies wear, a recurring fault or a parts requirement, Parts &amp; Aftercare helps keep the follow-up clear, quoted separately where needed, and connected to the equipment history.
+            When a preventive visit identifies wear, a recurring fault or a parts requirement, Parts &amp; Aftercare helps keep the follow-up clear, quoted separately where needed, and connected to the equipment&nbsp;history.
         </p>
 
         <div class="flex items-center flex-wrap gap-0 mb-7">

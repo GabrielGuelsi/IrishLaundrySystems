@@ -5,6 +5,7 @@
     'headingTrail'     => '.',
     'highlightClass'   => 'text-orange',
     'intro'            => '',
+    'introClass'       => '',
     'align'            => 'left',
     'cards'            => [],
 ])
@@ -23,7 +24,7 @@
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 lg:whitespace-nowrap">
                 {{ $headingLead }}<span class="{{ $highlightClass }}">{{ $headingHighlight }}</span>{{ $headingTrail }}
             </h2>
-            <p class="font-body {{ $align === 'center' ? 'text-gray-500 max-w-3xl mx-auto' : 'text-gray-600 max-w-3xl' }} text-lg leading-relaxed">{{ $intro }}</p>
+            <p class="font-body {{ $align === 'center' ? 'text-gray-500 max-w-3xl mx-auto' : 'text-gray-600 max-w-3xl' }} text-lg leading-relaxed {{ $introClass }}">{{ $intro }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">

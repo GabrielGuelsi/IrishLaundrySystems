@@ -31,8 +31,8 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-5xl">
-                    Commercial laundry <span class="text-[#148af4]">engineering support</span> for sites where downtime carries real&nbsp;cost
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-[28px] sm:text-4xl lg:text-5xl xl:text-5xl">
+                    Commercial laundry<br><span class="text-[#148af4]">engineering support</span> for sites<br>where downtime carries real&nbsp;cost
                 </h1>
 
                 <p class="hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl">
@@ -66,7 +66,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Laundry care built around the <span class="text-[#148af4]">site</span>,<br>the equipment and the next practical step
+                    Laundry care built <span class="text-[#148af4]">around the site</span>,<br>the equipment and the next practical step
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -79,12 +79,8 @@
                 <p class="font-body text-gray-600 text-lg leading-relaxed">
                     That matters when laundry output affects cost, staffing pressure, service continuity and the life of the installed equipment.
                 </p>
-                <a href="{{ route('services') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-2 w-fit">
-                    See how we support your site
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
+                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
+                    See how we support your site &rarr;
                 </a>
             </div>
         </div>
@@ -99,6 +95,7 @@
     'headingTrail'     => '',
     'highlightClass'   => 'text-[#148af4]',
     'intro'            => 'Four practical routes for breakdowns, planned maintenance, rental pressure and ongoing equipment care.',
+    'introClass'       => 'lg:whitespace-nowrap',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',     'body' => 'Engineering response when faults, breakdowns or performance issues put the laundry under pressure.',                                              'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
@@ -109,7 +106,9 @@
 ])
 
 <!-- 3.5 PLANNING STRIP — Designed around your site, workflow and capacity -->
-@include('components.cta-combined-banner')
+<div class="bg-white">
+    @include('components.cta-combined-banner')
+</div>
 
 <!-- 4. SECTOR ROUTING TABS -->
 @include('components.sector-switcher')
@@ -120,10 +119,10 @@
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should follow the room, the load profile, the handling process, lifecycle cost and the care behind the installed base.',
     'equipment' => [
-        ['img' => 'line6000-barrier-washer',       'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                 'box' => 270, 'mb' => -40],
         ['img' => 'commercialwasher',              'name' => 'Commercial Washers',   'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
         ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',        'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                          'box' => 245],
         ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
+        ['img' => 'line6000-barrier-washer',       'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                 'box' => 270, 'mb' => -40],
         ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.'],
     ],
 ])

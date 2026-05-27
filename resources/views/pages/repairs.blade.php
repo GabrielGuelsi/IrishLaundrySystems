@@ -80,7 +80,7 @@
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl text-pretty">
-                    Irish Laundry Systems engineers respond quickly to get your laundry equipment back on track &mdash; with first triage, expert diagnosis and the right fix the first&nbsp;time, where&nbsp;possible.
+                    Irish Laundry Systems engineers respond quickly to get your laundry equipment back on track; with first triage, expert diagnosis and the right fix the first&nbsp;time, where&nbsp;possible.
                 </p>
 
                 <div class="hero-btns flex flex-row gap-4">
@@ -164,12 +164,10 @@
             <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
                 {{-- LEFT: content --}}
-                <div class="lg:col-span-7 flex items-start gap-4">
-                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#148af4]/15 ring-1 ring-[#148af4]/30 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                        </svg>
-                    </div>
+                <div class="lg:col-span-7 flex items-start gap-5">
+                    <svg class="w-12 h-12 lg:w-14 lg:h-14 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                    </svg>
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
                         <h2 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-2 text-balance">Need fast help with a laundry equipment&nbsp;fault?</h2>
@@ -357,30 +355,24 @@ $expectSteps = [
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
                     <div>
-                        <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/>
-                            </svg>
-                        </div>
+                        <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/>
+                        </svg>
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Dublin store network</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">Multiple Laundry Online locations across Dublin.</p>
                     </div>
                     <div>
-                        <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
-                            </svg>
-                        </div>
+                        <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
+                        </svg>
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Drop-off / walk-in route</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option when your site needs temporary laundry cover.</p>
                     </div>
                     <div>
-                        <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-heading font-bold text-navy text-base mb-1">Practical short-term cover</h3>
+                        <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1 whitespace-nowrap">Short-term cover</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while you manage downtime, repair timing or replacement decisions.</p>
                     </div>
                 </div>
@@ -563,7 +555,7 @@ $faqs = [
             Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where faults can create pressure for staff, linen flow, guests, residents or&nbsp;production.
         </p>
     </div>
-    @include('components.testimonials', ['light' => true])
+    @include('components.testimonials', ['light' => true, 'heading' => ''])
     @include('components.proof-bar')
 </section>
 
@@ -572,17 +564,15 @@ $faqs = [
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden">
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
-            <div class="mx-auto mb-5 w-12 h-12 rounded-full bg-white/5 ring-1 ring-white/10 flex items-center justify-center">
-                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                </svg>
-            </div>
+            <svg class="mx-auto mb-5 w-12 h-12 lg:w-14 lg:h-14 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Call-Out</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4 text-balance">
                 Need an engineer today?
             </h2>
             <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed max-w-xl mx-auto mb-8 text-pretty">
-                Tell us your issue and we&rsquo;ll prioritise your request and get the right engineer to the right&nbsp;site.
+                Tell us your issue and we&rsquo;ll prioritise your request and get<br>the right engineer to the right&nbsp;site.
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a href="{{ route('contact') }}"
@@ -655,7 +645,7 @@ $faqs = [
 @include('components.faq', [
     'faqs'    => $faqs,
     'eyebrow' => 'Repairs & Call-Out FAQs',
-    'heading' => 'Questions before <span class="text-[#148af4]">requesting a call-out</span>',
+    'heading' => '<span class="lg:whitespace-nowrap">Questions before <span class="text-[#148af4]">requesting a call-out</span></span>',
 ])
 
 @endsection

@@ -49,7 +49,7 @@
                     Whether your site is dealing with an urgent fault, planned maintenance, rental need or aftercare around installed machines, Irish Laundry Systems helps identify the clearest next step for your laundry room.
                 </p>
 
-                <div class="svc-hero-btns flex flex-row flex-wrap gap-4 mb-8">
+                <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
@@ -59,14 +59,6 @@
                         View Service Routes
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
-                </div>
-
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-white font-body text-sm">
-                    <span>Engineering-led since 1987</span>
-                    <span class="text-white/30">|</span>
-                    <span>Electrolux Professional Partner</span>
-                    <span class="text-white/30">|</span>
-                    <span>Commercial laundry specialists</span>
                 </div>
 
             </div>
@@ -98,13 +90,13 @@
         {{-- Decision logic line --}}
         <div class="border-t border-gray-200 pt-8">
             <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 lg:gap-x-5 font-body font-bold text-navy text-sm lg:text-base">
-                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200">Site pressure</span>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Site pressure</span>
                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200">Installed equipment</span>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Installed equipment</span>
                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200">Right service route</span>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Right service route</span>
                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                <span class="px-4 py-2 rounded-full bg-[#148af4] text-white border border-[#148af4]">Clear next step</span>
+                <span class="px-4 py-2 rounded-full bg-[#148af4] text-white border border-[#148af4] hover:bg-[#0e79d8] hover:border-[#0e79d8] transition-colors duration-200 cursor-default">Clear next step</span>
             </div>
         </div>
     </div>
@@ -118,6 +110,7 @@
     'headingHighlight' => 'pressure on your site',
     'highlightClass'   => 'text-[#148af4]',
     'intro'            => 'Four practical routes for faults, planned maintenance, rental needs and aftercare around installed equipment.',
+    'introClass'       => 'lg:!max-w-none lg:whitespace-nowrap',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',                'body' => 'For urgent faults, breakdowns or equipment issues that need on-site diagnosis and a practical repair path.',                       'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-outs',           'pos' => 'center 40%', 'bullets' => ['Machine faults', 'Breakdown calls', 'Fault diagnosis', 'Urgent equipment issues']],
@@ -157,7 +150,7 @@
                     <p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $item['sub'] }}</p>
                 </div>
                 <p class="font-body font-bold text-navy text-sm mb-1">{{ $item['title'] }}</p>
-                <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $item['desc'] }}</p>
+                <p class="font-body text-navy/70 text-sm leading-relaxed font-medium text-pretty">{{ $item['desc'] }}</p>
             </div>
             @endforeach
         </div>
@@ -370,13 +363,13 @@
 <!-- 7. CUSTOMER TRUST / TESTIMONIALS -->
 <section class="pt-16 lg:pt-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="max-w-2xl">
+        <div class="max-w-3xl mx-auto text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Customer Trust</p>
             <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4 text-balance">
                 Trusted by sites that need <span class="text-[#148af4]">clear technical direction</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed">
-                Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service continuity.
+            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service&nbsp;continuity.
             </p>
         </div>
     </div>
@@ -396,10 +389,10 @@
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Service Assessment</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4">
-                Not sure <span class="text-[#148af4]">which service route fits your site</span>?
+                Not sure <span class="text-[#148af4]">which service route<br>fits your site</span>?
             </h2>
-            <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-8 max-w-md">
-                Tell us what is happening with your laundry equipment. Irish Laundry Systems will help direct the enquiry toward the right route, whether that means repairs, preventive maintenance, equipment rental or aftercare.
+            <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-8 max-w-md text-pretty">
+                Tell us what is happening with your laundry equipment. Irish Laundry Systems will help direct the enquiry toward the right route, whether that means repairs, preventive maintenance, equipment rental or&nbsp;aftercare.
             </p>
             <div class="flex flex-row flex-wrap gap-3">
                 <a href="{{ route('contact') }}"
