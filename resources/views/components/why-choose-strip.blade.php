@@ -15,8 +15,8 @@
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Keep laundry moving with</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#148af4;">capital control</span>
+            <span class="text-white text-3xl lg:text-5xl block">Keep laundry moving</span>
+            <span class="text-3xl lg:text-5xl block text-white">with <span style="color:#148af4;">capital control</span></span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
