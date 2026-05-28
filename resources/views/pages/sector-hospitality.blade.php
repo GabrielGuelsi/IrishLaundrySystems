@@ -630,7 +630,7 @@
     'equipment' => [
         ['img' => 'commercialwasher',        'name' => 'Commercial Washers',   'desc' => 'For bedding, towels, robes, uniforms, guest items and food-and-beverage linen.',                          'box' => 270],
         ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',        'desc' => 'For drying flow, energy control and steady linen turnaround through the day.',                            'box' => 245],
-        ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers &amp; Flatwork', 'desc' => 'For linen finishing, presentation and storage readiness in hospitality service.'],
+        ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For linen finishing, presentation and storage readiness in hospitality service.'],
         ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For delicate garments, bulky items, shoes, guest items and fabric-care needs.', 'box' => 260],
         ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',      'desc' => 'For sites where dirty-side and clean-side handling need controlled separation.',                          'box' => 270],
     ],
@@ -638,15 +638,15 @@
 
 <!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
-    <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Process</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
             Our process keeps the <span style="color:#148af4;">next step</span> clear
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl mx-auto leading-relaxed">
+        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
             From the first property assessment through to equipment, rental, maintenance and aftercare, each step should make the next decision easier.
         </p>
-        <div class="flex flex-col sm:flex-row items-start justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
                 ['title' => 'Understand the property laundry flow',          'text' => 'Review linen volume, room space, housekeeping rhythm, peak demand, utilities and current pressure points.',              'icon' => 'clipboard'],
@@ -655,20 +655,20 @@
                 ['title' => 'Move to assessment',                            'text' => 'Turn the property, equipment setup and service model into a practical next step.',                                       'icon' => 'Ativo%203'],
             ] as $i => $step)
 
-            @if($i > 0)
-            <div class="hidden sm:flex flex-shrink-0 items-center pt-6 lg:pt-8 px-1 lg:px-2">
-                <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
-                    <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            @endif
-
-            <div class="flex flex-col items-center flex-1 min-w-0 mb-8 sm:mb-0">
-                <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                     class="mx-auto mb-4"
-                     style="width:2.8rem;height:2.8rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+            <div class="flex flex-col items-center text-center relative">
+                @if($i < 3)
+                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
+                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
+                        <path d="M0 15 L96 15 M78 4 L96 15 L78 26" stroke="#148af4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                @endif
+                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
+                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
+                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed max-w-[150px] mx-auto">{{ $step['text'] }}</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
             </div>
 
             @endforeach
@@ -678,8 +678,8 @@
 </section>
 
 @include('components.service-contracts-strip', [
-    'headingLine1' => 'Keep equipment,<br>service history and aftercare',
-    'headingLine2' => 'connected around guest standards',
+    'headingLine1' => 'Keep equipment, service history<br>and aftercare connected',
+    'headingLine2' => 'around guest standards',
     'body'         => 'Planned maintenance, service history and aftercare help hospitality sites keep laundry equipment easier to manage after installation, rental, repair or replacement.',
 ])
 
