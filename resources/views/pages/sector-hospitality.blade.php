@@ -387,7 +387,6 @@
                         @foreach([
                             'Automatic Savings',
                             'Integrated Savings',
-                            'Intelligent Dosing',
                             'Efficient Dosing',
                             'Power Balance',
                             'Reduced water, energy and detergent waste',
