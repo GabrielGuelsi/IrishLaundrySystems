@@ -18,7 +18,7 @@
                     Keep <span style="color:#148af4;">daily care moving</span><br>without laundry becoming<br>another management problem
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
-                    Care facility laundry rooms handle resident clothing, bedding, towels and staff items every day. Irish Laundry Systems helps care homes specify, rent, maintain and support Electrolux Professional laundry equipment around daily demand, hygiene needs, staff pressure and running cost.
+                    Care facility laundry rooms handle resident clothing, bedding, towels and staff items every day. Irish Laundry Systems supports care homes, nursing homes and residential care settings with Electrolux Professional equipment, rental, planned maintenance, repairs and aftercare around daily demand, staff routines, hygiene needs and running cost.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#care-assessment"
@@ -55,7 +55,7 @@
                     When laundry slows down, resident clothing, bedding, towels and staff routines all come under pressure. Poor equipment fit can also increase water use, energy use, detergent waste, staff strain, repair calls and replacement pressure.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems helps care facilities connect equipment choice, rental, preventive maintenance, repairs and aftercare around how the site actually runs.
+                    Irish Laundry Systems connects equipment choice, rental, preventive maintenance, repairs and aftercare around how the site actually runs, so care facilities can keep laundry moving with better cost control and more peace of mind.
                 </p>
                 <a href="{{ route('equipment') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -76,11 +76,12 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Demand</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
-                Laundry support for <span style="color:#148af4;">resident items, linen flow</span><br>and day-to-day use
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
+                <span class="whitespace-nowrap block">Laundry support for <span style="color:#148af4;">resident items</span>,</span>
+                <span class="whitespace-nowrap block">linen flow and <span style="color:#148af4;">staff routines</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
-                Care facility laundry needs to move through the week without creating extra strain for managers, care teams or residents. The right setup should account for clothing, bedding, towels, staff items, hygiene handling, drying pressure and service needs.
+                Care facility laundry needs to move through the week without adding strain for managers, care teams, residents or staff. The right setup should account for resident clothing, bedding, towels, staff items, hygiene handling, drying pressure and the care needed to keep equipment running.
             </p>
         </div>
 
@@ -95,7 +96,7 @@
 
             <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
-                    Care facility laundry needs a <span style="color:#148af4;">system designed for care</span>
+                    Care facility laundry needs a <span style="color:#148af4;">system designed around daily care</span>
                 </h3>
                 <ul class="space-y-3">
                     @foreach([
@@ -103,7 +104,7 @@
                         'Staff-friendly wash and dry routines',
                         'Daily output planned around site use',
                         'Barrier options where separation is required',
-                        'Service structure behind the installed equipment',
+                        'Planned care around equipment already on-site',
                     ] as $point)
                     <li class="flex items-center gap-3">
                         <span class="w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0"></span>
@@ -118,17 +119,91 @@
     </div>
 </section>
 
+{{-- Financial Performance Bento: metric cards --}}
+<section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                <span class="whitespace-nowrap block"><span style="color:#148af4;">Control care home laundry costs</span> before</span>
+                <span class="whitespace-nowrap block">they quietly build up</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                <span class="whitespace-nowrap block">In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.</span>
+                <span class="whitespace-nowrap block">The right equipment plan should keep daily care moving while reducing avoidable running costs.</span>
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
+
+            {{-- Metric 1 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <div class="flex items-center gap-3 min-h-[4.5rem]">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
+                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                </div>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy use</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
+            </div>
+
+            {{-- Metric 2 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <div class="flex items-center gap-3 min-h-[4.5rem]">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-50%</div>
+                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                </div>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">water use</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.</p>
+            </div>
+
+            {{-- Metric 3 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <div class="flex items-center gap-3 min-h-[4.5rem]">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-75%</div>
+                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                </div>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">sick days</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
+            </div>
+
+            {{-- Business 4 --}}
+            <div class="flex flex-col gap-2 col-span-1">
+                <div class="flex items-center gap-2 min-h-[4.5rem]">
+                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
+                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                </div>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">detergent and process waste</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.</p>
+            </div>
+
+            {{-- Business 5 --}}
+            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
+                <div class="flex items-center gap-2 min-h-[4.5rem]">
+                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprise</div>
+                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                </div>
+                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">repair and maintenance pressure</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, rental, preventive maintenance, repairs and aftercare so care home laundry decisions are not only made after something fails.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 <!-- 6. COMPACT CARE FACILITIES BENTO -->
 <section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
-                Care facility laundry should <span style="color:#148af4;">support daily care</span>, not create another pressure point
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                <span class="whitespace-nowrap block">Features that support <span style="color:#148af4;">daily care</span>, <span style="color:#148af4;">staff handling</span></span>
+                <span class="whitespace-nowrap block">and <span style="color:#148af4;">laundry consistency</span></span>
             </h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed">
-                Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more manageable day-to-day laundry routines when matched to the right care setting.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                <span class="whitespace-nowrap block">Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more</span>
+                <span class="whitespace-nowrap block">manageable day-to-day laundry routines when matched to the right care setting.</span>
             </p>
         </div>
 
@@ -150,7 +225,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic loading, access and controls help reduce strain for teams handling repeated laundry tasks.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic loading, access and controls support easier repeated laundry tasks for care teams and laundry staff.</p>
                 </div>
             </div>
 
@@ -159,8 +234,8 @@
                     <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe and CompassPro give operators guided programs, status messages and clearer day-to-day process control.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Guided process control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe and CompassPro give operators guided programs, status messages and clearer day-to-day control.</p>
                 </div>
             </div>
 
@@ -180,93 +255,8 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance, Direct Ironer Advanced Moisture Management System (DIAMMS) and finishing features help support linen quality before storage or return to use.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance, Direct Ironer Advanced Moisture Management System (DIAMMS) and finishing features support linen quality before storage or return to use.</p>
                 </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{-- Financial Performance Bento: metric cards --}}
-<section class="py-12 lg:py-16 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
-                Stop <span style="color:#148af4;">laundry costs</span> quietly building up in the care home
-            </h2>
-            <p class="font-body text-gray-500 text-sm leading-relaxed">
-                In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
-
-            {{-- Metric 1 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+65%</div>
-                        <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
-                </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy saving</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.</p>
-            </div>
-
-            {{-- Metric 2 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+50%</div>
-                        <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
-                </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">water saving</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and save up to 50% on water consumption where suitable.</p>
-            </div>
-
-            {{-- Metric 3 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">+75%</div>
-                        <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
-                </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">fewer sick days</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
-            </div>
-
-            {{-- Business 4 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
-                    <div class="flex items-center gap-2">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>detergent</div>
-                        <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
-                </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">and process waste</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing help match load, water and detergent use to the real cycle demand, reducing waste from underloading, overloading and poor process control.</p>
-            </div>
-
-            {{-- Business 5 --}}
-            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
-                    <div class="flex items-center gap-2">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Lower<br>reactive</div>
-                        <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    </div>
-                </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">cost pressure</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects rental, preventive maintenance, repairs and aftercare so care homes are not forced to make every decision after something fails.</p>
             </div>
 
         </div>
@@ -278,12 +268,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Routes</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-[2.75rem] leading-tight mb-3">
-                Four ways we support <span style="color:#148af4;">care facility laundry</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Routes</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                Connected support to <span style="color:#148af4;">keep daily care moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Care facilities often need equipment, maintenance, response and aftercare to work around the same daily laundry routine. These needs should not sit in separate conversations.
+                Care facilities need equipment, maintenance, repairs and aftercare to work around the same daily laundry routine, resident-item flow and staff pressure.
             </p>
         </div>
 
@@ -299,8 +289,8 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Contracts',
-                    'text'   => 'For care homes that need planned visits, service visibility and fewer reactive maintenance decisions around essential laundry equipment.',
+                    'title'  => 'Preventive Maintenance Contracts',
+                    'text'   => 'For care homes that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/Service Contracts.png',
@@ -308,7 +298,7 @@
                 ],
                 [
                     'title'  => 'Equipment Rental',
-                    'text'   => 'For sites that need access to professional equipment without turning every laundry decision into an upfront capital purchase.',
+                    'text'   => 'For sites that need professional laundry equipment without turning every decision into a large upfront purchase.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
                     'img'    => '/images/healthcare/commercial-industrial.jpg',
@@ -316,7 +306,7 @@
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
-                    'text'   => 'For service history, parts access where needed, technical follow-up and clearer maintain, repair, rent or replace decisions.',
+                    'text'   => 'For service history, genuine parts access where applicable and clearer repair, rental or replacement decisions after installation or inspection.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
@@ -368,12 +358,12 @@
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Designed around your</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">care facility, workflow<br>and capacity</span>
+            <span class="text-white text-3xl lg:text-5xl block">Plan the care laundry room</span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">before daily costs build up</span>
         </h2>
 
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            Before equipment becomes a daily management issue, the room, staff routine, resident-item flow, utility pressure and service needs should be understood together.
+            Before equipment becomes a daily management issue, the room, staff routine, resident-item flow, utility pressure and maintenance needs should be understood together. Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
@@ -412,11 +402,12 @@
 
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                Equipment for <span style="color:#148af4;">care facility laundry</span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                <span class="whitespace-nowrap block">Equipment built around <span style="color:#148af4;">resident items</span>, staff</span>
+                <span class="whitespace-nowrap block">routines and <span style="color:#148af4;">running cost</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the service structure behind the installed equipment.
+                The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the care that keeps the equipment performing over time.
             </p>
         </div>
 
@@ -770,6 +761,161 @@
     </div>
 </section>
 
+<!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Section header --}}
+        <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes another</span>
+                <span class="whitespace-nowrap block">running cost</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
+                <span class="whitespace-nowrap block">Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,</span>
+                <span class="whitespace-nowrap block">lower chemical overuse, protect resident clothing, bedding and towels, and support more consistent wash results over time.</span>
+            </p>
+        </div>
+
+        {{-- Carousel --}}
+        @php
+        $dosingProducts = [
+            [
+                'name'    => 'Multisave',
+                'label'   => 'Multi-tank dosing with water saving',
+                'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
+                'img'     => '/images/healthcare/MultisaveEQUIP.webp',
+            ],
+            [
+                'name'    => 'DOSAVE',
+                'label'   => 'Precise dosing for consistent results',
+                'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
+                'img'     => '/images/healthcare/DOSAVEEQUIP.webp',
+            ],
+            [
+                'name'    => 'JETSAVE',
+                'label'   => 'Jet-based dosing with integrated saving',
+                'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
+                'img'     => '/images/healthcare/JetsaveEQUIP.webp',
+            ],
+            [
+                'name'    => 'Efficient Dosing',
+                'label'   => 'Integrated dosing through CompassPro',
+                'body'    => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
+                'img'     => '/images/healthcare/efficientDosing_equip.webp',
+            ],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: 4,
+                timer: null,
+                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
+                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
+                go(i)   { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 5000); },
+            }"
+            x-init="timer = setInterval(() => next(), 5000)"
+            class="relative"
+        >
+            {{-- Slides --}}
+            <div class="grid [&>*]:[grid-area:1/1]">
+                @foreach($dosingProducts as $i => $p)
+                <div
+                    class="transition-opacity duration-500"
+                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+                >
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+
+                        {{-- Left: context photo --}}
+                        <div class="lg:col-span-3 overflow-hidden" style="max-height:300px; align-self:center;">
+                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                                 alt="Electrolux Professional laundry equipment"
+                                 class="w-full h-full object-cover object-center" style="height:300px;">
+                        </div>
+
+                        {{-- Right: product name + tabs indicator + description + unit image --}}
+                        <div class="lg:col-span-9 flex flex-col justify-between p-8 lg:p-10">
+
+                            {{-- Tab indicators (product selector) --}}
+                            <div class="flex gap-1 border-b border-gray-100 mb-6">
+                                @foreach($dosingProducts as $j => $tab)
+                                <button @click="go({{ $j }})"
+                                        :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                        class="font-heading text-sm pb-3 pr-6 transition-colors whitespace-nowrap">
+                                    {{ $tab['name'] }}
+                                </button>
+                                @endforeach
+                            </div>
+
+                            {{-- Content + unit image side by side --}}
+                            <div class="flex gap-6 items-start flex-1">
+
+                                {{-- Copy --}}
+                                <div class="flex-1">
+                                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
+                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
+                                    <div class="flex items-center gap-8">
+                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                    </div>
+                                </div>
+
+                                {{-- Unit image --}}
+                                @if($p['img'])
+                                <div class="flex-shrink-0 w-56 lg:w-80 flex items-center justify-center">
+                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
+                                         class="w-full h-auto object-contain">
+                                </div>
+                                @endif
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Prev / Next buttons --}}
+            <button @click="prev()"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+            </button>
+            <button @click="next()"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </button>
+
+            {{-- Dot navigation --}}
+            <div class="flex items-center justify-center gap-2 mt-3">
+                @foreach($dosingProducts as $i => $p)
+                <button
+                    @click="go({{ $i }})"
+                    :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
+                    class="h-2 rounded-full transition-all duration-300">
+                </button>
+                @endforeach
+            </div>
+
+        </div>
+
+        {{-- CTA --}}
+        <div class="mt-4 text-center">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
+                Ask About Dosing Systems
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
 @include('components.why-choose-strip')
 
 @include('components.equipment-categories')
@@ -791,8 +937,8 @@
             @foreach([
                 ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine, resident-item flow, utilities, capacity and day-to-day pressure.',  'icon' => 'clipboard'],
                 ['title' => 'Match equipment to daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement plan.',               'icon' => 'Ativo%204'],
-                ['title' => 'Connect service, rental and aftercare',      'text' => 'Link the installed equipment to preventive maintenance, repairs, service history and follow-up.',      'icon' => 'Ativo%206'],
-                ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and service model into a practical next step.',                         'icon' => 'Ativo%203'],
+                ['title' => 'Connect maintenance, rental and aftercare',  'text' => 'Link the equipment already on-site to preventive maintenance, repairs, service history and follow-up care.', 'icon' => 'Ativo%206'],
+                ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and care model into a practical next step.',                            'icon' => 'Ativo%203'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
@@ -819,16 +965,16 @@
 
 <!-- 11. Service Contracts, Support & Aftercare Strip -->
 @include('components.service-contracts-strip', [
-    'headingLine1' => 'Keep equipment, service history<br>and aftercare connected',
-    'headingLine2' => 'around care facility needs',
-    'body'         => 'Planned maintenance, service history and aftercare help care facilities keep laundry equipment easier to manage after installation, rental, repair or replacement.',
+    'headingLine1' => 'Protect daily laundry routines',
+    'headingLine2' => 'after installation',
+    'body'         => 'The right equipment decision should not become harder to manage after installation, rental, repair or replacement. Planned maintenance and aftercare give care facilities a clearer way to reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
 ])
 
 <!-- 12. Testimonial / Proof Block -->
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted by sites where equipment<br>issues affect <span style="color:#148af4;">daily operations</span>',
-    'subheading' => 'Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites<br>where faults can create pressure for staff, linen flow, guests, residents or production.',
+    'heading'    => 'Trusted by care teams who need <span style="color:#148af4;">laundry to keep moving</span>',
+    'subheading' => '',
 ])
 
 @include('components.proof-bar')
@@ -838,11 +984,11 @@
     'faqs' => [
         ['question' => 'What types of care facilities do you work with?',             'answer' => 'Irish Laundry Systems works with care homes, residential care settings, nursing home environments and related sites where daily laundry demand, resident items, staff routines and equipment continuity matter.'],
         ['question' => 'Can you supply machines suitable for a care home laundry room?', 'answer' => 'Yes. Irish Laundry Systems supplies and supports Electrolux Professional laundry equipment for care facility settings, including washers, dryers, finishing equipment and barrier options where separation is required.'],
-        ['question' => 'Can you help reduce laundry running costs?',                  'answer' => 'We can assess the room, equipment type, utility pressure, load pattern and maintenance needs. Selected Electrolux Professional technologies can help reduce energy, water and detergent use depending on the equipment and site configuration.'],
-        ['question' => 'Is rental an option instead of purchasing equipment outright?', 'answer' => 'Yes. Equipment Rental can be discussed where a care facility needs replacement, expansion or continuity without immediate capital purchase.'],
-        ['question' => 'What maintenance support is available after installation?',   'answer' => 'Preventive Maintenance Contracts can include scheduled visits, inspection, service reporting and technical follow-up. Support & Aftercare helps connect service history, parts access where needed and future equipment decisions.'],
-        ['question' => 'Can you respond if a machine breaks down?',                   'answer' => 'Yes. Repairs & Call-outs are available for urgent equipment faults. Requests are handled based on urgency, equipment details, site pressure and service context.'],
-        ['question' => 'Do care homes need barrier washers?',                         'answer' => 'Not every care facility needs the same setup. Barrier washers are relevant where dirty-side and clean-side handling need controlled separation. Irish Laundry Systems can help assess whether this is required for your site.'],
+        ['question' => 'Can you reduce laundry running costs?',                       'answer' => 'We can assess the room, equipment type, utility pressure, load pattern and maintenance needs. Selected Electrolux Professional technologies can reduce energy, water and detergent use depending on the equipment and site configuration.'],
+        ['question' => 'Is rental an option instead of purchasing equipment outright?', 'answer' => 'Yes. Equipment Rental can be discussed where a care facility needs replacement, expansion or continuity without one large upfront purchase.'],
+        ['question' => 'What maintenance support is available after installation?',   'answer' => 'Preventive Maintenance Contracts can include scheduled visits, inspection, reporting and practical follow-up. Support & Aftercare connects service history, genuine parts access where applicable and future equipment decisions.'],
+        ['question' => 'Can you respond if a machine breaks down?',                   'answer' => 'Yes. Repairs & Call-outs are available for urgent equipment faults. Requests are handled based on urgency, equipment details, site pressure and maintenance history.'],
+        ['question' => 'Do care homes need barrier washers?',                         'answer' => 'Not every care facility needs the same setup. Barrier washers are relevant where dirty-side and clean-side handling need controlled separation. Irish Laundry Systems can assess whether this is required for your site.'],
         ['question' => 'Can you review an existing care home laundry room?',          'answer' => 'Yes. We can review current machines, room layout, daily demand, running pressure, maintenance history and whether purchase, rental, repair or replacement is the right next step.'],
     ],
 ])
