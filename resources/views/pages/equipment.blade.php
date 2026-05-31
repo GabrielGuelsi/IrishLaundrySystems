@@ -41,34 +41,22 @@
 @include('components.partner-strip')
 
 <!-- 3. INTRO / BRIDGE -->
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Choosing Equipment</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
-
-            <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
-                </h2>
-            </div>
-
-            <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use where suitable.
-                </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision, whether the right step is purchase, rental where suitable, installation and commissioning or follow-up care.
-                </p>
-                <a href="#equipment-categories"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Explore Equipment
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-            </div>
-
-        </div>
+<section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Choosing Equipment</p>
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+            A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
+        </h2>
+        <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-2xl mx-auto">
+            The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use where suitable. Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision &mdash; purchase, rental where suitable, installation and commissioning or follow-up care.
+        </p>
+        <a href="#equipment-categories"
+           class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200">
+            Explore Equipment
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+            </svg>
+        </a>
     </div>
 </section>
 
@@ -131,22 +119,22 @@
             x-init="timer = setInterval(() => next(), 6000)"
             class="relative"
         >
-            <div class="grid [&>*]:[grid-area:1/1]">
+            <div class="grid [&>*]:[grid-area:1/1] rounded-2xl overflow-hidden">
                 @foreach($teasers as $i => $t)
                 <div
-                    class="transition-opacity duration-500 rounded-2xl overflow-hidden"
+                    class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="relative" style="min-height:460px;">
+                    <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover object-center">
-                        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.72) 42%, rgba(1,30,65,0.30) 70%, transparent 100%);"></div>
-                        <div class="relative z-10 flex items-center" style="min-height:460px;">
-                            <div class="px-8 lg:px-16 py-12 max-w-2xl">
+                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 35%, rgba(1,30,65,0.15) 65%, rgba(1,30,65,0.05) 100%);"></div>
+                        <div class="relative z-10 flex items-end" style="min-height:540px;">
+                            <div class="p-8 lg:p-14 max-w-2xl">
                                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $t['eyebrow'] }}</p>
                                 <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4">{{ $t['headline'] }}</h3>
-                                <p class="font-body text-white/80 text-base leading-relaxed mb-6">{{ $t['subline'] }}</p>
-                                <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8">
+                                <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-xl">{{ $t['subline'] }}</p>
+                                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-7">
                                     @foreach($t['points'] as $pt)
                                     <span class="font-body text-white/90 text-sm">{{ $pt }}</span>
                                     @if(!$loop->last)<span class="text-white/30">|</span>@endif
@@ -162,15 +150,18 @@
                     </div>
                 </div>
                 @endforeach
-            </div>
 
-            {{-- Dot navigation --}}
-            <div class="flex items-center justify-center gap-2 mt-6">
-                @foreach($teasers as $i => $t)
-                <button @click="go({{ $i }})"
-                        :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
-                        class="h-2 rounded-full transition-all duration-300"></button>
-                @endforeach
+                {{-- Prev / Next circular arrows, bottom-right --}}
+                <div class="self-end justify-self-end z-20 flex gap-2 p-6">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-white/90 hover:bg-white text-navy shadow flex items-center justify-center transition-colors">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-white/90 hover:bg-white text-navy shadow flex items-center justify-center transition-colors">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -189,45 +180,87 @@
                 These equipment options can help sites handle common laundry demands around output, drying performance, space and professional-grade use.
             </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        @php
+        $highlighted = [
+            [
+                'title' => 'High Spin Commercial Washers',
+                'text'  => 'For sites that need stronger wash performance, better load handling and more control around daily laundry output.',
+                'cta'   => 'View Washer Options',
+                'route' => route('equipment.category', 'washers'),
+                'img'   => '/images/equipment/commercialwasher.webp',
+            ],
+            [
+                'title' => 'Heat Pump Dryers',
+                'text'  => 'For sites looking to reduce energy pressure while keeping drying performance strong for busy laundry demand.',
+                'cta'   => 'View Dryer Options',
+                'route' => route('equipment.category', 'tumble-dryers'),
+                'img'   => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp',
+            ],
+            [
+                'title' => 'myPRO Washers &amp; Dryers',
+                'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
+                'cta'   => 'View myPRO Options',
+                'route' => route('equipment.category', 'semi-professional'),
+                'img'   => '/images/equipment/IB623_FRONT_NEW.jpg',
+            ],
+        ];
+        @endphp
 
-            @foreach([
-                [
-                    'title' => 'High Spin Commercial Washers',
-                    'text'  => 'For sites that need stronger wash performance, better load handling and more control around daily laundry output.',
-                    'cta'   => 'View Washer Options',
-                    'route' => route('equipment.category', 'washers'),
-                    'img'   => '/images/equipment/commercialwasher.webp',
-                ],
-                [
-                    'title' => 'Heat Pump Dryers',
-                    'text'  => 'For sites looking to reduce energy pressure while keeping drying performance strong for busy laundry demand.',
-                    'cta'   => 'View Dryer Options',
-                    'route' => route('equipment.category', 'tumble-dryers'),
-                    'img'   => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp',
-                ],
-                [
-                    'title' => 'myPRO Washers &amp; Dryers',
-                    'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
-                    'cta'   => 'View myPRO Options',
-                    'route' => route('equipment.category', 'semi-professional'),
-                    'img'   => '/images/equipment/IB623_FRONT_NEW.jpg',
-                ],
-            ] as $card)
-            <div class="group border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div class="aspect-[4/3] overflow-hidden bg-white">
-                    <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($highlighted) }},
+                timer: null,
+                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
+                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
+                go(i)   { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+            }"
+            x-init="timer = setInterval(() => next(), 6000)"
+            class="relative"
+        >
+            <div class="grid [&>*]:[grid-area:1/1]">
+                @foreach($highlighted as $i => $card)
+                <div
+                    class="transition-opacity duration-500"
+                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+                >
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-[#f7f8fa] rounded-2xl overflow-hidden border border-gray-100" style="min-height:360px;">
+                        <div class="overflow-hidden flex items-center justify-center p-8 bg-white">
+                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full h-72 object-contain">
+                        </div>
+                        <div class="flex flex-col justify-center p-8 lg:p-14">
+                            <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3">{!! $card['title'] !!}</h3>
+                            <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-md">{{ $card['text'] }}</p>
+                            <a href="{{ $card['route'] }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200 w-fit">
+                                {!! $card['cta'] !!} <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="p-6 flex flex-col flex-1">
-                    <h3 class="font-heading font-bold text-navy text-xl mb-2">{!! $card['title'] !!}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 flex-1">{{ $card['text'] }}</p>
-                    <a href="{{ $card['route'] }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors">
-                        {!! $card['cta'] !!} <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </a>
+                @endforeach
+            </div>
+
+            {{-- Dots + arrows --}}
+            <div class="flex items-center justify-between mt-6">
+                <div class="flex items-center gap-2">
+                    @foreach($highlighted as $i => $card)
+                    <button @click="go({{ $i }})"
+                            :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
+                            class="h-2 rounded-full transition-all duration-300"></button>
+                    @endforeach
+                </div>
+                <div class="flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
                 </div>
             </div>
-            @endforeach
-
         </div>
     </div>
 </section>
@@ -244,28 +277,25 @@
                 Start with the equipment type, then Irish Laundry Systems can help confirm the right capacity, site fit, purchase option or rental option where suitable.
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             @foreach([
-                ['title' => 'Commercial Washers',       'text' => 'For daily commercial laundry loads, wash performance and output control across high-use sites.',        'cta' => 'View Commercial Washers', 'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
-                ['title' => 'Barrier Washers',          'text' => 'For laundry environments that need dirty-side and clean-side separation to support hygiene flow.',       'cta' => 'View Barrier Washers',    'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/equipment/line6000-barrier-washer.webp'],
-                ['title' => 'Tumble Dryers',            'text' => 'For drying capacity matched to wash demand, turnaround needs and textile care requirements.',          'cta' => 'View Tumble Dryers',      'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-                ['title' => 'Drying Cabinets',          'text' => 'For workwear, PPE, uniforms and garments that need careful drying without standard tumble action.',     'cta' => 'View Drying Cabinets',    'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-                ['title' => 'Hot Cylinder Ironers',     'text' => 'For flatwork finishing, linen presentation and sites that need better control over finishing flow.',   'cta' => 'View Ironers',            'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Wet Cleaning',             'text' => 'For specialist textile care and garment handling where a different cleaning approach is needed.',       'cta' => 'View Wet Cleaning',       'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
-                ['title' => 'Semi-Professional',        'text' => 'For smaller sites that need a stronger step up from domestic laundry equipment.',                       'cta' => 'View Semi-Professional',  'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
-                ['title' => 'Accessories &amp; Consumables', 'text' => 'For products and support items that help keep day-to-day laundry operation moving.',                 'cta' => 'View Accessories',        'route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
+                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
+                ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/equipment/line6000-barrier-washer.webp'],
+                ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
+                ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
+                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
             ] as $cat)
-            <a href="{{ $cat['route'] }}" class="group bg-white border border-gray-100 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
-                <div class="aspect-[4/3] overflow-hidden bg-white">
-                    <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
-                </div>
-                <div class="p-5 flex flex-col flex-1">
-                    <h3 class="font-heading font-bold text-navy text-lg mb-1.5">{!! $cat['title'] !!}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-4 flex-1">{{ $cat['text'] }}</p>
-                    <span class="inline-flex items-center gap-1.5 font-body font-bold text-navy group-hover:text-[#148af4] text-sm transition-colors">
-                        {!! $cat['cta'] !!} <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </span>
+            <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100">
+                <div class="absolute inset-0" style="background: linear-gradient(to bottom, #f3f5f8 0%, #e6ebf1 100%);"></div>
+                <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
+                     class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-x-0 bottom-0 h-2/5" style="background: linear-gradient(to top, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.45) 55%, transparent 100%);"></div>
+                <div class="absolute inset-x-0 bottom-0 p-5 z-10">
+                    <h3 class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">{!! $cat['title'] !!}</h3>
                 </div>
             </a>
             @endforeach
