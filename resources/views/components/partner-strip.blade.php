@@ -45,7 +45,7 @@
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">38 Dublin client locations</span>
+                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">38+ long-term clients supported</span>
             </div>
 
         </div>

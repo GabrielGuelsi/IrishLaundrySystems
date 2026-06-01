@@ -4,7 +4,7 @@
     'primaryText' => 'Request a Service Assessment',
     'primaryHref' => '/request-assessment',
     'secondaryText' => 'Talk to an Engineer',
-    'secondaryHref' => 'tel:+353000000000',
+    'secondaryHref' => 'tel:+35314910402',
     'dark'        => true,
 ])
 

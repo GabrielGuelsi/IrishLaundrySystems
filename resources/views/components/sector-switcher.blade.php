@@ -1,6 +1,13 @@
-﻿{{--
+﻿@props([
+    'intro'           => 'Different sites carry different pressures. The right commercial laundry care depends on hygiene requirements,<br class="hidden lg:inline"> linen flow, staffing, throughput, installed equipment, budget pressure and service needs.',
+    'healthcareBody'  => 'Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily service.',
+    'careBody'        => 'Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
+    'hospitalityBody' => 'Engineering care for guest-facing sites where linen availability, finishing quality, turnaround and response time affect the wider business.',
+    'commercialBody'  => 'Care for higher-throughput laundry sites where output, lifecycle cost and engineering response carry more operational weight.',
+])
+{{--
     Sector Grid — 2×2 image-card grid
-    Used on: homepage.
+    Used on: homepage + sectors page.
     Title + description + CTA centered at bottom of each card, always visible.
     Hover: card lifts, image zooms.
 --}}
@@ -16,7 +23,7 @@
                 </h2>
             </div>
             <p class="font-body text-gray-600 text-lg leading-relaxed max-w-5xl">
-                Different sites carry different pressures. The right commercial laundry care depends on hygiene requirements,<br class="hidden lg:inline"> linen flow, staffing, throughput, installed equipment, budget pressure and service needs.
+                {!! $intro !!}
             </p>
         </div>
 
@@ -33,7 +40,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Healthcare</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
-                        Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily service.
+                        {{ $healthcareBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Request Healthcare Assessment
@@ -51,7 +58,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Care Facilities</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
-                        Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.
+                        {{ $careBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         View Care Facility Support
@@ -69,7 +76,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Hospitality</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
-                        Engineering care for guest-facing sites where linen availability, finishing quality, turnaround and response time affect the wider business.
+                        {{ $hospitalityBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         View Hospitality Support
@@ -88,7 +95,7 @@
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                     <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3 whitespace-nowrap">Commercial &amp; Industrial</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
-                        Care for higher-throughput laundry sites where output, lifecycle cost and engineering response carry more operational weight.
+                        {{ $commercialBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
                         Discuss Site Requirements

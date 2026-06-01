@@ -2,6 +2,11 @@
     'headingLine1' => 'Keep maintenance, service history and',
     'headingLine2' => 'next steps connected',
     'body'         => 'Planned maintenance, service history, parts routes where required and practical aftercare help keep equipment decisions clearer after installation, rental, repair or inspection.',
+    'features'     => [
+        ['icon' => 'ativo-7', 'label' => 'Planned maintenance'],
+        ['icon' => 'ativo-8', 'label' => 'Service history'],
+        ['icon' => 'ativo-4', 'label' => 'Practical aftercare'],
+    ],
 ])
 {{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
@@ -26,11 +31,7 @@
         </p>
 
         <div class="flex items-center flex-nowrap gap-0 mb-7">
-            @foreach([
-                ['icon' => 'ativo-7', 'label' => 'Planned maintenance'],
-                ['icon' => 'ativo-8', 'label' => 'Service history'],
-                ['icon' => 'ativo-4', 'label' => 'Practical aftercare'],
-            ] as $i => $feat)
+            @foreach($features as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-10 bg-white/20 mx-5 flex-shrink-0"></div>
             @endif
