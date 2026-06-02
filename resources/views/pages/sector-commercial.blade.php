@@ -325,7 +325,7 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Maintenance Contracts',
+                    'title'  => 'Preventive Contracts',
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around high-use equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
