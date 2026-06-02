@@ -41,22 +41,34 @@
 @include('components.partner-strip')
 
 <!-- 3. INTRO / BRIDGE -->
-<section class="py-12 lg:py-16 bg-white">
-    <div class="max-w-3xl mx-auto px-6 text-center reveal">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Choosing Equipment</p>
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
-            A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
-        </h2>
-        <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-2xl mx-auto">
-            The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use where suitable. Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision &mdash; purchase, rental where suitable, installation and commissioning or follow-up care.
-        </p>
-        <a href="#equipment-categories"
-           class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200">
-            Explore Equipment
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-            </svg>
-        </a>
+<section class="py-16 lg:py-24 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Choosing Equipment</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+
+            <div class="reveal reveal-left">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                    A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
+                </h2>
+            </div>
+
+            <div class="reveal reveal-right">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use where suitable.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision, whether the right step is purchase, rental where suitable, installation and commissioning or follow-up care.
+                </p>
+                <a href="#equipment-categories"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                    Explore Equipment
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -69,10 +81,14 @@
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                 Explore equipment lines built for <span style="color:#148af4;">different laundry needs</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care. Irish Laundry Systems helps match the right option to the site and the next step.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                <span class="whitespace-nowrap block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
+                <span class="whitespace-nowrap block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
             </p>
         </div>
+    </div>
+
+    <div>
 
         @php
         $teasers = [
@@ -83,7 +99,7 @@
                 'points'   => ['Control running costs', 'Use less water and energy', 'Built for daily demand'],
                 'cta'      => 'Explore Line 6000 Options',
                 'route'    => route('equipment.category', 'washers'),
-                'img'      => '/images/equipment/commercialwasher.webp',
+                'img'      => '/images/sectors/Line 6000 solutions products_72dpi.jpg',
             ],
             [
                 'eyebrow'  => 'myPROzip',
@@ -92,7 +108,7 @@
                 'points'   => ['More than domestic', 'Smaller-site fit', 'Faster turnaround'],
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
-                'img'      => '/images/equipment/IB623_FRONT_NEW.jpg',
+                'img'      => '/images/healthcare/healthcarehero.png',
             ],
             [
                 'eyebrow'  => 'lagoon Advanced Care',
@@ -101,7 +117,7 @@
                 'points'   => ['Protect textile quality', 'Handle specialist garments', 'Reduce outsourcing where suitable'],
                 'cta'      => 'Explore Wet Cleaning',
                 'route'    => route('equipment.category', 'wet-cleaning'),
-                'img'      => '/images/healthcare/lagoon-advanced-care.webp',
+                'img'      => '/images/Hospitallity/hospitallityhero.jpeg',
             ],
         ];
         @endphp
@@ -119,7 +135,7 @@
             x-init="timer = setInterval(() => next(), 6000)"
             class="relative"
         >
-            <div class="grid [&>*]:[grid-area:1/1] rounded-2xl overflow-hidden">
+            <div class="grid [&>*]:[grid-area:1/1] overflow-hidden">
                 @foreach($teasers as $i => $t)
                 <div
                     class="transition-opacity duration-500"
@@ -128,7 +144,7 @@
                     <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover object-center">
-                        <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 35%, rgba(1,30,65,0.15) 65%, rgba(1,30,65,0.05) 100%);"></div>
+                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.12) 55%, transparent 75%);"></div>
                         <div class="relative z-10 flex items-end" style="min-height:540px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
                                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $t['eyebrow'] }}</p>
@@ -176,7 +192,7 @@
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                 Equipment options <span style="color:#148af4;">worth a closer look</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed whitespace-nowrap">
                 These equipment options can help sites handle common laundry demands around output, drying performance, space and professional-grade use.
             </p>
         </div>
@@ -210,53 +226,64 @@
             x-data="{
                 active: 0,
                 count: {{ count($highlighted) }},
+                perView: 2,
                 timer: null,
-                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
-                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
-                go(i)   { this.active = i; this.restart(); },
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    this.perView = window.innerWidth < 1024 ? 1 : 2;
+                    window.addEventListener('resize', () => {
+                        this.perView = window.innerWidth < 1024 ? 1 : 2;
+                        if (this.active > this.maxIndex) this.active = this.maxIndex;
+                    });
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
             }"
-            x-init="timer = setInterval(() => next(), 6000)"
             class="relative"
         >
-            <div class="grid [&>*]:[grid-area:1/1]">
-                @foreach($highlighted as $i => $card)
-                <div
-                    class="transition-opacity duration-500"
-                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
-                >
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-0 bg-[#f7f8fa] rounded-2xl overflow-hidden border border-gray-100" style="min-height:360px;">
-                        <div class="overflow-hidden flex items-center justify-center p-8 bg-white">
-                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full h-72 object-contain">
-                        </div>
-                        <div class="flex flex-col justify-center p-8 lg:p-14">
-                            <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-3">{!! $card['title'] !!}</h3>
-                            <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-md">{{ $card['text'] }}</p>
-                            <a href="{{ $card['route'] }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200 w-fit">
-                                {!! $card['cta'] !!} <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                            </a>
+            {{-- Track --}}
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-3"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($highlighted as $i => $card)
+                    <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
+                        <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
+                            <div class="flex items-center justify-center">
+                                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full h-44 lg:h-52 object-contain">
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{!! $card['title'] !!}</h3>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $card['text'] }}</p>
+                                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                                    Discover more
+                                </a>
+                            </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
 
-            {{-- Dots + arrows --}}
-            <div class="flex items-center justify-between mt-6">
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-8 flex items-center justify-center">
                 <div class="flex items-center gap-2">
                     @foreach($highlighted as $i => $card)
                     <button @click="go({{ $i }})"
-                            :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
-                            class="h-2 rounded-full transition-all duration-300"></button>
+                            x-show="{{ $i }} <= maxIndex"
+                            :class="active === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                            class="rounded-full transition-all duration-300"></button>
                     @endforeach
                 </div>
-                <div class="flex gap-2">
+                <div class="absolute right-0 flex gap-2">
                     <button @click="prev()"
-                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center">
+                            class="w-11 h-11 rounded-full bg-gray-200 text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
                     </button>
                     <button @click="next()"
-                            class="w-11 h-11 rounded-full border border-navy/15 bg-white text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center">
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
                     </button>
                 </div>
@@ -273,7 +300,7 @@
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed whitespace-nowrap">
                 Start with the equipment type, then Irish Laundry Systems can help confirm the right capacity, site fit, purchase option or rental option where suitable.
             </p>
         </div>
@@ -289,8 +316,7 @@
                 ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
                 ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
             ] as $cat)
-            <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100">
-                <div class="absolute inset-0" style="background: linear-gradient(to bottom, #f3f5f8 0%, #e6ebf1 100%);"></div>
+            <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
                      class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-x-0 bottom-0 h-2/5" style="background: linear-gradient(to top, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.45) 55%, transparent 100%);"></div>
@@ -314,7 +340,8 @@
     <div class="relative z-10 px-10 lg:px-16 py-12 lg:py-16" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Access</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Choose the <span style="color:#011E41;">right equipment option</span></span>
+            <span class="text-white text-3xl lg:text-5xl block">Choose the <span style="color:#011E41;">right</span></span>
+            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">equipment option</span>
             <span class="text-white text-3xl lg:text-5xl block">for your site and budget</span>
         </h2>
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-2xl">
@@ -380,44 +407,74 @@
 </section>
 
 <!-- 9. SUPPORT AFTER INSTALLATION -->
-<section class="py-12 lg:py-16 bg-white border-y border-gray-200">
+<section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
 
-            <div class="lg:col-span-5">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
-                    Keep the <span style="color:#148af4;">next support step clear</span> after installation
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Once equipment is in place, Irish Laundry Systems can help your site choose the right follow-up support, from planned maintenance to call-out support and aftercare.
-                </p>
-            </div>
+        <div class="mb-8">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                Keep the <span style="color:#148af4;">next support step clear</span> after installation
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Once equipment is in place, Irish Laundry Systems can help your site choose the right follow-up support, from planned maintenance to call-out support and aftercare.
+            </p>
+        </div>
 
-            <div class="lg:col-span-7">
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-5">
-                    @foreach([
-                        ['label' => 'Preventive Maintenance Contracts', 'route' => route('service-contracts')],
-                        ['label' => 'Repairs &amp; Call-outs',          'route' => route('repairs')],
-                        ['label' => 'Support &amp; Aftercare',          'route' => route('parts-aftercare')],
-                    ] as $link)
-                    <a href="{{ $link['route'] }}"
-                       class="group flex items-center justify-between gap-3 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:border-[#148af4] transition-colors">
-                        <span class="font-heading font-bold text-navy text-sm leading-snug">{!! $link['label'] !!}</span>
-                        <svg class="w-4 h-4 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                    @endforeach
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+
+            @foreach([
+                [
+                    'title'  => 'Preventive Contracts',
+                    'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
+                    'cta'    => 'View Contracts',
+                    'route'  => route('service-contracts'),
+                    'img'    => '/images/healthcare/Service Contracts.png',
+                    'pos'    => 'center 35%',
+                ],
+                [
+                    'title'  => 'Repairs &amp; Call-outs',
+                    'text'   => 'Engineering support when faults or breakdowns put laundry output, linen availability or daily routines under pressure.',
+                    'cta'    => 'Request Call-out',
+                    'route'  => route('repairs'),
+                    'img'    => '/images/healthcare/repairs-callouts.jpg',
+                    'pos'    => 'center 40%',
+                ],
+                [
+                    'title'  => 'Support &amp; Aftercare',
+                    'text'   => 'For service history, genuine parts access where applicable and clearer repair, rental or replacement decisions after installation or inspection.',
+                    'cta'    => 'Explore Support Options',
+                    'route'  => route('parts-aftercare'),
+                    'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'pos'    => 'center center',
+                ],
+            ] as $card)
+            <a href="{{ $card['route'] }}"
+               class="group relative overflow-hidden rounded-2xl block"
+               style="height:400px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] }};">
+                {{-- Default gradient --}}
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.4) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                {{-- Hover overlay --}}
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.88);"></div>
+                {{-- Content --}}
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
+                        <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <div class="flex justify-end">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            {!! $card['cta'] !!}
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </span>
+                    </div>
                 </div>
-                <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
-                    @foreach(['Less delay', 'Clearer service decisions', 'Support from people who know the equipment'] as $i => $pt)
-                    @if($i > 0)<span class="text-gray-300">|</span>@endif
-                    <span class="font-body text-gray-500 text-sm">{{ $pt }}</span>
-                    @endforeach
-                    <a href="{{ route('parts-aftercare') }}" class="inline-flex items-center gap-1.5 font-body font-bold text-navy hover:text-[#148af4] text-sm transition-colors ml-auto">
-                        Explore Support &amp; Aftercare <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                </div>
-            </div>
+            </a>
+            @endforeach
 
         </div>
     </div>
@@ -426,44 +483,86 @@
 <!-- 10. EQUIPMENT FOR DIFFERENT LAUNDRY ENVIRONMENTS -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
 
-            <div class="lg:col-span-4">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Fit</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-4">
-                    Match equipment to the way <span style="color:#148af4;">each laundry room works</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                    A hotel, care facility, healthcare site, commercial laundry and shared-use laundry room may each need a different balance of capacity, hygiene flow, drying performance, finishing, space and support.
-                </p>
-                <p class="font-body text-gray-400 text-sm leading-relaxed mb-6">
-                    Irish Laundry Systems can help review the site needs before confirming the right category, equipment option or next step.
-                </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
-                    Talk to Our Team
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
+        <div class="text-center mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Fit</p>
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                Match equipment to the way <span style="color:#148af4;">each laundry room works</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">
+                A hotel, care facility, healthcare site, commercial laundry and shared-use laundry room may each need a different balance of capacity, hygiene flow, drying performance, finishing, space and support.
+            </p>
+        </div>
+
+        @php
+        $environments = [
+            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png'],
+            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/CareFacilitiesHero.png'],
+            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg'],
+            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
+            ['env' => 'Shared-use / smaller operations', 'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($environments) }},
+                perView: 4,
+                timer: null,
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    calc();
+                    window.addEventListener('resize', calc);
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
+            }"
+            class="relative"
+        >
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-3"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($environments as $i => $env)
+                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-3">
+                        <div class="flex flex-col items-center text-center">
+                            <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
+                                <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
+                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px;">
+                            </a>
+                            <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{!! $env['env'] !!}</h3>
+                            <a href="{{ $env['route'] }}"
+                               class="inline-flex items-center justify-center bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200">
+                                Discover more
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
             </div>
 
-            <div class="lg:col-span-8">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    @foreach([
-                        ['env' => 'Healthcare',                   'text' => 'Hygiene flow and essential laundry needs',          'route' => route('sectors.healthcare')],
-                        ['env' => 'Care Facilities',              'text' => 'Resident clothing, bedding and daily routines',     'route' => route('sectors.care')],
-                        ['env' => 'Hospitality',                  'text' => 'Linen flow, room readiness and presentation',       'route' => route('sectors.hospitality')],
-                        ['env' => 'Commercial &amp; Industrial',  'text' => 'Volume, output and mixed laundry loads',            'route' => route('sectors.commercial')],
-                        ['env' => 'Shared-use / smaller operations', 'text' => 'Space, access and usage patterns',               'route' => route('sectors')],
-                    ] as $row)
-                    <a href="{{ $row['route'] }}"
-                       class="group flex items-start gap-4 bg-white border border-gray-200 rounded-xl px-5 py-4 hover:bg-navy hover:border-navy transition-colors duration-200">
-                        <span class="w-2 h-2 rounded-full bg-[#148af4] flex-shrink-0 mt-2"></span>
-                        <div>
-                            <p class="font-heading font-bold text-navy group-hover:text-white text-base leading-snug mb-0.5 transition-colors">{!! $row['env'] !!}</p>
-                            <p class="font-body text-gray-500 group-hover:text-white/70 text-sm leading-relaxed transition-colors">{{ $row['text'] }}</p>
-                        </div>
-                    </a>
-                    @endforeach
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-10 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    <template x-for="i in (maxIndex + 1)" :key="i">
+                        <button @click="go(i - 1)"
+                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                                class="rounded-full transition-all duration-300"></button>
+                    </template>
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
                 </div>
             </div>
 

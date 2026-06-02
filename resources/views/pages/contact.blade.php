@@ -103,7 +103,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                         </svg>
                     </a>
-                    <a href="tel:+353000000000"
+                    <a href="tel:+35314910402"
                        class="inline-flex items-center gap-2 border border-white/40 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:border-white transition-colors tracking-wide">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
@@ -405,7 +405,7 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                             </svg>
                         </button>
-                        <a href="tel:+353000000000"
+                        <a href="tel:+35314910402"
                            class="inline-flex items-center gap-2 text-navy font-heading font-bold text-sm hover:text-[#148af4] transition-colors tracking-wide">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
@@ -423,23 +423,31 @@
 
                 {{-- Contact info --}}
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-5">Contact</h3>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-5">Contact Details</h3>
                     <div class="space-y-4">
                         <div>
-                            <a href="tel:+353000000000"
+                            <a href="tel:+35314910402"
                                class="font-body text-gray-700 text-base hover:text-navy transition-colors block font-bold">
-                                +353 (0) 00 000 0000
+                                +353 1 491 0402
                             </a>
                             <p class="font-body text-gray-400 text-sm mt-0.5">Mon – Fri, 8am – 5pm · Emergency line available</p>
                         </div>
                         <div>
-                            <a href="mailto:info@irishlaunderysystems.ie"
+                            <a href="mailto:contact@irishlaundrysystems.com"
                                class="font-body text-gray-700 text-sm hover:text-navy transition-colors block">
-                                info@irishlaunderysystems.ie
+                                contact@irishlaundrysystems.com
                             </a>
                         </div>
                         <div>
-                            <p class="font-body text-gray-500 text-sm">Republic of Ireland — all 26 counties</p>
+                            <p class="font-body text-gray-700 text-sm font-bold mb-1">Address</p>
+                            <address class="font-body text-gray-500 text-sm not-italic leading-relaxed">
+                                95 Ranelagh Village, Ranelagh<br>
+                                Dublin 6, D06 V1W5<br>
+                                Dublin — Ireland
+                            </address>
+                        </div>
+                        <div>
+                            <p class="font-body text-gray-500 text-sm"><span class="font-bold text-gray-700">VAT Number:</span> IE4815967C</p>
                         </div>
                     </div>
                 </div>

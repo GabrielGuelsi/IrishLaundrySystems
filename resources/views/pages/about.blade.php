@@ -22,9 +22,9 @@
             <div class="max-w-5xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">About Irish Laundry Systems</p>
                 <h1 class="font-heading font-bold text-white text-5xl lg:text-6xl leading-tight mb-6">
-                    <span class="whitespace-nowrap block">Keeping <span class="text-[#148af4]">commercial laundry</span></span>
+                    <span class="whitespace-nowrap block"><span class="text-[#011E41]">Keeping</span> <span class="text-[#148af4]">commercial laundry</span></span>
                     <span class="whitespace-nowrap block text-[#148af4]">equipment, service and aftercare</span>
-                    <span class="whitespace-nowrap block"><span class="text-[#148af4]">connected</span> since 1987</span>
+                    <span class="whitespace-nowrap block"><span class="text-[#148af4]">connected</span> <span class="text-[#011E41]">since 1987</span></span>
                 </h1>
                 <p class="font-body text-white/70 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
                     Built from electrical contracting roots and Electrolux Professional<br>service experience, Irish Laundry Systems supports 38 client<br>locations across Dublin and Ireland with equipment supply, rental,<br>maintenance, repairs and aftercare for business-critical laundry rooms.

@@ -308,7 +308,7 @@
                     'pos'    => '50% 35%',
                 ],
                 [
-                    'title'  => 'Service Contracts',
+                    'title'  => 'Preventive Contracts',
                     'text'   => 'Planned maintenance for sites that need better control over recurring issues, servicing needs and busy-period risk.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
