@@ -3,6 +3,7 @@
     'eyebrow'    => null,
     'subheading' => null,
     'light'      => false,
+    'bordered'   => true,
     'single'     => null,
 ])
 
@@ -68,7 +69,7 @@ $slides = $single && isset($testimonials[$single])
 $showChrome = ! $single && count($slides) > 1;
 @endphp
 
-<section class="py-16 lg:py-24 {{ $light ? 'bg-[#f7f8fa] border-y border-border' : 'bg-white' }}">
+<section class="py-16 lg:py-24 {{ $light ? ('bg-[#f7f8fa]' . ($bordered ? ' border-y border-border' : '')) : 'bg-white' }}">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         @if (! $single && ! empty($heading))
@@ -76,7 +77,7 @@ $showChrome = ! $single && count($slides) > 1;
                 @if($eyebrow)
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
                 @endif
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">{!! $heading !!}</h2>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
                     <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl mx-auto">{!! $subheading !!}</p>
                 @endif

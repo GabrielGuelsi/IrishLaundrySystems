@@ -1,3 +1,13 @@
+@props([
+    'heading'  => 'Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and&nbsp;capacity',
+    'body'     => 'We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day&nbsp;laundry&nbsp;demand.',
+    'features' => [
+        ['icon' => 'ativo-20', 'label' => 'Site<br>layout'],
+        ['icon' => 'ativo-10', 'label' => 'Equipment<br>fit'],
+        ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
+    ],
+    'ctaText'  => 'Talk to an Engineer',
+])
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     {{-- Background image pinned to right 60% --}}
@@ -14,21 +24,17 @@
 
         {{-- Heading --}}
         <h2 class="font-heading font-bold leading-tight mb-4 text-3xl lg:text-5xl text-white">
-            Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and&nbsp;capacity
+            {!! $heading !!}
         </h2>
 
         {{-- Description --}}
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day laundry demand.
+            {!! $body !!}
         </p>
 
         {{-- 3 horizontal features --}}
         <div class="flex items-center flex-nowrap gap-0 mb-7">
-            @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Site<br>layout'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>fit'],
-                ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
-            ] as $i => $feat)
+            @foreach($features as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
@@ -43,7 +49,7 @@
         {{-- CTA --}}
         <a href="{{ route('contact') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Talk to an Engineer
+            {{ $ctaText }}
         </a>
 
     </div>

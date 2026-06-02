@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
 
@@ -71,16 +71,16 @@
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div style="max-width: 620px;">
+            <div style="max-width: 760px;">
 
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-6xl text-balance">
-                    Call-outs and repairs when commercial laundry equipment is <span class="text-[#148af4] whitespace-nowrap">under pressure</span>
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-5xl text-balance">
+                    <span class="text-[#148af4]">Call-outs and repairs</span><br class="hidden lg:inline"> when commercial&nbsp;laundry<br class="hidden lg:inline"> equipment is under&nbsp;pressure
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-lg max-w-xl text-pretty">
-                    Irish Laundry Systems engineers respond quickly to get your laundry equipment back on track &mdash; with first triage, expert diagnosis and the right fix the first&nbsp;time, where&nbsp;possible.
+                    When a machine fault affects linen flow, staffing or production, Irish Laundry Systems supports your site with engineer-led diagnosis, Electrolux Professional knowledge and a clear repair route, so the issue can move from fault report to the right repair&nbsp;response.
                 </p>
 
                 <div class="hero-btns flex flex-row gap-4">
@@ -91,9 +91,18 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
-                        Talk to an Engineer
+                        Talk to Our Team
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
+                </div>
+
+                {{-- Trust indicators --}}
+                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
+                    <span class="whitespace-nowrap">Commercial laundry repairs</span>
+                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap">Electrolux Professional knowledge</span>
+                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap">Engineering-led since 1987</span>
                 </div>
 
             </div>
@@ -109,10 +118,13 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repair Triage</p>
         <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 text-balance">
-            Fast response works best with a <span class="text-[#148af4] whitespace-nowrap">professional diagnosis</span>
+            Fast support works best<br class="hidden lg:inline"> with a <span class="text-[#148af4] whitespace-nowrap">clear fault picture</span>
         </h2>
+        <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-4 max-w-3xl mx-auto text-pretty">
+            A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. Clear fault details at the start make it easier to prepare the right call-out response and reduce uncertainty around the next&nbsp;step.
+        </p>
         <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-10 max-w-3xl mx-auto text-pretty">
-            The right response depends on knowing the machine type, the fault symptoms, how urgent the site is and any relevant service history. Tell us as much as you can so we can route your request correctly and get the right engineer to the right&nbsp;site.
+            Irish Laundry Systems connects the machine type, fault symptoms, site urgency and service history before the engineer response is&nbsp;arranged.
         </p>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 mb-10">
@@ -164,17 +176,15 @@
             <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
                 {{-- LEFT: content --}}
-                <div class="lg:col-span-7 flex items-start gap-4">
-                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-[#148af4]/15 ring-1 ring-[#148af4]/30 flex items-center justify-center">
-                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                        </svg>
-                    </div>
+                <div class="lg:col-span-7 flex items-start gap-5">
+                    <svg class="w-12 h-12 lg:w-14 lg:h-14 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                    </svg>
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
-                        <h2 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-2 text-balance">Need fast help with a laundry equipment&nbsp;fault?</h2>
+                        <h2 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
                         <p class="font-body text-white text-sm leading-relaxed text-pretty">
-                            Tell us the machine type, site location, fault symptoms and urgency so the request can be <span class="text-[#148af4]">routed&nbsp;correctly</span>.
+                            Tell us what has failed, where the machine is located and how urgent the issue is, so the request can be routed to the right&nbsp;team.
                         </p>
                         <p class="font-body text-white/60 text-xs mt-2 text-pretty">
                             Contract customers may receive preferential service and labour rates where&nbsp;applicable.
@@ -186,10 +196,10 @@
                 <div class="lg:col-span-5 flex flex-col gap-5 lg:items-end">
 
                     {{-- Phone number prominent --}}
-                    <a href="tel:+353011234567" class="group lg:text-right">
+                    <a href="tel:+35314910402" class="group lg:text-right">
                         <span class="block font-body text-white/60 text-[11px] uppercase tracking-[0.22em] mb-1">Talk to a person now</span>
                         <span class="block font-heading font-bold text-white text-2xl lg:text-3xl tracking-tight leading-none group-hover:text-[#148af4] transition-colors">
-                            +353 01 123&nbsp;4567
+                            +353 1 491&nbsp;0402
                         </span>
                     </a>
 
@@ -203,7 +213,7 @@
                             Request Call-Out
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="tel:+353011234567"
+                        <a href="tel:+35314910402"
                            class="inline-flex items-center justify-center gap-2 bg-white text-navy font-body font-bold px-6 py-3 rounded-lg text-sm hover:bg-white/90 transition-colors cursor-pointer whitespace-nowrap">
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
@@ -211,6 +221,10 @@
                             Call Now
                         </a>
                     </div>
+
+                    <p class="font-body text-white/50 text-[11px] mt-1 lg:text-right text-pretty">
+                        For urgent equipment faults, call the team directly or request a&nbsp;call-out.
+                    </p>
 
                 </div>
 
@@ -223,32 +237,32 @@
 @php
 $expectSteps = [
     [
-        'title'    => 'Contact Us',
-        'desc'     => 'Share the key details on the equipment, symptoms and any recent trends or&nbsp;alerts.',
+        'title'    => 'Share the fault details',
+        'desc'     => 'Tell us the machine type, symptoms, site location, urgency and any recent service&nbsp;history.',
         'image'    => '/images/healthcare/operator.jpg',
         'alt'      => 'Operator placing a call about a commercial laundry breakdown',
         'meta'     => 'Step 1',
         'position' => 'center',
     ],
     [
-        'title'    => 'Triage &amp; Dispatch',
-        'desc'     => 'We review the info and prioritise the request by urgency, location and specialist&nbsp;availability.',
+        'title'    => 'Prepare the call-out',
+        'desc'     => 'Irish Laundry Systems reviews the information before the visit, so the engineer attends with the right fault picture and parts access where&nbsp;applicable.',
         'image'    => '/images/healthcare/customer-care-line6000.jpg',
-        'alt'      => 'ILS engineer providing customer care on Electrolux Line 6000 equipment',
+        'alt'      => 'ILS engineer reviewing call-out information on Electrolux Line 6000 equipment',
         'meta'     => 'Step 2',
         'position' => 'center',
     ],
     [
-        'title'    => 'On-Site Diagnosis',
-        'desc'     => 'An engineer attends site, carries out a full diagnosis and identifies the root&nbsp;cause.',
+        'title'    => 'Diagnose on-site',
+        'desc'     => 'The engineer checks the equipment, confirms the likely cause and carries out the repair where&nbsp;possible.',
         'image'    => '/images/hero/on-site-diagnosis.jpeg',
         'alt'      => 'ILS technician inspecting a commercial washing machine drum during diagnosis',
         'meta'     => 'Step 3',
         'position' => 'center',
     ],
     [
-        'title'    => 'Repair &amp; Report',
-        'desc'     => 'We carry out the repair, test the equipment and provide a clear summary of the work completed and any&nbsp;recommendations.',
+        'title'    => 'Leave with a clear next step',
+        'desc'     => 'If further parts, follow-up work or a maintenance review are needed, the recommended route is explained before the next decision is&nbsp;made.',
         'image'    => '/images/healthcare/repairs-callouts.jpg',
         'alt'      => 'ILS engineer completing a reactive repair on commercial laundry equipment',
         'meta'     => 'Step 4',
@@ -261,8 +275,8 @@ $expectSteps = [
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Call-Out Process</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 text-balance">What to Expect from an Irish Laundry Systems <span class="text-[#148af4]">Call-Out</span></h2>
-            <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto text-pretty">A clear, four-step process from first contact to sign-off, designed to get you back up and&nbsp;running.</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 text-balance">From fault report to the <span class="text-[#148af4]">right repair response</span></h2>
+            <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto text-pretty">A clear call-out process gives the team the fault details, machine information and site urgency needed to prepare the right engineer-led&nbsp;response.</p>
         </div>
 
         <div class="expect-timeline">
@@ -349,7 +363,7 @@ $expectSteps = [
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Temporary Laundry Support</p>
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 text-balance">
-                    <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is&nbsp;down
+                    <span class="text-[#148af4]">Keep laundry moving</span><br class="hidden lg:inline"> while your equipment is&nbsp;down
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-8 text-pretty">
                     When your on-site laundry is out of action, Irish Laundry Systems can discuss a temporary laundry processing route through Laundry Online locations across Dublin, where suitable and agreed in&nbsp;advance.
@@ -357,31 +371,25 @@ $expectSteps = [
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
                     <div>
-                        <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/>
-                            </svg>
-                        </div>
+                        <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21"/>
+                        </svg>
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Dublin store network</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">Multiple Laundry Online locations across Dublin.</p>
                     </div>
                     <div>
-                        <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
-                            </svg>
-                        </div>
+                        <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
+                        </svg>
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Drop-off / walk-in route</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option when your site needs temporary laundry cover.</p>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option when your site needs short-term laundry cover.</p>
                     </div>
                     <div>
-                        <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="font-heading font-bold text-navy text-base mb-1">Practical short-term cover</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while you manage downtime, repair timing or replacement decisions.</p>
+                        <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1 whitespace-nowrap">Short-term cover</h3>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while your team manages downtime, repair timing or replacement decisions.</p>
                     </div>
                 </div>
 
@@ -458,9 +466,9 @@ $expectSteps = [
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4 leading-tight text-balance">Repeated breakdowns usually need more than another&nbsp;call-out</h2>
+                    <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl mb-4 leading-tight text-balance">Repeated breakdowns usually need<br class="hidden lg:inline"> <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
                     <p class="font-body text-gray-300 leading-relaxed text-pretty">
-                        If the same issue keeps returning, the fault may point to a wider maintenance, parts or service-history problem. Irish Laundry Systems can help review what keeps coming back and <span class="text-[#148af4]">what needs attention&nbsp;next</span>.
+                        If the same fault keeps returning, the issue may be linked to maintenance history, wear, parts requirements or how the equipment is being used. Irish Laundry Systems reviews what keeps coming back and what needs attention&nbsp;next.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
@@ -484,8 +492,8 @@ $expectSteps = [
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"/>
                         </svg>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Proactive insights</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Identify patterns and prevent future downtime.</p>
+                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Fault patterns</h3>
+                    <p class="font-body text-white text-xs leading-relaxed">Identify what keeps coming back.</p>
                 </div>
                 <div>
                     <div class="mb-5">
@@ -493,8 +501,8 @@ $expectSteps = [
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6L9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0l3.182-5.511m-3.182 5.51l-5.511-3.181"/>
                         </svg>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Lower running costs</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Reduce repeat visits and unplanned repairs.</p>
+                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Service history</h3>
+                    <p class="font-body text-white text-xs leading-relaxed">Review previous visits, parts and fault notes.</p>
                 </div>
                 <div>
                     <div class="mb-5">
@@ -502,8 +510,8 @@ $expectSteps = [
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
                         </svg>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Better equipment uptime</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Keep operations running smoothly and reliably.</p>
+                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Cost control</h3>
+                    <p class="font-body text-white text-xs leading-relaxed">Reduce the chance of repeated surprise repair costs.</p>
                 </div>
                 <div>
                     <div class="mb-5">
@@ -511,9 +519,20 @@ $expectSteps = [
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
                         </svg>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Contract advantages</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Service Contract customers get preferred rates.</p>
+                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Maintenance review</h3>
+                    <p class="font-body text-white text-xs leading-relaxed">Consider whether preventive maintenance is the right route.</p>
                 </div>
+            </div>
+
+            {{-- Mini points --}}
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-8 pt-6 border-t border-white/10 font-body text-white/70 text-xs">
+                <span class="whitespace-nowrap">Spot repeat faults</span>
+                <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
+                <span class="whitespace-nowrap">Reduce surprise repair costs</span>
+                <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
+                <span class="whitespace-nowrap">Protect equipment value</span>
+                <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
+                <span class="whitespace-nowrap">Minimise disruption</span>
             </div>
         </div>
     </div>
@@ -553,97 +572,53 @@ $faqs = [
 ];
 @endphp
 <!-- TESTIMONIAL / PROOF -->
-<section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20 text-center mb-10">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Customer Trust</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 text-balance">
-            Trusted by sites where equipment issues affect <span class="text-[#148af4]">daily operations</span>
-        </h2>
-        <p class="font-body text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto text-pretty">
-            Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where faults can create pressure for staff, linen flow, guests, residents or&nbsp;production.
-        </p>
-    </div>
-    @include('components.testimonials', ['light' => true])
-    @include('components.proof-bar')
-</section>
+@include('components.testimonials', [
+    'light'      => true,
+    'bordered'   => false,
+    'eyebrow'    => 'Customer Trust',
+    'heading'    => 'Trusted by sites where equipment issues affect <span class="text-[#148af4]">daily&nbsp;operations</span>',
+    'subheading' => 'Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where faults can create pressure for staff, linen flow, guests, residents or production.',
+])
+@include('components.proof-bar')
 
-<!-- NEED AN ENGINEER TODAY? — premium contained navy panel -->
-<section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden">
-            <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
-            <div class="mx-auto mb-5 w-12 h-12 rounded-full bg-white/5 ring-1 ring-white/10 flex items-center justify-center">
-                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                </svg>
-            </div>
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Call-Out</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4 text-balance">
-                Need an engineer today?
-            </h2>
-            <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed max-w-xl mx-auto mb-8 text-pretty">
-                Tell us your issue and we&rsquo;ll prioritise your request and get the right engineer to the right&nbsp;site.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="{{ route('contact') }}"
-                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
-                    Request Call-Out
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-                <a href="{{ route('contact') }}"
-                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200 hover:bg-white/10">
-                    Talk to an Engineer
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- LOOKING BEYOND THE CURRENT FAULT? -->
-<section class="py-10 lg:py-14 bg-white">
+<!-- AFTER THE REPAIR STRIP -->
+<section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="bg-blue-50 rounded-2xl p-6 lg:p-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+        <div class="bg-blue-50 rounded-2xl p-8 lg:p-12">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
 
-                {{-- LEFT: heading + body --}}
-                <div class="lg:col-span-4">
-                    <h2 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-2 text-balance">
-                        Looking beyond the <span class="text-[#148af4]">current&nbsp;fault?</span>
+                {{-- LEFT: content --}}
+                <div class="lg:col-span-7">
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After the Repair</p>
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4 text-balance">
+                        Turn repair findings into the <span class="text-[#148af4]">right next step</span>
                     </h2>
-                    <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">
-                        Preventive maintenance and support &amp; aftercare can help reduce repeat faults, improve visibility on equipment history and keep your laundry base better&nbsp;managed.
+                    <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed text-pretty">
+                        A call-out can solve the immediate fault, but it can also reveal wear, repeated issues, parts requirements or maintenance pressure. Irish Laundry Systems connects repair findings with Preventive Maintenance Contracts and Support &amp; Aftercare where the equipment needs ongoing&nbsp;attention.
                     </p>
-                </div>
 
-                {{-- MIDDLE: two highlight items --}}
-                <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <div>
-                            <p class="font-heading font-bold text-navy text-sm mb-1">Preventive Maintenance Contracts</p>
-                            <p class="font-body text-gray-600 text-xs leading-relaxed">Planned maintenance to reduce unplanned downtime.</p>
-                        </div>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                        </svg>
-                        <div>
-                            <p class="font-heading font-bold text-navy text-sm mb-1">Support &amp; Aftercare</p>
-                            <p class="font-body text-gray-600 text-xs leading-relaxed">Long-term support focused on performance and reliability.</p>
-                        </div>
+                    {{-- Mini points --}}
+                    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6 font-body text-gray-500 text-xs">
+                        <span class="whitespace-nowrap">Repair findings</span>
+                        <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
+                        <span class="whitespace-nowrap">Service history</span>
+                        <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
+                        <span class="whitespace-nowrap">Parts access where applicable</span>
+                        <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
+                        <span class="whitespace-nowrap">Preventive maintenance</span>
                     </div>
                 </div>
 
-                {{-- RIGHT: CTA --}}
-                <div class="lg:col-span-3 flex lg:justify-end">
+                {{-- RIGHT: CTAs --}}
+                <div class="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-3">
                     <a href="{{ route('service-contracts') }}"
-                       class="w-full lg:w-auto inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0f72d0] text-white font-body font-bold px-6 py-3 rounded-md text-sm transition-colors duration-200">
-                        Explore Preventive<br class="hidden lg:inline">Maintenance Contracts
+                       class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3 rounded-md text-sm transition-colors duration-200">
+                        View Preventive Maintenance Contracts
                         <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                    <a href="{{ route('parts-aftercare') }}"
+                       class="inline-flex items-center justify-center gap-2 border border-navy/20 hover:border-navy text-navy font-body font-bold px-6 py-3 rounded-md text-sm transition-colors duration-200">
+                        Explore Support &amp; Aftercare
                     </a>
                 </div>
 
@@ -655,7 +630,41 @@ $faqs = [
 @include('components.faq', [
     'faqs'    => $faqs,
     'eyebrow' => 'Repairs & Call-Out FAQs',
-    'heading' => 'Questions before <span class="text-[#148af4]">requesting a call-out</span>',
+    'heading' => '<span class="lg:whitespace-nowrap">Questions before <span class="text-[#148af4]">requesting a call-out</span></span>',
 ])
+
+<!-- NEED AN ENGINEER TODAY? — premium contained navy panel -->
+<section class="py-16 lg:py-20 bg-bg">
+    <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden">
+            <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
+            <svg class="mx-auto mb-5 w-12 h-12 lg:w-14 lg:h-14 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Call-Out</p>
+            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4 text-balance">
+                Need an <span class="text-[#148af4]">engineer</span> for a <span class="text-[#148af4]">laundry equipment&nbsp;fault</span>
+            </h2>
+            <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed max-w-xl mx-auto mb-6 text-pretty">
+                Call us directly or submit a repair request with the equipment type, site location and fault symptoms, so the enquiry can be connected to the right&nbsp;team.
+            </p>
+            <a href="tel:+35314910402" class="inline-flex items-center justify-center gap-2 mb-8 group">
+                <span class="font-heading font-bold text-white text-2xl lg:text-3xl tracking-tight group-hover:text-[#148af4] transition-colors">+353 1 491&nbsp;0402</span>
+            </a>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="{{ route('contact') }}"
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
+                    Request Call-Out
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+                <a href="{{ route('contact') }}"
+                   class="w-full sm:w-auto inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200 hover:bg-white/10">
+                    Talk to Our Team
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
 @endsection

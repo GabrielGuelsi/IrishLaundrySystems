@@ -50,7 +50,7 @@
                     </div>
                     <div>
                         <div class="font-body font-bold text-navy text-sm mb-1">Phone</div>
-                        <a href="tel:+353000000000" class="font-body text-gray-600 text-sm hover:text-steel transition-colors">+353 (0) 00 000 0000</a>
+                        <a href="tel:+35314910402" class="font-body text-gray-600 text-sm hover:text-steel transition-colors">+353 1 491 0402</a>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">
