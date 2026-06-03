@@ -16,12 +16,19 @@
 .hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
 </style>
 
-<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
+<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;"
+         x-data="{ active: 0, slides: 2 }"
+         x-init="setInterval(() => active = (active + 1) % slides, 6000)">
 
-    <!-- Background image -->
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg"
+    <!-- Background carousel -->
+    <img src="/images/hero/HOMEHERO1.png"
          alt="Commercial laundry operation"
-         class="absolute inset-0 w-full h-full object-cover object-center" style="transform: scale(1.2) translateX(2%);">
+         class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
+         :class="active === 0 ? 'opacity-100' : 'opacity-0'">
+    <img src="/images/hero/HOMEHERO2.jpg"
+         alt="Irish Laundry Systems engineering team on site"
+         class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
+         :class="active === 1 ? 'opacity-100' : 'opacity-0'">
 
     <!-- Gradient overlay — tight, clears by 70% -->
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
@@ -54,6 +61,16 @@
         </div>
     </div>
 
+    {{-- Carousel indicators --}}
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+        <template x-for="i in slides" :key="i">
+            <button type="button" @click="active = i - 1"
+                    :class="active === (i - 1) ? 'bg-white w-6' : 'bg-white/40 hover:bg-white/70 w-2.5'"
+                    class="h-2.5 rounded-full transition-all duration-300"
+                    :aria-label="'Go to slide ' + i"></button>
+        </template>
+    </div>
+
 </section>
 
 <!-- Electrolux Partner Strip -->
@@ -66,7 +83,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    <span class="text-[#148af4]">Laundry care</span> built around the site,<br>the equipment and the <span class="text-[#148af4]">next practical step</span>
+                    <span class="text-[#148af4]">Laundry care</span> built around the site,<br>the equipment and<br>the <span class="text-[#148af4]">next practical step</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -103,10 +120,10 @@
 ])
 
 <!-- 3.5 PLANNING STRIP — Designed around your site, workflow and capacity -->
-<div class="bg-white">
+<div class="bg-white" style="margin-top:-1px; margin-bottom:-2px;">
     @include('components.cta-combined-banner', [
         'heading'  => 'Designed around your site, <span style="color:#011E41;">workflow and capacity</span> before budget is&nbsp;committed',
-        'body'     => 'Poor equipment fit, weak layout and under-sized capacity can create avoidable spend after installation. Irish Laundry Systems reviews the room, workload and support needs before budget is committed, so the site can make a better decision from the start.',
+        'body'     => 'Poor equipment fit, weak layout and under-sized capacity can create avoidable spend after installation. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the room, workload and support needs before budget is committed, so the site can make a better decision from the start.',
         'features' => [
             ['icon' => 'ativo-20', 'label' => 'Avoid wasted<br>spend'],
             ['icon' => 'ativo-10', 'label' => 'Right-fit<br>equipment'],
@@ -166,7 +183,9 @@
 ])
 
 <!-- TRUST ANCHORS — proof / "Trusted by" logo strip -->
-@include('components.proof-bar')
+<div class="bg-white -mt-10 lg:-mt-16">
+    @include('components.proof-bar')
+</div>
 
 <!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [

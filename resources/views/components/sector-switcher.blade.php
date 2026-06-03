@@ -34,7 +34,8 @@
             <a href="{{ route('sectors.healthcare') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
                 <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry support"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: 80% center;">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
@@ -69,8 +70,9 @@
             <!-- Hospitality -->
             <a href="{{ route('sectors.hospitality') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry support"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="/images/Hospitallity/hospitallityhero.jpeg" alt="Hospitality laundry support"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: 82% 30%;">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">

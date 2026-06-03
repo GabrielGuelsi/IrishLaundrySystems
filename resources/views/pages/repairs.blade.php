@@ -117,7 +117,7 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repair Triage</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 text-balance">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
             Fast support works best<br class="hidden lg:inline"> with a <span class="text-[#148af4] whitespace-nowrap">clear fault picture</span>
         </h2>
         <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mb-4 max-w-3xl mx-auto text-pretty">
@@ -127,26 +127,26 @@
             Irish Laundry Systems connects the machine type, fault symptoms, site urgency and service history before the engineer response is&nbsp;arranged.
         </p>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 mb-10">
-            <div class="bg-white border border-gray-200 rounded-xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10">
+            <div class="flex flex-col items-center text-center">
                 <svg class="w-14 h-14 text-[#148af4] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25M21 7.5v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/>
                 </svg>
                 <span class="font-body font-bold text-navy text-sm">Machine type</span>
             </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center text-center">
                 <svg class="w-14 h-14 text-[#148af4] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
                 </svg>
                 <span class="font-body font-bold text-navy text-sm">Fault symptoms</span>
             </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center text-center">
                 <svg class="w-14 h-14 text-[#148af4] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
                 <span class="font-body font-bold text-navy text-sm">Site urgency</span>
             </div>
-            <div class="bg-white border border-gray-200 rounded-xl p-8 flex flex-col items-center text-center shadow-sm hover:shadow-md transition-shadow">
+            <div class="flex flex-col items-center text-center">
                 <svg class="w-14 h-14 text-[#148af4] mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
                 </svg>
@@ -382,14 +382,14 @@ $expectSteps = [
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/>
                         </svg>
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Drop-off / walk-in route</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option when your site needs short-term laundry cover.</p>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option for short-term laundry cover.</p>
                     </div>
                     <div>
                         <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                         <h3 class="font-heading font-bold text-navy text-base mb-1 whitespace-nowrap">Short-term cover</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while your team manages downtime, repair timing or replacement decisions.</p>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while you manage downtime or&nbsp;replacement.</p>
                     </div>
                 </div>
 
@@ -419,42 +419,6 @@ $expectSteps = [
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<!-- TRUST STRIP — between Laundry Online and Repeat Breakdowns -->
-<section class="bg-white border-y border-gray-200">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-5">
-        <div class="flex flex-wrap items-center justify-center lg:justify-between gap-x-8 gap-y-4">
-            <div class="flex items-center gap-2.5">
-                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-                </svg>
-                <span class="font-body text-navy text-sm">Trusted engineering support <span class="text-gray-500">since 1987</span></span>
-            </div>
-            <div class="hidden lg:block w-px h-5 bg-gray-200"></div>
-            <div class="flex items-center gap-2.5">
-                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
-                </svg>
-                <span class="font-body text-navy text-sm">Local technical team</span>
-            </div>
-            <div class="hidden lg:block w-px h-5 bg-gray-200"></div>
-            <div class="flex items-center gap-2.5">
-                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.272-.806.108-1.204-.165-.397-.506-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.108-1.204l-.526-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"/>
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
-                </svg>
-                <span class="font-body text-navy text-sm">Genuine parts route</span>
-            </div>
-            <div class="hidden lg:block w-px h-5 bg-gray-200"></div>
-            <div class="flex items-center gap-2.5">
-                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
-                </svg>
-                <span class="font-body text-navy text-sm">Ongoing aftercare</span>
-            </div>
         </div>
     </div>
 </section>
@@ -579,7 +543,9 @@ $faqs = [
     'heading'    => 'Trusted by sites where equipment issues affect <span class="text-[#148af4]">daily&nbsp;operations</span>',
     'subheading' => 'Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where faults can create pressure for staff, linen flow, guests, residents or production.',
 ])
-@include('components.proof-bar')
+<div class="bg-[#f7f8fa] -mt-10 lg:-mt-16">
+    @include('components.proof-bar')
+</div>
 
 <!-- AFTER THE REPAIR STRIP -->
 <section class="py-16 lg:py-20 bg-white">

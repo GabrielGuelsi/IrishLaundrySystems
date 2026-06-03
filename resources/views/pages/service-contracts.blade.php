@@ -188,7 +188,7 @@
                 </p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-5xl text-balance">
-                    Keep your laundry operation&nbsp;running<br class="hidden md:block">with <span class="text-steel">fewer surprise&nbsp;costs</span>
+                    Keep your laundry operation&nbsp;running<br class="hidden md:block">with <span class="text-steel">fewer&nbsp;surprise</span> costs
                 </h1>
 
                 <p class="hero-desc font-body text-white text-base lg:text-lg leading-relaxed mb-9 max-w-xl text-pretty">
@@ -259,10 +259,10 @@
                     Equipment failures can disrupt linen flow, delay production, increase repair costs and put unnecessary pressure on staff.
                 </p>
                 <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
-                    Commercial laundry equipment works hard every day. When wear, poor performance or developing faults are only noticed after a breakdown, the cost can spread quickly through downtime, staff pressure, delayed linen flow and emergency repair decisions.
+                    Commercial laundry equipment works hard every day. When wear or developing faults are only noticed after a breakdown, the cost spreads quickly through downtime, staff pressure and emergency repairs.
                 </p>
                 <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
-                    A Preventive Maintenance Contract gives your site a planned way to inspect, service and review essential laundry equipment, so smaller issues can be spotted earlier and maintenance becomes easier to manage.
+                    A Preventive Maintenance Contract gives your site a planned way to inspect and service essential laundry equipment, so smaller issues are spotted earlier and maintenance stays easier to manage.
                 </p>
                 <a href="#book-visit-form"
                    data-ga-cta="intro-book-visit"
@@ -287,7 +287,7 @@
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">What you gain</span> with an Irish Laundry Systems<br class="hidden md:block">
+                <span class="text-steel">What you gain</span> with a<br class="hidden md:block">
                 Preventive Maintenance Contract
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
@@ -303,7 +303,7 @@
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>',
             ],
             [
-                'title' => 'Experienced Laundry Equipment Specialists',
+                'title' => 'Laundry Equipment Specialists',
                 'text'  => 'Support from engineers with commercial laundry experience, Electrolux Professional equipment knowledge, Safe Electric registration and Registered Gas Installer contractor capability.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>',
             ],
@@ -381,7 +381,7 @@
                 $includedItems = [
                     ['title' => 'Scheduled preventive maintenance visits',     'text' => 'Contract customers receive two planned inspections per year, arranged around equipment use and site needs to help identify wear, service needs and developing faults earlier.'],
                     ['title' => 'Equipment inspections and testing',            'text' => 'Inspection and testing to check machine condition, performance and safety.'],
-                    ['title' => 'Preferential call-out support',                'text' => 'Contract customers can receive preferential labour rates for unscheduled call-outs where applicable.'],
+                    ['title' => 'Preferential call-out support',                'text' => 'Contract customers can receive preferential labour rates for unscheduled call-outs where applicable.'],
                     ['title' => 'Fault diagnosis',                              'text' => 'Engineer assessment when issues are identified during maintenance or reported between visits.'],
                     ['title' => 'Performance and safety checks',                'text' => 'Checks to help keep essential commercial laundry equipment operating properly and safely.'],
                     ['title' => 'Service reporting',                            'text' => 'Engineer reporting gives your site a clearer record of maintenance visits, recurring issues and recommended next actions.'],
@@ -433,19 +433,19 @@
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 relative">
 
         {{-- Centered header — 2-line title --}}
-        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
+        <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Financial Value</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight tracking-tight mb-4 reveal text-balance" style="transition-delay:80ms;">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight tracking-tight mb-4 reveal" style="transition-delay:80ms;">
                 <span class="text-steel">Protect your maintenance budget</span><br>before small problems become expensive repairs
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:140ms;">
-                Many sites only compare the cost of a contract with doing nothing. Waiting for breakdowns can lead to urgent call-outs, longer downtime, production delays, staff pressure and unplanned repair costs.
+                Many sites compare a contract only against doing nothing. But waiting for breakdowns brings urgent call-outs, downtime, delays and unplanned repair costs.
             </p>
             <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:180ms;">
-                Planned maintenance can help save time, reduce disruption and avoid unnecessary repair pressure by spotting smaller issues before they become larger breakdowns.
+                Planned maintenance saves time and reduces disruption by catching smaller issues before they become breakdowns.
             </p>
             <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:200ms;">
-                For sites using Electrolux Professional equipment, regular servicing and equipment checks can also support more consistent performance around energy use, water use, detergent control and lifecycle cost.
+                For Electrolux Professional equipment, regular servicing also supports consistent energy, water, detergent and lifecycle performance.
             </p>
         </div>
 
@@ -459,9 +459,9 @@
                      alt="A commercial laundry room without active maintenance support"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover"
-                     style="filter: brightness(0.6) saturate(0.7);">
-                {{-- Cinematic fade to navy --}}
-                <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(1,30,65,0.30) 0%, rgba(1,30,65,0.70) 35%, rgba(1,30,65,0.95) 65%, rgba(1,30,65,1.0) 100%);" aria-hidden="true"></div>
+                     style="filter: grayscale(0.9) brightness(0.55) saturate(0.4);">
+                {{-- Cinematic fade to neutral slate-grey --}}
+                <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(51,58,66,0.35) 0%, rgba(51,58,66,0.72) 35%, rgba(45,51,58,0.95) 65%, rgba(45,51,58,1.0) 100%);" aria-hidden="true"></div>
 
                 <div class="relative z-10 flex flex-col gap-4 mt-auto">
                     <div class="flex items-center gap-2">
@@ -509,11 +509,9 @@
                 </span>
 
                 <div class="relative z-10 flex flex-col gap-4 mt-auto">
-                    <div class="flex items-center gap-2">
-                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-steel/30 ring-1 ring-steel/60">
-                            <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
-                        </span>
-                        <span class="font-body font-bold text-steel text-[11px] uppercase tracking-[0.22em]">With a PM Contract</span>
+                    <div class="inline-flex items-center gap-2 self-start rounded-full bg-steel px-3.5 py-1.5 shadow-lg">
+                        <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
+                        <span class="font-body font-bold text-white text-sm uppercase tracking-[0.18em]">With a PM Contract</span>
                     </div>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
                         A clearer way to protect essential equipment
@@ -559,7 +557,7 @@
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Planned Maintenance Value</p>
                 <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-5 text-balance">
-                    Keep essential laundry equipment running with <span class="text-steel">fewer surprise&nbsp;costs</span>
+                    Keep essential laundry equipment running with <span class="text-steel">fewer&nbsp;surprise</span> costs
                 </h2>
                 <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-7 text-pretty">
                     Planned inspections help spot wear, developing faults and service needs earlier, so your site can reduce downtime, avoid unnecessary disruption and prevent small issues becoming expensive&nbsp;repairs.
@@ -646,8 +644,7 @@
         <div class="max-w-3xl mb-12 lg:mb-14">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Sector Support</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">Planned maintenance</span> for<br class="hidden md:block">
-                different laundry pressures
+                <span class="text-steel">Planned maintenance</span> for different laundry pressures
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
                 Different sites carry different laundry pressure. Preventive maintenance should be planned around the way the equipment is used every day.
@@ -660,7 +657,8 @@
             <a href="{{ route('sectors.healthcare') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal">
                 <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry support"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: 80% center;">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
@@ -695,8 +693,9 @@
             <!-- Hospitality -->
             <a href="{{ route('sectors.hospitality') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:160ms;">
-                <img src="/images/Hospitallity/HeroHospitallity.png" alt="Hospitality laundry support"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                <img src="/images/Hospitallity/hospitallityhero.jpeg" alt="Hospitality laundry support"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: 82% 30%;">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
@@ -740,7 +739,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center reveal">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Client Feedback</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-[1.15] tracking-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.15] tracking-tight text-balance">
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
             <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed mt-4 text-pretty">

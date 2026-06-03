@@ -155,7 +155,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
 
-    <img src="/images/healthcare/repairs-callouts.jpg"
+    <img src="/images/healthcare/support-aftercare-hero.png"
          alt="ILS engineer reviewing commercial laundry equipment after a service visit"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -227,17 +227,6 @@
                 <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
                     Irish Laundry Systems connects the follow-up, service history, Electrolux Professional equipment knowledge and genuine parts access where applicable, so the site has a clearer way to decide what happens next.
                 </p>
-
-                {{-- Micro points --}}
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-2 font-body text-gray-500 text-sm">
-                    <span class="whitespace-nowrap">Fewer follow-up surprises</span>
-                    <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Clearer equipment decisions</span>
-                    <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Genuine parts access where applicable</span>
-                    <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Support from people who know the equipment</span>
-                </div>
 
                 <a href="#aftercare-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
                     Request Support &amp; Aftercare
@@ -343,7 +332,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Aftercare Works</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight max-w-3xl reveal text-balance" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
             A <span class="text-[#148af4]">clearer decision</span> for the equipment already on-site
         </h2>
         <p class="font-body text-gray-600 text-lg leading-relaxed mt-4 max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
@@ -442,7 +431,7 @@
 
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Next Routes</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5 lg:whitespace-nowrap">
                 The <span class="text-[#148af4]">right next step</span> depends on what your site needs now
             </h2>
             <p class="font-body text-gray-600 leading-relaxed text-pretty">
@@ -453,7 +442,7 @@
         @php
         $nextRoutes = [
             ['title' => 'Repairs & Call-outs',               'text' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                       'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg'],
-            ['title' => 'Preventive Maintenance Contracts',  'text' => 'For recurring faults, planned visits and better control of maintenance pressure.',                  'cta' => 'View Preventive Maintenance Contracts', 'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png'],
+            ['title' => 'Preventive Maintenance',           'text' => 'For recurring faults, planned visits and better control of maintenance pressure.',                  'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png'],
             ['title' => 'Equipment Rental',                  'text' => 'For replacement pressure, added capacity or cases where buying outright is not the right option.',  'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp'],
         ];
         @endphp
@@ -744,43 +733,43 @@ $aftercareFaqs = [
 {{-- ════════════════════════════════════════════════════════════════════════
      13. FINAL CTA STRIP
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden" style="min-height: 360px; background: linear-gradient(135deg, #011E41 0%, #02265a 60%, #04317a 100%);">
+<section class="relative overflow-hidden" style="min-height: 360px; background-color: #148af4;">
 
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
         <img src="/images/healthcare/repairs-hero.jpg"
              alt="ILS engineer reviewing equipment and the next support step on site"
              class="w-full h-full object-cover"
-             style="filter: saturate(0.85) contrast(1.05);">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.7) 25%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
+             style="filter: saturate(0.9) contrast(1.05);">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.72) 25%, rgba(20,138,244,0.35) 55%, transparent 100%);"></div>
     </div>
 
-    <div class="absolute inset-0 pa-dotgrid opacity-40 pointer-events-none"></div>
+    <div class="absolute inset-0 pa-dotgrid opacity-25 pointer-events-none"></div>
 
-    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
+    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:360px;">
         <div class="lg:max-w-[55%]">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4 reveal">Talk to Our Team</p>
+            <p class="font-body font-bold text-white uppercase tracking-widest text-xs mb-4 reveal">Talk to Our Team</p>
             <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight mb-5 reveal text-balance">
-                Need a <span class="text-[#148af4]">clearer next step</span> for your&nbsp;equipment
+                Need a <span class="text-navy">clearer next step</span> for your&nbsp;equipment
             </h2>
-            <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-6 max-w-2xl reveal text-pretty">
+            <p class="font-body text-white/90 text-base lg:text-lg leading-relaxed mb-6 max-w-2xl reveal text-pretty">
                 Tell us what is happening with the equipment, what has already been done and what the site needs now. Irish Laundry Systems will connect the enquiry to the most practical next action.
             </p>
-            <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-blue-200/90 text-xs lg:text-sm reveal">
+            <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white/90 text-xs lg:text-sm reveal">
                 <span class="whitespace-nowrap">Fewer follow-up surprises</span>
-                <span class="text-white/30">|</span>
+                <span class="text-white/40">|</span>
                 <span class="whitespace-nowrap">Clearer next costs</span>
-                <span class="text-white/30">|</span>
+                <span class="text-white/40">|</span>
                 <span class="whitespace-nowrap">Support from people who know the equipment</span>
             </div>
             <div class="flex flex-wrap items-center gap-4 reveal">
                 <a href="#aftercare-form"
                    data-ga-cta="final-request-aftercare"
-                   class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                     Request Support &amp; Aftercare
                 </a>
                 <a href="{{ route('contact') }}"
                    data-ga-cta="final-talk-team"
-                   class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                   class="inline-flex items-center justify-center border border-white/70 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                     Talk to Our Team
                 </a>
             </div>
