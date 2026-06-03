@@ -374,7 +374,7 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Maintenance Contracts',
+                    'title'  => 'Preventive Contracts',
                     'text'   => 'For healthcare sites that need planned visits, fewer reactive maintenance decisions and better control around critical laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),

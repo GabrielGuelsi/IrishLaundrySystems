@@ -152,14 +152,11 @@ $showChrome = ! $single && count($slides) > 1;
                             {{-- ── RIGHT PANEL: pull-quote ── --}}
                             <div class="lg:col-span-8 bg-white flex flex-col justify-center p-8 lg:p-12 xl:p-14">
 
-                                {{-- Opening quote mark (light blue) --}}
-                                <svg class="w-10 h-10 mb-5" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true" style="transform: rotate(180deg);">
-                                    <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
-                                </svg>
-
-                                {{-- Headline (navy, bold, large) --}}
+                                {{-- Headline (navy, bold, large) with inline opening quote mark --}}
                                 <blockquote class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">
-                                    {{ rtrim($t['headline'], '.') }}
+                                    <svg class="inline w-7 h-7 mr-1.5" style="vertical-align:-2px; transform: rotate(180deg);" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true">
+                                        <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
+                                    </svg>{{ rtrim($t['headline'], '.') }}
                                 </blockquote>
 
                                 {{-- Body (grey) + closing quote mark (inline blue) --}}

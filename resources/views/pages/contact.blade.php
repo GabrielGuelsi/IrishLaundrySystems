@@ -423,7 +423,7 @@
 
                 {{-- Contact info --}}
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-5">Contact</h3>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-5">Contact Details</h3>
                     <div class="space-y-4">
                         <div>
                             <a href="tel:+35314910402"
@@ -433,13 +433,21 @@
                             <p class="font-body text-gray-400 text-sm mt-0.5">Mon – Fri, 8am – 5pm · Emergency line available</p>
                         </div>
                         <div>
-                            <a href="mailto:info@irishlaunderysystems.ie"
+                            <a href="mailto:contact@irishlaundrysystems.com"
                                class="font-body text-gray-700 text-sm hover:text-navy transition-colors block">
-                                info@irishlaunderysystems.ie
+                                contact@irishlaundrysystems.com
                             </a>
                         </div>
                         <div>
-                            <p class="font-body text-gray-500 text-sm">Republic of Ireland — all 26 counties</p>
+                            <p class="font-body text-gray-700 text-sm font-bold mb-1">Address</p>
+                            <address class="font-body text-gray-500 text-sm not-italic leading-relaxed">
+                                95 Ranelagh Village, Ranelagh<br>
+                                Dublin 6, D06 V1W5<br>
+                                Dublin — Ireland
+                            </address>
+                        </div>
+                        <div>
+                            <p class="font-body text-gray-500 text-sm"><span class="font-bold text-gray-700">VAT Number:</span> IE4815967C</p>
                         </div>
                     </div>
                 </div>
