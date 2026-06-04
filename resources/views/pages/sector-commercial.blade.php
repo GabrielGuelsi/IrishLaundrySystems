@@ -10,13 +10,12 @@
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
     <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry operation"
          class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.72) 55%, rgba(1,30,65,0.45) 80%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry Support</p>
                 <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
-                    Keep <span style="color:#148af4;">high-demand laundry operations</span><br>under control
+                    <span style="color:#011E41;">Keep</span> <span style="color:#148af4;">high-demand laundry operations</span><br><span style="color:#011E41;">under control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports commercial, industrial, institutional and specialist laundry sites with Electrolux Professional equipment, rental, planned maintenance, repairs and aftercare built around output, mixed textiles, running cost and keeping equipment running.
@@ -46,7 +45,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Commercial laundry support built around <span style="color:#148af4;">output</span>, <span style="color:#148af4;">workflow</span> and <span style="color:#148af4;">running cost</span>
+                    Commercial laundry support built around <span style="color:#148af4;">output,</span> <span style="color:#148af4;">workflow</span> and <span style="color:#148af4;">running cost</span>
                 </h2>
             </div>
 
@@ -76,7 +75,7 @@
         <div class="mb-12 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where This Fits</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                Support for demanding commercial, <span style="color:#148af4;">shared-use and specialist</span> laundry environments
+                Support for demanding <span style="color:#148af4;">commercial</span>, shared-use<br>and <span style="color:#148af4;">specialist laundry environments</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 <span class="whitespace-nowrap block">From public facilities and high-volume laundries to shared-use sites, workwear, Personal Protective Equipment and remote operations,</span>
@@ -172,57 +171,64 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
 
             {{-- Metric 1 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <span class="font-body font-bold text-[#148af4] text-base invisible">Up to</span>
-                <div class="flex items-center gap-3">
+            <div class="flex flex-col col-span-1">
+                <div class="flex items-end" style="height:1.5rem;"></div>
+                <div class="flex items-center gap-3" style="height:3rem;">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">90%</div>
                     <img src="/images/icons/30.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <div class="min-h-[3rem]"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">lifecycle cost beyond purchase</h3></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up most of the lifecycle cost.</p>
+                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">lifecycle cost beyond purchase</h3></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Upfront cost is only about 10% of a washer or dryer &mdash; water, energy and chemicals make up the&nbsp;rest.</p>
             </div>
 
             {{-- Metric 2 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <span class="font-body font-bold text-[#148af4] text-base invisible">placeholder</span>
-                <div class="flex items-center gap-3">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
+            <div class="flex flex-col col-span-1">
+                <div class="flex items-end" style="height:1.5rem;"></div>
+                <div class="flex items-center gap-3" style="height:3rem;">
+                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none relative"><span class="absolute right-full top-0">-</span>65%</div>
                     <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <div class="min-h-[3rem]"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy use</h3></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
+                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy use</h3></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.</p>
             </div>
 
             {{-- Metric 3 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <span class="font-body font-bold text-[#148af4] text-base">Over</span>
-                <div class="flex items-center gap-3">
+            <div class="flex flex-col col-span-1">
+                <div class="flex items-end" style="height:1.5rem;">
+                    <span class="font-body font-bold text-[#148af4] text-base leading-none">Over</span>
+                </div>
+                <div class="flex items-center gap-3" style="height:3rem;">
                     <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">30%+</div>
                     <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <div class="min-h-[3rem]"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">detergent-cost saving potential</h3></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient Dosing can save over 30% on detergent costs by helping use the right amount of detergent at each cycle.</p>
+                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">detergent-cost saving potential</h3></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient Dosing can cut detergent costs by over 30% by using the right amount at every cycle.</p>
             </div>
 
             {{-- Qualitative 4 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Less strain</div>
-                <div class="flex items-center gap-4">
+            <div class="flex flex-col col-span-1">
+                <div class="flex items-end" style="height:1.5rem;">
+                    <span class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less</span>
+                </div>
+                <div class="flex items-center gap-3" style="height:3rem;">
+                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">strain</div>
                     <img src="/images/icons/4.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <div class="min-h-[3rem]"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">operator handling and productivity</h3></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
+                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">operator handling and productivity</h3></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics cites up to 75% fewer sick days, 59% fewer musculoskeletal injuries and 25% higher productivity.</p>
             </div>
 
             {{-- Qualitative 5 --}}
-            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">Fewer</div>
-                <div class="flex items-center gap-4">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-snug">surprise</div>
+            <div class="flex flex-col col-span-2 lg:col-span-1">
+                <div class="flex items-end" style="height:1.5rem;">
+                    <span class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer</span>
+                </div>
+                <div class="flex items-center gap-3" style="height:3rem;">
+                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">surprise</div>
                     <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
                 </div>
-                <div class="min-h-[3rem]"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">repair and maintenance pressure</h3></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, rental, preventive maintenance, repairs and aftercare so commercial sites are not forced to make every decision after something fails.</p>
+                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">repair and maintenance pressure</h3></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">We connect equipment planning, rental, maintenance, repairs and aftercare so decisions are not left until something fails.</p>
             </div>
 
         </div>
@@ -247,11 +253,11 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/16.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/16.png" alt="" class="w-28 h-28 object-contain">
                 </div>
-                <div>
+                <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Throughput and daily load</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment planning shaped around repeated use, shifts, high-use laundry rooms and steady output.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment planning shaped around repeated use, shifts and steady daily&nbsp;output.</p>
                 </div>
             </div>
 
@@ -259,7 +265,7 @@
                 <div class="flex items-center justify-center h-24">
                     <img src="/images/icons/34.png" alt="" class="w-24 h-24 object-contain">
                 </div>
-                <div>
+                <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Load profile and fabric mix</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">Planning for workwear, towels, uniforms, bedding, mops, PPE and specialist textiles.</p>
                 </div>
@@ -267,19 +273,19 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/26.png" alt="" class="w-20 h-20 object-contain">
                 </div>
-                <div>
+                <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility and dosing control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Washer, dryer and dosing choices shaped around water, energy, detergent use and cycle efficiency.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Washer, dryer and dosing choices shaped around water, energy and cycle&nbsp;efficiency.</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/5.png" alt="" class="w-32 h-32 object-contain">
                 </div>
-                <div>
+                <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Intelligent control</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe, CompassPro, ergonomic access and program setup support clearer daily use for laundry teams.</p>
                 </div>
@@ -287,9 +293,9 @@
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/36.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/36.png" alt="" class="w-20 h-20 object-contain">
                 </div>
-                <div>
+                <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Specialist process control</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier, cleanroom, Personal Protective Equipment, hygiene-sensitive or controlled-environment requirements can be assessed where needed.</p>
                 </div>
@@ -321,7 +327,7 @@
                     'text'   => 'For urgent equipment faults that can interrupt output, delay internal processes or increase pressure on staff.',
                     'cta'    => 'Request Call-out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/healthcare/repairs-callouts.jpg',
+                    'img'    => '/images/healthcare/Parts%20%26%20Aftercare.png',
                     'pos'    => 'center 40%',
                 ],
                 [
@@ -392,27 +398,16 @@
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
             <span class="text-white text-3xl lg:text-5xl block">Plan the laundry room</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">around workflow, capacity</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">and daily output</span>
+            <span class="text-white text-3xl lg:text-5xl block">around <span style="color:#011E41;">workflow</span>, capacity</span>
+            <span class="text-white text-3xl lg:text-5xl block">and <span style="color:#011E41;">daily output</span></span>
         </h2>
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
-            Before equipment becomes a cost or service problem, load profile, room layout, utilities, access, daily use and service needs should be understood together.
+            Before equipment becomes a cost or service problem, load profile, room layout, utilities, access, daily use and maintenance needs should be understood together. Irish Laundry Systems plans commercial and industrial laundry around real operating pressure, not just machine capacity.
         </p>
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
-            @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>selection'],
-                ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
-                ['icon' => 'ativo-9',  'label' => 'Service<br>structure'],
-            ] as $i => $feat)
-            @if($i > 0)
-                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
-            @endif
-            <div class="flex items-center gap-3">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     style="width:2.4rem;height:2.4rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Avoid wasted spend', 'Right-fit output flow', 'Reduce costly rework'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('contact') }}"
@@ -749,8 +744,8 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes another</span>
-                <span class="whitespace-nowrap block">operating cost</span>
+                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
+                <span class="whitespace-nowrap block">another operating cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 <span class="whitespace-nowrap block">Automatic dosing supports high-use laundry rooms by using the right amount of detergent for each cycle.</span>
@@ -819,10 +814,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
 
                         {{-- Left: context photo --}}
-                        <div class="lg:col-span-3 overflow-hidden" style="max-height:300px; align-self:center;">
+                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
                             <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
-                                 class="w-full h-full object-cover object-center" style="height:300px;">
+                                 class="w-full object-cover object-center" style="height:260px;">
                         </div>
 
                         {{-- Right: product name + tabs indicator + description + unit image --}}
@@ -905,7 +900,10 @@
 </section>
 
 @include('components.why-choose-strip', [
+    'headingLine1' => '<span style="color:#148af4;">Keep high-use laundry</span><br><span style="color:#148af4;">moving</span> with lower',
+    'headingLine2' => 'upfront cost',
     'body' => 'For commercial and industrial sites facing replacement pressure, expansion, ageing equipment or higher load demand, rental can keep laundry moving without turning every equipment decision into one large upfront purchase.',
+    'miniPoints' => ['Lower upfront cost', 'Avoid one large purchase', 'Installed and supported'],
 ])
 
 @include('components.equipment-categories', [
@@ -927,9 +925,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Understand the site',              'text' => 'Review load profile, space, utilities, access, equipment pressure and operating priorities.',    'icon' => 'clipboard'],
+                ['title' => 'Understand the site',              'text' => 'Review load profile, space, utilities,<br>access, equipment and operating needs.',    'icon' => 'clipboard'],
                 ['title' => 'Match the equipment',              'text' => 'Recommend the right washing, drying, finishing, specialist setup or rental option.',              'icon' => 'Ativo%204'],
-                ['title' => 'Connect maintenance and aftercare', 'text' => 'Link the equipment already on-site to preventive maintenance, repairs, genuine parts access where applicable and follow-up care.', 'icon' => 'Ativo%206'],
+                ['title' => 'Connect maintenance and aftercare', 'text' => 'Link the equipment on-site to preventive<br>maintenance, repairs, parts access where<br>applicable and follow-up care.', 'icon' => 'Ativo%206'],
                 ['title' => 'Move to assessment',               'text' => 'Turn the site, equipment setup and support needs into a clear next step.',                        'icon' => 'Ativo%203'],
             ] as $i => $step)
 
@@ -946,7 +944,7 @@
                          style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{!! $step['text'] !!}</p>
             </div>
 
             @endforeach
@@ -956,9 +954,17 @@
 </section>
 
 @include('components.service-contracts-strip', [
+    'eyebrow'      => 'After Installation',
     'headingLine1' => 'Keep equipment running',
     'headingLine2' => 'around daily output',
+    'accentFirst'  => true,
     'body'         => 'Planned maintenance and aftercare help commercial and industrial sites keep high-use laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps the follow-up clear so teams can reduce surprise repair costs, protect equipment value and minimise disruption.',
+    'image'        => '/images/healthcare/Parts%20%26%20Aftercare.png',
+    'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Support from people who know the equipment'],
+    'cta1Label'    => 'View Preventive Maintenance Contracts',
+    'cta1Route'    => 'service-contracts',
+    'cta2Label'    => 'Explore Support &amp; Aftercare',
+    'cta2Route'    => 'parts-aftercare',
 ])
 
 @include('components.testimonials', [
