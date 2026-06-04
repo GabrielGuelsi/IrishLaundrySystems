@@ -424,7 +424,7 @@
 
             @foreach([
                 [
-                    'title'  => 'Preventive Contracts',
+                    'title'  => 'Preventive Maintenance',
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
