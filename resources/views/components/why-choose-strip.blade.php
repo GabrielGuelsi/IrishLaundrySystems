@@ -1,5 +1,8 @@
 @props([
     'body' => 'Rental gives your site a practical route for replacement, expansion or continuity when buying outright is not the right next step.',
+    'headingLine1' => 'Keep laundry moving',
+    'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',
+    'miniPoints' => null,
     'features' => [
         [
             'icon' => '<span style="font-size:2rem;font-weight:700;color:white;line-height:1;">€</span>',
@@ -29,14 +32,22 @@
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Keep laundry moving</span>
-            <span class="text-3xl lg:text-5xl block text-white">with <span style="color:#148af4;">capital control</span></span>
+            <span class="text-white text-3xl lg:text-5xl block">{!! $headingLine1 !!}</span>
+            <span class="text-3xl lg:text-5xl block text-white">{!! $headingLine2 !!}</span>
         </h2>
 
         <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
             {{ $body }}
         </p>
 
+        @if($miniPoints)
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach($miniPoints as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        @else
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach($features as $i => $feat)
             @if($i > 0)
@@ -50,6 +61,7 @@
             </div>
             @endforeach
         </div>
+        @endif
 
         <div class="w-full flex justify-start">
             <a href="{{ route('rental') }}"
