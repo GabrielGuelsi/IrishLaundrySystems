@@ -38,7 +38,7 @@
             <span class="text-3xl lg:text-5xl block" style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
         </h2>
 
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
+        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
             {{ $body }}
         </p>
 

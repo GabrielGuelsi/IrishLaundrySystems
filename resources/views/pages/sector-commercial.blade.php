@@ -331,12 +331,12 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Contracts',
+                    'title'  => 'Preventive Maintenance',
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around high-use equipment.',
-                    'cta'    => 'View Contracts',
+                    'cta'    => 'View Maintenance Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Service Contracts.png',
-                    'pos'    => 'center 35%',
+                    'img'    => '/images/healthcare/service-contracts-hero.png',
+                    'pos'    => '90% 35%',
                 ],
                 [
                     'title'  => 'Equipment Rental',

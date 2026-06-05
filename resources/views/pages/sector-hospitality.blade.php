@@ -308,12 +308,12 @@
                     'pos'    => '50% 35%',
                 ],
                 [
-                    'title'  => 'Preventive Contracts',
+                    'title'  => 'Preventive Maintenance',
                     'text'   => 'Planned maintenance for sites that need better control over recurring issues, servicing needs and busy-period risk.',
-                    'cta'    => 'View Contracts',
+                    'cta'    => 'View Maintenance Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Service Contracts.png',
-                    'pos'    => 'center 35%',
+                    'img'    => '/images/healthcare/service-contracts-hero.png',
+                    'pos'    => '90% 35%',
                 ],
                 [
                     'title'  => 'Equipment Rental',
@@ -738,10 +738,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
 
                         {{-- Left: context photo --}}
-                        <div class="lg:col-span-3 overflow-hidden" style="max-height:300px; align-self:center;">
+                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
                             <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
-                                 class="w-full h-full object-cover object-center" style="height:300px;">
+                                 class="w-full object-cover object-center" style="height:260px;">
                         </div>
 
                         {{-- Right: product name + tabs indicator + description + unit image --}}

@@ -77,7 +77,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Demand</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                <span class="whitespace-nowrap block">Laundry support for <span style="color:#148af4;">resident items</span>,</span>
+                <span class="whitespace-nowrap block">Laundry support for <span style="color:#148af4;">resident items,</span></span>
                 <span class="whitespace-nowrap block">linen flow and <span style="color:#148af4;">staff routines</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
@@ -96,7 +96,7 @@
 
             <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
-                    Care facility laundry needs a <span style="color:#148af4;">system designed around daily care</span>
+                    Care facility laundry needs a system designed around daily care
                 </h3>
                 <ul class="space-y-3">
                     @foreach([
@@ -198,7 +198,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block">Features that support <span style="color:#148af4;">daily care</span>, <span style="color:#148af4;">staff handling</span></span>
+                <span class="whitespace-nowrap block">Features that support <span style="color:#148af4;">daily care,</span> <span style="color:#148af4;">staff handling</span></span>
                 <span class="whitespace-nowrap block">and <span style="color:#148af4;">laundry consistency</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -215,7 +215,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident-item handling</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Support for bedding, towels, personal clothing and staff items moving through daily care routines.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed text-left">Support for resident bedding, towels, personal clothing and staff items as they move through daily care routines and back into use.</p>
                 </div>
             </div>
 
@@ -225,17 +225,17 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic loading, access and controls support easier repeated laundry tasks for care teams and laundry staff.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed text-left">Ergonomic loading, easy access and clear controls make repeated daily laundry tasks easier for care teams and laundry&nbsp;staff.</p>
                 </div>
             </div>
 
             <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
                 <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/5.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/5.png" alt="" class="w-32 h-32 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Guided process control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe and CompassPro give operators guided programs, status messages and clearer day-to-day control.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed text-left">ClarusVibe and CompassPro give operators guided programs, clear status messages and easier day-to-day&nbsp;control.</p>
                 </div>
             </div>
 
@@ -245,7 +245,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused process</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier options and process control support separated handling where the site requires it.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed text-left">Barrier options and process control support separated dirty-side and clean-side handling where the site requires it.</p>
                 </div>
             </div>
 
@@ -255,7 +255,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance, Direct Ironer Advanced Moisture Management System (DIAMMS) and finishing features support linen quality before storage or return to use.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed text-left">Moisture Balance, Direct Ironer Advanced Moisture Management System (DIAMMS) and finishing features support linen quality before storage or return to use.</p>
                 </div>
             </div>
 
@@ -285,16 +285,16 @@
                     'text'   => 'For urgent equipment faults that can delay resident laundry, increase staff pressure or disrupt daily care routines.',
                     'cta'    => 'Request Call-out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/healthcare/repairs-callouts.jpg',
+                    'img'    => '/images/healthcare/support-aftercare-hero.png',
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Contracts',
+                    'title'  => 'Preventive Maintenance',
                     'text'   => 'For care homes that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
-                    'cta'    => 'View Contracts',
+                    'cta'    => 'View Maintenance Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Service Contracts.png',
-                    'pos'    => 'center 35%',
+                    'img'    => '/images/healthcare/service-contracts-hero.png',
+                    'pos'    => '90% 35%',
                 ],
                 [
                     'title'  => 'Equipment Rental',
@@ -329,7 +329,7 @@
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
                     {{-- Title (always visible) --}}
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
@@ -366,24 +366,10 @@
             Before equipment becomes a daily management issue, the room, staff routine, resident-item flow, utility pressure and maintenance needs should be understood together. Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.
         </p>
 
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
-            @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>selection'],
-                ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
-                ['icon' => 'ativo-9',  'label' => 'Service<br>structure'],
-            ] as $i => $feat)
-            @if($i > 0)
-                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
-            @endif
-            <div class="flex items-center gap-3">
-                <div class="flex-shrink-0 flex items-center justify-center rounded-full"
-                     style="width:52px;height:52px;border:2px dashed rgba(255,255,255,0.5);">
-                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                         style="width:1.6rem;height:1.6rem;" alt="">
-                </div>
-                <span class="font-body text-white text-xs font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Avoid wasted spend', 'Right-fit daily flow', 'Reduce costly rework'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
 
@@ -403,8 +389,8 @@
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block">Equipment built around <span style="color:#148af4;">resident items</span>, staff</span>
-                <span class="whitespace-nowrap block">routines and <span style="color:#148af4;">running cost</span></span>
+                <span class="whitespace-nowrap block">Equipment built around <span style="color:#148af4;">resident items,</span></span>
+                <span class="whitespace-nowrap block">staff routines and <span style="color:#148af4;">running cost</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the care that keeps the equipment performing over time.
@@ -527,21 +513,21 @@
             </div>
             </div>
 
-            <!-- 3. IRONERS & FINISHING — text left, image right -->
-            <div x-data="{ open: false, tab: 'diamms' }">
+            <!-- 3. VACUUM IRONING TABLES — text left, image right -->
+            <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Ironers &amp; Finishing</h3>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Vacuum Ironing Tables</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Ironers and finishing equipment support linen presentation, drying consistency, <span style="color:#148af4;">flatwork flow</span> and storage readiness in care environments.
+                        Vacuum ironing tables give care facilities a practical <span style="color:#148af4;">finishing option</span> for resident clothing, uniforms and garments that need a neater finish before storage or return to use.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
-                            'Direct Ironer Advanced Moisture Management System (DIAMMS)',
-                            'Hygiene Guard linen rejection when humidity parameters are not respected',
-                            'Finishing quality before storage or return to use',
-                            'Ceramic Burner power increase up to 20% on selected gas-heated ironers',
-                            'Operator-friendly finishing flow',
+                            'Heated surface helps keep fabric dry',
+                            'Integral vacuum holds garments in place',
+                            'Helps dry fabric after pressing',
+                            'FIT2B includes integral boiler for simpler installation',
+                            'Options available for sleeves, spotting and operator comfort',
                         ] as $point)
                         <li class="flex items-start gap-2">
                             <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
@@ -561,12 +547,12 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2">
-                    <img src="/images/equipment/line6000-ironer.webp"
-                         alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain object-left-top">
+                    <img src="/images/CareFacilities/ELS_PH_415x415_FIT2B.jpg"
+                         alt="Electrolux Professional FIT2 Vacuum Ironing Table"
+                         class="w-full h-96 object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
+                            <span class="font-heading font-bold text-navy text-lg">FIT2A, FIT2B Features &amp; Options</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -575,70 +561,31 @@
                 </div>
             </div>
             <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
-                <div class="flex gap-6 border-b border-gray-200 mb-8">
-                    <button @click="tab = 'diamms'"
-                            :class="tab === 'diamms' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                            class="font-heading text-sm pb-3 transition-colors">
-                        DIAMMS
-                    </button>
-                    <button @click="tab = 'hygiene'"
-                            :class="tab === 'hygiene' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                            class="font-heading text-sm pb-3 transition-colors">
-                        Hygiene Guard
-                    </button>
+                <h4 class="font-heading font-bold text-navy text-xl mb-4">Garment finishing with vacuum support</h4>
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-3xl mb-8">
+                    The Electrolux Professional FIT2A and FIT2B vacuum ironing tables are designed for general-purpose garment finishing. The heated working surface helps keep fabric dry, while the integral vacuum fan holds garments in place and helps dry the fabric after pressing. The FIT2B model includes a steam electric iron with separator and an integral boiler for simpler installation.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-2 mb-8">
+                    @foreach([
+                        'Utility shape for general-purpose pressing',
+                        'Heated working surface',
+                        'Integral vacuum fan',
+                        'Steam electric iron with separator on FIT2B',
+                        'Integral boiler on FIT2B',
+                        'Sleeve arm option for awkward shapes',
+                        'Spotting options available',
+                        'Iron balancer option to reduce operator fatigue',
+                        'Light option to illuminate the working area',
+                    ] as $feat)
+                    <div class="flex items-start gap-2">
+                        <svg class="w-4 h-4 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                        <span class="font-body text-gray-500 text-sm leading-relaxed">{{ $feat }}</span>
+                    </div>
+                    @endforeach
                 </div>
-
-                <div x-show="tab === 'diamms'">
-                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Maximum hygiene and performance</h4>
-                    <div class="flex items-start gap-6 mb-8">
-                        <div class="w-32 h-32 flex-shrink-0">
-                            <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
-                        </div>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">
-                            Using DIAMMS™ technology, the Line 6000 Flatwork Ironers will automatically adapt the cylinder speed to the amount of moisture in the linen.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                            <iframe class="absolute inset-0 w-full h-full"
-                                    src="https://www.youtube.com/embed/KER1S0tcqeE"
-                                    title="Ironers DIAMMS"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next use.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div x-show="tab === 'hygiene'">
-                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Pure Hygiene: Flawless Dry Linen Delivery</h4>
-                    <div class="flex items-start gap-6 mb-8">
-                        <div class="w-32 h-32 flex-shrink-0">
-                            <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
-                        </div>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">
-                            Hygiene Guard, in conjunction with DIAMMS™, will automatically reject any linen if it does not comply with the prescribed humidity parameters set by the RABC standards.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
-                            <iframe class="absolute inset-0 w-full h-full"
-                                    src="https://www.youtube.com/embed/KER1S0tcqeE"
-                                    title="Ironers Hygiene Guard"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
-                        <div>
-                            <h5 class="font-heading font-bold text-navy text-xl mb-3">Extreme customization of the ironing and folding programs</h5>
-                            <p class="font-body text-gray-500 text-sm leading-relaxed">FoldFlex ensures the highest quality at the end of the finishing process so that linen can be safely and securely stored, ready for the next use.</p>
-                        </div>
-                    </div>
-                </div>
+                <p class="font-body text-gray-400 text-xs leading-relaxed max-w-3xl">
+                    FIT2A and FIT2B specifications vary by configuration. FIT2B dimensions are listed as 1600&nbsp;mm x 470&nbsp;mm x 920&nbsp;mm, with 105&nbsp;kg net weight in the product data sheet.
+                </p>
             </div>
             </div>
 
@@ -769,8 +716,8 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes another</span>
-                <span class="whitespace-nowrap block">running cost</span>
+                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
+                <span class="whitespace-nowrap block">another running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
                 <span class="whitespace-nowrap block">Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,</span>
@@ -831,10 +778,10 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
 
                         {{-- Left: context photo --}}
-                        <div class="lg:col-span-3 overflow-hidden" style="max-height:300px; align-self:center;">
+                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
                             <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
-                                 class="w-full h-full object-cover object-center" style="height:300px;">
+                                 class="w-full object-cover object-center" style="height:260px;">
                         </div>
 
                         {{-- Right: product name + tabs indicator + description + unit image --}}
@@ -916,7 +863,12 @@
     </div>
 </section>
 
-@include('components.why-choose-strip')
+@include('components.why-choose-strip', [
+    'headingLine1' => '<span style="color:#148af4;">Keep daily laundry moving</span>',
+    'headingLine2' => 'with lower upfront cost',
+    'body' => 'For care facilities facing replacement pressure, expansion needs or ageing equipment, rental can keep laundry moving without turning every equipment decision into one large upfront purchase.',
+    'miniPoints' => ['Lower upfront cost', 'Avoid one large purchase', 'Installed and supported'],
+])
 
 @include('components.equipment-categories')
 
@@ -932,28 +884,28 @@
             From the first assessment through to equipment, rental, maintenance and aftercare, each step should make the next decision easier.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Understand the care facility laundry room', 'text' => 'Review room layout, staff routine, resident-item flow, utilities, capacity and day-to-day pressure.',  'icon' => 'clipboard'],
-                ['title' => 'Match equipment to daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement plan.',               'icon' => 'Ativo%204'],
+                ['title' => 'Understand the care facility laundry room', 'text' => 'Review the room layout, staff routine, resident-item flow, utilities, capacity and the day-to-day pressure on the laundry.',  'icon' => 'clipboard'],
+                ['title' => 'Match equipment to<br>daily care needs',        'text' => 'Recommend the right washer, dryer, finishing setup, rental route or replacement plan.',               'icon' => 'Ativo%204'],
                 ['title' => 'Connect maintenance, rental and aftercare',  'text' => 'Link the equipment already on-site to preventive maintenance, repairs, service history and follow-up care.', 'icon' => 'Ativo%206'],
-                ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and care model into a practical next step.',                            'icon' => 'Ativo%203'],
+                ['title' => 'Move to assessment',                         'text' => 'Turn the room, equipment setup and care model into a clear, practical next step you can act on.',                            'icon' => 'Ativo%203'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-8 top-6 text-[#148af4]">
-                    <svg class="w-16 h-8" viewBox="0 0 120 30" fill="none">
+                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
+                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
                         <path d="M0 15 L96 15 M78 4 L96 15 L78 26" stroke="#148af4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center mb-4">
+                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
                     <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:4rem;height:4rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{!! $step['title'] !!}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
             </div>
 
@@ -965,9 +917,16 @@
 
 <!-- 11. Service Contracts, Support & Aftercare Strip -->
 @include('components.service-contracts-strip', [
-    'headingLine1' => 'Protect daily laundry routines',
-    'headingLine2' => 'after installation',
+    'eyebrow'      => 'After Installation',
+    'headingLine1' => '<span style="color:#011E41;">Protect daily laundry routines</span>',
+    'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
     'body'         => 'The right equipment decision should not become harder to manage after installation, rental, repair or replacement. Planned maintenance and aftercare give care facilities a clearer way to reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
+    'image'        => '/images/healthcare/support-aftercare-hero.png',
+    'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Support from people who know the equipment'],
+    'cta1Label'    => 'View Preventive Maintenance Contracts',
+    'cta1Route'    => 'service-contracts',
+    'cta2Label'    => 'Explore Support &amp; Aftercare',
+    'cta2Route'    => 'parts-aftercare',
 ])
 
 <!-- 12. Testimonial / Proof Block -->

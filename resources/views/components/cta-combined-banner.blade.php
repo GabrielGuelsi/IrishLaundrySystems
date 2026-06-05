@@ -1,6 +1,7 @@
 @props([
     'heading'  => 'Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and&nbsp;capacity',
     'body'     => 'We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day&nbsp;laundry&nbsp;demand.',
+    'miniPoints' => null,
     'features' => [
         ['icon' => 'ativo-20', 'label' => 'Site<br>layout'],
         ['icon' => 'ativo-10', 'label' => 'Equipment<br>fit'],
@@ -32,6 +33,15 @@
             {!! $body !!}
         </p>
 
+        @if($miniPoints)
+        {{-- Mini points --}}
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach($miniPoints as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        @else
         {{-- 3 horizontal features --}}
         <div class="flex items-center flex-nowrap gap-0 mb-7">
             @foreach($features as $i => $feat)
@@ -45,6 +55,7 @@
             </div>
             @endforeach
         </div>
+        @endif
 
         {{-- CTA --}}
         <a href="{{ route('contact') }}"
