@@ -3,6 +3,7 @@
     'headingLine1' => 'Keep laundry moving',
     'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',
     'miniPoints' => null,
+    'miniNowrap' => false,
     'features' => [
         [
             'icon' => '<span style="font-size:2rem;font-weight:700;color:white;line-height:1;">€</span>',
@@ -41,10 +42,10 @@
         </p>
 
         @if($miniPoints)
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        <div class="flex items-center {{ $miniNowrap ? 'flex-nowrap gap-x-3' : 'flex-wrap gap-x-5 gap-y-2' }} mb-7">
             @foreach($miniPoints as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] whitespace-nowrap' : 'text-sm' }} font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         @else

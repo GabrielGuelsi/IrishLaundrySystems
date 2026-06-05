@@ -212,78 +212,6 @@
     </div>
 </section>
 
-<!-- TECHNICAL PROOF ICONS -->
-<section class="py-12 lg:py-16 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block">Features that support <span style="color:#148af4;">linen quality</span>, finishing</span>
-                <span class="whitespace-nowrap block">standards and <span style="color:#148af4;">efficient workflow</span></span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">Selected Electrolux Professional features can support repeatable wash results, moisture control, finishing quality</span>
-                <span class="whitespace-nowrap block">and easier day-to-day operation when matched to the right hospitality laundry room.</span>
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/2.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Wash consistency</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Commercial washer configuration can support daily wash demand across bedding, towels, robes, uniforms, guest items and food and beverage linen.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Dosing control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing can support better control of load, water and detergent use.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/16.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Moisture control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance can support residual moisture control and reduce unnecessary overdrying where the selected dryer configuration includes that capability.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/36.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing quality</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">DIAMMS and Hygiene Guard support moisture-aware finishing and linen handling where the selected ironer configuration includes those capabilities.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/15.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Specialist separation where required</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier washers are available for hospitality sites where controlled dirty-side loading and clean-side unloading are required.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
 <!-- SUPPORT ROUTES -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -346,7 +274,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -370,28 +298,18 @@
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Plan the property laundry room</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">around workflow, capacity and peak demand</span>
+            <span class="text-white text-3xl lg:text-5xl block">Plan the <span style="color:#011E41;">property laundry room</span></span>
+            <span class="text-white text-3xl lg:text-5xl block">around workflow, capacity and <span style="color:#011E41;">peak demand</span></span>
         </h2>
         <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
             Before equipment becomes a daily service issue, the room, linen flow, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property actually operates.
         </p>
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
-            @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Workflow &amp;<br>layout'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>selection'],
-                ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
-                ['icon' => 'ativo-9',  'label' => 'Peak demand<br>readiness'],
-            ] as $i => $feat)
-            @if($i > 0)
-                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
-            @endif
-            <div class="flex items-center gap-3">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     style="width:2.4rem;height:2.4rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
-            @endforeach
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            <span class="font-body text-white text-sm font-bold">Avoid wasted spend</span>
+            <span class="text-white/40">|</span>
+            <span class="font-body text-white text-sm font-bold">Right-fit linen flow</span>
+            <span class="text-white/40">|</span>
+            <span class="font-body text-white text-sm font-bold">Reduce costly rework</span>
         </div>
         <a href="{{ route('contact') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
@@ -410,8 +328,8 @@
                 Equipment for <span style="color:#148af4;">hospitality laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space, guest-facing</span>
-                <span class="whitespace-nowrap block">requirements and the care needed to keep equipment performing.</span>
+                <span class="whitespace-nowrap block">The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space,</span>
+                <span class="whitespace-nowrap block">guest-facing requirements and the care needed to keep equipment performing.</span>
             </p>
         </div>
 
@@ -678,7 +596,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span style="color:#148af4;">Protect linen quality</span> while <span style="color:#148af4;">cutting detergent waste</span>
+                Protect linen quality while <span style="color:#148af4;">cutting detergent waste</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
                 Automatic dosing supports hospitality laundry rooms by using the right amount of detergent for each cycle. That can reduce chemical overuse, protect towels, robes, bedding and table linen, lower maintenance pressure and support more consistent wash results over time.
@@ -823,6 +741,19 @@
     </div>
 </section>
 
+<!-- EQUIPMENT RENTAL STRIP -->
+@include('components.why-choose-strip', [
+    'headingLine1' => '<span style="color:#148af4;">Keep laundry moving</span>',
+    'headingLine2' => 'where rental is the right fit',
+    'body'         => 'For hospitality sites facing replacement pressure, capacity gaps or seasonal demand, rental may be a good fit where the available Electrolux Professional equipment range matches the property’s operation.',
+    'miniPoints'   => ['Lower upfront cost where suitable', 'Capacity support where available', 'Installed and supported'],
+    'miniNowrap'   => true,
+])
+
+@include('components.equipment-categories', [
+    'heading' => 'Equipment categories for hospitality laundry rooms',
+])
+
 <!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -836,8 +767,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Assess the room',                       'text' => 'Review linen flow, peak demand, housekeeping pressure and available space.',                                  'icon' => 'clipboard'],
-                ['title' => 'Match the equipment',                   'text' => 'Recommend the right washing, drying, finishing, rental option or guest-laundry setup.',                       'icon' => 'Ativo%204'],
+                ['title' => 'Assess the room',                       'text' => 'Review linen flow, peak demand, housekeeping pressure and available space before any equipment is chosen.',                                  'icon' => 'clipboard'],
+                ['title' => 'Match the equipment',                   'text' => 'Recommend the right washing, drying, finishing, rental option or guest-laundry setup to suit how the property operates.',                       'icon' => 'Ativo%204'],
                 ['title' => 'Connect maintenance and aftercare',     'text' => 'Link the equipment already on-site to service contracts, repairs, follow-up care and future decisions.',         'icon' => 'Ativo%206'],
                 ['title' => 'Move to assessment',                    'text' => 'Turn the property, equipment setup and support needs into a clear next step.',                                'icon' => 'Ativo%203'],
             ] as $i => $step)
@@ -864,16 +795,17 @@
     </div>
 </section>
 
-<!-- EQUIPMENT RENTAL STRIP -->
-@include('components.why-choose-strip', [
-    'body' => 'For hospitality sites facing replacement pressure, capacity gaps or seasonal demand, rental may be a good fit where the available Electrolux Professional equipment range matches the property&rsquo;s operation.',
-])
-
 <!-- SERVICE CONTRACTS + SUPPORT & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
-    'headingLine1' => 'Protect linen flow, control<br>service costs and keep peace',
-    'headingLine2' => 'of mind after installation',
+    'headingLine1' => '<span style="color:#011E41;">Protect linen flow</span>, control<br>service costs and keep <span style="color:#011E41;">peace</span>',
+    'headingLine2' => '<span style="color:#ffffff;"><span style="color:#011E41;">of mind</span> after installation</span>',
     'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps the follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
+    'image'        => '/images/healthcare/repairs-callouts.jpg',
+    'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Peace of mind'],
+    'cta1Label'    => 'View Service Contracts',
+    'cta1Route'    => 'service-contracts',
+    'cta2Label'    => 'Explore Support &amp; Aftercare',
+    'cta2Route'    => 'parts-aftercare',
 ])
 
 <!-- TESTIMONIAL / PROOF BLOCK -->
