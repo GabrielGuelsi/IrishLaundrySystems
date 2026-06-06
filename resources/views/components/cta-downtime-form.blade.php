@@ -16,10 +16,10 @@
                 @if ($eyebrow)
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
                 @endif
-                <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
+                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 leading-tight">
                     {!! $heading !!}
                 </h2>
-                <p class="font-body text-blue-200 text-lg leading-relaxed mb-8">
+                <p class="font-body text-blue-200 text-base leading-relaxed mb-8">
                     {{ $body }}
                 </p>
 

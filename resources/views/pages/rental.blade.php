@@ -55,7 +55,7 @@
                 <h1 class="hero-desc font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">
                     Equipment Rental &amp; Lease for Commercial Laundry
                 </h1>
-                <p class="font-body text-blue-200 text-lg mb-3 font-bold">Managed equipment. Controlled costs. No capital outlay.</p>
+                <p class="font-body text-blue-200 text-base mb-3">Managed equipment. Controlled costs. No capital outlay.</p>
                 <p class="font-body text-gray-300 text-base leading-relaxed mb-7 max-w-xl">
                     Equipment rental and lease arrangements allow commercial laundry operators to access current Electrolux Professional equipment without significant capital investment — with planned maintenance built into the arrangement.
                 </p>
@@ -137,8 +137,8 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">Rental vs Outright Purchase</h2>
-            <p class="font-body text-gray-600 text-lg max-w-2xl mx-auto">Both have their place. Here's what makes rental the right choice for some operations.</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">Rental vs Outright Purchase</h2>
+            <p class="font-body text-gray-600 text-base leading-relaxed max-w-2xl mx-auto">Both have their place. Here's what makes rental the right choice for some operations.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-bg border-2 border-[#148af4] rounded-2xl p-6 lg:p-8">
@@ -206,8 +206,8 @@
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4">How Rental Works</h2>
-            <p class="font-body text-blue-200 text-lg max-w-xl mx-auto">Three steps from enquiry to equipment in place.</p>
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">How Rental Works</h2>
+            <p class="font-body text-blue-200 text-base leading-relaxed max-w-xl mx-auto">Three steps from enquiry to equipment in place.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="text-center">

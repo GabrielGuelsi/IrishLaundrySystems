@@ -17,10 +17,10 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Barrier Washers</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
                     Choose barrier washers around <span style="color:#148af4;">hygiene, water control and long-term support</span>
                 </h1>
-                <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional Line 6000 Evolution hygiene barrier washer-extractors for hospitals, healthcare sites, care facilities, pharmaceutical, food and commercial laundries across Ireland. We connect hygiene flow, capacity, the clean and soiled side separation, room setup and after-installation support around the way your laundry actually operates.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -226,11 +226,11 @@
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Build the barrier washer decision</span>
-            <span class="text-white text-3xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
-            <span class="text-white text-3xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">Build the barrier washer decision</span>
+            <span class="text-white text-4xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A barrier washer must fit a room split into clean and soiled sides, the workflow and the hygiene pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, the dividing wall, installation and support before the equipment decision is made.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -419,7 +419,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                     Keep barrier washer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -473,7 +473,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">Brochures, guides and useful reading</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Brochures, guides and useful reading</h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
@@ -532,7 +532,7 @@
         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right barrier washer</span> for your hygienic laundry?
         </h2>
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Talk to Irish Laundry Systems about barrier washer capacity, hygiene compliance, the clean and soiled side layout, installation, rental, maintenance and support options.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

@@ -5,7 +5,7 @@
 
             {{-- Left: heading + description --}}
             <div class="lg:col-span-1 reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-4">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
                     Keep the support matched to the equipment
                 </h2>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">

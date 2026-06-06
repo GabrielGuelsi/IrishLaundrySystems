@@ -17,10 +17,10 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Tumble Dryers</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
                     Choose commercial dryers around <span style="color:#148af4;">energy use, linen turnaround and long-term support</span>
                 </h1>
-                <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial tumble dryers for hotels, healthcare sites, care facilities and commercial laundries across Ireland. We connect drying capacity, room setup, energy pressure and after-installation support around the way your laundry actually operates.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -81,7 +81,7 @@
                 <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
                     Save <span style="color:#148af4;">65% on energy consumption</span> with Heat Pump Dryer technology
                 </h2>
-                <p class="font-body text-white/75 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
+                <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
                     Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. For sites where the room setup is suitable, it can also reduce installation pressure by avoiding the need for exhaust or a water cooling system.
                 </p>
                 <a href="#dryer-range"
@@ -316,14 +316,14 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Plan drying around the</span>
-            <span class="text-white text-3xl lg:text-5xl block"><span style="color:#011E41;">room, energy use</span></span>
-            <span class="text-white text-3xl lg:text-5xl block">and <span style="color:#011E41;">linen flow</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">Plan drying around the</span>
+            <span class="text-white text-4xl lg:text-5xl block"><span style="color:#011E41;">room, energy use</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">and <span style="color:#011E41;">linen flow</span></span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A dryer should fit the room, the utilities and the pressure placed on it every day. Irish Laundry Systems connects capacity, ventilation, access, energy use, installation and support before the equipment decision is made.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -583,7 +583,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                     Keep dryer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -638,7 +638,7 @@
         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right dryer decision</span> for your laundry room?
         </h2>
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Talk to Irish Laundry Systems about dryer capacity, energy pressure, installation, rental, maintenance and support options.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

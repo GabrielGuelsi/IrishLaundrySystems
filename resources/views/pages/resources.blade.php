@@ -75,7 +75,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="flex items-center justify-between mb-8">
-            <h2 class="font-heading font-bold text-navy text-xs uppercase tracking-widest">Featured Resource</h2>
+            <h2 class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em]">Featured Resource</h2>
             <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline">Request any guide →</a>
         </div>
 
@@ -132,8 +132,8 @@
 
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
-                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-2">Library</p>
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl">Guides</h2>
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Library</p>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Guides</h2>
                 <p class="font-body text-gray-400 text-sm mt-1">Practical reference material for operators and facilities managers</p>
             </div>
             <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline whitespace-nowrap">Request a guide →</a>
@@ -256,8 +256,8 @@
 
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
-                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-2">Ready to use</p>
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl">Checklists</h2>
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Ready to use</p>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Checklists</h2>
                 <p class="font-body text-gray-400 text-sm mt-1">Print-ready and digital checklists for operators and engineers</p>
             </div>
         </div>
@@ -341,8 +341,8 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="text-center mb-12 reveal">
-            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-3">By Machine</p>
-            <h2 class="font-heading font-bold text-white text-2xl lg:text-4xl mb-3">Resources by machine type</h2>
+            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">By Machine</p>
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-3">Resources by machine type</h2>
             <p class="font-body text-white/40 text-sm max-w-xl mx-auto leading-relaxed">
                 Each machine type has its own maintenance requirements, operator checks and service considerations — find resources specific to your equipment.
             </p>
@@ -440,7 +440,7 @@
                         <span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>
                         Stay Informed
                     </span>
-                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-4xl leading-tight mb-4">
+                    <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
                         Get new resources<br>as they're published
                     </h2>
                     <p class="font-body text-gray-500 text-sm leading-relaxed max-w-md mb-8">

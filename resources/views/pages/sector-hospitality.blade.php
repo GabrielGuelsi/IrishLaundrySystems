@@ -15,9 +15,9 @@
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-4">
-                    <span class="whitespace-nowrap block">Hospitality laundry support</span>
-                    <span class="whitespace-nowrap block">for <span style="color:#148af4;">linen flow</span>, <span style="color:#148af4;">guest standards</span></span>
-                    <span class="whitespace-nowrap block">and peak-period pressure</span>
+                    <span class="block">Hospitality laundry support</span>
+                    <span class="block">for <span style="color:#148af4;">linen flow</span>, <span style="color:#148af4;">guest standards</span></span>
+                    <span class="block">and peak-period pressure</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports hotels, guesthouses and hospitality sites with commercial laundry equipment, installation, rental options, planned maintenance, repairs and aftercare for laundry rooms that affect room readiness, housekeeping pressure and day-to-day service.
@@ -148,82 +148,21 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Control hospitality laundry costs</span> while</span>
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">protecting guest standards</span></span>
+                <span class="block"><span style="color:#148af4;">Control hospitality laundry costs</span> while</span>
+                <span class="block"><span style="color:#148af4;">protecting guest standards</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Hospitality laundry cost can build through energy use, detergent waste, linen replacement pressure, housekeeping delays, outsourced laundry reliance, reactive call-outs and equipment decisions made too late. The right setup should support fresh linen, faster turnaround times, efficient workflow and better cost control.
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
-
-            {{-- Business 1 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/31.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Faster<br>turnaround</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">linen and room readiness</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.</p>
-            </div>
-
-            {{-- Business 2 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/24.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Higher<br>quality</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">fresh linen and guest standards</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.</p>
-            </div>
-
-            {{-- Metric 3 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">dryer energy use</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
-            </div>
-
-            {{-- Business 4 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">detergent and linen care</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.</p>
-            </div>
-
-            {{-- Business 5 --}}
-            <div class="flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprise</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">servicing and breakdown support</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, planned maintenance, repairs, rental options and aftercare so hospitality laundry decisions are not only made after something fails.</p>
-            </div>
-
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.'],
+            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
+            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems connects equipment planning, planned maintenance, repairs, rental options and aftercare so hospitality laundry decisions are not only made after something fails.'],
+        ]])
     </div>
 </section>
 
@@ -310,13 +249,13 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Plan the <span style="color:#011E41;">property laundry room</span></span>
-            <span class="text-white text-3xl lg:text-5xl block">around workflow, capacity and <span style="color:#011E41;">peak demand</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">Plan the <span style="color:#011E41;">property laundry room</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">around workflow, capacity and <span style="color:#011E41;">peak demand</span></span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
+        <p class="font-body text-white text-base leading-relaxed mb-6">
             Before equipment becomes a daily service issue, the room, linen flow, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property actually operates.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -343,8 +282,8 @@
                 Equipment for <span style="color:#148af4;">hospitality laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space,</span>
-                <span class="whitespace-nowrap block">guest-facing requirements and the care needed to keep equipment performing.</span>
+                <span class="block">The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space,</span>
+                <span class="block">guest-facing requirements and the care needed to keep equipment performing.</span>
             </p>
         </div>
 

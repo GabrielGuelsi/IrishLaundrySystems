@@ -17,10 +17,10 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
                     Choose flatwork ironers around <span style="color:#148af4;">finishing quality, throughput and long-term support</span>
                 </h1>
-                <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional drying ironers and flatwork finishing for hotels, healthcare sites, care facilities and commercial laundries across Ireland. We connect working width, throughput, finishing quality, room setup and after-installation support around the way your laundry actually operates.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -223,14 +223,14 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Build the ironer decision</span>
-            <span class="text-white text-3xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
-            <span class="text-white text-3xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">Build the ironer decision</span>
+            <span class="text-white text-4xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             An ironer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects working width, utilities, access, throughput, installation and support before the equipment decision is made.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -429,7 +429,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                     Keep ironer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -483,7 +483,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">Brochures, guides and useful reading</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Brochures, guides and useful reading</h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
@@ -542,7 +542,7 @@
         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right ironer decision</span> for your finishing line?
         </h2>
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Talk to Irish Laundry Systems about working width, finishing quality, throughput, installation, rental, maintenance and support options.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

@@ -17,10 +17,10 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Washing Machines</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
                     Choose commercial washers around <span style="color:#148af4;">daily demand, running costs and long-term support</span>
                 </h1>
-                <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial washing machines for hotels, healthcare sites, care facilities and commercial laundries across Ireland. We connect washer capacity, room setup, staff routines and after-installation support around the way your laundry actually operates.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -81,7 +81,7 @@
                 <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
                     Look beyond purchase price to the <span style="color:#148af4;">costs that keep repeating</span>
                 </h2>
-                <p class="font-body text-white/75 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
+                <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
                     Purchase price is only the first part of a washer decision. Over the life of the equipment, chemicals, energy and water carry the larger cost pressure, so the right washer choice should be made around daily use, not just initial purchase.
                 </p>
                 <a href="{{ route('request-assessment') }}"
@@ -289,14 +289,14 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Build the washer decision</span>
-            <span class="text-white text-3xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
-            <span class="text-white text-3xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">Build the washer decision</span>
+            <span class="text-white text-4xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
+            <span class="text-white text-4xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A washer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying pressure, installation and support before the equipment decision is made.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -563,7 +563,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                     Keep washer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -618,7 +618,7 @@
         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right washer decision</span> for your laundry room?
         </h2>
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Talk to Irish Laundry Systems about washer capacity, running cost pressure, installation, rental, maintenance and support options.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">

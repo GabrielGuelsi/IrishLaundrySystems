@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('meta')
 <meta name="description" content="Care facility laundry support — equipment selection, installation, service contracts, repairs, parts and aftercare for care facilities across Ireland.">
@@ -14,7 +14,7 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry Support</p>
-                <h1 class="font-heading font-bold text-navy text-3xl lg:text-5xl leading-tight mb-4">
+                <h1 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
                     Keep <span style="color:#148af4;">daily care moving</span><br>without laundry becoming<br>another management problem
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
@@ -45,7 +45,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
                     Care home laundry is part of <span style="color:#148af4;">daily care</span>,<br>not a back-room task
                 </h2>
             </div>
@@ -77,8 +77,8 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Demand</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                <span class="whitespace-nowrap block">Laundry support for <span style="color:#148af4;">resident items,</span></span>
-                <span class="whitespace-nowrap block">linen flow and <span style="color:#148af4;">staff routines</span></span>
+                <span class="block">Laundry support for <span style="color:#148af4;">resident items,</span></span>
+                <span class="block">linen flow and <span style="color:#148af4;">staff routines</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
                 Care facility laundry needs to move through the week without adding strain for managers, care teams, residents or staff. The right setup should account for resident clothing, bedding, towels, staff items, hygiene handling, drying pressure and the care needed to keep equipment running.
@@ -126,83 +126,22 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Control care home laundry costs</span> before</span>
-                <span class="whitespace-nowrap block">they quietly build up</span>
+                <span class="block"><span style="color:#148af4;">Control care home laundry costs</span> before</span>
+                <span class="block">they quietly build up</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.</span>
-                <span class="whitespace-nowrap block">The right equipment plan should keep daily care moving while reducing avoidable running costs.</span>
+                <span class="block">In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.</span>
+                <span class="block">The right equipment plan should keep daily care moving while reducing avoidable running costs.</span>
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
-
-            {{-- Metric 1 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">dryer energy use</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
-            </div>
-
-            {{-- Metric 2 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-50%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">water use</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.</p>
-            </div>
-
-            {{-- Metric 3 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-75%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">sick days</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
-            </div>
-
-            {{-- Business 4 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">detergent and process waste</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.</p>
-            </div>
-
-            {{-- Business 5 --}}
-            <div class="flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprise</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">repair and maintenance pressure</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, rental, preventive maintenance, repairs and aftercare so care home laundry decisions are not only made after something fails.</p>
-            </div>
-
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'8',  'prefix'=>'', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                       'body'=>'Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.'],
+            ['icon'=>'9',  'prefix'=>'', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                       'body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste',      'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'Irish Laundry Systems connects equipment planning, rental, preventive maintenance, repairs and aftercare so care home laundry decisions are not only made after something fails.'],
+        ]])
     </div>
 </section>
 
@@ -213,12 +152,12 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block">Features that support <span style="color:#148af4;">daily care,</span> <span style="color:#148af4;">staff handling</span></span>
-                <span class="whitespace-nowrap block">and <span style="color:#148af4;">laundry consistency</span></span>
+                <span class="block">Features that support <span style="color:#148af4;">daily care,</span> <span style="color:#148af4;">staff handling</span></span>
+                <span class="block">and <span style="color:#148af4;">laundry consistency</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more</span>
-                <span class="whitespace-nowrap block">manageable day-to-day laundry routines when matched to the right care setting.</span>
+                <span class="block">Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more</span>
+                <span class="block">manageable day-to-day laundry routines when matched to the right care setting.</span>
             </p>
         </div>
 
@@ -370,14 +309,14 @@
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
 
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Plan the care laundry room</span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">before daily costs build up</span>
+            <span class="text-white text-4xl lg:text-5xl block">Plan the care laundry room</span>
+            <span class="text-4xl lg:text-5xl block" style="color:#011E41;">before daily costs build up</span>
         </h2>
 
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
+        <p class="font-body text-white text-base leading-relaxed mb-6">
             Before equipment becomes a daily management issue, the room, staff routine, resident-item flow, utility pressure and maintenance needs should be understood together. Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.
         </p>
 
@@ -404,8 +343,8 @@
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block">Equipment built around <span style="color:#148af4;">resident items,</span></span>
-                <span class="whitespace-nowrap block">staff routines and <span style="color:#148af4;">running cost</span></span>
+                <span class="block">Equipment built around <span style="color:#148af4;">resident items,</span></span>
+                <span class="block">staff routines and <span style="color:#148af4;">running cost</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the care that keeps the equipment performing over time.
@@ -731,12 +670,12 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
-                <span class="whitespace-nowrap block">another running cost</span>
+                <span class="block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
+                <span class="block">another running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                <span class="whitespace-nowrap block">Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,</span>
-                <span class="whitespace-nowrap block">lower chemical overuse, protect resident clothing, bedding and towels, and support more consistent wash results over time.</span>
+                <span class="block">Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,</span>
+                <span class="block">lower chemical overuse, protect resident clothing, bedding and towels, and support more consistent wash results over time.</span>
             </p>
         </div>
 
@@ -892,7 +831,7 @@
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-3 text-center">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
             Our process keeps the <span style="color:#148af4;">next step clear</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">

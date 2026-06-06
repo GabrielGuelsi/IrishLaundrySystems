@@ -42,7 +42,7 @@
 
             <!-- Quick links -->
             <div>
-                <h3 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-5 pb-2 border-b border-white/10">Quick Links</h3>
+                <h3 class="font-heading font-bold text-white text-xs uppercase tracking-[0.22em] mb-5 pb-2 border-b border-white/10">Quick Links</h3>
                 <ul class="space-y-3 font-body text-sm">
                     <li><a href="{{ route('service-contracts') }}" class="text-gray-400 hover:text-white transition-colors">Preventive Maintenance</a></li>
                     <li><a href="{{ route('repairs') }}" class="text-gray-400 hover:text-white transition-colors">Repairs &amp; Call-outs</a></li>
@@ -55,7 +55,7 @@
 
             <!-- CTA -->
             <div>
-                <h3 class="font-heading font-bold text-white text-xs uppercase tracking-widest mb-5 pb-2 border-b border-white/10">Start with the right next step</h3>
+                <h3 class="font-heading font-bold text-white text-xs uppercase tracking-[0.22em] mb-5 pb-2 border-b border-white/10">Start with the right next step</h3>
                 <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Request a service assessment or talk to our team so the enquiry can be directed to the right service, rental, equipment or aftercare conversation.</p>
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-heading font-bold text-sm px-5 py-3 rounded-lg transition-colors"
