@@ -216,16 +216,16 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Aftercare</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
-                    Aftercare should keep the <span class="text-[#148af4]">next decision&nbsp;clear</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl 2xl:text-6xl leading-tight">
+                    Aftercare that keeps<br>service history and<br><span class="text-[#148af4]">next steps&nbsp;connected</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
-                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    A commercial laundry site often needs more than one repair, one part or one service visit. The next question may be whether a fault is repeating, whether the equipment history is clear, whether a part is required, or whether the site should move toward planned maintenance.
+                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                    After a repair, inspection or installation, the next decision is often the one that matters.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Irish Laundry Systems connects the follow-up, service history, Electrolux Professional equipment knowledge and genuine parts access where applicable, so the site has a clearer way to decide what happens next.
+                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                    Irish Laundry Systems keeps follow-up clearer with service history, Electrolux Professional equipment knowledge and genuine parts access where applicable.
                 </p>
 
                 <a href="#aftercare-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
