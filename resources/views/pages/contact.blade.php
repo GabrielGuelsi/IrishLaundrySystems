@@ -21,7 +21,7 @@
             </svg>
         </div>
 
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-widest mb-3">Request received</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request received</p>
         <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-4">We'll be in touch shortly</h2>
         <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-12">
             Your request has been sent. One of our engineers will review your details and confirm the next step with you.
@@ -36,7 +36,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
                         </svg>
                     </div>
-                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-widest">What happens next</p>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em]">What happens next</p>
                 </div>
                 <div class="flex gap-0">
                     @foreach([
@@ -88,11 +88,11 @@
     <div class="relative z-10 h-full flex items-center">
         <div class="max-w-5xl mx-auto w-full px-6 sm:px-10">
             <div class="max-w-xl">
-                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-3">Service Assessment</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl xl:text-6xl leading-tight mb-5">
+                <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-5">
                     Request a Service<br>Assessment
                 </h1>
-                <p class="font-body text-white/75 text-lg leading-relaxed mb-8">
+                <p class="font-body text-white/75 text-base leading-relaxed mb-8">
                     Share site location(s), equipment type/brand and urgency. We will confirm next steps and availability.
                 </p>
                 <div class="flex flex-wrap items-center gap-4">
@@ -126,7 +126,7 @@
 
                     {{-- Left: heading --}}
                     <div class="lg:col-span-3">
-                        <h2 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-3">
+                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-3">
                             What to <span class="text-[#148af4]">include</span>
                         </h2>
                         <p class="font-body text-white/60 text-sm leading-relaxed">
@@ -423,7 +423,7 @@
 
                 {{-- Contact info --}}
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-5">Contact Details</h3>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mb-5">Contact Details</h3>
                     <div class="space-y-4">
                         <div>
                             <a href="tel:+35314910402"
@@ -453,7 +453,7 @@
 
                 {{-- FAQs --}}
                 <div x-data="{ open: null }">
-                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-5">FAQs</h3>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mb-5">FAQs</h3>
                     <div class="space-y-0 divide-y divide-gray-100">
 
                         @foreach([
@@ -498,7 +498,7 @@
 
                 {{-- Coverage map --}}
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-widest mb-4">Coverage area</h3>
+                    <h3 class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mb-4">Coverage area</h3>
                     <div class="rounded-xl overflow-hidden border border-gray-100" style="height:200px;">
                         <iframe
                             src="https://www.openstreetmap.org/export/embed.html?bbox=-10.7%2C51.3%2C-5.8%2C55.5&amp;layer=mapnik"
@@ -534,7 +534,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
                         </svg>
                     </div>
-                    <p class="font-heading font-bold text-navy text-sm uppercase tracking-widest">What happens next</p>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em]">What happens next</p>
                 </div>
                 <div class="flex gap-0">
                     @php $nextSteps = [

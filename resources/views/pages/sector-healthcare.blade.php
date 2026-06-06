@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('meta')
 <meta name="description" content="Engineering-led commercial laundry support for healthcare — barrier washers, service contracts, and priority response across Ireland.">
@@ -18,9 +18,9 @@
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-4">
-                    <span class="whitespace-nowrap block" style="color:#148af4;">Control healthcare laundry</span>
-                    <span class="whitespace-nowrap block">pressure before it becomes</span>
-                    <span class="whitespace-nowrap block">a daily cost problem</span>
+                    <span class="block" style="color:#148af4;">Control healthcare laundry</span>
+                    <span class="block">pressure before it becomes</span>
+                    <span class="block">a daily cost problem</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Healthcare laundry rooms carry hygiene, linen flow, patient safety, staff pressure and running-cost demands every day. Irish Laundry Systems supports healthcare sites with Electrolux Professional equipment, planned maintenance, repairs, rental and aftercare around the way the room actually operates.
@@ -50,16 +50,16 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Healthcare</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    <span class="whitespace-nowrap block">Healthcare laundry</span>
-                    <span class="whitespace-nowrap block">is a <span style="color:#148af4;">hygiene</span> and</span>
-                    <span class="whitespace-nowrap block"><span style="color:#148af4;">cost-control</span> issue</span>
+                    <span class="block">Healthcare laundry</span>
+                    <span class="block">is a <span style="color:#148af4;">hygiene</span> and</span>
+                    <span class="block"><span style="color:#148af4;">cost-control</span> issue</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right lg:pt-8">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-2">
-                    <span class="whitespace-nowrap block">The wrong laundry setup can drain budget every day through energy, water, detergent</span>
-                    <span class="whitespace-nowrap block">waste, staff pressure, linen delays, reactive call-outs and replacement pressure.</span>
+                    <span class="block">The wrong laundry setup can drain budget every day through energy, water, detergent</span>
+                    <span class="block">waste, staff pressure, linen delays, reactive call-outs and replacement pressure.</span>
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems connects room layout, workflow, capacity, equipment, maintenance, repairs, rental and aftercare into one practical plan, so healthcare sites can control costs while protecting hygiene flow.
@@ -85,13 +85,13 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Infection Control</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="whitespace-nowrap block">Laundry and <span style="color:#148af4;">infection control</span></span>
-                <span class="whitespace-nowrap block">need to work as <span style="color:#148af4;">one process</span></span>
+                <span class="block">Laundry and <span style="color:#148af4;">infection control</span></span>
+                <span class="block">need to work as <span style="color:#148af4;">one process</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
-                <span class="whitespace-nowrap block">In healthcare and care environments, laundry is not only about washing linen. Dirty-side handling, clean-side unloading, drying, finishing, transport and storage all affect</span>
-                <span class="whitespace-nowrap block">how controlled the process remains. Electrolux Professional barrier systems are built around physical separation between soiled and clean linen handling, supporting hygiene</span>
-                <span class="whitespace-nowrap block">control where cross-contamination risk needs to be managed. Irish Laundry Systems connects that equipment logic with the room, workflow and ongoing care around it.</span>
+                <span class="block">In healthcare and care environments, laundry is not only about washing linen. Dirty-side handling, clean-side unloading, drying, finishing, transport and storage all affect</span>
+                <span class="block">how controlled the process remains. Electrolux Professional barrier systems are built around physical separation between soiled and clean linen handling, supporting hygiene</span>
+                <span class="block">control where cross-contamination risk needs to be managed. Irish Laundry Systems connects that equipment logic with the room, workflow and ongoing care around it.</span>
             </p>
         </div>
 
@@ -138,8 +138,8 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Workflow Matters</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Dirty-side and clean-side</span> handling need</span>
-                <span class="whitespace-nowrap block">a <span style="color:#148af4;">controlled healthcare laundry flow</span></span>
+                <span class="block"><span style="color:#148af4;">Dirty-side and clean-side</span> handling need</span>
+                <span class="block">a <span style="color:#148af4;">controlled healthcare laundry flow</span></span>
             </h2>
         </div>
         <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
@@ -188,87 +188,23 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Control healthcare laundry costs</span></span>
-                <span class="whitespace-nowrap block">before poor setup drains budget</span>
+                <span class="block"><span style="color:#148af4;">Control healthcare laundry costs</span></span>
+                <span class="block">before poor setup drains budget</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">Healthcare laundry can become a daily cost problem through energy use, water use, detergent waste, staff strain, linen delays and reactive call-outs.</span>
-                <span class="whitespace-nowrap block">The right equipment plan should protect hygiene flow while reducing avoidable running-cost pressure.</span>
+                <span class="block">Healthcare laundry can become a daily cost problem through energy use, water use, detergent waste, staff strain, linen delays and reactive call-outs.</span>
+                <span class="block">The right equipment plan should protect hygiene flow while reducing avoidable running-cost pressure.</span>
             </p>
         </div>
 
-        {{-- 5-item grid --}}
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
-
-            {{-- Metric 1 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Up to</span>
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">-65%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">dryer energy use</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
-            </div>
-
-            {{-- Metric 2 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Up to</span>
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">-50%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">water use</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.</p>
-            </div>
-
-            {{-- Metric 3 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Up to</span>
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">-75%</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">sick days</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
-            </div>
-
-            {{-- Business 4 --}}
-            <div class="flex flex-col gap-3 col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">and process waste</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.</p>
-            </div>
-
-            {{-- Business 5 --}}
-            <div class="flex flex-col gap-3 col-span-2 lg:col-span-1">
-                <div class="flex items-start gap-3">
-                    <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprises</div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">repair and service pressure</h3>
-                    </div>
-                </div>
-                <div class="w-full h-px bg-[#148af4]/20"></div>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, preventive maintenance, repairs, rental and aftercare so healthcare laundry decisions are not only made after something fails.</p>
-            </div>
-
-        </div>
+        {{-- 5-item grid (aligned via shared component) --}}
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy use',            'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'8',  'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.'],
+            ['icon'=>'9',  'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
+            ['icon'=>'10', 'prefix'=>'',      'stat'=>'Less waste',      'size'=>'text-2xl', 'label'=>'and process waste',           'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
+            ['icon'=>'11', 'prefix'=>'',      'stat'=>'Fewer surprises', 'size'=>'text-2xl', 'label'=>'repair and service pressure', 'body'=>'Irish Laundry Systems connects equipment planning, preventive maintenance, repairs, rental and aftercare so healthcare laundry decisions are not only made after something fails.'],
+        ]])
     </div>
 </section>
 
@@ -280,8 +216,8 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="whitespace-nowrap block">Features that support <span style="color:#148af4;">hygiene flow,</span></span>
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">staff handling</span> and <span style="color:#148af4;">process control</span></span>
+                <span class="block">Features that support <span style="color:#148af4;">hygiene flow,</span></span>
+                <span class="block"><span style="color:#148af4;">staff handling</span> and <span style="color:#148af4;">process control</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Selected Electrolux Professional features support safer handling, cleaner process flow and more consistent laundry routines when matched to the right healthcare room.
@@ -455,8 +391,8 @@
         <div class="mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="whitespace-nowrap block">Equipment built around <span style="color:#148af4;">healthcare hygiene,</span></span>
-                <span class="whitespace-nowrap block">flow and <span style="color:#148af4;">running cost</span></span>
+                <span class="block">Equipment built around <span style="color:#148af4;">healthcare hygiene,</span></span>
+                <span class="block">flow and <span style="color:#148af4;">running cost</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The right equipment plan depends on room configuration, linen flow, wash demand, drying pressure, finishing needs and the care that keeps the equipment performing over time.
@@ -831,12 +767,12 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="whitespace-nowrap block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
-                <span class="whitespace-nowrap block">another running cost</span>
+                <span class="block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
+                <span class="block">another running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                <span class="whitespace-nowrap block">Automatic dosing supports healthcare laundry rooms by using the right amount of detergent for each cycle.</span>
-                <span class="whitespace-nowrap block">That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.</span>
+                <span class="block">Automatic dosing supports healthcare laundry rooms by using the right amount of detergent for each cycle.</span>
+                <span class="block">That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.</span>
             </p>
         </div>
 
@@ -1046,7 +982,7 @@
 
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'After Installation',
-    'headingLine1' => '<span class="whitespace-nowrap block"><span style="color:#011E41;">Protect the savings,</span> <span style="color:#011E41;">hygiene</span></span><span class="whitespace-nowrap block"><span style="color:#011E41;">flow</span> and continuity built into</span>',
+    'headingLine1' => '<span class="block"><span style="color:#011E41;">Protect the savings,</span> <span style="color:#011E41;">hygiene</span></span><span class="block"><span style="color:#011E41;">flow</span> and continuity built into</span>',
     'headingLine2' => '<span style="color:#ffffff;">the equipment decision</span>',
     'body'         => 'The right equipment decision should not lose value after installation. Planned maintenance and aftercare keep the room, equipment and next decisions connected so healthcare sites can reduce surprise repair costs and keep vital laundry equipment running.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',

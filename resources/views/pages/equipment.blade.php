@@ -20,7 +20,7 @@
                     <span class="block">equipment <span style="color:#148af4;">selected</span></span>
                     <span class="block" style="color:#148af4;">around your operation</span>
                 </h1>
-                <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems helps commercial, healthcare, care, hospitality and industrial sites choose equipment around workload, space, budget and daily laundry demand. We supply selected Electrolux Professional machines, then support installation, commissioning and aftercare where needed.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
@@ -83,8 +83,8 @@
                 Explore equipment lines built for <span style="color:#148af4;">different laundry needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
-                <span class="whitespace-nowrap block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
+                <span class="block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
+                <span class="block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
             </p>
         </div>
     </div>
@@ -341,11 +341,11 @@
     <div class="relative z-10 px-10 lg:px-16 py-12 lg:py-16" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Access</p>
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Choose the <span style="color:#011E41;">right</span></span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">equipment option</span>
-            <span class="text-white text-3xl lg:text-5xl block">for your site and budget</span>
+            <span class="text-white text-4xl lg:text-5xl block">Choose the <span style="color:#011E41;">right</span></span>
+            <span class="text-4xl lg:text-5xl block" style="color:#011E41;">equipment option</span>
+            <span class="text-white text-4xl lg:text-5xl block">for your site and budget</span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-2xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
             The right equipment decision is not only about the machine. Irish Laundry Systems can supply selected Electrolux Professional equipment for outright purchase or discuss rental where suitable, helping your site balance workload, space, budget and support needs.
         </p>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8">
@@ -487,7 +487,7 @@
 
         <div class="text-center mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Fit</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
                 Match equipment to the way <span style="color:#148af4;">each laundry room works</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">

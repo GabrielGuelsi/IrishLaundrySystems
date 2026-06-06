@@ -11,8 +11,8 @@
             </svg>
             <span class="text-sm font-body text-gray-200">Official website</span>
         </div>
-        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Irish Laundry Systems (ILS) — Official Website</h1>
-        <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
+        <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl mb-5">Irish Laundry Systems (ILS) — Official Website</h1>
+        <p class="font-body text-blue-200 text-base max-w-2xl mx-auto leading-relaxed">
             This is the official website of Irish Laundry Systems, the commercial laundry engineering specialists based in the Republic of Ireland.
         </p>
     </div>

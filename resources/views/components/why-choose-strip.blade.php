@@ -33,11 +33,11 @@
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
         <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">{!! $headingLine1 !!}</span>
-            <span class="text-3xl lg:text-5xl block text-white">{!! $headingLine2 !!}</span>
+            <span class="text-white text-4xl lg:text-5xl block">{!! $headingLine1 !!}</span>
+            <span class="text-4xl lg:text-5xl block text-white">{!! $headingLine2 !!}</span>
         </h2>
 
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6">
             {{ $body }}
         </p>
 

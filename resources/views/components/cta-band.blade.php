@@ -10,10 +10,10 @@
 
 <section class="bg-navy py-16 lg:py-20">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl mb-4 leading-tight">
+        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 leading-tight">
             {{ $heading }}
         </h2>
-        <p class="font-body text-white/80 text-lg mb-8 leading-relaxed max-w-2xl mx-auto">
+        <p class="font-body text-white/80 text-base mb-8 leading-relaxed max-w-2xl mx-auto">
             {{ $subheading }}
         </p>
         <div class="flex flex-col sm:flex-row items-center justify-center gap-4">

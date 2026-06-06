@@ -56,7 +56,7 @@
                 <div class="hero-desc inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 mb-4">
                     <span class="text-xs font-body text-gray-300">{{ $category }}</span>
                 </div>
-                <h1 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4">{{ $product }}</h1>
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-4">{{ $product }}</h1>
                 <p class="font-body text-gray-300 leading-relaxed mb-6 max-w-xl">
                     {{ !empty($summary) ? $summary : 'Commercial laundry equipment from the Electrolux Professional range — supplied, installed and supported by Irish Laundry Systems.' }}
                 </p>

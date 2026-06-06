@@ -21,15 +21,15 @@
     </div>
 
     {{-- Content — 60% width matching strip proportion --}}
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
 
         {{-- Heading --}}
-        <h2 class="font-heading font-bold leading-tight mb-4 text-3xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight mb-4 text-4xl lg:text-5xl text-white">
             {!! $heading !!}
         </h2>
 
         {{-- Description --}}
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6">
+        <p class="font-body text-white text-base leading-relaxed mb-6">
             {!! $body !!}
         </p>
 

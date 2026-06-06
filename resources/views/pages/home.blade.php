@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('pageTitle', 'Commercial Laundry Engineering Ireland | Preventive Maintenance, Repairs & Equipment | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
@@ -38,11 +38,11 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-[28px] sm:text-4xl lg:text-5xl xl:text-5xl">
+                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-4xl lg:text-5xl">
                     Commercial laundry<br><span class="text-[#148af4]">engineering support</span> for sites<br>where downtime carries real&nbsp;cost
                 </h1>
 
-                <p class="hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl">
+                <p class="hero-desc font-body text-white leading-relaxed mb-10 text-base max-w-xl">
                     Irish Laundry Systems supports commercial laundry sites by keeping equipment, rental, maintenance, repairs and aftercare connected through one route, so teams can control budget pressure, reduce disruption and keep the operation moving.
                 </p>
 
@@ -82,15 +82,15 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around the Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
                     <span class="text-[#148af4]">Laundry care</span> built around the site,<br>the equipment and<br>the <span class="text-[#148af4]">next practical step</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
-                <p class="font-body font-bold text-navy text-xl leading-snug">
+                <p class="font-body text-navy text-base leading-relaxed">
                     Irish Laundry Systems connects equipment selection, installation, planned maintenance, call-outs, rental and aftercare into one practical commercial laundry plan.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed">
+                <p class="font-body text-gray-600 text-base leading-relaxed">
                     That gives teams clearer decisions and more confidence when laundry output affects cost control, staffing pressure, service continuity and the long-term value of the equipment already in use.
                 </p>
                 <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
