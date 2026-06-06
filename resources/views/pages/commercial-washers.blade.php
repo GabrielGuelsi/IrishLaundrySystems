@@ -70,8 +70,69 @@
     </div>
 </section>
 
-{{-- 5. FINANCIAL / OPERATIONAL PERFORMANCE --}}
-<section class="py-12 lg:py-16 bg-white">
+{{-- 5. LIFE-CYCLE COST FEATURE --}}
+<section class="py-16 lg:py-24 overflow-hidden" style="background-color:#011E41;">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+            {{-- Left: copy --}}
+            <div class="reveal reveal-left">
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Costs</p>
+                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
+                    Look beyond purchase price to the <span style="color:#148af4;">costs that keep repeating</span>
+                </h2>
+                <p class="font-body text-white/75 text-base lg:text-lg leading-relaxed mb-8 max-w-xl">
+                    Purchase price is only the first part of a washer decision. Over the life of the equipment, chemicals, energy and water carry the larger cost pressure, so the right washer choice should be made around daily use, not just initial purchase.
+                </p>
+                <a href="{{ route('request-assessment') }}"
+                   class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                    Request Equipment Advice
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+            </div>
+
+            {{-- Right: ILS life-cycle infographic (iceberg metaphor, recreated in ILS style) --}}
+            <div class="reveal reveal-right">
+                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 lg:p-10">
+                    <div class="flex items-center gap-6 lg:gap-8">
+                        <svg viewBox="0 0 220 260" class="w-36 lg:w-44 h-auto flex-shrink-0" fill="none" aria-hidden="true">
+                            <line x1="6" y1="92" x2="214" y2="92" stroke="#148af4" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.6"/>
+                            <polygon points="110,26 140,92 80,92" fill="#bfe1fb"/>
+                            <polygon points="80,92 140,92 124,150 110,212 95,242 84,170" fill="#1f5fa6"/>
+                            <polygon points="80,92 110,92 95,242 84,170" fill="#163f6e"/>
+                        </svg>
+                        <div class="flex-1 min-w-0">
+                            <div class="mb-4">
+                                <div class="font-heading font-bold text-[#148af4] text-4xl lg:text-5xl leading-none">10%</div>
+                                <div class="font-body text-white/70 text-sm mt-1">Up-front investment</div>
+                            </div>
+                            <div class="mb-5">
+                                <div class="font-heading font-bold text-white text-5xl lg:text-6xl leading-none">90%</div>
+                                <div class="font-body text-white/70 text-sm mt-1">Life cycle costs</div>
+                            </div>
+                            <div class="flex flex-wrap gap-x-5 gap-y-2 pt-4 border-t border-white/10">
+                                @foreach([
+                                    ['t' => 'Chemicals', 'd' => 'M10 3h4v3l3 6.5V19a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.5L10 6V3z'],
+                                    ['t' => 'Energy',    'd' => 'M13 3 4 14h7l-1 7 9-11h-7l1-7z'],
+                                    ['t' => 'Water',     'd' => 'M12 3c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z'],
+                                ] as $sp)
+                                <span class="inline-flex items-center gap-1.5 font-body text-white/90 text-sm font-semibold">
+                                    <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $sp['d'] }}"/></svg>
+                                    {{ $sp['t'] }}
+                                </span>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- 6. FINANCIAL / OPERATIONAL PERFORMANCE --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -80,22 +141,21 @@
                 Choose washers around the <span style="color:#148af4;">costs your laundry room carries every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                A washer decision affects more than the wash cycle. Chemicals, energy, water, drying pressure, staff routines and long-term support all shape the real cost of keeping laundry moving.
+                A washer decision affects more than the wash cycle. Operational expenditure, detergent use, water and energy waste, drying pressure and staff productivity all shape the real cost of keeping laundry moving.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['title' => '10% up-front investment. 90% life cycle costs', 'copy' => 'Purchase price is only part of the washer decision. Chemicals, energy and water carry the larger cost over the life of the equipment.'],
-                ['title' => 'Save over 30% on detergent costs',            'copy' => 'Efficient Dosing can reduce detergent cost pressure while giving better control over the wash process.'],
-                ['title' => 'Not a drop of water wasted',                  'copy' => 'Automatic Savings adjusts water intake to the actual load, reducing waste when machines are not running at full capacity.'],
-                ['title' => 'Avoid underloading and overloading',          'copy' => 'Integrated Savings shows the load in real time, supporting better productivity, lower water and energy waste and longer washer life.'],
-                ['title' => 'Maximum dewatering',                          'copy' => 'Power Balance supports stronger extraction and lower moisture retention before drying, reducing pressure on the drying stage.'],
-                ['title' => 'Save 65% on energy consumption',              'copy' => 'Heat Pump Dryer technology can reduce energy pressure where the connected washer-dryer setup fits the room and operation.'],
+                ['title' => 'Up to 40% lower operational expenditure', 'copy' => 'Electrolux Professional Line 6000 washer technologies can reduce operational expenditure by up to 40% through better utilisation.'],
+                ['title' => 'Over 30% detergent cost savings',         'copy' => 'Efficient Dosing can reduce detergent cost pressure where specified, while supporting better control of the wash process.'],
+                ['title' => 'Water, energy and load control',          'copy' => 'Automatic Savings and Integrated Savings support better load control, reducing water, energy and cycle waste.'],
+                ['title' => 'Time and money saved before drying',      'copy' => 'Power Balance lowers moisture retention before drying, reducing pressure on the drying stage and helping protect laundry flow.'],
+                ['title' => '25% productivity increase',               'copy' => 'Electrolux ergonomic material cites a 25% productivity increase, alongside a 75% decrease in sick days and 59% reduction in work-related musculoskeletal disorders.'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
+            <div class="bg-bg border border-gray-100 rounded-2xl p-6 flex flex-col h-full col-span-1">
                 <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
             </div>
             @endforeach
@@ -103,7 +163,7 @@
     </div>
 </section>
 
-{{-- 6. TECHNICAL PROOF --}}
+{{-- 7. TECHNICAL PROOF --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -117,30 +177,36 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['icon' => '30', 'title' => 'Automatic Savings',              'copy' => 'Water intake adjusted to the actual load.'],
-                ['icon' => '34', 'title' => 'Integrated Savings',             'copy' => 'Real-time load visibility to avoid underloading and overloading.'],
-                ['icon' => '26', 'title' => 'Intelligent / Efficient Dosing', 'copy' => 'Detergent control linked to load weight and cycle needs.'],
-                ['icon' => '5',  'title' => 'ClarusVibe and CompassPro',       'copy' => 'Clearer programme selection, editable programmes and easier operator control.'],
-                ['icon' => '4',  'title' => 'ERGOCERT operator handling',      'copy' => 'Certified ergonomic design for repeated laundry work and daily staff routines.'],
-                ['icon' => '36', 'title' => 'Validated hygiene options',       'copy' => 'Global Hygiene Advanced programmes support validated hygiene process control where the correct Electrolux Professional process is specified.'],
+                ['icon' => '30', 'title' => 'Automatic Savings',              'copy' => 'Water intake adjusted to the actual load.', 'badge' => 'Automatic Savings'],
+                ['icon' => '34', 'title' => 'Integrated Savings',             'copy' => 'Real-time load visibility to avoid underloading and overloading.', 'badge' => 'Integrated Savings'],
+                ['icon' => '26', 'title' => 'Intelligent / Efficient Dosing', 'copy' => 'Detergent control linked to load weight and cycle needs.', 'badge' => 'Efficient Dosing'],
+                ['icon' => '16', 'title' => 'Power Balance',                  'copy' => 'Real-time extraction control for stronger dewatering and lower moisture retention before drying.', 'badge' => 'Power Balance'],
+                ['icon' => '5',  'title' => 'ClarusVibe and CompassPro',       'copy' => 'Clearer programme selection, editable programmes and easier operator control.', 'badge' => 'CompassPro'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col items-center text-center gap-4 shadow-card">
-                <div class="flex items-center justify-center h-20">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-20 h-20 object-contain">
+            <div class="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center text-center gap-3 shadow-card col-span-1">
+                <div class="flex items-center justify-center h-16">
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-16 h-16 object-contain">
                 </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-                </div>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
             </div>
+            @endforeach
+        </div>
+
+        {{-- Secondary proof chips --}}
+        <div class="flex flex-wrap items-center gap-2 mt-6">
+            <span class="font-body text-xs text-gray-400 mr-1">Also available:</span>
+            @foreach(['ERGOCERT', 'Global Hygiene Advanced', 'Validated hygiene options'] as $chip)
+            <span class="font-body text-xs font-semibold text-navy border border-gray-200 px-3 py-1.5 rounded-full">{{ $chip }}</span>
             @endforeach
         </div>
     </div>
 </section>
 
-{{-- 7. RANGE TEASERS CAROUSEL --}}
+{{-- 8. RANGE TEASERS CAROUSEL --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -216,7 +282,7 @@
     </div>
 </section>
 
-{{-- 8. PLANNING / INSTALLATION STRIP --}}
+{{-- 9. PLANNING / INSTALLATION STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
@@ -246,7 +312,65 @@
     </div>
 </section>
 
-{{-- 9. PRODUCT FINDER / WASHER RANGE --}}
+{{-- 10. RESOURCES / DOWNLOADS (before the Product Finder) --}}
+<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+
+            {{-- Box 1 — Navy downloads --}}
+            <div class="bg-navy rounded-2xl p-7 lg:p-9 flex flex-col">
+                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl mb-2">Official Electrolux Professional Downloads</h3>
+                <p class="font-body text-white/70 text-sm leading-relaxed mb-6">Access selected product brochures and technical resources before comparing washer options.</p>
+                <ul class="space-y-3">
+                    @foreach([
+                        ['label' => 'Line 6000 Washers &amp; Dryers brochure', 'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                        ['label' => 'Line 6000 High Spin Washers leaflet',     'file' => ''],
+                        ['label' => 'Relevant washer product resources',       'file' => ''],
+                    ] as $pdf)
+                    <li>
+                        @if($pdf['file'])
+                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2.5 font-body text-sm text-white/85 hover:text-white transition-colors">
+                            <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                            {!! $pdf['label'] !!}
+                        </a>
+                        @else
+                        <span class="flex items-center gap-2.5 font-body text-sm text-white/40">
+                            <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                            {!! $pdf['label'] !!} <span class="text-[10px] uppercase tracking-wide">(on request)</span>
+                        </span>
+                        @endif
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+
+            {{-- Box 2 — Related guidance --}}
+            <div class="bg-white border border-gray-200 rounded-2xl p-7 lg:p-9 flex flex-col">
+                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Related Equipment Guidance</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">Explore connected support routes before making a washer decision.</p>
+                <ul class="space-y-3">
+                    @foreach([
+                        ['label' => 'Equipment Rental',       'href' => route('rental')],
+                        ['label' => 'Preventive Maintenance', 'href' => route('service-contracts')],
+                        ['label' => 'Support &amp; Aftercare', 'href' => route('parts-aftercare')],
+                        ['label' => 'Tumble Dryers',          'href' => route('equipment.category', 'tumble-dryers')],
+                        ['label' => 'Wet Cleaning',           'href' => route('equipment.category', 'wet-cleaning')],
+                    ] as $link)
+                    <li>
+                        <a href="{{ $link['href'] }}" class="flex items-center gap-2.5 font-body text-sm text-navy hover:text-orange font-semibold transition-colors">
+                            <svg class="w-4 h-4 flex-shrink-0 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                            {!! $link['label'] !!}
+                        </a>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- 11. PRODUCT FINDER / WASHER RANGE --}}
 <section id="washer-range" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -260,26 +384,26 @@
             </p>
         </div>
 
-        {{-- Washer families — one card per range, filterable by capacity and type --}}
+        {{-- Washer families — curated by ILS, one card/image per range, filterable by capacity and profile --}}
         @php
-        $washerFamilies = [
-            ['name' => 'WS6 — Line 6000 High-Spin Washer', 'fit' => 'Line 6000 high-spin commercial washer across the full capacity range for busy, high-output laundry rooms.', 'kg' => ['8','9','11','14','20','28','35'], 'capLabel' => '8–35 kg', 'models' => 'WS6-8 → WS6-35', 'type' => 'Line 6000', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'WN6 — Line 6000 Normal-Spin Washer', 'fit' => 'Line 6000 normal-spin commercial washer across the same capacity range for everyday wash demand.', 'kg' => ['8','9','11','14','20','28','35'], 'capLabel' => '8–35 kg', 'models' => 'WN6-8 → WN6-35', 'type' => 'Line 6000', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'W4-Series Washer-Extractor', 'fit' => 'High-capacity washer-extractors for heavy-duty and industrial laundry output.', 'kg' => ['40+'], 'capLabel' => '40 kg+', 'models' => 'W4400H, W4600H, W4850H, W41100H', 'type' => 'Washer-Extractor', 'img' => '/images/equipment/line6000-barrier-washer.webp'],
-            ['name' => 'Quickwash QWC', 'fit' => 'Compact quick-wash machine for fast turnaround where space is limited.', 'kg' => [], 'capLabel' => 'Compact', 'models' => 'Quickwash QWC', 'type' => 'Compact', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'PW9C', 'fit' => 'Compact professional washer for smaller commercial laundry needs.', 'kg' => ['9'], 'capLabel' => '9 kg', 'models' => 'PW9C', 'type' => 'Compact', 'img' => '/images/equipment/commercialwasher.webp'],
-        ];
-        $capacityFilters = ['all'=>'All', '8'=>'8 kg', '9'=>'9 kg', '11'=>'11 kg', '14'=>'14 kg', '20'=>'20 kg', '28'=>'28 kg', '35'=>'35 kg', '40+'=>'40 kg+'];
-        $typeFilters = ['all'=>'All ranges', 'Line 6000'=>'Line 6000', 'Washer-Extractor'=>'Washer-Extractor', 'Compact'=>'Compact'];
-        $familiesJs = array_map(fn($f) => ['kg' => $f['kg'], 'type' => $f['type']], $washerFamilies);
+            $washerFamilies = [
+                ['name' => 'WS6 — Line 6000 High-Spin Washer', 'fit' => 'Line 6000 high-spin commercial washer across the full capacity range for busy, high-output laundry rooms.', 'kg' => ['8','9','11','14','20','28','35'], 'capLabel' => '8–35 kg', 'models' => 'WS6-8 → WS6-35', 'type' => 'Line 6000', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT']],
+                ['name' => 'WN6 — Line 6000 Normal-Spin Washer', 'fit' => 'Line 6000 normal-spin commercial washer across the same capacity range for everyday wash demand.', 'kg' => ['8','9','11','14','20','28','35'], 'capLabel' => '8–35 kg', 'models' => 'WN6-8 → WN6-35', 'type' => 'Line 6000', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro']],
+                ['name' => 'W4-Series Washer-Extractor', 'fit' => 'High-capacity washer-extractors for heavy-duty and industrial laundry output.', 'kg' => ['40+'], 'capLabel' => '40 kg+', 'models' => 'W4400H, W4600H, W4850H, W41100H', 'type' => 'Washer-Extractor', 'img' => '/images/equipment/line6000-barrier-washer.webp', 'badges' => ['Power Balance','CompassPro','ERGOCERT']],
+                ['name' => 'Quickwash QWC', 'fit' => 'Compact quick-wash machine for fast turnaround where space is limited.', 'kg' => [], 'capLabel' => 'Compact', 'models' => 'Quickwash QWC', 'type' => 'Compact', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['Efficient Dosing']],
+                ['name' => 'PW9C', 'fit' => 'Compact professional washer for smaller commercial laundry needs.', 'kg' => ['9'], 'capLabel' => '9 kg', 'models' => 'PW9C', 'type' => 'Compact', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['CompassPro']],
+            ];
+            $capacityFilters = ['all'=>'All', '8'=>'8 kg', '9'=>'9 kg', '11'=>'11 kg', '14'=>'14 kg', '20'=>'20 kg', '28'=>'28 kg', '35'=>'35 kg', '40+'=>'40 kg+'];
+            $typeFilters = ['all'=>'All ranges', 'Line 6000'=>'Line 6000', 'Washer-Extractor'=>'Washer-Extractor', 'Compact'=>'Compact'];
+            $familiesJs = array_map(fn($f) => ['kg' => $f['kg'], 'type' => $f['type']], $washerFamilies);
         @endphp
 
         <div x-data="{ kg:'all', type:'all', families: {{ \Illuminate\Support\Js::from($familiesJs) }} }">
 
             {{-- Filter bar --}}
             <div class="bg-bg border border-gray-100 rounded-2xl p-6 lg:p-8 mb-10 space-y-5">
-                <div class="flex flex-col lg:flex-row lg:items-center gap-3">
-                    <span class="font-heading font-bold text-navy text-sm w-36 flex-shrink-0">Capacity (kg)</span>
+                <div class="flex flex-col lg:flex-row lg:items-start gap-3">
+                    <span class="font-heading font-bold text-navy text-sm w-36 flex-shrink-0 lg:pt-2">Capacity (kg)</span>
                     <div class="flex flex-wrap gap-2">
                         @foreach($capacityFilters as $val => $lbl)
                         <button type="button" @click="kg='{{ $val }}'" :class="kg==='{{ $val }}' ? 'bg-[#148af4] text-white border-[#148af4]' : 'bg-white text-gray-600 border-gray-200 hover:border-[#148af4] hover:text-[#148af4]'" class="font-body text-sm border px-4 py-2 rounded-full transition-colors">{{ $lbl }}</button>
@@ -287,7 +411,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col lg:flex-row lg:items-center gap-3">
-                    <span class="font-heading font-bold text-navy text-sm w-36 flex-shrink-0">Range / Type</span>
+                    <span class="font-heading font-bold text-navy text-sm w-36 flex-shrink-0">Machine Profile</span>
                     <div class="flex flex-wrap gap-2">
                         @foreach($typeFilters as $val => $lbl)
                         <button type="button" @click="type='{{ $val }}'" :class="type==='{{ $val }}' ? 'bg-[#148af4] text-white border-[#148af4]' : 'bg-white text-gray-600 border-gray-200 hover:border-[#148af4] hover:text-[#148af4]'" class="font-body text-sm border px-4 py-2 rounded-full transition-colors">{{ $lbl }}</button>
@@ -296,7 +420,7 @@
                 </div>
             </div>
 
-            {{-- One card per washer family --}}
+            {{-- One card per family --}}
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 @foreach($washerFamilies as $f)
                 <div x-show="(kg==='all' || {{ \Illuminate\Support\Js::from($f['kg']) }}.includes(kg)) && (type==='all' || type==={{ \Illuminate\Support\Js::from($f['type']) }})" class="bg-white border border-gray-100 rounded-2xl overflow-hidden flex flex-col shadow-card">
@@ -317,9 +441,16 @@
                             @endforeach
                         </div>
                         @endif
+                        @if(!empty($f['badges']))
+                        <div class="flex flex-wrap gap-1.5 mb-4">
+                            @foreach($f['badges'] as $b)
+                            <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded-full">{{ $b }}</span>
+                            @endforeach
+                        </div>
+                        @endif
                         <p class="font-body text-xs text-gray-400 mb-6">{{ $f['models'] }}</p>
                         <div class="flex flex-wrap items-center gap-3 mt-auto">
-                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-3 rounded-lg text-xs transition-colors">Request Advice</a>
+                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-3 rounded-lg text-xs transition-colors">Request Advice on This Model</a>
                             <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-lg text-xs transition-colors">View Details</a>
                         </div>
                     </div>
@@ -340,7 +471,7 @@
     </div>
 </section>
 
-{{-- 10. CONNECTED SERVICE ROUTES --}}
+{{-- 12. CONNECTED SERVICE ROUTES --}}
 <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -417,7 +548,7 @@
     </div>
 </section>
 
-{{-- 11. RENTAL / CAPITAL PRESSURE STRIP --}}
+{{-- 13. RENTAL / CAPITAL PRESSURE STRIP --}}
 @include('components.why-choose-strip', [
     'headingLine1' => 'Keep laundry moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
@@ -426,7 +557,7 @@
     'miniNowrap'   => true,
 ])
 
-{{-- 12. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
+{{-- 14. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="py-12 lg:py-16 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
@@ -456,17 +587,17 @@
     </div>
 </section>
 
-{{-- 13. TESTIMONIAL MODULE --}}
+{{-- 15. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted support behind <span style="color:#148af4;">commercial laundry decisions</span>',
     'subheading' => 'Commercial washing machine decisions affect cost, workflow, staff routines and daily output. Irish Laundry Systems is trusted by organisations that need clear communication, responsive support and equipment knowledge after the machine is on site.',
 ])
 
-{{-- 14. TRUSTED BY LOGO STRIP --}}
+{{-- 16. TRUSTED BY LOGO STRIP --}}
 @include('components.proof-bar')
 
-{{-- 15. FAQ --}}
+{{-- 17. FAQ --}}
 @include('components.faq', [
     'eyebrow' => 'Commercial Washer FAQs',
     'heading' => 'Clear answers before the <span style="color:#148af4;">washer decision</span>',
@@ -481,65 +612,7 @@
     ],
 ])
 
-{{-- 15b. RESOURCES — Download + Discover --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight">Brochures, guides and useful reading</h2>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-
-            {{-- Download --}}
-            <div class="bg-navy rounded-2xl p-6 lg:p-8">
-                <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
-                <ul class="space-y-4">
-                    @foreach([
-                        ['label' => 'Line 6000 Washers &amp; Dryers brochure',           'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                        ['label' => 'Discover the full range of Ecolabel Detergents',     'file' => ''],
-                        ['label' => 'Line 6000 High Spin Washers &amp; Heat Pump Dryers', 'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                    ] as $pdf)
-                    <li>
-                        @if($pdf['file'])
-                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-start gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 mt-0.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </a>
-                        @else
-                        <span class="flex items-start gap-2 font-body text-sm text-white/40">
-                            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </span>
-                        @endif
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-            {{-- Discover --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8">
-                <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
-                <ul class="space-y-4">
-                    @foreach([
-                        ['label' => "What's in your detergents and cleaning products?",        'href' => '#'],
-                        ['label' => 'Ensuring Profitability With Efficient On-Premises Laundry', 'href' => '#'],
-                        ['label' => 'Essentia: the heart of customer service',                   'href' => route('contact')],
-                    ] as $link)
-                    <li>
-                        <a href="{{ $link['href'] }}" class="flex items-start gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            {{ $link['label'] }}
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{-- 16. FINAL CTA --}}
+{{-- 18. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
