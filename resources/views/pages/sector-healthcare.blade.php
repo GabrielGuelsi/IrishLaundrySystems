@@ -201,66 +201,71 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
 
             {{-- Metric 1 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
-                        <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
+                    <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Up to</span>
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">-65%</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">dryer energy use</h3>
                     </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy use</h3>
-                <p class="font-body text-gray-500 text-base leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
             </div>
 
             {{-- Metric 2 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-50%</div>
-                        <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
+                    <img src="/images/icons/8.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Up to</span>
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">-50%</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">water use</h3>
                     </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">water use</h3>
-                <p class="font-body text-gray-500 text-base leading-relaxed">Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.</p>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.</p>
             </div>
 
             {{-- Metric 3 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex flex-col gap-0 min-h-[4.5rem]">
-                    <span class="font-body font-bold text-[#148af4] text-base">Up to</span>
-                    <div class="flex items-center gap-3">
-                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-75%</div>
-                        <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
+                    <img src="/images/icons/9.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Up to</span>
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">-75%</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">sick days</h3>
                     </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">sick days</h3>
-                <p class="font-body text-gray-500 text-base leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.</p>
             </div>
 
             {{-- Business 4 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex items-start gap-2 min-h-[4.5rem]">
-                    <h3 class="font-heading font-bold text-[#148af4] leading-snug">
-                        <span class="text-2xl">Less<br>waste</span>
-                    </h3>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">and process waste</h3>
+                    </div>
                 </div>
-                <p class="font-heading font-bold text-[#148af4] text-sm leading-snug">and process waste</p>
-                <p class="font-body text-gray-500 text-base leading-relaxed">Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.</p>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.</p>
             </div>
 
             {{-- Business 5 --}}
-            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <div class="flex items-start gap-2 min-h-[4.5rem]">
-                    <h3 class="font-heading font-bold text-[#148af4] leading-snug">
-                        <span class="text-2xl">Fewer<br>surprise</span>
-                    </h3>
+            <div class="flex flex-col gap-3 col-span-2 lg:col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprises</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">repair and service pressure</h3>
+                    </div>
                 </div>
-                <p class="font-heading font-bold text-[#148af4] text-sm leading-snug">repair and service pressure</p>
-                <p class="font-body text-gray-500 text-base leading-relaxed">Irish Laundry Systems connects equipment planning, preventive maintenance, repairs, rental and aftercare so healthcare laundry decisions are not only made after something fails.</p>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, preventive maintenance, repairs, rental and aftercare so healthcare laundry decisions are not only made after something fails.</p>
             </div>
 
         </div>

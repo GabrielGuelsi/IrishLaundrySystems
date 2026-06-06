@@ -61,7 +61,7 @@
                     </div>
                     <div>
                         <div class="font-body font-bold text-navy text-sm mb-1">Email</div>
-                        <a href="mailto:info@irishlaunderysystems.ie" class="font-body text-gray-600 text-sm hover:text-steel transition-colors">info@irishlaunderysystems.ie</a>
+                        <a href="mailto:contact@irishlaundrysystems.com" class="font-body text-gray-600 text-sm hover:text-steel transition-colors">contact@irishlaundrysystems.com</a>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">

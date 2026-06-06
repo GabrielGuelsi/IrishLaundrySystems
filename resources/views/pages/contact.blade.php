@@ -446,9 +446,6 @@
                                 Dublin — Ireland
                             </address>
                         </div>
-                        <div>
-                            <p class="font-body text-gray-500 text-sm"><span class="font-bold text-gray-700">VAT Number:</span> IE4815967C</p>
-                        </div>
                     </div>
                 </div>
 

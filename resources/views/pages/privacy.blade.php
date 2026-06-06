@@ -72,7 +72,7 @@
 
             <div>
                 <h2 class="font-heading font-bold text-navy text-xl mb-3">Contact</h2>
-                <p>To exercise any of your rights or to ask questions about this policy, please contact us at <a href="mailto:info@irishlaunderysystems.ie" class="text-steel underline hover:text-navy transition-colors">info@irishlaunderysystems.ie</a>.</p>
+                <p>To exercise any of your rights or to ask questions about this policy, please contact us at <a href="mailto:contact@irishlaundrysystems.com" class="text-steel underline hover:text-navy transition-colors">contact@irishlaundrysystems.com</a>.</p>
             </div>
 
             <p class="text-xs text-gray-400 pt-4 border-t border-border">Last updated: March 2026</p>

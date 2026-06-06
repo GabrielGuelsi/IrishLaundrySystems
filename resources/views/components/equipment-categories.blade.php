@@ -2,9 +2,8 @@
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
-    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where hygiene process demands separation.',             'box' => 270, 'mb' => -10],
-    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270, 'mb' => -35],
-    ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
+    ['img' => 'commercialwasher',        'name' => 'Washing Machines', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270, 'mb' => -35],
+    ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
     ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist textiles where fabric care matters.', 'box' => 260, 'mb' => 20],
     ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation and linen ready for storage or return to use.'],
 ];

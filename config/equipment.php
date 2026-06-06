@@ -9,43 +9,10 @@ return [
 
     // ── Commercial Washers ────────────────────────────────────────────────────
     'washers' => [
-        ['name' => 'WH6-6LAC',          'slug' => 'wh6-6lac',          'capacity' => '6 kg',  'summary' => 'Front load washer 6 kg – WH6-6LAC',   'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-7CV',           'slug' => 'wh6-7cv',           'capacity' => '7 kg',  'summary' => 'Front load washer 7 kg – WH6-7CV',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-8CV',           'slug' => 'wh6-8cv',           'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WH6-8CV',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-11CV',          'slug' => 'wh6-11cv',          'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WH6-11CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-14CV',          'slug' => 'wh6-14cv',          'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WH6-14CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-14LAG',         'slug' => 'wh6-14lag',         'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WH6-14LAG', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-20LAC',         'slug' => 'wh6-20lac',         'capacity' => '20 kg', 'summary' => 'Front load washer 20 kg – WH6-20LAC', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-20CV',          'slug' => 'wh6-20cv',          'capacity' => '20 kg', 'summary' => 'Front load washer 20 kg – WH6-20CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-27CV',          'slug' => 'wh6-27cv',          'capacity' => '27 kg', 'summary' => 'Front load washer 27 kg – WH6-27CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-27LAC',         'slug' => 'wh6-27lac',         'capacity' => '27 kg', 'summary' => 'Front load washer 27 kg – WH6-27LAC', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-33CV',          'slug' => 'wh6-33cv',          'capacity' => '33 kg', 'summary' => 'Front load washer 33 kg – WH6-33CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-33LAC',         'slug' => 'wh6-33lac',         'capacity' => '33 kg', 'summary' => 'Front load washer 33 kg – WH6-33LAC', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-6',             'slug' => 'wh6-6',             'capacity' => '6 kg',  'summary' => 'Front load washer 6 kg – WH6-6',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-7',             'slug' => 'wh6-7',             'capacity' => '7 kg',  'summary' => 'Front load washer 7 kg – WH6-7',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-8',             'slug' => 'wh6-8',             'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WH6-8',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-11',            'slug' => 'wh6-11',            'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WH6-11',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-14',            'slug' => 'wh6-14',            'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WH6-14',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-20',            'slug' => 'wh6-20',            'capacity' => '20 kg', 'summary' => 'Front load washer 20 kg – WH6-20',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-27',            'slug' => 'wh6-27',            'capacity' => '27 kg', 'summary' => 'Front load washer 27 kg – WH6-27',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-33',            'slug' => 'wh6-33',            'capacity' => '33 kg', 'summary' => 'Front load washer 33 kg – WH6-33',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
         ['name' => 'WS6-8',             'slug' => 'ws6-8',             'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WS6-8',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
         ['name' => 'WS6-9',             'slug' => 'ws6-9',             'capacity' => '9 kg',  'summary' => 'Front load washer 9 kg – WS6-9',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
         ['name' => 'WS6-11',            'slug' => 'ws6-11',            'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WS6-11',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
         ['name' => 'WS6-14',            'slug' => 'ws6-14',            'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WS6-14',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-    ],
-
-    // ── Barrier Washers ───────────────────────────────────────────────────────
-    'barrier-washers' => [
-        ['name' => 'WB6-13',  'slug' => 'wb6-13',  'capacity' => '13 kg',  'summary' => 'Barrier washer 13 kg – WB6-13',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-18',  'slug' => 'wb6-18',  'capacity' => '18 kg',  'summary' => 'Barrier washer 18 kg – WB6-18',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-20',  'slug' => 'wb6-20',  'capacity' => '20 kg',  'summary' => 'Barrier washer 20 kg – WB6-20',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-27',  'slug' => 'wb6-27',  'capacity' => '27 kg',  'summary' => 'Barrier washer 27 kg – WB6-27',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-35',  'slug' => 'wb6-35',  'capacity' => '35 kg',  'summary' => 'Barrier washer 35 kg – WB6-35',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-50',  'slug' => 'wb6-50',  'capacity' => '50 kg',  'summary' => 'Barrier washer 50 kg – WB6-50',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-70',  'slug' => 'wb6-70',  'capacity' => '70 kg',  'summary' => 'Barrier washer 70 kg – WB6-70',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-90',  'slug' => 'wb6-90',  'capacity' => '90 kg',  'summary' => 'Barrier washer 90 kg – WB6-90',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-110', 'slug' => 'wb6-110', 'capacity' => '110 kg', 'summary' => 'Barrier washer 110 kg – WB6-110', 'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
     ],
 
     // ── Tumble Dryers ─────────────────────────────────────────────────────────
@@ -77,19 +44,56 @@ return [
     ],
 
     // ── Ironers ───────────────────────────────────────────────────────────────
-    'ironers' => [],
+    'ironers' => [
+        // Line 6000 flatwork ironers (IB57xx)
+        ['name' => 'IB5725',     'slug' => 'ib5725',     'capacity' => '2.5 m',     'summary' => 'Flatwork ironer 2.5 m – Rear delivery, no automation',                 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB5725-F',   'slug' => 'ib5725-f',   'capacity' => '2.5 m',     'summary' => 'Flatwork ironer 2.5 m – Rear delivery with integrated feeder',         'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB5730',     'slug' => 'ib5730',     'capacity' => '3.0 m',     'summary' => 'Flatwork ironer 3.0 m – Rear delivery, no automation',                 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB5730-F',   'slug' => 'ib5730-f',   'capacity' => '3.0 m',     'summary' => 'Flatwork ironer 3.0 m – Rear delivery with integrated feeder',         'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB5733',     'slug' => 'ib5733',     'capacity' => '3.3 m',     'summary' => 'Flatwork ironer 3.3 m – Rear delivery, no automation',                 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB5733-F',   'slug' => 'ib5733-f',   'capacity' => '3.3 m',     'summary' => 'Flatwork ironer 3.3 m – Rear delivery with integrated feeder',         'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        // Cylinder Ø 480 mm ironers (IC648xx / IV648xx)
+        ['name' => 'IC64821',    'slug' => 'ic64821',    'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, no automation (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64821LF',  'slug' => 'ic64821lf',  'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, length folding (IC648)',           'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64821R',   'slug' => 'ic64821r',   'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, no automation (IC648)',             'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64821FLF', 'slug' => 'ic64821flf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding and length folding (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64821RLF', 'slug' => 'ic64821rlf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IV64821FFS', 'slug' => 'iv64821ffs', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding, folding and stacking (IV648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64821FRL', 'slug' => 'ic64821frl', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding and integrated feeder (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64825',    'slug' => 'ic64825',    'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, no automation (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64825LF',  'slug' => 'ic64825lf',  'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, length folding (IC648)',           'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64825R',   'slug' => 'ic64825r',   'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, no automation (IC648)',             'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64825FLF', 'slug' => 'ic64825flf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding and length folding (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64825RLF', 'slug' => 'ic64825rlf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IV64825FFS', 'slug' => 'iv64825ffs', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding, folding and stacking (IV648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64825FRL', 'slug' => 'ic64825frl', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding and integrated feeder (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64832LF',  'slug' => 'ic64832lf',  'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, length folding (IC648)',           'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64832',    'slug' => 'ic64832',    'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, no automation (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64832FLF', 'slug' => 'ic64832flf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding and length folding (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64832R',   'slug' => 'ic64832r',   'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, no automation (IC648)',             'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64832RLF', 'slug' => 'ic64832rlf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IV64832FFS', 'slug' => 'iv64832ffs', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding, folding and stacking (IV648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC64832FRL', 'slug' => 'ic64832frl', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding and integrated feeder (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        // Cylinder Ø 330 mm ironers (IC633xx)
+        ['name' => 'IC63316',    'slug' => 'ic63316',    'capacity' => 'Ø 330 mm',  'summary' => 'Cylinder Ø 330 mm ironer – IC63316',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IC63320',    'slug' => 'ic63320',    'capacity' => 'Ø 330 mm',  'summary' => 'Cylinder Ø 330 mm ironer – IC63320',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        // Bed-type Ø 230 mm ironers (IB623xx)
+        ['name' => 'IB62310',    'slug' => 'ib62310',    'capacity' => 'Ø 230 mm',  'summary' => 'Bed-type ironer Ø 230 mm – IB62310',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB62314',    'slug' => 'ib62314',    'capacity' => 'Ø 230 mm',  'summary' => 'Bed-type ironer Ø 230 mm – IB62314',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        ['name' => 'IB62316',    'slug' => 'ib62316',    'capacity' => 'Ø 230 mm',  'summary' => 'Bed-type ironer Ø 230 mm – IB62316',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+    ],
 
     // ── Drying Cabinets ───────────────────────────────────────────────────────
     'drying-cabinets' => [
-        ['name' => 'DC6-4',    'slug' => 'dc6-4',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-4',    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-4HP',  'slug' => 'dc6-4hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-4HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-8',    'slug' => 'dc6-8',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-8',    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-8HP',  'slug' => 'dc6-8hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-8HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-10HP', 'slug' => 'dc6-10hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-10HP', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-14',   'slug' => 'dc6-14',   'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-14',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Healthcare', 'Commercial']],
-        ['name' => 'DC6-14HP', 'slug' => 'dc6-14hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-14HP', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Healthcare', 'Commercial']],
-        ['name' => 'DC6-15WW', 'slug' => 'dc6-15ww', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Workwear – DC6-15WW', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Commercial']],
-        ['name' => 'DC7-4HP',  'slug' => 'dc7-4hp',  'capacity' => null, 'summary' => 'Line 7000 Drying Cabinet Heat Pump – DC7-4HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Commercial']],
+        ['name' => 'DC6-4',    'slug' => 'dc6-4',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-4',    'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-4HP',  'slug' => 'dc6-4hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-4HP',  'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-8',    'slug' => 'dc6-8',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-8',    'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-8HP',  'slug' => 'dc6-8hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-8HP',  'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-10HP', 'slug' => 'dc6-10hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-10HP', 'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
+        ['name' => 'DC6-14',   'slug' => 'dc6-14',   'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-14',   'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Healthcare', 'Commercial']],
+        ['name' => 'DC6-14HP', 'slug' => 'dc6-14hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-14HP', 'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Healthcare', 'Commercial']],
+        ['name' => 'DC6-15WW', 'slug' => 'dc6-15ww', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Workwear – DC6-15WW', 'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Commercial']],
+        ['name' => 'DC7-4HP',  'slug' => 'dc7-4hp',  'capacity' => null, 'summary' => 'Line 7000 Drying Cabinet Heat Pump – DC7-4HP',  'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Commercial']],
     ],
 
 ];
