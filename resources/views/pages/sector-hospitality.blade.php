@@ -159,52 +159,67 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
 
             {{-- Business 1 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex items-center gap-2 min-h-[4.5rem]">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Faster<br>turnaround</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/31.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Faster<br>turnaround</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">linen and room readiness</h3>
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">linen and room readiness</h3>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.</p>
             </div>
 
             {{-- Business 2 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex items-center gap-2 min-h-[4.5rem]">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Higher<br>quality</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/24.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Higher<br>quality</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">fresh linen and guest standards</h3>
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">fresh linen and guest standards</h3>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.</p>
             </div>
 
             {{-- Metric 3 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex items-center gap-3 min-h-[4.5rem]">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">dryer energy use</h3>
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy use</h3>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.</p>
             </div>
 
             {{-- Business 4 --}}
-            <div class="flex flex-col gap-2 col-span-1">
-                <div class="flex items-center gap-2 min-h-[4.5rem]">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>waste</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">detergent and linen care</h3>
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">detergent and linen care</h3>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.</p>
             </div>
 
             {{-- Business 5 --}}
-            <div class="flex flex-col gap-2 col-span-2 lg:col-span-1">
-                <div class="flex items-center gap-2 min-h-[4.5rem]">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprise</div>
+            <div class="flex flex-col gap-3 col-span-2 lg:col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprise</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">servicing and breakdown support</h3>
+                    </div>
                 </div>
-                <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">servicing and breakdown support</h3>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Irish Laundry Systems connects equipment planning, planned maintenance, repairs, rental options and aftercare so hospitality laundry decisions are not only made after something fails.</p>
             </div>
 

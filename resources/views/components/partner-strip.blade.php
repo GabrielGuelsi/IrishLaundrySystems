@@ -17,7 +17,7 @@
         <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
 
         <!-- Trust line -->
-        <p class="hidden lg:block font-body text-navy text-xs leading-snug max-w-[200px]">
+        <p class="hidden lg:block font-body text-navy text-sm leading-snug max-w-[240px]">
             Authorised Electrolux Professional Partner. Irish engineering expertise since 1987.
         </p>
 
@@ -45,7 +45,7 @@
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
                 </div>
-                <span class="text-[11px] font-body text-gray-600 leading-snug whitespace-nowrap">38+ long-term clients supported</span>
+                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">38+ clients supported</span>
             </div>
 
         </div>

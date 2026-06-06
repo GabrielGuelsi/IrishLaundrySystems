@@ -148,9 +148,8 @@
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should follow the room, the load profile, the handling process, lifecycle cost and the support needed to keep it performing.',
     'equipment' => [
-        ['img' => 'commercialwasher',              'name' => 'Commercial Washers',   'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
-        ['img' => 'line6000-barrier-washer',       'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                 'box' => 270, 'mb' => -40],
-        ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',        'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                          'box' => 245],
+        ['img' => 'commercialwasher',              'name' => 'Washing Machines',     'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
+        ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Dryers',               'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                          'box' => 245],
         ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
         ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.'],
     ],

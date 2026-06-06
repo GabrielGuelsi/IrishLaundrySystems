@@ -16,7 +16,9 @@
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Guidance</p>
                 <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-5">
-                    Commercial laundry equipment <span style="color:#148af4;">selected around your operation</span>
+                    <span class="block">Commercial laundry</span>
+                    <span class="block">equipment <span style="color:#148af4;">selected</span></span>
+                    <span class="block" style="color:#148af4;">around your operation</span>
                 </h1>
                 <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems helps commercial, healthcare, care, hospitality and industrial sites choose equipment around workload, space, budget and daily laundry demand. We supply selected Electrolux Professional machines, then support installation, commissioning and aftercare where needed.
@@ -31,7 +33,6 @@
                         Talk to Our Team
                     </a>
                 </div>
-                <p class="font-body text-white/50 text-xs tracking-wide">Selected Electrolux Professional equipment &nbsp;·&nbsp; Supply, commissioning and aftercare &nbsp;·&nbsp; Purchase or rental where suitable</p>
             </div>
         </div>
     </div>
@@ -307,9 +308,9 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             @foreach([
-                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
+                ['title' => 'Washing Machines',             'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
                 ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/equipment/line6000-barrier-washer.webp'],
-                ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['title' => 'Dryers',                       'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
                 ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
@@ -500,7 +501,7 @@
             ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/CareFacilitiesHero.png'],
             ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg'],
             ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
-            ['env' => 'Shared-use / smaller operations', 'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
+            ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
 

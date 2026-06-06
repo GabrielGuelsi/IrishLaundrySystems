@@ -171,63 +171,68 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-x-8 gap-y-10">
 
             {{-- Metric 1 --}}
-            <div class="flex flex-col col-span-1">
-                <div class="flex items-end" style="height:1.5rem;"></div>
-                <div class="flex items-center gap-3" style="height:3rem;">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">90%</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/30.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">90%</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">lifecycle cost beyond purchase</h3>
+                    </div>
                 </div>
-                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">lifecycle cost beyond purchase</h3></div>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Upfront cost is only about 10% of a washer or dryer &mdash; water, energy and chemicals make up the&nbsp;rest.</p>
             </div>
 
             {{-- Metric 2 --}}
-            <div class="flex flex-col col-span-1">
-                <div class="flex items-end" style="height:1.5rem;"></div>
-                <div class="flex items-center gap-3" style="height:3rem;">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none relative"><span class="absolute right-full top-0">-</span>65%</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/7.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">-65%</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">dryer energy use</h3>
+                    </div>
                 </div>
-                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">dryer energy use</h3></div>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.</p>
             </div>
 
             {{-- Metric 3 --}}
-            <div class="flex flex-col col-span-1">
-                <div class="flex items-end" style="height:1.5rem;">
-                    <span class="font-body font-bold text-[#148af4] text-base leading-none">Over</span>
-                </div>
-                <div class="flex items-center gap-3" style="height:3rem;">
-                    <div class="font-heading font-bold text-[#148af4] text-4xl leading-none">30%+</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/10.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <span class="font-body font-bold text-[#148af4] text-sm leading-none">Over</span>
+                        <div class="font-heading font-bold text-[#148af4] text-4xl leading-none mt-1">30%+</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">detergent-cost saving potential</h3>
+                    </div>
                 </div>
-                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">detergent-cost saving potential</h3></div>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Efficient Dosing can cut detergent costs by over 30% by using the right amount at every cycle.</p>
             </div>
 
             {{-- Qualitative 4 --}}
-            <div class="flex flex-col col-span-1">
-                <div class="flex items-end" style="height:1.5rem;">
-                    <span class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less</span>
-                </div>
-                <div class="flex items-center gap-3" style="height:3rem;">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">strain</div>
+            <div class="flex flex-col gap-3 col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/4.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Less<br>strain</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">operator handling and productivity</h3>
+                    </div>
                 </div>
-                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">operator handling and productivity</h3></div>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux Professional ergonomics cites up to 75% fewer sick days, 59% fewer musculoskeletal injuries and 25% higher productivity.</p>
             </div>
 
             {{-- Qualitative 5 --}}
-            <div class="flex flex-col col-span-2 lg:col-span-1">
-                <div class="flex items-end" style="height:1.5rem;">
-                    <span class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer</span>
-                </div>
-                <div class="flex items-center gap-3" style="height:3rem;">
-                    <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">surprise</div>
+            <div class="flex flex-col gap-3 col-span-2 lg:col-span-1">
+                <div class="flex items-start gap-3">
                     <img src="/images/icons/11.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        <div class="font-heading font-bold text-[#148af4] text-2xl leading-none">Fewer<br>surprise</div>
+                        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-2">repair and maintenance pressure</h3>
+                    </div>
                 </div>
-                <div class="min-h-[2.5rem] mt-1"><h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug">repair and maintenance pressure</h3></div>
+                <div class="w-full h-px bg-[#148af4]/20"></div>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">We connect equipment planning, rental, maintenance, repairs and aftercare so decisions are not left until something fails.</p>
             </div>
 
