@@ -44,17 +44,15 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Washer Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
+            {{-- Left: eyebrow + title + subtitle (under the title) + CTA --}}
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Washer Planning</p>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Washer choice affects <span style="color:#148af4;">cost control, laundry flow and support after installation</span>
                 </h2>
-            </div>
-
-            <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-xl">
                     The wrong washer fit can create daily pressure through water use, detergent waste, drying delays, staff routines, service calls and replacement pressure. Irish Laundry Systems connects washer selection, room layout, installation, rental, maintenance, repairs and aftercare into one clear equipment decision.
                 </p>
                 <a href="#washer-range"
@@ -66,64 +64,101 @@
                 </a>
             </div>
 
+            {{-- Right: auto-rotating equipment slideshow (crossfade every 3s, no controls) --}}
+            <div class="reveal reveal-right">
+                <div x-data="{
+                        cur: 0,
+                        imgs: [
+                            { src: '/images/equipment/commercialwasher.webp',       label: 'Commercial Washers' },
+                            { src: '/images/equipment/line6000-tumble-dryer.webp',   label: 'Tumble Dryers' },
+                            { src: '/images/equipment/line6000-ironer.webp',         label: 'Ironers' },
+                            { src: '/images/equipment/line6000-barrier-washer.webp', label: 'Barrier Washers' },
+                            { src: '/images/healthcare/lagoon-advanced-care.webp',   label: 'Wet Cleaning' },
+                        ],
+                        init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
+                     }"
+                     class="relative w-full">
+                    <div class="relative flex items-center justify-center" style="height: 420px;">
+                        <template x-for="(img, i) in imgs" :key="i">
+                            <img :src="img.src" :alt="img.label"
+                                 class="absolute inset-0 m-auto max-h-[80%] w-auto object-contain transition-opacity duration-700 ease-in-out"
+                                 :class="cur === i ? 'opacity-100' : 'opacity-0'">
+                        </template>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
 
-{{-- 5. LIFE-CYCLE COST FEATURE --}}
-<section class="py-16 lg:py-24 overflow-hidden" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+{{-- 5. LIFE-CYCLE COST FEATURE — "Look under the surface" iceberg infographic --}}
+<section class="py-16 lg:py-24 bg-white overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 sm:px-10">
 
-            {{-- Left: copy --}}
-            <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Costs</p>
-                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Look beyond purchase price to the <span style="color:#148af4;">costs that keep repeating</span>
-                </h2>
-                <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
-                    Purchase price is only the first part of a washer decision. Over the life of the equipment, chemicals, energy and water carry the larger cost pressure, so the right washer choice should be made around daily use, not just initial purchase.
-                </p>
-                <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Request Equipment Advice
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
+        {{-- Title + intro --}}
+        <div class="reveal max-w-3xl mb-14 lg:mb-16">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                Look under the surface
+            </h2>
+            <p class="font-body text-navy/80 text-base lg:text-lg leading-relaxed">
+                When considering the cost of an investment, the up-front expense is just the tip of the iceberg. Operating costs accumulated year after year make up the largest share of your operations expense. During the life cycle of your laundry equipment <span class="font-bold text-navy">our washers and dryers will cost you much less and make your investment more profitable</span>.
+            </p>
+        </div>
+
+        {{-- Infographic: left callouts | iceberg | right callouts --}}
+        <div class="reveal grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-y-10 gap-x-8 lg:gap-x-6 items-stretch">
+
+            {{-- LEFT column --}}
+            <div class="order-2 lg:order-1 flex flex-col lg:h-[540px] lg:justify-between lg:pt-[120px] lg:pb-[36px] lg:text-right lg:items-end gap-8">
+                <div class="bg-[#eaf4fc] rounded-lg p-6 lg:max-w-[260px]">
+                    <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">Our &ldquo;iceberg&rdquo; is slim</h3>
+                    <p class="font-body text-navy/70 text-sm leading-relaxed">
+                        While other washers and dryers have <span class="font-bold text-navy">extensive lifetime costs,</span> we can represent ours with a slimmer iceberg shape because of the savings you will achieve thanks to its <span class="font-bold text-navy">money-saving features</span> and robust engineering.
+                    </p>
+                </div>
+                <div class="lg:max-w-[260px]">
+                    <h3 class="font-heading font-bold text-navy text-lg leading-tight mb-2">Competitors&rsquo; life cycle costs*</h3>
+                    <p class="font-body text-navy/70 text-sm leading-relaxed">
+                        Here is a representation of what other brands cost over the life of their washers and dryers.
+                    </p>
+                    <p class="font-body text-navy/50 text-xs italic mt-3">*Data available on request</p>
+                </div>
             </div>
 
-            {{-- Right: ILS life-cycle infographic (iceberg metaphor, recreated in ILS style) --}}
-            <div class="reveal reveal-right">
-                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 lg:p-10">
-                    <div class="flex items-center gap-6 lg:gap-8">
-                        <svg viewBox="0 0 220 260" class="w-36 lg:w-44 h-auto flex-shrink-0" fill="none" aria-hidden="true">
-                            <line x1="6" y1="92" x2="214" y2="92" stroke="#148af4" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.6"/>
-                            <polygon points="110,26 140,92 80,92" fill="#bfe1fb"/>
-                            <polygon points="80,92 140,92 124,150 110,212 95,242 84,170" fill="#1f5fa6"/>
-                            <polygon points="80,92 110,92 95,242 84,170" fill="#163f6e"/>
-                        </svg>
-                        <div class="flex-1 min-w-0">
-                            <div class="mb-4">
-                                <div class="font-heading font-bold text-[#148af4] text-4xl lg:text-5xl leading-none">10%</div>
-                                <div class="font-body text-white/70 text-sm mt-1">Up-front investment</div>
-                            </div>
-                            <div class="mb-5">
-                                <div class="font-heading font-bold text-white text-5xl lg:text-6xl leading-none">90%</div>
-                                <div class="font-body text-white/70 text-sm mt-1">Life cycle costs</div>
-                            </div>
-                            <div class="flex flex-wrap gap-x-5 gap-y-2 pt-4 border-t border-white/10">
-                                @foreach([
-                                    ['t' => 'Chemicals', 'd' => 'M10 3h4v3l3 6.5V19a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.5L10 6V3z'],
-                                    ['t' => 'Energy',    'd' => 'M13 3 4 14h7l-1 7 9-11h-7l1-7z'],
-                                    ['t' => 'Water',     'd' => 'M12 3c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z'],
-                                ] as $sp)
-                                <span class="inline-flex items-center gap-1.5 font-body text-white/90 text-sm font-semibold">
-                                    <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $sp['d'] }}"/></svg>
-                                    {{ $sp['t'] }}
-                                </span>
-                                @endforeach
-                            </div>
-                        </div>
+            {{-- ICEBERG --}}
+            <div class="order-1 lg:order-2 flex justify-center">
+                <img src="/images/iceberg.png" alt="Life-cycle cost iceberg" class="w-52 sm:w-60 h-auto lg:h-[540px] lg:w-auto">
+            </div>
+
+            {{-- RIGHT column --}}
+            <div class="order-3 lg:order-3 flex flex-col lg:h-[540px] lg:pt-[96px] gap-8">
+                <div>
+                    <div class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-none">10%</div>
+                    <div class="font-body font-semibold text-navy text-sm mt-1">Up-front investment</div>
+                </div>
+                <div class="border border-dotted border-gray-400 rounded-lg p-6 lg:max-w-[290px]">
+                    <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none">90%</div>
+                    <div class="font-body font-semibold text-navy text-sm mt-1 mb-2">Life cycle costs</div>
+                    <p class="font-body text-navy/70 text-sm leading-relaxed mb-4">
+                        These costs make up <span class="font-bold text-navy">the bulk of your expenses</span> during the lifetime of your washer or dryer.
+                    </p>
+                    <div class="flex items-center gap-5 mb-4 text-navy">
+                        @foreach([
+                            'M10 3h4v3l3 6.5V19a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.5L10 6V3z',
+                            'M13 3 4 14h7l-1 7 9-11h-7l1-7z',
+                            'M12 3c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z',
+                        ] as $d)
+                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $d }}"/></svg>
+                        @endforeach
                     </div>
+                    <ul class="space-y-1.5">
+                        @foreach(['Chemicals', 'Energy', 'Water'] as $li)
+                        <li class="font-body font-semibold text-navy text-sm flex items-center gap-2">
+                            <span class="text-[#148af4]">&#9656;</span> {{ $li }}
+                        </li>
+                        @endforeach
+                    </ul>
                 </div>
             </div>
 
@@ -185,7 +220,7 @@
                 ['icon' => '16', 'title' => 'Power Balance',                  'copy' => 'Real-time extraction control for stronger dewatering and lower moisture retention before drying.', 'badge' => 'Power Balance'],
                 ['icon' => '5',  'title' => 'ClarusVibe and CompassPro',       'copy' => 'Clearer programme selection, editable programmes and easier operator control.', 'badge' => 'CompassPro'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center text-center gap-3 shadow-card col-span-1">
+            <div class="p-6 flex flex-col items-center text-center gap-3 col-span-1">
                 <div class="flex items-center justify-center h-16">
                     <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-16 h-16 object-contain">
                 </div>
@@ -195,18 +230,38 @@
             </div>
             @endforeach
         </div>
-
-        {{-- Secondary proof chips --}}
-        <div class="flex flex-wrap items-center gap-2 mt-6">
-            <span class="font-body text-xs text-gray-400 mr-1">Also available:</span>
-            @foreach(['ERGOCERT', 'Global Hygiene Advanced', 'Validated hygiene options'] as $chip)
-            <span class="font-body text-xs font-semibold text-navy border border-gray-200 px-3 py-1.5 rounded-full">{{ $chip }}</span>
-            @endforeach
-        </div>
     </div>
 </section>
 
-{{-- 8. RANGE TEASERS CAROUSEL --}}
+{{-- 8. PLANNING / INSTALLATION STRIP (before the selection journey) --}}
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+             class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+    </div>
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
+        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Build the washer decision around the <span style="color:#011E41;">room, workflow and support</span>
+        </h2>
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
+            A washer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying pressure, installation and support before the equipment decision is made.
+        </p>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Room fit', 'Utilities and access', 'Capacity and drying pressure'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        <a href="{{ route('request-assessment') }}"
+           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+            Request Equipment Advice
+        </a>
+    </div>
+</section>
+
+{{-- 9. RANGE TEASERS CAROUSEL (Equipment Hub visual — commercial chamarizes, not the real grid) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -216,16 +271,16 @@
                 Equipment paths <span style="color:#148af4;">worth a closer look</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Start with the range that fits the pressure of your laundry room, then connect the decision to capacity, installation, rental and long-term support.
+                Start with the washer route that fits the pressure of your laundry room, then connect the decision to capacity, installation, rental and long-term support.
             </p>
         </div>
 
         @php
         $rangeCards = [
-            ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'Heat Pump Dryers',             'copy' => 'For sites looking to reduce drying energy pressure while keeping laundry flow moving.', 'cta' => 'Explore Drying Options', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-            ['name' => 'Lagoon Advanced Care',         'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+            ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'route' => '#washer-range', 'img' => '/images/equipment/commercialwasher.webp'],
+            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment'), 'img' => '/images/equipment/commercialwasher.webp'],
+            ['name' => 'Barrier Washers',               'copy' => 'For hygiene-critical laundry rooms where soiled and clean handling must stay separate.', 'cta' => 'Explore Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/equipment/line6000-barrier-washer.webp'],
+            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment'), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
         ];
         @endphp
 
@@ -235,25 +290,42 @@
                 count: {{ count($rangeCards) }},
                 perView: 2,
                 timer: null,
-                get maxIndex() { return Math.max(0, this.count - this.perView); },
-                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
-                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
-                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
-                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                animate: true,
+                setPerView() { this.perView = window.innerWidth < 1024 ? 1 : 2; },
+                advance() {
+                    this.active++;
+                    if (this.active >= this.count) {
+                        setTimeout(() => {
+                            this.animate = false;
+                            this.active = 0;
+                            this.$nextTick(() => requestAnimationFrame(() => requestAnimationFrame(() => { this.animate = true; })));
+                        }, 520);
+                    }
+                },
+                next() { this.advance(); this.restart(); },
+                prev() {
+                    if (this.active <= 0) {
+                        this.animate = false;
+                        this.active = this.count;
+                        this.$nextTick(() => requestAnimationFrame(() => requestAnimationFrame(() => { this.animate = true; this.active--; })));
+                    } else {
+                        this.active--;
+                    }
+                    this.restart();
+                },
+                go(i) { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.advance(), 6000); },
                 init() {
-                    this.perView = window.innerWidth < 1024 ? 1 : 2;
-                    window.addEventListener('resize', () => {
-                        this.perView = window.innerWidth < 1024 ? 1 : 2;
-                        if (this.active > this.maxIndex) this.active = this.maxIndex;
-                    });
-                    this.timer = setInterval(() => this.next(), 6000);
+                    this.setPerView();
+                    window.addEventListener('resize', () => this.setPerView());
+                    this.timer = setInterval(() => this.advance(), 6000);
                 },
             }"
             class="relative"
         >
-            {{-- Track --}}
             <div class="overflow-hidden">
-                <div class="flex transition-transform duration-500 ease-out -mx-3"
+                <div class="flex -mx-3"
+                     :class="animate ? 'transition-transform duration-500 ease-out' : ''"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($rangeCards as $i => $p)
                     <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
@@ -264,7 +336,24 @@
                             <div class="flex flex-col">
                                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
-                                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                                <a href="{{ $p['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                                    {{ $p['cta'] }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                    {{-- Cloned cards for a seamless infinite loop --}}
+                    @foreach($rangeCards as $i => $p)
+                    <div class="flex-shrink-0 w-full lg:w-1/2 px-3" aria-hidden="true">
+                        <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
+                            <div class="flex items-center justify-center">
+                                <img src="{{ $p['img'] }}" alt="" class="w-full h-44 lg:h-52 object-contain">
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
+                                <a href="{{ $p['route'] }}" tabindex="-1" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
                                     {{ $p['cta'] }}
                                 </a>
                             </div>
@@ -274,13 +363,11 @@
                 </div>
             </div>
 
-            {{-- Dots centered + arrows bottom-right --}}
             <div class="relative mt-8 flex items-center justify-center">
                 <div class="flex items-center gap-2">
                     @foreach($rangeCards as $i => $p)
                     <button @click="go({{ $i }})"
-                            x-show="{{ $i }} <= maxIndex"
-                            :class="active === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                            :class="(active % count) === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
                             class="rounded-full transition-all duration-300" aria-label="Go to slide {{ $i + 1 }}"></button>
                     @endforeach
                 </div>
@@ -299,95 +386,32 @@
     </div>
 </section>
 
-{{-- 9. PLANNING / INSTALLATION STRIP --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
-    </div>
-    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-4xl lg:text-5xl">Build the washer decision</span>
-            <span class="text-white text-4xl lg:text-5xl">around the <span style="color:#011E41;">room, workflow</span></span>
-            <span class="text-white text-4xl lg:text-5xl">and <span style="color:#011E41;">support</span></span>
-        </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A washer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying pressure, installation and support before the equipment decision is made.
-        </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Utilities and access', 'Capacity and drying pressure'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+{{-- 10. COMPACT RESOURCES BAR (low, light, supporting — before the Product Finder) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
+                ['title' => 'Related Equipment',   'links' => [['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-wrap gap-x-4 gap-y-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Request Equipment Advice
-        </a>
     </div>
 </section>
 
-{{-- 10. RESOURCES / DOWNLOADS (before the Product Finder) --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-
-            {{-- Box 1 — Navy downloads --}}
-            <div class="bg-navy rounded-2xl p-7 lg:p-9 flex flex-col">
-                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl mb-2">Official Electrolux Professional Downloads</h3>
-                <p class="font-body text-white/70 text-sm leading-relaxed mb-6">Access selected product brochures and technical resources before comparing washer options.</p>
-                <ul class="space-y-3">
-                    @foreach([
-                        ['label' => 'Line 6000 Washers &amp; Dryers brochure', 'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                        ['label' => 'Line 6000 High Spin Washers leaflet',     'file' => ''],
-                        ['label' => 'Relevant washer product resources',       'file' => ''],
-                    ] as $pdf)
-                    <li>
-                        @if($pdf['file'])
-                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2.5 font-body text-sm text-white/85 hover:text-white transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </a>
-                        @else
-                        <span class="flex items-center gap-2.5 font-body text-sm text-white/40">
-                            <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!} <span class="text-[10px] uppercase tracking-wide">(on request)</span>
-                        </span>
-                        @endif
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-            {{-- Box 2 — Related guidance --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-7 lg:p-9 flex flex-col">
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Related Equipment Guidance</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">Explore connected support routes before making a washer decision.</p>
-                <ul class="space-y-3">
-                    @foreach([
-                        ['label' => 'Equipment Rental',       'href' => route('rental')],
-                        ['label' => 'Preventive Maintenance', 'href' => route('service-contracts')],
-                        ['label' => 'Support &amp; Aftercare', 'href' => route('parts-aftercare')],
-                        ['label' => 'Tumble Dryers',          'href' => route('equipment.category', 'tumble-dryers')],
-                        ['label' => 'Wet Cleaning',           'href' => route('equipment.category', 'wet-cleaning')],
-                    ] as $link)
-                    <li>
-                        <a href="{{ $link['href'] }}" class="flex items-center gap-2.5 font-body text-sm text-navy hover:text-orange font-semibold transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            {!! $link['label'] !!}
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{-- 11. PRODUCT FINDER / WASHER RANGE --}}
+{{-- 11. PRODUCT FINDER / WASHER RANGE (Option B — left sidebar, Line 6000 core range) --}}
 <section id="washer-range" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -401,109 +425,102 @@
             </p>
         </div>
 
-        {{-- Washer families — curated by ILS, one card/image per range, filterable by capacity and profile --}}
         @php
+            // Commercial washer range — WS6, WN6, W4-Series, Quickwash QWC, PW9C (WH line excluded).
             $washerFamilies = [
-                ['name' => 'WS6 — Line 6000 High-Spin Washer', 'fit' => 'Line 6000 high-spin commercial washer across the full capacity range for busy, high-output laundry rooms.', 'kg' => ['8','9','11','14','20','28','35'], 'capLabel' => '8–35 kg', 'models' => 'WS6-8 → WS6-35', 'type' => 'Line 6000', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT']],
-                ['name' => 'WN6 — Line 6000 Normal-Spin Washer', 'fit' => 'Line 6000 normal-spin commercial washer across the same capacity range for everyday wash demand.', 'kg' => ['8','9','11','14','20','28','35'], 'capLabel' => '8–35 kg', 'models' => 'WN6-8 → WN6-35', 'type' => 'Line 6000', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro']],
-                ['name' => 'W4-Series Washer-Extractor', 'fit' => 'High-capacity washer-extractors for heavy-duty and industrial laundry output.', 'kg' => ['40+'], 'capLabel' => '40 kg+', 'models' => 'W4400H, W4600H, W4850H, W41100H', 'type' => 'Washer-Extractor', 'img' => '/images/equipment/line6000-barrier-washer.webp', 'badges' => ['Power Balance','CompassPro','ERGOCERT']],
-                ['name' => 'Quickwash QWC', 'fit' => 'Compact quick-wash machine for fast turnaround where space is limited.', 'kg' => [], 'capLabel' => 'Compact', 'models' => 'Quickwash QWC', 'type' => 'Compact', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['Efficient Dosing']],
-                ['name' => 'PW9C', 'fit' => 'Compact professional washer for smaller commercial laundry needs.', 'kg' => ['9'], 'capLabel' => '9 kg', 'models' => 'PW9C', 'type' => 'Compact', 'img' => '/images/equipment/commercialwasher.webp', 'badges' => ['CompassPro']],
+                ['name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'line' => 'Line 6000', 'topLine' => 'Line 6000 · High Spin · 8–35 kg', 'ranges' => ['8–14 kg','20–35 kg'], 'fit' => 'High-spin Line 6000 washer range for busy laundry rooms needing faster extraction and lower drying pressure.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['name' => 'WN6 — Line 6000 Normal-Spin Washer', 'slug' => 'wn6', 'line' => 'Line 6000', 'topLine' => 'Line 6000 · Normal Spin · 8–35 kg', 'ranges' => ['8–14 kg','20–35 kg'], 'fit' => 'Normal-spin Line 6000 washer range where wash performance, room fit and long-term support need to stay connected.', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'tech' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['name' => 'W4-Series — Heavy Duty Washer-Extractors', 'slug' => 'w4-series', 'line' => 'W4-Series Heavy Duty', 'topLine' => 'W4-Series · Heavy Duty · 40–110 kg', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractors for high-throughput and industrial loads where capacity and robust build lead.', 'badges' => ['High Capacity','Power Balance','Robust Build'], 'tech' => ['Power Balance'], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'line' => 'Quickwash', 'topLine' => 'Quickwash · Fast cycle', 'ranges' => ['8–14 kg'], 'fit' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.', 'badges' => ['Fast Cycle','Compact'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['name' => 'PW9C', 'slug' => 'pw9c', 'line' => 'PW9C', 'topLine' => 'PW9C · Professional', 'ranges' => ['8–14 kg'], 'fit' => 'Professional washer for standard commercial laundry duties and dependable everyday performance.', 'badges' => ['Professional','Reliable'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
             ];
-            $capacityFilters = ['all'=>'All', '8'=>'8 kg', '9'=>'9 kg', '11'=>'11 kg', '14'=>'14 kg', '20'=>'20 kg', '28'=>'28 kg', '35'=>'35 kg', '40+'=>'40 kg+'];
-            $typeFilters = ['all'=>'All ranges', 'Line 6000'=>'Line 6000', 'Washer-Extractor'=>'Washer-Extractor', 'Compact'=>'Compact'];
-            $familiesJs = array_map(fn($f) => ['kg' => $f['kg'], 'type' => $f['type']], $washerFamilies);
-        @endphp
-
-        @php
-            // derive a Technology facet + filter counts from the family data (no new copy)
-            foreach($washerFamilies as $i => $wf) {
-                if (str_contains($wf['name'], 'High-Spin'))        $t = 'High-Spin';
-                elseif (str_contains($wf['name'], 'Normal-Spin'))  $t = 'Normal-Spin';
-                elseif ($wf['type'] === 'Washer-Extractor')        $t = 'Washer-Extractor';
-                else                                               $t = 'Compact';
-                $washerFamilies[$i]['tech'] = $t;
+            $lineOrder  = ['Line 6000','W4-Series Heavy Duty','Quickwash','PW9C'];
+            $rangeOrder = ['8–14 kg','20–35 kg','40 kg+'];
+            $techOrder  = ['Automatic Savings','Integrated Savings','CompassPro','Power Balance','ClarusVibe','ERGOCERT'];
+            $lineOpts = []; $rangeOpts = []; $techOpts = [];
+            foreach($washerFamilies as $f) {
+                $lineOpts[$f['line']] = ($lineOpts[$f['line']] ?? 0) + 1;
+                foreach($f['ranges'] as $r) { $rangeOpts[$r] = ($rangeOpts[$r] ?? 0) + 1; }
+                foreach($f['tech'] as $t)   { $techOpts[$t]  = ($techOpts[$t]  ?? 0) + 1; }
             }
-            $lineOpts = []; $capOpts = []; $techOpts = [];
-            foreach($washerFamilies as $wf) {
-                $lineOpts[$wf['type']] = ($lineOpts[$wf['type']] ?? 0) + 1;
-                $techOpts[$wf['tech']] = ($techOpts[$wf['tech']] ?? 0) + 1;
-                foreach($wf['kg'] as $k) { $capOpts[$k] = ($capOpts[$k] ?? 0) + 1; }
-            }
-            $capOrder = ['8','9','11','14','20','28','35','40+'];
-            $famJs = array_map(fn($wf) => ['type' => $wf['type'], 'kg' => $wf['kg'], 'tech' => $wf['tech']], $washerFamilies);
+            $famJs = array_map(fn($f) => ['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']], $washerFamilies);
         @endphp
 
         <div x-data="{
-                productLine: [],
-                capacity: [],
-                technology: [],
+                line: [],
+                range: [],
+                tech: [],
+                moreOpen: false,
                 families: {{ \Illuminate\Support\Js::from($famJs) }},
                 matches(f) {
-                    const pl  = this.productLine.length === 0 || this.productLine.includes(f.type);
-                    const cap = this.capacity.length === 0 || (f.kg && f.kg.some(k => this.capacity.includes(k)));
-                    const tch = this.technology.length === 0 || this.technology.includes(f.tech);
-                    return pl && cap && tch;
+                    const ln = this.line.length === 0 || this.line.includes(f.line);
+                    const rg = this.range.length === 0 || (f.ranges && f.ranges.some(r => this.range.includes(r)));
+                    const tc = this.tech.length === 0 || (f.tech && f.tech.some(t => this.tech.includes(t)));
+                    return ln && rg && tc;
                 },
                 get count() { return this.families.filter(f => this.matches(f)).length; },
-                clearAll() { this.productLine = []; this.capacity = []; this.technology = []; },
+                clearAll() { this.line = []; this.range = []; this.tech = []; },
              }"
              class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 lg:gap-10 items-start">
 
-            {{-- LEFT: filter sidebar --}}
+            {{-- LEFT: Option B filter sidebar --}}
             <aside class="lg:sticky lg:top-28 self-start border border-gray-200 rounded-xl p-5">
                 <div class="flex items-center justify-between">
-                    <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em]">Filter Products</span>
+                    <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em]">Filter washer range</span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Reset all</button>
                 </div>
 
-                {{-- Product line --}}
+                {{-- Product Line (open) --}}
                 <div class="mt-4 pt-4 border-t border-gray-100">
-                    <p class="font-heading font-bold text-navy text-sm mb-3">Product line</p>
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Product Line</p>
                     <div class="space-y-2.5">
-                        @foreach($lineOpts as $val => $cnt)
+                        @foreach($lineOrder as $val) @if(isset($lineOpts[$val]))
                         <label class="flex items-center justify-between cursor-pointer group">
                             <span class="flex items-center gap-2.5">
-                                <input type="checkbox" value="{{ $val }}" x-model="productLine" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <input type="checkbox" value="{{ $val }}" x-model="line" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
                                 <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
                             </span>
-                            <span class="font-body text-xs text-gray-400">{{ $cnt }}</span>
+                            <span class="font-body text-xs text-gray-400">{{ $lineOpts[$val] }}</span>
                         </label>
-                        @endforeach
+                        @endif @endforeach
                     </div>
                 </div>
 
-                {{-- Capacity --}}
+                {{-- Capacity / Range (open) --}}
                 <div class="mt-4 pt-4 border-t border-gray-100">
-                    <p class="font-heading font-bold text-navy text-sm mb-3">Capacity</p>
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Capacity / Range</p>
                     <div class="space-y-2.5">
-                        @foreach($capOrder as $k)
-                        @if(isset($capOpts[$k]))
+                        @foreach($rangeOrder as $val) @if(isset($rangeOpts[$val]))
                         <label class="flex items-center justify-between cursor-pointer group">
                             <span class="flex items-center gap-2.5">
-                                <input type="checkbox" value="{{ $k }}" x-model="capacity" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
-                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $k === '40+' ? '40 kg+' : $k.' kg' }}</span>
+                                <input type="checkbox" value="{{ $val }}" x-model="range" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
                             </span>
-                            <span class="font-body text-xs text-gray-400">{{ $capOpts[$k] }}</span>
+                            <span class="font-body text-xs text-gray-400">{{ $rangeOpts[$val] }}</span>
                         </label>
-                        @endif
-                        @endforeach
+                        @endif @endforeach
                     </div>
                 </div>
 
-                {{-- Technology --}}
+                {{-- More filters (collapsed) → Control / Technology --}}
                 <div class="mt-4 pt-4 border-t border-gray-100">
-                    <p class="font-heading font-bold text-navy text-sm mb-3">Technology</p>
-                    <div class="space-y-2.5">
-                        @foreach($techOpts as $val => $cnt)
-                        <label class="flex items-center justify-between cursor-pointer group">
-                            <span class="flex items-center gap-2.5">
-                                <input type="checkbox" value="{{ $val }}" x-model="technology" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
-                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
-                            </span>
-                            <span class="font-body text-xs text-gray-400">{{ $cnt }}</span>
-                        </label>
-                        @endforeach
+                    <button @click="moreOpen = !moreOpen" class="w-full flex items-center justify-between font-heading font-bold text-navy text-sm">
+                        <span>More filters</span>
+                        <svg class="w-4 h-4 transition-transform duration-200" :class="moreOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div x-show="moreOpen" class="mt-3" style="display:none">
+                        <p class="font-body font-semibold text-gray-400 text-xs uppercase tracking-wide mb-2.5">Control / Technology</p>
+                        <div class="space-y-2.5">
+                            @foreach($techOrder as $val) @if(isset($techOpts[$val]))
+                            <label class="flex items-center justify-between cursor-pointer group">
+                                <span class="flex items-center gap-2.5">
+                                    <input type="checkbox" value="{{ $val }}" x-model="tech" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                    <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
+                                </span>
+                                <span class="font-body text-xs text-gray-400">{{ $techOpts[$val] }}</span>
+                            </label>
+                            @endif @endforeach
+                        </div>
                     </div>
                 </div>
 
@@ -514,30 +531,28 @@
                 </div>
             </aside>
 
-            {{-- RIGHT: product cards (floating images) --}}
+            {{-- RIGHT: product tiles --}}
             <div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($washerFamilies as $f)
-                    <div x-show="matches({{ \Illuminate\Support\Js::from(['type'=>$f['type'],'kg'=>$f['kg'],'tech'=>$f['tech']]) }})" x-transition.opacity class="flex flex-col">
-                        <div class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                    <div x-show="matches({{ \Illuminate\Support\Js::from(['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']]) }})" class="flex flex-col">
+                        <a href="{{ route('equipment.product', ['category' => 'washers', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-48 lg:h-56 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
-                        </div>
-                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['type'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $f['name'] }}</h3>
+                        </a>
+                        <p class="font-body text-xs font-bold text-[#148af4] mb-1.5">{{ $f['topLine'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'washers', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
-                        @if(!empty($f['badges']))
                         <div class="flex flex-wrap gap-1.5 mb-5">
                             @foreach(array_slice($f['badges'], 0, 4) as $b)
                             <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $b }}</span>
                             @endforeach
                         </div>
-                        @endif
                         <div class="mt-auto flex flex-col gap-2.5">
                             <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                 Request Advice
                             </a>
-                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                            <a href="{{ route('equipment.product', ['category' => 'washers', 'product' => $f['slug']]) }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 View Details
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                             </a>
@@ -546,24 +561,22 @@
                     @endforeach
                 </div>
 
-                {{-- Empty state --}}
-                <div x-show="count === 0" x-cloak class="text-center py-16">
+                <div x-show="count === 0" class="text-center py-16" style="display:none">
                     <p class="font-body text-gray-500 text-base">No washers match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
                 </div>
 
-                {{-- View full range --}}
                 <div class="text-center mt-12">
                     <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline">
                         View full product range
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
+
+                <p class="font-body text-gray-500 text-sm leading-relaxed mt-10 max-w-3xl">
+                    Not sure which model fits? Irish Laundry Systems can assess capacity, room setup, rental, installation and support options before a final recommendation.
+                </p>
             </div>
         </div>
-
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-8 max-w-3xl">
-            Not sure which model fits? Irish Laundry Systems can assess capacity, room setup, rental, installation and support options before a final recommendation.
-        </p>
     </div>
 </section>
 
