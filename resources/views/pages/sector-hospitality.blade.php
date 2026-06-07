@@ -157,11 +157,11 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.'],
-            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
-            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems connects equipment planning, planned maintenance, repairs, rental options and aftercare so hospitality laundry decisions are not only made after something fails.'],
+            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak demand.'],
+            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
+            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can cut detergent waste, protect linen quality and keep wash results more consistent.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems connects equipment planning, maintenance, repairs, rental and aftercare so decisions are not only made after something fails.'],
         ]])
     </div>
 </section>
