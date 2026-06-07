@@ -71,47 +71,68 @@
 </section>
 
 {{-- 5. HEAT PUMP ENERGY FEATURE --}}
-<section class="py-16 lg:py-24 overflow-hidden bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
-            {{-- Left: copy --}}
+            {{-- LEFT: copy + CTA + dryer lineup --}}
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Save <span style="color:#148af4;">65% on energy consumption</span> with Heat Pump Dryer technology
+                    <span style="color:#148af4;">Save 65% on energy consumption</span> with Heat Pump Dryer technology
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-xl">
-                    Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. For sites where the room setup is suitable, it can also reduce installation pressure by avoiding the need for exhaust or a water cooling system.
+                    Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. In suitable laundry room setups, it can also reduce installation pressure by removing the need for exhaust or a water cooling system.
                 </p>
                 <a href="#dryer-range"
-                   class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                   class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-base transition-colors duration-200">
                     Explore Heat Pump Dryers
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
+                <div class="mt-8 lg:mt-10 overflow-hidden flex items-center justify-center h-[240px] lg:h-[300px]">
+                    <img src="/images/equipment/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="w-full h-auto object-contain scale-[1.3] origin-center">
+                </div>
             </div>
 
-            {{-- Right: proof card --}}
-            <div class="reveal reveal-right">
-                <div class="bg-bg border border-gray-100 rounded-3xl p-8 lg:p-10">
-                    <div class="flex items-baseline gap-3 mb-2">
-                        <span class="font-heading font-bold text-[#148af4] text-7xl lg:text-8xl leading-none">65%</span>
-                        <span class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight">energy<br>saving</span>
-                    </div>
-                    <p class="font-body text-gray-500 text-sm mb-8">Heat Pump Dryer technology in suitable applications</p>
-                    <div class="space-y-4">
-                        @foreach([
-                            ['t' => 'No exhaust needed', 'd' => 'M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'],
-                            ['t' => 'No water cooling system', 'd' => 'M12 21a6.75 6.75 0 01-6.75-6.75c0-3 3.5-7.5 6.75-11.25 3.25 3.75 6.75 8.25 6.75 11.25A6.75 6.75 0 0112 21z'],
-                            ['t' => 'Lower installation pressure', 'd' => 'M2.25 6 9 12.75l4.286-4.286a11.948 11.948 0 014.306 6.43l.776 2.898m0 0 3.182-5.511m-3.182 5.51-5.511-3.181'],
-                        ] as $mp)
-                        <div class="flex items-center gap-3">
-                            <span class="flex items-center justify-center w-9 h-9 rounded-full bg-[#148af4]/15 flex-shrink-0">
-                                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $mp['d'] }}"/></svg>
-                            </span>
-                            <span class="font-body font-semibold text-navy text-base">{{ $mp['t'] }}</span>
+            {{-- RIGHT: spec card --}}
+            <div class="reveal reveal-right lg:mt-9">
+                <div class="border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-sm bg-white">
+                    <div class="grid grid-cols-[0.9fr_1.3fr] gap-6 lg:gap-8">
+
+                        {{-- Card left: 65% + feature list --}}
+                        <div class="pr-1">
+                            <div class="pb-5">
+                                <div class="font-heading font-bold text-[#148af4] text-6xl lg:text-7xl leading-none">65%</div>
+                                <div class="font-heading font-bold text-navy text-lg mt-2">energy saving</div>
+                                <div class="font-body text-gray-500 text-sm mt-1">on your energy consumption</div>
+                            </div>
+                            <div class="divide-y divide-gray-200 border-t border-gray-200">
+                                @foreach([
+                                    ['t' => 'No exhaust needed',          'd' => 'M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'],
+                                    ['t' => 'No water cooling system',     'd' => 'M12 21a6.75 6.75 0 01-6.75-6.75c0-3 3.5-7.5 6.75-11.25 3.25 3.75 6.75 8.25 6.75 11.25A6.75 6.75 0 0112 21z'],
+                                    ['t' => 'Lower installation pressure', 'd' => 'M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3'],
+                                    ['t' => 'Easier filter access',        'd' => 'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z'],
+                                ] as $f)
+                                <div class="flex items-center gap-3.5 py-6">
+                                    <span class="flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-full border border-[#148af4]">
+                                        <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $f['d'] }}"/></svg>
+                                    </span>
+                                    <span class="font-heading font-bold text-navy text-sm leading-snug">{{ $f['t'] }}</span>
+                                </div>
+                                @endforeach
+                            </div>
                         </div>
-                        @endforeach
+
+                        {{-- Card right: illustration + spec notes --}}
+                        <div class="pl-6 lg:pl-8 border-l border-gray-200">
+                            <img src="/images/equipment/Asset-1.webp" alt="No exhaust duct or water cooling connection required" class="w-full h-auto mb-6">
+                            <div class="space-y-4">
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">Low footprint, ultra-quiet 56dB operation and &lsquo;plug &amp; play&rsquo; capabilities.</p>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">Units operate in ambient temperatures from +10&deg;C to +45&deg;C.</p>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed">A horizontal filter drawer allows for easy maintenance and machine servicing.</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
