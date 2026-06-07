@@ -110,6 +110,7 @@
     'highlightClass'   => 'text-[#148af4]',
     'intro'            => 'Four practical routes to manage breakdowns, plan maintenance, control rental decisions and keep equipment care moving.',
     'introClass'       => '',
+    'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],

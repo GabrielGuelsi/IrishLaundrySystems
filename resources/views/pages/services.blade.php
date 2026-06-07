@@ -125,6 +125,7 @@
     'headingNowrap'    => false,
     'intro'            => 'Four practical routes for faults, planned maintenance, rental pressure and aftercare around commercial laundry equipment.',
     'introClass'       => '',
+    'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',               'body' => 'For faults, breakdowns or performance issues affecting laundry output, staffing or service continuity.',                          'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-outs',           'pos' => 'center 40%', 'bullets' => ['Machine faults', 'Breakdown calls', 'Fault diagnosis', 'Urgent equipment issues']],
