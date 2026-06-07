@@ -172,8 +172,8 @@
             ['icon'=>'30', 'prefix'=>'',     'stat'=>'90%',            'size'=>'text-4xl', 'label'=>'lifecycle cost beyond purchase',  'body'=>'Upfront cost is only about 10% of a washer or dryer — water, energy and chemicals make up the rest.'],
             ['icon'=>'7',  'prefix'=>'',     'stat'=>'-65%',           'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.'],
             ['icon'=>'10', 'prefix'=>'Over', 'stat'=>'30%+',           'size'=>'text-4xl', 'label'=>'detergent-cost saving potential',  'body'=>'Efficient Dosing can cut detergent costs by over 30% by using the right amount at every cycle.'],
-            ['icon'=>'4',  'prefix'=>'',     'stat'=>'Less strain',    'size'=>'text-2xl', 'label'=>'operator handling and productivity', 'body'=>'Electrolux Professional ergonomics cites up to 75% fewer sick days, 59% fewer musculoskeletal injuries and 25% higher productivity.'],
-            ['icon'=>'11', 'prefix'=>'',     'stat'=>'Fewer surprise', 'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'We connect equipment planning, rental, maintenance, repairs and aftercare so decisions are not left until something fails.'],
+            ['icon'=>'4',  'prefix'=>'',     'stat'=>'Less<br>strain',    'size'=>'text-2xl', 'label'=>'operator handling and productivity', 'body'=>'Electrolux Professional ergonomics cites up to 75% fewer sick days, 59% fewer musculoskeletal injuries and 25% higher productivity.'],
+            ['icon'=>'11', 'prefix'=>'',     'stat'=>'Fewer<br>surprise', 'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'We connect equipment planning, rental, maintenance, repairs and aftercare so decisions are not left until something fails.'],
         ]])
     </div>
 </section>

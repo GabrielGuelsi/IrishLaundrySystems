@@ -136,11 +136,11 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
-            ['icon'=>'8',  'prefix'=>'', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                       'body'=>'Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.'],
-            ['icon'=>'9',  'prefix'=>'', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                       'body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste',      'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'Irish Laundry Systems connects equipment planning, rental, preventive maintenance, repairs and aftercare so care home laundry decisions are not only made after something fails.'],
+            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.'],
+            ['icon'=>'8',  'prefix'=>'', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                       'body'=>'Double-drain barrier washer setups can support water recycling and cut water use by up to 50% where suitable.'],
+            ['icon'=>'9',  'prefix'=>'', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                       'body'=>'Electrolux Professional ergonomics cites up to 75% fewer sick days, 59% fewer Work-related Musculoskeletal Disorders and 25% higher productivity.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste',      'body'=>'Integrated Savings and Efficient Dosing improve control of load, water and detergent, cutting waste from under- or overloading and poor process control.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'Irish Laundry Systems connects equipment planning, rental, maintenance, repairs and aftercare so decisions are not only made after something fails.'],
         ]])
     </div>
 </section>
