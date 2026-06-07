@@ -243,7 +243,7 @@
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-3xl mb-12 lg:mb-14 reveal">
+        <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Support &amp; Aftercare</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 What <span class="text-[#148af4]">stays connected</span> after the first visit
@@ -335,7 +335,7 @@
         <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             A <span class="text-[#148af4]">clearer decision</span> for the equipment already on-site
         </h2>
-        <p class="font-body text-gray-600 text-base leading-relaxed mt-4 max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-600 text-base leading-relaxed mt-4 reveal text-pretty" style="transition-delay:160ms;">
             Support &amp; Aftercare connects what has happened before with what the equipment needs now.
         </p>
     </div>
@@ -429,7 +429,7 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-3xl mb-12 lg:mb-14 reveal">
+        <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Next Routes</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 The <span class="text-[#148af4]">right next step</span> depends on what your site needs now
