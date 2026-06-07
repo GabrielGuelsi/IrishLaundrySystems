@@ -282,48 +282,65 @@
             x-data="{
                 active: 0,
                 count: {{ count($rangeCards) }},
+                perView: 2,
                 timer: null,
-                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
-                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
-                go(i)   { this.active = i; this.restart(); },
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    this.perView = window.innerWidth < 1024 ? 1 : 2;
+                    window.addEventListener('resize', () => {
+                        this.perView = window.innerWidth < 1024 ? 1 : 2;
+                        if (this.active > this.maxIndex) this.active = this.maxIndex;
+                    });
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
             }"
-            x-init="timer = setInterval(() => next(), 6000)"
             class="relative"
         >
-            <div class="grid [&>*]:[grid-area:1/1]">
-                @foreach($rangeCards as $i => $p)
-                <div class="transition-opacity duration-500" :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center bg-bg border border-gray-100 rounded-3xl overflow-hidden" style="min-height:380px;">
-                        <div class="flex items-center justify-center p-8 lg:p-12" style="background-color:#011E41;">
-                            <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}" class="w-full h-64 lg:h-72 object-contain">
-                        </div>
-                        <div class="p-8 lg:p-12">
-                            <h3 class="font-heading font-bold text-navy text-3xl lg:text-4xl mb-4">{{ $p['name'] }}</h3>
-                            <p class="font-body text-gray-500 text-base leading-relaxed mb-7 max-w-md">{{ $p['copy'] }}</p>
-                            <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
-                                {{ $p['cta'] }}
-                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                            </a>
+            {{-- Track --}}
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-3"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($rangeCards as $i => $p)
+                    <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
+                        <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
+                            <div class="flex items-center justify-center">
+                                <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}" class="w-full h-44 lg:h-52 object-contain">
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
+                                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                                    {{ $p['cta'] }}
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                @endforeach
-            </div>
-
-            {{-- Controls --}}
-            <div class="flex items-center justify-between mt-6">
-                <div class="flex items-center gap-2">
-                    @foreach($rangeCards as $i => $p)
-                    <button @click="go({{ $i }})" :class="active === {{ $i }} ? 'w-8 bg-[#148af4]' : 'w-2.5 bg-gray-300'" class="h-2.5 rounded-full transition-all duration-300" aria-label="Go to slide {{ $i + 1 }}"></button>
                     @endforeach
                 </div>
-                <div class="flex items-center gap-3">
-                    <button @click="prev()" class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:bg-navy hover:text-white transition-colors" aria-label="Previous">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"/></svg>
+            </div>
+
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-8 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    @foreach($rangeCards as $i => $p)
+                    <button @click="go({{ $i }})"
+                            x-show="{{ $i }} <= maxIndex"
+                            :class="active === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                            class="rounded-full transition-all duration-300" aria-label="Go to slide {{ $i + 1 }}"></button>
+                    @endforeach
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-gray-200 text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center" aria-label="Previous">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
                     </button>
-                    <button @click="next()" class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-navy hover:bg-navy hover:text-white transition-colors" aria-label="Next">
-                        <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center" aria-label="Next">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
                     </button>
                 </div>
             </div>
@@ -432,7 +449,7 @@
             </p>
         </div>
 
-        {{-- Dryer families — one card/image per range, filterable by capacity and type (curated by ILS) --}}
+        {{-- Dryer families — one card/image per range, filterable by type and capacity (curated by ILS) --}}
         @php
             $dryerFamilies = [
                 ['name' => 'TD6 — Line 6000 Tumble Dryer', 'fit' => 'The core Line 6000 commercial tumble dryer, available across the full capacity range for everyday to high-output laundry rooms.', 'kg' => ['6','7','11','14','16','20','30','37','45','60'], 'capLabel' => '6–60 kg', 'models' => 'TD6-6 → TD6-60 (incl. LAC & SLD variants)', 'type' => 'Line 6000', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
@@ -440,69 +457,125 @@
                 ['name' => 'T-Series Industrial Dryers', 'fit' => 'High-capacity industrial tumble dryers for heavy, continuous daily throughput.', 'kg' => ['45','60'], 'capLabel' => '45–60 kg', 'models' => 'T4900CR, T41200CR', 'type' => 'Industrial', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
                 ['name' => 'Quick & Compact Dryers', 'fit' => 'Compact and quick-dry options for smaller sites and fast turnaround.', 'kg' => [], 'capLabel' => 'Compact', 'models' => 'Quickdry Condense, QuickDry QDC, PD9C', 'type' => 'Compact', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
             ];
-            $capacityFilters = ['all'=>'All', '6'=>'6 kg', '7'=>'7 kg', '11'=>'11 kg', '14'=>'14 kg', '16'=>'16 kg', '17'=>'17 kg', '20'=>'20 kg', '24'=>'24 kg', '30'=>'30 kg', '37'=>'37 kg', '45'=>'45 kg', '60'=>'60 kg'];
-            $typeFilters = ['all'=>'All ranges', 'Line 6000'=>'Line 6000', 'Stacked'=>'Stacked', 'Industrial'=>'Industrial', 'Compact'=>'Compact'];
-            $familiesJs = array_map(fn($f) => ['kg' => $f['kg'], 'type' => $f['type']], $dryerFamilies);
+
+            // derive facet option arrays with counts from the family data (no new copy)
+            $typeOpts = []; $capOpts = [];
+            foreach($dryerFamilies as $df) {
+                $typeOpts[$df['type']] = ($typeOpts[$df['type']] ?? 0) + 1;
+                foreach($df['kg'] as $k) { $capOpts[$k] = ($capOpts[$k] ?? 0) + 1; }
+            }
+            $capOrder = ['6','7','11','14','16','17','20','24','30','37','45','60'];
+            $famJs = array_map(fn($df) => ['type' => $df['type'], 'kg' => $df['kg']], $dryerFamilies);
         @endphp
 
-        <div x-data="{ kg:'all', type:'all', families: {{ \Illuminate\Support\Js::from($familiesJs) }} }">
+        <div x-data="{
+                type: [],
+                capacity: [],
+                families: {{ \Illuminate\Support\Js::from($famJs) }},
+                matches(f) {
+                    const t   = this.type.length === 0 || this.type.includes(f.type);
+                    const cap = this.capacity.length === 0 || (f.kg && f.kg.some(k => this.capacity.includes(k)));
+                    return t && cap;
+                },
+                get count() { return this.families.filter(f => this.matches(f)).length; },
+                clearAll() { this.type = []; this.capacity = []; },
+             }"
+             class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 lg:gap-10 items-start">
 
-            {{-- Filter bar --}}
-            <div class="bg-bg border border-gray-100 rounded-2xl p-6 lg:p-8 mb-10 space-y-5">
-                <div class="flex flex-col lg:flex-row lg:items-start gap-3">
-                    <span class="font-heading font-bold text-navy text-sm w-36 flex-shrink-0 lg:pt-2">Capacity (kg)</span>
-                    <div class="flex flex-wrap gap-2">
-                        @foreach($capacityFilters as $val => $lbl)
-                        <button type="button" @click="kg='{{ $val }}'" :class="kg==='{{ $val }}' ? 'bg-[#148af4] text-white border-[#148af4]' : 'bg-white text-gray-600 border-gray-200 hover:border-[#148af4] hover:text-[#148af4]'" class="font-body text-sm border px-4 py-2 rounded-full transition-colors">{{ $lbl }}</button>
+            {{-- LEFT: filter sidebar --}}
+            <aside class="lg:sticky lg:top-28 self-start border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center justify-between">
+                    <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em]">Filter Products</span>
+                    <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Reset all</button>
+                </div>
+
+                {{-- Dryer Type --}}
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Dryer Type</p>
+                    <div class="space-y-2.5">
+                        @foreach($typeOpts as $val => $cnt)
+                        <label class="flex items-center justify-between cursor-pointer group">
+                            <span class="flex items-center gap-2.5">
+                                <input type="checkbox" value="{{ $val }}" x-model="type" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
+                            </span>
+                            <span class="font-body text-xs text-gray-400">{{ $cnt }}</span>
+                        </label>
                         @endforeach
                     </div>
                 </div>
-                <div class="flex flex-col lg:flex-row lg:items-center gap-3">
-                    <span class="font-heading font-bold text-navy text-sm w-36 flex-shrink-0">Dryer Profile</span>
-                    <div class="flex flex-wrap gap-2">
-                        @foreach($typeFilters as $val => $lbl)
-                        <button type="button" @click="type='{{ $val }}'" :class="type==='{{ $val }}' ? 'bg-[#148af4] text-white border-[#148af4]' : 'bg-white text-gray-600 border-gray-200 hover:border-[#148af4] hover:text-[#148af4]'" class="font-body text-sm border px-4 py-2 rounded-full transition-colors">{{ $lbl }}</button>
+
+                {{-- Capacity --}}
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Capacity</p>
+                    <div class="space-y-2.5">
+                        @foreach($capOrder as $k)
+                        @if(isset($capOpts[$k]))
+                        <label class="flex items-center justify-between cursor-pointer group">
+                            <span class="flex items-center gap-2.5">
+                                <input type="checkbox" value="{{ $k }}" x-model="capacity" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $k.' kg' }}</span>
+                            </span>
+                            <span class="font-body text-xs text-gray-400">{{ $capOpts[$k] }}</span>
+                        </label>
+                        @endif
                         @endforeach
                     </div>
                 </div>
-            </div>
 
-            {{-- One card per family --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                @foreach($dryerFamilies as $f)
-                <div x-show="(kg==='all' || {{ \Illuminate\Support\Js::from($f['kg']) }}.includes(kg)) && (type==='all' || type==={{ \Illuminate\Support\Js::from($f['type']) }})" class="bg-white border border-gray-100 rounded-2xl overflow-hidden flex flex-col shadow-card">
-                    <div class="flex items-center justify-center p-8 bg-bg" style="height:240px;">
-                        <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain">
-                    </div>
-                    <div class="p-6 flex flex-col flex-1">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="font-body text-xs font-bold text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $f['type'] }}</span>
-                            <span class="font-body text-xs text-gray-500">{{ $f['capLabel'] }}</span>
+                {{-- Footer count + clear --}}
+                <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'range' : 'ranges'"></span></span>
+                    <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
+                </div>
+            </aside>
+
+            {{-- RIGHT: product cards (floating images) --}}
+            <div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
+                    @foreach($dryerFamilies as $f)
+                    <div x-show="matches({{ \Illuminate\Support\Js::from(['type'=>$f['type'],'kg'=>$f['kg']]) }})" x-transition.opacity class="flex flex-col">
+                        <div class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                            <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                         </div>
-                        <h3 class="font-heading font-bold text-navy text-xl mb-2">{{ $f['name'] }}</h3>
+                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['type'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $f['name'] }}</h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
                         @if(count($f['kg']))
-                        <div class="flex flex-wrap gap-1.5 mb-4">
+                        <div class="flex flex-wrap gap-1.5 mb-3">
                             @foreach($f['kg'] as $k)
-                            <span class="font-body text-xs text-navy border border-gray-200 px-2.5 py-1 rounded-full">{{ $k.' kg' }}</span>
+                            <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $k.' kg' }}</span>
                             @endforeach
                         </div>
                         @endif
-                        <p class="font-body text-xs text-gray-400 mb-6">{{ $f['models'] }}</p>
-                        <div class="flex flex-wrap items-center gap-3 mt-auto">
-                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-3 rounded-lg text-xs transition-colors">Request Advice on This Model</a>
-                            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-lg text-xs transition-colors">View Details</a>
+                        <p class="font-body text-xs text-gray-400 mb-5">{{ $f['models'] }}</p>
+                        <div class="mt-auto flex flex-col gap-2.5">
+                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+                                Request Advice on This Model
+                            </a>
+                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                View Details
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                            </a>
                         </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
-            </div>
 
-            {{-- Empty state --}}
-            <div x-show="!families.some(f => (kg==='all' || f.kg.includes(kg)) && (type==='all' || f.type===type))" x-cloak class="text-center py-12">
-                <p class="font-body text-gray-500 text-base">No dryers match that combination. <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">Talk to our team</a> and we'll find the right fit.</p>
-            </div>
+                {{-- Empty state --}}
+                <div x-show="count === 0" x-cloak class="text-center py-16">
+                    <p class="font-body text-gray-500 text-base">No dryers match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
+                </div>
 
+                {{-- View full range --}}
+                <div class="text-center mt-12">
+                    <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline">
+                        View full product range
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
+            </div>
         </div>
 
         <p class="font-body text-gray-500 text-sm leading-relaxed mt-8 max-w-3xl">
