@@ -9,10 +9,77 @@ return [
 
     // ── Commercial Washers ────────────────────────────────────────────────────
     'washers' => [
-        ['name' => 'WS6-8',             'slug' => 'ws6-8',             'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WS6-8',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-9',             'slug' => 'ws6-9',             'capacity' => '9 kg',  'summary' => 'Front load washer 9 kg – WS6-9',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-11',            'slug' => 'ws6-11',            'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WS6-11',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-14',            'slug' => 'ws6-14',            'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WS6-14',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
+        [
+            'name' => 'WS6', 'slug' => 'ws6', 'capacity' => '8–35 kg',
+            'title' => 'Line 6000 high-spin washer – WS6',
+            'summary' => 'Line 6000 high-spin commercial washer. CompassPro / ClarusVibe controls with Automatic Savings and Power Balance. Capacity 8–35 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Spin type' => 'High spin', 'Capacity' => '8 – 35 kg',
+                    'Control' => 'CompassPro / ClarusVibe', 'Efficiency' => 'Automatic Savings, Power Balance',
+                    'Dosing' => 'Efficient Dosing ready', 'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WN6', 'slug' => 'wn6', 'capacity' => '8–35 kg',
+            'title' => 'Line 6000 normal-spin washer – WN6',
+            'summary' => 'Line 6000 normal-spin commercial washer. CompassPro controls with Automatic and Integrated Savings. Capacity 8–35 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Spin type' => 'Normal spin', 'Capacity' => '8 – 35 kg',
+                    'Control' => 'CompassPro', 'Efficiency' => 'Automatic Savings, Integrated Savings',
+                    'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'W4-Series', 'slug' => 'w4-series', 'capacity' => '40–110 kg',
+            'title' => 'Heavy-duty washer-extractors – W4-Series',
+            'summary' => 'Heavy-duty washer-extractors for industrial and high-throughput laundries. Robust build with high extraction. Capacity 40–110 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'W4-Series', 'Type' => 'Heavy-duty washer-extractor', 'Capacity' => '40 – 110 kg',
+                    'Models' => 'W4400H, W4600H, W4850H, W41100H', 'Efficiency' => 'Power Balance',
+                    'Build' => 'Robust industrial frame',
+                ],
+                'Dimensions' => ['Footprint' => 'Industrial floor area', 'Installation' => 'Bolt-down, serviced install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'capacity' => null,
+            'title' => 'Quick-cycle commercial washer – QWC',
+            'summary' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Quickwash', 'Type' => 'Quick-cycle washer', 'Strength' => 'Fast turnaround, compact footprint',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'PW9C', 'slug' => 'pw9c', 'capacity' => null,
+            'title' => 'Professional washer – PW9C',
+            'summary' => 'Professional washer for standard commercial laundry duties and dependable everyday performance.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'PW9C', 'Type' => 'Professional washer', 'Strength' => 'Reliable everyday performance',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
     // ── Tumble Dryers ─────────────────────────────────────────────────────────

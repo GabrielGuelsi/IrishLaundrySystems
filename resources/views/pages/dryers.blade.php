@@ -71,17 +71,17 @@
 </section>
 
 {{-- 5. HEAT PUMP ENERGY FEATURE --}}
-<section class="py-16 lg:py-24 overflow-hidden" style="background-color:#011E41;">
+<section class="py-16 lg:py-24 overflow-hidden bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             {{-- Left: copy --}}
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
-                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
                     Save <span style="color:#148af4;">65% on energy consumption</span> with Heat Pump Dryer technology
                 </h2>
-                <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-xl">
                     Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. For sites where the room setup is suitable, it can also reduce installation pressure by avoiding the need for exhaust or a water cooling system.
                 </p>
                 <a href="#dryer-range"
@@ -93,12 +93,12 @@
 
             {{-- Right: proof card --}}
             <div class="reveal reveal-right">
-                <div class="bg-white/5 border border-white/10 rounded-3xl p-8 lg:p-10">
+                <div class="bg-bg border border-gray-100 rounded-3xl p-8 lg:p-10">
                     <div class="flex items-baseline gap-3 mb-2">
                         <span class="font-heading font-bold text-[#148af4] text-7xl lg:text-8xl leading-none">65%</span>
-                        <span class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight">energy<br>saving</span>
+                        <span class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight">energy<br>saving</span>
                     </div>
-                    <p class="font-body text-white/60 text-sm mb-8">Heat Pump Dryer technology in suitable applications</p>
+                    <p class="font-body text-gray-500 text-sm mb-8">Heat Pump Dryer technology in suitable applications</p>
                     <div class="space-y-4">
                         @foreach([
                             ['t' => 'No exhaust needed', 'd' => 'M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'],
@@ -109,7 +109,7 @@
                             <span class="flex items-center justify-center w-9 h-9 rounded-full bg-[#148af4]/15 flex-shrink-0">
                                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $mp['d'] }}"/></svg>
                             </span>
-                            <span class="font-body font-semibold text-white text-base">{{ $mp['t'] }}</span>
+                            <span class="font-body font-semibold text-navy text-base">{{ $mp['t'] }}</span>
                         </div>
                         @endforeach
                     </div>
@@ -188,7 +188,7 @@
 </section>
 
 {{-- 8. OPERATOR COMFORT / ERGOCERT --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Intro + ERGOCERT badge --}}
@@ -212,23 +212,9 @@
                 </a>
             </div>
 
-            {{-- ERGOCERT 4-star certification badge --}}
-            <div class="lg:col-span-5 flex lg:justify-end reveal reveal-right">
-                <div class="relative w-full max-w-xs bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                    <div class="absolute top-0 right-0 z-10 bg-[#148af4] text-white text-[0.6rem] font-body font-bold uppercase tracking-[0.12em] px-3 py-1.5 rounded-bl-xl">Unique in the industry</div>
-                    <div class="px-8 pt-10 pb-8 text-center">
-                        <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-44 h-auto mx-auto">
-                        <div class="border-t border-gray-200 mt-5 pt-5">
-                            <p class="font-body text-gray-500 text-xs uppercase tracking-[0.18em] mb-2.5">Ergonomics Certified</p>
-                            <div class="flex items-center justify-center gap-1.5 text-[#148af4]">
-                                @for($s = 0; $s < 4; $s++)
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.48 3.5a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-                                @endfor
-                            </div>
-                            <p class="font-heading font-bold text-navy text-lg mt-2.5">4-Star Rating</p>
-                        </div>
-                    </div>
-                </div>
+            {{-- ERGOCERT logo — frameless, huge --}}
+            <div class="lg:col-span-5 flex justify-center lg:justify-end items-center reveal reveal-right">
+                <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-full max-w-sm lg:max-w-md h-auto">
             </div>
 
         </div>
@@ -534,7 +520,7 @@
             <div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($dryerFamilies as $f)
-                    <div x-show="matches({{ \Illuminate\Support\Js::from(['type'=>$f['type'],'kg'=>$f['kg']]) }})" x-transition.opacity class="flex flex-col">
+                    <div x-show="matches({{ \Illuminate\Support\Js::from(['type'=>$f['type'],'kg'=>$f['kg']]) }})" class="flex flex-col">
                         <div class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                         </div>
