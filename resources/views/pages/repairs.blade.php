@@ -118,7 +118,7 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repair Triage</p>
         <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-            Fast support works best<br class="hidden lg:inline"> with a <span class="text-[#148af4] whitespace-nowrap">clear fault picture</span>
+            Fast support works best with a <span class="text-[#148af4]">clear fault picture</span>
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed mb-4 max-w-3xl mx-auto text-pretty">
             A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. Clear fault details at the start make it easier to prepare the right call-out response and reduce uncertainty around the next&nbsp;step.
@@ -183,7 +183,7 @@
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
                         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
-                        <p class="font-body text-white text-sm leading-relaxed text-pretty">
+                        <p class="font-body text-white text-base leading-relaxed text-pretty">
                             Tell us what has failed, where the machine is located and how urgent the issue is, so the request can be routed to the right&nbsp;team.
                         </p>
                         <p class="font-body text-white/60 text-xs mt-2 text-pretty">
@@ -275,8 +275,8 @@ $expectSteps = [
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Call-Out Process</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 text-balance">From fault report to the <span class="text-[#148af4]">right repair response</span></h2>
-            <p class="font-body text-blue-200 text-base max-w-2xl mx-auto text-pretty">A clear call-out process gives the team the fault details, machine information and site urgency needed to prepare the right engineer-led&nbsp;response.</p>
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 text-balance">From fault report to the <span class="text-[#148af4]">right repair response</span></h2>
+            <p class="font-body text-blue-200 text-base leading-relaxed max-w-2xl mx-auto text-pretty">A clear call-out process gives the team the fault details, machine information and site urgency needed to prepare the right engineer-led&nbsp;response.</p>
         </div>
 
         <div class="expect-timeline">
@@ -363,7 +363,7 @@ $expectSteps = [
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Temporary Laundry Support</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    <span class="text-[#148af4]">Keep laundry moving</span><br class="hidden lg:inline"> while your equipment is&nbsp;down
+                    <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is&nbsp;down
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-8 text-pretty">
                     When your on-site laundry is out of action, Irish Laundry Systems can discuss a temporary laundry processing route through Laundry Online locations across Dublin, where suitable and agreed in&nbsp;advance.
@@ -388,7 +388,7 @@ $expectSteps = [
                         <svg class="w-10 h-10 text-[#148af4] mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        <h3 class="font-heading font-bold text-navy text-base mb-1 whitespace-nowrap">Short-term cover</h3>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1">Short-term cover</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while you manage downtime or&nbsp;replacement.</p>
                     </div>
                 </div>
@@ -430,7 +430,7 @@ $expectSteps = [
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 leading-tight text-balance">Repeated breakdowns usually need<br class="hidden lg:inline"> <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
+                    <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 leading-tight text-balance">Repeated breakdowns usually need <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
                     <p class="font-body text-gray-300 leading-relaxed text-pretty">
                         If the same fault keeps returning, the issue may be linked to maintenance history, wear, parts requirements or how the equipment is being used. Irish Laundry Systems reviews what keeps coming back and what needs attention&nbsp;next.
                     </p>

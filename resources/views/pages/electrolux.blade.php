@@ -131,7 +131,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">What the Partnership Means</h2>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">What the Partnership Means</h2>
                 <p class="font-body text-gray-600 leading-relaxed mb-4">
                     Electrolux Professional is one of the world's leading manufacturers of commercial laundry equipment. Their range covers washers, dryers, barrier washers, ironers and drying cabinets — used in healthcare, hospitality, care and commercial settings globally.
                 </p>
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="space-y-5">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-2">What Customers Get</h2>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-2">What Customers Get</h2>
 
                 <!-- 3 benefit cards -->
                 <div class="bg-white border border-border rounded-2xl p-6">
@@ -199,7 +199,7 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-10">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">Genuine Support &amp; Aftercare</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">Genuine Support &amp; Aftercare</h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-2xl mx-auto">Why genuine parts matter — and what it means for your operation.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">

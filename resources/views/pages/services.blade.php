@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('pageTitle', 'Commercial Laundry Services | Service Contracts, Repairs, Rental & Parts | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry services across Ireland — service contracts, repairs and call-outs, equipment rental, and genuine Electrolux parts and aftercare.')
@@ -41,7 +41,7 @@
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
-                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-6xl xl:text-6xl text-balance">
+                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
                     Find the <span class="text-[#148af4]">right service&nbsp;route</span><br class="hidden lg:inline"> before equipment&nbsp;issues<br class="hidden lg:inline"> become bigger&nbsp;costs
                 </h1>
 
@@ -85,8 +85,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Start with what is creating&nbsp;pressure,<br> then choose the <span class="text-[#148af4]">right&nbsp;route</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    Start with what is creating&nbsp;pressure, then choose the <span class="text-[#148af4]">right&nbsp;route</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -141,7 +141,7 @@
         <div class="mb-12">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight max-w-4xl text-balance">
-                Commercial laundry care built around<br>
+                Commercial laundry care built around
                 cost control and <span class="text-[#148af4]">peace of mind</span>
             </h2>
         </div>
@@ -295,8 +295,8 @@
                 From equipment pressure to the <span class="text-[#148af4]">right next step</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
-                <span class="xl:whitespace-nowrap">The right route depends on what is happening in the laundry room.</span><br class="hidden md:block">
-                <span class="xl:whitespace-nowrap"><span class="whitespace-nowrap">Irish Laundry Systems</span> connects the issue, the equipment and the practical next step before the problem becomes harder to manage.</span>
+                <span>The right route depends on what is happening in the laundry room.</span>
+                <span><span>Irish Laundry Systems</span> connects the issue, the equipment and the practical next step before the problem becomes harder to manage.</span>
             </p>
         </div>
     </div>

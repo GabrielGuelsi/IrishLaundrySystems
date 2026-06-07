@@ -22,7 +22,7 @@
         </div>
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request received</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-4">We'll be in touch shortly</h2>
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">We'll be in touch shortly</h2>
         <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-12">
             Your request has been sent. One of our engineers will review your details and confirm the next step with you.
         </p>
@@ -89,7 +89,7 @@
         <div class="max-w-5xl mx-auto w-full px-6 sm:px-10">
             <div class="max-w-xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-5">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
                     Request a Service<br>Assessment
                 </h1>
                 <p class="font-body text-white/75 text-base leading-relaxed mb-8">
@@ -126,10 +126,10 @@
 
                     {{-- Left: heading --}}
                     <div class="lg:col-span-3">
-                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-3">
+                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-3">
                             What to <span class="text-[#148af4]">include</span>
                         </h2>
-                        <p class="font-body text-white/60 text-sm leading-relaxed">
+                        <p class="font-body text-white/60 text-base leading-relaxed">
                             Share these details to get the most accurate and fastest response.
                         </p>
                     </div>

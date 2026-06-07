@@ -168,7 +168,7 @@
 
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
-                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-4xl lg:text-6xl text-balance">
+                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
                     Support that <span class="text-[#148af4]">stays with your&nbsp;equipment</span> after the first&nbsp;visit
                 </h1>
 
@@ -332,7 +332,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Aftercare Works</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight reveal" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             A <span class="text-[#148af4]">clearer decision</span> for the equipment already on-site
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed mt-4 max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
@@ -431,7 +431,7 @@
 
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Next Routes</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 The <span class="text-[#148af4]">right next step</span> depends on what your site needs now
             </h2>
             <p class="font-body text-gray-600 leading-relaxed text-pretty">

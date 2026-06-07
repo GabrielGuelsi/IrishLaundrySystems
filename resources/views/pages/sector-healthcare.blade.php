@@ -17,7 +17,7 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
-                <h1 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight mb-4">
+                <h1 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
                     <span class="block" style="color:#148af4;">Control healthcare laundry</span>
                     <span class="block">pressure before it becomes</span>
                     <span class="block">a daily cost problem</span>
@@ -49,17 +49,17 @@
 
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built for Healthcare</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    <span class="block">Healthcare laundry</span>
-                    <span class="block">is a <span style="color:#148af4;">hygiene</span> and</span>
-                    <span class="block"><span style="color:#148af4;">cost-control</span> issue</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    <span>Healthcare laundry</span>
+                    <span>is a <span style="color:#148af4;">hygiene</span> and</span>
+                    <span><span style="color:#148af4;">cost-control</span> issue</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right lg:pt-8">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-2">
-                    <span class="block">The wrong laundry setup can drain budget every day through energy, water, detergent</span>
-                    <span class="block">waste, staff pressure, linen delays, reactive call-outs and replacement pressure.</span>
+                    The wrong laundry setup can drain budget every day through energy, water, detergent
+                    waste, staff pressure, linen delays, reactive call-outs and replacement pressure.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems connects room layout, workflow, capacity, equipment, maintenance, repairs, rental and aftercare into one practical plan, so healthcare sites can control costs while protecting hygiene flow.
@@ -84,14 +84,14 @@
         <!-- Title -->
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Infection Control</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="block">Laundry and <span style="color:#148af4;">infection control</span></span>
-                <span class="block">need to work as <span style="color:#148af4;">one process</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <span>Laundry and <span style="color:#148af4;">infection control</span></span>
+                <span>need to work as <span style="color:#148af4;">one process</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
-                <span class="block">In healthcare and care environments, laundry is not only about washing linen. Dirty-side handling, clean-side unloading, drying, finishing, transport and storage all affect</span>
-                <span class="block">how controlled the process remains. Electrolux Professional barrier systems are built around physical separation between soiled and clean linen handling, supporting hygiene</span>
-                <span class="block">control where cross-contamination risk needs to be managed. Irish Laundry Systems connects that equipment logic with the room, workflow and ongoing care around it.</span>
+                In healthcare and care environments, laundry is not only about washing linen. Dirty-side handling, clean-side unloading, drying, finishing, transport and storage all affect
+                how controlled the process remains. Electrolux Professional barrier systems are built around physical separation between soiled and clean linen handling, supporting hygiene
+                control where cross-contamination risk needs to be managed. Irish Laundry Systems connects that equipment logic with the room, workflow and ongoing care around it.
             </p>
         </div>
 
@@ -137,9 +137,9 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Workflow Matters</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                <span class="block"><span style="color:#148af4;">Dirty-side and clean-side</span> handling need</span>
-                <span class="block">a <span style="color:#148af4;">controlled healthcare laundry flow</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <span><span style="color:#148af4;">Dirty-side and clean-side</span> handling need</span>
+                <span>a <span style="color:#148af4;">controlled healthcare laundry flow</span></span>
             </h2>
         </div>
         <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
@@ -187,13 +187,13 @@
         {{-- Header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="block"><span style="color:#148af4;">Control healthcare laundry costs</span></span>
-                <span class="block">before poor setup drains budget</span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <span><span style="color:#148af4;">Control healthcare laundry costs</span></span>
+                <span>before poor setup drains budget</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block">Healthcare laundry can become a daily cost problem through energy use, water use, detergent waste, staff strain, linen delays and reactive call-outs.</span>
-                <span class="block">The right equipment plan should protect hygiene flow while reducing avoidable running-cost pressure.</span>
+                Healthcare laundry can become a daily cost problem through energy use, water use, detergent waste, staff strain, linen delays and reactive call-outs.
+                The right equipment plan should protect hygiene flow while reducing avoidable running-cost pressure.
             </p>
         </div>
 
@@ -215,9 +215,9 @@
         {{-- Header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="block">Features that support <span style="color:#148af4;">hygiene flow,</span></span>
-                <span class="block"><span style="color:#148af4;">staff handling</span> and <span style="color:#148af4;">process control</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <span>Features that support <span style="color:#148af4;">hygiene flow,</span></span>
+                <span><span style="color:#148af4;">staff handling</span> and <span style="color:#148af4;">process control</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Selected Electrolux Professional features support safer handling, cleaner process flow and more consistent laundry routines when matched to the right healthcare room.
@@ -293,7 +293,7 @@
         <!-- Heading -->
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Routes</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
                 Connected support to <span style="color:#148af4;">keep healthcare laundry moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -357,7 +357,7 @@
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
                     {{-- Title (always visible) --}}
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
                         <span class="inline-flex items-start gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
@@ -390,9 +390,9 @@
 
         <div class="mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="block">Equipment built around <span style="color:#148af4;">healthcare hygiene,</span></span>
-                <span class="block">flow and <span style="color:#148af4;">running cost</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <span>Equipment built around <span style="color:#148af4;">healthcare hygiene,</span></span>
+                <span>flow and <span style="color:#148af4;">running cost</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The right equipment plan depends on room configuration, linen flow, wash demand, drying pressure, finishing needs and the care that keeps the equipment performing over time.
@@ -405,7 +405,7 @@
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Barrier <strong>Washers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                         Barrier washers are central where healthcare laundry rooms need <span style="color:#148af4;">controlled dirty-side loading and clean-side unloading</span> as part of the hygiene process.
                     </p>
@@ -529,7 +529,7 @@
                          class="w-full h-96 object-contain object-left-top">
                 </div>
                 <div class="lg:-ml-20 lg:mt-10">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Commercial <strong>Washers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                         Commercial washers support broader healthcare wash needs where barrier separation is not required for every load, but <span style="color:#148af4;">capacity, consistency and daily handling</span> still matter.
                     </p>
@@ -564,7 +564,7 @@
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Tumble <strong>Dryers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                         Tumble dryers support post-wash flow where <span style="color:#148af4;">drying time, residual moisture</span>, operator handling and energy use affect clean-side movement through the day.
                     </p>
@@ -652,7 +652,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3">Ironers &amp; <strong>Finishing</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Ironers &amp; <strong>Finishing</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                         Ironers and finishing equipment support <span style="color:#148af4;">flatwork flow, linen presentation</span>, drying consistency and storage readiness in healthcare environments.
                     </p>
@@ -766,13 +766,13 @@
         {{-- Section header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
-                <span class="block">another running cost</span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <span><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
+                <span>another running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                <span class="block">Automatic dosing supports healthcare laundry rooms by using the right amount of detergent for each cycle.</span>
-                <span class="block">That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.</span>
+                Automatic dosing supports healthcare laundry rooms by using the right amount of detergent for each cycle.
+                That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.
             </p>
         </div>
 
@@ -942,7 +942,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Our process keeps the <span style="color:#148af4;">next step</span> clear
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
