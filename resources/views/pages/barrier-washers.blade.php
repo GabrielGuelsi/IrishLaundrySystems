@@ -427,6 +427,7 @@
             // products (Pullman, Cleanroom options, etc.) here when supplied — the filters auto-populate.
             $barrierFamilies = [
                 [
+                    'slug' => 'wb6',
                     'name' => 'WB6 — Line 6000 Evolution Barrier Washer',
                     'fit' => 'Barrier washer for hygiene-critical laundry rooms needing clean/dirty separation, guided operation and long-term support.',
                     'kg' => ['13','18','20','27','35','50','70','90','110'],
@@ -533,11 +534,11 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($barrierFamilies as $f)
                     <div x-show="matches({{ \Illuminate\Support\Js::from(['profile'=>$f['profile'],'kg'=>$f['kg'],'sites'=>$f['sites']]) }})" class="flex flex-col">
-                        <a href="{{ route('contact') }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                        <a href="{{ route('equipment.product', ['category' => 'barrier-washers', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                         </a>
                         <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['profile'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('contact') }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'barrier-washers', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
                         @if(!empty($f['badges']))
                         <div class="flex flex-wrap gap-1.5 mb-5">
@@ -551,7 +552,7 @@
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                 Request Advice on This Model
                             </a>
-                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                            <a href="{{ route('equipment.product', ['category' => 'barrier-washers', 'product' => $f['slug']]) }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 View Details
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                             </a>

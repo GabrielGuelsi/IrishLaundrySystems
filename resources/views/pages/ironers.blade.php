@@ -280,10 +280,10 @@
         {{-- Ironer families — one card/image per range, filterable by cylinder and automation (like the washers page) --}}
         @php
             $ironerFamilies = [
-                ['name' => 'Line 6000 Flatwork Ironers', 'fit' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.', 'auto' => ['No automation','Feeding'], 'capLabel' => '2.5–3.3 m', 'models' => 'IB5725, IB5730, IB5733 (+ -F feeder)', 'roll' => 'Flatwork', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['name' => 'Ø 480 mm Cylinder Ironers', 'fit' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.', 'auto' => ['No automation','Length folding','Feeding','Folding & stacking'], 'capLabel' => 'Ø 480 mm', 'models' => 'IC648 21 / 25 / 32 series, IV648', 'roll' => 'Ø 480 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['name' => 'Ø 330 mm Cylinder Ironers', 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.', 'auto' => ['No automation'], 'capLabel' => 'Ø 330 mm', 'models' => 'IC63316, IC63320', 'roll' => 'Ø 330 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['name' => 'Ø 230 mm Bed-type Ironers', 'fit' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.', 'auto' => ['No automation'], 'capLabel' => 'Ø 230 mm', 'models' => 'IB62310, IB62314, IB62316', 'roll' => 'Ø 230 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'fit' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.', 'auto' => ['No automation','Feeding'], 'capLabel' => '2.5–3.3 m', 'models' => 'IB5725, IB5730, IB5733 (+ -F feeder)', 'roll' => 'Flatwork', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'fit' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.', 'auto' => ['No automation','Length folding','Feeding','Folding & stacking'], 'capLabel' => 'Ø 480 mm', 'models' => 'IC648 21 / 25 / 32 series, IV648', 'roll' => 'Ø 480 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.', 'auto' => ['No automation'], 'capLabel' => 'Ø 330 mm', 'models' => 'IC63316, IC63320', 'roll' => 'Ø 330 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'fit' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.', 'auto' => ['No automation'], 'capLabel' => 'Ø 230 mm', 'models' => 'IB62310, IB62314, IB62316', 'roll' => 'Ø 230 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
             ];
         @endphp
 
@@ -368,11 +368,11 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($ironerFamilies as $f)
                     <div x-show="matches({{ \Illuminate\Support\Js::from(['roll'=>$f['roll'],'auto'=>$f['auto']]) }})" class="flex flex-col">
-                        <div class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                        <a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
-                        </div>
+                        </a>
                         <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['roll'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $f['name'] }}</h3>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
                         @if(!empty($f['auto']))
                         <div class="flex flex-wrap gap-1.5 mb-5">
@@ -386,7 +386,7 @@
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                 Request Advice on This Model
                             </a>
-                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                            <a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $f['slug']]) }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 View Details
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                             </a>

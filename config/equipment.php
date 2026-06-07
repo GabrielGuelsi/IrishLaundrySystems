@@ -3,7 +3,7 @@
 /**
  * Static equipment catalogue — no database required.
  * Products are organised by category slug.
- * Each entry needs: name, slug, capacity (nullable), summary, image_path, sectors (array).
+ * Each entry: name, slug, capacity (nullable), title, summary, image_path, specs, sectors.
  */
 return [
 
@@ -60,9 +60,7 @@ return [
             'summary' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.',
             'image_path' => 'images/equipment/commercialwasher.webp',
             'specs' => [
-                'Main specification' => [
-                    'Range' => 'Quickwash', 'Type' => 'Quick-cycle washer', 'Strength' => 'Fast turnaround, compact footprint',
-                ],
+                'Main specification' => ['Range' => 'Quickwash', 'Type' => 'Quick-cycle washer', 'Strength' => 'Fast turnaround, compact footprint'],
                 'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
             ],
             'sectors' => [],
@@ -73,9 +71,7 @@ return [
             'summary' => 'Professional washer for standard commercial laundry duties and dependable everyday performance.',
             'image_path' => 'images/equipment/commercialwasher.webp',
             'specs' => [
-                'Main specification' => [
-                    'Range' => 'PW9C', 'Type' => 'Professional washer', 'Strength' => 'Reliable everyday performance',
-                ],
+                'Main specification' => ['Range' => 'PW9C', 'Type' => 'Professional washer', 'Strength' => 'Reliable everyday performance'],
                 'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
             ],
             'sectors' => [],
@@ -84,83 +80,156 @@ return [
 
     // ── Tumble Dryers ─────────────────────────────────────────────────────────
     'tumble-dryers' => [
-        ['name' => 'TD6-6',             'slug' => 'td6-6',             'capacity' => '6 kg',  'summary' => 'Tumble Dryer 6 kg – TD6-6',              'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-7',             'slug' => 'td6-7',             'capacity' => '7 kg',  'summary' => 'Tumble Dryer 7 kg – TD6-7',              'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-7LAC',          'slug' => 'td6-7lac',          'capacity' => '7 kg',  'summary' => 'Tumble Dryer 7 kg – TD6-7LAC',           'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-11',            'slug' => 'td6-11',            'capacity' => '11 kg', 'summary' => 'Tumble Dryer 11 kg – TD6-11',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-14',            'slug' => 'td6-14',            'capacity' => '14 kg', 'summary' => 'Tumble Dryer 14 kg – TD6-14',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-14LAC',         'slug' => 'td6-14lac',         'capacity' => '14 kg', 'summary' => 'Tumble Dryer 14 kg – TD6-14LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-16',            'slug' => 'td6-16',            'capacity' => '16 kg', 'summary' => 'Tumble Dryer 16 kg – TD6-16',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-20',            'slug' => 'td6-20',            'capacity' => '20 kg', 'summary' => 'Tumble Dryer 20 kg – TD6-20',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-20LAC',         'slug' => 'td6-20lac',         'capacity' => '20 kg', 'summary' => 'Tumble Dryer 20 kg – TD6-20LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-30',            'slug' => 'td6-30',            'capacity' => '30 kg', 'summary' => 'Tumble Dryer 30 kg – TD6-30',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-30LAC',         'slug' => 'td6-30lac',         'capacity' => '30 kg', 'summary' => 'Tumble Dryer 30 kg – TD6-30LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-37',            'slug' => 'td6-37',            'capacity' => '37 kg', 'summary' => 'Tumble Dryer 37 kg – TD6-37',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-37LAC',         'slug' => 'td6-37lac',         'capacity' => '37 kg', 'summary' => 'Tumble Dryer 37 kg – TD6-37LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-45',            'slug' => 'td6-45',            'capacity' => '45 kg', 'summary' => 'Tumble Dryer 45 kg – TD6-45',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-45SLD',         'slug' => 'td6-45sld',         'capacity' => '45 kg', 'summary' => 'Tumble Dryer 45 kg – TD6-45SLD',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-60',            'slug' => 'td6-60',            'capacity' => '60 kg', 'summary' => 'Tumble Dryer 60 kg – TD6-60',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-60SLD',         'slug' => 'td6-60sld',         'capacity' => '60 kg', 'summary' => 'Tumble Dryer 60 kg – TD6-60SLD',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-17S',           'slug' => 'td6-17s',           'capacity' => '17 kg', 'summary' => 'Stacked Tumble Dryer 17 kg – TD6-17S',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-24S',           'slug' => 'td6-24s',           'capacity' => '24 kg', 'summary' => 'Stacked Tumble Dryer 24 kg – TD6-24S',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'Quickdry Condense', 'slug' => 'quickdry-condense', 'capacity' => null,    'summary' => 'Quick Dryer – Quickdry Condense',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'QuickDry QDC',      'slug' => 'quickdry-qdc',      'capacity' => null,    'summary' => 'Quick Dryer – QuickDry QDC',              'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'PD9C',              'slug' => 'pd9c',              'capacity' => null,    'summary' => 'PD9C',                                    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'T4900CR',           'slug' => 't4900cr',           'capacity' => '45 kg', 'summary' => 'Tumble Dryer 45 kg – T4900CR',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'T41200CR',          'slug' => 't41200cr',          'capacity' => '60 kg', 'summary' => 'Tumble Dryer 60 kg – T41200CR',           'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
+        [
+            'name' => 'TD6 — Line 6000 Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–60 kg',
+            'title' => 'Line 6000 commercial tumble dryer – TD6',
+            'summary' => 'The core Line 6000 commercial tumble dryer, available across the full capacity range for everyday to high-output laundry rooms.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Type' => 'Commercial tumble dryer', 'Capacity' => '6 – 60 kg',
+                    'Models' => 'TD6-6 → TD6-60 (incl. LAC & SLD variants)', 'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Stacked Tumble Dryers', 'slug' => 'stacked-dryers', 'capacity' => 'Stacked',
+            'title' => 'Stacked tumble dryers',
+            'summary' => 'Two dryers in one footprint — keeps drying capacity up where floor space is tight.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Stacked tumble dryer', 'Models' => 'TD6-17S, TD6-24S', 'Strength' => 'Two dryers, one footprint'],
+                'Dimensions' => ['Footprint' => 'Stacked — minimal floor area', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'T-Series Industrial Dryers', 'slug' => 't-series', 'capacity' => '45–60 kg',
+            'title' => 'Industrial tumble dryers – T-Series',
+            'summary' => 'High-capacity industrial tumble dryers for heavy, continuous daily throughput.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'T-Series', 'Type' => 'Industrial tumble dryer', 'Capacity' => '45 – 60 kg', 'Models' => 'T4900CR, T41200CR'],
+                'Dimensions' => ['Footprint' => 'Industrial floor area', 'Installation' => 'Serviced install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Quick & Compact Dryers', 'slug' => 'quick-compact-dryers', 'capacity' => 'Compact',
+            'title' => 'Quick & compact dryers',
+            'summary' => 'Compact and quick-dry options for smaller sites and fast turnaround.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Quick / compact dryer', 'Models' => 'Quickdry Condense, QuickDry QDC, PD9C', 'Strength' => 'Fast turnaround, small footprint'],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
     // ── Ironers ───────────────────────────────────────────────────────────────
     'ironers' => [
-        // Line 6000 flatwork ironers (IB57xx)
-        ['name' => 'IB5725',     'slug' => 'ib5725',     'capacity' => '2.5 m',     'summary' => 'Flatwork ironer 2.5 m – Rear delivery, no automation',                 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB5725-F',   'slug' => 'ib5725-f',   'capacity' => '2.5 m',     'summary' => 'Flatwork ironer 2.5 m – Rear delivery with integrated feeder',         'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB5730',     'slug' => 'ib5730',     'capacity' => '3.0 m',     'summary' => 'Flatwork ironer 3.0 m – Rear delivery, no automation',                 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB5730-F',   'slug' => 'ib5730-f',   'capacity' => '3.0 m',     'summary' => 'Flatwork ironer 3.0 m – Rear delivery with integrated feeder',         'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB5733',     'slug' => 'ib5733',     'capacity' => '3.3 m',     'summary' => 'Flatwork ironer 3.3 m – Rear delivery, no automation',                 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB5733-F',   'slug' => 'ib5733-f',   'capacity' => '3.3 m',     'summary' => 'Flatwork ironer 3.3 m – Rear delivery with integrated feeder',         'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        // Cylinder Ø 480 mm ironers (IC648xx / IV648xx)
-        ['name' => 'IC64821',    'slug' => 'ic64821',    'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, no automation (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64821LF',  'slug' => 'ic64821lf',  'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, length folding (IC648)',           'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64821R',   'slug' => 'ic64821r',   'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, no automation (IC648)',             'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64821FLF', 'slug' => 'ic64821flf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding and length folding (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64821RLF', 'slug' => 'ic64821rlf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IV64821FFS', 'slug' => 'iv64821ffs', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding, folding and stacking (IV648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64821FRL', 'slug' => 'ic64821frl', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding and integrated feeder (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64825',    'slug' => 'ic64825',    'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, no automation (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64825LF',  'slug' => 'ic64825lf',  'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, length folding (IC648)',           'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64825R',   'slug' => 'ic64825r',   'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, no automation (IC648)',             'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64825FLF', 'slug' => 'ic64825flf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding and length folding (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64825RLF', 'slug' => 'ic64825rlf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IV64825FFS', 'slug' => 'iv64825ffs', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding, folding and stacking (IV648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64825FRL', 'slug' => 'ic64825frl', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding and integrated feeder (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64832LF',  'slug' => 'ic64832lf',  'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, length folding (IC648)',           'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64832',    'slug' => 'ic64832',    'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, no automation (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64832FLF', 'slug' => 'ic64832flf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding and length folding (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64832R',   'slug' => 'ic64832r',   'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, no automation (IC648)',             'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64832RLF', 'slug' => 'ic64832rlf', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding (IC648)',            'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IV64832FFS', 'slug' => 'iv64832ffs', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Front delivery, feeding, folding and stacking (IV648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC64832FRL', 'slug' => 'ic64832frl', 'capacity' => 'Ø 480 mm',  'summary' => 'Cylinder Ø 480 mm – Rear delivery, length folding and integrated feeder (IC648)', 'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        // Cylinder Ø 330 mm ironers (IC633xx)
-        ['name' => 'IC63316',    'slug' => 'ic63316',    'capacity' => 'Ø 330 mm',  'summary' => 'Cylinder Ø 330 mm ironer – IC63316',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IC63320',    'slug' => 'ic63320',    'capacity' => 'Ø 330 mm',  'summary' => 'Cylinder Ø 330 mm ironer – IC63320',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        // Bed-type Ø 230 mm ironers (IB623xx)
-        ['name' => 'IB62310',    'slug' => 'ib62310',    'capacity' => 'Ø 230 mm',  'summary' => 'Bed-type ironer Ø 230 mm – IB62310',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB62314',    'slug' => 'ib62314',    'capacity' => 'Ø 230 mm',  'summary' => 'Bed-type ironer Ø 230 mm – IB62314',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
-        ['name' => 'IB62316',    'slug' => 'ib62316',    'capacity' => 'Ø 230 mm',  'summary' => 'Bed-type ironer Ø 230 mm – IB62316',                                  'image_path' => 'images/equipment/line6000-ironer.webp', 'sectors' => []],
+        [
+            'name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'capacity' => '2.5–3.3 m',
+            'title' => 'Line 6000 flatwork ironers',
+            'summary' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Flatwork ironer', 'Working width' => '2.5 – 3.3 m', 'Models' => 'IB5725, IB5730, IB5733 (+ -F feeder)'],
+                'Dimensions' => ['Working width' => '2.5 – 3.3 m', 'Installation' => 'Floor-standing, serviced install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'capacity' => 'Ø 480 mm',
+            'title' => 'Ø 480 mm cylinder ironers',
+            'summary' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Cylinder ironer', 'Cylinder' => 'Ø 480 mm', 'Delivery' => 'Front or rear', 'Automation' => 'Up to feeding, folding & stacking', 'Models' => 'IC648 21 / 25 / 32 series, IV648'],
+                'Dimensions' => ['Cylinder' => 'Ø 480 mm', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'capacity' => 'Ø 330 mm',
+            'title' => 'Ø 330 mm cylinder ironers',
+            'summary' => 'Mid-size cylinder ironers for steady on-premise finishing.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Cylinder ironer', 'Cylinder' => 'Ø 330 mm', 'Models' => 'IC63316, IC63320'],
+                'Dimensions' => ['Cylinder' => 'Ø 330 mm', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'capacity' => 'Ø 230 mm',
+            'title' => 'Ø 230 mm bed-type ironers',
+            'summary' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Bed-type ironer', 'Cylinder' => 'Ø 230 mm', 'Models' => 'IB62310, IB62314, IB62316'],
+                'Dimensions' => ['Cylinder' => 'Ø 230 mm', 'Installation' => 'Compact, floor-standing'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
-    // ── Drying Cabinets ───────────────────────────────────────────────────────
+    // ── Drying Cabinets ─────────────────────────────────────────────────────────
     'drying-cabinets' => [
-        ['name' => 'DC6-4',    'slug' => 'dc6-4',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-4',    'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-4HP',  'slug' => 'dc6-4hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-4HP',  'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-8',    'slug' => 'dc6-8',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-8',    'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-8HP',  'slug' => 'dc6-8hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-8HP',  'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-10HP', 'slug' => 'dc6-10hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-10HP', 'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-14',   'slug' => 'dc6-14',   'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-14',   'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Healthcare', 'Commercial']],
-        ['name' => 'DC6-14HP', 'slug' => 'dc6-14hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-14HP', 'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Healthcare', 'Commercial']],
-        ['name' => 'DC6-15WW', 'slug' => 'dc6-15ww', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Workwear – DC6-15WW', 'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Commercial']],
-        ['name' => 'DC7-4HP',  'slug' => 'dc7-4hp',  'capacity' => null, 'summary' => 'Line 7000 Drying Cabinet Heat Pump – DC7-4HP',  'image_path' => 'images/healthcare/Drying-cabinets_image.webp', 'sectors' => ['Hospitality', 'Commercial']],
+        [
+            'name' => 'Standard Drying Cabinets', 'slug' => 'standard-drying-cabinets', 'capacity' => 'Standard',
+            'title' => 'Standard drying cabinets',
+            'summary' => 'Gentle hang-drying cabinets for garments and linen across the standard range.',
+            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Drying cabinet', 'Range' => 'Standard', 'Models' => 'DC6-4, DC6-8, DC6-14', 'Strength' => 'Gentle, mechanical-action-free drying'],
+                'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Heat Pump Drying Cabinets', 'slug' => 'heat-pump-drying-cabinets', 'capacity' => 'Heat Pump',
+            'title' => 'Heat pump drying cabinets',
+            'summary' => 'Energy-saving heat pump drying cabinets that cut drying energy while protecting fabrics.',
+            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Heat pump drying cabinet', 'Models' => 'DC6-4HP, DC6-8HP, DC6-10HP, DC6-14HP, DC7-4HP', 'Efficiency' => 'Heat pump — lower drying energy'],
+                'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing, no exhaust'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Workwear Drying Cabinet', 'slug' => 'workwear-drying-cabinet', 'capacity' => 'Workwear',
+            'title' => 'Workwear drying cabinet',
+            'summary' => 'Specialist cabinet for drying workwear, PPE and heavier garments.',
+            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Workwear drying cabinet', 'Models' => 'DC6-15WW', 'Strength' => 'Workwear, PPE and heavier garments'],
+                'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+    ],
+
+    // ── Barrier Washers ─────────────────────────────────────────────────────────
+    'barrier-washers' => [
+        [
+            'name' => 'WB6 — Line 6000 Evolution Barrier Washer', 'slug' => 'wb6', 'capacity' => '13–110 kg',
+            'title' => 'Line 6000 Evolution barrier washer – WB6',
+            'summary' => 'Barrier washer for hygiene-critical laundry rooms needing clean/dirty separation, guided operation and long-term support.',
+            'image_path' => 'images/equipment/line6000-barrier-washer.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000 Evolution', 'Type' => 'Barrier (hygiene) washer', 'Capacity' => '13 – 110 kg',
+                    'Models' => 'WB6-13 → WB6-110', 'Hygiene' => 'Clean / dirty side separation',
+                ],
+                'Dimensions' => ['Footprint' => 'Through-wall barrier install', 'Installation' => 'Built into hygiene barrier'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
 ];
