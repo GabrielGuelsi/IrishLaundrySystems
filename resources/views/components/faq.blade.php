@@ -5,7 +5,7 @@
         @if($eyebrow)
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] text-center mb-3">{{ $eyebrow }}</p>
         @endif
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl text-center mb-3">{!! $heading !!}</h2>
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance text-center mb-3">{!! $heading !!}</h2>
         @if($subheading)
         <p class="font-body text-gray-500 text-base text-center leading-relaxed mb-10">{{ $subheading }}</p>
         @else

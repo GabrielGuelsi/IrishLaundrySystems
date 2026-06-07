@@ -45,8 +45,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Care home laundry is part of <span style="color:#148af4;">daily care</span>,<br>not a back-room task
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    Care home laundry is part of <span style="color:#148af4;">daily care</span>, not a back-room task
                 </h2>
             </div>
 
@@ -76,9 +76,9 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Demand</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                <span class="block">Laundry support for <span style="color:#148af4;">resident items,</span></span>
-                <span class="block">linen flow and <span style="color:#148af4;">staff routines</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                <span class="">Laundry support for <span style="color:#148af4;">resident items,</span></span>
+                <span class="">linen flow and <span style="color:#148af4;">staff routines</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
                 Care facility laundry needs to move through the week without adding strain for managers, care teams, residents or staff. The right setup should account for resident clothing, bedding, towels, staff items, hygiene handling, drying pressure and the care needed to keep equipment running.
@@ -125,13 +125,13 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="block"><span style="color:#148af4;">Control care home laundry costs</span> before</span>
-                <span class="block">they quietly build up</span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <span class=""><span style="color:#148af4;">Control care home laundry costs</span> before</span>
+                <span class="">they quietly build up</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block">In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.</span>
-                <span class="block">The right equipment plan should keep daily care moving while reducing avoidable running costs.</span>
+                In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.
+                The right equipment plan should keep daily care moving while reducing avoidable running costs.
             </p>
         </div>
 
@@ -151,13 +151,13 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="block">Features that support <span style="color:#148af4;">daily care,</span> <span style="color:#148af4;">staff handling</span></span>
-                <span class="block">and <span style="color:#148af4;">laundry consistency</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <span class="">Features that support <span style="color:#148af4;">daily care,</span> <span style="color:#148af4;">staff handling</span></span>
+                <span class="">and <span style="color:#148af4;">laundry consistency</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block">Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more</span>
-                <span class="block">manageable day-to-day laundry routines when matched to the right care setting.</span>
+                Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more
+                manageable day-to-day laundry routines when matched to the right care setting.
             </p>
         </div>
 
@@ -223,7 +223,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Routes</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Connected support to <span style="color:#148af4;">keep daily care moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -283,7 +283,7 @@
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
                     {{-- Title (always visible) --}}
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
@@ -311,9 +311,9 @@
 
     <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
 
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-4xl lg:text-5xl block">Plan the care laundry room</span>
-            <span class="text-4xl lg:text-5xl block" style="color:#011E41;">before daily costs build up</span>
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4">
+            <span class="text-white text-4xl lg:text-5xl">Plan the care laundry room</span>
+            <span class="text-4xl lg:text-5xl" style="color:#011E41;">before daily costs build up</span>
         </h2>
 
         <p class="font-body text-white text-base leading-relaxed mb-6">
@@ -342,9 +342,9 @@
 
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="block">Equipment built around <span style="color:#148af4;">resident items,</span></span>
-                <span class="block">staff routines and <span style="color:#148af4;">running cost</span></span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <span class="">Equipment built around <span style="color:#148af4;">resident items,</span></span>
+                <span class="">staff routines and <span style="color:#148af4;">running cost</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The right equipment plan depends on daily load, resident items, drying pressure, staff handling, available space and the care that keeps the equipment performing over time.
@@ -669,13 +669,13 @@
         {{-- Section header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="block"><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
-                <span class="block">another running cost</span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <span class=""><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
+                <span class="">another running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                <span class="block">Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,</span>
-                <span class="block">lower chemical overuse, protect resident clothing, bedding and towels, and support more consistent wash results over time.</span>
+                Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,
+                lower chemical overuse, protect resident clothing, bedding and towels, and support more consistent wash results over time.
             </p>
         </div>
 
@@ -831,7 +831,7 @@
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Our process keeps the <span style="color:#148af4;">next step clear</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">

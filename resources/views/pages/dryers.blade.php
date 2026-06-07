@@ -17,7 +17,7 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Tumble Dryers</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Choose commercial dryers around <span style="color:#148af4;">energy use, linen turnaround and long-term support</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
                     Dryer choice affects <span style="color:#148af4;">energy cost, linen flow and support after installation</span>
                 </h2>
             </div>
@@ -78,7 +78,7 @@
             {{-- Left: copy --}}
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
-                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
+                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-5">
                     Save <span style="color:#148af4;">65% on energy consumption</span> with Heat Pump Dryer technology
                 </h2>
                 <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
@@ -126,7 +126,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose dryers around the <span style="color:#148af4;">energy and turnaround pressure your laundry room carries every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -158,7 +158,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Dryer features that support <span style="color:#148af4;">energy control, fabric care and drying performance</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -191,15 +191,19 @@
 <section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        {{-- Intro + ERGOCERT badge --}}
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-12 lg:mb-16">
 
-            <div class="lg:col-span-5 reveal reveal-left">
+            <div class="lg:col-span-7 reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
                     Dryer design built around <span style="color:#148af4;">daily handling, space and operator comfort</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                     Drying is repeated work. The right dryer should support loading, unloading, filter access and everyday handling, not just drying capacity.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-7">
+                    Line 6000 Tumble Dryers are designed for <strong class="font-bold text-navy">safe, repetitive operation</strong> and are the only dryer range to receive the Ergocert 4-star ergonomic rating.
                 </p>
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -208,27 +212,45 @@
                 </a>
             </div>
 
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 reveal reveal-right">
-                @foreach([
-                    ['t' => '4-star ERGOCERT',                  's' => 'Certified ergonomic design rating', 'd' => 'M11.48 3.5a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z'],
-                    ['t' => 'Ideal door height',                's' => 'Comfortable loading and unloading', 'd' => 'M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18m-3.75-3.75L12 21l3.75-3.75'],
-                    ['t' => 'Better grip',                      's' => 'Easier daily handling',             'd' => 'M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75'],
-                    ['t' => 'Safer insulated glass door',       's' => 'Cooler door surface in use',        'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z'],
-                    ['t' => 'Easy-access filter drawer',        's' => 'Horizontal, simple to clean',       'd' => 'M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z'],
-                    ['t' => 'Space-saving design',              's' => 'Where applicable to the room',      'd' => 'M9 9V4.5M9 9H4.5M9 9 3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5 5.25 5.25'],
-                ] as $pp)
-                <div class="bg-white border border-gray-100 rounded-2xl p-5 flex items-start gap-3 shadow-card">
-                    <span class="flex items-center justify-center w-11 h-11 rounded-xl bg-[#148af4]/10 flex-shrink-0">
-                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pp['d'] }}"/></svg>
-                    </span>
-                    <div>
-                        <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $pp['t'] }}</h3>
-                        <p class="font-body text-gray-500 text-xs leading-relaxed mt-0.5">{{ $pp['s'] }}</p>
+            {{-- ERGOCERT 4-star certification badge --}}
+            <div class="lg:col-span-5 flex lg:justify-end reveal reveal-right">
+                <div class="relative w-full max-w-xs bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
+                    <div class="absolute top-0 right-0 z-10 bg-[#148af4] text-white text-[0.6rem] font-body font-bold uppercase tracking-[0.12em] px-3 py-1.5 rounded-bl-xl">Unique in the industry</div>
+                    <div class="px-8 pt-10 pb-8 text-center">
+                        <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-44 h-auto mx-auto">
+                        <div class="border-t border-gray-200 mt-5 pt-5">
+                            <p class="font-body text-gray-500 text-xs uppercase tracking-[0.18em] mb-2.5">Ergonomics Certified</p>
+                            <div class="flex items-center justify-center gap-1.5 text-[#148af4]">
+                                @for($s = 0; $s < 4; $s++)
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.48 3.5a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+                                @endfor
+                            </div>
+                            <p class="font-heading font-bold text-navy text-lg mt-2.5">4-Star Rating</p>
+                        </div>
                     </div>
                 </div>
-                @endforeach
             </div>
 
+        </div>
+
+        {{-- Detailed ergonomic features (2×2) --}}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-8 lg:gap-y-10 reveal">
+            @foreach([
+                ['t' => 'Ideal door height',          'd' => 'M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18m-3.75-3.75L12 21l3.75-3.75', 'b' => 'The door sits at an ergonomically suitable height, making a real difference when loading and unloading throughout the day.'],
+                ['t' => 'A better grip',               'd' => 'M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75', 'b' => 'The handle design and easy-close magnetic door let operators open and shut the door smoothly, every time.'],
+                ['t' => 'Safer insulated glass door',  'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', 'b' => 'The insulated glass door stays cool on the outside, so there is no risk of burned fingers or hands.'],
+                ['t' => 'Easy-access filter drawer',   'd' => 'M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z', 'b' => 'The filter drawer is oriented horizontally for easy access and effortless cleaning, with no need to stoop or bend down.'],
+            ] as $pp)
+            <div class="flex items-start gap-4">
+                <span class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#148af4]/10 flex-shrink-0">
+                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pp['d'] }}"/></svg>
+                </span>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-1.5">{{ $pp['t'] }}</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $pp['b'] }}</p>
+                </div>
+            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -239,7 +261,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dryer Range Starting Points</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Drying paths <span style="color:#148af4;">worth a closer look</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
@@ -318,10 +340,8 @@
     </div>
     <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-4xl lg:text-5xl block">Plan drying around the</span>
-            <span class="text-white text-4xl lg:text-5xl block"><span style="color:#011E41;">room, energy use</span></span>
-            <span class="text-white text-4xl lg:text-5xl block">and <span style="color:#011E41;">linen flow</span></span>
+        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Plan drying around the <span style="color:#011E41;">room, energy use</span> and <span style="color:#011E41;">linen flow</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A dryer should fit the room, the utilities and the pressure placed on it every day. Irish Laundry Systems connects capacity, ventilation, access, energy use, installation and support before the equipment decision is made.
@@ -404,7 +424,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare dryer options around <span style="color:#148af4;">capacity, energy and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -497,7 +517,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support routes that keep <span style="color:#148af4;">dryer decisions moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -554,7 +574,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -583,7 +603,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Keep dryer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -635,7 +655,7 @@
 {{-- 19. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right dryer decision</span> for your laundry room?
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

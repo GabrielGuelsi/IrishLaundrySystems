@@ -21,7 +21,7 @@
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-5xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">About Irish Laundry Systems</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="block"><span class="text-[#011E41]">Keeping</span> <span class="text-[#148af4]">commercial laundry</span></span>
                     <span class="block text-[#148af4]">equipment, service and aftercare</span>
                     <span class="block"><span class="text-[#148af4]">connected</span> <span class="text-[#011E41]">since 1987</span></span>
@@ -60,8 +60,8 @@
 
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems Exists</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    Commercial laundry<br>decisions <span class="text-[#148af4]">do not stop<br>at the machine</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    Commercial laundry decisions <span class="text-[#148af4]">do not stop at the machine</span>
                 </h2>
             </div>
 
@@ -99,7 +99,7 @@
 
         <div class="mb-12 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Proof & Scale</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
                 Technical work, recognised partners and <span class="text-[#148af4]">real sites served</span> over more than three decades
             </h2>
         </div>
@@ -152,8 +152,8 @@
             <!-- Content -->
             <div class="reveal">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5">Technical Foundations</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="text-[#148af4]">Electrical contracting roots</span><br>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                    <span class="text-[#148af4]">Electrical contracting roots</span>
                     <span class="text-[#148af4]">Commercial laundry equipment experience</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
@@ -185,9 +185,9 @@
     </div>
     <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
         <p class="font-heading font-bold text-white/60 text-xs uppercase tracking-[0.22em] mb-4">Site, Workflow & Capacity</p>
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-4xl lg:text-5xl block"><span class="text-white">Designed around your </span><span style="color:#011E41;">site,</span></span>
-            <span class="text-4xl lg:text-5xl block" style="color:#011E41;">workflow and capacity</span>
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4">
+            <span class="text-4xl lg:text-5xl"><span class="text-white">Designed around your </span><span style="color:#011E41;">site,</span></span>
+            <span class="text-4xl lg:text-5xl" style="color:#011E41;">workflow and capacity</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Every laundry room has its own pressure points: space, utilities, equipment condition, workflow and daily volume. Irish Laundry Systems uses that site understanding to guide equipment supply, rental, maintenance, repairs and aftercare around what the room needs.
@@ -224,8 +224,8 @@
 
         <div class="mb-14 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Connected Routes</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                Equipment supply, service and aftercare<br>connected around <span class="text-[#148af4]">real site needs</span>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                Equipment supply, service and aftercare connected around <span class="text-[#148af4]">real site needs</span>
             </h2>
         </div>
 
@@ -322,7 +322,7 @@
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
             <div class="max-w-3xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5">How We Work Around the Site</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     From site understanding to <span class="text-[#148af4]">the right next step</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -383,8 +383,8 @@
             {{-- Left: copy --}}
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Partnership</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">
-                    Electrolux Professional platform<br>Irish Laundry Systems <span class="text-[#148af4]">local execution</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                    Electrolux Professional platform Irish Laundry Systems <span class="text-[#148af4]">local execution</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Electrolux Professional delivers the equipment platform, engineering and genuine parts route. Irish Laundry Systems brings it to Irish commercial sites through installation, maintenance and aftercare.
@@ -458,8 +458,8 @@
         <div class="rounded-2xl px-10 lg:px-14 py-12 lg:py-14 w-full lg:max-w-xl text-center reveal"
              style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Responsible Equipment</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
-                <span class="text-[#148af4]">Efficient equipment choices,</span><br>planned around the site
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <span class="text-[#148af4]">Efficient equipment choices,</span> planned around the site
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed mb-6">
                 Electrolux Professional equipment can help improve water use, energy use and lifecycle performance compared with older laundry equipment. Irish Laundry Systems helps customers plan, install, maintain and replace equipment with site requirements, lifecycle cost and responsible disposal in mind.
@@ -487,8 +487,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16 reveal">
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Company History</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    From electrical contracting<br>to <span class="text-[#148af4]">commercial laundry expertise</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
                 </h2>
             </div>
             <div class="lg:pt-9">

@@ -24,7 +24,7 @@
     <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
 
         {{-- Heading --}}
-        <h2 class="font-heading font-bold leading-tight mb-4 text-4xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-4xl lg:text-5xl text-white">
             {!! $heading !!}
         </h2>
 

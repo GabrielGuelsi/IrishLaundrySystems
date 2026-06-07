@@ -33,12 +33,12 @@
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
         @endif
 
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-3xl lg:text-5xl block" style="color:{{ $accentFirst ? '#011E41' : '#ffffff' }};">{!! $headingLine1 !!}</span>
-            <span class="text-3xl lg:text-5xl block" style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
+        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <span style="color:{{ $accentFirst ? '#011E41' : '#ffffff' }};">{!! $headingLine1 !!}</span>
+            <span style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
         </h2>
 
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
             {{ $body }}
         </p>
 

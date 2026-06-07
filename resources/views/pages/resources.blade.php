@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('pageTitle', 'Resources | Guides, Checklists & Industry Insights | ILS')
 @section('metaDescription', 'Practical guides, checklists and reference material to help commercial laundry operators manage equipment, reduce downtime and stay compliant.')
@@ -25,7 +25,7 @@
         </div>
 
         {{-- Headline --}}
-        <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl text-center leading-tight mb-5 max-w-4xl mx-auto">
+        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl text-center leading-tight mb-5 max-w-4xl mx-auto">
             Resources for <span style="color:#148af4;">smarter</span><br class="hidden lg:block"> laundry operations
         </h1>
         <p class="font-body text-white/45 text-base text-center max-w-xl mx-auto mb-10 leading-relaxed">
@@ -133,8 +133,8 @@
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Library</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Guides</h2>
-                <p class="font-body text-gray-400 text-sm mt-1">Practical reference material for operators and facilities managers</p>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">Guides</h2>
+                <p class="font-body text-gray-400 text-base leading-relaxed mt-1">Practical reference material for operators and facilities managers</p>
             </div>
             <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline whitespace-nowrap">Request a guide →</a>
         </div>
@@ -257,8 +257,8 @@
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Ready to use</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Checklists</h2>
-                <p class="font-body text-gray-400 text-sm mt-1">Print-ready and digital checklists for operators and engineers</p>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">Checklists</h2>
+                <p class="font-body text-gray-400 text-base leading-relaxed mt-1">Print-ready and digital checklists for operators and engineers</p>
             </div>
         </div>
 
@@ -342,8 +342,8 @@
 
         <div class="text-center mb-12 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">By Machine</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-3">Resources by machine type</h2>
-            <p class="font-body text-white/40 text-sm max-w-xl mx-auto leading-relaxed">
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-3">Resources by machine type</h2>
+            <p class="font-body text-white/40 text-base max-w-xl mx-auto leading-relaxed">
                 Each machine type has its own maintenance requirements, operator checks and service considerations — find resources specific to your equipment.
             </p>
         </div>
@@ -440,10 +440,10 @@
                         <span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>
                         Stay Informed
                     </span>
-                    <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
-                        Get new resources<br>as they're published
+                    <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                        Get new resources as they're published
                     </h2>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed max-w-md mb-8">
+                    <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-8">
                         New guides, checklists and technical references — sent directly when available. No marketing, no frequency commitments.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-3 max-w-md">

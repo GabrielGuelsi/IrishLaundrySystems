@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
                     Ironer choice affects <span style="color:#148af4;">finish quality, throughput and support after installation</span>
                 </h2>
             </div>
@@ -76,7 +76,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose ironers around the <span style="color:#148af4;">costs your finishing line carries every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -109,7 +109,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Ironer features that support <span style="color:#148af4;">finishing quality, control and daily handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -146,7 +146,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Ironer Range Starting Points</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment paths <span style="color:#148af4;">worth a closer look</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
@@ -225,10 +225,10 @@
     </div>
     <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-4xl lg:text-5xl block">Build the ironer decision</span>
-            <span class="text-white text-4xl lg:text-5xl block">around the <span style="color:#011E41;">room, workflow</span></span>
-            <span class="text-white text-4xl lg:text-5xl block">and <span style="color:#011E41;">support</span></span>
+        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <span class="text-white text-4xl lg:text-5xl">Build the ironer decision</span>
+            <span class="text-white text-4xl lg:text-5xl">around the <span style="color:#011E41;">room, workflow</span></span>
+            <span class="text-white text-4xl lg:text-5xl">and <span style="color:#011E41;">support</span></span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             An ironer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects working width, utilities, access, throughput, installation and support before the equipment decision is made.
@@ -252,7 +252,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Ironer Range</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare ironer options around <span style="color:#148af4;">working width, finish and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -343,7 +343,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support routes that keep <span style="color:#148af4;">ironer decisions moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -400,7 +400,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4 whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -429,7 +429,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Keep ironer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -483,7 +483,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">Brochures, guides and useful reading</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">Brochures, guides and useful reading</h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
@@ -539,7 +539,7 @@
 {{-- 16. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right ironer decision</span> for your finishing line?
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

@@ -187,7 +187,7 @@
                     Preventive Maintenance Contracts
                 </p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-6xl text-balance">
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
                     Keep your laundry operation&nbsp;running<br class="hidden md:block">with <span class="text-steel">fewer&nbsp;surprise</span> costs
                 </h1>
 
@@ -286,8 +286,8 @@
 
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">What you gain</span> with a<br class="hidden md:block">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
+                <span class="text-steel">What you gain</span> with a
                 Preventive Maintenance Contract
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
@@ -435,8 +435,8 @@
         {{-- Centered header — 2-line title --}}
         <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Financial Value</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal" style="transition-delay:80ms;">
-                <span class="text-steel">Protect your maintenance budget</span><br>before small problems become expensive repairs
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal text-balance" style="transition-delay:80ms;">
+                <span class="text-steel">Protect your maintenance budget</span> before small problems become expensive repairs
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:140ms;">
                 Many sites compare a contract only against doing nothing. But waiting for breakdowns brings urgent call-outs, downtime, delays and unplanned repair costs.
@@ -584,7 +584,7 @@
 <section class="w-full overflow-hidden pb-16 lg:pb-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Preventive Visits</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight max-w-3xl reveal" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight max-w-3xl reveal text-balance" style="transition-delay:80ms;">
             How <span class="text-steel">preventive visits</span> work
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed mt-4 max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
@@ -643,7 +643,7 @@
 
         <div class="max-w-3xl mb-12 lg:mb-14">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Sector Support</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.1] tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 <span class="text-steel">Planned maintenance</span> for different laundry pressures
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
@@ -739,7 +739,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center reveal">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Client Feedback</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-[1.15] tracking-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight tracking-tight text-balance">
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mt-4 text-pretty">
@@ -823,9 +823,9 @@ $faqs = [
 
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">After the Visit</p>
 
-        <h2 class="font-heading font-bold leading-tight mb-5">
-            <span class="text-white text-4xl lg:text-5xl block">Turn preventive visit findings</span>
-            <span class="text-white text-4xl lg:text-5xl block">into the <span class="text-steel">right next step</span></span>
+        <h2 class="font-heading font-bold leading-tight mb-5 text-4xl lg:text-5xl text-balance">
+            <span class="text-white text-4xl lg:text-5xl">Turn preventive visit findings</span>
+            <span class="text-white text-4xl lg:text-5xl">into the <span class="text-steel">right next step</span></span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
@@ -881,8 +881,8 @@ $faqs = [
                 <div class="relative lg:col-span-2 p-8 lg:p-12 flex flex-col gap-6 overflow-hidden">
                     <div>
                         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Book a Preventive Maintenance Visit</p>
-                        <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] mb-5 text-balance">
-                            Protect your laundry operation<br class="hidden lg:block">
+                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                            Protect your laundry operation
                             with <span class="text-steel">planned maintenance support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">

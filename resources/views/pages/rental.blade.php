@@ -137,7 +137,7 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">Rental vs Outright Purchase</h2>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">Rental vs Outright Purchase</h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-2xl mx-auto">Both have their place. Here's what makes rental the right choice for some operations.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -206,7 +206,7 @@
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-12">
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">How Rental Works</h2>
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">How Rental Works</h2>
             <p class="font-body text-blue-200 text-base leading-relaxed max-w-xl mx-auto">Three steps from enquiry to equipment in place.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">

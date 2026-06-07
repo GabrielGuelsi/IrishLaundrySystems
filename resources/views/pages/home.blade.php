@@ -82,8 +82,8 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around the Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
-                    <span class="text-[#148af4]">Laundry care</span> built around the site,<br>the equipment and<br>the <span class="text-[#148af4]">next practical step</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    <span class="text-[#148af4]">Laundry care</span> built around the site, the equipment and the <span class="text-[#148af4]">next practical step</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
