@@ -44,15 +44,17 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Washer Planning</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-            {{-- Left: eyebrow + title + subtitle (under the title) + CTA --}}
             <div class="reveal reveal-left">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Washer Planning</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
                     Washer choice affects <span style="color:#148af4;">cost control, laundry flow and support after installation</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-xl">
+            </div>
+
+            <div class="reveal reveal-right">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     The wrong washer fit can create daily pressure through water use, detergent waste, drying delays, staff routines, service calls and replacement pressure. Irish Laundry Systems connects washer selection, room layout, installation, rental, maintenance, repairs and aftercare into one clear equipment decision.
                 </p>
                 <a href="#washer-range"
@@ -64,104 +66,106 @@
                 </a>
             </div>
 
-            {{-- Right: auto-rotating equipment slideshow (crossfade every 3s, no controls) --}}
-            <div class="reveal reveal-right">
-                <div x-data="{
-                        cur: 0,
-                        imgs: [
-                            { src: '/images/equipment/commercialwasher.webp',       label: 'Commercial Washers' },
-                            { src: '/images/equipment/line6000-tumble-dryer.webp',   label: 'Tumble Dryers' },
-                            { src: '/images/equipment/line6000-ironer.webp',         label: 'Ironers' },
-                            { src: '/images/equipment/line6000-barrier-washer.webp', label: 'Barrier Washers' },
-                            { src: '/images/healthcare/lagoon-advanced-care.webp',   label: 'Wet Cleaning' },
-                        ],
-                        init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
-                     }"
-                     class="relative w-full">
-                    <div class="relative flex items-center justify-center" style="height: 420px;">
-                        <template x-for="(img, i) in imgs" :key="i">
-                            <img :src="img.src" :alt="img.label"
-                                 class="absolute inset-0 m-auto max-h-[80%] w-auto object-contain transition-opacity duration-700 ease-in-out"
-                                 :class="cur === i ? 'opacity-100' : 'opacity-0'">
-                        </template>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
-{{-- 5. LIFE-CYCLE COST FEATURE — "Look under the surface" iceberg infographic --}}
-<section class="py-16 lg:py-24 bg-white overflow-hidden">
-    <div class="max-w-5xl mx-auto px-6 sm:px-10">
+{{-- 5. LIFE-CYCLE COST FEATURE — washer + iceberg infographic --}}
+<section class="py-16 lg:py-24 bg-white overflow-x-hidden">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
 
-        {{-- Title + intro --}}
-        <div class="reveal max-w-3xl mb-14 lg:mb-16">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                Look under the surface
+        {{-- Title + intro (original copy) --}}
+        <div class="reveal max-w-3xl mb-12 lg:mb-14">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                <span style="color:#148af4;">Look beyond purchase price</span> to the costs that keep repeating
             </h2>
-            <p class="font-body text-navy/80 text-base lg:text-lg leading-relaxed">
-                When considering the cost of an investment, the up-front expense is just the tip of the iceberg. Operating costs accumulated year after year make up the largest share of your operations expense. During the life cycle of your laundry equipment <span class="font-bold text-navy">our washers and dryers will cost you much less and make your investment more profitable</span>.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Purchase price is only the first part of a washer decision. Over the life of the equipment, chemicals, energy and water carry the larger cost pressure, so the right washer choice should be made around daily use, not just initial purchase.
             </p>
         </div>
 
-        {{-- Infographic: left callouts | iceberg | right callouts --}}
-        <div class="reveal grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-y-10 gap-x-8 lg:gap-x-6 items-stretch">
+        {{-- Washer image + iceberg infographic --}}
+        <div class="reveal grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 lg:gap-12 items-center">
 
-            {{-- LEFT column --}}
-            <div class="order-2 lg:order-1 flex flex-col lg:h-[540px] lg:justify-between lg:pt-[120px] lg:pb-[36px] lg:text-right lg:items-end gap-8">
-                <div class="bg-[#eaf4fc] rounded-lg p-6 lg:max-w-[260px]">
-                    <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">Our &ldquo;iceberg&rdquo; is slim</h3>
-                    <p class="font-body text-navy/70 text-sm leading-relaxed">
-                        While other washers and dryers have <span class="font-bold text-navy">extensive lifetime costs,</span> we can represent ours with a slimmer iceberg shape because of the savings you will achieve thanks to its <span class="font-bold text-navy">money-saving features</span> and robust engineering.
-                    </p>
-                </div>
-                <div class="lg:max-w-[260px]">
-                    <h3 class="font-heading font-bold text-navy text-lg leading-tight mb-2">Competitors&rsquo; life cycle costs*</h3>
-                    <p class="font-body text-navy/70 text-sm leading-relaxed">
-                        Here is a representation of what other brands cost over the life of their washers and dryers.
-                    </p>
-                    <p class="font-body text-navy/50 text-xs italic mt-3">*Data available on request</p>
+            {{-- Auto-rotating equipment slideshow (images passing by every 3s, no controls) --}}
+            <div x-data="{
+                    cur: 0,
+                    imgs: [
+                        '/images/equipment/commercialwasher.webp',
+                        '/images/equipment/line6000-tumble-dryer.webp',
+                        '/images/equipment/line6000-ironer.webp',
+                        '/images/equipment/line6000-barrier-washer.webp',
+                        '/images/healthcare/lagoon-advanced-care.webp',
+                    ],
+                    init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
+                 }"
+                 class="relative w-full">
+                <div class="relative flex items-center justify-center" style="height: 440px;">
+                    <template x-for="(img, i) in imgs" :key="i">
+                        <img :src="img" alt="Commercial laundry equipment"
+                             class="absolute inset-0 m-auto w-full h-auto max-h-full object-contain transition-opacity duration-700 ease-in-out"
+                             :class="cur === i ? 'opacity-100' : 'opacity-0'">
+                    </template>
                 </div>
             </div>
 
-            {{-- ICEBERG --}}
-            <div class="order-1 lg:order-2 flex justify-center">
-                <img src="/images/iceberg.png" alt="Life-cycle cost iceberg" class="w-52 sm:w-60 h-auto lg:h-[540px] lg:w-auto">
-            </div>
+            {{-- Iceberg infographic: left callouts | iceberg | right callouts --}}
+            <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] gap-y-10 gap-x-5 items-center">
 
-            {{-- RIGHT column --}}
-            <div class="order-3 lg:order-3 flex flex-col lg:h-[540px] lg:pt-[96px] gap-8">
-                <div>
-                    <div class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-none">10%</div>
-                    <div class="font-body font-semibold text-navy text-sm mt-1">Up-front investment</div>
-                </div>
-                <div class="border border-dotted border-gray-400 rounded-lg p-6 lg:max-w-[290px]">
-                    <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none">90%</div>
-                    <div class="font-body font-semibold text-navy text-sm mt-1 mb-2">Life cycle costs</div>
-                    <p class="font-body text-navy/70 text-sm leading-relaxed mb-4">
-                        These costs make up <span class="font-bold text-navy">the bulk of your expenses</span> during the lifetime of your washer or dryer.
-                    </p>
-                    <div class="flex items-center gap-5 mb-4 text-navy">
-                        @foreach([
-                            'M10 3h4v3l3 6.5V19a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.5L10 6V3z',
-                            'M13 3 4 14h7l-1 7 9-11h-7l1-7z',
-                            'M12 3c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z',
-                        ] as $d)
-                        <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $d }}"/></svg>
-                        @endforeach
+                {{-- LEFT column --}}
+                <div class="order-2 lg:order-1 flex flex-col lg:text-right lg:items-end gap-8">
+                    <div class="bg-[#eaf4fc] rounded-lg p-6 lg:max-w-[230px]">
+                        <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">Our &ldquo;iceberg&rdquo; is slim</h3>
+                        <p class="font-body text-navy/70 text-sm leading-relaxed">
+                            While other washers and dryers have <span class="font-bold text-navy">extensive lifetime costs,</span> we can represent ours with a slimmer iceberg shape because of the savings you will achieve thanks to its <span class="font-bold text-navy">money-saving features</span> and robust engineering.
+                        </p>
                     </div>
-                    <ul class="space-y-1.5">
-                        @foreach(['Chemicals', 'Energy', 'Water'] as $li)
-                        <li class="font-body font-semibold text-navy text-sm flex items-center gap-2">
-                            <span class="text-[#148af4]">&#9656;</span> {{ $li }}
-                        </li>
-                        @endforeach
-                    </ul>
+                    <div class="lg:max-w-[230px]">
+                        <h3 class="font-heading font-bold text-navy text-lg leading-tight mb-2">Competitors&rsquo; life cycle costs*</h3>
+                        <p class="font-body text-navy/70 text-sm leading-relaxed">
+                            Here is a representation of what other brands cost over the life of their washers and dryers.
+                        </p>
+                        <p class="font-body text-navy/50 text-xs italic mt-3">*Data available on request</p>
+                    </div>
                 </div>
-            </div>
 
+                {{-- ICEBERG --}}
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <img src="/images/iceberg.png" alt="Life-cycle cost iceberg" class="w-48 sm:w-56 h-auto lg:h-[440px] lg:w-auto">
+                </div>
+
+                {{-- RIGHT column --}}
+                <div class="order-3 lg:order-3 flex flex-col gap-8">
+                    <div>
+                        <div class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-none">10%</div>
+                        <div class="font-body font-semibold text-navy text-sm mt-1">Up-front investment</div>
+                    </div>
+                    <div class="border border-dotted border-gray-400 rounded-lg p-6 lg:max-w-[280px]">
+                        <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none">90%</div>
+                        <div class="font-body font-semibold text-navy text-sm mt-1 mb-2">Life cycle costs</div>
+                        <p class="font-body text-navy/70 text-sm leading-relaxed mb-4">
+                            These costs make up <span class="font-bold text-navy">the bulk of your expenses</span> during the lifetime of your washer or dryer.
+                        </p>
+                        <div class="flex items-center gap-5 mb-4 text-navy">
+                            @foreach([
+                                'M10 3h4v3l3 6.5V19a2 2 0 01-2 2H9a2 2 0 01-2-2v-6.5L10 6V3z',
+                                'M13 3 4 14h7l-1 7 9-11h-7l1-7z',
+                                'M12 3c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z',
+                            ] as $d)
+                            <svg class="w-6 h-6 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $d }}"/></svg>
+                            @endforeach
+                        </div>
+                        <ul class="space-y-1.5">
+                            @foreach(['Chemicals', 'Energy', 'Water'] as $li)
+                            <li class="font-body font-semibold text-navy text-sm flex items-center gap-2">
+                                <span class="text-[#148af4]">&#9656;</span> {{ $li }}
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </section>
