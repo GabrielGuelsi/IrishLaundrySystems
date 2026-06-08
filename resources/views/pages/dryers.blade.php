@@ -82,58 +82,61 @@
                     <span style="color:#148af4;">Save 65% on energy consumption</span> with Heat Pump Dryer technology
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-xl">
-                    Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. In suitable laundry room setups, it can also reduce installation pressure by removing the need for exhaust or a water cooling system.
+                    Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. For sites where the room setup is suitable, it can also reduce installation pressure by avoiding the need for exhaust or a water cooling system.
                 </p>
+                <div class="mb-8 overflow-hidden flex items-center justify-center h-[240px] lg:h-[300px]">
+                    <img src="/images/equipment/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="w-full h-auto object-contain scale-[1.3] origin-center">
+                </div>
                 <a href="#dryer-range"
                    class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-base transition-colors duration-200">
                     Explore Heat Pump Dryers
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
-                <div class="mt-8 lg:mt-10 overflow-hidden flex items-center justify-center h-[240px] lg:h-[300px]">
-                    <img src="/images/equipment/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="w-full h-auto object-contain scale-[1.3] origin-center">
-                </div>
             </div>
 
-            {{-- RIGHT: spec card --}}
+            {{-- RIGHT: two spec panels --}}
             <div class="reveal reveal-right lg:mt-9">
-                <div class="border border-gray-200 rounded-2xl p-8 lg:p-10 shadow-sm bg-white">
-                    <div class="grid grid-cols-[0.9fr_1.3fr] gap-6 lg:gap-8">
+                <div class="grid grid-cols-1 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-6 items-start">
 
-                        {{-- Card left: 65% + feature list --}}
-                        <div class="pr-1">
-                            <div class="pb-5">
-                                <div class="font-heading font-bold text-[#148af4] text-6xl lg:text-7xl leading-none">65%</div>
-                                <div class="font-heading font-bold text-navy text-lg mt-2">energy saving</div>
-                                <div class="font-body text-gray-500 text-sm mt-1">on your energy consumption</div>
+                    {{-- Panel A: 65% + feature list (dashed border) --}}
+                    <div class="rounded-2xl border border-dashed border-gray-300 bg-white p-6 lg:p-7 flex flex-col">
+                        <div class="pb-3">
+                            <div class="flex items-center gap-3 mb-1">
+                                <span class="flex items-center justify-center w-10 h-10 rounded-xl bg-[#148af4]/10 flex-shrink-0">
+                                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                                </span>
+                                <div class="font-heading font-bold text-[#148af4] text-5xl lg:text-6xl leading-none">65%</div>
                             </div>
-                            <div class="divide-y divide-gray-200 border-t border-gray-200">
-                                @foreach([
-                                    ['t' => 'No exhaust needed',          'd' => 'M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'],
-                                    ['t' => 'No water cooling system',     'd' => 'M12 21a6.75 6.75 0 01-6.75-6.75c0-3 3.5-7.5 6.75-11.25 3.25 3.75 6.75 8.25 6.75 11.25A6.75 6.75 0 0112 21z'],
-                                    ['t' => 'Lower installation pressure', 'd' => 'M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3'],
-                                    ['t' => 'Easier filter access',        'd' => 'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z'],
-                                ] as $f)
-                                <div class="flex items-center gap-3.5 py-6">
-                                    <span class="flex-shrink-0 flex items-center justify-center w-11 h-11 rounded-full border border-[#148af4]">
-                                        <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $f['d'] }}"/></svg>
-                                    </span>
-                                    <span class="font-heading font-bold text-navy text-sm leading-snug">{{ $f['t'] }}</span>
-                                </div>
-                                @endforeach
-                            </div>
+                            <div class="font-heading font-bold text-navy text-base mt-2">energy saving</div>
+                            <div class="font-body text-gray-500 text-xs mt-1">on your energy consumption</div>
                         </div>
-
-                        {{-- Card right: illustration + spec notes --}}
-                        <div class="pl-6 lg:pl-8 border-l border-gray-200">
-                            <img src="/images/equipment/Asset-1.webp" alt="No exhaust duct or water cooling connection required" class="w-full h-auto mb-6">
-                            <div class="space-y-4">
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Low footprint, ultra-quiet 56dB operation and &lsquo;plug &amp; play&rsquo; capabilities.</p>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">Units operate in ambient temperatures from +10&deg;C to +45&deg;C.</p>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed">A horizontal filter drawer allows for easy maintenance and machine servicing.</p>
+                        <div class="divide-y divide-gray-200 border-t border-gray-200">
+                            @foreach([
+                                ['t' => 'No exhaust needed',          'd' => 'M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'],
+                                ['t' => 'No water cooling system',     'd' => 'M12 21a6.75 6.75 0 01-6.75-6.75c0-3 3.5-7.5 6.75-11.25 3.25 3.75 6.75 8.25 6.75 11.25A6.75 6.75 0 0112 21z'],
+                                ['t' => 'Lower installation pressure', 'd' => 'M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3'],
+                                ['t' => 'Easier filter access',        'd' => 'M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z'],
+                            ] as $f)
+                            <div class="flex items-center gap-3 py-4">
+                                <span class="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full border border-[#148af4]">
+                                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $f['d'] }}"/></svg>
+                                </span>
+                                <span class="font-heading font-bold text-navy text-sm leading-snug">{{ $f['t'] }}</span>
                             </div>
+                            @endforeach
                         </div>
-
                     </div>
+
+                    {{-- Panel B: illustration on plain background (no card) + spec notes in a subtle panel --}}
+                    <div class="flex flex-col">
+                        <img src="/images/equipment/Asset-1.webp" alt="No exhaust duct or water cooling connection required" class="w-full h-auto mix-blend-multiply mb-5">
+                        <div class="rounded-xl bg-[#f3f6fb] p-5 space-y-3">
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">Low footprint, ultra-quiet 56dB operation and &lsquo;plug &amp; play&rsquo; capabilities.</p>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">Units operate in ambient temperatures from +10&deg;C to +45&deg;C.</p>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">A horizontal filter drawer allows for easy maintenance and machine servicing.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -262,7 +265,41 @@
     </div>
 </section>
 
-{{-- 9. RANGE TEASERS CAROUSEL --}}
+{{-- 9. PLANNING / INSTALLATION STRIP (before the selection journey) --}}
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+             class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+    </div>
+    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
+        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Plan drying around the <span style="color:#011E41;">room, energy use and linen flow</span>
+        </h2>
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
+            A dryer should fit the room, the utilities and the pressure placed on linen flow every day. Irish Laundry Systems connects drying capacity, ventilation, access, energy use, installation and support before the equipment decision is made.
+        </p>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
+            @foreach([
+                ['t' => 'Room fit',                        'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
+                ['t' => 'Ventilation and utilities',       'd' => 'M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'],
+                ['t' => 'Drying capacity and turnaround',  'd' => 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
+            ] as $pt)
+            <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
+                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
+            </span>
+            @endforeach
+        </div>
+        <a href="{{ route('request-assessment') }}"
+           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+            Request Equipment Advice
+        </a>
+    </div>
+</section>
+
+{{-- 10. RANGE TEASERS CAROUSEL (Equipment Hub visual — drying-route chamarizes, not the full grid) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -272,16 +309,16 @@
                 Drying paths <span style="color:#148af4;">worth a closer look</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Start with the dryer route that fits the pressure of your laundry room, then connect the decision to energy use, capacity, installation, rental and long-term support.
+                Start with the drying route that fits the pressure of your laundry room, then connect the decision to energy use, turnaround, installation and long-term support.
             </p>
         </div>
 
         @php
         $rangeCards = [
-            ['name' => 'Line 6000 Tumble Dryers',      'copy' => 'Core commercial dryer range for drying performance, capacity, controls and long-term support.', 'cta' => 'View Dryer Range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-            ['name' => 'Heat Pump Dryers',             'copy' => 'For sites focused on reducing energy pressure and installation complexity.', 'cta' => 'Explore Heat Pump Dryers', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-            ['name' => 'Drying Cabinets',              'copy' => 'For bulky, sensitive or specialist items that need drying without mechanical action.', 'cta' => 'Explore Drying Cabinets', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-            ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying equipment.', 'cta' => 'Discover myPRO', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'Line 6000 Tumble Dryers', 'copy' => 'Main commercial dryer range for busy laundry rooms where drying performance, controls, fabric care and support need to work together.', 'cta' => 'View Dryer Range', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy pressure while avoiding exhaust and water cooling requirements where the room setup is suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'Drying Cabinets',         'copy' => 'For bulky, sensitive or specialist items that need drying support without standard tumble action.', 'cta' => 'Explore Drying Cabinets', 'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
+            ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment'), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
         ];
         @endphp
 
@@ -291,25 +328,42 @@
                 count: {{ count($rangeCards) }},
                 perView: 2,
                 timer: null,
-                get maxIndex() { return Math.max(0, this.count - this.perView); },
-                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
-                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
-                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
-                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                animate: true,
+                setPerView() { this.perView = window.innerWidth < 1024 ? 1 : 2; },
+                advance() {
+                    this.active++;
+                    if (this.active >= this.count) {
+                        setTimeout(() => {
+                            this.animate = false;
+                            this.active = 0;
+                            this.$nextTick(() => requestAnimationFrame(() => requestAnimationFrame(() => { this.animate = true; })));
+                        }, 520);
+                    }
+                },
+                next() { this.advance(); this.restart(); },
+                prev() {
+                    if (this.active <= 0) {
+                        this.animate = false;
+                        this.active = this.count;
+                        this.$nextTick(() => requestAnimationFrame(() => requestAnimationFrame(() => { this.animate = true; this.active--; })));
+                    } else {
+                        this.active--;
+                    }
+                    this.restart();
+                },
+                go(i) { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.advance(), 6000); },
                 init() {
-                    this.perView = window.innerWidth < 1024 ? 1 : 2;
-                    window.addEventListener('resize', () => {
-                        this.perView = window.innerWidth < 1024 ? 1 : 2;
-                        if (this.active > this.maxIndex) this.active = this.maxIndex;
-                    });
-                    this.timer = setInterval(() => this.next(), 6000);
+                    this.setPerView();
+                    window.addEventListener('resize', () => this.setPerView());
+                    this.timer = setInterval(() => this.advance(), 6000);
                 },
             }"
             class="relative"
         >
-            {{-- Track --}}
             <div class="overflow-hidden">
-                <div class="flex transition-transform duration-500 ease-out -mx-3"
+                <div class="flex -mx-3"
+                     :class="animate ? 'transition-transform duration-500 ease-out' : ''"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($rangeCards as $i => $p)
                     <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
@@ -320,7 +374,24 @@
                             <div class="flex flex-col">
                                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
-                                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                                <a href="{{ $p['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                                    {{ $p['cta'] }}
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                    {{-- Cloned cards for a seamless infinite loop --}}
+                    @foreach($rangeCards as $i => $p)
+                    <div class="flex-shrink-0 w-full lg:w-1/2 px-3" aria-hidden="true">
+                        <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
+                            <div class="flex items-center justify-center">
+                                <img src="{{ $p['img'] }}" alt="" class="w-full h-44 lg:h-52 object-contain">
+                            </div>
+                            <div class="flex flex-col">
+                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
+                                <a href="{{ $p['route'] }}" tabindex="-1" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
                                     {{ $p['cta'] }}
                                 </a>
                             </div>
@@ -330,13 +401,11 @@
                 </div>
             </div>
 
-            {{-- Dots centered + arrows bottom-right --}}
             <div class="relative mt-8 flex items-center justify-center">
                 <div class="flex items-center gap-2">
                     @foreach($rangeCards as $i => $p)
                     <button @click="go({{ $i }})"
-                            x-show="{{ $i }} <= maxIndex"
-                            :class="active === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                            :class="(active % count) === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
                             class="rounded-full transition-all duration-300" aria-label="Go to slide {{ $i + 1 }}"></button>
                     @endforeach
                 </div>
@@ -355,178 +424,142 @@
     </div>
 </section>
 
-{{-- 10. PLANNING / INSTALLATION STRIP --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
-    </div>
-    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan drying around the <span style="color:#011E41;">room, energy use</span> and <span style="color:#011E41;">linen flow</span>
-        </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A dryer should fit the room, the utilities and the pressure placed on it every day. Irish Laundry Systems connects capacity, ventilation, access, energy use, installation and support before the equipment decision is made.
-        </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Ventilation and utilities', 'Drying capacity and turnaround'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+{{-- 11. COMPACT RESOURCES BAR (low, light, supporting — before the Product Finder) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources',              'links' => [['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'], ['l' => 'Heat Pump Dryer brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Energy & Installation Guidance',  'links' => [['l' => 'Heat Pump Dryer technology', 'h' => '#dryer-range'], ['l' => 'Ventilation and room planning', 'h' => route('request-assessment')], ['l' => 'Energy performance', 'h' => route('resources')]]],
+                ['title' => 'Related Equipment',               'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')], ['l' => 'Drying Cabinets', 'h' => route('equipment.category', 'drying-cabinets')], ['l' => 'myPRO Dryers', 'h' => route('equipment')]]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-wrap gap-x-4 gap-y-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Request Equipment Advice
-        </a>
     </div>
 </section>
 
-{{-- 11. RESOURCES / DOWNLOADS (before the Product Finder) --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-
-            {{-- Box 1 — Navy downloads --}}
-            <div class="bg-navy rounded-2xl p-7 lg:p-9 flex flex-col">
-                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl mb-2">Official Electrolux Professional Downloads</h3>
-                <p class="font-body text-white/70 text-sm leading-relaxed mb-6">Access selected product brochures and technical resources before comparing dryer options.</p>
-                <ul class="space-y-3 mb-2">
-                    @foreach([
-                        ['label' => 'Line 6000 Dryers brochure',            'file' => 'EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                        ['label' => 'Line 6000 Heat Pump Dryers brochure',  'file' => ''],
-                        ['label' => 'TD6-11 Heat Pump leaflet',             'file' => ''],
-                        ['label' => 'Line 6000 Washers &amp; Dryers brochure', 'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                    ] as $pdf)
-                    <li>
-                        @if($pdf['file'])
-                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2.5 font-body text-sm text-white/85 hover:text-white transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </a>
-                        @else
-                        <span class="flex items-center gap-2.5 font-body text-sm text-white/40">
-                            <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!} <span class="text-[10px] uppercase tracking-wide">(on request)</span>
-                        </span>
-                        @endif
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-            {{-- Box 2 — Related guidance --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-7 lg:p-9 flex flex-col">
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Related Equipment Guidance</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">Explore connected equipment and support routes before making a dryer decision.</p>
-                <ul class="space-y-3">
-                    @foreach([
-                        ['label' => 'Equipment Rental',            'href' => route('rental')],
-                        ['label' => 'Preventive Maintenance',      'href' => route('service-contracts')],
-                        ['label' => 'Support &amp; Aftercare',     'href' => route('parts-aftercare')],
-                        ['label' => 'Commercial Washing Machines', 'href' => route('equipment.category', 'washers')],
-                        ['label' => 'Drying Cabinets',             'href' => route('equipment.category', 'drying-cabinets')],
-                    ] as $link)
-                    <li>
-                        <a href="{{ $link['href'] }}" class="flex items-center gap-2.5 font-body text-sm text-navy hover:text-orange font-semibold transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            {!! $link['label'] !!}
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{-- 12. PRODUCT FINDER / DRYER RANGE --}}
+{{-- 12. PRODUCT FINDER / DRYER RANGE (Option B — left sidebar, core commercial dryer range) --}}
 <section id="dryer-range" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare dryer options around <span style="color:#148af4;">capacity, energy and support</span>
+                Compare dryer options around <span style="color:#148af4;">energy use, turnaround and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with drying capacity, then connect the dryer decision to room layout, utilities, energy pressure, fabric care, installation and long-term support.
+                Start with drying demand, then connect the dryer decision to room layout, ventilation, energy use, linen flow, installation and long-term support.
             </p>
         </div>
 
-        {{-- Dryer families — one card/image per range, filterable by type and capacity (curated by ILS) --}}
         @php
+            // Core commercial tumble dryer range (Drying Cabinets and myPRO stay as teasers, not tiles here).
             $dryerFamilies = [
-                ['name' => 'TD6 — Line 6000 Tumble Dryer', 'slug' => 'td6', 'fit' => 'The core Line 6000 commercial tumble dryer, available across the full capacity range for everyday to high-output laundry rooms.', 'kg' => ['6','7','11','14','16','20','30','37','45','60'], 'capLabel' => '6–60 kg', 'models' => 'TD6-6 → TD6-60 (incl. LAC & SLD variants)', 'type' => 'Line 6000', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-                ['name' => 'Stacked Tumble Dryers', 'slug' => 'stacked-dryers', 'fit' => 'Two dryers in one footprint — keeps drying capacity up where floor space is tight.', 'kg' => ['17','24'], 'capLabel' => 'Stacked', 'models' => 'TD6-17S, TD6-24S', 'type' => 'Stacked', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-                ['name' => 'T-Series Industrial Dryers', 'slug' => 't-series', 'fit' => 'High-capacity industrial tumble dryers for heavy, continuous daily throughput.', 'kg' => ['45','60'], 'capLabel' => '45–60 kg', 'models' => 'T4900CR, T41200CR', 'type' => 'Industrial', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-                ['name' => 'Quick & Compact Dryers', 'slug' => 'quick-compact-dryers', 'fit' => 'Compact and quick-dry options for smaller sites and fast turnaround.', 'kg' => [], 'capLabel' => 'Compact', 'models' => 'Quickdry Condense, QuickDry QDC, PD9C', 'type' => 'Compact', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['name' => 'TD6 — Line 6000 Single Pocket Tumble Dryer', 'slug' => 'td6', 'line' => 'Line 6000 Single Pocket Dryers', 'topLine' => 'Line 6000 · 6–37 kg', 'ranges' => ['6–10 kg','14–20 kg','30–37 kg'], 'fit' => 'Commercial tumble dryer range for busy laundry rooms needing drying performance, fabric care and long-term support.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['name' => 'Line 6000 Heat Pump Dryer Variants', 'slug' => 'heat-pump', 'line' => 'Line 6000 Heat Pump Dryers', 'topLine' => 'Heat Pump · selected Line 6000 formats', 'ranges' => ['6–10 kg','14–20 kg'], 'fit' => 'Heat Pump Dryer route for sites looking to reduce drying energy pressure where the room setup is suitable.', 'badges' => ['Heat Pump','65% Energy Saving','No Exhaust','No Water Cooling'], 'tech' => ['Heat Pump','Adaptive Fan','No exhaust needed','No water cooling system'], 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['name' => 'Line 6000 Stacked Dryer Variants', 'slug' => 'stacked-dryers', 'line' => 'Line 6000 Stacked Dryers', 'topLine' => 'Stacked Drying', 'ranges' => ['Stacked formats'], 'fit' => 'Stacked dryer route for sites that need drying capacity while protecting floor space.', 'badges' => ['Stacked Format','Space Saving','Commercial Drying','Support Available'], 'tech' => ['Moisture Balance'], 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['name' => 'TD6-LAC — Lagoon Advanced Care Dryer Variants', 'slug' => 'td6-lac', 'line' => 'Lagoon Advanced Care Dryer Variants', 'topLine' => 'Lagoon Advanced Care variants', 'ranges' => ['6–10 kg','14–20 kg'], 'fit' => 'Dryer variants connected to specialist textile care where fabric handling and process control matter.', 'badges' => ['Lagoon Advanced Care','Textile Care','Moisture Balance','CompassPro'], 'tech' => ['Moisture Balance','CompassPro'], 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['name' => 'Quickdry Condense', 'slug' => 'quickdry-condense', 'line' => 'Compact / Small Business', 'topLine' => 'Compact / Small Business', 'ranges' => ['Compact / small-site drying'], 'fit' => 'Condense dryer option for smaller sites that need professional drying performance in a compact setup.', 'badges' => ['Condense Drying','Compact Fit','Small Business','Easy Operation'], 'tech' => [], 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['name' => 'PD9C Compact Dryer', 'slug' => 'pd9c', 'line' => 'Compact / Small Business', 'topLine' => 'Compact · 9 kg', 'ranges' => ['Compact / small-site drying','6–10 kg'], 'fit' => 'Compact professional dryer for smaller sites needing more than domestic drying equipment.', 'badges' => ['Compact Fit','Professional Drying','Small Site','Support Available'], 'tech' => [], 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
             ];
-
-            // derive facet option arrays with counts from the family data (no new copy)
-            $typeOpts = []; $capOpts = [];
-            foreach($dryerFamilies as $df) {
-                $typeOpts[$df['type']] = ($typeOpts[$df['type']] ?? 0) + 1;
-                foreach($df['kg'] as $k) { $capOpts[$k] = ($capOpts[$k] ?? 0) + 1; }
+            $lineOrder  = ['Line 6000 Single Pocket Dryers','Line 6000 Heat Pump Dryers','Line 6000 Stacked Dryers','Lagoon Advanced Care Dryer Variants','Compact / Small Business'];
+            $rangeOrder = ['Compact / small-site drying','6–10 kg','14–20 kg','30–37 kg','Stacked formats'];
+            $techOrder  = ['Heat Pump','Moisture Balance','Drum Speed','Adaptive Fan','CompassPro','ERGOCERT','No exhaust needed','No water cooling system'];
+            $lineOpts = []; $rangeOpts = []; $techOpts = [];
+            foreach($dryerFamilies as $f) {
+                $lineOpts[$f['line']] = ($lineOpts[$f['line']] ?? 0) + 1;
+                foreach($f['ranges'] as $r) { $rangeOpts[$r] = ($rangeOpts[$r] ?? 0) + 1; }
+                foreach($f['tech'] as $t)   { $techOpts[$t]  = ($techOpts[$t]  ?? 0) + 1; }
             }
-            $capOrder = ['6','7','11','14','16','17','20','24','30','37','45','60'];
-            $famJs = array_map(fn($df) => ['type' => $df['type'], 'kg' => $df['kg']], $dryerFamilies);
+            $famJs = array_map(fn($f) => ['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']], $dryerFamilies);
         @endphp
 
         <div x-data="{
-                type: [],
-                capacity: [],
+                line: [],
+                range: [],
+                tech: [],
+                moreOpen: false,
                 families: {{ \Illuminate\Support\Js::from($famJs) }},
                 matches(f) {
-                    const t   = this.type.length === 0 || this.type.includes(f.type);
-                    const cap = this.capacity.length === 0 || (f.kg && f.kg.some(k => this.capacity.includes(k)));
-                    return t && cap;
+                    const ln = this.line.length === 0 || this.line.includes(f.line);
+                    const rg = this.range.length === 0 || (f.ranges && f.ranges.some(r => this.range.includes(r)));
+                    const tc = this.tech.length === 0 || (f.tech && f.tech.some(t => this.tech.includes(t)));
+                    return ln && rg && tc;
                 },
                 get count() { return this.families.filter(f => this.matches(f)).length; },
-                clearAll() { this.type = []; this.capacity = []; },
+                clearAll() { this.line = []; this.range = []; this.tech = []; },
              }"
              class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 lg:gap-10 items-start">
 
-            {{-- LEFT: filter sidebar --}}
+            {{-- LEFT: Option B filter sidebar --}}
             <aside class="lg:sticky lg:top-28 self-start border border-gray-200 rounded-xl p-5">
                 <div class="flex items-center justify-between">
-                    <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em]">Filter Products</span>
+                    <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em]">Filter dryer range</span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Reset all</button>
                 </div>
 
-                {{-- Dryer Type --}}
+                {{-- Product Line (open) --}}
                 <div class="mt-4 pt-4 border-t border-gray-100">
-                    <p class="font-heading font-bold text-navy text-sm mb-3">Dryer Type</p>
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Product Line</p>
                     <div class="space-y-2.5">
-                        @foreach($typeOpts as $val => $cnt)
+                        @foreach($lineOrder as $val) @if(isset($lineOpts[$val]))
                         <label class="flex items-center justify-between cursor-pointer group">
                             <span class="flex items-center gap-2.5">
-                                <input type="checkbox" value="{{ $val }}" x-model="type" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <input type="checkbox" value="{{ $val }}" x-model="line" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
                                 <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
                             </span>
-                            <span class="font-body text-xs text-gray-400">{{ $cnt }}</span>
+                            <span class="font-body text-xs text-gray-400">{{ $lineOpts[$val] }}</span>
                         </label>
-                        @endforeach
+                        @endif @endforeach
                     </div>
                 </div>
 
-                {{-- Capacity --}}
+                {{-- Capacity / Range (open) --}}
                 <div class="mt-4 pt-4 border-t border-gray-100">
-                    <p class="font-heading font-bold text-navy text-sm mb-3">Capacity</p>
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Capacity / Range</p>
                     <div class="space-y-2.5">
-                        @foreach($capOrder as $k)
-                        @if(isset($capOpts[$k]))
+                        @foreach($rangeOrder as $val) @if(isset($rangeOpts[$val]))
                         <label class="flex items-center justify-between cursor-pointer group">
                             <span class="flex items-center gap-2.5">
-                                <input type="checkbox" value="{{ $k }}" x-model="capacity" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
-                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $k.' kg' }}</span>
+                                <input type="checkbox" value="{{ $val }}" x-model="range" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
                             </span>
-                            <span class="font-body text-xs text-gray-400">{{ $capOpts[$k] }}</span>
+                            <span class="font-body text-xs text-gray-400">{{ $rangeOpts[$val] }}</span>
                         </label>
-                        @endif
-                        @endforeach
+                        @endif @endforeach
+                    </div>
+                </div>
+
+                {{-- More filters (collapsed) → Control / Technology --}}
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <button @click="moreOpen = !moreOpen" class="w-full flex items-center justify-between font-heading font-bold text-navy text-sm">
+                        <span>More filters</span>
+                        <svg class="w-4 h-4 transition-transform duration-200" :class="moreOpen ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                    </button>
+                    <div x-show="moreOpen" class="mt-3" style="display:none">
+                        <p class="font-body font-semibold text-gray-400 text-xs uppercase tracking-wide mb-2.5">Control / Technology</p>
+                        <div class="space-y-2.5">
+                            @foreach($techOrder as $val) @if(isset($techOpts[$val]))
+                            <label class="flex items-center justify-between cursor-pointer group">
+                                <span class="flex items-center gap-2.5">
+                                    <input type="checkbox" value="{{ $val }}" x-model="tech" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                    <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
+                                </span>
+                                <span class="font-body text-xs text-gray-400">{{ $techOpts[$val] }}</span>
+                            </label>
+                            @endif @endforeach
+                        </div>
                     </div>
                 </div>
 
@@ -537,29 +570,26 @@
                 </div>
             </aside>
 
-            {{-- RIGHT: product cards (floating images) --}}
+            {{-- RIGHT: product tiles --}}
             <div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($dryerFamilies as $f)
-                    <div x-show="matches({{ \Illuminate\Support\Js::from(['type'=>$f['type'],'kg'=>$f['kg']]) }})" class="flex flex-col">
-                        <a href="{{ route('equipment.product', ['category' => 'tumble-dryers', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                    <div x-show="matches({{ \Illuminate\Support\Js::from(['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']]) }})" class="flex flex-col">
+                        <a href="{{ route('equipment.product', ['category' => 'tumble-dryers', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-48 lg:h-56 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                         </a>
-                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['type'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
+                        <p class="font-body text-xs font-bold text-[#148af4] mb-1.5">{{ $f['topLine'] }}</p>
                         <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'tumble-dryers', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
-                        @if(count($f['kg']))
-                        <div class="flex flex-wrap gap-1.5 mb-3">
-                            @foreach($f['kg'] as $k)
-                            <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $k.' kg' }}</span>
+                        <div class="flex flex-wrap gap-1.5 mb-5">
+                            @foreach(array_slice($f['badges'], 0, 4) as $b)
+                            <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $b }}</span>
                             @endforeach
                         </div>
-                        @endif
-                        <p class="font-body text-xs text-gray-400 mb-5">{{ $f['models'] }}</p>
                         <div class="mt-auto flex flex-col gap-2.5">
                             <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-                                Request Advice on This Model
+                                Request Advice
                             </a>
                             <a href="{{ route('equipment.product', ['category' => 'tumble-dryers', 'product' => $f['slug']]) }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 View Details
@@ -570,24 +600,22 @@
                     @endforeach
                 </div>
 
-                {{-- Empty state --}}
-                <div x-show="count === 0" x-cloak class="text-center py-16">
+                <div x-show="count === 0" class="text-center py-16" style="display:none">
                     <p class="font-body text-gray-500 text-base">No dryers match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
                 </div>
 
-                {{-- View full range --}}
                 <div class="text-center mt-12">
                     <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline">
                         View full product range
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
+
+                <p class="font-body text-gray-500 text-sm leading-relaxed mt-10 max-w-3xl">
+                    Drying Cabinets and myPRO / Semi-Professional Dryers are shown as related drying routes in the teasers above. Full specifications, capacities, dimensions and documents live on each product detail page.
+                </p>
             </div>
         </div>
-
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-8 max-w-3xl">
-            Not sure which dryer fits? Irish Laundry Systems can assess capacity, room setup, installation, rental and support options before a final recommendation.
-        </p>
     </div>
 </section>
 

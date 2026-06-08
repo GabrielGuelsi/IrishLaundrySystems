@@ -40,6 +40,48 @@ return [
             'sectors' => [],
         ],
         [
+            'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'capacity' => '7–33 kg',
+            'title' => 'Line 6000 ClarusVibe washer variants – WH6-CV',
+            'summary' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience. Capacity 7–33 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Control' => 'ClarusVibe', 'Capacity' => '7 – 33 kg',
+                    'Efficiency' => 'Automatic Savings, Integrated Savings', 'Dosing' => 'Intelligent Dosing', 'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'capacity' => '6–33 kg',
+            'title' => 'Lagoon Advanced Care washer variants – WH6-LAC',
+            'summary' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care. Capacity 6–33 kg.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Care' => 'Lagoon Advanced Care', 'Capacity' => '6 – 33 kg',
+                    'Control' => 'ClarusVibe', 'Dosing' => 'Efficient Dosing', 'Strength' => 'Specialist wet cleaning and textile care',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WH6-LAG — Lagoon Washer Variant', 'slug' => 'wh6-lag', 'capacity' => '14 kg',
+            'title' => 'Lagoon washer variant – WH6-LAG',
+            'summary' => 'Lagoon washer variant for sites managing delicate garments and specialist care processes.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Care' => 'Lagoon', 'Capacity' => '14 kg',
+                    'Control' => 'ClarusVibe', 'Dosing' => 'Efficient Dosing', 'Strength' => 'Delicate garments and specialist care processes',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
             'name' => 'W4-Series', 'slug' => 'w4-series', 'capacity' => '40–110 kg',
             'title' => 'Heavy-duty washer-extractors – W4-Series',
             'summary' => 'Heavy-duty washer-extractors for industrial and high-throughput laundries. Robust build with high extraction. Capacity 40–110 kg.',
@@ -81,23 +123,37 @@ return [
     // ── Tumble Dryers ─────────────────────────────────────────────────────────
     'tumble-dryers' => [
         [
-            'name' => 'TD6 — Line 6000 Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–60 kg',
-            'title' => 'Line 6000 commercial tumble dryer – TD6',
-            'summary' => 'The core Line 6000 commercial tumble dryer, available across the full capacity range for everyday to high-output laundry rooms.',
+            'name' => 'TD6 — Line 6000 Single Pocket Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–37 kg',
+            'title' => 'Line 6000 single pocket tumble dryer – TD6',
+            'summary' => 'Commercial tumble dryer range for busy laundry rooms needing drying performance, fabric care and long-term support.',
             'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => [
-                    'Range' => 'Line 6000', 'Type' => 'Commercial tumble dryer', 'Capacity' => '6 – 60 kg',
-                    'Models' => 'TD6-6 → TD6-60 (incl. LAC & SLD variants)', 'Certification' => 'ERGOCERT ergonomics',
+                    'Range' => 'Line 6000', 'Type' => 'Single pocket tumble dryer', 'Capacity' => '6 – 37 kg',
+                    'Control' => 'CompassPro', 'Key features' => 'Moisture Balance, Drum Speed', 'Certification' => 'ERGOCERT ergonomics',
                 ],
                 'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
             ],
             'sectors' => [],
         ],
         [
-            'name' => 'Stacked Tumble Dryers', 'slug' => 'stacked-dryers', 'capacity' => 'Stacked',
-            'title' => 'Stacked tumble dryers',
-            'summary' => 'Two dryers in one footprint — keeps drying capacity up where floor space is tight.',
+            'name' => 'Line 6000 Heat Pump Dryer Variants', 'slug' => 'heat-pump', 'capacity' => 'Heat Pump',
+            'title' => 'Line 6000 Heat Pump Dryer variants',
+            'summary' => 'Heat Pump Dryer route for sites looking to reduce drying energy pressure where the room setup is suitable.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Technology' => 'Heat Pump', 'Energy' => 'Up to 65% energy saving',
+                    'Installation' => 'No exhaust, no water cooling', 'Key features' => 'Adaptive Fan, Moisture Balance',
+                ],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'No exhaust duct or water cooling required'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Line 6000 Stacked Dryer Variants', 'slug' => 'stacked-dryers', 'capacity' => 'Stacked',
+            'title' => 'Line 6000 stacked dryer variants',
+            'summary' => 'Stacked dryer route for sites that need drying capacity while protecting floor space.',
             'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Stacked tumble dryer', 'Models' => 'TD6-17S, TD6-24S', 'Strength' => 'Two dryers, one footprint'],
@@ -106,23 +162,34 @@ return [
             'sectors' => [],
         ],
         [
-            'name' => 'T-Series Industrial Dryers', 'slug' => 't-series', 'capacity' => '45–60 kg',
-            'title' => 'Industrial tumble dryers – T-Series',
-            'summary' => 'High-capacity industrial tumble dryers for heavy, continuous daily throughput.',
-            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'name' => 'TD6-LAC — Lagoon Advanced Care Dryer Variants', 'slug' => 'td6-lac', 'capacity' => 'Lagoon Advanced Care',
+            'title' => 'Lagoon Advanced Care dryer variants – TD6-LAC',
+            'summary' => 'Dryer variants connected to specialist textile care where fabric handling and process control matter.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
             'specs' => [
-                'Main specification' => ['Range' => 'T-Series', 'Type' => 'Industrial tumble dryer', 'Capacity' => '45 – 60 kg', 'Models' => 'T4900CR, T41200CR'],
-                'Dimensions' => ['Footprint' => 'Industrial floor area', 'Installation' => 'Serviced install'],
+                'Main specification' => ['Range' => 'Line 6000', 'Care' => 'Lagoon Advanced Care', 'Control' => 'CompassPro', 'Key features' => 'Moisture Balance, Textile Care'],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
             ],
             'sectors' => [],
         ],
         [
-            'name' => 'Quick & Compact Dryers', 'slug' => 'quick-compact-dryers', 'capacity' => 'Compact',
-            'title' => 'Quick & compact dryers',
-            'summary' => 'Compact and quick-dry options for smaller sites and fast turnaround.',
+            'name' => 'Quickdry Condense', 'slug' => 'quickdry-condense', 'capacity' => 'Compact',
+            'title' => 'Quickdry Condense compact dryer',
+            'summary' => 'Condense dryer option for smaller sites that need professional drying performance in a compact setup.',
             'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
             'specs' => [
-                'Main specification' => ['Type' => 'Quick / compact dryer', 'Models' => 'Quickdry Condense, QuickDry QDC, PD9C', 'Strength' => 'Fast turnaround, small footprint'],
+                'Main specification' => ['Type' => 'Condense dryer', 'Strength' => 'Compact fit, easy operation', 'Best for' => 'Small business / small site drying'],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing, no exhaust'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'PD9C Compact Dryer', 'slug' => 'pd9c', 'capacity' => '9 kg',
+            'title' => 'PD9C compact professional dryer',
+            'summary' => 'Compact professional dryer for smaller sites needing more than domestic drying equipment.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Compact professional dryer', 'Capacity' => '9 kg', 'Best for' => 'Smaller sites needing professional drying'],
                 'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
             ],
             'sectors' => [],

@@ -252,10 +252,16 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A washer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying pressure, installation and support before the equipment decision is made.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Utilities and access', 'Capacity and drying pressure'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
+            @foreach([
+                ['t' => 'Room fit',                     'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
+                ['t' => 'Utilities and access',         'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z'],
+                ['t' => 'Capacity and drying pressure', 'd' => 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z'],
+            ] as $pt)
+            <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
+                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
+            </span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -415,7 +421,7 @@
     </div>
 </section>
 
-{{-- 11. PRODUCT FINDER / WASHER RANGE (Option B — left sidebar, Line 6000 core range) --}}
+{{-- 11. PRODUCT FINDER / WASHER RANGE (Option B — left sidebar, full washer universe in 3 groups) --}}
 <section id="washer-range" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -430,24 +436,35 @@
         </div>
 
         @php
-            // Commercial washer range — WS6, WN6, W4-Series, Quickwash QWC, PW9C (WH line excluded).
+            // Full washer universe relevant to ILS, in three groups. Only the WH6 standard line is excluded;
+            // WH6-CV / WH6-LAC / WH6-LAG variants are included (ClarusVibe, Lagoon Advanced Care, specialist washing).
             $washerFamilies = [
-                ['name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'line' => 'Line 6000', 'topLine' => 'Line 6000 · High Spin · 8–35 kg', 'ranges' => ['8–14 kg','20–35 kg'], 'fit' => 'High-spin Line 6000 washer range for busy laundry rooms needing faster extraction and lower drying pressure.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
-                ['name' => 'WN6 — Line 6000 Normal-Spin Washer', 'slug' => 'wn6', 'line' => 'Line 6000', 'topLine' => 'Line 6000 · Normal Spin · 8–35 kg', 'ranges' => ['8–14 kg','20–35 kg'], 'fit' => 'Normal-spin Line 6000 washer range where wash performance, room fit and long-term support need to stay connected.', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'tech' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
-                ['name' => 'W4-Series — Heavy Duty Washer-Extractors', 'slug' => 'w4-series', 'line' => 'W4-Series Heavy Duty', 'topLine' => 'W4-Series · Heavy Duty · 40–110 kg', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractors for high-throughput and industrial loads where capacity and robust build lead.', 'badges' => ['High Capacity','Power Balance','Robust Build'], 'tech' => ['Power Balance'], 'img' => '/images/equipment/commercialwasher.webp'],
-                ['name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'line' => 'Quickwash', 'topLine' => 'Quickwash · Fast cycle', 'ranges' => ['8–14 kg'], 'fit' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.', 'badges' => ['Fast Cycle','Compact'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
-                ['name' => 'PW9C', 'slug' => 'pw9c', 'line' => 'PW9C', 'topLine' => 'PW9C · Professional', 'ranges' => ['8–14 kg'], 'fit' => 'Professional washer for standard commercial laundry duties and dependable everyday performance.', 'badges' => ['Professional','Reliable'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                // Core Line 6000 Washer Range
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'ws6']), 'line' => 'Line 6000 High Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'High-spin washer range for busy laundry rooms needing faster extraction and lower drying pressure.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WN6 — Line 6000 Normal-Spin Washer', 'slug' => 'wn6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wn6']), 'line' => 'Line 6000 Normal Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Normal-spin washer range for sites where wash performance, room fit and long-term support need to stay connected.', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'tech' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-cv']), 'line' => 'ClarusVibe Variants', 'topLine' => 'Line 6000 · ClarusVibe variants · 7–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience.', 'badges' => ['ClarusVibe','Automatic Savings','Integrated Savings','ERGOCERT'], 'tech' => ['ClarusVibe','Automatic Savings','Integrated Savings','Intelligent Dosing','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lac']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon Advanced Care variants · 6–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care.', 'badges' => ['Lagoon Advanced Care','Efficient Dosing','ClarusVibe','Textile Care'], 'tech' => ['Efficient Dosing','ClarusVibe'], 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAG — Lagoon Washer Variants', 'slug' => 'wh6-lag', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lag']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon variant · 14 kg', 'ranges' => ['11–14 kg'], 'fit' => 'Lagoon washer variant for sites managing delicate garments and specialist care processes.', 'badges' => ['Lagoon','Textile Care','ClarusVibe','Efficient Dosing'], 'tech' => ['ClarusVibe','Efficient Dosing'], 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                // Compact / Heavy-Duty Washer Options
+                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'quickwash-qwc']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact / Small Business', 'ranges' => ['6–9 kg'], 'fit' => 'Compact washer option for sites that need professional laundry performance in a smaller footprint.', 'badges' => ['Compact Fit','Professional Wash','Small Business','Easy Operation'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'PW9C Compact Washer', 'slug' => 'pw9c', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'pw9c']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact · 9 kg', 'ranges' => ['6–9 kg'], 'fit' => 'Compact professional washer for smaller sites needing more than domestic laundry equipment.', 'badges' => ['Compact Fit','Professional Wash','Small Site','Support Available'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'W4-Series Washer-Extractors', 'slug' => 'w4-series', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'w4-series']), 'line' => 'Heavy-Duty Washer-Extractors', 'topLine' => 'Heavy Duty · 40 kg+', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractor route for large-volume laundry rooms needing strong throughput and long-term support.', 'badges' => ['High Capacity','Heavy Duty','Service Support','Long-Term Use'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                // Specialist Washing Routes
+                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment'), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'Barrier Washers', 'slug' => 'barrier', 'route' => route('equipment.category', 'barrier-washers'), 'line' => 'Barrier Washers', 'topLine' => 'Hygiene-Critical Laundry', 'ranges' => ['11–14 kg','20–35 kg','40 kg+'], 'fit' => 'Barrier washer route for laundry rooms where soiled and clean handling must stay separate.', 'badges' => ['Clean / Dirty Separation','Hygiene Watchdog','ERGOCERT','AIDO'], 'tech' => ['ERGOCERT'], 'img' => '/images/equipment/line6000-barrier-washer.webp'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon', 'route' => route('equipment'), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Specialist Wet Cleaning', 'ranges' => ['11–14 kg','20–35 kg'], 'fit' => 'Specialist wet cleaning route for delicate garments, textile care and advanced fabric handling.', 'badges' => ['Wet Cleaning','Textile Care','Efficient Dosing','Lagoon'], 'tech' => ['Efficient Dosing'], 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
             ];
-            $lineOrder  = ['Line 6000','W4-Series Heavy Duty','Quickwash','PW9C'];
-            $rangeOrder = ['8–14 kg','20–35 kg','40 kg+'];
-            $techOrder  = ['Automatic Savings','Integrated Savings','CompassPro','Power Balance','ClarusVibe','ERGOCERT'];
+            $groupOrder = ['Core Line 6000 Washer Range', 'Compact / Heavy-Duty Washer Options', 'Specialist Washing Routes'];
+            $lineOrder  = ['Line 6000 High Spin','Line 6000 Normal Spin','ClarusVibe Variants','Lagoon / Wet Cleaning Variants','Compact / Small Business','Heavy-Duty Washer-Extractors','Semi-Professional','Barrier Washers'];
+            $rangeOrder = ['6–9 kg','11–14 kg','20–35 kg','40 kg+'];
+            $techOrder  = ['ClarusVibe','CompassPro','Automatic Savings','Integrated Savings','Power Balance','Efficient Dosing','Intelligent Dosing','ERGOCERT'];
             $lineOpts = []; $rangeOpts = []; $techOpts = [];
             foreach($washerFamilies as $f) {
                 $lineOpts[$f['line']] = ($lineOpts[$f['line']] ?? 0) + 1;
                 foreach($f['ranges'] as $r) { $rangeOpts[$r] = ($rangeOpts[$r] ?? 0) + 1; }
                 foreach($f['tech'] as $t)   { $techOpts[$t]  = ($techOpts[$t]  ?? 0) + 1; }
             }
-            $famJs = array_map(fn($f) => ['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']], $washerFamilies);
+            $famJs = array_map(fn($f) => ['group' => $f['group'], 'line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']], $washerFamilies);
         @endphp
 
         <div x-data="{
@@ -462,6 +479,7 @@
                     const tc = this.tech.length === 0 || (f.tech && f.tech.some(t => this.tech.includes(t)));
                     return ln && rg && tc;
                 },
+                groupShown(g) { return this.families.some(f => f.group === g && this.matches(f)); },
                 get count() { return this.families.filter(f => this.matches(f)).length; },
                 clearAll() { this.line = []; this.range = []; this.tech = []; },
              }"
@@ -530,40 +548,46 @@
 
                 {{-- Footer count + clear --}}
                 <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'range' : 'ranges'"></span></span>
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'option' : 'options'"></span></span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
                 </div>
             </aside>
 
-            {{-- RIGHT: product tiles --}}
+            {{-- RIGHT: grouped product tiles --}}
             <div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
-                    @foreach($washerFamilies as $f)
-                    <div x-show="matches({{ \Illuminate\Support\Js::from(['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']]) }})" class="flex flex-col">
-                        <a href="{{ route('equipment.product', ['category' => 'washers', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-48 lg:h-56 mb-5">
-                            <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
-                        </a>
-                        <p class="font-body text-xs font-bold text-[#148af4] mb-1.5">{{ $f['topLine'] }}</p>
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'washers', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
-                        <div class="flex flex-wrap gap-1.5 mb-5">
-                            @foreach(array_slice($f['badges'], 0, 4) as $b)
-                            <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $b }}</span>
-                            @endforeach
-                        </div>
-                        <div class="mt-auto flex flex-col gap-2.5">
-                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-                                Request Advice
+                @foreach($groupOrder as $gName)
+                @php $groupItems = array_values(array_filter($washerFamilies, fn($f) => $f['group'] === $gName)); @endphp
+                <div x-show="groupShown('{{ $gName }}')" class="mb-12 last:mb-0">
+                    <h3 class="font-heading font-bold text-navy text-lg mb-6 pb-2 border-b border-gray-200">{{ $gName }}</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
+                        @foreach($groupItems as $f)
+                        <div x-show="matches({{ \Illuminate\Support\Js::from(['line' => $f['line'], 'ranges' => $f['ranges'], 'tech' => $f['tech']]) }})" class="flex flex-col">
+                            <a href="{{ $f['route'] }}" class="flex items-center justify-center h-48 lg:h-56 mb-5">
+                                <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                             </a>
-                            <a href="{{ route('equipment.product', ['category' => 'washers', 'product' => $f['slug']]) }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                                View Details
-                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                            </a>
+                            <p class="font-body text-xs font-bold text-[#148af4] mb-1.5">{{ $f['topLine'] }}</p>
+                            <h4 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ $f['route'] }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h4>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                @foreach(array_slice($f['badges'], 0, 4) as $b)
+                                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $b }}</span>
+                                @endforeach
+                            </div>
+                            <div class="mt-auto flex flex-col gap-2.5">
+                                <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+                                    Request Advice
+                                </a>
+                                <a href="{{ $f['route'] }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                    View Details
+                                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                                </a>
+                            </div>
                         </div>
+                        @endforeach
                     </div>
-                    @endforeach
                 </div>
+                @endforeach
 
                 <div x-show="count === 0" class="text-center py-16" style="display:none">
                     <p class="font-body text-gray-500 text-base">No washers match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
@@ -577,7 +601,7 @@
                 </div>
 
                 <p class="font-body text-gray-500 text-sm leading-relaxed mt-10 max-w-3xl">
-                    Not sure which model fits? Irish Laundry Systems can assess capacity, room setup, rental, installation and support options before a final recommendation.
+                    Full specifications, capacities, dimensions, technical documents, brochures and manuals live on each product or sub-range detail page.
                 </p>
             </div>
         </div>
