@@ -24,7 +24,7 @@
 
     {{-- LEFT: image pinned to 40% --}}
     <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/strip2.jpeg" alt="ILS engineer with equipment"
+        <img src="/images/healthcare/rentalstripimage.jpg" alt="Commercial laundry equipment rental"
              class="w-full h-full object-cover" style="object-position: center 15%;">
         <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.82) 8%, rgba(1,30,65,0.45) 28%, rgba(1,30,65,0.18) 48%, transparent 65%);"></div>
     </div>
