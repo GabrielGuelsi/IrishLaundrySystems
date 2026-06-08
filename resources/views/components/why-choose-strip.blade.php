@@ -23,10 +23,10 @@
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:320px;">
 
     {{-- LEFT: image pinned to 40% --}}
-    <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
+    <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:56%;">
         <img src="/images/healthcare/rentalstripimage.jpg" alt="Commercial laundry equipment rental"
              class="w-full h-full object-cover" style="object-position: center 15%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.82) 8%, rgba(1,30,65,0.45) 28%, rgba(1,30,65,0.18) 48%, transparent 65%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, #011E41 12%, rgba(1,30,65,0.6) 38%, rgba(1,30,65,0.25) 60%, rgba(1,30,65,0.06) 78%, transparent 90%);"></div>
     </div>
 
     {{-- RIGHT: content — 50% width --}}

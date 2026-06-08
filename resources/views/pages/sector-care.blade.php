@@ -8,8 +8,8 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
-    <img src="/images/CareFacilities/CareFacilitiesHero.png" alt="Care facility laundry"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+    <img src="/images/CareFacilities/carefacilitiesheroimage.jpg" alt="Care facility laundry"
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 38%; transform: scale(1.22);">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-3xl reveal reveal-left">
