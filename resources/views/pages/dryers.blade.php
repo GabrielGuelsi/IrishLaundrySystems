@@ -249,7 +249,7 @@
 
             {{-- COL 2: dryer image (the big equipment image) --}}
             <div class="lg:col-span-3 flex items-center justify-center py-2">
-                <img src="/images/equipment/line6000-tumble-dryer.webp" alt="Line 6000 Tumble Dryer" class="w-full max-w-[280px] lg:max-w-none h-auto object-contain">
+                <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp" alt="Line 6000 Tumble Dryer" class="w-full max-w-[280px] lg:max-w-none h-auto object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
