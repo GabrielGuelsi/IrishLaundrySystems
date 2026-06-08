@@ -73,17 +73,21 @@
 {{-- 5. HEAT PUMP ENERGY FEATURE --}}
 <section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        {{-- Full-width heading + intro so the title and body both sit wide, above the panels --}}
+        <div class="reveal reveal-left mb-10 lg:mb-12">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                <span style="color:#148af4;">Save 65% on energy consumption</span> with Heat Pump Dryer technology
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
+                Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. For sites where the room setup is suitable, it can also reduce installation pressure by avoiding the need for exhaust or a water cooling system.
+            </p>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
-            {{-- LEFT: copy + CTA + dryer lineup --}}
+            {{-- LEFT: dryer lineup + CTA --}}
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    <span style="color:#148af4;">Save 65% on energy consumption</span> with Heat Pump Dryer technology
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-xl">
-                    Heat Pump Dryer technology can reduce drying energy pressure while supporting strong drying performance. For sites where the room setup is suitable, it can also reduce installation pressure by avoiding the need for exhaust or a water cooling system.
-                </p>
                 <div class="mb-8 overflow-hidden flex items-center justify-center h-[240px] lg:h-[300px]">
                     <img src="/images/equipment/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="w-full h-auto object-contain scale-[1.3] origin-center">
                 </div>
@@ -95,8 +99,8 @@
             </div>
 
             {{-- RIGHT: two spec panels --}}
-            <div class="reveal reveal-right lg:mt-9">
-                <div class="grid grid-cols-1 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-6 items-start">
+            <div class="reveal reveal-right">
+                <div class="grid grid-cols-1 sm:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-6 items-stretch">
 
                     {{-- Panel A: 65% + feature list (dashed border) --}}
                     <div class="rounded-2xl border border-dashed border-gray-300 bg-white p-6 lg:p-7 flex flex-col">
@@ -110,7 +114,7 @@
                             <div class="font-heading font-bold text-navy text-base mt-2">energy saving</div>
                             <div class="font-body text-gray-500 text-xs mt-1">on your energy consumption</div>
                         </div>
-                        <div class="divide-y divide-gray-200 border-t border-gray-200">
+                        <div class="divide-y divide-gray-200 border-t border-gray-200 flex-1 flex flex-col justify-between mt-2">
                             @foreach([
                                 ['t' => 'No exhaust needed',          'd' => 'M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636'],
                                 ['t' => 'No water cooling system',     'd' => 'M12 21a6.75 6.75 0 01-6.75-6.75c0-3 3.5-7.5 6.75-11.25 3.25 3.75 6.75 8.25 6.75 11.25A6.75 6.75 0 0112 21z'],
@@ -215,52 +219,88 @@
 <section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        {{-- Intro + ERGOCERT badge --}}
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center mb-12 lg:mb-16">
-
-            <div class="lg:col-span-7 reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Dryer design built around <span style="color:#148af4;">daily handling, space and operator comfort</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Drying is repeated work. The right dryer should support loading, unloading, filter access and everyday handling, not just drying capacity.
-                </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-7">
-                    Line 6000 Tumble Dryers are designed for <strong class="font-bold text-navy">safe, repetitive operation</strong> and are the only dryer range to receive the Ergocert 4-star ergonomic rating.
-                </p>
-                <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Request Equipment Advice
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-
-            {{-- ERGOCERT logo — frameless, huge --}}
-            <div class="lg:col-span-5 flex justify-center lg:justify-end items-center reveal reveal-right">
-                <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-full max-w-sm lg:max-w-md h-auto">
-            </div>
-
+        {{-- Heading + intro (full width) --}}
+        <div class="max-w-4xl mb-12 lg:mb-16 reveal reveal-left">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Handling</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                Dryer design built around <span style="color:#148af4;">daily handling, space and operator comfort</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
+                Drying is repeated work. Line 6000 Tumble Dryers support easier daily handling. ERGOCERT 4-star ergonomic proof supports safer, repetitive operation.
+            </p>
         </div>
 
-        {{-- Detailed ergonomic features (2×2) --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 lg:gap-x-16 gap-y-8 lg:gap-y-10 reveal">
-            @foreach([
-                ['t' => 'Ideal door height',          'd' => 'M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18m-3.75-3.75L12 21l3.75-3.75', 'b' => 'The door sits at an ergonomically suitable height, making a real difference when loading and unloading throughout the day.'],
-                ['t' => 'A better grip',               'd' => 'M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75', 'b' => 'The handle design and easy-close magnetic door let operators open and shut the door smoothly, every time.'],
-                ['t' => 'Safer insulated glass door',  'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', 'b' => 'The insulated glass door stays cool on the outside, so there is no risk of burned fingers or hands.'],
-                ['t' => 'Easy-access filter drawer',   'd' => 'M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z', 'b' => 'The filter drawer is oriented horizontally for easy access and effortless cleaning, with no need to stoop or bend down.'],
-            ] as $pp)
-            <div class="flex items-start gap-4">
-                <span class="flex items-center justify-center w-12 h-12 rounded-xl bg-[#148af4]/10 flex-shrink-0">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pp['d'] }}"/></svg>
-                </span>
+        {{-- Infographic grid: proof + dryer + door panel + filter panel --}}
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch reveal">
+
+            {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
+            <div class="lg:col-span-3 flex flex-col gap-6">
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-1.5">{{ $pp['t'] }}</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $pp['b'] }}</p>
+                    <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-48 lg:w-60 h-auto mb-5">
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic interventions can reduce work-related musculoskeletal disorders (WMSDs) by <strong class="text-navy font-bold">59%</strong>, with an average decrease of <strong class="text-navy font-bold">75%</strong> in sick days and a <strong class="text-navy font-bold">25%</strong> increase in productivity.</p>
+                    <p class="font-body text-gray-400 text-xs mt-2">Washington State Department of Labor &amp; Industries</p>
+                </div>
+                <div class="border-t border-gray-200 pt-6 lg:mt-auto">
+                    <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-8 w-auto mb-3">
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">CompassPro comes with a new design and improved user experience. Flexible and customisable, comes with preset programmes as well as free programme slots. Up to 18 languages available.</p>
                 </div>
             </div>
-            @endforeach
+
+            {{-- COL 2: dryer image (the big equipment image) --}}
+            <div class="lg:col-span-3 flex items-center justify-center py-2">
+                <img src="/images/equipment/line6000-tumble-dryer.webp" alt="Line 6000 Tumble Dryer" class="w-full max-w-[280px] lg:max-w-none h-auto object-contain">
+            </div>
+
+            {{-- COL 3: The door that makes the difference --}}
+            <div class="lg:col-span-3 rounded-2xl bg-[#f3f6fb] p-6 lg:p-7 flex flex-col">
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-5">The door that makes the difference</h3>
+                <div class="space-y-5">
+                    @foreach([
+                        ['t' => 'Ideal height',        'd' => 'M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18m-3.75-3.75L12 21l3.75-3.75', 'b' => 'The door is positioned at the most ergonomically suitable height. This makes a real difference for loading and unloading.'],
+                        ['t' => 'Sturdy and reliable', 'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', 'b' => 'Because the door is built to last, it will optimize performance throughout the life of the dryer.'],
+                        ['t' => 'A better grip',        'd' => 'M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75', 'b' => 'Open and shut the door smoothly thanks to the handle design and easy-close magnetic door.'],
+                        ['t' => 'Safer for users',     'd' => 'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z', 'b' => 'The insulated glass door stays cool on the outside so there is no risk of burned fingers or hands. It also keeps the heat inside, so the room temperature is not affected.'],
+                    ] as $dp)
+                    <div class="flex items-start gap-3">
+                        <span class="flex items-center justify-center w-9 h-9 rounded-lg bg-white flex-shrink-0">
+                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['d'] }}"/></svg>
+                        </span>
+                        <div>
+                            <h4 class="font-heading font-bold text-navy text-sm leading-snug mb-0.5">{{ $dp['t'] }}</h4>
+                            <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $dp['b'] }}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+                <p class="font-body text-gray-400 text-[11px] leading-relaxed mt-5">*The insulated glass door and space saving are specific features of TD6-14 and TD6-20.</p>
+            </div>
+
+            {{-- COL 4: filter drawer --}}
+            <div class="lg:col-span-3 flex flex-col gap-5">
+                {{-- icon placeholder — drop a filter-drawer photo here to replace it --}}
+                <div class="rounded-2xl bg-[#eef3f9] flex items-center justify-center py-12 px-6">
+                    <svg class="w-14 h-14 text-[#148af4]/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z"/></svg>
+                </div>
+                <div class="rounded-2xl bg-[#f3f6fb] p-6 flex-1">
+                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">A filter drawer right where you need it</h3>
+                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">The horizontal filter drawer is positioned for easy access and cleaning without the need to bend down. Human-centred design down to the smallest details takes the stress out of a physically demanding job.</p>
+                </div>
+            </div>
+        </div>
+
+        {{-- Space-saving — compact, sized to the dryer + door panel and placed beneath them --}}
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mt-6 lg:mt-8">
+            <div class="lg:col-start-4 lg:col-span-6 rounded-2xl bg-[#f3f6fb] px-5 py-4 flex items-center gap-3 reveal">
+                <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-[#148af4]/10 flex-shrink-0">
+                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
+                </span>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug">Space-saving</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">The new range takes less than one square meter of floor space, regardless of heating system (gas, electric, steam or heat pump).</p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
