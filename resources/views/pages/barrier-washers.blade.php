@@ -73,7 +73,7 @@
 {{-- 5. HYGIENE FLOW / BARRIER PROCESS FEATURE --}}
 <section class="py-16 lg:py-24 overflow-hidden" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="space-y-12 lg:space-y-14">
 
             {{-- Left: copy --}}
             <div class="reveal reveal-left">
@@ -106,39 +106,27 @@
                 </a>
             </div>
 
-            {{-- Right: dirty-side / clean-side diagram --}}
-            <div class="reveal reveal-right">
-                <div class="bg-white/5 border border-white/10 rounded-3xl p-6 lg:p-8">
-                    <div class="grid grid-cols-[1fr_auto_1fr] items-stretch gap-0">
-                        {{-- Soiled side --}}
-                        <div class="rounded-l-2xl p-6 text-center" style="background-color:rgba(20,138,244,0.10);">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#148af4]/20 mb-3">
-                                <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z"/></svg>
-                            </span>
-                            <p class="font-heading font-bold text-white text-sm mb-0.5">Soiled side</p>
-                            <p class="font-body text-white/60 text-xs">Dirty linen loaded in</p>
-                        </div>
-                        {{-- Barrier wall + arrow --}}
-                        <div class="flex flex-col items-center justify-center px-2" style="background-color:rgba(255,255,255,0.04);">
-                            <div class="w-px flex-1 bg-white/20"></div>
-                            <span class="my-2 inline-flex items-center justify-center w-9 h-9 rounded-full bg-[#148af4] text-white flex-shrink-0">
-                                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                            </span>
-                            <div class="w-px flex-1 bg-white/20"></div>
-                        </div>
-                        {{-- Clean side --}}
-                        <div class="rounded-r-2xl p-6 text-center bg-white">
-                            <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#148af4]/15 mb-3">
-                                <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
-                            </span>
-                            <p class="font-heading font-bold text-navy text-sm mb-0.5">Clean side</p>
-                            <p class="font-body text-gray-500 text-xs">Clean linen unloaded</p>
-                        </div>
+            {{-- Workflow illustration + barrier-concept video --}}
+            <div class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                <div class="rounded-2xl overflow-hidden bg-white p-3 lg:p-4">
+                    <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
+                         alt="Barrier laundry workflow — controlled flow from dirty zone to clean zone"
+                         class="w-full h-auto object-contain">
+                </div>
+                <div>
+                    <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom:56.25%;">
+                        <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/26g9u4GPRVc"
+                                title="Line 6000 laundry solutions — The barrier concept in the healthcare sector"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                     </div>
-                    <div class="mt-6 rounded-2xl overflow-hidden">
-                        <img src="/images/equipment/line6000-barrier-washer.webp" alt="Electrolux Professional barrier washer" class="w-full h-56 object-contain bg-white p-4">
-                    </div>
-                    <p class="font-body text-white/50 text-xs text-center mt-4">Double-door barrier design — built into the wall between soiled and clean areas.</p>
+                    <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank" rel="noopener"
+                       class="inline-flex items-start gap-2 text-white hover:text-[#148af4] font-heading font-bold text-sm mt-4 transition-colors">
+                        Watch workflow video
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
                 </div>
             </div>
 
@@ -548,7 +536,7 @@
                         </div>
                         @endif
                         <div class="mt-auto flex flex-col gap-2.5">
-                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                 Request Advice on This Model
                             </a>
@@ -617,7 +605,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

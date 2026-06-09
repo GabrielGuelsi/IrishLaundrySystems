@@ -57,7 +57,7 @@
 }
 </style>
 
-<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
+<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
 
     <!-- Background image -->
     <img src="/images/healthcare/repairs-hero.jpg"
@@ -69,13 +69,13 @@
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
 
     <!-- Text — vertically centered -->
-    <div class="relative z-10 h-full flex items-center w-full">
+    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
+                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     <span class="text-[#148af4]">Call-outs and repairs</span><br class="hidden lg:inline"> when commercial&nbsp;laundry<br class="hidden lg:inline"> equipment is under&nbsp;pressure
                 </h1>
 
@@ -83,7 +83,7 @@
                     When a machine fault slows down daily laundry, staff routines or production, Irish Laundry Systems supports your site with experienced engineer support, Electrolux Professional knowledge and a clear next step, so you know what can happen next.
                 </p>
 
-                <div class="hero-btns flex flex-row gap-4">
+                <div class="hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Call-Out
@@ -117,7 +117,7 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Fault Details</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
             Fast support starts with <span class="text-[#148af4]">clear fault details</span>
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed mb-4 max-w-3xl mx-auto text-pretty">
@@ -172,7 +172,7 @@
                     <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 flex-shrink-0 object-contain">
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
-                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
+                        <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
                         <p class="font-body text-white text-base leading-relaxed text-pretty">
                             Tell us what has failed, where the machine is located and how urgent the issue is, so the team can prepare properly.
                         </p>
@@ -265,7 +265,7 @@ $expectSteps = [
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">What Happens Next</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 text-balance">From first fault details to a <span class="text-[#148af4]">clear repair plan</span></h2>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From first fault details to a <span class="text-[#148af4]">clear repair plan</span></h2>
             <p class="font-body text-blue-200 text-base leading-relaxed max-w-2xl mx-auto text-pretty">Clear fault details give the team the machine information and site urgency needed to prepare for the visit.</p>
         </div>
 
@@ -352,7 +352,7 @@ $expectSteps = [
             {{-- LEFT: content --}}
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Temporary Laundry Support</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is&nbsp;down
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-8 text-pretty">
@@ -414,7 +414,7 @@ $expectSteps = [
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 leading-tight text-balance">Repeated breakdowns usually need <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
+                    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 leading-tight text-balance">Repeated breakdowns usually need <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
                     <p class="font-body text-gray-300 leading-relaxed text-pretty">
                         If the same fault keeps returning, the issue may be linked to maintenance history, wear, parts requirements or how the equipment is being used. Irish Laundry Systems reviews what keeps coming back and what needs attention&nbsp;next.
                     </p>
@@ -532,7 +532,7 @@ $faqs = [
                 {{-- LEFT: content --}}
                 <div class="lg:col-span-7">
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After the Repair</p>
-                    <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+                    <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                         Use the repair visit to plan the <span class="text-[#148af4]">right next step</span>
                     </h2>
                     <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
@@ -582,7 +582,7 @@ $faqs = [
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
             <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="mx-auto mb-5 w-16 h-16 lg:w-20 lg:h-20 object-contain">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Call-Out</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Need <span class="text-[#148af4]">support</span> with a <span class="text-[#148af4]">laundry equipment&nbsp;fault</span>
             </h2>
             <p class="font-body text-white/80 text-base leading-relaxed max-w-xl mx-auto mb-6 text-pretty">

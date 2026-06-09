@@ -66,9 +66,9 @@
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('services') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-bold">Services Overview</a>
-                        <a href="{{ route('repairs') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Repairs &amp; Call-outs</a>
-                        <a href="{{ route('service-contracts') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Preventive Maintenance</a>
-                        <a href="{{ route('parts-aftercare') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Aftercare &amp; Support</a>
+                        <a href="{{ route('repairs') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Repairs &amp; Call-Outs</a>
+                        <a href="{{ route('service-contracts') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Preventive Maintenance Contracts</a>
+                        <a href="{{ route('parts-aftercare') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Support &amp; Aftercare</a>
                     </div></div>
                 </div>
 
@@ -91,11 +91,15 @@
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('equipment') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-bold">Equipment Hub</a>
-                        <a href="{{ route('equipment.category', 'washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Washing Machines</a>
+                        <a href="{{ route('equipment.category', 'washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Washing Machines</a>
                         <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Barrier Washers</a>
-                        <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Dryers</a>
-                        <a href="{{ route('equipment.category', 'ironers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Ironers</a>
+                        <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Dryers</a>
                         <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Drying Cabinets</a>
+                        <a href="{{ route('equipment.category', 'ironers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Ironers</a>
+                        <a href="{{ route('equipment.category', 'finishing-equipment') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Finishing Equipment</a>
+                        <a href="{{ route('equipment.category', 'wet-cleaning') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Wet Cleaning</a>
+                        <a href="{{ route('equipment.category', 'semi-professional') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Semi-Professional / myPRO</a>
+                        <a href="{{ route('equipment.category', 'accessories') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Accessories &amp; Consumables</a>
                     </div></div>
                 </div>
 
@@ -140,9 +144,7 @@
                 <a href="tel:+35314910402"
                    class="flex flex-col items-end text-navy hover:text-orange transition-colors duration-150 group">
                     <span class="flex items-center gap-1.5 text-sm font-body font-bold">
-                        <svg class="w-4 h-4 text-orange group-hover:text-orange-dark transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
-                        </svg>
+                        <img src="/images/icons/52.png" alt="" class="w-4 h-4 object-contain">
                         Talk to Our Team
                     </span>
                     <span class="text-xs text-navy font-bold font-body tracking-wide">+353 1 491 0402</span>
@@ -188,9 +190,9 @@
                 </button>
                 <div x-show="svOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
                     <a href="{{ route('services') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Services Overview</a>
-                    <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Repairs &amp; Call-outs</a>
-                    <a href="{{ route('service-contracts') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Preventive Maintenance</a>
-                    <a href="{{ route('parts-aftercare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Aftercare &amp; Support</a>
+                    <a href="{{ route('repairs') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Repairs &amp; Call-Outs</a>
+                    <a href="{{ route('service-contracts') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Preventive Maintenance Contracts</a>
+                    <a href="{{ route('parts-aftercare') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Support &amp; Aftercare</a>
                 </div>
             </div>
 
@@ -204,11 +206,15 @@
                 </button>
                 <div x-show="eOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
                     <a href="{{ route('equipment') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Equipment Hub</a>
-                    <a href="{{ route('equipment.category', 'washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Washing Machines</a>
+                    <a href="{{ route('equipment.category', 'washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Washing Machines</a>
                     <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Barrier Washers</a>
-                    <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Dryers</a>
-                    <a href="{{ route('equipment.category', 'ironers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Ironers</a>
+                    <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Dryers</a>
                     <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Drying Cabinets</a>
+                    <a href="{{ route('equipment.category', 'ironers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Ironers</a>
+                    <a href="{{ route('equipment.category', 'finishing-equipment') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Finishing Equipment</a>
+                    <a href="{{ route('equipment.category', 'wet-cleaning') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Wet Cleaning</a>
+                    <a href="{{ route('equipment.category', 'semi-professional') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Semi-Professional / myPRO</a>
+                    <a href="{{ route('equipment.category', 'accessories') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Accessories &amp; Consumables</a>
                 </div>
             </div>
 

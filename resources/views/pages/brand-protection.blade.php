@@ -11,7 +11,7 @@
             </svg>
             <span class="text-sm font-body text-gray-200">Official website</span>
         </div>
-        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Irish Laundry Systems (ILS) — Official Website</h1>
+        <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-5">Irish Laundry Systems (ILS) — Official Website</h1>
         <p class="font-body text-blue-200 text-base max-w-2xl mx-auto leading-relaxed">
             This is the official website of Irish Laundry Systems, the commercial laundry engineering specialists based in the Republic of Ireland.
         </p>
@@ -26,7 +26,7 @@
 <section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="bg-white border border-border rounded-2xl p-8 lg:p-10 mb-8">
+        <div class="bg-white border border-border rounded-2xl p-6 sm:p-8 lg:p-10 mb-8">
             <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Disambiguation Statement</h2>
             <p class="font-body text-gray-600 leading-relaxed mb-4">
                 The name "Irish Laundry Systems" and the abbreviation "ILS" are used to identify this specific commercial laundry engineering business, established in 1987, operating in the Republic of Ireland.
@@ -39,7 +39,7 @@
             </p>
         </div>
 
-        <div class="bg-white border border-border rounded-2xl p-8 lg:p-10 mb-8">
+        <div class="bg-white border border-border rounded-2xl p-6 sm:p-8 lg:p-10 mb-8">
             <h2 class="font-heading font-bold text-navy text-2xl mb-5">How to Reach the Real ILS</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div class="flex items-start gap-4">
@@ -91,7 +91,7 @@
         </div>
 
         <!-- What we do -->
-        <div class="bg-white border border-border rounded-2xl p-8 lg:p-10">
+        <div class="bg-white border border-border rounded-2xl p-6 sm:p-8 lg:p-10">
             <h2 class="font-heading font-bold text-navy text-2xl mb-6">What Irish Laundry Systems Does</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="text-center p-4">

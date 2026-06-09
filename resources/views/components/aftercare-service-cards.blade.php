@@ -5,7 +5,7 @@
 
             {{-- Left: heading + description --}}
             <div class="lg:col-span-1 reveal">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                     Keep the support matched to the equipment
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -14,7 +14,7 @@
             </div>
 
             {{-- Right: 4 service cards --}}
-            <div class="lg:col-span-4 grid grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+            <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
                 @foreach([
                     [
                         'img'   => '/images/healthcare/Service%20Network.png',

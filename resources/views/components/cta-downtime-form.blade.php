@@ -16,7 +16,7 @@
                 @if ($eyebrow)
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
                 @endif
-                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-4 leading-tight">
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-5xl mb-4 leading-tight">
                     {!! $heading !!}
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8">
@@ -60,7 +60,7 @@
                         </div>
                         <div>
                             <p class="font-body font-bold text-white text-sm">Irish Laundry Systems</p>
-                            <p class="font-body text-gray-400 text-xs leading-relaxed">Address to be confirmed<br>Dublin, Ireland</p>
+                            <p class="font-body text-gray-400 text-xs leading-relaxed">Dublin, Ireland</p>
                         </div>
                     </div>
                 </div>

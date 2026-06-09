@@ -16,7 +16,7 @@ $equipmentList = $equipment ?? [
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-10">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
                 <p class="font-body text-gray-500 text-base leading-relaxed mt-4">{{ $subheading }}</p>
                 @endif
@@ -33,7 +33,7 @@ $equipmentList = $equipment ?? [
             $cols = $cnt >= 6 ? 3 : $cnt;
         @endphp
         <style>@media (min-width:1024px){.eq-cat-grid{grid-template-columns:repeat({{ $cols }}, minmax(0,1fr)) !important;}}</style>
-        <div class="grid grid-cols-2 gap-6 eq-cat-grid">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 eq-cat-grid">
             @foreach($equipmentList as $eq)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height: {{ $textMinH }};">
@@ -56,7 +56,7 @@ $equipmentList = $equipment ?? [
                     <img src="{{ $imgSrc }}"
                          alt="{{ $eq['name'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="width:{{ $box }}px; height:{{ $box }}px; object-fit:contain; margin-bottom:{{ $mb }}px;">
+                         style="width:{{ $box }}px; max-width:100%; height:{{ $box }}px; object-fit:contain; margin-bottom:{{ $mb }}px;">
                 </div>
                 @endif
                 <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">

@@ -16,7 +16,7 @@
 .hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
 </style>
 
-<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;"
+<section class="relative overflow-hidden min-h-[520px] lg:h-[720px] lg:min-h-[560px]" style="background-color: #011E41;"
          x-data="{ active: 0, slides: 2 }"
          x-init="setInterval(() => active = (active + 1) % slides, 6000)">
 
@@ -38,7 +38,7 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-4xl lg:text-5xl">
+                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
                     Commercial laundry<br><span class="text-[#148af4]">engineering support</span> for sites<br>where downtime carries real&nbsp;cost
                 </h1>
 
@@ -46,7 +46,7 @@
                     Irish Laundry Systems supports commercial laundry sites with equipment, rental, maintenance, repairs and aftercare from one experienced team, so teams can control budget pressure, reduce disruption and keep laundry&nbsp;moving.
                 </p>
 
-                <div class="hero-btns flex flex-row gap-4">
+                <div class="hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
@@ -77,12 +77,12 @@
 @include('components.partner-strip')
 
 <!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
-<section class="py-20 lg:py-28 bg-white">
+<section class="py-12 sm:py-16 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around the Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     <span class="text-[#148af4]">Laundry support</span> built around the site, the equipment and <span class="text-[#148af4]">what needs to happen next</span>
                 </h2>
             </div>

@@ -23,7 +23,7 @@
 </style>
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
+<section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 480px; background-color: #011E41;">
 
     {{-- Background image --}}
     <img src="/images/healthcare/services-overview-hero.jpg"
@@ -35,13 +35,13 @@
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.78) 18%, rgba(1,30,65,0.40) 35%, rgba(1,30,65,0.10) 55%, transparent 70%);"></div>
 
     {{-- Text --}}
-    <div class="relative z-10 h-full flex items-center w-full">
+    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
-                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
+                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Find the <span class="text-[#148af4]">right service&nbsp;support</span><br class="hidden lg:inline"> before equipment&nbsp;issues<br class="hidden lg:inline"> become bigger&nbsp;costs
                 </h1>
 
@@ -80,12 +80,12 @@
 @include('components.partner-strip')
 
 <!-- 1.5 COMMERCIAL INTRO / DECISION LOGIC -->
-<section class="py-20 lg:py-28 bg-white">
+<section class="py-12 sm:py-16 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Start with what is creating&nbsp;pressure, then choose the <span class="text-[#148af4]">right&nbsp;support</span>
                 </h2>
             </div>
@@ -141,13 +141,13 @@
 
         <div class="mb-12">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight max-w-4xl text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight max-w-4xl text-balance">
                 Commercial laundry care built around
                 cost control and <span class="text-[#148af4]">peace of mind</span>
             </h2>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach ([
                 ['type' => 'text',  'num' => '1987', 'sub' => 'year',      'title' => 'Since 1987',                      'desc' => 'Engineering-led commercial laundry work in Ireland.'],
                 ['type' => 'badge', 'badge' => '/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg', 'sub' => 'partner', 'title' => 'Electrolux Professional Partner', 'desc' => 'Authorised Electrolux Professional Partner for commercial laundry equipment.'],
@@ -165,7 +165,7 @@
                              class="{{ $bh }} w-auto object-contain flex-shrink-0">
                         @endif
                     @else
-                        <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $item['num'] }}</div>
+                        <div class="font-heading font-bold text-navy text-4xl sm:text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $item['num'] }}</div>
                     @endif
                     <p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $item['sub'] }}</p>
                 </div>
@@ -297,7 +297,7 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">How It Works</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 From equipment pressure to the <span class="text-[#148af4]">right next step</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
@@ -339,7 +339,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Installed Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Keep <span class="text-[#148af4]">aftercare clearer</span> with <span class="text-[#148af4]">Electrolux Professional knowledge</span> behind the&nbsp;equipment
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
@@ -387,7 +387,7 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="max-w-3xl mx-auto text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Customer Trust</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Trusted by sites that need <span class="text-[#148af4]">clear service decisions</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
@@ -412,7 +412,7 @@
         {{-- Left: heading + body + CTAs --}}
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Service Assessment</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Start with the <span class="text-[#148af4]">right service&nbsp;support</span>
             </h2>
             <p class="font-body text-blue-200 text-base leading-relaxed mb-8 max-w-md text-pretty">
