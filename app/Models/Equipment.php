@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class Equipment extends Model
@@ -34,5 +35,27 @@ class Equipment extends Model
                 $equipment->slug = Str::slug($equipment->name);
             }
         });
+    }
+
+    /**
+     * Usable image URL regardless of how image_path was stored:
+     * - seed/config style lives under public/ (e.g. "images/equipment/x.webp")
+     * - admin uploads live on the public disk (e.g. "equipment/x.webp" → /storage/...)
+     */
+    public function getImageUrlAttribute(): string
+    {
+        $path = $this->image_path;
+
+        if (! $path) {
+            return '';
+        }
+        if (Str::startsWith($path, ['http://', 'https://', '/'])) {
+            return $path;
+        }
+        if (Str::startsWith($path, 'images/')) {
+            return asset($path);
+        }
+
+        return Storage::disk('public')->url($path);
     }
 }
