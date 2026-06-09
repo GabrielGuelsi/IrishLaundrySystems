@@ -20,7 +20,7 @@
             {{-- Left: title / model / description / actions --}}
             <div class="order-2 lg:order-1 lg:pl-4">
                 <p class="font-heading font-bold text-navy text-lg lg:text-xl mb-3">{{ $item->title ?? $product }}</p>
-                <h1 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
+                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
                 <p class="font-body text-navy/70 text-sm leading-relaxed mb-8 max-w-md">{{ $summary }}</p>
 
                 <div class="flex flex-wrap items-center gap-3">
@@ -68,7 +68,7 @@
                         <div x-show="openSpec === {{ $loop->index }}" style="display:none" class="pb-5">
                             <dl class="divide-y divide-gray-100">
                                 @foreach($rows as $label => $value)
-                                <div class="flex justify-between gap-6 py-2.5">
+                                <div class="flex justify-between gap-3 sm:gap-6 py-2.5">
                                     <dt class="font-body text-gray-500 text-sm">{{ $label }}</dt>
                                     <dd class="font-body text-navy text-sm font-semibold text-right">{{ $value }}</dd>
                                 </div>
@@ -182,7 +182,7 @@
 {{-- ============ 4-ICON SUPPORT ROW ============ --}}
 <section class="bg-[#eef2f7] py-14">
     <div class="max-w-6xl mx-auto px-6 sm:px-10">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
             @foreach([
                 ['t' => 'Explore our Service Network', 'h' => route('service-contracts'), 'd' => 'M11.48 3.5a.56.56 0 011.04 0l2.12 4.78 5.2.46c.5.04.7.66.32 1l-3.94 3.45 1.17 5.1c.11.49-.42.87-.85.61L12 17.7l-4.54 2.7c-.43.26-.96-.12-.85-.61l1.17-5.1L3.84 9.74c-.38-.34-.18-.96.32-1l5.2-.46L11.48 3.5z'],
                 ['t' => 'Where to buy this product', 'h' => route('contact'), 'd' => 'M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'],

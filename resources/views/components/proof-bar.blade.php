@@ -4,7 +4,7 @@
 --}}
 <section class="bg-white py-8 overflow-hidden" aria-label="Trusted partner credentials">
 
-    <div class="max-w-screen-2xl mx-auto pl-[68px] pr-6 sm:pr-10 lg:pr-20">
+    <div class="max-w-screen-2xl mx-auto pl-6 sm:pl-10 lg:pl-[68px] pr-6 sm:pr-10 lg:pr-20">
 
         {{-- Logos + stat row --}}
         <div class="flex items-center gap-6 flex-wrap">
@@ -18,7 +18,7 @@
             </div>
 
             {{-- Logos spread across remaining width --}}
-            <div class="flex items-center flex-1" style="height:100px;">
+            <div class="grid grid-cols-2 lg:flex items-center w-full lg:flex-1 lg:w-auto gap-y-10 lg:gap-y-0" style="min-height:100px;">
                 <div class="flex-1 flex items-center justify-center">
                     <img src="/images/logo/Logo_Grace_Healthcare_(1).png" alt="Grace Healthcare" class="h-10 w-auto object-contain opacity-80" style="transform: scale(7) translateY(0px); transform-origin: center;">
                 </div>

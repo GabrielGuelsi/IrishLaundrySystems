@@ -30,11 +30,11 @@
     </div>
 
     {{-- RIGHT: content — 50% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-14 w-full lg:w-1/2 lg:ml-[50%]" style="box-sizing:border-box;">
 
-        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-4xl lg:text-5xl">{!! $headingLine1 !!}</span>
-            <span class="text-4xl lg:text-5xl text-white">{!! $headingLine2 !!}</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">{!! $headingLine1 !!}</span>
+            <span class="text-3xl sm:text-4xl lg:text-5xl text-white">{!! $headingLine2 !!}</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6">
@@ -42,19 +42,19 @@
         </p>
 
         @if($miniPoints)
-        <div class="flex items-center {{ $miniNowrap ? 'flex-nowrap gap-x-3' : 'flex-wrap gap-x-5 gap-y-2' }} mb-7">
+        <div class="flex items-center flex-wrap gap-y-2 {{ $miniNowrap ? 'gap-x-3 lg:flex-nowrap' : 'gap-x-5' }} mb-7">
             @foreach($miniPoints as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] whitespace-nowrap' : 'text-sm' }} font-bold">{{ $pt }}</span>
+            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] lg:whitespace-nowrap' : 'text-sm' }} font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         @else
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-y-3 gap-x-0 mb-7">
             @foreach($features as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-10 bg-white/20 mx-5 flex-shrink-0"></div>
+                <div class="hidden lg:block w-px h-10 bg-white/20 mx-5 flex-shrink-0"></div>
             @endif
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 mr-5 lg:mr-0">
                 <div class="flex-shrink-0" style="width:2.4rem;height:2.4rem;display:flex;align-items:center;justify-content:center;">
                     {!! $feat['icon'] !!}
                 </div>

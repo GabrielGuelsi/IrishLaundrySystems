@@ -12,7 +12,7 @@
                 </svg>
                 <span class="text-sm font-body text-orange font-bold">No obligation assessment</span>
             </div>
-            <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">Request a Service Assessment</h1>
+            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">Request a Service Assessment</h1>
             <p class="font-body text-blue-200 text-lg leading-relaxed mb-2">
                 Tell us about your operation and we'll come back with the right recommendation — contract tier, equipment advice or call-out support.
             </p>

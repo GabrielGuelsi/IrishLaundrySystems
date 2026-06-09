@@ -11,7 +11,7 @@
 $testimonials = [
     'grace' => [
         'logo'      => '/images/sectors/3.png',
-        'logoClass' => 'h-[240px] w-auto object-contain',
+        'logoClass' => 'h-[140px] sm:h-[200px] lg:h-[240px] w-auto object-contain',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
         'headline'  => 'A trusted partner providing consistent commitment that makes a real difference.',
@@ -31,7 +31,7 @@ $testimonials = [
     ],
     'charlemont' => [
         'logo'      => '/images/sectors/charlemontgroup.png',
-        'logoClass' => 'h-[280px] w-auto object-contain',
+        'logoClass' => 'h-[160px] sm:h-[220px] lg:h-[280px] w-auto object-contain',
         'name'      => 'Charlemont Group',
         'pills'     => ['Long-Term Partnership', 'Reliable Service', 'Fast Response', 'Minimal Disruption'],
         'headline'  => 'A reliable partner we can always count on to keep our operations running smoothly.',
@@ -41,7 +41,7 @@ $testimonials = [
     ],
     'laundryonline' => [
         'logo'      => '/images/sectors/laundryonlinesquare.png',
-        'logoClass' => 'h-[280px] w-auto object-contain',
+        'logoClass' => 'h-[160px] sm:h-[220px] lg:h-[280px] w-auto object-contain',
         'name'      => 'Laundry Online',
         'pills'     => ['Equipment Supply', 'Quick Turnaround', 'Dependable Support', 'Service Contract'],
         'headline'  => 'Professional, knowledgeable and always quick to respond when it matters most.',
@@ -51,7 +51,7 @@ $testimonials = [
     ],
     'abbvie' => [
         'logo'      => '/images/logo/abbvie.png',
-        'logoClass' => 'h-[160px] w-auto object-contain',
+        'logoClass' => 'h-[100px] sm:h-[130px] lg:h-[160px] w-auto object-contain',
         'name'      => 'AbbVie',
         'pills'     => ['Fast Response', 'Maintenance & Repair', 'Service Contract', 'Dependable Support'],
         'headline'  => 'They provide excellent support and a dependable experience we can always count on.',
@@ -77,7 +77,7 @@ $showChrome = ! $single && count($slides) > 1;
                 @if($eyebrow)
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
                 @endif
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
                     <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl mx-auto">{!! $subheading !!}</p>
                 @endif
@@ -131,7 +131,7 @@ $showChrome = ! $single && count($slides) > 1;
                                             <img
                                                 src="{{ $t['image'] }}"
                                                 alt="{{ $t['name'] }}"
-                                                class="w-72 h-64 rounded-xl object-cover flex-shrink-0"
+                                                class="w-full max-w-[16rem] sm:max-w-[18rem] h-52 sm:h-64 lg:w-72 lg:h-64 rounded-xl object-cover flex-shrink-0"
                                             >
                                             <p class="font-body font-bold text-navy text-sm text-center">{{ $t['name'] }}</p>
                                         </div>

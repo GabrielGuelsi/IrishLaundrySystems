@@ -19,19 +19,19 @@
     <div class="flex flex-col {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
 
         {{-- prefix slot: reserved height, indented to sit directly above the figure --}}
-        <div class="h-4 pl-[3.75rem] flex items-end">
+        <div class="h-4 lg:pl-[3.75rem] flex items-end">
             @if(!empty($it['prefix']))<span class="font-body font-bold text-[#148af4] text-sm leading-none">{{ $it['prefix'] }}</span>@endif
         </div>
 
         {{-- figure: icon vertically centred with the stat (number or 2-line word) --}}
-        <div class="flex items-center gap-3 min-h-[3rem] mt-0.5">
-            <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-12 h-12 object-contain flex-shrink-0">
+        <div class="flex items-center gap-2 sm:gap-3 min-h-[3rem] mt-0.5">
+            <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-10 h-10 lg:w-12 lg:h-12 object-contain flex-shrink-0">
             <div class="font-heading font-bold text-[#148af4] {{ $it['size'] }} leading-none">{!! $it['stat'] !!}</div>
         </div>
 
         {{-- label: tight under the figure, indented to align under the stat --}}
         {{-- short labels stay indented "in the middle" (under the figure); long ones go full-width so they fit on one line --}}
-        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-1.5 {{ strlen($it['label']) <= 24 ? 'pl-[3.75rem]' : '' }}">{{ $it['label'] }}</h3>
+        <h3 class="font-heading font-bold text-[#148af4] text-sm leading-snug mt-1.5 {{ strlen($it['label']) <= 24 ? 'lg:pl-[3.75rem]' : '' }}">{{ $it['label'] }}</h3>
 
         <div class="w-full h-px bg-[#148af4]/20 mt-2"></div>
         @if(!empty($it['body']))

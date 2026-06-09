@@ -122,6 +122,12 @@ class PageController extends Controller
             ]);
         }
 
+        if ($category === 'finishing-equipment') {
+            return view('pages.finishing-equipment', [
+                'title' => 'Commercial Finishing Equipment | Ironing Tables, Presses & Steam | ILS',
+            ]);
+        }
+
         if ($category === 'drying-cabinets') {
             return view('pages.drying-cabinets', [
                 'title' => 'Commercial Drying Cabinets | Electrolux Professional | ILS',

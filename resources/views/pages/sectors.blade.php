@@ -8,7 +8,7 @@
 <!-- HERO -->
 <section class="bg-navy py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Commercial Laundry Support by Sector</h1>
+        <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-5">Commercial Laundry Support by Sector</h1>
         <p class="font-body text-blue-200 text-base max-w-2xl mx-auto leading-relaxed mb-8">
             Choose your environment to see the right service model, risk factors and recommended next step.
         </p>
@@ -139,7 +139,7 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-10">
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">How We Support Critical Operations</h2>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">How We Support Critical Operations</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="flex items-start gap-4 bg-bg border border-border rounded-2xl p-6">

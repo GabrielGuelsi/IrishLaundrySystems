@@ -51,7 +51,7 @@
                     <span class="text-gray-300 text-sm font-body">{{ $category }}</span>
                 </div>
 
-                <h1 class="hero-desc font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4">{{ $category }} Equipment</h1>
+                <h1 class="hero-desc font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">{{ $category }} Equipment</h1>
                 <p class="font-body text-blue-200 text-lg max-w-xl leading-relaxed mb-7">
                     Commercial {{ strtolower($category) }} equipment supplied, installed and supported by Irish Laundry Systems. Electrolux Professional range available.
                 </p>
@@ -202,8 +202,8 @@
                         ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator support in high-output laundries',     'body' => 'Dual-partition drum and auto-positioning for easy manual handling of heavy loads — reducing operator strain on busy hospital laundry shifts.'],
                         ['icon' => '/images/healthcare/control-icon.jpg',  'alt' => 'Control icon',  'title' => 'Intelligent control',                           'body' => 'Intuitive interface managing dirty and clean zones independently — ensuring failsafe disinfection and full audit trail compliance.'],
                     ] as $feature)
-                    <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
+                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-24 h-24 sm:w-36 sm:h-36 object-contain"></div>
                         <div>
                             <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
                             <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
@@ -428,8 +428,8 @@
                         'body'  => "Reduce absenteeism by improving operators' well-being — Ergocert 4-star certified across the entire Line 6000 range.",
                     ],
                 ] as $feature)
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                    <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
+                    <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-24 h-24 sm:w-36 sm:h-36 object-contain"></div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
                         <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>
@@ -663,7 +663,7 @@
             <div class="lg:col-span-2 flex flex-col">
 
                 {{-- Easy, healthy & safe operation --}}
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
                     <div class="flex-shrink-0 w-24 h-24">
                         <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
                     </div>
@@ -674,7 +674,7 @@
                 </div>
 
                 {{-- Long-term savings --}}
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
                     <div class="flex-shrink-0 w-24 h-24">
                         <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
                     </div>
@@ -685,7 +685,7 @@
                 </div>
 
                 {{-- Outstanding productivity --}}
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
                     <div class="flex-shrink-0 w-24 h-24">
                         <img src="/images/healthcare/DrumSpeed.png" alt="Drum Speed" class="w-full h-full object-contain">
                     </div>
@@ -913,7 +913,7 @@
             <div class="lg:col-span-2 flex flex-col">
 
                 {{-- Uninterrupted dry comfort --}}
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
                     <div class="flex-shrink-0 w-24 h-24">
                         <img src="/images/healthcare/HygieneGuard.png" alt="Dry comfort" class="w-full h-full object-contain">
                     </div>
@@ -924,7 +924,7 @@
                 </div>
 
                 {{-- Outstanding flexibility --}}
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
                     <div class="flex-shrink-0 w-24 h-24">
                         <img src="/images/healthcare/MoistureBalance.png" alt="Outstanding flexibility" class="w-full h-full object-contain">
                     </div>
@@ -935,7 +935,7 @@
                 </div>
 
                 {{-- Easy and efficient operation --}}
-                <div class="flex items-center gap-8 flex-1 py-6 reveal">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
                     <div class="flex-shrink-0 w-24 h-24">
                         <img src="/images/healthcare/DrumSpeed.png" alt="Efficient operation" class="w-full h-full object-contain">
                     </div>
@@ -1174,8 +1174,8 @@
                         ['icon' => '/images/healthcare/operator-icon.png', 'alt' => 'Operator icon', 'title' => 'Operator-friendly design', 'body' => 'Ergonomic feed and fold systems reduce operator fatigue on high-output sites. Controls are designed for straightforward programming and consistent results with minimal training.'],
                         ['icon' => '/images/healthcare/control-icon.jpg', 'alt' => 'Control icon', 'title' => 'Intelligent heat control', 'body' => 'Precise temperature management across the ironing surface delivers consistent results while protecting fabric quality and reducing energy consumption per load.'],
                     ] as $feature)
-                    <div class="flex items-center gap-8 flex-1 py-6 reveal">
-                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-36 h-36 object-contain"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8 flex-1 py-6 reveal">
+                        <div class="flex-shrink-0"><img src="{{ $feature['icon'] }}" alt="{{ $feature['alt'] }}" class="w-24 h-24 sm:w-36 sm:h-36 object-contain"></div>
                         <div>
                             <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">{{ $feature['title'] }}</h3>
                             <p class="font-body text-gray-500 text-base leading-relaxed">{{ $feature['body'] }}</p>

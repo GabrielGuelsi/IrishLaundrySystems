@@ -9,7 +9,7 @@
 <!-- ══════════════════════════════════════════
      1. HERO
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden" style="height:720px; min-height:560px; background-color:#011E41;">
+<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
     <img src="{{ asset('images/about/heroaboutusimage.png') }}"
          alt="ILS engineering team"
@@ -17,16 +17,16 @@
          class="absolute inset-0 w-full h-full object-cover object-center">
 
 
-    <div class="relative z-10 h-full flex items-center">
+    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-5xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">About Irish Laundry Systems</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="block"><span class="text-[#011E41]">Keeping</span> <span class="text-[#148af4]">commercial laundry</span></span>
                     <span class="block text-[#148af4]">equipment, service and aftercare</span>
                     <span class="block"><span class="text-[#148af4]">connected</span> <span class="text-[#011E41]">since 1987</span></span>
                 </h1>
-                <p class="font-body text-white/70 text-base leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/70 text-base leading-relaxed mb-8 max-w-2xl [&_br]:hidden lg:[&_br]:inline">
                     Built from electrical contracting roots and Electrolux Professional<br>service experience, Irish Laundry Systems supports 38 client<br>locations across Dublin and Ireland with equipment supply, rental,<br>maintenance, repairs and aftercare for business-critical laundry rooms.
                 </p>
                 <div class="flex flex-wrap gap-4 mb-10">
@@ -60,7 +60,7 @@
 
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems Exists</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Commercial laundry decisions <span class="text-[#148af4]">do not stop at the machine</span>
                 </h2>
             </div>
@@ -99,7 +99,7 @@
 
         <div class="mb-12 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Proof & Scale</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                 Technical work, recognised partners and <span class="text-[#148af4]">real sites served</span> over more than three decades
             </h2>
         </div>
@@ -143,7 +143,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <!-- Image -->
-            <div class="overflow-hidden rounded-2xl reveal" style="height:520px;">
+            <div class="overflow-hidden rounded-2xl reveal h-[320px] sm:h-[420px] lg:h-[520px]">
                 <img src="{{ asset('images/about/about-engineers.jpg') }}"
                      alt="ILS engineering team on site"
                      class="w-full h-full object-cover object-center">
@@ -152,7 +152,7 @@
             <!-- Content -->
             <div class="reveal">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5">Technical Foundations</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     <span class="text-[#148af4]">Electrical contracting roots</span>
                     <span class="text-[#148af4]">Commercial laundry equipment experience</span>
                 </h2>
@@ -183,16 +183,16 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-10 lg:py-14" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-heading font-bold text-white/60 text-xs uppercase tracking-[0.22em] mb-4">Site, Workflow & Capacity</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4">
-            <span class="text-4xl lg:text-5xl"><span class="text-white">Designed around your </span><span style="color:#011E41;">site,</span></span>
-            <span class="text-4xl lg:text-5xl" style="color:#011E41;">workflow and capacity</span>
+            <span class="text-3xl sm:text-4xl lg:text-5xl"><span class="text-white">Designed around your </span><span style="color:#011E41;">site,</span></span>
+            <span class="text-3xl sm:text-4xl lg:text-5xl" style="color:#011E41;">workflow and capacity</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Every laundry room has its own pressure points: space, utilities, equipment condition, workflow and daily volume. Irish Laundry Systems uses that site understanding to guide equipment supply, rental, maintenance, repairs and aftercare around what the room needs.
         </p>
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
+        <div class="flex items-center flex-wrap sm:flex-nowrap gap-x-5 gap-y-4 mb-7">
             @foreach([
                 ['icon' => 'ativo-20', 'label' => 'Room<br>conditions'],
                 ['icon' => 'ativo-10', 'label' => 'Equipment<br>use'],
@@ -224,7 +224,7 @@
 
         <div class="mb-14 reveal">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Connected Routes</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                 Equipment supply, service and aftercare connected around <span class="text-[#148af4]">real site needs</span>
             </h2>
         </div>
@@ -233,14 +233,14 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
 
             {{-- Row 1, Col 1-2: dark text left + image right --}}
-            <div class="lg:col-span-2 flex overflow-hidden rounded-2xl reveal" style="min-height:340px;">
-                <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0" style="width:45%;">
+            <div class="lg:col-span-2 flex flex-col lg:flex-row overflow-hidden rounded-2xl reveal lg:min-h-[340px]">
+                <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0 w-full lg:w-[45%]">
                     <div>
                         <h3 class="font-heading font-bold text-[#148af4] text-2xl lg:text-3xl leading-snug mb-4">Plan, Supply &amp; Install</h3>
                         <p class="font-body text-white/70 text-lg leading-relaxed">Site planning, equipment selection, supply, delivery, installation and commissioning for commercial laundry rooms.</p>
                     </div>
                 </div>
-                <div class="flex-1 overflow-hidden relative">
+                <div class="flex-1 overflow-hidden relative h-56 lg:h-auto">
                     <img src="{{ asset('images/equipment/td6-multihousing-room.jpg') }}"
                          alt="Commercial laundry room"
                          class="w-full h-full object-cover object-center">
@@ -269,14 +269,14 @@
                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-3">Repair &amp; Support</h3>
                 <p class="font-body text-gray-500 text-lg leading-relaxed mb-0">Call-outs, fault diagnosis, parts route, technical assistance and follow-up after work is completed.</p>
             </div>
-            <div class="lg:col-span-2 flex overflow-hidden rounded-2xl reveal" style="min-height:340px;">
-                <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0" style="width:45%;">
+            <div class="lg:col-span-2 flex flex-col lg:flex-row overflow-hidden rounded-2xl reveal lg:min-h-[340px]">
+                <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0 w-full lg:w-[45%]">
                     <div>
                         <h3 class="font-heading font-bold text-[#148af4] text-2xl lg:text-3xl leading-snug mb-3">38 client locations</h3>
                         <p class="font-body text-white/70 text-lg leading-relaxed">Commercial laundry sites supported across Dublin and Ireland with equipment, maintenance, repairs and aftercare since 1987.</p>
                     </div>
                 </div>
-                <div class="flex-1 overflow-hidden relative">
+                <div class="flex-1 overflow-hidden relative h-56 lg:h-auto">
                     <img src="{{ asset('images/healthcare/repairs-hero.jpg') }}"
                          alt="ILS service team on site"
                          class="w-full h-full object-cover object-center">
@@ -285,14 +285,14 @@
             </div>
 
             {{-- Row 3: dark image card left (col-span-2) + white icon right --}}
-            <div class="lg:col-span-2 flex overflow-hidden rounded-2xl reveal" style="min-height:340px;">
-                <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0" style="width:45%;">
+            <div class="lg:col-span-2 flex flex-col lg:flex-row overflow-hidden rounded-2xl reveal lg:min-h-[340px]">
+                <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0 w-full lg:w-[45%]">
                     <div>
                         <h3 class="font-heading font-bold text-[#148af4] text-2xl lg:text-3xl leading-snug mb-3">Engineering roots since 1987</h3>
                         <p class="font-body text-white/70 text-lg leading-relaxed">Built from electrical contracting and Electrolux Professional service experience — registered technical capability combined with commercial laundry equipment knowledge.</p>
                     </div>
                 </div>
-                <div class="flex-1 overflow-hidden relative">
+                <div class="flex-1 overflow-hidden relative h-56 lg:h-auto">
                     <img src="{{ asset('images/about/about-engineers.jpg') }}"
                          alt="ILS engineering team"
                          class="w-full h-full object-cover object-center">
@@ -322,7 +322,7 @@
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
             <div class="max-w-3xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5">How We Work Around the Site</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     From site understanding to <span class="text-[#148af4]">the right next step</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -344,7 +344,7 @@
 
     <div class="flex flex-col sm:flex-row items-stretch gap-0 overflow-hidden reveal" style="transition-delay:100ms;">
         @foreach($siteSteps as $i => $step)
-        <div class="group flex-1 relative overflow-hidden" style="min-height:460px;">
+        <div class="group flex-1 relative overflow-hidden min-h-[300px] sm:!min-h-[460px]">
             <img src="{{ asset($step['img']) }}" alt="{{ $step['title'] }}"
                  class="w-full h-full object-cover object-center absolute inset-0 transition-transform duration-700 group-hover:scale-105">
             {{-- Default gradient --}}
@@ -383,7 +383,7 @@
             {{-- Left: copy --}}
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Partnership</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Electrolux Professional platform Irish Laundry Systems <span class="text-[#148af4]">local execution</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
@@ -455,10 +455,10 @@
                  class="w-[480px] xl:w-[560px] h-auto object-contain drop-shadow-2xl">
         </div>
         {{-- Right: dark card --}}
-        <div class="rounded-2xl px-10 lg:px-14 py-12 lg:py-14 w-full lg:max-w-xl text-center reveal"
+        <div class="rounded-2xl px-6 sm:px-10 lg:px-14 py-12 lg:py-14 w-full lg:max-w-xl text-center reveal"
              style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
             <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Responsible Equipment</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-6">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                 <span class="text-[#148af4]">Efficient equipment choices,</span> planned around the site
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed mb-6">
@@ -487,7 +487,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16 reveal">
             <div>
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Company History</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
                 </h2>
             </div>
@@ -500,9 +500,9 @@
 
         @php
         $history = [
-            ['year'=>'1987',       'label'=>'year',    'title'=>'Electrical foundations',                          'body'=>'Maurice McDonagh started the company as an electrical contractor, establishing the technical base that still shapes the business.',                                                                          'img'=>'images/about/about-team.jpg'],
+            ['year'=>'1987',       'label'=>'year',    'title'=>'Electrical foundations',                          'body'=>'Maurice McDonagh started the company as an electrical contractor, establishing the technical base that still shapes the business.', 'icon'=>'45',                                                                          'img'=>'images/about/about-team.jpg'],
             ['year'=>'Electrolux', 'label'=>'roots',   'title'=>'Industrial laundry service experience',           'body'=>'Frank McDonagh brought more than 30 years of Electrolux experience, including service management and specialist industrial laundry knowledge.',                                                           'img'=>'images/logo/Electrolux_logo.svg.png', 'imgLogo'=>true],
-            ['year'=>'Mid-1990s',  'label'=>'decade',  'title'=>'Irish Laundry Systems takes shape',               'body'=>'Maurice and Frank combined electrical contracting experience with commercial laundry equipment knowledge to form Irish Laundry Systems.',                                                                  'img'=>'images/about/about-team.jpg'],
+            ['year'=>'Mid-1990s',  'label'=>'decade',  'title'=>'Irish Laundry Systems takes shape',               'body'=>'Maurice and Frank combined electrical contracting experience with commercial laundry equipment knowledge to form Irish Laundry Systems.', 'icon'=>'46',                                                                  'img'=>'images/about/about-team.jpg'],
             ['year'=>'Today',      'label'=>'ongoing', 'title'=>'Commercial laundry care around real site needs',  'body'=>'Today, Irish Laundry Systems works across equipment supply, rental, maintenance, repairs and aftercare for commercial laundry sites across Dublin and Ireland.',                                          'img'=>'images/about/about-engineers.jpg'],
         ];
         @endphp
@@ -523,8 +523,12 @@
                     <div class="font-heading font-bold text-navy text-xl lg:text-2xl mb-3">{{ $m['title'] }}</div>
                     <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed max-w-xl">{{ $m['body'] }}</p>
                 </div>
-                <div class="ils-history-img absolute hidden lg:block rounded-2xl overflow-hidden shadow-2xl" style="right:0;top:50%;width:18.5rem;height:20.5rem;z-index:20;{{ !empty($m['imgLogo']) ? 'background:#fff;' : '' }}">
+                <div class="ils-history-img absolute hidden lg:block rounded-2xl overflow-hidden shadow-2xl" style="right:0;top:50%;width:18.5rem;height:20.5rem;z-index:20;{{ (!empty($m['imgLogo']) || !empty($m['icon'])) ? 'background:#fff;' : '' }}">
+                    @if(!empty($m['icon']))
+                    <img src="/images/icons/{{ $m['icon'] }}.png" alt="{{ $m['title'] }}" class="w-full h-full object-contain p-10">
+                    @else
                     <img src="{{ asset($m['img']) }}" alt="{{ $m['title'] }}" class="w-full h-full {{ !empty($m['imgLogo']) ? 'object-contain p-8' : 'object-cover' }}">
+                    @endif
                 </div>
             </div>
             @endforeach
