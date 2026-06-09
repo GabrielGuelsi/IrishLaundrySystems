@@ -328,6 +328,65 @@
             @endforeach
 
         </div>
+
+        {{-- Finishing Equipment — secondary equipment route strip (after Categories, before Access) --}}
+        <div class="mt-12 lg:mt-16 rounded-2xl border border-gray-200 bg-[#f7f9fc] overflow-hidden reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+
+                {{-- LEFT: copy (~40%) --}}
+                <div class="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-center">
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment</p>
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight text-balance mb-3">
+                        Add <span style="color:#148af4;">professional finishing support</span> for daily linen and garment presentation
+                    </h2>
+                    <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed mb-5">
+                        For care homes, nursing homes, hospitality sites and small-scale operations that need ironing tables, steam irons or hand-finishing support for linen, garments, uniforms and everyday presentation.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2 mb-6">
+                        <span class="font-body font-bold text-navy text-xs">Better presentation</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="font-body font-bold text-navy text-xs">Easier daily finishing</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="font-body font-bold text-navy text-xs">Practical room fit</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="{{ route('equipment.category', 'ironers') }}"
+                           class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-5 py-3 rounded-lg text-sm transition-colors duration-200">
+                            View Finishing Equipment
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}"
+                           class="inline-flex items-center justify-center gap-2 border border-navy/20 hover:border-navy text-navy font-body font-bold px-5 py-3 rounded-lg text-sm transition-all duration-200">
+                            Ask About Ironing Tables
+                        </a>
+                    </div>
+                </div>
+
+                {{-- RIGHT: finishing route cards (~60%) — TODO swap icon placeholders for real product photos --}}
+                <div class="lg:col-span-7 bg-white p-6 lg:p-8 lg:border-l border-gray-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 h-full">
+                        @foreach([
+                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-ironing-tables.jpg'],
+                            ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'finishing-steam-irons.jpg'],
+                            ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-presses.jpg'],
+                        ] as $fc)
+                        <div class="rounded-xl border border-gray-200 bg-white p-4 flex flex-col">
+                            <div class="rounded-lg bg-[#eef3f9] overflow-hidden h-32 mb-3 flex items-center justify-center">
+                                <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-2">
+                            </div>
+                            <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">{!! $fc['t'] !!}</h3>
+                            <p class="font-body text-gray-500 text-xs leading-snug mb-3 flex-1">{{ $fc['b'] }}</p>
+                            <a href="{{ $fc['href'] }}" class="inline-flex items-center gap-1 text-[#148af4] font-body font-bold text-xs hover:gap-2 transition-all">
+                                {{ $fc['cta'] }}
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                            </a>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
 
