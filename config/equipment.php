@@ -299,4 +299,56 @@ return [
         ],
     ],
 
+    // ── Wet Cleaning ──────────────────────────────────────────────────────────
+    'wet-cleaning' => [
+        [
+            'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon-advanced-care', 'capacity' => null,
+            'title' => 'Lagoon Advanced Care wet cleaning',
+            'summary' => 'Professional wet cleaning for delicate and specialist textiles — a water-based alternative to traditional dry cleaning. Irish Laundry Systems can advise on suitability, setup and support.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'specs' => [
+                'Main specification' => ['Process' => 'Wet cleaning', 'Care system' => 'Lagoon Advanced Care', 'Suited to' => 'Delicate and specialist textiles', 'Control' => 'ClarusVibe'],
+            ],
+            'sectors' => [],
+        ],
+    ],
+
+    // ── Semi-Professional / myPRO ─────────────────────────────────────────────
+    'semi-professional' => [
+        [
+            'name' => 'myPRO Washer', 'slug' => 'mypro-washer', 'capacity' => '8 kg',
+            'title' => 'myPRO semi-professional washing machine',
+            'summary' => 'Compact semi-professional washing machine for smaller sites and lighter commercial use — faster cycles and a stronger build than a domestic machine.',
+            'image_path' => 'images/equipment/IB623_FRONT_NEW.jpg',
+            'specs' => [
+                'Main specification' => ['Range' => 'myPRO', 'Type' => 'Semi-professional', 'Capacity' => '8 kg', 'Install' => 'Freestanding'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPRO Dryer', 'slug' => 'mypro-dryer', 'capacity' => '8 kg',
+            'title' => 'myPRO semi-professional tumble dryer',
+            'summary' => 'Compact semi-professional tumble dryer to pair with the myPRO washer for smaller sites and lighter commercial use.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'myPRO', 'Type' => 'Semi-professional', 'Capacity' => '8 kg', 'Install' => 'Freestanding'],
+            ],
+            'sectors' => [],
+        ],
+    ],
+
+    // ── Accessories & Consumables ─────────────────────────────────────────────
+    'accessories' => [
+        [
+            'name' => 'Detergents & Consumables', 'slug' => 'detergents-consumables', 'capacity' => null,
+            'title' => 'Laundry detergents and consumables',
+            'summary' => 'Detergents, dosing products and consumables to keep commercial laundry equipment and workflows running. Irish Laundry Systems can advise on the right products for your equipment and process.',
+            'image_path' => 'images/equipment/Strip1.jpeg',
+            'specs' => [
+                'Main specification' => ['Type' => 'Consumables & accessories', 'Includes' => 'Detergents, dosing, parts and supporting items'],
+            ],
+            'sectors' => [],
+        ],
+    ],
+
 ];

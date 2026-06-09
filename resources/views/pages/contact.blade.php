@@ -22,14 +22,14 @@
         </div>
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request received</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">We'll be in touch shortly</h2>
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">We'll be in touch shortly</h2>
         <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-12">
             Your request has been sent. One of our engineers will review your details and confirm the next step with you.
         </p>
 
         {{-- What happens next --}}
         <div class="w-full rounded-xl overflow-hidden mb-10">
-            <div class="px-8 lg:px-16 py-10" style="background:#eef5fd;">
+            <div class="px-6 sm:px-8 lg:px-16 py-10" style="background:#eef5fd;">
                 <div class="flex items-center justify-center gap-2 mb-8">
                     <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(20,138,244,0.15);">
                         <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2.5">
@@ -38,7 +38,7 @@
                     </div>
                     <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em]">What happens next</p>
                 </div>
-                <div class="flex gap-0">
+                <div class="flex flex-col sm:flex-row gap-6 sm:gap-0">
                     @foreach([
                         ['num' => '1', 'title' => 'We review your details',      'desc' => 'Your request is assessed against site, equipment and urgency.'],
                         ['num' => '2', 'title' => 'We may ask triage questions', 'desc' => 'A quick follow-up if we need to clarify scope or access.'],
@@ -89,7 +89,7 @@
         <div class="max-w-5xl mx-auto w-full px-6 sm:px-10">
             <div class="max-w-xl">
                 <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
                     Request a Service<br>Assessment
                 </h1>
                 <p class="font-body text-white/75 text-base leading-relaxed mb-8">
@@ -126,7 +126,7 @@
 
                     {{-- Left: heading --}}
                     <div class="lg:col-span-3">
-                        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                             What to <span class="text-[#148af4]">include</span>
                         </h2>
                         <p class="font-body text-white/60 text-base leading-relaxed">
@@ -240,7 +240,7 @@
                     <input type="hidden" name="page_source">
 
                     {{-- Name + Company --}}
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Full name <span class="text-red-400">*</span>
@@ -264,7 +264,7 @@
                     </div>
 
                     {{-- Email + Phone --}}
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Email <span class="text-red-400">*</span>
@@ -288,7 +288,7 @@
                     </div>
 
                     {{-- Enquiry type + Sector --}}
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Enquiry type <span class="text-red-400">*</span>
@@ -338,7 +338,7 @@
                     </div>
 
                     {{-- Location + Equipment --}}
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
                                 Site location / county <span class="text-red-400">*</span>
@@ -527,7 +527,7 @@
 
         {{-- What happens next --}}
         <div class="mt-10 rounded-xl overflow-hidden">
-            <div class="px-8 lg:px-12 py-10" style="background:#eef5fd;">
+            <div class="px-6 sm:px-8 lg:px-12 py-10" style="background:#eef5fd;">
                 <div class="flex items-center gap-2 mb-6">
                     <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(20,138,244,0.15);">
                         <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="2.5">
@@ -536,7 +536,7 @@
                     </div>
                     <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em]">What happens next</p>
                 </div>
-                <div class="flex gap-0">
+                <div class="flex flex-col sm:flex-row gap-6 sm:gap-0">
                     @php $nextSteps = [
                         ['num' => '1', 'title' => 'We review your details',      'desc' => 'Your request is assessed against site, equipment and urgency.'],
                         ['num' => '2', 'title' => 'We may ask triage questions', 'desc' => 'A quick follow-up if we need to clarify scope or access.'],

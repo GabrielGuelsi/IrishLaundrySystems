@@ -7,14 +7,14 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
+<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
     <img src="/images/Hospitallity/hospitallityhero.jpeg" alt="Hospitality laundry installation"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 50% 20%;">
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Support</p>
-                <h1 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4">
+                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                     <span class="block">Hospitality laundry support</span>
                     <span class="block">for <span style="color:#148af4;">linen flow</span>, <span style="color:#148af4;">guest standards</span></span>
                     <span class="block">and peak-period pressure</span>
@@ -46,7 +46,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Laundry support built around <span style="color:#148af4;">guest standards</span> and <span style="color:#148af4;">room readiness</span>
                 </h2>
             </div>
@@ -77,7 +77,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Protect <span style="color:#148af4;">guest experience</span> while <span style="color:#148af4;">keeping linen moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -147,7 +147,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 <span><span style="color:#148af4;">Control hospitality laundry costs</span> while</span>
                 <span><span style="color:#148af4;">protecting guest standards</span></span>
             </h2>
@@ -159,7 +159,7 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak demand.'],
             ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
-            ['icon'=>'7',  'prefix'=>'', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.'],
+            ['icon'=>'6',  'prefix'=>'', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.'],
             ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can cut detergent waste, protect linen quality and keep wash results more consistent.'],
             ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems connects equipment planning, maintenance, repairs, rental and aftercare so decisions are not only made after something fails.'],
         ]])
@@ -171,7 +171,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Routes</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Connected support to <span style="color:#148af4;">keep hospitality laundry moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -228,7 +228,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -249,11 +249,11 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
-        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-4xl lg:text-5xl">Plan the <span style="color:#011E41;">property laundry room</span></span>
-            <span class="text-white text-4xl lg:text-5xl">around workflow, capacity and <span style="color:#011E41;">peak demand</span></span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Plan the <span style="color:#011E41;">property laundry room</span></span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around workflow, capacity and <span style="color:#011E41;">peak demand</span></span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Before equipment becomes a daily service issue, the room, linen flow, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property actually operates.
@@ -278,10 +278,10 @@
 
         <div class="mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Equipment for <span style="color:#148af4;">hospitality laundry</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space,
                 guest-facing requirements and the care needed to keep equipment performing.
             </p>
@@ -292,7 +292,7 @@
             <!-- 1. COMMERCIAL WASHERS — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Commercial <strong>Washers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support bedding, towels, robes, uniforms, guest items and food and beverage linen where wash quality, capacity and repeatable results matter.
                     </p>
@@ -346,7 +346,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Tumble dryers support linen turnaround where <span style="color:#148af4;">drying time</span>, residual moisture, energy use and room flow can affect the pace of the day.
                     </p>
@@ -388,7 +388,7 @@
             <div x-data="{ open: false, tab: 'diamms' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Ironers &amp; <strong>Finishing</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Ironers &amp; <strong>Finishing</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Ironers and finishing equipment support <span style="color:#148af4;">flatwork presentation</span>, linen consistency, table linen, bedding standards and storage readiness for hospitality environments.
                     </p>
@@ -443,7 +443,7 @@
                 </div>
                 <div x-show="tab === 'diamms'">
                     <h4 class="font-heading font-bold text-navy text-xl mb-4">Maximum hygiene and performance</h4>
-                    <div class="flex items-start gap-6 mb-8">
+                    <div class="flex flex-col sm:flex-row items-start gap-6 mb-8">
                         <div class="w-32 h-32 flex-shrink-0">
                             <img src="/images/healthcare/Diamms.png" alt="DIAMMS" class="w-full h-full object-contain">
                         </div>
@@ -463,7 +463,7 @@
                 </div>
                 <div x-show="tab === 'hygiene'">
                     <h4 class="font-heading font-bold text-navy text-xl mb-4">Pure Hygiene: Flawless Dry Linen Delivery</h4>
-                    <div class="flex items-start gap-6 mb-8">
+                    <div class="flex flex-col sm:flex-row items-start gap-6 mb-8">
                         <div class="w-32 h-32 flex-shrink-0">
                             <img src="/images/healthcare/HygieneGuard.png" alt="Hygiene Guard" class="w-full h-full object-contain">
                         </div>
@@ -502,7 +502,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers support hospitality sites where <span style="color:#148af4;">controlled dirty-side loading and clean-side unloading</span> are required for specific handling or separation needs.
                     </p>
@@ -549,7 +549,7 @@
         {{-- Section header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Protect linen quality while <span style="color:#148af4;">cutting detergent waste</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
@@ -620,7 +620,7 @@
                         <div class="lg:col-span-9 flex flex-col justify-between p-8 lg:p-10">
 
                             {{-- Tab indicators (product selector) --}}
-                            <div class="flex gap-1 border-b border-gray-100 mb-6">
+                            <div class="flex flex-wrap lg:flex-nowrap gap-1 border-b border-gray-100 mb-6">
                                 @foreach($dosingProducts as $j => $tab)
                                 <button @click="go({{ $j }})"
                                         :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
@@ -631,7 +631,7 @@
                             </div>
 
                             {{-- Content + unit image side by side --}}
-                            <div class="flex gap-6 items-start flex-1">
+                            <div class="flex flex-col lg:flex-row gap-6 items-start flex-1">
 
                                 {{-- Copy --}}
                                 <div class="flex-1">
@@ -645,7 +645,7 @@
 
                                 {{-- Unit image --}}
                                 @if($p['img'])
-                                <div class="flex-shrink-0 w-56 lg:w-80 flex items-center justify-center">
+                                <div class="flex-shrink-0 w-full sm:w-56 lg:w-80 flex items-center justify-center">
                                     <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
                                          class="w-full h-auto object-contain">
                                 </div>
@@ -662,11 +662,11 @@
 
             {{-- Prev / Next buttons --}}
             <button @click="prev()"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-8 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                    class="absolute left-0 top-1/2 -translate-y-1/2 translate-x-1 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
             </button>
             <button @click="next()"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-8 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                    class="absolute right-0 top-1/2 -translate-y-1/2 -translate-x-1 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
             </button>
 
@@ -712,7 +712,7 @@
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Our process keeps the <span style="color:#148af4;">next step</span> clear
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">

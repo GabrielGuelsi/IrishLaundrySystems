@@ -35,18 +35,18 @@
 </style>
 
 {{-- ════════════ 2. HERO ════════════ --}}
-<section class="relative overflow-hidden" style="height: 720px; min-height: 560px; background-color: #011E41;">
+<section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 520px; background-color: #011E41;">
     <img src="/images/hero/rental-hero.webp"
          alt="Commercial laundry equipment supplied and installed by Irish Laundry Systems"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 82%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full">
+    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 720px;">
                 <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
-                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl xl:text-5xl text-balance">
+                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-5xl text-balance">
                     Commercial laundry equipment rental with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
                 </h1>
                 <p class="rn-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-xl text-pretty">
@@ -63,11 +63,11 @@
                     </a>
                 </div>
                 <div class="rn-hero-btns mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Selected Electrolux Professional equipment</span>
+                    <span class="lg:whitespace-nowrap">Selected Electrolux Professional equipment</span>
                     <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Supply and installation included</span>
+                    <span class="lg:whitespace-nowrap">Supply and installation included</span>
                     <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Service support throughout the agreement</span>
+                    <span class="lg:whitespace-nowrap">Service support throughout the agreement</span>
                 </div>
             </div>
         </div>
@@ -83,7 +83,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Rental</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl 2xl:text-6xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-tight text-balance">
                     A <span class="text-[#148af4]">simpler&nbsp;way</span> to put professional laundry equipment in place
                 </h2>
             </div>
@@ -108,7 +108,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Rental Benefits</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 <span class="text-[#148af4]">What you&nbsp;gain</span> with an Irish Laundry Systems rental agreement
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
@@ -156,7 +156,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Agreement Inclusions</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 One complete solution from <span class="text-[#148af4]">supply to&nbsp;support</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
@@ -214,7 +214,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Compare Options</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
@@ -283,7 +283,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Rental Works</p>
-        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 max-w-3xl reveal text-balance" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-3xl reveal text-balance" style="transition-delay:80ms;">
             From equipment need to <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
         </h2>
         <p class="font-body text-gray-600 text-lg leading-relaxed max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
@@ -318,7 +318,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Where Rental Fits</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Rental for sites that want equipment access with <span class="text-[#148af4]">support built&nbsp;in</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
@@ -367,7 +367,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Make sure rental <span class="text-[#148af4]">fits the room, workload and&nbsp;budget</span>
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mt-5 text-pretty">
@@ -423,7 +423,7 @@
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:420px;">
         <div class="lg:max-w-[58%]">
             <p class="font-body font-bold text-white uppercase tracking-widest text-xs mb-4 reveal">During the Agreement</p>
-            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5 reveal text-balance">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal text-balance">
                 We supply it, install it and <span class="text-navy">take care of&nbsp;it</span>
             </h2>
             <p class="font-body text-white/90 text-base lg:text-lg leading-relaxed mb-4 max-w-2xl reveal text-pretty">
@@ -493,7 +493,7 @@ $rentalFaqs = [
             {{-- Left: heading + contact --}}
             <div class="lg:col-span-5 reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Request a Quote</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Ready to discuss <span class="text-[#148af4]">rental or lease&nbsp;options</span>
                 </h2>
                 <p class="font-body text-gray-600 text-lg leading-relaxed mb-8 text-pretty">

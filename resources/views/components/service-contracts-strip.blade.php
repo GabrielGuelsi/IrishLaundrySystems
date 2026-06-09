@@ -27,13 +27,13 @@
     </div>
 
     {{-- LEFT: content — 60% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-16" style="max-width:60%;">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[60%]">
 
         @if($eyebrow)
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
         @endif
 
-        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span style="color:{{ $accentFirst ? '#011E41' : '#ffffff' }};">{!! $headingLine1 !!}</span>
             <span style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
         </h2>
@@ -50,10 +50,10 @@
             @endforeach
         </div>
         @else
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-y-3 gap-x-0 mb-7">
             @foreach($features as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-10 bg-white/20 mx-5 flex-shrink-0"></div>
+                <div class="w-px h-10 bg-white/20 mx-3 sm:mx-5 flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
                 <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"

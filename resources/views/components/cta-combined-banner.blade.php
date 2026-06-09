@@ -21,10 +21,10 @@
     </div>
 
     {{-- Content — 60% width matching strip proportion --}}
-    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 max-w-full lg:max-w-[60%]" style="width:100%;">
 
         {{-- Heading --}}
-        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-4xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
             {!! $heading !!}
         </h2>
 
@@ -43,7 +43,7 @@
         </div>
         @else
         {{-- 3 horizontal features --}}
-        <div class="flex items-center flex-nowrap gap-0 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
             @foreach($features as $i => $feat)
             @if($i > 0)
                 <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>

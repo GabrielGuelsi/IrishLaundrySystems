@@ -9,15 +9,15 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
+<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
     <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial tumble dryers"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Tumble Dryers</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Choose commercial dryers around <span style="color:#148af4;">energy use, linen turnaround and long-term support</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Dryer choice affects <span style="color:#148af4;">energy cost, linen flow and support after installation</span>
                 </h2>
             </div>
@@ -76,7 +76,7 @@
         {{-- Full-width heading + intro so the title and body both sit wide, above the panels --}}
         <div class="reveal reveal-left mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 <span style="color:#148af4;">Save 65% on energy consumption</span> with Heat Pump Dryer technology
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
@@ -154,7 +154,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose dryers around the <span style="color:#148af4;">energy and turnaround pressure your laundry room carries every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -162,7 +162,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
                 ['title' => '35 min drying cycles',       'copy' => 'Heat Pump Dryer performance can protect turnaround time in busy laundry rooms where linen needs to move quickly.'],
                 ['title' => '33% lower CO₂ per cycle',     'copy' => 'Heat Pump Dryer technology can reduce greenhouse gas emissions per drying cycle where the equipment and setup are suitable.'],
@@ -186,7 +186,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Dryer features that support <span style="color:#148af4;">energy control, fabric care and drying performance</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -194,13 +194,13 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
                 ['icon' => '7',  'title' => 'Heat Pump technology',        'copy' => 'Energy-efficient drying with strong drying performance and lower running-cost pressure.', 'badge' => 'Heat Pump'],
                 ['icon' => '16', 'title' => 'Moisture Balance',            'copy' => 'Stops at the selected dryness level to protect garments and reduce wasted energy.',        'badge' => 'Moisture Balance'],
                 ['icon' => '26', 'title' => 'Drum Speed',                  'copy' => 'Controls fabric movement and mechanical action for different textile types.',             'badge' => 'Drum Speed'],
                 ['icon' => '34', 'title' => 'Adaptive Fan',                'copy' => 'Adjusts airflow to the load where available, supporting even drying and lower energy use.', 'badge' => 'Adaptive Fan'],
-                ['icon' => '5',  'title' => 'Smart Energy Management',     'copy' => 'Supports energy regulation, clearer programmes and day-to-day operator control.',          'badge' => 'CompassPro'],
+                ['icon' => '4',  'title' => 'Smart Energy Management',     'copy' => 'Supports energy regulation, clearer programmes and day-to-day operator control.',          'badge' => 'CompassPro'],
             ] as $card)
             <div class="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center text-center gap-3 shadow-card col-span-1">
                 <div class="flex items-center justify-center h-16">
@@ -222,7 +222,7 @@
         {{-- Heading + intro (full width) --}}
         <div class="max-w-4xl mb-12 lg:mb-16 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Handling</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Dryer design built around <span style="color:#148af4;">daily handling, space and operator comfort</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
@@ -317,9 +317,9 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan drying around the <span style="color:#011E41;">room, energy use and linen flow</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
@@ -350,7 +350,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dryer Range Starting Points</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Drying paths <span style="color:#148af4;">worth a closer look</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
@@ -500,7 +500,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare dryer options around <span style="color:#148af4;">energy use, turnaround and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -632,7 +632,7 @@
                             @endforeach
                         </div>
                         <div class="mt-auto flex flex-col gap-2.5">
-                            <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                 Request Advice
                             </a>
@@ -670,7 +670,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support routes that keep <span style="color:#148af4;">dryer decisions moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -678,7 +678,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
                     'title' => 'Equipment Rental',
@@ -727,7 +727,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl lg:text-2xl leading-tight mb-4">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -756,7 +756,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Keep dryer decisions <span style="color:#148af4;">connected after installation</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -808,7 +808,7 @@
 {{-- 19. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right dryer decision</span> for your laundry room?
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

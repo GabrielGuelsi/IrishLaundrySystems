@@ -22,7 +22,7 @@
             @if ($eyebrow)
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
             @endif
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-5xl leading-tight text-balance mb-4">
                 {{ $headingLead }}<span class="{{ $highlightClass }}">{{ $headingHighlight }}</span>{{ $headingTrail }}
             </h2>
             <p class="font-body {{ $align === 'center' ? 'text-gray-500 mx-auto' : 'text-gray-600' }} {{ $introMaxW ?? 'max-w-3xl' }} text-base leading-relaxed {{ $introClass }}">{{ $intro }}</p>
