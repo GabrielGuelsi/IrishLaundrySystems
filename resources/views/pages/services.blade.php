@@ -42,11 +42,11 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
                 <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
-                    Find the <span class="text-[#148af4]">right service&nbsp;route</span><br class="hidden lg:inline"> before equipment&nbsp;issues<br class="hidden lg:inline"> become bigger&nbsp;costs
+                    Find the <span class="text-[#148af4]">right service&nbsp;support</span><br class="hidden lg:inline"> before equipment&nbsp;issues<br class="hidden lg:inline"> become bigger&nbsp;costs
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl text-pretty">
-                    Faults, maintenance gaps, rental pressure and aftercare decisions can all affect cost, staffing and service continuity. <span class="whitespace-nowrap">Irish Laundry Systems</span> supports commercial laundry sites by matching the issue to the right route, so teams can reduce disruption, avoid confusion and keep the operation moving.
+                    Faults, maintenance gaps, rental needs and aftercare decisions can all affect cost, staffing and service continuity. <span class="whitespace-nowrap">Irish Laundry Systems</span> supports commercial laundry sites by reviewing the issue, identifying the right support and keeping the operation moving.
                 </p>
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
@@ -56,7 +56,7 @@
                     </a>
                     <a href="#service-routes"
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap gap-2">
-                        View Service Routes
+                        View Service Options
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
@@ -86,7 +86,7 @@
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
-                    Start with what is creating&nbsp;pressure, then choose the <span class="text-[#148af4]">right&nbsp;route</span>
+                    Start with what is creating&nbsp;pressure, then choose the <span class="text-[#148af4]">right&nbsp;support</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -104,9 +104,9 @@
             <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 lg:gap-x-5 font-body font-bold text-navy text-sm lg:text-base">
                 <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Site pressure</span>
                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Equipment already on-site</span>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Equipment already in use</span>
                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Right route</span>
+                <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Right support</span>
                 <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 <span class="px-4 py-2 rounded-full bg-bg border border-gray-200 text-navy hover:bg-[#148af4] hover:text-white hover:border-[#148af4] transition-colors duration-200 cursor-default">Clear next step</span>
             </div>
@@ -117,13 +117,13 @@
 <!-- 3. SERVICE ROUTE CARDS -->
 <div id="service-routes"></div>
 @include('components.services-cards', [
-    'eyebrow'          => 'Service Routes',
-    'headingLead'      => 'Repairs, maintenance, rental and aftercare covered through ',
-    'headingHighlight' => 'one clear route',
-    'headingTrail'     => '',
+    'eyebrow'          => 'Service Options',
+    'headingLead'      => 'Clear ',
+    'headingHighlight' => 'service options',
+    'headingTrail'     => ' for repairs, maintenance, rental and aftercare',
     'highlightClass'   => 'text-[#148af4]',
     'headingNowrap'    => false,
-    'intro'            => 'Four practical routes for faults, planned maintenance, rental pressure and aftercare around commercial laundry equipment.',
+    'intro'            => 'Four clear service options for faults, planned maintenance, rental needs and aftercare around commercial laundry equipment.',
     'introClass'       => '',
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
@@ -131,7 +131,7 @@
         ['title' => 'Repairs & Call-outs',               'body' => 'For faults, breakdowns or performance issues affecting laundry output, staffing or service continuity.',                          'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-outs',           'pos' => 'center 40%', 'bullets' => ['Machine faults', 'Breakdown calls', 'Fault diagnosis', 'Urgent equipment issues']],
         ['title' => 'Preventive Maintenance',           'body' => 'For planned inspections that reduce reactive pressure, support better service timing and keep essential equipment easier to manage.', 'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png',             'alt' => 'Preventive Maintenance',          'pos' => 'center 35%', 'bullets' => ['Scheduled visits', 'Service history', 'Planned inspections', 'Reduced reactive pressure']],
         ['title' => 'Equipment Rental',                  'body' => 'For replacement pressure, added capacity or access to commercial laundry equipment without one large purchase upfront.',           'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',           'alt' => 'Equipment Rental',                'bullets' => ['Rental equipment', 'Capacity needs', 'Replacement pressure', 'Lower upfront cost']],
-        ['title' => 'Support & Aftercare',               'body' => 'For follow-up care, genuine parts access where applicable and clearer repair, maintenance or replacement decisions after the first visit.', 'cta' => 'View Support & Aftercare',        'href' => route('parts-aftercare'),   'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',             'pos' => 'center center', 'bullets' => ['Aftercare', 'Parts access where applicable', 'Follow-up care', 'Equipment history']],
+        ['title' => 'Support & Aftercare',               'body' => 'For follow-up care, genuine parts support where needed and clearer repair, maintenance or replacement decisions after the first visit.', 'cta' => 'View Support & Aftercare',        'href' => route('parts-aftercare'),   'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',             'pos' => 'center center', 'bullets' => ['Aftercare', 'Parts support where needed', 'Follow-up care', 'Equipment history']],
     ],
 ])
 
@@ -150,15 +150,20 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach ([
                 ['type' => 'text',  'num' => '1987', 'sub' => 'year',      'title' => 'Since 1987',                      'desc' => 'Engineering-led commercial laundry work in Ireland.'],
-                ['type' => 'badge', 'badge' => '/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg', 'sub' => 'partner', 'title' => 'Electrolux Professional Partner', 'desc' => 'Authorised partner for a global professional laundry equipment platform.'],
-                ['type' => 'text',  'num' => 'RGI',  'sub' => 'certified', 'title' => 'Registered technical capability', 'desc' => 'Safe Electric registered and Registered Gas Installer contractor capability.'],
-                ['type' => 'text',  'num' => '38+',  'sub' => 'clients',   'title' => '38+ long-term clients supported', 'desc' => 'Commercial laundry support for long-term customers.'],
+                ['type' => 'badge', 'badge' => '/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg', 'sub' => 'partner', 'title' => 'Electrolux Professional Partner', 'desc' => 'Authorised Electrolux Professional Partner for commercial laundry equipment.'],
+                ['type' => 'badge', 'badge' => '/images/logo/rgi-logo.png', 'badge2' => '/images/logo/safe-electric.png', 'alt' => 'Registered Gas Installer (RGI)', 'alt2' => 'Safe Electric Registered Electrical Contractor', 'sub' => 'certified', 'title' => 'Registered electrical and gas contractor support', 'desc' => 'Registered Electrical Contractor and Registered Gas Installer contractor support.'],
+                ['type' => 'text',  'num' => '100+', 'sub' => 'clients',   'title' => '100+ clients supported', 'desc' => 'Commercial laundry support for long-term customers.'],
             ] as $item)
             <div class="border-b border-gray-300 pb-5">
                 <div class="flex items-end gap-3 mb-3 min-h-[68px] lg:min-h-[80px]">
                     @if ($item['type'] === 'badge')
-                        <img src="{{ $item['badge'] }}" alt="Authorised Electrolux Professional Partner"
-                             class="h-14 lg:h-16 w-auto object-contain flex-shrink-0" style="mix-blend-mode: multiply;">
+                        @php $bh = !empty($item['badge2']) ? 'h-10 lg:h-12' : 'h-14 lg:h-16'; @endphp
+                        <img src="{{ $item['badge'] }}" alt="{{ $item['alt'] ?? 'Authorised Electrolux Professional Partner' }}"
+                             class="{{ $bh }} w-auto object-contain flex-shrink-0" style="mix-blend-mode: multiply;">
+                        @if (!empty($item['badge2']))
+                        <img src="{{ $item['badge2'] }}" alt="{{ $item['alt2'] ?? '' }}"
+                             class="{{ $bh }} w-auto object-contain flex-shrink-0">
+                        @endif
                     @else
                         <div class="font-heading font-bold text-navy text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $item['num'] }}</div>
                     @endif
@@ -296,8 +301,8 @@
                 From equipment pressure to the <span class="text-[#148af4]">right next step</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
-                <span>The right route depends on what is happening in the laundry room.</span>
-                <span><span>Irish Laundry Systems</span> connects the issue, the equipment and the practical next step before the problem becomes harder to manage.</span>
+                <span>The right support depends on what is happening in the laundry room.</span>
+                <span><span>Irish Laundry Systems</span> reviews the issue, the equipment and the next step before the problem becomes harder to manage.</span>
             </p>
         </div>
     </div>
@@ -308,8 +313,8 @@
         @foreach ([
             ['num' => '01.', 'title' => 'Understand what is under pressure', 'body' => 'Clarify whether the issue is a fault, recurring problem, planned maintenance need, rental requirement or follow-up after previous work.', 'img' => '/images/healthcare/operator.jpg'],
             ['num' => '02.', 'title' => 'Review the machine and its history', 'body' => 'Look at the machine type, condition, usage, service history and how important the equipment is to daily operation.',                       'img' => '/images/about/about-engineers.jpg'],
-            ['num' => '03.', 'title' => 'Choose the right route',           'body' => 'Match the issue to repairs, preventive maintenance, rental or aftercare, depending on what the site needs.',                            'img' => '/images/healthcare/Customer-Care_Line-6000-_001.jpg', 'pos' => '20% center'],
-            ['num' => '04.', 'title' => 'Keep the next decision clear',     'body' => 'Use reports, service history, parts access where applicable and follow-up recommendations to keep repair, maintenance or replacement decisions practical.', 'img' => '/images/healthcare/customer-care-line6000.jpg'],
+            ['num' => '03.', 'title' => 'Choose the right support',         'body' => 'Match the issue to repairs, preventive maintenance, rental or aftercare, depending on what the site needs next.',                            'img' => '/images/healthcare/Customer-Care_Line-6000-_001.jpg', 'pos' => '20% center'],
+            ['num' => '04.', 'title' => 'Keep the next decision clear',     'body' => 'Use reports, service history, parts support where needed and follow-up recommendations to keep repair, maintenance or replacement decisions clear.', 'img' => '/images/healthcare/customer-care-line6000.jpg'],
         ] as $card)
         <div class="svc-gallery-card">
             <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
@@ -335,10 +340,10 @@
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Installed Equipment</p>
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Keep <span class="text-[#148af4]">aftercare clearer</span> with <span class="text-[#148af4]">Electrolux partnership</span> behind the&nbsp;equipment
+                    Keep <span class="text-[#148af4]">aftercare clearer</span> with <span class="text-[#148af4]">Electrolux Professional knowledge</span> behind the&nbsp;equipment
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
-                    After a repair, service visit, rental decision or equipment recommendation, the next step often depends on the machines already in place. As an Authorised Electrolux Professional Partner, Irish Laundry Systems gives sites clearer access to genuine Electrolux parts where applicable, support from people who know the equipment and better-informed follow-up after the visit.
+                    After a repair, service visit, rental decision or equipment recommendation, the next step often depends on the machines already in use. As an Authorised Electrolux Professional Partner, Irish Laundry Systems can provide genuine Electrolux parts support where needed, support from people who know the equipment and clearer follow-up after the visit.
                 </p>
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-bold text-sm transition-colors">
@@ -361,7 +366,7 @@
                 <p class="font-heading font-bold text-navy text-base mb-4">What that means for your site</p>
                 <ul class="space-y-3">
                     @foreach ([
-                        'Clearer access to genuine Electrolux parts where applicable',
+                        'Genuine Electrolux parts support where needed',
                         'Less uncertainty after a fault or service visit',
                         'Support from people who know the equipment',
                         'Better-informed repair, maintenance or replacement decisions',
@@ -408,10 +413,10 @@
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Service Assessment</p>
             <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                Start with the <span class="text-[#148af4]">right service&nbsp;route</span>
+                Start with the <span class="text-[#148af4]">right service&nbsp;support</span>
             </h2>
             <p class="font-body text-blue-200 text-base leading-relaxed mb-8 max-w-md text-pretty">
-                Tell us what is happening with your laundry equipment. Irish Laundry Systems will connect the enquiry to the right route, whether that means repairs, preventive maintenance, equipment rental or&nbsp;aftercare.
+                Tell us what is happening with your laundry equipment. Irish Laundry Systems will guide you toward the right support, whether that means repairs, preventive maintenance, equipment rental or&nbsp;aftercare.
             </p>
             <div class="flex flex-row flex-wrap gap-3">
                 <a href="{{ route('contact') }}"

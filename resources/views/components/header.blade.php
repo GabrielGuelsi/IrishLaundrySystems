@@ -74,7 +74,7 @@
 
                 <a href="{{ route('rental') }}"
                    class="text-navy hover:text-orange hover:bg-bg px-3 py-2 rounded-md text-sm font-body font-bold transition-colors duration-150 whitespace-nowrap">
-                    Rental
+                    Equipment Rental
                 </a>
 
                 <!-- Equipment Dropdown -->
@@ -194,7 +194,7 @@
                 </div>
             </div>
 
-            <a href="{{ route('rental') }}" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100">Rental</a>
+            <a href="{{ route('rental') }}" class="flex items-center justify-between w-full py-4 text-navy font-bold border-b border-gray-100">Equipment Rental</a>
 
             <!-- Mobile Equipment -->
             <div x-data="{ eOpen: false }">

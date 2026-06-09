@@ -28,23 +28,17 @@
         <div class="hidden lg:flex items-center gap-20">
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
-                </div>
-                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Safe Electric registered</span>
+                <img src="/images/icons/strip-electrical-contractor.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain flex-shrink-0">
+                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Electrical Contractor</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
-                </div>
+                <img src="/images/icons/strip-gas-installer.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain flex-shrink-0">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
-                </div>
+                <img src="/images/icons/strip-clients-supported.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain flex-shrink-0">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">100+ clients supported</span>
             </div>
 
