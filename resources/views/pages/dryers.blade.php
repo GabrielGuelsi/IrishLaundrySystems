@@ -88,8 +88,8 @@
 
             {{-- LEFT: dryer lineup + CTA --}}
             <div class="reveal reveal-left">
-                <div class="mb-8 overflow-hidden flex items-center justify-center h-[240px] lg:h-[300px]">
-                    <img src="/images/equipment/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="w-full h-auto object-contain scale-[1.3] origin-center">
+                <div class="mb-8 flex items-center justify-center h-[300px] lg:h-[440px]">
+                    <img src="/images/equipment/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="max-w-full max-h-full w-auto h-auto object-contain">
                 </div>
                 <a href="#dryer-range"
                    class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-base transition-colors duration-200">
