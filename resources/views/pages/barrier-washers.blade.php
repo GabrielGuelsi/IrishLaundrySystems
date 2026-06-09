@@ -9,15 +9,15 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
+<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
     <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Barrier washing machines"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Barrier Washing Machines</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Control hygiene flow with <span style="color:#148af4;">dirty-side and clean-side separation</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -71,66 +71,68 @@
 </section>
 
 {{-- 5. HYGIENE FLOW / BARRIER PROCESS FEATURE --}}
-<section class="py-16 lg:py-24 overflow-hidden" style="background-color:#011E41;">
+<section class="py-12 lg:py-24 bg-white overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="space-y-12 lg:space-y-14">
 
-            {{-- Left: copy --}}
-            <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hygiene Flow</p>
-                <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Separate soiled and clean handling for <span style="color:#148af4;">controlled hygiene flow</span>
-                </h2>
-                <p class="font-body text-white/75 text-base leading-relaxed mb-7 max-w-xl">
-                    Barrier washers support a controlled laundry flow by loading soiled linen from one side and unloading clean linen from the other. This physical separation supports cleaner process control where hygiene, staff routines and linen movement need to work together.
-                </p>
-                <div class="grid grid-cols-2 gap-x-6 gap-y-4 mb-8 max-w-lg">
-                    @foreach([
-                        ['t' => 'Dirty-side loading',      'd' => 'M12 4.5v15m0 0-6-6m6 6 6-6'],
-                        ['t' => 'Clean-side unloading',    'd' => 'M12 19.5v-15m0 0-6 6m6-6 6 6'],
-                        ['t' => 'Hygiene Watchdog',        'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.249-8.25-3.285Z'],
-                        ['t' => 'RABC support where required', 'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'],
-                    ] as $mp)
-                    <div class="flex items-center gap-2.5">
-                        <span class="flex items-center justify-center w-9 h-9 rounded-full bg-[#148af4]/15 flex-shrink-0">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $mp['d'] }}"/></svg>
-                        </span>
-                        <span class="font-body text-white text-sm font-semibold leading-snug">{{ $mp['t'] }}</span>
-                    </div>
-                    @endforeach
+        {{-- Centered eyebrow + heading + body --}}
+        <div class="text-center mx-auto max-w-3xl reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hygiene Flow</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                Separate soiled and clean handling for <span style="color:#148af4;">controlled hygiene flow</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Barrier washers support a controlled laundry flow by loading soiled linen from one side and unloading clean linen from the other. This physical separation supports cleaner process control where hygiene, staff routines and linen movement need to work together.
+            </p>
+        </div>
+
+        {{-- 4 points in one centered horizontal row --}}
+        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-8 reveal">
+            @foreach([
+                ['t' => 'Dirty-side loading',          'd' => 'M12 4.5v15m0 0-6-6m6 6 6-6'],
+                ['t' => 'Clean-side unloading',        'd' => 'M12 19.5v-15m0 0-6 6m6-6 6 6'],
+                ['t' => 'Hygiene Watchdog',            'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.249-8.25-3.285Z'],
+                ['t' => 'RABC support where required', 'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'],
+            ] as $mp)
+            <div class="flex items-center gap-2.5">
+                <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $mp['d'] }}"/></svg>
+                <span class="font-body text-navy text-sm font-bold leading-snug">{{ $mp['t'] }}</span>
+            </div>
+            @endforeach
+        </div>
+
+        {{-- Centered CTA --}}
+        <div class="text-center mt-8">
+            <a href="{{ route('request-assessment') }}"
+               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                Request Barrier Washer Advice
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+        </div>
+
+        {{-- Workflow illustration + barrier-concept video, side by side on white --}}
+        <div class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mt-12 lg:mt-16">
+            <div class="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-card p-3 lg:p-4">
+                <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
+                     alt="Barrier laundry workflow — controlled flow from dirty zone to clean zone"
+                     class="w-full h-auto object-contain">
+            </div>
+            <div>
+                <div class="relative w-full rounded-2xl overflow-hidden shadow-card" style="padding-bottom:56.25%;">
+                    <iframe class="absolute inset-0 w-full h-full"
+                            src="https://www.youtube.com/embed/26g9u4GPRVc"
+                            title="Line 6000 laundry solutions — The barrier concept in the healthcare sector"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                 </div>
-                <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Request Barrier Washer Advice
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank" rel="noopener"
+                   class="inline-flex items-start gap-2 text-navy hover:text-[#148af4] font-heading font-bold text-sm mt-4 transition-colors">
+                    Watch workflow video
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
-
-            {{-- Workflow illustration + barrier-concept video --}}
-            <div class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div class="rounded-2xl overflow-hidden bg-white p-3 lg:p-4">
-                    <img src="/images/healthcare/Electrolux-Barrier-infografica-LOW.webp"
-                         alt="Barrier laundry workflow — controlled flow from dirty zone to clean zone"
-                         class="w-full h-auto object-contain">
-                </div>
-                <div>
-                    <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom:56.25%;">
-                        <iframe class="absolute inset-0 w-full h-full"
-                                src="https://www.youtube.com/embed/26g9u4GPRVc"
-                                title="Line 6000 laundry solutions — The barrier concept in the healthcare sector"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank" rel="noopener"
-                       class="inline-flex items-start gap-2 text-white hover:text-[#148af4] font-heading font-bold text-sm mt-4 transition-colors">
-                        Watch workflow video
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                </div>
-            </div>
-
         </div>
+
     </div>
 </section>
 
@@ -148,34 +150,23 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
-            @foreach([
-                ['stat' => 'Up to 50%', 'title' => 'water saving',                'copy' => 'Double drain options can support water recycling and reduce water consumption where specified.', 'd' => 'M12 21a6.75 6.75 0 0 1-6.75-6.75c0-3 3.5-7.5 6.75-11.25 3.25 3.75 6.75 8.25 6.75 11.25A6.75 6.75 0 0 1 12 21Z'],
-                ['stat' => '25%',       'title' => 'productivity increase',       'copy' => 'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.', 'd' => 'M2.25 18 9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941'],
-                ['stat' => 'Integrated','title' => 'water, energy and load control', 'copy' => 'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.', 'd' => 'M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.4 48.4 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.99 5.99 0 0 1-2.031.352 5.99 5.99 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.99 5.99 0 0 1-2.031.352 5.99 5.99 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z'],
-                ['stat' => 'Efficient','title' => 'detergent and water control',  'copy' => 'Efficient Dosing adds detergent and water according to load weight, reducing waste and supporting process consistency.', 'd' => 'M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.3 48.3 0 0 1 12 21a48.3 48.3 0 0 1-8.135-.687c-1.717-.293-2.3-2.379-1.067-3.61L5 14.5'],
-                ['stat' => 'Power',    'title' => 'time and money before drying',  'copy' => 'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.', 'd' => 'm3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'],
-            ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-6 flex flex-col h-full">
-                <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#148af4]/10 mb-4">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['d'] }}"/></svg>
-                </span>
-                <p class="font-heading font-bold text-[#148af4] text-2xl leading-none mb-1">{{ $card['stat'] }}</p>
-                <p class="font-heading font-bold text-navy text-sm leading-snug mb-2">{{ $card['title'] }}</p>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-            </div>
-            @endforeach
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'50%',         'size'=>'text-4xl', 'label'=>'water saving',                   'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
+            ['icon'=>'9',  'prefix'=>'',      'stat'=>'25%',         'size'=>'text-4xl', 'label'=>'productivity increase',          'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.'],
+            ['icon'=>'10', 'prefix'=>'',      'stat'=>'Integrated',  'size'=>'text-2xl', 'label'=>'water, energy and load control', 'body'=>'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.'],
+            ['icon'=>'8',  'prefix'=>'',      'stat'=>'Efficient',   'size'=>'text-2xl', 'label'=>'detergent and water control',    'body'=>'Efficient Dosing adds detergent and water according to load weight, reducing waste and supporting process consistency.'],
+            ['icon'=>'31', 'prefix'=>'',      'stat'=>'Power',       'size'=>'text-2xl', 'label'=>'time and money before drying',   'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
+        ]])
     </div>
 </section>
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
+<section class="py-12 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Features that support <span style="color:#148af4;">separation, control and safer handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -183,21 +174,21 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             @foreach([
-                ['title' => 'Double-door barrier design', 'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.',          'chip' => 'Barrier Separation',          'd' => 'M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'],
-                ['title' => 'Hygiene Watchdog',           'copy' => 'Supports full-cycle completion and hygiene process control.',                       'chip' => 'Hygiene Watchdog',           'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.249-8.25-3.285Z'],
-                ['title' => 'ClarusVibe / Double Screen', 'copy' => 'Guided operation for dirty-side and clean-side control.',                          'chip' => 'ClarusVibe | Double Screen', 'd' => 'M9 17.25v1.007a3 3 0 0 1-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0 1 15 18.257V17.25m6-12V15a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 15V5.25m18 0A2.25 2.25 0 0 0 18.75 3H5.25A2.25 2.25 0 0 0 3 5.25m18 0V12a2.25 2.25 0 0 1-2.25 2.25H5.25A2.25 2.25 0 0 1 3 12V5.25'],
-                ['title' => 'AIDO / Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',           'chip' => 'AIDO | Automatic Door Locking', 'd' => 'M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z'],
-                ['title' => 'Clearer process control',    'copy' => 'Connected options can support monitoring, traceability and clearer service decisions.', 'chip' => 'CMIS | OnE Laundry where applicable', 'd' => 'M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6'],
+                ['icon' => '2',  'title' => 'Double-door barrier design',     'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.',          'badge' => 'Barrier Separation'],
+                ['icon' => '96', 'title' => 'Hygiene Watchdog',               'copy' => 'Supports full-cycle completion and hygiene process control.',                       'badge' => 'Hygiene Watchdog'],
+                ['icon' => '4',  'title' => 'ClarusVibe / Double Screen',     'copy' => 'Guided operation for dirty-side and clean-side control.',                          'badge' => 'ClarusVibe | Double Screen'],
+                ['icon' => '95', 'title' => 'AIDO / Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',               'badge' => 'AIDO | Automatic Door Locking'],
+                ['icon' => '11', 'title' => 'Clearer process control',        'copy' => 'Connected options can support monitoring, traceability and clearer service decisions.', 'badge' => 'CMIS | OnE Laundry where applicable'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col h-full shadow-card">
-                <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#148af4]/10 mb-4">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['d'] }}"/></svg>
-                </span>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $card['copy'] }}</p>
-                <span class="mt-auto inline-block font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded self-start">{{ $card['chip'] }}</span>
+            <div class="p-6 flex flex-col items-center text-center gap-3 col-span-1">
+                <div class="flex items-center justify-center h-16">
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-16 h-16 object-contain">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
             </div>
             @endforeach
         </div>
@@ -212,65 +203,121 @@
 </section>
 
 {{-- 8. OPERATOR COMFORT / ERGOCERT --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-12 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
 
-            <div class="lg:col-span-7 reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Barrier washer design built around <span style="color:#148af4;">daily handling and safer staff routines</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-7">
-                    Barrier laundry work is repetitive. The right washer should support loading, unloading, door handling and operator confidence, especially where clean and soiled sides must stay controlled.
-                </p>
-                <div class="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-5 mb-7">
-                    @foreach([
-                        ['s' => '4-star', 'l' => 'ERGOCERT certified'],
-                        ['s' => '25%',    'l' => 'productivity increase'],
-                        ['s' => '75%',    'l' => 'fewer sick days'],
-                        ['s' => '59%',    'l' => 'fewer WMSDs'],
-                        ['s' => '40N',    'l' => 'door opening force'],
-                        ['s' => 'Auto',   'l' => 'door handling'],
-                    ] as $pp)
+        {{-- Heading + intro (full width) --}}
+        <div class="max-w-4xl mb-10 lg:mb-16 reveal reveal-left">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                Barrier washer design built around <span style="color:#148af4;">daily handling and safer staff routines</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
+                Barrier laundry work is repetitive. The right washer should support loading, unloading, door handling and operator confidence, especially where clean and soiled sides must stay controlled.
+            </p>
+        </div>
+
+        {{-- Infographic grid: proof + barrier washer + door panel + filter panel --}}
+        <style>@media (min-width:1024px){.bw-grid{grid-template-columns:minmax(0,1.5fr) auto minmax(0,1fr) minmax(0,1fr) !important;}.bw-ss{grid-column:2 / 4 !important;margin-left:-2rem;}}</style>
+        <div class="grid grid-cols-1 gap-6 lg:gap-8 items-start reveal bw-grid">
+
+            {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col sm:flex-row gap-5 items-start">
+                    <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
                     <div>
-                        <p class="font-heading font-bold text-[#148af4] text-2xl leading-none">{{ $pp['s'] }}</p>
-                        <p class="font-body text-gray-500 text-xs leading-snug mt-1">{{ $pp['l'] }}</p>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic interventions can reduce work-related musculoskeletal disorders (WMSDs) by <strong class="text-navy font-bold">59%</strong>, with an average decrease of <strong class="text-navy font-bold">75%</strong> in sick days and a <strong class="text-navy font-bold">25%</strong> increase in productivity.</p>
+                        <p class="font-body text-gray-400 text-xs mt-2">Washington State Department of Labor &amp; Industries</p>
+                    </div>
+                </div>
+
+                {{-- ERGOCERT 4-star detail --}}
+                <div class="border-t border-gray-200 pt-6">
+                    <div class="flex items-center gap-3 mb-2">
+                        <span class="font-body text-gray-500 text-xs uppercase tracking-[0.18em]">Ergonomics Certified</span>
+                        <span class="flex items-center gap-1 text-[#148af4]">
+                            @for($s = 0; $s < 4; $s++)
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M11.48 3.5a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
+                            @endfor
+                        </span>
+                    </div>
+                    <p class="font-heading font-bold text-navy text-base mb-1">4-Star Rating — unique in the industry</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Selected Electrolux Professional Line 6000 barrier washers carry 4-star ERGOCERT recognition for ergonomic design, supporting safer, repetitive daily operation.</p>
+                </div>
+
+                {{-- CompassPro --}}
+                <div class="border-t border-gray-200 pt-6">
+                    <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-14 w-auto mb-3">
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">CompassPro comes with a new design and improved user experience. Flexible and customisable, comes with preset programmes as well as free programme slots. Up to 18 languages available.</p>
+                </div>
+            </div>
+
+            {{-- COL 2: barrier washer image (the big equipment image) --}}
+            <div class="flex items-center justify-center py-2">
+                <img src="/images/equipment/line6000-barrier-washer.webp" alt="Line 6000 Evolution Barrier Washer" class="w-auto h-auto max-h-[560px] object-contain">
+            </div>
+
+            {{-- COL 3: The door that makes the difference --}}
+            <div class="rounded-2xl bg-white p-5 lg:p-6 flex flex-col" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-4">The door that makes the difference</h3>
+                <div class="space-y-3.5">
+                    @foreach([
+                        ['t' => 'Ideal height',              'img' => 'idealheight.svg',   'b' => 'The door is positioned at the most ergonomically suitable height, making a real difference for loading soiled linen and unloading clean linen.'],
+                        ['t' => 'Wide-angle door opening',   'd' => 'M13.5 10.5V6.75a4.5 4.5 0 1 1 9 0v3.75M3.75 21.75h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H3.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z', 'b' => 'A wide-angle opening with automatic inner door handling (AIDO) supports easier, faster loading and unloading on both sides.'],
+                        ['t' => 'A better grip',             'img' => 'abettergrip.svg',   'b' => 'Open and shut the door smoothly thanks to the handle design and easy-close magnetic door.'],
+                        ['t' => 'Left / right door options', 'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', 'b' => 'Left or right door configurations let the barrier washer suit the room layout and keep clean and soiled sides controlled.'],
+                    ] as $dp)
+                    <div class="flex items-start gap-3">
+                        @if(!empty($dp['img']))
+                        <img src="/images/equipment/{{ $dp['img'] }}" alt="{{ $dp['t'] }}" class="w-8 h-8 object-contain flex-shrink-0 mt-0.5">
+                        @else
+                        <svg class="w-7 h-7 text-[#010d44] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['d'] }}"/></svg>
+                        @endif
+                        <div>
+                            <h4 class="font-heading font-bold text-navy text-sm leading-snug mb-0.5">{{ $dp['t'] }}</h4>
+                            <p class="font-body text-gray-500 text-xs leading-snug">{{ $dp['b'] }}</p>
+                        </div>
                     </div>
                     @endforeach
                 </div>
-                <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-8">
-                    @foreach(['Optimal height', 'Wide-angle door opening', 'Left / right door options', 'Space-saving design where applicable'] as $i => $pt)
-                    @if($i > 0)<span class="text-gray-300">|</span>@endif
-                    <span class="font-body text-navy text-sm font-semibold">{{ $pt }}</span>
-                    @endforeach
+            </div>
+
+            {{-- COL 4: filter drawer + Request Equipment Advice CTA --}}
+            <div class="flex flex-col gap-5">
+                <div class="rounded-2xl bg-white p-6 flex-1" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
+                    <div class="flex items-start justify-between gap-3 mb-2">
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug">Safer for users, lighter to handle</h3>
+                        <img src="/images/equipment/saferforusers.svg" alt="Safer handling" class="w-16 h-16 object-contain flex-shrink-0">
+                    </div>
+                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed mb-3">A low <strong class="text-navy font-bold">40N</strong> door-opening force and automatic door handling take the strain out of repeated loading and unloading, so barrier laundry routines stay safer and more consistent.</p>
+                    <div class="flex flex-wrap gap-x-4 gap-y-1.5">
+                        @foreach(['40N door opening force', 'Auto door handling', 'Space-saving design where applicable'] as $pt)
+                        <span class="inline-flex items-center gap-1.5 font-body text-navy text-xs font-semibold">
+                            <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            {{ $pt }}
+                        </span>
+                        @endforeach
+                    </div>
                 </div>
                 <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                   class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
                     Request Equipment Advice
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
 
-            {{-- ERGOCERT badge --}}
-            <div class="lg:col-span-5 flex lg:justify-end reveal reveal-right">
-                <div class="relative w-full max-w-xs bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden">
-                    <div class="absolute top-0 right-0 z-10 bg-[#148af4] text-white text-[0.6rem] font-body font-bold uppercase tracking-[0.12em] px-3 py-1.5 rounded-bl-xl">Unique in the industry</div>
-                    <div class="px-8 pt-10 pb-8 text-center">
-                        <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-44 h-auto mx-auto">
-                        <div class="border-t border-gray-200 mt-5 pt-5">
-                            <p class="font-body text-gray-500 text-xs uppercase tracking-[0.18em] mb-2.5">Ergonomics Certified</p>
-                            <div class="flex items-center justify-center gap-1.5 text-[#148af4]">
-                                @for($s = 0; $s < 4; $s++)
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M11.48 3.5a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/></svg>
-                                @endfor
-                            </div>
-                            <p class="font-heading font-bold text-navy text-lg mt-2.5">4-Star Rating</p>
-                        </div>
-                    </div>
+            {{-- Space-saving — spans the washer + door columns, aligned with the end of the left column --}}
+            <div class="flex items-center gap-3 lg:px-6 lg:border-x lg:border-gray-200 reveal bw-ss">
+                <span class="flex items-center justify-center w-10 h-10 rounded-xl border border-gray-200 flex-shrink-0">
+                    <svg class="w-5 h-5 text-[#010d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
+                </span>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug">Space-saving where applicable</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Selected barrier washer formats are built to fit the room, keeping dirty-side and clean-side access controlled without wasting floor space.</p>
                 </div>
             </div>
-
         </div>
     </div>
 </section>
@@ -315,7 +362,7 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-14 lg:py-20" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan barrier laundry around the <span style="color:#011E41;">wall, workflow and hygiene route</span>

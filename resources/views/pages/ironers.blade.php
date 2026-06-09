@@ -9,15 +9,15 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden flex flex-col" style="height:720px; min-height:560px;">
+<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
     <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial ironers and flatwork finishing"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Choose commercial ironers around <span style="color:#148af4;">linen finish, output and support</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Start with what the laundry room needs to finish each day
                 </h2>
             </div>
@@ -76,7 +76,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironing &amp; Finishing Options</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Find the <span style="color:#148af4;">right option</span> for ironed linen and finished garments
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -84,7 +84,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             @foreach([
                 ['title' => 'Hot Cylinder / Flatwork Ironers', 'copy' => 'For busy laundry rooms handling sheets, table linen and flatwork where finish, output and hygiene control matter every day.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range'],
                 ['title' => 'Roller / Rotary Ironers',         'copy' => 'For teams searching for roller irons, rotary ironers or dryer ironers and needing a clearer way to compare flatwork options.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range'],
@@ -110,7 +110,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Control <span style="color:#148af4;">energy, output and handling pressure</span> before the ironer is chosen
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -118,29 +118,28 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['prefix' => '', 'stat' => '20%',   'label' => 'gas energy saving', 'copy' => 'Electrolux Professional Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.', 'micro' => 'Gas-heated models only'],
-                ['prefix' => '', 'stat' => '+30%',  'label' => 'productivity',      'copy' => 'Dubixium supports stronger output by distributing heat evenly across the cylinder and reducing overheating pressure.', 'micro' => ''],
-                ['prefix' => 'Up to', 'stat' => '600', 'label' => 'sheets daily',   'copy' => 'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output.', 'micro' => 'Output depends on model, linen type and room setup'],
-                ['prefix' => '', 'stat' => '',       'label' => 'Fewer manual steps', 'copy' => 'Feeding, folding and stacking options can reduce manual handling pressure and keep linen moving with fewer interruptions.', 'micro' => ''],
-                ['prefix' => '', 'stat' => '',       'label' => 'Right configuration first', 'copy' => 'Front or rear delivery, working width, automation and heating choice all affect room flow, running cost and long-term value.', 'micro' => ''],
+                ['prefix' => '', 'stat' => '20%',   'label' => 'gas energy saving', 'copy' => 'Electrolux Professional Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.', 'badge' => 'Gas-heated models only'],
+                ['prefix' => '', 'stat' => '+30%',  'label' => 'productivity',      'copy' => 'Dubixium supports stronger output by distributing heat evenly across the cylinder and reducing overheating pressure.', 'badge' => 'Dubixium'],
+                ['prefix' => 'Up to', 'stat' => '600', 'label' => 'sheets daily',   'copy' => 'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output.', 'badge' => 'Model and setup dependent'],
+                ['prefix' => '', 'stat' => '',       'label' => 'Fewer manual steps', 'copy' => 'Feeding, folding and stacking options can reduce manual handling pressure and keep linen moving with fewer interruptions.', 'badge' => 'Feed / Fold / Stack'],
+                ['prefix' => '', 'stat' => '',       'label' => 'Right configuration first', 'copy' => 'Front or rear delivery, working width, automation and heating choice all affect room flow, running cost and long-term value.', 'badge' => 'Configuration'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                @if($card['stat'])
-                <p class="font-heading font-bold leading-none mb-3">
-                    @if($card['prefix'])<span class="font-body text-gray-400 text-sm font-semibold uppercase tracking-wide mr-1">{{ $card['prefix'] }}</span>@endif
-                    <span class="text-[#148af4] text-5xl">{{ $card['stat'] }}</span>
-                </p>
-                <p class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['label'] }}</p>
-                @else
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['label'] }}</h3>
-                @endif
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-                @if($card['micro'])
-                <p class="font-body text-gray-400 text-xs leading-relaxed mt-3">{{ $card['micro'] }}</p>
-                @endif
+            <div class="p-6 flex flex-col items-center text-center gap-3 col-span-1">
+                <div class="flex items-center justify-center h-16">
+                    @if($card['stat'])
+                    <p class="font-heading font-bold leading-none">
+                        @if($card['prefix'])<span class="font-body text-gray-400 text-xs font-semibold uppercase tracking-wide block mb-1">{{ $card['prefix'] }}</span>@endif
+                        <span class="text-[#148af4] text-4xl sm:text-5xl">{{ $card['stat'] }}</span>
+                    </p>
+                    @else
+                    <div class="w-10 h-1 rounded-full bg-[#148af4]"></div>
+                    @endif
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['label'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
             </div>
             @endforeach
         </div>
@@ -153,7 +152,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Proof</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology that protects <span style="color:#148af4;">finish quality, hygiene and daily handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -161,22 +160,21 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['icon' => '2',  'title' => 'DIAMMS / Bacteria-free linen', 'copy' => 'DIAMMS adjusts ironer speed around residual moisture, supporting bacteria-free linen through controlled thermal disinfection.'],
-                ['icon' => '31', 'title' => 'Dubixium',                     'copy' => 'Even heat distribution across the cylinder supports consistent results and helps reduce overheating pressure.'],
-                ['icon' => '5',  'title' => 'ERGOCERT 4-star',              'copy' => 'Certified ergonomic design supports repeated operator handling and safer daily use.'],
-                ['icon' => '16', 'title' => 'Feed Now / Feed Alone',        'copy' => 'Feeding support helps operators manage linen flow more easily and reduce handling pressure.'],
-                ['icon' => '34', 'title' => 'FoldFlex / Hygiene Guard',      'copy' => 'Advanced FFS options support customised folding and moisture-parameter control on advanced FFS configurations.'],
+                ['icon' => '2',  'title' => 'DIAMMS / Bacteria-free linen', 'copy' => 'DIAMMS adjusts ironer speed around residual moisture, supporting bacteria-free linen through controlled thermal disinfection.', 'badge' => 'DIAMMS'],
+                ['icon' => '31', 'title' => 'Dubixium',                     'copy' => 'Even heat distribution across the cylinder supports consistent results and helps reduce overheating pressure.', 'badge' => 'Dubixium'],
+                ['icon' => '5',  'title' => 'ERGOCERT 4-star',              'copy' => 'Certified ergonomic design supports repeated operator handling and safer daily use.', 'badge' => 'ERGOCERT'],
+                ['icon' => '16', 'title' => 'Feed Now / Feed Alone',        'copy' => 'Feeding support helps operators manage linen flow more easily and reduce handling pressure.', 'badge' => 'Feeding'],
+                ['icon' => '34', 'title' => 'FoldFlex / Hygiene Guard',      'copy' => 'Advanced FFS options support customised folding and moisture-parameter control on advanced FFS configurations.', 'badge' => 'FoldFlex'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col items-center text-center gap-4 shadow-card">
-                <div class="flex items-center justify-center h-20">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-20 h-20 object-contain">
+            <div class="p-6 flex flex-col items-center text-center gap-3 col-span-1">
+                <div class="flex items-center justify-center h-16">
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-16 h-16 object-contain">
                 </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-                </div>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
             </div>
             @endforeach
         </div>
@@ -187,12 +185,12 @@
 <section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 reveal">
+        <div class="mb-10 lg:mb-12 reveal reveal-left max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Layout</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose front or rear delivery around <span style="color:#148af4;">the way linen moves</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
                 Front and rear delivery affect how staff feed, collect and move linen through the room. The right choice depends on space, workflow, operator handling and output pressure.
             </p>
         </div>
@@ -200,31 +198,49 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-10">
 
             {{-- Front delivery --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-7 lg:p-8 flex flex-col h-full reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-2">Front Delivery</p>
-                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">A strong fit when space is tighter</h3>
+            <div class="rounded-2xl bg-white p-7 lg:p-8 flex flex-col h-full reveal reveal-left" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
+                <div class="flex items-start gap-4 mb-4">
+                    <span class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#148af4]/10">
+                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
+                    </span>
+                    <div>
+                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-1">Front Delivery</p>
+                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">A strong fit when space is tighter</h3>
+                    </div>
+                </div>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                     Front delivery keeps linen returning to the front of the machine. It can work well where room depth is limited and the laundry room needs a more compact flatwork setup.
                 </p>
-                <div class="mt-auto flex items-center flex-wrap gap-x-4 gap-y-2">
-                    @foreach(['Space-conscious layout', 'Linen returns to the front', 'Good fit for selected OPL rooms'] as $i => $pt)
-                    @if($i > 0)<span class="text-gray-300">|</span>@endif
-                    <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
+                <div class="mt-auto divide-y divide-gray-100 border-t border-gray-100">
+                    @foreach(['Space-conscious layout', 'Linen returns to the front', 'Good fit for selected OPL rooms'] as $pt)
+                    <div class="flex items-center gap-3 py-3">
+                        <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                        <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
+                    </div>
                     @endforeach
                 </div>
             </div>
 
             {{-- Rear delivery --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-7 lg:p-8 flex flex-col h-full reveal reveal-right">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-2">Rear Delivery</p>
-                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">A strong fit for workflow and operator handling</h3>
+            <div class="rounded-2xl bg-white p-7 lg:p-8 flex flex-col h-full reveal reveal-right" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
+                <div class="flex items-start gap-4 mb-4">
+                    <span class="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-[#148af4]/10">
+                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"/></svg>
+                    </span>
+                    <div>
+                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-1">Rear Delivery</p>
+                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">A strong fit for workflow and operator handling</h3>
+                    </div>
+                </div>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                     Rear delivery separates feeding and collection where the room allows it. This can support smoother workflow, better handling and stronger output planning on higher-demand sites.
                 </p>
-                <div class="mt-auto flex items-center flex-wrap gap-x-4 gap-y-2">
-                    @foreach(['Workflow separation', 'Operator handling support', 'Good fit where room layout allows'] as $i => $pt)
-                    @if($i > 0)<span class="text-gray-300">|</span>@endif
-                    <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
+                <div class="mt-auto divide-y divide-gray-100 border-t border-gray-100">
+                    @foreach(['Workflow separation', 'Operator handling support', 'Good fit where room layout allows'] as $pt)
+                    <div class="flex items-center gap-3 py-3">
+                        <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                        <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -246,19 +262,25 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-10 lg:px-16 py-16 lg:py-24" style="width:100%; max-width:60%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-4xl lg:text-5xl">Plan the ironer around <span style="color:#011E41;">linen flow,</span></span>
-            <span class="text-white text-4xl lg:text-5xl"><span style="color:#011E41;">utilities</span> and long-term use</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Plan the ironer around <span style="color:#011E41;">linen flow, utilities</span> and long-term use
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             Irish Laundry Systems reviews the room, linen type, available space, operator flow, gas/electric/steam suitability and support needs before recommending an ironer. The right choice should work for daily output, installation and the way the equipment will be used over time.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Linen process', 'Heating choice', 'Support after installation'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
+            @foreach([
+                ['t' => 'Room fit',                   'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
+                ['t' => 'Linen process',              'd' => 'M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'],
+                ['t' => 'Heating choice',             'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z'],
+                ['t' => 'Support after installation', 'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z'],
+            ] as $pt)
+            <span class="inline-flex items-center gap-2">
+                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
+                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
+            </span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -274,7 +296,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Ironer Range</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare ironer options around <span style="color:#148af4;">working width, automation and room fit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -456,7 +478,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Need ironing tables or hand-finishing support?
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
@@ -483,7 +505,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support that keeps <span style="color:#148af4;">ironer decisions moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -491,7 +513,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
                     'title' => 'Equipment Rental',
@@ -569,7 +591,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Support after the ironer is installed
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
@@ -623,7 +645,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">Official product resources and next-step advice</h2>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Official product resources and next-step advice</h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Use official Electrolux Professional resources to review product detail, then speak with Irish Laundry Systems before choosing an ironer. Working width, room layout, linen type, heating choice, delivery direction and automation level should all be considered before a final decision is made.
             </p>
@@ -678,7 +700,7 @@
 {{-- 19. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Need the <span style="color:#148af4;">right commercial ironer</span> for your site?
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

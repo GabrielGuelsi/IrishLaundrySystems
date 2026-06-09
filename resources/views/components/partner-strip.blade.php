@@ -31,7 +31,7 @@
                 <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
                     {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
                 </div>
-                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Safe Electric registered</span>
+                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Electrical Contractor</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
