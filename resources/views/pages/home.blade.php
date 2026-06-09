@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('pageTitle', 'Commercial Laundry Engineering Ireland | Preventive Maintenance, Repairs & Equipment | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
@@ -38,11 +38,11 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-[28px] sm:text-4xl lg:text-5xl xl:text-5xl">
+                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-4xl lg:text-5xl">
                     Commercial laundry<br><span class="text-[#148af4]">engineering support</span> for sites<br>where downtime carries real&nbsp;cost
                 </h1>
 
-                <p class="hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl">
+                <p class="hero-desc font-body text-white leading-relaxed mb-10 text-base max-w-xl">
                     Irish Laundry Systems supports commercial laundry sites by keeping equipment, rental, maintenance, repairs and aftercare connected through one route, so teams can control budget pressure, reduce disruption and keep the operation moving.
                 </p>
 
@@ -82,15 +82,15 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around the Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    <span class="text-[#148af4]">Laundry care</span> built around the site,<br>the equipment and<br>the <span class="text-[#148af4]">next practical step</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    <span class="text-[#148af4]">Laundry care</span> built around the site, the equipment and the <span class="text-[#148af4]">next practical step</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
-                <p class="font-body font-bold text-navy text-xl leading-snug">
+                <p class="font-body text-navy text-base leading-relaxed">
                     Irish Laundry Systems connects equipment selection, installation, planned maintenance, call-outs, rental and aftercare into one practical commercial laundry plan.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed">
+                <p class="font-body text-gray-600 text-base leading-relaxed">
                     That gives teams clearer decisions and more confidence when laundry output affects cost control, staffing pressure, service continuity and the long-term value of the equipment already in use.
                 </p>
                 <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
@@ -110,6 +110,7 @@
     'highlightClass'   => 'text-[#148af4]',
     'intro'            => 'Four practical routes to manage breakdowns, plan maintenance, control rental decisions and keep equipment care moving.',
     'introClass'       => '',
+    'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
@@ -148,9 +149,8 @@
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should follow the room, the load profile, the handling process, lifecycle cost and the support needed to keep it performing.',
     'equipment' => [
-        ['img' => 'commercialwasher',              'name' => 'Commercial Washers',   'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
-        ['img' => 'line6000-barrier-washer',       'name' => 'Barrier Washers',      'desc' => 'For controlled dirty-side and clean-side handling where the process demands separation.',                 'box' => 270, 'mb' => -40],
-        ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',        'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                          'box' => 245],
+        ['img' => 'commercialwasher',              'name' => 'Washing Machines',     'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
+        ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Dryers',               'desc' => 'For post-wash continuity, drying control and steady room flow through the day.',                          'box' => 245],
         ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
         ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and cleaner output flow across linen-heavy environments.'],
     ],

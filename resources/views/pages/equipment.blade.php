@@ -15,10 +15,12 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Guidance</p>
-                <h1 class="font-heading font-bold text-white text-4xl lg:text-6xl leading-tight mb-5">
-                    Commercial laundry equipment <span style="color:#148af4;">selected around your operation</span>
+                <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-5">
+                    <span class="block">Commercial laundry</span>
+                    <span class="block">equipment <span style="color:#148af4;">selected</span></span>
+                    <span class="block" style="color:#148af4;">around your operation</span>
                 </h1>
-                <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems helps commercial, healthcare, care, hospitality and industrial sites choose equipment around workload, space, budget and daily laundry demand. We supply selected Electrolux Professional machines, then support installation, commissioning and aftercare where needed.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
@@ -31,7 +33,6 @@
                         Talk to Our Team
                     </a>
                 </div>
-                <p class="font-body text-white/50 text-xs tracking-wide">Selected Electrolux Professional equipment &nbsp;·&nbsp; Supply, commissioning and aftercare &nbsp;·&nbsp; Purchase or rental where suitable</p>
             </div>
         </div>
     </div>
@@ -47,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
                     A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
                 </h2>
             </div>
@@ -78,12 +79,12 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Lines</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore equipment lines built for <span style="color:#148af4;">different laundry needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="whitespace-nowrap block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
-                <span class="whitespace-nowrap block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
+                <span>The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
+                <span>Irish Laundry Systems helps match the right option to the site and the next step.</span>
             </p>
         </div>
     </div>
@@ -189,10 +190,10 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Highlighted Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment options <span style="color:#148af4;">worth a closer look</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 These equipment options can help sites handle common laundry demands around output, drying performance, space and professional-grade use.
             </p>
         </div>
@@ -297,19 +298,19 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Categories</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 Start with the equipment type, then Irish Laundry Systems can help confirm the right capacity, site fit, purchase option or rental option where suitable.
             </p>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             @foreach([
-                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
+                ['title' => 'Washing Machines',             'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
                 ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/equipment/line6000-barrier-washer.webp'],
-                ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+                ['title' => 'Dryers',                       'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
                 ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
@@ -327,6 +328,65 @@
             @endforeach
 
         </div>
+
+        {{-- Finishing Equipment — secondary equipment route strip (after Categories, before Access) --}}
+        <div class="mt-12 lg:mt-16 rounded-2xl border border-gray-200 bg-[#f7f9fc] overflow-hidden reveal">
+            <div class="grid grid-cols-1 lg:grid-cols-12">
+
+                {{-- LEFT: copy (~40%) --}}
+                <div class="lg:col-span-5 p-8 lg:p-10 flex flex-col justify-center">
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment</p>
+                    <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight text-balance mb-3">
+                        Add <span style="color:#148af4;">professional finishing support</span> for daily linen and garment presentation
+                    </h2>
+                    <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed mb-5">
+                        For care homes, nursing homes, hospitality sites and small-scale operations that need ironing tables, steam irons or hand-finishing support for linen, garments, uniforms and everyday presentation.
+                    </p>
+                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2 mb-6">
+                        <span class="font-body font-bold text-navy text-xs">Better presentation</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="font-body font-bold text-navy text-xs">Easier daily finishing</span>
+                        <span class="text-gray-300">|</span>
+                        <span class="font-body font-bold text-navy text-xs">Practical room fit</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="{{ route('equipment.category', 'ironers') }}"
+                           class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-5 py-3 rounded-lg text-sm transition-colors duration-200">
+                            View Finishing Equipment
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}"
+                           class="inline-flex items-center justify-center gap-2 border border-navy/20 hover:border-navy text-navy font-body font-bold px-5 py-3 rounded-lg text-sm transition-all duration-200">
+                            Ask About Ironing Tables
+                        </a>
+                    </div>
+                </div>
+
+                {{-- RIGHT: finishing route cards (~60%) — TODO swap icon placeholders for real product photos --}}
+                <div class="lg:col-span-7 bg-white p-6 lg:p-8 lg:border-l border-gray-200">
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 h-full">
+                        @foreach([
+                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-ironing-tables.jpg'],
+                            ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'finishing-steam-irons.jpg'],
+                            ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-presses.jpg'],
+                        ] as $fc)
+                        <div class="rounded-xl border border-gray-200 bg-white p-4 flex flex-col">
+                            <div class="rounded-lg bg-[#eef3f9] overflow-hidden h-32 mb-3 flex items-center justify-center">
+                                <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-2">
+                            </div>
+                            <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">{!! $fc['t'] !!}</h3>
+                            <p class="font-body text-gray-500 text-xs leading-snug mb-3 flex-1">{{ $fc['b'] }}</p>
+                            <a href="{{ $fc['href'] }}" class="inline-flex items-center gap-1 text-[#148af4] font-body font-bold text-xs hover:gap-2 transition-all">
+                                {{ $fc['cta'] }}
+                                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                            </a>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 </section>
 
@@ -339,12 +399,12 @@
     </div>
     <div class="relative z-10 px-10 lg:px-16 py-12 lg:py-16" style="width:100%; max-width:60%;">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Access</p>
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">Choose the <span style="color:#011E41;">right</span></span>
-            <span class="text-3xl lg:text-5xl block" style="color:#011E41;">equipment option</span>
-            <span class="text-white text-3xl lg:text-5xl block">for your site and budget</span>
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4">
+            <span class="text-white text-4xl lg:text-5xl">Choose the <span style="color:#011E41;">right</span></span>
+            <span class="text-4xl lg:text-5xl" style="color:#011E41;">equipment option</span>
+            <span class="text-white text-4xl lg:text-5xl">for your site and budget</span>
         </h2>
-        <p class="font-body text-white text-base lg:text-lg leading-relaxed mb-6 max-w-2xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
             The right equipment decision is not only about the machine. Irish Laundry Systems can supply selected Electrolux Professional equipment for outright purchase or discuss rental where suitable, helping your site balance workload, space, budget and support needs.
         </p>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8">
@@ -371,7 +431,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl mb-3 text-center">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
                 From equipment choice to <span style="color:#148af4;">ready for daily use</span>
             </h2>
             <p class="font-body text-gray-500 text-base mb-2 max-w-2xl leading-relaxed text-center mx-auto">
@@ -412,7 +472,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep the <span style="color:#148af4;">next support step clear</span> after installation
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -486,7 +546,7 @@
 
         <div class="text-center mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Fit</p>
-            <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Match equipment to the way <span style="color:#148af4;">each laundry room works</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">
@@ -500,7 +560,7 @@
             ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/CareFacilitiesHero.png'],
             ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg'],
             ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
-            ['env' => 'Shared-use / smaller operations', 'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
+            ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
 

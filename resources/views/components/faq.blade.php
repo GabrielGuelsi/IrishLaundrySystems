@@ -1,18 +1,18 @@
 @props(['faqs' => [], 'heading' => 'Frequently Asked Questions', 'eyebrow' => '', 'subheading' => ''])
 
 <section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-3xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         @if($eyebrow)
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] text-center mb-3">{{ $eyebrow }}</p>
         @endif
-        <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl text-center mb-3">{!! $heading !!}</h2>
+        <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance text-center mb-3">{!! $heading !!}</h2>
         @if($subheading)
         <p class="font-body text-gray-500 text-base text-center leading-relaxed mb-10">{{ $subheading }}</p>
         @else
         <div class="mb-10"></div>
         @endif
 
-        <div class="space-y-3" x-data="{ open: null }">
+        <div class="space-y-3 max-w-3xl mx-auto" x-data="{ open: null }">
             @foreach ($faqs as $i => $faq)
             <div class="bg-white border border-border rounded-2xl overflow-hidden shadow-card">
                 <button
@@ -41,7 +41,7 @@
             @endforeach
         </div>
 
-        <div class="mt-10 text-center">
+        <div class="mt-10 text-center max-w-3xl mx-auto">
             <p class="font-body text-gray-500 text-sm mb-4">Have a different question? We're happy to help.</p>
             <a href="{{ route('contact') }}"
                class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">

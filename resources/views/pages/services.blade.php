@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('pageTitle', 'Commercial Laundry Services | Service Contracts, Repairs, Rental & Parts | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry services across Ireland — service contracts, repairs and call-outs, equipment rental, and genuine Electrolux parts and aftercare.')
@@ -41,7 +41,7 @@
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
-                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-6xl xl:text-6xl text-balance">
+                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-4xl lg:text-5xl text-balance">
                     Find the <span class="text-[#148af4]">right service&nbsp;route</span><br class="hidden lg:inline"> before equipment&nbsp;issues<br class="hidden lg:inline"> become bigger&nbsp;costs
                 </h1>
 
@@ -85,15 +85,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
-                <h2 class="font-heading font-bold text-navy text-4xl lg:text-6xl leading-tight">
-                    Start with what is creating&nbsp;pressure,<br> then choose the <span class="text-[#148af4]">right&nbsp;route</span>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">
+                    Start with what is creating&nbsp;pressure, then choose the <span class="text-[#148af4]">right&nbsp;route</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                     Commercial laundry sites do not always need the same type of support. One site may need a fault diagnosed. Another may need planned maintenance, rental equipment, follow-up care or a clearer decision around machines already in use.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                     Irish Laundry Systems gives facilities managers, care home operators, hospitality teams and commercial laundry owners a clearer way to decide what needs to happen next, from repairs and maintenance to rental and aftercare.
                 </p>
             </div>
@@ -125,6 +125,7 @@
     'headingNowrap'    => false,
     'intro'            => 'Four practical routes for faults, planned maintenance, rental pressure and aftercare around commercial laundry equipment.',
     'introClass'       => '',
+    'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',               'body' => 'For faults, breakdowns or performance issues affecting laundry output, staffing or service continuity.',                          'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-outs',           'pos' => 'center 40%', 'bullets' => ['Machine faults', 'Breakdown calls', 'Fault diagnosis', 'Urgent equipment issues']],
@@ -139,9 +140,9 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         <div class="mb-12">
-            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-widest mb-4">Why Irish Laundry Systems</p>
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight max-w-4xl text-balance">
-                Commercial laundry care built around<br>
+            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems</p>
+            <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight max-w-4xl text-balance">
+                Commercial laundry care built around
                 cost control and <span class="text-[#148af4]">peace of mind</span>
             </h2>
         </div>
@@ -294,9 +295,9 @@
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 From equipment pressure to the <span class="text-[#148af4]">right next step</span>
             </h2>
-            <p class="font-body text-gray-600 text-base lg:text-lg leading-relaxed max-w-6xl mx-auto text-pretty">
-                <span class="xl:whitespace-nowrap">The right route depends on what is happening in the laundry room.</span><br class="hidden md:block">
-                <span class="xl:whitespace-nowrap"><span class="whitespace-nowrap">Irish Laundry Systems</span> connects the issue, the equipment and the practical next step before the problem becomes harder to manage.</span>
+            <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
+                <span>The right route depends on what is happening in the laundry room.</span>
+                <span><span>Irish Laundry Systems</span> connects the issue, the equipment and the practical next step before the problem becomes harder to manage.</span>
             </p>
         </div>
     </div>
@@ -336,7 +337,7 @@
                 <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Keep <span class="text-[#148af4]">aftercare clearer</span> with <span class="text-[#148af4]">Electrolux partnership</span> behind the&nbsp;equipment
                 </h2>
-                <p class="font-body text-gray-600 text-lg leading-relaxed mb-6 text-pretty">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
                     After a repair, service visit, rental decision or equipment recommendation, the next step often depends on the machines already in place. As an Authorised Electrolux Professional Partner, Irish Laundry Systems gives sites clearer access to genuine Electrolux parts where applicable, support from people who know the equipment and better-informed follow-up after the visit.
                 </p>
                 <a href="{{ route('electrolux') }}"
@@ -384,7 +385,7 @@
             <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Trusted by sites that need <span class="text-[#148af4]">clear service decisions</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                 Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service&nbsp;continuity.
             </p>
         </div>
@@ -406,10 +407,10 @@
         {{-- Left: heading + body + CTAs --}}
         <div class="px-6 sm:px-10 lg:px-16 py-12 lg:py-20 z-10 relative">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Service Assessment</p>
-            <h2 class="font-heading font-bold text-white text-3xl lg:text-4xl xl:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-white text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Start with the <span class="text-[#148af4]">right service&nbsp;route</span>
             </h2>
-            <p class="font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-8 max-w-md text-pretty">
+            <p class="font-body text-blue-200 text-base leading-relaxed mb-8 max-w-md text-pretty">
                 Tell us what is happening with your laundry equipment. Irish Laundry Systems will connect the enquiry to the right route, whether that means repairs, preventive maintenance, equipment rental or&nbsp;aftercare.
             </p>
             <div class="flex flex-row flex-wrap gap-3">

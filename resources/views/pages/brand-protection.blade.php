@@ -12,7 +12,7 @@
             <span class="text-sm font-body text-gray-200">Official website</span>
         </div>
         <h1 class="font-heading font-bold text-white text-4xl lg:text-5xl mb-5">Irish Laundry Systems (ILS) — Official Website</h1>
-        <p class="font-body text-blue-200 text-lg max-w-2xl mx-auto leading-relaxed">
+        <p class="font-body text-blue-200 text-base max-w-2xl mx-auto leading-relaxed">
             This is the official website of Irish Laundry Systems, the commercial laundry engineering specialists based in the Republic of Ireland.
         </p>
     </div>
@@ -61,7 +61,7 @@
                     </div>
                     <div>
                         <div class="font-body font-bold text-navy text-sm mb-1">Email</div>
-                        <a href="mailto:info@irishlaunderysystems.ie" class="font-body text-gray-600 text-sm hover:text-steel transition-colors">info@irishlaunderysystems.ie</a>
+                        <a href="mailto:contact@irishlaundrysystems.com" class="font-body text-gray-600 text-sm hover:text-steel transition-colors">contact@irishlaundrysystems.com</a>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">

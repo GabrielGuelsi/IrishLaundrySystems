@@ -3,6 +3,7 @@
     'headingLine1' => 'Keep laundry moving',
     'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',
     'miniPoints' => null,
+    'miniNowrap' => false,
     'features' => [
         [
             'icon' => '<span style="font-size:2rem;font-weight:700;color:white;line-height:1;">€</span>',
@@ -22,29 +23,29 @@
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:320px;">
 
     {{-- LEFT: image pinned to 40% --}}
-    <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/strip2.jpeg" alt="ILS engineer with equipment"
+    <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:56%;">
+        <img src="/images/healthcare/rentalstripimage.jpg" alt="Commercial laundry equipment rental"
              class="w-full h-full object-cover" style="object-position: center 15%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, rgba(1,30,65,0.82) 8%, rgba(1,30,65,0.45) 28%, rgba(1,30,65,0.18) 48%, transparent 65%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, #011E41 12%, rgba(1,30,65,0.6) 38%, rgba(1,30,65,0.25) 60%, rgba(1,30,65,0.06) 78%, transparent 90%);"></div>
     </div>
 
     {{-- RIGHT: content — 50% width --}}
     <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-14" style="margin-left:50%; width:50%; box-sizing:border-box;">
 
-        <h2 class="font-heading font-bold leading-tight mb-4">
-            <span class="text-white text-3xl lg:text-5xl block">{!! $headingLine1 !!}</span>
-            <span class="text-3xl lg:text-5xl block text-white">{!! $headingLine2 !!}</span>
+        <h2 class="font-heading font-bold text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <span class="text-white text-4xl lg:text-5xl">{!! $headingLine1 !!}</span>
+            <span class="text-4xl lg:text-5xl text-white">{!! $headingLine2 !!}</span>
         </h2>
 
-        <p class="font-body text-white/80 text-base lg:text-lg leading-relaxed mb-6">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6">
             {{ $body }}
         </p>
 
         @if($miniPoints)
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        <div class="flex items-center {{ $miniNowrap ? 'flex-nowrap gap-x-3' : 'flex-wrap gap-x-5 gap-y-2' }} mb-7">
             @foreach($miniPoints as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] whitespace-nowrap' : 'text-sm' }} font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         @else

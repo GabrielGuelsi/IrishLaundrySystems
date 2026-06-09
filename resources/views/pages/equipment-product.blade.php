@@ -2,362 +2,206 @@
 
 @section('content')
 
-<!-- HERO -->
-<style>
-@keyframes heroFadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to   { opacity: 1; transform: translateY(0); }
-}
-.hero-title { animation: heroFadeUp 0.7s ease forwards; }
-.hero-desc  { animation: heroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
-.hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
-</style>
+{{-- ============ PRODUCT HEADER ============ --}}
+<section class="bg-white pt-10 lg:pt-14">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
 
-<section class="relative overflow-hidden flex flex-col" style="height: calc(100vh - 104px); max-height: 900px; min-height: 500px; background-color: #011E41;"
-    x-data="{
-        current: 0,
-        playing: true,
-        slides: [
-            '/images/hero/hero-placeholder.jpg',
-            '/images/healthcare/hero-main.jpg',
-            '/images/about/about-engineers.jpg',
-            '/images/about/about-equipment.jpg',
-            '/images/healthcare/engineer.jpg'
-        ],
-        prev() { this.current = (this.current - 1 + this.slides.length) % this.slides.length },
-        next() { this.current = (this.current + 1) % this.slides.length },
-        init() { setInterval(() => { if (this.playing) this.next() }, 5000) }
-    }">
+        {{-- Breadcrumb --}}
+        <nav class="flex items-center gap-2 flex-wrap mb-8 font-body text-sm">
+            <a href="{{ route('equipment') }}" class="text-gray-400 hover:text-navy transition-colors">Equipment</a>
+            <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            <a href="{{ route('equipment.category', $categorySlug) }}" class="text-gray-400 hover:text-navy transition-colors">{{ $category }}</a>
+            <svg class="w-3 h-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            <span class="text-navy font-semibold">{{ $product }}</span>
+        </nav>
 
-    <!-- Slides -->
-    <div class="absolute inset-0">
-        <template x-for="(slide, index) in slides" :key="index">
-            <img :src="slide"
-                 alt="ILS commercial laundry"
-                 class="absolute inset-0 w-full h-full object-cover object-right transition-opacity duration-1000 ease-in-out"
-                 :class="current === index ? 'opacity-100' : 'opacity-0'">
-        </template>
-        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 40%, rgba(1,30,65,0.40) 60%, transparent 100%);"></div>
-    </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center pb-12 lg:pb-16">
 
-    <!-- Text — vertically centered, aligned with nav -->
-    <div class="relative z-10 flex-1 flex items-center w-full" style="padding-top: 70px;">
-        <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-2">
-            <div style="max-width: 560px;">
+            {{-- Left: title / model / description / actions --}}
+            <div class="order-2 lg:order-1 lg:pl-4">
+                <p class="font-heading font-bold text-navy text-lg lg:text-xl mb-3">{{ $item->title ?? $product }}</p>
+                <h1 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
+                <p class="font-body text-navy/70 text-sm leading-relaxed mb-8 max-w-md">{{ $summary }}</p>
 
-                <div class="hero-title flex items-center gap-2 mb-4 flex-wrap">
-                    <a href="{{ route('equipment') }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">Equipment</a>
-                    <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-                    <a href="{{ route('equipment.category', $categorySlug) }}" class="text-gray-400 hover:text-gray-200 text-sm font-body transition-colors">{{ $category }}</a>
-                    <svg class="w-3 h-3 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-                    <span class="text-gray-300 text-sm font-body">{{ $product }}</span>
-                </div>
-
-                <div class="hero-desc inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-3 py-1 mb-4">
-                    <span class="text-xs font-body text-gray-300">{{ $category }}</span>
-                </div>
-                <h1 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-tight mb-4">{{ $product }}</h1>
-                <p class="font-body text-gray-300 leading-relaxed mb-6 max-w-xl">
-                    {{ !empty($summary) ? $summary : 'Commercial laundry equipment from the Electrolux Professional range — supplied, installed and supported by Irish Laundry Systems.' }}
-                </p>
-
-                <div class="hero-btns flex flex-row gap-4">
-                    <a href="#quote-form"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
-                        Request a Quote
+                <div class="flex flex-wrap items-center gap-3">
+                    <button type="button"
+                            class="inline-flex items-center gap-2 bg-[#eaf1f8] text-navy font-body font-bold text-xs uppercase tracking-wide px-5 py-3 rounded-full hover:bg-[#dce8f4] transition-colors">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                        Compare
+                    </button>
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center bg-navy text-white font-body font-bold text-xs uppercase tracking-wide px-6 py-3 rounded-full hover:bg-navy/90 transition-colors">
+                        Where to Buy
                     </a>
-                    <a href="{{ route('service-contracts') }}"
-                       class="inline-flex items-center justify-center border-2 border-white/50 hover:border-white text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 hover:bg-white/10 rounded-md">
-                        View Service Contracts
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center bg-navy text-white font-body font-bold text-xs uppercase tracking-wide px-6 py-3 rounded-full hover:bg-navy/90 transition-colors">
+                        Product Registration
                     </a>
                 </div>
-
-            </div>
-        </div>
-    </div>
-
-    <!-- Carousel controls — unified bottom-center row -->
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-4">
-
-        <!-- Prev -->
-        <button @click="prev()" aria-label="Previous slide"
-                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <polyline points="15 18 9 12 15 6"/>
-            </svg>
-        </button>
-
-        <!-- Frosted pill: play + dots -->
-        <div class="flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-5 py-3">
-            <button @click="playing = !playing" :aria-label="playing ? 'Pause' : 'Play'"
-                    class="w-6 h-6 flex items-center justify-center text-white transition-opacity duration-200 hover:opacity-70">
-                <svg x-show="playing" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
-                </svg>
-                <svg x-show="!playing" x-cloak class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                    <polygon points="5 3 19 12 5 21 5 3"/>
-                </svg>
-            </button>
-            <template x-for="(slide, index) in slides" :key="index">
-                <button @click="current = index" :aria-label="'Slide ' + (index + 1)"
-                        class="h-2 rounded-full transition-all duration-300"
-                        :class="current === index ? 'bg-white w-8' : 'bg-white/40 hover:bg-white/70 w-2'">
-                </button>
-            </template>
-        </div>
-
-        <!-- Next -->
-        <button @click="next()" aria-label="Next slide"
-                class="w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white flex items-center justify-center transition-all duration-200">
-            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                <polyline points="9 18 15 12 9 6"/>
-            </svg>
-        </button>
-
-    </div>
-
-    <!-- Bottom strip — Electrolux partner showcase -->
-    <div class="relative z-10 w-full bg-white/95 backdrop-blur-sm border-t border-white/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2 py-4 flex items-center justify-between gap-6">
-            <div class="flex items-center gap-5">
-                <div class="flex-shrink-0">
-                    <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
-                         alt="Electrolux Professional Authorized Partner"
-                         class="h-12 w-auto">
-                </div>
-                <div class="hidden sm:block border-l border-gray-300 pl-5">
-                    <p class="text-[11px] font-body font-bold text-navy uppercase tracking-[0.18em]">Official Authorised Partner</p>
-                    <p class="text-[13px] font-body text-gray-600 mt-0.5">Electrolux Professional — Ireland</p>
-                </div>
-            </div>
-            <a href="{{ route('electrolux') }}"
-               class="flex-shrink-0 text-xs font-body font-bold text-navy hover:text-orange uppercase tracking-wide transition-colors duration-200 flex items-center gap-1.5 whitespace-nowrap">
-                Learn more
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-
-</section>
-
-<!-- PROOF BAR -->
-@include('components.proof-bar')
-
-<!-- SPECS + FORM LAYOUT -->
-<section class="py-16 lg:py-20 bg-bg">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
-            <!-- Specs & Info (left 2 cols) -->
-            <div class="lg:col-span-2 space-y-6">
-
-                <!-- Key Specs -->
-                <div class="bg-white border border-border rounded-2xl p-6 lg:p-8">
-                    <h2 class="font-heading font-bold text-navy text-xl mb-5">Key Specifications</h2>
-                    <div class="overflow-x-auto">
-                        <table class="w-full text-sm font-body">
-                            <tbody class="divide-y divide-border">
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Category</td>
-                                    <td class="py-3 text-gray-600">{{ $category }}</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Model</td>
-                                    <td class="py-3 text-gray-600">{{ $product }}</td>
-                                </tr>
-                                @if (!empty($specs))
-                                    @foreach ($specs as $key => $val)
-                                    <tr>
-                                        <td class="py-3 pr-4 font-bold text-navy w-1/3">{{ $key }}</td>
-                                        <td class="py-3 text-gray-600">{{ $val }}</td>
-                                    </tr>
-                                    @endforeach
-                                @else
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Specifications</td>
-                                    <td class="py-3 text-gray-600">Contact ILS for full specification details</td>
-                                </tr>
-                                @endif
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Supply</td>
-                                    <td class="py-3 text-gray-600">Available for outright purchase or rental/lease</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Installation</td>
-                                    <td class="py-3 text-gray-600">By ILS engineers — included in supply price</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Service contract</td>
-                                    <td class="py-3 text-gray-600">Available — Core, Priority or Assured tier</td>
-                                </tr>
-                                <tr>
-                                    <td class="py-3 pr-4 font-bold text-navy w-1/3">Parts</td>
-                                    <td class="py-3 text-gray-600">Genuine Electrolux Professional parts</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Options & Accessories -->
-                <div class="bg-white border border-border rounded-2xl p-6 lg:p-8">
-                    <h2 class="font-heading font-bold text-navy text-xl mb-4">Options &amp; Accessories</h2>
-                    <ul class="space-y-2">
-                        @foreach ([
-                            'Various cycle programme configurations — contact ILS to discuss your requirements',
-                            'Additional connection types available (gas/electric) where applicable',
-                            'Stacking kits for space-constrained installations',
-                            'Matching drying equipment available for throughput balancing',
-                            'Service contract add-on — Core, Priority or Assured',
-                        ] as $item)
-                        <li class="flex items-start gap-3 text-sm font-body">
-                            <svg class="w-4 h-4 text-steel flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
-                            </svg>
-                            <span class="text-gray-700">{{ $item }}</span>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-
-                <!-- Downloads -->
-                <div class="bg-white border border-border rounded-2xl p-6 lg:p-8">
-                    <h2 class="font-heading font-bold text-navy text-xl mb-4">Documentation</h2>
-                    <p class="font-body text-gray-600 text-sm leading-relaxed mb-4">Product datasheets and technical documentation are available on request. Contact ILS with your specific model requirements.</p>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 text-steel font-body font-bold text-sm hover:text-navy transition-colors">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/>
-                        </svg>
-                        Request documentation
-                    </a>
-                </div>
-
             </div>
 
-            <!-- Quote Form (right col) -->
-            <div id="quote-form" class="lg:col-span-1">
-                <div class="bg-white border border-border rounded-2xl p-6 sticky top-24">
-                    <h3 class="font-heading font-bold text-navy text-lg mb-2">Request a Quote</h3>
-                    <p class="font-body text-gray-500 text-xs mb-5 leading-relaxed">Tell us your requirements and we'll come back with a proposal.</p>
-                    <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4" data-utm>
-                        @csrf
-                        <input type="hidden" name="request_type" value="equipment_quote">
-                        {{-- UTM tracking fields (populated by JS) --}}
-                        <input type="hidden" name="utm_source">
-                        <input type="hidden" name="utm_medium">
-                        <input type="hidden" name="utm_campaign">
-                        <input type="hidden" name="utm_content">
-                        <input type="hidden" name="utm_term">
-                        <input type="hidden" name="page_source">
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Name <span class="text-red-500">*</span></label>
-                            <input type="text" name="name" required placeholder="Your name"
-                                   class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Company <span class="text-red-500">*</span></label>
-                            <input type="text" name="company" required placeholder="Company name"
-                                   class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Email <span class="text-red-500">*</span></label>
-                            <input type="email" name="email" required placeholder="you@company.ie"
-                                   class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Phone <span class="text-red-500">*</span></label>
-                            <input type="tel" name="phone" required placeholder="+353..."
-                                   class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Location / County <span class="text-red-500">*</span></label>
-                            <input type="text" name="location" required placeholder="County / site location"
-                                   class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Sector <span class="text-red-500">*</span></label>
-                            <select name="sector" required class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
-                                <option value="">Select sector</option>
-                                <option value="healthcare">Healthcare</option>
-                                <option value="hospitality">Hospitality</option>
-                                <option value="care">Care Facilities</option>
-                                <option value="commercial">Commercial &amp; Industrial</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Urgency <span class="text-red-500">*</span></label>
-                            <select name="urgency" required class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent cursor-pointer">
-                                <option value="">Select urgency</option>
-                                <option value="today">Today</option>
-                                <option value="24_48h">24-48 hours</option>
-                                <option value="this_week">This week</option>
-                                <option value="planning">Planning stage</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-xs font-body font-bold text-navy mb-1">Message</label>
-                            <textarea name="message" rows="3" placeholder="Additional requirements or questions..."
-                                      class="w-full border border-border rounded-lg px-3 py-2.5 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-steel focus:border-transparent resize-none"></textarea>
-                        </div>
-                        @if (session('success'))
-                        <div class="bg-green-50 border border-green-200 rounded-lg p-3 text-sm font-body text-green-800">
-                            {{ session('success') }}
-                        </div>
-                        @endif
-                        <button type="submit"
-                                class="w-full bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200 cursor-pointer">
-                            Send Quote Request
-                        </button>
-                        <p class="text-center text-xs text-gray-400 font-body">We aim to respond within 24 hours</p>
-                    </form>
-                </div>
+            {{-- Right: product image --}}
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end">
+                <img src="{{ asset($imagePath) }}" alt="{{ $product }}" class="max-h-[300px] lg:max-h-[420px] w-auto object-contain">
             </div>
+
         </div>
     </div>
 </section>
 
-<!-- PROOF: Electrolux + Testimonial -->
-<section class="py-16 bg-white border-t border-border">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div class="bg-bg border border-border rounded-2xl p-6">
-                <div class="flex items-start gap-4">
-                    <div class="w-12 h-12 rounded-2xl bg-navy flex items-center justify-center flex-shrink-0">
-                        <svg class="w-6 h-6 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-                        </svg>
-                    </div>
+{{-- ============ SPECIFICATIONS + DOCUMENTS ============ --}}
+<section class="bg-white py-12 lg:py-16 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20" x-data="{ openSpec: null, openDoc: null }">
+
+            {{-- Specifications --}}
+            <div>
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Specifications</h2>
+                <div class="divide-y divide-gray-200 border-t border-gray-200">
+                    @foreach($specs as $groupName => $rows)
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-base mb-2">Authorised Electrolux Professional Partner</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">ILS is an Authorised Electrolux Professional Partner — meaning genuine OEM parts, manufacturer-trained engineers and access to the full range of equipment and aftercare support.</p>
-                        <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-1 text-steel font-body font-bold text-xs mt-3 hover:text-navy transition-colors">
-                            About our partnership <svg class="w-3 h-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                        </a>
+                        <button type="button" @click="openSpec = openSpec === {{ $loop->index }} ? null : {{ $loop->index }}"
+                                class="w-full flex items-center justify-between py-5 text-left">
+                            <span class="font-body text-navy text-base">{{ $groupName }}</span>
+                            <svg class="w-5 h-5 text-navy transition-transform duration-200" :class="openSpec === {{ $loop->index }} ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                        </button>
+                        <div x-show="openSpec === {{ $loop->index }}" style="display:none" class="pb-5">
+                            <dl class="divide-y divide-gray-100">
+                                @foreach($rows as $label => $value)
+                                <div class="flex justify-between gap-6 py-2.5">
+                                    <dt class="font-body text-gray-500 text-sm">{{ $label }}</dt>
+                                    <dd class="font-body text-navy text-sm font-semibold text-right">{{ $value }}</dd>
+                                </div>
+                                @endforeach
+                            </dl>
+                        </div>
                     </div>
+                    @endforeach
                 </div>
             </div>
-            <div class="bg-navy-dark border border-white/10 rounded-2xl p-6">
-                <div class="flex gap-1 mb-3">
-                    @for ($i = 0; $i < 5; $i++)<svg class="w-4 h-4 text-orange" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>@endfor
+
+            {{-- Documents --}}
+            <div>
+                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Documents</h2>
+                <div class="divide-y divide-gray-200 border-t border-gray-200">
+                    @foreach(['Brochures', 'Data Sheet', 'Leaflets', 'User Manuals'] as $i => $doc)
+                    <div>
+                        <button type="button" @click="openDoc = openDoc === {{ $i }} ? null : {{ $i }}"
+                                class="w-full flex items-center justify-between py-5 text-left">
+                            <span class="font-body text-navy text-base">{{ $doc }}</span>
+                            <svg class="w-5 h-5 text-navy transition-transform duration-200" :class="openDoc === {{ $i }} ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
+                        </button>
+                        <div x-show="openDoc === {{ $i }}" style="display:none" class="pb-5">
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">
+                                {{ $doc }} for the {{ $product }} are available on request.
+                                <a href="{{ route('contact') }}" class="text-[#148af4] font-semibold hover:underline">Contact our team</a>
+                                and we'll send the latest documents for your configuration.
+                            </p>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
-                <p class="font-body text-gray-300 text-sm leading-relaxed italic mb-3">
-                    &ldquo;The equipment was installed quickly and professionally. ILS engineers know what they're doing — and having a service contract already in place from day one gave us peace of mind immediately.&rdquo;
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- ============ ACCESSORIES BANNER + REQUEST FORM ============ --}}
+<section class="bg-white py-12 lg:py-16">
+    <div class="max-w-5xl mx-auto px-6 sm:px-10">
+
+        {{-- Accessories banner --}}
+        <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden shadow-sm mb-14">
+            <div class="min-h-[200px] bg-gray-100">
+                <img src="{{ asset('images/equipment/strip2.jpeg') }}" alt="Accessories and consumables" class="w-full h-full object-cover">
+            </div>
+            <div class="bg-navy p-8 lg:p-10 flex flex-col justify-center">
+                <h3 class="font-heading font-bold text-white text-2xl leading-tight mb-3">Shop our Accessories and Consumables</h3>
+                <p class="font-body text-white/75 text-sm leading-relaxed mb-6">
+                    Rigorously tested, our accessories and consumables help keep your equipment performing at its best.
                 </p>
-                <cite class="text-xs text-gray-400 font-body not-italic">— Facilities Manager, Care Group, Republic of Ireland</cite>
+                <a href="{{ route('resources') }}"
+                   class="inline-flex w-fit items-center bg-white text-navy font-body font-bold text-xs uppercase tracking-wide px-6 py-3 rounded-full hover:bg-white/90 transition-colors">
+                    Shop Now
+                </a>
+            </div>
+        </div>
+
+        {{-- Request form --}}
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl text-center mb-10">Complete the form below to request more information</h2>
+
+        <div class="max-w-2xl mx-auto">
+            <div class="space-y-5">
+                @php
+                    $field = 'relative border border-gray-300 rounded-md px-4 pt-5 pb-2';
+                    $lbl   = 'absolute -top-2.5 left-3 bg-white px-1 font-body text-xs font-bold text-navy';
+                    $inp   = 'w-full font-body text-navy text-sm outline-none bg-transparent';
+                @endphp
+
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Request type *</label>
+                    <select class="{{ $inp }}"><option>Select an option</option><option>Product information</option><option>Request a quote</option><option>Rental</option></select>
+                </div>
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Surname *</label><input type="text" class="{{ $inp }}"></div>
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Email *</label><input type="email" class="{{ $inp }}"></div>
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Company name *</label><input type="text" class="{{ $inp }}"></div>
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Business type *</label>
+                    <select class="{{ $inp }}"><option>Select an option</option><option>Healthcare</option><option>Hospitality</option><option>Care facility</option><option>Commercial laundry</option></select>
+                </div>
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Country *</label>
+                    <select class="{{ $inp }}"><option>Select an option</option><option>Ireland</option><option>United Kingdom</option><option>Other</option></select>
+                </div>
+                <div class="{{ $field }}"><label class="{{ $lbl }}">Request</label>
+                    <textarea rows="3" class="{{ $inp }} resize-none">I would like to find out more about {{ $product }}. Please get in touch with me.</textarea>
+                </div>
+
+                <div class="space-y-3 pt-2">
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
+                        <span class="font-body text-sm text-navy underline">Please read and agree to our Terms &amp; Conditions *</span>
+                    </label>
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
+                        <span class="font-body text-sm text-navy/80">Yes, I agree to receive marketing communications regarding products, services, and events.</span>
+                    </label>
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
+                        <span class="font-body text-sm text-navy/80">Yes, I agree to receive marketing communications in line with my preferences.</span>
+                    </label>
+                </div>
+
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center bg-navy text-white font-body font-bold text-xs uppercase tracking-wide px-8 py-3.5 rounded-full hover:bg-navy/90 transition-colors mt-2">
+                    Contact Us
+                </a>
             </div>
         </div>
     </div>
 </section>
 
-@include('components.partner-strip')
-@include('components.proof-bar')
-
-@include('components.testimonials', ['single' => 'abbvie', 'light' => true])
-
-@include('components.service-contracts-strip')
-
-@include('components.cta-combined-banner')
+{{-- ============ 4-ICON SUPPORT ROW ============ --}}
+<section class="bg-[#eef2f7] py-14">
+    <div class="max-w-6xl mx-auto px-6 sm:px-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-10">
+            @foreach([
+                ['t' => 'Explore our Service Network', 'h' => route('service-contracts'), 'd' => 'M11.48 3.5a.56.56 0 011.04 0l2.12 4.78 5.2.46c.5.04.7.66.32 1l-3.94 3.45 1.17 5.1c.11.49-.42.87-.85.61L12 17.7l-4.54 2.7c-.43.26-.96-.12-.85-.61l1.17-5.1L3.84 9.74c-.38-.34-.18-.96.32-1l5.2-.46L11.48 3.5z'],
+                ['t' => 'Where to buy this product', 'h' => route('contact'), 'd' => 'M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'],
+                ['t' => 'Download user manuals', 'h' => route('resources'), 'd' => 'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5A3.375 3.375 0 0010.125 2.25H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'],
+                ['t' => 'Register your products', 'h' => route('contact'), 'd' => 'M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'],
+            ] as $card)
+            <a href="{{ $card['h'] }}" class="flex flex-col items-center text-center group">
+                <span class="flex items-center justify-center w-16 h-16 rounded-full border border-navy/30 mb-4 group-hover:border-navy group-hover:bg-navy/5 transition-colors">
+                    <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['d'] }}"/></svg>
+                </span>
+                <span class="font-heading font-bold text-navy text-base leading-tight mb-3 max-w-[160px]">{{ $card['t'] }}</span>
+                <span class="inline-flex items-center gap-1.5 font-body font-bold text-navy text-xs uppercase tracking-wide">
+                    Discover More
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </span>
+            </a>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 @endsection

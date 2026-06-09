@@ -105,6 +105,40 @@ class PageController extends Controller
 
     public function equipmentCategory($category)
     {
+        if ($category === 'washers') {
+            return view('pages.commercial-washers', [
+                'title' => 'Commercial Washing Machines | Electrolux Professional Washers | ILS',
+            ]);
+        }
+
+        if ($category === 'tumble-dryers') {
+            return view('pages.dryers', [
+                'title' => 'Commercial Tumble Dryers | Electrolux Professional Dryers | ILS',
+            ]);
+        }
+
+        if ($category === 'ironers') {
+            return view('pages.ironers', [
+                'title' => 'Commercial Ironers & Flatwork Finishing | Electrolux Professional | ILS',
+            ]);
+        }
+
+        if ($category === 'drying-cabinets') {
+            return view('pages.drying-cabinets', [
+                'title' => 'Commercial Drying Cabinets | Electrolux Professional | ILS',
+            ]);
+        }
+
+        if ($category === 'barrier-washers') {
+            return view('pages.barrier-washers', [
+                'title' => 'Hygiene Barrier Washers | Electrolux Professional | ILS',
+            ]);
+        }
+
+        if (! array_key_exists($category, config('equipment'))) {
+            abort(404);
+        }
+
         $categoryName = ucwords(str_replace('-', ' ', $category));
         $products = Equipment::where('category', $category)
             ->where('is_active', true)

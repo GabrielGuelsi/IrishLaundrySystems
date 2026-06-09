@@ -152,16 +152,16 @@ $showChrome = ! $single && count($slides) > 1;
                             {{-- ── RIGHT PANEL: pull-quote ── --}}
                             <div class="lg:col-span-8 bg-white flex flex-col justify-center p-8 lg:p-12 xl:p-14">
 
-                                {{-- Headline (navy, bold, large) with inline opening quote mark --}}
-                                <blockquote class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">
-                                    <svg class="inline w-7 h-7 mr-1.5" style="vertical-align:-2px; transform: rotate(180deg);" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true">
+                                {{-- Headline (navy, bold, large) with hanging opening quote mark --}}
+                                <blockquote class="relative font-heading font-bold text-navy text-2xl lg:text-3xl leading-tight mb-5">
+                                    <svg class="absolute w-6 h-6 top-1" style="left:-2rem; transform: rotate(180deg);" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true">
                                         <path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/>
                                     </svg>{{ rtrim($t['headline'], '.') }}
                                 </blockquote>
 
                                 {{-- Body (grey) + closing quote mark (inline blue) --}}
                                 <p class="font-body text-gray-500 text-base lg:text-lg leading-relaxed mb-8">
-                                    {{ $t['body'] }}<svg display="inline" style="display:inline; vertical-align:middle; margin-left:4px;" width="36" height="36" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/></svg>
+                                    {{ $t['body'] }}<svg display="inline" style="display:inline; vertical-align:middle; margin-left:4px;" width="24" height="24" fill="#148af4" viewBox="0 0 32 32" aria-hidden="true"><path d="M9.5 8c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6zm14 0c-3 0-5.5 2.5-5.5 5.5 0 2 1 3.7 2.5 4.6-.3 2.6-1.5 4.6-3.5 5.9l1 2c4-1.5 7-5 7-10v-2c0-3.3-.7-6-1.5-6z"/></svg>
                                 </p>
 
                                 {{-- Divider --}}

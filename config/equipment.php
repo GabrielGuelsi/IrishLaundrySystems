@@ -3,93 +3,300 @@
 /**
  * Static equipment catalogue — no database required.
  * Products are organised by category slug.
- * Each entry needs: name, slug, capacity (nullable), summary, image_path, sectors (array).
+ * Each entry: name, slug, capacity (nullable), title, summary, image_path, specs, sectors.
  */
 return [
 
     // ── Commercial Washers ────────────────────────────────────────────────────
     'washers' => [
-        ['name' => 'WH6-6LAC',          'slug' => 'wh6-6lac',          'capacity' => '6 kg',  'summary' => 'Front load washer 6 kg – WH6-6LAC',   'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-7CV',           'slug' => 'wh6-7cv',           'capacity' => '7 kg',  'summary' => 'Front load washer 7 kg – WH6-7CV',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-8CV',           'slug' => 'wh6-8cv',           'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WH6-8CV',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-11CV',          'slug' => 'wh6-11cv',          'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WH6-11CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-14CV',          'slug' => 'wh6-14cv',          'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WH6-14CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-14LAG',         'slug' => 'wh6-14lag',         'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WH6-14LAG', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-20LAC',         'slug' => 'wh6-20lac',         'capacity' => '20 kg', 'summary' => 'Front load washer 20 kg – WH6-20LAC', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-20CV',          'slug' => 'wh6-20cv',          'capacity' => '20 kg', 'summary' => 'Front load washer 20 kg – WH6-20CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-27CV',          'slug' => 'wh6-27cv',          'capacity' => '27 kg', 'summary' => 'Front load washer 27 kg – WH6-27CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-27LAC',         'slug' => 'wh6-27lac',         'capacity' => '27 kg', 'summary' => 'Front load washer 27 kg – WH6-27LAC', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-33CV',          'slug' => 'wh6-33cv',          'capacity' => '33 kg', 'summary' => 'Front load washer 33 kg – WH6-33CV',  'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-33LAC',         'slug' => 'wh6-33lac',         'capacity' => '33 kg', 'summary' => 'Front load washer 33 kg – WH6-33LAC', 'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-6',             'slug' => 'wh6-6',             'capacity' => '6 kg',  'summary' => 'Front load washer 6 kg – WH6-6',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-7',             'slug' => 'wh6-7',             'capacity' => '7 kg',  'summary' => 'Front load washer 7 kg – WH6-7',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-8',             'slug' => 'wh6-8',             'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WH6-8',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-11',            'slug' => 'wh6-11',            'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WH6-11',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-14',            'slug' => 'wh6-14',            'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WH6-14',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-20',            'slug' => 'wh6-20',            'capacity' => '20 kg', 'summary' => 'Front load washer 20 kg – WH6-20',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-27',            'slug' => 'wh6-27',            'capacity' => '27 kg', 'summary' => 'Front load washer 27 kg – WH6-27',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WH6-33',            'slug' => 'wh6-33',            'capacity' => '33 kg', 'summary' => 'Front load washer 33 kg – WH6-33',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-8',             'slug' => 'ws6-8',             'capacity' => '8 kg',  'summary' => 'Front load washer 8 kg – WS6-8',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-9',             'slug' => 'ws6-9',             'capacity' => '9 kg',  'summary' => 'Front load washer 9 kg – WS6-9',      'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-11',            'slug' => 'ws6-11',            'capacity' => '11 kg', 'summary' => 'Front load washer 11 kg – WS6-11',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-        ['name' => 'WS6-14',            'slug' => 'ws6-14',            'capacity' => '14 kg', 'summary' => 'Front load washer 14 kg – WS6-14',    'image_path' => 'images/equipment/commercialwasher.webp',  'sectors' => []],
-    ],
-
-    // ── Barrier Washers ───────────────────────────────────────────────────────
-    'barrier-washers' => [
-        ['name' => 'WB6-13',  'slug' => 'wb6-13',  'capacity' => '13 kg',  'summary' => 'Barrier washer 13 kg – WB6-13',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-18',  'slug' => 'wb6-18',  'capacity' => '18 kg',  'summary' => 'Barrier washer 18 kg – WB6-18',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-20',  'slug' => 'wb6-20',  'capacity' => '20 kg',  'summary' => 'Barrier washer 20 kg – WB6-20',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-27',  'slug' => 'wb6-27',  'capacity' => '27 kg',  'summary' => 'Barrier washer 27 kg – WB6-27',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-35',  'slug' => 'wb6-35',  'capacity' => '35 kg',  'summary' => 'Barrier washer 35 kg – WB6-35',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-50',  'slug' => 'wb6-50',  'capacity' => '50 kg',  'summary' => 'Barrier washer 50 kg – WB6-50',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-70',  'slug' => 'wb6-70',  'capacity' => '70 kg',  'summary' => 'Barrier washer 70 kg – WB6-70',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-90',  'slug' => 'wb6-90',  'capacity' => '90 kg',  'summary' => 'Barrier washer 90 kg – WB6-90',   'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
-        ['name' => 'WB6-110', 'slug' => 'wb6-110', 'capacity' => '110 kg', 'summary' => 'Barrier washer 110 kg – WB6-110', 'image_path' => 'images/equipment/line6000-barrier-washer.webp', 'sectors' => []],
+        [
+            'name' => 'WS6', 'slug' => 'ws6', 'capacity' => '8–35 kg',
+            'title' => 'Line 6000 high-spin washer – WS6',
+            'summary' => 'Line 6000 high-spin commercial washer. CompassPro / ClarusVibe controls with Automatic Savings and Power Balance. Capacity 8–35 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Spin type' => 'High spin', 'Capacity' => '8 – 35 kg',
+                    'Control' => 'CompassPro / ClarusVibe', 'Efficiency' => 'Automatic Savings, Power Balance',
+                    'Dosing' => 'Efficient Dosing ready', 'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WN6', 'slug' => 'wn6', 'capacity' => '8–35 kg',
+            'title' => 'Line 6000 normal-spin washer – WN6',
+            'summary' => 'Line 6000 normal-spin commercial washer. CompassPro controls with Automatic and Integrated Savings. Capacity 8–35 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Spin type' => 'Normal spin', 'Capacity' => '8 – 35 kg',
+                    'Control' => 'CompassPro', 'Efficiency' => 'Automatic Savings, Integrated Savings',
+                    'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'capacity' => '7–33 kg',
+            'title' => 'Line 6000 ClarusVibe washer variants – WH6-CV',
+            'summary' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience. Capacity 7–33 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Control' => 'ClarusVibe', 'Capacity' => '7 – 33 kg',
+                    'Efficiency' => 'Automatic Savings, Integrated Savings', 'Dosing' => 'Intelligent Dosing', 'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'capacity' => '6–33 kg',
+            'title' => 'Lagoon Advanced Care washer variants – WH6-LAC',
+            'summary' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care. Capacity 6–33 kg.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Care' => 'Lagoon Advanced Care', 'Capacity' => '6 – 33 kg',
+                    'Control' => 'ClarusVibe', 'Dosing' => 'Efficient Dosing', 'Strength' => 'Specialist wet cleaning and textile care',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact for capacity', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'WH6-LAG — Lagoon Washer Variant', 'slug' => 'wh6-lag', 'capacity' => '14 kg',
+            'title' => 'Lagoon washer variant – WH6-LAG',
+            'summary' => 'Lagoon washer variant for sites managing delicate garments and specialist care processes.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Care' => 'Lagoon', 'Capacity' => '14 kg',
+                    'Control' => 'ClarusVibe', 'Dosing' => 'Efficient Dosing', 'Strength' => 'Delicate garments and specialist care processes',
+                ],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing, professional install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'W4-Series', 'slug' => 'w4-series', 'capacity' => '40–110 kg',
+            'title' => 'Heavy-duty washer-extractors – W4-Series',
+            'summary' => 'Heavy-duty washer-extractors for industrial and high-throughput laundries. Robust build with high extraction. Capacity 40–110 kg.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'W4-Series', 'Type' => 'Heavy-duty washer-extractor', 'Capacity' => '40 – 110 kg',
+                    'Models' => 'W4400H, W4600H, W4850H, W41100H', 'Efficiency' => 'Power Balance',
+                    'Build' => 'Robust industrial frame',
+                ],
+                'Dimensions' => ['Footprint' => 'Industrial floor area', 'Installation' => 'Bolt-down, serviced install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'capacity' => null,
+            'title' => 'Quick-cycle commercial washer – QWC',
+            'summary' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'Quickwash', 'Type' => 'Quick-cycle washer', 'Strength' => 'Fast turnaround, compact footprint'],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'PW9C', 'slug' => 'pw9c', 'capacity' => null,
+            'title' => 'Professional washer – PW9C',
+            'summary' => 'Professional washer for standard commercial laundry duties and dependable everyday performance.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'PW9C', 'Type' => 'Professional washer', 'Strength' => 'Reliable everyday performance'],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
     // ── Tumble Dryers ─────────────────────────────────────────────────────────
     'tumble-dryers' => [
-        ['name' => 'TD6-6',             'slug' => 'td6-6',             'capacity' => '6 kg',  'summary' => 'Tumble Dryer 6 kg – TD6-6',              'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-7',             'slug' => 'td6-7',             'capacity' => '7 kg',  'summary' => 'Tumble Dryer 7 kg – TD6-7',              'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-7LAC',          'slug' => 'td6-7lac',          'capacity' => '7 kg',  'summary' => 'Tumble Dryer 7 kg – TD6-7LAC',           'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-11',            'slug' => 'td6-11',            'capacity' => '11 kg', 'summary' => 'Tumble Dryer 11 kg – TD6-11',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-14',            'slug' => 'td6-14',            'capacity' => '14 kg', 'summary' => 'Tumble Dryer 14 kg – TD6-14',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-14LAC',         'slug' => 'td6-14lac',         'capacity' => '14 kg', 'summary' => 'Tumble Dryer 14 kg – TD6-14LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-16',            'slug' => 'td6-16',            'capacity' => '16 kg', 'summary' => 'Tumble Dryer 16 kg – TD6-16',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-20',            'slug' => 'td6-20',            'capacity' => '20 kg', 'summary' => 'Tumble Dryer 20 kg – TD6-20',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-20LAC',         'slug' => 'td6-20lac',         'capacity' => '20 kg', 'summary' => 'Tumble Dryer 20 kg – TD6-20LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-30',            'slug' => 'td6-30',            'capacity' => '30 kg', 'summary' => 'Tumble Dryer 30 kg – TD6-30',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-30LAC',         'slug' => 'td6-30lac',         'capacity' => '30 kg', 'summary' => 'Tumble Dryer 30 kg – TD6-30LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-37',            'slug' => 'td6-37',            'capacity' => '37 kg', 'summary' => 'Tumble Dryer 37 kg – TD6-37',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-37LAC',         'slug' => 'td6-37lac',         'capacity' => '37 kg', 'summary' => 'Tumble Dryer 37 kg – TD6-37LAC',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-45',            'slug' => 'td6-45',            'capacity' => '45 kg', 'summary' => 'Tumble Dryer 45 kg – TD6-45',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-45SLD',         'slug' => 'td6-45sld',         'capacity' => '45 kg', 'summary' => 'Tumble Dryer 45 kg – TD6-45SLD',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-60',            'slug' => 'td6-60',            'capacity' => '60 kg', 'summary' => 'Tumble Dryer 60 kg – TD6-60',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-60SLD',         'slug' => 'td6-60sld',         'capacity' => '60 kg', 'summary' => 'Tumble Dryer 60 kg – TD6-60SLD',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-17S',           'slug' => 'td6-17s',           'capacity' => '17 kg', 'summary' => 'Stacked Tumble Dryer 17 kg – TD6-17S',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'TD6-24S',           'slug' => 'td6-24s',           'capacity' => '24 kg', 'summary' => 'Stacked Tumble Dryer 24 kg – TD6-24S',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'Quickdry Condense', 'slug' => 'quickdry-condense', 'capacity' => null,    'summary' => 'Quick Dryer – Quickdry Condense',         'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'QuickDry QDC',      'slug' => 'quickdry-qdc',      'capacity' => null,    'summary' => 'Quick Dryer – QuickDry QDC',              'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'PD9C',              'slug' => 'pd9c',              'capacity' => null,    'summary' => 'PD9C',                                    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'T4900CR',           'slug' => 't4900cr',           'capacity' => '45 kg', 'summary' => 'Tumble Dryer 45 kg – T4900CR',            'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
-        ['name' => 'T41200CR',          'slug' => 't41200cr',          'capacity' => '60 kg', 'summary' => 'Tumble Dryer 60 kg – T41200CR',           'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => []],
+        [
+            'name' => 'TD6 — Line 6000 Single Pocket Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–37 kg',
+            'title' => 'Line 6000 single pocket tumble dryer – TD6',
+            'summary' => 'Commercial tumble dryer range for busy laundry rooms needing drying performance, fabric care and long-term support.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Type' => 'Single pocket tumble dryer', 'Capacity' => '6 – 37 kg',
+                    'Control' => 'CompassPro', 'Key features' => 'Moisture Balance, Drum Speed', 'Certification' => 'ERGOCERT ergonomics',
+                ],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Line 6000 Heat Pump Dryer Variants', 'slug' => 'heat-pump', 'capacity' => 'Heat Pump',
+            'title' => 'Line 6000 Heat Pump Dryer variants',
+            'summary' => 'Heat Pump Dryer route for sites looking to reduce drying energy pressure where the room setup is suitable.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000', 'Technology' => 'Heat Pump', 'Energy' => 'Up to 65% energy saving',
+                    'Installation' => 'No exhaust, no water cooling', 'Key features' => 'Adaptive Fan, Moisture Balance',
+                ],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'No exhaust duct or water cooling required'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Line 6000 Stacked Dryer Variants', 'slug' => 'stacked-dryers', 'capacity' => 'Stacked',
+            'title' => 'Line 6000 stacked dryer variants',
+            'summary' => 'Stacked dryer route for sites that need drying capacity while protecting floor space.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Stacked tumble dryer', 'Models' => 'TD6-17S, TD6-24S', 'Strength' => 'Two dryers, one footprint'],
+                'Dimensions' => ['Footprint' => 'Stacked — minimal floor area', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'TD6-LAC — Lagoon Advanced Care Dryer Variants', 'slug' => 'td6-lac', 'capacity' => 'Lagoon Advanced Care',
+            'title' => 'Lagoon Advanced Care dryer variants – TD6-LAC',
+            'summary' => 'Dryer variants connected to specialist textile care where fabric handling and process control matter.',
+            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'Line 6000', 'Care' => 'Lagoon Advanced Care', 'Control' => 'CompassPro', 'Key features' => 'Moisture Balance, Textile Care'],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Quickdry Condense', 'slug' => 'quickdry-condense', 'capacity' => 'Compact',
+            'title' => 'Quickdry Condense compact dryer',
+            'summary' => 'Condense dryer option for smaller sites that need professional drying performance in a compact setup.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Condense dryer', 'Strength' => 'Compact fit, easy operation', 'Best for' => 'Small business / small site drying'],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing, no exhaust'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'PD9C Compact Dryer', 'slug' => 'pd9c', 'capacity' => '9 kg',
+            'title' => 'PD9C compact professional dryer',
+            'summary' => 'Compact professional dryer for smaller sites needing more than domestic drying equipment.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Compact professional dryer', 'Capacity' => '9 kg', 'Best for' => 'Smaller sites needing professional drying'],
+                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
     // ── Ironers ───────────────────────────────────────────────────────────────
-    'ironers' => [],
+    'ironers' => [
+        [
+            'name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'capacity' => '2.5–3.3 m',
+            'title' => 'Line 6000 flatwork ironers',
+            'summary' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Flatwork ironer', 'Working width' => '2.5 – 3.3 m', 'Models' => 'IB5725, IB5730, IB5733 (+ -F feeder)'],
+                'Dimensions' => ['Working width' => '2.5 – 3.3 m', 'Installation' => 'Floor-standing, serviced install'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'capacity' => 'Ø 480 mm',
+            'title' => 'Ø 480 mm cylinder ironers',
+            'summary' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Cylinder ironer', 'Cylinder' => 'Ø 480 mm', 'Delivery' => 'Front or rear', 'Automation' => 'Up to feeding, folding & stacking', 'Models' => 'IC648 21 / 25 / 32 series, IV648'],
+                'Dimensions' => ['Cylinder' => 'Ø 480 mm', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'capacity' => 'Ø 330 mm',
+            'title' => 'Ø 330 mm cylinder ironers',
+            'summary' => 'Mid-size cylinder ironers for steady on-premise finishing.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Cylinder ironer', 'Cylinder' => 'Ø 330 mm', 'Models' => 'IC63316, IC63320'],
+                'Dimensions' => ['Cylinder' => 'Ø 330 mm', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'capacity' => 'Ø 230 mm',
+            'title' => 'Ø 230 mm bed-type ironers',
+            'summary' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.',
+            'image_path' => 'images/equipment/line6000-ironer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Bed-type ironer', 'Cylinder' => 'Ø 230 mm', 'Models' => 'IB62310, IB62314, IB62316'],
+                'Dimensions' => ['Cylinder' => 'Ø 230 mm', 'Installation' => 'Compact, floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+    ],
 
-    // ── Drying Cabinets ───────────────────────────────────────────────────────
+    // ── Drying Cabinets ─────────────────────────────────────────────────────────
     'drying-cabinets' => [
-        ['name' => 'DC6-4',    'slug' => 'dc6-4',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-4',    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-4HP',  'slug' => 'dc6-4hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-4HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-8',    'slug' => 'dc6-8',    'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-8',    'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-8HP',  'slug' => 'dc6-8hp',  'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-8HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-10HP', 'slug' => 'dc6-10hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-10HP', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Care Facilities', 'Commercial']],
-        ['name' => 'DC6-14',   'slug' => 'dc6-14',   'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet – DC6-14',   'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Healthcare', 'Commercial']],
-        ['name' => 'DC6-14HP', 'slug' => 'dc6-14hp', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Heat Pump – DC6-14HP', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Healthcare', 'Commercial']],
-        ['name' => 'DC6-15WW', 'slug' => 'dc6-15ww', 'capacity' => null, 'summary' => 'Line 6000 Drying Cabinet Workwear – DC6-15WW', 'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Commercial']],
-        ['name' => 'DC7-4HP',  'slug' => 'dc7-4hp',  'capacity' => null, 'summary' => 'Line 7000 Drying Cabinet Heat Pump – DC7-4HP',  'image_path' => 'images/equipment/line6000-tumble-dryer.webp', 'sectors' => ['Hospitality', 'Commercial']],
+        [
+            'name' => 'Standard Drying Cabinets', 'slug' => 'standard-drying-cabinets', 'capacity' => 'Standard',
+            'title' => 'Standard drying cabinets',
+            'summary' => 'Gentle hang-drying cabinets for garments and linen across the standard range.',
+            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Drying cabinet', 'Range' => 'Standard', 'Models' => 'DC6-4, DC6-8, DC6-14', 'Strength' => 'Gentle, mechanical-action-free drying'],
+                'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Heat Pump Drying Cabinets', 'slug' => 'heat-pump-drying-cabinets', 'capacity' => 'Heat Pump',
+            'title' => 'Heat pump drying cabinets',
+            'summary' => 'Energy-saving heat pump drying cabinets that cut drying energy while protecting fabrics.',
+            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Heat pump drying cabinet', 'Models' => 'DC6-4HP, DC6-8HP, DC6-10HP, DC6-14HP, DC7-4HP', 'Efficiency' => 'Heat pump — lower drying energy'],
+                'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing, no exhaust'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Workwear Drying Cabinet', 'slug' => 'workwear-drying-cabinet', 'capacity' => 'Workwear',
+            'title' => 'Workwear drying cabinet',
+            'summary' => 'Specialist cabinet for drying workwear, PPE and heavier garments.',
+            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Workwear drying cabinet', 'Models' => 'DC6-15WW', 'Strength' => 'Workwear, PPE and heavier garments'],
+                'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+    ],
+
+    // ── Barrier Washers ─────────────────────────────────────────────────────────
+    'barrier-washers' => [
+        [
+            'name' => 'WB6 — Line 6000 Evolution Barrier Washer', 'slug' => 'wb6', 'capacity' => '13–110 kg',
+            'title' => 'Line 6000 Evolution barrier washer – WB6',
+            'summary' => 'Barrier washer for hygiene-critical laundry rooms needing clean/dirty separation, guided operation and long-term support.',
+            'image_path' => 'images/equipment/line6000-barrier-washer.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'Line 6000 Evolution', 'Type' => 'Barrier (hygiene) washer', 'Capacity' => '13 – 110 kg',
+                    'Models' => 'WB6-13 → WB6-110', 'Hygiene' => 'Clean / dirty side separation',
+                ],
+                'Dimensions' => ['Footprint' => 'Through-wall barrier install', 'Installation' => 'Built into hygiene barrier'],
+            ],
+            'sectors' => [],
+        ],
     ],
 
 ];

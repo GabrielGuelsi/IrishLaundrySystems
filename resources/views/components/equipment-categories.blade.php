@@ -2,9 +2,9 @@
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
-    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers',    'desc' => 'For controlled dirty-side and clean-side handling where hygiene process demands separation.',             'box' => 270, 'mb' => -10],
-    ['img' => 'commercialwasher',        'name' => 'Commercial Washers', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270, 'mb' => -35],
-    ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Tumble Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
+    ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers', 'desc' => 'For hygiene-critical laundry where soiled and clean linen must stay separated across a barrier.', 'box' => 250, 'mb' => -20],
+    ['img' => 'commercialwasher',        'name' => 'Washing Machines', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270, 'mb' => -35],
+    ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
     ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist textiles where fabric care matters.', 'box' => 260, 'mb' => 20],
     ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation and linen ready for storage or return to use.'],
 ];
@@ -16,9 +16,9 @@ $equipmentList = $equipment ?? [
         <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-4 mb-10">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
-                <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl">{!! $heading !!}</h2>
+                <h2 class="font-heading font-bold text-navy text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
-                <p class="font-body text-gray-500 text-lg mt-4 whitespace-nowrap">{{ $subheading }}</p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mt-4">{{ $subheading }}</p>
                 @endif
             </div>
             <a href="{{ route('equipment') }}"
@@ -32,7 +32,8 @@ $equipmentList = $equipment ?? [
             $cnt  = count($equipmentList);
             $cols = $cnt >= 6 ? 3 : $cnt;
         @endphp
-        <div class="grid grid-cols-2 lg:grid-cols-{{ $cols }} gap-6">
+        <style>@media (min-width:1024px){.eq-cat-grid{grid-template-columns:repeat({{ $cols }}, minmax(0,1fr)) !important;}}</style>
+        <div class="grid grid-cols-2 gap-6 eq-cat-grid">
             @foreach($equipmentList as $eq)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height: {{ $textMinH }};">
