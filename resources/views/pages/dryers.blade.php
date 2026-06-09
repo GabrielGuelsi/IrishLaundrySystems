@@ -231,70 +231,75 @@
         </div>
 
         {{-- Infographic grid: proof + dryer + door panel + filter panel --}}
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch reveal">
+        <style>@media (min-width:1024px){.dh-grid{grid-template-columns:minmax(0,1.5fr) auto minmax(0,1fr) minmax(0,1fr) !important;}.dh-ss{grid-column:2 / 4 !important;margin-left:-2rem;}}</style>
+        <div class="grid grid-cols-1 gap-6 lg:gap-8 items-start reveal dh-grid">
 
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
-            <div class="lg:col-span-3 flex flex-col gap-6">
-                <div>
-                    <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-48 lg:w-60 h-auto mb-5">
-                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic interventions can reduce work-related musculoskeletal disorders (WMSDs) by <strong class="text-navy font-bold">59%</strong>, with an average decrease of <strong class="text-navy font-bold">75%</strong> in sick days and a <strong class="text-navy font-bold">25%</strong> increase in productivity.</p>
-                    <p class="font-body text-gray-400 text-xs mt-2">Washington State Department of Labor &amp; Industries</p>
+            <div class="flex flex-col gap-6">
+                <div class="flex flex-col sm:flex-row gap-5 items-start">
+                    <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic interventions can reduce work-related musculoskeletal disorders (WMSDs) by <strong class="text-navy font-bold">59%</strong>, with an average decrease of <strong class="text-navy font-bold">75%</strong> in sick days and a <strong class="text-navy font-bold">25%</strong> increase in productivity.</p>
+                        <p class="font-body text-gray-400 text-xs mt-2">Washington State Department of Labor &amp; Industries</p>
+                    </div>
                 </div>
-                <div class="border-t border-gray-200 pt-6 lg:mt-auto">
-                    <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-8 w-auto mb-3">
+                <div class="border-t border-gray-200 pt-6">
+                    <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-14 w-auto mb-3">
                     <p class="font-body text-gray-500 text-sm leading-relaxed">CompassPro comes with a new design and improved user experience. Flexible and customisable, comes with preset programmes as well as free programme slots. Up to 18 languages available.</p>
                 </div>
             </div>
 
             {{-- COL 2: dryer image (the big equipment image) --}}
-            <div class="lg:col-span-3 flex items-center justify-center py-2">
-                <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp" alt="Line 6000 Tumble Dryer" class="w-full max-w-[280px] lg:max-w-none h-auto object-contain">
+            <div class="flex items-center justify-center py-2">
+                <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-2.PNG" alt="Line 6000 Tumble Dryer" class="w-auto h-auto max-h-[560px] object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
-            <div class="lg:col-span-3 rounded-2xl bg-[#f3f6fb] p-6 lg:p-7 flex flex-col">
-                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-5">The door that makes the difference</h3>
-                <div class="space-y-5">
+            <div class="rounded-2xl bg-white p-5 lg:p-6 flex flex-col" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-4">The door that makes the difference</h3>
+                <div class="space-y-3.5">
                     @foreach([
-                        ['t' => 'Ideal height',        'd' => 'M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18m-3.75-3.75L12 21l3.75-3.75', 'b' => 'The door is positioned at the most ergonomically suitable height. This makes a real difference for loading and unloading.'],
+                        ['t' => 'Ideal height',        'img' => 'idealheight.svg',   'b' => 'The door is positioned at the most ergonomically suitable height. This makes a real difference for loading and unloading.'],
                         ['t' => 'Sturdy and reliable', 'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', 'b' => 'Because the door is built to last, it will optimize performance throughout the life of the dryer.'],
-                        ['t' => 'A better grip',        'd' => 'M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75', 'b' => 'Open and shut the door smoothly thanks to the handle design and easy-close magnetic door.'],
-                        ['t' => 'Safer for users',     'd' => 'M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.047 8.287 8.287 0 009 9.601a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z', 'b' => 'The insulated glass door stays cool on the outside so there is no risk of burned fingers or hands. It also keeps the heat inside, so the room temperature is not affected.'],
+                        ['t' => 'A better grip',       'img' => 'abettergrip.svg',   'b' => 'Open and shut the door smoothly thanks to the handle design and easy-close magnetic door.'],
+                        ['t' => 'Safer for users',     'img' => 'saferforusers.svg', 'b' => 'The insulated glass door stays cool on the outside so there is no risk of burned fingers or hands. It also keeps the heat inside, so the room temperature is not affected.'],
                     ] as $dp)
                     <div class="flex items-start gap-3">
-                        <span class="flex items-center justify-center w-9 h-9 rounded-lg bg-white flex-shrink-0">
-                            <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['d'] }}"/></svg>
-                        </span>
+                        @if(!empty($dp['img']))
+                        <img src="/images/equipment/{{ $dp['img'] }}" alt="{{ $dp['t'] }}" class="w-8 h-8 object-contain flex-shrink-0 mt-0.5">
+                        @else
+                        <svg class="w-7 h-7 text-[#010d44] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['d'] }}"/></svg>
+                        @endif
                         <div>
                             <h4 class="font-heading font-bold text-navy text-sm leading-snug mb-0.5">{{ $dp['t'] }}</h4>
-                            <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $dp['b'] }}</p>
+                            <p class="font-body text-gray-500 text-xs leading-snug">{{ $dp['b'] }}</p>
                         </div>
                     </div>
                     @endforeach
                 </div>
-                <p class="font-body text-gray-400 text-[11px] leading-relaxed mt-5">*The insulated glass door and space saving are specific features of TD6-14 and TD6-20.</p>
+                <p class="font-body text-gray-400 text-[11px] leading-snug mt-4">*The insulated glass door and space saving are specific features of TD6-14 and TD6-20.</p>
             </div>
 
             {{-- COL 4: filter drawer --}}
-            <div class="lg:col-span-3 flex flex-col gap-5">
-                {{-- icon placeholder — drop a filter-drawer photo here to replace it --}}
-                <div class="rounded-2xl bg-[#eef3f9] flex items-center justify-center py-12 px-6">
-                    <svg class="w-14 h-14 text-[#148af4]/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z"/></svg>
+            <div class="flex flex-col gap-5">
+                <div class="rounded-2xl overflow-hidden bg-[#eef3f9]">
+                    <img src="/images/equipment/equipment2.jpg" alt="Line 6000 horizontal filter drawer pulled out for easy access and cleaning" class="w-full h-auto object-cover">
                 </div>
-                <div class="rounded-2xl bg-[#f3f6fb] p-6 flex-1">
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">A filter drawer right where you need it</h3>
+                <div class="rounded-2xl bg-white p-6 flex-1" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
+                    <div class="flex items-start justify-between gap-3 mb-2">
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug">A filter drawer right where you need it</h3>
+                        <img src="/images/equipment/filterdrawer.svg" alt="Horizontal filter drawer" class="w-20 h-20 object-contain flex-shrink-0">
+                    </div>
                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
                     <p class="font-body text-gray-500 text-xs leading-relaxed">The horizontal filter drawer is positioned for easy access and cleaning without the need to bend down. Human-centred design down to the smallest details takes the stress out of a physically demanding job.</p>
                 </div>
             </div>
-        </div>
 
-        {{-- Space-saving — compact, sized to the dryer + door panel and placed beneath them --}}
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 mt-6 lg:mt-8">
-            <div class="lg:col-start-4 lg:col-span-6 rounded-2xl bg-[#f3f6fb] px-5 py-4 flex items-center gap-3 reveal">
-                <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-[#148af4]/10 flex-shrink-0">
-                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
+            {{-- Space-saving — spans the dryer + door columns, aligned with the end of the left column --}}
+            <div class="flex items-center gap-3 lg:px-6 lg:border-x lg:border-gray-200 reveal dh-ss">
+                <span class="flex items-center justify-center w-10 h-10 rounded-xl border border-gray-200 flex-shrink-0">
+                    <svg class="w-5 h-5 text-[#010d44]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"/></svg>
                 </span>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug">Space-saving</h3>
