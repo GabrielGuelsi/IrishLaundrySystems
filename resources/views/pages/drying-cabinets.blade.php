@@ -16,12 +16,12 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
+                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Choose drying cabinets around <span style="color:#148af4;">gentle drying, capacity and long-term support</span>
+                    <span style="color:#148af4;">Dry what should not be tumble dried</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional drying cabinets for hotels, healthcare sites, care facilities and commercial laundries across Ireland. We connect drying capacity, the items being dried, energy use, room setup and after-installation support around the way your laundry actually operates.
+                    Electrolux Professional Line 6000 Drying Cabinets support gentle drying for garments, workwear, shoes, gloves, bulky items and specialist fabrics that need extra care. Irish Laundry Systems supplies, installs and supports drying cabinet options for sites that need controlled drying without the mechanical action of a tumble dryer.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -30,7 +30,7 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to Our Team
+                        Ask About Purchase or Rental
                     </a>
                 </div>
             </div>
@@ -44,22 +44,22 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Planning</p>
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Gentle Drying</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Cabinet choice affects <span style="color:#148af4;">gentle drying, capacity and support after installation</span>
+                    A better drying option for <span style="color:#148af4;">garments, workwear and specialist items</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    The wrong cabinet fit can create daily pressure through slow drying, garment damage, energy use, staff routines, service calls and replacement pressure. Irish Laundry Systems connects cabinet selection, room layout, installation, rental, maintenance, repairs and aftercare into one clear equipment decision.
+                    Not every item belongs in a tumble dryer. Delicate fabrics, waterproof clothing, workwear, protective garments, shoes, helmets and gloves can need a gentler drying method that protects shape, finish and functional details. Drying cabinets use gentle, non-mechanical drying to support fabric care while giving sites a better option than open hanging or flat drying. Irish Laundry Systems can match the cabinet, accessories, ventilation needs and aftercare support to the way the site uses the laundry room.
                 </p>
                 <a href="#cabinet-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    See the drying cabinet options we provide
+                    Talk to Our Team
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
@@ -75,22 +75,22 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose cabinets around the <span style="color:#148af4;">costs your laundry room carries every day</span>
+                <span style="color:#148af4;">Protect garments</span> while keeping <span style="color:#148af4;">drying demand</span> under control
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                A drying cabinet decision affects more than the drying time. Energy, garment care, the items being dried, staff routines and long-term support all shape the real cost of keeping laundry moving.
+                A drying cabinet decision is about more than adding another machine. It can reduce pressure on open drying space, protect items that need gentle handling, and support faster return to use for garments, uniforms and specialist items.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             @foreach([
-                ['title' => '10% up-front. 90% life cycle costs',          'copy' => 'Purchase price is only part of the cabinet decision. Energy and running costs carry the larger cost over the life of the equipment.'],
-                ['title' => 'Dry what you cannot tumble',                  'copy' => 'Gently dries garments, footwear, mops and PPE that tumble dryers can damage or cannot handle at all.'],
-                ['title' => 'Protect garments and linen life',             'copy' => 'Hanger drying without tumbling reduces wear and extends the life of clothing, uniforms and delicate textiles.'],
-                ['title' => 'Lower replacement pressure',                  'copy' => 'Gentle drying protects residents\' clothing and uniforms, reducing damage and the cost of replacement.'],
-                ['title' => 'Energy-aware drying',                         'copy' => 'Controlled airflow and heat pump options reduce energy pressure across daily use.'],
+                ['title' => 'Gentler fabric care',                         'copy' => 'Non-mechanical drying helps protect delicate fabrics, workwear finishes, zips, reflective strips and coatings compared with tumble drying.'],
+                ['title' => '6 kg cotton load',                            'copy' => 'Electrolux Professional states that a 6 kg cotton load can be dried in less than 45 minutes.'],
+                ['title' => 'Less open drying pressure',                   'copy' => 'Cabinet drying helps reduce the need for open hanging, flat drying and wet items taking up space around the laundry room.'],
+                ['title' => 'Lower energy pressure where suitable',        'copy' => 'Selected drying cabinet models are available with Heat Pump technology where suitable for the site.'],
+                ['title' => 'Shoes, gloves and workwear',                  'copy' => 'Drying cabinets can support bulky items, shoes, helmets, gloves, outdoor clothing and protective workwear where fabric protection matters.'],
                 ['title' => 'Fewer surprise repairs',                      'copy' => 'Connected planning, maintenance and aftercare reduce reactive repair pressure on high-use cabinets.'],
             ] as $card)
             <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
@@ -110,20 +110,20 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Cabinet features that support <span style="color:#148af4;">gentle drying, control and daily handling</span>
+                Features that support <span style="color:#148af4;">gentle drying</span>, <span style="color:#148af4;">fabric care</span> and <span style="color:#148af4;">daily use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Selected Electrolux Professional features support gentle hanger drying, moisture-aware control, clearer operation and easier daily handling when matched to the right laundry room.
+                Selected Electrolux Professional drying cabinet features support easier use, controlled drying and better care for items that need a different drying method.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             @foreach([
-                ['icon' => '26', 'title' => 'Gentle hanger drying',           'copy' => 'Dries garments on hangers without the wear of tumbling.'],
-                ['icon' => '16', 'title' => 'Sensor / moisture drying',       'copy' => 'Dries to the right point and stops, avoiding overdrying.'],
-                ['icon' => '7',  'title' => 'Heat pump options',              'copy' => 'Energy-efficient drying where the room and setup fit.'],
-                ['icon' => '30', 'title' => 'Energy-efficient heating',       'copy' => 'Controlled airflow and heat reduce energy pressure across daily use.'],
-                ['icon' => '4',  'title' => 'Clear controls',                 'copy' => 'Simple programme selection and easier operator control.'],
+                ['icon' => '26', 'title' => 'Gentle non-mechanical drying',   'copy' => 'Drying without tumbling helps protect garments, bulky items and functional details.'],
+                ['icon' => '16', 'title' => 'Automatic programmes',           'copy' => 'Easy-to-use controls and automatic programmes support practical daily operation.'],
+                ['icon' => '7',  'title' => 'Automatic stop when dry',        'copy' => 'Programmes can stop when the load is dry, helping avoid unnecessary drying time.'],
+                ['icon' => '30', 'title' => 'Ergonomic access',               'copy' => 'Control panel and door handle positioning support easier everyday use.'],
+                ['icon' => '4',  'title' => 'User-friendly details',          'copy' => 'Braille buttons and child safety start lock support safer, clearer operation.'],
                 ['icon' => '5',  'title' => 'ERGOCERT operator handling',      'copy' => 'Certified ergonomic design for daily loading and unloading.'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm">
@@ -243,22 +243,22 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Build the cabinet decision</span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around the <span style="color:#011E41;">room, workflow</span></span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">and <span style="color:#011E41;">support</span></span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Plan cabinet drying</span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around the <span style="color:#011E41;">items, room</span></span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">and <span style="color:#011E41;">ventilation</span></span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A drying cabinet should fit the room, the workflow and the items being dried every day. Irish Laundry Systems connects capacity, utilities, access, load type, installation and support before the equipment decision is made.
+            A drying cabinet should be chosen around what needs to dry, how often it is used, where it will sit, and whether the room can support the selected drying method. Heat Pump drying cabinets may need good ventilation in the laundry room, so room conditions should be checked before a final recommendation.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Utilities and access', 'Capacity and load type'] as $i => $pt)
+            @foreach(['Item type', 'Space planning', 'Ventilation check'] as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Request Equipment Advice
+            Talk to Our Team
         </a>
     </div>
 </section>
@@ -268,12 +268,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Drying Cabinet Range</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Drying Cabinets</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare cabinet options around <span style="color:#148af4;">capacity, gentle drying and support</span>
+                Drying cabinet options for <span style="color:#148af4;">different site needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with capacity and the items being dried, then connect the cabinet decision to room layout, utilities, energy use, installation and long-term support.
+                Electrolux Professional Line 6000 Drying Cabinets include vented and Heat Pump options across selected models. Irish Laundry Systems can advise on the cabinet type, size, ventilation requirements, accessories and support needed for the site.
             </p>
         </div>
 
@@ -420,12 +420,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support routes that keep <span style="color:#148af4;">cabinet decisions moving</span>
+                Support options for <span style="color:#148af4;">drying cabinets</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Commercial drying cabinet performance depends on more than the first installation. Irish Laundry Systems connects equipment access, planned maintenance, repairs and aftercare around the way the laundry room operates.
+                Drying cabinet performance depends on more than the equipment choice. Irish Laundry Systems can support the site with repairs, preventive maintenance, rental options and aftercare around the way the cabinet is used every day.
             </p>
         </div>
 
@@ -433,7 +433,7 @@
             @foreach([
                 [
                     'title' => 'Equipment Rental',
-                    'text'  => 'Lower upfront cost for cabinet replacement, capacity planning or expansion where rental is the right fit.',
+                    'text'  => 'For sites considering lower upfront cost where rental is suitable for the selected equipment and site needs.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
                     'img'   => '/images/healthcare/commercial-industrial.jpg',
@@ -441,24 +441,24 @@
                 ],
                 [
                     'title' => 'Preventive Maintenance',
-                    'text'  => 'Planned cabinet servicing to reduce surprise repair pressure and keep equipment condition visible.',
-                    'cta'   => 'View Maintenance Options',
+                    'text'  => 'For sites that want planned support to keep drying equipment easier to manage and reduce avoidable disruption over time.',
+                    'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
                     'img'   => '/images/healthcare/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
                     'title' => 'Repairs &amp; Call-outs',
-                    'text'  => 'Service and breakdown support when cabinet faults interrupt drying flow, staff routines or daily output.',
-                    'cta'   => 'Request Call-out',
+                    'text'  => 'For drying cabinet faults, drying performance issues, control problems or service needs that need practical engineering support.',
+                    'cta'   => 'Request a Repair',
                     'route' => route('repairs'),
                     'img'   => '/images/healthcare/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
-                    'text'  => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',
-                    'cta'   => 'Explore Support Options',
+                    'text'  => 'For follow-up, service history, parts support where needed and clearer repair or replacement decisions.',
+                    'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
                     'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
@@ -543,16 +543,16 @@
 
 {{-- 15. FAQ --}}
 @include('components.faq', [
-    'eyebrow' => 'Drying Cabinet FAQs',
-    'heading' => 'Clear answers before the <span style="color:#148af4;">cabinet decision</span>',
+    'eyebrow' => 'Drying Cabinets FAQs',
+    'heading' => 'Questions before choosing a <span style="color:#148af4;">commercial drying cabinet</span>',
     'faqs' => [
-        ['question' => 'What is a drying cabinet used for?', 'answer' => 'A drying cabinet dries garments, linen, mops, cloths, PPE and footwear gently on hangers or shelves, without the wear of tumbling. It is useful for items that cannot or should not be tumble dried.'],
-        ['question' => 'What size drying cabinet do I need?', 'answer' => 'The right size depends on daily volume, the items being dried and the space available. Irish Laundry Systems can assess the site before recommending a cabinet range or model.'],
-        ['question' => 'Can I rent a drying cabinet?', 'answer' => 'Yes. Rental may be suitable for sites looking for lower upfront cost, replacement support or capacity expansion. Service and breakdown support is included under rental terms.'],
-        ['question' => 'Do you install drying cabinets?', 'answer' => 'Yes. Irish Laundry Systems supplies, installs and supports commercial laundry equipment across Ireland.'],
-        ['question' => 'Are drying cabinets gentle on clothing?', 'answer' => 'Yes. Drying on hangers without tumbling reduces wear, which helps protect residents\' clothing, uniforms and delicate textiles and extends their life.'],
-        ['question' => 'Can a drying cabinet dry mops and PPE?', 'answer' => 'Yes. Specialist cabinets are designed to dry mops, cloths, PPE and footwear that tumble dryers cannot handle.'],
-        ['question' => 'Are drying cabinets suitable for healthcare or care facilities?', 'answer' => 'Yes. Drying cabinets are widely used in care and healthcare settings for gentle, hygienic drying of residents\' clothing, uniforms and specialist items when matched to the right room setup and support plan.'],
+        ['question' => 'What is a commercial drying cabinet used for?', 'answer' => 'A commercial drying cabinet is used for garments and items that need gentler drying than a tumble dryer can provide. This can include delicate fabrics, workwear, waterproof clothing, shoes, gloves, boots, helmets and bulky items.'],
+        ['question' => 'When is a drying cabinet better than a tumble dryer?', 'answer' => 'A drying cabinet is useful when items should not be tumbled, when shape or functional details need protection, or when shoes, gloves, outdoor clothing or protective garments need controlled drying.'],
+        ['question' => 'How fast can an Electrolux Professional drying cabinet dry a load?', 'answer' => 'Electrolux Professional states that a 6 kg cotton load can be dried in less than 45 minutes.'],
+        ['question' => 'Are Heat Pump drying cabinets available?', 'answer' => 'Selected drying cabinet models are available with Heat Pump technology where suitable for the site. Room conditions and ventilation should be checked before a final recommendation.'],
+        ['question' => 'What accessories are available?', 'answer' => 'Accessory options include hanger sticks, shoe shelves, glove hangers and glove or boot drying options for sites handling workwear, protective clothing or specialist items.'],
+        ['question' => 'Can drying cabinets be used for hospitality?', 'answer' => 'Yes. Drying cabinets can support hotels, guesthouses and hospitality sites handling guest garments, robes, uniforms, delicate fabrics and items that should not be tumble dried.'],
+        ['question' => 'Can drying cabinets be used for workwear or PPE?', 'answer' => 'Yes. Drying cabinets can support workwear, protective clothing, gloves, boots and other specialist items where fabric protection and controlled drying matter. The right setup depends on the item type and site requirements.'],
     ],
 ])
 
@@ -561,7 +561,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">Brochures, guides and useful reading</h2>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">Official Electrolux Professional <span style="color:#148af4;">drying cabinet information</span></h2>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
 
@@ -618,10 +618,10 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Need the <span style="color:#148af4;">right drying cabinet</span> for your laundry room?
+            Ready to choose the <span style="color:#148af4;">right drying cabinet</span> for your site
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Talk to Irish Laundry Systems about cabinet capacity, gentle drying, the items being dried, installation, rental, maintenance and support options.
+            Tell us what you need to dry, how often the cabinet will be used and what room conditions you have. Irish Laundry Systems will guide you toward the right equipment advice, equipment quote, rental, preventive maintenance, repair or aftercare support.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('contact') }}"
