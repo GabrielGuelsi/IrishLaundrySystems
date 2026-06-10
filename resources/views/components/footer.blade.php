@@ -13,7 +13,7 @@
                 <span style="display:none" class="font-heading font-bold text-white text-xl tracking-tight block mb-5">Irish Laundry Systems</span>
 
                 <p class="text-sm font-body text-gray-300 leading-relaxed mb-6 max-w-sm">
-                    Built for healthcare, hospitality, care and commercial laundry environments across Dublin and Ireland, with 38 client locations supported.
+                    Built for healthcare, hospitality, care and commercial laundry environments across Dublin and Ireland, with 100+ clients supported.
                 </p>
 
                 <ul class="space-y-2.5 text-sm font-body text-gray-400">
@@ -56,7 +56,7 @@
             <!-- CTA -->
             <div>
                 <h3 class="font-heading font-bold text-white text-xs uppercase tracking-[0.22em] mb-5 pb-2 border-b border-white/10">Start with the right next step</h3>
-                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Request a service assessment or talk to our team so the enquiry can be directed to the right service, rental, equipment or aftercare conversation.</p>
+                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Request a service assessment or talk to our team so we can guide you toward the right service, rental, equipment or aftercare support.</p>
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-heading font-bold text-sm px-5 py-3 rounded-lg transition-colors"
                    data-ga-cta="footer_request_assessment">

@@ -49,8 +49,8 @@
                 <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     style="width:2.4rem;height:2.4rem;flex-shrink:0;" alt="">
+                <img src="{{ $feat['img'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
+                     style="width:{{ isset($feat['img']) ? '3.5rem' : '2.4rem' }};height:{{ isset($feat['img']) ? '3.5rem' : '2.4rem' }};flex-shrink:0;{{ isset($feat['img']) ? 'filter:brightness(0) invert(1);' : '' }}" alt="">
                 <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach

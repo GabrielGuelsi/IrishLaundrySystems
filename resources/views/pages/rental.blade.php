@@ -328,25 +328,75 @@
 
         @php
         $rentalFits = [
-            ['label' => 'Care facilities managing daily resident laundry demand',
-             'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>'],
-            ['label' => 'Healthcare environments with essential laundry needs',
-             'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>'],
-            ['label' => 'Hospitality sites managing linen flow and room readiness',
-             'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M12 12.75h.008v.008H12v-.008Z"/>'],
-            ['label' => 'Commercial and industrial sites with high-use laundry equipment',
-             'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.75A.75.75 0 0 1 9.75 16.5h4.5a.75.75 0 0 1 .75.75V21"/>'],
-            ['label' => 'Shared-use and managed residential laundry rooms',
-             'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>'],
+            ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/healthcare/healthcarehero.png'],
+            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg'],
+            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/Hospitallity/hospitallityhero.jpeg'],
+            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/healthcare/commercial-industrial.jpg'],
+            ['env' => 'Multi Housing',               'route' => route('sectors'),             'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
-        <div class="flex flex-wrap justify-center gap-4">
-            @foreach ($rentalFits as $i => $fit)
-            <div class="reveal group bg-white border border-border rounded-2xl p-6 flex items-start gap-4 w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-0.7rem)] transition-all duration-300 hover:-translate-y-1 hover:border-[#148af4]/40 hover:shadow-card" style="transition-delay:{{ $i * 60 }}ms;">
-                <svg class="w-9 h-9 text-[#148af4] flex-shrink-0 transition-transform duration-300 group-hover:-translate-y-0.5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">{!! $fit['icon'] !!}</svg>
-                <span class="font-body text-navy text-sm lg:text-base font-bold leading-snug">{{ $fit['label'] }}</span>
+
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($rentalFits) }},
+                perView: 4,
+                timer: null,
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    calc();
+                    window.addEventListener('resize', calc);
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
+            }"
+            class="relative"
+        >
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-3"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($rentalFits as $i => $env)
+                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-3">
+                        <div class="flex flex-col items-center text-center">
+                            <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
+                                <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
+                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px;">
+                            </a>
+                            <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{!! $env['env'] !!}</h3>
+                            <a href="{{ $env['route'] }}"
+                               class="inline-flex items-center justify-center bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200">
+                                Discover more
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
             </div>
-            @endforeach
+
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-10 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    <template x-for="i in (maxIndex + 1)" :key="i">
+                        <button @click="go(i - 1)"
+                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                                class="rounded-full transition-all duration-300"></button>
+                    </template>
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 reveal">
