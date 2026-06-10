@@ -1,4 +1,4 @@
-@props(['heading' => 'Equipment categories for healthcare laundry rooms', 'subheading' => null, 'textMinH' => '112px'])
+@props(['heading' => 'Equipment categories for healthcare laundry rooms', 'subheading' => null, 'textMinH' => '112px', 'equipment' => null])
 {{-- Equipment Categories --}}
 @php
 $equipmentList = $equipment ?? [
@@ -30,7 +30,7 @@ $equipmentList = $equipment ?? [
 
         @php
             $cnt  = count($equipmentList);
-            $cols = $cnt >= 6 ? 3 : $cnt;
+            $cols = min($cnt, 6);
         @endphp
         <style>@media (min-width:1024px){.eq-cat-grid{grid-template-columns:repeat({{ $cols }}, minmax(0,1fr)) !important;}}</style>
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 eq-cat-grid">
@@ -59,7 +59,13 @@ $equipmentList = $equipment ?? [
                          style="width:{{ $box }}px; max-width:100%; height:{{ $box }}px; object-fit:contain; margin-bottom:{{ $mb }}px;">
                 </div>
                 @endif
-                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                @php
+                    $cardRoute = $eq['route'] ?? null;
+                    $cardHref  = $cardRoute
+                        ? (is_array($cardRoute) ? route($cardRoute[0], $cardRoute[1] ?? []) : route($cardRoute))
+                        : route('equipment');
+                @endphp
+                <a href="{{ $cardHref }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
                     View Equipment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>

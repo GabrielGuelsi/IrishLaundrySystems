@@ -36,7 +36,7 @@ $testimonials = [
         'pills'     => ['Long-Term Partnership', 'Reliable Service', 'Fast Response', 'Minimal Disruption'],
         'headline'  => 'A reliable partner we can always count on to keep our operations running smoothly.',
         'body'      => 'Irish Laundry Systems has been an outstanding partner for Charlemont Group. Their team consistently delivers a professional and efficient service, with response times that are second to none. Whether it is routine maintenance or an urgent callout, they handle everything with care and expertise. We have complete confidence in their ability to support our laundry operations and would not hesitate to recommend them.',
-        'cite_name' => 'Contact Name',
+        'cite_name' => 'Marius Dumitru',
         'cite_role' => 'Facilities Manager at Charlemont Group',
     ],
     'laundryonline' => [
@@ -46,7 +46,7 @@ $testimonials = [
         'pills'     => ['Equipment Supply', 'Quick Turnaround', 'Dependable Support', 'Service Contract'],
         'headline'  => 'Professional, knowledgeable and always quick to respond when it matters most.',
         'body'      => 'Working with Irish Laundry Systems has been a straightforward and positive experience from the start. Their knowledge of commercial laundry equipment is excellent and their aftercare support has been dependable throughout. Any issues are resolved quickly and efficiently, and the team is always easy to reach. We value the relationship we have built and look forward to continuing to work together.',
-        'cite_name' => 'Contact Name',
+        'cite_name' => 'Talita Carneiro',
         'cite_role' => 'Operations Manager at Laundry Online',
     ],
     'abbvie' => [

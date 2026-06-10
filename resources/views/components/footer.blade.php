@@ -13,42 +13,74 @@
                 <span style="display:none" class="font-heading font-bold text-white text-xl tracking-tight block mb-5">Irish Laundry Systems</span>
 
                 <p class="text-sm font-body text-gray-300 leading-relaxed mb-6 max-w-sm">
-                    Built for healthcare, hospitality, care and commercial laundry environments across Dublin and Ireland, with 100+ clients supported.
+                    Commercial laundry equipment, rental, maintenance, repairs and aftercare support across Dublin and Ireland since 1987.
                 </p>
 
+                <!-- Proof line -->
                 <ul class="space-y-2.5 text-sm font-body text-gray-400">
                     <li class="flex items-center gap-2">
                         <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        Since 1987 — 30+ years experience
+                        Authorised Electrolux Professional Partner
                     </li>
                     <li class="flex items-center gap-2">
                         <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
-                        Service coverage across the Republic of Ireland (excluding Northern Ireland)
+                        Registered Electrical Contractor
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        Registered Gas Installer contractors
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        100+ clients supported
                     </li>
                 </ul>
 
-                <!-- Electrolux badge -->
-                <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-lg px-3 py-2 mt-5">
-                    <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75l2.25 2.25L15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
-                    </svg>
-                    <span class="text-xs font-body text-gray-300">Electrolux Professional Partner</span>
-                </div>
+                <!-- Contact block -->
+                <ul class="space-y-2.5 text-sm font-body text-gray-400 mt-5">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+                        </svg>
+                        <a href="tel:+35314910402" class="hover:text-white transition-colors">+353 1 491 0402</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/>
+                        </svg>
+                        <a href="mailto:contact@irishlaundrysystems.com" class="hover:text-white transition-colors">contact@irishlaundrysystems.com</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/>
+                        </svg>
+                        Dublin, Ireland
+                    </li>
+                </ul>
             </div>
 
             <!-- Quick links -->
             <div>
                 <h3 class="font-heading font-bold text-white text-xs uppercase tracking-[0.22em] mb-5 pb-2 border-b border-white/10">Quick Links</h3>
                 <ul class="space-y-3 font-body text-sm">
-                    <li><a href="{{ route('service-contracts') }}" class="text-gray-400 hover:text-white transition-colors">Preventive Maintenance</a></li>
-                    <li><a href="{{ route('repairs') }}" class="text-gray-400 hover:text-white transition-colors">Repairs &amp; Call-outs</a></li>
-                    <li><a href="{{ route('rental') }}" class="text-gray-400 hover:text-white transition-colors">Rental</a></li>
+                    <li><a href="{{ route('repairs') }}" class="text-gray-400 hover:text-white transition-colors">Repairs &amp; Call-Outs</a></li>
+                    <li><a href="{{ route('service-contracts') }}" class="text-gray-400 hover:text-white transition-colors">Preventive Maintenance Contracts</a></li>
+                    <li><a href="{{ route('rental') }}" class="text-gray-400 hover:text-white transition-colors">Equipment Rental</a></li>
+                    <li><a href="{{ route('parts-aftercare') }}" class="text-gray-400 hover:text-white transition-colors">Support &amp; Aftercare</a></li>
                     <li><a href="{{ route('equipment') }}" class="text-gray-400 hover:text-white transition-colors">Equipment</a></li>
-                    <li><a href="{{ route('parts-aftercare') }}" class="text-gray-400 hover:text-white transition-colors">Aftercare &amp; Support</a></li>
+                    <li><a href="{{ route('sectors.healthcare') }}" class="text-gray-400 hover:text-white transition-colors">Healthcare</a></li>
+                    <li><a href="{{ route('sectors.care') }}" class="text-gray-400 hover:text-white transition-colors">Care Facilities</a></li>
+                    <li><a href="{{ route('sectors.hospitality') }}" class="text-gray-400 hover:text-white transition-colors">Hospitality</a></li>
+                    <li><a href="{{ route('sectors.commercial') }}" class="text-gray-400 hover:text-white transition-colors">Commercial &amp; Industrial</a></li>
                     <li><a href="{{ route('contact') }}" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
                 </ul>
             </div>
@@ -56,7 +88,7 @@
             <!-- CTA -->
             <div>
                 <h3 class="font-heading font-bold text-white text-xs uppercase tracking-[0.22em] mb-5 pb-2 border-b border-white/10">Start with the right next step</h3>
-                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Request a service assessment or talk to our team so we can guide you toward the right service, rental, equipment or aftercare support.</p>
+                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Request a service assessment or talk to our team so we can guide you toward the right service, equipment quote, rental or aftercare support.</p>
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-heading font-bold text-sm px-5 py-3 rounded-lg transition-colors"
                    data-ga-cta="footer_request_assessment">
@@ -73,12 +105,17 @@
     <!-- Legal bar -->
     <div class="border-t border-white/10 bg-black/20">
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-            <p class="text-xs text-gray-600 font-body">
-                &copy; {{ date('Y') }} Irish Laundry Systems Ltd. All rights reserved.
-            </p>
+            <div>
+                <p class="text-xs text-gray-600 font-body">
+                    &copy; {{ date('Y') }} Irish Laundry Systems / D.S.B. Electrical (Templeogue) Limited
+                </p>
+                <p class="text-xs text-gray-600 font-body">
+                    Commercial laundry engineering support since 1987
+                </p>
+            </div>
             <div class="flex items-center gap-5">
-                <a href="#" class="text-xs text-gray-600 hover:text-gray-400 font-body transition-colors">Privacy Policy</a>
-                <a href="#" class="text-xs text-gray-600 hover:text-gray-400 font-body transition-colors">Cookie Policy</a>
+                <a href="{{ route('privacy') }}" class="text-xs text-gray-600 hover:text-gray-400 font-body transition-colors">Privacy Policy</a>
+                <a href="{{ route('privacy') }}" class="text-xs text-gray-600 hover:text-gray-400 font-body transition-colors">Cookie Policy</a>
             </div>
         </div>
     </div>
