@@ -209,7 +209,7 @@
 </section>
 
 {{-- Technical Bento: 5-card compact grid --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Header --}}
@@ -228,9 +228,9 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
             {{-- Card 1: Hygiene --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/2.png" alt="" class="w-24 h-24 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/2.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
@@ -239,9 +239,9 @@
             </div>
 
             {{-- Card 2: Operator --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/3.png" alt="" class="w-24 h-24 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/3.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
@@ -250,9 +250,9 @@
             </div>
 
             {{-- Card 3: Control --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/4.png" alt="" class="w-32 h-32 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/4.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Guided process control</h3>
@@ -261,9 +261,9 @@
             </div>
 
             {{-- Card 4: ERGOCERT --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/5.png" alt="4-star ERGOCERT" class="w-24 h-24 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/5.png" alt="4-star ERGOCERT" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Certified ergonomic design</h3>
@@ -272,9 +272,9 @@
             </div>
 
             {{-- Card 5: AIDO --}}
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="" class="w-24 h-24 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Secure door handling</h3>

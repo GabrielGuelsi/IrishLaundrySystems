@@ -71,76 +71,6 @@
     </div>
 </section>
 
-<!-- HOSPITALITY LAUNDRY PRIORITIES BENTO -->
-<section class="py-12 lg:py-16 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Protect <span style="color:#148af4;">guest experience</span> while <span style="color:#148af4;">keeping linen moving</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                The right laundry setup supports linen availability, housekeeping pressure, peak demand periods, finishing standards and the support needed to keep service moving.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/23.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Linen turnaround</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Bedding, towels, robes and flatwork need to move back into use quickly during busy periods.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/24.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping pressure</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Laundry affects room readiness, team workload and the rhythm of daily hotel service.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/25.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing and presentation</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ironing and flatwork quality support the visual standard guests notice in rooms, restaurants and service areas.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak occupancy planning</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">The laundry room should be planned around peak demand periods, not only average daily use.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/6.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room can support faster turnaround times, higher quality control standards and better control over what is washed, how and when.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
 {{-- Financial Performance Bento: metric cards --}}
 <section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -163,6 +93,76 @@
             ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
             ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems brings equipment planning, planned maintenance, repairs, rental options and aftercare together, so hospitality laundry decisions are not only made after something fails.'],
         ]])
+    </div>
+</section>
+
+<!-- HOSPITALITY LAUNDRY PRIORITIES BENTO -->
+<section class="py-12 lg:py-16 bg-gray-50">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Protect <span style="color:#148af4;">guest experience</span> while <span style="color:#148af4;">keeping linen moving</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                The right laundry setup supports linen availability, housekeeping pressure, peak demand periods, finishing standards and the support needed to keep service moving.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/23.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Linen turnaround</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Bedding, towels, robes and flatwork need to move back into use quickly during busy periods.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/24.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping pressure</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Laundry affects room readiness, team workload and the rhythm of daily hotel service.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/25.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing and presentation</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ironing and flatwork quality support the visual standard guests notice in rooms, restaurants and service areas.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/26.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak occupancy planning</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">The laundry room should be planned around peak demand periods, not only average daily use.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/6.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room can support faster turnaround times, higher quality control standards and better control over what is washed, how and when.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 

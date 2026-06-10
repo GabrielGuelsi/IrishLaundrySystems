@@ -28,24 +28,18 @@
         <div class="hidden lg:flex items-center gap-20">
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 1.svg')) !!}
-                </div>
+                <img src="/images/icons/46.png" alt="" aria-hidden="true" class="h-9 w-auto object-contain">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Electrical Contractor</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 5.svg')) !!}
-                </div>
+                <img src="/images/icons/45.png" alt="" aria-hidden="true" class="h-9 w-auto object-contain">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <div class="w-7 h-7 text-navy [&>svg]:w-full [&>svg]:h-full" aria-hidden="true">
-                    {!! file_get_contents(public_path('images/icons/brand/Ativo 15.svg')) !!}
-                </div>
-                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">100+ clients supported</span>
+                <span class="font-heading font-bold text-navy text-3xl leading-none">100+</span>
+                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Long-standing relationships</span>
             </div>
 
         </div>

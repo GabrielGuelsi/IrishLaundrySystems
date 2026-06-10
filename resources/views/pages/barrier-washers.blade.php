@@ -161,7 +161,7 @@
 </section>
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-12 lg:py-24 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -182,9 +182,9 @@
                 ['icon' => '95', 'title' => 'AIDO / Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',               'badge' => 'AIDO | Automatic Door Locking'],
                 ['icon' => '11', 'title' => 'Clearer process control',        'copy' => 'Connected options can support monitoring, traceability and clearer service decisions.', 'badge' => 'CMIS | OnE Laundry where applicable'],
             ] as $card)
-            <div class="p-6 flex flex-col items-center text-center gap-3 col-span-1">
-                <div class="flex items-center justify-center h-16">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-16 h-16 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm items-center text-center col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>

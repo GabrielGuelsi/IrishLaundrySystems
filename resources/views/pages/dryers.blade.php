@@ -181,7 +181,7 @@
 </section>
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -202,9 +202,9 @@
                 ['icon' => '34', 'title' => 'Adaptive Fan',                'copy' => 'Adjusts airflow to the load where available, supporting even drying and lower energy use.', 'badge' => 'Adaptive Fan'],
                 ['icon' => '4',  'title' => 'Smart Energy Management',     'copy' => 'Supports energy regulation, clearer programmes and day-to-day operator control.',          'badge' => 'CompassPro'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-6 flex flex-col items-center text-center gap-3 shadow-card col-span-1">
-                <div class="flex items-center justify-center h-16">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-16 h-16 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>

@@ -179,7 +179,7 @@
 </section>
 
 <!-- TECHNICAL PROOF ICONS -->
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -194,8 +194,8 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/34.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div class="text-center">
@@ -204,9 +204,9 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/35.png" alt="" class="w-24 h-24 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/35.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Textile mix</h3>
@@ -214,9 +214,9 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/26.png" alt="" class="w-20 h-20 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/26.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility and dosing control</h3>
@@ -224,9 +224,9 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/3.png" alt="" class="w-32 h-32 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/3.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator handling and controls</h3>
@@ -234,9 +234,9 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/38.png" alt="" class="w-20 h-20 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/38.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Specialist laundry control</h3>

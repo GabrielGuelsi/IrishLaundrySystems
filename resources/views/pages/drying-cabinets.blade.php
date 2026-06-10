@@ -104,7 +104,7 @@
 </section>
 
 {{-- 6. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -126,9 +126,9 @@
                 ['icon' => '4',  'title' => 'Clear controls',                 'copy' => 'Simple programme selection and easier operator control.'],
                 ['icon' => '5',  'title' => 'ERGOCERT operator handling',      'copy' => 'Certified ergonomic design for daily loading and unloading.'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col items-center text-center gap-4 shadow-card">
-                <div class="flex items-center justify-center h-20">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-20 h-20 object-contain">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
