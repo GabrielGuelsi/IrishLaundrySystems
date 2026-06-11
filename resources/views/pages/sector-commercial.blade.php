@@ -173,7 +173,7 @@
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',           'size'=>'text-4xl', 'label'=>'dryer energy use',              'body'=>'Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.'],
             ['icon'=>'39', 'prefix'=>'',     'stat'=>'30%+',           'size'=>'text-4xl', 'label'=>'detergent-cost saving',  'body'=>'Efficient Dosing can save over 30% on detergent costs by helping use the right amount of detergent at each cycle.'],
             ['icon'=>'3',  'prefix'=>'Up to', 'stat'=>'-75%',           'size'=>'text-4xl', 'label'=>'sick days','body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
-            ['icon'=>'11', 'prefix'=>'',     'stat'=>'Fewer<br>surprise<br>costs', 'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so commercial sites are not forced to make every decision after something fails.'],
+            ['icon'=>'11', 'prefix'=>'',     'stat'=>'Fewer<br>surprise<br>costs', 'size'=>'text-2xl', 'label'=>'repair and maintenance',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so commercial sites are not forced to make every decision after something fails.'],
         ]])
     </div>
 </section>
