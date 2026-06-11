@@ -188,15 +188,7 @@
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
-                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
             </div>
-            @endforeach
-        </div>
-
-        {{-- Secondary proof chips --}}
-        <div class="flex flex-wrap gap-2 mt-8">
-            @foreach(['CompassPro','Integrated Weighing','Efficient Dosing','Power Balance','Double Drain','Titration Valve','Cleanroom Construction','13 Detergent Signals'] as $chip)
-            <span class="font-body text-xs font-semibold text-navy border border-gray-200 bg-white px-3 py-1.5 rounded-full">{{ $chip }}</span>
             @endforeach
         </div>
     </div>
@@ -323,7 +315,7 @@
 </section>
 
 {{-- 9. SECTOR FIT / USE CASES --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -336,19 +328,23 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Healthcare and hospitals',          'copy' => 'For clinical laundry environments where linen flow, patient safety and clean/dirty separation matter.', 'd' => 'M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z'],
-                ['title' => 'Care facilities',                   'copy' => 'For sites handling resident clothing, bedding and towels where laundry routines need clearer separation.', 'd' => 'M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z'],
-                ['title' => 'Pharmaceutical and food processing','copy' => 'For environments where workwear, particles and process control need specialist laundry planning.', 'd' => 'M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.3 24.3 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23-.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.3 48.3 0 0 1 12 21a48.3 48.3 0 0 1-8.135-.687c-1.717-.293-2.3-2.379-1.067-3.61L5 14.5'],
-                ['title' => 'Commercial laundries',              'copy' => 'For operators processing hygiene-sensitive textiles for clients who need controlled laundry flow.', 'd' => 'M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'],
+                ['title' => 'Healthcare and hospitals',           'img' => '/images/healthcare/healthcarehero.png',                'route' => route('sectors.healthcare')],
+                ['title' => 'Care facilities',                    'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'route' => route('sectors.care')],
+                ['title' => 'Pharmaceutical and food processing', 'img' => '/images/healthcare/render-double-page_72dpi.jpg',      'route' => route('sectors.commercial')],
+                ['title' => 'Commercial laundries',               'img' => '/images/healthcare/commercial-industrial.jpg',         'route' => route('sectors.commercial')],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col h-full shadow-card">
-                <span class="inline-flex items-center justify-center w-11 h-11 rounded-xl bg-[#148af4]/10 mb-4">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['d'] }}"/></svg>
-                </span>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+            <div class="flex flex-col items-center text-center">
+                <a href="{{ $card['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
+                         class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px;">
+                </a>
+                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{{ $card['title'] }}</h3>
+                <a href="{{ $card['route'] }}"
+                   class="inline-flex items-center justify-center bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200">
+                    Discover more
+                </a>
             </div>
             @endforeach
         </div>

@@ -32,11 +32,8 @@
             <h3 class="font-heading font-bold text-navy text-sm leading-snug mt-1.5 pl-[4.75rem] xl:pl-[5.75rem]">{{ $it['label'] }}</h3>
         </div>
 
-        {{-- short accent divider --}}
-        <div class="w-10 h-[3px] rounded-full bg-[#148af4]/30 mt-4 mb-3"></div>
-
         @if(!empty($it['body']))
-        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $it['body'] }}</p>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mt-3">{{ $it['body'] }}</p>
         @endif
     </div>
     @endforeach

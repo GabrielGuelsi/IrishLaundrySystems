@@ -49,13 +49,16 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Improve the final finish without moving straight into a <span style="color:#148af4;">full ironer setup</span>
+                    Improve the final finish without moving straight into a full ironer setup
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    Some laundry rooms need practical ironing and finishing support before they need a larger hot cylinder ironer. Finishing equipment can support resident clothing, guest garments, uniforms, shirts, trousers, linen touch-ups and smaller presentation-led items where the final finish still matters.
+                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Some laundry rooms need practical ironing and finishing support before they need a larger hot cylinder ironer. Finishing equipment can support resident clothing, guest garments, uniforms, shirts, trousers, linen touch-ups and smaller presentation-led items where the final finish still matters. Irish Laundry Systems can help choose the right equipment before money is spent on something that does not fit the room, the workload or the daily routine.
+                    Irish Laundry Systems can help choose the right equipment before money is spent on something that does not fit the room, the workload or the daily routine.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -308,16 +311,16 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Connect finishing with the rest of the <span style="color:#148af4;">laundry room</span>
+                Connect finishing with the rest of the laundry room
             </h2>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             @foreach([
                 ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing, linen flow, working width decisions and commercial ironing support.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers')],
-                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where washing, drying and finishing need to work together.',                  'cta' => 'View Wet Cleaning', 'route' => route('equipment')],
+                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where washing, drying and finishing need to work together.',                  'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning')],
                 ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before finishing, garment handling or daily linen presentation.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers')],
-                ['title' => 'Accessories & Consumables', 'copy' => 'For supporting items that help keep laundry equipment and workflows running.',                           'cta' => 'View Accessories',  'route' => route('equipment')],
+                ['title' => 'Accessories & Consumables', 'copy' => 'For supporting items that help keep laundry equipment and workflows running.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories')],
             ] as $card)
             <div class="bg-white border border-gray-100 rounded-2xl p-7 shadow-card flex flex-col h-full">
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $card['title'] }}</h3>
@@ -383,7 +386,7 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Need advice on <span style="color:#148af4;">commercial finishing equipment</span>?
+            Need advice on commercial finishing equipment?
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Tell Irish Laundry Systems what your laundry room needs to finish each day. The team can help connect ironing tables, steam support, presses, form finishers or specialist finishing equipment with practical advice, installation and support.

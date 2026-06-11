@@ -54,8 +54,11 @@
             </div>
 
             <div class="reveal reveal-right">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Commercial ironing affects linen presentation, staff handling, room layout, running costs and how quickly clean laundry moves back into use. Some sites need high-output flatwork finishing. Others need roller ironing advice or practical finishing equipment for garments, uniforms and smaller daily items.
+                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Commercial ironing affects linen presentation, staff handling, room layout, running costs and how quickly clean laundry moves back into use. Some sites need high-output flatwork finishing. Others need roller ironing advice or practical finishing equipment for garments, uniforms and smaller daily items. Irish Laundry Systems brings those decisions together before money is spent on the wrong equipment.
+                    Irish Laundry Systems brings those decisions together before money is spent on the wrong equipment.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -122,7 +125,7 @@
             @foreach([
                 ['prefix' => '', 'stat' => '20%',   'label' => 'gas energy saving', 'copy' => 'Electrolux Professional Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.', 'badge' => 'Gas-heated models only'],
                 ['prefix' => '', 'stat' => '+30%',  'label' => 'productivity',      'copy' => 'Dubixium supports stronger output by distributing heat evenly across the cylinder and reducing overheating pressure.', 'badge' => 'Dubixium'],
-                ['prefix' => 'Up to', 'stat' => '600', 'label' => 'sheets daily',   'copy' => 'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output.', 'badge' => 'Model and setup dependent'],
+                ['prefix' => 'Up to', 'stat' => '600', 'label' => 'sheets daily',   'copy' => 'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output.', 'badge' => 'Output depends on model, linen type and room setup'],
                 ['prefix' => '', 'stat' => '',       'label' => 'Fewer manual steps', 'copy' => 'Feeding, folding and stacking options can reduce manual handling pressure and keep linen moving with fewer interruptions.', 'badge' => 'Feed / Fold / Stack'],
                 ['prefix' => '', 'stat' => '',       'label' => 'Right configuration first', 'copy' => 'Front or rear delivery, working width, automation and heating choice all affect room flow, running cost and long-term value.', 'badge' => 'Configuration'],
             ] as $card)
@@ -265,7 +268,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the ironer around <span style="color:#011E41;">linen flow, utilities</span> and long-term use
+            Plan the ironer around <span style="color:#011E41;">linen flow, utilities and long-term use</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             Irish Laundry Systems reviews the room, linen type, available space, operator flow, gas/electric/steam suitability and support needs before recommending an ironer. The right choice should work for daily output, installation and the way the equipment will be used over time.
@@ -578,6 +581,7 @@
 
 {{-- 13. RENTAL OPTIONS STRIP --}}
 @include('components.why-choose-strip', [
+    'eyebrow'      => 'Rental Options',
     'headingLine1' => 'Access commercial ironers with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost where suitable</span>',
     'body'         => 'Rental can reduce upfront purchase pressure where the selected equipment range matches the room, linen flow, output needs and long-term plans. Irish Laundry Systems can advise whether rental, purchase or another support option is the better fit.',
@@ -618,7 +622,7 @@
 {{-- 15. CUSTOMER CONFIDENCE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Confidence',
-    'heading'    => 'Support trusted by <span style="color:#148af4;">Irish laundry rooms</span>',
+    'heading'    => 'Support trusted by Irish laundry rooms',
     'subheading' => 'For equipment that sits at the centre of daily linen flow, reliable advice, clear communication and support from people who know the equipment matter.',
 ])
 
@@ -701,7 +705,7 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Need the <span style="color:#148af4;">right commercial ironer</span> for your site?
+            Need the right commercial ironer for your site?
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Tell Irish Laundry Systems what your laundry room needs to finish each day. The team can help connect the right ironer, roller ironing advice or finishing equipment option with installation, rental and long-term support.

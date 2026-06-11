@@ -18,15 +18,15 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span style="color:#148af4;">Dry what should not be tumble dried</span>
+                    <span style="color:#148af4;">Fast, efficient drying</span> for bulky and sensitive items
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Electrolux Professional Line 6000 Drying Cabinets support gentle drying for garments, workwear, shoes, gloves, bulky items and specialist fabrics that need extra care. Irish Laundry Systems supplies, installs and supports drying cabinet options for sites that need controlled drying without the mechanical action of a tumble dryer.
+                    Commercial drying cabinets give sites a controlled way to dry garments, workwear, PPE, shoes, gloves, outdoor clothing and delicate items that should not be tumble dried. Irish Laundry Systems supplies, installs and supports drying cabinet options for businesses that need faster drying, lower running cost pressure and better garment care.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Equipment Advice
+                        Request Drying Cabinet Advice
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
@@ -44,18 +44,24 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Gentle Drying</p>
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Choice</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    A better drying option for <span style="color:#148af4;">garments, workwear and specialist items</span>
+                    Dry items that need <span style="color:#148af4;">care, control and faster return to use</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Not every item belongs in a tumble dryer. Delicate fabrics, waterproof clothing, workwear, protective garments, shoes, helmets and gloves can need a gentler drying method that protects shape, finish and functional details.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
+                    Drying cabinets help reduce open drying space, shorten drying delays and give staff a better way to handle items that are awkward, sensitive or unsuitable for tumble drying.
+                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Not every item belongs in a tumble dryer. Delicate fabrics, waterproof clothing, workwear, protective garments, shoes, helmets and gloves can need a gentler drying method that protects shape, finish and functional details. Drying cabinets use gentle, non-mechanical drying to support fabric care while giving sites a better option than open hanging or flat drying. Irish Laundry Systems can match the cabinet, accessories, ventilation needs and aftercare support to the way the site uses the laundry room.
+                    Irish Laundry Systems will review the room, ventilation, item type, daily drying demand and budget before recommending the right drying cabinet option.
                 </p>
                 <a href="#cabinet-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -70,32 +76,63 @@
     </div>
 </section>
 
+{{-- 4b. VISUAL PROOF FEATURE --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy, Time and Fabric Care</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                The strongest proof should be <span style="color:#148af4;">visible at first glance</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                For drying cabinets, the commercial case is clear: lower running cost pressure, visible energy use per kilo, fast drying times and one cabinet for many specialist items.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-10 reveal">
+            @foreach([
+                ['stat' => 'Save up to 40%', 'title' => 'Running cost savings',  'copy' => 'Heat Pump technology and auto-stop programmes can reduce running costs by up to 40%.'],
+                ['stat' => '0.33 kWh/kg',    'title' => 'Lower energy per kilo', 'copy' => 'Uses just 0.33 kWh of energy per kg of laundry.'],
+                ['stat' => 'Under 45 min',   'title' => '6 kg cotton load',      'copy' => 'Dry a 6 kg cotton load in less than 45 minutes.'],
+            ] as $feature)
+            <div class="p-6 flex flex-col items-center text-center gap-3">
+                <div class="flex items-center justify-center min-h-16">
+                    <p class="font-heading font-bold text-[#148af4] text-4xl sm:text-5xl leading-none">{{ $feature['stat'] }}</p>
+                </div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug">{{ $feature['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['copy'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 {{-- 5. FINANCIAL / OPERATIONAL PERFORMANCE --}}
 <section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                <span style="color:#148af4;">Protect garments</span> while keeping <span style="color:#148af4;">drying demand</span> under control
+                Drying cabinets that show the <span style="color:#148af4;">saving, speed and operating value</span> clearly
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 A drying cabinet decision is about more than adding another machine. It can reduce pressure on open drying space, protect items that need gentle handling, and support faster return to use for garments, uniforms and specialist items.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['title' => 'Gentler fabric care',                         'copy' => 'Non-mechanical drying helps protect delicate fabrics, workwear finishes, zips, reflective strips and coatings compared with tumble drying.'],
-                ['title' => '6 kg cotton load',                            'copy' => 'Electrolux Professional states that a 6 kg cotton load can be dried in less than 45 minutes.'],
-                ['title' => 'Less open drying pressure',                   'copy' => 'Cabinet drying helps reduce the need for open hanging, flat drying and wet items taking up space around the laundry room.'],
-                ['title' => 'Lower energy pressure where suitable',        'copy' => 'Selected drying cabinet models are available with Heat Pump technology where suitable for the site.'],
-                ['title' => 'Shoes, gloves and workwear',                  'copy' => 'Drying cabinets can support bulky items, shoes, helmets, gloves, outdoor clothing and protective workwear where fabric protection matters.'],
-                ['title' => 'Fewer surprise repairs',                      'copy' => 'Connected planning, maintenance and aftercare reduce reactive repair pressure on high-use cabinets.'],
+                ['stat' => 'Save up to 40%', 'title' => 'Lower running costs',        'copy' => 'Heat Pump technology and auto-stop programmes can reduce drying cabinet running costs by up to 40%.'],
+                ['stat' => '0.33 kWh/kg',    'title' => 'Lower energy per kilo',      'copy' => 'Uses just 0.33 kWh of energy per kg of laundry, making the energy story easy to understand.'],
+                ['stat' => 'Under 45 min',   'title' => 'Faster return to use',       'copy' => 'Dry a 6 kg cotton load in less than 45 minutes, helping garments and workwear return to use faster.'],
+                ['stat' => 'Auto-stop',      'title' => 'Less wasted running time',   'copy' => 'Programmes stop when the load is dry, helping keep cycle time and running costs under control.'],
+                ['stat' => 'One unit',       'title' => 'More drying needs covered',  'copy' => 'Dry anything from skiwear to silk, plus PPE, workwear, shoes, gloves and bulky items without relying on open drying.'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+            <div class="bg-bg border border-gray-100 rounded-2xl p-6 flex flex-col h-full col-span-1">
+                <div class="font-heading font-bold text-[#148af4] text-3xl leading-none mb-3">{{ $card['stat'] }}</div>
+                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
             </div>
             @endforeach
@@ -110,29 +147,29 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Features that support <span style="color:#148af4;">gentle drying</span>, <span style="color:#148af4;">fabric care</span> and <span style="color:#148af4;">daily use</span>
+                The technology behind <span style="color:#148af4;">lower running cost</span> and <span style="color:#148af4;">better garment care</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Selected Electrolux Professional drying cabinet features support easier use, controlled drying and better care for items that need a different drying method.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['icon' => '26', 'title' => 'Gentle non-mechanical drying',   'copy' => 'Drying without tumbling helps protect garments, bulky items and functional details.'],
-                ['icon' => '16', 'title' => 'Automatic programmes',           'copy' => 'Easy-to-use controls and automatic programmes support practical daily operation.'],
-                ['icon' => '7',  'title' => 'Automatic stop when dry',        'copy' => 'Programmes can stop when the load is dry, helping avoid unnecessary drying time.'],
-                ['icon' => '30', 'title' => 'Ergonomic access',               'copy' => 'Control panel and door handle positioning support easier everyday use.'],
-                ['icon' => '4',  'title' => 'User-friendly details',          'copy' => 'Braille buttons and child safety start lock support safer, clearer operation.'],
-                ['icon' => '5',  'title' => 'ERGOCERT operator handling',      'copy' => 'Certified ergonomic design for daily loading and unloading.'],
+                ['icon' => '26', 'stat' => 'Heat Pump',            'title' => 'Energy-saving drying technology', 'copy' => 'Heat Pump models provide the technical base behind the running cost saving claim.'],
+                ['icon' => '21', 'stat' => 'Auto-stop programmes', 'title' => 'Stops when the load is dry',      'copy' => 'Automatic programmes stop drying when the desired moisture level is reached.'],
+                ['icon' => '7',  'stat' => 'Non-mechanical drying','title' => 'Gentle fabric protection',        'copy' => 'Drying without tumbling helps protect delicate fabrics, outdoor clothing, workwear and bulky items.'],
+                ['icon' => '20', 'stat' => 'PPE accessories',      'title' => 'Built around real item types',    'copy' => 'Hanger sticks, shoe shelves, glove hangers and glove or boot drying options support practical daily use.'],
+                ['icon' => '30', 'stat' => 'Standard + Heat Pump', 'title' => 'Category range choice',           'copy' => 'Standard drying cabinets and Heat Pump drying cabinets give sites different options depending on room, item type and running cost priorities.'],
             ] as $card)
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+                    <div class="font-heading font-bold text-[#148af4] text-xl leading-tight mb-1.5">{{ $card['stat'] }}</div>
+                    <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1.5">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
             </div>
             @endforeach
@@ -147,20 +184,20 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Useful wherever wet or delicate items need <span style="color:#148af4;">controlled drying</span>
+                Useful wherever awkward or sensitive items need <span style="color:#148af4;">reliable drying</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Drying cabinets are especially useful for sites where garments, shoes, gloves, outerwear or specialist items need to dry without losing shape, finish or function.
+                Drying cabinets are especially useful where sites need to dry items that are too delicate, too bulky or too specialist for standard tumble drying.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             @foreach([
-                ['title' => 'Hospitality and guest garment care',      'copy' => 'For hotels, guesthouses and hospitality sites handling guest garments, robes, uniforms, delicate fabrics or items that should not be tumble dried.'],
-                ['title' => 'Schools, childcare and leisure sites',     'copy' => 'For jackets, outdoor clothing, shoes, sportswear and wet items that need to dry between uses.'],
-                ['title' => 'Workwear and uniforms',                    'copy' => 'For staff clothing, protective garments, waterproof clothing, high-visibility workwear and items with zips, reflective strips or coatings.'],
-                ['title' => 'Emergency services and specialist teams',  'copy' => 'For firefighters, road workers, maintenance teams and other groups using gloves, boots, helmets or protective workwear.'],
-                ['title' => 'Specialist textile care',                  'copy' => 'For laundries or textile care sites handling wool, linen, silk, velvet, long dresses, curtains or garments that need gentler drying.'],
+                ['title' => 'Multi-housing and shared laundry',         'copy' => 'For apartment laundry rooms and shared facilities where users need fast, efficient drying without leaving wet items around the space.'],
+                ['title' => 'On-premises laundries',                    'copy' => 'For hotels, guesthouses, leisure sites and laundries handling garments, uniforms, robes, outdoor clothing or delicate items.'],
+                ['title' => 'Schools, childcare and sports sites',      'copy' => 'For jackets, outdoor clothing, shoes, sportswear and wet items that need to dry between uses.'],
+                ['title' => 'Firefighters, PPE and workwear',           'copy' => 'For protective garments, boots, gloves, helmets, waterproof clothing and high-visibility workwear where controlled drying matters.'],
+                ['title' => 'Delicate garment and textile care',        'copy' => 'For silk, wool, velvet, linen, long dresses, curtains and specialist garments that can be damaged by mechanical drying action.'],
             ] as $card)
             <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
                 <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
@@ -172,126 +209,62 @@
     </div>
 </section>
 
-{{-- 7. RANGE TEASERS CAROUSEL --}}
+{{-- 7. RANGE OVERVIEW --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Drying Cabinet Range Starting Points</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Electrolux Professional Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment paths <span style="color:#148af4;">worth a closer look</span>
+                Standard and Heat Pump drying cabinets for <span style="color:#148af4;">different site needs</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Start with the range that fits the pressure of your laundry room, then connect the decision to capacity, installation, rental and long-term support.
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Irish Laundry Systems supplies and supports drying cabinet options from Electrolux Professional&rsquo;s Line 6000 range. The range includes Standard Drying Cabinets and Heat Pump Drying Cabinets, with different formats for different item types, room conditions and running cost priorities.
             </p>
         </div>
 
-        @php
-        $rangeCards = [
-            ['name' => 'Line 6000 Drying Cabinets',    'copy' => 'General-purpose drying cabinets for garments and linen dried gently on hangers.', 'cta' => 'View Cabinet Range', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-            ['name' => 'Heat Pump Drying Cabinets',    'copy' => 'For sites looking to reduce drying energy while keeping garments gently dried.', 'cta' => 'Explore Heat Pump Drying', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-            ['name' => 'Mop & PPE Drying Cabinets',    'copy' => 'Specialist drying for mops, cloths, PPE and footwear that tumble dryers cannot handle.', 'cta' => 'Explore Specialist Drying', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-            ['name' => 'Compact Drying Cabinets',      'copy' => 'Smaller cabinets for tight laundry rooms that still need gentle drying.', 'cta' => 'Discover Compact Cabinets', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-        ];
-        @endphp
-
-        <div
-            x-data="{
-                active: 0,
-                count: {{ count($rangeCards) }},
-                perView: 2,
-                timer: null,
-                get maxIndex() { return Math.max(0, this.count - this.perView); },
-                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
-                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
-                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
-                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
-                init() {
-                    this.perView = window.innerWidth < 1024 ? 1 : 2;
-                    window.addEventListener('resize', () => {
-                        this.perView = window.innerWidth < 1024 ? 1 : 2;
-                        if (this.active > this.maxIndex) this.active = this.maxIndex;
-                    });
-                    this.timer = setInterval(() => this.next(), 6000);
-                },
-            }"
-            class="relative"
-        >
-            {{-- Track --}}
-            <div class="overflow-hidden">
-                <div class="flex transition-transform duration-500 ease-out -mx-3"
-                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
-                    @foreach($rangeCards as $i => $p)
-                    <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
-                        <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
-                            <div class="flex items-center justify-center">
-                                <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}" class="w-full h-44 lg:h-52 object-contain">
-                            </div>
-                            <div class="flex flex-col">
-                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
-                                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
-                                <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
-                                    {{ $p['cta'] }}
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            @foreach([
+                [
+                    'name'       => 'Standard Drying Cabinets',
+                    'copy'       => 'For sites that need reliable cabinet drying for garments, workwear, shoes, gloves and bulky items where a standard cabinet is the right fit.',
+                    'highlights' => ['Controlled drying', 'Multiple item types', 'Practical daily use', 'Range choice'],
+                    'cta'        => 'Ask About Standard Drying Cabinets',
+                ],
+                [
+                    'name'       => 'Heat Pump Drying Cabinets',
+                    'copy'       => 'For sites focused on reducing running cost pressure where Heat Pump technology is suitable for the room, item type and daily use.',
+                    'highlights' => ['Save up to 40%', '0.33 kWh/kg', 'Auto-stop programmes', 'Energy-focused drying'],
+                    'cta'        => 'Ask About Heat Pump Cabinets',
+                ],
+                [
+                    'name'       => 'Glove and boot drying',
+                    'copy'       => 'For workwear-heavy sites, emergency services and outdoor working environments that need practical drying for boots, gloves and protective clothing.',
+                    'highlights' => ['Gloves', 'Boots', 'PPE', 'Outdoor workwear'],
+                    'cta'        => 'Ask About Workwear Drying',
+                ],
+            ] as $p)
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 flex flex-col h-full">
+                <div class="flex items-center justify-center h-40 mb-5">
+                    <img src="/images/healthcare/Drying-cabinets_image.webp" alt="{{ $p['name'] }}" class="max-h-full w-auto object-contain">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $p['copy'] }}</p>
+                <div class="flex flex-wrap gap-1.5 mb-6">
+                    @foreach($p['highlights'] as $hl)
+                    <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $hl }}</span>
                     @endforeach
                 </div>
+                <a href="{{ route('contact') }}" class="mt-auto inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                    {{ $p['cta'] }}
+                </a>
             </div>
-
-            {{-- Dots centered + arrows bottom-right --}}
-            <div class="relative mt-8 flex items-center justify-center">
-                <div class="flex items-center gap-2">
-                    @foreach($rangeCards as $i => $p)
-                    <button @click="go({{ $i }})"
-                            x-show="{{ $i }} <= maxIndex"
-                            :class="active === {{ $i }} ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
-                            class="rounded-full transition-all duration-300" aria-label="Go to slide {{ $i + 1 }}"></button>
-                    @endforeach
-                </div>
-                <div class="absolute right-0 flex gap-2">
-                    <button @click="prev()"
-                            class="w-11 h-11 rounded-full bg-gray-200 text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center" aria-label="Previous">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
-                    </button>
-                    <button @click="next()"
-                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center" aria-label="Next">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-{{-- 8. PLANNING / INSTALLATION STRIP --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
-    </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Plan cabinet drying</span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around the <span style="color:#011E41;">items, room</span></span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">and <span style="color:#011E41;">ventilation</span></span>
-        </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A drying cabinet should be chosen around what needs to dry, how often it is used, where it will sit, and whether the room can support the selected drying method. Heat Pump drying cabinets may need good ventilation in the laundry room, so room conditions should be checked before a final recommendation.
-        </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Item type', 'Space planning', 'Ventilation check'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Talk to Our Team
-        </a>
+
+        <p class="font-body text-gray-500 text-sm leading-relaxed mt-8 max-w-3xl">
+            Irish Laundry Systems will assess the room, ventilation, item type, daily drying demand and budget before recommending the right drying cabinet.
+        </p>
     </div>
 </section>
 
@@ -454,10 +427,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Accessories that make <span style="color:#148af4;">cabinet drying more useful</span>
+                Make cabinet drying <span style="color:#148af4;">fit the items</span> your site handles
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                The right accessories can make a drying cabinet more practical for the items a site handles every day. Options can support hanging garments, shoes, gloves, boots and specialist clothing.
+                The right accessories make a drying cabinet more useful. Instead of forcing every item into the same drying method, accessories let the cabinet support garments, shoes, gloves, boots and specialist workwear more effectively.
             </p>
         </div>
 
@@ -486,7 +459,35 @@
     </div>
 </section>
 
-{{-- 10. CONNECTED SERVICE ROUTES --}}
+{{-- 9c. PLANNING / ROOM FIT STRIP --}}
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+             class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+    </div>
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Plan cabinet drying around the <span style="color:#011E41;">items, room and energy priorities</span>
+        </h2>
+        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
+            A drying cabinet should be chosen around what needs to dry, how often it is used, where it will sit, and whether the room can support the selected drying method. Heat Pump drying cabinets can reduce running cost pressure, but room conditions and ventilation should be reviewed before the final recommendation.
+        </p>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Item type', 'Daily drying demand', 'Room space', 'Ventilation review', 'Heat Pump suitability', 'Accessories'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        <a href="{{ route('request-assessment') }}"
+           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+            Request Equipment Advice
+        </a>
+    </div>
+</section>
+
+{{-- 10. SUPPORT OPTIONS --}}
 <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -496,7 +497,7 @@
                 Support options for <span style="color:#148af4;">drying cabinets</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Drying cabinet performance depends on more than the equipment choice. Irish Laundry Systems can support the site with repairs, preventive maintenance, rental options and aftercare around the way the cabinet is used every day.
+                The right equipment choice should be backed by clear support. Irish Laundry Systems supports drying cabinet sites with repairs, preventive maintenance, rental options and aftercare around the way the cabinet is used every day.
             </p>
         </div>
 
@@ -512,7 +513,7 @@
                 ],
                 [
                     'title' => 'Preventive Maintenance',
-                    'text'  => 'For sites that want planned support to keep drying equipment easier to manage and reduce avoidable disruption over time.',
+                    'text'  => 'For sites that want planned support to reduce avoidable disruption and keep drying equipment easier to manage over time.',
                     'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
                     'img'   => '/images/healthcare/service-contracts-hero.png',
@@ -520,7 +521,7 @@
                 ],
                 [
                     'title' => 'Repairs &amp; Call-outs',
-                    'text'  => 'For drying cabinet faults, drying performance issues, control problems or service needs that need practical engineering support.',
+                    'text'  => 'For drying cabinet faults, drying performance issues, control problems or service needs that require practical engineering support.',
                     'cta'   => 'Request a Repair',
                     'route' => route('repairs'),
                     'img'   => '/images/healthcare/repairs-callouts.jpg',
@@ -612,75 +613,62 @@
 {{-- 14. TRUSTED BY LOGO STRIP --}}
 @include('components.proof-bar')
 
-{{-- 15. FAQ --}}
-@include('components.faq', [
-    'eyebrow' => 'Drying Cabinets FAQs',
-    'heading' => 'Questions before choosing a <span style="color:#148af4;">commercial drying cabinet</span>',
-    'faqs' => [
-        ['question' => 'What is a commercial drying cabinet used for?', 'answer' => 'A commercial drying cabinet is used for garments and items that need gentler drying than a tumble dryer can provide. This can include delicate fabrics, workwear, waterproof clothing, shoes, gloves, boots, helmets and bulky items.'],
-        ['question' => 'When is a drying cabinet better than a tumble dryer?', 'answer' => 'A drying cabinet is useful when items should not be tumbled, when shape or functional details need protection, or when shoes, gloves, outdoor clothing or protective garments need controlled drying.'],
-        ['question' => 'How fast can an Electrolux Professional drying cabinet dry a load?', 'answer' => 'Electrolux Professional states that a 6 kg cotton load can be dried in less than 45 minutes.'],
-        ['question' => 'Are Heat Pump drying cabinets available?', 'answer' => 'Selected drying cabinet models are available with Heat Pump technology where suitable for the site. Room conditions and ventilation should be checked before a final recommendation.'],
-        ['question' => 'What accessories are available?', 'answer' => 'Accessory options include hanger sticks, shoe shelves, glove hangers and glove or boot drying options for sites handling workwear, protective clothing or specialist items.'],
-        ['question' => 'Can drying cabinets be used for hospitality?', 'answer' => 'Yes. Drying cabinets can support hotels, guesthouses and hospitality sites handling guest garments, robes, uniforms, delicate fabrics and items that should not be tumble dried.'],
-        ['question' => 'Can drying cabinets be used for workwear or PPE?', 'answer' => 'Yes. Drying cabinets can support workwear, protective clothing, gloves, boots and other specialist items where fabric protection and controlled drying matter. The right setup depends on the item type and site requirements.'],
-    ],
-])
-
-{{-- 15b. RESOURCES — Download + Discover --}}
+{{-- 15. RESOURCES --}}
 <section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">Official Electrolux Professional <span style="color:#148af4;">drying cabinet information</span></h2>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Official Electrolux Professional <span style="color:#148af4;">drying cabinet information</span></h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Use official product information to review Standard Drying Cabinets, Heat Pump Drying Cabinets, accessories, energy proof and room requirements before making a final decision.
+            </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-
-            {{-- Download --}}
-            <div class="bg-navy rounded-2xl p-6 lg:p-8">
-                <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
-                <ul class="space-y-4">
-                    @foreach([
-                        ['label' => 'Line 6000 Drying Cabinets brochure',                'file' => ''],
-                        ['label' => 'Discover the full range of Ecolabel Detergents',       'file' => ''],
-                        ['label' => 'Line 6000 Washers &amp; Dryers brochure',             'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                    ] as $pdf)
-                    <li>
-                        @if($pdf['file'])
-                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-start gap-2 font-body text-sm text-white/80 hover:text-white transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 mt-0.5 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </a>
-                        @else
-                        <span class="flex items-start gap-2 font-body text-sm text-white/40">
-                            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </span>
-                        @endif
-                    </li>
-                    @endforeach
-                </ul>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            @foreach([
+                [
+                    'title' => 'Commercial Drying Cabinets PDF',
+                    'copy'  => 'Official Electrolux Professional PDF covering drying cabinet benefits, automatic programmes, accessories, Heat Pump availability and fabric care.',
+                    'cta'   => 'Download PDF',
+                    'href'  => '',
+                    'download' => true,
+                ],
+                [
+                    'title' => 'Line 6000 laundry brochure',
+                    'copy'  => 'Official Electrolux Professional brochure covering wider Line 6000 laundry technology, washers, dryers and performance proof.',
+                    'cta'   => 'Download Brochure',
+                    'href'  => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf',
+                    'download' => true,
+                ],
+                [
+                    'title' => 'Need advice before choosing?',
+                    'copy'  => 'Irish Laundry Systems will review the site, drying demand, item type, room conditions and budget before recommending a cabinet.',
+                    'cta'   => 'Request Advice',
+                    'href'  => route('request-assessment'),
+                    'download' => false,
+                ],
+            ] as $res)
+            <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 flex flex-col h-full">
+                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $res['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $res['copy'] }}</p>
+                @if($res['download'] && $res['href'])
+                <a href="{{ $res['href'] }}" target="_blank" download class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
+                    {{ $res['cta'] }}
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                </a>
+                @elseif($res['download'])
+                <span class="mt-auto inline-flex items-center gap-2 font-body font-bold text-gray-400 text-sm w-fit">
+                    {{ $res['cta'] }}
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                </span>
+                @else
+                <a href="{{ $res['href'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
+                    {{ $res['cta'] }}
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+                @endif
             </div>
-
-            {{-- Discover --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8">
-                <h4 class="font-heading font-bold text-navy text-base mb-4">Discover</h4>
-                <ul class="space-y-4">
-                    @foreach([
-                        ['label' => 'Gentle drying for delicate garments and PPE',          'href' => '#'],
-                        ['label' => 'Ensuring Profitability With Efficient On-Premises Laundry', 'href' => '#'],
-                        ['label' => 'Essentia: the heart of customer service',                'href' => route('contact')],
-                    ] as $link)
-                    <li>
-                        <a href="{{ $link['href'] }}" class="flex items-start gap-2 font-body text-sm text-navy hover:text-orange font-bold transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            {{ $link['label'] }}
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
+            @endforeach
         </div>
     </div>
 </section>
@@ -701,8 +689,8 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @foreach([
-                ['title' => 'Commercial Washers', 'copy' => 'For daily washing of workwear, towels, uniforms, bedding and mixed textiles.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers'])],
-                ['title' => 'Tumble Dryers',      'copy' => 'For general drying demand where tumble drying is suitable for the load.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers'])],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For daily washing of workwear, towels, uniforms, bedding and mixed textiles.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers'])],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For general drying demand where tumble drying is suitable for the load.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers'])],
                 ['title' => 'Dosing Systems',     'copy' => 'For detergent control, lower waste and more consistent wash results.', 'cta' => 'Ask About Dosing Systems', 'route' => route('contact')],
                 ['title' => 'Wet Cleaning',       'copy' => 'For specialist textile care where delicate garments, leathers or shoes need a different cleaning process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('contact')],
             ] as $card)
@@ -720,12 +708,28 @@
     </div>
 </section>
 
+{{-- 15d. FAQ --}}
+@include('components.faq', [
+    'eyebrow' => 'Drying Cabinets FAQs',
+    'heading' => 'Questions before choosing a <span style="color:#148af4;">commercial drying cabinet</span>',
+    'faqs' => [
+        ['question' => 'What is a commercial drying cabinet used for?', 'answer' => 'A commercial drying cabinet is used for garments and items that need controlled drying without tumble drying. This can include delicate fabrics, workwear, waterproof clothing, shoes, gloves, boots, helmets, PPE and bulky items.'],
+        ['question' => 'How much can Heat Pump drying cabinets save?', 'answer' => 'Electrolux Professional states that Heat Pump technology and auto-stop programmes can reduce running costs by up to 40%.'],
+        ['question' => 'How much energy do drying cabinets use?', 'answer' => 'Electrolux Professional states that drying cabinets can use just 0.33 kWh of energy per kg of laundry.'],
+        ['question' => 'How fast can a drying cabinet dry a load?', 'answer' => 'Electrolux Professional states that drying cabinets can dry a 6 kg cotton load in less than 45 minutes.'],
+        ['question' => 'When is a drying cabinet better than a tumble dryer?', 'answer' => 'A drying cabinet is useful when items should not be tumbled, when shape or functional details need protection, or when shoes, gloves, outdoor clothing, PPE or delicate garments need controlled drying.'],
+        ['question' => 'Are Heat Pump drying cabinets available?', 'answer' => 'Yes. Heat Pump Drying Cabinets are part of the Electrolux Professional range. Irish Laundry Systems will review whether a Heat Pump model is suitable for the room, ventilation and daily drying demand.'],
+        ['question' => 'What accessories are available?', 'answer' => 'Accessory options include hanger sticks, shoe shelves, glove hangers and glove or boot drying options for sites handling workwear, protective clothing or specialist items.'],
+        ['question' => 'Can Irish Laundry Systems help with supply and installation?', 'answer' => 'Yes. Irish Laundry Systems supports drying cabinet selection, equipment quote, supply, installation, rental discussion, preventive maintenance, repairs and aftercare.'],
+    ],
+])
+
 {{-- 16. FINAL CTA --}}
 @include('components.cta-downtime-form', [
     'pageSource'        => 'drying_cabinets_cta',
     'eyebrow'           => 'Request Equipment Advice',
     'heading'           => 'Ready to choose the <span style="color:#148af4;">right drying cabinet</span> for your site',
-    'body'              => 'Tell us what you need to dry, how often the cabinet will be used and what room conditions you have. Irish Laundry Systems will guide you toward the right equipment advice, equipment quote, rental, preventive maintenance, repair or aftercare support.',
+    'body'              => 'Tell us what you need to dry, how often the cabinet will be used, what energy priorities you have and what room conditions you are working with. Irish Laundry Systems will guide you toward the right drying cabinet advice, equipment quote, rental, preventive maintenance, repair or aftercare support.',
     'formTitle'         => 'Request Drying Cabinet Advice',
     'buttonText'        => 'Request Drying Cabinet Advice',
     'showLocationField' => true,
