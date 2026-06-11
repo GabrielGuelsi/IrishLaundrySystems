@@ -194,6 +194,7 @@ class PageController extends Controller
             'specs' => $item->specs ?? [],
             'summary' => $item->summary,
             'imagePath' => $item->image_url,
+            'documents' => config("equipment_documents.{$category}", []),
         ]);
     }
 
