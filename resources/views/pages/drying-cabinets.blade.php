@@ -122,21 +122,13 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            @foreach([
-                ['stat' => 'Save up to 40%', 'title' => 'Lower running costs',        'copy' => 'Heat Pump technology and auto-stop programmes can reduce drying cabinet running costs by up to 40%.'],
-                ['stat' => '0.33 kWh/kg',    'title' => 'Lower energy per kilo',      'copy' => 'Uses just 0.33 kWh of energy per kg of laundry, making the energy story easy to understand.'],
-                ['stat' => 'Under 45 min',   'title' => 'Faster return to use',       'copy' => 'Dry a 6 kg cotton load in less than 45 minutes, helping garments and workwear return to use faster.'],
-                ['stat' => 'Auto-stop',      'title' => 'Less wasted running time',   'copy' => 'Programmes stop when the load is dry, helping keep cycle time and running costs under control.'],
-                ['stat' => 'One unit',       'title' => 'More drying needs covered',  'copy' => 'Dry anything from skiwear to silk, plus PPE, workwear, shoes, gloves and bulky items without relying on open drying.'],
-            ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-6 flex flex-col h-full col-span-1">
-                <div class="font-heading font-bold text-[#148af4] text-3xl leading-none mb-3">{{ $card['stat'] }}</div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-            </div>
-            @endforeach
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'30', 'prefix'=>'Save up to', 'stat'=>'40%',          'size'=>'text-4xl', 'label'=>'lower running costs',       'body'=>'Heat Pump technology and auto-stop programmes can reduce drying cabinet running costs by up to 40%.'],
+            ['icon'=>'6',  'prefix'=>'',           'stat'=>'0.33 kWh/kg',  'size'=>'text-2xl', 'label'=>'lower energy per kilo',     'body'=>'Uses just 0.33 kWh of energy per kg of laundry, making the energy story easy to understand.'],
+            ['icon'=>'34', 'prefix'=>'Under',      'stat'=>'45 min',       'size'=>'text-4xl', 'label'=>'faster return to use',      'body'=>'Dry a 6 kg cotton load in less than 45 minutes, helping garments and workwear return to use faster.'],
+            ['icon'=>'4',  'prefix'=>'',           'stat'=>'Auto-stop',    'size'=>'text-2xl', 'label'=>'less wasted running time',  'body'=>'Programmes stop when the load is dry, helping keep cycle time and running costs under control.'],
+            ['icon'=>'35', 'prefix'=>'',           'stat'=>'One<br>unit',  'size'=>'text-2xl', 'label'=>'more drying needs covered', 'body'=>'Dry anything from skiwear to silk, plus PPE, workwear, shoes, gloves and bulky items without relying on open drying.'],
+        ]])
     </div>
 </section>
 

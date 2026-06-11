@@ -162,21 +162,13 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            @foreach([
-                ['title' => '35 min drying cycles',       'copy' => 'Heat Pump Dryer performance can protect turnaround time in busy laundry rooms where linen needs to move quickly.'],
-                ['title' => '33% lower CO₂ per cycle',     'copy' => 'Heat Pump Dryer technology can reduce greenhouse gas emissions per drying cycle where the equipment and setup are suitable.'],
-                ['title' => 'No exhaust / water cooling',  'copy' => 'Selected Heat Pump Dryer options can reduce installation pressure where the room and ventilation setup allow.'],
-                ['title' => 'Dry not overdry',             'copy' => 'Moisture Balance protects linen value and reduces wasted energy by stopping at the selected dryness level.'],
-                ['title' => 'Lower upfront cost',          'copy' => 'Rental can support dryer replacement, expansion or capacity planning without turning every equipment decision into one large capital purchase.'],
-            ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-6 flex flex-col h-full col-span-1">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-            </div>
-            @endforeach
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'34', 'prefix'=>'',     'stat'=>'35 min',              'size'=>'text-4xl', 'label'=>'drying cycles',           'body'=>'Heat Pump Dryer performance can protect turnaround time in busy laundry rooms where linen needs to move quickly.'],
+            ['icon'=>'26', 'prefix'=>'',     'stat'=>'-33%',                'size'=>'text-4xl', 'label'=>'CO₂ per cycle',           'body'=>'Heat Pump Dryer technology can reduce greenhouse gas emissions per drying cycle where the equipment and setup are suitable.'],
+            ['icon'=>'96', 'prefix'=>'',     'stat'=>'No<br>exhaust',       'size'=>'text-2xl', 'label'=>'or water cooling',        'body'=>'Selected Heat Pump Dryer options can reduce installation pressure where the room and ventilation setup allow.'],
+            ['icon'=>'21', 'prefix'=>'',     'stat'=>'Dry not<br>overdry',  'size'=>'text-2xl', 'label'=>'Moisture Balance',        'body'=>'Moisture Balance protects linen value and reduces wasted energy by stopping at the selected dryness level.'],
+            ['icon'=>'30', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost','size'=>'text-2xl','label'=>'rental where suitable',   'body'=>'Rental can support dryer replacement, expansion or capacity planning without turning every equipment decision into one large capital purchase.'],
+        ]])
     </div>
 </section>
 
@@ -360,9 +352,9 @@
         @php
         $rangeCards = [
             ['name' => 'Line 6000 Tumble Dryers', 'copy' => 'Main commercial dryer range for busy laundry rooms where drying performance, controls, fabric care and support need to work together.', 'cta' => 'View Dryer Range', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy pressure while avoiding exhaust and water cooling requirements where the room setup is suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy pressure while avoiding exhaust and water cooling requirements where the room setup is suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => route('equipment.product', ['category' => 'tumble-dryers', 'product' => 'heat-pump']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
             ['name' => 'Drying Cabinets',         'copy' => 'For bulky, sensitive or specialist items that need drying support without standard tumble action.', 'cta' => 'Explore Drying Cabinets', 'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-            ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment'), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-dryer']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
         ];
         @endphp
 

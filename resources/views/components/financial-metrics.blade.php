@@ -13,10 +13,15 @@
     'prefix' may be ''. 'size' => text-4xl marks a numeric stat (rendered larger),
     text-2xl marks a word stat. 'stat' may contain <br> for a stacked word stat.
 --}}
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-x-8 gap-y-10">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
     @foreach($items as $it)
-    @php $isWord = ($it['size'] ?? 'text-4xl') === 'text-2xl'; @endphp
-    <div class="flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
+    @php
+        $isWord = ($it['size'] ?? 'text-4xl') === 'text-2xl';
+        // long word-stat lines keep the smaller size at xl so single words never overflow the column
+        $longestLine = max(array_map('strlen', explode('<br>', strip_tags($it['stat'], '<br>'))));
+        $wordSize = $longestLine > 11 ? 'text-2xl' : 'text-2xl xl:text-[28px]';
+    @endphp
+    <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
 
         {{-- header: icon centred on the prefix+stat block; fixed lg height keeps dividers aligned across the row --}}
         <div class="lg:min-h-[7rem]">
@@ -24,7 +29,7 @@
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-1">{{ $it['prefix'] }}</span>@endif
-                    <div class="font-heading font-bold text-[#148af4] {{ $isWord ? 'text-2xl xl:text-[28px]' : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
+                    <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
             </div>
 
