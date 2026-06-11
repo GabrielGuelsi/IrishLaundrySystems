@@ -106,11 +106,18 @@ return [
             ],
         ],
 
-        // PW9C — only these three document types (files to be supplied)
+        // PW9C — Professional washer
         'pw9c' => [
-            'CAD Drawings' => [],
-            'Data Sheet' => [],
-            'User Manuals' => [],
+            'CAD Drawings' => [
+                ['label' => 'PW9C — CAD Drawing (DWG)', 'url' => '/pdfs/PW9C.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'PW9C — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919529EN_PW9C_EN.pdf?version=1781187430'],
+            ],
+            'User Manuals' => [
+                ['label' => 'PW9C — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_438921490EN_PW9C_EN.pdf?version=1781187430'],
+                ['label' => 'PW9C — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_PW9C_438921790_EN.pdf?version=1781187430'],
+            ],
         ],
 
     ],
