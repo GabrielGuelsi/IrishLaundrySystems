@@ -141,6 +141,18 @@ class PageController extends Controller
             ]);
         }
 
+        if ($category === 'semi-professional') {
+            return view('pages.semi-professional', [
+                'title' => 'Semi-Professional Laundry Equipment Ireland | myPRO | Irish Laundry Systems',
+            ]);
+        }
+
+        if ($category === 'wet-cleaning') {
+            return view('pages.wet-cleaning', [
+                'title' => 'Wet Cleaning Equipment Ireland | Lagoon Advanced Care | Irish Laundry Systems',
+            ]);
+        }
+
         if (! array_key_exists($category, config('equipment'))) {
             abort(404);
         }

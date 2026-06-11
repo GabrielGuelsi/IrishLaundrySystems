@@ -23,30 +23,33 @@
     @endphp
     <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
 
-        {{-- header: icon beside the prefix/stat; SHORT labels sit directly under the stat inside the column,
-             LONG labels drop to full card width below so they stay on one line --}}
+        {{-- header: icon + prefix/stat bottom-aligned in one row so every card's icon and stat line up;
+             the label sits below the row (same vertical position on every card). Short labels are
+             indented to tuck under the stat; long labels use the full card width. --}}
         @php
-            $isShort = strlen(strip_tags($it['label'])) <= 13;
-            $labelClasses = 'font-heading font-bold text-navy text-sm xl:text-[clamp(10px,0.78vw,12px)] tracking-tight leading-snug';
+            $labelClasses = 'font-heading font-bold text-navy text-sm leading-snug';
+            // labels up to 16 chars start where the prefix/stat text starts (indent = icon width + gap);
+            // longer ones right-align with the end of the stat row so they fit on one line
+            $isShort = strlen(strip_tags($it['label'])) <= 16;
+            $labelIndent = 'pl-[4.25rem] xl:pl-[5.25rem]';
         @endphp
-        <div class="lg:min-h-[7rem]">
+        <div class="lg:min-h-[6.5rem] w-fit">
             <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
-                    @if($isShort)
-                    <h3 class="{{ $labelClasses }} -mt-3">{{ $it['label'] }}</h3>
-                    @endif
                 </div>
             </div>
-            @if(!$isShort)
-            <h3 class="{{ $labelClasses }} -mt-3">{{ $it['label'] }}</h3>
+            @if($isShort)
+            <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }}">{{ $it['label'] }}</h3>
+            @else
+            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto">{{ $it['label'] }}</h3>
             @endif
         </div>
 
         @if(!empty($it['body']))
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-3">{{ $it['body'] }}</p>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mt-1.5">{{ $it['body'] }}</p>
         @endif
     </div>
     @endforeach
