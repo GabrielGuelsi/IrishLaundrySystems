@@ -190,7 +190,7 @@
             ['icon'=>'39', 'prefix'=>'Over',  'stat'=>'30%',               'size'=>'text-4xl', 'label'=>'detergent cost savings',        'body'=>'Efficient Dosing can reduce detergent cost pressure where specified, while supporting better control of the wash process.'],
             ['icon'=>'7',  'prefix'=>'',      'stat'=>'Water,<br>energy',  'size'=>'text-2xl', 'label'=>'and load control',              'body'=>'Automatic Savings and Integrated Savings support better load control, reducing water, energy and cycle waste.'],
             ['icon'=>'31', 'prefix'=>'',      'stat'=>'Time and<br>money', 'size'=>'text-2xl', 'label'=>'saved before drying',           'body'=>'Power Balance lowers moisture retention before drying, reducing pressure on the drying stage and helping protect laundry flow.'],
-            ['icon'=>'3',  'prefix'=>'',      'stat'=>'25%',               'size'=>'text-4xl', 'label'=>'productivity increase',         'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside a 75% decrease in sick days and 59% reduction in work-related musculoskeletal disorders.'],
+            ['icon'=>'5',  'prefix'=>'',      'stat'=>'25%',               'size'=>'text-4xl', 'label'=>'productivity increase',         'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside a 75% decrease in sick days and 59% reduction in work-related musculoskeletal disorders.'],
         ]])
     </div>
 </section>
