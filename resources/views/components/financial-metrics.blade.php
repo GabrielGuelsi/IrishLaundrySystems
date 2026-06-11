@@ -28,10 +28,12 @@
              indented to tuck under the stat; long labels use the full card width. --}}
         @php
             $labelClasses = 'font-heading font-bold text-navy text-sm leading-snug';
-            // indent = icon width + gap, so every label starts exactly where the prefix/stat text starts
+            // labels up to 16 chars start where the prefix/stat text starts (indent = icon width + gap);
+            // longer ones right-align with the end of the stat row so they fit on one line
+            $isShort = strlen(strip_tags($it['label'])) <= 16;
             $labelIndent = 'pl-[4.25rem] xl:pl-[5.25rem]';
         @endphp
-        <div class="lg:min-h-[6.5rem]">
+        <div class="lg:min-h-[6.5rem] w-fit">
             <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
@@ -39,7 +41,11 @@
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
             </div>
+            @if($isShort)
             <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }}">{{ $it['label'] }}</h3>
+            @else
+            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto">{{ $it['label'] }}</h3>
+            @endif
         </div>
 
         @if(!empty($it['body']))
