@@ -91,11 +91,19 @@ return [
             ],
         ],
 
-        // W4-Series — only these three document types (files to be supplied)
+        // W4-Series — Heavy-duty washer-extractors
         'w4-series' => [
-            'CAD Drawings' => [],
-            'Data Sheet' => [],
-            'User Manuals' => [],
+            'CAD Drawings' => [
+                ['label' => 'W4400H — CAD Drawing (DWG)', 'url' => '/pdfs/W4400H.dwg'],
+                ['label' => 'W4850H — CAD Drawing (DWG)', 'url' => '/pdfs/950841_W4850H.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'W4-Series — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_W4400H_438919565_EN.pdf?version=1781186796'],
+            ],
+            'User Manuals' => [
+                ['label' => 'W4-Series — Operating Manual (W4400H · W4600H · W4850H · W41100H)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_438921321EN_W4400H_W4600H_W4850H_W41100H_EN.pdf?version=1781186796'],
+                // Installation manual: the URL supplied was identical to the operating manual above (likely a paste error) — add the correct IN_ link here when available.
+            ],
         ],
 
     ],
