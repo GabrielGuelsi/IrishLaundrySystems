@@ -192,7 +192,7 @@
                 [
                     'title'  => 'Preventive Maintenance',
                     'text'   => 'Planned maintenance for sites that need better control over recurring issues, servicing needs and busy-period risk.',
-                    'cta'    => 'View Preventive Maintenance Contracts',
+                    'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/service-contracts-hero.png',
                     'pos'    => '90% 35%',
@@ -756,7 +756,7 @@
     'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
     'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Peace of mind'],
-    'cta1Label'    => 'View Preventive Maintenance Contracts',
+    'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',
     'cta2Route'    => 'parts-aftercare',
