@@ -342,6 +342,47 @@ return [
             ],
             'sectors' => [],
         ],
+        [
+            'name' => 'myPRO XL', 'slug' => 'mypro-xl', 'capacity' => '12 kg',
+            'title' => 'myPRO XL semi-professional washer and dryer range',
+            'summary' => 'myPRO XL gives smaller and decentralised laundry sites a 12 kg option for heavier daily washing and drying demand.',
+            'image_path' => 'images/equipment/commercialwasher.webp',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO XL', 'Type' => 'Semi-professional', 'Capacity' => '12 kg',
+                    'Durability' => '15,000+ cycles per Electrolux Professional material',
+                    'Noise' => 'Washing process below 62 dB', 'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPROzip', 'slug' => 'myprozip', 'capacity' => '8 kg',
+            'title' => 'myPROzip guest-operated laundry equipment',
+            'summary' => 'myPROzip is designed for guest-operated laundry facilities where users need simple, clear machines that are easy to understand and ready for payment system integration.',
+            'image_path' => 'images/equipment/Self Service Laundry.png',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPROzip', 'Type' => 'Semi-professional, guest-operated', 'Capacity' => '8 kg',
+                    'Controls' => 'Simple, clear operation', 'Payment' => 'Payment system integration ready',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPRO Ironers / Light Finishing', 'slug' => 'mypro-finishing', 'capacity' => null,
+            'title' => 'myPRO ironers and light finishing options',
+            'summary' => 'Where a site needs light finishing support alongside washing and drying, myPRO ironers and finishing options can help complete the setup without creating a full commercial finishing room.',
+            'image_path' => 'images/equipment/IB623_FRONT_NEW.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO', 'Type' => 'Light finishing', 'Format' => 'Compact',
+                    'Best for' => 'Light finishing alongside myPRO washing and drying',
+                ],
+            ],
+            'sectors' => [],
+        ],
     ],
 
     // ── Accessories & Consumables ─────────────────────────────────────────────
