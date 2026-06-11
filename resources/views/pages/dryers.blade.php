@@ -352,9 +352,9 @@
         @php
         $rangeCards = [
             ['name' => 'Line 6000 Tumble Dryers', 'copy' => 'Main commercial dryer range for busy laundry rooms where drying performance, controls, fabric care and support need to work together.', 'cta' => 'View Dryer Range', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy pressure while avoiding exhaust and water cooling requirements where the room setup is suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy pressure while avoiding exhaust and water cooling requirements where the room setup is suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => route('equipment.product', ['category' => 'tumble-dryers', 'product' => 'heat-pump']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
             ['name' => 'Drying Cabinets',         'copy' => 'For bulky, sensitive or specialist items that need drying support without standard tumble action.', 'cta' => 'Explore Drying Cabinets', 'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-            ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment'), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-dryer']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
         ];
         @endphp
 
