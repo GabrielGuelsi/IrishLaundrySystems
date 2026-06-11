@@ -263,7 +263,7 @@
             {{-- Card 4: ERGOCERT --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/EGOCERT.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm tracking-tight leading-snug mb-1.5">Certified ergonomic design</h3>
