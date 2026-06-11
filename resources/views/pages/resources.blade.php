@@ -6,37 +6,37 @@
 @section('content')
 
 {{-- ═══════════════════════════════════════
-     1. HERO — navy, left-aligned
+     1. HERO — image background, left-aligned
 ═══════════════════════════════════════ --}}
-<section class="relative overflow-hidden py-20 lg:py-28"
-         style="background-color:#011E41;">
+<section class="relative overflow-hidden flex flex-col min-h-[420px] lg:min-h-[520px]">
+    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry resources"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.78) 42%, rgba(1,30,65,0.4) 65%, rgba(1,30,65,0.15) 100%);"></div>
+    <div class="relative z-10 flex-1 flex items-center w-full">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-20 lg:py-28">
+            <div class="max-w-3xl reveal reveal-left">
 
-    {{-- Radial glow --}}
-    <div class="absolute inset-0 pointer-events-none" style="background:radial-gradient(ellipse 70% 50% at 50% 0%,rgba(20,138,244,0.12) 0%,transparent 70%);"></div>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
 
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative">
-        <div class="max-w-4xl reveal reveal-left">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                    Resources for <span style="color:#148af4;">smarter laundry operations</span>
+                </h1>
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
+                    Guides, checklists and reference material to help operators manage equipment, reduce downtime and stay compliant.
+                </p>
 
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#resources-library"
+                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                        Browse the Library
+                    </a>
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
+                        Talk to Our Team
+                    </a>
+                </div>
 
-            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                Resources for <span style="color:#148af4;">smarter laundry operations</span>
-            </h1>
-            <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                Guides, checklists and reference material to help operators manage equipment, reduce downtime and stay compliant.
-            </p>
-
-            <div class="flex flex-col sm:flex-row gap-4">
-                <a href="#resources-library"
-                   class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                    Browse the Library
-                </a>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                    Talk to Our Team
-                </a>
             </div>
-
         </div>
     </div>
 </section>
@@ -294,6 +294,41 @@
 </section>
 
 {{-- ═══════════════════════════════════════
+     4b. RESOURCE HELP STRIP
+═══════════════════════════════════════ --}}
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+             class="w-full h-full object-cover"
+             style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+    </div>
+
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Resource Help</p>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Not sure which <span style="color:#011E41;">guide or checklist</span></span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">fits your site?</span>
+        </h2>
+        <p class="font-body text-white text-base leading-relaxed mb-6">
+            Tell us what you are trying to manage, maintain or decide — Irish Laundry Systems will point you to the right resource or practical advice for the site.
+        </p>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Guides', 'Checklists', 'Sector resources', 'Practical advice'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        <a href="{{ route('contact') }}"
+           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+            Talk to Our Team
+        </a>
+    </div>
+
+</section>
+
+{{-- ═══════════════════════════════════════
      5. BY MACHINE — equipment card pattern
 ═══════════════════════════════════════ --}}
 <section class="py-16 lg:py-24 bg-white border-t border-gray-100">
@@ -425,6 +460,8 @@
 
     </div>
 </section>
+
+@include('components.proof-bar')
 
 {{-- ═══════════════════════════════════════
      7. CTA
