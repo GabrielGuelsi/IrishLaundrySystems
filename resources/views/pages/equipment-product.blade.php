@@ -84,7 +84,7 @@
             <div>
                 <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Documents</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
-                    @foreach(['Brochures', 'Data Sheet', 'Leaflets', 'User Manuals'] as $i => $doc)
+                    @foreach(['Brochures', 'CAD Drawings', 'Data Sheet', 'Wall Instructions', 'BIM/Revit', 'User Manuals'] as $i => $doc)
                     <div>
                         <button type="button" @click="openDoc = openDoc === {{ $i }} ? null : {{ $i }}"
                                 class="w-full flex items-center justify-between py-5 text-left">
