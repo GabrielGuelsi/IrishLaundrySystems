@@ -129,54 +129,11 @@
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',               'body' => 'For faults, breakdowns or performance issues affecting laundry output, staffing or service continuity.',                          'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-outs',           'pos' => 'center 40%', 'bullets' => ['Machine faults', 'Breakdown calls', 'Fault diagnosis', 'Urgent equipment issues']],
-        ['title' => 'Preventive Maintenance',           'body' => 'For planned inspections that reduce reactive pressure, support better service timing and keep essential equipment easier to manage.', 'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png',             'alt' => 'Preventive Maintenance',          'pos' => 'center 35%', 'bullets' => ['Scheduled visits', 'Service history', 'Planned inspections', 'Reduced reactive pressure']],
+        ['title' => 'Preventive Maintenance',           'body' => 'For planned inspections that reduce reactive pressure, support better service timing and keep essential equipment easier to manage.', 'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',          'pos' => '80% center', 'bullets' => ['Scheduled visits', 'Service history', 'Planned inspections', 'Reduced reactive pressure']],
         ['title' => 'Equipment Rental',                  'body' => 'For replacement pressure, added capacity or access to commercial laundry equipment without one large purchase upfront.',           'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',           'alt' => 'Equipment Rental',                'bullets' => ['Rental equipment', 'Capacity needs', 'Replacement pressure', 'Lower upfront cost']],
         ['title' => 'Support & Aftercare',               'body' => 'For follow-up care, genuine parts support where needed and clearer repair, maintenance or replacement decisions after the first visit.', 'cta' => 'View Support & Aftercare',        'href' => route('parts-aftercare'),   'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',             'pos' => 'center center', 'bullets' => ['Aftercare', 'Parts support where needed', 'Follow-up care', 'Equipment history']],
     ],
 ])
-
-<!-- 4. PROOF / TRUST STRIP — matches About Us "Proof & Scale" style -->
-<section class="bg-white py-16 lg:py-24 border-t border-gray-100">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-
-        <div class="mb-12">
-            <p class="font-heading font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why Irish Laundry Systems</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight max-w-4xl text-balance">
-                Commercial laundry care built around
-                cost control and <span class="text-[#148af4]">peace of mind</span>
-            </h2>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            @foreach ([
-                ['type' => 'text',  'num' => '1987', 'sub' => 'year',      'title' => 'Since 1987',                      'desc' => 'Engineering-led commercial laundry work in Ireland.'],
-                ['type' => 'badge', 'badge' => '/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg', 'sub' => 'partner', 'title' => 'Electrolux Professional Partner', 'desc' => 'Authorised Electrolux Professional Partner for commercial laundry equipment.'],
-                ['type' => 'badge', 'badge' => '/images/logo/rgi-logo.png', 'badge2' => '/images/logo/safe-electric.png', 'alt' => 'Registered Gas Installer (RGI)', 'alt2' => 'Safe Electric Registered Electrical Contractor', 'sub' => 'certified', 'title' => 'Registered electrical and gas contractor support', 'desc' => 'Registered Electrical Contractor and Registered Gas Installer contractor support.'],
-                ['type' => 'text',  'num' => '100+', 'sub' => 'clients',   'title' => '100+ clients supported', 'desc' => 'Commercial laundry support for long-term customers.'],
-            ] as $item)
-            <div class="border-b border-gray-300 pb-5">
-                <div class="flex items-end gap-3 mb-3 min-h-[68px] lg:min-h-[80px]">
-                    @if ($item['type'] === 'badge')
-                        @php $bh = !empty($item['badge2']) ? 'h-10 lg:h-12' : 'h-14 lg:h-16'; @endphp
-                        <img src="{{ $item['badge'] }}" alt="{{ $item['alt'] ?? 'Authorised Electrolux Professional Partner' }}"
-                             class="{{ $bh }} w-auto object-contain flex-shrink-0" style="mix-blend-mode: multiply;">
-                        @if (!empty($item['badge2']))
-                        <img src="{{ $item['badge2'] }}" alt="{{ $item['alt2'] ?? '' }}"
-                             class="{{ $bh }} w-auto object-contain flex-shrink-0">
-                        @endif
-                    @else
-                        <div class="font-heading font-bold text-navy text-4xl sm:text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $item['num'] }}</div>
-                    @endif
-                    <p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $item['sub'] }}</p>
-                </div>
-                <p class="font-body font-bold text-navy text-sm mb-1">{{ $item['title'] }}</p>
-                <p class="font-body text-navy/70 text-sm leading-relaxed font-medium text-pretty">{{ $item['desc'] }}</p>
-            </div>
-            @endforeach
-        </div>
-
-    </div>
-</section>
 
 <!-- 6. HOW THE SUPPORT ROUTES WORK TOGETHER — gallery 1-4 (matches Hospitality) -->
 <style>
@@ -311,10 +268,10 @@
 <section class="w-full overflow-hidden">
     <div style="display:flex; flex-wrap:wrap;">
         @foreach ([
-            ['num' => '01.', 'title' => 'Understand what is under pressure', 'body' => 'Clarify whether the issue is a fault, recurring problem, planned maintenance need, rental requirement or follow-up after previous work.', 'img' => '/images/healthcare/operator.jpg'],
-            ['num' => '02.', 'title' => 'Review the machine and its history', 'body' => 'Look at the machine type, condition, usage, service history and how important the equipment is to daily operation.',                       'img' => '/images/about/about-engineers.jpg'],
-            ['num' => '03.', 'title' => 'Choose the right support',         'body' => 'Match the issue to repairs, preventive maintenance, rental or aftercare, depending on what the site needs next.',                            'img' => '/images/healthcare/Customer-Care_Line-6000-_001.jpg', 'pos' => '20% center'],
-            ['num' => '04.', 'title' => 'Keep the next decision clear',     'body' => 'Use reports, service history, parts support where needed and follow-up recommendations to keep repair, maintenance or replacement decisions clear.', 'img' => '/images/healthcare/customer-care-line6000.jpg'],
+            ['num' => '01.', 'title' => 'Understand what is under pressure', 'body' => 'Clarify whether the issue is a fault, recurring problem, planned maintenance need, rental requirement or follow-up after previous work.', 'img' => '/images/healthcare/services-how-01.jpg'],
+            ['num' => '02.', 'title' => 'Review the machine and its history', 'body' => 'Look at the machine type, condition, usage, service history and how important the equipment is to daily operation.',                       'img' => '/images/healthcare/services-how-02.jpg'],
+            ['num' => '03.', 'title' => 'Choose the right support',         'body' => 'Match the issue to repairs, preventive maintenance, rental or aftercare, depending on what the site needs next.',                            'img' => '/images/healthcare/rentalstripimage.jpg', 'pos' => '20% center'],
+            ['num' => '04.', 'title' => 'Keep the next decision clear',     'body' => 'Use reports, service history, parts support where needed and follow-up recommendations to keep repair, maintenance or replacement decisions clear.', 'img' => '/images/healthcare/service-contracts-hero.png', 'pos' => '70% center'],
         ] as $card)
         <div class="svc-gallery-card">
             <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
@@ -432,9 +389,9 @@
             </div>
         </div>
 
-        {{-- Right: diagonal blue-gradient panel with embedded form --}}
+        {{-- Right: soft blue-gradient panel with embedded form --}}
         <div class="hidden lg:block relative">
-            <div class="absolute inset-0" style="clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%); background: linear-gradient(135deg, #148af4 0%, #0e79d8 45%, #011E41 100%);"></div>
+            <div class="absolute inset-0" style="background: linear-gradient(110deg, transparent 0%, rgba(20,138,244,0.10) 28%, rgba(20,138,244,0.50) 62%, rgba(20,138,244,0.92) 100%);"></div>
             <div id="services-form" class="relative z-10 h-full flex items-center justify-end pr-10 xl:pr-16 py-12 lg:py-16 pl-[18%]">
                 <div class="w-full max-w-md bg-white rounded-2xl shadow-2xl p-7 lg:p-8">
                     <p class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug mb-1">Request Service Assessment</p>

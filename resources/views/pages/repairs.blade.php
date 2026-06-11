@@ -118,13 +118,10 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Fault Details</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-            Fast support starts with <span class="text-[#148af4]">clear fault details</span>
+            <span class="text-[#148af4]">Faster support</span> starts with clear fault details
         </h2>
-        <p class="font-body text-gray-600 text-base leading-relaxed mb-4 max-w-3xl mx-auto text-pretty">
-            A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. Clear fault details at the start make it easier to prepare the right call-out response and reduce uncertainty around the next&nbsp;step.
-        </p>
-        <p class="font-body text-gray-600 text-base leading-relaxed mb-10 max-w-3xl mx-auto text-pretty">
-            Irish Laundry Systems reviews the machine type, fault symptoms, site urgency and service history before arranging the visit.
+        <p class="font-body text-gray-600 text-base leading-relaxed mb-12 lg:mb-16 max-w-3xl mx-auto text-pretty">
+            A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. Irish Laundry Systems reviews the key details before arranging the visit.
         </p>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10">
@@ -157,7 +154,7 @@
 <!-- URGENT CALL-OUT STRIP -->
 <section class="pt-4 pb-16 lg:pt-6 lg:pb-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="relative bg-navy rounded-2xl overflow-hidden p-8 lg:p-10 shadow-xl">
+        <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl">
 
             {{-- Top gradient accent line --}}
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
@@ -165,11 +162,11 @@
             {{-- Soft glow accent (top-right) --}}
             <div class="absolute top-0 right-0 w-72 h-72 -translate-y-1/3 translate-x-1/4 rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(20,138,244,0.18) 0%, transparent 70%);"></div>
 
-            <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+            <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
                 {{-- LEFT: content --}}
-                <div class="lg:col-span-7 flex items-start gap-5">
-                    <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 flex-shrink-0 object-contain">
+                <div class="lg:col-span-7 flex items-center gap-6 lg:gap-8">
+                    <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 flex-shrink-0 object-contain">
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
                         <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>

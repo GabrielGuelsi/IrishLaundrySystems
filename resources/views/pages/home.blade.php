@@ -43,7 +43,7 @@
                 </h1>
 
                 <p class="hero-desc font-body text-white leading-relaxed mb-10 text-base max-w-2xl">
-                    Irish Laundry Systems supports commercial laundry sites with equipment, rental, maintenance, repairs and aftercare from one experienced team, so teams can control budget pressure, reduce disruption and keep laundry&nbsp;moving.
+                    Irish Laundry Systems supports commercial laundry sites with equipment supply, rental options, maintenance, repairs and aftercare from one experienced team, helping operators control costs, reduce disruption and keep laundry&nbsp;moving.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
@@ -83,15 +83,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    <span class="text-[#148af4]">Laundry support</span> built around the site, the equipment and <span class="text-[#148af4]">what needs to happen next</span>
+                    Laundry support built around <span class="text-[#148af4]">the site, the equipment</span> and daily demand
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
                 <p class="font-body text-navy text-base leading-relaxed">
-                    Irish Laundry Systems supports equipment selection, installation, planned maintenance, call-outs, rental and aftercare, so commercial laundry sites can make clearer decisions with less pressure.
+                    Irish Laundry Systems starts with the site: the room, the workload, the equipment in use and the pressure on daily output. From there, we guide each customer toward the right service support, rental option, equipment quote or aftercare.
                 </p>
                 <p class="font-body text-gray-600 text-base leading-relaxed">
-                    That gives teams clearer decisions and more confidence when laundry output affects cost control, staffing pressure, service continuity and the long-term value of the equipment they depend on every day.
+                    That gives owners and operators a clearer next step when laundry affects cost control, staffing pressure, service continuity and the long-term value of the equipment they depend on every day.
                 </p>
                 <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
                     See service options for your site &rarr;
@@ -114,14 +114,14 @@
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
-        ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts support better control of service timing, equipment condition and repair pressure over time.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png',          'alt' => 'Preventive Maintenance',  'pos' => 'center 35%'],
+        ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts support better control of service timing, equipment condition and repair pressure over time.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
         ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement pressure, expansion or continuity, with equipment installed, maintained and easier to manage over time.',      'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp',        'alt' => 'Equipment Rental',        'pos' => 'center'],
         ['title' => 'Support & Aftercare',     'body' => 'Follow-up care that keeps service history and next steps clear after repairs, rental, contracts, inspection or installation.',                       'cta' => 'Explore Support & Aftercare', 'href' => route('parts-aftercare'),  'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
     ],
 ])
 
 <!-- 3.5 PLANNING STRIP — Designed around your site, workflow and capacity -->
-<div class="bg-white" style="margin-top:-1px; margin-bottom:-2px;">
+<div style="background-color:#148af4; margin-top:-1px; margin-bottom:-1px;">
     @include('components.cta-combined-banner', [
         'heading'  => 'Designed around your room, <span style="color:#011E41;">workload and budget</span> before money is&nbsp;spent',
         'body'     => 'Poor equipment fit, weak layout and undersized capacity can create avoidable spend after installation. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the room, workload and support needs before money is spent, so the site can make a better decision from the start.',
@@ -135,6 +135,7 @@
 </div>
 
 <!-- 4. SECTOR ROUTING TABS -->
+ 
 @include('components.sector-switcher', [
     'intro'           => 'Different sites carry different cost, staffing and service pressures. The right commercial laundry care depends on hygiene requirements, daily laundry demand, equipment in use, budget pressure and day-to-day operating needs.',
     'healthcareBody'  => 'Care for healthcare laundry environments where hygiene process, room flow, equipment continuity and service pressure affect daily operations.',

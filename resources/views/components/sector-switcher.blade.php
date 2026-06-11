@@ -1,4 +1,4 @@
-﻿@props([
+@props([
     'intro'           => 'Different sites carry different pressures. The right commercial laundry care depends on hygiene requirements, linen flow, staffing, throughput, installed equipment, budget pressure and service needs.',
     'healthcareBody'  => 'Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily service.',
     'careBody'        => 'Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
