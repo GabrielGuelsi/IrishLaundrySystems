@@ -28,17 +28,17 @@
         <div class="hidden lg:flex items-center gap-20">
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <img src="/images/icons/46.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain">
+                <img src="/images/icons/46.png" alt="" aria-hidden="true" class="h-[88px] w-auto object-contain">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Electrical Contractor</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <img src="/images/icons/45.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain">
+                <img src="/images/icons/45.png" alt="" aria-hidden="true" class="h-[88px] w-auto object-contain">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <span class="font-heading font-bold text-navy text-3xl leading-none">100+</span>
+                <span class="font-heading font-bold text-navy text-3xl leading-none">100+ <span class="text-xl">clients</span></span>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Long-standing relationships</span>
             </div>
 
