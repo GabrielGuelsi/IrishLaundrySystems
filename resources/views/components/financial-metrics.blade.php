@@ -31,7 +31,7 @@
             $labelClasses = 'font-heading font-bold text-navy text-sm leading-snug';
             $labelIndent = $isShort ? 'pl-[4.75rem] xl:pl-[5.75rem]' : '';
         @endphp
-        <div class="lg:min-h-[7rem] w-fit">
+        <div class="lg:min-h-[6.5rem] w-fit">
             <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
@@ -48,7 +48,7 @@
         </div>
 
         @if(!empty($it['body']))
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-3">{{ $it['body'] }}</p>
+        <p class="font-body text-gray-500 text-sm leading-relaxed mt-1.5">{{ $it['body'] }}</p>
         @endif
     </div>
     @endforeach
