@@ -25,7 +25,7 @@
 
         {{-- header: icon centred on the prefix+stat block; fixed lg height keeps dividers aligned across the row --}}
         <div class="lg:min-h-[7rem]">
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-1">{{ $it['prefix'] }}</span>@endif
@@ -34,8 +34,8 @@
             </div>
 
             {{-- label: short labels tuck under the blue stat; long labels use the full card width to stay on one line --}}
-            @php $labelIndent = strlen(strip_tags($it['label'])) <= 13 ? 'pl-[4.75rem] xl:pl-[5.75rem]' : ''; @endphp
-            <h3 class="font-heading font-bold text-navy text-sm xl:text-xs tracking-tight leading-snug mt-2 {{ $labelIndent }}">{{ $it['label'] }}</h3>
+            @php $labelIndent = strlen(strip_tags($it['label'])) <= 13 ? 'pl-[4.25rem] xl:pl-[5.25rem]' : ''; @endphp
+            <h3 class="font-heading font-bold text-navy text-sm xl:text-xs tracking-tight leading-snug mt-0.5 {{ $labelIndent }}">{{ $it['label'] }}</h3>
         </div>
 
         @if(!empty($it['body']))
