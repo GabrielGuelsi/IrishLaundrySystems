@@ -23,19 +23,26 @@
     @endphp
     <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
 
-        {{-- header: icon centred on the prefix+stat block; fixed lg height keeps dividers aligned across the row --}}
+        {{-- header: icon beside the prefix/stat; SHORT labels sit directly under the stat inside the column,
+             LONG labels drop to full card width below so they stay on one line --}}
+        @php
+            $isShort = strlen(strip_tags($it['label'])) <= 13;
+            $labelClasses = 'font-heading font-bold text-navy text-sm xl:text-[clamp(10px,0.78vw,12px)] tracking-tight leading-snug';
+        @endphp
         <div class="lg:min-h-[7rem]">
             <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
+                    @if($isShort)
+                    <h3 class="{{ $labelClasses }} -mt-1">{{ $it['label'] }}</h3>
+                    @endif
                 </div>
             </div>
-
-            {{-- label: short labels tuck under the blue stat; long labels use the full card width to stay on one line --}}
-            @php $labelIndent = strlen(strip_tags($it['label'])) <= 13 ? 'pl-[4.25rem] xl:pl-[5.25rem]' : ''; @endphp
-            <h3 class="font-heading font-bold text-navy text-sm xl:text-[clamp(10px,0.78vw,12px)] tracking-tight leading-snug -mt-2 {{ $labelIndent }}">{{ $it['label'] }}</h3>
+            @if(!$isShort)
+            <h3 class="{{ $labelClasses }} -mt-1">{{ $it['label'] }}</h3>
+            @endif
         </div>
 
         @if(!empty($it['body']))
