@@ -36,12 +36,12 @@
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                     @if($isShort)
-                    <h3 class="{{ $labelClasses }} -mt-1">{{ $it['label'] }}</h3>
+                    <h3 class="{{ $labelClasses }} -mt-3">{{ $it['label'] }}</h3>
                     @endif
                 </div>
             </div>
             @if(!$isShort)
-            <h3 class="{{ $labelClasses }} -mt-1">{{ $it['label'] }}</h3>
+            <h3 class="{{ $labelClasses }} -mt-3">{{ $it['label'] }}</h3>
             @endif
         </div>
 
