@@ -25,10 +25,10 @@
 
         {{-- header: icon centred on the prefix+stat block; fixed lg height keeps dividers aligned across the row --}}
         <div class="lg:min-h-[7rem]">
-            <div class="flex items-center gap-1">
+            <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
-                    @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-1">{{ $it['prefix'] }}</span>@endif
+                    @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
             </div>
