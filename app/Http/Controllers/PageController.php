@@ -194,6 +194,10 @@ class PageController extends Controller
             'specs' => $item->specs ?? [],
             'summary' => $item->summary,
             'imagePath' => $item->image_url,
+            'documents' => array_merge(
+                config("equipment_documents.categories.{$category}", []),
+                config("equipment_documents.products.{$product}", [])
+            ),
         ]);
     }
 

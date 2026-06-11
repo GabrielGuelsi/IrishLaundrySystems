@@ -84,19 +84,38 @@
             <div>
                 <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Documents</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
-                    @foreach(['Brochures', 'Data Sheet', 'Leaflets', 'User Manuals'] as $i => $doc)
+                    @php $documents = $documents ?? []; @endphp
+                    @foreach(['Brochures', 'CAD Drawings', 'Data Sheet', 'Wall Instructions', 'BIM/Revit', 'User Manuals'] as $i => $doc)
+                    @php $files = $documents[$doc] ?? []; @endphp
                     <div>
                         <button type="button" @click="openDoc = openDoc === {{ $i }} ? null : {{ $i }}"
                                 class="w-full flex items-center justify-between py-5 text-left">
-                            <span class="font-body text-navy text-base">{{ $doc }}</span>
+                            <span class="font-body text-navy text-base flex items-center gap-2">
+                                {{ $doc }}
+                                @if(!empty($files))<span class="font-body text-[10px] font-bold text-[#148af4] bg-[#148af4]/10 px-2 py-0.5 rounded-full">{{ count($files) }}</span>@endif
+                            </span>
                             <svg class="w-5 h-5 text-navy transition-transform duration-200" :class="openDoc === {{ $i }} ? 'rotate-180' : ''" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
                         </button>
                         <div x-show="openDoc === {{ $i }}" style="display:none" class="pb-5">
+                            @if(!empty($files))
+                            <ul class="space-y-2.5">
+                                @foreach($files as $f)
+                                <li>
+                                    <a href="{{ str_replace(' ', '%20', $f['url']) }}" target="_blank" rel="noopener"
+                                       class="inline-flex items-center gap-2.5 font-body text-[#148af4] text-sm font-semibold hover:underline">
+                                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v2.625a2.625 2.625 0 0 1-2.625 2.625H7.125A2.625 2.625 0 0 1 4.5 16.875V14.25M12 15V3.75m0 11.25-3.75-3.75M12 15l3.75-3.75"/></svg>
+                                        {{ $f['label'] }}
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ul>
+                            @else
                             <p class="font-body text-gray-500 text-sm leading-relaxed">
                                 {{ $doc }} for the {{ $product }} are available on request.
                                 <a href="{{ route('contact') }}" class="text-[#148af4] font-semibold hover:underline">Contact our team</a>
                                 and we'll send the latest documents for your configuration.
                             </p>
+                            @endif
                         </div>
                     </div>
                     @endforeach
