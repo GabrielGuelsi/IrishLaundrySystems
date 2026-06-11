@@ -84,8 +84,13 @@
             <div>
                 <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Documents</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
-                    @php $documents = $documents ?? []; @endphp
-                    @foreach(['Brochures', 'CAD Drawings', 'Data Sheet', 'Wall Instructions', 'BIM/Revit', 'User Manuals'] as $i => $doc)
+                    @php
+                        $documents = $documents ?? [];
+                        // canonical order, but only show the types this product actually declares
+                        $docOrder = ['Brochures', 'CAD Drawings', 'Data Sheet', 'Wall Instructions', 'BIM/Revit', 'User Manuals'];
+                        $docTypes = array_values(array_filter($docOrder, fn($t) => array_key_exists($t, $documents)));
+                    @endphp
+                    @forelse($docTypes as $i => $doc)
                     @php $files = $documents[$doc] ?? []; @endphp
                     <div>
                         <button type="button" @click="openDoc = openDoc === {{ $i }} ? null : {{ $i }}"
@@ -118,7 +123,15 @@
                             @endif
                         </div>
                     </div>
-                    @endforeach
+                    @empty
+                    <div class="py-5">
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            Documents for the {{ $product }} are available on request.
+                            <a href="{{ route('contact') }}" class="text-[#148af4] font-semibold hover:underline">Contact our team</a>
+                            and we'll send the latest brochures, data sheets and manuals for your configuration.
+                        </p>
+                    </div>
+                    @endforelse
                 </div>
             </div>
 

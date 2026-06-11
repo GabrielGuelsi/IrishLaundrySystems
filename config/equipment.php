@@ -85,7 +85,7 @@ return [
             'name' => 'W4-Series', 'slug' => 'w4-series', 'capacity' => '40–110 kg',
             'title' => 'Heavy-duty washer-extractors – W4-Series',
             'summary' => 'Heavy-duty washer-extractors for industrial and high-throughput laundries. Robust build with high extraction. Capacity 40–110 kg.',
-            'image_path' => 'images/equipment/commercialwasher.webp',
+            'image_path' => 'images/equipment/W4-Series Washer-Extractors.png',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'W4-Series', 'Type' => 'Heavy-duty washer-extractor', 'Capacity' => '40 – 110 kg',
@@ -100,10 +100,11 @@ return [
             'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'capacity' => null,
             'title' => 'Quick-cycle commercial washer – QWC',
             'summary' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.',
-            'image_path' => 'images/equipment/commercialwasher.webp',
+            'image_path' => 'images/equipment/Quickwash QWC.jpg',
             'specs' => [
-                'Main specification' => ['Range' => 'Quickwash', 'Type' => 'Quick-cycle washer', 'Strength' => 'Fast turnaround, compact footprint'],
-                'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+                'Main specification' => ['Drum volume' => '53 lt', 'Drum diameter' => '452 mm', 'G-factor' => '425'],
+                'Dimensions' => ['Width' => '595 mm', 'Depth' => '681 mm', 'Height' => '832 mm'],
+                'Drum' => ['Wash capacity, kg' => '55', 'Wash capacity, lb' => '1300'],
             ],
             'sectors' => [],
         ],

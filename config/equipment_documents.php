@@ -77,6 +77,27 @@ return [
             ],
         ],
 
+        // Quickwash QWC
+        'quickwash-qwc' => [
+            'CAD Drawings' => [
+                ['label' => 'QuickWash QWC — CAD Drawing (DWG)', 'url' => '/pdfs/QuickWash QWC.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'QuickWash QWC — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919460EN_QuickWash%20QWC_EN.pdf?version=1781186423'],
+            ],
+            'User Manuals' => [
+                ['label' => 'QuickWash QWC — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_QuickWash%20QWC_438909610_EN.pdf?version=1781186423'],
+                ['label' => 'QuickWash QWC — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_QuickWash%20QWC_438905490_EN.pdf?version=1781186423'],
+            ],
+        ],
+
+        // W4-Series — only these three document types (files to be supplied)
+        'w4-series' => [
+            'CAD Drawings' => [],
+            'Data Sheet' => [],
+            'User Manuals' => [],
+        ],
+
     ],
 
 ];
