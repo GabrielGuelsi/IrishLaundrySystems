@@ -27,7 +27,7 @@
              LONG labels drop to full card width below so they stay on one line --}}
         @php
             $isShort = strlen(strip_tags($it['label'])) <= 13;
-            $labelClasses = 'font-heading font-bold text-navy text-sm xl:text-[clamp(10px,0.78vw,12px)] tracking-tight leading-snug';
+            $labelClasses = 'font-heading font-bold text-navy text-sm leading-snug';
         @endphp
         <div class="lg:min-h-[7rem]">
             <div class="flex items-end gap-1">
