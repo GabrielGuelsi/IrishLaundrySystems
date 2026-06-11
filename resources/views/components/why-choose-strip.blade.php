@@ -1,4 +1,5 @@
 @props([
+    'eyebrow' => null,
     'body' => 'Rental gives your site a practical route for replacement, expansion or continuity when buying outright is not the right next step.',
     'headingLine1' => 'Keep laundry moving',
     'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',
@@ -32,6 +33,9 @@
     {{-- RIGHT: content — 50% width --}}
     <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-14 w-full lg:w-1/2 lg:ml-[50%]" style="box-sizing:border-box;">
 
+        @if ($eyebrow)
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
+        @endif
         <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span class="text-white text-3xl sm:text-4xl lg:text-5xl">{!! $headingLine1 !!}</span>
             <span class="text-3xl sm:text-4xl lg:text-5xl text-white">{!! $headingLine2 !!}</span>

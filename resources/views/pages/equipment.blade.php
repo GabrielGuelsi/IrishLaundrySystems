@@ -16,21 +16,21 @@
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Guidance</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
-                    <span class="block">Commercial laundry</span>
-                    <span class="block">equipment <span style="color:#148af4;">selected</span></span>
-                    <span class="block" style="color:#148af4;">around your operation</span>
+                    <span class="block">Commercial laundry equipment</span>
+                    <span class="block"><span style="color:#148af4;">supplied, installed</span></span>
+                    <span class="block" style="color:#148af4;">and supported</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems helps commercial, healthcare, care, hospitality and industrial sites choose equipment around workload, space, budget and daily laundry demand. We supply selected Electrolux Professional machines, then support installation, commissioning and aftercare where needed.
+                    Irish Laundry Systems supports commercial laundry sites with equipment selection, quotation, supply, installation, rental advice and aftercare, including Electrolux Professional laundry equipment options.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
                     <a href="#equipment-quote"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request an Equipment Quote
+                        Request Equipment Quote
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to Our Team
+                        Ask About Purchase or Rental
                     </a>
                 </div>
             </div>
@@ -302,7 +302,7 @@
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Start with the equipment type, then Irish Laundry Systems can help confirm the right capacity, site fit, purchase option or rental option where suitable.
+                Browse commercial laundry equipment available for quotation, supply, installation, rental discussion and ongoing support through Irish Laundry Systems.
             </p>
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -400,12 +400,12 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-16 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Access</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Choose the <span style="color:#011E41;">right</span></span>
-            <span class="text-3xl sm:text-4xl lg:text-5xl" style="color:#011E41;">equipment option</span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">for your site and budget</span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Choose whether to</span>
+            <span class="text-3xl sm:text-4xl lg:text-5xl" style="color:#011E41;">purchase or rent</span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">equipment</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
-            The right equipment decision is not only about the machine. Irish Laundry Systems can supply selected Electrolux Professional equipment for outright purchase or discuss rental where suitable, helping your site balance workload, space, budget and support needs.
+            Whether the right decision is purchase or rental, Irish Laundry Systems can guide your site toward the equipment option that fits the room, workload, budget and support needs.
         </p>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8">
             @foreach(['Outright purchase', 'Rental where suitable', 'Supplied and commissioned'] as $i => $pt)
@@ -416,11 +416,11 @@
         <div class="flex flex-wrap gap-3">
             <a href="#equipment-quote"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-                Request an Equipment Quote
+                Request Equipment Quote
             </a>
             <a href="{{ route('rental') }}"
                class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
-                View Rental Options
+                Ask About Equipment Rental
             </a>
         </div>
     </div>
@@ -656,11 +656,11 @@
 @include('components.cta-downtime-form', [
     'pageSource'  => 'equipment_cta',
     'eyebrow'     => 'Request an Equipment Quote',
-    'heading'     => 'Ready to choose the <span style="color:#148af4;">right equipment for your site</span>',
-    'body'        => 'Tell us about your laundry room, workload and equipment needs. Irish Laundry Systems will review the enquiry and help confirm the right category, equipment option, purchase or rental fit and next step.',
+    'heading'     => 'Talk to the team before you <span style="color:#148af4;">buy or rent</span> laundry equipment',
+    'body'        => 'Tell us about your site, workload, room and budget pressure. Irish Laundry Systems will guide you toward the right equipment quote, purchase option, rental discussion or aftercare support.',
     'formTitle'   => 'Request an Equipment Quote',
     'formIntro'   => 'Share the details that help direct the enquiry properly.',
-    'buttonText'  => 'Request an Equipment Quote',
+    'buttonText'  => 'Request Equipment Advice',
 ])
 
 @endsection

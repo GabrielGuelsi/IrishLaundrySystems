@@ -1,10 +1,15 @@
 @props([
-    'eyebrow'    => null,
-    'heading'    => 'Ready to understand what your healthcare laundry room is costing you?',
-    'body'       => 'Talk to Irish Laundry Systems about your site, equipment, service history and laundry pressure. We will help confirm the right next step.',
-    'formTitle'  => 'Request a Healthcare Laundry Assessment',
-    'formIntro'  => 'We aim to respond within 24 hours.',
-    'buttonText' => 'Request Healthcare Assessment',
+    'eyebrow'           => null,
+    'heading'           => 'Ready to understand what your healthcare laundry room is costing you?',
+    'body'              => 'Talk to Irish Laundry Systems about your site, equipment, service history and laundry pressure. We will help confirm the right next step.',
+    'formTitle'         => 'Request a Healthcare Laundry Assessment',
+    'formIntro'         => 'We aim to respond within 24 hours.',
+    'buttonText'        => 'Request Healthcare Assessment',
+    'showLocationField' => false,
+    'equipmentLabel'    => null,
+    'messageLabel'      => 'Message / Requirement',
+    'messageRequired'   => false,
+    'requestTypeLabel'  => 'Request Type',
 ])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">
@@ -130,7 +135,7 @@
                             </select>
                         </div>
                         <div>
-                            <label for="cta_request_type" class="block text-sm font-body font-light text-navy mb-1.5">Request Type <span class="text-red-500">*</span></label>
+                            <label for="cta_request_type" class="block text-sm font-body font-light text-navy mb-1.5">{{ $requestTypeLabel }} <span class="text-red-500">*</span></label>
                             <select id="cta_request_type" name="request_type" required
                                     class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
                                 <option value="" disabled selected>What do you need?</option>
@@ -138,13 +143,29 @@
                                 <option value="rental">Equipment Rental</option>
                                 <option value="breakdown">Breakdown / Repair</option>
                                 <option value="parts">Support &amp; Aftercare</option>
-                                <option value="equipment_quote">Equipment Quote</option>
+                                <option value="equipment_quote">Equipment Purchase / Quote</option>
                             </select>
                         </div>
                     </div>
+                    @if ($showLocationField)
                     <div>
-                        <label for="cta_message" class="block text-sm font-body font-light text-navy mb-1.5">Message / Requirement</label>
-                        <textarea id="cta_message" name="message" rows="3"
+                        <label for="cta_location" class="block text-sm font-body font-light text-navy mb-1.5">Site location <span class="text-red-500">*</span></label>
+                        <input type="text" id="cta_location" name="location" required
+                               class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
+                               placeholder="Town / county">
+                    </div>
+                    @endif
+                    @if ($equipmentLabel)
+                    <div>
+                        <label for="cta_equipment" class="block text-sm font-body font-light text-navy mb-1.5">{{ $equipmentLabel }}</label>
+                        <input type="text" id="cta_equipment" name="equipment" maxlength="500"
+                               class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
+                               placeholder="What is on site today?">
+                    </div>
+                    @endif
+                    <div>
+                        <label for="cta_message" class="block text-sm font-body font-light text-navy mb-1.5">{{ $messageLabel }}@if ($messageRequired) <span class="text-red-500">*</span>@endif</label>
+                        <textarea id="cta_message" name="message" rows="3" @if ($messageRequired) required @endif
                                   class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors resize-none"
                                   placeholder="Tell us what is under pressure, what equipment is involved and what needs to happen next."></textarea>
                     </div>
@@ -158,7 +179,9 @@
                     <input type="hidden" name="utm_source" id="cta_utm_source">
                     <input type="hidden" name="utm_medium" id="cta_utm_medium">
                     <input type="hidden" name="utm_campaign" id="cta_utm_campaign">
+                    @unless ($showLocationField)
                     <input type="hidden" name="location" value="Not specified">
+                    @endunless
                     <input type="hidden" name="urgency" value="this_week">
                     <input type="hidden" name="page_source" value="{{ $pageSource ?? 'sector_cta' }}">
                     <button type="submit"

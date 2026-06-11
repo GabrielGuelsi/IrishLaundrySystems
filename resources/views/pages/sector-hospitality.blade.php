@@ -20,7 +20,7 @@
                     <span class="block">and peak-period pressure</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supports hotels, guesthouses and hospitality sites with commercial laundry equipment, installation, rental options, planned maintenance, repairs and aftercare for laundry rooms that affect room readiness, housekeeping pressure and day-to-day service.
+                    Irish Laundry Systems supports hotels, guesthouses and hospitality sites with Electrolux Professional equipment selection, supply, installation, rental options, planned maintenance, repairs and aftercare for laundry rooms that affect room readiness, housekeeping pressure and day-to-day service.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#hospitality-assessment"
@@ -53,88 +53,18 @@
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Hospitality laundry affects more than the laundry room. Bedding, towels, robes, table linen, uniforms and guest items all influence room readiness, housekeeping rhythm and the standard guests notice.
+                    Hospitality laundry affects more than the laundry room. Bedding, towels, robes, table linen, uniforms and guest items all influence room readiness, housekeeping routines and the standard guests notice.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems connects equipment choice, installation, planned maintenance, call-outs, rental options and aftercare around the way the property actually runs, so teams can keep linen moving with better cost control and more peace of mind.
+                    Irish Laundry Systems brings equipment selection, supply, installation, planned maintenance, call-outs, rental options and aftercare together around the way the property runs, so teams can keep linen moving with better cost control and more peace of mind.
                 </p>
                 <a href="{{ route('equipment') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    See the equipment we provide
+                    View Hospitality Equipment Options
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </a>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- HOSPITALITY LAUNDRY PRIORITIES BENTO -->
-<section class="py-12 lg:py-16 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Protect <span style="color:#148af4;">guest experience</span> while <span style="color:#148af4;">keeping linen moving</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                The right laundry setup helps hotels manage linen availability, housekeeping pressure, peak demand periods, finishing standards and the support needed to keep service moving.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/23.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Linen turnaround</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Bedding, towels, robes and flatwork need to move back into use quickly during busy periods.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/24.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping pressure</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Laundry flow affects room readiness, team workload and the rhythm of daily hotel service.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/25.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing and presentation</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ironing and flatwork quality support the visual standard guests notice in rooms, restaurants and service areas.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak occupancy planning</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">The laundry room should be planned around peak demand periods, not only average daily use.</p>
-                </div>
-            </div>
-
-            <div class="bg-white rounded-xl p-5 flex flex-col gap-4 col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-24">
-                    <img src="/images/icons/6.png" alt="" class="w-24 h-24 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room can support faster turnaround times, higher quality control standards and better control over what is washed, how and when.</p>
-                </div>
             </div>
 
         </div>
@@ -152,17 +82,87 @@
                 <span><span style="color:#148af4;">protecting guest standards</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Hospitality laundry cost can build through energy use, detergent waste, linen replacement pressure, housekeeping delays, outsourced laundry reliance, reactive call-outs and equipment decisions made too late. The right setup should support fresh linen, faster turnaround times, efficient workflow and better cost control.
+                Hospitality laundry cost can build through energy use, detergent waste, linen replacement pressure, housekeeping delays, outsourced laundry reliance, reactive call-outs and equipment decisions made too late. The right setup should support fresh linen, faster turnaround times, efficient daily operation and better cost control.
             </p>
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak demand.'],
+            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.'],
             ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
-            ['icon'=>'6',  'prefix'=>'', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',                'body'=>'Electrolux Professional Heat Pump dryer technology can cut energy use by up to 65% in suitable applications.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can cut detergent waste, protect linen quality and keep wash results more consistent.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems connects equipment planning, maintenance, repairs, rental and aftercare so decisions are not only made after something fails.'],
+            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care',        'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and breakdown support', 'body'=>'Irish Laundry Systems brings equipment planning, planned maintenance, repairs, rental options and aftercare together, so hospitality laundry decisions are not only made after something fails.'],
         ]])
+    </div>
+</section>
+
+<!-- HOSPITALITY LAUNDRY PRIORITIES BENTO -->
+<section class="py-12 lg:py-16 bg-gray-50">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Protect <span style="color:#148af4;">guest experience</span> while <span style="color:#148af4;">keeping linen moving</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                The right laundry setup supports linen availability, housekeeping pressure, peak demand periods, finishing standards and the support needed to keep service moving.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/23.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Linen turnaround</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Bedding, towels, robes and flatwork need to move back into use quickly during busy periods.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/24.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping pressure</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Laundry affects room readiness, team workload and the rhythm of daily hotel service.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/25.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing and presentation</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ironing and flatwork quality support the visual standard guests notice in rooms, restaurants and service areas.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/26.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak occupancy planning</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">The laundry room should be planned around peak demand periods, not only average daily use.</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/6.png" alt="" class="w-28 h-28 object-contain">
+                </div>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room can support faster turnaround times, higher quality control standards and better control over what is washed, how and when.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
 
@@ -170,12 +170,12 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Routes</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Connected support to <span style="color:#148af4;">keep hospitality laundry moving</span>
+                Support that <span style="color:#148af4;">keeps hospitality laundry moving</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Hotels and hospitality sites often need equipment, maintenance, breakdown support and aftercare to work together around linen flow, guest standards and peak demand.
+                Hotels and hospitality sites often need equipment, maintenance, breakdown support and aftercare to work together around linen turnaround, guest standards and peak demand.
             </p>
         </div>
 
@@ -192,7 +192,7 @@
                 [
                     'title'  => 'Preventive Maintenance',
                     'text'   => 'Planned maintenance for sites that need better control over recurring issues, servicing needs and busy-period risk.',
-                    'cta'    => 'View Maintenance Options',
+                    'cta'    => 'View Preventive Maintenance Contracts',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/service-contracts-hero.png',
                     'pos'    => '90% 35%',
@@ -207,7 +207,7 @@
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
-                    'text'   => 'Follow-up care, service history, genuine parts access where applicable and clearer repair, rental or replacement decisions after installation or inspection.',
+                    'text'   => 'Follow-up care, service history, genuine parts support where needed and clearer maintenance, repair, rental or replacement decisions after installation or inspection.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
@@ -253,15 +253,15 @@
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
         <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Plan the <span style="color:#011E41;">property laundry room</span></span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around workflow, capacity and <span style="color:#011E41;">peak demand</span></span>
+            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around linen demand, space and <span style="color:#011E41;">peak periods</span></span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            Before equipment becomes a daily service issue, the room, linen flow, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property actually operates.
+            Before equipment becomes a daily service issue, the room, linen demand, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property operates.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
             <span class="font-body text-white text-sm font-bold">Avoid wasted spend</span>
             <span class="text-white/40">|</span>
-            <span class="font-body text-white text-sm font-bold">Right-fit linen flow</span>
+            <span class="font-body text-white text-sm font-bold">Right-fit laundry room</span>
             <span class="text-white/40">|</span>
             <span class="font-body text-white text-sm font-bold">Reduce costly rework</span>
         </div>
@@ -312,11 +312,11 @@
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Go to Products
+                            View Washing Machine Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                         <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Assessment
+                            Request Hospitality Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
@@ -338,7 +338,7 @@
                     <div class="mt-1 pt-3">
                         <button @click="open = !open"
                                 class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Control</span>
+                            <span class="font-heading font-bold text-navy text-lg">System Features and Moisture Control</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -348,7 +348,7 @@
                 <div>
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                        Tumble dryers support linen turnaround where <span style="color:#148af4;">drying time</span>, residual moisture, energy use and room flow can affect the pace of the day.
+                        Tumble dryers support linen turnaround where <span style="color:#148af4;">drying time</span>, residual moisture, energy use and room layout can affect the pace of the day.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -367,11 +367,11 @@
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4 mb-6">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Go to Products
+                            View Dryer Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                         <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Assessment
+                            Request Hospitality Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
@@ -409,11 +409,11 @@
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Go to Products
+                            View Ironer Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                         <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Assessment
+                            Request Hospitality Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
@@ -424,7 +424,7 @@
                          class="w-full h-80 object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS &amp; Hygiene Guard</span>
+                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS and Hygiene Guard</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -494,7 +494,7 @@
                     <div class="mt-1 pt-3">
                         <button @click="open = !open"
                                 class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
+                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO and Hygiene Watchdog</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -521,11 +521,11 @@
                     </ul>
                     <div class="flex flex-row flex-wrap items-center gap-4">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            View Equipment
+                            View Barrier Washer Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                         <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Assessment
+                            Request Hospitality Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
@@ -550,7 +550,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Protect linen quality while <span style="color:#148af4;">cutting detergent waste</span>
+                <span style="color:#148af4;">Protect linen quality</span> while <span style="color:#148af4;">cutting detergent waste</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
                 Automatic dosing supports hospitality laundry rooms by using the right amount of detergent for each cycle. That can reduce chemical overuse, protect towels, robes, bedding and table linen, lower maintenance pressure and support more consistent wash results over time.
@@ -711,9 +711,9 @@
 <!-- PROCESS BLOCK -->
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Process</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">How We Work</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-            Our process keeps the <span style="color:#148af4;">next step</span> clear
+            Clear advice before the next <span style="color:#148af4;">equipment or service decision</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
             A clear four-step path from property review to the next useful recommendation.
@@ -721,10 +721,10 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Assess the room',                       'text' => 'Review linen flow, peak demand, housekeeping pressure and available space before any equipment is chosen.',                                  'icon' => 'clipboard'],
-                ['title' => 'Match the equipment',                   'text' => 'Recommend the right washing, drying, finishing, rental option or guest-laundry setup to suit how the property operates.',                       'icon' => 'Ativo%204'],
-                ['title' => 'Connect maintenance and aftercare',     'text' => 'Link the equipment already on-site to service contracts, repairs, follow-up care and future decisions.',         'icon' => 'Ativo%206'],
-                ['title' => 'Move to assessment',                    'text' => 'Turn the property, equipment setup and support needs into a clear next step.',                                'icon' => 'Ativo%203'],
+                ['title' => 'Assess the room',                       'text' => 'Review linen demand, peak periods, housekeeping pressure and available space.',                                  'icon' => 'clipboard'],
+                ['title' => 'Match the equipment',                   'text' => 'Recommend the right washing, drying, finishing, rental option or guest-laundry setup.',                       'icon' => 'Ativo%204'],
+                ['title' => 'Plan maintenance and aftercare',        'text' => 'Match equipment in use to preventive maintenance, repairs, follow-up care and future decisions.',         'icon' => 'Ativo%206'],
+                ['title' => 'Agree the next step',                   'text' => 'Turn the property, equipment needs and support needed into a clear next step.',                                'icon' => 'Ativo%203'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
@@ -751,12 +751,12 @@
 
 <!-- SERVICE CONTRACTS + SUPPORT & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
-    'headingLine1' => '<span style="color:#011E41;">Protect linen flow</span>, control<br>service costs and keep <span style="color:#011E41;">peace</span>',
+    'headingLine1' => '<span style="color:#011E41;">Protect linen turnaround</span>, control<br>service costs and keep <span style="color:#011E41;">peace</span>',
     'headingLine2' => '<span style="color:#ffffff;"><span style="color:#011E41;">of mind</span> after installation</span>',
-    'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps the follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
+    'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
     'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Peace of mind'],
-    'cta1Label'    => 'View Service Contracts',
+    'cta1Label'    => 'View Preventive Maintenance Contracts',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',
     'cta2Route'    => 'parts-aftercare',
@@ -766,7 +766,7 @@
 @include('components.testimonials', [
     'eyebrow'    => 'Client Feedback',
     'heading'    => 'Trusted by teams that need <span style="color:#148af4;">linen to keep moving</span>',
-    'subheading' => 'Irish Laundry Systems is trusted by hospitality teams that need clear communication, reliable support and people who know the equipment when linen flow, housekeeping pressure and peak-period demand affect daily service.',
+    'subheading' => 'Irish Laundry Systems is trusted by hospitality teams that need clear communication, reliable support and people who know the equipment when linen turnaround, housekeeping pressure and peak-period demand affect daily service.',
 ])
 
 @include('components.proof-bar')
@@ -789,7 +789,7 @@
 @include('components.cta-downtime-form', [
     'pageSource'  => 'hospitality_cta',
     'heading'     => 'Ready to take control of your hospitality laundry',
-    'body'        => 'Tell us about the property, current equipment, linen demand, peak periods and pressure points. Irish Laundry Systems will connect the enquiry to the right equipment, rental, service contract, repair or aftercare step.',
+    'body'        => 'Tell us about the property, current equipment, linen demand, peak periods and pressure points. Irish Laundry Systems will guide you toward the right equipment advice, equipment quote, rental, preventive maintenance, repair or aftercare support.',
     'formTitle'   => 'Request a Hospitality Laundry Assessment',
     'buttonText'  => 'Request Hospitality Assessment',
 ])

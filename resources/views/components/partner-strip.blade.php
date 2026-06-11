@@ -28,18 +28,18 @@
         <div class="hidden lg:flex items-center gap-20">
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <img src="/images/icons/strip-electrical-contractor.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain flex-shrink-0">
+                <img src="/images/icons/46.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Electrical Contractor</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <img src="/images/icons/strip-gas-installer.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain flex-shrink-0">
+                <img src="/images/icons/45.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain">
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
-                <img src="/images/icons/strip-clients-supported.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain flex-shrink-0">
-                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">100+ clients supported</span>
+                <span class="font-heading font-bold text-navy text-3xl leading-none">100+</span>
+                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Long-standing relationships</span>
             </div>
 
         </div>
@@ -47,7 +47,7 @@
         <!-- Learn more button -->
         <a href="{{ route('electrolux') }}"
            class="hidden md:inline-flex items-center gap-2 border border-navy/20 hover:border-navy text-navy/70 hover:text-navy font-body font-bold px-4 py-2 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap rounded">
-            Learn More
+            Learn more
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
             </svg>

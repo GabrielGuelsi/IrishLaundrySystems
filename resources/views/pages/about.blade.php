@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('meta')
-<meta name="description" content="Built from electrical contracting roots and Electrolux Professional service experience. Irish Laundry Systems supports 38 client locations across Dublin and Ireland since 1987.">
+<meta name="description" content="Built from electrical contracting roots and Electrolux Professional service experience. Irish Laundry Systems supports 100+ clients across Dublin and Ireland since 1987.">
 @endsection
 
 @section('content')
@@ -27,7 +27,7 @@
                     <span class="block"><span class="text-[#148af4]">connected</span> <span class="text-[#011E41]">since 1987</span></span>
                 </h1>
                 <p class="font-body text-white/70 text-base leading-relaxed mb-8 max-w-2xl [&_br]:hidden lg:[&_br]:inline">
-                    Built from electrical contracting roots and Electrolux Professional<br>service experience, Irish Laundry Systems supports 38 client<br>locations across Dublin and Ireland with equipment supply, rental,<br>maintenance, repairs and aftercare for business-critical laundry rooms.
+                    Built from electrical contracting roots and Electrolux Professional<br>service experience, Irish Laundry Systems supports 100+ clients<br>across Dublin and Ireland with equipment supply, rental,<br>maintenance, repairs and aftercare for business-critical laundry rooms.
                 </p>
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="{{ route('request-assessment') }}"
@@ -107,7 +107,7 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach([
                 ['1987', 'year',       'Since 1987',                      'Commercial laundry engineering roots in Ireland.'],
-                ['38',   'locations',  '38 client locations',              'Commercial laundry locations served across Dublin and Ireland.'],
+                ['100+', 'clients',    '100+ clients supported',           'Commercial laundry clients supported across Dublin and Ireland.'],
                 ['/images/logo/electrolux-partner.png', 'partner', 'Electrolux Professional Partner', 'Authorised partner for a recognised professional laundry equipment platform.'],
                 ['RGI',  'certified',  'Registered technical capability',  'Safe Electric registered and Registered Gas Installer (RGI) contractor capability.'],
             ] as [$num, $sub, $title, $desc])
@@ -272,7 +272,7 @@
             <div class="lg:col-span-2 flex flex-col lg:flex-row overflow-hidden rounded-2xl reveal lg:min-h-[340px]">
                 <div class="bg-navy p-8 lg:p-10 flex flex-col justify-start flex-shrink-0 w-full lg:w-[45%]">
                     <div>
-                        <h3 class="font-heading font-bold text-[#148af4] text-2xl lg:text-3xl leading-snug mb-3">38 client locations</h3>
+                        <h3 class="font-heading font-bold text-[#148af4] text-2xl lg:text-3xl leading-snug mb-3">100+ clients supported</h3>
                         <p class="font-body text-white/70 text-lg leading-relaxed">Commercial laundry sites supported across Dublin and Ireland with equipment, maintenance, repairs and aftercare since 1987.</p>
                     </div>
                 </div>
