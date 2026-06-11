@@ -121,31 +121,13 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
-            @foreach([
-                ['prefix' => '', 'stat' => '20%',   'label' => 'gas energy saving', 'copy' => 'Electrolux Professional Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.', 'badge' => 'Gas-heated models only'],
-                ['prefix' => '', 'stat' => '+30%',  'label' => 'productivity',      'copy' => 'Dubixium supports stronger output by distributing heat evenly across the cylinder and reducing overheating pressure.', 'badge' => 'Dubixium'],
-                ['prefix' => 'Up to', 'stat' => '600', 'label' => 'sheets daily',   'copy' => 'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output.', 'badge' => 'Output depends on model, linen type and room setup'],
-                ['prefix' => '', 'stat' => '',       'label' => 'Fewer manual steps', 'copy' => 'Feeding, folding and stacking options can reduce manual handling pressure and keep linen moving with fewer interruptions.', 'badge' => 'Feed / Fold / Stack'],
-                ['prefix' => '', 'stat' => '',       'label' => 'Right configuration first', 'copy' => 'Front or rear delivery, working width, automation and heating choice all affect room flow, running cost and long-term value.', 'badge' => 'Configuration'],
-            ] as $card)
-            <div class="p-6 flex flex-col items-center text-center gap-3 col-span-1">
-                <div class="flex items-center justify-center h-16">
-                    @if($card['stat'])
-                    <p class="font-heading font-bold leading-none">
-                        @if($card['prefix'])<span class="font-body text-gray-400 text-xs font-semibold uppercase tracking-wide block mb-1">{{ $card['prefix'] }}</span>@endif
-                        <span class="text-[#148af4] text-4xl sm:text-5xl">{{ $card['stat'] }}</span>
-                    </p>
-                    @else
-                    <div class="w-10 h-1 rounded-full bg-[#148af4]"></div>
-                    @endif
-                </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['label'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
-                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
-            </div>
-            @endforeach
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'6',  'prefix'=>'',      'stat'=>'20%',                       'size'=>'text-4xl', 'label'=>'gas energy saving',             'body'=>'Electrolux Professional Ceramic Burner technology can reduce gas energy use on suitable gas-heated models. Gas-heated models only.'],
+            ['icon'=>'9',  'prefix'=>'',      'stat'=>'+30%',                      'size'=>'text-4xl', 'label'=>'productivity',                  'body'=>'Dubixium supports stronger output by distributing heat evenly across the cylinder and reducing overheating pressure.'],
+            ['icon'=>'34', 'prefix'=>'Up to', 'stat'=>'600',                       'size'=>'text-4xl', 'label'=>'sheets daily',                  'body'=>'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output. Output depends on model, linen type and room setup.'],
+            ['icon'=>'16', 'prefix'=>'',      'stat'=>'Fewer<br>manual steps',     'size'=>'text-2xl', 'label'=>'feed, fold and stack options',  'body'=>'Feeding, folding and stacking options can reduce manual handling pressure and keep linen moving with fewer interruptions.'],
+            ['icon'=>'11', 'prefix'=>'',      'stat'=>'Right<br>configuration',    'size'=>'text-2xl', 'label'=>'chosen first',                  'body'=>'Front or rear delivery, working width, automation and heating choice all affect room flow, running cost and long-term value.'],
+        ]])
     </div>
 </section>
 

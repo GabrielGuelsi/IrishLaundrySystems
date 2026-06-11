@@ -162,21 +162,13 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            @foreach([
-                ['title' => '35 min drying cycles',       'copy' => 'Heat Pump Dryer performance can protect turnaround time in busy laundry rooms where linen needs to move quickly.'],
-                ['title' => '33% lower CO₂ per cycle',     'copy' => 'Heat Pump Dryer technology can reduce greenhouse gas emissions per drying cycle where the equipment and setup are suitable.'],
-                ['title' => 'No exhaust / water cooling',  'copy' => 'Selected Heat Pump Dryer options can reduce installation pressure where the room and ventilation setup allow.'],
-                ['title' => 'Dry not overdry',             'copy' => 'Moisture Balance protects linen value and reduces wasted energy by stopping at the selected dryness level.'],
-                ['title' => 'Lower upfront cost',          'copy' => 'Rental can support dryer replacement, expansion or capacity planning without turning every equipment decision into one large capital purchase.'],
-            ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-6 flex flex-col h-full col-span-1">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-            </div>
-            @endforeach
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'34', 'prefix'=>'',     'stat'=>'35 min',              'size'=>'text-4xl', 'label'=>'drying cycles',           'body'=>'Heat Pump Dryer performance can protect turnaround time in busy laundry rooms where linen needs to move quickly.'],
+            ['icon'=>'26', 'prefix'=>'',     'stat'=>'-33%',                'size'=>'text-4xl', 'label'=>'CO₂ per cycle',           'body'=>'Heat Pump Dryer technology can reduce greenhouse gas emissions per drying cycle where the equipment and setup are suitable.'],
+            ['icon'=>'96', 'prefix'=>'',     'stat'=>'No<br>exhaust',       'size'=>'text-2xl', 'label'=>'or water cooling',        'body'=>'Selected Heat Pump Dryer options can reduce installation pressure where the room and ventilation setup allow.'],
+            ['icon'=>'21', 'prefix'=>'',     'stat'=>'Dry not<br>overdry',  'size'=>'text-2xl', 'label'=>'Moisture Balance',        'body'=>'Moisture Balance protects linen value and reduces wasted energy by stopping at the selected dryness level.'],
+            ['icon'=>'30', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost','size'=>'text-2xl','label'=>'rental where suitable',   'body'=>'Rental can support dryer replacement, expansion or capacity planning without turning every equipment decision into one large capital purchase.'],
+        ]])
     </div>
 </section>
 
