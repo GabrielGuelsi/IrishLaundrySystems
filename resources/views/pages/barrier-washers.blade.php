@@ -216,7 +216,7 @@
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
             <div class="flex flex-col gap-6">
                 <div class="flex flex-col sm:flex-row gap-5 items-start">
-                    <img src="/images/icons/6.png" alt="4-star ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
+                    <img src="/images/icons/EGOCERT.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic interventions can reduce work-related musculoskeletal disorders (WMSDs) by <strong class="text-navy font-bold">59%</strong>, with an average decrease of <strong class="text-navy font-bold">75%</strong> in sick days and a <strong class="text-navy font-bold">25%</strong> increase in productivity.</p>
