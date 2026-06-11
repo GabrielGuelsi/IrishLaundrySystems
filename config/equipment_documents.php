@@ -106,6 +106,13 @@ return [
             ],
         ],
 
+        // PW9C — only these three document types (files to be supplied)
+        'pw9c' => [
+            'CAD Drawings' => [],
+            'Data Sheet' => [],
+            'User Manuals' => [],
+        ],
+
     ],
 
 ];
