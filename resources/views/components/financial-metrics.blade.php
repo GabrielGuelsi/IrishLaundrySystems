@@ -33,8 +33,9 @@
                 </div>
             </div>
 
-            {{-- label: full card width; shrinks on the narrow 5-col (xl) cards so it stays on one line --}}
-            <h3 class="font-heading font-bold text-navy text-sm xl:text-xs tracking-tight leading-snug mt-2">{{ $it['label'] }}</h3>
+            {{-- label: short labels tuck under the blue stat; long labels use the full card width to stay on one line --}}
+            @php $labelIndent = strlen(strip_tags($it['label'])) <= 13 ? 'pl-[4.75rem] xl:pl-[5.75rem]' : ''; @endphp
+            <h3 class="font-heading font-bold text-navy text-sm xl:text-xs tracking-tight leading-snug mt-2 {{ $labelIndent }}">{{ $it['label'] }}</h3>
         </div>
 
         @if(!empty($it['body']))
