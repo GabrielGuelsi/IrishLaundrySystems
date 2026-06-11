@@ -27,11 +27,11 @@
              the label sits below the row (same vertical position on every card). Short labels are
              indented to tuck under the stat; long labels use the full card width. --}}
         @php
-            $isShort = strlen(strip_tags($it['label'])) <= 13;
             $labelClasses = 'font-heading font-bold text-navy text-sm leading-snug';
-            $labelIndent = $isShort ? 'pl-[4.75rem] xl:pl-[5.75rem]' : '';
+            // indent = icon width + gap, so every label starts exactly where the prefix/stat text starts
+            $labelIndent = 'pl-[4.25rem] xl:pl-[5.25rem]';
         @endphp
-        <div class="lg:min-h-[6.5rem] w-fit">
+        <div class="lg:min-h-[6.5rem]">
             <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
@@ -39,12 +39,7 @@
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
             </div>
-            @if($isShort)
             <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }}">{{ $it['label'] }}</h3>
-            @else
-            {{-- long label: right edge lines up with the end of the stat row --}}
-            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto">{{ $it['label'] }}</h3>
-            @endif
         </div>
 
         @if(!empty($it['body']))
