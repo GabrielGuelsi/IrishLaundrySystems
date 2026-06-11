@@ -169,6 +169,15 @@ class PageController extends Controller
             ->first();
 
         if (! $item) {
+            // No detail page for this slug (e.g. a range/family card with no single SKU).
+            // Fall back to the category listing instead of a dead end, but only for a
+            // category we actually serve — otherwise it's a genuine 404.
+            $servedCategories = ['washers', 'tumble-dryers', 'ironers', 'finishing-equipment', 'drying-cabinets', 'barrier-washers'];
+
+            if (in_array($category, $servedCategories, true) || array_key_exists($category, config('equipment'))) {
+                return redirect()->route('equipment.category', $category);
+            }
+
             abort(404);
         }
 
