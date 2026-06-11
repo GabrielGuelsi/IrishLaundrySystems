@@ -140,7 +140,7 @@
             ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.'],
             ['icon'=>'9',  'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
             ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste',      'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance pressure',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so care home laundry decisions are not only made after something fails.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so care home laundry decisions are not only made after something fails.'],
         ]])
     </div>
 </section>
@@ -155,7 +155,7 @@
                 <span class="">Features that support <span style="color:#148af4;">daily care,</span> <span style="color:#148af4;">staff handling</span></span>
                 <span class="">and <span style="color:#148af4;">laundry consistency</span></span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Selected Electrolux Professional features can support easier handling, clearer process control, better drying and more
                 manageable day-to-day laundry routines when matched to the right care setting.
             </p>
@@ -164,8 +164,8 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
-                <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/13.png" alt="" class="w-28 h-28 object-contain">
+                <div class="flex items-center justify-center h-40">
+                    <img src="/images/icons/13.png" alt="" class="w-36 h-36 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident laundry handling</h3>
@@ -204,8 +204,8 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
-                <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/16.png" alt="" class="w-28 h-28 object-contain">
+                <div class="flex items-center justify-center h-40">
+                    <img src="/images/icons/16.png" alt="" class="w-36 h-36 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
@@ -243,9 +243,9 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Maintenance Contracts',
+                    'title'  => 'Preventive Maintenance',
                     'text'   => 'For care homes that need planned visits, fewer last-minute maintenance decisions and better control around essential laundry equipment.',
-                    'cta'    => 'View Contracts',
+                    'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/service-contracts-hero.png',
                     'pos'    => '90% 35%',

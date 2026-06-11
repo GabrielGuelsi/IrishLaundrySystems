@@ -77,6 +77,49 @@ return [
             ],
         ],
 
+        // Quickwash QWC
+        'quickwash-qwc' => [
+            'CAD Drawings' => [
+                ['label' => 'QuickWash QWC — CAD Drawing (DWG)', 'url' => '/pdfs/QuickWash QWC.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'QuickWash QWC — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919460EN_QuickWash%20QWC_EN.pdf?version=1781186423'],
+            ],
+            'User Manuals' => [
+                ['label' => 'QuickWash QWC — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_QuickWash%20QWC_438909610_EN.pdf?version=1781186423'],
+                ['label' => 'QuickWash QWC — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_QuickWash%20QWC_438905490_EN.pdf?version=1781186423'],
+            ],
+        ],
+
+        // W4-Series — Heavy-duty washer-extractors
+        'w4-series' => [
+            'CAD Drawings' => [
+                ['label' => 'W4400H — CAD Drawing (DWG)', 'url' => '/pdfs/W4400H.dwg'],
+                ['label' => 'W4850H — CAD Drawing (DWG)', 'url' => '/pdfs/950841_W4850H.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'W4-Series — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_W4400H_438919565_EN.pdf?version=1781186796'],
+            ],
+            'User Manuals' => [
+                ['label' => 'W4-Series — Operating Manual (W4400H · W4600H · W4850H · W41100H)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_438921321EN_W4400H_W4600H_W4850H_W41100H_EN.pdf?version=1781186796'],
+                // Installation manual: the URL supplied was identical to the operating manual above (likely a paste error) — add the correct IN_ link here when available.
+            ],
+        ],
+
+        // PW9C — Professional washer
+        'pw9c' => [
+            'CAD Drawings' => [
+                ['label' => 'PW9C — CAD Drawing (DWG)', 'url' => '/pdfs/PW9C.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'PW9C — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919529EN_PW9C_EN.pdf?version=1781187430'],
+            ],
+            'User Manuals' => [
+                ['label' => 'PW9C — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_438921490EN_PW9C_EN.pdf?version=1781187430'],
+                ['label' => 'PW9C — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_PW9C_438921790_EN.pdf?version=1781187430'],
+            ],
+        ],
+
     ],
 
 ];

@@ -263,10 +263,10 @@
             {{-- Card 4: ERGOCERT --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/5.png" alt="4-star ERGOCERT" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-28 h-28 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Certified ergonomic design</h3>
+                    <h3 class="font-heading font-bold text-navy text-sm tracking-tight leading-snug mb-1.5">Certified ergonomic design</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed">Selected Electrolux Professional Line 6000 equipment carries 4-star ERGOCERT recognition for ergonomic design.</p>
                 </div>
             </div>
@@ -314,9 +314,9 @@
                     'pos'    => 'center 40%',
                 ],
                 [
-                    'title'  => 'Preventive Maintenance Contracts',
+                    'title'  => 'Preventive Maintenance',
                     'text'   => 'For healthcare sites that need planned visits, fewer reactive maintenance decisions and better control around critical laundry equipment.',
-                    'cta'    => 'View Contracts',
+                    'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/service-contracts-hero.png',
                     'pos'    => '90% 35%',
@@ -393,7 +393,7 @@
                 <span>Equipment built around <span style="color:#148af4;">healthcare hygiene,</span></span>
                 <span><span style="color:#148af4;">running cost</span> and daily demand</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 The right equipment plan depends on room configuration, wash demand, drying pressure, finishing needs, hygiene routines and the support that keeps the equipment performing over time.
             </p>
         </div>
