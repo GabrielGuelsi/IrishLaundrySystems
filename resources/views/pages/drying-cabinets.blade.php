@@ -140,6 +140,38 @@
     </div>
 </section>
 
+{{-- 6b. WHERE DRYING CABINETS FIT --}}
+<section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Useful wherever wet or delicate items need <span style="color:#148af4;">controlled drying</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Drying cabinets are especially useful for sites where garments, shoes, gloves, outerwear or specialist items need to dry without losing shape, finish or function.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            @foreach([
+                ['title' => 'Hospitality and guest garment care',      'copy' => 'For hotels, guesthouses and hospitality sites handling guest garments, robes, uniforms, delicate fabrics or items that should not be tumble dried.'],
+                ['title' => 'Schools, childcare and leisure sites',     'copy' => 'For jackets, outdoor clothing, shoes, sportswear and wet items that need to dry between uses.'],
+                ['title' => 'Workwear and uniforms',                    'copy' => 'For staff clothing, protective garments, waterproof clothing, high-visibility workwear and items with zips, reflective strips or coatings.'],
+                ['title' => 'Emergency services and specialist teams',  'copy' => 'For firefighters, road workers, maintenance teams and other groups using gloves, boots, helmets or protective workwear.'],
+                ['title' => 'Specialist textile care',                  'copy' => 'For laundries or textile care sites handling wool, linen, silk, velvet, long dresses, curtains or garments that need gentler drying.'],
+            ] as $card)
+            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
+                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 {{-- 7. RANGE TEASERS CAROUSEL --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -415,6 +447,45 @@
     </div>
 </section>
 
+{{-- 9b. ACCESSORIES --}}
+<section class="py-12 lg:py-16 bg-gray-50">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Accessories that make <span style="color:#148af4;">cabinet drying more useful</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                The right accessories can make a drying cabinet more practical for the items a site handles every day. Options can support hanging garments, shoes, gloves, boots and specialist clothing.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            @foreach([
+                ['title' => 'Hanger sticks',          'copy' => 'For garments that need to hang properly while drying.'],
+                ['title' => 'Shoe shelves',           'copy' => 'For shoes, boots and bulky footwear that should not be dried loose in a tumble dryer.'],
+                ['title' => 'Glove hangers',          'copy' => 'For gloves, protective clothing and specialist workwear accessories.'],
+                ['title' => 'Glove and boot dryer',   'copy' => 'For sites with regular boot, glove or protective workwear drying needs.'],
+            ] as $card)
+            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
+                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+            </div>
+            @endforeach
+        </div>
+
+        <div class="mt-8">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                Ask About Accessories
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+        </div>
+    </div>
+</section>
+
 {{-- 10. CONNECTED SERVICE ROUTES --}}
 <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -614,26 +685,53 @@
     </div>
 </section>
 
-{{-- 16. FINAL CTA --}}
-<section class="py-16 lg:py-24" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Ready to choose the <span style="color:#148af4;">right drying cabinet</span> for your site
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Tell us what you need to dry, how often the cabinet will be used and what room conditions you have. Irish Laundry Systems will guide you toward the right equipment advice, equipment quote, rental, preventive maintenance, repair or aftercare support.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Talk to Our Team
-            </a>
-            <a href="{{ route('request-assessment') }}"
-               class="inline-flex items-center justify-center gap-2 border-2 border-white/60 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                Request Equipment Advice
-            </a>
+{{-- 15c. RELATED EQUIPMENT --}}
+<section class="py-12 lg:py-16 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Other equipment that may support the <span style="color:#148af4;">same laundry room</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Drying cabinets often sit alongside washers, tumble dryers, dosing systems or specialist textile care equipment depending on what the site needs to dry and how the room is used.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            @foreach([
+                ['title' => 'Commercial Washers', 'copy' => 'For daily washing of workwear, towels, uniforms, bedding and mixed textiles.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers'])],
+                ['title' => 'Tumble Dryers',      'copy' => 'For general drying demand where tumble drying is suitable for the load.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers'])],
+                ['title' => 'Dosing Systems',     'copy' => 'For detergent control, lower waste and more consistent wash results.', 'cta' => 'Ask About Dosing Systems', 'route' => route('contact')],
+                ['title' => 'Wet Cleaning',       'copy' => 'For specialist textile care where delicate garments, leathers or shoes need a different cleaning process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('contact')],
+            ] as $card)
+            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
+                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $card['copy'] }}</p>
+                <a href="{{ $card['route'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm">
+                    {{ $card['cta'] }}
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
+            </div>
+            @endforeach
         </div>
     </div>
 </section>
+
+{{-- 16. FINAL CTA --}}
+@include('components.cta-downtime-form', [
+    'pageSource'        => 'drying_cabinets_cta',
+    'eyebrow'           => 'Request Equipment Advice',
+    'heading'           => 'Ready to choose the <span style="color:#148af4;">right drying cabinet</span> for your site',
+    'body'              => 'Tell us what you need to dry, how often the cabinet will be used and what room conditions you have. Irish Laundry Systems will guide you toward the right equipment advice, equipment quote, rental, preventive maintenance, repair or aftercare support.',
+    'formTitle'         => 'Request Drying Cabinet Advice',
+    'buttonText'        => 'Request Drying Cabinet Advice',
+    'showLocationField' => true,
+    'equipmentLabel'    => 'Current laundry setup',
+    'messageLabel'      => 'What do you need to dry?',
+    'requestTypeLabel'  => 'Are you looking at equipment purchase, rental, repair or maintenance?',
+])
 
 @endsection
