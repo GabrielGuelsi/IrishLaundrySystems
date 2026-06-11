@@ -33,8 +33,8 @@
                 </div>
             </div>
 
-            {{-- label: under the stat, indented past the icon --}}
-            <h3 class="font-heading font-bold text-navy text-sm leading-snug mt-1.5 pl-[4.75rem] xl:pl-[5.75rem]">{{ $it['label'] }}</h3>
+            {{-- label: full card width; shrinks on the narrow 5-col (xl) cards so it stays on one line --}}
+            <h3 class="font-heading font-bold text-navy text-sm xl:text-xs tracking-tight leading-snug mt-2">{{ $it['label'] }}</h3>
         </div>
 
         @if(!empty($it['body']))
