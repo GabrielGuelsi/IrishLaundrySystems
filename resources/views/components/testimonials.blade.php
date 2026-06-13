@@ -2,6 +2,7 @@
     'heading'    => 'What our customers say.',
     'eyebrow'    => null,
     'subheading' => null,
+    'subheadingClass' => 'max-w-3xl mx-auto',
     'light'      => false,
     'bordered'   => true,
     'single'     => null,
@@ -79,7 +80,7 @@ $showChrome = ! $single && count($slides) > 1;
                 @endif
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
-                    <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl mx-auto">{!! $subheading !!}</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mt-4 {{ $subheadingClass }}">{!! $subheading !!}</p>
                 @endif
             </div>
         @endif

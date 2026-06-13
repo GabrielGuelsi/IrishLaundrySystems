@@ -43,10 +43,18 @@
         </p>
 
         @if($miniPoints)
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        @php $miniHasIcons = is_array($miniPoints[0] ?? null); @endphp
+        <div class="flex items-center flex-wrap gap-y-2 {{ $miniHasIcons ? 'gap-x-4 lg:flex-nowrap' : 'gap-x-5' }} mb-7">
             @foreach($miniPoints as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
+            @if($i > 0)<span class="text-white/40 flex-shrink-0">|</span>@endif
+            @if(is_array($pt))
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-16 w-auto object-contain">
+                <span class="font-body text-white text-sm font-bold whitespace-nowrap">{{ $pt['label'] }}</span>
+            </span>
+            @else
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endif
             @endforeach
         </div>
         @else

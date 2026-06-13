@@ -43,7 +43,7 @@
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="h-[88px] flex items-center justify-center">
-                    <span class="font-heading font-bold text-navy text-3xl leading-none">100+ <span class="text-xl">clients</span></span>
+                    <img src="/images/icons/50.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain">
                 </div>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Long-standing relationships</span>
             </div>

@@ -143,7 +143,7 @@
             </h2>
         </div>
         <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-            A healthcare laundry room needs more than the right machine. It needs controlled handling from soiled linen collection through washing, drying, finishing, clean linen protection, storage and return to use.
+            A healthcare laundry room needs more than the right machine. It needs controlled handling from soiled linen collection<br>through washing, drying, finishing, clean linen protection, storage and return to use.
         </p>
         <p class="font-body text-gray-500 text-base leading-relaxed mb-10">
             Irish Laundry Systems uses that full-room view to plan the room, equipment choice, installation and aftercare around daily healthcare laundry demand.
@@ -192,7 +192,7 @@
                 <span>before poor setup drains budget</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Healthcare laundry can become a daily cost problem through energy use, water use, detergent waste, staff strain, clean linen delays and reactive call-outs.
+                Healthcare laundry can become a daily cost problem through energy use, water use, detergent waste, staff strain, clean linen delays and reactive call-outs.<br>
                 The right equipment plan should support hygiene routines while reducing avoidable running-cost pressure.
             </p>
         </div>
@@ -230,7 +230,7 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/2.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/2.png" alt="" class="w-[120px] h-[120px] object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene-focused design</h3>
@@ -241,7 +241,7 @@
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/3.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/3.png" alt="" class="w-[104px] h-[104px] object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator wellbeing first</h3>
@@ -252,7 +252,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/4.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/4.png" alt="" class="w-[100px] h-[100px] object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Guided process control</h3>
@@ -263,7 +263,7 @@
             {{-- Card 4: ERGOCERT --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-[100px] h-[100px] object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm tracking-tight leading-snug mb-1.5">Certified ergonomic design</h3>
@@ -274,7 +274,7 @@
             {{-- Card 5: AIDO --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="" class="w-[80px] h-[80px] object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Secure door handling</h3>
@@ -375,7 +375,11 @@
 @include('components.cta-combined-banner', [
     'heading'    => '<span style="color:#011E41;">Plan the healthcare laundry room</span> before costs repeat every day',
     'body'       => 'Before equipment becomes a daily cost problem, the room, workload, utilities, hygiene handling and maintenance needs should be understood together. Irish Laundry Systems plans healthcare laundry equipment around real operating pressure, not just machine capacity.',
-    'miniPoints' => ['Avoid wasted spend', 'Right-fit healthcare laundry room', 'Reduce costly rework'],
+    'miniPoints' => [
+        ['icon' => 'healthcareplanningstrip1', 'label' => 'Avoid wasted spend'],
+        ['icon' => 'healthcareplanningstrip2', 'label' => 'Right-fit healthcare laundry room'],
+        ['icon' => 'healthcareplanningstrip3', 'label' => 'Reduce costly rework'],
+    ],
     'ctaText'    => 'Talk to Our Team',
 ])
 
@@ -770,7 +774,7 @@
                 <span>another running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                Automatic dosing supports healthcare laundry rooms by using the right amount of detergent for each cycle.
+                Automatic dosing supports healthcare laundry rooms by using the right amount of detergent for each cycle.<br>
                 That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.
             </p>
         </div>
@@ -931,10 +935,14 @@
     'headingLine1' => '<span style="color:#148af4;">Keep healthcare laundry</span><br><span style="color:#148af4;">moving</span> without one',
     'headingLine2' => 'large purchase upfront',
     'body' => 'For healthcare sites facing replacement pressure, capacity needs or ageing equipment, rental can keep the laundry room moving with a lower upfront cost than outright purchase, where rental is the right fit for the site.',
-    'miniPoints' => ['Lower upfront cost', 'Avoid one large purchase', 'Installed and supported'],
+    'miniPoints' => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Avoid one large purchase'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and supported'],
+    ],
 ])
 
-@include('components.equipment-categories', ['heading' => 'Equipment options for <span style="color:#148af4;">healthcare laundry rooms</span>', 'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed decision should still begin with the room, workload, hygiene process and maintenance needs.'])
+@include('components.equipment-categories', ['heading' => 'Equipment options for <span style="color:#148af4;">healthcare laundry rooms</span>', 'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed decision should still begin with the room, workload, hygiene process and maintenance needs.', 'subheadingClass' => 'lg:whitespace-nowrap'])
 
 {{-- Process Block --}}
 <section class="py-14 lg:py-20 bg-white">
@@ -944,8 +952,8 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Clear advice before the next <span style="color:#148af4;">equipment or service decision</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
-            From the first room review through to equipment advice, supply, rental, maintenance and aftercare, the next step should be clear before money is spent.
+        <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">
+            From the first room review through to equipment advice, supply, rental,<br>maintenance and aftercare, the next step should be clear before money is spent.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
@@ -981,11 +989,15 @@
 
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'After Installation',
-    'headingLine1' => '<span class="block"><span style="color:#011E41;">Protect the savings,</span> <span style="color:#011E41;">hygiene</span></span><span class="block"><span style="color:#011E41;">routines</span> and continuity built into</span>',
-    'headingLine2' => '<span style="color:#ffffff;">the equipment decision</span>',
+    'headingLine1' => '<span class="block"><span style="color:#011E41;">Protect the savings,</span> <span style="color:#011E41;">hygiene</span></span><span class="block"><span style="color:#011E41;">routines</span> and continuity built</span>',
+    'headingLine2' => '<span style="color:#ffffff;">into the equipment decision</span>',
     'body'         => 'The right equipment decision should not lose value after installation. Planned maintenance and aftercare keep the room, equipment and next steps clear, helping healthcare sites reduce surprise repair costs and keep vital laundry equipment running.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',
-    'miniPoints'   => ['Reduce surprise repair costs', 'Support hygiene routines', 'Keep equipment running'],
+    'miniPoints'   => [
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Support hygiene routines'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Keep equipment running'],
+    ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',
@@ -995,7 +1007,8 @@
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted <span style="color:#148af4;">healthcare laundry support</span> in Ireland',
-    'subheading' => 'Trusted by healthcare organisations across Ireland, including HSE (Health Service Executive) services, Irish Laundry Systems supports healthcare laundry environments where hygiene routines, equipment reliability and clear service support matter.',
+    'subheading' => 'Trusted by healthcare organisations across Ireland, including HSE (Health Service Executive) services,<br>Irish Laundry Systems supports healthcare laundry environments where hygiene routines, equipment reliability and clear service support matter.',
+    'subheadingClass' => 'max-w-6xl mx-auto',
 ])
 
 @include('components.proof-bar')

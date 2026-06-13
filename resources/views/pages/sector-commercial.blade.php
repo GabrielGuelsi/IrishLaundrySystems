@@ -12,7 +12,7 @@
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-32">
-            <div class="flex-1 reveal reveal-left max-w-3xl">
+            <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry Support</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span style="color:#011E41;">Keep</span> <span style="color:#148af4;">high-demand laundry operations</span><br><span style="color:#011E41;">under control</span>
@@ -78,7 +78,7 @@
                 Built for demanding commercial, <span style="color:#148af4;">shared-use and specialist laundry environments</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span>From high-volume commercial laundries to self-service, managed residential, leisure, public-sector, workwear and specialist sites,</span>
+                <span>From high-volume commercial laundries to self-service, managed residential, leisure, public-sector, workwear and specialist sites,</span><br>
                 <span>the setup should match how the laundry is used every day.</span>
             </p>
         </div>
@@ -163,7 +163,7 @@
                 <span>quietly adds pressure</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span>In high-demand sites, laundry cost can build through energy use, water use, detergent waste, slow drying, handling pressure,</span>
+                <span>In high-demand sites, laundry cost can build through energy use, water use, detergent waste, slow drying, handling pressure,</span><br>
                 <span>last-minute repairs and equipment decisions made too late.</span>
             </p>
         </div>
@@ -196,7 +196,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/34.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/34.png" alt="" class="w-32 h-32 object-contain">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Throughput and daily load</h3>
@@ -345,7 +345,7 @@
             <span class="text-white text-3xl sm:text-4xl lg:text-5xl">and <span style="color:#011E41;">running cost</span></span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            Before equipment becomes a cost or service problem, daily load, room layout, utilities, access, site use and maintenance needs should be understood together.
+            Before equipment becomes a cost or service problem, daily load, room layout,<br>utilities, access, site use and maintenance needs should be understood together.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
             @foreach(['Room layout', 'Equipment selection', 'Capacity planning'] as $i => $pt)
@@ -371,7 +371,7 @@
                 Equipment options for <span style="color:#148af4;">high-demand laundry environments</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span>The right equipment choice depends on daily load, textile mix, output pressure, drying demand, finishing needs,</span>
+                <span>The right equipment choice depends on daily load, textile mix, output pressure, drying demand, finishing needs,</span><br>
                 <span>available space and the support needed to keep equipment performing.</span>
             </p>
         </div>
@@ -690,8 +690,8 @@
                 <span><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
                 <span>another operating cost</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                <span>Automatic dosing supports high-use laundry rooms by using the right amount of detergent for each cycle.</span>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-6xl">
+                <span>Automatic dosing supports high-use laundry rooms by using the right amount of detergent for each cycle.</span><br>
                 <span>That can reduce waste, lower chemical overuse, protect textiles and support more consistent wash results over repeated daily use.</span>
             </p>
         </div>
@@ -846,7 +846,11 @@
     'headingLine1' => 'Keep laundry moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body' => 'For commercial and industrial sites facing replacement pressure, expansion, ageing equipment or higher load demand, rental can keep laundry moving without one large purchase upfront, where rental is the right fit.',
-    'miniPoints' => ['Lower upfront cost where suitable', 'Installed and supported', 'Service and breakdown support included under rental terms'],
+    'miniPoints' => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost where suitable'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installed and supported'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support included under rental terms'],
+    ],
 ])
 
 @include('components.equipment-categories', [
@@ -903,7 +907,11 @@
     'accentFirst'  => true,
     'body'         => 'Planned maintenance, service history and aftercare help commercial and industrial sites keep high-use laundry equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/healthcare/Parts%20%26%20Aftercare.png',
-    'miniPoints'   => ['Preventive maintenance', 'Service history', 'Parts support where needed'],
+    'miniPoints'   => [
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Preventive maintenance'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Service history'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts support where needed'],
+    ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',

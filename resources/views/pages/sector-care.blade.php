@@ -130,7 +130,7 @@
                 <span class="">they quietly build up</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.
+                In care facilities, laundry cost can build through energy use, water use, detergent waste, staff time, repair calls, ageing equipment and replacement decisions made too late.<br>
                 The right equipment plan should keep daily care moving while reducing avoidable running costs.
             </p>
         </div>
@@ -165,7 +165,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/13.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/13.png" alt="" class="w-[180px] max-w-full h-auto object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident laundry handling</h3>
@@ -205,10 +205,10 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/16.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/16-trim.png" alt="" class="w-[140px] max-w-full h-auto object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing control</h3>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Drying and finishing</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed text-left">Moisture Balance, Direct Ironer Advanced Moisture Management System (DIAMMS) and finishing features support linen quality before storage or return to use.</p>
                 </div>
             </div>
@@ -317,7 +317,7 @@
         </h2>
 
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            Before equipment becomes a daily management issue, the room, staff routines, resident laundry handling, utility pressure and maintenance needs should be understood together. Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.
+            Before equipment becomes a daily management issue, the room, staff routines, resident laundry handling, utility pressure and maintenance needs should be understood together.<br>Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.
         </p>
 
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -673,8 +673,8 @@
                 <span class=""><span style="color:#148af4;">Cut detergent waste</span> before it becomes</span>
                 <span class="">another running cost</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
+                Automatic dosing supports care facility laundry rooms by using the right amount of detergent for each cycle. That can reduce waste,<br>
                 lower chemical overuse, protect resident clothing, bedding and towels, and support more consistent wash results over time.
             </p>
         </div>
@@ -821,7 +821,11 @@
     'headingLine1' => '<span style="color:#148af4;">Keep daily laundry moving</span>',
     'headingLine2' => 'with lower upfront cost',
     'body' => 'For care facilities facing replacement pressure, expansion needs or ageing equipment, rental can keep laundry moving without one large purchase upfront, where rental is the right fit for the site.',
-    'miniPoints' => ['Lower upfront cost', 'Avoid one large purchase', 'Installed and supported'],
+    'miniPoints' => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Avoid one large purchase'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and supported'],
+    ],
 ])
 
 @include('components.equipment-categories', ['heading' => 'Equipment options for <span style="color:#148af4;">care facility laundry</span>'])
@@ -876,7 +880,11 @@
     'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
     'body'         => 'The right equipment decision should not become harder to manage after installation, rental, repair or replacement. Planned maintenance and aftercare give care facilities a clearer way to reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',
-    'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Support from people who know the equipment'],
+    'miniPoints'   => [
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment running'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Support from people who know the equipment'],
+    ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',
@@ -888,6 +896,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted by care teams who need <span style="color:#148af4;">laundry to keep moving</span>',
     'subheading' => 'Irish Laundry Systems supports care facilities where daily laundry affects residents, staff routines, running costs and equipment reliability.',
+    'subheadingClass' => 'max-w-6xl mx-auto',
 ])
 
 @include('components.proof-bar')

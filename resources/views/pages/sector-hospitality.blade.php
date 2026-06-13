@@ -154,7 +154,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/6.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/30.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
@@ -700,7 +700,11 @@
     'headingLine1' => '<span style="color:#148af4;">Keep laundry moving</span>',
     'headingLine2' => 'where rental is the right fit',
     'body'         => 'For hospitality sites facing replacement pressure, capacity gaps or seasonal demand, rental may be a good fit where the available Electrolux Professional equipment range matches the property’s operation.',
-    'miniPoints'   => ['Lower upfront cost where suitable', 'Capacity support where available', 'Installed and supported'],
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost where suitable'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Capacity support where available'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and supported'],
+    ],
     'miniNowrap'   => true,
 ])
 
@@ -715,7 +719,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Clear advice before the next <span style="color:#148af4;">equipment or service decision</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
+        <p class="font-body text-gray-500 text-base mb-12 max-w-3xl leading-relaxed text-center mx-auto">
             A clear four-step path from property review to the next useful recommendation.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
@@ -755,7 +759,11 @@
     'headingLine2' => '<span style="color:#ffffff;"><span style="color:#011E41;">of mind</span> after installation</span>',
     'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
-    'miniPoints'   => ['Reduce surprise repair costs', 'Keep equipment running', 'Peace of mind'],
+    'miniPoints'   => [
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment running'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of mind'],
+    ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',
