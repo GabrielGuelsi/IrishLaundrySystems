@@ -153,6 +153,12 @@ class PageController extends Controller
             ]);
         }
 
+        if ($category === 'accessories') {
+            return view('pages.accessories', [
+                'title' => 'Laundry Dosing Systems Ireland | Detergents & Accessories | Irish Laundry Systems',
+            ]);
+        }
+
         if (! array_key_exists($category, config('equipment'))) {
             abort(404);
         }
