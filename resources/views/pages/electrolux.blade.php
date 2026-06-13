@@ -52,11 +52,11 @@
                     <span class="text-sm font-body text-orange font-bold">Authorised Electrolux Professional Partner</span>
                 </div>
 
-                <h1 class="hero-desc font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                <h1 class="hero-desc font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Why Irish Laundry Systems + Electrolux Professional Works
                 </h1>
-                <p class="font-body text-blue-200 text-base leading-relaxed mb-3">Manufacturer-backed support. Genuine parts. Engineering expertise.</p>
-                <p class="font-body text-gray-300 text-base leading-relaxed max-w-xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-3">Manufacturer-backed support. Genuine parts. Engineering expertise.</p>
+                <p class="font-body text-white/80 text-base leading-relaxed max-w-xl">
                     ILS is an Authorised Electrolux Professional Partner — which means our engineers are trained to manufacturer standards, we stock and source genuine OEM parts, and our customers get access to the full Electrolux Professional range.
                 </p>
 
@@ -131,14 +131,14 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">What the Partnership Means</h2>
-                <p class="font-body text-gray-600 leading-relaxed mb-4">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">What the Partnership Means</h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                     Electrolux Professional is one of the world's leading manufacturers of commercial laundry equipment. Their range covers washers, dryers, barrier washers, ironers and drying cabinets — used in healthcare, hospitality, care and commercial settings globally.
                 </p>
-                <p class="font-body text-gray-600 leading-relaxed mb-4">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                     Authorised Partner status means ILS has met Electrolux Professional's requirements for training, technical capability and parts access. It is not a standard commercial distributor arrangement — it reflects ongoing investment in the skills and support infrastructure required to represent the brand correctly.
                 </p>
-                <p class="font-body text-gray-600 leading-relaxed mb-6">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                     For customers, it means they are working with an engineer who knows the equipment to the level the manufacturer expects — not an engineer working from generic training and non-genuine parts.
                 </p>
                 <div class="bg-navy/5 border border-navy/10 rounded-2xl p-5">
@@ -148,7 +148,7 @@
                 </div>
             </div>
             <div class="space-y-5">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-2">What Customers Get</h2>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">What Customers Get</h2>
 
                 <!-- 3 benefit cards -->
                 <div class="bg-white border border-border rounded-2xl p-6">
@@ -199,8 +199,8 @@
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-10">
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">Genuine Support &amp; Aftercare</h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed max-w-2xl mx-auto">Why genuine parts matter — and what it means for your operation.</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Genuine Support &amp; Aftercare</h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">Why genuine parts matter — and what it means for your operation.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div class="bg-bg border border-border rounded-2xl p-6">

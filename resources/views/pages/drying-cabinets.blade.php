@@ -16,9 +16,9 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Drying Cabinets</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span style="color:#148af4;">Fast, efficient drying</span> for bulky and sensitive items
+                    <span style="color:#148af4;">Fast, efficient drying</span><br class="hidden lg:block"> for bulky and sensitive items
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Commercial drying cabinets give sites a controlled way to dry garments, workwear, PPE, shoes, gloves, outdoor clothing and delicate items that should not be tumble dried. Irish Laundry Systems supplies, installs and supports drying cabinet options for businesses that need faster drying, lower running cost pressure and better garment care.
@@ -44,7 +44,7 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Choice</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Choice</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
@@ -115,7 +115,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Drying cabinets that show the <span style="color:#148af4;">saving, speed and operating value</span> clearly
+                Drying cabinets that show the<br class="hidden lg:block"> <span style="color:#148af4;">saving, speed and operating value</span> clearly
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 A drying cabinet decision is about more than adding another machine. It can reduce pressure on open drying space, protect items that need gentle handling, and support faster return to use for garments, uniforms and specialist items.
@@ -139,7 +139,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                The technology behind <span style="color:#148af4;">lower running cost</span> and <span style="color:#148af4;">better garment care</span>
+                The technology behind<br class="hidden lg:block"> <span style="color:#148af4;">lower running cost</span> and <span style="color:#148af4;">better garment care</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Selected Electrolux Professional drying cabinet features support easier use, controlled drying and better care for items that need a different drying method.
@@ -206,7 +206,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Electrolux Professional Range</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Standard and Heat Pump drying cabinets for <span style="color:#148af4;">different site needs</span>
             </h2>
@@ -247,7 +247,7 @@
                     <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $hl }}</span>
                     @endforeach
                 </div>
-                <a href="{{ route('contact') }}" class="mt-auto inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
+                <a href="{{ route('contact') }}" class="mt-auto inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-lg text-sm transition-colors duration-200 w-fit">
                     {{ $p['cta'] }}
                 </a>
             </div>
@@ -488,7 +488,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support options for <span style="color:#148af4;">drying cabinets</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 The right equipment choice should be backed by clear support. Irish Laundry Systems supports drying cabinet sites with repairs, preventive maintenance, rental options and aftercare around the way the cabinet is used every day.
             </p>
         </div>

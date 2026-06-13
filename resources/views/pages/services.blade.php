@@ -41,11 +41,11 @@
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Laundry Services</p>
 
-                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
+                <h1 class="svc-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
                     Find the <span class="text-[#148af4]">right service&nbsp;support</span><br class="hidden lg:inline"> before equipment&nbsp;issues<br class="hidden lg:inline"> become bigger&nbsp;costs
                 </h1>
 
-                <p class="svc-hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl text-pretty">
+                <p class="svc-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
                     Faults, maintenance gaps, rental needs and aftercare decisions can all affect cost, staffing and service continuity. <span class="whitespace-nowrap">Irish Laundry Systems</span> supports commercial laundry sites by reviewing the issue, identifying the right support and keeping the operation moving.
                 </p>
 
@@ -90,11 +90,11 @@
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
-                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     Commercial laundry sites do not always need the same type of support. One site may need a fault diagnosed. Another may need planned maintenance, rental equipment, follow-up care or a clearer decision around machines already in use.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Irish Laundry Systems gives facilities managers, care home operators, hospitality teams and commercial laundry owners a clearer way to decide what needs to happen next, from repairs and maintenance to rental and aftercare.
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> gives facilities managers, care home operators, hospitality teams and commercial laundry owners a clearer way to decide what needs to happen next, from repairs and maintenance to rental and aftercare.
                 </p>
             </div>
         </div>
@@ -125,7 +125,7 @@
     'headingNowrap'    => false,
     'intro'            => 'Four clear service options for faults, planned maintenance, rental needs and aftercare around commercial laundry equipment.',
     'introClass'       => '',
-    'introMaxW'        => 'max-w-none',
+    'introMaxW'        => 'max-w-3xl',
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-outs',               'body' => 'For faults, breakdowns or performance issues affecting laundry output, staffing or service continuity.',                          'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-outs',           'pos' => 'center 40%', 'bullets' => ['Machine faults', 'Breakdown calls', 'Fault diagnosis', 'Urgent equipment issues']],
@@ -257,9 +257,9 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 From equipment pressure to the <span class="text-[#148af4]">right next step</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl mx-auto text-pretty">
                 <span>The right support depends on what is happening in the laundry room.</span>
-                <span><span>Irish Laundry Systems</span> reviews the issue, the equipment and the next step before the problem becomes harder to manage.</span>
+                <span><span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the issue, the equipment and the next step before the problem becomes harder to manage.</span>
             </p>
         </div>
     </div>
@@ -296,11 +296,11 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Installed Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Keep <span class="text-[#148af4]">aftercare clearer</span> with <span class="text-[#148af4]">Electrolux Professional knowledge</span> behind the&nbsp;equipment
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-4xl leading-tight mb-5 text-balance">
+                    Keep <span class="text-[#148af4]">aftercare clearer</span> with<br class="hidden lg:block"> <span class="text-[#148af4]">Electrolux Professional knowledge</span><br class="hidden lg:block"> behind the&nbsp;equipment
                 </h2>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
-                    After a repair, service visit, rental decision or equipment recommendation, the next step often depends on the machines already in use. As an Authorised Electrolux Professional Partner, Irish Laundry Systems can provide genuine Electrolux parts support where needed, support from people who know the equipment and clearer follow-up after the visit.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-6 text-pretty">
+                    After a repair, service visit, rental decision or equipment recommendation, the next step often depends on the machines already in use. As an Authorised Electrolux Professional Partner, <span class="whitespace-nowrap">Irish Laundry Systems</span> can provide genuine Electrolux parts support where needed, support from people who know the equipment and clearer follow-up after the visit.
                 </p>
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-bold text-sm transition-colors">
@@ -316,7 +316,7 @@
                          style="mix-blend-mode: multiply;"
                          loading="lazy" decoding="async">
                     <p class="font-body font-bold text-navy text-xs lg:text-sm leading-snug">
-                        Irish Laundry Systems is an<br>
+                        <span class="whitespace-nowrap">Irish Laundry Systems</span> is an<br>
                         Authorised Electrolux Professional Partner.
                     </p>
                 </div>
@@ -347,8 +347,8 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Trusted by sites that need <span class="text-[#148af4]">clear service decisions</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service&nbsp;continuity.
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                <span class="whitespace-nowrap">Irish Laundry Systems</span> works with healthcare, care home, hospitality and commercial laundry sites where equipment issues affect daily operations, staff pressure and service&nbsp;continuity.
             </p>
         </div>
     </div>
@@ -373,16 +373,16 @@
                 Start with the <span class="text-[#148af4]">right service&nbsp;support</span>
             </h2>
             <p class="font-body text-blue-200 text-base leading-relaxed mb-8 max-w-md text-pretty">
-                Tell us what is happening with your laundry equipment. Irish Laundry Systems will guide you toward the right support, whether that means repairs, preventive maintenance, equipment rental or&nbsp;aftercare.
+                Tell us what is happening with your laundry equipment. <span class="whitespace-nowrap">Irish Laundry Systems</span> will guide you toward the right support, whether that means repairs, preventive maintenance, equipment rental or&nbsp;aftercare.
             </p>
             <div class="flex flex-row flex-wrap gap-3">
                 <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-body font-bold px-6 py-3.5 rounded-full text-sm transition-colors duration-200 whitespace-nowrap gap-2">
+                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap gap-2">
                     Talk to Our Team
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
                 <a href="#services-form"
-                   class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white font-body font-bold px-6 py-3.5 rounded-full text-sm transition-colors duration-200 whitespace-nowrap gap-2 hover:bg-white/10">
+                   class="inline-flex items-center justify-center border border-white/40 hover:border-white text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap gap-2 hover:bg-white/10">
                     Request Service Assessment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>

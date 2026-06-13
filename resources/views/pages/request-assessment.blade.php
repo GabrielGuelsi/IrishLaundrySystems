@@ -5,18 +5,18 @@
 <!-- HERO -->
 <section class="bg-navy py-16 lg:py-20">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-2xl">
+        <div class="max-w-3xl">
             <div class="inline-flex items-center gap-2 bg-orange/20 border border-orange/40 rounded-full px-4 py-1.5 mb-5">
                 <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                 </svg>
                 <span class="text-sm font-body text-orange font-bold">No obligation assessment</span>
             </div>
-            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">Request a Service Assessment</h1>
-            <p class="font-body text-blue-200 text-lg leading-relaxed mb-2">
+            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Request a Service Assessment</h1>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-2">
                 Tell us about your operation and we'll come back with the right recommendation — contract tier, equipment advice or call-out support.
             </p>
-            <p class="font-body text-gray-400 text-sm">We aim to respond within 24 hours. Republic of Ireland only (excluding Northern Ireland).</p>
+            <p class="font-body text-white/60 text-sm">We aim to respond within 24 hours. Republic of Ireland only (excluding Northern Ireland).</p>
         </div>
     </div>
 </section>
@@ -74,7 +74,7 @@
 
                         <!-- Basic info -->
                         <fieldset>
-                            <legend class="font-heading font-bold text-navy text-sm uppercase tracking-wider mb-4 pb-2 border-b border-border w-full">Your Details</legend>
+                            <legend class="font-body font-bold text-navy text-sm uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">Your Details</legend>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
                                     <label for="name" class="block text-sm font-body font-bold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
@@ -101,7 +101,7 @@
 
                         <!-- Operation details -->
                         <fieldset>
-                            <legend class="font-heading font-bold text-navy text-sm uppercase tracking-wider mb-4 pb-2 border-b border-border w-full">About Your Operation</legend>
+                            <legend class="font-body font-bold text-navy text-sm uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">About Your Operation</legend>
                             <div class="space-y-5">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
@@ -147,7 +147,7 @@
 
                         <!-- What you need -->
                         <fieldset>
-                            <legend class="font-heading font-bold text-navy text-sm uppercase tracking-wider mb-4 pb-2 border-b border-border w-full">What You Need</legend>
+                            <legend class="font-body font-bold text-navy text-sm uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">What You Need</legend>
                             <div class="space-y-5">
                                 <div>
                                     <label class="block text-sm font-body font-bold text-navy mb-2">What Are You Looking For? <span class="text-red-500">*</span></label>
@@ -218,7 +218,7 @@
                                 Republic of Ireland only. We aim to respond within 24 hours.
                             </p>
                             <button type="submit"
-                                    class="flex-shrink-0 inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200 cursor-pointer">
+                                    class="flex-shrink-0 inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 cursor-pointer">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
                                 </svg>

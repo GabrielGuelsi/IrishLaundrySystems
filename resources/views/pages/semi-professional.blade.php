@@ -16,9 +16,9 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Semi-professional laundry equipment for small businesses <span style="color:#148af4;">ready to step up</span>
+                    Semi-professional laundry<br class="hidden lg:block"> equipment for small businesses<br class="hidden lg:block"> <span style="color:#148af4;">ready to step up</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Step up from domestic laundry without buying more machine than your site needs. Electrolux Professional myPRO gives smaller businesses stronger washers, dryers and light finishing support when domestic machines are too slow, too small or wearing out too often.
@@ -44,7 +44,7 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">When Domestic Machines Are Not Enough</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">When Domestic Machines Are Not Enough</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
@@ -145,7 +145,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Choose the Right myPRO Option</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Match the equipment to <span style="color:#148af4;">the way your laundry is used</span>
+                Match the equipment to<br class="hidden lg:block"> <span style="color:#148af4;">the way your laundry is used</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 The right semi-professional choice depends on load size, room space, who uses the equipment and how often laundry needs to turn around.

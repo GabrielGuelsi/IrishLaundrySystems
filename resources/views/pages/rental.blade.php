@@ -45,12 +45,12 @@
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 720px;">
-                <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
-                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-5xl text-balance">
-                    Commercial laundry equipment rental with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
+                <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
+                <h1 class="rn-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                    Commercial laundry equipment<br class="hidden lg:block"> rental with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
                 </h1>
-                <p class="rn-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-xl text-pretty">
-                    Irish Laundry Systems rental agreements give commercial laundry sites access to selected Electrolux Professional equipment without one large upfront purchase. Equipment supply, installation, service labour, preventive maintenance, parts and ongoing technical support are included in one complete agreement.
+                <p class="rn-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> rental agreements give commercial laundry sites access to selected Electrolux Professional equipment without one large upfront purchase. Equipment supply, installation, service labour, preventive maintenance, parts and ongoing technical support are included in one complete agreement.
                 </p>
                 <div class="rn-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="#quote-form" data-ga-cta="hero-request-quote"
@@ -83,16 +83,16 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Rental</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     A <span class="text-[#148af4]">simpler&nbsp;way</span> to put professional laundry equipment in place
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     Buying commercial laundry equipment outright is not always the best fit for every site. Rental can help protect capital, make equipment costs easier to plan and keep supply, installation, servicing, parts and support connected under one agreement.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
-                    Irish Laundry Systems supplies, installs and supports the selected equipment throughout the rental term, giving your site one complete solution from supply to support.
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> supplies, installs and supports the selected equipment throughout the rental term, giving your site one complete solution from supply to support.
                 </p>
                 <a href="#quote-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
                     Request a Quote
@@ -107,11 +107,11 @@
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Rental Benefits</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Rental Benefits</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                <span class="text-[#148af4]">What you&nbsp;gain</span> with an Irish Laundry Systems rental agreement
+                <span class="text-[#148af4]">What you&nbsp;gain</span> with an <span class="whitespace-nowrap">Irish Laundry Systems</span> rental agreement
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                 Rental is designed for sites that want professional laundry equipment without one large upfront purchase, with service, parts and support built into the agreement from the start.
             </p>
         </div>
@@ -155,11 +155,11 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Agreement Inclusions</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Agreement Inclusions</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 One complete solution from <span class="text-[#148af4]">supply to&nbsp;support</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                 Rental keeps the main equipment needs in one place: supply, delivery, installation, service labour, preventive maintenance, parts and support. That means fewer separate decisions for your team to manage after the equipment is installed.
             </p>
         </div>
@@ -213,11 +213,11 @@
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Compare Options</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Compare Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                 Rental and outright purchase both have their place. The right decision depends on capital planning, equipment needs, support requirements and how much your site wants included from the start.
             </p>
         </div>
@@ -286,7 +286,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-3xl reveal text-balance" style="transition-delay:80ms;">
             From equipment need to <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
         </h2>
-        <p class="font-body text-gray-600 text-lg leading-relaxed max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl reveal text-pretty" style="transition-delay:160ms;">
             A simple process keeps the rental conversation focused on the site, the equipment and what needs to be included during the agreement.
         </p>
     </div>
@@ -317,11 +317,11 @@
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mb-10 lg:mb-12 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Where Rental Fits</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Where Rental Fits</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Rental for sites that want equipment access with <span class="text-[#148af4]">support built&nbsp;in</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                 Rental can be a good fit for sites that need selected Electrolux Professional laundry equipment without one large capital purchase, while keeping service, parts and support included throughout the agreement.
             </p>
         </div>
@@ -420,8 +420,8 @@
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Make sure rental <span class="text-[#148af4]">fits the room, workload and&nbsp;budget</span>
                 </h2>
-                <p class="font-body text-gray-600 text-lg leading-relaxed mt-5 text-pretty">
-                    Before a rental agreement is confirmed, the equipment choice, room layout, utilities, access, laundry demand and support needs should be reviewed together. Irish Laundry Systems helps confirm whether rental is the right fit for the site.
+                <p class="font-body text-gray-500 text-base leading-relaxed mt-5 text-pretty">
+                    Before a rental agreement is confirmed, the equipment choice, room layout, utilities, access, laundry demand and support needs should be reviewed together. <span class="whitespace-nowrap">Irish Laundry Systems</span> helps confirm whether rental is the right fit for the site.
                 </p>
                 <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-gray-500 text-sm">
                     <span class="whitespace-nowrap">Right-fit equipment</span>
@@ -472,14 +472,14 @@
 
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:420px;">
         <div class="lg:max-w-[58%]">
-            <p class="font-body font-bold text-white uppercase tracking-widest text-xs mb-4 reveal">During the Agreement</p>
+            <p class="font-body font-bold text-white/70 uppercase tracking-[0.22em] text-xs mb-4 reveal">During the Agreement</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal text-balance">
                 We supply it, install it and <span class="text-navy">take care of&nbsp;it</span>
             </h2>
-            <p class="font-body text-white/90 text-base lg:text-lg leading-relaxed mb-4 max-w-2xl reveal text-pretty">
-                With rental, Irish Laundry Systems takes care of more than the equipment. Supply, installation, service labour, preventive maintenance and replacement parts are included in the agreement, with filters and consumables excluded.
+            <p class="font-body text-white/90 text-base leading-relaxed mb-4 max-w-2xl reveal text-pretty">
+                With rental, <span class="whitespace-nowrap">Irish Laundry Systems</span> takes care of more than the equipment. Supply, installation, service labour, preventive maintenance and replacement parts are included in the agreement, with filters and consumables excluded.
             </p>
-            <p class="font-body text-white/90 text-base lg:text-lg leading-relaxed mb-7 max-w-2xl reveal text-pretty">
+            <p class="font-body text-white/90 text-base leading-relaxed mb-7 max-w-2xl reveal text-pretty">
                 That means less for your team to arrange separately, clearer support during the rental term and more peace of mind after installation.
             </p>
             <div class="mb-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-white/90 text-xs lg:text-sm reveal">
@@ -542,12 +542,12 @@ $rentalFaqs = [
 
             {{-- Left: heading + contact --}}
             <div class="lg:col-span-5 reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Request a Quote</p>
+                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Request a Quote</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Ready to discuss <span class="text-[#148af4]">rental or lease&nbsp;options</span>
                 </h2>
-                <p class="font-body text-gray-600 text-lg leading-relaxed mb-8 text-pretty">
-                    Tell us what equipment you need, what the site is dealing with and whether you are considering rental, lease or outright purchase. Irish Laundry Systems will review the requirement and confirm the right next step.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 text-pretty">
+                    Tell us what equipment you need, what the site is dealing with and whether you are considering rental, lease or outright purchase. <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the requirement and confirm the right next step.
                 </p>
 
                 <div class="space-y-4">
