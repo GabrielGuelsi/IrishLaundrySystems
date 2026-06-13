@@ -555,9 +555,9 @@
 
         @php
         $environments = [
-            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png'],
-            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg'],
-            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg'],
+            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png',                'pos' => '75% center'],
+            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
+            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg',           'pos' => '75% center'],
             ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
             ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
@@ -591,7 +591,7 @@
                         <div class="flex flex-col items-center text-center">
                             <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
-                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px;">
+                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
                             </a>
                             <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{!! $env['env'] !!}</h3>
                             <a href="{{ $env['route'] }}"

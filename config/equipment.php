@@ -130,13 +130,13 @@ return [
     // ── Tumble Dryers ─────────────────────────────────────────────────────────
     'tumble-dryers' => [
         [
-            'name' => 'TD6 — Line 6000 Single Pocket Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–37 kg',
+            'name' => 'TD6 — Line 6000 Single Pocket Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–60 kg',
             'title' => 'Line 6000 single pocket tumble dryer – TD6',
             'summary' => 'Commercial tumble dryer range for busy laundry rooms needing drying performance, fabric care and long-term support.',
             'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => [
-                    'Range' => 'Line 6000', 'Type' => 'Single pocket tumble dryer', 'Capacity' => '6 – 37 kg',
+                    'Range' => 'Line 6000', 'Type' => 'Single pocket tumble dryer', 'Capacity' => '6 – 60 kg',
                     'Control' => 'CompassPro', 'Key features' => 'Moisture Balance, Drum Speed', 'Certification' => 'ERGOCERT ergonomics',
                 ],
                 'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
@@ -198,6 +198,17 @@ return [
             'specs' => [
                 'Main specification' => ['Type' => 'Compact professional dryer', 'Capacity' => '9 kg', 'Best for' => 'Smaller sites needing professional drying'],
                 'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'T-Series Tumble Dryers', 'slug' => 't-series', 'capacity' => '45–60 kg',
+            'title' => 'T-Series heavy-duty tumble dryers',
+            'summary' => 'Large-capacity tumble dryer route for high-volume laundry rooms needing heavy-duty drying throughput and long-term support.',
+            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'specs' => [
+                'Main specification' => ['Type' => 'Heavy-duty tumble dryer', 'Models' => 'T4900CR, T41200CR', 'Capacity' => '45 – 60 kg', 'Best for' => 'High-volume commercial drying'],
+                'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented'],
             ],
             'sectors' => [],
         ],

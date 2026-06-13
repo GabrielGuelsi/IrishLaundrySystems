@@ -89,18 +89,23 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             @foreach([
-                ['title' => 'Hot Cylinder / Flatwork Ironers', 'copy' => 'For busy laundry rooms handling sheets, table linen and flatwork where finish, output and hygiene control matter every day.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range'],
-                ['title' => 'Roller / Rotary Ironers',         'copy' => 'For teams searching for roller irons, rotary ironers or dryer ironers and needing a clearer way to compare flatwork options.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range'],
-                ['title' => 'Finishing Equipment',             'copy' => 'For ironing tables, steam irons, presses and hand-finishing support for garments, uniforms, resident clothing and smaller finishing jobs.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment')],
+                ['title' => 'Hot Cylinder / Flatwork Ironers', 'copy' => 'For busy laundry rooms handling sheets, table linen and flatwork where finish, output and hygiene control matter every day.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['title' => 'Roller / Rotary Ironers',         'copy' => 'For teams searching for roller irons, rotary ironers or dryer ironers and needing a clearer way to compare flatwork options.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range', 'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Finishing Equipment',             'copy' => 'For ironing tables, steam irons, presses and hand-finishing support for garments, uniforms, resident clothing and smaller finishing jobs.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => '/images/equipment/line6000-ironer.webp'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $card['copy'] }}</p>
-                <a href="{{ $card['href'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
-                    {{ $card['cta'] }}
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
+            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
+                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $card['copy'] }}</p>
+                    <a href="{{ $card['href'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
+                        {{ $card['cta'] }}
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
             </div>
             @endforeach
         </div>
@@ -159,7 +164,6 @@
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
-                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2.5 py-1 rounded-full">{{ $card['badge'] }}</span>
             </div>
             @endforeach
         </div>
@@ -321,10 +325,10 @@
         {{-- Ironer families — one card/image per range, filterable by cylinder and automation (like the washers page) --}}
         @php
             $ironerFamilies = [
-                ['name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'fit' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.', 'auto' => ['No automation','Feeding'], 'capLabel' => '2.5–3.3 m', 'models' => 'IB5725, IB5730, IB5733 (+ -F feeder)', 'roll' => 'Flatwork', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'fit' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.', 'auto' => ['No automation','Length folding','Feeding','Folding & stacking'], 'capLabel' => 'Ø 480 mm', 'models' => 'IC648 21 / 25 / 32 series, IV648', 'roll' => 'Ø 480 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.', 'auto' => ['No automation'], 'capLabel' => 'Ø 330 mm', 'models' => 'IC63316, IC63320', 'roll' => 'Ø 330 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'fit' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.', 'auto' => ['No automation'], 'capLabel' => 'Ø 230 mm', 'models' => 'IB62310, IB62314, IB62316', 'roll' => 'Ø 230 mm', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'fit' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.', 'auto' => ['No automation','Feeding'], 'capLabel' => '2.5–3.3 m', 'models' => 'IB5725, IB5730, IB5733 (+ -F feeder)', 'roll' => 'Flatwork', 'img' => '/images/equipment/ironers/flatwork-ib57.jpg'],
+                ['name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'fit' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.', 'auto' => ['No automation','Length folding','Feeding','Folding & stacking'], 'capLabel' => 'Ø 480 mm', 'models' => 'IC648 21 / 25 / 32 series, IV648', 'roll' => 'Ø 480 mm', 'img' => '/images/equipment/ironers/cylinder-480-ic648.jpg'],
+                ['name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.', 'auto' => ['No automation'], 'capLabel' => 'Ø 330 mm', 'models' => 'IC63316, IC63320', 'roll' => 'Ø 330 mm', 'img' => '/images/equipment/ironers/cylinder-330-ic633.jpg'],
+                ['name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'fit' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.', 'auto' => ['No automation'], 'capLabel' => 'Ø 230 mm', 'models' => 'IB62310, IB62314, IB62316', 'roll' => 'Ø 230 mm', 'img' => '/images/equipment/ironers/bed-230-ib623.jpg'],
             ];
         @endphp
 

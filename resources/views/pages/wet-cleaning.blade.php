@@ -178,15 +178,13 @@
             </div>
 
             <div class="reveal reveal-right">
-                {{-- Video placeholder — replace with embedded Lagoon Advanced Care process video --}}
-                <div class="relative rounded-2xl overflow-hidden bg-navy" style="min-height:360px;">
-                    <img src="/images/healthcare/lagoon-advanced-care.webp" alt="Lagoon Advanced Care wet cleaning process"
-                         class="absolute inset-0 w-full h-full object-contain p-8">
-                    <div class="absolute inset-0 flex items-center justify-center">
-                        <span class="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-                            <svg class="w-8 h-8 text-navy ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                        </span>
-                    </div>
+                {{-- Lagoon Advanced Care process video --}}
+                <div class="relative rounded-2xl overflow-hidden bg-navy aspect-video">
+                    <video class="w-full h-full object-cover" controls preload="metadata" playsinline
+                           poster="/images/healthcare/lagoon-advanced-care.webp">
+                        <source src="/images/equipment/EPR_lagoon_Advanced_Care_ENG_1-1_2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
 
@@ -452,6 +450,168 @@
     </div>
 </section>
 
+{{-- DOSING INTELLIGENCE (Alpine carousel — matches sector pages) --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal max-w-3xl">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Use <span style="color:#148af4;">the correct amount</span>, every time
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Dosing systems turn chemical management into a practical part of the wash process. Irish Laundry Systems can advise which option fits the equipment, load type and daily use.
+            </p>
+        </div>
+
+        @php
+        $dosingProducts = [
+            [
+                'name'   => 'Intelligent Dosing',
+                'label'  => 'Dosing based on the load',
+                'body'   => 'Intelligent Dosing adds detergent according to the load inside the drum, helping reduce overuse while protecting wash consistency.',
+                'points' => ['Load-based dosing', 'Less waste', 'Better consistency', 'ClarusVibe where applicable'],
+                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+            ],
+            [
+                'name'   => 'Multisave',
+                'label'  => 'One dosing unit for multiple washers',
+                'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting accurate consumption control in multi-washer laundry rooms.',
+                'points' => ['Up to 7 washers', 'Lower setup complexity', 'Low running costs', 'Multi-machine control'],
+                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+            ],
+            [
+                'name'   => 'JETSAVE',
+                'label'  => 'Lower upkeep with water-powered dosing',
+                'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes to replace, supporting reliable dosage and easier long-term upkeep.',
+                'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
+                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+            ],
+            [
+                'name'   => 'DOSAVE',
+                'label'  => 'Straightforward dosing setup',
+                'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming, supporting accurate dosing where this system is the best fit.',
+                'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Savings-focused setup'],
+                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+            ],
+            [
+                'name'   => 'Efficient Dosing',
+                'label'  => 'Detergent control for selected CompassPro setups',
+                'body'   => 'Efficient Dosing uses the correct amount of detergent for each cycle, supporting lower detergent costs and more controlled wash results.',
+                'points' => ['Correct amount each cycle', 'Over 30% detergent cost saving where suitable', 'CompassPro', 'Cost control'],
+                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+            ],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: 5,
+                timer: null,
+                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
+                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
+                go(i)   { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 5000); },
+            }"
+            x-init="timer = setInterval(() => next(), 5000)"
+            class="relative reveal"
+        >
+            {{-- Slides --}}
+            <div class="grid [&>*]:[grid-area:1/1]">
+                @foreach($dosingProducts as $i => $p)
+                <div
+                    class="transition-opacity duration-500"
+                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+                >
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+
+                        {{-- Left: context photo --}}
+                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
+                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                                 alt="Electrolux Professional laundry equipment"
+                                 class="w-full object-cover object-center" style="height:260px;">
+                        </div>
+
+                        {{-- Right: product name + tabs indicator + description + unit image --}}
+                        <div class="lg:col-span-9 flex flex-col justify-between p-6 sm:p-8 lg:p-10">
+
+                            {{-- Tab indicators (product selector) --}}
+                            <div class="flex gap-1 border-b border-gray-100 mb-6 overflow-x-auto">
+                                @foreach($dosingProducts as $j => $tab)
+                                <button @click="go({{ $j }})"
+                                        :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                        class="font-heading text-sm pb-3 pr-6 transition-colors whitespace-nowrap">
+                                    {{ $tab['name'] }}
+                                </button>
+                                @endforeach
+                            </div>
+
+                            {{-- Content + unit image side by side --}}
+                            <div class="flex flex-col sm:flex-row gap-6 items-start flex-1">
+
+                                {{-- Copy --}}
+                                <div class="flex-1">
+                                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
+                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
+                                    <div class="flex items-center gap-8">
+                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                    </div>
+                                </div>
+
+                                {{-- Unit image --}}
+                                @if($p['img'])
+                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
+                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
+                                         class="w-full h-auto object-contain">
+                                </div>
+                                @endif
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Prev / Next buttons --}}
+            <button @click="prev()"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+            </button>
+            <button @click="next()"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </button>
+
+            {{-- Dot navigation --}}
+            <div class="flex items-center justify-center gap-2 mt-3">
+                @foreach($dosingProducts as $i => $p)
+                <button
+                    @click="go({{ $i }})"
+                    :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
+                    class="h-2 rounded-full transition-all duration-300">
+                </button>
+                @endforeach
+            </div>
+
+        </div>
+
+        {{-- CTA --}}
+        <div class="mt-4 text-center">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
+                Ask About Dosing Systems
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
 {{-- 14. OPTIONAL SERENITY CABINET --}}
 <section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -654,19 +814,24 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For larger laundry capacity, heavier use or wider commercial laundry demand.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers'])],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying demand that needs commercial capacity, control and reliability.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers'])],
-                ['title' => 'Finishing Equipment',         'copy' => 'For ironing, form finishing, pressing and final presentation support.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment'])],
-                ['title' => 'Drying Cabinets',             'copy' => 'For garments, shoes, gloves and items that need controlled drying rather than tumble drying.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets'])],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For larger laundry capacity, heavier use or wider commercial laundry demand.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/equipment/commercialwasher.webp'],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying demand that needs commercial capacity, control and reliability.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['title' => 'Finishing Equipment',         'copy' => 'For ironing, form finishing, pressing and final presentation support.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Drying Cabinets',             'copy' => 'For garments, shoes, gloves and items that need controlled drying rather than tumble drying.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $card['copy'] }}</p>
-                <a href="{{ $card['route'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm">
-                    {{ $card['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
+            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
+                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $card['copy'] }}</p>
+                    <a href="{{ $card['route'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm">
+                        {{ $card['cta'] }}
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
             </div>
             @endforeach
         </div>

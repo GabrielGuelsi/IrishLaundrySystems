@@ -185,16 +185,24 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             @foreach([
-                ['title' => 'Multi-housing and shared laundry',         'copy' => 'For apartment laundry rooms and shared facilities where users need fast, efficient drying without leaving wet items around the space.'],
-                ['title' => 'On-premises laundries',                    'copy' => 'For hotels, guesthouses, leisure sites and laundries handling garments, uniforms, robes, outdoor clothing or delicate items.'],
-                ['title' => 'Schools, childcare and sports sites',      'copy' => 'For jackets, outdoor clothing, shoes, sportswear and wet items that need to dry between uses.'],
-                ['title' => 'Firefighters, PPE and workwear',           'copy' => 'For protective garments, boots, gloves, helmets, waterproof clothing and high-visibility workwear where controlled drying matters.'],
-                ['title' => 'Delicate garment and textile care',        'copy' => 'For silk, wool, velvet, linen, long dresses, curtains and specialist garments that can be damaged by mechanical drying action.'],
+                ['title' => 'Multi-housing and shared laundry',         'copy' => 'For apartment laundry rooms and shared facilities where users need fast, efficient drying without leaving wet items around the space.', 'img' => '/images/equipment/td6-multihousing-room.jpg', 'pos' => 'center center'],
+                ['title' => 'On-premises laundries',                    'copy' => 'For hotels, guesthouses, leisure sites and laundries handling garments, uniforms, robes, outdoor clothing or delicate items.', 'img' => '/images/Hospitallity/hospitallityhero.jpeg', 'pos' => 'center center'],
+                ['title' => 'Schools, childcare and sports sites',      'copy' => 'For jackets, outdoor clothing, shoes, sportswear and wet items that need to dry between uses.', 'img' => '/images/healthcare/services-overview-hero.jpg', 'pos' => 'center center'],
+                ['title' => 'Firefighters, PPE and workwear',           'copy' => 'For protective garments, boots, gloves, helmets, waterproof clothing and high-visibility workwear where controlled drying matters.', 'img' => '/images/healthcare/commercial-industrial.jpg', 'pos' => 'center center'],
+                ['title' => 'Delicate garment and textile care',        'copy' => 'For silk, wool, velvet, linen, long dresses, curtains and specialist garments that can be damaged by mechanical drying action.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center center'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background:rgba(1,30,65,0.90);"></div>
+                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                    <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
+                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{{ $card['title'] }}</h3>
+                </div>
             </div>
             @endforeach
         </div>
@@ -276,10 +284,16 @@
 
         {{-- Drying cabinet families — one card/image per range, filterable by type and line (like the washers page) --}}
         @php
+            // One card per model; same product across kg shares one image.
             $cabinetFamilies = [
-                ['name' => 'Standard Drying Cabinets', 'slug' => 'standard-drying-cabinets', 'fit' => 'Gentle hang-drying cabinets for garments and linen across the standard range.', 'line' => ['Line 6000'], 'capLabel' => 'Standard', 'models' => 'DC6-4, DC6-8, DC6-14', 'type' => 'Standard', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-                ['name' => 'Heat Pump Drying Cabinets', 'slug' => 'heat-pump-drying-cabinets', 'fit' => 'Energy-saving heat pump drying cabinets that cut drying energy while protecting fabrics.', 'line' => ['Line 6000','Line 7000'], 'capLabel' => 'Heat Pump', 'models' => 'DC6-4HP, DC6-8HP, DC6-10HP, DC6-14HP, DC7-4HP', 'type' => 'Heat Pump', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-                ['name' => 'Workwear Drying Cabinet', 'slug' => 'workwear-drying-cabinet', 'fit' => 'Specialist cabinet for drying workwear, PPE and heavier garments.', 'line' => ['Line 6000'], 'capLabel' => 'Workwear', 'models' => 'DC6-15WW', 'type' => 'Workwear', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
+                ['name' => 'DC6-4',    'cat' => 'Standard Drying Cabinets',    'slug' => 'standard-drying-cabinets', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20Cabinets.jpg'],
+                ['name' => 'DC6-8',    'cat' => 'Standard Drying Cabinets',    'slug' => 'standard-drying-cabinets', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20CabinetsDC6-8.jpg'],
+                ['name' => 'DC6-14',   'cat' => 'Standard Drying Cabinets',    'slug' => 'standard-drying-cabinets', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20CabinetsDC6-14.jpg'],
+                ['name' => 'DC6-15WW', 'cat' => 'Standard Drying Cabinets',    'slug' => 'workwear-drying-cabinet',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Drying cabinet suited to workwear, PPE and heavier garments.',                    'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20PumpDC6-15WW.jpg'],
+                ['name' => 'DC6-14HP', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 6000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc6-14hp.jpg'],
+                ['name' => 'DC7-4HP',  'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg'],
+                ['name' => 'DC7-4HPh', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20PumpDC7-4HPH.jpg'],
+                ['name' => '1LZS03',   'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pump%201LZS03.jpg'],
             ];
         @endphp
 
@@ -290,7 +304,7 @@
                 $typeOpts[$cf['type']] = ($typeOpts[$cf['type']] ?? 0) + 1;
                 foreach($cf['line'] as $ln) { $lineOpts[$ln] = ($lineOpts[$ln] ?? 0) + 1; }
             }
-            $typeOrder = ['Standard','Heat Pump','Workwear'];
+            $typeOrder = ['Standard','Heat Pump'];
             $lineOrder = ['Line 6000','Line 7000'];
             $famJs = array_map(fn($cf) => ['type' => $cf['type'], 'line' => $cf['line']], $cabinetFamilies);
         @endphp
@@ -354,7 +368,7 @@
 
                 {{-- Footer count + clear --}}
                 <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'range' : 'ranges'"></span></span>
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'model' : 'models'"></span></span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
                 </div>
             </aside>
@@ -367,7 +381,7 @@
                         <a href="{{ route('equipment.product', ['category' => 'drying-cabinets', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                         </a>
-                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['type'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
+                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['cat'] }}</span></p>
                         <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'drying-cabinets', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
                         @if(!empty($f['line']))
@@ -681,19 +695,24 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For daily washing of workwear, towels, uniforms, bedding and mixed textiles.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers'])],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For general drying demand where tumble drying is suitable for the load.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers'])],
-                ['title' => 'Dosing Systems',     'copy' => 'For detergent control, lower waste and more consistent wash results.', 'cta' => 'Ask About Dosing Systems', 'route' => route('contact')],
-                ['title' => 'Wet Cleaning',       'copy' => 'For specialist textile care where delicate garments, leathers or shoes need a different cleaning process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('contact')],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For daily washing of workwear, towels, uniforms, bedding and mixed textiles.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/equipment/commercialwasher.webp'],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For general drying demand where tumble drying is suitable for the load.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['title' => 'Dosing Systems',     'copy' => 'For detergent control, lower waste and more consistent wash results.', 'cta' => 'Ask About Dosing Systems', 'route' => route('contact'), 'img' => '/images/healthcare/MultisaveEQUIP.webp'],
+                ['title' => 'Wet Cleaning',       'copy' => 'For specialist textile care where delicate garments, leathers or shoes need a different cleaning process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('contact'), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $card['copy'] }}</p>
-                <a href="{{ $card['route'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm">
-                    {{ $card['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
+            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
+                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $card['copy'] }}</p>
+                    <a href="{{ $card['route'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm">
+                        {{ $card['cta'] }}
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
             </div>
             @endforeach
         </div>

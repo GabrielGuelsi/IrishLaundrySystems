@@ -289,15 +289,23 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             @foreach([
-                ['title' => 'Care homes and nursing homes',       'copy' => 'For resident clothing, bedding, towels, uniforms and everyday items where a cleaner finish supports daily standards.'],
-                ['title' => 'Hospitality sites',                  'copy' => 'For guest garments, uniforms, linen touch-ups and presentation-led finishing work around daily operations.'],
-                ['title' => 'Smaller laundry rooms',              'copy' => 'For sites that need more than domestic ironing equipment without moving straight into a full hot cylinder ironer setup.'],
-                ['title' => 'Garment and wet cleaning workflows', 'copy' => 'For specialist textile care where washing, drying and finishing need to work together.'],
+                ['title' => 'Care homes and nursing homes',       'copy' => 'For resident clothing, bedding, towels, uniforms and everyday items where a cleaner finish supports daily standards.', 'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
+                ['title' => 'Hospitality sites',                  'copy' => 'For guest garments, uniforms, linen touch-ups and presentation-led finishing work around daily operations.', 'img' => '/images/Hospitallity/hospitallityhero.jpeg', 'pos' => 'center center'],
+                ['title' => 'Smaller laundry rooms',              'copy' => 'For sites that need more than domestic ironing equipment without moving straight into a full hot cylinder ironer setup.', 'img' => '/images/equipment/td6-multihousing-room.jpg', 'pos' => 'center center'],
+                ['title' => 'Garment and wet cleaning workflows', 'copy' => 'For specialist textile care where washing, drying and finishing need to work together.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center center'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background:rgba(1,30,65,0.90);"></div>
+                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                    <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
+                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{{ $card['title'] }}</h3>
+                </div>
             </div>
             @endforeach
         </div>
@@ -317,18 +325,23 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             @foreach([
-                ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing, linen flow, working width decisions and commercial ironing support.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers')],
-                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where washing, drying and finishing need to work together.',                  'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning')],
-                ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before finishing, garment handling or daily linen presentation.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers')],
-                ['title' => 'Accessories & Consumables', 'copy' => 'For supporting items that help keep laundry equipment and workflows running.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories')],
+                ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing, linen flow, working width decisions and commercial ironing support.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers'), 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where washing, drying and finishing need to work together.',                  'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before finishing, garment handling or daily linen presentation.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['title' => 'Accessories & Consumables', 'copy' => 'For supporting items that help keep laundry equipment and workflows running.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories'), 'img' => '/images/healthcare/MultisaveEQUIP.webp'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 shadow-card flex flex-col h-full">
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6 flex-1">{{ $card['copy'] }}</p>
-                <a href="{{ $card['route'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline mt-auto">
-                    {{ $card['cta'] }}
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
+            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
+                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-6 flex-1">{{ $card['copy'] }}</p>
+                    <a href="{{ $card['route'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline mt-auto">
+                        {{ $card['cta'] }}
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    </a>
+                </div>
             </div>
             @endforeach
         </div>

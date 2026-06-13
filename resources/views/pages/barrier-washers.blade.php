@@ -78,7 +78,7 @@
         <div class="text-center mx-auto max-w-3xl reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hygiene Flow</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Separate soiled and clean handling for <span style="color:#148af4;">controlled hygiene flow</span>
+                Separate soiled and clean handling for<br><span style="color:#148af4;">controlled hygiene flow</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Barrier washers support a controlled laundry flow by loading soiled linen from one side and unloading clean linen from the other. This physical separation supports cleaner process control where hygiene, staff routines and linen movement need to work together.
@@ -177,14 +177,14 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             @foreach([
                 ['icon' => '2',  'title' => 'Double-door barrier design',     'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.',          'badge' => 'Barrier Separation'],
-                ['icon' => '96', 'title' => 'Hygiene Watchdog',               'copy' => 'Supports full-cycle completion and hygiene process control.',                       'badge' => 'Hygiene Watchdog'],
+                ['icon' => '96', 'title' => 'Hygiene Watchdog',               'copy' => 'Supports full-cycle completion and hygiene process control.',                       'badge' => 'Hygiene Watchdog', 'img' => '/images/healthcare/HygieneWatchdog.png'],
                 ['icon' => '4',  'title' => 'ClarusVibe / Double Screen',     'copy' => 'Guided operation for dirty-side and clean-side control.',                          'badge' => 'ClarusVibe | Double Screen'],
                 ['icon' => '95', 'title' => 'AIDO / Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',               'badge' => 'AIDO | Automatic Door Locking'],
                 ['icon' => '11', 'title' => 'Clearer process control',        'copy' => 'Connected options can support monitoring, traceability and clearer service decisions.', 'badge' => 'CMIS | OnE Laundry where applicable'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm items-center text-center col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
@@ -330,15 +330,15 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Healthcare and hospitals',           'img' => '/images/healthcare/healthcarehero.png',                'route' => route('sectors.healthcare')],
-                ['title' => 'Care facilities',                    'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'route' => route('sectors.care')],
+                ['title' => 'Healthcare and hospitals',           'img' => '/images/healthcare/healthcarehero.png',                'route' => route('sectors.healthcare'), 'pos' => '75% center'],
+                ['title' => 'Care facilities',                    'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'route' => route('sectors.care'), 'pos' => '75% center'],
                 ['title' => 'Pharmaceutical and food processing', 'img' => '/images/healthcare/render-double-page_72dpi.jpg',      'route' => route('sectors.commercial')],
                 ['title' => 'Commercial laundries',               'img' => '/images/healthcare/commercial-industrial.jpg',         'route' => route('sectors.commercial')],
             ] as $card)
             <div class="flex flex-col items-center text-center">
                 <a href="{{ $card['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
-                         class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px;">
+                         class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $card['pos'] ?? 'center' }};">
                 </a>
                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{{ $card['title'] }}</h3>
                 <a href="{{ $card['route'] }}"
@@ -448,7 +448,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare barrier washer options around <span style="color:#148af4;">capacity, hygiene flow and support</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-[1400px]">
                 Start with capacity and room layout, then connect the barrier washer decision to hygiene flow, clean/dirty separation, utilities, installation and long-term support.
             </p>
         </div>
@@ -456,19 +456,17 @@
         @php
             // Barrier washer catalogue. NOTE: WB6 is the current real range; append further
             // products (Pullman, Cleanroom options, etc.) here when supplied — the filters auto-populate.
+            // One card per WB6 model (same product across kg shares one image).
+            $bwSites  = ['Healthcare','Care Facilities','Pharmaceutical','Food Processing','Commercial Laundry'];
+            $bwBadges = ['ERGOCERT','Hygiene Watchdog','AIDO','Power Balance'];
+            $bwFit    = 'Line 6000 Evolution barrier washer with clean/dirty separation, guided operation and long-term support.';
+            $bwImg    = '/images/equipment/line6000-barrier-washer.webp';
+            // Cards for models with their own photo; imageless sizes folded into the nearest card's range.
             $barrierFamilies = [
-                [
-                    'slug' => 'wb6',
-                    'name' => 'WB6 — Line 6000 Evolution Barrier Washer',
-                    'fit' => 'Barrier washer for hygiene-critical laundry rooms needing clean/dirty separation, guided operation and long-term support.',
-                    'kg' => ['13','18','20','27','35','50','70','90','110'],
-                    'capLabel' => '13–110 kg',
-                    'models' => 'WB6-13 → WB6-110',
-                    'profile' => 'Line 6000 Evolution',
-                    'sites' => ['Healthcare','Care Facilities','Pharmaceutical','Food Processing','Commercial Laundry'],
-                    'badges' => ['ERGOCERT','Hygiene Watchdog','AIDO','Power Balance'],
-                    'img' => '/images/equipment/line6000-barrier-washer.webp',
-                ],
+                ['name' => 'WB6-13',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-13.jpg'],
+                ['name' => 'WB6-20',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-20.jpg'],
+                ['name' => 'WB6-35',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-35.jpg'],
+                ['name' => 'WB6-110', 'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-110.jpg'],
             ];
             $profileOpts = []; $capOpts = []; $siteOpts = [];
             foreach($barrierFamilies as $f) {
@@ -555,7 +553,7 @@
 
                 {{-- Footer count + clear --}}
                 <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'range' : 'ranges'"></span></span>
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'model' : 'models'"></span></span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
                 </div>
             </aside>
@@ -659,6 +657,168 @@
             </a>
             @endforeach
         </div>
+    </div>
+</section>
+
+{{-- DOSING INTELLIGENCE (Alpine carousel — matches sector pages) --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal max-w-3xl">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Use <span style="color:#148af4;">the correct amount</span>, every time
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Dosing systems turn chemical management into a practical part of the wash process. Irish Laundry Systems can advise which option fits the equipment, load type and daily use.
+            </p>
+        </div>
+
+        @php
+        $dosingProducts = [
+            [
+                'name'   => 'Intelligent Dosing',
+                'label'  => 'Dosing based on the load',
+                'body'   => 'Intelligent Dosing adds detergent according to the load inside the drum, helping reduce overuse while protecting wash consistency.',
+                'points' => ['Load-based dosing', 'Less waste', 'Better consistency', 'ClarusVibe where applicable'],
+                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+            ],
+            [
+                'name'   => 'Multisave',
+                'label'  => 'One dosing unit for multiple washers',
+                'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting accurate consumption control in multi-washer laundry rooms.',
+                'points' => ['Up to 7 washers', 'Lower setup complexity', 'Low running costs', 'Multi-machine control'],
+                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+            ],
+            [
+                'name'   => 'JETSAVE',
+                'label'  => 'Lower upkeep with water-powered dosing',
+                'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes to replace, supporting reliable dosage and easier long-term upkeep.',
+                'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
+                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+            ],
+            [
+                'name'   => 'DOSAVE',
+                'label'  => 'Straightforward dosing setup',
+                'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming, supporting accurate dosing where this system is the best fit.',
+                'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Savings-focused setup'],
+                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+            ],
+            [
+                'name'   => 'Efficient Dosing',
+                'label'  => 'Detergent control for selected CompassPro setups',
+                'body'   => 'Efficient Dosing uses the correct amount of detergent for each cycle, supporting lower detergent costs and more controlled wash results.',
+                'points' => ['Correct amount each cycle', 'Over 30% detergent cost saving where suitable', 'CompassPro', 'Cost control'],
+                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+            ],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: 5,
+                timer: null,
+                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
+                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
+                go(i)   { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 5000); },
+            }"
+            x-init="timer = setInterval(() => next(), 5000)"
+            class="relative reveal"
+        >
+            {{-- Slides --}}
+            <div class="grid [&>*]:[grid-area:1/1]">
+                @foreach($dosingProducts as $i => $p)
+                <div
+                    class="transition-opacity duration-500"
+                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+                >
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+
+                        {{-- Left: context photo --}}
+                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
+                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                                 alt="Electrolux Professional laundry equipment"
+                                 class="w-full object-cover object-center" style="height:260px;">
+                        </div>
+
+                        {{-- Right: product name + tabs indicator + description + unit image --}}
+                        <div class="lg:col-span-9 flex flex-col justify-between p-6 sm:p-8 lg:p-10">
+
+                            {{-- Tab indicators (product selector) --}}
+                            <div class="flex gap-1 border-b border-gray-100 mb-6 overflow-x-auto">
+                                @foreach($dosingProducts as $j => $tab)
+                                <button @click="go({{ $j }})"
+                                        :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                        class="font-heading text-sm pb-3 pr-6 transition-colors whitespace-nowrap">
+                                    {{ $tab['name'] }}
+                                </button>
+                                @endforeach
+                            </div>
+
+                            {{-- Content + unit image side by side --}}
+                            <div class="flex flex-col sm:flex-row gap-6 items-start flex-1">
+
+                                {{-- Copy --}}
+                                <div class="flex-1">
+                                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
+                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
+                                    <div class="flex items-center gap-8">
+                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                    </div>
+                                </div>
+
+                                {{-- Unit image --}}
+                                @if($p['img'])
+                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
+                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
+                                         class="w-full h-auto object-contain">
+                                </div>
+                                @endif
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Prev / Next buttons --}}
+            <button @click="prev()"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+            </button>
+            <button @click="next()"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </button>
+
+            {{-- Dot navigation --}}
+            <div class="flex items-center justify-center gap-2 mt-3">
+                @foreach($dosingProducts as $i => $p)
+                <button
+                    @click="go({{ $i }})"
+                    :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
+                    class="h-2 rounded-full transition-all duration-300">
+                </button>
+                @endforeach
+            </div>
+
+        </div>
+
+        {{-- CTA --}}
+        <div class="mt-4 text-center">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
+                Ask About Dosing Systems
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+        </div>
+
     </div>
 </section>
 
