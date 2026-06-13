@@ -187,12 +187,12 @@
                     Preventive Maintenance Contracts
                 </p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
-                    Keep your laundry operation&nbsp;running<br class="hidden md:block">with <span class="text-steel">fewer&nbsp;surprise</span> costs
+                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                    Keep your laundry operation&nbsp;running<br class="hidden lg:block"> with <span class="text-steel">fewer&nbsp;surprise</span> costs
                 </h1>
 
-                <p class="hero-desc font-body text-white text-base leading-relaxed mb-9 max-w-xl text-pretty">
-                    Irish Laundry Systems supports commercial laundry sites with planned maintenance visits, equipment checks, clear reporting and preferential call-out rates under the agreement.
+                <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> supports commercial laundry sites with planned maintenance visits, equipment checks, clear reporting and preferential call-out rates under the agreement.
                 </p>
 
                 <div class="hero-btns flex flex-row flex-wrap gap-4">
@@ -255,13 +255,13 @@
 
             {{-- Right column: lead + body + CTA --}}
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
-                <p class="font-body text-navy text-base leading-relaxed">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
                     Equipment failures can disrupt daily laundry, delay production, increase repair costs and put unnecessary pressure on staff.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     Commercial laundry equipment works hard every day. When wear or developing faults are only noticed after a breakdown, the cost spreads quickly through downtime, staff pressure and emergency repairs.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     A Preventive Maintenance Contract gives your site a planned way to inspect and service essential laundry equipment, so smaller issues are spotted earlier and maintenance stays easier to manage.
                 </p>
                 <a href="#book-visit-form"
@@ -287,11 +287,11 @@
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">What you gain</span> with a
+                <span class="text-steel">What you gain</span> with a<br class="hidden lg:block">
                 Preventive Maintenance Contract
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
-                An Irish Laundry Systems Preventive Maintenance Contract gives your site a clearer way to plan maintenance, reduce unexpected problems and keep essential laundry equipment operating reliably over time.
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
+                An <span class="whitespace-nowrap">Irish Laundry Systems</span> Preventive Maintenance Contract gives your site a clearer way to plan maintenance, reduce unexpected problems and keep essential laundry equipment operating reliably over time.
             </p>
         </div>
 
@@ -365,7 +365,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 What's included in a<br class="hidden lg:block"><span class="text-steel">Preventive Maintenance Contract</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
                 A Preventive Maintenance Contract gives your site two planned inspections per year, servicing and equipment checks, clear maintenance reporting and clearer recommendations for the equipment your laundry depends on.
             </p>
         </div>
@@ -446,13 +446,13 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal text-balance" style="transition-delay:80ms;">
                 <span class="text-steel">Protect your maintenance budget</span> before small problems become expensive repairs
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:140ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:140ms;">
                 Many sites compare a contract only against doing nothing. But waiting for breakdowns brings urgent call-outs, downtime, delays and unplanned repair costs.
             </p>
-            <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:180ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:180ms;">
                 Planned maintenance saves time and reduces disruption by catching smaller issues before they become breakdowns.
             </p>
-            <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:200ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:200ms;">
                 For Electrolux Professional equipment, regular servicing also supports more consistent energy use, water use, detergent use and long-term equipment performance.
             </p>
         </div>
@@ -595,7 +595,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight max-w-3xl reveal text-balance" style="transition-delay:80ms;">
             How <span class="text-steel">preventive visits</span> work
         </h2>
-        <p class="font-body text-gray-600 text-base leading-relaxed mt-4 reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
             A preventive visit should make equipment condition, service needs and the next step clearer.
         </p>
     </div>
@@ -654,7 +654,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 <span class="text-steel">Planned maintenance</span> for different site demands
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
                 Different sites place different demands on laundry equipment. Preventive maintenance should be planned around the way the equipment is used every day.
             </p>
         </div>
@@ -750,8 +750,8 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance">
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed mt-4 text-pretty">
-                Irish Laundry Systems is trusted by organisations that need clear communication, reliable support and people who know the equipment when maintenance, repairs and laundry performance affect daily operations.
+            <p class="font-body text-gray-500 text-base leading-relaxed mt-4 text-pretty">
+                <span class="whitespace-nowrap">Irish Laundry Systems</span> is trusted by organisations that need clear communication, reliable support and people who know the equipment when maintenance, repairs and laundry performance affect daily operations.
             </p>
         </div>
     </div>
@@ -831,9 +831,8 @@ $faqs = [
 
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">After the Visit</p>
 
-        <h2 class="font-heading font-bold leading-tight mb-5 text-3xl sm:text-4xl lg:text-5xl text-balance">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Turn preventive visit findings</span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">into the <span class="text-steel">right next step</span></span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            Turn preventive visit findings into the <span class="text-steel">right next step</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
@@ -860,7 +859,7 @@ $faqs = [
         <div class="flex flex-wrap items-center gap-3">
             <a href="{{ route('parts-aftercare') }}"
                data-ga-cta="parts-aftercare-strip"
-               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+               class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
                 Explore Support &amp; Aftercare
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
@@ -868,7 +867,7 @@ $faqs = [
             </a>
             <a href="{{ route('contact') }}"
                data-ga-cta="parts-aftercare-talk"
-               class="inline-flex items-center gap-2 border border-white/40 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
+               class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors">
                 Talk to Our Team
             </a>
         </div>
@@ -889,12 +888,12 @@ $faqs = [
                 <div class="relative lg:col-span-2 p-8 lg:p-12 flex flex-col gap-6 overflow-hidden">
                     <div>
                         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Book a Preventive Maintenance Visit</p>
-                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                            Protect your laundry operation
+                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight mb-5 text-balance">
+                            Protect your laundry operation<br class="hidden lg:block">
                             with <span class="text-steel">planned maintenance support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                            Tell us about your equipment, site and current maintenance needs. Irish Laundry Systems will guide you toward the right preventive maintenance, repair, rental or aftercare support.
+                            Tell us about your equipment, site and current maintenance needs. <span class="whitespace-nowrap">Irish Laundry Systems</span> will guide you toward the right preventive maintenance, repair, rental or aftercare support.
                         </p>
                         <div class="flex flex-col gap-3">
                             @foreach ([

@@ -168,12 +168,12 @@
 
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
-                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
-                    Support that <span class="text-[#148af4]">stays with your&nbsp;equipment</span> after the first&nbsp;visit
+                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                    Support that<br class="hidden lg:block"> <span class="text-[#148af4]">stays with your&nbsp;equipment</span><br class="hidden lg:block"> after the first&nbsp;visit
                 </h1>
 
-                <p class="pa-hero-desc font-body text-blue-200 text-base leading-relaxed mb-10 max-w-xl text-pretty">
-                    Irish Laundry Systems keeps commercial laundry sites connected after installation, repair, rental or maintenance, with follow-up care, service history and genuine parts access where applicable, so teams can make clearer equipment decisions beyond a single visit.
+                <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps commercial laundry sites connected after installation, repair, rental or maintenance, with follow-up care, service history and genuine parts access where applicable, so teams can make clearer equipment decisions beyond a single visit.
                 </p>
 
                 <div class="pa-hero-btns flex flex-row flex-wrap gap-4">
@@ -216,16 +216,16 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Aftercare</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-tight">
-                    Aftercare that keeps<br>service history and<br><span class="text-[#148af4]">next steps&nbsp;connected</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                    Aftercare that keeps service history and <span class="text-[#148af4]">next&nbsp;steps&nbsp;connected</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     After a repair, inspection or installation, the next decision is often the one that matters.
                 </p>
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
-                    Irish Laundry Systems keeps follow-up clearer with service history, Electrolux Professional equipment knowledge and genuine parts access where applicable.
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps follow-up clearer with service history, Electrolux Professional equipment knowledge and genuine parts access where applicable.
                 </p>
 
                 <a href="#aftercare-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
@@ -248,7 +248,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 What <span class="text-[#148af4]">stays connected</span> after the first visit
             </h2>
-            <p class="font-body text-gray-600 leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
                 Aftercare works best when the repair, the part, the equipment history and the next decision stay connected.
             </p>
         </div>
@@ -316,7 +316,7 @@
                     The <span class="text-[#148af4]">right part</span> starts with the <span class="text-[#148af4]">right equipment&nbsp;information</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                    A part only solves the problem when the machine, fault history, model and next action are clear. Irish Laundry Systems reviews the equipment details and service history before advising what is needed, what can wait and what should happen next.
+                    A part only solves the problem when the machine, fault history, model and next action are clear. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the equipment details and service history before advising what is needed, what can wait and what should happen next.
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs lg:text-sm font-body text-blue-200/90 mb-8">
                     <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Fewer parts mistakes</span>
@@ -343,7 +343,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             A <span class="text-[#148af4]">clearer decision</span> for the equipment already on-site
         </h2>
-        <p class="font-body text-gray-600 text-base leading-relaxed mt-4 reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty max-w-3xl" style="transition-delay:160ms;">
             Support &amp; Aftercare connects what has happened before with what the equipment needs now.
         </p>
     </div>
@@ -442,7 +442,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 The <span class="text-[#148af4]">right next step</span> depends on what your site needs now
             </h2>
-            <p class="font-body text-gray-600 leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
                 Support &amp; Aftercare connects the site to the most practical next action without turning every issue into the same conversation.
             </p>
         </div>
@@ -542,8 +542,8 @@ $aftercareFaqs = [
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Tell us about your equipment and <span class="text-[#148af4]">what needs&nbsp;attention</span>
             </h2>
-            <p class="font-body text-gray-600 leading-relaxed text-pretty">
-                Share the details that allow Irish Laundry Systems to review the equipment, service history and practical action required.
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                Share the details that allow <span class="whitespace-nowrap">Irish Laundry Systems</span> to review the equipment, service history and practical action required.
             </p>
         </div>
 
@@ -755,12 +755,12 @@ $aftercareFaqs = [
 
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:360px;">
         <div class="lg:max-w-[55%]">
-            <p class="font-body font-bold text-white text-xs uppercase tracking-[0.22em] mb-4 reveal">Talk to Our Team</p>
+            <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-4 reveal">Talk to Our Team</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal text-balance">
                 Need a <span class="text-navy">clearer next step</span> for your&nbsp;equipment
             </h2>
             <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">
-                Tell us what is happening with the equipment, what has already been done and what the site needs now. Irish Laundry Systems will connect the enquiry to the most practical next action.
+                Tell us what is happening with the equipment, what has already been done and what the site needs now. <span class="whitespace-nowrap">Irish Laundry Systems</span> will connect the enquiry to the most practical next action.
             </p>
             <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white/90 text-xs lg:text-sm reveal">
                 <span class="whitespace-nowrap">Fewer follow-up surprises</span>

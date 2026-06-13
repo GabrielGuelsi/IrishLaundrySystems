@@ -19,7 +19,7 @@
 
             {{-- Left: title / model / description / actions --}}
             <div class="order-2 lg:order-1 lg:pl-4">
-                <p class="font-heading font-bold text-navy text-lg lg:text-xl mb-3">{{ $item->title ?? $product }}</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $item->title ?? $product }}</p>
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
                 <p class="font-body text-navy/70 text-sm leading-relaxed mb-8 max-w-md">{{ $summary }}</p>
 
@@ -161,7 +161,7 @@
         </div>
 
         {{-- Request form --}}
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl text-center mb-10">Complete the form below to request more information</h2>
+        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl text-center text-balance mb-10">Complete the form below to request more information</h2>
 
         <div class="max-w-2xl mx-auto">
             <div class="space-y-5">

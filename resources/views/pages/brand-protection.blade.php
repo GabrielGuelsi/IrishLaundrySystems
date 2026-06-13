@@ -11,8 +11,8 @@
             </svg>
             <span class="text-sm font-body text-gray-200">Official website</span>
         </div>
-        <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-5">Irish Laundry Systems (ILS) — Official Website</h1>
-        <p class="font-body text-blue-200 text-base max-w-2xl mx-auto leading-relaxed">
+        <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">Irish Laundry Systems (ILS) — Official Website</h1>
+        <p class="font-body text-white/80 text-base max-w-2xl mx-auto leading-relaxed">
             This is the official website of Irish Laundry Systems, the commercial laundry engineering specialists based in the Republic of Ireland.
         </p>
     </div>
@@ -27,14 +27,14 @@
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="bg-white border border-border rounded-2xl p-6 sm:p-8 lg:p-10 mb-8">
-            <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-5">Disambiguation Statement</h2>
-            <p class="font-body text-gray-600 leading-relaxed mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl mb-5">Disambiguation Statement</h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                 The name "Irish Laundry Systems" and the abbreviation "ILS" are used to identify this specific commercial laundry engineering business, established in 1987, operating in the Republic of Ireland.
             </p>
-            <p class="font-body text-gray-600 leading-relaxed mb-4">
+            <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
                 We are not affiliated with any other business operating under similar names. If you have been contacted by, or have made contact with, an organisation claiming to be Irish Laundry Systems that cannot be verified through this website, please contact us directly to confirm.
             </p>
-            <p class="font-body text-gray-600 leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 Our contact details and coverage area are stated clearly on our <a href="{{ route('contact') }}" class="text-steel hover:text-navy font-bold transition-colors">contact page</a>. We cover the Republic of Ireland only (excluding Northern Ireland).
             </p>
         </div>
@@ -92,7 +92,7 @@
 
         <!-- What we do -->
         <div class="bg-white border border-border rounded-2xl p-6 sm:p-8 lg:p-10">
-            <h2 class="font-heading font-bold text-navy text-2xl mb-6">What Irish Laundry Systems Does</h2>
+            <h2 class="font-heading font-bold text-navy text-2xl mb-5">What Irish Laundry Systems Does</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
                 <div class="text-center p-4">
                     <div class="w-12 h-12 rounded-2xl bg-steel/10 flex items-center justify-center mx-auto mb-3">

@@ -16,7 +16,7 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Choose commercial ironers around <span style="color:#148af4;">linen finish, output and support</span>
                 </h1>
@@ -44,7 +44,7 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Ironer Decisions</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Ironer Decisions</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
@@ -114,7 +114,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control <span style="color:#148af4;">energy, output and handling pressure</span> before the ironer is chosen
+                Control <span style="color:#148af4;">energy, output and handling pressure</span> <br class="hidden lg:block">before the ironer is chosen
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 The right ironer setup can protect daily output, reduce unnecessary handling and make the room easier to work in. These decisions shape cost, workflow and staff pressure long after installation.
@@ -138,7 +138,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Technology that protects <span style="color:#148af4;">finish quality, hygiene and daily handling</span>
+                Technology that protects <br class="hidden lg:block"><span style="color:#148af4;">finish quality, hygiene and daily handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Selected Electrolux Professional technologies support moisture control, heat consistency, operator comfort and finishing flexibility when matched to the right ironer.
@@ -250,7 +250,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the ironer around <span style="color:#011E41;">linen flow, utilities and long-term use</span>
+            Plan the ironer around <br class="hidden lg:block"><span style="color:#011E41;">linen flow, utilities and long-term use</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             Irish Laundry Systems reviews the room, linen type, available space, operator flow, gas/electric/steam suitability and support needs before recommending an ironer. The right choice should work for daily output, installation and the way the equipment will be used over time.
@@ -282,7 +282,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Ironer Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare ironer options around <span style="color:#148af4;">working width, automation and room fit</span>
+                Compare ironer options around <br class="hidden lg:block"><span style="color:#148af4;">working width, automation and room fit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Start with the linen and output required, then narrow the decision by working width, delivery direction, heating choice and automation level.
@@ -493,7 +493,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support that keeps <span style="color:#148af4;">ironer decisions moving</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Commercial ironer performance depends on more than the machine. Irish Laundry Systems connects equipment access, installation, planned maintenance, repairs and aftercare around the way the laundry room operates.
             </p>
         </div>

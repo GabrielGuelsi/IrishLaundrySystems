@@ -51,14 +51,14 @@
                     <span class="text-gray-300 text-sm font-body">{{ $category }}</span>
                 </div>
 
-                <h1 class="hero-desc font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">{{ $category }} Equipment</h1>
-                <p class="font-body text-blue-200 text-lg max-w-xl leading-relaxed mb-7">
+                <h1 class="hero-desc font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">{{ $category }} Equipment</h1>
+                <p class="font-body text-white/80 text-base max-w-xl leading-relaxed mb-7">
                     Commercial {{ strtolower($category) }} equipment supplied, installed and supported by Irish Laundry Systems. Electrolux Professional range available.
                 </p>
 
                 <div class="hero-btns">
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3.5 text-sm tracking-wide uppercase transition-colors duration-200 rounded-md">
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200">
                         Request Equipment Quote
                     </a>
                 </div>
@@ -147,14 +147,14 @@
                 <h2 class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-tight mb-5">
                     Barrier Washers
                 </h2>
-                <p class="font-body font-bold text-navy text-base leading-relaxed mb-3">
+                <p class="font-body text-gray-500 text-lg leading-relaxed mb-3">
                     Take total control of contamination in sensitive laundry environments.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Implement failsafe laundry cycle management programmes in high-risk applications. A wide range of high productivity Barrier Washers designed to remove human error and protect against accidental contamination.
                 </p>
                 <a href="#products"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
                     GO TO PRODUCTS
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -364,7 +364,7 @@
                     High productivity front-load washers designed to make laundry operations safe, fast and cost controlled.
                 </p>
                 <a href="#products"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
                     GO TO PRODUCTS
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -619,7 +619,7 @@
                     High-capacity tumble dryers designed to maximise throughput, minimise energy costs and keep your laundry operation running at full speed.
                 </p>
                 <a href="#products"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
                     GO TO PRODUCTS
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -869,7 +869,7 @@
                     Drying cabinets protect garment shape and finish while reducing throughput pressure on tumble dryers — ideal for workwear, PPE, delicate fabrics, sports clothing and hospitality items.
                 </p>
                 <a href="#products"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
                     GO TO PRODUCTS
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -1125,7 +1125,7 @@
                     High-capacity flatwork ironers and chest ironers designed to deliver consistent finishing results — reducing labour time and improving linen presentation across hospitality, healthcare and commercial laundry operations.
                 </p>
                 <a href="#products"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors">
                     GO TO PRODUCTS
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>

@@ -16,9 +16,9 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Professional wet cleaning for delicate garments, <span style="color:#148af4;">faster turnaround and solvent-free textile care</span>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                    Professional wet cleaning for delicate garments,<br class="hidden lg:block"> <span style="color:#148af4;">faster turnaround and solvent-free textile care</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Lagoon Advanced Care gives dry cleaners, garment care businesses and textile care sites a serious step forward from traditional solvent-based cleaning. Irish Laundry Systems supplies, installs and supports Electrolux Professional wet cleaning equipment for businesses that need premium garment care, faster processing and a stronger customer offer.
@@ -44,7 +44,7 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Professional Textile Care</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Professional Textile Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
@@ -310,7 +310,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                For businesses built around <span style="color:#148af4;">garment care, presentation and trust</span>
+                For businesses built around<br class="hidden lg:block"> <span style="color:#148af4;">garment care, presentation and trust</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Wet cleaning is a strong fit where customers expect careful handling, fast return and visible garment quality.
