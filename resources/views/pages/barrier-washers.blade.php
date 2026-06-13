@@ -456,19 +456,17 @@
         @php
             // Barrier washer catalogue. NOTE: WB6 is the current real range; append further
             // products (Pullman, Cleanroom options, etc.) here when supplied — the filters auto-populate.
+            // One card per WB6 model (same product across kg shares one image).
+            $bwSites  = ['Healthcare','Care Facilities','Pharmaceutical','Food Processing','Commercial Laundry'];
+            $bwBadges = ['ERGOCERT','Hygiene Watchdog','AIDO','Power Balance'];
+            $bwFit    = 'Line 6000 Evolution barrier washer with clean/dirty separation, guided operation and long-term support.';
+            $bwImg    = '/images/equipment/line6000-barrier-washer.webp';
+            // Cards for models with their own photo; imageless sizes folded into the nearest card's range.
             $barrierFamilies = [
-                [
-                    'slug' => 'wb6',
-                    'name' => 'WB6 — Line 6000 Evolution Barrier Washer',
-                    'fit' => 'Barrier washer for hygiene-critical laundry rooms needing clean/dirty separation, guided operation and long-term support.',
-                    'kg' => ['13','18','20','27','35','50','70','90','110'],
-                    'capLabel' => '13–110 kg',
-                    'models' => 'WB6-13 → WB6-110',
-                    'profile' => 'Line 6000 Evolution',
-                    'sites' => ['Healthcare','Care Facilities','Pharmaceutical','Food Processing','Commercial Laundry'],
-                    'badges' => ['ERGOCERT','Hygiene Watchdog','AIDO','Power Balance'],
-                    'img' => '/images/equipment/line6000-barrier-washer.webp',
-                ],
+                ['name' => 'WB6-13',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-13.jpg'],
+                ['name' => 'WB6-20',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-20.jpg'],
+                ['name' => 'WB6-35',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-35.jpg'],
+                ['name' => 'WB6-110', 'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-110.jpg'],
             ];
             $profileOpts = []; $capOpts = []; $siteOpts = [];
             foreach($barrierFamilies as $f) {
@@ -555,7 +553,7 @@
 
                 {{-- Footer count + clear --}}
                 <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'range' : 'ranges'"></span></span>
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'model' : 'models'"></span></span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
                 </div>
             </aside>

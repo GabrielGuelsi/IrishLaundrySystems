@@ -89,15 +89,20 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated business laundry demand.'],
-                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For smaller businesses that need stronger, faster equipment without moving straight to full commercial scale.'],
-                ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For bigger small-business loads, heavier daily use and more capacity in a compact format.'],
-                ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For heavier laundry demand, larger capacity needs and full commercial performance.'],
+                ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated business laundry demand.', 'img' => '/images/equipment/Domestic%20machines.png'],
+                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For smaller businesses that need stronger, faster equipment without moving straight to full commercial scale.', 'img' => '/images/equipment/myPRO-8K-washer.webp'],
+                ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For bigger small-business loads, heavier daily use and more capacity in a compact format.', 'img' => '/images/equipment/myPROXL%2012kg.webp'],
+                ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For heavier laundry demand, larger capacity needs and full commercial performance.', 'img' => '/images/equipment/commercialwasher.webp'],
             ] as $lvl)
-            <div class="bg-bg rounded-2xl p-7 flex flex-col h-full border border-gray-100">
-                <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-3">{{ $lvl['step'] }}</span>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $lvl['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $lvl['copy'] }}</p>
+            <div class="bg-bg rounded-2xl overflow-hidden flex flex-col h-full border border-gray-100">
+                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:160px;">
+                    <img src="{{ $lvl['img'] }}" alt="{{ $lvl['title'] }}" class="max-h-full w-auto object-contain">
+                </div>
+                <div class="p-7 flex flex-col flex-1">
+                    <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-3">{{ $lvl['step'] }}</span>
+                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $lvl['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $lvl['copy'] }}</p>
+                </div>
             </div>
             @endforeach
         </div>

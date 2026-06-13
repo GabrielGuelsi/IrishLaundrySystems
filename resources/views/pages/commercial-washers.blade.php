@@ -81,7 +81,7 @@
         <div class="reveal max-w-3xl mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Look beyond the purchase price to see <span style="color:#148af4;">where washer costs really sit</span>
+                Look beyond the purchase price to see<br><span style="color:#148af4;">where washer costs really sit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost pressure. Electrolux Professional washer technologies are designed to reduce that pressure and support lower long-term running costs.
@@ -644,7 +644,7 @@
         <div class="mb-10 reveal max-w-3xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Cut detergent waste with <span style="color:#148af4;">smarter dosing and wash control</span>
+                Cut detergent waste with<br><span style="color:#148af4;">smarter dosing and wash control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Automatic dosing supports commercial laundry rooms by using the right amount of detergent for each cycle. That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.

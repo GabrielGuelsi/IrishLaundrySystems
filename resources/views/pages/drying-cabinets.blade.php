@@ -284,10 +284,16 @@
 
         {{-- Drying cabinet families — one card/image per range, filterable by type and line (like the washers page) --}}
         @php
+            // One card per model; same product across kg shares one image.
             $cabinetFamilies = [
-                ['name' => 'Standard Drying Cabinets', 'slug' => 'standard-drying-cabinets', 'fit' => 'Gentle hang-drying cabinets for garments and linen across the standard range.', 'line' => ['Line 6000'], 'capLabel' => 'Standard', 'models' => 'DC6-4, DC6-8, DC6-14', 'type' => 'Standard', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-                ['name' => 'Heat Pump Drying Cabinets', 'slug' => 'heat-pump-drying-cabinets', 'fit' => 'Energy-saving heat pump drying cabinets that cut drying energy while protecting fabrics.', 'line' => ['Line 6000','Line 7000'], 'capLabel' => 'Heat Pump', 'models' => 'DC6-4HP, DC6-8HP, DC6-10HP, DC6-14HP, DC7-4HP', 'type' => 'Heat Pump', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-                ['name' => 'Workwear Drying Cabinet', 'slug' => 'workwear-drying-cabinet', 'fit' => 'Specialist cabinet for drying workwear, PPE and heavier garments.', 'line' => ['Line 6000'], 'capLabel' => 'Workwear', 'models' => 'DC6-15WW', 'type' => 'Workwear', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
+                ['name' => 'DC6-4',    'cat' => 'Standard Drying Cabinets',    'slug' => 'standard-drying-cabinets', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20Cabinets.jpg'],
+                ['name' => 'DC6-8',    'cat' => 'Standard Drying Cabinets',    'slug' => 'standard-drying-cabinets', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20CabinetsDC6-8.jpg'],
+                ['name' => 'DC6-14',   'cat' => 'Standard Drying Cabinets',    'slug' => 'standard-drying-cabinets', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20CabinetsDC6-14.jpg'],
+                ['name' => 'DC6-15WW', 'cat' => 'Standard Drying Cabinets',    'slug' => 'workwear-drying-cabinet',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Drying cabinet suited to workwear, PPE and heavier garments.',                    'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20PumpDC6-15WW.jpg'],
+                ['name' => 'DC6-14HP', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 6000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc6-14hp.jpg'],
+                ['name' => 'DC7-4HP',  'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg'],
+                ['name' => 'DC7-4HPh', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20PumpDC7-4HPH.jpg'],
+                ['name' => '1LZS03',   'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'heat-pump-drying-cabinets','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pump%201LZS03.jpg'],
             ];
         @endphp
 
@@ -298,7 +304,7 @@
                 $typeOpts[$cf['type']] = ($typeOpts[$cf['type']] ?? 0) + 1;
                 foreach($cf['line'] as $ln) { $lineOpts[$ln] = ($lineOpts[$ln] ?? 0) + 1; }
             }
-            $typeOrder = ['Standard','Heat Pump','Workwear'];
+            $typeOrder = ['Standard','Heat Pump'];
             $lineOrder = ['Line 6000','Line 7000'];
             $famJs = array_map(fn($cf) => ['type' => $cf['type'], 'line' => $cf['line']], $cabinetFamilies);
         @endphp
@@ -362,7 +368,7 @@
 
                 {{-- Footer count + clear --}}
                 <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
-                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'range' : 'ranges'"></span></span>
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'model' : 'models'"></span></span>
                     <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
                 </div>
             </aside>
@@ -375,7 +381,7 @@
                         <a href="{{ route('equipment.product', ['category' => 'drying-cabinets', 'product' => $f['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $f['img'] }}" alt="{{ $f['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                         </a>
-                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['type'] }}</span><span class="text-gray-400"> &middot; {{ $f['capLabel'] }}</span></p>
+                        <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $f['cat'] }}</span></p>
                         <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ route('equipment.product', ['category' => 'drying-cabinets', 'product' => $f['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $f['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $f['fit'] }}</p>
                         @if(!empty($f['line']))
