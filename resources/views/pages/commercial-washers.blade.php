@@ -18,10 +18,10 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Washing Machines</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Choose commercial washers around <span style="color:#148af4;">daily demand, running costs and long-term support</span>
+                    Choose commercial washers around <span style="color:#148af4;">daily demand, running cost and support</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial washing machines for hotels, healthcare sites, care facilities and commercial laundries across Ireland. We connect washer capacity, room setup, staff routines and after-installation support around the way your laundry actually operates.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial washers for hotels, healthcare sites, care facilities and commercial laundries across Ireland. Since 1987, our team has helped sites match washer capacity, room layout, detergent use, drying pressure and after-installation support around the way their laundry actually works.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -49,13 +49,16 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Washer choice affects <span style="color:#148af4;">cost control, laundry flow and support after installation</span>
+                    Get the right washer for <span style="color:#148af4;">your room, workload and budget</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                    A commercial washer decision affects more than wash capacity. The right setup should fit the room, utilities, access, detergent control, drying pressure, purchase or rental needs and long-term support before money is spent.
+                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    The wrong washer fit can create daily pressure through water use, detergent waste, drying delays, staff routines, service calls and replacement pressure. Irish Laundry Systems connects washer selection, room layout, installation, rental, maintenance, repairs and aftercare into one clear equipment decision.
+                    Irish Laundry Systems connects expert advice, Electrolux Professional washer technology, installation knowledge and aftercare, so your site can choose with more confidence.
                 </p>
                 <a href="#washer-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -78,10 +81,10 @@
         <div class="reveal max-w-3xl mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                <span style="color:#148af4;">Look beyond purchase price</span> to the costs that keep repeating
+                Look beyond the purchase price to see <span style="color:#148af4;">where washer costs really sit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Purchase price is only the first part of a washer decision. Over the life of the equipment, chemicals, energy and water carry the larger cost pressure, so the right washer choice should be made around daily use, not just initial purchase.
+                The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost pressure. Electrolux Professional washer technologies are designed to reduce that pressure and support lower long-term running costs.
             </p>
         </div>
 
@@ -116,9 +119,9 @@
                 {{-- LEFT column --}}
                 <div class="order-2 lg:order-1 flex flex-col lg:text-right lg:items-end gap-8">
                     <div class="bg-[#eaf4fc] rounded-lg p-6 lg:max-w-[230px]">
-                        <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">Our &ldquo;iceberg&rdquo; is slim</h3>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">A smaller lifetime cost profile</h3>
                         <p class="font-body text-navy/70 text-sm leading-relaxed">
-                            While other washers and dryers have <span class="font-bold text-navy">extensive lifetime costs,</span> we can represent ours with a slimmer iceberg shape because of the savings you will achieve thanks to its <span class="font-bold text-navy">money-saving features</span> and robust engineering.
+                            Water, energy and chemicals make up the larger share of washer lifetime cost. Choosing the right washer technology can help reduce that cost pressure across daily operation.
                         </p>
                     </div>
                     <div class="lg:max-w-[230px]">
@@ -178,7 +181,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose washers around the <span style="color:#148af4;">costs your laundry room carries every day</span>
+                Choose washers around <span style="color:#148af4;">daily cost control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 A washer decision affects more than the wash cycle. Operational expenditure, detergent use, water and energy waste, drying pressure and staff productivity all shape the real cost of keeping laundry moving.
@@ -195,17 +198,51 @@
     </div>
 </section>
 
+{{-- 6b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
+<section class="relative overflow-hidden" style="background-color:#011E41; min-height:340px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
+        <img src="/images/healthcare/line-6000-solutions.jpg" alt="Connected commercial laundry equipment"
+             class="w-full h-full object-cover" style="object-position: center center;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
+    </div>
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Turn washer data into <span style="color:#148af4;">better control over cost, waste and performance</span>
+        </h2>
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
+            OnE Connected gives laundry teams clearer visibility over equipment status, load activity, consumption, alerts and service needs through one digital dashboard. For compatible Electrolux Professional washers, that means better decisions around productivity, running cost, detergent use and laundry flow.
+        </p>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Live equipment visibility', 'Consumption insight', 'Load and cycle data', 'Service alerts'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        <div class="flex flex-wrap gap-3">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                Explore OnE Connected
+            </a>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
+                Ask About Connected Washers
+            </a>
+        </div>
+    </div>
+</section>
+
 {{-- 7. TECHNICAL PROOF --}}
 <section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Washer Technology</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Washer features that support <span style="color:#148af4;">capacity, control and daily handling</span>
+                Features that support <span style="color:#148af4;">capacity, control and daily handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Selected Electrolux Professional features support load control, detergent accuracy, clearer operation, stronger extraction and easier daily handling when matched to the right laundry room.
+                Selected Electrolux Professional washer features support load control, detergent accuracy, clearer operation, stronger extraction and easier daily handling when matched to the right laundry room.
             </p>
         </div>
 
@@ -239,7 +276,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Build the washer decision around the <span style="color:#011E41;">room, workflow and support</span>
+            Build the washer setup around <span style="color:#011E41;">room, workflow and support</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A washer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying pressure, installation and support before the equipment decision is made.
@@ -270,10 +307,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Washer Range Starting Points</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment paths <span style="color:#148af4;">worth a closer look</span>
+                Start with the washer option for <span style="color:#148af4;">your daily demand</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Start with the washer route that fits the pressure of your laundry room, then connect the decision to capacity, installation, rental and long-term support.
+                Use these key washer options to narrow the conversation before capacity, installation, rental and support are confirmed.
             </p>
         </div>
 
@@ -423,7 +460,7 @@
                 Compare washer options around <span style="color:#148af4;">capacity, cost and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with capacity, then connect the washer decision to room layout, utilities, detergent use, drying pressure, installation and long-term support.
+                Start with capacity, then connect the washer choice to room layout, utilities, detergent use, drying pressure, installation and long-term support.
             </p>
         </div>
 
@@ -600,14 +637,169 @@
     </div>
 </section>
 
-{{-- 12. CONNECTED SERVICE ROUTES --}}
+{{-- 11b. DOSING & LAUNDRY CONTROL (Alpine carousel — sector module) --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal max-w-3xl">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Cut detergent waste with <span style="color:#148af4;">smarter dosing and wash control</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Automatic dosing supports commercial laundry rooms by using the right amount of detergent for each cycle. That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.
+            </p>
+        </div>
+
+        @php
+        $dosingProducts = [
+            [
+                'name'   => 'Multisave',
+                'label'  => 'Multi-tank dosing with water saving',
+                'body'   => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
+                'points' => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
+                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+            ],
+            [
+                'name'   => 'DOSAVE',
+                'label'  => 'Precise dosing for consistent results',
+                'body'   => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
+                'points' => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
+                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+            ],
+            [
+                'name'   => 'JETSAVE',
+                'label'  => 'Jet-based dosing with integrated saving',
+                'body'   => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
+                'points' => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
+                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+            ],
+            [
+                'name'   => 'Efficient Dosing',
+                'label'  => 'Integrated dosing through CompassPro',
+                'body'   => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
+                'points' => ['Integrated with CompassPro', 'Removes manual dosing errors', 'Lower detergent cost per cycle'],
+                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+            ],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: 4,
+                timer: null,
+                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
+                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
+                go(i)   { this.active = i; this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 5000); },
+            }"
+            x-init="timer = setInterval(() => next(), 5000)"
+            class="relative reveal"
+        >
+            {{-- Slides --}}
+            <div class="grid [&>*]:[grid-area:1/1]">
+                @foreach($dosingProducts as $i => $p)
+                <div
+                    class="transition-opacity duration-500"
+                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+                >
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+
+                        {{-- Left: context photo --}}
+                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
+                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                                 alt="Electrolux Professional laundry equipment"
+                                 class="w-full object-cover object-center" style="height:260px;">
+                        </div>
+
+                        {{-- Right: product name + tabs indicator + description + unit image --}}
+                        <div class="lg:col-span-9 flex flex-col justify-between p-6 sm:p-8 lg:p-10">
+
+                            {{-- Tab indicators (product selector) --}}
+                            <div class="flex gap-1 border-b border-gray-100 mb-6 overflow-x-auto">
+                                @foreach($dosingProducts as $j => $tab)
+                                <button @click="go({{ $j }})"
+                                        :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                                        class="font-heading text-sm pb-3 pr-6 transition-colors whitespace-nowrap">
+                                    {{ $tab['name'] }}
+                                </button>
+                                @endforeach
+                            </div>
+
+                            {{-- Content + unit image side by side --}}
+                            <div class="flex flex-col sm:flex-row gap-6 items-start flex-1">
+
+                                {{-- Copy --}}
+                                <div class="flex-1">
+                                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
+                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
+                                    <div class="flex items-center gap-8">
+                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                    </div>
+                                </div>
+
+                                {{-- Unit image --}}
+                                @if($p['img'])
+                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
+                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
+                                         class="w-full h-auto object-contain">
+                                </div>
+                                @endif
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Prev / Next buttons --}}
+            <button @click="prev()"
+                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+            </button>
+            <button @click="next()"
+                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </button>
+
+            {{-- Dot navigation --}}
+            <div class="flex items-center justify-center gap-2 mt-3">
+                @foreach($dosingProducts as $i => $p)
+                <button
+                    @click="go({{ $i }})"
+                    :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
+                    class="h-2 rounded-full transition-all duration-300">
+                </button>
+                @endforeach
+            </div>
+
+        </div>
+
+        {{-- CTA --}}
+        <div class="mt-4 text-center">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
+                Ask About Dosing Systems
+                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{{-- 12. CONNECTED WASHER SUPPORT --}}
 <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Washer Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support routes that keep <span style="color:#148af4;">washer decisions moving</span>
+                Keep washer performance supported <span style="color:#148af4;">after the first decision</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Commercial washer performance depends on more than the first installation. Irish Laundry Systems connects equipment access, planned maintenance, repairs and aftercare around the way the laundry room operates.
@@ -693,10 +885,10 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep washer decisions <span style="color:#148af4;">connected after installation</span>
+                    Keep equipment supported with <span style="color:#148af4;">clear next steps</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
-                    Irish Laundry Systems connects planned maintenance, service history, service and breakdown support and parts access where needed, so washer decisions stay clear after installation, rental, repair or inspection.
+                    Once equipment is in place, Irish Laundry Systems can guide your site toward the right follow-up support, from planned maintenance and service history to call-out support and aftercare.
                 </p>
                 <div class="flex items-center flex-wrap gap-x-5 gap-y-2">
                     @foreach(['Planned maintenance', 'Service history', 'Service and breakdown support', 'Parts access where needed'] as $i => $pt)
@@ -720,7 +912,7 @@
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted support behind <span style="color:#148af4;">commercial laundry decisions</span>',
-    'subheading' => 'Commercial washing machine decisions affect cost, workflow, staff routines and daily output. Irish Laundry Systems is trusted by organisations that need clear communication, responsive support and equipment knowledge after the machine is on site.',
+    'subheading' => 'Commercial washer choices affect cost, workflow, staff routines and daily output. Irish Laundry Systems is trusted by organisations that need clear communication, responsive support and equipment knowledge after the equipment is on site.',
 ])
 
 {{-- 16. TRUSTED BY LOGO STRIP --}}
@@ -729,14 +921,16 @@
 {{-- 17. FAQ --}}
 @include('components.faq', [
     'eyebrow' => 'Commercial Washer FAQs',
-    'heading' => 'Clear answers before the <span style="color:#148af4;">washer decision</span>',
+    'heading' => 'Clear answers before <span style="color:#148af4;">your washer decision</span>',
     'faqs' => [
-        ['question' => 'What size commercial washing machine do I need?', 'answer' => 'The right size depends on daily laundry volume, textile type, peak demand, room layout, utilities and drying capacity. Irish Laundry Systems can assess the site before recommending a washer range or model.'],
-        ['question' => 'Can I rent a commercial washing machine?', 'answer' => 'Yes. Rental may be suitable for sites looking for lower upfront cost, replacement support or capacity expansion. Service and breakdown support is included under rental terms.'],
-        ['question' => 'Do you install commercial washing machines?', 'answer' => 'Yes. Irish Laundry Systems supplies, installs and supports commercial laundry equipment across Ireland.'],
+        ['question' => 'What size commercial washer do I need?', 'answer' => 'The right size depends on daily laundry volume, textile type, peak demand, room layout, utilities and drying capacity. Irish Laundry Systems can review the site before recommending a washer range or model.'],
+        ['question' => 'Can I rent a commercial washer?', 'answer' => 'Yes. Equipment Rental may be suitable for sites looking for lower upfront cost, replacement support or capacity expansion. Service and breakdown support is included under rental terms.'],
+        ['question' => 'Do you install commercial washers?', 'answer' => 'Yes. Irish Laundry Systems supplies, installs and supports commercial laundry equipment across Ireland.'],
         ['question' => 'Do you provide service and breakdown support?', 'answer' => 'Yes. Service and breakdown support is available, with planned maintenance and aftercare options for equipment already on site.'],
-        ['question' => 'What is the difference between Automatic Savings and Integrated Savings?', 'answer' => 'Automatic Savings adjusts water intake to the actual load. Integrated Savings shows the load in real time to avoid underloading and overloading.'],
+        ['question' => 'What is the difference between Automatic Savings and Integrated Savings?', 'answer' => 'Automatic Savings adjusts water intake to the actual load. Integrated Savings shows the load in real time to help avoid underloading and overloading.'],
         ['question' => 'Can washer choice reduce drying pressure?', 'answer' => 'Yes. High-spin washer selection and Power Balance can reduce moisture retention before drying, protecting laundry flow and reducing pressure on the drying stage.'],
+        ['question' => 'Can connected washer data support better laundry control?', 'answer' => 'Where compatible equipment is in place, OnE Connected can give clearer visibility over equipment status, load activity, consumption, alerts and service needs.'],
+        ['question' => 'Can dosing reduce detergent waste?', 'answer' => 'Yes. Compatible dosing systems and Electrolux Professional dosing features can help use the right amount of detergent for each cycle, reducing chemical overuse and supporting more consistent wash results.'],
         ['question' => 'Are Line 6000 washers suitable for healthcare or care facilities?', 'answer' => 'Selected Line 6000 washer options can support hygiene-focused and high-demand laundry environments when matched to the correct process, room setup and support plan.'],
     ],
 ])
@@ -744,11 +938,12 @@
 {{-- 18. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Advice</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Need the <span style="color:#148af4;">right washer decision</span> for your laundry room?
+            Need the right washer for <span style="color:#148af4;">your laundry room?</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Talk to Irish Laundry Systems about washer capacity, running cost pressure, installation, rental, maintenance and support options.
+            Talk to Irish Laundry Systems about washer capacity, running cost pressure, detergent control, installation, rental, maintenance and support options.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('contact') }}"

@@ -15,7 +15,7 @@
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry Support</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span style="color:#011E41;">Keep</span> <span style="color:#148af4;">high-demand laundry operations</span><br><span style="color:#011E41;">under control</span>
+                    <span style="color:#011E41;">Keep</span> <span style="color:#148af4;">high-demand laundry</span><br><span style="color:#148af4;">operations</span> <span style="color:#011E41;">under control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports commercial, industrial, institutional and specialist laundry sites with Electrolux Professional equipment selection, supply, rental, preventive maintenance, repairs and aftercare built around daily load, mixed textiles, running cost and keeping equipment running.

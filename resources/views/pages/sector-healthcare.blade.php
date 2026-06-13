@@ -942,7 +942,7 @@
     ],
 ])
 
-@include('components.equipment-categories', ['heading' => 'Equipment options for <span style="color:#148af4;">healthcare laundry rooms</span>', 'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed decision should still begin with the room, workload, hygiene process and maintenance needs.', 'subheadingClass' => 'lg:whitespace-nowrap'])
+@include('components.equipment-categories', ['heading' => 'Equipment options for <span style="color:#148af4;">healthcare laundry rooms</span>', 'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed decision should still begin with the room, workload, hygiene process and maintenance needs.', 'headerAlign' => 'lg:flex-row lg:items-start'])
 
 {{-- Process Block --}}
 <section class="py-14 lg:py-20 bg-white">
