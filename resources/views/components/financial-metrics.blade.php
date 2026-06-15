@@ -33,7 +33,7 @@
             $isShort = strlen(strip_tags($it['label'])) <= 16;
             $labelIndent = 'pl-[4.25rem] xl:pl-[5.25rem]';
         @endphp
-        <div class="lg:min-h-[6.5rem] w-fit">
+        <div class="lg:min-h-[6.5rem] w-fit {{ ($tightLeft ?? false) ? '-ml-3' : '' }}">
             <div class="flex items-end gap-1">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0">
                 <div class="flex flex-col min-w-0">
@@ -42,9 +42,9 @@
                 </div>
             </div>
             @if($isShort)
-            <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }}">{{ $it['label'] }}</h3>
+            <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }} {{ $it['labelClass'] ?? '' }}">{{ $it['label'] }}</h3>
             @else
-            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto">{{ $it['label'] }}</h3>
+            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto {{ $it['labelClass'] ?? '' }}">{{ $it['label'] }}</h3>
             @endif
         </div>
 

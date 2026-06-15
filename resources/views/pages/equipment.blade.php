@@ -10,7 +10,7 @@
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[660px]" style="background-color:#011E41;">
     <img src="/images/equipment/td6-multihousing-room.jpg" alt="Commercial laundry equipment room"
          class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.94) 0%, rgba(1,30,65,0.80) 45%, rgba(1,30,65,0.45) 75%, rgba(1,30,65,0.20) 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.72) 0%, rgba(1,30,65,0.32) 40%, rgba(1,30,65,0.06) 66%, transparent 85%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-4xl reveal reveal-left">
@@ -144,7 +144,7 @@
                     <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover object-center">
-                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.12) 55%, transparent 75%);"></div>
+                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.7) 0%, rgba(1,30,65,0.32) 28%, rgba(1,30,65,0.05) 52%, transparent 72%);"></div>
                         <div class="relative z-10 flex items-end" style="min-height:540px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
                                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $t['eyebrow'] }}</p>
@@ -365,7 +365,7 @@
                 <div class="lg:col-span-7 bg-white p-6 lg:p-8 lg:border-l border-gray-200">
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 h-full">
                         @foreach([
-                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-ironing-tables.jpg'],
+                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'FIT1.jpg'],
                             ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'finishing-steam-irons.jpg'],
                             ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-presses.jpg'],
                         ] as $fc)
