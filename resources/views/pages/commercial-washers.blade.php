@@ -96,10 +96,11 @@
                     cur: 0,
                     imgs: [
                         '/images/equipment/commercialwasher.webp',
-                        '/images/equipment/line6000-tumble-dryer.webp',
-                        '/images/equipment/line6000-ironer.webp',
-                        '/images/equipment/line6000-barrier-washer.webp',
-                        '/images/healthcare/lagoon-advanced-care.webp',
+                        '/images/equipment/WS6%20%E2%80%94%20Line%206000%20High-Spin%20Washer.jpg',
+                        '/images/equipment/WN6%20%E2%80%94%20Line%206000%20Normal-Spin%20Washer.jpg',
+                        '/images/equipment/W4-Series%20Washer-Extractors.png',
+                        '/images/equipment/PW9C.jpg',
+                        '/images/equipment/Quickwash%20QWC.jpg',
                     ],
                     init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
                  }"
@@ -319,7 +320,7 @@
             ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'route' => '#washer-range', 'img' => '/images/equipment/commercialwasher.webp'],
             ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/equipment/commercialwasher.webp'],
             ['name' => 'Barrier Washers',               'copy' => 'For hygiene-critical laundry rooms where soiled and clean handling must stay separate.', 'cta' => 'Explore Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/equipment/line6000-barrier-washer.webp'],
-            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/equipment/lagoon-advanced-care.webp'],
         ];
         @endphp
 
