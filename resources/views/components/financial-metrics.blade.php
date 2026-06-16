@@ -41,10 +41,11 @@
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
             </div>
+            @php $drop = ($labelDrop ?? false) ? 'translate-y-2' : ''; @endphp
             @if($isShort)
-            <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }} {{ $it['labelClass'] ?? '' }}">{{ $it['label'] }}</h3>
+            <h3 class="{{ $labelClasses }} -mt-1 {{ $labelIndent }} {{ $drop }} {{ $it['labelClass'] ?? '' }}">{{ $it['label'] }}</h3>
             @else
-            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto {{ $it['labelClass'] ?? '' }}">{{ $it['label'] }}</h3>
+            <h3 class="{{ $labelClasses }} -mt-1 w-fit ml-auto {{ $drop }} {{ $it['labelClass'] ?? '' }}">{{ $it['label'] }}</h3>
             @endif
         </div>
 

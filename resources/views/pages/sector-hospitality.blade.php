@@ -87,11 +87,11 @@
         </div>
 
         @include('components.financial-metrics', ['tightLeft' => true, 'items' => [
-            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.'],
-            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
-            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care', 'labelClass'=>'translate-x-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and support', 'labelClass'=>'translate-x-2', 'body'=>'Irish Laundry Systems brings equipment planning, planned maintenance, repairs, rental options and aftercare together, so hospitality laundry decisions are not only made after something fails.'],
+            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness', 'labelClass'=>'translate-y-2',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.'],
+            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'labelClass'=>'translate-y-2', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
+            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and support', 'labelClass'=>'translate-x-6 translate-y-2', 'body'=>'Irish Laundry Systems brings equipment planning, planned maintenance, repairs, rental options and aftercare together, so hospitality laundry decisions are not only made after something fails.'],
         ]])
     </div>
 </section>
@@ -243,34 +243,17 @@
 </section>
 
 <!-- PLANNING STRIP -->
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
-    </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Plan the <span style="color:#011E41;">property laundry room</span></span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">around linen demand, space and <span style="color:#011E41;">peak periods</span></span>
-        </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6">
-            Before equipment becomes a daily service issue, the room, linen demand, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property operates.
-        </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            <span class="font-body text-white text-sm font-bold">Avoid wasted spend</span>
-            <span class="text-white/40">|</span>
-            <span class="font-body text-white text-sm font-bold">Right-fit laundry room</span>
-            <span class="text-white/40">|</span>
-            <span class="font-body text-white text-sm font-bold">Reduce costly rework</span>
-        </div>
-        <a href="{{ route('contact') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Talk to Our Team
-        </a>
-    </div>
-</section>
+@include('components.cta-combined-banner', [
+    'eyebrow'    => 'Site Planning',
+    'heading'    => 'Plan the <span style="color:#011E41;">property laundry room</span> around linen demand, space and <span style="color:#011E41;">peak periods</span>',
+    'body'       => 'Before equipment becomes a daily service issue, the room, linen demand, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property operates.',
+    'miniPoints' => [
+        ['icon' => 'home-planning-spend',  'label' => 'Avoid wasted<br>spend'],
+        ['icon' => 'home-planning-fit',    'label' => 'Right-fit laundry<br>room'],
+        ['icon' => 'home-planning-rework', 'label' => 'Reduce costly<br>rework'],
+    ],
+    'ctaText'    => 'Talk to Our Team',
+])
 
 <!-- DETAILED EQUIPMENT SECTION -->
 <section class="py-16 lg:py-24 bg-white">
@@ -697,13 +680,14 @@
 
 <!-- EQUIPMENT RENTAL STRIP -->
 @include('components.why-choose-strip', [
+    'eyebrow'      => 'Rental Options',
     'headingLine1' => '<span style="color:#148af4;">Keep laundry moving</span>',
     'headingLine2' => 'where rental is the right fit',
     'body'         => 'For hospitality sites facing replacement pressure, capacity gaps or seasonal demand, rental may be a good fit where the available Electrolux Professional equipment range matches the property’s operation.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost where suitable'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Capacity support where available'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and supported'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost<br>where suitable'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Capacity support<br>where available'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and<br>supported'],
     ],
     'miniNowrap'   => true,
 ])

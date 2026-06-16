@@ -189,7 +189,7 @@
             </p>
         </div>
 
-        @include('components.financial-metrics', ['items' => [
+        @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
             ['icon'=>'30', 'prefix'=>'Up to', 'stat'=>'40%',               'size'=>'text-4xl', 'label'=>'lower operational expenditure', 'body'=>'Electrolux Professional Line 6000 washer technologies can reduce operational expenditure by up to 40% through better utilisation.'],
             ['icon'=>'39', 'prefix'=>'Over',  'stat'=>'30%',               'size'=>'text-4xl', 'label'=>'detergent cost savings',        'body'=>'Efficient Dosing can reduce detergent cost pressure where specified, while supporting better control of the wash process.'],
             ['icon'=>'7',  'prefix'=>'',      'stat'=>'Water,<br>energy',  'size'=>'text-2xl', 'label'=>'and load control',              'body'=>'Automatic Savings and Integrated Savings support better load control, reducing water, energy and cycle waste.'],
@@ -247,7 +247,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
                 ['icon' => '7', 'title' => 'Automatic Savings',              'copy' => 'Water intake adjusted to the actual load.', 'badge' => 'Automatic Savings'],
                 ['icon' => '25', 'title' => 'Integrated Savings',             'copy' => 'Real-time load visibility to avoid underloading and overloading.', 'badge' => 'Integrated Savings'],
@@ -255,12 +255,14 @@
                 ['icon' => '31', 'title' => 'Power Balance',                  'copy' => 'Real-time extraction control for stronger dewatering and lower moisture retention before drying.', 'badge' => 'Power Balance'],
                 ['icon' => '4',  'title' => 'ClarusVibe and CompassPro',       'copy' => 'Clearer programme selection, editable programmes and easier operator control.', 'badge' => 'CompassPro'],
             ] as $card)
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                </div>
             </div>
             @endforeach
         </div>
@@ -318,9 +320,9 @@
         @php
         $rangeCards = [
             ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'route' => '#washer-range', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/equipment/commercialwasher.webp'],
+            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/equipment/myPRO-8K-washer.webp'],
             ['name' => 'Barrier Washers',               'copy' => 'For hygiene-critical laundry rooms where soiled and clean handling must stay separate.', 'cta' => 'Explore Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/equipment/line6000-barrier-washer.webp'],
-            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/equipment/lagoon-advanced-care.webp'],
+            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
         ];
         @endphp
 
@@ -480,7 +482,7 @@
                 ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'PW9C Compact Washer', 'slug' => 'pw9c', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'pw9c']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact · 9 kg', 'ranges' => ['6–9 kg'], 'fit' => 'Compact professional washer for smaller sites needing more than domestic laundry equipment.', 'badges' => ['Compact Fit','Professional Wash','Small Site','Support Available'], 'tech' => [], 'img' => '/images/equipment/PW9C.jpg'],
                 ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'W4-Series Washer-Extractors', 'slug' => 'w4-series', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'w4-series']), 'line' => 'Heavy-Duty Washer-Extractors', 'topLine' => 'Heavy Duty · 40 kg+', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractor route for large-volume laundry rooms needing strong throughput and long-term support.', 'badges' => ['High Capacity','Heavy Duty','Service Support','Long-Term Use'], 'tech' => [], 'img' => '/images/equipment/W4-Series Washer-Extractors.png'],
                 // Specialist Washing Routes
-                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/equipment/commercialwasher.webp'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/equipment/myPRO-8K-washer.webp'],
                 ['group' => 'Specialist Washing Routes', 'name' => 'Barrier Washers', 'slug' => 'barrier', 'route' => route('equipment.category', 'barrier-washers'), 'line' => 'Barrier Washers', 'topLine' => 'Hygiene-Critical Laundry', 'ranges' => ['11–14 kg','20–35 kg','40 kg+'], 'fit' => 'Barrier washer route for laundry rooms where soiled and clean handling must stay separate.', 'badges' => ['Clean / Dirty Separation','Hygiene Watchdog','ERGOCERT','AIDO'], 'tech' => ['ERGOCERT'], 'img' => '/images/equipment/line6000-barrier-washer.webp'],
                 ['group' => 'Specialist Washing Routes', 'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Specialist Wet Cleaning', 'ranges' => ['11–14 kg','20–35 kg'], 'fit' => 'Specialist wet cleaning route for delicate garments, textile care and advanced fabric handling.', 'badges' => ['Wet Cleaning','Textile Care','Efficient Dosing','Lagoon'], 'tech' => ['Efficient Dosing'], 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
             ];
@@ -872,10 +874,11 @@
 
 {{-- 13. RENTAL / CAPITAL PRESSURE STRIP --}}
 @include('components.why-choose-strip', [
+    'eyebrow'      => 'Rental Options',
     'headingLine1' => 'Keep laundry moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'For sites facing washer replacement, capacity needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
-    'miniPoints'   => ['Lower upfront cost', 'Installation and support available', 'Service and breakdown support included under rental terms'],
+    'miniPoints'   => ['Lower upfront<br>cost', 'Installation and<br>support available', 'Service and breakdown support<br>included under rental terms'],
     'miniNowrap'   => true,
 ])
 

@@ -21,7 +21,7 @@
     ],
 ])
 {{-- "Why teams choose ILS" strip — image left, content right --}}
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#011E41; min-height:280px;">
 
     {{-- LEFT: image pinned to 40% --}}
     <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:56%;">
@@ -31,7 +31,7 @@
     </div>
 
     {{-- RIGHT: content — 50% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-14 w-full lg:w-1/2 lg:ml-[50%]" style="box-sizing:border-box;">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-10 lg:py-12 w-full lg:w-1/2 lg:ml-[50%]" style="box-sizing:border-box;">
 
         @php
             $miniHasIcons = is_array($miniPoints[0] ?? null);
@@ -55,11 +55,11 @@
             @if($i > 0)<span class="text-white/40 flex-shrink-0">|</span>@endif
             @if(is_array($pt))
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain">
-                <span class="font-body text-white text-sm font-bold whitespace-nowrap">{{ $pt['label'] }}</span>
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-16 w-auto object-contain">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @else
-            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] lg:whitespace-nowrap' : 'text-sm' }} font-bold">{{ $pt }}</span>
+            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] lg:whitespace-nowrap' : 'text-sm' }} font-bold">{!! $pt !!}</span>
             @endif
             @endforeach
         </div>

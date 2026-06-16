@@ -45,9 +45,87 @@ return [
             ],
         ],
 
+        // Finishing equipment — declare the document types so the CAD Drawings and
+        // Data Sheet sections appear on every finishing product ("available on request"
+        // until files are attached here, or per-product under 'products').
+        'finishing-equipment' => [
+            'CAD Drawings' => [],
+            'Data Sheet'   => [],
+        ],
+
     ],
 
     'products' => [
+
+        // ── Finishing equipment ──
+        'traditional-form-finishers' => [
+            'CAD Drawings' => [
+                ['label' => 'FF1 — CAD Drawing (DWG)', 'url' => '/pdfs/FF1.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FF1 / FF2 / FF3 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918801EN_FF1_FF2_FF3_EN.pdf?version=1781534252'],
+            ],
+        ],
+        'multi-form-finishers' => [
+            'CAD Drawings' => [
+                ['label' => 'FFM1 — CAD Drawing (DWG)', 'url' => '/pdfs/FFM1.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FFM1 / FFM2 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FFM1,%20FFM2_438918911_EN.pdf?version=1781534321'],
+            ],
+        ],
+        'tensioning-form-finishers' => [
+            'CAD Drawings' => [
+                ['label' => 'FFT6-WC (no boiler) — CAD Drawing (DWG)', 'url' => '/pdfs/1LU41J_FFT6-WC_no_boiler.dwg'],
+                ['label' => 'FFT6-WC (with boiler) — CAD Drawing (DWG)', 'url' => '/pdfs/1LU41J_FFT6-WC_with_boiler.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FFT6-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FFT6-WC_438918931AA_EN.pdf?version=1781534397'],
+            ],
+            'User Manuals' => [
+                ['label' => 'FFT6-WC Treviform Touch — User Manual (ENG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/FFT6-WC%20Treviform%20Touch%20ENG%20ed2225-2.pdf?version=1781534397'],
+                ['label' => 'TreviTouch — User Manual (4 languages)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/250311%20TreviTouch-4lingue-ELX%20-ver.%207.xx.pdf?version=1781534397'],
+                ['label' => 'FFT6-WC Treviform Touch with boiler — User Manual (ENG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/FFT6-WC%20Treviform%20Touch%20ENG%20c-caldaia%20ed2225.pdf?version=1781534397'],
+            ],
+        ],
+        'vacuum-ironing-tables' => [
+            'CAD Drawings' => [
+                ['label' => 'FIT1 — CAD Drawing (DWG)', 'url' => '/pdfs/FIT1.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FIT1 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918961_FIT1_EN.pdf?version=1781534531'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'FIT1 — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951009_FIT1_E.rfa'],
+            ],
+        ],
+        'wet-cleaning-ironing-tables' => [
+            'CAD Drawings' => [
+                ['label' => 'FIT1-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FIT1-WC.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FIT1-WC / FIT2-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918981EN_FIT1-WC_FIT2-WC_EN.pdf?version=1781534665'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'FIT1-WC — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951010_FIT1-WC_S.rfa'],
+            ],
+        ],
+        'vac-blow-steaming-ironing-tables' => [
+            'CAD Drawings' => [
+                ['label' => 'FIT4A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT4A.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FIT4A / FIT4B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913141EN_FIT4A_FIT4B_EN.pdf?version=1781534779'],
+            ],
+        ],
+        'rectangular-vacuum-ironing-tables' => [
+            'CAD Drawings' => [
+                ['label' => 'FIT5A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT5A.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FIT5A / FIT5B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913161EN_FIT5A_FIT5B_EN.pdf?version=1781536226'],
+            ],
+        ],
 
         // WS6 — Line 6000 High-Spin Washer
         'ws6' => [

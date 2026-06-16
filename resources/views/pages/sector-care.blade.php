@@ -139,8 +139,8 @@
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy use',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
             ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.'],
             ['icon'=>'9',  'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste',      'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so care home laundry decisions are not only made after something fails.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste', 'labelClass'=>'translate-y-2',      'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',  'size'=>'text-2xl', 'label'=>'repair and maintenance', 'labelClass'=>'translate-y-2',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so care home laundry decisions are not only made after something fails.'],
         ]])
     </div>
 </section>
@@ -300,41 +300,17 @@
 </section>
 
 <!-- 8. PLANNING STRIP -->
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover"
-             style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
-    </div>
-
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 max-w-full lg:max-w-[60%]" style="width:100%;">
-
-        <h2 class="font-heading font-bold leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Plan the care laundry room</span>
-            <span class="text-3xl sm:text-4xl lg:text-5xl" style="color:#011E41;">before daily costs build up</span>
-        </h2>
-
-        <p class="font-body text-white text-base leading-relaxed mb-6">
-            Before equipment becomes a daily management issue, the room, staff routines, resident laundry handling, utility pressure and maintenance needs should be understood together.<br>Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.
-        </p>
-
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Avoid wasted spend', 'Right-fit daily laundry room', 'Reduce costly rework'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
-            @endforeach
-        </div>
-
-        <a href="{{ route('contact') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Talk to Our Team
-        </a>
-
-    </div>
-
-</section>
+@include('components.cta-combined-banner', [
+    'eyebrow'    => 'Site Planning',
+    'heading'    => 'Plan the care laundry room <span style="color:#011E41;">before daily costs build up</span>',
+    'body'       => 'Before equipment becomes a daily management issue, the room, staff routines, resident laundry handling, utility pressure and maintenance needs should be understood together. Irish Laundry Systems plans care facility laundry around daily pressure, not just machine capacity.',
+    'miniPoints' => [
+        ['icon' => 'home-planning-spend',  'label' => 'Avoid wasted<br>spend'],
+        ['icon' => 'home-planning-fit',    'label' => 'Right-fit daily<br>laundry room'],
+        ['icon' => 'home-planning-rework', 'label' => 'Reduce costly<br>rework'],
+    ],
+    'ctaText'    => 'Talk to Our Team',
+])
 
 <!-- 9. DETAILED EQUIPMENT SECTION -->
 <section class="py-16 lg:py-24 bg-white">
@@ -818,13 +794,14 @@
 </section>
 
 @include('components.why-choose-strip', [
+    'eyebrow' => 'Rental Options',
     'headingLine1' => '<span style="color:#148af4;">Keep daily laundry moving</span>',
     'headingLine2' => 'with lower upfront cost',
     'body' => 'For care facilities facing replacement pressure, expansion needs or ageing equipment, rental can keep laundry moving without one large purchase upfront, where rental is the right fit for the site.',
     'miniPoints' => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Avoid one large purchase'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and supported'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Avoid one large<br>purchase'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and<br>supported'],
     ],
 ])
 
