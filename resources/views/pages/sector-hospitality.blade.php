@@ -8,7 +8,7 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/Hospitallity/hospitallityhero.jpeg" alt="Hospitality laundry installation"
+    <img src="/images/Hospitallity/hospitallityhero.png" alt="Hospitality laundry installation"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 50% 20%;">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
@@ -144,7 +144,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/26.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak occupancy planning</h3>
@@ -154,7 +154,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/30.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/30.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
@@ -759,6 +759,7 @@
     'eyebrow'    => 'Client Feedback',
     'heading'    => 'Trusted by teams that need <span style="color:#148af4;">linen to keep moving</span>',
     'subheading' => 'Irish Laundry Systems is trusted by hospitality teams that need clear communication, reliable support and people who know the equipment when linen turnaround, housekeeping pressure and peak-period demand affect daily service.',
+    'subheadingClass' => 'max-w-5xl mx-auto',
 ])
 
 @include('components.proof-bar')

@@ -55,10 +55,10 @@
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Wet cleaning is no longer a compromise for delicate garments. Lagoon Advanced Care is built for professional textile care businesses that want speed, quality, sustainability and better control over the full garment care process.
+                    Wet cleaning gives professional cleaners a solvent-free way to care for delicate garments, uniforms, formalwear, shoes, selected leathers and specialist textiles.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    From wool, silk and cashmere to coats, formalwear, uniforms, shoes and most leathers, the right wet cleaning setup gives businesses a stronger way to take on specialist work, reduce reliance on solvent-based cleaning and offer customers a modern garment care service they can trust.
+                    Irish Laundry Systems plans Lagoon Advanced Care around garment type, daily volume, drying needs, detergents, finishing and aftercare.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -83,7 +83,7 @@
                 More than clean garments — <span style="color:#148af4;">a stronger service offer</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Lagoon Advanced Care is designed to help professional cleaners do more with the right process. Faster garment turnaround, higher loading, less prespotting, easier finishing and solvent-free care all support a more productive, more future-ready textile care business.
+                Lagoon Advanced Care gives professional cleaners a stronger way to process specialist garments with faster turnaround, solvent-free cleaning and easier finishing.
             </p>
         </div>
 
@@ -123,7 +123,7 @@
                 <span style="color:#148af4;">Speed, output and cost control</span> built into the process
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Wet cleaning performance is not just about the washer. It depends on the full system: cleaning, drying, detergents, finishing, loading and operator control.
+                Lagoon Advanced Care combines washing, drying, detergents and finishing for faster turnaround, higher loading and more controlled garment care.
             </p>
         </div>
 
@@ -131,9 +131,44 @@
             ['icon'=>'31', 'prefix'=>'',       'stat'=>'55 min',           'size'=>'text-4xl', 'label'=>'Dry-to-Dry in 55 minutes',              'body'=>'Lagoon Advanced Care is built around a fast garment care process, so suitable garments can return quickly without hang-drying.'],
             ['icon'=>'25', 'prefix'=>'Up to',  'stat'=>'75%',              'size'=>'text-4xl', 'label'=>'Higher loading factor',                'body'=>"ProV'tex hydraulic action allows the machine to be loaded up to 75% of capacity while keeping cleaning gentle on delicate textiles."],
             ['icon'=>'30', 'prefix'=>'Up to',  'stat'=>'50%',              'size'=>'text-4xl', 'label'=>'More production from each load',        'body'=>'Electrolux Professional material shows Lagoon Advanced Care technology can support up to 50% more production from each load.'],
-            ['icon'=>'35', 'prefix'=>'',       'stat'=>'Less<br>time',     'size'=>'text-2xl', 'label'=>'Less prespotting, easier finishing',   'body'=>'Lagoon Advanced Care is designed to reduce manual pressure around prespotting and finishing, helping staff process garments faster.'],
+            ['icon'=>'35', 'prefix'=>'',       'stat'=>'Less<br>time',     'size'=>'text-2xl', 'label'=>'Less prespotting, easier finishing',   'body'=>'Lagoon Advanced Care reduces manual pressure around prespotting and finishing so garments move through the process faster.'],
             ['icon'=>'16', 'prefix'=>'',       'stat'=>'70–400',           'size'=>'text-4xl', 'label'=>'items per day to plan around',         'body'=>'The Lagoon Advanced Care range supports system planning from smaller setups through to higher daily garment volumes.'],
         ]])
+    </div>
+</section>
+
+{{-- 5b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
+<section class="relative overflow-hidden" style="background-color:#011E41; min-height:340px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
+        <img src="/images/healthcare/line-6000-solutions.jpg" alt="Connected commercial laundry equipment"
+             class="w-full h-full object-cover" style="object-position: center center;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
+    </div>
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            Washer and dryer data <span style="color:#148af4;">in one connected view</span>
+        </h2>
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
+            OnE Connected shows compatible Electrolux Professional washer and dryer status, cycles, consumption, alerts and service needs in one digital dashboard.<br>
+            For wet cleaning sites, this provides clearer oversight of daily use, running costs and service needs where compatible.
+        </p>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Status insight', 'Consumption data', 'Service alerts'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endforeach
+        </div>
+        <div class="flex flex-wrap gap-3">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                Explore OnE Connected
+            </a>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
+                Check Compatibility
+            </a>
+        </div>
     </div>
 </section>
 
@@ -202,7 +237,7 @@
                 Smart care, <span style="color:#148af4;">certified results</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Customers trust garment care businesses with items that matter. Lagoon Advanced Care brings recognised textile care proof into the cleaning process.
+                Lagoon Advanced Care brings recognised textile care proof for garments customers value.
             </p>
         </div>
 
@@ -230,10 +265,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Complete Wet Cleaning Setup</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                The right result comes from <span style="color:#148af4;">the full system</span>
+                Washer, dryer, detergents and finishing <span style="color:#148af4;">working together</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Wet cleaning works best when washing, drying, detergents, finishing and garment handling are planned together. Irish Laundry Systems advises on the right Lagoon Advanced Care setup for the site, volume and service offer.
+                Wet cleaning works best when washing, drying, detergents, finishing and garment handling are matched to daily volume and the garments handled. Irish Laundry Systems plans Lagoon Advanced Care around the site and room.
             </p>
         </div>
 
@@ -243,7 +278,7 @@
                 ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Drying performance matched to the wet cleaning process, helping reduce delays and avoid hang-drying where suitable.'],
                 ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents, conditioners and prespotting products support consistent results across different garment types.'],
                 ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help complete the garment care process before items return to customers.'],
-                ['step' => '05', 'title' => 'Optional Serenity Cabinet',  'copy' => 'A specialist finishing cabinet option for final touch, extra hygiene and efficient drying support for leathers and shoes.'],
+                ['step' => '05', 'title' => 'Optional Serenity Cabinet',  'copy' => 'A specialist cabinet option for final touch, hygiene care and efficient drying for selected leathers and shoes.'],
             ] as $comp)
             <div class="bg-bg rounded-2xl p-7 flex flex-col h-full border border-gray-100">
                 <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-3">{{ $comp['step'] }}</span>
@@ -265,7 +300,7 @@
                 Start small, then <span style="color:#148af4;">grow as demand increases</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl mx-auto">
-                Lagoon Advanced Care can be planned around daily garment volume, quality output and the services the business wants to offer. Irish Laundry Systems advises on the right washer, dryer, finishing and optional cabinet combination before money is spent.
+                Lagoon Advanced Care can be planned around daily garment volume, room space, drying needs, finishing and future growth.
             </p>
         </div>
 
@@ -350,10 +385,10 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">System Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the full wet cleaning setup <span style="color:#011E41;">before money is spent</span>
+            Plan wet cleaning around <span style="color:#011E41;">volume, room fit and finishing</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            Lagoon Advanced Care is most effective when the system is planned around the business, the garments, the room and the daily volume. Irish Laundry Systems can review the site, expected items per day, drying needs, finishing requirements, utilities, staff use and budget before recommending the right equipment setup.
+            A wet cleaning system should match garment type, daily volume, drying needs, utilities, finishing and budget. Irish Laundry Systems plans the washer, dryer, detergents and aftercare around the site.
         </p>
         <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
             @foreach([
@@ -384,17 +419,17 @@
                 Advanced care <span style="color:#148af4;">without slowing the business down</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Lagoon Advanced Care combines textile protection, smart dosing, drying control and operator support so businesses can deliver strong results load after load.
+                Lagoon Advanced Care combines gentle textile action, load control, dosing, drying balance and intuitive controls for consistent garment care.
             </p>
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
             @foreach([
-                ['icon' => '35', 'title' => "ProV'tex hydraulic action",                'copy' => "Replaces traditional mechanical action with a gentler process while allowing higher loading and effective cleaning."],
+                ['icon' => '35', 'title' => "ProV'tex hydraulic action",                'copy' => "Gentle hydraulic action replaces harsher mechanical action for effective cleaning and higher loading."],
                 ['icon' => '8',  'title' => 'Integrated Savings and Intelligent Dosing', 'copy' => 'Defines the effective load and adjusts detergent and water levels, supporting cost control and consistent results.'],
                 ['icon' => '31', 'title' => 'Power Balance',                             'copy' => 'Activates the correct extraction force for the load to improve drying performance.'],
                 ['icon' => '7',  'title' => 'Moisture Balance',                          'copy' => 'Defines the right moisture level so garments are dried safely, reducing the risk of over-drying, shrinkage and wrinkles.'],
-                ['icon' => '4',  'title' => 'ClarusVibe',                                'copy' => 'A modern control interface that helps operators manage Lagoon programmes clearly and confidently.'],
+                ['icon' => '4',  'title' => 'ClarusVibe',                                'copy' => 'A clear control interface makes Lagoon programmes easier to manage.'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
@@ -416,13 +451,13 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Garment Care Chemistry</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Smart detergents for <span style="color:#148af4;">softer, fresher, ready-to-wear garments</span>
+                    Detergents for <span style="color:#148af4;">softer, fresher, ready-to-wear garments</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Lagoon Advanced Care uses dedicated detergents, conditioners and prespotting products as part of the full wet cleaning process.
+                    Lagoon Advanced Care uses dedicated detergents, conditioners and prespotting products within the wet cleaning process.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    The right setup helps protect fibres, improve consistency and support the garment finish customers expect.
+                    The right chemistry protects fibres, improves consistency and supports the garment finish customers expect.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -460,7 +495,7 @@
                 Use <span style="color:#148af4;">the correct amount</span>, every time
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Dosing systems turn chemical management into a practical part of the wash process. Irish Laundry Systems can advise which option fits the equipment, load type and daily use.
+                Wet cleaning depends on the right detergent, dose and programme. Keep dosing matched to the load to reduce waste, protect garment quality and improve consistency.
             </p>
         </div>
 
@@ -623,10 +658,10 @@
                     More than just <span style="color:#148af4;">clean and revitalised fibres</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    The Serenity Cabinet can complete the Lagoon Advanced Care system with final touch support, extra hygiene and efficient drying for leathers and shoes.
+                    The Serenity Cabinet supports final touch, hygiene care and efficient drying for selected leathers and shoes within Lagoon Advanced Care.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    It is a specialist option for businesses that want to add another level of care before garments return to customers.
+                    It is an optional specialist addition for businesses extending garment care before items return to customers.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -661,10 +696,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">ILS Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment, installation and support from <span style="color:#148af4;">people who know the system</span>
+                Wet cleaning support from <span style="color:#148af4;">installation to aftercare</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Wet cleaning is a business decision as well as an equipment choice. Irish Laundry Systems supports the full setup with equipment advice, installation planning, rental where suitable, Preventive Maintenance, repairs and aftercare.
+                Irish Laundry Systems supports Lagoon Advanced Care sites with equipment advice, installation, rental where suitable, Preventive Maintenance, repairs and aftercare.
             </p>
         </div>
 
@@ -672,7 +707,7 @@
             @foreach([
                 [
                     'title' => 'Equipment advice',
-                    'text'  => 'Choose the right Lagoon Advanced Care setup around garment volume, room space, drying needs and budget.',
+                    'text'  => 'Choose Lagoon Advanced Care around garment volume, room space, drying needs and budget.',
                     'cta'   => 'Request Advice',
                     'route' => route('request-assessment'),
                     'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
@@ -696,7 +731,7 @@
                 ],
                 [
                     'title' => 'Repairs &amp; Aftercare',
-                    'text'  => 'Practical engineering support, follow-up care, service history and parts support where needed.',
+                    'text'  => 'Follow-up care, service history and parts access where needed.',
                     'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
                     'img'   => '/images/healthcare/repairs-callouts.jpg',
@@ -740,7 +775,7 @@
                 Official <span style="color:#148af4;">Lagoon Advanced Care information</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Review official Electrolux Professional information or ask Irish Laundry Systems to advise on the right wet cleaning setup for your business.
+                Review official Electrolux Professional resources or ask Irish Laundry Systems to review the right wet cleaning setup for your site.
             </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -760,7 +795,7 @@
                     'href'  => route('resources'),
                 ],
                 [
-                    'title' => 'Need advice before choosing?',
+                    'title' => 'Planning a wet cleaning service?',
                     'copy'  => 'Irish Laundry Systems can review your garment types, daily volume, room layout and budget before recommending the right setup.',
                     'cta'   => 'Request Advice',
                     'type'  => 'link',
@@ -805,10 +840,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment that can support <span style="color:#148af4;">the same textile care site</span>
+                Equipment for <span style="color:#148af4;">the wider textile care site</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Some wet cleaning sites need a complete Lagoon Advanced Care setup. Others may also need larger washers, dryers, finishing equipment or drying cabinets depending on the service they offer.
+                Some wet cleaning sites may also need larger washers, dryers, finishing equipment or drying cabinets depending on the service they offer.
             </p>
         </div>
 
@@ -847,8 +882,8 @@
         ['question' => 'Is Lagoon Advanced Care a dry cleaning alternative?', 'answer' => 'Yes. Electrolux Professional positions Lagoon Advanced Care as a wet cleaning system for delicate garments, leathers and shoes, and as a serious alternative to traditional solvent-based cleaning.'],
         ['question' => 'How fast is the Lagoon Advanced Care process?', 'answer' => 'The Lagoon Advanced Care process is built around a 55-minute benchmark for suitable garments, combining prespotting, cleaning, drying and finishing. Leathers and shoes may require longer drying time.'],
         ['question' => 'What types of garments can Lagoon Advanced Care handle?', 'answer' => 'Lagoon Advanced Care is designed for delicate garments and textiles, including wool, silk, cashmere, coats, formalwear, uniforms and many specialist items. It can also treat most leathers and shoes with the right process.'],
-        ['question' => 'What proof supports Lagoon Advanced Care?', 'answer' => "Lagoon Advanced Care is supported by Woolmark approval, Hohenstein Institute testing, ErgoCert ergonomic certification and Electrolux Professional wet cleaning technologies including ProV'tex, Integrated Savings, Intelligent Dosing, Power Balance and Moisture Balance."],
-        ['question' => 'Can Irish Laundry Systems help plan the full wet cleaning setup?', 'answer' => 'Yes. Irish Laundry Systems can review garment volume, site layout, drying needs, finishing requirements, utilities, staff use and budget before recommending the right wet cleaning equipment setup.'],
+        ['question' => 'What proof supports Lagoon Advanced Care?', 'answer' => "Lagoon Advanced Care carries Woolmark approval, Hohenstein Institute testing, ErgoCert ergonomic certification and Electrolux Professional technologies including ProV'tex, Integrated Savings, Intelligent Dosing, Power Balance and Moisture Balance."],
+        ['question' => 'Can Irish Laundry Systems help plan the full wet cleaning setup?', 'answer' => 'Yes. Irish Laundry Systems reviews garment volume, room layout, drying needs, finishing requirements, utilities and budget before recommending the right wet cleaning setup.'],
         ['question' => 'Can wet cleaning equipment be rented?', 'answer' => 'Rental may be available where the selected equipment and site needs are suitable. Irish Laundry Systems can advise whether rental, purchase or another equipment option is the better fit.'],
     ],
 ])
@@ -857,7 +892,7 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'wet_cleaning_cta',
     'heading'    => 'Ready to build a stronger garment care service <span style="color:#148af4;">for your business</span>?',
-    'body'       => 'Tell us what you clean, how many items you process each day and whether you are starting, expanding or replacing a garment care setup. Irish Laundry Systems will guide you toward the right Lagoon Advanced Care equipment, installation, Equipment Rental, Preventive Maintenance, repairs or aftercare support.',
+    'body'       => 'Tell Irish Laundry Systems what you clean, how many items you process each day and what you want to offer. We\'ll review Lagoon Advanced Care, installation, rental, maintenance and aftercare around your site.',
     'formTitle'  => 'Request Wet Cleaning Equipment Advice',
     'buttonText' => 'Request Wet Cleaning Advice',
 ])
