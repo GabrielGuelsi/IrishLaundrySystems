@@ -108,7 +108,7 @@
                 'points'   => ['More than domestic', 'Smaller-site fit', 'Faster turnaround'],
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
-                'img'      => '/images/healthcare/healthcarehero.png',
+                'img'      => '/images/equipment/myPRO-8K-washer.webp',
             ],
             [
                 'eyebrow'  => 'lagoon Advanced Care',
@@ -217,7 +217,7 @@
                 'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
                 'cta'   => 'View myPRO Options',
                 'route' => route('equipment.category', 'semi-professional'),
-                'img'   => '/images/equipment/IB623_FRONT_NEW.jpg',
+                'img'   => '/images/equipment/myPRO-8K-washer.webp',
             ],
         ];
         @endphp
@@ -313,7 +313,7 @@
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
                 ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
-                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/myPRO-8K-washer.webp'],
                 ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">

@@ -202,8 +202,8 @@
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy use',            'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
             ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations can support water recycling and reduce water consumption by up to 50% where suitable.'],
             ['icon'=>'9',  'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
-            ['icon'=>'10', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste', 'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
-            ['icon'=>'11', 'prefix'=>'',      'stat'=>'Fewer<br>surprises', 'size'=>'text-2xl', 'label'=>'repair and service pressure', 'body'=>'Irish Laundry Systems brings equipment planning, supply, preventive maintenance, repairs, rental and aftercare together, so healthcare laundry decisions are not only made after something fails.'],
+            ['icon'=>'10', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent and process waste', 'labelClass'=>'translate-y-2', 'body'=>'Integrated Savings and Efficient Dosing support better control of load, water and detergent use, reducing waste from underloading, overloading and poor process control.'],
+            ['icon'=>'11', 'prefix'=>'',      'stat'=>'Fewer<br>surprises', 'size'=>'text-2xl', 'label'=>'repair and service pressure', 'labelClass'=>'translate-y-2', 'body'=>'Irish Laundry Systems brings equipment planning, supply, preventive maintenance, repairs, rental and aftercare together, so healthcare laundry decisions are not only made after something fails.'],
         ]])
     </div>
 </section>
@@ -373,12 +373,13 @@
 </section>
 
 @include('components.cta-combined-banner', [
+    'eyebrow'    => 'Planning &amp; Support',
     'heading'    => '<span style="color:#011E41;">Plan the healthcare laundry room</span> before costs repeat every day',
     'body'       => 'Before equipment becomes a daily cost problem, the room, workload, utilities, hygiene handling and maintenance needs should be understood together. Irish Laundry Systems plans healthcare laundry equipment around real operating pressure, not just machine capacity.',
     'miniPoints' => [
-        ['icon' => 'healthcareplanningstrip1', 'label' => 'Avoid wasted spend'],
-        ['icon' => 'healthcareplanningstrip2', 'label' => 'Right-fit healthcare laundry room'],
-        ['icon' => 'healthcareplanningstrip3', 'label' => 'Reduce costly rework'],
+        ['icon' => 'healthcareplanningstrip1', 'label' => 'Avoid wasted<br>spend'],
+        ['icon' => 'healthcareplanningstrip2', 'label' => 'Right-fit healthcare<br>laundry room'],
+        ['icon' => 'healthcareplanningstrip3', 'label' => 'Reduce costly<br>rework'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -932,13 +933,14 @@
 </section>
 
 @include('components.why-choose-strip', [
+    'eyebrow' => 'Rental Options',
     'headingLine1' => '<span style="color:#148af4;">Keep healthcare laundry</span><br><span style="color:#148af4;">moving</span> without one',
     'headingLine2' => 'large purchase upfront',
     'body' => 'For healthcare sites facing replacement pressure, capacity needs or ageing equipment, rental can keep the laundry room moving with a lower upfront cost than outright purchase, where rental is the right fit for the site.',
     'miniPoints' => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Avoid one large purchase'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and supported'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Avoid one<br>large purchase'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and<br>supported'],
     ],
 ])
 

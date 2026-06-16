@@ -150,7 +150,7 @@
             </p>
         </div>
 
-        @include('components.financial-metrics', ['items' => [
+        @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
             ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'50%',         'size'=>'text-4xl', 'label'=>'water saving',                   'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
             ['icon'=>'9',  'prefix'=>'',      'stat'=>'25%',         'size'=>'text-4xl', 'label'=>'productivity increase',          'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.'],
             ['icon'=>'10', 'prefix'=>'',      'stat'=>'Integrated',  'size'=>'text-2xl', 'label'=>'water, energy and load control', 'body'=>'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.'],
@@ -174,7 +174,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
                 ['icon' => '2',  'title' => 'Double-door barrier design',     'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.',          'badge' => 'Barrier Separation'],
                 ['icon' => '96', 'title' => 'Hygiene Watchdog',               'copy' => 'Supports full-cycle completion and hygiene process control.',                       'badge' => 'Hygiene Watchdog', 'img' => '/images/healthcare/HygieneWatchdog.png'],
@@ -182,12 +182,14 @@
                 ['icon' => '95', 'title' => 'AIDO / Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',               'badge' => 'AIDO | Automatic Door Locking'],
                 ['icon' => '11', 'title' => 'Clearer process control',        'copy' => 'Connected options can support monitoring, traceability and clearer service decisions.', 'badge' => 'CMIS | OnE Laundry where applicable'],
             ] as $card)
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm items-center text-center col-span-1">
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
                     <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="w-28 h-28 object-contain">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                </div>
             </div>
             @endforeach
         </div>
@@ -463,10 +465,10 @@
             $bwImg    = '/images/equipment/line6000-barrier-washer.webp';
             // Cards for models with their own photo; imageless sizes folded into the nearest card's range.
             $barrierFamilies = [
-                ['name' => 'WB6-13',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-13.jpg'],
-                ['name' => 'WB6-20',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-20.jpg'],
-                ['name' => 'WB6-35',  'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-35.jpg'],
-                ['name' => 'WB6-110', 'slug' => 'wb6', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-110.jpg'],
+                ['name' => 'WB6-13',  'slug' => 'wb6-13',  'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-13.jpg'],
+                ['name' => 'WB6-20',  'slug' => 'wb6-20',  'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-20.jpg'],
+                ['name' => 'WB6-35',  'slug' => 'wb6-35',  'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-35.jpg'],
+                ['name' => 'WB6-110', 'slug' => 'wb6-110', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-110.jpg'],
             ];
             $profileOpts = []; $capOpts = []; $siteOpts = [];
             foreach($barrierFamilies as $f) {
@@ -824,10 +826,11 @@
 
 {{-- 14. RENTAL / CAPITAL PRESSURE STRIP --}}
 @include('components.why-choose-strip', [
+    'eyebrow'      => 'Rental Options',
     'headingLine1' => 'Keep hygiene-critical laundry moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'For sites facing barrier washer replacement, hygiene-flow pressure or capacity needs, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
-    'miniPoints'   => ['Lower upfront cost', 'Installation and support available', 'Service and breakdown support included under rental terms'],
+    'miniPoints'   => ['Lower upfront<br>cost', 'Installation and<br>support available', 'Service and breakdown support<br>included under rental terms'],
     'miniNowrap'   => true,
 ])
 
