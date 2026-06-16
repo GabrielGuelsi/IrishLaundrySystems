@@ -996,9 +996,9 @@
     'body'         => 'The right equipment decision should not lose value after installation. Planned maintenance and aftercare keep the room, equipment and next steps clear, helping healthcare sites reduce surprise repair costs and keep vital laundry equipment running.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Support hygiene routines'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Keep equipment running'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise<br>repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Support hygiene<br>routines'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Keep equipment<br>running'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

@@ -619,27 +619,33 @@
 ])
 
 {{-- 14. AFTER INSTALLATION BAND --}}
-<section class="py-12 lg:py-16 bg-bg border-t border-gray-100">
+<section class="py-12 lg:py-16" style="background-color:#148af4;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep ironer support clear <span style="color:#148af4;">after installation</span>
+                <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
+                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                    Keep ironer support clear <span style="color:#011E41;">after installation</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
                     Track maintenance, service history, breakdown support and parts access after installation, rental, repair or inspection.
                 </p>
-                <div class="flex items-center flex-wrap gap-x-5 gap-y-2">
-                    @foreach(['Service history', 'Breakdown support', 'Parts access'] as $i => $pt)
-                    @if($i > 0)<span class="text-gray-300">|</span>@endif
-                    <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
+                <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
+                    @foreach([
+                        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>history'],
+                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Breakdown<br>support'],
+                        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>access'],
+                    ] as $pt)
+                    <span class="flex items-center gap-2 flex-shrink-0">
+                        <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
+                        <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
+                    </span>
                     @endforeach
                 </div>
             </div>
             <div class="lg:col-span-5 flex lg:justify-end">
                 <a href="{{ route('parts-aftercare') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-6 py-4 rounded-lg transition-colors tracking-wide">
+                   class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                     View Support &amp; Aftercare
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </a>

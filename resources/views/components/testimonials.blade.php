@@ -52,7 +52,7 @@ $testimonials = [
     ],
     'abbvie' => [
         'logo'      => '/images/logo/abbvie.png',
-        'logoClass' => 'h-[100px] sm:h-[130px] lg:h-[160px] w-auto object-contain',
+        'logoClass' => 'h-[40px] sm:h-[50px] lg:h-[64px] w-auto object-contain',
         'name'      => 'AbbVie',
         'pills'     => ['Fast Response', 'Maintenance & Repair', 'Service Contract', 'Dependable Support'],
         'headline'  => 'They provide excellent support and a dependable experience we can always count on.',
@@ -111,6 +111,7 @@ $showChrome = ! $single && count($slides) > 1;
                         :aria-hidden="active !== {{ $i }}"
                         class="transition-opacity duration-500 rounded-2xl overflow-hidden border border-navy/[0.07] shadow-sm"
                         :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
+                        @if($i > 0) x-cloak @endif
                     >
                         <div class="grid grid-cols-1 lg:grid-cols-12">
 

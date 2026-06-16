@@ -744,9 +744,9 @@
     'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment running'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of mind'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise<br>repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment<br>running'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of<br>mind'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

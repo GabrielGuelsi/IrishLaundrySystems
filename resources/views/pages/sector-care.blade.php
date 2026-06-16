@@ -858,9 +858,9 @@
     'body'         => 'The right equipment decision should not become harder to manage after installation, rental, repair or replacement. Planned maintenance and aftercare give care facilities a clearer way to reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment running'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Support from people who know the equipment'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise<br>repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment<br>running'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Support from people<br>who know the equipment'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
