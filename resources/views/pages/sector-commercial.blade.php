@@ -169,9 +169,9 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'30', 'prefix'=>'',     'stat'=>'90%',            'size'=>'text-4xl', 'label'=>'life-cycle cost pressure', 'labelClass'=>'translate-y-2',  'body'=>'Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up the majority of life-cycle cost.'],
+            ['icon'=>'30', 'prefix'=>'',     'stat'=>'90%',            'size'=>'text-4xl', 'label'=>'life-cycle cost pressure', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-90',  'body'=>'Electrolux Professional highlights that upfront investment can be only 10% of washer or dryer cost, while water, energy and chemicals make up the majority of life-cycle cost.'],
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',           'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2',              'body'=>'Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.'],
-            ['icon'=>'39', 'prefix'=>'',     'stat'=>'30%+',           'size'=>'text-4xl', 'label'=>'detergent-cost saving', 'labelClass'=>'translate-y-2',  'body'=>'Efficient Dosing can save over 30% on detergent costs by helping use the right amount of detergent at each cycle.'],
+            ['icon'=>'39', 'prefix'=>'',     'stat'=>'30%+',           'size'=>'text-4xl', 'label'=>'detergent-cost saving', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-90',  'body'=>'Efficient Dosing can save over 30% on detergent costs by helping use the right amount of detergent at each cycle.'],
             ['icon'=>'3',  'prefix'=>'Up to', 'stat'=>'-75%',           'size'=>'text-4xl', 'label'=>'sick days', 'labelClass'=>'translate-y-2','body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside a 59% reduction in Work-related Musculoskeletal Disorders and a 25% productivity increase.'],
             ['icon'=>'11', 'prefix'=>'',     'stat'=>'Fewer<br>surprise<br>costs', 'size'=>'text-2xl', 'label'=>'repair and maintenance', 'labelClass'=>'translate-y-2',  'body'=>'Irish Laundry Systems brings equipment planning, rental, preventive maintenance, repairs and aftercare together, so commercial sites are not forced to make every decision after something fails.'],
         ]])
@@ -185,7 +185,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Features that support <span style="color:#148af4;">output</span>, <span style="color:#148af4;">mixed textiles</span> and <span style="color:#148af4;">daily handling</span>
+                Features that support <span style="color:#148af4;">output,</span> <span style="color:#148af4;">mixed textiles</span> and <span style="color:#148af4;">daily handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 The right setup supports volume, textile mix, turnaround pressure, utility use and equipment reliability when matched to the way the laundry room is used.
@@ -330,7 +330,7 @@
 <!-- PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
-    'heading'    => 'Plan the laundry room around <span style="color:#011E41;">daily load</span>, <span style="color:#011E41;">room layout</span> and <span style="color:#011E41;">running cost</span>',
+    'heading'    => 'Plan the laundry room around <span style="color:#011E41;">daily load</span>,<br class="hidden lg:block"> <span style="color:#011E41;">room layout</span> and <span style="color:#011E41;">running cost</span>',
     'body'       => 'Before equipment becomes a cost or service problem, daily load, room layout, utilities, access, site use and maintenance needs should be understood together.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit',    'label' => 'Room<br>layout'],

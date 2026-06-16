@@ -441,8 +441,8 @@
 ══════════════════════════════════════════ -->
 <section class="relative overflow-hidden" style="min-height:540px;">
     {{-- Background image --}}
-    <img src="{{ asset('images/equipment/td6-multihousing-room.jpg') }}"
-         alt="Commercial laundry equipment"
+    <img src="{{ asset('images/about/ecovadisbackground.webp') }}"
+         alt="Responsible equipment and sustainability"
          class="absolute inset-0 w-full h-full object-cover object-center">
     {{-- Dark overlay --}}
     <div class="absolute inset-0" style="background:rgba(1,30,65,0.45);"></div>

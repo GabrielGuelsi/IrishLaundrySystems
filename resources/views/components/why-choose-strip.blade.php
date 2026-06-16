@@ -55,7 +55,7 @@
             @if($i > 0)<span class="text-white/40 flex-shrink-0">|</span>@endif
             @if(is_array($pt))
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-16 w-auto object-contain">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @else

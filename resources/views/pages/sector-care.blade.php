@@ -17,7 +17,7 @@
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                     Keep <span style="color:#148af4;">daily care moving</span><br>without laundry becoming<br>another management problem
                 </h1>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
                     Care facility laundry rooms handle resident clothing, bedding, towels and staff items every day. Irish Laundry Systems supports care homes, nursing homes and residential care settings with Electrolux Professional equipment selection, supply, rental, planned maintenance, repairs and aftercare around daily demand, staff routines, hygiene needs and running cost.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -165,7 +165,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/13.png" alt="" class="w-[180px] max-w-full h-auto object-contain">
+                    <img src="/images/icons/13.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident laundry handling</h3>
