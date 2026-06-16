@@ -611,8 +611,11 @@
     'headingLine1' => 'Access commercial ironers with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Rental can support ironer replacement, capacity planning or selected finishing equipment without one large upfront purchase.',
-    'miniPoints'   => ['Lower<br>cost', 'Included<br>support', 'Capacity<br>planning'],
-    'miniNowrap'   => true,
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Capacity<br>planning'],
+    ],
 ])
 
 {{-- 14. AFTER INSTALLATION BAND --}}

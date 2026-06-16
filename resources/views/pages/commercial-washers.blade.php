@@ -878,8 +878,11 @@
     'headingLine1' => 'Keep laundry moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'For sites facing washer replacement, capacity needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
-    'miniPoints'   => ['Lower upfront<br>cost', 'Installation and<br>support available', 'Service and breakdown support<br>included under rental terms'],
-    'miniNowrap'   => true,
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installation and<br>support available'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support<br>included under rental terms'],
+    ],
 ])
 
 {{-- 14. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}

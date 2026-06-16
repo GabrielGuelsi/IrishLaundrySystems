@@ -938,8 +938,11 @@
     'headingLine1' => 'Keep drying performance moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Rental can support dryer replacement, capacity planning or ageing equipment without one large upfront purchase.',
-    'miniPoints'   => ['Lower<br>cost', 'Included<br>support', 'Capacity<br>planning'],
-    'miniNowrap'   => true,
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Capacity<br>planning'],
+    ],
 ])
 
 {{-- 15. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
