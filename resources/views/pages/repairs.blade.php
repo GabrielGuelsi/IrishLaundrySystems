@@ -393,6 +393,7 @@ $expectSteps = [
                 <img src="/images/healthcare/repairs-temporary-laundry.jpg"
                      alt="Laundry Online Dublin store as a temporary processing route while on-site equipment is down"
                      loading="lazy" decoding="async"
+                     style="object-position: center top;"
                      class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-navy/80 to-transparent">
                     <p class="font-body font-bold text-white text-xs uppercase tracking-[0.22em]">Laundry Online &mdash; Dublin</p>
