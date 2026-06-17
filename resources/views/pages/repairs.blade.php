@@ -226,8 +226,8 @@ $expectSteps = [
     [
         'title'    => 'Share the fault details',
         'desc'     => 'Tell us the equipment type, fault details, site location, urgency and any recent service&nbsp;history.',
-        'image'    => '/images/healthcare/operator.jpg',
-        'alt'      => 'Operator placing a call about a commercial laundry breakdown',
+        'image'    => '/images/healthcare/repairs-how-01.jpg',
+        'alt'      => 'Site team sharing commercial laundry fault details to request a call-out',
         'meta'     => 'Step 1',
         'position' => 'center',
     ],
@@ -250,8 +250,8 @@ $expectSteps = [
     [
         'title'    => 'Leave with a clear next step',
         'desc'     => 'If parts, follow-up work or a maintenance review are needed, the next decision is explained&nbsp;clearly.',
-        'image'    => '/images/healthcare/repairs-callouts.jpg',
-        'alt'      => 'ILS engineer completing a reactive repair on commercial laundry equipment',
+        'image'    => '/images/healthcare/repairs-how-04.jpg',
+        'alt'      => 'Irish Laundry Systems engineer explaining the clear next step after a repair',
         'meta'     => 'Step 4',
         'position' => 'center',
     ],
