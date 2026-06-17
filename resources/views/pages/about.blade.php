@@ -11,7 +11,7 @@
 ══════════════════════════════════════════ -->
 <section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="{{ asset('images/about/heroaboutusimage.png') }}"
+    <img src="{{ asset('images/about/heroaboutusimage.webp') }}"
          alt="ILS engineering team"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-center">

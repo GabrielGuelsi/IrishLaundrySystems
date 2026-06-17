@@ -85,17 +85,17 @@
             </p>
         </div>
 
-        {{-- 4 points in one centered horizontal row --}}
-        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 mt-8 reveal">
+        {{-- 4 points — icon-above-label grid (matches the repairs "Fault Details" design) --}}
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mt-12 lg:mt-16 reveal">
             @foreach([
                 ['t' => 'Dirty-side loading',          'd' => 'M12 4.5v15m0 0-6-6m6 6 6-6'],
                 ['t' => 'Clean-side unloading',        'd' => 'M12 19.5v-15m0 0-6 6m6-6 6 6'],
                 ['t' => 'Hygiene Watchdog',            'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.249-8.25-3.285Z'],
                 ['t' => 'RABC support where required', 'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'],
             ] as $mp)
-            <div class="flex items-center gap-2.5">
-                <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $mp['d'] }}"/></svg>
-                <span class="font-body text-navy text-sm font-bold leading-snug">{{ $mp['t'] }}</span>
+            <div class="flex flex-col items-center text-center">
+                <svg class="w-14 h-14 text-[#148af4] mb-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $mp['d'] }}"/></svg>
+                <span class="font-body font-bold text-navy text-sm">{{ $mp['t'] }}</span>
             </div>
             @endforeach
         </div>
@@ -613,6 +613,19 @@
     </div>
 </section>
 
+{{-- 12a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
+@include('components.why-choose-strip', [
+    'eyebrow'      => 'Rental Options',
+    'headingLine1' => 'Keep hygiene-critical laundry<br>',
+    'headingLine2' => 'moving with <span style="color:#148af4;">lower upfront cost</span>',
+    'body'         => 'For sites facing barrier washer replacement, hygiene-flow pressure or capacity needs, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installation and<br>support available'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support<br>included under rental terms'],
+    ],
+])
+
 {{-- 13. CONNECTED SERVICE ROUTES --}}
 <section class="py-16 lg:py-20 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -668,7 +681,7 @@
 
         <div class="mb-10 reveal max-w-3xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Use <span style="color:#148af4;">the correct amount</span>, every time
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -824,19 +837,6 @@
     </div>
 </section>
 
-{{-- 14. RENTAL / CAPITAL PRESSURE STRIP --}}
-@include('components.why-choose-strip', [
-    'eyebrow'      => 'Rental Options',
-    'headingLine1' => 'Keep hygiene-critical laundry moving with',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'For sites facing barrier washer replacement, hygiene-flow pressure or capacity needs, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
-    'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installation and<br>support available'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support<br>included under rental terms'],
-    ],
-])
-
 {{-- 15. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="py-12 lg:py-16" style="background-color:#148af4;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -878,6 +878,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted support behind <span style="color:#148af4;">hygiene-critical laundry decisions</span>',
     'subheading' => 'Barrier washer decisions affect hygiene flow, staff routines, room planning and daily output. Irish Laundry Systems is trusted by organisations that need clear communication, responsive support and equipment knowledge after the machine is on site.',
+    'subheadingClass' => 'max-w-5xl mx-auto',
 ])
 
 {{-- 17. TRUSTED BY LOGO STRIP --}}

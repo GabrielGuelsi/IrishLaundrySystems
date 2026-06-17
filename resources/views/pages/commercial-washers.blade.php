@@ -78,12 +78,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Title + intro (original copy) --}}
-        <div class="reveal max-w-3xl mb-12 lg:mb-14">
+        <div class="reveal mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl">
                 Look beyond the purchase price to see<br><span style="color:#148af4;">where washer costs really sit</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-6xl">
                 The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost pressure. Electrolux Professional washer technologies are designed to reduce that pressure and support lower long-term running costs.
             </p>
         </div>
@@ -208,10 +208,10 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Turn washer data into <span style="color:#148af4;">better control over cost, waste and performance</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            Turn washer data into <span style="color:#148af4;">better control<br>over cost, waste and performance</span>
         </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6">
             OnE Connected gives laundry teams clearer visibility over equipment status, load activity, consumption, alerts and service needs through one digital dashboard. For compatible Electrolux Professional washers, that means better decisions around productivity, running cost, detergent use and laundry flow.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -640,6 +640,19 @@
     </div>
 </section>
 
+{{-- 11a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
+@include('components.why-choose-strip', [
+    'eyebrow'      => 'Rental Options',
+    'headingLine1' => 'Keep laundry moving with',
+    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
+    'body'         => 'For sites facing washer replacement, capacity needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installation and<br>support available'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support<br>included under rental terms'],
+    ],
+])
+
 {{-- 11b. DOSING & LAUNDRY CONTROL (Alpine carousel — sector module) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -871,19 +884,6 @@
         </div>
     </div>
 </section>
-
-{{-- 13. RENTAL / CAPITAL PRESSURE STRIP --}}
-@include('components.why-choose-strip', [
-    'eyebrow'      => 'Rental Options',
-    'headingLine1' => 'Keep laundry moving with',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'For sites facing washer replacement, capacity needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
-    'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installation and<br>support available'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support<br>included under rental terms'],
-    ],
-])
 
 {{-- 14. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="py-12 lg:py-16" style="background-color:#148af4;">

@@ -70,7 +70,7 @@
             <!-- Hospitality -->
             <a href="{{ route('sectors.hospitality') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/Hospitallity/hospitallityhero.jpeg" alt="Hospitality laundry support"
+                <img src="/images/Hospitallity/hospitallityhero.png" alt="Hospitality laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 82% 30%;">
                 <div class="absolute inset-0"

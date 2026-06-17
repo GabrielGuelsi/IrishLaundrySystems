@@ -143,7 +143,7 @@ class PageController extends Controller
 
         if ($category === 'semi-professional') {
             return view('pages.semi-professional', [
-                'title' => 'Semi-Professional Laundry Equipment Ireland | myPRO | Irish Laundry Systems',
+                'title' => 'Semi-Professional Laundry Equipment Ireland | myPRO XL',
             ]);
         }
 
@@ -155,7 +155,7 @@ class PageController extends Controller
 
         if ($category === 'accessories') {
             return view('pages.accessories', [
-                'title' => 'Laundry Dosing Systems Ireland | Detergents & Accessories | Irish Laundry Systems',
+                'title' => 'Laundry Dosing Systems Ireland | Detergents & Accessories',
             ]);
         }
 

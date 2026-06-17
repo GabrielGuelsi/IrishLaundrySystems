@@ -488,7 +488,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             @foreach([
                 ['title' => 'Care homes and nursing homes',       'copy' => 'For resident clothing, uniforms and everyday items where cleaner presentation supports daily standards.', 'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
-                ['title' => 'Hospitality sites',                  'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/Hospitallity/hospitallityhero.jpeg', 'pos' => 'center center'],
+                ['title' => 'Hospitality sites',                  'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => 'center center'],
                 ['title' => 'Smaller laundry rooms',              'copy' => 'For sites that need more than domestic ironing equipment without moving into a full ironer setup.', 'img' => '/images/equipment/td6-multihousing-room.jpg', 'pos' => 'center center'],
                 ['title' => 'Garment and wet cleaning',          'copy' => 'For specialist textile care where cleaning, drying and finishing need to work together.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center center'],
             ] as $card)
