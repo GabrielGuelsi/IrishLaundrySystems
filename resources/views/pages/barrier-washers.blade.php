@@ -150,13 +150,29 @@
             </p>
         </div>
 
-        @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'50%',         'size'=>'text-4xl', 'label'=>'water saving',                   'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
-            ['icon'=>'9',  'prefix'=>'',      'stat'=>'25%',         'size'=>'text-4xl', 'label'=>'productivity increase',          'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.'],
-            ['icon'=>'10', 'prefix'=>'',      'stat'=>'Integrated',  'size'=>'text-2xl', 'label'=>'water, energy and load control', 'body'=>'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.'],
-            ['icon'=>'8',  'prefix'=>'',      'stat'=>'Efficient',   'size'=>'text-2xl', 'label'=>'detergent and water control',    'body'=>'Efficient Dosing adds detergent and water according to load weight, reducing waste and supporting process consistency.'],
-            ['icon'=>'31', 'prefix'=>'',      'stat'=>'Power',       'size'=>'text-2xl', 'label'=>'time and money before drying',   'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
-        ]])
+        {{-- aligned metric grid (barrier-only): the icon+number row is locked to one height so every
+             stat baseline lines up; titles sit on a min-height row so titles + body align across all cards --}}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+            @foreach([
+                ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'50%',        'big'=>true,  'label'=>'water saving',                   'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
+                ['icon'=>'9',  'prefix'=>'',      'stat'=>'25%',        'big'=>true,  'label'=>'productivity increase',          'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.'],
+                ['icon'=>'10', 'prefix'=>'',      'stat'=>'Integrated', 'big'=>false, 'label'=>'water, energy and load control', 'body'=>'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.'],
+                ['icon'=>'8',  'prefix'=>'',      'stat'=>'Efficient',  'big'=>false, 'label'=>'detergent and water control',    'body'=>'Efficient Dosing adds detergent and water according to load weight, reducing waste and supporting process consistency.'],
+                ['icon'=>'31', 'prefix'=>'',      'stat'=>'Power',      'big'=>false, 'label'=>'time and money before drying',   'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
+            ] as $m)
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
+                <div class="flex items-end gap-2 mb-3" style="min-height:5rem;">
+                    <img src="/images/icons/{{ $m['icon'] }}.png" alt="" class="w-14 h-14 xl:w-16 xl:h-16 object-contain flex-shrink-0">
+                    <div class="flex flex-col">
+                        @if($m['prefix'])<span class="font-body font-bold text-navy text-xs leading-none mb-1">{{ $m['prefix'] }}</span>@endif
+                        <span class="font-heading font-bold text-[#148af4] {{ $m['big'] ? 'text-4xl xl:text-5xl' : 'text-2xl' }} leading-none tracking-tight">{!! $m['stat'] !!}</span>
+                    </div>
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-2 lg:min-h-[2.75rem]">{{ $m['label'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $m['body'] }}</p>
+            </div>
+            @endforeach
+        </div>
     </div>
 </section>
 
@@ -169,7 +185,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Features that support <span style="color:#148af4;">separation, control and safer handling</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 Selected Electrolux Professional barrier washer features support separation, guided operation, process visibility and easier loading and unloading when matched to the right room.
             </p>
         </div>
@@ -201,12 +217,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Heading + intro (full width) --}}
-        <div class="max-w-4xl mb-10 lg:mb-16 reveal reveal-left">
+        <div class="mb-10 lg:mb-16 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Barrier washer design built around <span style="color:#148af4;">daily handling and safer staff routines</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 Barrier laundry work is repetitive. The right washer should support loading, unloading, door handling and operator confidence, especially where clean and soiled sides must stay controlled.
             </p>
         </div>
@@ -381,62 +397,27 @@
     </div>
 </section>
 
-{{-- 11. RESOURCES / DOWNLOADS --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
+{{-- 11. COMPACT RESOURCES BAR (low, light, supporting — matches commercial washers) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
-
-            {{-- Box 1 — Navy downloads --}}
-            <div class="bg-navy rounded-2xl p-7 lg:p-9 flex flex-col">
-                <h3 class="font-heading font-bold text-white text-xl lg:text-2xl mb-2">Official Electrolux Professional Downloads</h3>
-                <p class="font-body text-white/70 text-sm leading-relaxed mb-6">Access selected product brochures, technical sheets and barrier washer resources before comparing models.</p>
-                <ul class="space-y-3">
-                    @foreach([
-                        ['label' => 'Line 6000 Evolution Barrier Washers brochure', 'file' => 'EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                        ['label' => 'Pullman Barrier Washers leaflet',              'file' => ''],
-                        ['label' => 'WB6-20 / WB6-27 / WB6-35 product data sheet',   'file' => ''],
-                        ['label' => 'Relevant barrier washer product resources',    'file' => ''],
-                    ] as $pdf)
-                    <li>
-                        @if($pdf['file'])
-                        <a href="/pdfs/{{ $pdf['file'] }}" target="_blank" download class="flex items-center gap-2.5 font-body text-sm text-white/85 hover:text-white transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </a>
-                        @else
-                        <span class="flex items-center gap-2.5 font-body text-sm text-white/40">
-                            <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                            {!! $pdf['label'] !!}
-                        </span>
-                        @endif
-                    </li>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 Evolution brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
+                ['title' => 'Rental & Support',    'links' => [['l' => 'Equipment Rental', 'h' => route('rental')], ['l' => 'Preventive Maintenance', 'h' => route('service-contracts')], ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')]]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-wrap gap-x-4 gap-y-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
                     @endforeach
-                </ul>
+                </div>
             </div>
-
-            {{-- Box 2 — Related guidance --}}
-            <div class="bg-white border border-gray-200 rounded-2xl p-7 lg:p-9 flex flex-col">
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-2">Related Equipment Guidance</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">Explore connected equipment and support routes before making a barrier washer decision.</p>
-                <ul class="space-y-3">
-                    @foreach([
-                        ['label' => 'Healthcare Laundry Support',     'href' => route('sectors.healthcare')],
-                        ['label' => 'Commercial Washing Machines',    'href' => route('equipment.category', 'washers')],
-                        ['label' => 'Tumble Dryers',                  'href' => route('equipment.category', 'tumble-dryers')],
-                        ['label' => 'Equipment Rental',               'href' => route('rental')],
-                        ['label' => 'Preventive Maintenance',         'href' => route('service-contracts')],
-                        ['label' => 'Support &amp; Aftercare',        'href' => route('parts-aftercare')],
-                    ] as $link)
-                    <li>
-                        <a href="{{ $link['href'] }}" class="flex items-center gap-2.5 font-body text-sm text-navy hover:text-orange font-semibold transition-colors">
-                            <svg class="w-4 h-4 flex-shrink-0 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                            {!! $link['label'] !!}
-                        </a>
-                    </li>
-                    @endforeach
-                </ul>
-            </div>
-
+            @endforeach
         </div>
     </div>
 </section>
@@ -679,7 +660,7 @@
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 reveal max-w-3xl">
+        <div class="mb-10 reveal max-w-5xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Use <span style="color:#148af4;">the correct amount</span>, every time
