@@ -36,23 +36,23 @@
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div style="max-width: 760px;">
+            <div class="max-w-3xl">
 
-                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
-                    Commercial laundry<br><span class="text-[#148af4]">engineering support</span> for sites<br>where downtime carries real&nbsp;cost
+                <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
+                    Commercial laundry <br class="hidden lg:block"><span class="text-[#148af4]">engineering support</span> for sites <br class="hidden lg:block">where downtime carries real&nbsp;cost
                 </h1>
 
-                <p class="hero-desc font-body text-white leading-relaxed mb-10 text-base max-w-2xl">
+                <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports commercial laundry sites with equipment supply, rental options, maintenance, repairs and aftercare from one experienced team, helping operators control costs, reduce disruption and keep laundry&nbsp;moving.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="inline-flex items-center justify-center border-2 border-white hover:border-white/70 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to Our Team
                     </a>
                 </div>
@@ -83,14 +83,14 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Laundry support built around <span class="text-[#148af4]">the site, the equipment</span> and daily demand
+                    Laundry support built around <br class="hidden lg:block"><span class="text-[#148af4]">the site, the equipment</span><br class="hidden lg:block"> and daily demand
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
-                <p class="font-body text-navy text-base leading-relaxed">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
                     Irish Laundry Systems starts with the site: the room, the workload, the equipment in use and the pressure on daily output. From there, we guide each customer toward the right service support, rental option, equipment quote or aftercare.
                 </p>
-                <p class="font-body text-gray-600 text-base leading-relaxed">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
                     That gives owners and operators a clearer next step when laundry affects cost control, staffing pressure, service continuity and the long-term value of the equipment they depend on every day.
                 </p>
                 <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
@@ -123,6 +123,7 @@
 <!-- 3.5 PLANNING STRIP — Designed around your site, workflow and capacity -->
 <div style="background-color:#148af4; margin-top:-1px; margin-bottom:-1px;">
     @include('components.cta-combined-banner', [
+        'eyebrow'  => 'Planning &amp; Support',
         'heading'  => 'Designed around your room, <span style="color:#011E41;">workload and budget</span> before money is&nbsp;spent',
         'body'     => 'Poor equipment fit, weak layout and undersized capacity can create avoidable spend after installation. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the room, workload and support needs before money is spent, so the site can make a better decision from the start.',
         'features' => [
@@ -159,6 +160,7 @@
 
 <!-- 6.5 EQUIPMENT RENTAL STRIP — Keep laundry moving with capital control -->
 @include('components.why-choose-strip', [
+    'eyebrow'  => 'Rental Options',
     'body'     => 'Rental gives your site a practical option for replacement, expansion or continuity without one large purchase upfront. Equipment, installation and maintenance are included under the rental agreement, making budget planning easier to manage.',
     'features' => [
         [
@@ -190,8 +192,8 @@
 
 <!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
-    'headingLine1' => 'Keep service costs, maintenance and',
-    'headingLine2' => 'next steps clear',
+    'headingLine1' => 'Keep service costs,',
+    'headingLine2' => 'maintenance and next steps clear',
     'body'         => 'Planned maintenance and aftercare keep service history, equipment condition and follow-up needs clear, giving teams a better way to reduce surprise repair costs, protect equipment value and limit disruption over time.',
     'features'     => [
         ['img' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce surprise repair costs'],

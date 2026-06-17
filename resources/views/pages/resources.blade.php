@@ -19,7 +19,7 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
 
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Resources for <span style="color:#148af4;">smarter laundry operations</span>
+                    Resources for <br class="hidden lg:block"><span style="color:#148af4;">smarter laundry operations</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Guides, checklists and reference material to help operators manage equipment, reduce downtime and stay compliant.
@@ -307,9 +307,9 @@
 
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Resource Help</p>
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Not sure which <span style="color:#011E41;">guide or checklist</span></span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">fits your site?</span>
+        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <span class="text-white">Not sure which <span style="color:#011E41;">guide or checklist</span></span><br class="hidden lg:block">
+            <span class="text-white">fits your site?</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Tell us what you are trying to manage, maintain or decide — Irish Laundry Systems will point you to the right resource or practical advice for the site.
@@ -321,7 +321,7 @@
             @endforeach
         </div>
         <a href="{{ route('contact') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+           class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
             Talk to Our Team
         </a>
     </div>
@@ -379,7 +379,7 @@
 
                 <div>
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $machine['title'] }}</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $machine['desc'] }}</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $machine['desc'] }}</p>
                 </div>
 
                 <div class="w-full flex items-end justify-center mt-auto" style="height:300px;">
@@ -390,7 +390,7 @@
                 </div>
 
                 <a href="{{ $machine['href'] }}"
-                   class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors">
+                   class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold text-base px-5 py-4 rounded-lg transition-colors">
                     View Resources
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>

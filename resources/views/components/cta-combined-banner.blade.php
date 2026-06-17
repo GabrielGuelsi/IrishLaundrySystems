@@ -1,4 +1,5 @@
 @props([
+    'eyebrow'  => null,
     'heading'  => 'Designed around your <span style="color:#011E41;">site</span>, <span style="color:#011E41;">workflow</span> and&nbsp;capacity',
     'body'     => 'We help define the right equipment, layout and service route around your space, volume, staff flow and day-to-day&nbsp;laundry&nbsp;demand.',
     'miniPoints' => null,
@@ -9,7 +10,7 @@
     ],
     'ctaText'  => 'Talk to an Engineer',
 ])
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
 
     {{-- Background image pinned to right 60% --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
@@ -21,7 +22,11 @@
     </div>
 
     {{-- Content — 60% width matching strip proportion --}}
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 max-w-full lg:max-w-[60%]" style="width:100%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]" style="width:100%;">
+
+        @if($eyebrow)
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
+        @endif
 
         {{-- Heading --}}
         <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
@@ -34,11 +39,19 @@
         </p>
 
         @if($miniPoints)
+        @php $miniHasIcons = is_array($miniPoints[0] ?? null); @endphp
         {{-- Mini points --}}
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        <div class="flex items-center {{ $miniHasIcons ? 'flex-wrap lg:flex-nowrap gap-x-4' : 'flex-wrap gap-x-5' }} gap-y-2 mb-7">
             @foreach($miniPoints as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
+            @if($i > 0)<span class="text-white/40 flex-shrink-0">|</span>@endif
+            @if(is_array($pt))
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
+            </span>
+            @else
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @endif
             @endforeach
         </div>
         @else

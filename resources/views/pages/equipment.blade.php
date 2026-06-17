@@ -10,15 +10,14 @@
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[660px]" style="background-color:#011E41;">
     <img src="/images/equipment/td6-multihousing-room.jpg" alt="Commercial laundry equipment room"
          class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.94) 0%, rgba(1,30,65,0.80) 45%, rgba(1,30,65,0.45) 75%, rgba(1,30,65,0.20) 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.72) 0%, rgba(1,30,65,0.32) 40%, rgba(1,30,65,0.06) 66%, transparent 85%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Guidance</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="block">Commercial laundry equipment</span>
-                    <span class="block"><span style="color:#148af4;">supplied, installed</span></span>
-                    <span class="block" style="color:#148af4;">and supported</span>
+                    <span class="block"><span style="color:#148af4;">supplied, installed and supported</span></span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supports commercial laundry sites with equipment selection, quotation, supply, installation, rental advice and aftercare, including Electrolux Professional laundry equipment options.
@@ -82,7 +81,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore equipment lines built for <span style="color:#148af4;">different laundry needs</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 <span>The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
                 <span>Irish Laundry Systems helps match the right option to the site and the next step.</span>
             </p>
@@ -109,7 +108,7 @@
                 'points'   => ['More than domestic', 'Smaller-site fit', 'Faster turnaround'],
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
-                'img'      => '/images/healthcare/healthcarehero.png',
+                'img'      => '/images/equipment/myPRO-8K-washer.webp',
             ],
             [
                 'eyebrow'  => 'lagoon Advanced Care',
@@ -145,7 +144,7 @@
                     <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover object-center">
-                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.55) 30%, rgba(1,30,65,0.12) 55%, transparent 75%);"></div>
+                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.7) 0%, rgba(1,30,65,0.32) 28%, rgba(1,30,65,0.05) 52%, transparent 72%);"></div>
                         <div class="relative z-10 flex items-end" style="min-height:540px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
                                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $t['eyebrow'] }}</p>
@@ -193,7 +192,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment options <span style="color:#148af4;">worth a closer look</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 These equipment options can help sites handle common laundry demands around output, drying performance, space and professional-grade use.
             </p>
         </div>
@@ -218,7 +217,7 @@
                 'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
                 'cta'   => 'View myPRO Options',
                 'route' => route('equipment.category', 'semi-professional'),
-                'img'   => '/images/equipment/IB623_FRONT_NEW.jpg',
+                'img'   => '/images/equipment/myPRO-8K-washer.webp',
             ],
         ];
         @endphp
@@ -301,7 +300,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Browse commercial laundry equipment available for quotation, supply, installation, rental discussion and ongoing support through Irish Laundry Systems.
             </p>
         </div>
@@ -314,7 +313,7 @@
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
                 ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
-                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/myPRO-8K-washer.webp'],
                 ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
@@ -366,7 +365,7 @@
                 <div class="lg:col-span-7 bg-white p-6 lg:p-8 lg:border-l border-gray-200">
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 h-full">
                         @foreach([
-                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-ironing-tables.jpg'],
+                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'FIT1.jpg'],
                             ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'finishing-steam-irons.jpg'],
                             ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-presses.jpg'],
                         ] as $fc)
@@ -401,7 +400,7 @@
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Access</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4">
             <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Choose whether to</span>
-            <span class="text-3xl sm:text-4xl lg:text-5xl" style="color:#011E41;">purchase or rent</span>
+            <span class="text-3xl sm:text-4xl lg:text-5xl whitespace-nowrap" style="color:#011E41;">purchase or rent</span>
             <span class="text-white text-3xl sm:text-4xl lg:text-5xl">equipment</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
@@ -475,7 +474,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep the <span style="color:#148af4;">next support step clear</span> after installation
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Once equipment is in place, Irish Laundry Systems can help your site choose the right follow-up support, from planned maintenance to call-out support and aftercare.
             </p>
         </div>
@@ -556,9 +555,9 @@
 
         @php
         $environments = [
-            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png'],
-            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg'],
-            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg'],
+            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png',                'pos' => '75% center'],
+            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
+            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg',           'pos' => '75% center'],
             ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
             ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
@@ -592,7 +591,7 @@
                         <div class="flex flex-col items-center text-center">
                             <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
-                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px;">
+                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
                             </a>
                             <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{!! $env['env'] !!}</h3>
                             <a href="{{ $env['route'] }}"

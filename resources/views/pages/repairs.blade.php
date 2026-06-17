@@ -75,12 +75,12 @@
 
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
-                    <span class="text-[#148af4]">Call-outs and repairs</span><br class="hidden lg:inline"> when commercial&nbsp;laundry<br class="hidden lg:inline"> equipment is under&nbsp;pressure
+                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                    <span class="text-[#148af4]">Call-outs and repairs</span> when<br class="hidden lg:inline"> commercial laundry equipment<br class="hidden lg:inline"> is under&nbsp;pressure
                 </h1>
 
-                <p class="hero-desc font-body text-white/80 leading-relaxed mb-10 text-base max-w-xl text-pretty">
-                    When a machine fault slows down daily laundry, staff routines or production, Irish Laundry Systems supports your site with experienced engineer support, Electrolux Professional knowledge and a clear next step, so you know what can happen next.
+                <p class="hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-2xl text-pretty">
+                    When a machine fault slows down daily laundry, staff routines or production, <span class="whitespace-nowrap">Irish Laundry Systems</span> supports your site with experienced engineer support, Electrolux Professional knowledge and a clear next step, so you know what can happen next.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
@@ -120,8 +120,8 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
             <span class="text-[#148af4]">Faster support</span> starts with clear fault details
         </h2>
-        <p class="font-body text-gray-600 text-base leading-relaxed mb-12 lg:mb-16 max-w-3xl mx-auto text-pretty">
-            A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. Irish Laundry Systems reviews the key details before arranging the visit.
+        <p class="font-body text-gray-500 text-base leading-relaxed mb-12 lg:mb-16 max-w-3xl mx-auto text-pretty">
+            A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the key details before arranging the visit.
         </p>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10">
@@ -169,8 +169,8 @@
                     <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 flex-shrink-0 object-contain">
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
-                        <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
-                        <p class="font-body text-white text-base leading-relaxed text-pretty">
+                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
+                        <p class="font-body text-white/80 text-base leading-relaxed text-pretty">
                             Tell us what has failed, where the machine is located and how urgent the issue is, so the team can prepare properly.
                         </p>
                         <p class="font-body text-white/60 text-xs mt-2 text-pretty">
@@ -352,8 +352,8 @@ $expectSteps = [
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is&nbsp;down
                 </h2>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-8 text-pretty">
-                    When your on-site laundry is out of action, Irish Laundry Systems can discuss temporary laundry support through Laundry Online locations across Dublin, if short-term cover is needed and agreed in&nbsp;advance.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 text-pretty">
+                    When your on-site laundry is out of action, <span class="whitespace-nowrap">Irish Laundry Systems</span> can discuss temporary laundry support through Laundry Online locations across Dublin, if short-term cover is needed and agreed in&nbsp;advance.
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
@@ -396,7 +396,7 @@ $expectSteps = [
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-navy/80 to-transparent">
-                    <p class="font-body text-white text-xs font-semibold tracking-wide uppercase">Laundry Online &mdash; Dublin</p>
+                    <p class="font-body font-bold text-white text-xs uppercase tracking-[0.22em]">Laundry Online &mdash; Dublin</p>
                 </div>
             </div>
 
@@ -412,8 +412,8 @@ $expectSteps = [
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
                     <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 leading-tight text-balance">Repeated breakdowns usually need <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
-                    <p class="font-body text-gray-300 leading-relaxed text-pretty">
-                        If the same fault keeps returning, the issue may be linked to maintenance history, wear, parts requirements or how the equipment is being used. Irish Laundry Systems reviews what keeps coming back and what needs attention&nbsp;next.
+                    <p class="font-body text-blue-200 text-base leading-relaxed text-pretty">
+                        If the same fault keeps returning, the issue may be linked to maintenance history, wear, parts requirements or how the equipment is being used. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews what keeps coming back and what needs attention&nbsp;next.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
@@ -532,8 +532,8 @@ $faqs = [
                     <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                         Use the repair visit to plan the <span class="text-[#148af4]">right next step</span>
                     </h2>
-                    <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                        A call-out can solve the immediate fault, but it can also reveal wear, repeated issues, parts requirements or maintenance pressure. Irish Laundry Systems uses what the engineer finds to advise whether Preventive Maintenance Contracts or Support &amp; Aftercare should be considered next.
+                    <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                        A call-out can solve the immediate fault, but it can also reveal wear, repeated issues, parts requirements or maintenance pressure. <span class="whitespace-nowrap">Irish Laundry Systems</span> uses what the engineer finds to advise whether Preventive Maintenance Contracts or Support &amp; Aftercare should be considered next.
                     </p>
 
                     {{-- Mini points --}}
