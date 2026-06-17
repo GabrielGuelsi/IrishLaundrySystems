@@ -188,11 +188,11 @@
                 </p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
-                    Keep your laundry operation&nbsp;running<br class="hidden lg:block"> with <span class="text-steel">fewer&nbsp;surprise</span> costs
+                    Keep your laundry operation&nbsp;running<br class="hidden lg:block"> with <span class="text-steel">fewer surprise&nbsp;costs</span>
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> supports commercial laundry sites with planned maintenance visits, equipment checks, clear reporting and preferential call-out rates under the agreement.
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> gives commercial laundry sites a planned way to manage servicing, inspections and follow-up support, with preferential call-out labour rates under the agreement. It is built for sites that want fewer surprises, better cost control and more peace of mind around essential laundry equipment.
                 </p>
 
                 <div class="hero-btns flex flex-row flex-wrap gap-4">
@@ -242,27 +242,21 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
-            Why Preventive Maintenance
+            Planned Equipment Care
         </p>
         <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-20 items-start">
 
             {{-- Left column: heading --}}
             <div class="reveal">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    <span class="text-steel">Planned maintenance</span> can stop small issues becoming expensive&nbsp;repairs
+                    Stay ahead with <span class="text-steel">planned maintenance&nbsp;support</span>
                 </h2>
             </div>
 
             {{-- Right column: lead + body + CTA --}}
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
-                <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Equipment failures can disrupt daily laundry, delay production, increase repair costs and put unnecessary pressure on staff.
-                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    Commercial laundry equipment works hard every day. When wear or developing faults are only noticed after a breakdown, the cost spreads quickly through downtime, staff pressure and emergency repairs.
-                </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    A Preventive Maintenance Contract gives your site a planned way to inspect and service essential laundry equipment, so smaller issues are spotted earlier and maintenance stays easier to manage.
+                    Commercial laundry equipment works hard every day. A Preventive Maintenance Contract gives your site planned inspections, service checks and clear recommendations before smaller issues create bigger repair pressure.
                 </p>
                 <a href="#book-visit-form"
                    data-ga-cta="intro-book-visit"
@@ -287,49 +281,48 @@
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">What you gain</span> with a<br class="hidden lg:block">
-                Preventive Maintenance Contract
+                More control, fewer surprises and <span class="text-steel">peace of&nbsp;mind</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
-                An <span class="whitespace-nowrap">Irish Laundry Systems</span> Preventive Maintenance Contract gives your site a clearer way to plan maintenance, reduce unexpected problems and keep essential laundry equipment operating reliably over time.
+                A Preventive Maintenance Contract helps your site manage service needs, reduce disruption and plan around essential laundry equipment with more confidence.
             </p>
         </div>
 
         @php
         $gainCards = [
             [
-                'title' => 'Preferential Call-Out Support',
+                'title' => 'Preferential call-out support',
                 'img'   => '/images/icons/pmc-gain-86.png',
-                'text'  => 'Service contract customers can receive preferential labour rates for unscheduled call-outs under their agreement, helping control service costs when issues arise.',
+                'text'  => 'Contract customers can receive preferential labour rates for unscheduled call-outs under their agreement.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>',
             ],
             [
-                'title' => 'Laundry Equipment Specialists',
+                'title' => 'People who know the equipment',
                 'img'   => '/images/icons/pmc-gain-87.png',
-                'text'  => 'Support from engineers with commercial laundry experience, Electrolux Professional equipment knowledge, Registered Electrical Contractor support and Registered Gas Installer contractor support.',
+                'text'  => 'Support from engineers with commercial laundry experience and Electrolux Professional equipment knowledge.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>',
             ],
             [
                 'title' => 'Preventive Maintenance',
                 'img'   => '/images/icons/pmc-gain-88.png',
-                'text'  => 'Scheduled servicing helps identify wear, service needs and developing faults before they become expensive repairs.',
+                'text'  => 'Planned servicing helps identify wear, service needs and developing faults before they create bigger repair pressure.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>',
             ],
             [
-                'title' => 'Reduced Downtime',
-                'text'  => 'Well-maintained machines are less likely to create avoidable downtime for staff, residents, guests, daily laundry or production.',
+                'title' => 'Reduce downtime pressure',
+                'text'  => 'Planned servicing helps spot issues earlier, so your site can reduce downtime pressure and keep laundry moving.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>',
             ],
             [
-                'title' => 'Cost Control & Less Disruption',
+                'title' => 'Cost control',
                 'img'   => '/images/icons/pmc-gain-90.png',
-                'text'  => 'Earlier issue detection can reduce surprise repair pressure, avoid unnecessary disruption and give teams clearer next costs.',
+                'text'  => 'Earlier issue detection can reduce surprise repair pressure and help teams plan the next cost with more confidence.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/>',
             ],
             [
-                'title' => 'Improved Equipment Lifespan',
+                'title' => 'Equipment value',
                 'img'   => '/images/icons/pmc-gain-91.png',
-                'text'  => 'Regular servicing can help equipment operate more reliably and efficiently, protecting equipment value over time.',
+                'text'  => 'Regular servicing can support more reliable performance and help protect equipment value over time.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>',
             ],
         ];
@@ -366,7 +359,7 @@
                 What's included in a<br class="hidden lg:block"><span class="text-steel">Preventive Maintenance Contract</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
-                A Preventive Maintenance Contract gives your site two planned inspections per year, servicing and equipment checks, clear maintenance reporting and clearer recommendations for the equipment your laundry depends on.
+                Your contract brings planned visits, equipment checks, service reporting, preferential call-out support and practical recommendations around the laundry equipment your site depends on.
             </p>
         </div>
 
@@ -388,14 +381,14 @@
             <div class="lg:col-span-7">
                 @php
                 $includedItems = [
-                    ['title' => 'Scheduled preventive maintenance visits',     'text' => 'Contract customers receive two planned inspections per year, arranged around equipment use and site needs to help identify wear, service needs and developing faults earlier.'],
-                    ['title' => 'Equipment inspections and testing',            'text' => 'Inspection and testing to check machine condition, performance and safety.'],
+                    ['title' => 'Scheduled preventive maintenance visits',     'text' => 'Two planned inspections per year, arranged around equipment use and site needs.'],
+                    ['title' => 'Equipment inspections and testing',            'text' => 'Inspection and testing to review equipment condition, performance and safety.'],
                     ['title' => 'Preferential call-out support',                'text' => 'Contract customers can receive preferential labour rates for unscheduled call-outs under their agreement.'],
                     ['title' => 'Fault diagnosis',                              'text' => 'Engineer assessment when issues are identified during maintenance or reported between visits.'],
-                    ['title' => 'Performance and safety checks',                'text' => 'Checks to help keep essential commercial laundry equipment operating properly and safely.'],
-                    ['title' => 'Clear maintenance reporting',                  'text' => 'Clear maintenance reporting gives your site a record of maintenance visits, recurring issues and recommended next steps.'],
-                    ['title' => 'Recommendations for wear-and-tear items',      'text' => 'Clear recommendations where wear-and-tear items or quoted follow-up work may be needed.'],
-                    ['title' => 'Operator guidance where relevant',             'text' => 'Guidance for site teams on safe and efficient equipment use where useful.'],
+                    ['title' => 'Performance and safety checks',                'text' => 'Checks to support proper, safe operation of essential commercial laundry equipment.'],
+                    ['title' => 'Maintenance reporting',                        'text' => 'A record of maintenance visits, recurring issues and recommended next steps.'],
+                    ['title' => 'Wear-and-tear recommendations',                'text' => 'Clear guidance where wear-and-tear items or quoted follow-up work may be needed.'],
+                    ['title' => 'Operator guidance where relevant',             'text' => 'Practical guidance for site teams on safe and efficient equipment use where useful.'],
                 ];
                 @endphp
                 <ul class="space-y-4">
@@ -423,7 +416,7 @@
             <div>
                 <h3 class="font-heading font-bold text-navy text-base mb-1">Support between visits</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Talk to Our Team when equipment issues arise between planned inspections, with support from people who know the equipment.</p>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mt-2">Parts are charged separately where required. Preventive Maintenance Contracts do not include replacement parts unless they are separately agreed in the contract.</p>
+                <p class="font-body text-gray-600 text-sm leading-relaxed mt-2">Replacement parts are charged separately where required, unless separately agreed in the contract.</p>
             </div>
         </div>
 
@@ -447,13 +440,7 @@
                 <span class="text-steel">Protect your maintenance budget</span> before small problems become expensive repairs
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:140ms;">
-                Many sites compare a contract only against doing nothing. But waiting for breakdowns brings urgent call-outs, downtime, delays and unplanned repair costs.
-            </p>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:180ms;">
-                Planned maintenance saves time and reduces disruption by catching smaller issues before they become breakdowns.
-            </p>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty mt-3" style="transition-delay:200ms;">
-                For Electrolux Professional equipment, regular servicing also supports more consistent energy use, water use, detergent use and long-term equipment performance.
+                Waiting for breakdowns can lead to urgent call-outs, downtime, delays and unplanned repair costs. A Preventive Maintenance Contract gives your site planned servicing, service reports and earlier attention to smaller issues before they become expensive repair pressure. For Electrolux Professional equipment, regular servicing can also support more consistent energy, water and detergent use over time.
             </p>
         </div>
 
@@ -522,10 +509,10 @@
                         <span class="font-body font-bold text-white text-sm uppercase tracking-[0.18em]">With a PM Contract</span>
                     </div>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
-                        A clearer way to protect essential equipment
+                        A planned way to protect essential equipment
                     </h3>
                     <ul class="space-y-2.5">
-                        @foreach (['Two planned inspections per year', 'Servicing and equipment checks', 'Earlier issue detection', 'Preferential call-out rates where applicable', 'Clearer service records', 'More consistent equipment performance', 'More peace of mind'] as $item)
+                        @foreach (['Two planned inspections per year', 'Servicing and equipment checks', 'Earlier issue detection', 'Preferential call-out rates where applicable', 'Maintenance reports', 'More consistent equipment performance', 'More peace of mind'] as $item)
                         <li class="flex items-center gap-3">
                             <span class="flex-shrink-0 w-6 h-6 rounded-full bg-steel/25 ring-1 ring-steel/50 flex items-center justify-center">
                                 <svg class="w-3 h-3 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3.5" aria-hidden="true">
@@ -565,10 +552,10 @@
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Planned Maintenance Value</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Keep essential laundry equipment running with <span class="text-steel">fewer&nbsp;surprise</span> costs
+                    Keep essential laundry equipment running with <span class="text-steel">less&nbsp;disruption</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                    Planned inspections help spot wear, developing faults and service needs earlier, so your site can reduce downtime, avoid unnecessary disruption and prevent small issues becoming expensive&nbsp;repairs.
+                    Planned inspections help identify wear, developing faults and service needs earlier, so your site can reduce downtime pressure, minimise disruption and keep maintenance decisions easier to&nbsp;manage.
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs lg:text-sm font-body text-blue-200/90 mb-8">
                     <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Spot issues earlier</span>
@@ -593,10 +580,10 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Preventive Visits</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight max-w-3xl reveal text-balance" style="transition-delay:80ms;">
-            How <span class="text-steel">preventive visits</span> work
+            How preventive visits create <span class="text-steel">clearer next&nbsp;steps</span>
         </h2>
         <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
-            A preventive visit should make equipment condition, service needs and the next step clearer.
+            A preventive visit gives your site a clearer view of equipment condition, service needs and what should happen next.
         </p>
     </div>
 
@@ -611,13 +598,13 @@
             [
                 'num'   => '02.',
                 'title' => 'Service and identify',
-                'body'  => 'Carry out scheduled preventive maintenance and identify wear, service needs or developing faults before they create bigger disruption.',
+                'body'  => 'Carry out scheduled preventive maintenance and identify wear, service needs or developing faults.',
                 'img'   => '/images/healthcare/repairs-hero.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Report clearly',
-                'body'  => 'Provide clear maintenance records so the site can track visits, recurring issues and inspection findings.',
+                'body'  => 'Provide maintenance notes so the site can track visits, recurring issues and inspection findings.',
                 'img'   => '/images/healthcare/service-contracts-hero.jpg',
             ],
             [
@@ -652,10 +639,10 @@
         <div class="mb-12 lg:mb-14">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Sector Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">Planned maintenance</span> for different site demands
+                Planned maintenance for <span class="text-steel">different site&nbsp;demands</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
-                Different sites place different demands on laundry equipment. Preventive maintenance should be planned around the way the equipment is used every day.
+                Different sites place different pressure on laundry equipment. Preventive Maintenance should be planned around daily use, service needs and the cost of disruption.
             </p>
         </div>
 
@@ -746,7 +733,7 @@
 <section class="pt-12 lg:pt-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center reveal">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Client Feedback</p>
+            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Customer Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance">
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
@@ -768,7 +755,7 @@
 $faqs = [
     [
         'question' => 'What equipment can be covered?',
-        'answer'   => 'What can be covered depends on the equipment already in use, the site requirements and the agreed maintenance plan. Irish Laundry Systems can review commercial laundry equipment before confirming the right support option.',
+        'answer'   => 'Coverage depends on the equipment in use, the site requirements and the agreed maintenance plan. Irish Laundry Systems can review commercial laundry equipment before confirming the right support option.',
     ],
     [
         'question' => 'How often are preventive maintenance visits scheduled?',
@@ -792,15 +779,15 @@ $faqs = [
     ],
     [
         'question' => 'Can you provide support between visits?',
-        'answer'   => 'Yes. Talk to Our Team when equipment issues arise between planned inspections, with support from people who know the equipment.',
+        'answer'   => 'Yes. Talk to Our Team when equipment issues arise between planned inspections.',
     ],
     [
         'question' => 'Do you provide urgent call-outs?',
-        'answer'   => 'Yes. Repairs & Call-outs are available for urgent faults. Requests are handled based on urgency, equipment details, site pressure and maintenance history.',
+        'answer'   => 'Yes. Repairs & Call-Outs are available for urgent faults. Requests are handled based on urgency, equipment details, site pressure and maintenance history.',
     ],
     [
         'question' => 'Can you maintain equipment that was not purchased from Irish Laundry Systems?',
-        'answer'   => 'Yes. Irish Laundry Systems can review mixed-brand laundry rooms and confirm whether equipment can be included within a maintenance contract or supported through call-outs.',
+        'answer'   => 'Irish Laundry Systems can review mixed-brand laundry rooms and confirm whether equipment can be included within a maintenance contract or supported through call-outs.',
     ],
     [
         'question' => 'How long is a Preventive Maintenance Contract?',
@@ -832,11 +819,11 @@ $faqs = [
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">After the Visit</p>
 
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-            Turn preventive visit findings into the <span class="text-steel">right next step</span>
+            Turn preventive visit findings into <span class="text-steel">the right next&nbsp;step</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            When a preventive visit identifies wear, a recurring fault or a parts requirement, Support &amp; Aftercare keeps the follow-up clear, quoted separately where needed and based on the equipment&nbsp;history.
+            When a preventive visit identifies wear, a recurring fault or a parts requirement, <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps follow-up straightforward, with quoted work and genuine parts support where&nbsp;needed.
         </p>
 
         <div class="flex items-center flex-wrap gap-0 mb-7">
@@ -893,12 +880,12 @@ $faqs = [
                             with <span class="text-steel">planned maintenance support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                            Tell us about your equipment, site and current maintenance needs. <span class="whitespace-nowrap">Irish Laundry Systems</span> will guide you toward the right preventive maintenance, repair, rental or aftercare support.
+                            Tell us about your equipment, site and current maintenance needs. <span class="whitespace-nowrap">Irish Laundry Systems</span> will guide you toward the right support across Preventive Maintenance Contracts, Repairs &amp; Call-Outs, Equipment Rental or Support &amp; Aftercare.
                         </p>
                         <div class="flex flex-col gap-3">
                             @foreach ([
                                 'Experienced engineer support',
-                                'Preventive maintenance focus',
+                                'Preventive Maintenance focus',
                                 'Commercial laundry specialists',
                             ] as $point)
                             <div class="flex items-center gap-3 bg-white/10 rounded-xl px-5 py-3">
