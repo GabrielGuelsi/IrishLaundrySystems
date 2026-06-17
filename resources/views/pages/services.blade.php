@@ -380,9 +380,16 @@
         <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span style="color:#ffffff;">Start with</span> <span style="color:#011E41;">the right service&nbsp;support</span>
         </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-7 max-w-xl">
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
             Tell us what is happening with your laundry equipment. Irish Laundry Systems will guide your site toward the right support, whether that means Repairs &amp; Call-Outs, Preventive Maintenance, Equipment Rental or Support &amp; Aftercare.
         </p>
+        <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white/90 text-xs lg:text-sm">
+            <span class="whitespace-nowrap">Reduce uncertainty</span>
+            <span class="text-white/40">|</span>
+            <span class="whitespace-nowrap">Protect daily operation</span>
+            <span class="text-white/40">|</span>
+            <span class="whitespace-nowrap">Keep laundry moving</span>
+        </div>
         <div class="flex flex-wrap gap-3">
             <a href="#services-form"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide w-fit">
