@@ -390,7 +390,7 @@ $expectSteps = [
 
             {{-- RIGHT: image --}}
             <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto lg:h-[460px]">
-                <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                <img src="/images/healthcare/repairs-temporary-laundry.jpg"
                      alt="Laundry Online Dublin store as a temporary processing route while on-site equipment is down"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover">
