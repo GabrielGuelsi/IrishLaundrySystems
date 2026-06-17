@@ -71,12 +71,12 @@
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div style="max-width: 760px;">
+            <div style="max-width: 820px;">
 
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
-                    Repairs and call-outs with <span class="text-[#148af4]">peace of&nbsp;mind</span><br class="hidden lg:inline"> when equipment&nbsp;fails
+                    Repairs and call-outs with<br class="hidden lg:block"> <span class="text-[#148af4]">peace of&nbsp;mind</span> when equipment&nbsp;fails
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-2xl text-pretty">
@@ -234,16 +234,16 @@ $expectSteps = [
     [
         'title'    => 'Prepare the call-out',
         'desc'     => 'Irish Laundry Systems reviews the information before the visit so the engineer has a clearer starting&nbsp;point.',
-        'image'    => '/images/healthcare/customer-care-line6000.jpg',
-        'alt'      => 'ILS engineer reviewing call-out information on Electrolux Line 6000 equipment',
+        'image'    => '/images/healthcare/repairs-how-02.jpg',
+        'alt'      => 'Irish Laundry Systems team preparing a commercial laundry repair call-out',
         'meta'     => 'Step 2',
         'position' => 'center',
     ],
     [
         'title'    => 'Diagnose on-site',
         'desc'     => 'The engineer checks the equipment, confirms the likely cause and carries out the repair where&nbsp;possible.',
-        'image'    => '/images/hero/on-site-diagnosis.jpeg',
-        'alt'      => 'ILS technician inspecting a commercial washing machine drum during diagnosis',
+        'image'    => '/images/healthcare/repairs-how-03.jpg',
+        'alt'      => 'Irish Laundry Systems engineer diagnosing commercial laundry equipment on-site',
         'meta'     => 'Step 3',
         'position' => 'center',
     ],
