@@ -21,7 +21,7 @@
                     Choose commercial washers around <span style="color:#148af4;">daily demand, running cost and support</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial washers for hotels, healthcare sites, care facilities and commercial laundries across Ireland. Since 1987, our team has helped sites match washer capacity, room layout, detergent use, drying pressure and after-installation support around the way their laundry actually works.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial washers for hotels, healthcare sites, care facilities and commercial laundries across Ireland. Since 1987, our team has helped sites match washer capacity, room layout, detergent use, drying needs and after-installation support around the way their laundry actually works.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -55,7 +55,7 @@
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
-                    A commercial washer decision affects more than wash capacity. The right setup should fit the room, utilities, access, detergent control, drying pressure, purchase or rental needs and long-term support before money is spent.
+                    A commercial washer decision affects more than wash capacity. The right setup should fit the room, utilities, access, detergent control, drying performance, purchase or rental needs and long-term support before money is spent.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems connects expert advice, Electrolux Professional washer technology, installation knowledge and aftercare, so your site can choose with more confidence.
@@ -84,7 +84,7 @@
                 Look beyond the purchase price to see<br><span style="color:#148af4;">where washer costs really sit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-6xl">
-                The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost pressure. Electrolux Professional washer technologies are designed to reduce that pressure and support lower long-term running costs.
+                The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost. Electrolux Professional washer technologies are designed to reduce that cost and support lower long-term running costs.
             </p>
         </div>
 
@@ -122,7 +122,7 @@
                     <div class="bg-[#eaf4fc] rounded-lg p-6 lg:max-w-[230px]">
                         <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">A smaller lifetime cost profile</h3>
                         <p class="font-body text-navy/70 text-sm leading-relaxed">
-                            Water, energy and chemicals make up the larger share of washer lifetime cost. Choosing the right washer technology can help reduce that cost pressure across daily operation.
+                            Water, energy and chemicals make up the larger share of washer lifetime cost. Choosing the right washer technology can reduce that cost across daily operation.
                         </p>
                     </div>
                     <div class="lg:max-w-[230px]">
@@ -185,15 +185,15 @@
                 Choose washers around <span style="color:#148af4;">daily cost control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                A washer decision affects more than the wash cycle. Operational expenditure, detergent use, water and energy waste, drying pressure and staff productivity all shape the real cost of keeping laundry moving.
+                A washer decision affects more than the wash cycle. Operational expenditure, detergent use, water and energy waste, drying performance and staff productivity all shape the real cost of keeping laundry moving.
             </p>
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
             ['icon'=>'30', 'prefix'=>'Up to', 'stat'=>'40%',               'size'=>'text-4xl', 'label'=>'lower operational expenditure', 'body'=>'Electrolux Professional Line 6000 washer technologies can reduce operational expenditure by up to 40% through better utilisation.'],
-            ['icon'=>'39', 'prefix'=>'Over',  'stat'=>'30%',               'size'=>'text-4xl', 'label'=>'detergent cost savings',        'body'=>'Efficient Dosing can reduce detergent cost pressure where specified, while supporting better control of the wash process.'],
+            ['icon'=>'39', 'prefix'=>'Over',  'stat'=>'30%',               'size'=>'text-4xl', 'label'=>'detergent cost savings',        'body'=>'Efficient Dosing can reduce detergent costs where specified, while supporting better control of the wash process.'],
             ['icon'=>'7',  'prefix'=>'',      'stat'=>'Water,<br>energy',  'size'=>'text-2xl', 'label'=>'and load control',              'body'=>'Automatic Savings and Integrated Savings support better load control, reducing water, energy and cycle waste.'],
-            ['icon'=>'31', 'prefix'=>'',      'stat'=>'Time and<br>money', 'size'=>'text-2xl', 'label'=>'saved before drying',           'body'=>'Power Balance lowers moisture retention before drying, reducing pressure on the drying stage and helping protect laundry flow.'],
+            ['icon'=>'31', 'prefix'=>'',      'stat'=>'Time and<br>money', 'size'=>'text-2xl', 'label'=>'saved before drying',           'body'=>'Power Balance lowers moisture retention before drying, reducing the load on the drying stage and protecting laundry flow.'],
             ['icon'=>'3',  'prefix'=>'',      'stat'=>'25%',               'size'=>'text-4xl', 'label'=>'productivity increase',         'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside a 75% decrease in sick days and 59% reduction in work-related musculoskeletal disorders.'],
         ]])
     </div>
@@ -209,7 +209,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-            Turn washer data into <span style="color:#148af4;">better control<br>over cost, waste and performance</span>
+            Turn washer data into<br><span style="color:#148af4;">better control over cost,<br>waste and performance</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-6">
             OnE Connected gives laundry teams clearer visibility over equipment status, load activity, consumption, alerts and service needs through one digital dashboard. For compatible Electrolux Professional washers, that means better decisions around productivity, running cost, detergent use and laundry flow.
@@ -282,18 +282,12 @@
             Build the washer setup around <span style="color:#011E41;">room, workflow and support</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A washer should fit the room, the workflow and the pressure placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying pressure, installation and support before the equipment decision is made.
+            A washer should fit the room, the workflow and the demand placed on it every day. Irish Laundry Systems connects capacity, utilities, access, drying needs, installation and support before the equipment decision is made.
         </p>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
-            @foreach([
-                ['t' => 'Room fit',                     'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
-                ['t' => 'Utilities and access',         'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z'],
-                ['t' => 'Capacity and drying pressure', 'd' => 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z'],
-            ] as $pt)
-            <span class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
-                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
-            </span>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Room fit', 'Utilities and access', 'Capacity and drying needs'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -462,8 +456,8 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare washer options around <span style="color:#148af4;">capacity, cost and support</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with capacity, then connect the washer choice to room layout, utilities, detergent use, drying pressure, installation and long-term support.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Start with capacity, then connect the washer choice to room layout, utilities, detergent use, drying needs, installation and long-term support.
             </p>
         </div>
 
@@ -472,7 +466,7 @@
             // WH6-CV / WH6-LAC / WH6-LAG variants are included (ClarusVibe, Lagoon Advanced Care, specialist washing).
             $washerFamilies = [
                 // Core Line 6000 Washer Range
-                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'ws6']), 'line' => 'Line 6000 High Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'High-spin washer range for busy laundry rooms needing faster extraction and lower drying pressure.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'ws6']), 'line' => 'Line 6000 High Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'High-spin washer range for busy laundry rooms needing faster extraction and lower drying demand.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
                 ['group' => 'Core Line 6000 Washer Range', 'name' => 'WN6 — Line 6000 Normal-Spin Washer', 'slug' => 'wn6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wn6']), 'line' => 'Line 6000 Normal Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Normal-spin washer range for sites where wash performance, room fit and long-term support need to stay connected.', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'tech' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'img' => '/images/equipment/WN6 — Line 6000 Normal-Spin Washer.jpg'],
                 ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-cv']), 'line' => 'ClarusVibe Variants', 'topLine' => 'Line 6000 · ClarusVibe variants · 7–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience.', 'badges' => ['ClarusVibe','Automatic Savings','Integrated Savings','ERGOCERT'], 'tech' => ['ClarusVibe','Automatic Savings','Integrated Savings','Intelligent Dosing','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
                 ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lac']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon Advanced Care variants · 6–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care.', 'badges' => ['Lagoon Advanced Care','Efficient Dosing','ClarusVibe','Textile Care'], 'tech' => ['Efficient Dosing','ClarusVibe'], 'img' => '/images/equipment/commercialwasher.webp'],
@@ -640,7 +634,7 @@
     </div>
 </section>
 
-{{-- 11a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
+{{-- 11a. RENTAL / CAPITAL STRIP (after the washer range) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Rental Options',
     'headingLine1' => 'Keep laundry moving with',
@@ -657,10 +651,10 @@
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 reveal max-w-3xl">
+        <div class="mb-10 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Cut detergent waste with<br><span style="color:#148af4;">smarter dosing and wash control</span>
+                Cut detergent waste with <span style="color:#148af4;">smarter<br>dosing and wash control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Automatic dosing supports commercial laundry rooms by using the right amount of detergent for each cycle. That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.
@@ -834,7 +828,7 @@
                 ],
                 [
                     'title' => 'Preventive Maintenance',
-                    'text'  => 'Planned washer servicing to reduce surprise repair pressure and keep equipment condition visible.',
+                    'text'  => 'Planned washer servicing to reduce unexpected repairs and keep equipment condition visible.',
                     'cta'   => 'View Maintenance Options',
                     'route' => route('service-contracts'),
                     'img'   => '/images/healthcare/service-contracts-hero.png',
@@ -941,7 +935,7 @@
         ['question' => 'Do you install commercial washers?', 'answer' => 'Yes. Irish Laundry Systems supplies, installs and supports commercial laundry equipment across Ireland.'],
         ['question' => 'Do you provide service and breakdown support?', 'answer' => 'Yes. Service and breakdown support is available, with planned maintenance and aftercare options for equipment already on site.'],
         ['question' => 'What is the difference between Automatic Savings and Integrated Savings?', 'answer' => 'Automatic Savings adjusts water intake to the actual load. Integrated Savings shows the load in real time to help avoid underloading and overloading.'],
-        ['question' => 'Can washer choice reduce drying pressure?', 'answer' => 'Yes. High-spin washer selection and Power Balance can reduce moisture retention before drying, protecting laundry flow and reducing pressure on the drying stage.'],
+        ['question' => 'Can washer choice reduce drying demand?', 'answer' => 'Yes. High-spin washer selection and Power Balance can reduce moisture retention before drying, protecting laundry flow and reducing the load on the drying stage.'],
         ['question' => 'Can connected washer data support better laundry control?', 'answer' => 'Where compatible equipment is in place, OnE Connected can give clearer visibility over equipment status, load activity, consumption, alerts and service needs.'],
         ['question' => 'Can dosing reduce detergent waste?', 'answer' => 'Yes. Compatible dosing systems and Electrolux Professional dosing features can help use the right amount of detergent for each cycle, reducing chemical overuse and supporting more consistent wash results.'],
         ['question' => 'Are Line 6000 washers suitable for healthcare or care facilities?', 'answer' => 'Selected Line 6000 washer options can support hygiene-focused and high-demand laundry environments when matched to the correct process, room setup and support plan.'],
@@ -956,7 +950,7 @@
             Need the right washer for <span style="color:#148af4;">your laundry room?</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Talk to Irish Laundry Systems about washer capacity, running cost pressure, detergent control, installation, rental, maintenance and support options.
+            Talk to Irish Laundry Systems about washer capacity, running costs, detergent control, installation, rental, maintenance and support options.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('contact') }}"

@@ -80,9 +80,9 @@
 {{-- ════════════ 4. RENTAL INTRO / BRIDGE ════════════ --}}
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Rental</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-tight text-balance">
                     A simpler way to put <span class="text-[#148af4]">professional laundry equipment</span> in place
                 </h2>
@@ -341,7 +341,6 @@
             ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/healthcare/healthcarehero.png', 'pos' => '80% center'],
             ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg'],
             ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/Hospitallity/hospitallityhero.png'],
-            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/Hospitallity/hospitallityhero.jpeg', 'pos' => '78% center'],
             ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/healthcare/commercial-industrial.jpg'],
             ['env' => 'Multi Housing',               'route' => route('sectors'),             'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
