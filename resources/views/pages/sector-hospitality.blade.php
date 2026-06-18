@@ -723,9 +723,9 @@
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
+                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
@@ -744,9 +744,9 @@
     'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment running'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of mind'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise<br>repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment<br>running'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of<br>mind'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

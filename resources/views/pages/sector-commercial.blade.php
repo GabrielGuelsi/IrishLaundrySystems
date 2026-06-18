@@ -866,9 +866,9 @@
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
+                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{!! $step['text'] !!}</p>
@@ -888,9 +888,9 @@
     'body'         => 'Planned maintenance, service history and aftercare help commercial and industrial sites keep high-use laundry equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/healthcare/Parts%20%26%20Aftercare.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Preventive maintenance'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Service history'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts support where needed'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Preventive<br>maintenance'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Service<br>history'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts support<br>where needed'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

@@ -975,9 +975,9 @@
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
+                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{!! $step['title'] !!}</h3>
                 <p class="font-body text-gray-500 text-base leading-relaxed">{!! $step['text'] !!}</p>
@@ -996,9 +996,9 @@
     'body'         => 'The right equipment decision should not lose value after installation. Planned maintenance and aftercare keep the room, equipment and next steps clear, helping healthcare sites reduce surprise repair costs and keep vital laundry equipment running.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise repair costs'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Support hygiene routines'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Keep equipment running'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise<br>repair costs'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Support hygiene<br>routines'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Keep equipment<br>running'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

@@ -117,7 +117,7 @@
                 'points'   => ['Protect textile quality', 'Handle specialist garments', 'Reduce outsourcing where suitable'],
                 'cta'      => 'Explore Wet Cleaning',
                 'route'    => route('equipment.category', 'wet-cleaning'),
-                'img'      => '/images/Hospitallity/hospitallityhero.jpeg',
+                'img'      => '/images/Hospitallity/hospitallityhero.png',
             ],
         ];
         @endphp
@@ -366,11 +366,11 @@
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 h-full">
                         @foreach([
                             ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'FIT1.jpg'],
-                            ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'finishing-steam-irons.jpg'],
-                            ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'finishing-presses.jpg'],
+                            ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'FSU1.jpg'],
+                            ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'FF1.jpg'],
                         ] as $fc)
                         <div class="rounded-xl border border-gray-200 bg-white p-4 flex flex-col">
-                            <div class="rounded-lg bg-[#eef3f9] overflow-hidden h-32 mb-3 flex items-center justify-center">
+                            <div class="rounded-lg bg-white border border-gray-100 overflow-hidden h-32 mb-3 flex items-center justify-center">
                                 <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-2">
                             </div>
                             <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">{!! $fc['t'] !!}</h3>
@@ -453,9 +453,9 @@
                     </svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:6rem;">
-                    <img src="/images/icons/brand/{{ $step['icon'] }}.svg" alt=""
-                         style="width:5rem;height:5rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
+                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
@@ -557,7 +557,7 @@
         $environments = [
             ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png',                'pos' => '75% center'],
             ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
-            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.jpeg',           'pos' => '75% center'],
+            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.png',           'pos' => '75% center'],
             ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
             ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
