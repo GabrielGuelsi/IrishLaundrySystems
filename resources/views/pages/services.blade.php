@@ -82,9 +82,9 @@
 <!-- 1.5 COMMERCIAL INTRO / DECISION LOGIC -->
 <section class="py-12 sm:py-16 lg:py-28 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
             <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     One clear starting point for <span class="text-[#148af4]">better laundry&nbsp;decisions</span>
                 </h2>
@@ -376,18 +376,18 @@
 
     {{-- LEFT: content — 60% width --}}
     <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Request Service Assessment</p>
+        <p class="font-body font-bold text-white/90 text-xs uppercase tracking-[0.22em] mb-3">Request Service Assessment</p>
         <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span style="color:#ffffff;">Start with</span> <span style="color:#011E41;">the right service&nbsp;support</span>
         </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white/95 text-base leading-relaxed mb-6 max-w-xl">
             Tell us what is happening with your laundry equipment. Irish Laundry Systems will guide your site toward the right support, whether that means Repairs &amp; Call-Outs, Preventive Maintenance, Equipment Rental or Support &amp; Aftercare.
         </p>
-        <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white/90 text-xs lg:text-sm">
+        <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white text-xs lg:text-sm">
             <span class="whitespace-nowrap">Reduce uncertainty</span>
-            <span class="text-white/40">|</span>
+            <span class="text-white/60">|</span>
             <span class="whitespace-nowrap">Protect daily operation</span>
-            <span class="text-white/40">|</span>
+            <span class="text-white/60">|</span>
             <span class="whitespace-nowrap">Keep laundry moving</span>
         </div>
         <div class="flex flex-wrap gap-3">
