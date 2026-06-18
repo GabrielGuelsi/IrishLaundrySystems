@@ -17,7 +17,7 @@
     'cta2Route'    => 'parts-aftercare',
 ])
 {{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
 
     {{-- RIGHT: image pinned to 40% --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
@@ -27,7 +27,7 @@
     </div>
 
     {{-- LEFT: content — 60% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-10 lg:py-12 max-w-full lg:max-w-[60%]">
 
         @if($eyebrow)
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
@@ -50,7 +50,7 @@
             @if(is_array($pt))
             <span class="flex items-center gap-2 flex-shrink-0">
                 <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
-                <span class="font-body text-white text-sm font-bold whitespace-nowrap">{{ $pt['label'] }}</span>
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @else
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
