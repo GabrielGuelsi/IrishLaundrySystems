@@ -20,7 +20,7 @@
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Control hygiene flow with <span style="color:#148af4;">dirty-side and clean-side separation</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional barrier washers for healthcare, care, pharmaceutical, food processing and specialist laundry environments across Ireland. We connect barrier washer selection, room layout, clean/dirty separation, installation and aftercare around the way hygiene-critical laundry actually moves.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -150,29 +150,13 @@
             </p>
         </div>
 
-        {{-- aligned metric grid (barrier-only): the icon+number row is locked to one height so every
-             stat baseline lines up; titles sit on a min-height row so titles + body align across all cards --}}
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
-            @foreach([
-                ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'50%',        'big'=>true,  'label'=>'water saving',                   'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
-                ['icon'=>'9',  'prefix'=>'',      'stat'=>'25%',        'big'=>true,  'label'=>'productivity increase',          'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.'],
-                ['icon'=>'10', 'prefix'=>'',      'stat'=>'Integrated', 'big'=>false, 'label'=>'water, energy and load control', 'body'=>'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.'],
-                ['icon'=>'8',  'prefix'=>'',      'stat'=>'Efficient',  'big'=>false, 'label'=>'detergent and water control',    'body'=>'Efficient Dosing adds detergent and water according to load weight, reducing waste and supporting process consistency.'],
-                ['icon'=>'31', 'prefix'=>'',      'stat'=>'Power',      'big'=>false, 'label'=>'time and money before drying',   'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
-            ] as $m)
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
-                <div class="flex items-end gap-2 mb-3" style="min-height:5rem;">
-                    <img src="/images/icons/{{ $m['icon'] }}.png" alt="" class="w-14 h-14 xl:w-16 xl:h-16 object-contain flex-shrink-0">
-                    <div class="flex flex-col">
-                        @if($m['prefix'])<span class="font-body font-bold text-navy text-xs leading-none mb-1">{{ $m['prefix'] }}</span>@endif
-                        <span class="font-heading font-bold text-[#148af4] {{ $m['big'] ? 'text-4xl xl:text-5xl' : 'text-2xl' }} leading-none tracking-tight">{!! $m['stat'] !!}</span>
-                    </div>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-2 lg:min-h-[2.75rem]">{{ $m['label'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $m['body'] }}</p>
-            </div>
-            @endforeach
-        </div>
+        @include('components.financial-metrics', ['items' => [
+            ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'50%',         'size'=>'text-4xl', 'label'=>'water saving',                   'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
+            ['icon'=>'9',  'prefix'=>'',      'stat'=>'25%',         'size'=>'text-4xl', 'label'=>'productivity increase',          'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside fewer sick days and reduced work-related strain.'],
+            ['icon'=>'10', 'prefix'=>'',      'stat'=>'Integrated',  'size'=>'text-2xl', 'label'=>'water, energy and load control', 'labelClass'=>'translate-y-2', 'body'=>'Integrated weighing supports better loading, reducing overloading, underloading and avoidable resource waste.'],
+            ['icon'=>'8',  'prefix'=>'',      'stat'=>'Efficient',   'size'=>'text-2xl', 'label'=>'detergent and water control',    'labelClass'=>'translate-y-2', 'body'=>'Efficient Dosing adds detergent and water according to load weight, reducing waste and supporting process consistency.'],
+            ['icon'=>'31', 'prefix'=>'',      'stat'=>'Power',       'size'=>'text-2xl', 'label'=>'time and money before drying',   'labelClass'=>'translate-y-2', 'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
+        ]])
     </div>
 </section>
 
@@ -194,8 +178,8 @@
             @foreach([
                 ['icon' => '2',  'title' => 'Double-door barrier design',     'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.',          'badge' => 'Barrier Separation'],
                 ['icon' => '96', 'title' => 'Hygiene Watchdog',               'copy' => 'Supports full-cycle completion and hygiene process control.',                       'badge' => 'Hygiene Watchdog', 'img' => '/images/healthcare/HygieneWatchdog.png'],
-                ['icon' => '4',  'title' => 'ClarusVibe / Double Screen',     'copy' => 'Guided operation for dirty-side and clean-side control.',                          'badge' => 'ClarusVibe | Double Screen'],
-                ['icon' => '95', 'title' => 'AIDO / Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',               'badge' => 'AIDO | Automatic Door Locking'],
+                ['icon' => '4',  'title' => 'ClarusVibe',     'copy' => 'Guided operation for dirty-side and clean-side control.',                          'badge' => 'ClarusVibe | Double Screen'],
+                ['icon' => '95', 'title' => 'Automatic Door Handling', 'copy' => 'Automatic inner door opening supports easier and faster unloading.',               'badge' => 'AIDO | Automatic Door Locking'],
                 ['icon' => '11', 'title' => 'Clearer process control',        'copy' => 'Connected options can support monitoring, traceability and clearer service decisions.', 'badge' => 'CMIS | OnE Laundry where applicable'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
@@ -222,7 +206,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Barrier washer design built around <span style="color:#148af4;">daily handling and safer staff routines</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
                 Barrier laundry work is repetitive. The right washer should support loading, unloading, door handling and operator confidence, especially where clean and soiled sides must stay controlled.
             </p>
         </div>
@@ -265,7 +249,7 @@
 
             {{-- COL 2: barrier washer image (the big equipment image) --}}
             <div class="flex items-center justify-center py-2">
-                <img src="/images/equipment/line6000-barrier-washer.webp" alt="Line 6000 Evolution Barrier Washer" class="w-auto h-auto max-h-[560px] object-contain">
+                <img src="/images/equipment/WB6-20cutted.JPG" alt="Line 6000 Evolution Barrier Washer" class="w-auto h-auto max-h-[560px] object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
@@ -381,7 +365,7 @@
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan barrier laundry around the <span style="color:#011E41;">wall, workflow and hygiene route</span>
         </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6">
             Barrier washers depend on more than machine capacity. Irish Laundry Systems connects room layout, wall opening, dirty-side access, clean-side unloading, utilities, drainage, drying flow and support before the equipment decision is made.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
@@ -597,6 +581,7 @@
 {{-- 12a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Rental Options',
+    'headingSize'  => 'text-3xl sm:text-4xl lg:text-4xl',
     'headingLine1' => 'Keep hygiene-critical laundry<br>',
     'headingLine2' => 'moving with <span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'For sites facing barrier washer replacement, hygiene-flow pressure or capacity needs, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
@@ -608,7 +593,7 @@
 ])
 
 {{-- 13. CONNECTED SERVICE ROUTES --}}
-<section class="py-16 lg:py-20 bg-bg border-t border-gray-100">
+<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -660,7 +645,7 @@
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 reveal max-w-5xl">
+        <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Use <span style="color:#148af4;">the correct amount</span>, every time
