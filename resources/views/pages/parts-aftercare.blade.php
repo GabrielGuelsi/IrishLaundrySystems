@@ -164,12 +164,12 @@
 
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div class="max-w-full lg:max-w-[720px]">
+            <div class="max-w-full lg:max-w-[920px]">
 
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
                 <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
-                    Support that<br class="hidden lg:block"> <span class="text-[#148af4]">stays with your&nbsp;equipment</span><br class="hidden lg:block"> after the first&nbsp;visit
+                    Support that <span class="text-[#148af4]">stays with your&nbsp;equipment</span><br class="hidden lg:block"> after the first&nbsp;visit
                 </h1>
 
                 <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">

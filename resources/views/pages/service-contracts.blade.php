@@ -181,7 +181,7 @@
 
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div class="max-w-full lg:max-w-[720px]">
+            <div class="max-w-full lg:max-w-[880px]">
 
                 <p class="hero-trust font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">
                     Preventive Maintenance Contracts
@@ -434,12 +434,12 @@
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 relative">
 
         {{-- Centered header — 2-line title --}}
-        <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12">
+        <div class="max-w-5xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Financial Value</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal text-balance" style="transition-delay:80ms;">
                 <span class="text-steel">Protect your maintenance budget</span> before small problems become expensive repairs
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:140ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty max-w-3xl mx-auto" style="transition-delay:140ms;">
                 Waiting for breakdowns can lead to urgent call-outs, downtime, delays and unplanned repair costs. A Preventive Maintenance Contract gives your site planned servicing, service reports and earlier attention to smaller issues before they become expensive repair pressure. For Electrolux Professional equipment, regular servicing can also support more consistent energy, water and detergent use over time.
             </p>
         </div>
