@@ -111,10 +111,10 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'noreply@irishlaunderysystems.ie'),
+        'address' => env('MAIL_FROM_ADDRESS', 'noreply@irishlaundrysystems.com'),
         'name' => env('MAIL_FROM_NAME', env('APP_NAME', 'Irish Laundry Systems')),
     ],
 
-    'to_address' => env('MAIL_TO_ADDRESS', 'info@irishlaunderysystems.ie'),
+    'to_address' => env('MAIL_TO_ADDRESS', 'contact@irishlaundrysystems.com'),
 
 ];
