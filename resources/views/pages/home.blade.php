@@ -36,7 +36,7 @@
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div class="max-w-3xl">
+            <div class="max-w-4xl">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
                     Commercial laundry <br class="hidden lg:block"><span class="text-[#148af4]">engineering support</span> for sites <br class="hidden lg:block">where downtime carries real&nbsp;cost

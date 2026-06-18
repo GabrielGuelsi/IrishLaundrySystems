@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('pageTitle', $title ?? 'Support & Aftercare | Irish Laundry Systems')
-@section('metaDescription', $metaDescription ?? 'Support & Aftercare from Irish Laundry Systems — follow-up care, service history and genuine parts access where applicable, keeping commercial laundry equipment decisions connected beyond a single visit.')
+@section('metaDescription', $metaDescription ?? 'Support & Aftercare from Irish Laundry Systems — follow-up care, service history and genuine parts support where needed, keeping commercial laundry equipment decisions clear beyond a single visit.')
 
 @section('content')
 
@@ -164,16 +164,16 @@
 
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div class="max-w-full lg:max-w-[720px]">
+            <div class="max-w-full lg:max-w-[920px]">
 
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
                 <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
-                    Support that <span class="text-[#148af4]">stays with your<br class="hidden lg:block">equipment</span> after the first&nbsp;visit
+                    Support that <span class="text-[#148af4]">stays with your&nbsp;equipment</span><br class="hidden lg:block"> after the first&nbsp;visit
                 </h1>
 
                 <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps commercial laundry sites connected after installation, repair, rental or maintenance, with follow-up care, service history and genuine parts access where applicable, so teams can make clearer equipment decisions beyond a single visit.
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> supports commercial laundry sites after installation, repair, rental or maintenance, with follow-up care, service history and genuine parts support where needed, so teams can make clearer equipment decisions beyond a single visit.
                 </p>
 
                 <div class="pa-hero-btns flex flex-row flex-wrap gap-4">
@@ -195,7 +195,7 @@
                     <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
                     <span class="whitespace-nowrap">Service history</span>
                     <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Genuine parts access where applicable</span>
+                    <span class="whitespace-nowrap">Genuine parts support where needed</span>
                 </div>
 
             </div>
@@ -216,16 +216,17 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Connected Aftercare</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Aftercare Support</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Aftercare that keeps service history and <span class="text-[#148af4]">next&nbsp;steps&nbsp;connected</span>
+                    Aftercare that keeps service history and <span class="text-[#148af4]">next&nbsp;steps&nbsp;clear</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    After a repair, inspection or installation, the next decision is often the one that matters.
+                    After a repair, inspection or installation, the next step often matters most.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps follow-up clearer with service history, Electrolux Professional equipment knowledge and genuine parts access where applicable.
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps follow-up clearer with service history, Electrolux Professional equipment knowledge and genuine parts support where needed.
                 </p>
 
                 <a href="#aftercare-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
@@ -246,10 +247,10 @@
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Support &amp; Aftercare</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                What <span class="text-[#148af4]">stays connected</span> after the first visit
+                What <span class="text-[#148af4]">support can include</span> after the first visit
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
-                Aftercare works best when the repair, the part, the equipment history and the next decision stay connected.
+                Aftercare works best when the repair, the part, the service history and the next step are easy to understand.
             </p>
         </div>
 
@@ -258,25 +259,25 @@
             [
                 'title' => 'Service history review',
                 'img'   => '/images/icons/aftercare-connected-93.png',
-                'body'  => 'Previous visits, known faults, maintenance notes and equipment details are reviewed before the next action is recommended.',
+                'body'  => 'Previous visits, known faults, maintenance notes and equipment details are reviewed before the next step is recommended.',
                 'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm.75 10.5 1.5 1.5 3-3"/>',
             ],
             [
                 'title' => 'Follow-up care',
                 'img'   => '/images/icons/aftercare-connected-94.png',
-                'body'  => 'Clearer guidance after a repair, installation, rental setup or inspection, so teams know what needs attention next.',
+                'body'  => 'Clearer guidance after a repair, installation, rental agreement or inspection, so teams know what needs attention next.',
                 'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>',
             ],
             [
-                'title' => 'Genuine parts access where applicable',
+                'title' => 'Genuine parts support where needed',
                 'img'   => '/images/icons/aftercare-connected-95.png',
-                'body'  => 'When a part is required, Irish Laundry Systems can identify the correct requirement using machine details and service history.',
+                'body'  => 'When a part is required, Irish Laundry Systems can use machine details and service history to help identify what is needed.',
                 'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>',
             ],
             [
-                'title' => 'Clearer equipment decisions',
+                'title' => 'Clearer next decisions',
                 'img'   => '/images/icons/aftercare-connected-96.png',
-                'body'  => 'The issue is directed toward the right next step, whether that means a repair call-out, planned maintenance, parts follow-up, rental discussion or another practical action.',
+                'body'  => 'The issue can be guided toward the right next step, whether that means a repair call-out, planned maintenance, parts support, rental discussion, replacement advice or follow-up care.',
                 'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>',
             ],
         ];
@@ -313,17 +314,17 @@
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Beyond the Part</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    The <span class="text-[#148af4]">right part</span> starts with the <span class="text-[#148af4]">right equipment&nbsp;information</span>
+                    The <span class="text-[#148af4]">right part</span> starts with the <span class="text-[#148af4]">right machine&nbsp;details</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                    A part only solves the problem when the machine, fault history, model and next action are clear. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the equipment details and service history before advising what is needed, what can wait and what should happen next.
+                    A part only solves the problem when the machine, fault history, model and next step are clear. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the equipment details and service history before advising what is needed, what can wait and what should happen next.
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs lg:text-sm font-body text-blue-200/90 mb-8">
                     <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Fewer parts mistakes</span>
                     <span class="opacity-30">|</span>
                     <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Clearer next costs</span>
                     <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Genuine parts access where applicable</span>
+                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Genuine parts support where needed</span>
                 </div>
                 <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
                     Talk to Our Team
@@ -341,10 +342,10 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Aftercare Works</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
-            A <span class="text-[#148af4]">clearer decision</span> for the equipment already on-site
+            <span class="text-[#148af4]">Clearer support</span> for equipment already in use
         </h2>
         <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty max-w-3xl" style="transition-delay:160ms;">
-            Support &amp; Aftercare connects what has happened before with what the equipment needs now.
+            Support &amp; Aftercare uses the service history to help decide what the equipment needs now.
         </p>
     </div>
 
@@ -364,8 +365,8 @@
             ],
             [
                 'num'   => '03.',
-                'title' => 'Check the next action',
-                'body'  => 'The next step may involve genuine parts access where applicable, follow-up care, a repair call-out, planned maintenance or another practical action.',
+                'title' => 'Check the next step',
+                'body'  => 'The next step may involve genuine parts support where needed, follow-up care, a repair call-out, planned maintenance or another practical step.',
                 'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
             ],
             [
@@ -405,7 +406,7 @@
                         Repeated issues may need <span class="text-[#148af4]">planned care</span>, not another isolated decision
                     </h2>
                     <p class="font-body text-blue-200 text-base leading-relaxed reveal text-pretty">
-                        If the same machine keeps needing attention, Support &amp; Aftercare can connect the history with a Preventive Maintenance Contract review, giving the site a clearer way to reduce repeat disruption, protect equipment value and plan the next step.
+                        If the same machine keeps needing attention, Support &amp; Aftercare can use the service history to review whether a Preventive Maintenance Contract would help reduce repeat disruption, protect equipment value and plan the next step.
                     </p>
                     <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-blue-200/90 text-xs lg:text-sm reveal">
                         <span class="whitespace-nowrap">Reduce repeat disruption</span>
@@ -438,18 +439,18 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Next Routes</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Next Steps</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 The <span class="text-[#148af4]">right next step</span> depends on what your site needs now
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
-                Support &amp; Aftercare connects the site to the most practical next action without turning every issue into the same conversation.
+                Support &amp; Aftercare guides the site toward the most useful next step without treating every issue in the same way.
             </p>
         </div>
 
         @php
         $nextRoutes = [
-            ['title' => 'Repairs & Call-outs',               'text' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                       'cta' => 'View Repairs & Call-outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg'],
+            ['title' => 'Repairs & Call-Outs',               'text' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                       'cta' => 'View Repairs & Call-Outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg'],
             ['title' => 'Preventive Maintenance',           'text' => 'For recurring faults, planned visits and better control of maintenance pressure.',                  'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png'],
             ['title' => 'Equipment Rental',                  'text' => 'For replacement pressure, added capacity or cases where buying outright is not the right option.',  'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp'],
         ];
@@ -497,7 +498,7 @@
 $aftercareFaqs = [
     [
         'question' => 'Is Support & Aftercare only for parts?',
-        'answer'   => 'No. Parts may be part of the answer, but Support & Aftercare is wider than that. It can include service history review, follow-up care, genuine parts access where applicable and guidance on the most practical next action.',
+        'answer'   => 'No. Parts may be part of the answer, but Support & Aftercare is wider than that. It can include service history review, follow-up care, genuine parts support where needed and guidance on the most useful next step.',
     ],
     [
         'question' => 'Do I need a Preventive Maintenance Contract to request support?',
@@ -517,11 +518,11 @@ $aftercareFaqs = [
     ],
     [
         'question' => 'Do you support Electrolux Professional equipment?',
-        'answer'   => 'Yes. Irish Laundry Systems is an Authorised Electrolux Professional Partner and has experience with Electrolux Professional equipment and genuine parts access where applicable.',
+        'answer'   => 'Yes. Irish Laundry Systems is an Authorised Electrolux Professional Partner with experience in Electrolux Professional equipment and genuine parts support where needed.',
     ],
     [
         'question' => 'What should I do if the machine has an urgent fault?',
-        'answer'   => 'Use the Repairs & Call-outs page or contact the team directly. Support & Aftercare is best for follow-up, equipment decisions, parts access where needed and practical guidance after a visit, repair or equipment decision.',
+        'answer'   => 'Use the Repairs & Call-Outs page or contact the team directly. Support & Aftercare is best for follow-up, equipment decisions, parts support where needed and clear guidance after a visit, repair or equipment decision.',
     ],
 ];
 @endphp
@@ -543,7 +544,7 @@ $aftercareFaqs = [
                 Tell us about your equipment and <span class="text-[#148af4]">what needs&nbsp;attention</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Share the details that allow <span class="whitespace-nowrap">Irish Laundry Systems</span> to review the equipment, service history and practical action required.
+                Share the details that allow <span class="whitespace-nowrap">Irish Laundry Systems</span> to review the equipment, service history and support needed.
             </p>
         </div>
 
@@ -757,10 +758,10 @@ $aftercareFaqs = [
         <div class="lg:max-w-[55%]">
             <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-4 reveal">Talk to Our Team</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal text-balance">
-                Need a <span class="text-navy">clearer next step</span> for your&nbsp;equipment
+                Need <span class="text-navy">clearer support</span> for your&nbsp;equipment
             </h2>
             <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">
-                Tell us what is happening with the equipment, what has already been done and what the site needs now. <span class="whitespace-nowrap">Irish Laundry Systems</span> will connect the enquiry to the most practical next action.
+                Tell us what is happening with the equipment, what has already been done and what the site needs now. <span class="whitespace-nowrap">Irish Laundry Systems</span> will guide you toward the right repair, parts, maintenance, rental, replacement or aftercare support.
             </p>
             <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white/90 text-xs lg:text-sm reveal">
                 <span class="whitespace-nowrap">Fewer follow-up surprises</span>
