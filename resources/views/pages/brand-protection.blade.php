@@ -72,7 +72,7 @@
                     </div>
                     <div>
                         <div class="font-body font-bold text-navy text-sm mb-1">Website</div>
-                        <span class="font-body text-gray-600 text-sm">irishlaunderysystems.ie</span>
+                        <span class="font-body text-gray-600 text-sm">irishlaundrysystems.ie</span>
                     </div>
                 </div>
                 <div class="flex items-start gap-4">

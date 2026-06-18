@@ -71,16 +71,16 @@
     <!-- Text — vertically centered -->
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div style="max-width: 760px;">
+            <div style="max-width: 820px;">
 
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
-                    <span class="text-[#148af4]">Call-outs and repairs</span> when<br class="hidden lg:inline"> commercial laundry equipment<br class="hidden lg:inline"> is under&nbsp;pressure
+                    Repairs and call-outs with<br class="hidden lg:block"> <span class="text-[#148af4]">peace of&nbsp;mind</span> when equipment&nbsp;fails
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-2xl text-pretty">
-                    When a machine fault slows down daily laundry, staff routines or production, <span class="whitespace-nowrap">Irish Laundry Systems</span> supports your site with experienced engineer support, Electrolux Professional knowledge and a clear next step, so you know what can happen next.
+                    When commercial laundry equipment fails, <span class="whitespace-nowrap">Irish Laundry Systems</span> gives your site a clear first response, experienced engineers and practical repair advice, so you are not left guessing while the operation is under&nbsp;pressure.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
@@ -100,9 +100,9 @@
                 <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
                     <span class="whitespace-nowrap">Commercial laundry repairs</span>
                     <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Electrolux Professional knowledge</span>
+                    <span class="whitespace-nowrap">Electrolux Professional equipment knowledge</span>
                     <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Engineering-led since 1987</span>
+                    <span class="whitespace-nowrap">Clear repair decisions</span>
                 </div>
 
             </div>
@@ -116,22 +116,22 @@
 <!-- REPAIR TRIAGE INTRO -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Fault Details</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">First Response</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-            <span class="text-[#148af4]">Faster support</span> starts with clear fault details
+            Faster support starts with <span class="text-[#148af4]">clear fault&nbsp;details</span>
         </h2>
         <p class="font-body text-gray-500 text-base leading-relaxed mb-12 lg:mb-16 max-w-3xl mx-auto text-pretty">
-            A commercial laundry fault can quickly affect output, staff pressure, guests, residents or production. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the key details before arranging the visit.
+            A commercial laundry fault can quickly affect output, staff routines and the day&rsquo;s operation. Clear details help <span class="whitespace-nowrap">Irish Laundry Systems</span> prepare the right call-out response.
         </p>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10">
             <div class="flex flex-col items-center text-center">
                 <img src="/images/icons/repairs-machine-type.png" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
-                <span class="font-body font-bold text-navy text-sm">Machine type</span>
+                <span class="font-body font-bold text-navy text-sm">Equipment type</span>
             </div>
             <div class="flex flex-col items-center text-center">
                 <img src="/images/icons/repairs-fault-symptoms.png" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
-                <span class="font-body font-bold text-navy text-sm">Fault symptoms</span>
+                <span class="font-body font-bold text-navy text-sm">Fault details</span>
             </div>
             <div class="flex flex-col items-center text-center">
                 <img src="/images/icons/repairs-site-urgency.png" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
@@ -168,10 +168,10 @@
                 <div class="lg:col-span-7 flex items-center gap-6 lg:gap-8">
                     <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 flex-shrink-0 object-contain">
                     <div>
-                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Support</p>
-                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault</h2>
+                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Urgent Call-Outs</p>
+                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-2 text-balance">Need <span class="text-[#148af4]">fast support</span> with a laundry equipment&nbsp;fault?</h2>
                         <p class="font-body text-white/80 text-base leading-relaxed text-pretty">
-                            Tell us what has failed, where the machine is located and how urgent the issue is, so the team can prepare properly.
+                            Tell us what has failed, where the equipment is located and how urgent the issue is, so the team can prepare properly.
                         </p>
                         <p class="font-body text-white/60 text-xs mt-2 text-pretty">
                             Contract customers may receive preferential service and labour rates under their agreement.
@@ -225,33 +225,33 @@
 $expectSteps = [
     [
         'title'    => 'Share the fault details',
-        'desc'     => 'Tell us the machine type, symptoms, site location, urgency and any recent service&nbsp;history.',
-        'image'    => '/images/healthcare/operator.jpg',
-        'alt'      => 'Operator placing a call about a commercial laundry breakdown',
+        'desc'     => 'Tell us the equipment type, fault details, site location, urgency and any recent service&nbsp;history.',
+        'image'    => '/images/healthcare/repairs-how-01.jpg',
+        'alt'      => 'Site team sharing commercial laundry fault details to request a call-out',
         'meta'     => 'Step 1',
         'position' => 'center',
     ],
     [
         'title'    => 'Prepare the call-out',
-        'desc'     => 'Irish Laundry Systems reviews the information before the visit, so the engineer arrives with clear fault details and the right preparation where possible.',
-        'image'    => '/images/healthcare/customer-care-line6000.jpg',
-        'alt'      => 'ILS engineer reviewing call-out information on Electrolux Line 6000 equipment',
+        'desc'     => 'Irish Laundry Systems reviews the information before the visit so the engineer has a clearer starting&nbsp;point.',
+        'image'    => '/images/healthcare/repairs-how-02.jpg',
+        'alt'      => 'Irish Laundry Systems team preparing a commercial laundry repair call-out',
         'meta'     => 'Step 2',
         'position' => 'center',
     ],
     [
         'title'    => 'Diagnose on-site',
         'desc'     => 'The engineer checks the equipment, confirms the likely cause and carries out the repair where&nbsp;possible.',
-        'image'    => '/images/hero/on-site-diagnosis.jpeg',
-        'alt'      => 'ILS technician inspecting a commercial washing machine drum during diagnosis',
+        'image'    => '/images/healthcare/repairs-how-03.jpg',
+        'alt'      => 'Irish Laundry Systems engineer diagnosing commercial laundry equipment on-site',
         'meta'     => 'Step 3',
         'position' => 'center',
     ],
     [
         'title'    => 'Leave with a clear next step',
-        'desc'     => 'If further parts, follow-up work or a maintenance review are needed, the recommended next step is explained before the next decision is&nbsp;made.',
-        'image'    => '/images/healthcare/repairs-callouts.jpg',
-        'alt'      => 'ILS engineer completing a reactive repair on commercial laundry equipment',
+        'desc'     => 'If parts, follow-up work or a maintenance review are needed, the next decision is explained&nbsp;clearly.',
+        'image'    => '/images/healthcare/repairs-how-04.jpg',
+        'alt'      => 'Irish Laundry Systems engineer explaining the clear next step after a repair',
         'meta'     => 'Step 4',
         'position' => 'center',
     ],
@@ -261,9 +261,9 @@ $expectSteps = [
 <section class="relative py-16 lg:py-24 bg-navy expect-dotgrid overflow-hidden">
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">What Happens Next</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From first fault details to a <span class="text-[#148af4]">clear repair plan</span></h2>
-            <p class="font-body text-blue-200 text-base leading-relaxed max-w-2xl mx-auto text-pretty">Clear fault details give the team the machine information and site urgency needed to prepare for the visit.</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Call-Out Process</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From first call to <span class="text-[#148af4]">a clear repair&nbsp;plan</span></h2>
+            <p class="font-body text-blue-200 text-base leading-relaxed max-w-2xl mx-auto text-pretty">A clear process helps reduce uncertainty from the first contact, so your site knows what happens next and the repair decision keeps moving.</p>
         </div>
 
         <div class="expect-timeline">
@@ -350,27 +350,27 @@ $expectSteps = [
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Temporary Laundry Support</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    <span class="text-[#148af4]">Keep laundry moving</span> while your equipment is&nbsp;down
+                    Keep laundry moving with <span class="text-[#148af4]">short-term&nbsp;cover</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 text-pretty">
-                    When your on-site laundry is out of action, <span class="whitespace-nowrap">Irish Laundry Systems</span> can discuss temporary laundry support through Laundry Online locations across Dublin, if short-term cover is needed and agreed in&nbsp;advance.
+                    When on-site laundry equipment is out of action, <span class="whitespace-nowrap">Irish Laundry Systems</span> can discuss temporary laundry support through Laundry Online&rsquo;s Dublin network, where suitable and agreed in&nbsp;advance.
                 </p>
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
                     <div>
                         <img src="/images/icons/repairs-dublin-network.png" alt="" aria-hidden="true" class="w-10 h-10 mb-3 object-contain">
-                        <h3 class="font-heading font-bold text-navy text-base mb-1">Dublin store network</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">Multiple Laundry Online locations across Dublin.</p>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1">4 locations around Dublin</h3>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">Access to Laundry Online locations for practical short-term laundry cover.</p>
                     </div>
                     <div>
                         <img src="/images/icons/repairs-dropoff.png" alt="" aria-hidden="true" class="w-10 h-10 mb-3 object-contain">
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Drop-off / walk-in option</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option for short-term laundry cover.</p>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">A practical option while equipment support is being arranged.</p>
                     </div>
                     <div>
                         <img src="/images/icons/repairs-short-term.png" alt="" aria-hidden="true" class="w-10 h-10 mb-3 object-contain">
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Short-term cover</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while you manage downtime or&nbsp;replacement.</p>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful while repair, follow-up work or replacement planning is being arranged.</p>
                     </div>
                 </div>
 
@@ -388,12 +388,12 @@ $expectSteps = [
                 <p class="font-body text-gray-500 text-xs mt-3">Through Laundry Online&rsquo;s Dublin locations</p>
             </div>
 
-            {{-- RIGHT: image (TODO: replace placeholder with Laundry Online imagery) --}}
+            {{-- RIGHT: image --}}
             <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto lg:h-[460px]">
-                {{-- TODO: substituir por imagem real do site Laundry Online (Dublin store / locations) --}}
-                <img src="/images/healthcare/femalelaundryoperator.png"
+                <img src="/images/healthcare/repairs-temporary-laundry.jpg"
                      alt="Laundry Online Dublin store as a temporary processing route while on-site equipment is down"
                      loading="lazy" decoding="async"
+                     style="object-position: center top;"
                      class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-navy/80 to-transparent">
                     <p class="font-body font-bold text-white text-xs uppercase tracking-[0.22em]">Laundry Online &mdash; Dublin</p>
@@ -410,10 +410,10 @@ $expectSteps = [
         <div class="bg-navy rounded-2xl p-8 lg:p-12">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
                 <div>
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 leading-tight text-balance">Repeated breakdowns usually need <span class="text-[#148af4]">more than another&nbsp;call-out</span></h2>
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Recurring Issues</p>
+                    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 leading-tight text-balance">Turn repeat faults into <span class="text-[#148af4]">clearer service&nbsp;decisions</span></h2>
                     <p class="font-body text-blue-200 text-base leading-relaxed text-pretty">
-                        If the same fault keeps returning, the issue may be linked to maintenance history, wear, parts requirements or how the equipment is being used. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews what keeps coming back and what needs attention&nbsp;next.
+                        If the same fault keeps returning, the issue may be linked to equipment condition, service history, parts requirements or daily use. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews what keeps coming back and what needs attention&nbsp;next.
                     </p>
                 </div>
                 <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
@@ -457,15 +457,15 @@ $expectSteps = [
                         <img src="/images/icons/repairs-maintenance-review.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Maintenance review</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Consider whether preventive maintenance is the right next step.</p>
+                    <p class="font-body text-white text-xs leading-relaxed">Consider whether Preventive Maintenance is the right next step.</p>
                 </div>
             </div>
 
             {{-- Mini points --}}
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-8 pt-6 border-t border-white/10 font-body text-white/70 text-xs">
-                <span class="whitespace-nowrap">Spot repeat faults</span>
+                <span class="whitespace-nowrap">Repeat fault patterns</span>
                 <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
-                <span class="whitespace-nowrap">Reduce surprise repair costs</span>
+                <span class="whitespace-nowrap">Fewer surprise costs</span>
                 <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
                 <span class="whitespace-nowrap">Protect equipment value</span>
                 <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
@@ -480,27 +480,27 @@ $expectSteps = [
 $faqs = [
     [
         'question' => 'What information should I provide before a call-out?',
-        'answer'   => 'Please share the machine type, make and model if available, fault symptoms, site location, urgency and any recent service history. Error codes, unusual noises, leaks, heat issues or repeated faults are especially useful.',
+        'answer'   => 'Please share the equipment type, make and model if available, fault details, site location, urgency and any recent service history. Error codes, unusual noises, leaks, heating issues or repeated faults are especially useful.',
     ],
     [
         'question' => 'Do you repair equipment not supplied by Irish Laundry Systems?',
-        'answer'   => 'In many cases, yes. Irish Laundry Systems works with a range of commercial laundry equipment. As an Authorised Electrolux Professional Partner, the team has particular knowledge of Electrolux Professional machines, but other equipment can be reviewed depending on the issue and parts availability.',
+        'answer'   => 'In many cases, yes. Irish Laundry Systems works with a range of commercial laundry equipment. As an Authorised Electrolux Professional Partner, the team has strong knowledge of Electrolux Professional equipment, but other equipment can be reviewed depending on the issue and parts availability.',
     ],
     [
         'question' => 'Are parts included in the call-out?',
         'answer'   => 'No. Parts are charged separately where required. If a part is needed, Irish Laundry Systems will advise on availability, cost and the next step before further work is agreed.',
     ],
     [
-        'question' => 'What happens if the machine cannot be repaired on the first visit?',
-        'answer'   => 'The engineer will explain what has been found, what may be needed next and whether the issue requires parts, follow-up work, a wider maintenance review or another practical next step.',
+        'question' => 'What happens if the equipment cannot be repaired on the first visit?',
+        'answer'   => 'The engineer will explain what has been found, what may be needed next and whether the issue requires parts, follow-up work, a maintenance review or another practical next step.',
     ],
     [
-        'question' => 'Can repeated faults be reviewed under a Preventive Maintenance Contract?',
-        'answer'   => 'Yes. If the same issue keeps returning, Irish Laundry Systems can review the service history, fault pattern and equipment condition to see whether a Preventive Maintenance Contract would be the right next step.',
+        'question' => 'Can repeated faults be reviewed under Preventive Maintenance Contracts?',
+        'answer'   => 'Yes. If the same issue keeps returning, Irish Laundry Systems can review the service history, fault pattern and equipment condition to see whether Preventive Maintenance Contracts would be the right next step.',
     ],
     [
         'question' => 'Do you work with Electrolux Professional equipment?',
-        'answer'   => 'Yes. Irish Laundry Systems is an Authorised Electrolux Professional Partner with strong experience in Electrolux Professional commercial laundry equipment and genuine parts support when required.',
+        'answer'   => 'Yes. Irish Laundry Systems is an Authorised Electrolux Professional Partner with strong experience in Electrolux Professional commercial laundry equipment and genuine parts support where required.',
     ],
     [
         'question' => 'How do I request a repair call-out?',
@@ -513,8 +513,8 @@ $faqs = [
     'light'      => true,
     'bordered'   => false,
     'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted by sites where equipment issues affect <span class="text-[#148af4]">daily&nbsp;operations</span>',
-    'subheading' => 'Irish Laundry Systems works with healthcare, care home, hospitality and commercial laundry sites where faults can create pressure for staff, guests, residents, daily laundry or production.',
+    'heading'    => 'Peace of mind from <span class="text-[#148af4]">support you can count&nbsp;on</span>',
+    'subheading' => 'Irish Laundry Systems supports healthcare, care home, hospitality and commercial laundry sites where equipment faults can disrupt linen flow, staff routines and daily operations.',
 ])
 <div class="bg-[#f7f8fa] -mt-10 lg:-mt-16">
     @include('components.proof-bar')
@@ -528,23 +528,23 @@ $faqs = [
 
                 {{-- LEFT: content --}}
                 <div class="lg:col-span-7">
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After the Repair</p>
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After the Visit</p>
                     <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                        Use the repair visit to plan the <span class="text-[#148af4]">right next step</span>
+                        Use repair findings for <span class="text-[#148af4]">the right next&nbsp;step</span>
                     </h2>
                     <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                        A call-out can solve the immediate fault, but it can also reveal wear, repeated issues, parts requirements or maintenance pressure. <span class="whitespace-nowrap">Irish Laundry Systems</span> uses what the engineer finds to advise whether Preventive Maintenance Contracts or Support &amp; Aftercare should be considered next.
+                        A call-out can solve the immediate fault, but it can also show what else needs attention. <span class="whitespace-nowrap">Irish Laundry Systems</span> can connect repair findings with Preventive Maintenance Contracts or Support &amp; Aftercare where ongoing support is needed.
                     </p>
 
                     {{-- Mini points --}}
                     <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6 font-body text-gray-500 text-xs">
-                        <span class="whitespace-nowrap">What was found</span>
+                        <span class="whitespace-nowrap">Repair findings</span>
                         <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
                         <span class="whitespace-nowrap">Service history</span>
                         <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                        <span class="whitespace-nowrap">Parts support if required</span>
+                        <span class="whitespace-nowrap">Parts support where required</span>
                         <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                        <span class="whitespace-nowrap">Preventive maintenance</span>
+                        <span class="whitespace-nowrap">Preventive Maintenance</span>
                     </div>
                 </div>
 
@@ -569,27 +569,27 @@ $faqs = [
 @include('components.faq', [
     'faqs'    => $faqs,
     'eyebrow' => 'Repairs & Call-Out FAQs',
-    'heading' => '<span>Questions before <span class="text-[#148af4]">requesting a call-out</span></span>',
+    'heading' => '<span>Questions before requesting <span class="text-[#148af4]">a repair call-out</span></span>',
 ])
 
-<!-- NEED AN ENGINEER TODAY? — premium contained navy panel -->
+<!-- FINAL CTA + REPAIR CALL-OUT FORM -->
 <section class="py-16 lg:py-20 bg-bg">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden">
+        <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden mb-8 lg:mb-10">
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
             <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="mx-auto mb-5 w-16 h-16 lg:w-20 lg:h-20 object-contain">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Call-Out</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                Need <span class="text-[#148af4]">support</span> with a <span class="text-[#148af4]">laundry equipment&nbsp;fault</span>
+                Need repair support with <span class="text-[#148af4]">clear next&nbsp;steps</span>?
             </h2>
             <p class="font-body text-white/80 text-base leading-relaxed max-w-xl mx-auto mb-6 text-pretty">
-                Call us directly or submit a repair request with the equipment type, site location and fault symptoms, so the team can prepare properly.
+                Call us directly or submit a repair request with the equipment type, site location and fault details so the enquiry can be directed to the right team.
             </p>
             <a href="tel:+35314910402" class="inline-flex items-center justify-center gap-2 mb-8 group">
                 <span class="font-heading font-bold text-white text-2xl lg:text-3xl tracking-tight group-hover:text-[#148af4] transition-colors">+353 1 491&nbsp;0402</span>
             </a>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="{{ route('contact') }}"
+                <a href="#repairs-form"
                    class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
                     Request Call-Out
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
@@ -600,6 +600,50 @@ $faqs = [
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
+        </div>
+
+        {{-- Repair Call-Out form --}}
+        <div id="repairs-form" class="bg-white rounded-2xl shadow-2xl p-7 lg:p-10">
+            <p class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-1">Request a Repair Call-Out</p>
+            <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">Share the equipment and fault details so the team can prepare properly.</p>
+            <form action="{{ route('contact.submit') ?? '#' }}" method="POST" class="space-y-3">
+                @csrf
+                <input type="hidden" name="page_source" value="repairs_callout_cta">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <input type="text"  name="name"          placeholder="Name *"          required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                    <input type="text"  name="organisation"  placeholder="Organisation"            class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                    <input type="tel"   name="phone"         placeholder="Phone *"         required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                    <input type="email" name="email"         placeholder="Email *"         required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                    <input type="text"  name="site_location" placeholder="Site location"           class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                    <input type="text"  name="equipment_type" placeholder="Equipment type"         class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                </div>
+                <input type="text" name="equipment_model" placeholder="Equipment make / model, if known" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                <textarea name="fault_details" rows="3" placeholder="Fault details *" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400 resize-none"></textarea>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <select name="urgency" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy bg-white">
+                        <option value="">How urgent is the issue?</option>
+                        <option>Urgent &mdash; equipment out of use</option>
+                        <option>High &mdash; affecting daily operation</option>
+                        <option>Normal &mdash; needs attention soon</option>
+                    </select>
+                    <select name="out_of_use" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy bg-white">
+                        <option value="">Is the equipment currently out of use?</option>
+                        <option>Yes</option>
+                        <option>Partially</option>
+                        <option>No</option>
+                    </select>
+                </div>
+                <input type="text" name="service_history" placeholder="Recent service history, if known" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
+                <textarea name="message" rows="3" placeholder="Message" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400 resize-none"></textarea>
+                <label class="flex items-start gap-2 pt-1">
+                    <input type="checkbox" name="consent" value="1" required class="mt-1 accent-[#148af4]">
+                    <span class="font-body text-gray-500 text-xs leading-relaxed">I agree to <span class="whitespace-nowrap">Irish Laundry Systems</span> contacting me about this repair enquiry.</span>
+                </label>
+                <button type="submit" class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors">
+                    Request a Repair Call-Out
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </button>
+            </form>
         </div>
     </div>
 </section>

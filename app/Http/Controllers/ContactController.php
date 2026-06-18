@@ -41,7 +41,7 @@ class ContactController extends Controller
         ContactSubmission::create($validated);
 
         // Send email notification
-        Mail::to(config('mail.to_address', 'info@irishlaunderysystems.ie'))
+        Mail::to(config('mail.to_address', 'contact@irishlaundrysystems.com'))
             ->send(new ContactRequest($validated));
 
         return back()->with(
