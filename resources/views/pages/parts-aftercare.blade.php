@@ -169,7 +169,7 @@
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
                 <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
-                    Support that<br class="hidden lg:block"> <span class="text-[#148af4]">stays with your&nbsp;equipment</span><br class="hidden lg:block"> after the first&nbsp;visit
+                    Support that <span class="text-[#148af4]">stays with your<br class="hidden lg:block">equipment</span> after the first&nbsp;visit
                 </h1>
 
                 <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
@@ -213,9 +213,9 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Connected Aftercare</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Aftercare</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Aftercare that keeps service history and <span class="text-[#148af4]">next&nbsp;steps&nbsp;connected</span>
                 </h2>
