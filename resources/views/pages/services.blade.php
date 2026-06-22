@@ -374,22 +374,33 @@
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
 
-    {{-- LEFT: content — 60% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-white/90 text-xs uppercase tracking-[0.22em] mb-3">Request Service Assessment</p>
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span style="color:#ffffff;">Start with</span> <span style="color:#011E41;">the right service&nbsp;support</span>
+    {{-- LEFT: content — 60% width (matches home cta-combined-banner) --}}
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Request Service Assessment</p>
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
+            Start with <span style="color:#011E41;">the right service&nbsp;support</span>
         </h2>
-        <p class="font-body text-white/95 text-base leading-relaxed mb-6 max-w-xl">
+        <p class="font-body text-white text-base leading-relaxed mb-6">
             Tell us what is happening with your laundry equipment. Irish Laundry Systems will guide your site toward the right support, whether that means Repairs &amp; Call-Outs, Preventive Maintenance, Equipment Rental or Support &amp; Aftercare.
         </p>
-        <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white text-xs lg:text-sm">
-            <span class="whitespace-nowrap">Reduce uncertainty</span>
-            <span class="text-white/60">|</span>
-            <span class="whitespace-nowrap">Protect daily operation</span>
-            <span class="text-white/60">|</span>
-            <span class="whitespace-nowrap">Keep laundry moving</span>
+
+        {{-- 3 horizontal features — icon + label, matches the home strip --}}
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
+            @foreach([
+                ['img' => '/images/icons/home-maintenance-costs.png',      'label' => 'Reduce<br>uncertainty'],
+                ['img' => '/images/icons/home-maintenance-value.png',      'label' => 'Protect daily<br>operation'],
+                ['img' => '/images/icons/home-maintenance-disruption.png', 'label' => 'Keep laundry<br>moving'],
+            ] as $i => $feat)
+            @if($i > 0)
+                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
+            @endif
+            <div class="flex items-center gap-3">
+                <img src="{{ $feat['img'] }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;filter:brightness(0) invert(1);" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
+            @endforeach
         </div>
+
         <div class="flex flex-wrap gap-3">
             <a href="#services-form"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide w-fit">
