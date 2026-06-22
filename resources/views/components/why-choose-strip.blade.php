@@ -36,13 +36,15 @@
         @php
             $miniHasIcons = is_array($miniPoints[0] ?? null);
             $miniIconShift = $miniHasIcons ? 'lg:-ml-6 xl:-ml-8' : '';
+            // optional per-page override — longer two-line headings can pass a smaller lg size so each line fits
+            $headingSize = $headingSize ?? 'text-3xl sm:text-4xl lg:text-5xl';
         @endphp
         @if ($eyebrow)
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3 {{ $miniIconShift }}">{{ $eyebrow }}</p>
         @endif
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 {{ $miniIconShift }}">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">{!! $headingLine1 !!}</span>
-            <span class="text-3xl sm:text-4xl lg:text-5xl text-white">{!! $headingLine2 !!}</span>
+        <h2 class="font-heading font-bold {{ $headingSize }} leading-tight text-balance mb-4 {{ $miniIconShift }}">
+            <span class="text-white {{ $headingSize }}">{!! $headingLine1 !!}</span>
+            <span class="{{ $headingSize }} text-white">{!! $headingLine2 !!}</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 {{ $miniIconShift }}">

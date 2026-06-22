@@ -15,12 +15,10 @@
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="block">Hospitality laundry support</span>
-                    <span class="block">for <span style="color:#148af4;">linen flow</span>, <span style="color:#148af4;">guest standards</span></span>
-                    <span class="block">and peak-period pressure</span>
+                    Take control of the laundry<br>room behind <span style="color:#148af4;">guest experience<br>and daily service</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supports hotels, guesthouses and hospitality sites with Electrolux Professional equipment selection, supply, installation, rental options, planned maintenance, repairs and aftercare for laundry rooms that affect room readiness, housekeeping pressure and day-to-day service.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for hotels, guesthouses and hospitality sites, with maintenance, repairs, aftercare and rental review where the available range fits the property.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#hospitality-assessment"
@@ -47,16 +45,16 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Laundry support built around <span style="color:#148af4;">guest standards</span> and <span style="color:#148af4;">room readiness</span>
+                    On-premises laundry planned around <span style="color:#148af4;">service standards, cost control and equipment care</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Hospitality laundry affects more than the laundry room. Bedding, towels, robes, table linen, uniforms and guest items all influence room readiness, housekeeping routines and the standard guests notice.
+                    Hotels need laundry equipment that can support rooms, housekeeping, restaurant service, uniforms and guest items without making every issue dependent on outside supply.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems brings equipment selection, supply, installation, planned maintenance, call-outs, rental options and aftercare together around the way the property runs, so teams can keep linen moving with better cost control and more peace of mind.
+                    Irish Laundry Systems recommends the right washing, drying, finishing, dosing and aftercare around the property's space, daily demand, utilities, service needs and long-term running costs.
                 </p>
                 <a href="{{ route('equipment') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -78,20 +76,19 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                <span><span style="color:#148af4;">Control hospitality laundry costs</span> while</span>
-                <span><span style="color:#148af4;">protecting guest standards</span></span>
+                Control hospitality laundry costs while protecting <span style="color:#148af4;">guest standards</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Hospitality laundry cost can build through energy use, detergent waste, linen replacement pressure, housekeeping delays, outsourced laundry reliance, reactive call-outs and equipment decisions made too late. The right setup should support fresh linen, faster turnaround times, efficient daily operation and better cost control.
+                The right laundry setup can lower energy use, reduce detergent waste, protect textile quality and keep rooms ready during busy periods.
             </p>
         </div>
 
         @include('components.financial-metrics', ['tightLeft' => true, 'items' => [
-            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'linen and room readiness', 'labelClass'=>'translate-y-2',       'body'=>'Keeping more laundry control on-site can support faster linen return, room readiness and a smoother response to peak-period demand.'],
-            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality',    'size'=>'text-2xl', 'label'=>'fresh linen and guest standards', 'labelClass'=>'translate-y-2', 'body'=>'An on-premises laundry room gives the property more control over what is washed, how it is handled and when it returns to service.'],
+            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
+            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and linen care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent waste, protect linen quality and support more consistent wash results.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Fewer<br>surprise',    'size'=>'text-2xl', 'label'=>'servicing and support', 'labelClass'=>'translate-x-6 translate-y-2', 'body'=>'Irish Laundry Systems brings equipment planning, planned maintenance, repairs, rental options and aftercare together, so hospitality laundry decisions are not only made after something fails.'],
+            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
+            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
         ]])
     </div>
 </section>
@@ -103,10 +100,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Protect <span style="color:#148af4;">guest experience</span> while <span style="color:#148af4;">keeping linen moving</span>
+                Protect <span style="color:#148af4;">guest standards</span> through better laundry control
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                The right laundry setup supports linen availability, housekeeping pressure, peak demand periods, finishing standards and the support needed to keep service moving.
+                The right laundry setup supports housekeeping routines, room standards, finishing quality, peak demand and cost control.
             </p>
         </div>
 
@@ -117,8 +114,8 @@
                     <img src="/images/icons/23.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Linen turnaround</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Bedding, towels, robes and flatwork need to move back into use quickly during busy periods.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Room standards</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Bed linen, towels, robes and guest items need reliable washing, drying and finishing.</p>
                 </div>
             </div>
 
@@ -127,8 +124,8 @@
                     <img src="/images/icons/24.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping pressure</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Laundry affects room readiness, team workload and the rhythm of daily hotel service.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping routines</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Laundry capacity affects room preparation, staff timing and the pace of daily service.</p>
                 </div>
             </div>
 
@@ -137,8 +134,8 @@
                     <img src="/images/icons/25.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing and presentation</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ironing and flatwork quality support the visual standard guests notice in rooms, restaurants and service areas.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing quality</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ironing and flatwork quality protect the presentation guests notice in rooms, restaurants and service areas.</p>
                 </div>
             </div>
 
@@ -147,8 +144,8 @@
                     <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak occupancy planning</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">The laundry room should be planned around peak demand periods, not only average daily use.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak demand</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Equipment planning should reflect busy periods, not only average daily use.</p>
                 </div>
             </div>
 
@@ -158,7 +155,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">An on-premises laundry room can support faster turnaround times, higher quality control standards and better control over what is washed, how and when.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">On-premises laundry keeps more control over washing, handling and service timing inside the property.</p>
                 </div>
             </div>
 
@@ -166,16 +163,16 @@
     </div>
 </section>
 
-<!-- SUPPORT ROUTES -->
+<!-- SUPPORT OPTIONS -->
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support that <span style="color:#148af4;">keeps hospitality laundry moving</span>
+                Keep hospitality laundry operating with the right service behind it
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Hotels and hospitality sites often need equipment, maintenance, breakdown support and aftercare to work together around linen turnaround, guest standards and peak demand.
+                Hotels often need repairs, Preventive Maintenance, rental review and aftercare to protect room standards and daily service.
             </p>
         </div>
 
@@ -183,7 +180,7 @@
             @foreach([
                 [
                     'title'  => 'Repairs &amp; Call-outs',
-                    'text'   => 'Engineering support when faults or breakdowns put laundry output, linen availability or room readiness under pressure.',
+                    'text'   => 'For equipment faults that can delay washing, drying, finishing or room preparation.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
                     'img'    => '/images/healthcare/repairs-callouts.jpg',
@@ -191,7 +188,7 @@
                 ],
                 [
                     'title'  => 'Preventive Maintenance',
-                    'text'   => 'Planned maintenance for sites that need better control over recurring issues, servicing needs and busy-period risk.',
+                    'text'   => 'For planned visits, service records and better care for laundry equipment used every day.',
                     'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/service-contracts-hero.png',
@@ -199,7 +196,7 @@
                 ],
                 [
                     'title'  => 'Equipment Rental',
-                    'text'   => 'For selected hospitality laundry needs, replacement pressure or capacity gaps where the available rental range fits the property&rsquo;s operation.',
+                    'text'   => 'For selected replacement or capacity needs where the available rental range fits the property size and laundry demand.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
                     'img'    => '/images/healthcare/commercial-industrial.jpg',
@@ -207,7 +204,7 @@
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
-                    'text'   => 'Follow-up care, service history, genuine parts support where needed and clearer maintenance, repair, rental or replacement decisions after installation or inspection.',
+                    'text'   => 'For service history, parts access where needed and clearer repair, rental or replacement guidance after installation.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
                     'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
@@ -245,12 +242,12 @@
 <!-- PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
-    'heading'    => 'Plan the <span style="color:#011E41;">property laundry room</span> around linen demand, space and <span style="color:#011E41;">peak periods</span>',
-    'body'       => 'Before equipment becomes a daily service issue, the room, linen demand, space, staffing, utility pressure and peak demand periods should be understood together. Irish Laundry Systems plans hospitality laundry around the way the property operates.',
+    'heading'    => 'Plan the laundry room around <span style="color:#011E41;">space, utilities and peak demand</span>',
+    'body'       => 'A room review can check property demand, available space, utilities and equipment needs before purchase, rental or replacement.',
     'miniPoints' => [
-        ['icon' => 'home-planning-spend',  'label' => 'Avoid wasted<br>spend'],
-        ['icon' => 'home-planning-fit',    'label' => 'Right-fit laundry<br>room'],
-        ['icon' => 'home-planning-rework', 'label' => 'Reduce costly<br>rework'],
+        ['icon' => 'home-planning-spend',  'label' => 'Room fit'],
+        ['icon' => 'home-planning-fit',    'label' => 'Cost control'],
+        ['icon' => 'home-planning-rework', 'label' => 'Peak demand'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -262,11 +259,10 @@
         <div class="mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Equipment for <span style="color:#148af4;">hospitality laundry</span>
+                Equipment for hospitality laundry
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                The right equipment plan depends on linen volume, turnaround pressure, finishing standards, available space,
-                guest-facing requirements and the care needed to keep equipment performing.
+                The right equipment plan depends on property size, room fit, load type, finishing standards, energy use and aftercare.
             </p>
         </div>
 
@@ -277,7 +273,7 @@
                 <div class="order-2 lg:order-1 lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Commercial washers support bedding, towels, robes, uniforms, guest items and food and beverage linen where wash quality, capacity and repeatable results matter.
+                        Commercial washers support bed linen, towels, robes, uniforms, guest items and food and beverage textiles where wash quality, capacity and repeatable results matter.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -331,7 +327,7 @@
                 <div>
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                        Tumble dryers support linen turnaround where <span style="color:#148af4;">drying time</span>, residual moisture, energy use and room layout can affect the pace of the day.
+                        Tumble dryers support fast, controlled drying where residual moisture, energy use and room layout affect daily service.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -373,7 +369,7 @@
                 <div class="order-2 lg:order-1 lg:pt-10">
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Ironers &amp; <strong>Finishing</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Ironers and finishing equipment support <span style="color:#148af4;">flatwork presentation</span>, linen consistency, table linen, bedding standards and storage readiness for hospitality environments.
+                        Ironers and finishing equipment support flatwork presentation, table linen, bed linen standards and storage-ready results for hospitality environments.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -487,7 +483,7 @@
                 <div>
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                        Barrier washers support hospitality sites where <span style="color:#148af4;">controlled dirty-side loading and clean-side unloading</span> are required for specific handling or separation needs.
+                        Barrier washers are a specialist option for hospitality sites that need controlled dirty-side loading and clean-side unloading.
                     </p>
                     <ul class="space-y-2 mb-6">
                         @foreach([
@@ -533,10 +529,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                <span style="color:#148af4;">Protect linen quality</span> while <span style="color:#148af4;">cutting detergent waste</span>
+                Protect <span style="color:#148af4;">textile quality</span> while reducing detergent waste
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
-                Automatic dosing supports hospitality laundry rooms by using the right amount of detergent for each cycle. That can reduce chemical overuse, protect towels, robes, bedding and table linen, lower maintenance pressure and support more consistent wash results over time.
+                Automatic dosing uses the right amount of detergent for each cycle, reducing chemical overuse while protecting towels, robes, bed linen and table linen.
             </p>
         </div>
 
@@ -680,20 +676,28 @@
 
 <!-- EQUIPMENT RENTAL STRIP -->
 @include('components.why-choose-strip', [
-    'eyebrow'      => 'Rental Options',
-    'headingLine1' => '<span style="color:#148af4;">Keep laundry moving</span>',
-    'headingLine2' => 'where rental is the right fit',
-    'body'         => 'For hospitality sites facing replacement pressure, capacity gaps or seasonal demand, rental may be a good fit where the available Electrolux Professional equipment range matches the property’s operation.',
+    'eyebrow'      => 'Equipment Rental',
+    'headingLine1' => 'Equipment rental with',
+    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
+    'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits the laundry room size, capacity need and operating profile.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost<br>where suitable'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Capacity support<br>where available'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Installed and<br>supported'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Range fit'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Included support'],
     ],
     'miniNowrap'   => true,
 ])
 
 @include('components.equipment-categories', [
     'heading' => 'Equipment categories for hospitality laundry rooms',
+    'subheading' => 'Choose the equipment category that fits property size, room fit, finishing standards, energy use and aftercare.',
+    'equipment' => [
+        ['img'=>'line6000-barrier-washer','name'=>'Barrier Washers','desc'=>'For hospitality sites that need controlled dirty-side and clean-side handling.','box'=>250,'mb'=>-20],
+        ['img'=>'commercialwasher','name'=>'Washing Machines','desc'=>'For bed linen, towels, robes, uniforms, guest items and food and beverage textiles.','box'=>270,'mb'=>-35],
+        ['img'=>'Tumble-dryers_Heat-Pump_1-1','name'=>'Dryers','desc'=>'For controlled drying, fabric care and daily room preparation.','box'=>245],
+        ['img'=>'drying-cabinet','src'=>'/images/healthcare/Drying-cabinets_image.webp','name'=>'Drying Cabinets','desc'=>'For gentle drying of garments, bulky items and specialist textiles.','box'=>260,'mb'=>20],
+        ['img'=>'IB623_FRONT_NEW','ext'=>'jpg','name'=>'Ironers & Flatwork','desc'=>'For flatwork finishing, presentation standards and storage-ready results.'],
+    ],
 ])
 
 <!-- PROCESS BLOCK -->
@@ -701,18 +705,18 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">How We Work</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-            Clear advice before the next <span style="color:#148af4;">equipment or service decision</span>
+            From room review to supported installation
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-3xl leading-relaxed text-center mx-auto">
-            A clear four-step path from property review to the next useful recommendation.
+            A practical four-step process for choosing, installing and supporting hospitality laundry equipment.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Assess the room',                       'text' => 'Review linen demand, peak periods, housekeeping pressure and available space.',                                  'icon' => 'clipboard'],
-                ['title' => 'Match the equipment',                   'text' => 'Recommend the right washing, drying, finishing, rental option or guest-laundry setup.',                       'icon' => 'Ativo%204'],
-                ['title' => 'Plan maintenance and aftercare',        'text' => 'Match equipment in use to preventive maintenance, repairs, follow-up care and future decisions.',         'icon' => 'Ativo%206'],
-                ['title' => 'Agree the next step',                   'text' => 'Turn the property, equipment needs and support needed into a clear next step.',                                'icon' => 'Ativo%203'],
+                ['title' => 'Review the room',                       'text' => 'Assess property demand, peak periods, available space and utilities.',                                  'icon' => 'clipboard'],
+                ['title' => 'Recommend equipment',                   'text' => 'Recommend washing, drying, finishing, rental or specialist options around the property\'s needs.',                       'icon' => 'Ativo%204'],
+                ['title' => 'Plan installation',        'text' => 'Plan delivery, installation and setup with qualified technical support.',         'icon' => 'Ativo%206'],
+                ['title' => 'Support after installation',                   'text' => 'Keep maintenance, repairs and aftercare clear once equipment is in use.',                                'icon' => 'Ativo%203'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
@@ -739,16 +743,16 @@
 
 <!-- SERVICE CONTRACTS + SUPPORT & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
-    'headingLine1' => '<span style="color:#011E41;">Protect linen turnaround</span>, control<br>service costs and keep <span style="color:#011E41;">peace</span>',
-    'headingLine2' => '<span style="color:#ffffff;"><span style="color:#011E41;">of mind</span> after installation</span>',
-    'body'         => 'Servicing, planned maintenance and aftercare keep laundry equipment easier to manage after installation, rental, repair or replacement. Irish Laundry Systems keeps follow-up clear so hospitality teams can reduce surprise repair costs, keep equipment running and spend less time dealing with laundry pressure.',
+    'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span>',
+    'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
+    'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Reduce surprise<br>repair costs'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Keep equipment<br>running'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of<br>mind'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service planning'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Equipment care'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of mind'],
     ],
-    'cta1Label'    => 'View Preventive Maintenance',
+    'cta1Label'    => 'View Preventive Maintenance Contracts',
     'cta1Route'    => 'service-contracts',
     'cta2Label'    => 'Explore Support &amp; Aftercare',
     'cta2Route'    => 'parts-aftercare',
@@ -757,8 +761,8 @@
 <!-- TESTIMONIAL / PROOF BLOCK -->
 @include('components.testimonials', [
     'eyebrow'    => 'Client Feedback',
-    'heading'    => 'Trusted by teams that need <span style="color:#148af4;">linen to keep moving</span>',
-    'subheading' => 'Irish Laundry Systems is trusted by hospitality teams that need clear communication, reliable support and people who know the equipment when linen turnaround, housekeeping pressure and peak-period demand affect daily service.',
+    'heading'    => 'Trusted by hospitality teams that need reliable laundry support',
+    'subheading' => 'Irish Laundry Systems supports hospitality teams that need clear communication, reliable service and equipment knowledge when laundry affects daily operations.',
     'subheadingClass' => 'max-w-5xl mx-auto',
 ])
 
@@ -766,23 +770,24 @@
 
 @include('components.faq', [
     'eyebrow' => 'Hospitality Laundry FAQs',
-    'heading' => 'Questions before requesting a <span style="color:#148af4;">hospitality laundry assessment</span>',
+    'heading' => 'Questions before requesting a hospitality laundry assessment',
+    'footerNote' => 'Have a different question? Talk to our team.',
     'faqs' => [
-        ['question' => 'What types of hospitality sites do you work with?',            'answer' => 'Irish Laundry Systems works with hotels, guesthouses, serviced apartments, hostels and hospitality sites where linen flow, guest standards, housekeeping rhythm and laundry equipment continuity matter.'],
-        ['question' => 'Can you help us decide whether in-house laundry makes sense?', 'answer' => 'Yes. We can review linen volume, outsourcing pressure, room space, utilities, staffing rhythm, equipment needs and service requirements to understand whether purchase, rental or a phased approach is the right route.'],
-        ['question' => 'Can professional laundry equipment reduce operating costs?',   'answer' => 'Selected Electrolux Professional technologies can reduce energy, water and detergent use. Examples include Heat Pump drying, Automatic Savings, Integrated Savings, Intelligent Dosing and Efficient Dosing, depending on the equipment and site configuration.'],
-        ['question' => 'Can you support busy hotels during peak periods?',             'answer' => 'Yes. Irish Laundry Systems can match equipment capacity, drying speed, finishing needs and service support to periods where occupancy, linen turnaround and housekeeping pressure are higher.'],
-        ['question' => 'Is rental an option instead of purchasing equipment outright?', 'answer' => 'Yes. Equipment Rental can be discussed where a hospitality site needs replacement, expansion or continuity without one large upfront purchase.'],
-        ['question' => 'Can you support guest laundry or self-service laundry areas?', 'answer' => 'Yes. We can advise on suitable equipment for guest laundry areas, including easy-to-use machines, payment options where relevant, space planning and support needs.'],
-        ['question' => 'Do you support premium garment care or valet laundry?',        'answer' => 'Yes. Electrolux Professional options such as lagoon Advanced Care and Drying Cabinets can support delicate garments, guest items, uniforms, leathers, shoes and premium textile-care needs where suitable for the property.'],
-        ['question' => 'What happens after installation?',                             'answer' => 'Support can continue through Service Contracts, Repairs & Call-outs, Equipment Rental support and Support & Aftercare, including service history, follow-up care and genuine parts access where applicable.'],
+        ['question' => 'What types of hospitality sites do you work with?',            'answer' => 'Irish Laundry Systems works with hotels, guesthouses, serviced apartments, hostels and hospitality sites that need reliable laundry equipment for bed linen, towels, robes, uniforms, table linen and guest items.'],
+        ['question' => 'Can you help us decide whether in-house laundry makes sense?', 'answer' => 'Yes. The right on-premises setup can keep more washing, drying and finishing control inside the property, supporting room preparation during busy periods.'],
+        ['question' => 'Can professional laundry equipment reduce operating costs?',   'answer' => 'Selected Electrolux Professional technologies can lower energy, water and detergent use, depending on the equipment and site configuration.'],
+        ['question' => 'Can you support busy hotels during peak periods?',             'answer' => 'Yes. Irish Laundry Systems can review property demand, drying speed, finishing needs and service support for busy periods.'],
+        ['question' => 'Is rental an option instead of purchasing equipment outright?', 'answer' => 'Yes. Rental can be reviewed where the available equipment range fits the property size, laundry volume and equipment need.'],
+        ['question' => 'Can you support guest laundry or self-service laundry areas?', 'answer' => 'Yes. Irish Laundry Systems can recommend suitable equipment for guest laundry areas, including space planning and support needs.'],
+        ['question' => 'Do you support premium garment care or valet laundry?',        'answer' => 'Yes. Selected Electrolux Professional equipment can support delicate garments, guest items, uniforms and specialist textile-care needs where the property requires it.'],
+        ['question' => 'What happens after installation?',                             'answer' => 'Support can continue through Preventive Maintenance, Repairs & Call-Outs, rental support and Support & Aftercare, including service history, follow-up and parts access where applicable.'],
     ],
 ])
 
 @include('components.cta-downtime-form', [
     'pageSource'  => 'hospitality_cta',
-    'heading'     => 'Ready to take control of your hospitality laundry',
-    'body'        => 'Tell us about the property, current equipment, linen demand, peak periods and pressure points. Irish Laundry Systems will guide you toward the right equipment advice, equipment quote, rental, preventive maintenance, repair or aftercare support.',
+    'heading'     => 'Ready to take control of your <span style="color:#148af4;">hospitality laundry</span>',
+    'body'        => 'Tell us about the property, current equipment, peak periods and support needs. Irish Laundry Systems will recommend suitable equipment, rental review, Preventive Maintenance, repair or aftercare support.',
     'formTitle'   => 'Request a Hospitality Laundry Assessment',
     'buttonText'  => 'Request Hospitality Assessment',
 ])

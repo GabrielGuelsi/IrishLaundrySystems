@@ -1,4 +1,4 @@
-@props(['faqs' => [], 'heading' => 'Frequently Asked Questions', 'eyebrow' => '', 'subheading' => ''])
+@props(['faqs' => [], 'heading' => 'Frequently Asked Questions', 'eyebrow' => '', 'subheading' => '', 'footerNote' => "Have a different question? We're happy to help."])
 
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -42,7 +42,7 @@
         </div>
 
         <div class="mt-10 text-center max-w-3xl mx-auto">
-            <p class="font-body text-gray-500 text-sm mb-4">Have a different question? We're happy to help.</p>
+            <p class="font-body text-gray-500 text-sm mb-4">{{ $footerNote }}</p>
             <a href="{{ route('contact') }}"
                class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-6 py-3 rounded-lg transition-colors duration-200 cursor-pointer text-sm">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

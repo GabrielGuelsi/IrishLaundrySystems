@@ -521,50 +521,22 @@ $faqs = [
 </div>
 
 <!-- AFTER THE REPAIR STRIP -->
-<section class="py-16 lg:py-20 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="bg-blue-50 rounded-2xl p-8 lg:p-12">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-
-                {{-- LEFT: content --}}
-                <div class="lg:col-span-7">
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After the Visit</p>
-                    <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                        Use repair findings for <span class="text-[#148af4]">the right next&nbsp;step</span>
-                    </h2>
-                    <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                        A call-out can solve the immediate fault, but it can also show what else needs attention. <span class="whitespace-nowrap">Irish Laundry Systems</span> can connect repair findings with Preventive Maintenance Contracts or Support &amp; Aftercare where ongoing support is needed.
-                    </p>
-
-                    {{-- Mini points --}}
-                    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-6 font-body text-gray-500 text-xs">
-                        <span class="whitespace-nowrap">Repair findings</span>
-                        <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                        <span class="whitespace-nowrap">Service history</span>
-                        <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                        <span class="whitespace-nowrap">Parts support where required</span>
-                        <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                        <span class="whitespace-nowrap">Preventive Maintenance</span>
-                    </div>
-                </div>
-
-                {{-- RIGHT: CTAs --}}
-                <div class="lg:col-span-5 flex flex-col sm:flex-row lg:flex-col gap-3">
-                    <a href="{{ route('service-contracts') }}"
-                       class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3 rounded-md text-sm transition-colors duration-200">
-                        View Preventive Maintenance
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                    <a href="{{ route('parts-aftercare') }}"
-                       class="inline-flex items-center justify-center gap-2 border border-navy/20 hover:border-navy text-navy font-body font-bold px-6 py-3 rounded-md text-sm transition-colors duration-200">
-                        Explore Support &amp; Aftercare
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
+@include('components.service-contracts-strip', [
+    'eyebrow'      => 'After the Visit',
+    'headingLine1' => 'Use repair findings for',
+    'headingLine2' => 'the right next step',
+    'body'         => 'A call-out can solve the immediate fault, but it can also show what else needs attention. Irish Laundry Systems can connect repair findings with Preventive Maintenance Contracts or Support & Aftercare where ongoing support is needed.',
+    'image'        => '/images/healthcare/Parts%20%26%20Aftercare.png',
+    'miniPoints'   => [
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Repair<br>findings'],
+        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Service<br>history'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts support<br>where required'],
+    ],
+    'cta1Label'    => 'View Preventive Maintenance',
+    'cta1Route'    => 'service-contracts',
+    'cta2Label'    => 'Explore Support &amp; Aftercare',
+    'cta2Route'    => 'parts-aftercare',
+])
 
 @include('components.faq', [
     'faqs'    => $faqs,

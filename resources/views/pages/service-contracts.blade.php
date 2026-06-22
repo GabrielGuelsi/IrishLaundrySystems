@@ -275,15 +275,15 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      4. WHAT YOU GAIN — 6 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-12 lg:py-16 bg-bg">
+<section class="py-12 lg:py-16 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                More control, fewer surprises and <span class="text-steel">peace of&nbsp;mind</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
+                More control, fewer surprises and <span class="text-[#148af4]">peace of&nbsp;mind</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
+            <p class="font-body text-white/70 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
                 A Preventive Maintenance Contract helps your site manage service needs, reduce disruption and plan around essential laundry equipment with more confidence.
             </p>
         </div>
@@ -363,7 +363,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
 
             {{-- Left: image --}}
             <div class="lg:col-span-5 reveal">
@@ -378,7 +378,7 @@
             </div>
 
             {{-- Right: 8-item checklist --}}
-            <div class="lg:col-span-7">
+            <div class="lg:col-span-7 flex flex-col">
                 @php
                 $includedItems = [
                     ['title' => 'Scheduled preventive maintenance visits',     'text' => 'Two planned inspections per year, arranged around equipment use and site needs.'],
@@ -391,7 +391,7 @@
                     ['title' => 'Operator guidance where relevant',             'text' => 'Practical guidance for site teams on safe and efficient equipment use where useful.'],
                 ];
                 @endphp
-                <ul class="space-y-4">
+                <ul class="flex-1 flex flex-col justify-between gap-4">
                     @foreach ($includedItems as $i => $item)
                     <li class="flex items-start gap-4 reveal" style="transition-delay:{{ $i * 50 }}ms;">
                         <div class="flex-shrink-0 w-8 h-8 rounded-full bg-steel/10 ring-1 ring-inset ring-steel/30 flex items-center justify-center mt-0.5">
