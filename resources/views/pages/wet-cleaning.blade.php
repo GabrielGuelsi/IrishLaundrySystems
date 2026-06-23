@@ -216,7 +216,7 @@
                 {{-- Lagoon Advanced Care process video --}}
                 <div class="relative rounded-2xl overflow-hidden bg-navy aspect-video">
                     <video class="w-full h-full object-cover" controls preload="metadata" playsinline
-                           poster="/images/healthcare/lagoon-advanced-care.webp">
+                           poster="/images/equipment/FC48.jpg">
                         <source src="/images/equipment/EPR_lagoon_Advanced_Care_ENG_1-1_2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>

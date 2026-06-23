@@ -451,7 +451,7 @@
         $nextRoutes = [
             ['title' => 'Repairs & Call-Outs',               'text' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                       'cta' => 'View Repairs & Call-Outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg'],
             ['title' => 'Preventive Maintenance',           'text' => 'For recurring faults, planned visits and better control of maintenance pressure.',                  'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/Service%20Contracts.png'],
-            ['title' => 'Equipment Rental',                  'text' => 'For replacement pressure, added capacity or cases where buying outright is not the right option.',  'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+            ['title' => 'Equipment Rental',                  'text' => 'For replacement pressure, added capacity or cases where buying outright is not the right option.',  'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/equipment/FC48.jpg'],
         ];
         @endphp
 

@@ -775,7 +775,7 @@
                 ['title' => 'Commercial Washing Machines', 'copy' => 'For daily washing of workwear, towels, uniforms, bedding and mixed textiles.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/equipment/commercialwasher.webp'],
                 ['title' => 'Commercial Tumble Dryers',    'copy' => 'For general drying demand where tumble drying is suitable for the load.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
                 ['title' => 'Dosing Systems',     'copy' => 'For detergent control, lower waste and more consistent wash results.', 'cta' => 'Ask About Dosing Systems', 'route' => route('contact'), 'img' => '/images/healthcare/MultisaveEQUIP.webp'],
-                ['title' => 'Wet Cleaning',       'copy' => 'For specialist textile care where delicate garments, leathers or shoes need a different cleaning process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('contact'), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['title' => 'Wet Cleaning',       'copy' => 'For specialist textile care where delicate garments, leathers or shoes need a different cleaning process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('contact'), 'img' => '/images/equipment/FC48.jpg'],
             ] as $card)
             <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
                 <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">

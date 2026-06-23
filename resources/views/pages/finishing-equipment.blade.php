@@ -527,7 +527,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
             @foreach([
                 ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing where working width, room fit and daily output matter.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers'), 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where garments need a controlled cleaning process before finishing.',          'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where garments need a controlled cleaning process before finishing.',          'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/equipment/FC48.jpg'],
                 ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before garment finishing, touch-ups or daily presentation work.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
                 ['title' => 'Accessories & Consumables', 'copy' => 'For laundry products and accessories used around washing, drying and finishing.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories'), 'img' => '/images/healthcare/MultisaveEQUIP.webp'],
             ] as $card)
