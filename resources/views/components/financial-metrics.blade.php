@@ -19,7 +19,7 @@
         $isWord = ($it['size'] ?? 'text-4xl') === 'text-2xl';
         // long word-stat lines keep the smaller size at xl so single words never overflow the column
         $longestLine = max(array_map('strlen', explode('<br>', strip_tags($it['stat'], '<br>'))));
-        $wordSize = $longestLine > 11 ? 'text-2xl' : 'text-2xl xl:text-[28px]';
+        $wordSize = $longestLine >= 11 ? 'text-2xl' : 'text-2xl xl:text-[28px]';
     @endphp
     <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col {{ $loop->last ? 'sm:col-span-2 lg:col-span-1' : '' }}">
 
@@ -34,9 +34,9 @@
             $labelIndent = 'pl-[4.25rem] xl:pl-[5.25rem]';
         @endphp
         <div class="lg:min-h-[6.5rem] w-fit {{ ($tightLeft ?? false) ? '-ml-3' : '' }}">
-            <div class="flex items-end gap-1">
+            <div class="flex items-end gap-1 h-16 xl:h-20">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0 {{ $it['iconClass'] ?? '' }}">
-                <div class="flex flex-col min-w-0">
+                <div class="flex flex-col min-w-0 justify-end h-full">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>

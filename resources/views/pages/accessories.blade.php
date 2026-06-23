@@ -89,10 +89,10 @@
 
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'30', 'prefix'=>'',          'stat'=>'90%',                'size'=>'text-4xl', 'label'=>'The purchase is only the beginning', 'body'=>'Electrolux Professional highlights that most lifetime laundry cost sits in operation, including energy, water and chemicals.'],
-            ['icon'=>'39', 'prefix'=>'Save over',  'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'Reduce detergent costs where suitable', 'body'=>'Efficient Dosing can save over 30% on detergent costs on suitable Electrolux Professional setups.'],
+            ['icon'=>'39', 'prefix'=>'Save over',  'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'Reduce detergent costs', 'body'=>'Efficient Dosing can save over 30% on detergent costs on suitable Electrolux Professional setups.'],
             ['icon'=>'8',  'prefix'=>'',          'stat'=>'Correct<br>dose',    'size'=>'text-2xl', 'label'=>'Reduce detergent overuse', 'body'=>'Automatic dosing supports the right amount of detergent for each cycle, helping reduce waste and keep results consistent.'],
-            ['icon'=>'31', 'prefix'=>'',          'stat'=>'Less<br>maintenance','size'=>'text-2xl', 'label'=>'Lower dosing system upkeep', 'body'=>'Selected systems such as JETSAVE use water-powered pumps with no moving parts or squeeze tubes.'],
-            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Better<br>control',  'size'=>'text-2xl', 'label'=>'Protect textiles, results and equipment', 'body'=>'Better chemical control can support wash quality, textile life and equipment condition over time.'],
+            ['icon'=>'31', 'prefix'=>'',          'stat'=>'Less<br>maintenance','size'=>'text-2xl', 'label'=>'Lower system upkeep', 'labelClass'=>'!ml-0', 'body'=>'Selected systems such as JETSAVE use water-powered pumps with no moving parts or squeeze tubes.'],
+            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Better<br>control',  'size'=>'text-2xl', 'label'=>'Protect linen and equipment', 'body'=>'Better chemical control can support wash quality, textile life and equipment condition over time.'],
         ]])
     </div>
 </section>
@@ -402,30 +402,41 @@
         ];
         @endphp
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 reveal">
-            @foreach($rangeCards as $card)
-            <div class="flex flex-col rounded-2xl p-6 bg-white border border-gray-200">
-                <div class="flex items-center justify-center h-44 lg:h-52 mb-5">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['name'] }}" class="max-h-full w-auto object-contain">
+        <div class="space-y-16 lg:space-y-24">
+            @foreach($rangeCards as $i => $card)
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center reveal">
+
+                {{-- Text side --}}
+                <div class="{{ $i % 2 === 1 ? 'lg:order-2' : '' }}">
+                    <p class="font-body text-xs font-bold uppercase tracking-[0.18em] text-[#148af4] mb-3">{{ $card['topLine'] }}</p>
+                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl leading-tight text-balance mb-4">{{ $card['name'] }}</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-xl">{{ $card['copy'] }}</p>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-8 max-w-xl">
+                        @foreach($card['badges'] as $b)
+                        <li class="flex items-center gap-2 font-body text-gray-600 text-base">
+                            <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+                            {{ $b }}
+                        </li>
+                        @endforeach
+                    </ul>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors">
+                            {{ $card['cta'] }}
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-heading font-bold text-sm px-6 py-3.5 rounded-lg transition-colors">
+                            Request Advice
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                    </div>
                 </div>
-                <p class="font-body text-xs font-bold text-navy/60 mb-1.5">{{ $card['topLine'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['name'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $card['copy'] }}</p>
-                <div class="flex flex-wrap gap-1.5 mb-5">
-                    @foreach(array_slice($card['badges'], 0, 4) as $b)
-                    <span class="font-body text-[10px] font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-2 py-1 rounded">{{ $b }}</span>
-                    @endforeach
+
+                {{-- Image side --}}
+                <div class="{{ $i % 2 === 1 ? 'lg:order-1' : '' }} flex items-center justify-center">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['name'] }}" loading="lazy" decoding="async"
+                         class="w-auto object-contain" style="max-height:300px; max-width:100%;">
                 </div>
-                <div class="mt-auto flex flex-col gap-2.5">
-                    <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
-                        {{ $card['cta'] }}
-                    </a>
-                    <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                        View Details
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                </div>
+
             </div>
             @endforeach
         </div>
@@ -497,38 +508,31 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
                 ['title' => 'Racks and trolleys',                     'copy' => 'Support movement, storage and daily laundry handling.',  'img' => '/images/equipment/trolleys-and-racks.webp'],
-                ['title' => 'Baskets and handling',                   'copy' => 'Make sorting, loading and unloading easier for staff.',   'img' => ''],
+                ['title' => 'Baskets and handling',                   'copy' => 'Make sorting, loading and unloading easier for staff.',   'img' => '/images/equipment/trolley_.webp'],
                 ['title' => 'Dryer balls and cleaning essentials',    'copy' => 'Support practical care across daily laundry use.',        'img' => '/images/equipment/dryer-balls.png'],
                 ['title' => 'Hygiene tools',                          'copy' => 'Keep the laundry room cleaner and easier to manage.',     'img' => '/images/healthcare/JetsaveEQUIP.webp'],
             ] as $acc)
-            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
-                @if(!empty($acc['img']))
-                <div class="bg-white border-b border-gray-100 flex items-center justify-center p-5" style="height:180px;">
-                    <img src="{{ $acc['img'] }}" alt="{{ $acc['title'] }}" loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
+            <div class="flex flex-col gap-6 h-full">
+                <div style="min-height:112px;">
+                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $acc['title'] }}</p>
+                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $acc['copy'] }}</p>
                 </div>
-                @endif
-                <div class="p-7 flex flex-col flex-1">
-                    @if(empty($acc['img']))
-                    <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                    @endif
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $acc['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $acc['copy'] }}</p>
+                <div class="w-full flex items-end justify-center" style="height:300px;">
+                    <img src="{{ $acc['img'] }}" alt="{{ $acc['title'] }}" loading="lazy" decoding="async"
+                         class="transition-transform duration-500 hover:-translate-y-2"
+                         style="max-width:100%; max-height:280px; width:auto; object-fit:contain;">
                 </div>
+                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                    Ask About Accessories
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
             </div>
             @endforeach
-        </div>
-
-        <div class="mt-10 reveal">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                Ask About Accessories
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </a>
         </div>
     </div>
 </section>
