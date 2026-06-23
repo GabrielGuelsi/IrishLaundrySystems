@@ -732,9 +732,9 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="pt-12 lg:pt-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mx-auto text-center reveal">
+        <div class="max-w-5xl mx-auto text-center reveal">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Customer Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance max-w-3xl mx-auto">
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed mt-4 text-pretty">

@@ -222,8 +222,8 @@ class PageController extends Controller
     public function electrolux()
     {
         return view('pages.electrolux', [
-            'title' => 'Authorised Electrolux Professional Partner | ILS Ireland',
-            'metaDescription' => 'Irish Laundry Systems is an Authorised Electrolux Professional Partner — genuine parts, trained engineers and manufacturer-backed support.',
+            'title' => 'Electrolux Professional Partner Ireland | Irish Laundry Systems',
+            'metaDescription' => 'Irish Laundry Systems is an Authorised Electrolux Professional Partner, bringing Electrolux Professional laundry equipment, Irish engineering support, genuine parts access and aftercare to commercial laundry sites across Ireland.',
         ]);
     }
 
