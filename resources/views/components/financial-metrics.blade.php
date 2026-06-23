@@ -38,7 +38,7 @@
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0 {{ $it['iconClass'] ?? '' }}">
                 <div class="flex flex-col min-w-0 justify-end h-full">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
-                    <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : 'text-4xl xl:text-5xl' }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
+                    <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : ($numericSize ?? 'text-4xl xl:text-5xl') }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
             </div>
             @php $drop = ($labelDrop ?? false) ? 'translate-y-2' : ''; @endphp
