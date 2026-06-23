@@ -128,23 +128,23 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'31', 'prefix'=>'',       'stat'=>'55 min',           'size'=>'text-4xl', 'label'=>'Dry-to-Dry in 55 minutes',              'body'=>'Lagoon Advanced Care is built around a fast garment care process, so suitable garments can return quickly without hang-drying.'],
-            ['icon'=>'25', 'prefix'=>'Up to',  'stat'=>'75%',              'size'=>'text-4xl', 'label'=>'Higher loading factor',                'body'=>"ProV'tex hydraulic action allows the machine to be loaded up to 75% of capacity while keeping cleaning gentle on delicate textiles."],
-            ['icon'=>'30', 'prefix'=>'Up to',  'stat'=>'50%',              'size'=>'text-4xl', 'label'=>'More production from each load',        'body'=>'Electrolux Professional material shows Lagoon Advanced Care technology can support up to 50% more production from each load.'],
-            ['icon'=>'35', 'prefix'=>'',       'stat'=>'Less<br>time',     'size'=>'text-2xl', 'label'=>'Less prespotting, easier finishing',   'body'=>'Lagoon Advanced Care reduces manual pressure around prespotting and finishing so garments move through the process faster.'],
-            ['icon'=>'16', 'prefix'=>'',       'stat'=>'70–400',           'size'=>'text-4xl', 'label'=>'items per day to plan around',         'body'=>'The Lagoon Advanced Care range supports system planning from smaller setups through to higher daily garment volumes.'],
+            ['icon'=>'31', 'prefix'=>'',       'stat'=>'55 min',           'size'=>'text-4xl', 'label'=>'dry-to-dry process',                  'body'=>'Lagoon Advanced Care is built around a fast garment care process, so suitable garments can return quickly without hang-drying.'],
+            ['icon'=>'25', 'prefix'=>'Up to',  'stat'=>'75%',              'size'=>'text-4xl', 'label'=>'loading factor',                     'body'=>"ProV'tex hydraulic action allows the machine to be loaded up to 75% of capacity while keeping cleaning gentle on delicate textiles."],
+            ['icon'=>'30', 'prefix'=>'Up to',  'stat'=>'50%',              'size'=>'text-4xl', 'label'=>'more per load',                      'body'=>'Electrolux Professional material shows Lagoon Advanced Care technology can support up to 50% more production from each load.'],
+            ['icon'=>'35', 'prefix'=>'',       'stat'=>'Less<br>time',     'size'=>'text-2xl', 'label'=>'prespotting and finishing', 'labelClass'=>'translate-y-2', 'body'=>'Lagoon Advanced Care reduces manual pressure around prespotting and finishing so garments move through the process faster.'],
+            ['icon'=>'16', 'prefix'=>'',       'stat'=>'70–400',           'size'=>'text-2xl', 'label'=>'items per day', 'labelClass'=>'translate-y-2', 'body'=>'The Lagoon Advanced Care range supports system planning from smaller setups through to higher daily garment volumes.'],
         ]])
     </div>
 </section>
 
 {{-- 5b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:340px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/healthcare/line-6000-solutions.jpg" alt="Connected commercial laundry equipment"
              class="w-full h-full object-cover" style="object-position: center center;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.82) 8%, rgba(1,30,65,0.45) 28%, rgba(1,30,65,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Washer and dryer data <span style="color:#148af4;">in one connected view</span>
@@ -153,10 +153,19 @@
             OnE Connected shows compatible Electrolux Professional washer and dryer status, cycles, consumption, alerts and service needs in one digital dashboard.<br>
             For wet cleaning sites, this provides clearer oversight of daily use, running costs and service needs where compatible.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Status insight', 'Consumption data', 'Service alerts'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
+            @foreach([
+                ['icon' => 'ativo-9',  'label' => 'Status<br>insight'],
+                ['icon' => 'ativo-21', 'label' => 'Consumption<br>data'],
+                ['icon' => 'ativo-7',  'label' => 'Service<br>alerts'],
+            ] as $i => $feat)
+            @if($i > 0)
+                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
+            @endif
+            <div class="flex items-center gap-3">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
@@ -274,14 +283,17 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Washer',                    'copy' => 'Professional wet cleaning washer setup for delicate garments, textiles and specialist loads.'],
-                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Drying performance matched to the wet cleaning process, helping reduce delays and avoid hang-drying where suitable.'],
-                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents, conditioners and prespotting products support consistent results across different garment types.'],
-                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help complete the garment care process before items return to customers.'],
-                ['step' => '05', 'title' => 'Optional Serenity Cabinet',  'copy' => 'A specialist cabinet option for final touch, hygiene care and efficient drying for selected leathers and shoes.'],
+                ['step' => '01', 'title' => 'Washer',                    'copy' => 'Professional wet cleaning washer setup for delicate garments, textiles and specialist loads.', 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
+                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Drying performance matched to the wet cleaning process, helping reduce delays and avoid hang-drying where suitable.', 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents, conditioners and prespotting products support consistent results across different garment types.', 'img' => '/images/equipment/eco-detergents.webp'],
+                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help complete the garment care process before items return to customers.', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['step' => '05', 'title' => 'Optional Serenity Cabinet',  'copy' => 'A specialist cabinet option for final touch, hygiene care and efficient drying for selected leathers and shoes.', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
             ] as $comp)
-            <div class="bg-bg rounded-2xl p-7 flex flex-col h-full border border-gray-100">
-                <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-3">{{ $comp['step'] }}</span>
+            <div class="flex flex-col h-full">
+                <div class="w-full flex items-end justify-center mb-5" style="height:240px;">
+                    <img src="{{ $comp['img'] }}" alt="{{ $comp['title'] }}" loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
+                </div>
+                <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-2">{{ $comp['step'] }}</span>
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $comp['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $comp['copy'] }}</p>
             </div>
@@ -350,25 +362,34 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
             @foreach([
-                ['title' => 'Dry cleaners and garment care businesses',  'copy' => 'For businesses ready to add or expand a solvent-free textile care process with strong garment protection and professional results.', 'points' => ['Delicates', 'Formalwear', 'Daily customer garments']],
-                ['title' => 'Bridal, formalwear and alterations',        'copy' => 'For high-value garments where shape, colour, fibre care and presentation matter.', 'points' => ['Wedding dresses', 'Suits', 'Specialist garments']],
-                ['title' => 'Hotels and guest garment care',             'copy' => 'For properties that want greater control over guest clothing, staff uniforms and premium textile care.', 'points' => ['Guest garments', 'Uniforms', 'Presentation standards']],
-                ['title' => 'Leather, shoes and accessories',            'copy' => 'For businesses that want to clean and refresh selected leathers, shoes, sneakers, bags and accessories with the right process.', 'points' => ['Leathers', 'Shoes', 'Accessories']],
-                ['title' => 'Textile care and specialist laundry',       'copy' => 'For sites handling delicate fibres, premium items, regular laundry and specialist garment categories.', 'points' => ['Wool', 'Silk', 'Cashmere']],
-                ['title' => 'New wet cleaning businesses',               'copy' => 'For operators building a new service offer who need a scalable system that can grow with customer demand.', 'points' => ['Start small', 'Add capacity', 'Grow services']],
-            ] as $fit)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col h-full shadow-sm">
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $fit['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $fit['copy'] }}</p>
-                <ul class="mt-auto space-y-1.5">
-                    @foreach($fit['points'] as $pt)
-                    <li class="font-body font-semibold text-navy text-sm flex items-center gap-2">
-                        <span class="text-[#148af4]">&#9656;</span> {{ $pt }}
-                    </li>
-                    @endforeach
-                </ul>
+                ['title' => 'Dry cleaners and garment care businesses',  'items' => ['Delicates', 'Formalwear', 'Daily customer garments'],       'img' => '/images/healthcare/services-overview-hero.jpg',          'pos' => 'center center'],
+                ['title' => 'Bridal, formalwear and alterations',        'items' => ['Wedding dresses', 'Suits', 'Specialist garments'],          'img' => '/images/healthcare/render-double-page_72dpi.jpg',        'pos' => 'center center'],
+                ['title' => 'Hotels and guest garment care',             'items' => ['Guest garments', 'Uniforms', 'Presentation standards'],     'img' => '/images/Hospitallity/hospitallityhero.png',             'pos' => '82% 30%'],
+                ['title' => 'Leather, shoes and accessories',            'items' => ['Leathers', 'Shoes', 'Accessories'],                         'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'pos' => 'center center'],
+                ['title' => 'Textile care and specialist laundry',       'items' => ['Wool', 'Silk', 'Cashmere'],                                 'img' => '/images/healthcare/line-6000-solutions.jpg',            'pos' => 'center 30%'],
+                ['title' => 'New wet cleaning businesses',               'items' => ['Start small', 'Add capacity', 'Grow services'],             'img' => '/images/healthcare/commercial-industrial.jpg',          'pos' => 'center center'],
+            ] as $card)
+            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] }};">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background:rgba(1,30,65,0.90);"></div>
+                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                    <ul class="font-body text-white/80 text-sm space-y-2 overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-5">
+                        @foreach($card['items'] as $item)
+                        <li class="flex items-start gap-2.5">
+                            <span class="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-white/60"></span>
+                            <span>{{ $item }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
+                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
+                </div>
             </div>
             @endforeach
         </div>
@@ -380,9 +401,9 @@
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">System Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan wet cleaning around <span style="color:#011E41;">volume, room fit and finishing</span>
@@ -390,16 +411,19 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A wet cleaning system should match garment type, daily volume, drying needs, utilities, finishing and budget. Irish Laundry Systems plans the washer, dryer, detergents and aftercare around the site.
         </p>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
             @foreach([
-                ['t' => 'Choose the right system size', 'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
-                ['t' => 'Build the full process',       'd' => 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z'],
-                ['t' => 'Keep the equipment supported', 'd' => 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085'],
-            ] as $pt)
-            <span class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
-                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
-            </span>
+                ['icon' => 'ativo-20', 'label' => 'Choose the right<br>system size'],
+                ['icon' => 'ativo-8',  'label' => 'Build the<br>full process'],
+                ['icon' => 'ativo-4',  'label' => 'Keep the equipment<br>supported'],
+            ] as $i => $feat)
+            @if($i > 0)
+                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
+            @endif
+            <div class="flex items-center gap-3">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -766,67 +790,38 @@
     </div>
 </section>
 
-{{-- 16. RESOURCES --}}
-<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
+{{-- 16. COMPACT RESOURCES BAR (matches accessories/semi-professional design) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Official <span style="color:#148af4;">Lagoon Advanced Care information</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Review official Electrolux Professional resources or ask Irish Laundry Systems to review the right wet cleaning setup for your site.
-            </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
-                [
-                    'title' => 'Lagoon Advanced Care brochure',
-                    'copy'  => 'Official Electrolux Professional brochure covering the Lagoon Advanced Care process, technologies, capacity planning and system components.',
-                    'cta'   => 'Download Brochure',
-                    'type'  => 'download',
-                    'href'  => '',
-                ],
-                [
-                    'title' => 'Lagoon process video',
-                    'copy'  => 'Watch how the wet cleaning process moves from garment received to ready to deliver.',
-                    'cta'   => 'Watch Video',
-                    'type'  => 'video',
-                    'href'  => route('resources'),
-                ],
-                [
-                    'title' => 'Planning a wet cleaning service?',
-                    'copy'  => 'Irish Laundry Systems can review your garment types, daily volume, room layout and budget before recommending the right setup.',
-                    'cta'   => 'Request Advice',
-                    'type'  => 'link',
-                    'href'  => route('request-assessment'),
-                ],
-            ] as $res)
-            <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $res['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $res['copy'] }}</p>
-                @if($res['type'] === 'download' && $res['href'])
-                <a href="{{ $res['href'] }}" target="_blank" download class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
-                    {{ $res['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                </a>
-                @elseif($res['type'] === 'download')
-                <span class="mt-auto inline-flex items-center gap-2 font-body font-bold text-gray-400 text-sm w-fit cursor-not-allowed" aria-disabled="true" title="Brochure coming soon">
-                    {{ $res['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                </span>
-                @elseif($res['type'] === 'video')
-                <a href="{{ $res['href'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
-                    {{ $res['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                </a>
-                @else
-                <a href="{{ $res['href'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm w-fit">
-                    {{ $res['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
-                @endif
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Lagoon Advanced Care resources', 'h' => route('resources')],
+                    ['l' => 'Lagoon process video', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'washers'])],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
+                    ['l' => 'Finishing Equipment', 'h' => route('equipment.category', ['category' => 'finishing-equipment'])],
+                    ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request advice', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-col gap-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
+                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
             </div>
             @endforeach
         </div>
@@ -847,26 +842,29 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For larger laundry capacity, heavier use or wider commercial laundry demand.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/equipment/commercialwasher.webp'],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying demand that needs commercial capacity, control and reliability.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
-                ['title' => 'Finishing Equipment',         'copy' => 'For ironing, form finishing, pressing and final presentation support.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
-                ['title' => 'Drying Cabinets',             'copy' => 'For garments, shoes, gloves and items that need controlled drying rather than tumble drying.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For larger laundry capacity, heavier use or wider commercial laundry demand.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/equipment/commercialwasher.webp', 'box' => 270],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying demand that needs commercial capacity, control and reliability.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp', 'box' => 245],
+                ['title' => 'Finishing Equipment',         'copy' => 'For ironing, form finishing, pressing and final presentation support.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/equipment/IB623_FRONT_NEW.jpg', 'box' => 300],
+                ['title' => 'Drying Cabinets',             'copy' => 'For garments, shoes, gloves and items that need controlled drying rather than tumble drying.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/healthcare/Drying-cabinets_image.webp', 'box' => 260],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
-                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+            <div class="flex flex-col gap-6 h-full">
+                <div style="min-height:112px;">
+                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $card['title'] }}</p>
+                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
-                <div class="p-7 flex flex-col flex-1">
-                    <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $card['copy'] }}</p>
-                    <a href="{{ $card['route'] }}" class="mt-auto inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm">
-                        {{ $card['cta'] }}
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
+                <div class="w-full flex items-end justify-center" style="height:300px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
+                         class="transition-transform duration-500 hover:-translate-y-2"
+                         style="width:{{ $card['box'] }}px; max-width:100%; height:{{ $card['box'] }}px; object-fit:contain;">
                 </div>
+                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                    {{ $card['cta'] }}
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
             </div>
             @endforeach
         </div>
