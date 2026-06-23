@@ -312,7 +312,7 @@
                 ['title' => 'Dryers',                       'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/healthcare/lagoon-advanced-care.webp'],
+                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/equipment/FC48.jpg'],
                 ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/myPRO-8K-washer.webp'],
                 ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
             ] as $cat)
