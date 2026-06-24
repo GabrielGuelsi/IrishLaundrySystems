@@ -453,11 +453,11 @@
                 ['icon' => '8',  'title' => 'Integrated Savings and Intelligent Dosing', 'copy' => 'Defines the effective load and adjusts detergent and water levels, supporting cost control and consistent results.'],
                 ['icon' => '31', 'title' => 'Power Balance',                             'copy' => 'Activates the correct extraction force for the load to improve drying performance.'],
                 ['icon' => '7',  'title' => 'Moisture Balance',                          'copy' => 'Defines the right moisture level so garments are dried safely, reducing the risk of over-drying, shrinkage and wrinkles.'],
-                ['icon' => '4',  'title' => 'ClarusVibe',                                'copy' => 'A clear control interface makes Lagoon programmes easier to manage.'],
+                ['icon' => '4',  'title' => 'ClarusVibe',                                'copy' => 'A clear control interface makes Lagoon programmes easier to manage.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-28 object-cover'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
