@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial washing machines"
+    <img src="/images/equipment/0O3A9746_72dpi.jpg" alt="Commercial washing machines"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -20,7 +20,7 @@
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Choose commercial washers around <span style="color:#148af4;">daily demand, running cost and support</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial washers for hotels, healthcare sites, care facilities and commercial laundries across Ireland. Since 1987, our team has helped sites match washer capacity, room layout, detergent use, drying needs and after-installation support around the way their laundry actually works.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
@@ -58,7 +58,7 @@
                     A commercial washer decision affects more than wash capacity. The right setup should fit the room, utilities, access, detergent control, drying performance, purchase or rental needs and long-term support before money is spent.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems connects expert advice, Electrolux Professional washer technology, installation knowledge and aftercare, so your site can choose with more confidence.
+                    Irish Laundry Systems connects expert advice, Electrolux Professional technology, installation knowledge and aftercare, so your site can choose with more confidence.
                 </p>
                 <a href="#washer-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -95,12 +95,10 @@
             <div x-data="{
                     cur: 0,
                     imgs: [
-                        '/images/equipment/commercialwasher.webp',
-                        '/images/equipment/WS6%20%E2%80%94%20Line%206000%20High-Spin%20Washer.jpg',
-                        '/images/equipment/WN6%20%E2%80%94%20Line%206000%20Normal-Spin%20Washer.jpg',
-                        '/images/equipment/W4-Series%20Washer-Extractors.png',
-                        '/images/equipment/PW9C.jpg',
-                        '/images/equipment/Quickwash%20QWC.jpg',
+                        '/images/equipment/WH6-7.jpg',
+                        '/images/equipment/WH6-14.jpg',
+                        '/images/equipment/WH6-6.jpg',
+                        '/images/equipment/mypro-hp-front.jpg',
                     ],
                     init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
                  }"

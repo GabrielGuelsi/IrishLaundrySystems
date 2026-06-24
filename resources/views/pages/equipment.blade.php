@@ -40,7 +40,7 @@
                     Commercial laundry equipment<br class="hidden lg:block"> <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
                 </h1>
 
-                <p class="eq-hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-2xl text-pretty">
+                <p class="eq-hero-desc font-body text-white leading-relaxed mb-8 text-base max-w-2xl text-pretty">
                     Irish Laundry Systems supports commercial laundry sites with equipment selection, quotation, supply, installation, rental advice and aftercare, including Electrolux Professional laundry equipment options.
                 </p>
 
@@ -82,13 +82,13 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
+                    A better equipment fit can mean <span style="color:#148af4;">less waste,</span> less pressure and <span style="color:#148af4;">smoother laundry flow</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use where suitable.
+                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision, whether the right step is purchase, rental where suitable, installation and commissioning or follow-up care.
@@ -134,6 +134,7 @@
                 'cta'      => 'Explore Line 6000 Options',
                 'route'    => route('equipment.category', 'washers'),
                 'img'      => '/images/sectors/Line 6000 solutions products_72dpi.jpg',
+                'imgClass' => 'object-[50%_90%]',
             ],
             [
                 'eyebrow'  => 'myPROzip',
@@ -142,7 +143,8 @@
                 'points'   => ['More than domestic', 'Smaller-site fit', 'Faster turnaround'],
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
-                'img'      => '/images/equipment/myPRO-8K-washer.webp',
+                'img'      => '/images/healthcare/mypro-family.jpg',
+                'imgClass' => 'object-[50%_80%]',
             ],
             [
                 'eyebrow'  => 'lagoon Advanced Care',
@@ -151,7 +153,7 @@
                 'points'   => ['Protect textile quality', 'Handle specialist garments', 'Reduce outsourcing where suitable'],
                 'cta'      => 'Explore Wet Cleaning',
                 'route'    => route('equipment.category', 'wet-cleaning'),
-                'img'      => '/images/Hospitallity/hospitallityhero.png',
+                'img'      => '/images/healthcare/lagoon-advanced-care-internal.jpg',
             ],
         ];
         @endphp
@@ -177,7 +179,7 @@
                 >
                     <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
-                             class="absolute inset-0 w-full h-full object-cover object-center">
+                             class="absolute inset-0 w-full h-full object-cover {{ $t['imgClass'] ?? 'object-center' }}">
                         <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.7) 0%, rgba(1,30,65,0.32) 28%, rgba(1,30,65,0.05) 52%, transparent 72%);"></div>
                         <div class="relative z-10 flex items-end" style="min-height:540px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
@@ -251,7 +253,7 @@
                 'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
                 'cta'   => 'View myPRO Options',
                 'route' => route('equipment.category', 'semi-professional'),
-                'img'   => '/images/equipment/myPRO-8K-washer.webp',
+                'img'   => '/images/equipment/mypro-hp-front.jpg',
             ],
         ];
         @endphp
@@ -286,7 +288,7 @@
                     <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
                         <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
                             <div class="flex items-center justify-center">
-                                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full h-44 lg:h-52 object-contain">
+                                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full {{ $card['imgClass'] ?? 'h-44 lg:h-52' }} object-contain">
                             </div>
                             <div class="flex flex-col">
                                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{!! $card['title'] !!}</h3>
@@ -347,13 +349,13 @@
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
                 ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/equipment/FC48.jpg'],
-                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/myPRO-8K-washer.webp'],
-                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
+                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/mypro-hp-front.jpg'],
+                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/eco-detergents.webp'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
                      class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute inset-x-0 bottom-0 h-2/5" style="background: linear-gradient(to top, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.45) 55%, transparent 100%);"></div>
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 z-10">
                     <h3 class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">{!! $cat['title'] !!}</h3>
                 </div>
@@ -404,11 +406,11 @@
                             ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'FF1.jpg'],
                         ] as $fc)
                         <div class="rounded-xl border border-gray-200 bg-white p-4 flex flex-col">
-                            <div class="rounded-lg bg-white border border-gray-100 overflow-hidden h-32 mb-3 flex items-center justify-center">
-                                <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-2">
+                            <div class="rounded-lg bg-white border border-gray-100 overflow-hidden h-44 mb-3 flex items-center justify-center">
+                                <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-1">
                             </div>
                             <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">{!! $fc['t'] !!}</h3>
-                            <p class="font-body text-gray-500 text-xs leading-snug mb-3 flex-1">{{ $fc['b'] }}</p>
+                            <p class="font-body text-gray-500 text-xs leading-snug mb-2">{{ $fc['b'] }}</p>
                             <a href="{{ $fc['href'] }}" class="inline-flex items-center gap-1 text-[#148af4] font-body font-bold text-xs hover:gap-2 transition-all">
                                 {{ $fc['cta'] }}
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -476,8 +478,8 @@
             @foreach([
                 ['title' => 'Review the site',          'text' => 'Look at the room, access, utilities, workload, staff flow and current laundry demand.',                 'icon' => 'clipboard'],
                 ['title' => 'Confirm the equipment',    'text' => 'Match the equipment category, capacity and purchase or rental fit to the site and laundry demand.',     'icon' => 'Ativo%204'],
-                ['title' => 'Supply and commission',    'text' => 'Arrange equipment supply, positioning, installation, commissioning and test cycles where required.',    'icon' => 'Ativo%206'],
-                ['title' => 'Handover and next steps',  'text' => 'Give the site clearer guidance on use, support options and follow-up care where needed.',               'icon' => 'Ativo%203'],
+                ['title' => 'Supply and commission',    'text' => 'Arrange equipment supply, positioning, installation, commissioning and test cycles.',    'icon' => 'Ativo%206'],
+                ['title' => 'Handover and next steps',  'text' => 'Give the site clearer guidance on use, support options and follow-up care.',               'icon' => 'Ativo%203'],
             ] as $i => $step)
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
@@ -521,8 +523,8 @@
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Service Contracts.png',
-                    'pos'    => 'center 35%',
+                    'img'    => '/images/healthcare/service-contracts-hero.png',
+                    'pos'    => '88% 35%',
                 ],
                 [
                     'title'  => 'Repairs &amp; Call-outs',
@@ -592,7 +594,7 @@
             ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png',                'pos' => '75% center'],
             ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
             ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.png',           'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
+            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg'],
             ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
