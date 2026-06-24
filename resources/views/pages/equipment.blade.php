@@ -7,34 +7,67 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[660px]" style="background-color:#011E41;">
-    <img src="/images/equipment/td6-multihousing-room.jpg" alt="Commercial laundry equipment room"
+<style>
+@keyframes eqHeroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.eq-hero-title { animation: eqHeroFadeUp 0.7s ease forwards; }
+.eq-hero-desc  { animation: eqHeroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
+.eq-hero-btns  { animation: eqHeroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+    .eq-hero-title, .eq-hero-desc, .eq-hero-btns { animation: none; opacity: 1; transform: none; }
+}
+</style>
+
+<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
+
+    <img src="/images/hero/HOMEHERO2.jpg" alt="Irish Laundry Systems engineering team on site"
+         loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.72) 0%, rgba(1,30,65,0.32) 40%, rgba(1,30,65,0.06) 66%, transparent 85%);"></div>
-    <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
-            <div class="max-w-4xl reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Guidance</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block">Commercial laundry equipment</span>
-                    <span class="block"><span style="color:#148af4;">supplied, installed and supported</span></span>
+
+    {{-- Gradient overlay — same fade as the Repairs & Call-Outs hero --}}
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+
+    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
+            <div style="max-width: 820px;">
+
+                <p class="eq-hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Guidance</p>
+
+                <h1 class="eq-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                    Commercial laundry equipment<br class="hidden lg:block"> <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
+
+                <p class="eq-hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-2xl text-pretty">
                     Irish Laundry Systems supports commercial laundry sites with equipment selection, quotation, supply, installation, rental advice and aftercare, including Electrolux Professional laundry equipment options.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+
+                <div class="eq-hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="#equipment-quote"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Equipment Quote
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
+                       class="inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Ask About Purchase or Rental
                     </a>
                 </div>
+
+                {{-- Trust indicators --}}
+                <div class="eq-hero-btns flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
+                    <span class="whitespace-nowrap">Engineering-led since 1987</span>
+                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap">Electrolux Professional Partner</span>
+                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap">Supply, installation &amp; aftercare</span>
+                </div>
+
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- 2. THIN ELECTROLUX TRUST STRIP -->

@@ -4,6 +4,7 @@
     'careBody'        => 'Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
     'hospitalityBody' => 'Engineering care for guest-facing sites where linen availability, finishing quality, turnaround and response time affect the wider business.',
     'commercialBody'  => 'Care for higher-throughput laundry sites where output, lifecycle cost and engineering response carry more operational weight.',
+    'commercialImg'   => '/images/healthcare/line-6000-solutions.jpg',
 ])
 {{--
     Sector Grid — 2×2 image-card grid
@@ -89,7 +90,7 @@
             <!-- Commercial & Industrial -->
             <a href="{{ route('sectors.commercial') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
+                <img src="{{ $commercialImg }}" alt="Commercial and industrial laundry support"
                      class="absolute inset-0 w-full h-full object-cover scale-150 transition-transform duration-700 group-hover:scale-[1.55]"
                      style="object-position: center 75%;">
                 <div class="absolute inset-0"
