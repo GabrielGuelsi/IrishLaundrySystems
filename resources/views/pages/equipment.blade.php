@@ -24,7 +24,8 @@
 
     <img src="/images/hero/HOMEHERO2.jpg" alt="Irish Laundry Systems engineering team on site"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+         class="absolute inset-0 w-full h-full object-cover scale-125"
+         style="object-position: center 72%;">
 
     {{-- Gradient overlay — same fade as the Repairs & Call-Outs hero --}}
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>

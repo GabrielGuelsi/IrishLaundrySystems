@@ -27,7 +27,8 @@
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
     <img src="/images/hero/HOMEHERO2.jpg"
          alt="Irish Laundry Systems engineering team on site"
-         class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
+         style="object-position: center 72%;"
+         class="absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 1 ? 'opacity-100' : 'opacity-0'">
 
     <!-- Gradient overlay — tight, clears by 70% -->
