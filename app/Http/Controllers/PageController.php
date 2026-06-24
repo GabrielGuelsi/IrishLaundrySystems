@@ -159,6 +159,12 @@ class PageController extends Controller
             ]);
         }
 
+        if ($category === 'one-connected') {
+            return view('pages.one-connected', [
+                'title' => 'OnE Connected Ireland | Electrolux Professional Connected Laundry Intelligence',
+            ]);
+        }
+
         if (! array_key_exists($category, config('equipment'))) {
             abort(404);
         }

@@ -696,7 +696,7 @@
                 <h4 class="font-heading font-bold text-white text-base mb-4">Download</h4>
                 <ul class="space-y-4">
                     @foreach([
-                        ['label' => 'Line 6000 Hot Cylinder Ironers',          'file' => ''],
+                        ['label' => 'Line 6000 Hot Cylinder Ironers',          'file' => 'EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
                         ['label' => 'Line 6000 FFS Vibe Ironers',              'file' => ''],
                         ['label' => 'Finishing Equipment resources, where available', 'file' => ''],
                     ] as $pdf)
