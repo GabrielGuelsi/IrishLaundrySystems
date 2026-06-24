@@ -796,6 +796,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
                 ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Electrolux cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'],
                     ['l' => 'Lagoon Advanced Care resources', 'h' => route('resources')],
                     ['l' => 'Lagoon process video', 'h' => route('resources')],
                 ]],

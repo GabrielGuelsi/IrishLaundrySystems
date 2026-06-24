@@ -87,7 +87,7 @@
             ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
             ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
-            ['icon'=>'10', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
+            ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
             ['icon'=>'11', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
         ]])
     </div>
