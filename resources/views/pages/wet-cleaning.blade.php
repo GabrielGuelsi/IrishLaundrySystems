@@ -742,8 +742,8 @@
                     'text'  => 'For businesses considering lower upfront cost where rental is suitable for the selected equipment and site needs.',
                     'cta'   => 'Ask About Equipment Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'   => 'center center',
+                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'   => '66% center',
                 ],
                 [
                     'title' => 'Preventive Maintenance',
