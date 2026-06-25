@@ -251,11 +251,11 @@
                 ['icon' => '89', 'title' => 'Integrated Savings',             'copy' => 'Real-time load visibility to avoid underloading and overloading.', 'badge' => 'Integrated Savings'],
                 ['icon' => 'dosing-control', 'title' => 'Intelligent / Efficient Dosing', 'copy' => 'Detergent control linked to load weight and cycle needs.', 'badge' => 'Efficient Dosing'],
                 ['icon' => '31', 'title' => 'Power Balance',                  'copy' => 'Real-time extraction control for stronger dewatering and lower moisture retention before drying.', 'badge' => 'Power Balance'],
-                ['icon' => '4',  'title' => 'ClarusVibe and CompassPro',       'copy' => 'Clearer programme selection, editable programmes and easier operator control.', 'badge' => 'CompassPro'],
+                ['icon' => '4',  'title' => 'ClarusVibe and CompassPro',       'copy' => 'Clearer programme selection, editable programmes and easier operator control.', 'badge' => 'CompassPro', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-28 object-cover'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
