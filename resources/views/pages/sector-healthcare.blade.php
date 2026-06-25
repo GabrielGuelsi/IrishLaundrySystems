@@ -18,10 +18,10 @@
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="block">Keep healthcare laundry moving with <span style="color:#148af4;">hygiene control and lower running costs</span></span>
+                    <span class="block">Keep healthcare laundry moving<br class="hidden lg:block"> with <span style="color:#148af4;">hygiene control and<br class="hidden lg:block">lower running costs</span></span>
                 </h1>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies and supports Electrolux Professional healthcare laundry equipment, with rental, maintenance, repairs and aftercare to keep clean textiles available and running costs easier to control.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-4xl">
+                    Irish Laundry Systems supplies and supports Electrolux Professional healthcare laundry equipment,<br class="hidden lg:block"> with rental, maintenance, repairs and aftercare to keep<br class="hidden lg:block"> clean textiles available and running costs easier to control.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#healthcare-assessment"
@@ -192,7 +192,7 @@
             ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations support water recycling and lower water consumption.'],
             ['icon'=>'9',  'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
             ['icon'=>'dosing-control', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2', 'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
-            ['icon'=>'11', 'prefix'=>'',      'stat'=>'Service<br>planning', 'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2', 'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
+            ['icon'=>'88', 'prefix'=>'',      'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
     </div>
 </section>
@@ -240,7 +240,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/4.png" alt="" class="w-[100px] h-[100px] object-contain">
+                    <img src="/images/icons/clarusvibe.jpeg" alt="ClarusVibe" class="w-full h-24 object-cover rounded-lg">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Programme control</h3>
@@ -314,8 +314,8 @@
                     'text'   => 'For replacement, capacity or continuity needs without one large purchase upfront.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
-                    'img'    => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'    => 'center center',
+                    'img'    => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'    => '66% center',
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
@@ -361,12 +361,12 @@
 </section>
 
 @include('components.cta-combined-banner', [
-    'eyebrow'    => 'Planning &amp; Support',
+    'eyebrow'    => 'Planning & Support',
     'heading'    => 'Plan <span style="color:#011E41;">the healthcare laundry room</span> before money is spent',
     'body'       => 'A room review can check layout, utilities, hygiene handling and equipment needs before purchase, rental or replacement.',
     'miniPoints' => [
-        ['icon' => 'home-planning-spend',  'label' => 'Room fit'],
-        ['icon' => 'home-planning-fit',    'label' => 'Cost control'],
+        ['icon' => 'home-planning-fit',    'label' => 'Room fit'],
+        ['icon' => 'home-planning-spend',  'label' => 'Cost control'],
         ['icon' => 'home-planning-rework', 'label' => 'Less rework'],
     ],
     'ctaText'    => 'Talk to Our Team',
@@ -415,13 +415,13 @@
                         </li>
                         @endforeach
                     </ul>
-                    <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-start gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
                             View Barrier Washer Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-start gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Healthcare Equipment Advice
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
+                            Request Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
@@ -762,7 +762,7 @@
                 <span>Control <span style="color:#148af4;">detergent use and wash consistency</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                Automatic dosing uses the right amount of detergent for each cycle, reducing chemical waste while protecting textile quality and wash results.
+                Automatic dosing uses the right amount of detergent for each cycle,<br class="hidden lg:block"> reducing chemical waste while protecting textile quality and wash results.
             </p>
         </div>
 
@@ -826,9 +826,9 @@
                 >
                     <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
 
-                        {{-- Left: context photo --}}
+                        {{-- Left: context photo — one at a time, alternates per slide (detergentdoser first) --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="{{ $i % 2 === 0 ? '/images/healthcare/detergentdoser.png' : '/images/healthcare/Laundry-Double-Banner-965x965-1.webp' }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -922,11 +922,11 @@
     'eyebrow' => 'Equipment Rental',
     'headingLine1' => '<span style="color:#148af4;">Keep healthcare laundry moving</span> without one',
     'headingLine2' => 'large purchase upfront',
-    'body' => 'Rental gives healthcare sites access to Electrolux Professional laundry equipment with installation and support included under the agreement.',
+    'body' => 'Rental gives healthcare sites access to Electrolux Professional laundry equipment<br class="hidden lg:block"> with installation and support included under the agreement.',
     'miniPoints' => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Clearer<br>budgeting'],
+        ['icon' => '145', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => '146', 'label' => 'Included<br>support'],
+        ['icon' => '147', 'label' => 'Clearer<br>budgeting'],
     ],
 ])
 
@@ -968,8 +968,8 @@
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
-                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
-                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                    <img src="/images/icons/{{ [126, 125, 127, 128][$i] }}.png" alt=""
+                         style="width:{{ $i === 1 ? '8rem' : '7rem' }};height:{{ $i === 1 ? '8rem' : '7rem' }};filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{!! $step['title'] !!}</h3>
                 <p class="font-body text-gray-500 text-base leading-relaxed">{!! $step['text'] !!}</p>
@@ -988,9 +988,9 @@
     'body'         => 'Planned maintenance and aftercare protect equipment value, support hygiene routines and keep vital laundry equipment running.',
     'image'        => '/images/healthcare/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>planning'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Hygiene<br>support'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Equipment<br>care'],
+        ['icon' => '149', 'label' => 'Service<br>planning'],
+        ['icon' => '151', 'label' => 'Hygiene<br>support'],
+        ['icon' => '151', 'label' => 'Equipment<br>care'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

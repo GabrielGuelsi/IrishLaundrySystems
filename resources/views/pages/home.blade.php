@@ -124,7 +124,7 @@
 <!-- 3.5 PLANNING STRIP — Designed around your site, workflow and capacity -->
 <div style="background-color:#148af4; margin-top:-1px; margin-bottom:-1px;">
     @include('components.cta-combined-banner', [
-        'eyebrow'  => 'Planning &amp; Support',
+        'eyebrow'  => 'Planning & Support',
         'heading'  => 'Designed around your room, <span style="color:#011E41;">workload and budget</span> before money is&nbsp;spent',
         'body'     => 'Poor equipment fit, weak layout and undersized capacity can create avoidable spend after installation. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the room, workload and support needs before money is spent, so the site can make a better decision from the start.',
         'features' => [
