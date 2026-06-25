@@ -106,16 +106,22 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach([
-                ['1987',       'since 1987', 'Irish engineering since 1987',    'Commercial laundry support built on electrical contracting roots and long-term equipment experience.'],
-                ['100+',       'clients',    'Clients supported',               'Commercial laundry customers supported across Dublin and Ireland.'],
-                ['1,000+',     'installed',  'Machines installed',              'Professional laundry machines installed for commercial sites across Ireland.'],
-                ['Authorised', 'partner',    'Electrolux Professional Partner', 'Official partner status for Electrolux Professional commercial laundry equipment.'],
-            ] as [$num, $sub, $title, $desc])
+                ['1987',       'since 1987', 'Irish engineering since 1987',    'Commercial laundry support built on electrical contracting roots and long-term equipment experience.', null],
+                ['100+',       'clients',    'Clients supported',               'Commercial laundry customers supported across Dublin and Ireland.', null],
+                ['1,000+',     'installed',  'Machines installed',              'Professional laundry machines installed for commercial sites across Ireland.', null],
+                ['Authorised', 'partner',    'Electrolux Professional Partner', 'Official partner status for Electrolux Professional commercial laundry equipment.', 'images/logo/electrolux-partner.png'],
+            ] as [$num, $sub, $title, $desc, $logo])
             <div class="border-b border-gray-300 pb-5 reveal">
+                @if($logo)
+                <div class="flex items-end mb-3" style="min-height:3.75rem;">
+                    <img src="{{ asset($logo) }}" alt="{{ $title }}" class="h-14 lg:h-16 w-auto object-contain" loading="lazy" decoding="async">
+                </div>
+                @else
                 <div class="flex items-end gap-3 mb-3">
                     <div class="font-heading font-bold text-navy text-4xl sm:text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $num }}</div>
                     <p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $sub }}</p>
                 </div>
+                @endif
                 <p class="font-body font-bold text-navy text-sm mb-1">{{ $title }}</p>
                 <p class="font-body text-gray-500 text-xs leading-relaxed">{{ $desc }}</p>
             </div>
@@ -223,103 +229,6 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     7. SUPPORT OVERVIEW — hub + five pillars
-══════════════════════════════════════════ -->
-<style>
-.support-hub-wrap { position: relative; width: 100%; max-width: 640px; margin: 0 auto; aspect-ratio: 1 / 1; }
-.support-hub-line { stroke: #148af4; stroke-width: 0.5; opacity: 0.35; }
-.support-centre {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    width: 13.5rem; z-index: 3;
-}
-.support-pillar {
-    position: absolute; transform: translate(-50%, -50%); z-index: 2;
-    white-space: nowrap;
-}
-</style>
-
-<section class="bg-white py-20 lg:py-28">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="max-w-3xl mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Overview</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                One clear support system around<br class="hidden lg:block"> <span class="text-[#148af4]">the equipment your site depends&nbsp;on</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Irish Laundry Systems supports commercial laundry sites through equipment supply, setup, rental, repairs, maintenance and aftercare.
-            </p>
-        </div>
-
-        {{-- Radial hub (lg and up) --}}
-        <div class="hidden lg:block reveal">
-            <div class="support-hub-wrap">
-                {{-- Connector lines --}}
-                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="absolute inset-0 w-full h-full" style="z-index:1;" aria-hidden="true">
-                    <line class="support-hub-line" x1="50" y1="50" x2="50"   y2="10"/>
-                    <line class="support-hub-line" x1="50" y1="50" x2="88"   y2="37.6"/>
-                    <line class="support-hub-line" x1="50" y1="50" x2="73.5" y2="82.4"/>
-                    <line class="support-hub-line" x1="50" y1="50" x2="26.5" y2="82.4"/>
-                    <line class="support-hub-line" x1="50" y1="50" x2="12"   y2="37.6"/>
-                </svg>
-
-                {{-- Centre --}}
-                <div class="support-centre">
-                    <div class="bg-navy rounded-2xl px-6 py-6 text-center shadow-xl ring-1 ring-white/10">
-                        <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-2">Irish Laundry Systems</p>
-                        <p class="font-body text-white/70 text-xs leading-relaxed">Equipment, service and aftercare around the same laundry operation</p>
-                    </div>
-                </div>
-
-                {{-- Five pillar labels --}}
-                @foreach([
-                    ['label' => 'Equipment Supply',      'top' => '10%',   'left' => '50%'],
-                    ['label' => 'Installation & Setup',  'top' => '37.6%', 'left' => '88%'],
-                    ['label' => 'Equipment Rental',      'top' => '82.4%', 'left' => '73.5%'],
-                    ['label' => 'Repairs & Call-Outs',   'top' => '82.4%', 'left' => '26.5%'],
-                    ['label' => 'Maintenance & Aftercare','top' => '37.6%','left' => '12%'],
-                ] as $pillar)
-                <div class="support-pillar" style="top:{{ $pillar['top'] }}; left:{{ $pillar['left'] }};">
-                    <span class="inline-block bg-white border border-gray-200 shadow-md rounded-full px-5 py-3 font-heading font-bold text-navy text-sm">{{ $pillar['label'] }}</span>
-                </div>
-                @endforeach
-            </div>
-        </div>
-
-        {{-- Stacked (below lg) --}}
-        <div class="lg:hidden">
-            <div class="bg-navy rounded-2xl px-6 py-6 text-center shadow-xl mb-6">
-                <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-2">Irish Laundry Systems</p>
-                <p class="font-body text-white/70 text-sm leading-relaxed">Equipment, service and aftercare around the same laundry operation</p>
-            </div>
-            <div class="flex flex-wrap justify-center gap-3">
-                @foreach(['Equipment Supply', 'Installation & Setup', 'Equipment Rental', 'Repairs & Call-Outs', 'Maintenance & Aftercare'] as $pillar)
-                <span class="inline-block bg-white border border-gray-200 shadow-sm rounded-full px-5 py-3 font-heading font-bold text-navy text-sm">{{ $pillar }}</span>
-                @endforeach
-            </div>
-        </div>
-
-        {{-- Proof chips --}}
-        <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-3 mt-12 lg:mt-16">
-            @foreach(['Electrolux Professional equipment', 'Irish engineering expertise', 'Service history', 'Parts support'] as $chip)
-            <span class="font-body text-sm font-medium text-navy/70 bg-bg border border-gray-200 rounded-full px-5 py-2">{{ $chip }}</span>
-            @endforeach
-        </div>
-
-        <div class="flex justify-center mt-10">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors">
-                Talk to Our Team
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </a>
-        </div>
-
-    </div>
-</section>
-
-<!-- ══════════════════════════════════════════
      8. HOW WE WORK — 4 steps
 ══════════════════════════════════════════ -->
 <section>
@@ -341,8 +250,8 @@
     {{-- Full-width image strip — no container, no padding, edge to edge --}}
     @php
     $siteSteps = [
-        ['num'=>'1','title'=>'Review the operation',        'desc'=>'Review the equipment, access, utilities, usage, service history and priorities.',                       'img'=>'images/hero/hero-technician-inspection.png'],
-        ['num'=>'2','title'=>'Recommend the right support', 'desc'=>'Confirm whether equipment supply, rental, repair, Preventive Maintenance or aftercare is needed.',       'img'=>'images/healthcare/plant-room.jpg'],
+        ['num'=>'1','title'=>'Review the operation',        'desc'=>'Review the equipment, access, utilities, usage, service history and priorities.',                       'img'=>'images/about/Review%20the%20operation.png'],
+        ['num'=>'2','title'=>'Recommend the right support', 'desc'=>'Confirm whether equipment supply, rental, repair, Preventive Maintenance or aftercare is needed.',       'img'=>'images/about/keepsupportclear.png'],
         ['num'=>'3','title'=>'Plan the work',               'desc'=>'Coordinate delivery, installation, servicing, reports and follow-up around the equipment in use.',       'img'=>'images/healthcare/line-6000-solutions.jpg'],
         ['num'=>'4','title'=>'Keep support clear',          'desc'=>'Use service records, parts support and aftercare to guide future service or replacement needs.',        'img'=>'images/healthcare/repairs-hero.jpg'],
     ];
@@ -450,36 +359,39 @@
 <!-- ══════════════════════════════════════════
      10. RESPONSIBLE EQUIPMENT — compact strip
 ══════════════════════════════════════════ -->
-<section class="bg-[#f7f8fa] py-16 lg:py-20 border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-[auto,1fr] gap-10 lg:gap-16 items-center">
-
-            {{-- EcoVadis medal — reduced --}}
-            <div class="flex justify-center lg:justify-start">
-                <img src="{{ asset('images/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
-                     alt="EcoVadis Sustainability Gold 2025"
-                     class="w-36 lg:w-44 h-auto object-contain" loading="lazy" decoding="async">
+<section class="relative overflow-hidden" style="min-height:540px;">
+    {{-- Background image --}}
+    <img src="{{ asset('images/about/ecovadisbackground.webp') }}"
+         alt="Responsible equipment and sustainability"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    {{-- Dark overlay --}}
+    <div class="absolute inset-0" style="background:rgba(1,30,65,0.45);"></div>
+    {{-- Two-column: logo left, card right --}}
+    <div class="relative z-10 flex items-center px-6 lg:px-20 py-20 gap-10 lg:gap-16" style="min-height:580px;">
+        {{-- Left: EcoVadis medal, huge, outside the card --}}
+        <div class="hidden lg:flex flex-1 items-center justify-center">
+            <img src="{{ asset('images/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
+                 alt="EcoVadis Sustainability Gold 2025"
+                 class="w-[480px] xl:w-[560px] h-auto object-contain drop-shadow-2xl">
+        </div>
+        {{-- Right: dark card --}}
+        <div class="rounded-2xl px-6 sm:px-10 lg:px-14 py-12 lg:py-14 w-full lg:max-w-xl text-center reveal"
+             style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                Efficient equipment choices with <span class="text-[#148af4]">lower consumption in&nbsp;mind</span>
+            </h2>
+            <p class="font-body text-white/70 text-base leading-relaxed mb-6">
+                Electrolux Professional laundry technologies can reduce energy, water and detergent use when matched to the right equipment and site. Irish Laundry Systems includes those technologies in equipment advice, installation planning and aftercare.
+            </p>
+            <div class="flex flex-wrap justify-center gap-2.5 mb-6">
+                @foreach(['Energy use', 'Water control', 'Detergent control', 'Electrolux Professional Group credentials'] as $chip)
+                <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
+                @endforeach
             </div>
-
-            {{-- Content --}}
-            <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-4xl leading-tight text-balance mb-3">
-                    Efficient equipment choices with <span class="text-[#148af4]">lower consumption in&nbsp;mind</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-5 max-w-3xl text-pretty">
-                    Electrolux Professional laundry technologies can reduce energy, water and detergent use when matched to the right equipment and site. Irish Laundry Systems includes those technologies in equipment advice, installation planning and aftercare.
-                </p>
-                <div class="flex flex-wrap gap-2.5 mb-4">
-                    @foreach(['Energy use', 'Water control', 'Detergent control', 'Electrolux Professional Group credentials'] as $chip)
-                    <span class="font-body text-sm font-medium text-navy/70 bg-white border border-gray-200 rounded-full px-5 py-2">{{ $chip }}</span>
-                    @endforeach
-                </div>
-                <p class="font-body text-gray-400 text-xs leading-relaxed border-l-2 border-[#148af4]/40 pl-4">
-                    Awards, ratings and sustainability credentials shown in this section relate to Electrolux Professional Group.
-                </p>
-            </div>
-
+            <p class="font-body text-white/50 text-sm leading-relaxed border-l-2 border-[#148af4]/40 pl-4 text-left">
+                Awards, ratings and sustainability credentials shown in this section relate to Electrolux Professional Group.
+            </p>
         </div>
     </div>
 </section>

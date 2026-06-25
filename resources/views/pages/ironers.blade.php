@@ -549,8 +549,8 @@
                     'text'  => 'Lower upfront cost where suitable, with selected ironer equipment installed and supported under rental terms.',
                     'cta'   => 'Explore Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'   => 'center center',
+                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'   => '66% center',
                 ],
                 [
                     'title' => 'Preventive Maintenance',

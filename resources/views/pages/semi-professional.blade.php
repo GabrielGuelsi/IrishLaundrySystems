@@ -507,8 +507,8 @@
                     'text'  => 'For selected equipment where lower upfront cost and included support make sense.',
                     'cta'   => 'See Equipment Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'   => 'center center',
+                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'   => '66% center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
