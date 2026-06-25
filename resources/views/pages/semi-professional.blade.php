@@ -92,7 +92,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
                 ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated business laundry demand.', 'img' => '/images/equipment/Domestic%20machines.png'],
-                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For smaller sites that need a stronger step up from domestic equipment.', 'img' => '/images/equipment/myPRO-8K-washer.webp'],
+                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For smaller sites that need a stronger step up from domestic equipment.', 'img' => '/images/equipment/mypro-hp-front.jpg'],
                 ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For busier small-business laundry with 12 kg capacity and heavier daily use.', 'img' => '/images/equipment/myPROXL%2012kg.webp'],
                 ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For larger capacity, intensive use and full commercial laundry performance.', 'img' => '/images/equipment/commercialwasher.webp'],
             ] as $lvl)
@@ -180,7 +180,7 @@
                 'topLine'   => 'For smaller sites stepping up from domestic machines',
                 'copy'      => 'A stronger washer, dryer and light finishing setup for small businesses with regular laundry demand.',
                 'badges'    => ['8 kg washer options', '7,500 cycles', '3x longer', 'Up to 50% faster'],
-                'img'       => '/images/equipment/myPRO-8K-washer.webp',
+                'img'       => '/images/equipment/mypro-hp-front.jpg',
                 'route'     => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']),
                 'featured'  => false,
             ],
@@ -234,6 +234,47 @@
                         <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                     </a>
                 </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- 6b. EQUIPMENT RANGE (myPRO ironing & finishing) --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Range</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                myPRO ironing and <span style="color:#148af4;">finishing equipment</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Practical ironing and finishing equipment to complete the myPRO setup alongside washing and drying.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
+            @foreach([
+                ['name' => 'IS1103', 'topLine' => 'myPRO ironing system', 'copy' => 'A myPRO ironing system for practical garment and flatwork finishing alongside washing and drying.', 'badges' => ['myPRO setup', 'Practical finishing', 'Compact format', 'Small business'], 'img' => '/images/equipment/IS1103.jpg'],
+                ['name' => 'myPRO Ironer IS185', 'topLine' => 'myPRO rotary iron', 'copy' => 'A myPRO rotary iron for faster, more consistent finishing than hand ironing alone.', 'badges' => ['Rotary ironing', 'Faster finishing', 'Compact format', 'myPRO setup'], 'img' => '/images/equipment/myPRO%20-%20IronersIS185.jpg'],
+            ] as $card)
+            <div class="flex flex-col rounded-2xl p-6 bg-white border border-gray-200">
+                <div class="flex items-center justify-center h-60 lg:h-72 mb-5">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
+                </div>
+                <p class="font-body text-xs font-bold text-navy/60 mb-1.5">{{ $card['topLine'] }}</p>
+                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['name'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $card['copy'] }}</p>
+                <div class="flex flex-wrap gap-1.5 mb-5">
+                    @foreach($card['badges'] as $b)
+                    <span class="font-body text-[10px] font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-2 py-1 rounded">{{ $b }}</span>
+                    @endforeach
+                </div>
+                <a href="{{ route('contact') }}" class="mt-auto inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-3 rounded-lg text-sm transition-colors">
+                    Request Advice
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
             </div>
             @endforeach
         </div>
@@ -543,6 +584,49 @@
                 </div>
             </a>
             @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- 10b. myPRO ONLINE ASSISTANT (tutorial videos + online help) --}}
+<section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="text-center max-w-3xl mx-auto mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Online Assistant</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                Get the best out of your <span style="color:#148af4;">myPRO and myPROzip</span> washer, dryer and ironer
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Video tutorials, frequently asked questions and online help. Register your products and find accessories and consumables to get the best out of your washer, dryer and ironer, or get in touch with an expert if you need additional support.
+            </p>
+        </div>
+
+        <p class="font-heading font-bold text-navy text-xl text-center mb-6">myPRO: tutorial videos</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 max-w-5xl mx-auto mb-8 reveal">
+            @foreach([
+                ['title' => 'myPROzip Washer: User Instructions',                       'url' => 'https://www.youtube.com/watch?v=IHJiqGrhOm8'],
+                ['title' => 'myPROzip Dryer: User Instructions',                        'url' => 'https://www.youtube.com/watch?v=liScSk-1b1c'],
+                ['title' => 'myPROzip: Instructions on Set Up for Washer and Dryer',    'url' => 'https://www.youtube.com/watch?v=OX3JTInT8A4'],
+            ] as $vid)
+            <a href="{{ $vid['url'] }}" target="_blank" rel="noopener" class="group flex flex-col bg-white rounded-2xl overflow-hidden border border-gray-100 hover:border-[#148af4] transition-colors">
+                <div class="flex items-center justify-center h-32 bg-gray-100">
+                    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-navy text-white group-hover:bg-[#148af4] transition-colors">
+                        <svg class="w-6 h-6 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                </div>
+                <p class="font-body font-bold text-navy text-sm leading-snug p-5">{{ $vid['title'] }}</p>
+            </a>
+            @endforeach
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-3xl mx-auto">
+            <a href="https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/mypro-washers-dryers-steam-ironers/faq-mypro-washer/" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold px-6 py-4 rounded-lg text-base transition-colors tracking-wide">
+                Online help Washer
+            </a>
+            <a href="https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/mypro-washers-dryers-steam-ironers/online-help-dryer/" target="_blank" rel="noopener" class="flex-1 inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold px-6 py-4 rounded-lg text-base transition-colors tracking-wide">
+                Online help Dryer
+            </a>
         </div>
     </div>
 </section>

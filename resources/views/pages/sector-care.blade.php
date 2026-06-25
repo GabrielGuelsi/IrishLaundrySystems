@@ -298,11 +298,11 @@
 <!-- 8. PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
-    'heading'    => 'Plan the care facility laundry room before money is spent',
-    'body'       => 'A room review can check layout, utilities, laundry routines and equipment needs before purchase, rental or replacement.',
+    'heading'    => '<span class="lg:whitespace-nowrap">Plan the care facility laundry room<br>before money is spent.</span>',
+    'body'       => 'A room review can check layout, utilities, laundry routines and equipment needs.',
     'miniPoints' => [
-        ['icon' => 'home-planning-spend',  'label' => 'Room<br>fit'],
-        ['icon' => 'home-planning-fit',    'label' => 'Cost<br>control'],
+        ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
+        ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
         ['icon' => 'home-planning-rework', 'label' => 'Less<br>rework'],
     ],
     'ctaText'    => 'Talk to Our Team',
@@ -345,13 +345,13 @@
                         </li>
                         @endforeach
                     </ul>
-                    <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
                             View Washing Machine Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
-                            Request Care Facility Equipment Advice
+                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
+                            Request Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
