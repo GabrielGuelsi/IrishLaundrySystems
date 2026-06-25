@@ -15,10 +15,12 @@
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
-            <div class="flex-1 reveal reveal-left max-w-3xl">
+            <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Step up from domestic machines with <span style="color:#148af4;">myPRO XL and myPRO</span> laundry equipment
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] xl:text-5xl leading-tight mb-6">
+                    <span class="block lg:whitespace-nowrap">Step up from domestic machines</span>
+                    <span class="block lg:whitespace-nowrap">with <span style="color:#148af4;">myPRO and myPRO XL</span></span>
+                    <span class="block lg:whitespace-nowrap">laundry equipment</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     For small businesses where domestic washers and dryers are too slow, too small or wearing out too often. Irish Laundry Systems supplies and supports Electrolux Professional myPRO XL, myPRO and myPROzip equipment across Dublin and Ireland.
