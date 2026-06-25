@@ -100,6 +100,7 @@
                         <a href="{{ route('equipment.category', 'wet-cleaning') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Wet Cleaning</a>
                         <a href="{{ route('equipment.category', 'semi-professional') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Semi-Professional / myPRO</a>
                         <a href="{{ route('equipment.category', 'accessories') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Accessories &amp; Consumables</a>
+                        <a href="{{ route('equipment.category', 'one-connected') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">OnE Connected</a>
                     </div></div>
                 </div>
 
@@ -215,6 +216,7 @@
                     <a href="{{ route('equipment.category', 'wet-cleaning') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Wet Cleaning</a>
                     <a href="{{ route('equipment.category', 'semi-professional') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Semi-Professional / myPRO</a>
                     <a href="{{ route('equipment.category', 'accessories') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Accessories &amp; Consumables</a>
+                    <a href="{{ route('equipment.category', 'one-connected') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">OnE Connected</a>
                 </div>
             </div>
 

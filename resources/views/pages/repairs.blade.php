@@ -363,17 +363,17 @@ $expectSteps = [
 
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 mb-8">
                     <div>
-                        <img src="/images/icons/repairs-dublin-network.png" alt="" aria-hidden="true" class="w-10 h-10 mb-3 object-contain">
+                        <img src="/images/icons/repairs-dublin-network.png" alt="" aria-hidden="true" class="w-14 h-14 mb-3 object-contain">
                         <h3 class="font-heading font-bold text-navy text-base mb-1">4 locations around Dublin</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">Access to Laundry Online locations for temporary laundry support.</p>
                     </div>
                     <div>
-                        <img src="/images/icons/repairs-dropoff.png" alt="" aria-hidden="true" class="w-10 h-10 mb-3 object-contain">
+                        <img src="/images/icons/repairs-dropoff.png" alt="" aria-hidden="true" class="w-14 h-14 mb-3 object-contain">
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Drop-off / walk-in option</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">A short-term option while repair or follow-up work is being planned.</p>
                     </div>
                     <div>
-                        <img src="/images/icons/repairs-short-term.png" alt="" aria-hidden="true" class="w-10 h-10 mb-3 object-contain">
+                        <img src="/images/icons/repairs-short-term.png" alt="" aria-hidden="true" class="w-14 h-14 mb-3 object-contain">
                         <h3 class="font-heading font-bold text-navy text-base mb-1">Short-term support</h3>
                         <p class="font-body text-gray-600 text-sm leading-relaxed">Useful when equipment is out of service and the site needs a temporary laundry option.</p>
                     </div>
@@ -470,7 +470,7 @@ $expectSteps = [
             <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-8 pt-6 border-t border-white/10 font-body text-white/70 text-xs">
                 <span class="whitespace-nowrap">Repeat fault patterns</span>
                 <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
-                <span class="whitespace-nowrap">Fewer surprise costs</span>
+                <span class="whitespace-nowrap">Better cost control</span>
                 <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
                 <span class="whitespace-nowrap">Protect equipment value</span>
                 <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>

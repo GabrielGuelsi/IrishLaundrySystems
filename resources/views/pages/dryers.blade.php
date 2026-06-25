@@ -165,9 +165,9 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'34', 'prefix'=>'',     'stat'=>'35 min',              'size'=>'text-4xl', 'label'=>'drying cycles',           'body'=>'Heat Pump Dryer performance can support faster drying in busy laundry rooms where daily demand is high.'],
+            ['icon'=>'72', 'prefix'=>'',     'stat'=>'35 min',              'size'=>'text-4xl', 'label'=>'drying cycles',           'body'=>'Heat Pump Dryer performance can support faster drying in busy laundry rooms where daily demand is high.'],
             ['icon'=>'26', 'prefix'=>'',     'stat'=>'-33%',                'size'=>'text-4xl', 'label'=>'CO₂ per cycle',           'body'=>'Heat Pump Dryer technology can reduce greenhouse gas emissions per cycle where the equipment and setup are suitable.'],
-            ['icon'=>'96', 'prefix'=>'',     'stat'=>'No<br>exhaust',       'size'=>'text-2xl', 'label'=>'or water cooling',        'body'=>'Selected Heat Pump Dryer options can reduce installation work where the room and ventilation setup allow.'],
+            ['icon'=>'79', 'prefix'=>'',     'stat'=>'No<br>exhaust',       'size'=>'text-2xl', 'label'=>'or water cooling',        'body'=>'Selected Heat Pump Dryer options can reduce installation work where the room and ventilation setup allow.'],
             ['icon'=>'21', 'prefix'=>'',     'stat'=>'Dry not<br>overdry',  'size'=>'text-2xl', 'label'=>'Moisture Balance',        'body'=>'Moisture Balance protects textile value and reduces wasted energy by stopping at the selected dryness level.'],
             ['icon'=>'30', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost','size'=>'text-2xl','label'=>'rental where suitable',   'body'=>'Rental can support replacement, expansion or capacity planning without one large upfront purchase.'],
         ]])
@@ -175,13 +175,13 @@
 </section>
 
 {{-- 6b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:340px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/healthcare/line-6000-solutions.jpg" alt="Connected commercial laundry equipment"
+<section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
              class="w-full h-full object-cover" style="object-position: center center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Put dryer performance and consumption data <span style="color:#148af4;">in one connected view</span>
@@ -265,7 +265,7 @@
         <div class="grid grid-cols-1 gap-6 lg:gap-8 items-start reveal dh-grid">
 
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
-            <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-6 lg:pt-6">
                 <div class="flex flex-col sm:flex-row gap-5 items-start">
                     <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
                     <div>
@@ -281,8 +281,8 @@
             </div>
 
             {{-- COL 2: dryer image (the big equipment image) --}}
-            <div class="flex items-center justify-center py-2">
-                <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-2.PNG" alt="Line 6000 Tumble Dryer" class="w-auto h-auto max-h-[560px] object-contain">
+            <div class="flex items-center justify-center py-2 lg:pt-6">
+                <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-2.PNG" alt="Line 6000 Tumble Dryer" class="w-auto h-auto max-h-[420px] object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
@@ -312,7 +312,7 @@
             </div>
 
             {{-- COL 4: filter drawer --}}
-            <div class="flex flex-col gap-5">
+            <div class="flex flex-col gap-5 lg:pt-6">
                 <div class="rounded-2xl overflow-hidden bg-[#eef3f9]">
                     <img src="/images/equipment/equipment2.jpg" alt="Line 6000 horizontal filter drawer pulled out for easy access and cleaning" class="w-full h-auto object-cover">
                 </div>
@@ -341,13 +341,13 @@
 </section>
 
 {{-- 9. PLANNING / INSTALLATION STRIP (before the selection journey) --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan drying around <span style="color:#011E41;">room fit, energy use and daily demand</span>
@@ -355,16 +355,10 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             A dryer should fit the room, utilities and workload before money is spent. Irish Laundry Systems can review capacity, ventilation, access and installation needs before the final equipment choice.
         </p>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
-            @foreach([
-                ['t' => 'Room fit',      'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
-                ['t' => 'Energy use',    'd' => 'M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'],
-                ['t' => 'Daily demand',  'd' => 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
-            ] as $pt)
-            <span class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
-                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
-            </span>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Room fit', 'Energy use', 'Daily demand'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -704,13 +698,13 @@
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 reveal max-w-3xl">
+        <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control detergent waste before laundry reaches <span style="color:#148af4;">the drying stage</span>
+                Control detergent waste before<br class="hidden lg:block"> laundry reaches <span style="color:#148af4;">the drying stage</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                Better drying starts earlier in the process. Automatic dosing supports the wash cycle with the right amount of detergent, reducing waste, protecting textile quality and supporting more consistent results before drying.
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
+                Better drying starts earlier in the process. Automatic dosing supports the wash cycle with the right amount of detergent,<br class="hidden lg:block"> reducing waste, protecting textile quality and supporting more consistent results before drying.
             </p>
         </div>
 
@@ -855,6 +849,19 @@
     </div>
 </section>
 
+{{-- 12c. RENTAL / CAPITAL STRIP (moved below dosing) --}}
+@include('components.why-choose-strip', [
+    'eyebrow'      => 'Equipment Rental',
+    'headingLine1' => 'Keep drying performance moving with',
+    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
+    'body'         => 'Rental can support dryer replacement, capacity planning or ageing equipment without one large upfront purchase.',
+    'miniPoints'   => [
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
+        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Capacity<br>planning'],
+    ],
+])
+
 {{-- 13. CONNECTED SERVICE ROUTES --}}
 <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -872,28 +879,28 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
-                    'title' => 'Equipment Rental',
-                    'text'  => 'Lower upfront cost for dryer replacement, capacity planning or expansion where rental is the right fit.',
-                    'cta'   => 'See Rental Options',
-                    'route' => route('rental'),
-                    'img'   => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'   => 'center center',
-                ],
-                [
-                    'title' => 'Preventive Maintenance',
-                    'text'  => 'Planned dryer servicing to reduce surprise repair pressure and keep maintenance needs clear.',
-                    'cta'   => 'View Maintenance Options',
-                    'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
-                    'pos'   => '90% 35%',
-                ],
-                [
                     'title' => 'Repairs &amp; Call-outs',
                     'text'  => 'Service and breakdown support when dryer faults interrupt drying capacity or daily output.',
                     'cta'   => 'Request Call-out',
                     'route' => route('repairs'),
                     'img'   => '/images/healthcare/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
+                ],
+                [
+                    'title' => 'Preventive Maintenance',
+                    'text'  => 'Planned dryer servicing to reduce unexpected repairs and keep equipment condition visible.',
+                    'cta'   => 'View Maintenance Options',
+                    'route' => route('service-contracts'),
+                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'pos'   => '90% 35%',
+                ],
+                [
+                    'title' => 'Equipment Rental',
+                    'text'  => 'Lower upfront cost for dryer replacement, capacity planning or expansion where rental is the right fit.',
+                    'cta'   => 'See Rental Options',
+                    'route' => route('rental'),
+                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'   => '66% center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
@@ -931,19 +938,6 @@
         </div>
     </div>
 </section>
-
-{{-- 14. RENTAL / CAPITAL PRESSURE STRIP --}}
-@include('components.why-choose-strip', [
-    'eyebrow'      => 'Equipment Rental',
-    'headingLine1' => 'Keep drying performance moving with',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Rental can support dryer replacement, capacity planning or ageing equipment without one large upfront purchase.',
-    'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Capacity<br>planning'],
-    ],
-])
 
 {{-- 15. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="py-12 lg:py-16" style="background-color:#148af4;">

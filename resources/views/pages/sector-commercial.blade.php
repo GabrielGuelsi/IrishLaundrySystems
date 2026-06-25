@@ -78,7 +78,7 @@
                 Built for <span style="color:#148af4;">commercial, shared-use and specialist laundry environments</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                From commercial laundries and shared-use rooms to facility management, workwear, PPE, marine and remote settings, the setup should match how the laundry room is used every day.
+                From commercial laundries and shared-use rooms to facility management, workwear, PPE, marine and remote settings,<br class="hidden sm:block"> the setup should match how the laundry room is used every day.
             </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
@@ -87,29 +87,29 @@
                     'title' => 'Facility Management and Public Sites',
                     'items' => ['Managed buildings and councils', 'Schools and public-sector institutions', 'Multi-use and shared-service environments'],
                     'icon'  => 'ativo-21',
-                    'img'   => '/images/healthcare/line-6000-solutions.jpg',
-                    'pos'   => 'center 30%',
+                    'img'   => '/images/healthcare/FacilityManagementandPublicSites.png',
+                    'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Heavy-Duty and High-Volume Commercial Laundries',
                     'items' => ['Commercial laundries', 'Industrial laundries', 'Continuous-use laundry rooms'],
                     'icon'  => 'ativo-9',
-                    'img'   => '/images/healthcare/commercial-industrial.jpg',
+                    'img'   => '/images/healthcare/Heavy-DutyandHigh-volume.png',
                     'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Self-Service, Managed Residential, Leisure and Wellness',
                     'items' => ['Laundromats and self-service sites', 'Apartment blocks and managed accommodation', 'Gyms, spas, wellness and leisure facilities'],
                     'icon'  => 'ativo-20',
-                    'img'   => '/images/healthcare/services-overview-hero.jpg',
+                    'img'   => '/images/healthcare/selfservice.png',
                     'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Workwear, Uniforms and Mixed Textiles',
                     'items' => ['Staff uniforms and workwear', 'Towels, mats and bedding', 'Mixed garments in daily operational routines'],
                     'icon'  => 'ativo-11',
-                    'img'   => '/images/healthcare/repairs-callouts.jpg',
-                    'pos'   => 'center 35%',
+                    'img'   => '/images/healthcare/workwear%2Cuniforms.png',
+                    'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Safety, PPE and Controlled Laundry Needs',
@@ -122,7 +122,7 @@
                     'title' => 'Marine, Transport and Remote Sites',
                     'items' => ['Onboard and offshore facilities', 'Transport and crew-support sites', 'Remote facilities where continuity matters'],
                     'icon'  => 'ativo-6',
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/healthcare/Marine_navy.png',
                     'pos'   => 'center center',
                 ],
             ] as $card)
@@ -168,7 +168,7 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'30', 'prefix'=>'',     'stat'=>'90%',            'size'=>'text-4xl', 'label'=>'life-cycle cost', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-90',  'body'=>'Electrolux Professional highlights that water, energy and chemicals make up most washer or dryer life-cycle cost, while upfront investment can be only 10%.'],
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',           'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2',              'body'=>'Electrolux Professional Heat Pump dryer technology can save up to 65% on energy consumption in suitable applications.'],
-            ['icon'=>'39', 'prefix'=>'',     'stat'=>'30%+',           'size'=>'text-4xl', 'label'=>'detergent costs', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-90',  'body'=>'Efficient Dosing can save over 30% on detergent costs by using the right amount of detergent at each cycle.'],
+            ['icon'=>'dosing-control', 'prefix'=>'',     'stat'=>'30%+',           'size'=>'text-4xl', 'label'=>'detergent costs', 'labelClass'=>'translate-y-2',  'body'=>'Efficient Dosing can save over 30% on detergent costs by using the right amount of detergent at each cycle.'],
             ['icon'=>'3',  'prefix'=>'Up to', 'stat'=>'-75%',           'size'=>'text-4xl', 'label'=>'staff wellbeing', 'labelClass'=>'translate-y-2','body'=>'Electrolux Professional ergonomics material cites a 75% average decrease in sick days, alongside lower Work-related Musculoskeletal Disorders and higher productivity.'],
             ['icon'=>'11', 'prefix'=>'',     'stat'=>'Service<br>planning', 'size'=>'text-2xl', 'label'=>'maintenance control', 'labelClass'=>'translate-y-2',  'body'=>'Irish Laundry Systems can align equipment review, rental, Preventive Maintenance, repairs and aftercare before equipment failure forces the next decision.'],
         ]])
@@ -227,7 +227,7 @@
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator handling and controls</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe, CompassPro, ergonomic access and program setup support clearer daily equipment use.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe, CompassPro, ergonomic access and programme setup support clearer daily equipment use.</p>
                 </div>
             </div>
 
@@ -884,7 +884,7 @@
 
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'After Installation',
-    'headingLine1' => 'Keep <span style="color:#011E41;">service costs and maintenance</span>',
+    'headingLine1' => '<span style="color:#ffffff;">Keep</span> service costs and maintenance',
     'headingLine2' => 'clearer after installation',
     'accentFirst'  => true,
     'body'         => 'Planned maintenance, service history and aftercare keep high-use laundry equipment easier to manage after installation, rental, repair or replacement.',

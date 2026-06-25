@@ -7,34 +7,68 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[660px]" style="background-color:#011E41;">
-    <img src="/images/equipment/td6-multihousing-room.jpg" alt="Commercial laundry equipment room"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.72) 0%, rgba(1,30,65,0.32) 40%, rgba(1,30,65,0.06) 66%, transparent 85%);"></div>
-    <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
-            <div class="max-w-4xl reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Guidance</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block">Commercial laundry equipment</span>
-                    <span class="block"><span style="color:#148af4;">supplied, installed and supported</span></span>
+<style>
+@keyframes eqHeroFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.eq-hero-title { animation: eqHeroFadeUp 0.7s ease forwards; }
+.eq-hero-desc  { animation: eqHeroFadeUp 0.7s ease 0.2s forwards; opacity: 0; }
+.eq-hero-btns  { animation: eqHeroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
+@media (prefers-reduced-motion: reduce) {
+    .eq-hero-title, .eq-hero-desc, .eq-hero-btns { animation: none; opacity: 1; transform: none; }
+}
+</style>
+
+<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
+
+    <img src="/images/hero/HOMEHERO2.jpg" alt="Irish Laundry Systems engineering team on site"
+         loading="eager" decoding="async"
+         class="absolute inset-0 w-full h-full object-cover scale-125"
+         style="object-position: center 72%;">
+
+    {{-- Gradient overlay — same fade as the Repairs & Call-Outs hero --}}
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+
+    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
+            <div style="max-width: 820px;">
+
+                <p class="eq-hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Guidance</p>
+
+                <h1 class="eq-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                    Commercial laundry equipment<br class="hidden lg:block"> <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
+
+                <p class="eq-hero-desc font-body text-white leading-relaxed mb-8 text-base max-w-2xl text-pretty">
                     Irish Laundry Systems supports commercial laundry sites with equipment selection, quotation, supply, installation, rental advice and aftercare, including Electrolux Professional laundry equipment options.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 mb-8">
+
+                <div class="eq-hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="#equipment-quote"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Equipment Quote
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/50 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
+                       class="inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Ask About Purchase or Rental
                     </a>
                 </div>
+
+                {{-- Trust indicators --}}
+                <div class="eq-hero-btns flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
+                    <span class="whitespace-nowrap">Engineering-led since 1987</span>
+                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap">Electrolux Professional Partner</span>
+                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
+                    <span class="whitespace-nowrap">Supply, installation &amp; aftercare</span>
+                </div>
+
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- 2. THIN ELECTROLUX TRUST STRIP -->
@@ -48,13 +82,13 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    A better equipment fit can mean <span style="color:#148af4;">less waste</span>, less pressure and <span style="color:#148af4;">smoother laundry flow</span>
+                    A better equipment fit can mean <span style="color:#148af4;">less waste,</span> less pressure and <span style="color:#148af4;">smoother laundry flow</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use where suitable.
+                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                     Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision, whether the right step is purchase, rental where suitable, installation and commissioning or follow-up care.
@@ -100,6 +134,7 @@
                 'cta'      => 'Explore Line 6000 Options',
                 'route'    => route('equipment.category', 'washers'),
                 'img'      => '/images/sectors/Line 6000 solutions products_72dpi.jpg',
+                'imgClass' => 'object-[50%_90%]',
             ],
             [
                 'eyebrow'  => 'myPROzip',
@@ -108,7 +143,8 @@
                 'points'   => ['More than domestic', 'Smaller-site fit', 'Faster turnaround'],
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
-                'img'      => '/images/equipment/myPRO-8K-washer.webp',
+                'img'      => '/images/healthcare/mypro-family.jpg',
+                'imgClass' => 'object-[50%_80%]',
             ],
             [
                 'eyebrow'  => 'lagoon Advanced Care',
@@ -117,7 +153,7 @@
                 'points'   => ['Protect textile quality', 'Handle specialist garments', 'Reduce outsourcing where suitable'],
                 'cta'      => 'Explore Wet Cleaning',
                 'route'    => route('equipment.category', 'wet-cleaning'),
-                'img'      => '/images/Hospitallity/hospitallityhero.png',
+                'img'      => '/images/healthcare/lagoon-advanced-care-internal.jpg',
             ],
         ];
         @endphp
@@ -143,7 +179,7 @@
                 >
                     <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
-                             class="absolute inset-0 w-full h-full object-cover object-center">
+                             class="absolute inset-0 w-full h-full object-cover {{ $t['imgClass'] ?? 'object-center' }}">
                         <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.7) 0%, rgba(1,30,65,0.32) 28%, rgba(1,30,65,0.05) 52%, transparent 72%);"></div>
                         <div class="relative z-10 flex items-end" style="min-height:540px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
@@ -217,7 +253,7 @@
                 'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
                 'cta'   => 'View myPRO Options',
                 'route' => route('equipment.category', 'semi-professional'),
-                'img'   => '/images/equipment/myPRO-8K-washer.webp',
+                'img'   => '/images/equipment/mypro-hp-front.jpg',
             ],
         ];
         @endphp
@@ -252,7 +288,7 @@
                     <div class="flex-shrink-0 w-full lg:w-1/2 px-3">
                         <div class="grid grid-cols-1 sm:grid-cols-[160px_1fr] lg:grid-cols-[180px_1fr] gap-4 lg:gap-6 items-center bg-white border border-gray-200 rounded-xl p-6 lg:p-8 h-full" style="min-height:300px;">
                             <div class="flex items-center justify-center">
-                                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full h-44 lg:h-52 object-contain">
+                                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}" class="w-full {{ $card['imgClass'] ?? 'h-44 lg:h-52' }} object-contain">
                             </div>
                             <div class="flex flex-col">
                                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{!! $card['title'] !!}</h3>
@@ -307,19 +343,19 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             @foreach([
-                ['title' => 'Washing Machines',             'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasher.webp'],
-                ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/equipment/line6000-barrier-washer.webp'],
-                ['title' => 'Dryers',                       'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-                ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/healthcare/Drying-cabinets_image.webp'],
-                ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/equipment/FC48.jpg'],
-                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/myPRO-8K-washer.webp'],
-                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/IntegratedSavings.png'],
+                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'washers'),          'img' => '/images/equipment/commercialwasherscard.png'],
+                ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/equipment/barrierwashercards.png'],
+                ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/tumbledryerscard.png'],
+                ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/equipment/drying_cabinetscards.jpg'],
+                ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/hot_ciliders_ironerscards.jpg'],
+                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/equipment/wetcleaningcards.png'],
+                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/semiprofessionalcards.png'],
+                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/eco-detergents.webp'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
                      class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105">
-                <div class="absolute inset-x-0 bottom-0 h-2/5" style="background: linear-gradient(to top, rgba(1,30,65,0.88) 0%, rgba(1,30,65,0.45) 55%, transparent 100%);"></div>
+                <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.74) 11%, rgba(1,30,65,0.52) 21%, rgba(1,30,65,0.32) 31%, rgba(1,30,65,0.18) 41%, rgba(1,30,65,0.09) 51%, rgba(1,30,65,0.04) 61%, rgba(1,30,65,0.015) 71%, transparent 80%);"></div>
                 <div class="absolute inset-x-0 bottom-0 p-5 z-10">
                     <h3 class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">{!! $cat['title'] !!}</h3>
                 </div>
@@ -370,11 +406,11 @@
                             ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'FF1.jpg'],
                         ] as $fc)
                         <div class="rounded-xl border border-gray-200 bg-white p-4 flex flex-col">
-                            <div class="rounded-lg bg-white border border-gray-100 overflow-hidden h-32 mb-3 flex items-center justify-center">
-                                <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-2">
+                            <div class="rounded-lg bg-white border border-gray-100 overflow-hidden h-44 mb-3 flex items-center justify-center">
+                                <img src="/images/equipment/{{ $fc['img'] }}" alt="{{ strip_tags($fc['t']) }}" class="w-full h-full object-contain p-1">
                             </div>
                             <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-1">{!! $fc['t'] !!}</h3>
-                            <p class="font-body text-gray-500 text-xs leading-snug mb-3 flex-1">{{ $fc['b'] }}</p>
+                            <p class="font-body text-gray-500 text-xs leading-snug mb-2">{{ $fc['b'] }}</p>
                             <a href="{{ $fc['href'] }}" class="inline-flex items-center gap-1 text-[#148af4] font-body font-bold text-xs hover:gap-2 transition-all">
                                 {{ $fc['cta'] }}
                                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -442,8 +478,8 @@
             @foreach([
                 ['title' => 'Review the site',          'text' => 'Look at the room, access, utilities, workload, staff flow and current laundry demand.',                 'icon' => 'clipboard'],
                 ['title' => 'Confirm the equipment',    'text' => 'Match the equipment category, capacity and purchase or rental fit to the site and laundry demand.',     'icon' => 'Ativo%204'],
-                ['title' => 'Supply and commission',    'text' => 'Arrange equipment supply, positioning, installation, commissioning and test cycles where required.',    'icon' => 'Ativo%206'],
-                ['title' => 'Handover and next steps',  'text' => 'Give the site clearer guidance on use, support options and follow-up care where needed.',               'icon' => 'Ativo%203'],
+                ['title' => 'Supply and commission',    'text' => 'Arrange equipment supply, positioning, installation, commissioning and test cycles.',    'icon' => 'Ativo%206'],
+                ['title' => 'Handover and next steps',  'text' => 'Give the site clearer guidance on use, support options and follow-up care.',               'icon' => 'Ativo%203'],
             ] as $i => $step)
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
@@ -487,8 +523,8 @@
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/Service Contracts.png',
-                    'pos'    => 'center 35%',
+                    'img'    => '/images/healthcare/service-contracts-hero.png',
+                    'pos'    => '88% 35%',
                 ],
                 [
                     'title'  => 'Repairs &amp; Call-outs',
@@ -558,7 +594,7 @@
             ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/healthcare/healthcarehero.png',                'pos' => '75% center'],
             ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
             ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/Hospitallity/hospitallityhero.png',           'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/commercial-industrial.jpg'],
+            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg'],
             ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp

@@ -27,7 +27,8 @@
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
     <img src="/images/hero/HOMEHERO2.jpg"
          alt="Irish Laundry Systems engineering team on site"
-         class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
+         style="object-position: center 72%;"
+         class="absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 1 ? 'opacity-100' : 'opacity-0'">
 
     <!-- Gradient overlay — tight, clears by 70% -->
@@ -115,7 +116,7 @@
     'cards'            => [
         ['title' => 'Repairs & Call-outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
         ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts support better control of service timing, equipment condition and repair pressure over time.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
-        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement pressure, expansion or continuity, with equipment installed, maintained and easier to manage over time.',      'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/equipment/FC48.jpg',        'alt' => 'Equipment Rental',        'pos' => 'center'],
+        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement pressure, expansion or continuity, with equipment installed, maintained and easier to manage over time.',      'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
         ['title' => 'Support & Aftercare',     'body' => 'Follow-up care that keeps service history and next steps clear after repairs, rental, contracts, inspection or installation.',                       'cta' => 'Explore Support & Aftercare', 'href' => route('parts-aftercare'),  'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
     ],
 ])
@@ -143,6 +144,7 @@
     'careBody'        => 'Practical support for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
     'hospitalityBody' => 'Support for guest-facing sites where linen availability, finishing quality, turnaround and operating cost affect the wider business.',
     'commercialBody'  => 'Care for higher-throughput laundry sites where output, running cost and engineering response carry more operational weight.',
+    'commercialImg'   => '/images/sectors/0O3A9810_72dpi.jpg',
 ])
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->

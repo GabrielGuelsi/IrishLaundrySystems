@@ -3,7 +3,7 @@
 @section('pageTitle', 'Commercial Finishing Equipment | Ironing Tables, Presses & Steam | Irish Laundry Systems')
 
 @section('meta')
-<meta name="description" content="Commercial finishing equipment for care homes, hospitality and garment care. Irish Laundry Systems connects ironing tables, steam support, presses and form finishers with advice, installation and support across Ireland.">
+<meta name="description" content="Commercial finishing equipment for care homes, hospitality and garment care. Irish Laundry Systems supplies, installs and supports Electrolux Professional ironing tables, steam support, presses and form finishers across Ireland.">
 @endsection
 
 @section('content')
@@ -17,8 +17,8 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Improve garment presentation with<br class="hidden lg:block"> <span style="color:#148af4;">the right ironing, steam and pressing setup</span>
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                    Improve garment presentation<br class="hidden lg:block"> with <span style="color:#148af4;">the right ironing,<br class="hidden lg:block">steam and pressing setup</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional finishing equipment for care facilities, hospitality sites, garment care settings and smaller laundry rooms across Ireland.
@@ -85,25 +85,31 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose the right finishing setup for <span style="color:#148af4;">the work handled every day</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Start with the items your team needs to finish, then match the setup to the room, presentation standard and aftercare needs.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
-                ['icon' => '30', 'title' => 'Ironing Tables',                 'copy' => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',    'href' => '#ironing-tables'],
-                ['icon' => '16', 'title' => 'Steam Irons & Steam Boiler Support', 'copy' => 'For hand-finishing, touch-ups and garment presentation where steam quality matters.', 'cta' => 'View Steam Support',     'href' => '#steam-support'],
-                ['icon' => '5',  'title' => 'Presses & Form Finishers',        'copy' => 'For stronger consistency, garment shape and a more professional finish than manual ironing alone.', 'cta' => 'View Presses & Finishers', 'href' => '#presses'],
-                ['icon' => '26', 'title' => 'Shirt & Trouser Finishing',       'copy' => 'For shirts, trousers, uniforms and garments where shape, creases, pleats and finish quality matter.', 'cta' => 'View Garment Finishing', 'href' => '#garment-finishing'],
+                ['img' => '/images/equipment/FIT1.jpg',    'title' => 'Ironing Tables',                     'copy' => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',    'href' => '#ironing-tables'],
+                ['img' => '/images/equipment/FSB3.3.jpeg', 'title' => 'Steam Irons & Steam Boiler Support', 'copy' => 'For hand-finishing, touch-ups and garment presentation where steam quality matters.', 'cta' => 'View Steam Support',     'href' => '#steam-support'],
+                ['img' => '/images/equipment/FPA1-D.jpg',  'title' => 'Presses & Form Finishers',           'copy' => 'For stronger consistency, garment shape and a more professional finish than manual ironing alone.', 'cta' => 'View Presses & Finishers', 'href' => '#presses'],
+                ['img' => '/images/equipment/FF1.jpg',     'title' => 'Shirt & Trouser Finishing',          'copy' => 'For shirts, trousers, uniforms and garments where shape, creases, pleats and finish quality matter.', 'cta' => 'View Garment Finishing', 'href' => '#garment-finishing'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 shadow-card flex flex-col h-full reveal">
-                <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-20 h-20 object-contain mb-5">
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6 flex-1">{{ $card['copy'] }}</p>
-                <a href="{{ $card['href'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline mt-auto">
+            <div class="flex flex-col gap-5 h-full reveal">
+                <div style="min-height:150px;">
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+                </div>
+                <div class="w-full flex items-end justify-center" style="height:200px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
+                         class="transition-transform duration-500 hover:-translate-y-2"
+                         style="max-width:100%; max-height:200px; object-fit:contain;">
+                </div>
+                <a href="{{ $card['href'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
                     {{ $card['cta'] }}
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
             @endforeach
@@ -121,7 +127,8 @@
             'body'     => 'Ironing tables give care facilities, hospitality sites and smaller laundry rooms a practical way to improve presentation without a larger ironer setup.',
             'points'   => ['Daily finishing', 'Cleaner finish', 'Room fit'],
             'primary'  => 'Ask About Ironing Tables',
-            'img'      => '/images/equipment/Strip1.jpeg',
+            'img'      => '/images/equipment/FIT1.jpg',
+            'contain'  => true,
         ],
         [
             'id'       => 'steam-support',
@@ -130,7 +137,8 @@
             'body'     => 'Steam irons and steam boiler support give teams a flexible way to finish garments, uniforms, touch-ups and presentation-led items.',
             'points'   => ['Hand finishing', 'Garment care', 'Steam setup'],
             'primary'  => 'Ask About Steam Support',
-            'img'      => '/images/healthcare/commercial-industrial.jpg',
+            'img'      => '/images/equipment/FSB3.3.jpeg',
+            'contain'  => true,
         ],
         [
             'id'       => 'presses',
@@ -139,7 +147,8 @@
             'body'     => 'Presses and form finishers support shirts, jackets, coats, dresses, uniforms and customer-facing garments that need a sharper, more consistent finish.',
             'points'   => ['Consistent finish', 'Garment shape', 'Daily productivity'],
             'primary'  => 'Ask About Presses & Finishers',
-            'img'      => '/images/equipment/line6000-ironer.webp',
+            'img'      => '/images/equipment/FPA1-D.jpg',
+            'contain'  => true,
         ],
         [
             'id'       => 'garment-finishing',
@@ -148,13 +157,14 @@
             'body'     => 'Shirts, trousers and uniforms often need clean shape, controlled creases, neat pleats and consistent garment presentation.',
             'points'   => ['Shirt finish', 'Trouser finish', 'Uniform care'],
             'primary'  => 'Ask About Garment Finishing',
-            'img'      => '/images/equipment/Strip1.jpeg',
+            'img'      => '/images/equipment/FF1.jpg',
+            'contain'  => true,
         ],
     ];
 @endphp
 
 @foreach($detailSections as $i => $d)
-<section id="{{ $d['id'] }}" class="py-16 lg:py-24 scroll-mt-28 {{ $i % 2 === 0 ? 'bg-white' : 'bg-bg' }} border-t border-gray-100">
+<section id="{{ $d['id'] }}" class="py-16 lg:py-24 scroll-mt-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
@@ -191,8 +201,8 @@
             <div class="reveal {{ $i % 2 === 0 ? 'reveal-right lg:order-2' : 'reveal-left lg:order-1' }}">
                 <div class="relative overflow-hidden rounded-2xl border border-gray-100 h-[260px] sm:h-[320px] lg:h-[380px]">
                     <img src="{{ $d['img'] }}" alt="{{ $d['eyebrow'] }}"
-                         class="absolute inset-0 w-full h-full {{ str_ends_with($d['img'], '.webp') ? 'object-contain bg-bg p-8' : 'object-cover' }}">
-                    @if(!str_ends_with($d['img'], '.webp'))
+                         class="absolute inset-0 w-full h-full {{ ($d['contain'] ?? false) ? 'object-contain bg-white p-8' : 'object-cover' }}">
+                    @if(!($d['contain'] ?? false))
                     <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.35) 0%, rgba(1,30,65,0.05) 50%, transparent 100%);"></div>
                     @endif
                 </div>
@@ -202,6 +212,34 @@
     </div>
 </section>
 @endforeach
+
+{{-- white spacer between the last detail section and the resources bar --}}
+<div class="bg-white h-10 lg:h-14"></div>
+
+{{-- COMPACT RESOURCES BAR (brochures + resources — before the product range) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources',  'links' => [['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure%20Line%206000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Browse Finishing',    'links' => [['l' => 'Ironing Tables', 'h' => '#ironing-tables'], ['l' => 'Steam Support', 'h' => '#steam-support'], ['l' => 'Presses & Finishers', 'h' => '#presses']]],
+                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Ironers', 'h' => route('equipment.category', 'ironers')], ['l' => 'Wet Cleaning', 'h' => route('equipment.category', 'wet-cleaning')], ['l' => 'Commercial Dryers', 'h' => route('equipment.category', 'tumble-dryers')]]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-wrap gap-x-4 gap-y-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 {{-- FINISHING EQUIPMENT RANGE (product grid) --}}
 <section id="finishing-range" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
@@ -440,13 +478,13 @@
 </section>
 
 {{-- PLANNING & SUPPORT (blue strip) --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Planning & Support</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Choose finishing equipment around <span style="color:#011E41;">room fit, item type and steam needs</span>
@@ -454,17 +492,10 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             Finishing equipment should match the room, the items handled every day and the steam or electrical setup required for the work.
         </p>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-7">
-            @foreach([
-                ['t' => 'Room fit',                'd' => 'M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75'],
-                ['t' => 'Item type',               'd' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z'],
-                ['t' => 'Steam needs', 'd' => 'M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z'],
-                ['t' => 'Installation and support', 'd' => 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z'],
-            ] as $pt)
-            <span class="inline-flex items-center gap-2">
-                <svg class="w-4 h-4 text-white flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $pt['d'] }}"/></svg>
-                <span class="font-body text-white text-sm font-bold">{{ $pt['t'] }}</span>
-            </span>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['Room fit', 'Item type', 'Steam needs'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -485,7 +516,7 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
             @foreach([
                 ['title' => 'Care homes and nursing homes',       'copy' => 'For resident clothing, uniforms and everyday items where cleaner presentation supports daily standards.', 'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
                 ['title' => 'Hospitality sites',                  'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => 'center center'],
@@ -524,25 +555,27 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
                 ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing where working width, room fit and daily output matter.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers'), 'img' => '/images/equipment/line6000-ironer.webp'],
                 ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where garments need a controlled cleaning process before finishing.',          'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/equipment/FC48.jpg'],
                 ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before garment finishing, touch-ups or daily presentation work.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
                 ['title' => 'Accessories & Consumables', 'copy' => 'For laundry products and accessories used around washing, drying and finishing.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories'), 'img' => '/images/healthcare/MultisaveEQUIP.webp'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl overflow-hidden flex flex-col h-full">
-                <div class="bg-white flex items-center justify-center p-5 border-b border-gray-100" style="height:170px;">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+            <div class="flex flex-col gap-5 h-full">
+                <div style="min-height:120px;">
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
-                <div class="p-7 flex flex-col flex-1">
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-6 flex-1">{{ $card['copy'] }}</p>
-                    <a href="{{ $card['route'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline mt-auto">
-                        {{ $card['cta'] }}
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
+                <div class="w-full flex items-end justify-center" style="height:200px;">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
+                         class="transition-transform duration-500 hover:-translate-y-2"
+                         style="max-width:100%; max-height:200px; object-fit:contain;">
                 </div>
+                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
+                    {{ $card['cta'] }}
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
             </div>
             @endforeach
         </div>

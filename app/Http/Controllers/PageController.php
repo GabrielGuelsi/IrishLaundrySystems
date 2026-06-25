@@ -50,8 +50,8 @@ class PageController extends Controller
     public function partsAftercare()
     {
         return view('pages.parts-aftercare', [
-            'title' => 'Commercial Laundry Parts & Aftercare Ireland | Genuine Spares & Service | ILS',
-            'metaDescription' => 'Genuine parts access, service history context and practical aftercare from Irish Laundry Systems. Authorised Electrolux Professional Partner supporting commercial and industrial laundry sites across Ireland.',
+            'title' => 'Commercial Laundry Support & Aftercare Ireland | Irish Laundry Systems',
+            'metaDescription' => 'Commercial laundry aftercare across Dublin and Ireland. Service history, parts support and equipment care for commercial laundry equipment already in use.',
         ]);
     }
 
@@ -156,6 +156,12 @@ class PageController extends Controller
         if ($category === 'accessories') {
             return view('pages.accessories', [
                 'title' => 'Laundry Dosing Systems Ireland | Detergents & Accessories',
+            ]);
+        }
+
+        if ($category === 'one-connected') {
+            return view('pages.one-connected', [
+                'title' => 'OnE Connected Ireland | Electrolux Professional Connected Laundry Intelligence',
             ]);
         }
 

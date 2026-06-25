@@ -121,6 +121,7 @@
             background-color: #eaeff5;
             color: #1d1d1b;
             font-size: 17px;
+            overflow-x: clip;
         }
         h1, h2, h3, h4, h5, h6 {
             font-weight: 700;

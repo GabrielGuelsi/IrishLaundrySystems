@@ -1,4 +1,4 @@
-@props(['faqs' => [], 'heading' => 'Frequently Asked Questions', 'eyebrow' => '', 'subheading' => '', 'footerNote' => "Have a different question? We're happy to help."])
+@props(['faqs' => [], 'heading' => 'Frequently Asked Questions', 'eyebrow' => '', 'subheading' => '', 'footerNote' => 'Have a different question? Talk to our team.'])
 
 <section class="py-16 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
