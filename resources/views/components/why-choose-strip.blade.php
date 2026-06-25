@@ -48,7 +48,7 @@
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 {{ $miniIconShift }}">
-            {{ $body }}
+            {!! $body !!}
         </p>
 
         @if($miniPoints)
