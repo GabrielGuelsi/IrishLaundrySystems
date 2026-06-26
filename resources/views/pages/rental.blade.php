@@ -104,14 +104,14 @@
 </section>
 
 {{-- ════════════ 5. WHAT YOU GAIN ════════════ --}}
-<section class="bg-bg py-12 lg:py-16">
+<section class="py-12 lg:py-16 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Rental Benefits</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">Rental Benefits</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 Lower upfront cost, included support and <span class="text-[#148af4]">more peace of&nbsp;mind</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
+            <p class="font-body text-white/70 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
                 Rental is designed for sites that want selected professional laundry equipment without one large upfront purchase, with the main support needs built into the agreement from the start.
             </p>
         </div>
@@ -164,23 +164,23 @@
 {{-- ════════════ 6. WHAT'S INCLUDED IN THE RENTAL AGREEMENT ════════════ --}}
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mb-12 lg:mb-14 reveal">
+        <div class="max-w-6xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Agreement Inclusions</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance lg:whitespace-nowrap">
                 One complete solution from <span class="text-[#148af4]">supply to&nbsp;support</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
-                Rental keeps the main equipment needs in one place: supply, delivery, installation, service labour, preventive maintenance, replacement parts and support. That means fewer separate decisions for your team after the equipment is installed.
+                Rental keeps the main equipment needs in one place: supply, delivery, installation, service labour, preventive maintenance,<br class="hidden lg:block"> replacement parts and support. That means fewer separate decisions for your team after the equipment is installed.
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
             <div class="lg:col-span-5 reveal reveal-left">
                 <div class="relative rounded-3xl overflow-hidden bg-navy shadow-xl h-72 sm:h-96 lg:h-full">
-                    <img src="/images/hero/on-site-diagnosis.jpeg"
+                    <img src="/images/healthcare/agreementiclusions.png"
                          alt="Irish Laundry Systems engineer installing and commissioning rented commercial laundry equipment"
                          loading="lazy" decoding="async"
-                         class="absolute inset-0 w-full h-full object-cover">
+                         class="absolute inset-0 w-full h-full object-cover" style="object-position: 28% center;">
                     <div class="absolute inset-x-0 bottom-0 h-1/3" style="background: linear-gradient(to top, rgba(1,15,42,0.55) 0%, transparent 100%);" aria-hidden="true"></div>
                     <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-3xl pointer-events-none"></div>
                 </div>
@@ -222,13 +222,13 @@
 {{-- ════════════ 7. RENTAL VS OUTRIGHT PURCHASE ════════════ --}}
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mb-12 lg:mb-14 reveal">
+        <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Compare Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance lg:whitespace-nowrap">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
             </h2>
             <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
-                Rental and outright purchase both have their place. The right decision depends on capital planning, equipment needs, support requirements and how much your site wants included from the start.
+                Rental and outright purchase both have their place. The right decision depends on capital planning,<br class="hidden lg:block"> equipment needs, support requirements and how much your site wants included from the start.
             </p>
         </div>
 
@@ -296,7 +296,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl reveal text-balance" style="transition-delay:80ms;">
             From equipment need to <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
         </h2>
-        <p class="font-body text-gray-600 text-lg leading-relaxed max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-600 text-lg leading-relaxed max-w-6xl reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
             A simple process keeps the rental conversation focused on the site, the equipment and what needs to be included during the agreement.
         </p>
     </div>
@@ -339,9 +339,9 @@
         @php
         $rentalFits = [
             ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/healthcare/healthcarehero.png', 'pos' => '80% center'],
-            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg'],
-            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/Hospitallity/hospitallityhero.png'],
-            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/healthcare/commercial-industrial.jpg'],
+            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
+            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => '75% center'],
+            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg'],
             ['env' => 'Multi Housing',               'route' => route('sectors'),             'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
@@ -374,7 +374,7 @@
                         <div class="flex flex-col items-center text-center">
                             <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
-                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
+                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};{{ isset($env['zoom']) ? ' transform: scale('.$env['zoom'].'); transform-origin: center bottom;' : '' }}">
                             </a>
                             <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{!! $env['env'] !!}</h3>
                             <a href="{{ $env['route'] }}"
@@ -472,14 +472,14 @@
 </section>
 
 {{-- ════════════ 11. SUPPORT DURING THE AGREEMENT BLOCK (#148AF4) ════════════ --}}
-<section class="relative overflow-hidden" style="min-height: 320px; background-color: #148af4;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
+    <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
         <img src="/images/healthcare/rentalstripimage.jpg" alt="Irish Laundry Systems engineer supporting rented commercial laundry equipment"
-             loading="lazy" decoding="async" class="w-full h-full object-cover" style="object-position:center;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
+             loading="lazy" decoding="async" class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to left, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
 
-    <div class="relative z-10 flex flex-col justify-center px-10 lg:px-16 py-12 lg:py-16" style="max-width:60%;">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-10 lg:py-12 max-w-full lg:max-w-[52%] lg:ml-auto">
 
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">During the Agreement</p>
 
