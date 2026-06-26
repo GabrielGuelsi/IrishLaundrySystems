@@ -212,7 +212,6 @@
                 ['icon' => 'ativo-9',  'label' => 'Service<br>history'],
             ] as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
                 <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
@@ -225,6 +224,98 @@
            class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
             Talk to Our Team
         </a>
+    </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     7. SUPPORT OVERVIEW — radial hub
+══════════════════════════════════════════ -->
+<section class="relative overflow-hidden py-20 lg:py-28" style="background-color:#011E41;">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        {{-- Header --}}
+        <div class="max-w-3xl mx-auto text-center mb-14 lg:mb-16 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Overview</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                One clear support system around <span class="text-[#148af4]">the equipment your site depends&nbsp;on</span>
+            </h2>
+            <p class="font-body text-white/70 text-base leading-relaxed text-pretty">
+                Irish Laundry Systems supports commercial laundry sites through equipment supply, setup, rental, repairs, maintenance and aftercare.
+            </p>
+        </div>
+
+        {{-- Desktop: radial hub --}}
+        <div class="hidden lg:block reveal" style="transition-delay:100ms;">
+            <svg viewBox="0 0 900 700" class="w-full h-auto max-w-3xl mx-auto" role="img" aria-label="Irish Laundry Systems at the centre of five support pillars">
+                {{-- connector lines --}}
+                <g stroke="#148af4" stroke-opacity="0.35" stroke-width="2">
+                    <line x1="450" y1="350" x2="450" y2="90"/>
+                    <line x1="450" y1="350" x2="707" y2="277"/>
+                    <line x1="450" y1="350" x2="609" y2="568"/>
+                    <line x1="450" y1="350" x2="291" y2="568"/>
+                    <line x1="450" y1="350" x2="193" y2="277"/>
+                </g>
+                {{-- outer pillar nodes --}}
+                <g>
+                    <circle cx="450" cy="90"  r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
+                    <circle cx="707" cy="277" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
+                    <circle cx="609" cy="568" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
+                    <circle cx="291" cy="568" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
+                    <circle cx="193" cy="277" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
+                </g>
+                {{-- pillar labels --}}
+                <g fill="#ffffff" font-weight="bold" font-size="17" text-anchor="middle" style="font-family:inherit;">
+                    <text x="450" y="84"><tspan x="450" dy="0">Equipment</tspan><tspan x="450" dy="21">Supply</tspan></text>
+                    <text x="707" y="271"><tspan x="707" dy="0">Installation</tspan><tspan x="707" dy="21">&amp; Setup</tspan></text>
+                    <text x="609" y="562"><tspan x="609" dy="0">Equipment</tspan><tspan x="609" dy="21">Rental</tspan></text>
+                    <text x="291" y="562"><tspan x="291" dy="0">Repairs &amp;</tspan><tspan x="291" dy="21">Call-Outs</tspan></text>
+                    <text x="193" y="271"><tspan x="193" dy="0">Maintenance</tspan><tspan x="193" dy="21">&amp; Aftercare</tspan></text>
+                </g>
+                {{-- centre node --}}
+                <circle cx="450" cy="350" r="128" fill="#148af4"/>
+                <text x="450" y="318" fill="#ffffff" font-weight="bold" font-size="22" text-anchor="middle" style="font-family:inherit;">
+                    <tspan x="450" dy="0">Irish Laundry</tspan><tspan x="450" dy="25">Systems</tspan>
+                </text>
+                <line x1="388" y1="360" x2="512" y2="360" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1"/>
+                <text x="450" y="384" fill="#ffffff" fill-opacity="0.9" font-size="12.5" text-anchor="middle" style="font-family:inherit;">
+                    <tspan x="450" dy="0">Equipment, service and</tspan><tspan x="450" dy="17">aftercare around the same</tspan><tspan x="450" dy="17">laundry operation</tspan>
+                </text>
+            </svg>
+        </div>
+
+        {{-- Mobile: stacked centre + pillar chips --}}
+        <div class="lg:hidden reveal">
+            <div class="rounded-2xl bg-[#148af4] text-center px-6 py-7 mb-6">
+                <p class="font-heading font-bold text-white text-xl leading-snug mb-2">Irish Laundry Systems</p>
+                <p class="font-body text-white/85 text-sm leading-relaxed">Equipment, service and aftercare around the same laundry operation</p>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+                @foreach(['Equipment Supply', 'Installation & Setup', 'Equipment Rental', 'Repairs & Call-Outs', 'Maintenance & Aftercare'] as $pillar)
+                <div class="rounded-xl border border-[#148af4]/40 bg-[#0b2748] text-center px-3 py-4 {{ $loop->last ? 'col-span-2' : '' }}">
+                    <span class="font-body font-bold text-white text-sm leading-snug">{{ $pillar }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+
+        {{-- Proof chips --}}
+        <div class="flex flex-wrap justify-center gap-2.5 mt-14 lg:mt-16 reveal">
+            @foreach(['Electrolux Professional equipment', 'Irish engineering expertise', 'Service history', 'Parts support'] as $chip)
+            <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
+            @endforeach
+        </div>
+
+        {{-- CTA --}}
+        <div class="flex justify-center mt-10 reveal">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
+                Talk to Our Team
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
+
     </div>
 </section>
 

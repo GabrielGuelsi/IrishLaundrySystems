@@ -15,7 +15,7 @@
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    Take control of the laundry<br>room behind <span style="color:#148af4;">guest experience<br>and daily service</span>
+                    Take control of the laundry room<br>behind <span style="color:#148af4;">guest experience<br>and daily service</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for hotels, guesthouses and hospitality sites, with maintenance, repairs, aftercare and rental review where the available range fits the property.
@@ -84,10 +84,10 @@
         </div>
 
         @include('components.financial-metrics', ['tightLeft' => true, 'items' => [
-            ['icon'=>'31', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
-            ['icon'=>'24', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
-            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
-            ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
+            ['icon'=>'34', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-105 -translate-y-1',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
+            ['icon'=>'88', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-90 translate-y-1.5', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
+            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-110 -translate-y-1.5',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2', 'iconClass'=>'scale-95 -translate-y-0.5',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
             ['icon'=>'11', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
         ]])
     </div>
@@ -111,7 +111,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/23.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/162.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Room standards</h3>
@@ -121,7 +121,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/24.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/163.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping routines</h3>
@@ -131,7 +131,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/25.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/164.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Finishing quality</h3>
@@ -141,7 +141,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/26.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/165.png" alt="" class="w-28 h-28 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Peak demand</h3>
@@ -151,7 +151,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/30.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/166.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
@@ -199,8 +199,8 @@
                     'text'   => 'For selected replacement or capacity needs where the available rental range fits the property size and laundry demand.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
-                    'img'    => '/images/healthcare/commercial-industrial.jpg',
-                    'pos'    => 'center center',
+                    'img'    => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'    => '66% center',
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
@@ -245,8 +245,8 @@
     'heading'    => 'Plan the laundry room around <span style="color:#011E41;">space, utilities and peak demand</span>',
     'body'       => 'A room review can check property demand, available space, utilities and equipment needs before purchase, rental or replacement.',
     'miniPoints' => [
-        ['icon' => 'home-planning-spend',  'label' => 'Room fit'],
-        ['icon' => 'home-planning-fit',    'label' => 'Cost control'],
+        ['icon' => 'home-planning-fit',    'label' => 'Room fit'],
+        ['icon' => 'home-planning-spend',  'label' => 'Cost control'],
         ['icon' => 'home-planning-rework', 'label' => 'Peak demand'],
     ],
     'ctaText'    => 'Talk to Our Team',
@@ -289,12 +289,12 @@
                         </li>
                         @endforeach
                     </ul>
-                    <div class="flex flex-row flex-wrap items-center gap-4">
-                        <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                        <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-6 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
                             View Washing Machine Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
-                        <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 w-fit">
+                        <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-6 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
                             Request Hospitality Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
@@ -679,17 +679,17 @@
     'eyebrow'      => 'Equipment Rental',
     'headingLine1' => 'Equipment rental with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits the laundry room size, capacity need and operating profile.',
+    'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits<br class="hidden lg:block"> the laundry room size, capacity need and operating profile.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Range fit'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Included support'],
+        ['icon' => '125', 'iconClass' => 'scale-125', 'label' => 'Range fit'],
+        ['icon' => '167', 'label' => 'Included support'],
     ],
     'miniNowrap'   => true,
 ])
 
 @include('components.equipment-categories', [
-    'heading' => 'Equipment categories for hospitality laundry rooms',
+    'heading' => 'Equipment categories for <span style="color:#148af4;">hospitality laundry rooms</span>',
     'subheading' => 'Choose the equipment category that fits property size, room fit, finishing standards, energy use and aftercare.',
     'equipment' => [
         ['img'=>'line6000-barrier-washer','name'=>'Barrier Washers','desc'=>'For hospitality sites that need controlled dirty-side and clean-side handling.','box'=>250,'mb'=>-20],
@@ -705,7 +705,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">How We Work</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-            From room review to supported installation
+            From room review to <span style="color:#148af4;">supported installation</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-3xl leading-relaxed text-center mx-auto">
             A practical four-step process for choosing, installing and supporting hospitality laundry equipment.
@@ -728,7 +728,7 @@
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
-                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
+                    <img src="/images/icons/{{ [126, 125, 127, 128][$i] }}.png" alt=""
                          style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
@@ -743,14 +743,15 @@
 
 <!-- SERVICE CONTRACTS + SUPPORT & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
+    'eyebrow'      => 'After Installation',
     'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span>',
     'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
     'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/healthcare/repairs-callouts.jpg',
     'miniPoints'   => [
         ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service planning'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Equipment care'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Peace of mind'],
+        ['icon' => '64', 'label' => 'Equipment care'],
+        ['icon' => '168', 'label' => 'Peace of mind'],
     ],
     'cta1Label'    => 'View Preventive Maintenance Contracts',
     'cta1Route'    => 'service-contracts',
@@ -761,8 +762,8 @@
 <!-- TESTIMONIAL / PROOF BLOCK -->
 @include('components.testimonials', [
     'eyebrow'    => 'Client Feedback',
-    'heading'    => 'Trusted by hospitality teams that need reliable laundry support',
-    'subheading' => 'Irish Laundry Systems supports hospitality teams that need clear communication, reliable service and equipment knowledge when laundry affects daily operations.',
+    'heading'    => 'Trusted by hospitality teams<br class="hidden sm:block"> that need <span style="color:#148af4;">reliable laundry support</span>',
+    'subheading' => 'Irish Laundry Systems supports hospitality teams that need clear communication, reliable service<br class="hidden lg:block"> and equipment knowledge when laundry affects daily operations.',
     'subheadingClass' => 'max-w-5xl mx-auto',
 ])
 
@@ -770,7 +771,7 @@
 
 @include('components.faq', [
     'eyebrow' => 'Hospitality Laundry FAQs',
-    'heading' => 'Questions before requesting a hospitality laundry assessment',
+    'heading' => 'Questions before requesting a <span style="color:#148af4;">hospitality laundry assessment</span>',
     'footerNote' => 'Have a different question? Talk to our team.',
     'faqs' => [
         ['question' => 'What types of hospitality sites do you work with?',            'answer' => 'Irish Laundry Systems works with hotels, guesthouses, serviced apartments, hostels and hospitality sites that need reliable laundry equipment for bed linen, towels, robes, uniforms, table linen and guest items.'],
@@ -786,8 +787,8 @@
 
 @include('components.cta-downtime-form', [
     'pageSource'  => 'hospitality_cta',
-    'heading'     => 'Ready to take control of your <span style="color:#148af4;">hospitality laundry</span>',
-    'body'        => 'Tell us about the property, current equipment, peak periods and support needs. Irish Laundry Systems will recommend suitable equipment, rental review, Preventive Maintenance, repair or aftercare support.',
+    'heading'     => 'Ready to take control of<br class="hidden sm:block"> your <span style="color:#148af4;">hospitality laundry</span>',
+    'body'        => 'Tell us about the property, current equipment, peak periods and support needs.<br class="hidden lg:block"> Irish Laundry Systems will recommend suitable equipment, rental review,<br class="hidden lg:block"> Preventive Maintenance, repair or aftercare support.',
     'formTitle'   => 'Request a Hospitality Laundry Assessment',
     'buttonText'  => 'Request Hospitality Assessment',
 ])

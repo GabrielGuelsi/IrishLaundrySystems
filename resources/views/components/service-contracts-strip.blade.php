@@ -46,10 +46,9 @@
         @php $miniHasIcons = is_array($miniPoints[0] ?? null); @endphp
         <div class="flex items-center flex-wrap gap-y-2 {{ $miniHasIcons ? 'gap-x-4 lg:flex-nowrap' : 'gap-x-5' }} mb-7">
             @foreach($miniPoints as $i => $pt)
-            @if($i > 0)<span class="text-white/40 flex-shrink-0">|</span>@endif
             @if(is_array($pt))
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['iconClass'] ?? '' }}">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @else
@@ -61,7 +60,6 @@
         <div class="flex items-center flex-wrap lg:flex-nowrap gap-y-3 gap-x-0 mb-7">
             @foreach($features as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-10 bg-white/20 mx-3 sm:mx-5 flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
                 <img src="{{ $feat['img'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
