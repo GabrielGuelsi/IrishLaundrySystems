@@ -235,11 +235,11 @@
 
         @php
         $supportNodes = [
-            ['icon' => '125', 'label' => 'Equipment Supply',        'left' => '20.0%', 'top' => '22.2%'],
-            ['icon' => '126', 'label' => 'Installation & Setup',    'left' => '79.9%', 'top' => '22.2%'],
-            ['icon' => '132', 'label' => 'Equipment Rental',        'left' => '29.5%', 'top' => '63.9%'],
-            ['icon' => '180', 'label' => 'Repairs & Call-Outs',     'left' => '70.4%', 'top' => '62.6%'],
-            ['icon' => '127', 'label' => 'Maintenance & Aftercare', 'left' => '50.6%', 'top' => '77.8%'],
+            ['icon' => '125', 'label' => 'Equipment Supply',        'left' => '16.0%', 'top' => '21.7%'],
+            ['icon' => '126', 'label' => 'Installation & Setup',    'left' => '84.0%', 'top' => '21.7%'],
+            ['icon' => '132', 'label' => 'Equipment Rental',        'left' => '24.9%', 'top' => '69.2%'],
+            ['icon' => '180', 'label' => 'Repairs & Call-Outs',     'left' => '75.0%', 'top' => '68.0%'],
+            ['icon' => '127', 'label' => 'Maintenance & Aftercare', 'left' => '50.7%', 'top' => '83.3%'],
         ];
         $blueFilter = 'filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);';
         @endphp
@@ -257,22 +257,22 @@
 
         {{-- Desktop: radial hub with logo centre --}}
         <div class="hidden lg:block reveal" style="transition-delay:100ms;">
-            <div class="relative mx-auto" style="max-width:1000px; aspect-ratio:1003 / 540;">
+            <div class="relative mx-auto" style="max-width:1000px; aspect-ratio:1003 / 600;">
 
                 {{-- dotted connector spokes --}}
-                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1003 540" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1003 600" fill="none" preserveAspectRatio="none" aria-hidden="true">
                     <g stroke="#011E41" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.5 7">
-                        <line x1="501" y1="130" x2="201" y2="120"/>
-                        <line x1="501" y1="130" x2="801" y2="120"/>
-                        <line x1="501" y1="130" x2="296" y2="345"/>
-                        <line x1="501" y1="130" x2="706" y2="338"/>
-                        <line x1="501" y1="130" x2="507" y2="420"/>
+                        <line x1="501" y1="140" x2="160" y2="130"/>
+                        <line x1="501" y1="140" x2="842" y2="130"/>
+                        <line x1="501" y1="140" x2="250" y2="415"/>
+                        <line x1="501" y1="140" x2="752" y2="408"/>
+                        <line x1="501" y1="140" x2="509" y2="500"/>
                     </g>
                 </svg>
 
                 {{-- centre hub: ILS logo mark --}}
                 <div class="absolute -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                     style="left:50.0%; top:24.1%; width:17rem;">
+                     style="left:50.0%; top:23.3%; width:17rem;">
                     <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems"
                          class="w-full h-auto object-contain">
                 </div>
