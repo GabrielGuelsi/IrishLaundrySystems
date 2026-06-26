@@ -409,7 +409,6 @@
                 ['icon' => 'ativo-4',  'label' => 'Keep the equipment<br>supported'],
             ] as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
                 <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">

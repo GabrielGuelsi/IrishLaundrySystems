@@ -393,7 +393,6 @@
                 ['img' => '/images/icons/home-maintenance-disruption.png', 'label' => 'Keep laundry<br>moving'],
             ] as $i => $feat)
             @if($i > 0)
-                <div class="w-px h-10 bg-white/30 mx-5 hidden sm:block flex-shrink-0"></div>
             @endif
             <div class="flex items-center gap-3">
                 <img src="{{ $feat['img'] }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;filter:brightness(0) invert(1);" alt="">

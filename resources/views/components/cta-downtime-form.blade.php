@@ -25,7 +25,7 @@
                     {!! $heading !!}
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8">
-                    {{ $body }}
+                    {!! $body !!}
                 </p>
 
                 <div class="space-y-4 mb-8">
