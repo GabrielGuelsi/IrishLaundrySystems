@@ -228,71 +228,78 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     7. SUPPORT OVERVIEW — radial hub
+     7. SUPPORT OVERVIEW — radial hub (white, logo centre)
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden py-20 lg:py-28" style="background-color:#011E41;">
+<section class="bg-white py-20 lg:py-28 overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
+        @php
+        $supportNodes = [
+            ['icon' => '125', 'label' => 'Equipment Supply',        'left' => '16.0%', 'top' => '21.7%'],
+            ['icon' => '126', 'label' => 'Installation & Setup',    'left' => '84.0%', 'top' => '21.7%'],
+            ['icon' => '132', 'label' => 'Equipment Rental',        'left' => '24.9%', 'top' => '69.2%'],
+            ['icon' => '180', 'label' => 'Repairs & Call-Outs',     'left' => '75.0%', 'top' => '68.0%'],
+            ['icon' => '127', 'label' => 'Maintenance & Aftercare', 'left' => '50.7%', 'top' => '83.3%'],
+        ];
+        $blueFilter = 'filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);';
+        @endphp
+
         {{-- Header --}}
-        <div class="max-w-3xl mx-auto text-center mb-14 lg:mb-16 reveal">
+        <div class="max-w-3xl mx-auto text-center mb-8 lg:mb-6 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Overview</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 One clear support system around <span class="text-[#148af4]">the equipment your site depends&nbsp;on</span>
             </h2>
-            <p class="font-body text-white/70 text-base leading-relaxed text-pretty">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                 Irish Laundry Systems supports commercial laundry sites through equipment supply, setup, rental, repairs, maintenance and aftercare.
             </p>
         </div>
 
-        {{-- Desktop: radial hub --}}
+        {{-- Desktop: radial hub with logo centre --}}
         <div class="hidden lg:block reveal" style="transition-delay:100ms;">
-            <svg viewBox="0 0 900 700" class="w-full h-auto max-w-3xl mx-auto" role="img" aria-label="Irish Laundry Systems at the centre of five support pillars">
-                {{-- connector lines --}}
-                <g stroke="#148af4" stroke-opacity="0.35" stroke-width="2">
-                    <line x1="450" y1="350" x2="450" y2="90"/>
-                    <line x1="450" y1="350" x2="707" y2="277"/>
-                    <line x1="450" y1="350" x2="609" y2="568"/>
-                    <line x1="450" y1="350" x2="291" y2="568"/>
-                    <line x1="450" y1="350" x2="193" y2="277"/>
-                </g>
-                {{-- outer pillar nodes --}}
-                <g>
-                    <circle cx="450" cy="90"  r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
-                    <circle cx="707" cy="277" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
-                    <circle cx="609" cy="568" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
-                    <circle cx="291" cy="568" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
-                    <circle cx="193" cy="277" r="80" fill="#0b2748" stroke="#148af4" stroke-width="1.5"/>
-                </g>
-                {{-- pillar labels --}}
-                <g fill="#ffffff" font-weight="bold" font-size="17" text-anchor="middle" style="font-family:inherit;">
-                    <text x="450" y="84"><tspan x="450" dy="0">Equipment</tspan><tspan x="450" dy="21">Supply</tspan></text>
-                    <text x="707" y="271"><tspan x="707" dy="0">Installation</tspan><tspan x="707" dy="21">&amp; Setup</tspan></text>
-                    <text x="609" y="562"><tspan x="609" dy="0">Equipment</tspan><tspan x="609" dy="21">Rental</tspan></text>
-                    <text x="291" y="562"><tspan x="291" dy="0">Repairs &amp;</tspan><tspan x="291" dy="21">Call-Outs</tspan></text>
-                    <text x="193" y="271"><tspan x="193" dy="0">Maintenance</tspan><tspan x="193" dy="21">&amp; Aftercare</tspan></text>
-                </g>
-                {{-- centre node --}}
-                <circle cx="450" cy="350" r="128" fill="#148af4"/>
-                <text x="450" y="318" fill="#ffffff" font-weight="bold" font-size="22" text-anchor="middle" style="font-family:inherit;">
-                    <tspan x="450" dy="0">Irish Laundry</tspan><tspan x="450" dy="25">Systems</tspan>
-                </text>
-                <line x1="388" y1="360" x2="512" y2="360" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1"/>
-                <text x="450" y="384" fill="#ffffff" fill-opacity="0.9" font-size="12.5" text-anchor="middle" style="font-family:inherit;">
-                    <tspan x="450" dy="0">Equipment, service and</tspan><tspan x="450" dy="17">aftercare around the same</tspan><tspan x="450" dy="17">laundry operation</tspan>
-                </text>
-            </svg>
+            <div class="relative mx-auto" style="max-width:1000px; aspect-ratio:1003 / 600;">
+
+                {{-- dotted connector spokes --}}
+                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1003 600" fill="none" preserveAspectRatio="none" aria-hidden="true">
+                    <g stroke="#011E41" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.5 7">
+                        <line x1="501" y1="140" x2="160" y2="130"/>
+                        <line x1="501" y1="140" x2="842" y2="130"/>
+                        <line x1="501" y1="140" x2="250" y2="415"/>
+                        <line x1="501" y1="140" x2="752" y2="408"/>
+                        <line x1="501" y1="140" x2="509" y2="500"/>
+                    </g>
+                </svg>
+
+                {{-- centre hub: ILS logo mark --}}
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+                     style="left:50.0%; top:23.3%; width:17rem;">
+                    <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems"
+                         class="w-full h-auto object-contain">
+                </div>
+
+                {{-- pillar nodes (dotted circles) --}}
+                @foreach($supportNodes as $n)
+                <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center rounded-full bg-white"
+                     style="left:{{ $n['left'] }}; top:{{ $n['top'] }}; width:9rem; height:9rem; border:2px dotted rgba(1,30,65,0.30);">
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-12 h-12 object-contain mb-2" style="{{ $blueFilter }}">
+                    <span class="font-body font-bold text-navy text-xs leading-tight px-3">{{ $n['label'] }}</span>
+                </div>
+                @endforeach
+
+            </div>
         </div>
 
-        {{-- Mobile: stacked centre + pillar chips --}}
+        {{-- Mobile: logo chip + dotted-circle nodes --}}
         <div class="lg:hidden reveal">
-            <div class="rounded-2xl bg-[#148af4] text-center px-6 py-7 mb-6">
-                <p class="font-heading font-bold text-white text-xl leading-snug mb-2">Irish Laundry Systems</p>
-                <p class="font-body text-white/85 text-sm leading-relaxed">Equipment, service and aftercare around the same laundry operation</p>
+            <div class="flex justify-center mb-8">
+                <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems" class="w-48 h-auto object-contain">
             </div>
-            <div class="grid grid-cols-2 gap-3">
-                @foreach(['Equipment Supply', 'Installation & Setup', 'Equipment Rental', 'Repairs & Call-Outs', 'Maintenance & Aftercare'] as $pillar)
-                <div class="rounded-xl border border-[#148af4]/40 bg-[#0b2748] text-center px-3 py-4 {{ $loop->last ? 'col-span-2' : '' }}">
-                    <span class="font-body font-bold text-white text-sm leading-snug">{{ $pillar }}</span>
+            <div class="flex flex-wrap justify-center gap-4">
+                @foreach($supportNodes as $n)
+                <div class="flex flex-col items-center justify-center text-center rounded-full bg-white"
+                     style="width:8.5rem; height:8.5rem; border:2px dotted rgba(1,30,65,0.30);">
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-10 h-10 object-contain mb-1.5" style="{{ $blueFilter }}">
+                    <span class="font-body font-bold text-navy text-xs leading-tight px-3">{{ $n['label'] }}</span>
                 </div>
                 @endforeach
             </div>
@@ -301,14 +308,14 @@
         {{-- Proof chips --}}
         <div class="flex flex-wrap justify-center gap-2.5 mt-14 lg:mt-16 reveal">
             @foreach(['Electrolux Professional equipment', 'Irish engineering expertise', 'Service history', 'Parts support'] as $chip)
-            <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
+            <span class="font-body text-sm font-medium text-navy/70 bg-gray-50 border border-gray-200 rounded-full px-5 py-2">{{ $chip }}</span>
             @endforeach
         </div>
 
         {{-- CTA --}}
         <div class="flex justify-center mt-10 reveal">
             <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
+               class="inline-flex items-center gap-2 bg-navy text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors">
                 Talk to Our Team
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
