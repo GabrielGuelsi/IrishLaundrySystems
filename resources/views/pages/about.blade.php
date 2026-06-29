@@ -14,7 +14,7 @@
     <img src="{{ asset('images/about/heroaboutusimage.webp') }}"
          alt="ILS engineering team"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+         class="absolute inset-0 w-full h-full object-cover object-[85%_center]">
 
     {{-- Gradient overlay for headline legibility --}}
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.72) 35%, rgba(1,30,65,0.30) 60%, transparent 82%);"></div>
