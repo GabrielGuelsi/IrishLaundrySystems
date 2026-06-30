@@ -18,13 +18,10 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Dry bulky, delicate and specialist items with<br class="hidden lg:block"> <span style="color:#148af4;">more care and control</span>
+                    Dry items that should not go through<br class="hidden lg:block"> <span style="color:#148af4;">standard tumble drying</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-4 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional drying cabinets for sites handling PPE, workwear, delicate garments, bulky items and specialist textiles across Ireland.
-                </p>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Choose drying support around item type, room fit, running cost, rental and long-term aftercare, without putting every item through a tumble dryer.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional drying cabinets for PPE, workwear, shoes, gloves, bulky items and delicate garments across Ireland.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -33,7 +30,7 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Ask About Purchase or Rental
+                        Ask About Purchase or Equipment Rental
                     </a>
                 </div>
             </div>
@@ -58,10 +55,10 @@
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Drying cabinets support items that need air movement, hanging space or shelf drying instead of tumble action.
+                    Drying cabinets are designed for items that need air movement, hanging space or shelf drying instead of tumble action.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems reviews item types, drying capacity, room layout, Heat Pump suitability, installation, rental and aftercare before recommending the right setup.
+                    Irish Laundry Systems reviews item type, room fit, drying capacity and running cost before recommending the right setup.
                 </p>
                 <a href="#cabinet-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">

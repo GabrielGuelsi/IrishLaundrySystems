@@ -18,11 +18,11 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Tumble Dryers</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Choose commercial dryers around <span style="color:#148af4;">lower energy use, drying demand and peace of mind</span>
+                    Choose commercial dryers around<br class="hidden lg:block"> <span style="color:#148af4;">lower energy use and daily demand</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial tumble dryers for healthcare sites, care facilities, hotels and commercial laundries across Ireland.<br>
-                    Choose the right drying capacity, room fit, textile care, rental and long-term support for fast, efficient drying with better control over running costs.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial tumble dryers for healthcare, care, hospitality and commercial laundry sites across Ireland.<br>
+                    Choose dryer capacity, room fit and long-term support around the site’s daily drying demand.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -50,14 +50,14 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Drying performance starts with <span style="color:#148af4;">the right fit for your room and workload</span>
+                    Drying performance starts with<br class="hidden lg:block"> <span style="color:#148af4;">capacity, airflow and room fit</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    The right dryer can lower energy use, protect fabrics, handle daily drying demand and fit the room around it.<br>
-                    Irish Laundry Systems reviews capacity, ventilation, installation, rental, maintenance and aftercare needs so the dryer works beyond the first day.
+                    The right dryer can reduce energy use, support daily laundry output and fit the room around it.<br>
+                    Irish Laundry Systems reviews capacity, ventilation, installation, Equipment Rental, maintenance and aftercare before recommending a dryer setup.
                 </p>
                 <a href="#dryer-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -157,19 +157,19 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose dryers around <span style="color:#148af4;">energy use, drying speed and running cost control</span>
+                Choose dryers around <span style="color:#148af4;">energy savings, daily output and running cost control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Dryer choice affects more than the cycle. Energy use, drying speed, installation needs, textile care and rental options all shape the real cost of keeping laundry moving.
+                Dryer choice affects more than cycle time. Energy use, drying speed, installation needs, textile care and Equipment Rental can all shape the real cost of keeping laundry moving.
             </p>
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'72', 'prefix'=>'',     'stat'=>'35 min',              'size'=>'text-4xl', 'label'=>'drying cycles',           'body'=>'Heat Pump Dryer performance can support faster drying in busy laundry rooms where daily demand is high.'],
-            ['icon'=>'26', 'prefix'=>'',     'stat'=>'-33%',                'size'=>'text-4xl', 'label'=>'CO₂ per cycle',           'body'=>'Heat Pump Dryer technology can reduce greenhouse gas emissions per cycle where the equipment and setup are suitable.'],
-            ['icon'=>'79', 'prefix'=>'',     'stat'=>'No<br>exhaust',       'size'=>'text-2xl', 'label'=>'or water cooling',        'body'=>'Selected Heat Pump Dryer options can reduce installation work where the room and ventilation setup allow.'],
-            ['icon'=>'21', 'prefix'=>'',     'stat'=>'Dry not<br>overdry',  'size'=>'text-2xl', 'label'=>'Moisture Balance',        'body'=>'Moisture Balance protects textile value and reduces wasted energy by stopping at the selected dryness level.'],
-            ['icon'=>'30', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost','size'=>'text-2xl','label'=>'rental where suitable',   'body'=>'Rental can support replacement, expansion or capacity planning without one large upfront purchase.'],
+            ['icon'=>'72', 'prefix'=>'',     'stat'=>'Energy<br>savings',          'size'=>'text-2xl', 'label'=>'lower running cost',  'body'=>'Electrolux Professional dryer technology can reduce energy use where the equipment and setup are suitable.'],
+            ['icon'=>'26', 'prefix'=>'',     'stat'=>'Outstanding<br>productivity','size'=>'text-2xl', 'label'=>'more loads per day',  'body'=>'Fast drying cycles can help busy laundry rooms process more loads during the day.'],
+            ['icon'=>'79', 'prefix'=>'',     'stat'=>'Long-term<br>savings',       'size'=>'text-2xl', 'label'=>'over daily use',     'body'=>'Efficient drying, correct setup and planned support can reduce running cost pressure over time.'],
+            ['icon'=>'21', 'prefix'=>'',     'stat'=>'Dry not<br>overdry',         'size'=>'text-2xl', 'label'=>'less wasted energy',  'body'=>'Moisture Balance stops at the selected dryness level, helping protect textiles and avoid unnecessary drying.'],
+            ['icon'=>'30', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost',      'size'=>'text-2xl', 'label'=>'Equipment Rental',    'body'=>'Equipment Rental can support replacement or added capacity without one large upfront purchase.'],
         ]])
     </div>
 </section>
@@ -183,27 +183,26 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Put dryer performance and consumption data <span style="color:#148af4;">in one connected view</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            Take your laundry operation to <span style="color:#148af4;">the next level</span>
         </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            OnE Connected gives compatible Electrolux Professional equipment a clearer digital view of status, cycle activity, consumption, alerts and service needs.<br>
-            For dryer performance, that means better insight into energy use, equipment activity and service needs, giving teams more control over daily operation.
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-2xl">
+            OnE Connected is the digital ecosystem for compatible Electrolux Professional equipment, giving laundry teams clearer visibility over performance, consumption and service needs in one place.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Status insight', 'Consumption data', 'Service alerts'] as $i => $pt)
+            @foreach(['Increase productivity', 'Improve efficiency', 'Increase sustainability'] as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
-            <a href="{{ route('contact') }}"
+            <a href="{{ route('equipment.category', 'one-connected') }}"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                 Explore OnE Connected
             </a>
             <a href="{{ route('contact') }}"
                class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
-                Check Compatibility
+                Ask About Connected Equipment
             </a>
         </div>
     </div>
@@ -216,20 +215,20 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Dryer features that support <span style="color:#148af4;">energy control, fabric care and drying performance</span>
+                Dryer features that support <span style="color:#148af4;">fabric care, airflow and daily operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Selected Electrolux Professional dryer features support lower energy use, better fabric protection, easier operation and more consistent drying when matched to the right laundry room.
+                Selected Electrolux Professional dryer features support better fabric protection, airflow control, easier operation and more consistent drying when matched to the right laundry room.
             </p>
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '7',  'title' => 'Heat Pump technology',        'copy' => 'Energy-efficient drying with strong performance and better control over running costs.', 'badge' => 'Heat Pump'],
-                ['icon' => '16', 'title' => 'Moisture Balance',            'copy' => 'Stops at the selected dryness level to protect fabrics and reduce wasted energy.',        'badge' => 'Moisture Balance'],
+                ['icon' => '16', 'title' => 'Moisture Balance',            'copy' => 'Stops at the selected dryness level to protect textiles and reduce unnecessary drying.',  'badge' => 'Moisture Balance'],
                 ['icon' => '26', 'title' => 'Drum Speed',                  'copy' => 'Controls fabric movement and mechanical action for different textile types.',             'badge' => 'Drum Speed'],
                 ['icon' => '34', 'title' => 'Adaptive Fan',                'copy' => 'Adjusts airflow to the load where available, supporting even drying and lower energy use.', 'badge' => 'Adaptive Fan'],
-                ['icon' => '4',  'title' => 'Smart Energy Management',     'copy' => 'Supports energy regulation, clear programmes and easier day-to-day control.',              'badge' => 'CompassPro'],
+                ['icon' => '4',  'title' => 'CompassPro Control',          'copy' => 'Clear programme selection and daily operation for busy laundry teams.',                   'badge' => 'CompassPro Control'],
+                ['icon' => '7',  'title' => 'Stacked options',             'copy' => 'Stacked dryer formats can add drying capacity while using less floor space.',              'badge' => 'Stacked options'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
@@ -253,10 +252,10 @@
         <div class="max-w-4xl mb-12 lg:mb-16 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Daily Handling</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Dryer design built around <span style="color:#148af4;">daily handling, space and operator comfort</span>
+                Dryer design built around <span style="color:#148af4;">easier, safer daily operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Daily drying work should feel easier, safer and more controlled. Line 6000 Tumble Dryers combine ergonomic proof, clear controls and easier access for busy laundry teams.
+                Line 6000 Tumble Dryers are designed for safe, repetitive operation, with ergonomic features that support loading, unloading, control and daily cleaning.
             </p>
         </div>
 
@@ -270,13 +269,12 @@
                     <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
-                        <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic improvements can reduce work-related musculoskeletal disorders by <strong class="text-navy font-bold">59%</strong>, reduce sick days by <strong class="text-navy font-bold">75%</strong> and increase productivity by <strong class="text-navy font-bold">25%</strong>.</p>
-                        <p class="font-body text-gray-400 text-xs mt-2">Washington State Department of Labor &amp; Industries</p>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">Line 6000 Tumble Dryers have received the ERGOCERT 4-star rating for ergonomic design.</p>
                     </div>
                 </div>
                 <div class="border-t border-gray-200 pt-6">
                     <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-14 w-auto mb-3">
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Clear controls with preset programmes, free programme slots and up to 18 languages.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Clear controls, preset programmes and up to 18 languages for daily operation.</p>
                 </div>
             </div>
 
@@ -290,10 +288,10 @@
                 <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-4">The door that makes the difference</h3>
                 <div class="space-y-3.5">
                     @foreach([
-                        ['t' => 'Ideal height',        'img' => 'idealheight.svg',   'b' => 'Positioned for easier loading and unloading.'],
+                        ['t' => 'Ideal height',        'img' => 'idealheight.svg',   'b' => 'Easier loading and unloading.'],
                         ['t' => 'Sturdy and reliable', 'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z', 'b' => 'Built for long-term daily use.'],
-                        ['t' => 'A better grip',       'img' => 'abettergrip.svg',   'b' => 'Smooth handle design with an easy-close magnetic door.'],
-                        ['t' => 'Safer for users',     'img' => 'saferforusers.svg', 'b' => 'Insulated glass stays cool outside, keeps heat inside and supports a more comfortable room.'],
+                        ['t' => 'A better grip',       'img' => 'abettergrip.svg',   'b' => 'Smooth opening and closing.'],
+                        ['t' => 'Safer for users',     'img' => 'saferforusers.svg', 'b' => 'Insulated glass stays cool on the outside.'],
                     ] as $dp)
                     <div class="flex items-start gap-3">
                         @if(!empty($dp['img']))
@@ -318,11 +316,11 @@
                 </div>
                 <div class="rounded-2xl bg-white p-6 flex-1" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
                     <div class="flex items-start justify-between gap-3 mb-2">
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug">A filter drawer right where you need it</h3>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug">Filter access where you need it</h3>
                         <img src="/images/equipment/filterdrawer.svg" alt="Horizontal filter drawer" class="w-20 h-20 object-contain flex-shrink-0">
                     </div>
                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Horizontal filter drawer for easier access and cleaning without bending down.</p>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Horizontal filter drawer supports easier cleaning without bending down.</p>
                 </div>
             </div>
 
@@ -333,7 +331,7 @@
                 </span>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug">Space-saving</h3>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Less than one square metre of floor space, regardless of heating system.</p>
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Selected dryer formats can use less than one square metre of floor space, depending on model and setup.</p>
                 </div>
             </div>
         </div>
@@ -350,15 +348,21 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan drying around <span style="color:#011E41;">room fit, energy use and daily demand</span>
+            Plan drying around <span style="color:#011E41;">space, airflow and daily demand</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A dryer should fit the room, utilities and workload before money is spent. Irish Laundry Systems can review capacity, ventilation, access and installation needs before the final equipment choice.
+            Irish Laundry Systems reviews room fit, airflow, utilities, access and stacked options before recommending dryer capacity.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Energy use', 'Daily demand'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex items-center flex-wrap gap-x-6 gap-y-3 mb-7">
+            @foreach([
+                ['icon' => '61',  'label' => 'Room fit'],
+                ['icon' => '147', 'label' => 'Airflow'],
+                ['icon' => '191', 'label' => 'Stacked options'],
+            ] as $pt)
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain">
+                <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
+            </span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -373,19 +377,19 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Range Starting Points</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Dryer options worth a <span style="color:#148af4;">closer look</span>
+                Start with the dryer type that <span style="color:#148af4;">fits your room and daily demand</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Start with the dryer type that fits your laundry room, then match the choice to energy use, room setup, daily demand and long-term support.
+                Choose the dryer option around room size, drying volume, energy use and support needs.
             </p>
         </div>
 
         @php
         $rangeCards = [
             ['name' => 'Line 6000 Tumble Dryers', 'copy' => 'Main commercial dryer range for busy laundry rooms where drying performance, controls and fabric care matter every day.', 'cta' => 'View Dryer Range', 'route' => '#dryer-range', 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy use and avoid exhaust or water cooling where the room setup is suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => route('equipment.product', ['category' => 'tumble-dryers', 'product' => 'heat-pump']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
+            ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy use where room setup and installation conditions are suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => route('equipment.product', ['category' => 'tumble-dryers', 'product' => 'heat-pump']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
             ['name' => 'Drying Cabinets',         'copy' => 'For bulky, sensitive or specialist items that need drying without standard tumble action.', 'cta' => 'Explore Drying Cabinets', 'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
             ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying without a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-dryer']), 'img' => '/images/equipment/line6000-tumble-dryer.webp'],
         ];
@@ -525,10 +529,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare dryer options around <span style="color:#148af4;">energy use, capacity and support</span>
+                Compare dryer options around<br class="hidden lg:block"> <span style="color:#148af4;">energy use, capacity and room fit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with drying demand, then match the dryer choice to room layout, ventilation, energy use, installation and long-term support.
+                Start with drying demand, then match the dryer choice to room layout, airflow, energy use, installation needs and long-term support.
             </p>
         </div>
 
@@ -694,169 +698,14 @@
     </div>
 </section>
 
-{{-- 12b. DOSING & LAUNDRY CONTROL (Alpine carousel — sector module) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control detergent waste before<br class="hidden lg:block"> laundry reaches <span style="color:#148af4;">the drying stage</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
-                Better drying starts earlier in the process. Automatic dosing supports the wash cycle with the right amount of detergent,<br class="hidden lg:block"> reducing waste, protecting textile quality and supporting more consistent results before drying.
-            </p>
-        </div>
-
-        @php
-        $dosingProducts = [
-            [
-                'name'   => 'Multisave',
-                'label'  => 'Multi-tank dosing with water saving',
-                'body'   => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
-                'points' => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
-                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
-            ],
-            [
-                'name'   => 'DOSAVE',
-                'label'  => 'Precise dosing for consistent results',
-                'body'   => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
-                'points' => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
-                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
-            ],
-            [
-                'name'   => 'JETSAVE',
-                'label'  => 'Jet-based dosing with integrated saving',
-                'body'   => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
-                'points' => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
-                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
-            ],
-            [
-                'name'   => 'Efficient Dosing',
-                'label'  => 'Integrated dosing through CompassPro',
-                'body'   => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
-                'points' => ['Integrated with CompassPro', 'Removes manual dosing errors', 'Lower detergent cost per cycle'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
-            ],
-        ];
-        @endphp
-
-        <div
-            x-data="{
-                active: 0,
-                count: 4,
-                timer: null,
-                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
-                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
-                go(i)   { this.active = i; this.restart(); },
-                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 5000); },
-            }"
-            x-init="timer = setInterval(() => next(), 5000)"
-            class="relative reveal"
-        >
-            {{-- Slides --}}
-            <div class="grid [&>*]:[grid-area:1/1]">
-                @foreach($dosingProducts as $i => $p)
-                <div
-                    class="transition-opacity duration-500"
-                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
-                >
-                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
-
-                        {{-- Left: context photo --}}
-                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
-                                 alt="Electrolux Professional laundry equipment"
-                                 class="w-full object-cover object-center" style="height:260px;">
-                        </div>
-
-                        {{-- Right: product name + tabs indicator + description + unit image --}}
-                        <div class="lg:col-span-9 flex flex-col justify-between p-6 sm:p-8 lg:p-10">
-
-                            {{-- Tab indicators (product selector) --}}
-                            <div class="flex gap-1 border-b border-gray-100 mb-6 overflow-x-auto">
-                                @foreach($dosingProducts as $j => $tab)
-                                <button @click="go({{ $j }})"
-                                        :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                                        class="font-heading text-sm pb-3 pr-6 transition-colors whitespace-nowrap">
-                                    {{ $tab['name'] }}
-                                </button>
-                                @endforeach
-                            </div>
-
-                            {{-- Content + unit image side by side --}}
-                            <div class="flex flex-col sm:flex-row gap-6 items-start flex-1">
-
-                                {{-- Copy --}}
-                                <div class="flex-1">
-                                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
-                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
-                                    <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
-                                    </div>
-                                </div>
-
-                                {{-- Unit image --}}
-                                @if($p['img'])
-                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
-                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
-                                         class="w-full h-auto object-contain">
-                                </div>
-                                @endif
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                @endforeach
-            </div>
-
-            {{-- Prev / Next buttons --}}
-            <button @click="prev()"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
-            </button>
-            <button @click="next()"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-            </button>
-
-            {{-- Dot navigation --}}
-            <div class="flex items-center justify-center gap-2 mt-3">
-                @foreach($dosingProducts as $i => $p)
-                <button
-                    @click="go({{ $i }})"
-                    :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
-                    class="h-2 rounded-full transition-all duration-300">
-                </button>
-                @endforeach
-            </div>
-
-        </div>
-
-        {{-- CTA --}}
-        <div class="mt-4 text-center">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
-                Ask About Dosing Systems
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-            </a>
-        </div>
-
-    </div>
-</section>
-
 {{-- 12c. RENTAL / CAPITAL STRIP (moved below dosing) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
     'headingLine1' => 'Keep drying performance moving with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Rental can support dryer replacement, capacity planning or ageing equipment without one large upfront purchase.',
+    'body'         => 'Equipment Rental can support dryer replacement, capacity planning or ageing equipment without one large upfront purchase.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>upfront cost'],
         ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
         ['icon' => 'healthcarerentalstrip3', 'label' => 'Capacity<br>planning'],
     ],
@@ -946,16 +795,16 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep dryer support clear <span style="color:#011E41;">after installation</span>
+                    Keep dryer support organised<br class="hidden lg:block"> <span style="color:#011E41;">after installation</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    Keep maintenance, service history, breakdown support and parts access clear after installation, rental, repair or inspection.
+                    Irish Laundry Systems keeps service history, maintenance planning and parts support organised after installation, Equipment Rental, repair or inspection.
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
                     @foreach([
                         ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>history'],
-                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Breakdown<br>support'],
-                        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>access'],
+                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Maintenance<br>planning'],
+                        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>support'],
                     ] as $pt)
                     <span class="flex items-center gap-2 flex-shrink-0">
                         <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
@@ -978,8 +827,8 @@
 {{-- 16. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted support behind <span style="color:#148af4;">commercial drying performance</span>',
-    'subheading' => 'Commercial tumble dryers affect energy use, staff routines, daily output and long-term running costs. Irish Laundry Systems is trusted by organisations that value clear communication, responsive support and peace of mind after equipment is installed.',
+    'heading'    => 'Trusted support behind <span style="color:#148af4;">commercial dryer performance</span>',
+    'subheading' => 'Irish Laundry Systems supports commercial dryer sites where energy use, daily output, responsive support and peace of mind matter after installation.',
 ])
 
 {{-- 17. TRUSTED BY LOGO STRIP --}}

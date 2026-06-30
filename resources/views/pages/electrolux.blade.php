@@ -23,6 +23,22 @@
         background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
         background-size: 22px 22px;
     }
+
+    /* Card lift on hover — reveal-compatible: keeps the .65s opacity fade while
+       using a .3s transform for both entrance and hover. The .is-visible:hover
+       selector beats .reveal.is-visible{transform:none} via higher specificity. */
+    .ep-lift {
+        transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease, opacity .65s ease;
+    }
+    .ep-lift:hover,
+    .ep-lift.is-visible:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(1, 30, 65, 0.13);
+        border-color: rgba(20, 138, 244, 0.35);
+    }
+    @media (prefers-reduced-motion: reduce) {
+        .ep-lift:hover, .ep-lift.is-visible:hover { transform: none; box-shadow: none; }
+    }
 </style>
 
 {{-- ════════════════════════════════════════════════════════════════════════
@@ -54,12 +70,12 @@
                 <div class="ep-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="#electrolux-form"
                        data-ga-cta="hero-talk-engineer"
-                       class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#148af4]/40 whitespace-nowrap">
                         Talk to an Engineer
                     </a>
                     <a href="{{ route('equipment') }}"
                        data-ga-cta="hero-explore-equipment"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5 whitespace-nowrap">
                         Explore Equipment
                     </a>
                 </div>
@@ -128,8 +144,8 @@
             @foreach ($whyCards as $i => $card)
             <div class="reveal group py-8 lg:py-0 border-t border-gray-200 first:border-t-0 lg:border-t-0 lg:border-l lg:first:border-l-0 lg:px-10 lg:first:pl-0 lg:last:pr-0 lg:grid lg:grid-rows-subgrid lg:row-span-3"
                  style="transition-delay:{{ $i * 80 }}ms;">
-                <svg class="w-11 h-11 lg:w-12 lg:h-12 text-navy mb-7 transition-transform duration-300 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
-                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-3 leading-snug text-balance self-start">{{ $card['title'] }}</h3>
+                <svg class="w-11 h-11 lg:w-12 lg:h-12 text-navy mb-7 transition-all duration-300 group-hover:-translate-y-1 group-hover:text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
+                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-3 leading-snug text-balance self-start transition-colors duration-300 group-hover:text-[#148af4]">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
             </div>
             @endforeach
@@ -146,7 +162,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
-            <div class="reveal">
+            <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Advantage</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     A serious <span class="text-[#148af4]">professional laundry range</span> behind the local advice
@@ -154,15 +170,15 @@
                 <p class="font-body text-blue-200 text-base leading-relaxed text-pretty mb-8 max-w-xl">
                     Electrolux Professional equipment is built for performance, efficiency and reliability in the most demanding environments. With Irish Laundry Systems by your side, you get expert advice, installation and ongoing support from a local team that understands your operation.
                 </p>
-                <a href="{{ route('equipment') }}" class="inline-flex items-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
+                <a href="{{ route('equipment') }}" class="group inline-flex items-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-black/25">
                     Explore the range
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
 
-            <div class="reveal" style="transition-delay:120ms;">
-                <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Electrolux Professional commercial laundry range" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <div class="reveal reveal-right" style="transition-delay:120ms;">
+                <div class="group rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+                    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Electrolux Professional commercial laundry range" loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
                 </div>
             </div>
 
@@ -181,7 +197,7 @@
                     'Dosing systems'   => 'accessories',
                     'Accessories'      => 'accessories',
                 ] as $label => $slug)
-                <a href="{{ route('equipment.category', $slug) }}" class="font-body font-bold text-white/70 hover:text-white text-sm transition-colors">{{ $label }}</a>
+                <a href="{{ route('equipment.category', $slug) }}" class="relative font-body font-bold text-white/70 hover:text-white text-sm transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-[#148af4] after:transition-all after:duration-300 hover:after:w-full">{{ $label }}</a>
                 @endforeach
             </div>
         </div>
@@ -216,8 +232,8 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
             @foreach ($localCards as $i => $card)
-            <article class="reveal bg-bg rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col" style="transition-delay:{{ $i * 60 }}ms;">
-                <span class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-4">{{ $card['label'] }}</span>
+            <article class="reveal ep-lift group bg-bg rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col" style="transition-delay:{{ $i * 60 }}ms;">
+                <span class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-4 transition-colors duration-300 group-hover:text-[#148af4]">{{ $card['label'] }}</span>
                 <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-2 leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
             </article>
@@ -233,16 +249,16 @@
     <div class="grid grid-cols-1 lg:grid-cols-2">
 
         {{-- Photo --}}
-        <div class="relative min-h-[320px] lg:min-h-[540px]">
+        <div class="group relative min-h-[320px] lg:min-h-[540px] overflow-hidden">
             <img src="/images/healthcare/customer-care-line6000.jpg" alt="Irish Laundry Systems engineer supporting Electrolux Professional equipment"
-                 loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+                 loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[700ms] ease-out group-hover:scale-105">
             <div class="absolute inset-0 lg:hidden" style="background:rgba(1,30,65,0.45);"></div>
         </div>
 
         {{-- Text --}}
         <div class="relative flex items-center px-6 sm:px-10 lg:px-16 py-16 lg:py-24">
             <div class="ep-dotgrid absolute inset-0 opacity-25" aria-hidden="true"></div>
-            <div class="relative max-w-xl reveal">
+            <div class="relative max-w-xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Downtime Is Not An Option</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Protect uptime with <span class="text-[#148af4]">the right support</span> behind the&nbsp;equipment
@@ -250,9 +266,9 @@
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8 text-pretty">
                     A stopped washer, dryer or ironer can delay linen and interrupt the day’s operation. As an Authorised Electrolux Professional Partner, Irish Laundry Systems uses manufacturer support channels, genuine parts access and decades of equipment knowledge to help you reach the right repair decision faster.
                 </p>
-                <a href="{{ route('request-assessment') }}" class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
+                <a href="{{ route('request-assessment') }}" class="group inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-[#148af4]/30">
                     Request Service Assessment
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
         </div>
@@ -268,7 +284,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
 
             {{-- Left: heading + image --}}
-            <div class="reveal">
+            <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Care</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Equipment support from <span class="text-[#148af4]">advice to&nbsp;aftercare</span>
@@ -276,9 +292,9 @@
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty mb-8">
                     Customers do not just need equipment supplied. They need the right machine, installed properly, maintained well, repaired correctly and supported when the next decision appears. Irish Laundry Systems brings those steps together through one local engineering team.
                 </p>
-                <div class="rounded-2xl overflow-hidden shadow-card">
+                <div class="group rounded-2xl overflow-hidden shadow-card">
                     <img src="/images/healthcare/render-double-page_72dpi.jpg" alt="Electrolux Professional laundry equipment supported by Irish Laundry Systems"
-                         loading="lazy" decoding="async" class="w-full h-auto object-cover">
+                         loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
                 </div>
             </div>
 
@@ -295,9 +311,9 @@
             @endphp
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-7 lg:pt-4">
                 @foreach ($pillars as $i => $p)
-                <div class="reveal" style="transition-delay:{{ $i * 60 }}ms;">
-                    <div class="font-heading font-bold text-[#148af4] text-lg mb-2">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</div>
-                    <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1.5 leading-snug">{{ $p['title'] }}</h3>
+                <div class="reveal group" style="transition-delay:{{ $i * 60 }}ms;">
+                    <div class="font-heading font-bold text-[#148af4] text-lg mb-2 transition-transform duration-300 origin-left group-hover:scale-110">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</div>
+                    <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1.5 leading-snug transition-colors duration-300 group-hover:text-[#148af4]">{{ $p['title'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed text-pretty">{{ $p['body'] }}</p>
                 </div>
                 @endforeach
@@ -496,14 +512,14 @@
                 <div class="pt-2 flex flex-wrap gap-4">
                     <button type="submit"
                             data-ga-cta="form-talk-engineer"
-                            class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 w-full sm:w-auto">
+                            class="group inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#148af4]/30 w-full sm:w-auto">
                         Talk to an Engineer
-                        <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                        <svg class="w-4 h-4 ml-2 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/>
                         </svg>
                     </button>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center border border-navy/30 hover:border-navy text-navy font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 w-full sm:w-auto">
+                       class="inline-flex items-center justify-center border border-navy/30 hover:border-navy text-navy font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:-translate-y-0.5 w-full sm:w-auto">
                         Request Service Assessment
                     </a>
                 </div>
