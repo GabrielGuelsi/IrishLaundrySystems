@@ -94,17 +94,19 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
-                ['title' => 'Increase productivity',            'body' => 'Use equipment status, cycle activity and load factor insight to reduce idle time, improve output and get more from the laundry room already in place.', 'd' => 'M2.25 18 9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941'],
-                ['title' => 'Improve efficiency',               'body' => 'See where equipment is active, idle or underused, so staff time, cycles and resources can be managed with more control.', 'd' => 'm3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z'],
-                ['title' => 'Boost customer satisfaction',      'body' => 'Support more consistent quality, hygiene, safety and daily output, so residents, patients, guests, staff and customers can depend on the laundry operation behind them.', 'd' => 'M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z'],
-                ['title' => 'Make your business more sustainable','body' => 'Monitor energy, water and detergent consumption, reduce waste and support lower running costs through transparency and built-in intelligence.', 'd' => 'M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418'],
+                ['title' => 'Increase productivity',            'body' => 'Use equipment status, cycle activity and load factor insight to reduce idle time, improve output and get more from the laundry room already in place.', 'icon' => '173'],
+                ['title' => 'Improve efficiency',               'body' => 'See where equipment is active, idle or underused, so staff time, cycles and resources can be managed with more control.', 'icon' => '11'],
+                ['title' => 'Boost customer satisfaction',      'body' => 'Support more consistent quality, hygiene, safety and daily output, so residents, patients, guests, staff and customers can depend on the laundry operation behind them.', 'icon' => '164'],
+                ['title' => 'Make your business more sustainable','body' => 'Monitor energy, water and detergent consumption, reduce waste and support lower running costs through transparency and built-in intelligence.', 'icon' => '6'],
             ] as $b)
-            <div class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm flex flex-col">
-                <div class="w-14 h-14 rounded-xl bg-[#148af4]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                    <svg class="w-7 h-7 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $b['d'] }}"/></svg>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-4">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/{{ $b['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $b['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $b['body'] }}</p>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $b['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $b['body'] }}</p>
+                </div>
             </div>
             @endforeach
         </div>
@@ -125,17 +127,19 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
-                ['title' => 'Reduce costs and waste',                 'body' => 'Track energy, water and detergent consumption so waste is easier to see, measure and manage.', 'd' => 'M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z'],
-                ['title' => 'Improve production flow',                'body' => 'Use cycle run data, load factor and equipment status to reduce idle time, avoid wasted cycles and support smoother daily output.', 'd' => 'M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 0 1 0 1.953l-7.108 4.062A1.125 1.125 0 0 1 3 16.81V8.688ZM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 0 1 0 1.953l-7.108 4.062a1.125 1.125 0 0 1-1.683-.977V8.688Z'],
-                ['title' => 'Support hygiene and process validation','body' => 'Use cycle logs, process validation and hygiene validation visibility to support stronger records and greater process confidence where compatible equipment and settings apply.', 'd' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z'],
-                ['title' => 'Protect equipment value',               'body' => 'Use status, activity, alerts and error information to support better maintenance conversations, stronger aftercare and longer equipment life.', 'd' => 'M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26'],
+                ['title' => 'Reduce costs and waste',                 'body' => 'Track energy, water and detergent consumption so waste is easier to see, measure and manage.', 'icon' => '166'],
+                ['title' => 'Improve production flow',                'body' => 'Use cycle run data, load factor and equipment status to reduce idle time, avoid wasted cycles and support smoother daily output.', 'icon' => '165'],
+                ['title' => 'Support hygiene and process validation','body' => 'Use cycle logs, process validation and hygiene validation visibility to support stronger records and greater process confidence where compatible equipment and settings apply.', 'icon' => '172'],
+                ['title' => 'Protect equipment value',               'body' => 'Use status, activity, alerts and error information to support better maintenance conversations, stronger aftercare and longer equipment life.', 'icon' => '167'],
             ] as $v)
-            <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
-                <div class="w-12 h-12 rounded-xl bg-[#148af4]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $v['d'] }}"/></svg>
+            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-4">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/{{ $v['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $v['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $v['body'] }}</p>
+                <div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $v['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $v['body'] }}</p>
+                </div>
             </div>
             @endforeach
         </div>
@@ -170,18 +174,20 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 reveal">
             @foreach([
-                ['t' => 'Equipment status',        'b' => 'See what is running, idle, finished, in alert or needing attention.'],
-                ['t' => 'Cycle activity',          'b' => 'Review cycle runs and understand how equipment is being used.'],
-                ['t' => 'Load factor',             'b' => 'See how efficiently equipment is loaded against capacity.'],
-                ['t' => 'Consumption reports',     'b' => 'Monitor energy, water and detergent use across the site.'],
-                ['t' => 'Notifications and alerts','b' => 'Receive notifications when errors occur or when validation fails.'],
-                ['t' => 'Remote programme control','b' => 'Activate or deactivate selected cycles remotely where compatible equipment and user permissions apply.'],
-                ['t' => 'Laundry mapping',         'b' => 'View equipment in a custom laundry-room layout with simple colour-coded status.'],
-                ['t' => 'User profiles',           'b' => 'Set different access levels for managers, operators or service users where suitable.'],
-                ['t' => 'Data extraction',         'b' => 'Export logs and reports for deeper review, audits or performance analysis.'],
+                ['t' => 'Equipment status',         'i' => 'M9.348 14.651a3.75 3.75 0 0 1 0-5.303m5.304 0a3.75 3.75 0 0 1 0 5.303m-7.425 2.122a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.008H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z', 'b' => 'See what is running, idle, finished, in alert or needing attention.'],
+                ['t' => 'Cycle activity',           'i' => 'M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99', 'b' => 'Review cycle runs and understand how equipment is being used.'],
+                ['t' => 'Load factor',              'i' => 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z', 'b' => 'See how efficiently equipment is loaded against capacity.'],
+                ['t' => 'Consumption reports',      'i' => 'M2.25 18 9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941', 'b' => 'Monitor energy, water and detergent use across the site.'],
+                ['t' => 'Notifications and alerts', 'i' => 'M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0', 'b' => 'Receive notifications when errors occur or when validation fails.'],
+                ['t' => 'Remote programme control', 'i' => 'M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75', 'b' => 'Activate or deactivate selected cycles remotely where compatible equipment and user permissions apply.'],
+                ['t' => 'Laundry mapping',          'i' => 'M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z', 'b' => 'View equipment in a custom laundry-room layout with simple colour-coded status.'],
+                ['t' => 'User profiles',            'i' => 'M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z', 'b' => 'Set different access levels for managers, operators or service users where suitable.'],
+                ['t' => 'Data extraction',          'i' => 'M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3', 'b' => 'Export logs and reports for deeper review, audits or performance analysis.'],
             ] as $dp)
-            <div class="flex items-start gap-3">
-                <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-lg bg-[#148af4]/15 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['i'] }}"/></svg>
+                </div>
                 <div>
                     <h3 class="font-heading font-bold text-white text-base leading-snug mb-1">{{ $dp['t'] }}</h3>
                     <p class="font-body text-white/65 text-sm leading-relaxed">{{ $dp['b'] }}</p>
@@ -235,41 +241,16 @@
     </div>
 </section>
 
-{{-- 8. ILS ENGINEERING LAYER --}}
-<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Irish Engineering Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Electrolux builds the intelligence. ILS connects it to <span style="color:#148af4;">the real laundry room</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl mb-2">
-                OnE Connected is Electrolux Professional technology. Irish Laundry Systems applies that intelligence through Irish engineering support, connecting it to the equipment, room, workload, service plan and daily operation.
-            </p>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                For more than 30 years, ILS has supported Irish laundry operations of different sizes with equipment advice, installation, maintenance, repairs and aftercare. That experience matters when connected data needs to become action around cost, workload, uptime pressure and equipment care.
-            </p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 reveal">
-            @foreach([
-                ['t' => 'Compatibility review',           'b' => 'Check the equipment, model, controls and connection requirements before the site commits.'],
-                ['t' => 'Room and workload understanding','b' => 'Connect dashboard insight to the actual room, capacity, staff pressure and daily demand.'],
-                ['t' => 'Service and aftercare connection','b' => 'Use alerts, errors and equipment information to support better maintenance and service conversations.'],
-            ] as $sp)
-            <div class="rounded-2xl p-7 border border-gray-100 bg-white">
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $sp['t'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $sp['b'] }}</p>
-            </div>
-            @endforeach
-        </div>
-        <div class="mt-10">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                Speak to Irish Laundry Systems
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-            </a>
-        </div>
-    </div>
-</section>
+{{-- 8. ILS ENGINEERING LAYER (image-backed strip) --}}
+@include('components.service-contracts-strip', [
+    'eyebrow'      => 'Irish Engineering Support',
+    'headingLine1' => 'Electrolux builds the intelligence.',
+    'headingLine2' => 'ILS connects it to the real laundry room',
+    'body'         => 'OnE Connected is Electrolux Professional technology. Irish Laundry Systems applies it through Irish engineering support — connecting dashboard insight to the equipment, room, workload, service plan and daily operation, backed by more than 30 years supporting Irish laundry operations.',
+    'image'        => '/images/healthcare/customer-care-line6000.jpg',
+    'cta1Label'    => 'Speak to Irish Laundry Systems',
+    'cta1Route'    => 'contact',
+])
 
 {{-- 9. COMPATIBLE LAUNDRY EQUIPMENT --}}
 <section class="py-16 lg:py-24 bg-white">
@@ -324,18 +305,26 @@
                 Getting started with OnE Connected should feel clear. Irish Laundry Systems can review the room, equipment and connection requirements, then advise on the right next step for compatible Electrolux Professional equipment.
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-5 reveal">
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 reveal">
             @foreach([
-                ['title' => 'Check compatibility',          'body' => 'Review the equipment, model, controls and production details to confirm whether OnE Connected can apply.'],
-                ['title' => 'Review connection needs',      'body' => 'Assess the site, room layout, signal, router and network requirements before setup.'],
-                ['title' => 'Connect the equipment',        'body' => 'Use the required Electrolux Professional connectivity hardware and setup process for compatible equipment.'],
-                ['title' => 'Start monitoring performance', 'body' => 'Use the dashboard to review status, cycles, loading, consumption, alerts, user access and process data.'],
-                ['title' => 'Scale with the operation',     'body' => 'Add compatible equipment, users or sites as the operation grows and the need for visibility increases.'],
-            ] as $i => $step)
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col">
-                <div class="w-11 h-11 rounded-full bg-[#148af4] text-white font-heading font-bold flex items-center justify-center mb-4 flex-shrink-0">{{ $i + 1 }}</div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $step['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['body'] }}</p>
+                ['n' => '1', 'title' => 'Check compatibility',          'body' => 'Review the equipment, model, controls and production details to confirm whether OnE Connected can apply.', 'img' => '/images/healthcare/render-double-page_72dpi.jpg', 'pos' => 'center'],
+                ['n' => '2', 'title' => 'Review connection needs',      'body' => 'Assess the site, room layout, signal, router and network requirements before setup.', 'img' => '/images/healthcare/line-6000-solutions.jpg', 'pos' => 'center'],
+                ['n' => '3', 'title' => 'Connect the equipment',        'body' => 'Use the required Electrolux Professional connectivity hardware and setup process for compatible equipment.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center 30%'],
+                ['n' => '4', 'title' => 'Start monitoring performance', 'body' => 'Use the dashboard to review status, cycles, loading, consumption, alerts, user access and process data.', 'img' => '/images/healthcare/stripOneconnected.png', 'pos' => 'center'],
+                ['n' => '5', 'title' => 'Scale with the operation',     'body' => 'Add compatible equipment, users or sites as the operation grows and the need for visibility increases.', 'img' => '/images/healthcare/commercial-industrial.jpg', 'pos' => 'center'],
+            ] as $step)
+            <div class="group relative overflow-hidden rounded-2xl min-h-[300px] sm:min-h-[360px] {{ $loop->last ? 'col-span-2 lg:col-span-1' : '' }}">
+                <img src="{{ $step['img'] }}" alt="{{ $step['title'] }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:{{ $step['pos'] }};">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" style="background:linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.18) 100%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background:rgba(1,30,65,0.9);"></div>
+                <div class="absolute inset-0 p-5 lg:p-6 flex flex-col justify-end z-10">
+                    <div class="font-heading font-bold text-[#148af4] leading-none mb-2" style="font-size:2rem;">{{ str_pad($step['n'], 2, '0', STR_PAD_LEFT) }}.</div>
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-44 group-hover:opacity-100 transition-all duration-500 mb-2">
+                        <p class="font-body text-white/80 text-sm leading-relaxed">{{ $step['body'] }}</p>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-base lg:text-lg leading-snug">{{ $step['title'] }}</h3>
+                </div>
             </div>
             @endforeach
         </div>
@@ -378,6 +367,14 @@
         </div>
     </div>
 </section>
+
+{{-- 11b. TESTIMONIALS + CLIENT PROOF --}}
+@include('components.testimonials', [
+    'eyebrow' => 'Customer Trust',
+    'heading' => 'Trusted by sites that depend on <span style="color:#148af4;">reliable laundry support</span>',
+])
+
+@include('components.proof-bar')
 
 {{-- 12. FAQs --}}
 @include('components.faq', [
