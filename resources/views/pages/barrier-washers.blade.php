@@ -86,10 +86,10 @@
 
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'7',              'prefix'=>'Up to', 'stat'=>'50%',                 'size'=>'text-4xl', 'label'=>'water saving',                'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
-            ['icon'=>'182',            'prefix'=>'Up to', 'stat'=>'25%',                 'size'=>'text-4xl', 'label'=>'productivity increase',       'body'=>'Electrolux ergonomic material cites a 25% productivity increase, with fewer sick days and reduced strain.'],
+            ['icon'=>'169',            'prefix'=>'Up to', 'stat'=>'25%',                 'size'=>'text-4xl', 'label'=>'productivity increase',       'body'=>'Electrolux ergonomic material cites a 25% productivity increase, with fewer sick days and reduced strain.'],
             ['icon'=>'28',             'prefix'=>'',      'stat'=>'Better<br>loading',    'size'=>'text-2xl', 'label'=>'less resource waste',          'labelClass'=>'translate-y-2', 'body'=>'Integrated weighing supports better loading, reducing underloading, overloading and avoidable water and energy waste.'],
             ['icon'=>'dosing-control', 'prefix'=>'',      'stat'=>'Less dosing<br>waste', 'size'=>'text-2xl', 'label'=>'detergent and water control', 'labelClass'=>'translate-y-2', 'body'=>'Efficient Dosing adjusts detergent and water to load weight, reducing waste and supporting process consistency.'],
-            ['icon'=>'29',             'prefix'=>'',      'stat'=>'Lower<br>energy cost', 'size'=>'text-2xl', 'label'=>'after washing',               'labelClass'=>'translate-y-2', 'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
+            ['icon'=>'181',            'prefix'=>'',      'stat'=>'Lower<br>energy cost', 'size'=>'text-2xl', 'label'=>'after washing',               'labelClass'=>'translate-y-2', 'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
         ]])
     </div>
 </section>
@@ -144,11 +144,11 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '184', 'title' => 'Dirty-clean separation', 'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.'],
+                ['icon' => '182', 'title' => 'Dirty-clean separation', 'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.'],
                 ['icon' => '96',  'title' => 'Hygiene control',        'copy' => 'Hygiene Watchdog monitors full-cycle completion and hygiene process control.', 'img' => '/images/icons/Hygiene-Watchdog1.webp'],
                 ['icon' => '4',   'title' => 'Programme control',      'copy' => 'ClarusVibe gives clearer operation for dirty-side and clean-side control.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-32 object-cover rounded-lg'],
-                ['icon' => '95',  'title' => 'Easier unloading',       'copy' => 'Automatic Door Handling supports easier opening and faster unloading.', 'img' => '/images/healthcare/Auto Inner Door Opening (AIDO) System.png', 'imgClass' => 'w-full h-28 object-contain'],
-                ['icon' => '140', 'title' => 'Cycle visibility',       'copy' => 'Monitoring options can show cycle status, alarms and key process data for supported barrier washer setups.'],
+                ['icon' => '95',  'title' => 'Easier unloading',       'copy' => 'Automatic Door Handling supports easier opening and faster unloading.', 'img' => '/images/icons/Foto-web-BW.jpg', 'imgClass' => 'w-full h-32 object-cover rounded-lg'],
+                ['icon' => '175', 'title' => 'Cycle visibility',       'copy' => 'Monitoring options can show cycle status, alarms and key process data for supported barrier washer setups.'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
@@ -220,7 +220,7 @@
 
             {{-- COL 2: barrier washer image (the big equipment image) --}}
             <div class="flex items-center justify-center py-2">
-                <img src="/images/equipment/barrierwasheroperatorconfort.png" alt="Barrier washer operator comfort" class="w-auto h-auto max-h-[560px] object-contain">
+                <img src="/images/equipment/barrierwasheroperatorconfort.png" alt="Barrier washer operator comfort" class="w-auto h-auto max-h-[440px] object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
@@ -333,20 +333,20 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the room around <span style="color:#011E41;">separation, access and connections</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight mb-4">
+            Plan the room around<br><span style="color:#011E41;">separation, access and connections</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Barrier washers need room planning before installation, including dirty / clean separation, site access, wall opening, water supply, power and drainage.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-3 mb-7">
             @foreach([
-                ['icon' => '70',  'label' => 'Separation'],
-                ['icon' => '60',  'label' => 'Access'],
-                ['icon' => '186', 'label' => 'Connections'],
+                ['icon' => '183', 'label' => 'Separation', 'blend' => true],
+                ['icon' => '166', 'label' => 'Access'],
+                ['icon' => '184', 'label' => 'Connections'],
             ] as $pt)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain" style="{{ !empty($pt['blend']) ? 'mix-blend-mode:screen;' : 'filter:brightness(0) invert(1);' }}">
                 <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
             </span>
             @endforeach
@@ -358,8 +358,11 @@
     </div>
 </section>
 
+{{-- white separator band between the blue strip and the resources bar --}}
+<div class="bg-white h-8 lg:h-12"></div>
+
 {{-- 11. COMPACT RESOURCES BAR (low, light, supporting — matches commercial washers) --}}
-<section class="mt-10 lg:mt-14 pt-14 pb-8 bg-bg border-t border-gray-100">
+<section class="pt-14 pb-8 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
@@ -727,8 +730,8 @@
     'body'         => 'Rental can support barrier washer replacement, capacity planning<br>or ageing equipment without one large upfront purchase.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
-        ['icon' => '114', 'label' => 'Included<br>support'],
-        ['icon' => '146', 'label' => 'Capacity<br>planning'],
+        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Included<br>support'],
+        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Capacity<br>planning'],
     ],
 ])
 
