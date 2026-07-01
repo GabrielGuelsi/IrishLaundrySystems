@@ -35,7 +35,9 @@
         @endphp
         <div class="lg:min-h-[6.5rem] w-fit {{ ($tightLeft ?? false) ? '-ml-3' : '' }}">
             <div class="flex items-center gap-1 min-h-16 xl:min-h-20">
+                @if(!empty($it['icon']))
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0 {{ $it['iconClass'] ?? '' }}">
+                @endif
                 <div class="flex flex-col min-w-0 justify-center h-full">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : ($numericSize ?? 'text-[1.8225rem] xl:text-[2.43rem]') }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
