@@ -17,13 +17,15 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Choose commercial ironers around <span style="color:#148af4;">perfectly ironed linen, daily output and room fit</span>
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                    <span class="block lg:whitespace-nowrap">Choose commercial ironers around</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">flatwork quality, easier handling and room fit</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial ironers and finishing equipment for sites that need consistent flatwork finish, clear room planning and long-term service support.
-                    <br><br>
-                    Match the right ironer, roller ironing option or finishing setup to working width, delivery direction, automation level, heating choice, rental and aftercare.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial ironers for sites that need consistent flatwork finishing and practical daily operation.
+                </p>
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
+                    We help match ironer type, delivery direction and heating option to your linen volume and room layout.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -47,20 +49,22 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Ironer Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Flatwork finish depends on <span style="color:#148af4;">working width, delivery direction and handling</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[43px] leading-tight">
+                    <span class="block lg:whitespace-nowrap">Ironing performance depends on</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">what you finish, how you handle it</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">and where it fits</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Commercial ironing affects how linen is finished, handled, collected and returned to use each day.
+                    Flatwork ironing is shaped by linen type, working width, loading, collection, heating choice and operator comfort.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems reviews linen type, working width, room layout, heating choice, automation level, rental and aftercare before recommending the right setup.
+                    Irish Laundry Systems reviews the room, handling needs and ironer options before recommending the right commercial ironer, roller ironing option or finishing system.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -82,18 +86,18 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironing &amp; Finishing Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Find the <span style="color:#148af4;">right option</span> for ironed linen and finished garments
+                Choose the ironing setup that fits <span style="color:#148af4;">what your site needs to finish</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with what needs to be finished each day, then match the option to room layout, working width, heating choice, automation and aftercare.
+                Start with the linen, garments or uniforms your team handles each day. Then match the equipment to space, handling, heating choice and long-term support.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach([
-                ['title' => 'Hot Cylinder / Flatwork Ironers', 'copy' => 'For busy laundry rooms handling sheets, table linen and flatwork where finish, output and hygiene control matter every day.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Roller / Rotary Ironers',         'copy' => 'For teams comparing roller irons, rotary ironers or dryer ironers before choosing the right flatwork setup.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range', 'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
-                ['title' => 'Finishing Equipment',             'copy' => 'For ironing tables, steam irons, presses and hand-finishing support for garments, uniforms, resident clothing and smaller finishing jobs.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => '/images/equipment/FIT1.jpg'],
+                ['title' => 'Flatwork Ironers', 'copy' => 'For sheets, table linen and other flatwork that need a consistent finish at higher volumes.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range', 'img' => '/images/equipment/line6000-ironer.webp'],
+                ['title' => 'Roller / Rotary Ironers',         'copy' => 'For sites that need a practical ironing setup for regular flatwork without a larger finishing line.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range', 'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Finishing Equipment',             'copy' => 'For garments, uniforms, resident clothing and smaller items that need hand finishing or extra care.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => '/images/equipment/FIT1.jpg'],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:130px;">
@@ -105,7 +109,7 @@
                          class="transition-transform duration-500 hover:-translate-y-2"
                          style="max-width:100%; max-height:280px; object-fit:contain;">
                 </div>
-                <a href="{{ $card['href'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                <a href="{{ $card['href'] }}" class="inline-flex items-center justify-center gap-1.5 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-4 py-3 rounded-lg transition-colors mt-auto w-fit">
                     {{ $card['cta'] }}
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -120,21 +124,21 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control <span style="color:#148af4;">energy, output and operator handling</span> <br class="hidden lg:block">before the ironer is chosen
+                Control ironing cost through <span style="color:#148af4;">energy savings, productivity and staffing efficiency</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                The right ironer setup can protect daily output, reduce unnecessary handling and make the room easier to work in. These decisions shape running cost, output and operator handling long after installation.
+                Electrolux Professional ironer technology can support lower energy use, higher productivity and more efficient flatwork handling when the right model and configuration are matched to the site.
             </p>
         </div>
 
-        @include('components.financial-metrics', ['items' => [
-            ['icon'=>'6',  'prefix'=>'',      'stat'=>'20%',                       'size'=>'text-4xl', 'label'=>'gas energy saving',             'body'=>'Electrolux Professional Ceramic Burner technology can reduce gas energy use on suitable gas-heated models. Gas-heated models only.'],
-            ['icon'=>'9',  'prefix'=>'',      'stat'=>'+30%',                      'size'=>'text-4xl', 'label'=>'productivity',                  'body'=>'Dubixium distributes heat evenly across the cylinder, supporting higher productivity and consistent finish quality.'],
-            ['icon'=>'34', 'prefix'=>'Up to', 'stat'=>'600',                       'size'=>'text-4xl', 'label'=>'sheets daily',                  'body'=>'High-volume flatwork rooms need equipment chosen around repeated handling, finish quality and daily output. Output depends on model, linen type and room setup.'],
-            ['icon'=>'16', 'prefix'=>'',      'stat'=>'Fewer<br>manual steps',     'size'=>'text-2xl', 'label'=>'feed, fold and stack options',  'body'=>'Feeding, folding and stacking options reduce manual handling and support smoother flatwork processing.'],
-            ['icon'=>'11', 'prefix'=>'',      'stat'=>'Right<br>configuration',    'size'=>'text-2xl', 'label'=>'chosen first',                  'body'=>'Front or rear delivery, working width, automation and heating choice all affect room flow, running cost and long-term value.'],
+        @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
+            ['icon'=>'7', 'iconClass'=>'-translate-y-[12%]', 'prefix'=>'Up to', 'stat'=>'20%',                'size'=>'text-4xl', 'label'=>'gas energy saving',       'body'=>'Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.'],
+            ['icon'=>'199', 'prefix'=>'Up to', 'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'extra productivity',      'body'=>'Dubixium technology supports higher productivity by distributing heat evenly across the cylinder.'],
+            ['icon'=>'163', 'prefix'=>'Up to', 'stat'=>'600<br>sheets',      'size'=>'text-2xl', 'label'=>'per day',                 'body'=>'Selected feeding, folding and stacking configurations can support high-volume flatwork processing.'],
+            ['icon'=>'171', 'prefix'=>'',      'stat'=>'Staffing<br>efficiency', 'size'=>'text-2xl', 'label'=>'less repeated handling', 'body'=>'Feeding, folding and stacking options can reduce repeated manual handling and help teams manage high-volume flatwork with fewer steps.'],
+            ['icon'=>'200', 'prefix'=>'',      'stat'=>'Better<br>room fit', 'size'=>'text-2xl', 'label'=>'front or rear delivery',  'body'=>'Front or rear delivery, working width and heating choice should be matched to space, operators and linen volume.'],
         ]])
     </div>
 </section>
@@ -143,34 +147,31 @@
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
         <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
-             class="w-full h-full object-cover" style="object-position: center center;">
+             class="w-full h-full object-contain" style="object-position: center center; transform: translateX(32px);">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Keep equipment status and cycle data <span style="color:#148af4;">in one connected view</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            Take your laundry operation to <span style="color:#148af4;">the next level</span>
         </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-4 max-w-xl">
-            OnE Connected shows compatible Electrolux Professional equipment status, cycles, consumption, alerts and service needs in one digital dashboard.
-        </p>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            Where compatible, this can support better oversight of equipment use, running costs and service needs.
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6">
+            OnE Connected is the digital ecosystem for compatible Electrolux Professional equipment, giving laundry teams clearer visibility over performance, consumption and service needs in one place.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Status insight', 'Cycle data', 'Service alerts'] as $i => $pt)
+            @foreach(['Increase productivity', 'Improve efficiency', 'Increase sustainability'] as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
-            <a href="{{ route('contact') }}"
+            <a href="{{ route('equipment.category', 'one-connected') }}"
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                 Explore OnE Connected
             </a>
             <a href="{{ route('contact') }}"
                class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
-                Check Compatibility
+                Ask About Connected Ironers
             </a>
         </div>
     </div>
@@ -183,24 +184,24 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Technology that protects <br class="hidden lg:block"><span style="color:#148af4;">finish quality, hygiene and daily handling</span>
+                Technology that supports <span style="color:#148af4;">better finish, hygiene control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Selected Electrolux Professional technologies support moisture control, heat consistency, operator comfort and finishing flexibility when matched to the right ironer.
+                Selected Electrolux Professional technologies help sites improve ironing consistency, reduce repeated handling and support controlled flatwork finishing.
             </p>
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '2',  'title' => 'DIAMMS / Bacteria-free linen', 'copy' => 'DIAMMS adjusts ironer speed around residual moisture, supporting bacteria-free linen through controlled thermal disinfection.', 'badge' => 'DIAMMS'],
-                ['icon' => '31', 'title' => 'Dubixium',                     'copy' => 'Even heat distribution across the cylinder supports consistent results and helps reduce overheating.', 'badge' => 'Dubixium'],
-                ['icon' => '5',  'title' => 'ERGOCERT 4-star',              'copy' => 'Certified ergonomic design supports repeated operator handling and safer daily use.', 'badge' => 'ERGOCERT'],
-                ['icon' => '16', 'title' => 'Feed Now / Feed Alone',        'copy' => 'Feed Now and Feed Alone can reduce manual handling and support smoother flatwork processing.', 'badge' => 'Feeding'],
-                ['icon' => '34', 'title' => 'FoldFlex / Hygiene Guard',      'copy' => 'Advanced FFS options support customised folding and moisture control where specified.', 'badge' => 'FoldFlex'],
+                ['icon' => '197', 'imgClass' => 'w-36 h-36 object-contain', 'title' => 'DIAMMS / Bacteria-free linen', 'copy' => 'For sites where hygiene control matters, DIAMMS adjusts ironer speed around residual moisture to support controlled thermal disinfection.', 'badge' => 'DIAMMS'],
+                ['icon' => '198', 'imgClass' => 'w-36 h-36 object-contain mt-3', 'title' => 'Dubixium',                     'copy' => 'For a more consistent finish, Dubixium distributes heat evenly across the cylinder and helps reduce overheating.', 'badge' => 'Dubixium'],
+                ['icon' => null, 'img' => '/images/icons/ergocertnew.png', 'imgClass' => 'w-20 h-32 object-contain', 'title' => 'ERGOCERT 4-star', 'copy' => 'For teams using the ironer repeatedly, ERGOCERT-rated design supports safer, more comfortable daily operation.', 'badge' => 'ERGOCERT'],
+                ['icon' => 'FeedNow', 'imgClass' => 'w-36 h-36 object-contain', 'title' => 'Feed Now / Feed Alone',        'copy' => 'For smoother flatwork handling, Feed Now and Feed Alone support easier loading and can reduce repeated operator effort.', 'badge' => 'Feeding'],
+                ['icon' => 'FoldFlex', 'imgClass' => 'w-36 h-36 object-contain', 'title' => 'FoldFlex / Hygiene Guard',      'copy' => 'For high-volume finishing, FoldFlex and Hygiene Guard support customised folding, moisture control and linen rejection where required.', 'badge' => 'FoldFlex'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
-                <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
+                <div class="flex items-center justify-center h-36">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
@@ -219,10 +220,10 @@
         <div class="mb-10 lg:mb-12 reveal reveal-left max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Layout</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose front or rear delivery around <span style="color:#148af4;">linen return, collection and room fit</span>
+                Choose front or rear delivery around <span style="color:#148af4;">space, linen return and operator comfort</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                Front and rear delivery describe where finished linen exits after ironing. The right choice depends on room depth, feed position, collection point, operator handling and daily output.
+                Front and rear delivery define where finished linen exits after ironing. The right choice depends on room depth, collection point, operator movement and how the laundry room is staffed.
             </p>
         </div>
 
@@ -236,15 +237,22 @@
                     </span>
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-1">Front Delivery</p>
-                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">A strong fit when space is tighter</h3>
+                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">A strong fit when space is limited</h3>
                     </div>
                 </div>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                    Front delivery returns finished linen to the front of the ironer, which can suit rooms where depth is limited.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-6" style="min-height:78px;">
+                    Front delivery returns finished linen to the front of the ironer, helping sites use a more compact room layout.
                 </p>
-                <div class="mt-auto divide-y divide-gray-100 border-t border-gray-100">
-                    @foreach(['Compact layout', 'Front return', 'OPL fit'] as $pt)
-                    <div class="flex items-center gap-3 py-3">
+                <div class="border-t border-gray-100 pt-6 pb-6">
+                    <div class="w-full aspect-square rounded-xl overflow-hidden" style="clip-path: inset(0 round 12px);">
+                        <img src="/images/equipment/Front Delivery.png"
+                             alt="Front delivery ironer layout diagram — top-down view showing linen flow and operator positions at the ironer and folding table"
+                             class="w-full h-full object-cover" style="transform:translateY(2.31%) scale(1.086);">
+                    </div>
+                </div>
+                <div class="mt-auto border-t border-gray-100 pt-4 space-y-3">
+                    @foreach(['Space-saving layout', 'Front return', 'Smaller room fit'] as $pt)
+                    <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                         <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
                     </div>
@@ -260,15 +268,22 @@
                     </span>
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-1">Rear Delivery</p>
-                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">A strong fit for output and operator handling</h3>
+                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">A strong fit for operator comfort</h3>
                     </div>
                 </div>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                    Rear delivery sends finished linen to the back of the ironer, separating feeding and collection where the room allows it.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-6" style="min-height:78px;">
+                    Rear delivery sends finished linen to the back of the ironer, helping separate loading and collection where the room allows it.
                 </p>
-                <div class="mt-auto divide-y divide-gray-100 border-t border-gray-100">
-                    @foreach(['Rear collection', 'Separate handling', 'Output planning'] as $pt)
-                    <div class="flex items-center gap-3 py-3">
+                <div class="border-t border-gray-100 pt-6 pb-6">
+                    <div class="w-full aspect-square rounded-xl overflow-hidden">
+                        <img src="/images/equipment/Rear Delivery.png"
+                             alt="Rear delivery ironer layout diagram — top-down view showing linen exiting to the rear with operator positions at the front"
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="mt-auto border-t border-gray-100 pt-4 space-y-3">
+                    @foreach(['Rear collection', 'Separate handling', 'Easier operator flow'] as $pt)
+                    <div class="flex items-center gap-3">
                         <svg class="w-5 h-5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
                         <span class="font-body text-navy text-sm font-bold">{{ $pt }}</span>
                     </div>
@@ -295,21 +310,22 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the ironer around <br class="hidden lg:block"><span style="color:#011E41;">room fit, linen type and heating choice</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            <span class="block lg:whitespace-nowrap">Plan the ironer around</span>
+            <span class="block lg:whitespace-nowrap" style="color:#011E41;">room fit, linen volume and heating choice</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            Ironers need the room planned around working width, delivery direction, available space, heating type and daily output before installation.
+            Irish Laundry Systems reviews working width, delivery direction, available space, heating option and handling needs before recommending the right ironer setup.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Linen type', 'Heating choice'] as $i => $pt)
+            @foreach(['Room fit', 'Linen volume', 'Heating choice'] as $i => $pt)
             @if($i > 0)<span class="text-white/40">|</span>@endif
             <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-            Request Room Planning
+            Request Ironer Advice
         </a>
     </div>
 </section>
@@ -322,7 +338,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
-                ['title' => 'Official Resources',  'links' => [['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure%20Line%206000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Official Resources',  'links' => [['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure%20Line%206000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'], ['l' => 'Ironer FFS leaflet', 'h' => '/pdfs/EPR-leaflet-IronerFFS-EN-20231122-LR-singlePage.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
                 ['title' => 'Finishing Equipment', 'links' => [['l' => 'Ironing tables & presses', 'h' => route('equipment.category', 'finishing-equipment')], ['l' => 'Ask about finishing', 'h' => route('contact')]]],
                 ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Drying Cabinets', 'h' => route('equipment.category', 'drying-cabinets')]]],
             ] as $grp)
@@ -342,48 +358,9 @@
     </div>
 </section>
 
-{{-- 10. COMMERCIAL IRONER RANGE (teasers + product finder) --}}
+{{-- 10. FILTER PRODUCTS / PRODUCT GRID --}}
 <section id="ironer-range" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Ironer Range</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare ironer options around <br class="hidden lg:block"><span style="color:#148af4;">working width, automation and room fit</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Start with the linen and output required, then narrow the decision by working width, delivery direction, heating choice and automation level.
-            </p>
-        </div>
-
-        {{-- Teaser cards --}}
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-12">
-            @foreach([
-                ['name' => 'Line 6000 Hot Cylinder Ironers', 'copy' => 'Main Electrolux Professional flatwork ironer option for sites needing perfectly ironed linen, working width choice and long-term aftercare.', 'tags' => ['DIAMMS', 'Dubixium', 'ERGOCERT', 'Front / Rear Delivery']],
-                ['name' => 'Compact / OPL Ironers',          'copy' => 'For on-premise laundry rooms that need professional flatwork finishing without moving into a full industrial line.', 'tags' => ['Compact Fit', 'Flatwork Finish', 'OPL Option', 'Support Available']],
-                ['name' => 'FFS / Feeder Folder Stacker Ironers', 'copy' => 'For higher-demand sites where feeding, folding and stacking automation can support output and operator handling.', 'tags' => ['FFS', 'FoldFlex', 'Hygiene Guard', 'High Output']],
-                ['name' => 'Roller / Rotary Ironing Advice', 'copy' => 'For customers searching for roller irons, rotary ironers or dryer ironers and needing help matching those terms to the right commercial ironer.', 'tags' => ['Roller / Rotary', 'Flatwork Finish', 'Room fit'], 'cta' => 'Request Ironer Advice'],
-            ] as $teaser)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $teaser['name'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $teaser['copy'] }}</p>
-                <div class="flex flex-wrap gap-1.5 mb-6">
-                    @foreach($teaser['tags'] as $tag)
-                    <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $tag }}</span>
-                    @endforeach
-                </div>
-                <div class="mt-auto flex flex-col sm:flex-row gap-2.5">
-                    <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                        {{ $teaser['cta'] ?? 'Request Advice' }}
-                    </a>
-                    <a href="#ironer-range" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
-                        View Details
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                </div>
-            </div>
-            @endforeach
-        </div>
 
         {{-- Ironer families — one card/image per range, filterable by cylinder and automation (like the washers page) --}}
         @php
@@ -448,7 +425,7 @@
 
                 {{-- Automation --}}
                 <div class="mt-4 pt-4 border-t border-gray-100">
-                    <p class="font-heading font-bold text-navy text-sm mb-3">Automation</p>
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Automation level</p>
                     <div class="space-y-2.5">
                         @foreach($autoOrder as $val)
                         @if(isset($autoOpts[$val]))
@@ -530,11 +507,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Need ironing tables or hand-finishing support?
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                    <span class="block lg:whitespace-nowrap">Need ironing tables or</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">hand-finishing support?</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-6">
-                    Not every site needs a full hot cylinder ironer. Some care facilities, hospitality sites, healthcare sites and smaller laundry rooms may need ironing tables, steam irons, presses or finishing equipment for garments, uniforms and smaller finishing jobs.
+                    Not every site needs a full hot cylinder ironer. Care facilities, healthcare sites, hospitality sites and smaller laundry rooms may need ironing tables, steam irons, presses or finishing equipment for garments, uniforms and smaller finishing jobs.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="{{ route('equipment.category', 'finishing-equipment') }}"
@@ -543,7 +521,7 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                        Ask About Ironing Tables
+                        Ask About Finishing Setup
                     </a>
                 </div>
             </div>
@@ -558,16 +536,16 @@
     </div>
 </section>
 
-{{-- 11b. RENTAL OPTIONS STRIP (moved before Connected Support) --}}
+{{-- 11b. EQUIPMENT RENTAL STRIP (moved before Connected Support) --}}
 @include('components.why-choose-strip', [
-    'eyebrow'      => 'Rental Options',
+    'eyebrow'      => 'Equipment Rental',
     'headingLine1' => 'Access commercial ironers with',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Rental can support ironer replacement, capacity planning or selected finishing equipment without one large upfront purchase.',
+    'headingLine2' => '<span style="color:#148af4;">lower upfront cost and included support</span>',
+    'body'         => 'Equipment Rental can support ironer replacement, added finishing capacity or selected finishing equipment without one large upfront purchase.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Capacity<br>planning'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>upfront cost'],
+        ['icon' => 'healthcarerentalstrip3', 'label' => 'Included<br>support'],
+        ['icon' => '34', 'label' => 'Capacity<br>planning', 'iconStyle' => 'filter:brightness(0) invert(1); transform:translateY(-13.16%) scale(1.35);'],
     ],
 ])
 
@@ -578,10 +556,10 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep ironer performance protected <span style="color:#148af4;">after installation</span>
+                Keep ironer performance supported <span style="color:#148af4;">after installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Commercial ironer performance depends on what happens after the equipment is in place. Irish Laundry Systems offers rental, planned servicing, repairs and aftercare for ironer and finishing equipment sites.
+                Commercial ironers need the right support after they are installed. Irish Laundry Systems brings repairs, preventive maintenance, Equipment Rental and aftercare together for ironer and finishing equipment sites.
             </p>
         </div>
 
@@ -589,7 +567,7 @@
             @foreach([
                 [
                     'title' => 'Repairs &amp; Call-outs',
-                    'text'  => 'Service and breakdown support when ironer faults interrupt linen finishing, staff routines or daily output.',
+                    'text'  => 'Service and breakdown support when ironer faults interrupt linen finishing or daily operation.',
                     'cta'   => 'Request Support',
                     'route' => route('repairs'),
                     'img'   => '/images/healthcare/repairs-callouts.jpg',
@@ -597,7 +575,7 @@
                 ],
                 [
                     'title' => 'Preventive Maintenance',
-                    'text'  => 'Planned ironer servicing to reduce unexpected repairs and keep equipment condition visible.',
+                    'text'  => 'Planned servicing to help keep ironer condition, safety checks and maintenance needs organised.',
                     'cta'   => 'View Maintenance Support',
                     'route' => route('service-contracts'),
                     'img'   => '/images/healthcare/service-contracts-hero.png',
@@ -605,15 +583,15 @@
                 ],
                 [
                     'title' => 'Equipment Rental',
-                    'text'  => 'Lower upfront cost where suitable, with selected ironer equipment installed and supported under rental terms.',
-                    'cta'   => 'Explore Rental',
+                    'text'  => 'Lower upfront cost where suitable, with selected ironer equipment installed and supported under Equipment Rental terms.',
+                    'cta'   => 'Explore Equipment Rental',
                     'route' => route('rental'),
                     'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
                     'pos'   => '66% center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
-                    'text'  => 'Service history, aftercare and parts access where needed after installation, rental, repair or inspection.',
+                    'text'  => 'Service history, aftercare and parts support after installation, rental, repair or inspection.',
                     'cta'   => 'View Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
                     'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
@@ -656,16 +634,17 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep ironer support clear <span style="color:#011E41;">after installation</span>
+                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                    <span class="block lg:whitespace-nowrap">Keep ironer support organised</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#011E41;">after installation</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    Track maintenance, service history, breakdown support and parts access after installation, rental, repair or inspection.
+                    Irish Laundry Systems helps keep service history, maintenance planning, breakdown support and parts access organised after installation, Equipment Rental, repair or inspection.
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
                     @foreach([
                         ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>history'],
-                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Breakdown<br>support'],
+                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Maintenance<br>planning'],
                         ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>access'],
                     ] as $pt)
                     <span class="flex items-center gap-2 flex-shrink-0">
@@ -689,8 +668,8 @@
 {{-- 15. CUSTOMER CONFIDENCE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Confidence',
-    'heading'    => 'Trusted support behind <span style="color:#148af4;">perfectly ironed linen</span>',
-    'subheading' => 'Commercial ironers affect finish quality, staff routines, daily output and long-term running costs. Irish Laundry Systems is trusted by organisations that value clear communication, responsive service support and peace of mind after installation.',
+    'heading'    => 'Trusted support behind<br class="hidden lg:block"> <span style="color:#148af4;">consistent ironed linen</span>',
+    'subheading' => 'Commercial ironers affect finish quality, handling, running costs and service needs after installation. Irish Laundry Systems is trusted by organisations that value clear communication, responsive service and peace of mind after installation.',
 ])
 
 {{-- 16. TRUSTED BY LOGO STRIP --}}
@@ -716,11 +695,13 @@
 {{-- 19. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Need the right commercial ironer for your site?
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Final CTA</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
+            <span class="block lg:whitespace-nowrap">Need the right commercial ironer</span>
+            <span class="block lg:whitespace-nowrap">for your site?</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Tell Irish Laundry Systems what your laundry room needs to finish each day. Irish Laundry Systems reviews working width, room fit, front or rear delivery, automation, rental and aftercare before recommending the right option.
+            Tell Irish Laundry Systems what your site needs to finish, how much space you have and whether purchase or Equipment Rental is the better fit. We will help match the ironer setup to your linen, room and aftercare needs.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('request-assessment') }}"

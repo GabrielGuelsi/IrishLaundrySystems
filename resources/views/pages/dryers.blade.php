@@ -269,8 +269,8 @@
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
             <div class="flex flex-col gap-6 justify-between">
                 <div class="flex flex-col sm:flex-row gap-5 items-start">
-                    <div class="w-44 lg:w-52 h-40 lg:h-48 overflow-hidden flex-shrink-0">
-                        <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-full h-full object-cover object-bottom">
+                    <div class="h-52 lg:h-60 flex-shrink-0 flex items-start justify-center">
+                        <img src="/images/icons/ergocertnew.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="h-full w-auto object-contain">
                     </div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
