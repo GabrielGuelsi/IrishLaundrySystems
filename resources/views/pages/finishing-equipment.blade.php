@@ -18,13 +18,14 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Improve garment presentation<br class="hidden lg:block"> with <span style="color:#148af4;">the right ironing,<br class="hidden lg:block">steam and pressing setup</span>
+                    <span class="block lg:whitespace-nowrap">Improve garment presentation with</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">the right finishing setup</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional finishing equipment for care facilities, hospitality sites, garment care settings and smaller laundry rooms across Ireland.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional finishing equipment for sites that need cleaner presentation across garments, uniforms, resident clothing and smaller daily items.
                 </p>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Choose ironing tables, steam support, presses, form finishers or specialist finishing equipment around item type, room fit, finish quality, installation and aftercare.
+                    Choose ironing tables, steam support, presses or specialist finishing equipment around item type, room fit, finish quality and aftercare.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -57,11 +58,8 @@
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
-                    Finishing equipment supports shirts, trousers, uniforms, guest garments, resident clothing and touch-up work where presentation matters every day.
-                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    For sites that do not need a hot cylinder ironer for every finishing task, Irish Laundry Systems reviews item type, finish requirement, room fit, steam or electrical needs, installation and aftercare before recommending the right setup.
+                    Finishing equipment supports shirts, trousers, uniforms, resident clothing and guest garments where presentation matters, but a full ironer is not the right fit for every task.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -76,43 +74,17 @@
     </div>
 </section>
 
-{{-- FINISHING EQUIPMENT OPTIONS (4 cards) --}}
+{{-- FINISHING EQUIPMENT OPTIONS (visual selector — merged with former detail sections) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
+        <div class="mb-4 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose the right finishing setup for <span style="color:#148af4;">the work handled every day</span>
+                Choose the finishing setup for <span style="color:#148af4;">garments, uniforms and smaller daily items</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Start with the items your team needs to finish, then match the setup to the room, presentation standard and aftercare needs.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Match the items your site handles to the right ironing table, steam support, press or garment-finishing setup.
             </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @foreach([
-                ['img' => '/images/equipment/FIT1.jpg',    'title' => 'Ironing Tables',                     'copy' => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',    'href' => '#ironing-tables'],
-                ['img' => '/images/equipment/FSB3.3.jpeg', 'title' => 'Steam Irons & Steam Boiler Support', 'copy' => 'For hand-finishing, touch-ups and garment presentation where steam quality matters.', 'cta' => 'View Steam Support',     'href' => '#steam-support'],
-                ['img' => '/images/equipment/FPA1-D.jpg',  'title' => 'Presses & Form Finishers',           'copy' => 'For stronger consistency, garment shape and a more professional finish than manual ironing alone.', 'cta' => 'View Presses & Finishers', 'href' => '#presses'],
-                ['img' => '/images/equipment/FF1.jpg',     'title' => 'Shirt & Trouser Finishing',          'copy' => 'For shirts, trousers, uniforms and garments where shape, creases, pleats and finish quality matter.', 'cta' => 'View Garment Finishing', 'href' => '#garment-finishing'],
-            ] as $card)
-            <div class="flex flex-col gap-5 h-full reveal">
-                <div style="min-height:150px;">
-                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
-                </div>
-                <div class="w-full flex items-end justify-center" style="height:200px;">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
-                         class="transition-transform duration-500 hover:-translate-y-2"
-                         style="max-width:100%; max-height:200px; object-fit:contain;">
-                </div>
-                <a href="{{ $card['href'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
-                    {{ $card['cta'] }}
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-            @endforeach
         </div>
     </div>
 </section>
@@ -122,39 +94,35 @@
     $detailSections = [
         [
             'id'       => 'ironing-tables',
-            'eyebrow'  => 'Ironing Tables',
-            'heading'  => 'Practical finishing for <span style="color:#148af4;">garments, uniforms and smaller items</span>',
-            'body'     => 'Ironing tables give care facilities, hospitality sites and smaller laundry rooms a practical way to improve presentation without a larger ironer setup.',
-            'points'   => ['Daily finishing', 'Cleaner finish', 'Room fit'],
+            'title'    => 'Ironing Tables',
+            'body'     => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.',
+            'points'   => ['Daily finishing', 'Garment care', 'Room fit'],
             'primary'  => 'Ask About Ironing Tables',
             'img'      => '/images/equipment/FIT1.jpg',
             'contain'  => true,
         ],
         [
             'id'       => 'steam-support',
-            'eyebrow'  => 'Steam Support',
-            'heading'  => 'Give hand-finishing work <span style="color:#148af4;">the right steam setup</span>',
-            'body'     => 'Steam irons and steam boiler support give teams a flexible way to finish garments, uniforms, touch-ups and presentation-led items.',
-            'points'   => ['Hand finishing', 'Garment care', 'Steam setup'],
+            'title'    => 'Steam Boilers & Steam Support',
+            'body'     => 'For hand-finishing, touch-ups and garment presentation where steady steam support matters.',
+            'points'   => ['Hand finishing', 'Steam support', 'Flexible use'],
             'primary'  => 'Ask About Steam Support',
             'img'      => '/images/equipment/FSB3.3.jpeg',
             'contain'  => true,
         ],
         [
             'id'       => 'presses',
-            'eyebrow'  => 'Presses & Form Finishers',
-            'heading'  => 'More consistent finishing for <span style="color:#148af4;">presentation-led garments</span>',
-            'body'     => 'Presses and form finishers support shirts, jackets, coats, dresses, uniforms and customer-facing garments that need a sharper, more consistent finish.',
-            'points'   => ['Consistent finish', 'Garment shape', 'Daily productivity'],
+            'title'    => 'Presses & Form Finishers',
+            'body'     => 'For garments that need stronger shape, sharper presentation and more consistency than manual ironing alone.',
+            'points'   => ['Garment shape', 'Consistent finish', 'Professional presentation'],
             'primary'  => 'Ask About Presses & Finishers',
             'img'      => '/images/equipment/FPA1-D.jpg',
             'contain'  => true,
         ],
         [
             'id'       => 'garment-finishing',
-            'eyebrow'  => 'Shirt & Trouser Finishing',
-            'heading'  => 'Support garment presentation where <span style="color:#148af4;">shape and finish matter</span>',
-            'body'     => 'Shirts, trousers and uniforms often need clean shape, controlled creases, neat pleats and consistent garment presentation.',
+            'title'    => 'Shirt & Trouser Finishing',
+            'body'     => 'For shirts, trousers and uniforms where shape, creases, pleats and finish quality matter.',
             'points'   => ['Shirt finish', 'Trouser finish', 'Uniform care'],
             'primary'  => 'Ask About Garment Finishing',
             'img'      => '/images/equipment/FF1.jpg',
@@ -164,15 +132,14 @@
 @endphp
 
 @foreach($detailSections as $i => $d)
-<section id="{{ $d['id'] }}" class="py-16 lg:py-24 scroll-mt-28 bg-white border-t border-gray-100">
+<section id="{{ $d['id'] }}" class="py-10 lg:py-14 scroll-mt-28 bg-white {{ $i === 0 ? '' : 'border-t border-gray-100' }}">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
             {{-- Text column (alternates side) --}}
             <div class="reveal {{ $i % 2 === 0 ? 'reveal-left lg:order-1' : 'reveal-right lg:order-2' }}">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $d['eyebrow'] }}</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                    {!! $d['heading'] !!}
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-4xl leading-tight mb-4">
+                    {{ $d['title'] }}
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                     {{ $d['body'] }}
@@ -185,22 +152,16 @@
                     </span>
                     @endforeach
                 </div>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        {{ $d['primary'] }}
-                    </a>
-                    <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Product Details
-                    </a>
-                </div>
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 w-fit">
+                    {{ $d['primary'] }}
+                </a>
             </div>
 
             {{-- Supporting visual column --}}
             <div class="reveal {{ $i % 2 === 0 ? 'reveal-right lg:order-2' : 'reveal-left lg:order-1' }}">
                 <div class="relative overflow-hidden rounded-2xl border border-gray-100 h-[260px] sm:h-[320px] lg:h-[380px]">
-                    <img src="{{ $d['img'] }}" alt="{{ $d['eyebrow'] }}"
+                    <img src="{{ $d['img'] }}" alt="{{ $d['title'] }}"
                          class="absolute inset-0 w-full h-full {{ ($d['contain'] ?? false) ? 'object-contain bg-white p-8' : 'object-cover' }}">
                     @if(!($d['contain'] ?? false))
                     <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.35) 0%, rgba(1,30,65,0.05) 50%, transparent 100%);"></div>
@@ -444,10 +405,10 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Specialist Finishing</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                    Specialist finishing equipment for <span style="color:#148af4;">more specific garment care needs</span>
+                    Specialist finishing support for <span style="color:#148af4;">spotting, cabinets and garment care</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                    Selected laundry rooms and garment care operations may need spotting units, spotting cabinets, finishing cabinets or other specialist finishing equipment where the work requires it.
+                    Some laundry rooms need specialist finishing equipment for stain treatment, garment refreshing or higher-capacity finishing beyond daily ironing tables and presses.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
@@ -463,7 +424,7 @@
                             'Spotting Units & Cabinets',
                             'Finishing Cabinets',
                             'Rotary Finishing Cabinets',
-                            'Specialist finishing equipment on request',
+                            'Other specialist finishing on request',
                         ] as $opt)
                         <span class="inline-flex items-center gap-3 font-body text-navy text-sm font-semibold bg-white border border-gray-100 rounded-full px-5 py-3">
                             <span class="text-[#148af4]">&#9656;</span> {{ $opt }}

@@ -798,9 +798,9 @@
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
                     @foreach([
-                        ['icon' => '134', 'label' => 'Planned<br>maintenance'],
+                        ['icon' => '127', 'label' => 'Planned<br>maintenance'],
                         ['icon' => '79',  'label' => 'Service<br>history'],
-                        ['icon' => '118', 'label' => 'Parts<br>support'],
+                        ['icon' => '61', 'label' => 'Parts<br>support'],
                     ] as $pt)
                     <span class="flex items-center gap-2 flex-shrink-0">
                         <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">

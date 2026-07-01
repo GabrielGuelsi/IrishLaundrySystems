@@ -18,10 +18,13 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Dry items that should not go through<br class="hidden lg:block"> <span style="color:#148af4;">standard tumble drying</span>
+                    <span class="block lg:whitespace-nowrap">Dry items that should not go through</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">standard tumble drying</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional drying cabinets for PPE, workwear, shoes, gloves, bulky items and delicate garments across Ireland.
+                    <span class="block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Electrolux Professional</span>
+                    <span class="block lg:whitespace-nowrap">drying cabinets for PPE, workwear, shoes, gloves, bulky items and delicate</span>
+                    <span class="block lg:whitespace-nowrap">garments across Ireland.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -73,132 +76,27 @@
     </div>
 </section>
 
-{{-- 4b. VISUAL PROOF FEATURE --}}
+{{-- 4b. DRYING CABINET PERFORMANCE (combined financial + technical) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy, Time and Fabric Care</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                See <span style="color:#148af4;">saving, speed and fabric care</span> at a glance
+                Drying cabinets that support <span style="color:#148af4;">flexibility, speed and item care</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Drying cabinets give sites a controlled way to reduce running costs, dry specialist items faster and protect garments that should not be tumbled.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 lg:gap-10 reveal">
-            @foreach([
-                ['stat' => 'Save up to 40%', 'title' => 'Running cost savings',  'copy' => 'Heat Pump technology and auto-stop programmes can reduce running costs by up to 40%.'],
-                ['stat' => '0.33 kWh/kg',    'title' => 'Lower energy per kilo', 'copy' => 'Uses just 0.33 kWh of energy per kg of laundry.'],
-                ['stat' => 'Under 45 min',   'title' => '6 kg cotton load',      'copy' => 'Dry a 6 kg cotton load in less than 45 minutes.'],
-            ] as $feature)
-            <div class="p-6 flex flex-col items-center text-center gap-3">
-                <div class="flex items-center justify-center min-h-16">
-                    <p class="font-heading font-bold text-[#148af4] text-4xl sm:text-5xl leading-none">{{ $feature['stat'] }}</p>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug">{{ $feature['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $feature['copy'] }}</p>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-{{-- 5. FINANCIAL / OPERATIONAL PERFORMANCE --}}
-<section class="py-12 lg:py-16 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Drying cabinets that support <span style="color:#148af4;">lower running costs, faster drying and item care</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                A drying cabinet can reduce open drying, protect items that need gentle handling and return garments, uniforms and specialist items to use faster.
+                Drying cabinets give sites a controlled way to dry delicate, bulky and specialist items without standard tumble action.
             </p>
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'30', 'prefix'=>'Up to',      'stat'=>'40%',          'size'=>'text-4xl', 'label'=>'running cost saving',       'body'=>'Heat Pump technology and auto-stop programmes can reduce drying cabinet running costs by up to 40%.'],
-            ['icon'=>'6',  'prefix'=>'',           'stat'=>'0.33 kWh/kg',  'size'=>'text-2xl', 'label'=>'energy use',               'body'=>'Energy use of just 0.33 kWh per kg makes the running cost story easy to understand.'],
-            ['icon'=>'34', 'prefix'=>'Under',      'stat'=>'45<span class="text-lg xl:text-xl"> min</span>',       'size'=>'text-4xl', 'label'=>'drying',                   'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster garment and workwear availability.'],
-            ['icon'=>'4',  'prefix'=>'',           'stat'=>'Auto-stop',    'size'=>'text-2xl', 'label'=>'less wasted running time',  'body'=>'Programmes stop when the load is dry, helping keep cycle time and running costs under control.'],
-            ['icon'=>'35', 'prefix'=>'',           'stat'=>'One<br>unit',  'size'=>'text-2xl', 'label'=>'more drying needs covered', 'body'=>'Dry anything from skiwear to silk, plus PPE, workwear, shoes, gloves and bulky items without relying on open drying.'],
+            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Outstanding<br>flexibility',   'size'=>'text-2xl', 'label'=>'skiwear to silk',        'body'=>'Dry delicate garments, outdoor clothing, PPE, shoes, gloves and bulky items in one cabinet setup.'],
+            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Save<br>time',                'size'=>'text-2xl', 'label'=>'under 45 minutes',       'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster item return to use.'],
+            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Save, money and<br>energy',   'size'=>'text-2xl', 'label'=>'auto-stop programmes',   'body'=>'Programmes stop when the load is dry, helping reduce wasted time and running cost.'],
+            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>textile care',      'size'=>'text-2xl', 'label'=>'no tumble action',       'body'=>'Cabinet drying protects delicate fabrics, coatings, reflective strips and bulky items.'],
+            ['icon'=>'194', 'prefix'=>'', 'stat'=>'User-friendly<br>operation',  'size'=>'text-2xl', 'label'=>'simple daily use',       'body'=>'Clear controls and practical cabinet access support easier day-to-day drying.'],
         ]])
-    </div>
-</section>
-
-{{-- 5b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
-             class="w-full h-full object-cover" style="object-position: center center;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
-    </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            See drying cabinet use, running costs and service needs <span style="color:#148af4;">in one place</span>
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-4 max-w-xl">
-            OnE Connected shows compatible Electrolux Professional equipment status, cycles, consumption, alerts and service needs in one digital dashboard.
-        </p>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            Where compatible, this supports better oversight of equipment use, running costs and service needs.
-        </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Status insight', 'Cycle data', 'Service alerts'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
-            @endforeach
-        </div>
-        <div class="flex flex-wrap gap-3">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-                Explore OnE Connected
-            </a>
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
-                Ask About Connected Equipment
-            </a>
-        </div>
-    </div>
-</section>
-
-{{-- 6. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-16 bg-gray-50">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Technology behind <span style="color:#148af4;">controlled drying and better item care</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Selected Electrolux Professional drying cabinet features support easier use, controlled drying and better care for items that need a different drying method.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
-            @foreach([
-                ['icon' => '26', 'stat' => 'Heat Pump',            'title' => 'Energy-saving drying technology', 'copy' => 'Heat Pump models provide the technical base behind the running cost saving claim.'],
-                ['icon' => '21', 'stat' => 'Auto-stop programmes', 'title' => 'Stops when the load is dry',      'copy' => 'Automatic programmes stop drying when the desired moisture level is reached.'],
-                ['icon' => '7',  'stat' => 'Non-mechanical drying','title' => 'Gentle fabric protection',        'copy' => 'Drying without tumbling helps protect delicate fabrics, outdoor clothing, workwear and bulky items.'],
-                ['icon' => '20', 'stat' => 'PPE accessories',      'title' => 'Built around real item types',    'copy' => 'Hanger sticks, shoe shelves, glove hangers and glove or boot drying options support practical daily use.'],
-                ['icon' => '30', 'stat' => 'Standard + Heat Pump', 'title' => 'Category range choice',           'copy' => 'Standard drying cabinets and Heat Pump drying cabinets give sites different options depending on room, item type and running cost priorities.'],
-            ] as $card)
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
-                <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
-                </div>
-                <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
-                </div>
-            </div>
-            @endforeach
-        </div>
     </div>
 </section>
 
@@ -209,35 +107,87 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Useful wherever awkward or sensitive items need <span style="color:#148af4;">reliable drying</span>
+                Useful where sites dry <span style="color:#148af4;">sensitive, bulky or specialist items</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Drying cabinets are most useful where sites handle items that are too delicate, too bulky or too specialist for standard tumble drying.
+                Drying cabinets are useful where garments, PPE, workwear, shoes, gloves or delicate textiles need controlled drying without standard tumble action.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            @foreach([
-                ['title' => 'Multi-housing and shared laundry',         'copy' => 'For apartment laundry rooms and shared facilities where users need fast, efficient drying without leaving wet items around the space.', 'img' => '/images/healthcare/selfservice.png', 'pos' => 'center center'],
-                ['title' => 'On-premises laundries',                    'copy' => 'For hotels, guesthouses, leisure sites and laundries handling garments, uniforms, robes, outdoor clothing or delicate items.', 'img' => '/images/healthcare/Heavy-DutyandHigh-volume.png', 'pos' => 'center center'],
-                ['title' => 'Schools, childcare and sports sites',      'copy' => 'For jackets, outdoor clothing, shoes, sportswear and wet items that need to dry between uses.', 'img' => '/images/healthcare/FacilityManagementandPublicSites.png', 'pos' => 'center center'],
-                ['title' => 'Firefighters, PPE and workwear',           'copy' => 'For firefighter PPE, uniforms, boots, gloves and protective workwear that need controlled cabinet drying after washing, without tumble action.', 'img' => '/images/healthcare/workwear%2Cuniforms.png', 'pos' => 'center center'],
-                ['title' => 'Delicate garment and textile care',        'copy' => 'For silk, wool, velvet, linen, long dresses, curtains and specialist garments that can be damaged by mechanical drying action.', 'img' => '/images/healthcare/Marine_navy.png', 'pos' => 'center center'],
-            ] as $card)
-            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
-                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                     style="object-position: {{ $card['pos'] ?? 'center center' }};">
-                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                     style="background:rgba(1,30,65,0.90);"></div>
-                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
-                    <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
-                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{{ $card['title'] }}</h3>
+        @php
+        $fitCards = [
+            ['title' => 'Delicate fabrics and fine clothing',    'copy' => 'For garments that need gentle drying, shape protection and careful handling after washing or wear.', 'img' => '/images/equipment/Delicate%20fabrics%20and%20fine%20clothing.png', 'pos' => 'center center'],
+            ['title' => 'Private residences &amp; wardrobe rooms', 'copy' => 'For premium homes, dressing rooms or private garment care spaces where fine clothing needs controlled drying.', 'img' => '/images/equipment/Private%20residences%20%26%20wardrobe%20rooms.png', 'pos' => 'center center'],
+            ['title' => 'Multi-housing',                          'copy' => 'For shared laundry rooms where residents need practical drying for everyday garments, bulky items and outdoor clothing.', 'img' => '/images/equipment/Multi-housing.png', 'pos' => 'center center'],
+            ['title' => 'Construction &amp; workwear',            'copy' => 'For workwear, boots, gloves and outdoor clothing used in demanding working environments.', 'img' => '/images/equipment/Construction%20%26%20workwear.png', 'pos' => 'center center'],
+            ['title' => 'Firefighters &amp; PPE',                 'copy' => 'For protective clothing and specialist items that need controlled drying after use.', 'img' => '/images/equipment/Firefighters%20%26%20PPE.png', 'pos' => 'center center'],
+            ['title' => 'Schools &amp; childcare',                'copy' => 'For coats, uniforms, outdoor clothing and daily items that need to return to use quickly.', 'img' => '/images/healthcare/FacilityManagementandPublicSites.png', 'pos' => 'center center'],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($fitCards) }},
+                perView: 4,
+                timer: null,
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    calc();
+                    window.addEventListener('resize', calc);
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
+            }"
+            class="relative reveal"
+        >
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-2.5"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($fitCards as $card)
+                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
+                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                            <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                                 style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                 style="background:rgba(1,30,65,0.90);"></div>
+                            <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                                <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
+                                <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
             </div>
-            @endforeach
+
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-8 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    <template x-for="i in (maxIndex + 1)" :key="i">
+                        <button @click="go(i - 1)"
+                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                                class="rounded-full transition-all duration-300"></button>
+                    </template>
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -247,12 +197,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Range</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Standard and Heat Pump cabinets for <span style="color:#148af4;">different items, rooms and running costs</span>
+                Choose the cabinet type around <span style="color:#148af4;">items, room fit and running cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Irish Laundry Systems supplies and supports Electrolux Professional Line 6000 drying cabinets, including Standard and Heat Pump formats for different item types, room conditions and running cost priorities.
+                Irish Laundry Systems supplies Electrolux Professional drying cabinets for different item types, room conditions and running cost priorities.
             </p>
         </div>
 
@@ -261,18 +211,18 @@
                 [
                     'name'       => 'Standard Drying Cabinets',
                     'img'        => '/images/equipment/Standard%20Drying%20CabinetsDC6-8.jpg',
-                    'copy'       => 'For sites that need reliable cabinet drying for garments, workwear, shoes, gloves and bulky items where a standard cabinet is the right fit.',
+                    'copy'       => 'For sites that need controlled cabinet drying for garments, workwear, shoes, gloves and bulky items.',
                     'highlights' => ['Controlled drying', 'Multiple item types', 'Practical daily use', 'Range choice'],
                     'cta'        => 'Ask About Standard Drying Cabinets',
                 ],
                 [
                     'name'       => 'Heat Pump Drying Cabinets',
-                    'copy'       => 'For sites focused on reducing running cost pressure where Heat Pump technology is suitable for the room, item type and daily use.',
+                    'copy'       => 'For sites focused on lower running costs where Heat Pump technology suits the room, item type and daily use.',
                     'highlights' => ['Save up to 40%', '0.33 kWh/kg', 'Auto-stop programmes', 'Energy-focused drying'],
                     'cta'        => 'Ask About Heat Pump Cabinets',
                 ],
                 [
-                    'name'       => 'Glove and boot drying',
+                    'name'       => 'Glove and Boot Drying',
                     'img'        => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg',
                     'copy'       => 'For workwear-heavy sites, emergency services and outdoor working environments that need practical drying for boots, gloves and protective clothing.',
                     'highlights' => ['Gloves', 'Boots', 'PPE', 'Outdoor workwear'],
@@ -335,10 +285,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Drying Cabinets</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare drying cabinet options around <span style="color:#148af4;">item type, room fit and running cost</span>
+                Compare drying cabinet models around <span style="color:#148af4;">item type, room fit and energy use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Start with what needs to dry, then match the cabinet type to room setup, ventilation, accessories, Heat Pump suitability and support.
+                Start with what needs to dry, then compare cabinet type, capacity, room setup, ventilation, Heat Pump suitability and accessories.
             </p>
         </div>
 
@@ -487,28 +437,30 @@
 </section>
 
 {{-- 9b. ACCESSORIES --}}
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-12 lg:py-16 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Make cabinet drying work for <span style="color:#148af4;">the items your site handles</span>
+                Adapt cabinet drying to <span style="color:#148af4;">the items your site handles</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                The right accessories make a drying cabinet more useful. Instead of forcing every item into the same drying method, accessories let the cabinet support garments, shoes, gloves, boots and specialist workwear more effectively.
+                Accessories help drying cabinets handle garments, shoes, gloves, boots and specialist workwear without forcing every item into the same drying method.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @foreach([
-                ['title' => 'Hanger sticks',          'copy' => 'For garments that need to hang properly while drying.'],
-                ['title' => 'Shoe shelves',           'copy' => 'For shoes, boots and bulky footwear that should not be dried loose in a tumble dryer.'],
-                ['title' => 'Glove hangers',          'copy' => 'For gloves, protective clothing and specialist workwear accessories.'],
-                ['title' => 'Glove and boot dryer',   'copy' => 'For firefighter PPE, boots, gloves and protective garments that need practical drying support inside the cabinet.'],
+                ['title' => 'Hanger sticks',          'copy' => 'For garments that need to hang properly while drying.', 'img' => '/images/equipment/hangerSticks.webp'],
+                ['title' => 'Shoe shelves',           'copy' => 'For shoes, boots and bulky footwear that should not dry loose.', 'img' => '/images/equipment/Shoe%20shelves.webp'],
+                ['title' => 'Glove hangers',          'copy' => 'For gloves, PPE and specialist workwear.', 'img' => '/images/equipment/Glove%20hangers.webp'],
+                ['title' => 'Glove and boot drying',  'copy' => 'For workwear, emergency services and outdoor teams drying gloves, boots and protective clothing.', 'img' => '/images/equipment/Glove%20and%20boot%20drying.webp', 'imgClass' => 'scale-125'],
             ] as $card)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col h-full">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+            <div class="flex flex-col h-full">
+                <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain {{ $card['imgClass'] ?? '' }}">
+                </div>
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
             </div>
@@ -535,15 +487,21 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan cabinet drying around <span style="color:#011E41;">item type, room fit and energy use</span>
+            Plan cabinet drying around <span style="color:#011E41;">item type, room fit and cabinet choice</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A drying cabinet should be matched to what needs to dry, where it will sit and whether Heat Pump technology suits the room conditions.
+            Irish Laundry Systems reviews what needs to dry, where the cabinet will sit and whether Standard or Heat Pump drying is the right fit for the room.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Item type', 'Room fit', 'Energy use'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex items-center flex-wrap gap-x-6 gap-y-3 mb-7">
+            @foreach([
+                ['icon' => '195', 'label' => 'Item type', 'iconClass' => 'h-20'],
+                ['icon' => '56', 'label' => 'Room fit'],
+                ['icon' => '196', 'label' => 'Cabinet choice'],
+            ] as $pt)
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="{{ $pt['iconClass'] ?? 'h-12' }} w-auto object-contain">
+                <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
+            </span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -552,174 +510,6 @@
         </a>
     </div>
 </section>
-
-{{-- 9d. DOSING & LAUNDRY CONTROL (Alpine carousel — sector module) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Protect textiles and cut waste with <span style="color:#148af4;">accurate dosing</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Better drying starts earlier in the process. Accurate dosing keeps detergent use matched to the load, reducing waste and protecting textile quality before drying.
-            </p>
-        </div>
-
-        @php
-        $dosingProducts = [
-            [
-                'name'   => 'Multisave',
-                'label'  => 'Multi-tank dosing with water saving',
-                'body'   => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
-                'points' => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
-                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
-            ],
-            [
-                'name'   => 'DOSAVE',
-                'label'  => 'Precise dosing for consistent results',
-                'body'   => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
-                'points' => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
-                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
-            ],
-            [
-                'name'   => 'JETSAVE',
-                'label'  => 'Jet-based dosing with integrated saving',
-                'body'   => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
-                'points' => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
-                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
-            ],
-            [
-                'name'   => 'Efficient Dosing',
-                'label'  => 'Integrated dosing through CompassPro',
-                'body'   => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
-                'points' => ['Integrated with CompassPro', 'Removes manual dosing errors', 'Lower detergent cost per cycle'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
-            ],
-        ];
-        @endphp
-
-        <div
-            x-data="{
-                active: 0,
-                count: 4,
-                timer: null,
-                next()  { this.active = (this.active + 1) % this.count; this.restart(); },
-                prev()  { this.active = (this.active - 1 + this.count) % this.count; this.restart(); },
-                go(i)   { this.active = i; this.restart(); },
-                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 5000); },
-            }"
-            x-init="timer = setInterval(() => next(), 5000)"
-            class="relative reveal"
-        >
-            {{-- Slides --}}
-            <div class="grid [&>*]:[grid-area:1/1]">
-                @foreach($dosingProducts as $i => $p)
-                <div
-                    class="transition-opacity duration-500"
-                    :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
-                >
-                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
-
-                        {{-- Left: context photo --}}
-                        <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
-                                 alt="Electrolux Professional laundry equipment"
-                                 class="w-full object-cover object-center" style="height:260px;">
-                        </div>
-
-                        {{-- Right: product name + tabs indicator + description + unit image --}}
-                        <div class="lg:col-span-9 flex flex-col justify-between p-6 sm:p-8 lg:p-10">
-
-                            {{-- Tab indicators (product selector) --}}
-                            <div class="flex gap-1 border-b border-gray-100 mb-6 overflow-x-auto">
-                                @foreach($dosingProducts as $j => $tab)
-                                <button @click="go({{ $j }})"
-                                        :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
-                                        class="font-heading text-sm pb-3 pr-6 transition-colors whitespace-nowrap">
-                                    {{ $tab['name'] }}
-                                </button>
-                                @endforeach
-                            </div>
-
-                            {{-- Content + unit image side by side --}}
-                            <div class="flex flex-col sm:flex-row gap-6 items-start flex-1">
-
-                                {{-- Copy --}}
-                                <div class="flex-1">
-                                    <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
-                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
-                                    <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
-                                    </div>
-                                </div>
-
-                                {{-- Unit image --}}
-                                @if($p['img'])
-                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
-                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
-                                         class="w-full h-auto object-contain">
-                                </div>
-                                @endif
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                @endforeach
-            </div>
-
-            {{-- Prev / Next buttons --}}
-            <button @click="prev()"
-                    class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 lg:-translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
-            </button>
-            <button @click="next()"
-                    class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 lg:translate-x-14 w-10 h-10 rounded-full bg-white border border-navy/15 shadow text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center z-10">
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-            </button>
-
-            {{-- Dot navigation --}}
-            <div class="flex items-center justify-center gap-2 mt-3">
-                @foreach($dosingProducts as $i => $p)
-                <button
-                    @click="go({{ $i }})"
-                    :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
-                    class="h-2 rounded-full transition-all duration-300">
-                </button>
-                @endforeach
-            </div>
-
-        </div>
-
-        {{-- CTA --}}
-        <div class="mt-4 text-center">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
-                Ask About Dosing Systems
-                <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-            </a>
-        </div>
-
-    </div>
-</section>
-
-{{-- 9e. RENTAL OPTIONS STRIP (moved directly below Dosing & Laundry Control) --}}
-@include('components.why-choose-strip', [
-    'eyebrow'      => 'Rental Options',
-    'headingLine1' => 'Keep specialist drying moving with',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'For sites facing cabinet replacement, capacity needs or ageing equipment, rental can keep the laundry room moving without turning every equipment decision into one large capital purchase.',
-    'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Installation and<br>support available'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Service and breakdown support<br>included under rental terms'],
-    ],
-])
 
 {{-- 10. SUPPORT OPTIONS --}}
 <section class="py-16 lg:py-20 bg-white border-t border-gray-100">
@@ -798,49 +588,11 @@
     </div>
 </section>
 
-{{-- 11. (Rental Options strip moved up — now directly under Dosing & Laundry Control, §9e) --}}
-
-{{-- 12. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
-<section class="py-12 lg:py-16" style="background-color:#148af4;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            <div class="lg:col-span-7">
-                <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep drying cabinet support clear <span style="color:#011E41;">after installation</span>
-                </h2>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    Track maintenance, service history, breakdown support and parts access after installation, rental, repair or inspection.
-                </p>
-                <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
-                    @foreach([
-                        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>history'],
-                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Breakdown<br>support'],
-                        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>access'],
-                    ] as $pt)
-                    <span class="flex items-center gap-2 flex-shrink-0">
-                        <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
-                        <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
-                    </span>
-                    @endforeach
-                </div>
-            </div>
-            <div class="lg:col-span-5 flex lg:justify-end">
-                <a href="{{ route('parts-aftercare') }}"
-                   class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-                    Explore Support &amp; Aftercare
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
 {{-- 13. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted support behind <span style="color:#148af4;">commercial laundry decisions</span>',
-    'subheading' => 'Drying cabinets affect item care, staff routines, daily drying needs and long-term running costs. Irish Laundry Systems is trusted by organisations that value clear communication, responsive service support and peace of mind after installation.',
+    'heading'    => 'Trusted support behind<br class="hidden lg:block"> <span style="color:#148af4;">specialist drying decisions</span>',
+    'subheading' => 'Drying cabinets affect item care, daily routines, running costs and return to use. Irish Laundry Systems supports sites that value clear communication, responsive service and peace of mind after installation.',
 ])
 
 {{-- 14. TRUSTED BY LOGO STRIP --}}
