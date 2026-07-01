@@ -34,9 +34,9 @@
             $labelIndent = 'pl-[4.25rem] xl:pl-[5.25rem]';
         @endphp
         <div class="lg:min-h-[6.5rem] w-fit {{ ($tightLeft ?? false) ? '-ml-3' : '' }}">
-            <div class="flex items-end gap-1 h-16 xl:h-20">
+            <div class="flex items-center gap-1 min-h-16 xl:min-h-20">
                 <img src="/images/icons/{{ $it['icon'] }}.png" alt="" class="w-16 h-16 xl:w-20 xl:h-20 object-contain flex-shrink-0 {{ $it['iconClass'] ?? '' }}">
-                <div class="flex flex-col min-w-0 justify-end h-full">
+                <div class="flex flex-col min-w-0 justify-center h-full">
                     @if(!empty($it['prefix']))<span class="font-body font-bold text-navy text-sm leading-none mb-0.5">{{ $it['prefix'] }}</span>@endif
                     <div class="font-heading font-bold text-[#148af4] {{ $isWord ? $wordSize : ($numericSize ?? 'text-[1.8225rem] xl:text-[2.43rem]') }} leading-none tracking-tight">{!! $it['stat'] !!}</div>
                 </div>
