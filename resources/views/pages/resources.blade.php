@@ -405,47 +405,82 @@
 </section>
 
 {{-- ═══════════════════════════════════════
-     5b. SPECIALIST SOLUTIONS — marine & firefighters brochures
+     5b. BROCHURE LIBRARY — every official brochure on the site, filterable
 ═══════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
+<section id="brochure-library" class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Specialist Solutions</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Brochure Library</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Brochures for <span style="color:#148af4;">marine and specialist environments</span>
+                Official <span style="color:#148af4;">Electrolux Professional brochures</span> in one place
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Official Electrolux Professional material for specialist environments Irish Laundry Systems can supply and support.
+                Every brochure, leaflet and white paper from across the site — filter by equipment type and download directly.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            @foreach([
-                ['title' => 'Marine Solutions', 'desc' => 'Laundry and galley solutions for vessels — marine-ready washers, dryers and cooking lines.', 'brochures' => [
-                    ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
-                    ['l' => 'SkyLine Marine segment brochure', 'h' => '/pdfs/EPR-Brochure SkyLine Segmento Marine-EN-20251007-LR.pdf'],
-                    ['l' => 'thermaline Modular 90 Marine brochure', 'h' => '/pdfs/EPR_bro_thermaline Modular 90 Marine_ENG_26032024.pdf'],
-                ]],
-                ['title' => 'Firefighters & PPE Care', 'desc' => 'Decontamination-focused laundry solutions for fire services and protective equipment care.', 'brochures' => [
-                    ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'],
-                ]],
-            ] as $spec)
-            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col reveal">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
-                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $spec['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $spec['desc'] }}</p>
-                <div class="flex flex-col gap-2.5 mt-auto">
-                    @foreach($spec['brochures'] as $b)
-                    <a href="{{ $b['h'] }}" target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 font-body font-bold text-sm text-[#148af4] hover:underline">
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                        {{ $b['l'] }}
-                    </a>
-                    @endforeach
-                </div>
+        @php
+        $brochures = [
+            ['cat' => 'Washers',            'type' => 'Leaflet',       'title' => 'Line 6000 HS Washers & HP Dryers',        'h' => '/pdfs/EPR_leaflet_Line 6000 HS Washers and HP Dryers_ENG_LR_web.pdf'],
+            ['cat' => 'Washers',            'type' => 'Brochure',      'title' => 'Line 6000 Washers & Dryers',              'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+            ['cat' => 'Dryers',             'type' => 'Leaflet',       'title' => 'TD6-11 with Heat Pump',                   'h' => '/pdfs/EPR-TD6-11-with-Heat-Pump-Leaflet_04092024_EN-singlepage.pdf'],
+            ['cat' => 'Dryers',             'type' => 'Leaflet',       'title' => 'Heat Pump Dryer',                         'h' => '/pdfs/EPR-leaflet-heat-pump-dryer-04092024-EN-one page view.pdf'],
+            ['cat' => 'Dryers',             'type' => 'Brochure',      'title' => 'Line 6000 Dryers',                        'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+            ['cat' => 'Drying Cabinets',    'type' => 'Leaflet',       'title' => 'Drying Cabinets',                         'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'],
+            ['cat' => 'Barrier Washers',    'type' => 'Brochure',      'title' => 'Line 6000 Evolution Barrier Washers',     'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+            ['cat' => 'Barrier Washers',    'type' => 'Leaflet',       'title' => 'Pullman Barrier Washer',                  'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+            ['cat' => 'Ironers & Finishing','type' => 'Brochure',      'title' => 'Line 6000 Hot Cylinder Ironers',          'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+            ['cat' => 'Ironers & Finishing','type' => 'Leaflet',       'title' => 'Ironer Feeding, Folding & Stacking',      'h' => '/pdfs/EPR-leaflet-IronerFFS-EN-20231122-LR-singlePage.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Leaflet',       'title' => 'Detergents, Dosing Systems & Storage',    'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L00 Laundry Eco Degreaser',               'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L01 Laundry Eco Powder',                  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L02 Laundry Eco Wash',                    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L03 Laundry Eco Booster',                 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L04 Laundry Eco Bleach',                  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
+            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L05 Laundry Eco Softener',                'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
+            ['cat' => 'Wet Cleaning',       'type' => 'White paper',   'title' => 'Electrolux Cleaning Solution',            'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'],
+            ['cat' => 'myPRO',              'type' => 'Leaflet',       'title' => 'myPRO XL Semi-Professional Range',        'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
+            ['cat' => 'Marine',             'type' => 'Brochure',      'title' => 'SkyLine Marine Segment',                  'h' => '/pdfs/EPR-Brochure SkyLine Segmento Marine-EN-20251007-LR.pdf'],
+            ['cat' => 'Marine',             'type' => 'Brochure',      'title' => 'thermaline Modular 90 Marine',            'h' => '/pdfs/EPR_bro_thermaline Modular 90 Marine_ENG_26032024.pdf'],
+            ['cat' => 'Firefighters',       'type' => 'Brochure',      'title' => 'Firefighters Laundry Solutions',          'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'],
+        ];
+        $brochureCats = array_values(array_unique(array_column($brochures, 'cat')));
+        @endphp
+
+        <div x-data="{ cat: 'All' }">
+
+            {{-- Category filter pills --}}
+            <div class="flex flex-wrap gap-2 mb-8 reveal" role="tablist" aria-label="Filter brochures by equipment type">
+                @foreach(array_merge(['All'], $brochureCats) as $c)
+                <button type="button" @click="cat = '{{ $c }}'"
+                        :class="cat === '{{ $c }}' ? 'bg-[#148af4] border-[#148af4] text-white' : 'bg-white border-gray-200 text-gray-600 hover:text-navy hover:border-gray-300'"
+                        :aria-pressed="cat === '{{ $c }}'"
+                        class="cursor-pointer font-body font-bold text-sm px-5 py-2.5 rounded-full border transition-colors duration-200">
+                    {{ $c }}
+                </button>
+                @endforeach
             </div>
-            @endforeach
+
+            {{-- Brochure cards --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                @foreach($brochures as $b)
+                <div x-show="cat === 'All' || cat === '{{ $b['cat'] }}'"
+                     class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
+                    <div class="flex items-center justify-between gap-3 mb-4">
+                        <span class="font-body font-bold text-[#148af4] text-[11px] uppercase tracking-[0.14em]">{{ $b['cat'] }}</span>
+                        <span class="font-body text-gray-400 text-xs whitespace-nowrap">{{ $b['type'] }} · PDF</span>
+                    </div>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-5 flex-1">{{ $b['title'] }}</h3>
+                    <a href="{{ $b['h'] }}" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 font-body font-bold text-sm text-[#148af4] hover:underline py-1.5 -my-1.5">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                        Download
+                    </a>
+                </div>
+                @endforeach
+            </div>
+
         </div>
     </div>
 </section>
