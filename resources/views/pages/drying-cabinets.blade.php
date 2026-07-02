@@ -91,11 +91,11 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Outstanding<br>flexibility',   'size'=>'text-2xl', 'label'=>'skiwear to silk',        'body'=>'Dry delicate garments, outdoor clothing, PPE, shoes, gloves and bulky items in one cabinet setup.'],
-            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Save<br>time',                'size'=>'text-2xl', 'label'=>'under 45 minutes',       'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster item return to use.'],
-            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Save, money and<br>energy',   'size'=>'text-2xl', 'label'=>'auto-stop programmes',   'body'=>'Programmes stop when the load is dry, helping reduce wasted time and running cost.'],
-            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>textile care',      'size'=>'text-2xl', 'label'=>'no tumble action',       'body'=>'Cabinet drying protects delicate fabrics, coatings, reflective strips and bulky items.'],
-            ['icon'=>'194', 'prefix'=>'', 'stat'=>'User-friendly<br>operation',  'size'=>'text-2xl', 'label'=>'simple daily use',       'body'=>'Clear controls and practical cabinet access support easier day-to-day drying.'],
+            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Outstanding<br>flexibility',   'size'=>'text-2xl', 'label'=>'skiwear to silk', 'iconClass'=>'translate-y-[0.6%]',        'body'=>'Dry delicate garments, outdoor clothing, PPE, shoes, gloves and bulky items in one cabinet setup.'],
+            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Save<br>time',                'size'=>'text-2xl', 'label'=>'under 45 minutes', 'iconClass'=>'scale-[1.059]',       'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster item return to use.'],
+            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Save, money and<br>energy',   'size'=>'text-2xl', 'label'=>'auto-stop programmes', 'iconClass'=>'scale-[1.207] translate-y-[3.1%]',   'body'=>'Programmes stop when the load is dry, helping reduce wasted time and running cost.'],
+            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>textile care',      'size'=>'text-2xl', 'label'=>'no tumble action', 'iconClass'=>'scale-[1.271]',       'body'=>'Cabinet drying protects delicate fabrics, coatings, reflective strips and bulky items.'],
+            ['icon'=>'194', 'prefix'=>'', 'stat'=>'User-friendly<br>operation',  'size'=>'text-2xl', 'label'=>'simple daily use', 'iconClass'=>'scale-[1.037]',       'body'=>'Clear controls and practical cabinet access support easier day-to-day drying.'],
         ]])
     </div>
 </section>
@@ -258,7 +258,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
-                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Official Resources',  'links' => [['l' => 'Drying Cabinets leaflet', 'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
                 ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
                 ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
             ] as $grp)

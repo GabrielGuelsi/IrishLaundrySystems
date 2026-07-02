@@ -637,6 +637,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
                 ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'myPRO XL leaflet', 'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
                     ['l' => 'myPRO product resources', 'h' => route('resources')],
                     ['l' => 'Browse semi-professional range', 'h' => route('equipment.category', ['category' => 'semi-professional'])],
                 ]],

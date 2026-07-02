@@ -74,10 +74,10 @@
     </div>
 </section>
 
-{{-- FINISHING EQUIPMENT OPTIONS (visual selector — merged with former detail sections) --}}
+{{-- FINISHING EQUIPMENT OPTIONS (visual selector — main card-based selector) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-4 reveal max-w-4xl">
+        <div class="mb-10 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose the finishing setup for <span style="color:#148af4;">garments, uniforms and smaller daily items</span>
@@ -86,95 +86,73 @@
                 Match the items your site handles to the right ironing table, steam support, press or garment-finishing setup.
             </p>
         </div>
-    </div>
-</section>
 
-{{-- DETAIL SECTIONS (1-4) --}}
-@php
-    $detailSections = [
-        [
-            'id'       => 'ironing-tables',
-            'title'    => 'Ironing Tables',
-            'body'     => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.',
-            'points'   => ['Daily finishing', 'Garment care', 'Room fit'],
-            'primary'  => 'Ask About Ironing Tables',
-            'img'      => '/images/equipment/FIT1.jpg',
-            'contain'  => true,
-        ],
-        [
-            'id'       => 'steam-support',
-            'title'    => 'Steam Boilers & Steam Support',
-            'body'     => 'For hand-finishing, touch-ups and garment presentation where steady steam support matters.',
-            'points'   => ['Hand finishing', 'Steam support', 'Flexible use'],
-            'primary'  => 'Ask About Steam Support',
-            'img'      => '/images/equipment/FSB3.3.jpeg',
-            'contain'  => true,
-        ],
-        [
-            'id'       => 'presses',
-            'title'    => 'Presses & Form Finishers',
-            'body'     => 'For garments that need stronger shape, sharper presentation and more consistency than manual ironing alone.',
-            'points'   => ['Garment shape', 'Consistent finish', 'Professional presentation'],
-            'primary'  => 'Ask About Presses & Finishers',
-            'img'      => '/images/equipment/FPA1-D.jpg',
-            'contain'  => true,
-        ],
-        [
-            'id'       => 'garment-finishing',
-            'title'    => 'Shirt & Trouser Finishing',
-            'body'     => 'For shirts, trousers and uniforms where shape, creases, pleats and finish quality matter.',
-            'points'   => ['Shirt finish', 'Trouser finish', 'Uniform care'],
-            'primary'  => 'Ask About Garment Finishing',
-            'img'      => '/images/equipment/FF1.jpg',
-            'contain'  => true,
-        ],
-    ];
-@endphp
+        @php
+            $detailSections = [
+                [
+                    'id'       => 'ironing-tables',
+                    'title'    => 'Ironing Tables',
+                    'body'     => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.',
+                    'points'   => ['Daily finishing', 'Garment care', 'Room fit'],
+                    'primary'  => 'Ask About Ironing Tables',
+                    'img'      => '/images/equipment/FIT1.jpg',
+                ],
+                [
+                    'id'       => 'steam-support',
+                    'title'    => 'Steam Boilers & Steam Support',
+                    'body'     => 'For hand-finishing, touch-ups and garment presentation where steady steam support matters.',
+                    'points'   => ['Hand finishing', 'Steam support', 'Flexible use'],
+                    'primary'  => 'Ask About Steam Support',
+                    'img'      => '/images/equipment/FSB3.3.jpeg',
+                ],
+                [
+                    'id'       => 'presses',
+                    'title'    => 'Presses & Form Finishers',
+                    'body'     => 'For garments that need stronger shape, sharper presentation and more consistency than manual ironing alone.',
+                    'points'   => ['Garment shape', 'Consistent finish', 'Professional presentation'],
+                    'primary'  => 'Ask About Presses & Finishers',
+                    'img'      => '/images/equipment/FPA1-D.jpg',
+                ],
+                [
+                    'id'       => 'garment-finishing',
+                    'title'    => 'Shirt & Trouser Finishing',
+                    'body'     => 'For shirts, trousers and uniforms where shape, creases, pleats and finish quality matter.',
+                    'points'   => ['Shirt finish', 'Trouser finish', 'Uniform care'],
+                    'primary'  => 'Ask About Garment Finishing',
+                    'img'      => '/images/equipment/FF1.jpg',
+                ],
+            ];
+        @endphp
 
-@foreach($detailSections as $i => $d)
-<section id="{{ $d['id'] }}" class="py-10 lg:py-14 scroll-mt-28 bg-white {{ $i === 0 ? '' : 'border-t border-gray-100' }}">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
-            {{-- Text column (alternates side) --}}
-            <div class="reveal {{ $i % 2 === 0 ? 'reveal-left lg:order-1' : 'reveal-right lg:order-2' }}">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-4xl leading-tight mb-4">
-                    {{ $d['title'] }}
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                    {{ $d['body'] }}
-                </p>
-                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            @foreach($detailSections as $d)
+            <div id="{{ $d['id'] }}" class="scroll-mt-28 bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col h-full reveal">
+                <div class="w-full flex items-center justify-center" style="height:280px;">
+                    <img src="{{ $d['img'] }}" alt="{{ $d['title'] }}"
+                         class="transition-transform duration-500 hover:-translate-y-2"
+                         style="max-width:100%; max-height:280px; object-fit:contain;">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2 mt-4">{{ $d['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $d['body'] }}</p>
+                <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 mb-5">
                     @foreach($d['points'] as $pi => $pt)
                     @if($pi > 0)<span class="text-gray-300">|</span>@endif
-                    <span class="inline-flex items-center gap-2 font-body text-navy text-sm font-bold">
+                    <span class="inline-flex items-center gap-1.5 font-body text-navy text-xs font-bold">
                         <span class="text-[#148af4]">&#9656;</span> {{ $pt }}
                     </span>
                     @endforeach
                 </div>
                 <a href="{{ route('contact') }}"
-                   class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 w-fit">
+                   class="inline-flex items-center justify-center gap-1.5 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-5 py-3 rounded-lg transition-colors duration-200 mt-auto w-fit">
                     {{ $d['primary'] }}
                 </a>
             </div>
-
-            {{-- Supporting visual column --}}
-            <div class="reveal {{ $i % 2 === 0 ? 'reveal-right lg:order-2' : 'reveal-left lg:order-1' }}">
-                <div class="relative overflow-hidden rounded-2xl border border-gray-100 h-[260px] sm:h-[320px] lg:h-[380px]">
-                    <img src="{{ $d['img'] }}" alt="{{ $d['title'] }}"
-                         class="absolute inset-0 w-full h-full {{ ($d['contain'] ?? false) ? 'object-contain bg-white p-8' : 'object-cover' }}">
-                    @if(!($d['contain'] ?? false))
-                    <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.35) 0%, rgba(1,30,65,0.05) 50%, transparent 100%);"></div>
-                    @endif
-                </div>
-            </div>
-
+            @endforeach
         </div>
     </div>
 </section>
-@endforeach
 
-{{-- white spacer between the last detail section and the resources bar --}}
+{{-- white spacer between the finishing equipment options and the resources bar --}}
 <div class="bg-white h-10 lg:h-14"></div>
 
 {{-- COMPACT RESOURCES BAR (brochures + resources — before the product range) --}}
@@ -466,6 +444,83 @@
     </div>
 </section>
 
+{{-- CONNECTED FINISHING SUPPORT --}}
+<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Finishing Support</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Keep finishing equipment supported <span style="color:#148af4;">after the first decision</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Finishing equipment performance depends on more than the first installation. Irish Laundry Systems connects equipment access, planned maintenance, repairs and aftercare around the way the laundry room operates.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            @foreach([
+                [
+                    'title' => 'Repairs &amp; Call-outs',
+                    'text'  => 'Service and breakdown support when finishing equipment faults interrupt garment presentation or daily output.',
+                    'cta'   => 'Request Call-out',
+                    'route' => route('repairs'),
+                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'pos'   => '50% 35%',
+                ],
+                [
+                    'title' => 'Preventive Maintenance',
+                    'text'  => 'Planned servicing to reduce unexpected repairs and keep finishing equipment condition visible.',
+                    'cta'   => 'View Maintenance Options',
+                    'route' => route('service-contracts'),
+                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'pos'   => '90% 35%',
+                ],
+                [
+                    'title' => 'Equipment Rental',
+                    'text'  => 'Lower upfront cost for finishing equipment replacement, capacity planning or expansion where rental is the right fit.',
+                    'cta'   => 'See Rental Options',
+                    'route' => route('rental'),
+                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'   => '66% center',
+                ],
+                [
+                    'title' => 'Support &amp; Aftercare',
+                    'text'  => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',
+                    'cta'   => 'Explore Support Options',
+                    'route' => route('parts-aftercare'),
+                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'pos'   => 'center center',
+                ],
+            ] as $card)
+            <a href="{{ $card['route'] }}"
+               class="group relative overflow-hidden rounded-2xl block"
+               style="height:400px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] }};">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background: linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.4) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background: rgba(1,30,65,0.88);"></div>
+                <div class="absolute inset-0 p-6 flex flex-col justify-end z-10">
+                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
+                        <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
+                    </div>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <div class="flex justify-end">
+                        <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
+                            {!! $card['cta'] !!}
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </span>
+                    </div>
+                </div>
+            </a>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 {{-- WHERE IT FITS (4 cards) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -477,27 +532,78 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-5">
-            @foreach([
-                ['title' => 'Care homes and nursing homes',       'copy' => 'For resident clothing, uniforms and everyday items where cleaner presentation supports daily standards.', 'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
-                ['title' => 'Hospitality sites',                  'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => 'center center'],
-                ['title' => 'Smaller laundry rooms',              'copy' => 'For sites that need more than domestic ironing equipment without moving into a full ironer setup.', 'img' => '/images/equipment/td6-multihousing-room.jpg', 'pos' => 'center center'],
-                ['title' => 'Garment and wet cleaning',          'copy' => 'For specialist textile care where cleaning, drying and finishing need to work together.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center center'],
-            ] as $card)
-            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
-                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                     style="object-position: {{ $card['pos'] ?? 'center center' }};">
-                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                     style="background:rgba(1,30,65,0.90);"></div>
-                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
-                    <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
-                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{{ $card['title'] }}</h3>
+        @php
+        $fitCards = [
+            ['title' => 'Care homes and nursing homes', 'copy' => 'For resident clothing, uniforms and everyday items where cleaner presentation supports daily standards.', 'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
+            ['title' => 'Hospitality sites',             'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => 'center center'],
+            ['title' => 'Smaller laundry rooms',         'copy' => 'For sites that need more than domestic ironing equipment without moving into a full ironer setup.', 'img' => '/images/equipment/td6-multihousing-room.jpg', 'pos' => 'center center'],
+            ['title' => 'Garment and wet cleaning',      'copy' => 'For specialist textile care where cleaning, drying and finishing need to work together.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center center'],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($fitCards) }},
+                perView: 4,
+                timer: null,
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    calc();
+                    window.addEventListener('resize', calc);
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
+            }"
+            class="relative reveal"
+        >
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-2.5"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($fitCards as $card)
+                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
+                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                            <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                                 style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                 style="background:rgba(1,30,65,0.90);"></div>
+                            <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                                <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
+                                <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
                 </div>
             </div>
-            @endforeach
+
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-8 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    <template x-for="i in (maxIndex + 1)" :key="i">
+                        <button @click="go(i - 1)"
+                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                                class="rounded-full transition-all duration-300"></button>
+                    </template>
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>

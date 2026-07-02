@@ -167,11 +167,11 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'132', 'prefix'=>'Up to', 'stat'=>'90%',           'size'=>'text-4xl', 'label'=>'Post-purchase cost', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-90',  'body'=>'Water, energy and chemicals can drive most washer and dryer lifetime cost, so efficient equipment matters after purchase.'],
-            ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2',      'body'=>'Electrolux Professional heat pump dryer technology can reduce dryer energy use in suitable applications.'],
-            ['icon'=>'dosing-control', 'prefix'=>'Over', 'stat'=>'30%',  'size'=>'text-4xl', 'label'=>'Detergent savings', 'labelClass'=>'translate-y-2',  'body'=>'Efficient dosing can reduce detergent use by applying the right amount at each cycle.'],
-            ['icon'=>'19',  'prefix'=>'Up to', 'stat'=>'75%',           'size'=>'text-4xl', 'label'=>'Sick-day reduction', 'labelClass'=>'translate-y-2',  'body'=>'Electrolux Professional ergonomic design can reduce handling strain in daily laundry work.'],
-            ['icon'=>'88',  'prefix'=>'',     'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2',     'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
+            ['icon'=>'132', 'prefix'=>'Up to', 'stat'=>'90%',           'size'=>'text-4xl', 'label'=>'Post-purchase cost', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.914] -translate-y-[1.5%]',  'body'=>'Water, energy and chemicals can drive most washer and dryer lifetime cost, so efficient equipment matters after purchase.'],
+            ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',      'body'=>'Electrolux Professional heat pump dryer technology can reduce dryer energy use in suitable applications.'],
+            ['icon'=>'dosing-control', 'prefix'=>'Over', 'stat'=>'30%',  'size'=>'text-4xl', 'label'=>'Detergent savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',  'body'=>'Efficient dosing can reduce detergent use by applying the right amount at each cycle.'],
+            ['icon'=>'19',  'prefix'=>'Up to', 'stat'=>'75%',           'size'=>'text-4xl', 'label'=>'Sick-day reduction', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.03]',  'body'=>'Electrolux Professional ergonomic design can reduce handling strain in daily laundry work.'],
+            ['icon'=>'88',  'prefix'=>'',     'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'iconClass'=>'translate-y-[0.8%]',     'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
     </div>
 </section>
@@ -194,7 +194,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/34.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/34.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-14.8%) scale(1.489);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Laundry volume</h3>
@@ -204,7 +204,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/170.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/170.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(0.9%) scale(1.275);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Textile mix</h3>
@@ -214,7 +214,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/169.png" alt="" class="w-28 h-28 object-contain scale-110">
+                    <img src="/images/icons/169.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(0.8%) scale(1.311);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility costs</h3>
@@ -224,7 +224,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/171.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/171.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.45);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator comfort</h3>
@@ -234,7 +234,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/172.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/172.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-7.2%) scale(1.531);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene control</h3>
@@ -900,6 +900,44 @@
     'cta2Label'    => 'Explore Support &amp; Aftercare',
     'cta2Route'    => 'parts-aftercare',
 ])
+
+{{-- COMPACT RESOURCES BAR (official brochures — matches equipment pages) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+                    ['l' => 'Product resources', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
+                    ['l' => 'Dosing & Accessories', 'h' => route('equipment.category', 'accessories')],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request laundry assessment', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-col gap-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
+                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
 
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',

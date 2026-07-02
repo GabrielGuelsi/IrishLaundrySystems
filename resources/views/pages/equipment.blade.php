@@ -350,7 +350,7 @@
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/equipment/hot_ciliders_ironerscards.jpg'],
                 ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/equipment/wetcleaningcards.png'],
                 ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/equipment/semiprofessionalcards.png'],
-                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/eco-detergents.webp'],
+                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/equipment/accessoriesandconsumablescardimage.png'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
