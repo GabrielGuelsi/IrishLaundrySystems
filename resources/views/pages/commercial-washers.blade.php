@@ -431,7 +431,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
-                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 HS Washers & HP Dryers leaflet', 'h' => '/pdfs/EPR_leaflet_Line 6000 HS Washers and HP Dryers_ENG_LR_web.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Commercial washers at Electrolux Professional', 'h' => 'https://www.electroluxprofessional.com/commercial-laundry-equipment/commercial-washers/'], ['l' => 'Product resources', 'h' => route('resources')]]],
                 ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
                 ['title' => 'Related Equipment',   'links' => [['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
             ] as $grp)

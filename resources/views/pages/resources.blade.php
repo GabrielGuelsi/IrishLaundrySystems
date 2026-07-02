@@ -405,6 +405,52 @@
 </section>
 
 {{-- ═══════════════════════════════════════
+     5b. SPECIALIST SOLUTIONS — marine & firefighters brochures
+═══════════════════════════════════════ --}}
+<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Specialist Solutions</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Brochures for <span style="color:#148af4;">marine and specialist environments</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Official Electrolux Professional material for specialist environments Irish Laundry Systems can supply and support.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            @foreach([
+                ['title' => 'Marine Solutions', 'desc' => 'Laundry and galley solutions for vessels — marine-ready washers, dryers and cooking lines.', 'brochures' => [
+                    ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+                    ['l' => 'SkyLine Marine segment brochure', 'h' => '/pdfs/EPR-Brochure SkyLine Segmento Marine-EN-20251007-LR.pdf'],
+                    ['l' => 'thermaline Modular 90 Marine brochure', 'h' => '/pdfs/EPR_bro_thermaline Modular 90 Marine_ENG_26032024.pdf'],
+                ]],
+                ['title' => 'Firefighters & PPE Care', 'desc' => 'Decontamination-focused laundry solutions for fire services and protective equipment care.', 'brochures' => [
+                    ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'],
+                ]],
+            ] as $spec)
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8 flex flex-col reveal">
+                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $spec['title'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $spec['desc'] }}</p>
+                <div class="flex flex-col gap-2.5 mt-auto">
+                    @foreach($spec['brochures'] as $b)
+                    <a href="{{ $b['h'] }}" target="_blank" rel="noopener"
+                       class="inline-flex items-center gap-2 font-body font-bold text-sm text-[#148af4] hover:underline">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                        {{ $b['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- ═══════════════════════════════════════
      6. NOTIFY / NEWSLETTER CTA
 ═══════════════════════════════════════ --}}
 <section class="bg-white py-16 lg:py-24 border-t border-gray-100">

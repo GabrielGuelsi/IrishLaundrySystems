@@ -998,6 +998,46 @@
     'cta2Route'    => 'parts-aftercare',
 ])
 
+{{-- COMPACT RESOURCES BAR (official brochures — matches equipment pages) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+                    ['l' => 'Line 6000 Evolution Barrier Washers brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                    ['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                    ['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+                    ['l' => 'Product resources', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
+                    ['l' => 'Ironers', 'h' => route('equipment.category', 'ironers')],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request healthcare assessment', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-col gap-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
+                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted <span style="color:#148af4;">healthcare laundry support</span> in Ireland',
