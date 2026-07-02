@@ -188,11 +188,11 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'175',            'prefix'=>'Up to', 'stat'=>'40%',                 'size'=>'text-4xl', 'label'=>'lower operational expenditure', 'body'=>'Electrolux Professional Line 6000 washer technology can reduce operating costs by up to 40% through better utilisation.'],
-            ['icon'=>'dosing-control', 'prefix'=>'Over',  'stat'=>'30%',                 'size'=>'text-4xl', 'label'=>'detergent savings',       'body'=>'Efficient Dosing can reduce detergent costs where specified, with better control of each wash process.'],
-            ['icon'=>'39',             'prefix'=>'',      'stat'=>'Less waste',          'size'=>'text-2xl', 'label'=>'water, energy and cycles', 'body'=>'Automatic Savings and Integrated Savings improve load control, reducing water, energy and cycle waste.'],
-            ['icon'=>'rental-gain-116','prefix'=>'',      'stat'=>'Time and<br>money',   'size'=>'text-2xl', 'label'=>'saved before drying',      'body'=>'Power Balance lowers moisture retention before drying, reducing the load on the drying stage and protecting laundry flow.'],
-            ['icon'=>'176',            'prefix'=>'Up to', 'stat'=>'25%',                 'size'=>'text-4xl', 'label'=>'productivity increase',   'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside a 75% decrease in sick days and 59% reduction in work-related musculoskeletal disorders.'],
+            ['icon'=>'175',            'prefix'=>'Up to', 'stat'=>'40%',                 'size'=>'text-4xl', 'label'=>'lower operational expenditure', 'iconClass'=>'scale-[1.392] -translate-y-[2.9%]', 'body'=>'Electrolux Professional Line 6000 washer technology can reduce operating costs by up to 40% through better utilisation.'],
+            ['icon'=>'dosing-control', 'prefix'=>'Over',  'stat'=>'30%',                 'size'=>'text-4xl', 'label'=>'detergent savings', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',       'body'=>'Efficient Dosing can reduce detergent costs where specified, with better control of each wash process.'],
+            ['icon'=>'39',             'prefix'=>'',      'stat'=>'Less waste',          'size'=>'text-2xl', 'label'=>'water, energy and cycles', 'iconClass'=>'scale-[1.105] -translate-y-[10.1%]', 'body'=>'Automatic Savings and Integrated Savings improve load control, reducing water, energy and cycle waste.'],
+            ['icon'=>'rental-gain-116','prefix'=>'',      'stat'=>'Time and<br>money',   'size'=>'text-2xl', 'label'=>'saved before drying', 'iconClass'=>'scale-[0.79] translate-y-[0.4%]',      'body'=>'Power Balance lowers moisture retention before drying, reducing the load on the drying stage and protecting laundry flow.'],
+            ['icon'=>'176',            'prefix'=>'Up to', 'stat'=>'25%',                 'size'=>'text-4xl', 'label'=>'productivity increase', 'iconClass'=>'scale-[1.017] -translate-y-[0.5%]',   'body'=>'Electrolux ergonomic material cites a 25% productivity increase, alongside a 75% decrease in sick days and 59% reduction in work-related musculoskeletal disorders.'],
         ]])
     </div>
 </section>
@@ -247,11 +247,11 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '7',             'title' => 'Water control',      'copy' => 'Automatic Savings adjusts water intake to the actual load, reducing waste on smaller wash loads.', 'imgClass' => 'w-28 h-28 object-contain -translate-y-3'],
-                ['icon' => '36',            'title' => 'Load accuracy',      'copy' => 'Integrated Savings gives load visibility, helping avoid underloading and overloading before the cycle starts.'],
+                ['icon' => '7',             'title' => 'Water control',      'copy' => 'Automatic Savings adjusts water intake to the actual load, reducing waste on smaller wash loads.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.55] -translate-y-[17.4%]'],
+                ['icon' => '36',            'title' => 'Load accuracy',      'copy' => 'Integrated Savings gives load visibility, helping avoid underloading and overloading before the cycle starts.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.899]'],
                 ['icon' => '4',             'title' => 'Programme control',  'copy' => 'ClarusVibe and CompassPro support clearer programme selection, editable programmes and easier operator control.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
-                ['icon' => 'dosing-control','title' => 'Dosing control',     'copy' => 'Intelligent / Efficient Dosing links detergent use to load weight and cycle needs for better wash control.'],
-                ['icon' => '88',            'title' => 'Extraction control', 'copy' => 'Power Balance controls extraction strength, reducing moisture left in the load before drying.'],
+                ['icon' => 'dosing-control','title' => 'Dosing control',     'copy' => 'Intelligent / Efficient Dosing links detergent use to load weight and cycle needs for better wash control.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.379] -translate-y-[10%]'],
+                ['icon' => '88',            'title' => 'Extraction control', 'copy' => 'Power Balance controls extraction strength, reducing moisture left in the load before drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.31] translate-y-[1.1%]'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">

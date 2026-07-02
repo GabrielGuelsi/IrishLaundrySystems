@@ -134,11 +134,11 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy',              'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
-            ['icon'=>'7',  'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
-            ['icon'=>'9',  'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
-            ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
+            ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy',              'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
+            ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
+            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
+            ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
+            ['icon'=>'11', 'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
         ]])
     </div>
 </section>
@@ -161,7 +161,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-end justify-center h-32">
-                    <img src="/images/icons/13.png" alt="" class="h-16 w-auto max-w-full object-contain">
+                    <img src="/images/icons/13.png" alt="" class="w-auto max-w-none flex-shrink-0 object-contain" style="height:81px; margin-bottom:15px;">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident laundry</h3>
@@ -170,8 +170,8 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
-                <div class="flex items-end justify-center h-32">
-                    <img src="/images/icons/3.png" alt="" class="h-full w-auto max-w-full object-contain object-bottom -mb-4">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/3.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-8.56%) scale(1.352);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Staff wellbeing</h3>
@@ -180,7 +180,7 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
-                <div class="flex items-end justify-center h-32">
+                <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/clarusvibe.jpeg" alt="ClarusVibe" class="w-full h-24 object-cover rounded-lg">
                 </div>
                 <div>
@@ -190,8 +190,8 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
-                <div class="flex items-end justify-center h-32">
-                    <img src="/images/icons/15.png" alt="" class="h-28 w-auto max-w-full object-contain object-bottom -mb-4">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/15.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(1%) scale(1.277);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene control</h3>
@@ -200,8 +200,8 @@
             </div>
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
-                <div class="flex items-end justify-center h-32">
-                    <img src="/images/icons/24.png" alt="" class="h-36 w-auto max-w-full object-contain object-bottom -mb-4">
+                <div class="flex items-center justify-center h-32">
+                    <img src="/images/icons/24.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-8.56%) scale(1.352);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Textile care</h3>

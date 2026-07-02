@@ -88,11 +88,11 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'30', 'prefix'=>'',          'stat'=>'90%',                'size'=>'text-4xl', 'label'=>'The purchase is only the beginning', 'body'=>'Electrolux Professional highlights that most lifetime laundry cost sits in operation, including energy, water and chemicals.'],
-            ['icon'=>'dosing-control', 'prefix'=>'Save over',  'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'Reduce detergent costs', 'body'=>'Efficient Dosing can save over 30% on detergent costs on suitable Electrolux Professional setups.'],
-            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Correct<br>dose',    'size'=>'text-2xl', 'label'=>'Reduce detergent overuse', 'body'=>'Automatic dosing supports the right amount of detergent for each cycle, helping reduce waste and keep results consistent.'],
-            ['icon'=>'31', 'prefix'=>'',          'stat'=>'Less<br>maintenance','size'=>'text-2xl', 'label'=>'Lower system upkeep', 'labelClass'=>'!ml-0', 'body'=>'Selected systems such as JETSAVE use water-powered pumps with no moving parts or squeeze tubes.'],
-            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Better<br>control',  'size'=>'text-2xl', 'label'=>'Protect linen and equipment', 'body'=>'Better chemical control can support wash quality, textile life and equipment condition over time.'],
+            ['icon'=>'30', 'prefix'=>'',          'stat'=>'90%',                'size'=>'text-4xl', 'label'=>'The purchase is only the beginning', 'iconClass'=>'scale-[1.03] -translate-y-[6.7%]', 'body'=>'Electrolux Professional highlights that most lifetime laundry cost sits in operation, including energy, water and chemicals.'],
+            ['icon'=>'dosing-control', 'prefix'=>'Save over',  'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'Reduce detergent costs', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'body'=>'Efficient Dosing can save over 30% on detergent costs on suitable Electrolux Professional setups.'],
+            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Correct<br>dose',    'size'=>'text-2xl', 'label'=>'Reduce detergent overuse', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'body'=>'Automatic dosing supports the right amount of detergent for each cycle, helping reduce waste and keep results consistent.'],
+            ['icon'=>'31', 'prefix'=>'',          'stat'=>'Less<br>maintenance','size'=>'text-2xl', 'label'=>'Lower system upkeep', 'labelClass'=>'!ml-0', 'iconClass'=>'scale-[1.028] -translate-y-[6.6%]', 'body'=>'Selected systems such as JETSAVE use water-powered pumps with no moving parts or squeeze tubes.'],
+            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Better<br>control',  'size'=>'text-2xl', 'label'=>'Protect linen and equipment', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'body'=>'Better chemical control can support wash quality, textile life and equipment condition over time.'],
         ]])
     </div>
 </section>

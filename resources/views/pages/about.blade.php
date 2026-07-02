@@ -234,12 +234,14 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         @php
-        $supportNodes = [
-            ['icon' => '125', 'label' => 'Equipment Supply',        'left' => '16.0%', 'top' => '21.7%'],
-            ['icon' => '126', 'label' => 'Installation & Setup',    'left' => '84.0%', 'top' => '21.7%'],
-            ['icon' => '132', 'label' => 'Equipment Rental',        'left' => '24.9%', 'top' => '69.2%'],
-            ['icon' => '180', 'label' => 'Repairs & Call-Outs',     'left' => '75.0%', 'top' => '68.0%'],
-            ['icon' => '127', 'label' => 'Maintenance & Aftercare', 'left' => '50.7%', 'top' => '83.3%'],
+        // 6 nodes clockwise from top-left, matching the segmented ring (darkest segment = top-right)
+        $ringNodes = [
+            ['icon' => '125',                    'label' => 'Equipment Supply',       'left' => '37.4%',  'top' => '20.1%', 'side' => 'left'],
+            ['icon' => '126',                    'label' => 'Installation & Setup',   'left' => '62.6%',  'top' => '20.1%', 'side' => 'right'],
+            ['icon' => '132',                    'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
+            ['icon' => '180',                    'label' => 'Repairs & Call-Outs',    'left' => '62.6%',  'top' => '79.9%', 'side' => 'right'],
+            ['icon' => '127',                    'label' => 'Preventive Maintenance', 'left' => '37.4%',  'top' => '79.9%', 'side' => 'left'],
+            ['icon' => 'aftercare-connected-95', 'label' => 'Support & Aftercare',    'left' => '25.95%', 'top' => '50%',   'side' => 'left'],
         ];
         $blueFilter = 'filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);';
         @endphp
@@ -255,34 +257,33 @@
             </p>
         </div>
 
-        {{-- Desktop: radial hub with logo centre --}}
+        {{-- Desktop: segmented ring with logo centre --}}
         <div class="hidden lg:block reveal" style="transition-delay:100ms;">
-            <div class="relative mx-auto" style="max-width:1000px; aspect-ratio:1003 / 600;">
+            <div class="relative mx-auto" style="max-width:1040px; aspect-ratio:1040 / 760;">
 
-                {{-- dotted connector spokes --}}
-                <svg class="absolute inset-0 w-full h-full" viewBox="0 0 1003 600" fill="none" preserveAspectRatio="none" aria-hidden="true">
-                    <g stroke="#011E41" stroke-opacity="0.28" stroke-width="2" stroke-linecap="round" stroke-dasharray="0.5 7">
-                        <line x1="501" y1="140" x2="160" y2="130"/>
-                        <line x1="501" y1="140" x2="842" y2="130"/>
-                        <line x1="501" y1="140" x2="250" y2="415"/>
-                        <line x1="501" y1="140" x2="752" y2="408"/>
-                        <line x1="501" y1="140" x2="509" y2="500"/>
-                    </g>
-                </svg>
-
-                {{-- centre hub: ILS logo mark --}}
-                <div class="absolute -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
-                     style="left:50.0%; top:23.3%; width:17rem;">
-                    <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems"
-                         class="w-full h-auto object-contain">
+                {{-- segmented ring --}}
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2" style="width:54%;">
+                    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" class="w-full h-auto"><defs><filter id="segShadow" x="-15%" y="-15%" width="130%" height="130%"><feDropShadow dx="0" dy="7" stdDeviation="10" flood-color="#011E41" flood-opacity="0.14"/></filter></defs><g filter="url(#segShadow)"><path d="M 165.21 233.22 A 288 288 0 0 1 372.96 113.27 A 12 12 0 0 1 385.56 124.38 L 388.28 176.31 A 12 12 0 0 1 376.95 189.26 A 212 212 0 0 0 229.02 274.66 A 12 12 0 0 1 212.14 278 L 168.53 249.68 A 12 12 0 0 1 165.21 233.22 Z" fill="#FFFFFF" stroke="#C9D4DE" stroke-width="5"/><path d="M 427.04 113.27 A 288 288 0 0 1 634.79 233.22 A 12 12 0 0 1 631.47 249.68 L 587.86 278 A 12 12 0 0 1 570.98 274.66 A 212 212 0 0 0 423.05 189.26 A 12 12 0 0 1 411.72 176.31 L 414.44 124.38 A 12 12 0 0 1 427.04 113.27 Z" fill="#FFFFFF" stroke="#011E41" stroke-width="5"/><path d="M 661.83 280.05 A 288 288 0 0 1 661.83 519.95 A 12 12 0 0 1 645.92 525.3 L 599.59 501.69 A 12 12 0 0 1 594.04 485.41 A 212 212 0 0 0 594.04 314.59 A 12 12 0 0 1 599.59 298.31 L 645.92 274.7 A 12 12 0 0 1 661.83 280.05 Z" fill="#FFFFFF" stroke="#24436B" stroke-width="5"/><path d="M 634.79 566.78 A 288 288 0 0 1 427.04 686.73 A 12 12 0 0 1 414.44 675.62 L 411.72 623.69 A 12 12 0 0 1 423.05 610.74 A 212 212 0 0 0 570.98 525.34 A 12 12 0 0 1 587.86 522 L 631.47 550.32 A 12 12 0 0 1 634.79 566.78 Z" fill="#FFFFFF" stroke="#4A6A8E" stroke-width="5"/><path d="M 372.96 686.73 A 288 288 0 0 1 165.21 566.78 A 12 12 0 0 1 168.53 550.32 L 212.14 522 A 12 12 0 0 1 229.02 525.34 A 212 212 0 0 0 376.95 610.74 A 12 12 0 0 1 388.28 623.69 L 385.56 675.62 A 12 12 0 0 1 372.96 686.73 Z" fill="#FFFFFF" stroke="#7590AB" stroke-width="5"/><path d="M 138.17 519.95 A 288 288 0 0 1 138.17 280.05 A 12 12 0 0 1 154.08 274.7 L 200.41 298.31 A 12 12 0 0 1 205.96 314.59 A 212 212 0 0 0 205.96 485.41 A 12 12 0 0 1 200.41 501.69 L 154.08 525.3 A 12 12 0 0 1 138.17 519.95 Z" fill="#FFFFFF" stroke="#A0B4C6" stroke-width="5"/></g><g><circle cx="256" cy="150.58" r="17" fill="#FFFFFF" stroke="#011E41" stroke-width="5.5"/><circle cx="256" cy="150.58" r="6.5" fill="#011E41"/><circle cx="544" cy="150.58" r="17" fill="#FFFFFF" stroke="#011E41" stroke-width="5.5"/><circle cx="544" cy="150.58" r="6.5" fill="#011E41"/><circle cx="688" cy="400" r="17" fill="#FFFFFF" stroke="#011E41" stroke-width="5.5"/><circle cx="688" cy="400" r="6.5" fill="#011E41"/><circle cx="544" cy="649.42" r="17" fill="#FFFFFF" stroke="#011E41" stroke-width="5.5"/><circle cx="544" cy="649.42" r="6.5" fill="#011E41"/><circle cx="256" cy="649.42" r="17" fill="#FFFFFF" stroke="#011E41" stroke-width="5.5"/><circle cx="256" cy="649.42" r="6.5" fill="#011E41"/><circle cx="112" cy="400" r="17" fill="#FFFFFF" stroke="#011E41" stroke-width="5.5"/><circle cx="112" cy="400" r="6.5" fill="#011E41"/></g></svg>
                 </div>
 
-                {{-- pillar nodes (dotted circles) --}}
-                @foreach($supportNodes as $n)
-                <div class="absolute -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center text-center rounded-full bg-white"
-                     style="left:{{ $n['left'] }}; top:{{ $n['top'] }}; width:9rem; height:9rem; border:2px dotted rgba(1,30,65,0.30);">
-                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-12 h-12 object-contain mb-2" style="{{ $blueFilter }}">
-                    <span class="font-body font-bold text-navy text-xs leading-tight px-3">{{ $n['label'] }}</span>
+                {{-- centre: ILS logo + tagline (inside the ring's white circle) --}}
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center" style="width:12rem;">
+                    <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems"
+                         class="w-32 h-auto object-contain mb-2">
+                    <p class="font-body text-gray-500 text-xs leading-relaxed">Equipment, service and aftercare around the same laundry room</p>
+                </div>
+
+                {{-- icon + label nodes around the ring --}}
+                @foreach($ringNodes as $n)
+                <div class="absolute flex items-center gap-3 -translate-y-1/2 {{ $n['side'] === 'left' ? '-translate-x-full' : '' }}"
+                     style="left:{{ $n['left'] }}; top:{{ $n['top'] }};">
+                    @if($n['side'] === 'left')
+                    <span class="font-body font-bold text-navy text-sm leading-snug text-right max-w-[8.5rem]">{{ $n['label'] }}</span>
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-20 h-20 object-contain flex-shrink-0" style="{{ $blueFilter }}">
+                    @else
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-20 h-20 object-contain flex-shrink-0" style="{{ $blueFilter }}">
+                    <span class="font-body font-bold text-navy text-sm leading-snug max-w-[8.5rem]">{{ $n['label'] }}</span>
+                    @endif
                 </div>
                 @endforeach
 
@@ -295,7 +296,7 @@
                 <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems" class="w-48 h-auto object-contain">
             </div>
             <div class="flex flex-wrap justify-center gap-4">
-                @foreach($supportNodes as $n)
+                @foreach($ringNodes as $n)
                 <div class="flex flex-col items-center justify-center text-center rounded-full bg-white"
                      style="width:8.5rem; height:8.5rem; border:2px dotted rgba(1,30,65,0.30);">
                     <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-10 h-10 object-contain mb-1.5" style="{{ $blueFilter }}">

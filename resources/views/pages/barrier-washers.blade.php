@@ -10,8 +10,8 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Barrier washing machines"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+    <img src="/images/healthcare/barrierwasherhero.png" alt="Barrier washing machines"
+         class="absolute inset-0 w-full h-full object-cover object-center" style="transform:translateX(2.45%) scale(1.2);">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
@@ -85,11 +85,11 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'7',              'prefix'=>'Up to', 'stat'=>'50%',                 'size'=>'text-4xl', 'label'=>'water saving',                'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
-            ['icon'=>'169',            'prefix'=>'Up to', 'stat'=>'25%',                 'size'=>'text-4xl', 'label'=>'productivity increase',       'body'=>'Electrolux ergonomic material cites a 25% productivity increase, with fewer sick days and reduced strain.'],
-            ['icon'=>'28',             'prefix'=>'',      'stat'=>'Better<br>loading',    'size'=>'text-2xl', 'label'=>'less resource waste',          'labelClass'=>'translate-y-2', 'body'=>'Integrated weighing supports better loading, reducing underloading, overloading and avoidable water and energy waste.'],
-            ['icon'=>'dosing-control', 'prefix'=>'',      'stat'=>'Less dosing<br>waste', 'size'=>'text-2xl', 'label'=>'detergent and water control', 'labelClass'=>'translate-y-2', 'body'=>'Efficient Dosing adjusts detergent and water to load weight, reducing waste and supporting process consistency.'],
-            ['icon'=>'181',            'prefix'=>'',      'stat'=>'Lower<br>energy cost', 'size'=>'text-2xl', 'label'=>'after washing',               'labelClass'=>'translate-y-2', 'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
+            ['icon'=>'7',              'prefix'=>'Up to', 'stat'=>'50%',                 'size'=>'text-4xl', 'label'=>'water saving', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',                'body'=>'Double drain options can support water recycling and reduce water consumption where specified.'],
+            ['icon'=>'169',            'prefix'=>'Up to', 'stat'=>'25%',                 'size'=>'text-4xl', 'label'=>'productivity increase', 'iconClass'=>'translate-y-[0.6%]',       'body'=>'Electrolux ergonomic material cites a 25% productivity increase, with fewer sick days and reduced strain.'],
+            ['icon'=>'28',             'prefix'=>'',      'stat'=>'Better<br>loading',    'size'=>'text-2xl', 'label'=>'less resource waste',          'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.1]', 'body'=>'Integrated weighing supports better loading, reducing underloading, overloading and avoidable water and energy waste.'],
+            ['icon'=>'dosing-control', 'prefix'=>'',      'stat'=>'Less dosing<br>waste', 'size'=>'text-2xl', 'label'=>'detergent and water control', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'body'=>'Efficient Dosing adjusts detergent and water to load weight, reducing waste and supporting process consistency.'],
+            ['icon'=>'181',            'prefix'=>'',      'stat'=>'Lower<br>energy cost', 'size'=>'text-2xl', 'label'=>'after washing',               'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.212] -translate-y-[1.8%]', 'body'=>'Power Balance supports stronger extraction and lower moisture retention, reducing pressure on the drying stage.'],
         ]])
     </div>
 </section>
@@ -144,11 +144,11 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '182', 'title' => 'Dirty-clean separation', 'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.'],
-                ['icon' => '96',  'title' => 'Hygiene control',        'copy' => 'Hygiene Watchdog monitors full-cycle completion and hygiene process control.', 'img' => '/images/icons/Hygiene-Watchdog1.webp'],
-                ['icon' => '4',   'title' => 'Programme control',      'copy' => 'ClarusVibe gives clearer operation for dirty-side and clean-side control.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-32 object-cover rounded-lg'],
-                ['icon' => '95',  'title' => 'Easier unloading',       'copy' => 'Automatic Door Handling supports easier opening and faster unloading.', 'img' => '/images/icons/Foto-web-BW.jpg', 'imgClass' => 'w-full h-32 object-cover rounded-lg'],
-                ['icon' => '175', 'title' => 'Cycle visibility',       'copy' => 'Monitoring options can show cycle status, alarms and key process data for supported barrier washer setups.'],
+                ['icon' => '182', 'title' => 'Dirty-clean separation', 'copy' => 'Soiled linen loads from one side and clean linen unloads from the other.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.449]'],
+                ['icon' => '96',  'title' => 'Hygiene control',        'copy' => 'Hygiene Watchdog monitors full-cycle completion and hygiene process control.', 'img' => '/images/icons/Hygiene-Watchdog1.webp', 'imgClass' => 'w-24 h-24 object-contain'],
+                ['icon' => '4',   'title' => 'Programme control',      'copy' => 'ClarusVibe gives clearer operation for dirty-side and clean-side control.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
+                ['icon' => '95',  'title' => 'Easier unloading',       'copy' => 'Automatic Door Handling supports easier opening and faster unloading.', 'img' => '/images/icons/Foto-web-BW.jpg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
+                ['icon' => '175', 'title' => 'Cycle visibility',       'copy' => 'Monitoring options can show cycle status, alarms and key process data for supported barrier washer setups.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.826] -translate-y-[3.7%]'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
@@ -189,7 +189,9 @@
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
             <div class="flex flex-col gap-6">
                 <div class="flex flex-col sm:flex-row gap-5 items-start">
-                    <img src="/images/icons/5.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-44 lg:w-52 h-auto flex-shrink-0">
+                    <div class="h-52 lg:h-60 flex-shrink-0 flex items-start justify-center">
+                        <img src="/images/icons/ergocertnew.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="h-full w-auto object-contain">
+                    </div>
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">Pioneers in usability</h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">Electrolux ergonomics material reports <strong class="text-navy font-bold">59%</strong> fewer work-related musculoskeletal disorders, <strong class="text-navy font-bold">75%</strong> fewer sick days and a <strong class="text-navy font-bold">25%</strong> productivity increase.</p>

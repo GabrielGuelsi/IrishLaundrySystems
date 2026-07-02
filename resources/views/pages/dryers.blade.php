@@ -11,7 +11,7 @@
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
     <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial tumble dryers"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+         class="absolute inset-0 w-full h-full object-cover object-center" style="transform:translateX(-5%) translateY(-22%) scale(1.45);">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
@@ -168,11 +168,11 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'26', 'prefix'=>'',     'stat'=>'Energy<br>savings',          'size'=>'text-2xl', 'label'=>'lower running cost',  'body'=>'Electrolux Professional dryer technology can reduce energy use where the equipment and setup are suitable.'],
-            ['icon'=>'185', 'prefix'=>'',    'stat'=>'Outstanding<br>productivity','size'=>'text-2xl', 'label'=>'more loads per day',  'body'=>'Fast drying cycles can help busy laundry rooms process more loads during the day.'],
-            ['icon'=>'173', 'prefix'=>'',    'stat'=>'Long-term<br>savings',       'size'=>'text-2xl', 'label'=>'over daily use',     'body'=>'Efficient drying, correct setup and planned support can reduce running cost pressure over time.'],
-            ['icon'=>'132', 'prefix'=>'',    'stat'=>'Dry not<br>overdry',         'size'=>'text-2xl', 'label'=>'less wasted energy',  'body'=>'Moisture Balance stops at the selected dryness level, helping protect textiles and avoid unnecessary drying.'],
-            ['icon'=>'94', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost',      'size'=>'text-2xl', 'label'=>'Equipment Rental',    'body'=>'Equipment Rental can support replacement or added capacity without one large upfront purchase.'],
+            ['icon'=>'26', 'prefix'=>'',     'stat'=>'Energy<br>savings',          'size'=>'text-2xl', 'label'=>'lower running cost', 'iconClass'=>'scale-[1.105] -translate-y-[9.9%]',  'body'=>'Electrolux Professional dryer technology can reduce energy use where the equipment and setup are suitable.'],
+            ['icon'=>'185', 'prefix'=>'',    'stat'=>'Outstanding<br>productivity','size'=>'text-2xl', 'label'=>'more loads per day', 'iconClass'=>'scale-[0.963] translate-y-[0.3%]',  'body'=>'Fast drying cycles can help busy laundry rooms process more loads during the day.'],
+            ['icon'=>'173', 'prefix'=>'',    'stat'=>'Long-term<br>savings',       'size'=>'text-2xl', 'label'=>'over daily use', 'iconClass'=>'scale-[0.978]',     'body'=>'Efficient drying, correct setup and planned support can reduce running cost pressure over time.'],
+            ['icon'=>'132', 'prefix'=>'',    'stat'=>'Dry not<br>overdry',         'size'=>'text-2xl', 'label'=>'less wasted energy', 'iconClass'=>'scale-[0.914] -translate-y-[1.5%]',  'body'=>'Moisture Balance stops at the selected dryness level, helping protect textiles and avoid unnecessary drying.'],
+            ['icon'=>'94', 'prefix'=>'',     'stat'=>'Lower<br>upfront cost',      'size'=>'text-2xl', 'label'=>'Equipment Rental', 'iconClass'=>'scale-[1.243] -translate-y-[5%]',    'body'=>'Equipment Rental can support replacement or added capacity without one large upfront purchase.'],
         ]])
     </div>
 </section>
@@ -227,11 +227,11 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => null, 'img' => '/images/healthcare/MoistureBalance.png', 'title' => 'Moisture Balance', 'copy' => 'Stops at the selected dryness level to protect textiles and reduce unnecessary drying.',  'badge' => 'Moisture Balance'],
-                ['icon' => '175', 'title' => 'Drum Speed',                  'copy' => 'Controls fabric movement and mechanical action for different textile types.',             'badge' => 'Drum Speed'],
-                ['icon' => '186', 'title' => 'Adaptive Fan',                'copy' => 'Adjusts airflow to the load where available, supporting even drying and lower energy use.', 'badge' => 'Adaptive Fan'],
-                ['icon' => null, 'img' => '/images/healthcare/Compass-Pro_1-300x88.webp', 'imgClass' => 'w-auto h-20 object-contain', 'title' => 'CompassPro Control', 'copy' => 'Clear programme selection and daily operation for busy laundry teams.', 'badge' => 'CompassPro Control'],
-                ['icon' => '187', 'title' => 'Stacked options',             'copy' => 'Stacked dryer formats can add drying capacity while using less floor space.',              'badge' => 'Stacked options'],
+                ['icon' => null, 'img' => '/images/healthcare/MoistureBalance.png', 'imgClass' => 'w-24 h-24 object-contain scale-[1.029]', 'title' => 'Moisture Balance', 'copy' => 'Stops at the selected dryness level to protect textiles and reduce unnecessary drying.',  'badge' => 'Moisture Balance'],
+                ['icon' => '175', 'title' => 'Drum Speed',                  'copy' => 'Controls fabric movement and mechanical action for different textile types.',             'badge' => 'Drum Speed', 'imgClass' => 'w-24 h-24 object-contain scale-[1.826] -translate-y-[3.7%]'],
+                ['icon' => '186', 'title' => 'Adaptive Fan',                'copy' => 'Adjusts airflow to the load where available, supporting even drying and lower energy use.', 'badge' => 'Adaptive Fan', 'imgClass' => 'w-24 h-24 object-contain scale-[1.295] -translate-y-[1.7%]'],
+                ['icon' => null, 'img' => '/images/healthcare/Compass-Pro_1-300x88.webp', 'imgClass' => 'w-auto h-20 object-contain translate-y-2', 'title' => 'CompassPro Control', 'copy' => 'Clear programme selection and daily operation for busy laundry teams.', 'badge' => 'CompassPro Control'],
+                ['icon' => '187', 'title' => 'Stacked options',             'copy' => 'Stacked dryer formats can add drying capacity while using less floor space.',              'badge' => 'Stacked options', 'imgClass' => 'w-24 h-24 object-contain scale-[1.292]'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">

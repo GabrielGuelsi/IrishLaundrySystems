@@ -134,11 +134,11 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'7', 'iconClass'=>'-translate-y-[12%]', 'prefix'=>'Up to', 'stat'=>'20%',                'size'=>'text-4xl', 'label'=>'gas energy saving',       'body'=>'Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.'],
-            ['icon'=>'199', 'prefix'=>'Up to', 'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'extra productivity',      'body'=>'Dubixium technology supports higher productivity by distributing heat evenly across the cylinder.'],
-            ['icon'=>'163', 'prefix'=>'Up to', 'stat'=>'600<br>sheets',      'size'=>'text-2xl', 'label'=>'per day',                 'body'=>'Selected feeding, folding and stacking configurations can support high-volume flatwork processing.'],
-            ['icon'=>'171', 'prefix'=>'',      'stat'=>'Staffing<br>efficiency', 'size'=>'text-2xl', 'label'=>'less repeated handling', 'body'=>'Feeding, folding and stacking options can reduce repeated manual handling and help teams manage high-volume flatwork with fewer steps.'],
-            ['icon'=>'200', 'prefix'=>'',      'stat'=>'Better<br>room fit', 'size'=>'text-2xl', 'label'=>'front or rear delivery',  'body'=>'Front or rear delivery, working width and heating choice should be matched to space, operators and linen volume.'],
+            ['icon'=>'7', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'20%',                'size'=>'text-4xl', 'label'=>'gas energy saving',       'body'=>'Ceramic Burner technology can reduce gas energy use on suitable gas-heated models.'],
+            ['icon'=>'199', 'prefix'=>'Up to', 'stat'=>'30%',                'size'=>'text-4xl', 'label'=>'extra productivity', 'iconClass'=>'scale-[0.985] translate-y-[1.2%]',      'body'=>'Dubixium technology supports higher productivity by distributing heat evenly across the cylinder.'],
+            ['icon'=>'163', 'prefix'=>'Up to', 'stat'=>'600<br>sheets',      'size'=>'text-2xl', 'label'=>'per day', 'iconClass'=>'scale-[0.84]',                 'body'=>'Selected feeding, folding and stacking configurations can support high-volume flatwork processing.'],
+            ['icon'=>'171', 'prefix'=>'',      'stat'=>'Staffing<br>efficiency', 'size'=>'text-2xl', 'label'=>'less repeated handling', 'iconClass'=>'scale-[1.105]', 'body'=>'Feeding, folding and stacking options can reduce repeated manual handling and help teams manage high-volume flatwork with fewer steps.'],
+            ['icon'=>'200', 'prefix'=>'',      'stat'=>'Better<br>room fit', 'size'=>'text-2xl', 'label'=>'front or rear delivery', 'iconClass'=>'scale-[1.088] translate-y-[1.1%]',  'body'=>'Front or rear delivery, working width and heating choice should be matched to space, operators and linen volume.'],
         ]])
     </div>
 </section>
@@ -193,14 +193,14 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '197', 'imgClass' => 'w-36 h-36 object-contain', 'title' => 'DIAMMS / Bacteria-free linen', 'copy' => 'For sites where hygiene control matters, DIAMMS adjusts ironer speed around residual moisture to support controlled thermal disinfection.', 'badge' => 'DIAMMS'],
-                ['icon' => '198', 'imgClass' => 'w-36 h-36 object-contain mt-3', 'title' => 'Dubixium',                     'copy' => 'For a more consistent finish, Dubixium distributes heat evenly across the cylinder and helps reduce overheating.', 'badge' => 'Dubixium'],
-                ['icon' => null, 'img' => '/images/icons/ergocertnew.png', 'imgClass' => 'w-20 h-32 object-contain', 'title' => 'ERGOCERT 4-star', 'copy' => 'For teams using the ironer repeatedly, ERGOCERT-rated design supports safer, more comfortable daily operation.', 'badge' => 'ERGOCERT'],
-                ['icon' => 'FeedNow', 'imgClass' => 'w-36 h-36 object-contain', 'title' => 'Feed Now / Feed Alone',        'copy' => 'For smoother flatwork handling, Feed Now and Feed Alone support easier loading and can reduce repeated operator effort.', 'badge' => 'Feeding'],
-                ['icon' => 'FoldFlex', 'imgClass' => 'w-36 h-36 object-contain', 'title' => 'FoldFlex / Hygiene Guard',      'copy' => 'For high-volume finishing, FoldFlex and Hygiene Guard support customised folding, moisture control and linen rejection where required.', 'badge' => 'FoldFlex'],
+                ['icon' => '197', 'imgClass' => 'w-24 h-24 object-contain scale-[1.529] -translate-y-[7.2%]', 'title' => 'DIAMMS / Bacteria-free linen', 'copy' => 'For sites where hygiene control matters, DIAMMS adjusts ironer speed around residual moisture to support controlled thermal disinfection.', 'badge' => 'DIAMMS'],
+                ['icon' => '198', 'imgClass' => 'w-24 h-24 object-contain scale-[1.938] translate-y-[5.2%]', 'title' => 'Dubixium',                     'copy' => 'For a more consistent finish, Dubixium distributes heat evenly across the cylinder and helps reduce overheating.', 'badge' => 'Dubixium'],
+                ['icon' => null, 'img' => '/images/icons/ergocertnew.png', 'imgClass' => 'h-full w-auto object-contain', 'title' => 'ERGOCERT 4-star', 'copy' => 'For teams using the ironer repeatedly, ERGOCERT-rated design supports safer, more comfortable daily operation.', 'badge' => 'ERGOCERT'],
+                ['icon' => 'FeedNow', 'imgClass' => 'w-24 h-24 object-contain scale-[1.414] translate-y-[1.2%]', 'title' => 'Feed Now / Feed Alone',        'copy' => 'For smoother flatwork handling, Feed Now and Feed Alone support easier loading and can reduce repeated operator effort.', 'badge' => 'Feeding'],
+                ['icon' => 'FoldFlex', 'imgClass' => 'w-24 h-24 object-contain scale-[1.353]', 'title' => 'FoldFlex / Hygiene Guard',      'copy' => 'For high-volume finishing, FoldFlex and Hygiene Guard support customised folding, moisture control and linen rejection where required.', 'badge' => 'FoldFlex'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
-                <div class="flex items-center justify-center h-36">
+                <div class="flex items-center justify-center h-32">
                     <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
                 </div>
                 <div>

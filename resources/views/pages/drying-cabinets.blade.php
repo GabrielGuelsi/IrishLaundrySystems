@@ -91,11 +91,11 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Outstanding<br>flexibility',   'size'=>'text-2xl', 'label'=>'skiwear to silk',        'body'=>'Dry delicate garments, outdoor clothing, PPE, shoes, gloves and bulky items in one cabinet setup.'],
-            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Save<br>time',                'size'=>'text-2xl', 'label'=>'under 45 minutes',       'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster item return to use.'],
-            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Save, money and<br>energy',   'size'=>'text-2xl', 'label'=>'auto-stop programmes',   'body'=>'Programmes stop when the load is dry, helping reduce wasted time and running cost.'],
-            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>textile care',      'size'=>'text-2xl', 'label'=>'no tumble action',       'body'=>'Cabinet drying protects delicate fabrics, coatings, reflective strips and bulky items.'],
-            ['icon'=>'194', 'prefix'=>'', 'stat'=>'User-friendly<br>operation',  'size'=>'text-2xl', 'label'=>'simple daily use',       'body'=>'Clear controls and practical cabinet access support easier day-to-day drying.'],
+            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Outstanding<br>flexibility',   'size'=>'text-2xl', 'label'=>'skiwear to silk', 'iconClass'=>'translate-y-[0.6%]',        'body'=>'Dry delicate garments, outdoor clothing, PPE, shoes, gloves and bulky items in one cabinet setup.'],
+            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Save<br>time',                'size'=>'text-2xl', 'label'=>'under 45 minutes', 'iconClass'=>'scale-[1.059]',       'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster item return to use.'],
+            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Save, money and<br>energy',   'size'=>'text-2xl', 'label'=>'auto-stop programmes', 'iconClass'=>'scale-[1.207] translate-y-[3.1%]',   'body'=>'Programmes stop when the load is dry, helping reduce wasted time and running cost.'],
+            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>textile care',      'size'=>'text-2xl', 'label'=>'no tumble action', 'iconClass'=>'scale-[1.271]',       'body'=>'Cabinet drying protects delicate fabrics, coatings, reflective strips and bulky items.'],
+            ['icon'=>'194', 'prefix'=>'', 'stat'=>'User-friendly<br>operation',  'size'=>'text-2xl', 'label'=>'simple daily use', 'iconClass'=>'scale-[1.037]',       'body'=>'Clear controls and practical cabinet access support easier day-to-day drying.'],
         ]])
     </div>
 </section>
