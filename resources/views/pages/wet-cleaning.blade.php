@@ -143,7 +143,41 @@
     </div>
 </section>
 
-{{-- 6. CERTIFIED TEXTILE CARE --}}
+{{-- 6. TECHNICAL PROOF --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Advanced care <span style="color:#148af4;">without slowing the business down</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Lagoon Advanced Care combines controlled textile action, intelligent dosing, balanced extraction, moisture control and clear programme management.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
+            @foreach([
+                ['icon' => '35', 'title' => "ProV'tex Hydraulic Action", 'copy' => 'Controlled water movement replaces harsh mechanical action, cleaning delicate textiles with less stress on the fabric.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.7%]'],
+                ['icon' => '8',  'title' => 'Intelligent Dosing',        'copy' => 'Detergent and water levels are adjusted around the load, keeping each programme properly balanced.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.9%]'],
+                ['icon' => '31', 'title' => 'Power Balance',             'copy' => 'Extraction force is adjusted to keep the load balanced and ready for safer drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.7%]'],
+                ['icon' => '7',  'title' => 'Moisture Balance',          'copy' => 'Moisture levels are controlled so garments are dried safely without unnecessary over-drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.55] -translate-y-[17.4%]'],
+                ['icon' => '4',  'title' => 'ClarusVibe Controls',       'copy' => 'A clear touchscreen interface makes Lagoon programmes easier for staff to select and manage.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
+            ] as $card)
+            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+                <div class="flex items-center justify-center h-32">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
+                </div>
+                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
+                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- 7. CERTIFIED TEXTILE CARE --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
@@ -233,33 +267,64 @@
                 Build the setup around <span style="color:#148af4;">washing, drying, detergents and finishing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Lagoon Advanced Care works best when each part of the setup is matched to the garments, volume and room.
+                Wet cleaning works best when the washer, dryer, detergents and finishing support are matched to the garments, daily volume and room setup.
             </p>
         </div>
 
-        {{-- Equipment photos are placeholders until the approved Canva images (pages 42–44) land --}}
+        {{-- Image slots (internal): 01 approved Lagoon Advanced Care washer · 02 matching Lagoon dryer · 03 Lagoon detergents, conditioner and prespotting products · 04 wet-cleaning ironing table / form finisher (not a rolling ironer) · 05 drying cabinet / Serenity Cabinet --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Washer',                    'copy' => 'Use Lagoon Advanced Care washer models such as WH6-6 LAC, WH6-14 LAC, WH6-20 LAC, WH6-27 LAC or WH6-33 LAC, matched to garment volume.', 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
-                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Use Lagoon Advanced Care dryer models such as TD6-7 LAC, TD6-14 LAC, TD6-20 LAC, TD6-30 LAC or TD6-37 LAC, matched to the washer and drying need.', 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
-                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Use Lagoon detergents and prespotting products such as Sensitive Detergent, Delicate Detergent and Sensitive Conditioner.', 'img' => '/images/equipment/eco-detergents.webp'],
-                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Use ironing tables and finishing equipment such as FIT7, FIT1-2 WC and FFT-WC where the setup needs finishing support.', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['step' => '05', 'title' => 'Optional cabinet support',   'copy' => 'Use Serenity Cabinet where selected garments, leathers or shoes need additional cabinet support.', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
+                ['step' => '01', 'title' => 'Washer',                    'copy' => 'For professional wet cleaning of delicate garments, textiles and specialist loads.', 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
+                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Matched to the wet cleaning process to help suitable garments dry without hang-drying.', 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents and prespotting products support consistent results across garment types.', 'img' => '/images/equipment/eco-detergents.webp'],
+                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help prepare garments before they return to customers.', 'img' => '/images/equipment/FIT1-WC.jpg'],
+                ['step' => '05', 'title' => 'Optional cabinet support',   'copy' => 'For selected garments that need additional drying or finishing support.', 'img' => '/images/healthcare/Drying-cabinets_image.webp'],
             ] as $comp)
-            <div class="flex flex-col h-full">
+            <div class="relative flex flex-col h-full">
+                @unless($loop->last)
+                <div class="hidden xl:block absolute top-[104px] -right-7 z-10">
+                    <svg class="w-9 h-5 text-[#148af4]" viewBox="0 0 48 24" fill="none"><path d="M2 12 L42 12 M34 5 L42 12 L34 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </div>
+                @endunless
                 <div class="w-full flex items-end justify-center mb-5" style="height:240px;">
                     <img src="{{ $comp['img'] }}" alt="{{ $comp['title'] }}" loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
                 </div>
-                <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-2">{{ $comp['step'] }}</span>
+                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#148af4] text-[#148af4] font-heading font-bold text-[11px] mb-3">{{ $comp['step'] }}</span>
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $comp['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $comp['copy'] }}</p>
             </div>
             @endforeach
         </div>
 
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-10 reveal">
-            Irish Laundry Systems matches the Lagoon setup to garment type, expected volume, drying need, finishing requirements and available room.
-        </p>
+        <div class="mt-10 rounded-2xl bg-navy px-6 lg:px-10 py-7 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 reveal">
+            @foreach([
+                ['t' => 'One matched system',             'd' => 'Washer, dryer, detergents and finishing support planned together.',   'icon' => 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z'],
+                ['t' => 'Less hang-drying pressure',      'd' => 'Drying and finishing support matched to suitable garment types.',      'icon' => 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
+                ['t' => 'Better care for delicate items', 'd' => 'Wet cleaning setup planned around garment finish and fabric care.',    'icon' => 'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z'],
+            ] as $i => $b)
+            <div class="flex items-start gap-4 lg:flex-1 {{ $i > 0 ? 'lg:border-l lg:border-white/15 lg:pl-8' : '' }}">
+                <span class="flex-shrink-0 w-11 h-11 rounded-full border border-white/40 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $b['icon'] }}"/></svg>
+                </span>
+                <span>
+                    <span class="block font-heading font-bold text-white text-sm mb-1">{{ $b['t'] }}</span>
+                    <span class="block font-body text-white/70 text-xs leading-relaxed">{{ $b['d'] }}</span>
+                </span>
+            </div>
+            @endforeach
+            <div class="flex items-start gap-4 lg:flex-1 lg:border-l lg:border-white/15 lg:pl-8">
+                <span class="flex-shrink-0 w-11 h-11 rounded-full border border-white/40 flex items-center justify-center">
+                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+                </span>
+                <span>
+                    <span class="block font-heading font-bold text-white text-sm mb-2">Need help planning the right setup?</span>
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-5 py-2.5 rounded-lg transition-colors duration-200">
+                        Get in touch
+                    </a>
+                </span>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -378,23 +443,15 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">System Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan wet cleaning around <span style="color:#011E41;">volume, room fit and finishing</span>
+            Plan wet cleaning around <span style="color:#011E41;">garment volume, room fit and finishing</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            A wet cleaning system should match garment type, daily volume, drying needs, utilities, finishing and budget. Irish Laundry Systems plans the washer, dryer, detergents and aftercare around the site.
+            Match the washer, dryer, detergents and finishing setup to daily garment volume, room conditions and aftercare before installation.
         </p>
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
-            @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Choose the right<br>system size'],
-                ['icon' => 'ativo-8',  'label' => 'Build the<br>full process'],
-                ['icon' => 'ativo-4',  'label' => 'Keep the equipment<br>supported'],
-            ] as $i => $feat)
-            @if($i > 0)
-            @endif
-            <div class="flex items-center gap-3">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+            @foreach(['System size', 'Drying fit', 'Aftercare'] as $i => $pt)
+            @if($i > 0)<span class="text-white/40">|</span>@endif
+            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -404,78 +461,35 @@
     </div>
 </section>
 
-{{-- 12. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-16 bg-gray-50">
+{{-- 13. SMART DETERGENTS & PRESPOTTING — quick-scan chemistry flow --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Smart Detergents &amp; Prespotting</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Advanced care <span style="color:#148af4;">without slowing the business down</span>
+                The right products <span style="color:#148af4;">built into the Lagoon process</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Lagoon Advanced Care combines gentle textile action, load control, dosing, drying balance and intuitive controls for consistent garment care.
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Dedicated detergents, fabric conditioner and prespotting agents work with Lagoon programmes to help protect fibres and improve garment finish.
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4">
-            @foreach([
-                ['icon' => '35', 'title' => "ProV'tex hydraulic action",                'copy' => "Gentle hydraulic action replaces harsher mechanical action for effective cleaning and higher loading.", 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.7%]'],
-                ['icon' => '8',  'title' => 'Integrated Savings and Intelligent Dosing', 'copy' => 'Defines the effective load and adjusts detergent and water levels, supporting cost control and consistent results.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.9%]'],
-                ['icon' => '31', 'title' => 'Power Balance',                             'copy' => 'Activates the correct extraction force for the load to improve drying performance.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.7%]'],
-                ['icon' => '7',  'title' => 'Moisture Balance',                          'copy' => 'Defines the right moisture level so garments are dried safely, reducing the risk of over-drying, shrinkage and wrinkles.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.55] -translate-y-[17.4%]'],
-                ['icon' => '4',  'title' => 'ClarusVibe',                                'copy' => 'A clear control interface makes Lagoon programmes easier to manage.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
-            ] as $card)
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
-                <div class="flex items-center justify-center h-32">
-                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
-                </div>
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1">{{ $card['copy'] }}</p>
-            </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-4 mb-10 reveal">
+            @foreach(['Prespotting agents', 'Dedicated detergents', 'Fabric conditioner', 'Lagoon programme + precise dosing', 'Softer, fresher, ready-to-wear finish'] as $step)
+            @unless($loop->first)
+            <svg class="w-8 h-4 text-[#148af4] flex-shrink-0" viewBox="0 0 48 24" fill="none"><path d="M2 12 L42 12 M34 5 L42 12 L34 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            @endunless
+            <span class="inline-flex items-center rounded-full px-5 py-2.5 font-body font-bold text-sm {{ $loop->last ? 'bg-[#148af4] text-white' : 'bg-bg border border-gray-100 text-navy' }}">{{ $step }}</span>
             @endforeach
         </div>
-    </div>
-</section>
 
-{{-- 13. DETERGENTS, PRESPOTTING & CONSUMABLES --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-
-            <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Garment Care Chemistry</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Detergents for <span style="color:#148af4;">softer, fresher, ready-to-wear garments</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Lagoon Advanced Care uses dedicated detergents, conditioners and prespotting products within the wet cleaning process.
-                </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    The right chemistry protects fibres, improves consistency and supports the garment finish customers expect.
-                </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Ask About Detergents and Consumables
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-
-            <div class="reveal reveal-right">
-                <div class="bg-bg border border-gray-100 rounded-2xl p-7 lg:p-9">
-                    <ul class="space-y-4">
-                        @foreach(['Dedicated detergents', 'Sensitive conditioner', 'Prespotting support', 'Better finish control'] as $pt)
-                        <li class="flex items-center gap-3">
-                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#148af4]/10 flex items-center justify-center">
-                                <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                            </span>
-                            <span class="font-body font-bold text-navy text-base">{{ $pt }}</span>
-                        </li>
-                        @endforeach
-                    </ul>
-                </div>
-            </div>
-
+        <div class="reveal">
+            <a href="{{ route('request-assessment') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                Request Wet Cleaning Advice
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
         </div>
     </div>
 </section>
@@ -487,10 +501,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 xl:whitespace-nowrap">
-                Use <span style="color:#148af4;">the correct amount,</span> every time
+                Keep wet cleaning <span style="color:#148af4;">consistent from load to load</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Wet cleaning depends on the right detergent, dose and programme. Keep dosing matched to the load to reduce waste, protect garment quality and improve consistency.
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                The right detergent dose helps protect fabrics, reduce waste and support a consistent garment finish. Compatible Electrolux Professional washers can work with automatic dosing systems to keep dosing matched to the load.
             </p>
         </div>
 
@@ -642,41 +656,90 @@
     </div>
 </section>
 
-{{-- 14. OPTIONAL SERENITY CABINET --}}
+{{-- 14. SERENITY CABINET SUPPORT — bento --}}
+{{-- Asset notes (internal): swap in the real Serenity Cabinet product image (left, kept large and bare — not inside a card);
+     lifestyle slot = garments being handled/tried on before return; video stays a small thumbnail (Serenity clip when available);
+     no ghost mannequins or AI-generated garments in the reassurance card; right column stays lighter than the product side. --}}
 <section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
-            <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Optional Final Touch</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    More than just <span style="color:#148af4;">clean and revitalised fibres</span>
+        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10 reveal">
+            <div class="max-w-3xl">
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Serenity Cabinet Support</p>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                    Add sanitising support<br class="hidden lg:block"> <span style="color:#148af4;">before garments return to customers</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    The Serenity Cabinet supports final touch, hygiene care and efficient drying for selected leathers and shoes within Lagoon Advanced Care.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Serenity Cabinet supports selected garments with a fully automatic steam-based cycle, helping businesses add extra reassurance where garments are tried on, handled or returned to customers.
                 </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    It is an optional specialist addition for businesses extending garment care before items return to customers.
-                </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Ask About Serenity Cabinet
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
+            </div>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200 whitespace-nowrap flex-shrink-0">
+                Ask About Serenity Cabinet
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 reveal">
+
+            {{-- Serenity Cabinet — large product visual --}}
+            <div class="lg:col-span-4 flex flex-col items-center justify-end">
+                <img src="/images/equipment/Standard Drying CabinetsDC6-8.jpg" alt="Serenity Cabinet" loading="lazy" decoding="async"
+                     class="w-full max-w-md h-auto object-contain" style="max-height:560px;">
+                <p class="font-heading font-bold text-navy text-sm mt-4">Serenity Cabinet</p>
             </div>
 
-            <div class="reveal reveal-right">
-                <div class="bg-white border border-gray-100 rounded-2xl p-7 lg:p-9 shadow-sm">
-                    <ul class="space-y-4">
-                        @foreach(['Final touch support', 'Extra hygiene', 'Leathers and shoes', 'Premium garment care'] as $pt)
-                        <li class="flex items-center gap-3">
-                            <span class="flex-shrink-0 w-8 h-8 rounded-full bg-[#148af4]/10 flex items-center justify-center">
-                                <svg class="w-4 h-4 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+            {{-- lifestyle + features --}}
+            <div class="lg:col-span-4 flex flex-col gap-5">
+                <img src="/images/healthcare/services-overview-hero.jpg" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
+                     class="w-full h-56 object-cover rounded-2xl">
+                <div class="bg-white border border-gray-100 rounded-2xl px-6 py-2 shadow-sm flex-1">
+                    <ul class="divide-y divide-gray-100">
+                        @foreach([
+                            ['t' => 'Up to 30 items per cycle',            'icon' => 'M16.5 3.75c-.6 1.2-2.1 1.9-4.5 1.9s-3.9-.7-4.5-1.9L3 6.5l2 3.4 1.75-.95V20.25h10.5V8.95L19 9.9l2-3.4-4.5-2.75z'],
+                            ['t' => '6–10 minute cycles',                  'icon' => 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
+                            ['t' => 'Programmes for different textiles',   'icon' => 'M5.25 8.25h13.5m-13.5 7.5h13.5m-1.5-15l-3 15m-4.5-15l-3 15'],
+                        ] as $feat)
+                        <li class="flex items-center gap-4 py-4">
+                            <span class="flex-shrink-0 w-11 h-11 rounded-full border border-[#148af4]/40 flex items-center justify-center">
+                                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $feat['icon'] }}"/></svg>
                             </span>
-                            <span class="font-body font-bold text-navy text-base">{{ $pt }}</span>
+                            <span class="font-body font-bold text-navy text-sm">{{ $feat['t'] }}</span>
                         </li>
                         @endforeach
                     </ul>
+                </div>
+            </div>
+
+            {{-- video thumbnail + reassurance microcards --}}
+            <div class="lg:col-span-4 flex flex-col gap-5">
+                <div class="rounded-2xl overflow-hidden bg-navy">
+                    <video class="w-full h-44 object-cover" controls preload="metadata" playsinline>
+                        <source src="/images/equipment/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="px-5 py-4">
+                        <p class="font-heading font-bold text-white text-sm mb-0.5">See Serenity Cabinet in action</p>
+                        <p class="font-body text-white/70 text-xs">Steam-based garment sanitising support</p>
+                    </div>
+                </div>
+                <div class="bg-navy rounded-2xl p-5 flex items-start gap-4">
+                    <span class="flex-shrink-0 w-11 h-11 rounded-full border border-white/40 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                    </span>
+                    <span>
+                        <span class="block font-heading font-bold text-white text-sm mb-1">Steam-based sanitising support</span>
+                        <span class="block font-body text-white/70 text-xs leading-relaxed">Extra reassurance for tried-on, handled or returned garments.</span>
+                    </span>
+                </div>
+                <div class="bg-[#148af4]/10 rounded-2xl p-5 flex items-start gap-4 flex-1">
+                    <span class="flex-shrink-0 w-11 h-11 rounded-full border border-[#148af4]/40 flex items-center justify-center">
+                        <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+                    </span>
+                    <span>
+                        <span class="block font-heading font-bold text-navy text-sm mb-1">Try-on reassurance</span>
+                        <span class="block font-body text-gray-500 text-xs leading-relaxed">Ready to return with more confidence.</span>
+                    </span>
                 </div>
             </div>
 
