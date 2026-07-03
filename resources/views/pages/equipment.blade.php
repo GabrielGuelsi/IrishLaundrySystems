@@ -485,7 +485,7 @@
                 @if($i < 3)
                 <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
                     <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
-                        <path d="M0 15 L96 15 M78 4 L96 15 L78 26" stroke="#148af4" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 15 L110 15 M100 7 L110 15 L100 23" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
                 @endif
