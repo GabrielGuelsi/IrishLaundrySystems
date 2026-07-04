@@ -19,7 +19,7 @@
             {{-- LEFT: heading + contact methods + electrolux + map --}}
             <div class="flex flex-col">
                 @if ($eyebrow)
-                <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
                 @endif
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-5xl mb-4 leading-tight">
                     {!! $heading !!}
@@ -70,21 +70,12 @@
                     </div>
                 </div>
 
-                <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-2 text-steel-light hover:text-white font-body text-sm transition-colors mb-6">
+                <a href="{{ route('electrolux') }}" class="inline-flex items-center gap-2 text-steel-light hover:text-white font-body text-sm transition-colors">
                     Authorised Electrolux Professional Partner
                     <x-icon class="w-4 h-4">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
                     </x-icon>
                 </a>
-
-                {{-- Map --}}
-                <div class="rounded-xl overflow-hidden mt-auto" style="height: 200px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d152524.01771227377!2d-6.385785697656249!3d53.32480523015786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e80ea27ac2f%3A0xa00c7a9973171a0!2sDublin%2C%20Ireland!5e0!3m2!1sen!2sie!4v1715000000000!5m2!1sen!2sie"
-                        width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade" title="Irish Laundry Systems location">
-                    </iframe>
-                </div>
             </div>
 
             {{-- RIGHT: Form --}}

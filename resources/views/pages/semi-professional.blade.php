@@ -18,12 +18,10 @@
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] xl:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Step up from domestic machines</span>
-                    <span class="block lg:whitespace-nowrap">with <span style="color:#148af4;">myPRO and myPRO XL</span></span>
-                    <span class="block lg:whitespace-nowrap">laundry equipment</span>
+                    When domestic machines become<br class="hidden lg:block"> <span style="color:#148af4;">the weak point</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    For small businesses where domestic washers and dryers are too slow, too small or wearing out too often. Irish Laundry Systems supplies and supports Electrolux Professional myPRO XL, myPRO and myPROzip equipment across Dublin and Ireland.
+                    For small businesses using laundry every day, Electrolux Professional myPRO XL, myPRO and myPROzip offer a stronger step up from standard domestic appliances.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -46,21 +44,21 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">When Domestic Machines Are Not Enough</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Built for Daily Small-Business Use</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    A stronger laundry setup for <span style="color:#148af4;">daily small-business use</span>
+                    The step between domestic appliances and <span style="color:#148af4;">full commercial laundry</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Domestic machines can become a weak point when laundry is used every day for towels, bedding, uniforms, cloths, mops or guest items.
+                    Semi-professional equipment gives smaller sites more capacity, durability and speed without starting with a full commercial laundry setup.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Semi-professional equipment gives smaller sites more capacity, durability and speed before moving into full commercial laundry scale. Irish Laundry Systems can advise whether myPRO XL, myPRO, myPROzip or Line 6000 is the right level for the room, workload and budget.
+                    Irish Laundry Systems helps match the right level of equipment to the room, workload, use pattern and budget.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -82,25 +80,26 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Level Guide</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Know when to step up, and <span style="color:#148af4;">how far to go</span>
+                Choose the right step up <span style="color:#148af4;">before laundry becomes a problem</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                The right level depends on load size, daily use, room space and how much pressure laundry puts on the business.
+                Not every site needs a full commercial laundry setup straight away. The right level depends on how often the equipment is used, the size of each load, the room available and how much pressure laundry puts on the business.
             </p>
         </div>
 
+        {{-- Domestic machines is the starting point / current problem, not a sales option — muted image and gray step number; myPRO XL carries the visual focus --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated business laundry demand.', 'img' => '/images/equipment/Domestic%20machines.png'],
-                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For smaller sites that need a stronger step up from domestic equipment.', 'img' => '/images/equipment/mypro-hp-front.jpg'],
-                ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For busier small-business laundry with 12 kg capacity and heavier daily use.', 'img' => '/images/equipment/myPROXL%2012kg.webp'],
+                ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated daily business demand.', 'img' => '/images/equipment/Domestic%20machines.png', 'imgClass' => 'saturate-[.3] contrast-[.85] brightness-105 opacity-80', 'stepClass' => 'text-gray-400'],
+                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For lighter small-site use where a domestic appliance is no longer the right fit.', 'img' => '/images/equipment/mypro-hp-front.jpg'],
+                ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For smaller businesses handling bigger loads, more frequent washing and heavier daily use.', 'img' => '/images/equipment/myPROXL%2012kg.webp', 'imgClass' => 'scale-110 origin-bottom'],
                 ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For larger capacity, intensive use and full commercial laundry performance.', 'img' => '/images/equipment/commercialwasher.webp'],
             ] as $lvl)
             <div class="flex flex-col h-full">
                 <div class="w-full flex items-end justify-center mb-5" style="height:240px;">
-                    <img src="{{ $lvl['img'] }}" alt="{{ $lvl['title'] }}" class="max-h-full w-auto object-contain">
+                    <img src="{{ $lvl['img'] }}" alt="{{ $lvl['title'] }}" class="max-h-full w-auto object-contain {{ $lvl['imgClass'] ?? '' }}">
                 </div>
-                <span class="font-heading font-bold text-[#148af4] text-xs tracking-[0.2em] mb-2">{{ $lvl['step'] }}</span>
+                <span class="font-heading font-bold {{ $lvl['stepClass'] ?? 'text-[#148af4]' }} text-xs tracking-[0.2em] mb-2">{{ $lvl['step'] }}</span>
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $lvl['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $lvl['copy'] }}</p>
             </div>
