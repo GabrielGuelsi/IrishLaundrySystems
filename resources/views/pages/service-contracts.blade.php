@@ -172,7 +172,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
 
-    <img src="/images/healthcare/service-contracts-hero.png"
+    <img src="/images/shared/service-contracts-hero.png"
          alt="ILS engineer carrying out preventive maintenance on commercial laundry equipment"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -368,7 +368,7 @@
             {{-- Left: image --}}
             <div class="lg:col-span-5 reveal">
                 <div class="relative rounded-3xl overflow-hidden bg-navy shadow-xl">
-                    <img src="/images/hero/on-site-diagnosis.jpeg"
+                    <img src="/images/pages/services/on-site-diagnosis.jpeg"
                          alt="ILS technician inspecting commercial laundry equipment during a planned visit"
                          loading="lazy" decoding="async"
                          class="w-full h-full object-cover aspect-[4/5]">
@@ -450,7 +450,7 @@
             {{-- WITHOUT card — photo bg, subdued/desaturated --}}
             <article class="reveal relative rounded-2xl overflow-hidden p-7 lg:p-8 flex flex-col gap-4 shadow-[0_20px_50px_-20px_rgba(1,30,65,0.30)] min-h-[480px]" style="transition-delay:120ms;">
                 {{-- Background image desaturated --}}
-                <img src="/images/equipment/td6-multihousing-room.jpg"
+                <img src="/images/shared/td6-multihousing-room.jpg"
                      alt="A commercial laundry room without active maintenance support"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover"
@@ -486,7 +486,7 @@
             {{-- WITH card — photo bg, vibrant, recommended --}}
             <article class="reveal relative rounded-2xl overflow-hidden p-7 lg:p-8 flex flex-col gap-4 shadow-[0_24px_60px_-20px_rgba(20,138,244,0.35)] ring-1 ring-steel/40 min-h-[480px]" style="transition-delay:200ms;">
                 {{-- Background image full colour --}}
-                <img src="/images/healthcare/customer-care-line6000.jpg"
+                <img src="/images/shared/customer-care-line6000.jpg"
                      alt="Irish Laundry Systems engineer providing planned maintenance support"
                      loading="lazy" decoding="async"
                      class="absolute inset-0 w-full h-full object-cover">
@@ -545,7 +545,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
-        <img src="/images/sectors/commercial-hero.jpg" alt="" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
+        <img src="/images/shared/commercial-hero.jpg" alt="" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
     </div>
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto reveal">
@@ -593,25 +593,25 @@
                 'num'   => '01.',
                 'title' => 'Inspect and assess',
                 'body'  => 'Review equipment condition, visible wear, daily use and any issues reported by the site.',
-                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+                'img'   => '/images/shared/Customer-Care_Line-6000-_001.jpg',
             ],
             [
                 'num'   => '02.',
                 'title' => 'Service and identify',
                 'body'  => 'Carry out scheduled preventive maintenance and identify wear, service needs or developing faults.',
-                'img'   => '/images/healthcare/repairs-hero.jpg',
+                'img'   => '/images/shared/repairs-hero.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Report clearly',
                 'body'  => 'Provide maintenance notes so the site can track visits, recurring issues and inspection findings.',
-                'img'   => '/images/healthcare/service-contracts-hero.jpg',
+                'img'   => '/images/pages/services/service-contracts-hero.jpg',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Agree the next step',
                 'body'  => 'Confirm recommendations, quoted follow-up work or parts requirements where follow-up is needed.',
-                'img'   => '/images/equipment/td6-multihousing-room.jpg',
+                'img'   => '/images/shared/td6-multihousing-room.jpg',
             ],
         ] as $card)
         <div class="sc-visit-card">
@@ -651,7 +651,7 @@
             <!-- Healthcare -->
             <a href="{{ route('sectors.healthcare') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal">
-                <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry support"
+                <img src="/images/pages/sectors/healthcarehero.png" alt="Healthcare laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 80% center;">
                 <div class="absolute inset-0"
@@ -670,7 +670,7 @@
             <!-- Care Facilities -->
             <a href="{{ route('sectors.care') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:80ms;">
-                <img src="/images/CareFacilities/carefacilitiesheroimage.jpg" alt="Care facility laundry support"
+                <img src="/images/pages/sectors/carefacilitiesheroimage.jpg" alt="Care facility laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
@@ -688,7 +688,7 @@
             <!-- Hospitality -->
             <a href="{{ route('sectors.hospitality') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:160ms;">
-                <img src="/images/Hospitallity/hospitallityhero.png" alt="Hospitality laundry support"
+                <img src="/images/pages/sectors/hospitallityhero.png" alt="Hospitality laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 82% 30%;">
                 <div class="absolute inset-0"
@@ -707,7 +707,7 @@
             <!-- Commercial & Industrial -->
             <a href="{{ route('sectors.commercial') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:240ms;">
-                <img src="/images/healthcare/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
+                <img src="/images/shared/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
@@ -808,7 +808,7 @@ $faqs = [
 <section class="relative overflow-hidden reveal" style="background-color:#011E41; min-height:340px;">
 
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/repairs-callouts.jpg"
+        <img src="/images/shared/repairs-callouts.jpg"
              alt="ILS engineer working near commercial laundry equipment with parts and service tools"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.5) 35%, transparent 100%);"></div>
@@ -900,7 +900,7 @@ $faqs = [
 
                     <div class="hidden lg:block relative rounded-2xl overflow-hidden mt-auto">
                         <div class="aspect-[16/9]">
-                            <img src="/images/healthcare/service-contracts-hero.jpg"
+                            <img src="/images/pages/services/service-contracts-hero.jpg"
                                  alt="ILS engineers reviewing service equipment"
                                  loading="lazy" decoding="async"
                                  class="w-full h-full object-cover object-[center_25%]">

@@ -4,7 +4,7 @@
     'careBody'        => 'Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
     'hospitalityBody' => 'Engineering care for guest-facing sites where linen availability, finishing quality, turnaround and response time affect the wider business.',
     'commercialBody'  => 'Care for higher-throughput laundry sites where output, lifecycle cost and engineering response carry more operational weight.',
-    'commercialImg'   => '/images/healthcare/line-6000-solutions.jpg',
+    'commercialImg'   => '/images/shared/line-6000-solutions.jpg',
 ])
 {{--
     Sector Grid — 2×2 image-card grid
@@ -34,7 +34,7 @@
             <!-- Healthcare -->
             <a href="{{ route('sectors.healthcare') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/healthcare/healthcarehero.png" alt="Healthcare laundry support"
+                <img src="/images/pages/sectors/healthcarehero.png" alt="Healthcare laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 80% center;">
                 <div class="absolute inset-0"
@@ -53,7 +53,7 @@
             <!-- Care Facilities -->
             <a href="{{ route('sectors.care') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/CareFacilities/carefacilitiesheroimage.jpg" alt="Care facility laundry support"
+                <img src="/images/pages/sectors/carefacilitiesheroimage.jpg" alt="Care facility laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
@@ -71,7 +71,7 @@
             <!-- Hospitality -->
             <a href="{{ route('sectors.hospitality') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-                <img src="/images/Hospitallity/hospitallityhero.png" alt="Hospitality laundry support"
+                <img src="/images/pages/sectors/hospitallityhero.png" alt="Hospitality laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 82% 30%;">
                 <div class="absolute inset-0"

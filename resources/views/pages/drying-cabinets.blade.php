@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:h-[720px]" style="min-height:520px;">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial drying cabinets"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial drying cabinets"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -116,12 +116,12 @@
 
         @php
         $fitCards = [
-            ['title' => 'Delicate fabrics and fine clothing',    'copy' => 'For garments that need gentle drying, shape protection and careful handling after washing or wear.', 'img' => '/images/equipment/Delicate%20fabrics%20and%20fine%20clothing.png', 'pos' => 'center center'],
-            ['title' => 'Private residences &amp; wardrobe rooms', 'copy' => 'For premium homes, dressing rooms or private garment care spaces where fine clothing needs controlled drying.', 'img' => '/images/equipment/Private%20residences%20%26%20wardrobe%20rooms.png', 'pos' => 'center center'],
-            ['title' => 'Multi-housing',                          'copy' => 'For shared laundry rooms where residents need practical drying for everyday garments, bulky items and outdoor clothing.', 'img' => '/images/equipment/Multi-housing.png', 'pos' => 'center center'],
-            ['title' => 'Construction &amp; workwear',            'copy' => 'For workwear, boots, gloves and outdoor clothing used in demanding working environments.', 'img' => '/images/equipment/Construction%20%26%20workwear.png', 'pos' => 'center center'],
-            ['title' => 'Firefighters &amp; PPE',                 'copy' => 'For protective clothing and specialist items that need controlled drying after use.', 'img' => '/images/equipment/Firefighters%20%26%20PPE.png', 'pos' => 'center center'],
-            ['title' => 'Schools &amp; childcare',                'copy' => 'For coats, uniforms, outdoor clothing and daily items that need to return to use quickly.', 'img' => '/images/healthcare/FacilityManagementandPublicSites.png', 'pos' => 'center center'],
+            ['title' => 'Delicate fabrics and fine clothing',    'copy' => 'For garments that need gentle drying, shape protection and careful handling after washing or wear.', 'img' => '/images/pages/drying-cabinets/Delicate%20fabrics%20and%20fine%20clothing.png', 'pos' => 'center center'],
+            ['title' => 'Private residences &amp; wardrobe rooms', 'copy' => 'For premium homes, dressing rooms or private garment care spaces where fine clothing needs controlled drying.', 'img' => '/images/pages/drying-cabinets/Private%20residences%20%26%20wardrobe%20rooms.png', 'pos' => 'center center'],
+            ['title' => 'Multi-housing',                          'copy' => 'For shared laundry rooms where residents need practical drying for everyday garments, bulky items and outdoor clothing.', 'img' => '/images/pages/drying-cabinets/Multi-housing.png', 'pos' => 'center center'],
+            ['title' => 'Construction &amp; workwear',            'copy' => 'For workwear, boots, gloves and outdoor clothing used in demanding working environments.', 'img' => '/images/pages/drying-cabinets/Construction%20%26%20workwear.png', 'pos' => 'center center'],
+            ['title' => 'Firefighters &amp; PPE',                 'copy' => 'For protective clothing and specialist items that need controlled drying after use.', 'img' => '/images/pages/drying-cabinets/Firefighters%20%26%20PPE.png', 'pos' => 'center center'],
+            ['title' => 'Schools &amp; childcare',                'copy' => 'For coats, uniforms, outdoor clothing and daily items that need to return to use quickly.', 'img' => '/images/shared/FacilityManagementandPublicSites.png', 'pos' => 'center center'],
         ];
         @endphp
 
@@ -210,7 +210,7 @@
             @foreach([
                 [
                     'name'       => 'Standard Drying Cabinets',
-                    'img'        => '/images/equipment/Standard%20Drying%20CabinetsDC6-8.jpg',
+                    'img'        => '/images/pages/drying-cabinets/Standard%20Drying%20CabinetsDC6-8.jpg',
                     'copy'       => 'For sites that need controlled cabinet drying for garments, workwear, shoes, gloves and bulky items.',
                     'highlights' => ['Controlled drying', 'Multiple item types', 'Practical daily use', 'Range choice'],
                     'cta'        => 'Ask About Standard Drying Cabinets',
@@ -223,7 +223,7 @@
                 ],
                 [
                     'name'       => 'Glove and Boot Drying',
-                    'img'        => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg',
+                    'img'        => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg',
                     'copy'       => 'For workwear-heavy sites, emergency services and outdoor working environments that need practical drying for boots, gloves and protective clothing.',
                     'highlights' => ['Gloves', 'Boots', 'PPE', 'Outdoor workwear'],
                     'cta'        => 'Ask About Workwear Drying',
@@ -231,7 +231,7 @@
             ] as $p)
             <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 flex flex-col h-full">
                 <div class="flex items-center justify-center h-40 mb-5">
-                    <img src="{{ $p['img'] ?? '/images/healthcare/Drying-cabinets_image.webp' }}" alt="{{ $p['name'] }}" class="max-h-full w-auto object-contain">
+                    <img src="{{ $p['img'] ?? '/images/pages/drying-cabinets/Drying-cabinets_image.webp' }}" alt="{{ $p['name'] }}" class="max-h-full w-auto object-contain">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $p['copy'] }}</p>
@@ -296,14 +296,14 @@
         @php
             // One card per model; same product across kg shares one image.
             $cabinetFamilies = [
-                ['name' => 'DC6-4',    'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-4',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20Cabinets.jpg'],
-                ['name' => 'DC6-8',    'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-8',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20CabinetsDC6-8.jpg'],
-                ['name' => 'DC6-14',   'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-14', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/equipment/Standard%20Drying%20CabinetsDC6-14.jpg'],
-                ['name' => 'DC6-15WW', 'cat' => 'Standard Drying Cabinets',    'slug' => 'workwear-drying-cabinet',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Drying cabinet suited to workwear, PPE and heavier garments.',                    'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20PumpDC6-15WW.jpg'],
-                ['name' => 'DC6-14HP', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'dc6-14hp','type' => 'Heat Pump', 'line' => ['Line 6000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc6-14hp.jpg'],
-                ['name' => 'DC7-4HP',  'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'dc7-4hp', 'type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg'],
-                ['name' => 'DC7-4HPh', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'dc7-4hph','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20PumpDC7-4HPH.jpg'],
-                ['name' => '1LZS03',   'cat' => 'Drying Cabinets - Heat Pump', 'slug' => '1lzs03',  'type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/equipment/Drying%20Cabinets%20-%20Heat%20Pump%201LZS03.jpg'],
+                ['name' => 'DC6-4',    'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-4',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/pages/drying-cabinets/Standard%20Drying%20Cabinets.jpg'],
+                ['name' => 'DC6-8',    'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-8',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/pages/drying-cabinets/Standard%20Drying%20CabinetsDC6-8.jpg'],
+                ['name' => 'DC6-14',   'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-14', 'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Standard drying cabinet for gentle hang-drying of garments and linen.',          'img' => '/images/pages/drying-cabinets/Standard%20Drying%20CabinetsDC6-14.jpg'],
+                ['name' => 'DC6-15WW', 'cat' => 'Standard Drying Cabinets',    'slug' => 'workwear-drying-cabinet',  'type' => 'Standard',  'line' => ['Line 6000'], 'fit' => 'Drying cabinet suited to workwear, PPE and heavier garments.',                    'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20PumpDC6-15WW.jpg'],
+                ['name' => 'DC6-14HP', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'dc6-14hp','type' => 'Heat Pump', 'line' => ['Line 6000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pumpdc6-14hp.jpg'],
+                ['name' => 'DC7-4HP',  'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'dc7-4hp', 'type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg'],
+                ['name' => 'DC7-4HPh', 'cat' => 'Drying Cabinets - Heat Pump', 'slug' => 'dc7-4hph','type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20PumpDC7-4HPH.jpg'],
+                ['name' => '1LZS03',   'cat' => 'Drying Cabinets - Heat Pump', 'slug' => '1lzs03',  'type' => 'Heat Pump', 'line' => ['Line 7000'], 'fit' => 'Heat pump drying cabinet that cuts drying energy while protecting fabrics.',      'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pump%201LZS03.jpg'],
             ];
         @endphp
 
@@ -452,10 +452,10 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             @foreach([
-                ['title' => 'Hanger sticks',          'copy' => 'For garments that need to hang properly while drying.', 'img' => '/images/equipment/hangerSticks.webp'],
-                ['title' => 'Shoe shelves',           'copy' => 'For shoes, boots and bulky footwear that should not dry loose.', 'img' => '/images/equipment/Shoe%20shelves.webp'],
-                ['title' => 'Glove hangers',          'copy' => 'For gloves, PPE and specialist workwear.', 'img' => '/images/equipment/Glove%20hangers.webp'],
-                ['title' => 'Glove and boot drying',  'copy' => 'For workwear, emergency services and outdoor teams drying gloves, boots and protective clothing.', 'img' => '/images/equipment/Glove%20and%20boot%20drying.webp', 'imgClass' => 'scale-125'],
+                ['title' => 'Hanger sticks',          'copy' => 'For garments that need to hang properly while drying.', 'img' => '/images/pages/drying-cabinets/hangerSticks.webp'],
+                ['title' => 'Shoe shelves',           'copy' => 'For shoes, boots and bulky footwear that should not dry loose.', 'img' => '/images/pages/drying-cabinets/Shoe%20shelves.webp'],
+                ['title' => 'Glove hangers',          'copy' => 'For gloves, PPE and specialist workwear.', 'img' => '/images/pages/drying-cabinets/Glove%20hangers.webp'],
+                ['title' => 'Glove and boot drying',  'copy' => 'For workwear, emergency services and outdoor teams drying gloves, boots and protective clothing.', 'img' => '/images/pages/drying-cabinets/Glove%20and%20boot%20drying.webp', 'imgClass' => 'scale-125'],
             ] as $card)
             <div class="flex flex-col h-full">
                 <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
@@ -480,7 +480,7 @@
 {{-- 9c. PLANNING / ROOM FIT STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
@@ -532,7 +532,7 @@
                     'text'  => 'For drying cabinet faults, drying performance issues, control problems or service needs that require practical engineering support.',
                     'cta'   => 'Request a Repair',
                     'route' => route('repairs'),
-                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -540,7 +540,7 @@
                     'text'  => 'Planned servicing to reduce avoidable disruption and keep cabinet condition on track.',
                     'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -548,7 +548,7 @@
                     'text'  => 'For sites considering lower upfront cost where rental is suitable for the selected equipment and site needs.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
                     'pos'   => '66% center',
                 ],
                 [
@@ -556,7 +556,7 @@
                     'text'  => 'For follow-up, service history, parts support where needed and clearer repair or replacement decisions.',
                     'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
                 ],
             ] as $card)

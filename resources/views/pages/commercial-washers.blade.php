@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/equipment/0O3A9746_72dpi.jpg" alt="Commercial washing machines"
+    <img src="/images/pages/commercial-washers/0O3A9746_72dpi.jpg" alt="Commercial washing machines"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -95,10 +95,10 @@
             <div x-data="{
                     cur: 0,
                     imgs: [
-                        '/images/equipment/WH6-7.jpg',
-                        '/images/equipment/WH6-14.jpg',
-                        '/images/equipment/WH6-6.jpg',
-                        '/images/equipment/mypro-hp-front.jpg',
+                        '/images/pages/commercial-washers/WH6-7.jpg',
+                        '/images/pages/commercial-washers/WH6-14.jpg',
+                        '/images/pages/commercial-washers/WH6-6.jpg',
+                        '/images/pages/semi-professional/mypro-hp-front.jpg',
                     ],
                     init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
                  }"
@@ -134,7 +134,7 @@
 
                 {{-- ICEBERG --}}
                 <div class="order-1 lg:order-2 flex justify-center">
-                    <img src="/images/iceberg.png" alt="Life-cycle cost iceberg" class="w-48 sm:w-56 h-auto lg:h-[440px] lg:w-auto">
+                    <img src="/images/pages/commercial-washers/iceberg.png" alt="Life-cycle cost iceberg" class="w-48 sm:w-56 h-auto lg:h-[440px] lg:w-auto">
                 </div>
 
                 {{-- RIGHT column --}}
@@ -200,7 +200,7 @@
 {{-- 6b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
+        <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
              class="w-full h-full object-contain" style="object-position: center center; transform: translateX(32px);">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
@@ -270,7 +270,7 @@
 {{-- 8. PLANNING / INSTALLATION STRIP (before the selection journey) --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -317,10 +317,10 @@
 
         @php
         $rangeCards = [
-            ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'route' => '#washer-range', 'img' => '/images/equipment/commercialwasher.webp'],
-            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/equipment/mypro-hp-front.jpg'],
-            ['name' => 'Barrier Washers',               'copy' => 'For hygiene-critical laundry rooms where soiled and clean handling must stay separate.', 'cta' => 'Explore Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/equipment/line6000-barrier-washer.webp'],
-            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/equipment/FC48.jpg'],
+            ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'route' => '#washer-range', 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg'],
+            ['name' => 'Barrier Washers',               'copy' => 'For hygiene-critical laundry rooms where soiled and clean handling must stay separate.', 'cta' => 'Explore Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
+            ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/pages/finishing-equipment/FC48.jpg'],
         ];
         @endphp
 
@@ -470,19 +470,19 @@
             // WH6-CV / WH6-LAC / WH6-LAG variants are included (ClarusVibe, Lagoon Advanced Care, specialist washing).
             $washerFamilies = [
                 // Core Line 6000 Washer Range
-                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'ws6']), 'line' => 'Line 6000 High Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'High-spin washer range for busy laundry rooms needing faster extraction and lower drying demand.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
-                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WN6 — Line 6000 Normal-Spin Washer', 'slug' => 'wn6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wn6']), 'line' => 'Line 6000 Normal Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Normal-spin washer range for sites where wash performance, room fit and long-term support need to stay connected.', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'tech' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'img' => '/images/equipment/WN6 — Line 6000 Normal-Spin Washer.jpg'],
-                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-cv']), 'line' => 'ClarusVibe Variants', 'topLine' => 'Line 6000 · ClarusVibe variants · 7–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience.', 'badges' => ['ClarusVibe','Automatic Savings','Integrated Savings','ERGOCERT'], 'tech' => ['ClarusVibe','Automatic Savings','Integrated Savings','Intelligent Dosing','ERGOCERT'], 'img' => '/images/equipment/commercialwasher.webp'],
-                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lac']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon Advanced Care variants · 6–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care.', 'badges' => ['Lagoon Advanced Care','Efficient Dosing','ClarusVibe','Textile Care'], 'tech' => ['Efficient Dosing','ClarusVibe'], 'img' => '/images/equipment/lacandlag.jpg'],
-                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAG — Lagoon Washer Variants', 'slug' => 'wh6-lag', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lag']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon variant · 14 kg', 'ranges' => ['11–14 kg'], 'fit' => 'Lagoon washer variant for sites managing delicate garments and specialist care processes.', 'badges' => ['Lagoon','Textile Care','ClarusVibe','Efficient Dosing'], 'tech' => ['ClarusVibe','Efficient Dosing'], 'img' => '/images/equipment/lacandlag.jpg'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WS6 — Line 6000 High-Spin Washer', 'slug' => 'ws6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'ws6']), 'line' => 'Line 6000 High Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'High-spin washer range for busy laundry rooms needing faster extraction and lower drying demand.', 'badges' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'tech' => ['Automatic Savings','Power Balance','ClarusVibe','ERGOCERT'], 'img' => '/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WN6 — Line 6000 Normal-Spin Washer', 'slug' => 'wn6', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wn6']), 'line' => 'Line 6000 Normal Spin', 'topLine' => 'Line 6000 · 8–35 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Normal-spin washer range for sites where wash performance, room fit and long-term support need to stay connected.', 'badges' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'tech' => ['Automatic Savings','Integrated Savings','CompassPro','ERGOCERT'], 'img' => '/images/pages/commercial-washers/WN6 — Line 6000 Normal-Spin Washer.jpg'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-cv']), 'line' => 'ClarusVibe Variants', 'topLine' => 'Line 6000 · ClarusVibe variants · 7–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience.', 'badges' => ['ClarusVibe','Automatic Savings','Integrated Savings','ERGOCERT'], 'tech' => ['ClarusVibe','Automatic Savings','Integrated Savings','Intelligent Dosing','ERGOCERT'], 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lac']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon Advanced Care variants · 6–33 kg', 'ranges' => ['6–9 kg','11–14 kg','20–35 kg'], 'fit' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care.', 'badges' => ['Lagoon Advanced Care','Efficient Dosing','ClarusVibe','Textile Care'], 'tech' => ['Efficient Dosing','ClarusVibe'], 'img' => '/images/pages/commercial-washers/lacandlag.jpg'],
+                ['group' => 'Core Line 6000 Washer Range', 'name' => 'WH6-LAG — Lagoon Washer Variants', 'slug' => 'wh6-lag', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'wh6-lag']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Line 6000 · Lagoon variant · 14 kg', 'ranges' => ['11–14 kg'], 'fit' => 'Lagoon washer variant for sites managing delicate garments and specialist care processes.', 'badges' => ['Lagoon','Textile Care','ClarusVibe','Efficient Dosing'], 'tech' => ['ClarusVibe','Efficient Dosing'], 'img' => '/images/pages/commercial-washers/lacandlag.jpg'],
                 // Compact / Heavy-Duty Washer Options
-                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'quickwash-qwc']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact / Small Business', 'ranges' => ['6–9 kg'], 'fit' => 'Compact washer option for sites that need professional laundry performance in a smaller footprint.', 'badges' => ['Compact Fit','Professional Wash','Small Business','Easy Operation'], 'tech' => [], 'img' => '/images/equipment/Quickwash QWC.jpg'],
-                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'PW9C Compact Washer', 'slug' => 'pw9c', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'pw9c']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact · 9 kg', 'ranges' => ['6–9 kg'], 'fit' => 'Compact professional washer for smaller sites needing more than domestic laundry equipment.', 'badges' => ['Compact Fit','Professional Wash','Small Site','Support Available'], 'tech' => [], 'img' => '/images/equipment/PW9C.jpg'],
-                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'W4-Series Washer-Extractors', 'slug' => 'w4-series', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'w4-series']), 'line' => 'Heavy-Duty Washer-Extractors', 'topLine' => 'Heavy Duty · 40 kg+', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractor route for large-volume laundry rooms needing strong throughput and long-term support.', 'badges' => ['High Capacity','Heavy Duty','Service Support','Long-Term Use'], 'tech' => [], 'img' => '/images/equipment/W4-Series Washer-Extractors.png'],
+                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'quickwash-qwc']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact / Small Business', 'ranges' => ['6–9 kg'], 'fit' => 'Compact washer option for sites that need professional laundry performance in a smaller footprint.', 'badges' => ['Compact Fit','Professional Wash','Small Business','Easy Operation'], 'tech' => [], 'img' => '/images/pages/commercial-washers/Quickwash QWC.jpg'],
+                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'PW9C Compact Washer', 'slug' => 'pw9c', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'pw9c']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact · 9 kg', 'ranges' => ['6–9 kg'], 'fit' => 'Compact professional washer for smaller sites needing more than domestic laundry equipment.', 'badges' => ['Compact Fit','Professional Wash','Small Site','Support Available'], 'tech' => [], 'img' => '/images/pages/commercial-washers/PW9C.jpg'],
+                ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'W4-Series Washer-Extractors', 'slug' => 'w4-series', 'route' => route('equipment.product', ['category' => 'washers', 'product' => 'w4-series']), 'line' => 'Heavy-Duty Washer-Extractors', 'topLine' => 'Heavy Duty · 40 kg+', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractor route for large-volume laundry rooms needing strong throughput and long-term support.', 'badges' => ['High Capacity','Heavy Duty','Service Support','Long-Term Use'], 'tech' => [], 'img' => '/images/pages/commercial-washers/W4-Series Washer-Extractors.png'],
                 // Specialist Washing Routes
-                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/equipment/mypro-hp-front.jpg'],
-                ['group' => 'Specialist Washing Routes', 'name' => 'Barrier Washers', 'slug' => 'barrier', 'route' => route('equipment.category', 'barrier-washers'), 'line' => 'Barrier Washers', 'topLine' => 'Hygiene-Critical Laundry', 'ranges' => ['11–14 kg','20–35 kg','40 kg+'], 'fit' => 'Barrier washer route for laundry rooms where soiled and clean handling must stay separate.', 'badges' => ['Clean / Dirty Separation','Hygiene Watchdog','ERGOCERT','AIDO'], 'tech' => ['ERGOCERT'], 'img' => '/images/equipment/line6000-barrier-washer.webp'],
-                ['group' => 'Specialist Washing Routes', 'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Specialist Wet Cleaning', 'ranges' => ['11–14 kg','20–35 kg'], 'fit' => 'Specialist wet cleaning route for delicate garments, textile care and advanced fabric handling.', 'badges' => ['Wet Cleaning','Textile Care','Efficient Dosing','Lagoon'], 'tech' => ['Efficient Dosing'], 'img' => '/images/equipment/FC48.jpg'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'Barrier Washers', 'slug' => 'barrier', 'route' => route('equipment.category', 'barrier-washers'), 'line' => 'Barrier Washers', 'topLine' => 'Hygiene-Critical Laundry', 'ranges' => ['11–14 kg','20–35 kg','40 kg+'], 'fit' => 'Barrier washer route for laundry rooms where soiled and clean handling must stay separate.', 'badges' => ['Clean / Dirty Separation','Hygiene Watchdog','ERGOCERT','AIDO'], 'tech' => ['ERGOCERT'], 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Specialist Wet Cleaning', 'ranges' => ['11–14 kg','20–35 kg'], 'fit' => 'Specialist wet cleaning route for delicate garments, textile care and advanced fabric handling.', 'badges' => ['Wet Cleaning','Textile Care','Efficient Dosing','Lagoon'], 'tech' => ['Efficient Dosing'], 'img' => '/images/pages/finishing-equipment/FC48.jpg'],
             ];
             $groupOrder = ['Core Line 6000 Washer Range', 'Compact / Heavy-Duty Washer Options', 'Specialist Washing Routes'];
             $lineOrder  = ['Line 6000 High Spin','Line 6000 Normal Spin','ClarusVibe Variants','Lagoon / Wet Cleaning Variants','Compact / Small Business','Heavy-Duty Washer-Extractors','Semi-Professional','Barrier Washers'];
@@ -659,28 +659,28 @@
                 'label'  => 'Multi-tank dosing with water saving',
                 'body'   => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
                 'points' => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
-                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+                'img'    => '/images/shared/MultisaveEQUIP.webp',
             ],
             [
                 'name'   => 'DOSAVE',
                 'label'  => 'Precise dosing for consistent results',
                 'body'   => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
                 'points' => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
-                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+                'img'    => '/images/shared/DOSAVEEQUIP.webp',
             ],
             [
                 'name'   => 'JETSAVE',
                 'label'  => 'Jet-based dosing with integrated saving',
                 'body'   => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
                 'points' => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
-                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+                'img'    => '/images/shared/JetsaveEQUIP.webp',
             ],
             [
                 'name'   => 'Efficient Dosing',
                 'label'  => 'Integrated dosing through CompassPro',
                 'body'   => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
                 'points' => ['Integrated with CompassPro', 'Removes manual dosing errors', 'Lower detergent cost per cycle'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
         @endphp
@@ -709,7 +709,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -736,8 +736,8 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
                                     </div>
                                 </div>
 
@@ -827,7 +827,7 @@
                     'text'  => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',
                     'cta'   => 'Request Call-out',
                     'route' => route('repairs'),
-                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -835,7 +835,7 @@
                     'text'  => 'Planned washer servicing to reduce unexpected repairs and keep equipment condition visible.',
                     'cta'   => 'View Maintenance Options',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -843,7 +843,7 @@
                     'text'  => 'Lower upfront cost for washer replacement, capacity planning or expansion where rental is the right fit.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
                     'pos'   => '66% center',
                 ],
                 [
@@ -851,7 +851,7 @@
                     'text'  => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',
                     'cta'   => 'Explore Support Options',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
                 ],
             ] as $card)

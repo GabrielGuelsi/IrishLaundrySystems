@@ -11,7 +11,7 @@
 @php
 $testimonials = [
     'grace' => [
-        'logo'      => '/images/sectors/3.png',
+        'logo'      => '/images/shared/3.png',
         'logoClass' => 'h-[140px] sm:h-[200px] lg:h-[240px] w-auto object-contain',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
@@ -22,7 +22,7 @@ $testimonials = [
     ],
     'hse' => [
         'logo'      => '',
-        'image'     => '/images/sectors/St-Marys-Hospital-Phooenix-Park-Dublin-Rainwater-System-old-Building.webp',
+        'image'     => '/images/shared/St-Marys-Hospital-Phooenix-Park-Dublin-Rainwater-System-old-Building.webp',
         'name'      => 'St. Mary\'s Hospital Dublin',
         'pills'     => ['Excellent Callouts', 'Annual Maintenance', 'Minimal Disruption', 'Peace of Mind'],
         'headline'  => 'Consistent, professional service that gives us real peace of mind.',
@@ -31,7 +31,7 @@ $testimonials = [
         'cite_role' => 'Operations at St. Mary\'s Hospital',
     ],
     'charlemont' => [
-        'logo'      => '/images/sectors/charlemontgroup.png',
+        'logo'      => '/images/shared/charlemontgroup.png',
         'logoClass' => 'h-[160px] sm:h-[220px] lg:h-[280px] w-auto object-contain',
         'name'      => 'Charlemont Group',
         'pills'     => ['Long-Term Partnership', 'Reliable Service', 'Fast Response', 'Minimal Disruption'],
@@ -41,7 +41,7 @@ $testimonials = [
         'cite_role' => 'Facilities Manager at Charlemont Group',
     ],
     'laundryonline' => [
-        'logo'      => '/images/sectors/laundryonlinesquare.png',
+        'logo'      => '/images/shared/laundryonlinesquare.png',
         'logoClass' => 'h-[160px] sm:h-[220px] lg:h-[280px] w-auto object-contain',
         'name'      => 'Laundry Online',
         'pills'     => ['Equipment Supply', 'Quick Turnaround', 'Dependable Support', 'Service Contract'],

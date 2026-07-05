@@ -46,7 +46,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[680px]" style="background-color: #011E41;">
 
-    <img src="/images/healthcare/line-6000-solutions.jpg"
+    <img src="/images/shared/line-6000-solutions.jpg"
          alt="Electrolux Professional commercial laundry equipment supported by Irish Laundry Systems"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -178,7 +178,7 @@
 
             <div class="reveal reveal-right" style="transition-delay:120ms;">
                 <div class="group rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Electrolux Professional commercial laundry range" loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
+                    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Electrolux Professional commercial laundry range" loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
                 </div>
             </div>
 
@@ -250,7 +250,7 @@
 
         {{-- Photo --}}
         <div class="group relative min-h-[320px] lg:min-h-[540px] overflow-hidden">
-            <img src="/images/healthcare/customer-care-line6000.jpg" alt="Irish Laundry Systems engineer supporting Electrolux Professional equipment"
+            <img src="/images/shared/customer-care-line6000.jpg" alt="Irish Laundry Systems engineer supporting Electrolux Professional equipment"
                  loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[700ms] ease-out group-hover:scale-105">
             <div class="absolute inset-0 lg:hidden" style="background:rgba(1,30,65,0.45);"></div>
         </div>
@@ -293,7 +293,7 @@
                     Customers do not just need equipment supplied. They need the right machine, installed properly, maintained well, repaired correctly and supported when the next decision appears. Irish Laundry Systems brings those steps together through one local engineering team.
                 </p>
                 <div class="group rounded-2xl overflow-hidden shadow-card">
-                    <img src="/images/healthcare/render-double-page_72dpi.jpg" alt="Electrolux Professional laundry equipment supported by Irish Laundry Systems"
+                    <img src="/images/shared/render-double-page_72dpi.jpg" alt="Electrolux Professional laundry equipment supported by Irish Laundry Systems"
                          loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
                 </div>
             </div>

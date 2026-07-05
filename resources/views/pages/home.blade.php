@@ -21,11 +21,11 @@
          x-init="setInterval(() => active = (active + 1) % slides, 6000)">
 
     <!-- Background carousel -->
-    <img src="/images/hero/HOMEHERO1.png"
+    <img src="/images/pages/home/HOMEHERO1.png"
          alt="Commercial laundry operation"
          class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
-    <img src="/images/hero/HOMEHERO2.jpg"
+    <img src="/images/pages/home/HOMEHERO2.jpg"
          alt="Irish Laundry Systems engineering team on site"
          style="object-position: center 72%;"
          class="absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
@@ -114,10 +114,10 @@
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
-        ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts support better control of service timing, equipment condition and repair pressure over time.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
-        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement pressure, expansion or continuity, with equipment installed, maintained and easier to manage over time.',      'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
-        ['title' => 'Support & Aftercare',     'body' => 'Follow-up care that keeps service history and next steps clear after repairs, rental, contracts, inspection or installation.',                       'cta' => 'Explore Support & Aftercare', 'href' => route('parts-aftercare'),  'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
+        ['title' => 'Repairs & Call-outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-out',         'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',             'alt' => 'Repairs and Call-outs',   'pos' => 'center 40%'],
+        ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts support better control of service timing, equipment condition and repair pressure over time.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
+        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement pressure, expansion or continuity, with equipment installed, maintained and easier to manage over time.',      'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
+        ['title' => 'Support & Aftercare',     'body' => 'Follow-up care that keeps service history and next steps clear after repairs, rental, contracts, inspection or installation.',                       'cta' => 'Explore Support & Aftercare', 'href' => route('parts-aftercare'),  'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
     ],
 ])
 
@@ -144,7 +144,7 @@
     'careBody'        => 'Practical support for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
     'hospitalityBody' => 'Support for guest-facing sites where linen availability, finishing quality, turnaround and operating cost affect the wider business.',
     'commercialBody'  => 'Care for higher-throughput laundry sites where output, running cost and engineering response carry more operational weight.',
-    'commercialImg'   => '/images/sectors/0O3A9810_72dpi.jpg',
+    'commercialImg'   => '/images/pages/home/0O3A9810_72dpi.jpg',
 ])
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
@@ -153,10 +153,10 @@
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
     'equipment' => [
-        ['img' => 'commercialwasher',              'name' => 'Washing Machines',     'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
-        ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Dryers',               'desc' => 'For daily drying demand, drying control and steady turnaround through the day.',                          'box' => 245],
-        ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
-        ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and stronger output across linen-heavy environments.'],
+        ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
+        ['img' => 'Tumble-dryers_Heat-Pump_1-1', 'src' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',   'name' => 'Dryers',               'desc' => 'For daily drying demand, drying control and steady turnaround through the day.',                          'box' => 245],
+        ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
+        ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and stronger output across linen-heavy environments.'],
     ],
 ])
 

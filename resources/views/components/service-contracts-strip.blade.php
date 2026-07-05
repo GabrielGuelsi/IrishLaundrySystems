@@ -4,7 +4,7 @@
     'headingLine2' => 'next steps connected',
     'accentFirst'  => false,
     'body'         => 'Planned maintenance, service history, parts routes where required and practical aftercare help keep equipment decisions clearer after installation, rental, repair or inspection.',
-    'image'        => '/images/healthcare/repairs-callouts.jpg',
+    'image'        => '/images/shared/repairs-callouts.jpg',
     'miniPoints'   => null,
     'features'     => [
         ['icon' => 'ativo-7', 'label' => 'Planned maintenance'],

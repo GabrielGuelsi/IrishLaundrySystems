@@ -36,7 +36,7 @@
 
 {{-- ════════════ 2. HERO ════════════ --}}
 <section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 520px; background-color: #011E41;">
-    <img src="/images/hero/rental-hero.webp"
+    <img src="/images/pages/services/rental-hero.webp"
          alt="Commercial laundry equipment supplied and installed by Irish Laundry Systems"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -177,7 +177,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
             <div class="lg:col-span-5 reveal reveal-left">
                 <div class="relative rounded-3xl overflow-hidden bg-navy shadow-xl h-72 sm:h-96 lg:h-full">
-                    <img src="/images/healthcare/agreementiclusions.png"
+                    <img src="/images/pages/services/agreementiclusions.png"
                          alt="Irish Laundry Systems engineer installing and commissioning rented commercial laundry equipment"
                          loading="lazy" decoding="async"
                          class="absolute inset-0 w-full h-full object-cover" style="object-position: 28% center;">
@@ -303,9 +303,9 @@
 
     <div style="display:flex; flex-wrap:wrap;">
         @foreach([
-            ['num' => '01.', 'title' => 'Tell us what you need',       'body' => 'Share the equipment type, site, laundry demand, current pressure and whether you are considering rental, lease or purchase.', 'img' => '/images/healthcare/customer-care-line6000.jpg'],
-            ['num' => '02.', 'title' => 'We confirm the right fit',     'body' => 'Irish Laundry Systems reviews the available Electrolux Professional range, site needs, installation requirements and the support included in the agreement.', 'img' => '/images/healthcare/service-contracts-hero.jpg'],
-            ['num' => '03.', 'title' => 'We supply it and support it',  'body' => 'Once agreed, the selected equipment is supplied, installed and supported throughout the rental agreement.', 'img' => '/images/healthcare/repairs-callouts.jpg'],
+            ['num' => '01.', 'title' => 'Tell us what you need',       'body' => 'Share the equipment type, site, laundry demand, current pressure and whether you are considering rental, lease or purchase.', 'img' => '/images/shared/customer-care-line6000.jpg'],
+            ['num' => '02.', 'title' => 'We confirm the right fit',     'body' => 'Irish Laundry Systems reviews the available Electrolux Professional range, site needs, installation requirements and the support included in the agreement.', 'img' => '/images/pages/services/service-contracts-hero.jpg'],
+            ['num' => '03.', 'title' => 'We supply it and support it',  'body' => 'Once agreed, the selected equipment is supplied, installed and supported throughout the rental agreement.', 'img' => '/images/shared/repairs-callouts.jpg'],
         ] as $step)
         <div class="rn-visit-card">
             <img src="{{ asset(ltrim($step['img'], '/')) }}" alt="{{ $step['title'] }}" loading="lazy">
@@ -338,11 +338,11 @@
 
         @php
         $rentalFits = [
-            ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/healthcare/healthcarehero.png', 'pos' => '80% center'],
-            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
-            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg'],
-            ['env' => 'Multi Housing',               'route' => route('sectors'),             'img' => '/images/sectors/Line 6000 solutions products_72dpi.jpg'],
+            ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/pages/sectors/healthcarehero.png', 'pos' => '80% center'],
+            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
+            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/pages/sectors/hospitallityhero.png', 'pos' => '75% center'],
+            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/shared/td6-11-multihousing-room-front.jpg'],
+            ['env' => 'Multi Housing',               'route' => route('sectors'),             'img' => '/images/shared/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
 
@@ -474,7 +474,7 @@
 {{-- ════════════ 11. SUPPORT DURING THE AGREEMENT BLOCK (#148AF4) ════════════ --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
     <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/rentalstripimage.jpg" alt="Irish Laundry Systems engineer supporting rented commercial laundry equipment"
+        <img src="/images/shared/rentalstripimage.jpg" alt="Irish Laundry Systems engineer supporting rented commercial laundry equipment"
              loading="lazy" decoding="async" class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to left, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>

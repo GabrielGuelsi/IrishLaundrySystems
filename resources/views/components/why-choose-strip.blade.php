@@ -1,6 +1,6 @@
 @props([
     'eyebrow' => null,
-    'image' => '/images/healthcare/rentalstripimage.jpg',
+    'image' => '/images/shared/rentalstripimage.jpg',
     'body' => 'Rental gives your site a practical route for replacement, expansion or continuity when buying outright is not the right next step.',
     'headingLine1' => 'Keep laundry moving',
     'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',

@@ -8,7 +8,7 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]">
-    <img src="/images/CareFacilities/carefacilitiesheroimage.jpg" alt="Care facility laundry"
+    <img src="/images/pages/sectors/carefacilitiesheroimage.jpg" alt="Care facility laundry"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: center 38%; transform: scale(1.22);">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
@@ -89,7 +89,7 @@
         <div class="relative reveal">
 
             <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/healthcare/render-double-page_72dpi.jpg"
+                <img src="/images/shared/render-double-page_72dpi.jpg"
                      alt="Care facility laundry room"
                      class="w-full h-[320px] sm:h-[440px] lg:h-[580px] object-cover object-center">
             </div>
@@ -235,7 +235,7 @@
                     'text'   => 'For urgent equipment faults that can delay resident laundry or disrupt daily care routines.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/healthcare/support-aftercare-hero.png',
+                    'img'    => '/images/pages/services/support-aftercare-hero.png',
                     'pos'    => 'center 40%',
                 ],
                 [
@@ -243,7 +243,7 @@
                     'text'   => 'For planned visits, service records and better care for essential laundry equipment.',
                     'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/service-contracts-hero.png',
+                    'img'    => '/images/shared/service-contracts-hero.png',
                     'pos'    => '90% 35%',
                 ],
                 [
@@ -251,7 +251,7 @@
                     'text'   => 'For replacement, capacity or continuity needs without one large purchase upfront.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
-                    'img'    => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'img'    => '/images/shared/td6-11-multihousing-room-front.jpg',
                     'pos'    => '66% center',
                 ],
                 [
@@ -259,7 +259,7 @@
                     'text'   => 'For service history, parts access where needed and clearer repair, rental or replacement guidance after installation.',
                     'cta'    => 'Explore Support Options',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'    => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'    => 'center center',
                 ],
             ] as $card)
@@ -357,7 +357,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2">
-                    <img src="/images/equipment/commercialwasher.webp"
+                    <img src="/images/pages/commercial-washers/commercialwasher.webp"
                          alt="Commercial Washer"
                          class="w-full h-96 object-contain object-left-top">
                 </div>
@@ -367,7 +367,7 @@
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col">
-                    <img src="/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp"
+                    <img src="/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -415,7 +415,7 @@
                 <h4 class="font-heading font-bold text-navy text-xl mb-4">Dry not overdry</h4>
                 <div class="flex flex-col sm:flex-row items-start gap-6 mb-8">
                     <div class="w-32 h-32 flex-shrink-0">
-                        <img src="/images/healthcare/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
+                        <img src="/images/shared/MoistureBalance.png" alt="Moisture Balance" class="w-full h-full object-contain">
                     </div>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">
                         The Moisture Balance function measures the exact residual moisture level of the linen throughout the drying process and automatically <strong>stops the cycle</strong> once the desired level of hygienic dryness is achieved.
@@ -472,7 +472,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2">
-                    <img src="/images/CareFacilities/ELS_PH_415x415_FIT2B.jpg"
+                    <img src="/images/pages/sectors/ELS_PH_415x415_FIT2B.jpg"
                          alt="Electrolux Professional FIT2 Vacuum Ironing Table"
                          class="w-full h-96 object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
@@ -518,7 +518,7 @@
             <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col">
-                    <img src="/images/equipment/line6000-barrier-washer.webp"
+                    <img src="/images/pages/barrier-washers/line6000-barrier-washer.webp"
                          alt="Line 6000 Barrier Washer"
                          class="w-full h-[440px] object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full flex justify-center">
@@ -580,7 +580,7 @@
                     <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
                     <div class="flex items-start gap-6 mb-8">
                         <div class="w-32 h-32 flex-shrink-0">
-                            <img src="/images/healthcare/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
+                            <img src="/images/shared/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
                         </div>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">
                             Our large inner-drum doors make loading and unloading the washer exceptionally easy, while our innovative opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables the easy manual handling of large loads of wet linen while minimizing potential strain for the operator.
@@ -606,7 +606,7 @@
                     <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog</h4>
                     <div class="flex items-start gap-6 mb-8">
                         <div class="w-32 h-32 flex-shrink-0">
-                            <img src="/images/healthcare/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
+                            <img src="/images/shared/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="w-full h-full object-contain">
                         </div>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">
                             <strong>Your Hygiene Partner:</strong> The Electrolux Professional Hygiene Watchdog (HW) ensures full-cycle completion so that all linen is <strong>fully washed and thoroughly decontaminated</strong>. This provides the maximum defence against the spread of microorganisms and cross-contamination, keeping germs at bay and your mind at rest.
@@ -656,25 +656,25 @@
                 'name'    => 'Multisave',
                 'label'   => 'Multi-tank dosing with water saving',
                 'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
-                'img'     => '/images/healthcare/MultisaveEQUIP.webp',
+                'img'     => '/images/shared/MultisaveEQUIP.webp',
             ],
             [
                 'name'    => 'DOSAVE',
                 'label'   => 'Precise dosing for consistent results',
                 'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
-                'img'     => '/images/healthcare/DOSAVEEQUIP.webp',
+                'img'     => '/images/shared/DOSAVEEQUIP.webp',
             ],
             [
                 'name'    => 'JETSAVE',
                 'label'   => 'Jet-based dosing with integrated saving',
                 'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
-                'img'     => '/images/healthcare/JetsaveEQUIP.webp',
+                'img'     => '/images/shared/JetsaveEQUIP.webp',
             ],
             [
                 'name'    => 'Efficient Dosing',
                 'label'   => 'Integrated dosing through CompassPro',
                 'body'    => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
-                'img'     => '/images/healthcare/efficientDosing_equip.webp',
+                'img'     => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
         @endphp
@@ -703,7 +703,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -730,8 +730,8 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
                                     </div>
                                 </div>
 
@@ -803,11 +803,11 @@
     'heading' => 'Equipment options for <span style="color:#148af4;">care facility laundry</span>',
     'subheading' => 'Choose the equipment category that fits the room, load type, hygiene needs and aftercare.',
     'equipment' => [
-        ['img'=>'line6000-barrier-washer','name'=>'Barrier Washers','desc'=>'For sites that need dirty-side and clean-side handling kept separate.','box'=>250,'mb'=>-20],
-        ['img'=>'commercialwasher','name'=>'Washing Machines','desc'=>'For everyday care facility loads that need capacity, consistency and dosing control.','box'=>270,'mb'=>-35],
-        ['img'=>'Tumble-dryers_Heat-Pump_1-1','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
-        ['img'=>'drying-cabinet','src'=>'/images/healthcare/Drying-cabinets_image.webp','name'=>'Drying Cabinets','desc'=>'For garments, bulky items and specialist textiles that need gentle drying and fabric care.','box'=>260,'mb'=>20],
-        ['img'=>'IB623_FRONT_NEW','ext'=>'jpg','name'=>'Ironers & Flatwork','desc'=>'For finishing, moisture control and textiles ready for storage or use.'],
+        ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For sites that need dirty-side and clean-side handling kept separate.','box'=>250,'mb'=>-20],
+        ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For everyday care facility loads that need capacity, consistency and dosing control.','box'=>270,'mb'=>-35],
+        ['img'=>'Tumble-dryers_Heat-Pump_1-1', 'src' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
+        ['img'=>'drying-cabinet','src'=>'/images/pages/drying-cabinets/Drying-cabinets_image.webp','name'=>'Drying Cabinets','desc'=>'For garments, bulky items and specialist textiles that need gentle drying and fabric care.','box'=>260,'mb'=>20],
+        ['img'=>'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg','ext'=>'jpg','name'=>'Ironers & Flatwork','desc'=>'For finishing, moisture control and textiles ready for storage or use.'],
     ],
 ])
 
@@ -860,7 +860,7 @@
     'headingLine1' => 'Keep care facility laundry',
     'headingLine2' => 'supported after installation',
     'body'         => 'Planned maintenance and aftercare protect equipment value, support daily routines and keep essential laundry equipment running.',
-    'image'        => '/images/healthcare/support-aftercare-hero.png',
+    'image'        => '/images/pages/services/support-aftercare-hero.png',
     'miniPoints'   => [
         ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>planning'],
         ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Equipment<br>care'],

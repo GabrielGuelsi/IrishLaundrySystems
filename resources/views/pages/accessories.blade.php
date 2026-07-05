@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Laundry dosing systems, detergents and accessories"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Laundry dosing systems, detergents and accessories"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -118,35 +118,35 @@
                 'label'  => 'Dosing based on the load',
                 'body'   => 'Intelligent Dosing adds detergent according to the load inside the drum, reducing waste without compromising wash results.',
                 'points' => ['Load-based dosing', 'Less waste', 'Consistent results', 'ClarusVibe where applicable'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
             [
                 'name'   => 'Efficient Dosing',
                 'label'  => 'Correct dose for selected CompassPro setups',
                 'body'   => 'Efficient Dosing uses the right amount of detergent for each cycle and can save over 30% on detergent costs where suitable.',
                 'points' => ['Correct amount', 'Over 30% saving where suitable', 'CompassPro', 'Cost control'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
             [
                 'name'   => 'Multisave',
                 'label'  => 'One unit for multiple washers',
                 'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting controlled detergent use in multi-washer laundry rooms.',
                 'points' => ['Up to 7 washers', 'Multi-machine control', 'Lower setup complexity', 'Controlled consumption'],
-                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+                'img'    => '/images/shared/MultisaveEQUIP.webp',
             ],
             [
                 'name'   => 'JETSAVE',
                 'label'  => 'Lower upkeep with water-powered dosing',
                 'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes, supporting reliable dosing with less dosing system maintenance.',
                 'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
-                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+                'img'    => '/images/shared/JetsaveEQUIP.webp',
             ],
             [
                 'name'   => 'DOSAVE',
                 'label'  => 'Straightforward dosing setup',
                 'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming where this system is the right fit.',
                 'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Practical setup'],
-                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+                'img'    => '/images/shared/DOSAVEEQUIP.webp',
             ],
         ];
         @endphp
@@ -176,7 +176,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -210,8 +210,8 @@
                                         @endforeach
                                     </ul>
                                     <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
                                     </div>
                                 </div>
 
@@ -373,7 +373,7 @@
                 'copy'    => 'Automatic dosing systems support accurate chemical use, consistent wash results and clearer cost control.',
                 'badges'  => ['Intelligent Dosing', 'Efficient Dosing', 'Multisave', 'JETSAVE / DOSAVE'],
                 'cta'     => 'Ask About Dosing Systems',
-                'img'     => '/images/healthcare/MultisaveEQUIP.webp',
+                'img'     => '/images/shared/MultisaveEQUIP.webp',
             ],
             [
                 'name'    => 'Eco-Detergents',
@@ -381,7 +381,7 @@
                 'copy'    => 'Electrolux Professional eco-range detergents support high-quality results, textile care and lower environmental impact where applicable.',
                 'badges'  => ['EU Ecolabel', 'Hypoallergenic', 'Dermatologically tested', 'Textile care'],
                 'cta'     => 'Ask About Detergents',
-                'img'     => '/images/equipment/eco-detergents.webp',
+                'img'     => '/images/pages/accessories/eco-detergents.webp',
             ],
             [
                 'name'    => 'Detergent Storage',
@@ -389,7 +389,7 @@
                 'copy'    => 'Detergent Storage keeps canisters organised and can support pumps and dosing systems on selected setups.',
                 'badges'  => ['Canister storage', 'Pump support', 'Cleaner room', 'Easier handling'],
                 'cta'     => 'Ask About Storage',
-                'img'     => '/images/equipment/detergent-storage.webp',
+                'img'     => '/images/pages/accessories/detergent-storage.webp',
             ],
             [
                 'name'    => 'Original Accessories & Consumables',
@@ -397,7 +397,7 @@
                 'copy'    => 'Original accessories and consumables support handling, daily use and equipment care over time.',
                 'badges'  => ['Baskets', 'Racks & trolleys', 'Dryer balls', 'Cleaning essentials'],
                 'cta'     => 'Ask About Accessories',
-                'img'     => '/images/equipment/trolleys-and-racks.webp',
+                'img'     => '/images/pages/accessories/trolleys-and-racks.webp',
             ],
         ];
         @endphp
@@ -481,7 +481,7 @@
             <a href="{{ $ex['href'] }}" target="_blank" rel="noopener"
                class="group flex flex-col text-center">
                 <div class="flex items-center justify-center h-64 lg:h-72 mb-5">
-                    <img src="{{ asset('images/equipment/'.$ex['img']) }}" alt="{{ $ex['name'] }}"
+                    <img src="{{ asset('images/pages/accessories/'.$ex['img']) }}" alt="{{ $ex['name'] }}"
                          loading="lazy" decoding="async"
                          class="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105">
                 </div>
@@ -510,10 +510,10 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Racks and trolleys',                     'copy' => 'Support movement, storage and daily laundry handling.',  'img' => '/images/equipment/trolleys-and-racks.webp'],
-                ['title' => 'Baskets and handling',                   'copy' => 'Make sorting, loading and unloading easier for staff.',   'img' => '/images/equipment/trolley_.webp'],
-                ['title' => 'Dryer balls and cleaning essentials',    'copy' => 'Support practical care across daily laundry use.',        'img' => '/images/equipment/dryer-balls.png'],
-                ['title' => 'Hygiene tools',                          'copy' => 'Keep the laundry room cleaner and easier to manage.',     'img' => '/images/healthcare/JetsaveEQUIP.webp'],
+                ['title' => 'Racks and trolleys',                     'copy' => 'Support movement, storage and daily laundry handling.',  'img' => '/images/pages/accessories/trolleys-and-racks.webp'],
+                ['title' => 'Baskets and handling',                   'copy' => 'Make sorting, loading and unloading easier for staff.',   'img' => '/images/pages/accessories/trolley_.webp'],
+                ['title' => 'Dryer balls and cleaning essentials',    'copy' => 'Support practical care across daily laundry use.',        'img' => '/images/pages/accessories/dryer-balls.png'],
+                ['title' => 'Hygiene tools',                          'copy' => 'Keep the laundry room cleaner and easier to manage.',     'img' => '/images/shared/JetsaveEQUIP.webp'],
             ] as $acc)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
@@ -558,7 +558,7 @@
                     'text'  => 'Choose dosing systems, detergents and storage around your washers, load types and daily use.',
                     'cta'   => 'Request Advice',
                     'route' => route('request-assessment'),
-                    'img'   => '/images/healthcare/commercial-industrial.jpg',
+                    'img'   => '/images/shared/commercial-industrial.jpg',
                     'pos'   => 'center center',
                 ],
                 [
@@ -566,7 +566,7 @@
                     'text'  => 'Support for dosing systems, detergent storage and laundry room setup where installation planning is needed.',
                     'cta'   => 'Ask About Setup',
                     'route' => route('contact'),
-                    'img'   => '/images/equipment/Strip1.jpeg',
+                    'img'   => '/images/shared/Strip1.jpeg',
                     'pos'   => 'center 30%',
                 ],
                 [
@@ -574,7 +574,7 @@
                     'text'  => 'Planned maintenance for laundry equipment and dosing systems to reduce avoidable disruption.',
                     'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -582,7 +582,7 @@
                     'text'  => 'Follow-up advice, service history and parts access where dosing or laundry room equipment needs attention.',
                     'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
                 ],
             ] as $card)
@@ -669,10 +669,10 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice and dosing accuracy affect results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'washers'), 'img' => '/images/equipment/commercialwasher.webp', 'box' => 270],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity and energy use after the wash process.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp', 'box' => 245],
-                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For delicate garment care where detergents, dosing and finishing work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/equipment/FC48.jpg', 'box' => 260],
-                ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash and detergent quality affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/equipment/IB623_FRONT_NEW.jpg', 'box' => 300],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice and dosing accuracy affect results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'washers'), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity and energy use after the wash process.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp', 'box' => 245],
+                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For delicate garment care where detergents, dosing and finishing work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/finishing-equipment/FC48.jpg', 'box' => 260],
+                ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash and detergent quality affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">

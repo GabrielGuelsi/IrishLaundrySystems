@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/healthcare/barrierwasherhero.png" alt="Barrier washing machines"
+    <img src="/images/pages/barrier-washers/barrierwasherhero.png" alt="Barrier washing machines"
          class="absolute inset-0 w-full h-full object-cover object-center" style="transform:translateX(2.45%) scale(1.2);">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -97,7 +97,7 @@
 {{-- 6b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
+        <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
              class="w-full h-full object-cover" style="object-position: center center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
@@ -215,14 +215,14 @@
 
                 {{-- CompassPro --}}
                 <div class="border-t border-gray-200 pt-6">
-                    <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-14 w-auto mb-3">
+                    <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro control platform" class="h-14 w-auto mb-3">
                     <p class="font-body text-gray-500 text-sm leading-relaxed">Clear programme selection, preset programmes and language options for daily operation.</p>
                 </div>
             </div>
 
             {{-- COL 2: barrier washer image (the big equipment image) --}}
             <div class="flex items-center justify-center py-2">
-                <img src="/images/equipment/barrierwasheroperatorconfort.png" alt="Barrier washer operator comfort" class="w-auto h-auto max-h-[440px] object-contain">
+                <img src="/images/pages/barrier-washers/barrierwasheroperatorconfort.png" alt="Barrier washer operator comfort" class="w-auto h-auto max-h-[440px] object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
@@ -237,7 +237,7 @@
                     ] as $dp)
                     <div class="flex items-start gap-3">
                         @if(!empty($dp['img']))
-                        <img src="/images/equipment/{{ $dp['img'] }}" alt="{{ $dp['t'] }}" class="w-8 h-8 object-contain flex-shrink-0 mt-0.5">
+                        <img src="/images/shared/{{ $dp['img'] }}" alt="{{ $dp['t'] }}" class="w-8 h-8 object-contain flex-shrink-0 mt-0.5">
                         @else
                         <svg class="w-7 h-7 text-[#010d44] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['d'] }}"/></svg>
                         @endif
@@ -255,7 +255,7 @@
                 <div class="rounded-2xl bg-white p-6 flex-1" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
                     <div class="flex items-start justify-between gap-3 mb-2">
                         <h3 class="font-heading font-bold text-navy text-lg leading-snug">Lower handling effort</h3>
-                        <img src="/images/equipment/saferforusers.svg" alt="Safer handling" class="w-16 h-16 object-contain flex-shrink-0">
+                        <img src="/images/shared/saferforusers.svg" alt="Safer handling" class="w-16 h-16 object-contain flex-shrink-0">
                     </div>
                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
                     <p class="font-body text-gray-500 text-xs leading-relaxed mb-3">A low <strong class="text-navy font-bold">40N</strong> opening force and automatic door handling reduce effort across repeated loading and unloading.</p>
@@ -305,10 +305,10 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Healthcare',                          'img' => '/images/healthcare/Barrier_Washers_Healthcare.png',    'route' => route('sectors.healthcare'), 'pos' => 'center'],
-                ['title' => 'Care facilities',                    'img' => '/images/healthcare/Barrier_Washers_Care_facilitie_(1).png', 'route' => route('sectors.care'), 'pos' => 'center'],
-                ['title' => 'Pharma & food',                       'img' => '/images/healthcare/Pharmaceutical & food processing.png', 'route' => route('sectors.commercial')],
-                ['title' => 'Protective workwear',                 'img' => '/images/healthcare/firefighters.png',              'route' => route('request-assessment')],
+                ['title' => 'Healthcare',                          'img' => '/images/pages/barrier-washers/Barrier_Washers_Healthcare.png',    'route' => route('sectors.healthcare'), 'pos' => 'center'],
+                ['title' => 'Care facilities',                    'img' => '/images/pages/barrier-washers/Barrier_Washers_Care_facilitie_(1).png', 'route' => route('sectors.care'), 'pos' => 'center'],
+                ['title' => 'Pharma & food',                       'img' => '/images/pages/barrier-washers/Pharmaceutical & food processing.png', 'route' => route('sectors.commercial')],
+                ['title' => 'Protective workwear',                 'img' => '/images/pages/barrier-washers/firefighters.png',              'route' => route('request-assessment')],
             ] as $card)
             <div class="flex flex-col items-center text-center">
                 <a href="{{ $card['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
@@ -329,7 +329,7 @@
 {{-- 10. PLANNING / INSTALLATION STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
@@ -409,13 +409,13 @@
             $bwSites  = ['Healthcare','Care Facilities','Pharmaceutical','Food Processing','Commercial Laundry'];
             $bwBadges = ['ERGOCERT','Hygiene Watchdog','AIDO','Power Balance'];
             $bwFit    = 'Line 6000 Evolution barrier washer with clean/dirty separation, guided operation and long-term support.';
-            $bwImg    = '/images/equipment/line6000-barrier-washer.webp';
+            $bwImg    = '/images/pages/barrier-washers/line6000-barrier-washer.webp';
             // Cards for models with their own photo; imageless sizes folded into the nearest card's range.
             $barrierFamilies = [
-                ['name' => 'WB6-13',  'slug' => 'wb6-13',  'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-13.jpg'],
-                ['name' => 'WB6-20',  'slug' => 'wb6-20',  'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-20.jpg'],
-                ['name' => 'WB6-35',  'slug' => 'wb6-35',  'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-35.jpg'],
-                ['name' => 'WB6-110', 'slug' => 'wb6-110', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/equipment/WB6-110.jpg'],
+                ['name' => 'WB6-13',  'slug' => 'wb6-13',  'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-13.jpg'],
+                ['name' => 'WB6-20',  'slug' => 'wb6-20',  'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-20.jpg'],
+                ['name' => 'WB6-35',  'slug' => 'wb6-35',  'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-35.jpg'],
+                ['name' => 'WB6-110', 'slug' => 'wb6-110', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-110.jpg'],
             ];
             $profileOpts = []; $capOpts = []; $siteOpts = [];
             foreach($barrierFamilies as $f) {
@@ -581,35 +581,35 @@
                 'label'  => 'Dosing based on the load',
                 'body'   => 'Intelligent Dosing adds detergent according to the load inside the drum, helping reduce overuse while protecting wash consistency.',
                 'points' => ['Load-based dosing', 'Less waste', 'Better consistency', 'ClarusVibe where applicable'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
             [
                 'name'   => 'Multisave',
                 'label'  => 'One dosing unit for multiple washers',
                 'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting accurate consumption control in multi-washer laundry rooms.',
                 'points' => ['Up to 7 washers', 'Lower setup complexity', 'Low running costs', 'Multi-machine control'],
-                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+                'img'    => '/images/shared/MultisaveEQUIP.webp',
             ],
             [
                 'name'   => 'JETSAVE',
                 'label'  => 'Lower upkeep with water-powered dosing',
                 'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes to replace, supporting reliable dosage and easier long-term upkeep.',
                 'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
-                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+                'img'    => '/images/shared/JetsaveEQUIP.webp',
             ],
             [
                 'name'   => 'DOSAVE',
                 'label'  => 'Straightforward dosing setup',
                 'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming, supporting accurate dosing where this system is the best fit.',
                 'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Savings-focused setup'],
-                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+                'img'    => '/images/shared/DOSAVEEQUIP.webp',
             ],
             [
                 'name'   => 'Efficient Dosing',
                 'label'  => 'Detergent control for selected CompassPro setups',
                 'body'   => 'Efficient Dosing uses the correct amount of detergent for each cycle, supporting lower detergent costs and more controlled wash results.',
                 'points' => ['Correct amount each cycle', 'Over 30% detergent cost saving where suitable', 'CompassPro', 'Cost control'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
         @endphp
@@ -638,7 +638,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -665,8 +665,8 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
                                     </div>
                                 </div>
 
@@ -725,7 +725,7 @@
 {{-- 12a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
-    'image'        => '/images/equipment/equipmentrentalnewimagestrip.png',
+    'image'        => '/images/pages/barrier-washers/equipmentrentalnewimagestrip.png',
     'headingSize'  => 'text-3xl sm:text-4xl lg:text-4xl',
     'headingLine1' => 'Keep hygiene-critical laundry<br>',
     'headingLine2' => 'moving with <span style="color:#148af4;">lower upfront cost</span>',
@@ -753,10 +753,10 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
-                ['title' => 'Repairs &amp; Call-Outs', 'text' => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',                          'cta' => 'Request Call-Out',         'route' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                   'pos' => '50% 35%'],
-                ['title' => 'Preventive Maintenance',  'text' => 'Planned servicing to reduce surprise repair costs and keep equipment condition clear.',                                 'cta' => 'View Maintenance Options', 'route' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',             'pos' => '90% 35%'],
-                ['title' => 'Equipment Rental',        'text' => 'Lower upfront cost for barrier washer replacement, capacity planning or expansion where rental is the right fit.',          'cta' => 'See Equipment Rental Options', 'route' => route('rental'),            'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg',     'pos' => '66% center'],
-                ['title' => 'Support &amp; Aftercare', 'text' => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',            'cta' => 'Explore Support &amp; Aftercare', 'route' => route('parts-aftercare'),   'img' => '/images/healthcare/services-overview-hero-portrait.jpg',     'pos' => 'center center'],
+                ['title' => 'Repairs &amp; Call-Outs', 'text' => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',                          'cta' => 'Request Call-Out',         'route' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                   'pos' => '50% 35%'],
+                ['title' => 'Preventive Maintenance',  'text' => 'Planned servicing to reduce surprise repair costs and keep equipment condition clear.',                                 'cta' => 'View Maintenance Options', 'route' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',             'pos' => '90% 35%'],
+                ['title' => 'Equipment Rental',        'text' => 'Lower upfront cost for barrier washer replacement, capacity planning or expansion where rental is the right fit.',          'cta' => 'See Equipment Rental Options', 'route' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg',     'pos' => '66% center'],
+                ['title' => 'Support &amp; Aftercare', 'text' => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',            'cta' => 'Explore Support &amp; Aftercare', 'route' => route('parts-aftercare'),   'img' => '/images/shared/services-overview-hero-portrait.jpg',     'pos' => 'center center'],
             ] as $card)
             <a href="{{ $card['route'] }}"
                class="group relative overflow-hidden rounded-2xl block"
