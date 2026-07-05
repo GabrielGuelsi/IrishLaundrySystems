@@ -204,7 +204,7 @@
                 'topLine'   => 'For shared or guest use',
                 'copy'      => 'Designed for laundry rooms used by guests, residents or customers, with simple operation and payment options where needed.',
                 'badges'    => ['Guest-operated', 'Simple to use', 'Payment options', 'Shared laundry'],
-                'img'       => '/images/equipment/Self Service Laundry.png',
+                'img'       => '/images/equipment/my pro zip.webp',
                 'route'     => route('equipment.product', ['category' => 'semi-professional', 'product' => 'myprozip']),
                 'featured'  => false,
             ],
