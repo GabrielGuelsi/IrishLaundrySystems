@@ -14,7 +14,7 @@
 
     {{-- Background image pinned to right 60% --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         {{-- Fade left edge into blue --}}

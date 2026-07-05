@@ -26,10 +26,10 @@
                     <img src="/images/logo/abbvie.png" alt="AbbVie" class="h-8 w-auto object-contain opacity-80" style="transform: translateY(-8px);">
                 </div>
                 <div class="flex-1 flex items-center justify-center">
-                    <img src="/images/sectors/charlemontgroupsquare.png" alt="Charlemont Group" class="h-10 w-auto object-contain opacity-80" style="transform: scale(5.5); transform-origin: center;">
+                    <img src="/images/shared/charlemontgroupsquare.png" alt="Charlemont Group" class="h-10 w-auto object-contain opacity-80" style="transform: scale(5.5); transform-origin: center;">
                 </div>
                 <div class="flex-1 flex items-center justify-center">
-                    <img src="/images/sectors/laundryonlinesquare2.png" alt="Laundry Online" class="h-10 w-auto object-contain opacity-80" style="transform: scale(5.5) translateY(-1px); transform-origin: center;">
+                    <img src="/images/shared/laundryonlinesquare2.png" alt="Laundry Online" class="h-10 w-auto object-contain opacity-80" style="transform: scale(5.5) translateY(-1px); transform-origin: center;">
                 </div>
             </div>
 

@@ -155,7 +155,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
 
-    <img src="/images/healthcare/support-aftercare-hero.png"
+    <img src="/images/pages/services/support-aftercare-hero.png"
          alt="ILS engineer reviewing commercial laundry equipment after a service visit"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -304,7 +304,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
-        <img src="/images/sectors/commercial-hero.jpg" alt="" loading="lazy" decoding="async"
+        <img src="/images/shared/commercial-hero.jpg" alt="" loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
     </div>
     <div class="absolute inset-0 pa-dotgrid opacity-25" aria-hidden="true"></div>
@@ -356,25 +356,25 @@
                 'num'   => '01.',
                 'title' => 'Tell us what needs attention',
                 'body'  => 'Share the equipment type, fault details, service history or parts requirement.',
-                'img'   => '/images/healthcare/engineer.jpg',
+                'img'   => '/images/shared/repairs-callouts.jpg',
             ],
             [
                 'num'   => '02.',
                 'title' => 'Review the service history',
                 'body'  => 'Previous visits, maintenance notes and known faults are checked before support is arranged.',
-                'img'   => '/images/healthcare/service-contracts-hero.jpg',
+                'img'   => '/images/pages/services/service-contracts-hero.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Confirm the support needed',
                 'body'  => 'Irish Laundry Systems confirms whether aftercare, repair, maintenance, parts support or replacement planning is needed.',
-                'img'   => '/images/healthcare/Customer-Care_Line-6000-_001.jpg',
+                'img'   => '/images/shared/Customer-Care_Line-6000-_001.jpg',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Keep service records organised',
                 'body'  => 'Service notes and parts information stay available for future equipment decisions.',
-                'img'   => '/images/healthcare/services-overview-hero.jpg',
+                'img'   => '/images/pages/services/services-overview-hero.jpg',
             ],
         ] as $step)
         <div class="pa-visit-card">
@@ -477,7 +477,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
+        <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
              class="w-full h-full object-cover" style="object-position: center center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
@@ -517,10 +517,10 @@
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-Outs',                'body' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                          'cta' => 'View Repairs & Call-Outs',    'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs & Call-Outs',                'pos' => 'center 40%'],
-        ['title' => 'Preventive Maintenance',             'body' => 'For recurring faults, planned visits and better maintenance control.',                                 'cta' => 'View Preventive Maintenance', 'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',             'pos' => '80% center'],
-        ['title' => 'Equipment Rental',                   'body' => 'For replacement, added capacity or cases where buying outright is not the right option.',              'cta' => 'View Equipment Rental',       'href' => route('rental'),            'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',                   'pos' => '66% center'],
-        ['title' => 'Electrolux Professional Partnership','body' => 'For genuine parts, technology and equipment backed by an Authorised Electrolux Professional Partner.', 'cta' => 'View Partnership',            'href' => route('electrolux'),       'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Electrolux Professional Partnership', 'pos' => 'center center'],
+        ['title' => 'Repairs & Call-Outs',                'body' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                          'cta' => 'View Repairs & Call-Outs',    'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                'alt' => 'Repairs & Call-Outs',                'pos' => 'center 40%'],
+        ['title' => 'Preventive Maintenance',             'body' => 'For recurring faults, planned visits and better maintenance control.',                                 'cta' => 'View Preventive Maintenance', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',             'pos' => '80% center'],
+        ['title' => 'Equipment Rental',                   'body' => 'For replacement, added capacity or cases where buying outright is not the right option.',              'cta' => 'View Equipment Rental',       'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',                   'pos' => '66% center'],
+        ['title' => 'Electrolux Professional Partnership','body' => 'For genuine parts, technology and equipment backed by an Authorised Electrolux Professional Partner.', 'cta' => 'View Partnership',            'href' => route('electrolux'),       'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Electrolux Professional Partnership', 'pos' => 'center center'],
     ],
 ])
 
@@ -786,7 +786,7 @@ $aftercareFaqs = [
 <section class="relative overflow-hidden" style="min-height: 360px; background-color: #148af4;">
 
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/healthcare/repairs-hero.jpg"
+        <img src="/images/shared/repairs-hero.jpg"
              alt="ILS engineer reviewing equipment and the next support step on site"
              class="w-full h-full object-cover"
              style="filter: saturate(0.9) contrast(1.05);">

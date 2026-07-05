@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Wet cleaning equipment"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Wet cleaning equipment"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -90,10 +90,10 @@
         {{-- Card photos are placeholders until the approved Canva images land --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal mb-8">
             @foreach([
-                ['title' => 'Fast results',           'copy' => 'Dry-to-Dry in 1 hour helps garments move through the process faster, with no hang-drying required.',        'img' => '/images/healthcare/lagoon-advanced-care-internal.jpg', 'pos' => 'center center'],
-                ['title' => 'Premium garment care',   'copy' => 'Designed for delicate garments, fine textiles, selected leathers and shoes.',                                'img' => '/images/healthcare/services-overview-hero.jpg',        'pos' => 'center center'],
-                ['title' => 'Solvent-free process',   'copy' => 'A water-based process for businesses moving beyond traditional solvent-based cleaning.',                      'img' => '/images/equipment/eco-detergents.webp',                'pos' => 'center center'],
-                ['title' => 'Stronger service offer', 'copy' => 'Helps dry cleaners and garment care businesses offer more specialist textile care in-house.',                 'img' => '/images/healthcare/render-double-page_72dpi.jpg',      'pos' => 'center center'],
+                ['title' => 'Fast results',           'copy' => 'Dry-to-Dry in 1 hour helps garments move through the process faster, with no hang-drying required.',        'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg', 'pos' => 'center center'],
+                ['title' => 'Premium garment care',   'copy' => 'Designed for delicate garments, fine textiles, selected leathers and shoes.',                                'img' => '/images/pages/services/services-overview-hero.jpg',        'pos' => 'center center'],
+                ['title' => 'Solvent-free process',   'copy' => 'A water-based process for businesses moving beyond traditional solvent-based cleaning.',                      'img' => '/images/pages/accessories/eco-detergents.webp',                'pos' => 'center center'],
+                ['title' => 'Stronger service offer', 'copy' => 'Helps dry cleaners and garment care businesses offer more specialist textile care in-house.',                 'img' => '/images/shared/render-double-page_72dpi.jpg',      'pos' => 'center center'],
             ] as $card)
             <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col">
                 <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
@@ -215,7 +215,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         @php
             // Official process infographic (Trello asset) — becomes the main piece once saved to this path.
-            $lagoonInfographic = file_exists(public_path('images/equipment/lagoon-process-infographic.webp'));
+            $lagoonInfographic = file_exists(public_path('images/pages/wet-cleaning/lagoon-process-infographic.webp'));
         @endphp
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
@@ -237,18 +237,18 @@
 
             <div class="lg:col-span-7 reveal reveal-right">
                 @if($lagoonInfographic)
-                <img src="/images/equipment/lagoon-process-infographic.webp" alt="Lagoon Advanced Care process — from received to ready"
+                <img src="/images/pages/wet-cleaning/lagoon-process-infographic.webp" alt="Lagoon Advanced Care process — from received to ready"
                      class="w-full h-auto rounded-2xl mb-6">
                 <div id="lagoon-process-video" class="relative rounded-2xl overflow-hidden bg-navy max-w-sm">
                     <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                        <source src="/images/equipment/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
+                        <source src="/images/pages/wet-cleaning/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 @else
                 <div id="lagoon-process-video" class="relative rounded-2xl overflow-hidden bg-navy max-w-xl mx-auto">
                     <video class="w-full h-full object-cover" controls preload="metadata" playsinline>
-                        <source src="/images/equipment/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
+                        <source src="/images/pages/wet-cleaning/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -276,11 +276,11 @@
         {{-- Image slots (internal): 01 approved Lagoon Advanced Care washer · 02 matching Lagoon dryer · 03 Lagoon detergents, conditioner and prespotting products · 04 wet-cleaning ironing table / form finisher (not a rolling ironer) · 05 drying cabinet / Serenity Cabinet --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Washer',                    'copy' => 'For professional wet cleaning of delicate garments, textiles and specialist loads.', 'img' => '/images/equipment/WS6 — Line 6000 High-Spin Washer.jpg'],
-                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Matched to the wet cleaning process to help suitable garments dry without hang-drying.', 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
-                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents and prespotting products support consistent results across garment types.', 'img' => '/images/equipment/eco-detergents.webp'],
-                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help prepare garments before they return to customers.', 'img' => '/images/equipment/FIT1-WC.jpg'],
-                ['step' => '05', 'title' => 'Optional cabinet support',   'copy' => 'For selected garments that need additional drying or finishing support.', 'img' => '/images/equipment/Serenity Cabinet.jpg'],
+                ['step' => '01', 'title' => 'Washer',                    'copy' => 'For professional wet cleaning of delicate garments, textiles and specialist loads.', 'img' => '/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg'],
+                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Matched to the wet cleaning process to help suitable garments dry without hang-drying.', 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents and prespotting products support consistent results across garment types.', 'img' => '/images/pages/accessories/eco-detergents.webp'],
+                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help prepare garments before they return to customers.', 'img' => '/images/pages/finishing-equipment/FIT1-WC.jpg'],
+                ['step' => '05', 'title' => 'Optional cabinet support',   'copy' => 'For selected garments that need additional drying or finishing support.', 'img' => '/images/pages/wet-cleaning/Serenity Cabinet.jpg'],
             ] as $comp)
             <div class="relative flex flex-col h-full">
                 @unless($loop->last)
@@ -404,12 +404,12 @@
         <div x-data class="relative reveal">
             <div x-ref="track" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
                 @foreach([
-                    ['title' => 'Delicate garments',        'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',            'img' => '/images/healthcare/services-overview-hero.jpg',          'pos' => 'center center'],
-                    ['title' => 'Leathers',                 'copy' => 'For selected leather items that need specialist cleaning and revitalising.',            'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'pos' => 'center center'],
-                    ['title' => 'Wool and silk',            'copy' => 'For delicate fibres that need careful programme control.',                              'img' => '/images/healthcare/line-6000-solutions.jpg',             'pos' => 'center 30%'],
-                    ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                    'img' => '/images/healthcare/render-double-page_72dpi.jpg',        'pos' => 'center center'],
-                    ['title' => 'Dry-clean-only garments',  'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.',    'img' => '/images/healthcare/commercial-industrial.jpg',           'pos' => 'center center'],
-                    ['title' => 'Shoes',                    'copy' => 'For selected shoes that can be treated through the Lagoon process.',                     'img' => '/images/healthcare/lagoon-advanced-care-internal.jpg',   'pos' => 'center center'],
+                    ['title' => 'Delicate garments',        'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',            'img' => '/images/pages/services/services-overview-hero.jpg',          'pos' => 'center center'],
+                    ['title' => 'Leathers',                 'copy' => 'For selected leather items that need specialist cleaning and revitalising.',            'img' => '/images/shared/services-overview-hero-portrait.jpg', 'pos' => 'center center'],
+                    ['title' => 'Wool and silk',            'copy' => 'For delicate fibres that need careful programme control.',                              'img' => '/images/shared/line-6000-solutions.jpg',             'pos' => 'center 30%'],
+                    ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                    'img' => '/images/shared/render-double-page_72dpi.jpg',        'pos' => 'center center'],
+                    ['title' => 'Dry-clean-only garments',  'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.',    'img' => '/images/shared/commercial-industrial.jpg',           'pos' => 'center center'],
+                    ['title' => 'Shoes',                    'copy' => 'For selected shoes that can be treated through the Lagoon process.',                     'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg',   'pos' => 'center center'],
                 ] as $card)
                 <div class="relative overflow-hidden rounded-2xl flex-shrink-0 snap-start w-[280px] sm:w-[320px]" style="height:400px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
@@ -438,7 +438,7 @@
 {{-- 11. SYSTEM PLANNING / SITE FIT STRIP — the page's ONLY full-width blue strip --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -517,35 +517,35 @@
                 'label'  => 'Dosing based on the load',
                 'body'   => 'Intelligent Dosing adds detergent according to the load inside the drum, helping reduce overuse while protecting wash consistency.',
                 'points' => ['Load-based dosing', 'Less waste', 'Better consistency', 'ClarusVibe where applicable'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
             [
                 'name'   => 'Multisave',
                 'label'  => 'One dosing unit for multiple washers',
                 'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting accurate consumption control in multi-washer laundry rooms.',
                 'points' => ['Up to 7 washers', 'Lower setup complexity', 'Low running costs', 'Multi-machine control'],
-                'img'    => '/images/healthcare/MultisaveEQUIP.webp',
+                'img'    => '/images/shared/MultisaveEQUIP.webp',
             ],
             [
                 'name'   => 'JETSAVE',
                 'label'  => 'Lower upkeep with water-powered dosing',
                 'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes to replace, supporting reliable dosage and easier long-term upkeep.',
                 'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
-                'img'    => '/images/healthcare/JetsaveEQUIP.webp',
+                'img'    => '/images/shared/JetsaveEQUIP.webp',
             ],
             [
                 'name'   => 'DOSAVE',
                 'label'  => 'Straightforward dosing setup',
                 'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming, supporting accurate dosing where this system is the best fit.',
                 'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Savings-focused setup'],
-                'img'    => '/images/healthcare/DOSAVEEQUIP.webp',
+                'img'    => '/images/shared/DOSAVEEQUIP.webp',
             ],
             [
                 'name'   => 'Efficient Dosing',
                 'label'  => 'Detergent control for selected CompassPro setups',
                 'body'   => 'Efficient Dosing uses the correct amount of detergent for each cycle, supporting lower detergent costs and more controlled wash results.',
                 'points' => ['Correct amount each cycle', 'Over 30% detergent cost saving where suitable', 'CompassPro', 'Cost control'],
-                'img'    => '/images/healthcare/efficientDosing_equip.webp',
+                'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
         @endphp
@@ -574,7 +574,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/healthcare/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -601,8 +601,8 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
-                                        <img src="/images/healthcare/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
-                                        <img src="/images/healthcare/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
                                     </div>
                                 </div>
 
@@ -686,14 +686,14 @@
 
             {{-- Serenity Cabinet — large product visual --}}
             <div class="lg:col-span-4 flex flex-col items-center justify-end">
-                <img src="/images/equipment/Serenity Cabinet.jpg" alt="Serenity Cabinet" loading="lazy" decoding="async"
+                <img src="/images/pages/wet-cleaning/Serenity Cabinet.jpg" alt="Serenity Cabinet" loading="lazy" decoding="async"
                      class="w-full max-w-md h-auto object-contain" style="max-height:560px;">
                 <p class="font-heading font-bold text-navy text-sm mt-4">Serenity Cabinet</p>
             </div>
 
             {{-- lifestyle + features --}}
             <div class="lg:col-span-4 flex flex-col gap-5">
-                <img src="/images/equipment/serenitywomencabinet.png" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
+                <img src="/images/pages/wet-cleaning/serenitywomencabinet.png" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
                      class="w-full h-56 object-cover rounded-2xl">
                 <div class="bg-white border border-gray-100 rounded-2xl px-6 py-2 shadow-sm flex-1">
                     <ul class="divide-y divide-gray-100">
@@ -715,7 +715,7 @@
             <div class="lg:col-span-4 flex flex-col gap-5">
                 <div class="rounded-2xl overflow-hidden bg-navy">
                     <video class="w-full h-44 object-cover" controls preload="metadata" playsinline>
-                        <source src="/images/equipment/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
+                        <source src="/images/pages/wet-cleaning/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <div class="px-5 py-4">
@@ -764,7 +764,7 @@
                     'text'  => 'For wet cleaning equipment issues that need assessment, repair support and clear next steps.',
                     'cta'   => 'View Repairs &amp; Call-outs',
                     'route' => route('repairs'),
-                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -772,7 +772,7 @@
                     'text'  => 'Planned servicing to keep wet cleaning equipment checked, maintained and better protected against avoidable disruption.',
                     'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -780,7 +780,7 @@
                     'text'  => 'Access selected Electrolux Professional equipment with lower upfront cost where rental is suitable.',
                     'cta'   => 'Ask About Equipment Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
                     'pos'   => '66% center',
                 ],
                 [
@@ -788,7 +788,7 @@
                     'text'  => 'Keep service history, parts access and aftercare clear after the wet cleaning system is installed.',
                     'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
                 ],
             ] as $card)
@@ -876,10 +876,10 @@
         {{-- All product shots front-facing, matching the home equipment teaser --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For higher general laundry volumes or mixed loads alongside wet cleaning.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/equipment/commercialwasher.webp', 'box' => 270],
-                ['title' => 'Tumble Dryers',    'copy' => 'For commercial drying demand outside delicate wet cleaning loads.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/equipment/line6000-tumble-dryer.webp', 'box' => 245],
-                ['title' => 'Finishing Equipment',         'copy' => 'For pressing, form finishing and garment presentation after cleaning.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/equipment/IB623_FRONT_NEW.jpg', 'box' => 300],
-                ['title' => 'Drying Cabinets',             'copy' => 'For shoes, gloves and specialist items that need controlled drying without tumble action.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/equipment/drying_cabinetscards.jpg', 'box' => 260],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For higher general laundry volumes or mixed loads alongside wet cleaning.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
+                ['title' => 'Tumble Dryers',    'copy' => 'For commercial drying demand outside delicate wet cleaning loads.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp', 'box' => 245],
+                ['title' => 'Finishing Equipment',         'copy' => 'For pressing, form finishing and garment presentation after cleaning.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
+                ['title' => 'Drying Cabinets',             'copy' => 'For shoes, gloves and specialist items that need controlled drying without tumble action.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/shared/drying_cabinetscards.jpg', 'box' => 260],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">

@@ -26,7 +26,7 @@
 <section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 480px; background-color: #011E41;">
 
     {{-- Background image --}}
-    <img src="/images/healthcare/services-overview-hero.jpg"
+    <img src="/images/pages/services/services-overview-hero.jpg"
          alt="ILS engineer shaking hands with a customer in a laundry room"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-top">
@@ -128,10 +128,10 @@
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-Outs',               'body' => 'Call-out and repair support when commercial laundry equipment needs to return to service.',                          'cta' => 'View Repairs & Call-Outs',              'href' => route('repairs'),           'img' => '/images/healthcare/repairs-callouts.jpg',                'alt' => 'Repairs and Call-Outs',           'pos' => 'center 40%', 'bullets' => ['Fault review', 'Repair response', 'Service visit']],
-        ['title' => 'Preventive Maintenance Contracts',  'body' => 'Planned inspections to protect equipment reliability and keep service records clear.',                               'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/healthcare/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',          'pos' => '80% center', 'bullets' => ['Planned checks', 'Service records', 'Maintenance control']],
-        ['title' => 'Equipment Rental',                  'body' => 'Access selected Electrolux Professional laundry equipment without one large purchase.',                              'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/healthcare/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',                'pos' => '66% center', 'bullets' => ['Lower upfront cost', 'Installed equipment', 'Included support']],
-        ['title' => 'Support & Aftercare',               'body' => 'Ongoing service for parts checks, service history and future equipment planning.',                                   'cta' => 'View Support & Aftercare',              'href' => route('parts-aftercare'),   'img' => '/images/healthcare/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',             'pos' => 'center center', 'bullets' => ['Parts support', 'Service history', 'Aftercare planning']],
+        ['title' => 'Repairs & Call-Outs',               'body' => 'Call-out and repair support when commercial laundry equipment needs to return to service.',                          'cta' => 'View Repairs & Call-Outs',              'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                'alt' => 'Repairs and Call-Outs',           'pos' => 'center 40%', 'bullets' => ['Fault review', 'Repair response', 'Service visit']],
+        ['title' => 'Preventive Maintenance Contracts',  'body' => 'Planned inspections to protect equipment reliability and keep service records clear.',                               'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',          'pos' => '80% center', 'bullets' => ['Planned checks', 'Service records', 'Maintenance control']],
+        ['title' => 'Equipment Rental',                  'body' => 'Access selected Electrolux Professional laundry equipment without one large purchase.',                              'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',                'pos' => '66% center', 'bullets' => ['Lower upfront cost', 'Installed equipment', 'Included support']],
+        ['title' => 'Support & Aftercare',               'body' => 'Ongoing service for parts checks, service history and future equipment planning.',                                   'cta' => 'View Support & Aftercare',              'href' => route('parts-aftercare'),   'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',             'pos' => 'center center', 'bullets' => ['Parts support', 'Service history', 'Aftercare planning']],
     ],
 ])
 
@@ -268,10 +268,10 @@
 <section class="w-full overflow-hidden">
     <div style="display:flex; flex-wrap:wrap;">
         @foreach ([
-            ['num' => '01.', 'title' => 'Report the service need', 'body' => 'Tell us the equipment type, fault, maintenance requirement or equipment rental enquiry.', 'img' => '/images/healthcare/services-how-01.jpg'],
-            ['num' => '02.', 'title' => 'Confirm the details',     'body' => 'Equipment condition, access details and service history are reviewed before the response is arranged.', 'img' => '/images/healthcare/services-how-02.jpg'],
-            ['num' => '03.', 'title' => 'Arrange the service',     'body' => 'Call-out, inspection, equipment rental setup, installation or follow-up service is arranged according to the requirement.', 'img' => '/images/healthcare/rentalstripimage.jpg', 'pos' => '20% center'],
-            ['num' => '04.', 'title' => 'Keep records clear',      'body' => 'Service history, parts information and aftercare notes support future equipment decisions.', 'img' => '/images/healthcare/service-contracts-hero.png', 'pos' => '70% center'],
+            ['num' => '01.', 'title' => 'Report the service need', 'body' => 'Tell us the equipment type, fault, maintenance requirement or equipment rental enquiry.', 'img' => '/images/pages/services/services-how-01.jpg'],
+            ['num' => '02.', 'title' => 'Confirm the details',     'body' => 'Equipment condition, access details and service history are reviewed before the response is arranged.', 'img' => '/images/pages/services/services-how-02.jpg'],
+            ['num' => '03.', 'title' => 'Arrange the service',     'body' => 'Call-out, inspection, equipment rental setup, installation or follow-up service is arranged according to the requirement.', 'img' => '/images/shared/rentalstripimage.jpg', 'pos' => '20% center'],
+            ['num' => '04.', 'title' => 'Keep records clear',      'body' => 'Service history, parts information and aftercare notes support future equipment decisions.', 'img' => '/images/shared/service-contracts-hero.png', 'pos' => '70% center'],
         ] as $card)
         <div class="svc-gallery-card">
             <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
@@ -368,7 +368,7 @@
 
     {{-- RIGHT: image pinned to 40% (matches the standard home strip) --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/services-overview-hero.jpg"
+        <img src="/images/pages/services/services-overview-hero.jpg"
              alt="ILS engineer with a commercial laundry customer"
              class="w-full h-full object-cover" style="object-position: center 30%;"
              loading="lazy" decoding="async">

@@ -5,7 +5,7 @@ $equipmentList = $equipment ?? [
     ['img' => 'line6000-barrier-washer', 'name' => 'Barrier Washers', 'desc' => 'For hygiene-critical laundry where soiled and clean linen must stay separated across a barrier.', 'box' => 250, 'mb' => -20],
     ['img' => 'commercialwasher',        'name' => 'Washing Machines', 'desc' => 'For broader healthcare wash needs, daily capacity and consistent professional washing.',                       'box' => 270, 'mb' => -35],
     ['img' => 'Tumble-dryers_Heat-Pump_1-1',   'name' => 'Dryers',      'desc' => 'For post-wash continuity, drying control and steady clean-side movement through the day.',                    'box' => 245],
-    ['img' => 'drying-cabinet', 'src' => '/images/healthcare/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist textiles where fabric care matters.', 'box' => 260, 'mb' => 20],
+    ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist textiles where fabric care matters.', 'box' => 260, 'mb' => 20],
     ['img' => 'IB623_FRONT_NEW', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, hygiene presentation and linen ready for storage or return to use.'],
 ];
 @endphp
@@ -40,7 +40,7 @@ $equipmentList = $equipment ?? [
                     <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
-                @php $imgSrc = $eq['src'] ?? '/images/equipment/' . $eq['img'] . '.' . ($eq['ext'] ?? 'webp'); @endphp
+                @php $imgSrc = $eq['src'] ?? '/images/shared/' . $eq['img'] . '.' . ($eq['ext'] ?? 'webp'); @endphp
                 @if($loop->last)
                 {{-- Ironer: wide/flat — bottom-align so the base sits flush with the others --}}
                 <div class="w-full flex items-end justify-center" style="height:300px;">

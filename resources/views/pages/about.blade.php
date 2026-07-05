@@ -11,7 +11,7 @@
 ══════════════════════════════════════════ -->
 <section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="{{ asset('images/about/heroaboutusimage.webp') }}"
+    <img src="{{ asset('images/pages/about/heroaboutusimage.webp') }}"
          alt="ILS engineering team"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-[85%_center]">
@@ -192,7 +192,7 @@
 ══════════════════════════════════════════ -->
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -349,10 +349,10 @@
     {{-- Full-width image strip — no container, no padding, edge to edge --}}
     @php
     $siteSteps = [
-        ['num'=>'1','title'=>'Review the operation',        'desc'=>'Review the equipment, access, utilities, usage, service history and priorities.',                       'img'=>'images/about/Review%20the%20operation.png'],
-        ['num'=>'2','title'=>'Recommend the right support', 'desc'=>'Confirm whether equipment supply, rental, repair, Preventive Maintenance or aftercare is needed.',       'img'=>'images/about/keepsupportclear.png'],
-        ['num'=>'3','title'=>'Plan the work',               'desc'=>'Coordinate delivery, installation, servicing, reports and follow-up around the equipment in use.',       'img'=>'images/healthcare/line-6000-solutions.jpg'],
-        ['num'=>'4','title'=>'Keep support clear',          'desc'=>'Use service records, parts support and aftercare to guide future service or replacement needs.',        'img'=>'images/healthcare/repairs-hero.jpg'],
+        ['num'=>'1','title'=>'Review the operation',        'desc'=>'Review the equipment, access, utilities, usage, service history and priorities.',                       'img'=>'images/pages/about/Review%20the%20operation.png'],
+        ['num'=>'2','title'=>'Recommend the right support', 'desc'=>'Confirm whether equipment supply, rental, repair, Preventive Maintenance or aftercare is needed.',       'img'=>'images/pages/about/keepsupportclear.png'],
+        ['num'=>'3','title'=>'Plan the work',               'desc'=>'Coordinate delivery, installation, servicing, reports and follow-up around the equipment in use.',       'img'=>'images/shared/line-6000-solutions.jpg'],
+        ['num'=>'4','title'=>'Keep support clear',          'desc'=>'Use service records, parts support and aftercare to guide future service or replacement needs.',        'img'=>'images/shared/repairs-hero.jpg'],
     ];
     @endphp
 
@@ -460,7 +460,7 @@
 ══════════════════════════════════════════ -->
 <section class="relative overflow-hidden" style="min-height:540px;">
     {{-- Background image --}}
-    <img src="{{ asset('images/about/ecovadisbackground.webp') }}"
+    <img src="{{ asset('images/pages/about/ecovadisbackground.webp') }}"
          alt="Responsible equipment and sustainability"
          class="absolute inset-0 w-full h-full object-cover object-center">
     {{-- Dark overlay --}}
@@ -469,7 +469,7 @@
     <div class="relative z-10 flex items-center px-6 lg:px-20 py-20 gap-10 lg:gap-16" style="min-height:580px;">
         {{-- Left: EcoVadis medal, huge, outside the card --}}
         <div class="hidden lg:flex flex-1 items-center justify-center">
-            <img src="{{ asset('images/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
+            <img src="{{ asset('images/pages/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
                  alt="EcoVadis Sustainability Gold 2025"
                  class="w-[480px] xl:w-[560px] h-auto object-contain drop-shadow-2xl">
         </div>

@@ -13,7 +13,7 @@ return [
             'name' => 'WS6', 'slug' => 'ws6', 'capacity' => '8–35 kg',
             'title' => 'Line 6000 high-spin washer – WS6',
             'summary' => 'Line 6000 high-spin commercial washer. CompassPro / ClarusVibe controls with Automatic Savings and Power Balance. Capacity 8–35 kg.',
-            'image_path' => 'images/equipment/WS6 — Line 6000 High-Spin Washer.jpg',
+            'image_path' => 'images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Spin type' => 'High spin', 'Capacity' => '8 – 35 kg',
@@ -28,7 +28,7 @@ return [
             'name' => 'WN6', 'slug' => 'wn6', 'capacity' => '8–35 kg',
             'title' => 'Line 6000 normal-spin washer – WN6',
             'summary' => 'Line 6000 normal-spin commercial washer. CompassPro controls with Automatic and Integrated Savings. Capacity 8–35 kg.',
-            'image_path' => 'images/equipment/WN6 — Line 6000 Normal-Spin Washer.jpg',
+            'image_path' => 'images/pages/commercial-washers/WN6 — Line 6000 Normal-Spin Washer.jpg',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Spin type' => 'Normal spin', 'Capacity' => '8 – 35 kg',
@@ -43,7 +43,7 @@ return [
             'name' => 'WH6-CV — ClarusVibe Washer Variants', 'slug' => 'wh6-cv', 'capacity' => '7–33 kg',
             'title' => 'Line 6000 ClarusVibe washer variants – WH6-CV',
             'summary' => 'ClarusVibe washer variants for sites that need clearer programme control and a more guided operator experience. Capacity 7–33 kg.',
-            'image_path' => 'images/equipment/commercialwasher.webp',
+            'image_path' => 'images/pages/commercial-washers/commercialwasher.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Control' => 'ClarusVibe', 'Capacity' => '7 – 33 kg',
@@ -57,7 +57,7 @@ return [
             'name' => 'WH6-LAC — Lagoon Advanced Care Washer Variants', 'slug' => 'wh6-lac', 'capacity' => '6–33 kg',
             'title' => 'Lagoon Advanced Care washer variants – WH6-LAC',
             'summary' => 'Washer variants connected to Lagoon Advanced Care for specialist wet cleaning and textile care. Capacity 6–33 kg.',
-            'image_path' => 'images/equipment/commercialwasher.webp',
+            'image_path' => 'images/pages/commercial-washers/commercialwasher.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Care' => 'Lagoon Advanced Care', 'Capacity' => '6 – 33 kg',
@@ -71,7 +71,7 @@ return [
             'name' => 'WH6-LAG — Lagoon Washer Variant', 'slug' => 'wh6-lag', 'capacity' => '14 kg',
             'title' => 'Lagoon washer variant – WH6-LAG',
             'summary' => 'Lagoon washer variant for sites managing delicate garments and specialist care processes.',
-            'image_path' => 'images/equipment/commercialwasher.webp',
+            'image_path' => 'images/pages/commercial-washers/commercialwasher.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Care' => 'Lagoon', 'Capacity' => '14 kg',
@@ -85,7 +85,7 @@ return [
             'name' => 'W4-Series', 'slug' => 'w4-series', 'capacity' => '40–110 kg',
             'title' => 'Heavy-duty washer-extractors – W4-Series',
             'summary' => 'Heavy-duty washer-extractors for industrial and high-throughput laundries. Robust build with high extraction. Capacity 40–110 kg.',
-            'image_path' => 'images/equipment/W4-Series Washer-Extractors.png',
+            'image_path' => 'images/pages/commercial-washers/W4-Series Washer-Extractors.png',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'W4-Series', 'Type' => 'Heavy-duty washer-extractor', 'Capacity' => '40 – 110 kg',
@@ -100,7 +100,7 @@ return [
             'name' => 'Quickwash QWC', 'slug' => 'quickwash-qwc', 'capacity' => null,
             'title' => 'Quick-cycle commercial washer – QWC',
             'summary' => 'Quick-cycle washer for fast turnaround where short wash times and high availability matter most.',
-            'image_path' => 'images/equipment/Quickwash QWC.jpg',
+            'image_path' => 'images/pages/commercial-washers/Quickwash QWC.jpg',
             'specs' => [
                 'Main specification' => ['Drum volume' => '53 lt', 'Drum diameter' => '452 mm', 'G-factor' => '425'],
                 'Dimensions' => ['Width' => '595 mm', 'Depth' => '681 mm', 'Height' => '832 mm'],
@@ -112,7 +112,7 @@ return [
             'name' => 'PW9C', 'slug' => 'pw9c', 'capacity' => null,
             'title' => 'Professional washer – PW9C',
             'summary' => 'Professional washer for standard commercial laundry duties and dependable everyday performance.',
-            'image_path' => 'images/equipment/PW9C.jpg',
+            'image_path' => 'images/pages/commercial-washers/PW9C.jpg',
             'specs' => [
                 'Main specification' => [
                     'Max. capacity, filling factor 1:9, kg' => '9',
@@ -133,7 +133,7 @@ return [
             'name' => 'TD6 — Line 6000 Single Pocket Tumble Dryer', 'slug' => 'td6', 'capacity' => '6–60 kg',
             'title' => 'Line 6000 single pocket tumble dryer – TD6',
             'summary' => 'Commercial tumble dryer range for busy laundry rooms needing drying performance, fabric care and long-term support.',
-            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'image_path' => 'images/pages/dryers/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Type' => 'Single pocket tumble dryer', 'Capacity' => '6 – 60 kg',
@@ -143,20 +143,20 @@ return [
             ],
             'sectors' => [],
             'variants' => [
-                ['slug' => 'td6-6',     'name' => 'TD6-6 — Line 6000 Single Pocket Tumble Dryer',     'capacity' => '6–7 kg',   'image_path' => 'images/equipment/TD6-6.jpg'],
-                ['slug' => 'td6-11',    'name' => 'TD6-11 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '11 kg',    'image_path' => 'images/equipment/TD6-11.jpg'],
-                ['slug' => 'td6-14',    'name' => 'TD6-14 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '14 kg',    'image_path' => 'images/equipment/TD6-14.jpg'],
-                ['slug' => 'td6-16',    'name' => 'TD6-16 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '16–20 kg', 'image_path' => 'images/equipment/TD6-16.jpg'],
-                ['slug' => 'td6-30',    'name' => 'TD6-30 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '30–37 kg', 'image_path' => 'images/equipment/TD6-30.jpg'],
-                ['slug' => 'td6-45',    'name' => 'TD6-45 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '45 kg',    'image_path' => 'images/equipment/TD6-45.jpg'],
-                ['slug' => 'td6-45sld', 'name' => 'TD6-45SLD — Line 6000 Single Pocket Tumble Dryer', 'capacity' => '45–60 kg', 'image_path' => 'images/equipment/TD6-45SLD.jpg'],
+                ['slug' => 'td6-6',     'name' => 'TD6-6 — Line 6000 Single Pocket Tumble Dryer',     'capacity' => '6–7 kg',   'image_path' => 'images/pages/dryers/TD6-6.jpg'],
+                ['slug' => 'td6-11',    'name' => 'TD6-11 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '11 kg',    'image_path' => 'images/pages/dryers/TD6-11.jpg'],
+                ['slug' => 'td6-14',    'name' => 'TD6-14 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '14 kg',    'image_path' => 'images/pages/dryers/TD6-14.jpg'],
+                ['slug' => 'td6-16',    'name' => 'TD6-16 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '16–20 kg', 'image_path' => 'images/pages/dryers/TD6-16.jpg'],
+                ['slug' => 'td6-30',    'name' => 'TD6-30 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '30–37 kg', 'image_path' => 'images/pages/dryers/TD6-30.jpg'],
+                ['slug' => 'td6-45',    'name' => 'TD6-45 — Line 6000 Single Pocket Tumble Dryer',    'capacity' => '45 kg',    'image_path' => 'images/pages/dryers/TD6-45.jpg'],
+                ['slug' => 'td6-45sld', 'name' => 'TD6-45SLD — Line 6000 Single Pocket Tumble Dryer', 'capacity' => '45–60 kg', 'image_path' => 'images/pages/dryers/TD6-45SLD.jpg'],
             ],
         ],
         [
             'name' => 'Line 6000 Heat Pump Dryer Variants', 'slug' => 'heat-pump', 'capacity' => 'Heat Pump',
             'title' => 'Line 6000 Heat Pump Dryer variants',
             'summary' => 'Heat Pump Dryer route for sites looking to reduce drying energy pressure where the room setup is suitable.',
-            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'image_path' => 'images/pages/dryers/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000', 'Technology' => 'Heat Pump', 'Energy' => 'Up to 65% energy saving',
@@ -170,7 +170,7 @@ return [
             'name' => 'Line 6000 Stacked Dryer Variants', 'slug' => 'stacked-dryers', 'capacity' => 'Stacked',
             'title' => 'Line 6000 stacked dryer variants',
             'summary' => 'Stacked dryer route for sites that need drying capacity while protecting floor space.',
-            'image_path' => 'images/equipment/TD6-17S.jpg',
+            'image_path' => 'images/pages/dryers/TD6-17S.jpg',
             'specs' => [
                 'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Stacked tumble dryer', 'Models' => 'TD6-17S, TD6-24S', 'Strength' => 'Two dryers, one footprint'],
                 'Dimensions' => ['Footprint' => 'Stacked — minimal floor area', 'Installation' => 'Floor-standing'],
@@ -181,7 +181,7 @@ return [
             'name' => 'TD6-LAC — Lagoon Advanced Care Dryer Variants', 'slug' => 'td6-lac', 'capacity' => 'Lagoon Advanced Care',
             'title' => 'Lagoon Advanced Care dryer variants – TD6-LAC',
             'summary' => 'Dryer variants connected to specialist textile care where fabric handling and process control matter.',
-            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'image_path' => 'images/pages/dryers/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => ['Range' => 'Line 6000', 'Care' => 'Lagoon Advanced Care', 'Control' => 'CompassPro', 'Key features' => 'Moisture Balance, Textile Care'],
                 'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented / condense options'],
@@ -192,7 +192,7 @@ return [
             'name' => 'Quickdry Condense', 'slug' => 'quickdry-condense', 'capacity' => 'Compact',
             'title' => 'Quickdry Condense compact dryer',
             'summary' => 'Condense dryer option for smaller sites that need professional drying performance in a compact setup.',
-            'image_path' => 'images/equipment/Quickdry Condense.jpg',
+            'image_path' => 'images/pages/dryers/Quickdry Condense.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Condense dryer', 'Strength' => 'Compact fit, easy operation', 'Best for' => 'Small business / small site drying'],
                 'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing, no exhaust'],
@@ -203,7 +203,7 @@ return [
             'name' => 'PD9C Compact Dryer', 'slug' => 'pd9c', 'capacity' => '9 kg',
             'title' => 'PD9C compact professional dryer',
             'summary' => 'Compact professional dryer for smaller sites needing more than domestic drying equipment.',
-            'image_path' => 'images/equipment/PD9C.jpg',
+            'image_path' => 'images/pages/dryers/PD9C.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Compact professional dryer', 'Capacity' => '9 kg', 'Best for' => 'Smaller sites needing professional drying'],
                 'Dimensions' => ['Footprint' => 'Compact', 'Installation' => 'Floor-standing'],
@@ -214,7 +214,7 @@ return [
             'name' => 'T-Series Tumble Dryers', 'slug' => 't-series', 'capacity' => '45–60 kg',
             'title' => 'T-Series heavy-duty tumble dryers',
             'summary' => 'Large-capacity tumble dryer route for high-volume laundry rooms needing heavy-duty drying throughput and long-term support.',
-            'image_path' => 'images/equipment/T4900CR.jpg',
+            'image_path' => 'images/pages/dryers/T4900CR.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Heavy-duty tumble dryer', 'Models' => 'T4900CR, T41200CR', 'Capacity' => '45 – 60 kg', 'Best for' => 'High-volume commercial drying'],
                 'Dimensions' => ['Footprint' => 'Floor-standing', 'Installation' => 'Vented'],
@@ -229,7 +229,7 @@ return [
             'name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'capacity' => '2.5–3.3 m',
             'title' => 'Line 6000 flatwork ironers',
             'summary' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.',
-            'image_path' => 'images/equipment/ironers/flatwork-ib57.jpg',
+            'image_path' => 'images/pages/ironers/flatwork-ib57.jpg',
             'specs' => [
                 'Main specification' => ['Range' => 'Line 6000', 'Type' => 'Flatwork ironer', 'Working width' => '2.5 – 3.3 m', 'Models' => 'IB5725, IB5730, IB5733 (+ -F feeder)'],
                 'Dimensions' => ['Working width' => '2.5 – 3.3 m', 'Installation' => 'Floor-standing, serviced install'],
@@ -240,7 +240,7 @@ return [
             'name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'capacity' => 'Ø 480 mm',
             'title' => 'Ø 480 mm cylinder ironers',
             'summary' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.',
-            'image_path' => 'images/equipment/ironers/cylinder-480-ic648.jpg',
+            'image_path' => 'images/pages/ironers/cylinder-480-ic648.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Cylinder ironer', 'Cylinder' => 'Ø 480 mm', 'Delivery' => 'Front or rear', 'Automation' => 'Up to feeding, folding & stacking', 'Models' => 'IC648 21 / 25 / 32 series, IV648'],
                 'Dimensions' => ['Cylinder' => 'Ø 480 mm', 'Installation' => 'Floor-standing'],
@@ -251,7 +251,7 @@ return [
             'name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'capacity' => 'Ø 330 mm',
             'title' => 'Ø 330 mm cylinder ironers',
             'summary' => 'Mid-size cylinder ironers for steady on-premise finishing.',
-            'image_path' => 'images/equipment/ironers/cylinder-330-ic633.jpg',
+            'image_path' => 'images/pages/ironers/cylinder-330-ic633.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Cylinder ironer', 'Cylinder' => 'Ø 330 mm', 'Models' => 'IC63316, IC63320'],
                 'Dimensions' => ['Cylinder' => 'Ø 330 mm', 'Installation' => 'Floor-standing'],
@@ -262,7 +262,7 @@ return [
             'name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'capacity' => 'Ø 230 mm',
             'title' => 'Ø 230 mm bed-type ironers',
             'summary' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.',
-            'image_path' => 'images/equipment/ironers/bed-230-ib623.jpg',
+            'image_path' => 'images/pages/ironers/bed-230-ib623.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Bed-type ironer', 'Cylinder' => 'Ø 230 mm', 'Models' => 'IB62310, IB62314, IB62316'],
                 'Dimensions' => ['Cylinder' => 'Ø 230 mm', 'Installation' => 'Compact, floor-standing'],
@@ -277,40 +277,40 @@ return [
             'name' => 'Standard Drying Cabinets', 'slug' => 'standard-drying-cabinets', 'capacity' => 'Standard',
             'title' => 'Standard drying cabinets',
             'summary' => 'Gentle hang-drying cabinets for garments and linen across the standard range.',
-            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'image_path' => 'images/pages/drying-cabinets/Drying-cabinets_image.webp',
             'specs' => [
                 'Main specification' => ['Type' => 'Drying cabinet', 'Range' => 'Standard', 'Models' => 'DC6-4, DC6-8, DC6-14', 'Strength' => 'Gentle, mechanical-action-free drying'],
                 'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing'],
             ],
             'sectors' => [],
             'variants' => [
-                ['slug' => 'dc6-4',  'name' => 'DC6-4 — Standard Drying Cabinet',  'image_path' => 'images/equipment/Standard Drying Cabinets.jpg'],
-                ['slug' => 'dc6-8',  'name' => 'DC6-8 — Standard Drying Cabinet',  'image_path' => 'images/equipment/Standard Drying CabinetsDC6-8.jpg'],
-                ['slug' => 'dc6-14', 'name' => 'DC6-14 — Standard Drying Cabinet', 'image_path' => 'images/equipment/Standard Drying CabinetsDC6-14.jpg'],
+                ['slug' => 'dc6-4',  'name' => 'DC6-4 — Standard Drying Cabinet',  'image_path' => 'images/pages/drying-cabinets/Standard Drying Cabinets.jpg'],
+                ['slug' => 'dc6-8',  'name' => 'DC6-8 — Standard Drying Cabinet',  'image_path' => 'images/pages/drying-cabinets/Standard Drying CabinetsDC6-8.jpg'],
+                ['slug' => 'dc6-14', 'name' => 'DC6-14 — Standard Drying Cabinet', 'image_path' => 'images/pages/drying-cabinets/Standard Drying CabinetsDC6-14.jpg'],
             ],
         ],
         [
             'name' => 'Heat Pump Drying Cabinets', 'slug' => 'heat-pump-drying-cabinets', 'capacity' => 'Heat Pump',
             'title' => 'Heat pump drying cabinets',
             'summary' => 'Energy-saving heat pump drying cabinets that cut drying energy while protecting fabrics.',
-            'image_path' => 'images/healthcare/Drying-cabinets_image.webp',
+            'image_path' => 'images/pages/drying-cabinets/Drying-cabinets_image.webp',
             'specs' => [
                 'Main specification' => ['Type' => 'Heat pump drying cabinet', 'Models' => 'DC6-4HP, DC6-8HP, DC6-10HP, DC6-14HP, DC7-4HP', 'Efficiency' => 'Heat pump — lower drying energy'],
                 'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing, no exhaust'],
             ],
             'sectors' => [],
             'variants' => [
-                ['slug' => 'dc6-14hp', 'name' => 'DC6-14HP — Heat Pump Drying Cabinet', 'image_path' => 'images/equipment/Drying Cabinets - Heat Pumpdc6-14hp.jpg'],
-                ['slug' => 'dc7-4hp',  'name' => 'DC7-4HP — Heat Pump Drying Cabinet',  'image_path' => 'images/equipment/Drying Cabinets - Heat Pumpdc7-4hp.jpg'],
-                ['slug' => 'dc7-4hph', 'name' => 'DC7-4HPh — Heat Pump Drying Cabinet', 'image_path' => 'images/equipment/Drying Cabinets - Heat PumpDC7-4HPH.jpg'],
-                ['slug' => '1lzs03',   'name' => '1LZS03 — Heat Pump Drying Cabinet',  'image_path' => 'images/equipment/Drying Cabinets - Heat Pump 1LZS03.jpg'],
+                ['slug' => 'dc6-14hp', 'name' => 'DC6-14HP — Heat Pump Drying Cabinet', 'image_path' => 'images/pages/drying-cabinets/Drying Cabinets - Heat Pumpdc6-14hp.jpg'],
+                ['slug' => 'dc7-4hp',  'name' => 'DC7-4HP — Heat Pump Drying Cabinet',  'image_path' => 'images/pages/drying-cabinets/Drying Cabinets - Heat Pumpdc7-4hp.jpg'],
+                ['slug' => 'dc7-4hph', 'name' => 'DC7-4HPh — Heat Pump Drying Cabinet', 'image_path' => 'images/pages/drying-cabinets/Drying Cabinets - Heat PumpDC7-4HPH.jpg'],
+                ['slug' => '1lzs03',   'name' => '1LZS03 — Heat Pump Drying Cabinet',  'image_path' => 'images/pages/drying-cabinets/Drying Cabinets - Heat Pump 1LZS03.jpg'],
             ],
         ],
         [
             'name' => 'Workwear Drying Cabinet', 'slug' => 'workwear-drying-cabinet', 'capacity' => 'Workwear',
             'title' => 'Workwear drying cabinet',
             'summary' => 'Specialist cabinet for drying workwear, PPE and heavier garments.',
-            'image_path' => 'images/equipment/Drying Cabinets - Heat PumpDC6-15WW.jpg',
+            'image_path' => 'images/pages/drying-cabinets/Drying Cabinets - Heat PumpDC6-15WW.jpg',
             'specs' => [
                 'Main specification' => ['Type' => 'Workwear drying cabinet', 'Models' => 'DC6-15WW', 'Strength' => 'Workwear, PPE and heavier garments'],
                 'Dimensions' => ['Type' => 'Cabinet', 'Installation' => 'Floor-standing'],
@@ -325,7 +325,7 @@ return [
             'name' => 'WB6 — Line 6000 Evolution Barrier Washer', 'slug' => 'wb6', 'capacity' => '13–110 kg',
             'title' => 'Line 6000 Evolution barrier washer – WB6',
             'summary' => 'Barrier washer for hygiene-critical laundry rooms needing clean/dirty separation, guided operation and long-term support.',
-            'image_path' => 'images/equipment/line6000-barrier-washer.webp',
+            'image_path' => 'images/pages/barrier-washers/line6000-barrier-washer.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'Line 6000 Evolution', 'Type' => 'Barrier (hygiene) washer', 'Capacity' => '13 – 110 kg',
@@ -335,10 +335,10 @@ return [
             ],
             'sectors' => [],
             'variants' => [
-                ['slug' => 'wb6-13',  'name' => 'WB6-13 — Line 6000 Evolution Barrier Washer',  'capacity' => '13–18 kg',  'image_path' => 'images/equipment/WB6-13.jpg'],
-                ['slug' => 'wb6-20',  'name' => 'WB6-20 — Line 6000 Evolution Barrier Washer',  'capacity' => '20–27 kg',  'image_path' => 'images/equipment/WB6-20.jpg'],
-                ['slug' => 'wb6-35',  'name' => 'WB6-35 — Line 6000 Evolution Barrier Washer',  'capacity' => '35–70 kg',  'image_path' => 'images/equipment/WB6-35.jpg'],
-                ['slug' => 'wb6-110', 'name' => 'WB6-110 — Line 6000 Evolution Barrier Washer', 'capacity' => '90–110 kg', 'image_path' => 'images/equipment/WB6-110.jpg'],
+                ['slug' => 'wb6-13',  'name' => 'WB6-13 — Line 6000 Evolution Barrier Washer',  'capacity' => '13–18 kg',  'image_path' => 'images/pages/barrier-washers/WB6-13.jpg'],
+                ['slug' => 'wb6-20',  'name' => 'WB6-20 — Line 6000 Evolution Barrier Washer',  'capacity' => '20–27 kg',  'image_path' => 'images/pages/barrier-washers/WB6-20.jpg'],
+                ['slug' => 'wb6-35',  'name' => 'WB6-35 — Line 6000 Evolution Barrier Washer',  'capacity' => '35–70 kg',  'image_path' => 'images/pages/barrier-washers/WB6-35.jpg'],
+                ['slug' => 'wb6-110', 'name' => 'WB6-110 — Line 6000 Evolution Barrier Washer', 'capacity' => '90–110 kg', 'image_path' => 'images/pages/barrier-washers/WB6-110.jpg'],
             ],
         ],
     ],
@@ -349,7 +349,7 @@ return [
             'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon-advanced-care', 'capacity' => null,
             'title' => 'Lagoon Advanced Care wet cleaning',
             'summary' => 'Professional wet cleaning for delicate and specialist textiles — a water-based alternative to traditional dry cleaning. Irish Laundry Systems can advise on suitability, setup and support.',
-            'image_path' => 'images/healthcare/lagoon-advanced-care.webp',
+            'image_path' => 'images/pages/wet-cleaning/lagoon-advanced-care.webp',
             'specs' => [
                 'Main specification' => ['Process' => 'Wet cleaning', 'Care system' => 'Lagoon Advanced Care', 'Suited to' => 'Delicate and specialist textiles', 'Control' => 'ClarusVibe'],
             ],
@@ -363,7 +363,7 @@ return [
             'name' => 'myPRO Washer', 'slug' => 'mypro-washer', 'capacity' => '8 kg',
             'title' => 'myPRO semi-professional washing machine',
             'summary' => 'Compact semi-professional washing machine for smaller sites and lighter commercial use — faster cycles and a stronger build than a domestic machine.',
-            'image_path' => 'images/equipment/myPRO-8K-washer.webp',
+            'image_path' => 'images/pages/semi-professional/myPRO-8K-washer.webp',
             'specs' => [
                 'Main specification' => ['Range' => 'myPRO', 'Type' => 'Semi-professional', 'Capacity' => '8 kg', 'Install' => 'Freestanding'],
             ],
@@ -373,7 +373,7 @@ return [
             'name' => 'myPRO Dryer', 'slug' => 'mypro-dryer', 'capacity' => '8 kg',
             'title' => 'myPRO semi-professional tumble dryer',
             'summary' => 'Compact semi-professional tumble dryer to pair with the myPRO washer for smaller sites and lighter commercial use.',
-            'image_path' => 'images/equipment/line6000-tumble-dryer.webp',
+            'image_path' => 'images/pages/dryers/line6000-tumble-dryer.webp',
             'specs' => [
                 'Main specification' => ['Range' => 'myPRO', 'Type' => 'Semi-professional', 'Capacity' => '8 kg', 'Install' => 'Freestanding'],
             ],
@@ -383,7 +383,7 @@ return [
             'name' => 'myPRO XL', 'slug' => 'mypro-xl', 'capacity' => '12 kg',
             'title' => 'myPRO XL semi-professional washer and dryer range',
             'summary' => 'myPRO XL gives smaller and decentralised laundry sites a 12 kg option for heavier daily washing and drying demand.',
-            'image_path' => 'images/equipment/myPROXL 12kg.webp',
+            'image_path' => 'images/pages/semi-professional/myPROXL 12kg.webp',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'myPRO XL', 'Type' => 'Semi-professional', 'Capacity' => '12 kg',
@@ -397,7 +397,7 @@ return [
             'name' => 'myPROzip', 'slug' => 'myprozip', 'capacity' => '8 kg',
             'title' => 'myPROzip guest-operated laundry equipment',
             'summary' => 'myPROzip is designed for guest-operated laundry facilities where users need simple, clear machines that are easy to understand and ready for payment system integration.',
-            'image_path' => 'images/equipment/Self Service Laundry.png',
+            'image_path' => 'images/pages/semi-professional/Self Service Laundry.png',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'myPROzip', 'Type' => 'Semi-professional, guest-operated', 'Capacity' => '8 kg',
@@ -411,7 +411,7 @@ return [
             'name' => 'myPRO Ironers / Light Finishing', 'slug' => 'mypro-finishing', 'capacity' => null,
             'title' => 'myPRO ironers and light finishing options',
             'summary' => 'Where a site needs light finishing support alongside washing and drying, myPRO ironers and finishing options can help complete the setup without creating a full commercial finishing room.',
-            'image_path' => 'images/equipment/myPRO - IronersIS185.jpg',
+            'image_path' => 'images/pages/semi-professional/myPRO - IronersIS185.jpg',
             'specs' => [
                 'Main specification' => [
                     'Range' => 'myPRO', 'Type' => 'Light finishing', 'Format' => 'Compact',
@@ -428,7 +428,7 @@ return [
             'name' => 'Detergents & Consumables', 'slug' => 'detergents-consumables', 'capacity' => null,
             'title' => 'Laundry detergents and consumables',
             'summary' => 'Detergents, dosing products and consumables to keep commercial laundry equipment and workflows running. Irish Laundry Systems can advise on the right products for your equipment and process.',
-            'image_path' => 'images/equipment/Strip1.jpeg',
+            'image_path' => 'images/shared/Strip1.jpeg',
             'specs' => [
                 'Main specification' => ['Type' => 'Consumables & accessories', 'Includes' => 'Detergents, dosing, parts and supporting items'],
             ],

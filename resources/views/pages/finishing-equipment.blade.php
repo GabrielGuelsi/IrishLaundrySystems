@@ -10,7 +10,7 @@
 
 {{-- HERO --}}
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial finishing equipment"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial finishing equipment"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -95,7 +95,7 @@
                     'body'     => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.',
                     'points'   => ['Daily finishing', 'Garment care', 'Room fit'],
                     'primary'  => 'Ask About Ironing Tables',
-                    'img'      => '/images/equipment/FIT1.jpg',
+                    'img'      => '/images/pages/finishing-equipment/FIT1.jpg',
                 ],
                 [
                     'id'       => 'steam-support',
@@ -103,7 +103,7 @@
                     'body'     => 'For hand-finishing, touch-ups and garment presentation where steady steam support matters.',
                     'points'   => ['Hand finishing', 'Steam support', 'Flexible use'],
                     'primary'  => 'Ask About Steam Support',
-                    'img'      => '/images/equipment/FSB3.3.jpeg',
+                    'img'      => '/images/pages/finishing-equipment/FSB3.3.jpeg',
                 ],
                 [
                     'id'       => 'presses',
@@ -111,7 +111,7 @@
                     'body'     => 'For garments that need stronger shape, sharper presentation and more consistency than manual ironing alone.',
                     'points'   => ['Garment shape', 'Consistent finish', 'Professional presentation'],
                     'primary'  => 'Ask About Presses & Finishers',
-                    'img'      => '/images/equipment/FPA1-D.jpg',
+                    'img'      => '/images/pages/finishing-equipment/FPA1-D.jpg',
                 ],
                 [
                     'id'       => 'garment-finishing',
@@ -119,7 +119,7 @@
                     'body'     => 'For shirts, trousers and uniforms where shape, creases, pleats and finish quality matter.',
                     'points'   => ['Shirt finish', 'Trouser finish', 'Uniform care'],
                     'primary'  => 'Ask About Garment Finishing',
-                    'img'      => '/images/equipment/FF1.jpg',
+                    'img'      => '/images/pages/finishing-equipment/FF1.jpg',
                 ],
             ];
         @endphp
@@ -195,14 +195,14 @@
         </div>
 
         @php
-            // Per-model images live in public/images/equipment/finishing/ named by model code
+            // Per-model images live in public/images/pages/finishing-equipment/ named by model code
             // (FIT1 keeps its existing path). Each card shows its real photo the moment the file
             // is dropped in; until then it falls back to the Electrolux Professional placeholder.
             $finPlaceholder = '/images/logo/electrolux-partner.png';
-            // Resolve a model image from images/equipment/finishing/ or images/equipment/,
+            // Resolve a model image from images/pages/finishing-equipment/,
             // trying common extensions. Returns null (→ placeholder) when nothing is found.
             $finResolve = function ($code) {
-                foreach (['images/equipment/finishing/', 'images/equipment/'] as $dir) {
+                foreach (['images/pages/finishing-equipment/'] as $dir) {
                     foreach (['jpg', 'jpeg', 'png', 'webp'] as $ext) {
                         if (file_exists(public_path($dir . $code . '.' . $ext))) {
                             return '/' . $dir . $code . '.' . $ext;
@@ -419,7 +419,7 @@
 {{-- PLANNING & SUPPORT (blue strip) --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -465,7 +465,7 @@
                     'text'  => 'Service and breakdown support when finishing equipment faults interrupt garment presentation or daily output.',
                     'cta'   => 'Request Call-out',
                     'route' => route('repairs'),
-                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -473,7 +473,7 @@
                     'text'  => 'Planned servicing to reduce unexpected repairs and keep finishing equipment condition visible.',
                     'cta'   => 'View Maintenance Options',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -481,7 +481,7 @@
                     'text'  => 'Lower upfront cost for finishing equipment replacement, capacity planning or expansion where rental is the right fit.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
                     'pos'   => '66% center',
                 ],
                 [
@@ -489,7 +489,7 @@
                     'text'  => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',
                     'cta'   => 'Explore Support Options',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
                 ],
             ] as $card)
@@ -534,10 +534,10 @@
 
         @php
         $fitCards = [
-            ['title' => 'Care homes and nursing homes', 'copy' => 'For resident clothing, uniforms and everyday items where cleaner presentation supports daily standards.', 'img' => '/images/CareFacilities/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
-            ['title' => 'Hospitality sites',             'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/Hospitallity/hospitallityhero.png', 'pos' => 'center center'],
-            ['title' => 'Smaller laundry rooms',         'copy' => 'For sites that need more than domestic ironing equipment without moving into a full ironer setup.', 'img' => '/images/equipment/td6-multihousing-room.jpg', 'pos' => 'center center'],
-            ['title' => 'Garment and wet cleaning',      'copy' => 'For specialist textile care where cleaning, drying and finishing need to work together.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center center'],
+            ['title' => 'Care homes and nursing homes', 'copy' => 'For resident clothing, uniforms and everyday items where cleaner presentation supports daily standards.', 'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg', 'pos' => 'center center'],
+            ['title' => 'Hospitality sites',             'copy' => 'For guest garments, uniforms and touch-up work around presentation-led daily routines.', 'img' => '/images/pages/sectors/hospitallityhero.png', 'pos' => 'center center'],
+            ['title' => 'Smaller laundry rooms',         'copy' => 'For sites that need more than domestic ironing equipment without moving into a full ironer setup.', 'img' => '/images/shared/td6-multihousing-room.jpg', 'pos' => 'center center'],
+            ['title' => 'Garment and wet cleaning',      'copy' => 'For specialist textile care where cleaning, drying and finishing need to work together.', 'img' => '/images/shared/customer-care-line6000.jpg', 'pos' => 'center center'],
         ];
         @endphp
 
@@ -624,10 +624,10 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
-                ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing where working width, room fit and daily output matter.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers'), 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where garments need a controlled cleaning process before finishing.',          'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/equipment/FC48.jpg'],
-                ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before garment finishing, touch-ups or daily presentation work.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/equipment/Tumble-dryers_Heat-Pump_1-1.webp'],
-                ['title' => 'Accessories & Consumables', 'copy' => 'For laundry products and accessories used around washing, drying and finishing.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories'), 'img' => '/images/healthcare/MultisaveEQUIP.webp'],
+                ['title' => 'Commercial Ironers',        'copy' => 'For higher-output flatwork finishing where working width, room fit and daily output matter.', 'cta' => 'View Ironers',      'route' => route('equipment.category', 'ironers'), 'img' => '/images/shared/line6000-ironer.webp'],
+                ['title' => 'Wet Cleaning',              'copy' => 'For specialist textile care where garments need a controlled cleaning process before finishing.',          'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/finishing-equipment/FC48.jpg'],
+                ['title' => 'Commercial Dryers',         'copy' => 'For drying performance before garment finishing, touch-ups or daily presentation work.',                 'cta' => 'View Dryers',       'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp'],
+                ['title' => 'Accessories & Consumables', 'copy' => 'For laundry products and accessories used around washing, drying and finishing.',                           'cta' => 'View Accessories',  'route' => route('equipment.category', 'accessories'), 'img' => '/images/shared/MultisaveEQUIP.webp'],
             ] as $card)
             <div class="flex flex-col gap-5 h-full">
                 <div style="min-height:120px;">

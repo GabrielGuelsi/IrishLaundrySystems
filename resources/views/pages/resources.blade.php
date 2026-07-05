@@ -9,7 +9,7 @@
      1. HERO — image background, left-aligned
 ═══════════════════════════════════════ --}}
 <section class="relative overflow-hidden flex flex-col min-h-[420px] lg:min-h-[520px]">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry resources"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry resources"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.78) 42%, rgba(1,30,65,0.4) 65%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -58,7 +58,7 @@
 
             {{-- Image --}}
             <div class="lg:col-span-3 overflow-hidden relative" style="min-height:280px;">
-                <img src="{{ asset('images/healthcare/service-contracts-hero.png') }}"
+                <img src="{{ asset('images/shared/service-contracts-hero.png') }}"
                      alt="Service Contract Buyer's Guide"
                      class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
                 <div class="absolute inset-0 bg-gradient-to-r from-transparent to-gray-50/30 hidden lg:block"></div>
@@ -122,7 +122,7 @@
                 'sector' => 'All machines',
                 'tag'    => 'Guide',
                 'read'   => '6 min',
-                'img'    => 'images/healthcare/repairs-callouts.jpg',
+                'img'    => 'images/shared/repairs-callouts.jpg',
             ],
             [
                 'title'  => 'Barrier Washer Guide',
@@ -130,7 +130,7 @@
                 'sector' => 'Barrier Washers',
                 'tag'    => 'Guide',
                 'read'   => '10 min',
-                'img'    => 'images/healthcare/render-double-page_72dpi.jpg',
+                'img'    => 'images/shared/render-double-page_72dpi.jpg',
             ],
             [
                 'title'  => 'Equipment Lifecycle Planning',
@@ -138,7 +138,7 @@
                 'sector' => 'All machines',
                 'tag'    => 'Guide',
                 'read'   => '7 min',
-                'img'    => 'images/healthcare/repairs-hero.jpg',
+                'img'    => 'images/shared/repairs-hero.jpg',
             ],
             [
                 'title'  => 'Rental vs Purchase Decision Guide',
@@ -146,7 +146,7 @@
                 'sector' => 'All machines',
                 'tag'    => 'Guide',
                 'read'   => '5 min',
-                'img'    => 'images/equipment/td6-multihousing-room.jpg',
+                'img'    => 'images/shared/td6-multihousing-room.jpg',
             ],
             [
                 'title'  => 'Tumble Dryer Maintenance Guide',
@@ -154,7 +154,7 @@
                 'sector' => 'Tumble Dryers',
                 'tag'    => 'Guide',
                 'read'   => '8 min',
-                'img'    => 'images/equipment/Tumble-dryers_Heat-Pump_1-1.webp',
+                'img'    => 'images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',
             ],
             [
                 'title'  => 'Ironer Setup & Throughput Guide',
@@ -162,7 +162,7 @@
                 'sector' => 'Ironers',
                 'tag'    => 'Guide',
                 'read'   => '9 min',
-                'img'    => 'images/equipment/line6000-ironer.webp',
+                'img'    => 'images/shared/line6000-ironer.webp',
             ],
         ];
         @endphp
@@ -299,7 +299,7 @@
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
@@ -350,25 +350,25 @@
                 'href'  => route('equipment.category', 'washers'),
                 'title' => 'Washers',
                 'desc'  => 'Washer-extractors and commercial washing machines. Drum checks, programme faults, bearing wear and parts continuity.',
-                'img'   => 'images/equipment/commercialwasher.webp',
+                'img'   => 'images/pages/commercial-washers/commercialwasher.webp',
             ],
             [
                 'href'  => route('equipment.category', 'tumble-dryers'),
                 'title' => 'Tumble Dryers',
                 'desc'  => 'Commercial tumble dryers. Lint management, airflow checks, temperature calibration and door seal maintenance.',
-                'img'   => 'images/equipment/Tumble-dryers_Heat-Pump_1-1.webp',
+                'img'   => 'images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',
             ],
             [
                 'href'  => route('equipment.category', 'barrier-washers'),
                 'title' => 'Barrier Washers',
                 'desc'  => 'Infection control washers for healthcare and care. Cycle logs, hygiene validation, door seal checks and compliance records.',
-                'img'   => 'images/equipment/line6000-barrier-washer.webp',
+                'img'   => 'images/pages/barrier-washers/line6000-barrier-washer.webp',
             ],
             [
                 'href'  => route('equipment.category', 'ironers'),
                 'title' => 'Ironers',
                 'desc'  => 'Flatwork ironers and chest ironers. Chest temperature, ribbon condition, feed alignment and throughput planning.',
-                'img'   => 'images/equipment/line6000-ironer.webp',
+                'img'   => 'images/shared/line6000-ironer.webp',
             ],
         ];
         @endphp

@@ -146,7 +146,7 @@
         {{-- Accessories banner --}}
         <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden shadow-sm mb-14">
             <div class="min-h-[200px] bg-gray-100">
-                <img src="{{ asset('images/equipment/strip2.jpeg') }}" alt="Accessories and consumables" class="w-full h-full object-cover">
+                <img src="{{ asset('images/shared/strip2.jpeg') }}" alt="Accessories and consumables" class="w-full h-full object-cover">
             </div>
             <div class="bg-navy p-8 lg:p-10 flex flex-col justify-center">
                 <h3 class="font-heading font-bold text-white text-2xl leading-tight mb-3">Shop our Accessories and Consumables</h3>

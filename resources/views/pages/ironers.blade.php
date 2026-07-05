@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/sectors/Line 6000 solutions products_72dpi.jpg" alt="Commercial ironers and flatwork finishing"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial ironers and flatwork finishing"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -95,9 +95,9 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach([
-                ['title' => 'Flatwork Ironers', 'copy' => 'For sheets, table linen and other flatwork that need a consistent finish at higher volumes.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range', 'img' => '/images/equipment/line6000-ironer.webp'],
-                ['title' => 'Roller / Rotary Ironers',         'copy' => 'For sites that need a practical ironing setup for regular flatwork without a larger finishing line.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range', 'img' => '/images/equipment/IB623_FRONT_NEW.jpg'],
-                ['title' => 'Finishing Equipment',             'copy' => 'For garments, uniforms, resident clothing and smaller items that need hand finishing or extra care.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => '/images/equipment/FIT1.jpg'],
+                ['title' => 'Flatwork Ironers', 'copy' => 'For sheets, table linen and other flatwork that need a consistent finish at higher volumes.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range', 'img' => '/images/shared/line6000-ironer.webp'],
+                ['title' => 'Roller / Rotary Ironers',         'copy' => 'For sites that need a practical ironing setup for regular flatwork without a larger finishing line.', 'cta' => 'View Roller Ironing Advice', 'href' => '#ironer-range', 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg'],
+                ['title' => 'Finishing Equipment',             'copy' => 'For garments, uniforms, resident clothing and smaller items that need hand finishing or extra care.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => '/images/pages/finishing-equipment/FIT1.jpg'],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:130px;">
@@ -146,7 +146,7 @@
 {{-- 6b. OnE CONNECTED / CONNECTED LAUNDRY INTELLIGENCE STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
+        <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
              class="w-full h-full object-contain" style="object-position: center center; transform: translateX(32px);">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
@@ -245,7 +245,7 @@
                 </p>
                 <div class="border-t border-gray-100 pt-6 pb-6">
                     <div class="w-full aspect-square rounded-xl overflow-hidden" style="clip-path: inset(0 round 12px);">
-                        <img src="/images/equipment/Front Delivery.png"
+                        <img src="/images/pages/ironers/Front Delivery.png"
                              alt="Front delivery ironer layout diagram — top-down view showing linen flow and operator positions at the ironer and folding table"
                              class="w-full h-full object-cover" style="transform:translateY(2.31%) scale(1.086);">
                     </div>
@@ -276,7 +276,7 @@
                 </p>
                 <div class="border-t border-gray-100 pt-6 pb-6">
                     <div class="w-full aspect-square rounded-xl overflow-hidden">
-                        <img src="/images/equipment/Rear Delivery.png"
+                        <img src="/images/pages/ironers/Rear Delivery.png"
                              alt="Rear delivery ironer layout diagram — top-down view showing linen exiting to the rear with operator positions at the front"
                              class="w-full h-full object-cover">
                     </div>
@@ -304,7 +304,7 @@
 {{-- 9. ROOM PLANNING STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/equipment/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -365,10 +365,10 @@
         {{-- Ironer families — one card/image per range, filterable by cylinder and automation (like the washers page) --}}
         @php
             $ironerFamilies = [
-                ['name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'fit' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.', 'auto' => ['No automation','Feeding'], 'capLabel' => '2.5–3.3 m', 'models' => 'IB5725, IB5730, IB5733 (+ -F feeder)', 'roll' => 'Flatwork', 'img' => '/images/equipment/ironers/flatwork-ib57.jpg'],
-                ['name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'fit' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.', 'auto' => ['No automation','Length folding','Feeding','Folding & stacking'], 'capLabel' => 'Ø 480 mm', 'models' => 'IC648 21 / 25 / 32 series, IV648', 'roll' => 'Ø 480 mm', 'img' => '/images/equipment/ironers/cylinder-480-ic648.jpg'],
-                ['name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.', 'auto' => ['No automation'], 'capLabel' => 'Ø 330 mm', 'models' => 'IC63316, IC63320', 'roll' => 'Ø 330 mm', 'img' => '/images/equipment/ironers/cylinder-330-ic633.jpg'],
-                ['name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'fit' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.', 'auto' => ['No automation'], 'capLabel' => 'Ø 230 mm', 'models' => 'IB62310, IB62314, IB62316', 'roll' => 'Ø 230 mm', 'img' => '/images/equipment/ironers/bed-230-ib623.jpg'],
+                ['name' => 'Line 6000 Flatwork Ironers', 'slug' => 'line-6000-flatwork', 'fit' => 'Large flatwork ironers for sheets and table linen, with an optional integrated feeder for higher output.', 'auto' => ['No automation','Feeding'], 'capLabel' => '2.5–3.3 m', 'models' => 'IB5725, IB5730, IB5733 (+ -F feeder)', 'roll' => 'Flatwork', 'img' => '/images/pages/ironers/flatwork-ib57.jpg'],
+                ['name' => 'Ø 480 mm Cylinder Ironers', 'slug' => 'cylinder-480mm', 'fit' => 'The main cylinder ironer range — front or rear delivery, from basic up to feeding, folding and stacking.', 'auto' => ['No automation','Length folding','Feeding','Folding & stacking'], 'capLabel' => 'Ø 480 mm', 'models' => 'IC648 21 / 25 / 32 series, IV648', 'roll' => 'Ø 480 mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg'],
+                ['name' => 'Ø 330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.', 'auto' => ['No automation'], 'capLabel' => 'Ø 330 mm', 'models' => 'IC63316, IC63320', 'roll' => 'Ø 330 mm', 'img' => '/images/pages/ironers/cylinder-330-ic633.jpg'],
+                ['name' => 'Ø 230 mm Bed-type Ironers', 'slug' => 'bed-230mm', 'fit' => 'Compact bed-type ironers for smaller laundry rooms and lighter finishing volume.', 'auto' => ['No automation'], 'capLabel' => 'Ø 230 mm', 'models' => 'IB62310, IB62314, IB62316', 'roll' => 'Ø 230 mm', 'img' => '/images/pages/ironers/bed-230-ib623.jpg'],
             ];
         @endphp
 
@@ -527,7 +527,7 @@
             </div>
             <div class="reveal reveal-right flex items-center justify-center">
                 <div class="w-full rounded-2xl overflow-hidden bg-white">
-                    <img src="/images/equipment/FIT1.jpg"
+                    <img src="/images/pages/finishing-equipment/FIT1.jpg"
                          alt="Finishing equipment — ironing tables, steam irons and presses"
                          class="w-full h-[300px] sm:h-[400px] lg:h-[460px] object-contain object-center">
                 </div>
@@ -570,7 +570,7 @@
                     'text'  => 'Service and breakdown support when ironer faults interrupt linen finishing or daily operation.',
                     'cta'   => 'Request Support',
                     'route' => route('repairs'),
-                    'img'   => '/images/healthcare/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -578,7 +578,7 @@
                     'text'  => 'Planned servicing to help keep ironer condition, safety checks and maintenance needs organised.',
                     'cta'   => 'View Maintenance Support',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/healthcare/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.png',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -586,7 +586,7 @@
                     'text'  => 'Lower upfront cost where suitable, with selected ironer equipment installed and supported under Equipment Rental terms.',
                     'cta'   => 'Explore Equipment Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
                     'pos'   => '66% center',
                 ],
                 [
@@ -594,7 +594,7 @@
                     'text'  => 'Service history, aftercare and parts support after installation, rental, repair or inspection.',
                     'cta'   => 'View Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/healthcare/services-overview-hero-portrait.jpg',
+                    'img'   => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'   => 'center center',
                 ],
             ] as $card)

@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected laundry dashboard"
+    <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: right center;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.55) 68%, rgba(1,30,65,0.25) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -169,7 +169,7 @@
         </div>
 
         <div class="rounded-2xl overflow-hidden shadow-2xl mb-12 reveal border border-white/10">
-            <img src="/images/healthcare/stripOneconnected.png" alt="OnE Connected dashboard" class="w-full h-auto object-cover" style="max-height:520px;">
+            <img src="/images/shared/stripOneconnected.png" alt="OnE Connected dashboard" class="w-full h-auto object-cover" style="max-height:520px;">
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-8 reveal">
@@ -247,7 +247,7 @@
     'headingLine1' => 'Electrolux builds the intelligence.',
     'headingLine2' => 'ILS connects it to the real laundry room',
     'body'         => 'OnE Connected is Electrolux Professional technology. Irish Laundry Systems applies it through Irish engineering support — connecting dashboard insight to the equipment, room, workload, service plan and daily operation, backed by more than 30 years supporting Irish laundry operations.',
-    'image'        => '/images/healthcare/customer-care-line6000.jpg',
+    'image'        => '/images/shared/customer-care-line6000.jpg',
     'cta1Label'    => 'Speak to Irish Laundry Systems',
     'cta1Route'    => 'contact',
 ])
@@ -266,10 +266,10 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial washers',          'body' => 'Selected compatible Electrolux Professional washers can connect to OnE Connected for status, cycle activity, load factor, consumption and process insight.', 'cta' => 'View Commercial Washers', 'route' => route('equipment.category', 'washers'),         'img' => '/images/equipment/commercialwasher.webp'],
-                ['title' => 'Tumble dryers',               'body' => 'Selected compatible dryers can support connected visibility over equipment use, status, performance and service-related information.', 'cta' => 'View Tumble Dryers', 'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/equipment/line6000-tumble-dryer.webp'],
-                ['title' => 'Barrier washers',             'body' => 'Selected compatible barrier washers can support connected process visibility for hygiene-focused and high-demand laundry environments.', 'cta' => 'View Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/equipment/line6000-barrier-washer.webp'],
-                ['title' => 'Selected flatwork solutions', 'body' => 'Selected Electrolux Professional flatwork solutions may support OnE Connected depending on model and configuration.', 'cta' => 'Ask About Compatibility', 'route' => route('contact'),         'img' => '/images/equipment/line6000-ironer.webp'],
+                ['title' => 'Commercial washers',          'body' => 'Selected compatible Electrolux Professional washers can connect to OnE Connected for status, cycle activity, load factor, consumption and process insight.', 'cta' => 'View Commercial Washers', 'route' => route('equipment.category', 'washers'),         'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+                ['title' => 'Tumble dryers',               'body' => 'Selected compatible dryers can support connected visibility over equipment use, status, performance and service-related information.', 'cta' => 'View Tumble Dryers', 'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
+                ['title' => 'Barrier washers',             'body' => 'Selected compatible barrier washers can support connected process visibility for hygiene-focused and high-demand laundry environments.', 'cta' => 'View Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
+                ['title' => 'Selected flatwork solutions', 'body' => 'Selected Electrolux Professional flatwork solutions may support OnE Connected depending on model and configuration.', 'cta' => 'Ask About Compatibility', 'route' => route('contact'),         'img' => '/images/shared/line6000-ironer.webp'],
             ] as $card)
             <div class="bg-white rounded-2xl border border-gray-100 shadow-sm flex flex-col overflow-hidden">
                 <div class="flex items-center justify-center h-48 bg-gray-50 p-5">
@@ -307,11 +307,11 @@
         </div>
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 reveal">
             @foreach([
-                ['n' => '1', 'title' => 'Check compatibility',          'body' => 'Review the equipment, model, controls and production details to confirm whether OnE Connected can apply.', 'img' => '/images/healthcare/render-double-page_72dpi.jpg', 'pos' => 'center'],
-                ['n' => '2', 'title' => 'Review connection needs',      'body' => 'Assess the site, room layout, signal, router and network requirements before setup.', 'img' => '/images/healthcare/line-6000-solutions.jpg', 'pos' => 'center'],
-                ['n' => '3', 'title' => 'Connect the equipment',        'body' => 'Use the required Electrolux Professional connectivity hardware and setup process for compatible equipment.', 'img' => '/images/healthcare/customer-care-line6000.jpg', 'pos' => 'center 30%'],
-                ['n' => '4', 'title' => 'Start monitoring performance', 'body' => 'Use the dashboard to review status, cycles, loading, consumption, alerts, user access and process data.', 'img' => '/images/healthcare/stripOneconnected.png', 'pos' => 'center'],
-                ['n' => '5', 'title' => 'Scale with the operation',     'body' => 'Add compatible equipment, users or sites as the operation grows and the need for visibility increases.', 'img' => '/images/healthcare/commercial-industrial.jpg', 'pos' => 'center'],
+                ['n' => '1', 'title' => 'Check compatibility',          'body' => 'Review the equipment, model, controls and production details to confirm whether OnE Connected can apply.', 'img' => '/images/shared/render-double-page_72dpi.jpg', 'pos' => 'center'],
+                ['n' => '2', 'title' => 'Review connection needs',      'body' => 'Assess the site, room layout, signal, router and network requirements before setup.', 'img' => '/images/shared/line-6000-solutions.jpg', 'pos' => 'center'],
+                ['n' => '3', 'title' => 'Connect the equipment',        'body' => 'Use the required Electrolux Professional connectivity hardware and setup process for compatible equipment.', 'img' => '/images/shared/customer-care-line6000.jpg', 'pos' => 'center 30%'],
+                ['n' => '4', 'title' => 'Start monitoring performance', 'body' => 'Use the dashboard to review status, cycles, loading, consumption, alerts, user access and process data.', 'img' => '/images/shared/stripOneconnected.png', 'pos' => 'center'],
+                ['n' => '5', 'title' => 'Scale with the operation',     'body' => 'Add compatible equipment, users or sites as the operation grows and the need for visibility increases.', 'img' => '/images/shared/commercial-industrial.jpg', 'pos' => 'center'],
             ] as $step)
             <div class="group relative overflow-hidden rounded-2xl min-h-[300px] sm:min-h-[360px] {{ $loop->last ? 'col-span-2 lg:col-span-1' : '' }}">
                 <img src="{{ $step['img'] }}" alt="{{ $step['title'] }}"

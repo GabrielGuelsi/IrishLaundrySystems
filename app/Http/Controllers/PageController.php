@@ -165,24 +165,8 @@ class PageController extends Controller
             ]);
         }
 
-        if (! array_key_exists($category, config('equipment'))) {
-            abort(404);
-        }
-
-        $categoryName = ucwords(str_replace('-', ' ', $category));
-        $products = Equipment::where('category', $category)
-            ->where('is_active', true)
-            ->orderBy('sort_order')
-            ->orderBy('name')
-            ->get();
-
-        return view('pages.equipment-category', [
-            'title' => "{$categoryName} Equipment | Commercial Laundry Ireland | ILS",
-            'metaDescription' => "Commercial {$categoryName} equipment supplied and supported by ILS — expert installation, service and parts across Ireland.",
-            'category' => $categoryName,
-            'categorySlug' => $category,
-            'products' => $products,
-        ]);
+        // Every served category has a dedicated view above; anything else is unknown.
+        abort(404);
     }
 
     public function equipmentProduct($category, $product)
