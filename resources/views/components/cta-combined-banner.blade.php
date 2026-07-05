@@ -18,7 +18,7 @@
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         {{-- Fade left edge into blue --}}
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.96) 12%, rgba(20,138,244,0.85) 24%, rgba(20,138,244,0.68) 36%, rgba(20,138,244,0.5) 48%, rgba(20,138,244,0.33) 60%, rgba(20,138,244,0.18) 72%, rgba(20,138,244,0.07) 86%, transparent 100%);"></div>
     </div>
 
     {{-- Content — 60% width matching strip proportion --}}

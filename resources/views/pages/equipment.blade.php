@@ -515,9 +515,17 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
 
             @foreach([
+                [
+                    'title'  => 'Repairs &amp; Call-outs',
+                    'text'   => 'Engineering support when faults or breakdowns put laundry output, linen availability or daily routines under pressure.',
+                    'cta'    => 'Request Call-out',
+                    'route'  => route('repairs'),
+                    'img'    => '/images/healthcare/repairs-callouts.jpg',
+                    'pos'    => 'center 40%',
+                ],
                 [
                     'title'  => 'Preventive Maintenance',
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
@@ -527,12 +535,12 @@
                     'pos'    => '88% 35%',
                 ],
                 [
-                    'title'  => 'Repairs &amp; Call-outs',
-                    'text'   => 'Engineering support when faults or breakdowns put laundry output, linen availability or daily routines under pressure.',
-                    'cta'    => 'Request Call-out',
-                    'route'  => route('repairs'),
-                    'img'    => '/images/healthcare/repairs-callouts.jpg',
-                    'pos'    => 'center 40%',
+                    'title'  => 'Equipment Rental',
+                    'text'   => 'For selected equipment where lower upfront cost and included support make sense.',
+                    'cta'    => 'See Equipment Rental',
+                    'route'  => route('rental'),
+                    'img'    => '/images/healthcare/td6-11-multihousing-room-front.jpg',
+                    'pos'    => '66% center',
                 ],
                 [
                     'title'  => 'Support &amp; Aftercare',
