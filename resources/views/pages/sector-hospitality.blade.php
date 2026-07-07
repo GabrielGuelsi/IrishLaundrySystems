@@ -679,11 +679,11 @@
     'eyebrow'      => 'Equipment Rental',
     'headingLine1' => 'Equipment rental with',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits<br class="hidden lg:block"> the laundry room size, capacity need and operating profile.',
+    'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits the laundry room size, capacity need and operating profile.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
-        ['icon' => '125', 'iconClass' => 'scale-125', 'label' => 'Range fit'],
-        ['icon' => '167', 'label' => 'Included support'],
+        ['icon' => '125', 'iconClass' => 'scale-125', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range fit'],
+        ['icon' => 'repairs-maintenance-review', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Included support'],
     ],
     'miniNowrap'   => true,
 ])
