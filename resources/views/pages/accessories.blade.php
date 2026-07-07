@@ -621,21 +621,21 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Original Accessories &amp; Consumables</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories &amp; Consumables</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Small details that support <span style="color:#148af4;">easier daily laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Accessories should support handling, storage, cleaning and daily use without taking focus away from dosing and detergent control.
+                Practical accessories can help with sorting, transport, handling and day-to-day laundry room organisation.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Racks and trolleys',                     'copy' => 'Support movement, storage and daily laundry handling.',  'img' => '/images/pages/accessories/trolleys-and-racks.webp'],
-                ['title' => 'Baskets and handling',                   'copy' => 'Make sorting, loading and unloading easier for staff.',   'img' => '/images/pages/accessories/trolley_.webp'],
-                ['title' => 'Dryer balls and cleaning essentials',    'copy' => 'Support practical care across daily laundry use.',        'img' => '/images/pages/accessories/dryer-balls.png'],
-                ['title' => 'Hygiene tools',                          'copy' => 'Keep the laundry room cleaner and easier to manage.',     'img' => '/images/shared/JetsaveEQUIP.webp'],
+                ['title' => 'Trolleys and racks',           'copy' => 'Support laundry movement, storage and daily handling around the laundry room.', 'img' => '/images/pages/accessories/trolleys-and-racks.webp'],
+                ['title' => 'Baskets and handling',         'copy' => 'Help staff sort, load, unload and move laundry more easily during daily use.',  'img' => '/images/pages/accessories/trolley_.webp'],
+                ['title' => 'Dryer balls and care items',   'copy' => 'Support practical drying, garment care and everyday laundry use.',              'img' => '/images/pages/accessories/dryer-balls.png'],
+                ['title' => 'Hygiene and room essentials',  'copy' => 'Help keep the laundry room cleaner, clearer and easier to manage.',             'img' => '/images/shared/JetsaveEQUIP.webp'],
             ] as $acc)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
@@ -647,14 +647,19 @@
                          class="transition-transform duration-500 hover:-translate-y-2"
                          style="max-width:100%; max-height:280px; width:auto; object-fit:contain;">
                 </div>
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
-                    Ask About Accessories
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
             @endforeach
+        </div>
+
+        {{-- Single section CTA (per copy direction: avoid four repeated buttons) --}}
+        <div class="mt-10 reveal">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                Ask About Laundry Accessories
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
         </div>
     </div>
 </section>
