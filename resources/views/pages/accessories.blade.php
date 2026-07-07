@@ -669,44 +669,44 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">ILS Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Advice and service for <span style="color:#148af4;">dosing, detergents and laundry room setup</span>
+                Support for dosing, detergents and <span style="color:#148af4;">laundry room setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Irish Laundry Systems can advise, set up and support dosing systems, detergent storage and accessory choices around the equipment already in use.
+                Irish Laundry Systems can support dosing systems, detergent storage, accessories and the equipment already in use through service response, planned maintenance, rental options and aftercare.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
-                    'title' => 'Dosing and detergent advice',
-                    'text'  => 'Choose dosing systems, detergents and storage around your washers, load types and daily use.',
-                    'cta'   => 'Request Advice',
-                    'route' => route('request-assessment'),
-                    'img'   => '/images/shared/commercial-industrial.jpg',
-                    'pos'   => 'center center',
-                ],
-                [
-                    'title' => 'Setup and installation',
-                    'text'  => 'Support for dosing systems, detergent storage and laundry room setup where installation planning is needed.',
-                    'cta'   => 'Ask About Setup',
-                    'route' => route('contact'),
-                    'img'   => '/images/shared/Strip1.jpeg',
-                    'pos'   => 'center 30%',
+                    'title' => 'Repairs &amp; Call-outs',
+                    'text'  => 'For faults or issues affecting laundry equipment, dosing systems or day-to-day operation.',
+                    'cta'   => 'Request a Repair',
+                    'route' => route('repairs'),
+                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'pos'   => 'center 40%',
                 ],
                 [
                     'title' => 'Preventive Maintenance',
-                    'text'  => 'Planned maintenance for laundry equipment and dosing systems to reduce avoidable disruption.',
-                    'cta'   => 'View Preventive Maintenance',
+                    'text'  => 'Planned support to help keep equipment, dosing and laundry room systems working properly.',
+                    'cta'   => 'View Maintenance Support',
                     'route' => route('service-contracts'),
                     'img'   => '/images/shared/service-contracts-hero.png',
-                    'pos'   => '90% 35%',
+                    'pos'   => '88% 35%',
+                ],
+                [
+                    'title' => 'Equipment Rental',
+                    'text'  => 'Rental options where a site needs laundry equipment flexibility without a full purchase route.',
+                    'cta'   => 'Ask About Rental',
+                    'route' => route('rental'),
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'pos'   => '66% center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
-                    'text'  => 'Follow-up advice, service history and parts access where dosing or laundry room equipment needs attention.',
+                    'text'  => 'Ongoing advice for parts, accessories, detergents, storage and equipment support after installation.',
                     'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
                     'img'   => '/images/shared/services-overview-hero-portrait.jpg',
