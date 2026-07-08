@@ -117,7 +117,7 @@
             ['label' => 'Dose to the load',       'points' => ['Right amount', 'Less overuse', 'Consistent wash quality'], 'imgs' => ['/images/pages/commercial-washers/commercialwasher.webp'], 'imgClass' => 'max-h-full'],
             ['label' => 'Match the detergent',    'points' => ['Eco options', 'Textile care', 'Hygiene standards'],        'imgs' => ['/images/pages/accessories/dosing-unit.png'], 'imgClass' => 'max-h-[110px]'],
             ['label' => 'Store chemicals safely', 'points' => ['Cleaner room', 'Safer handling', 'Easier refills'],        'imgs' => ['/images/pages/accessories/l02-laundry-eco-wash.webp', '/images/pages/accessories/l06-laundry-swan-wash.jpg'], 'imgClass' => 'max-h-[118px]'],
-            ['label' => 'Keep support in place',  'points' => ['Setup advice', 'Planned checks', 'Aftercare'],             'imgs' => ['/images/pages/accessories/detergent-storage.webp'], 'imgClass' => 'max-h-full'],
+            ['label' => 'Keep support in place',  'points' => ['Setup advice', 'Planned checks', 'Aftercare'],             'imgs' => ['/images/pages/accessories/dispenseringreycabinet.png'], 'imgClass' => 'max-h-full'],
         ];
         @endphp
 
@@ -426,123 +426,7 @@
     </div>
 </section>
 
-{{-- 8. LINE 6000 ECO-DETERGENTS (mirrors Electrolux detergents page: certified range groups) --}}
-<section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mb-10 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Eco-Detergents</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Certified detergents for <span style="color:#148af4;">quality wash results and textile care</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                Electrolux Professional Line 6000 eco-range detergents are developed for high-quality, safe and effective washing while helping lower environmental impact.
-            </p>
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                Ask About Eco-Detergents
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </a>
-        </div>
-
-        @php
-        $detergentGroups = [
-            [
-                'label' => 'EU Ecolabel Range',
-                'body'  => 'For everyday commercial laundry needs, with eco-range products for washing, powder, degreasing, boosting, bleaching and softening.',
-                'certs' => [
-                    ['icon' => 'eu-ecolabel-logo.png',             'label' => 'EU Ecolabel'],
-                    ['icon' => 'icon-dermatologically-tested.png', 'label' => 'Dermatologically tested'],
-                    ['icon' => 'icon-hypoallergenic.png',          'label' => 'Hypoallergenic'],
-                ],
-                'cols' => 'lg:grid-cols-6',
-                'products' => [
-                    ['name' => 'L00 – Laundry Eco Degreaser', 'img' => 'l00-laundry-eco-degreaser.webp', 'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
-                    ['name' => 'L01 – Laundry Eco Powder',    'img' => 'l01-laundry-eco-powder.webp',    'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
-                    ['name' => 'L02 – Laundry Eco Wash',      'img' => 'l02-laundry-eco-wash.webp',      'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
-                    ['name' => 'L03 – Laundry Eco Booster',   'img' => 'l03-laundry-eco-booster.webp',   'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
-                    ['name' => 'L04 – Laundry Eco Bleach',    'img' => 'l04-laundry-eco-bleach.webp',    'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
-                    ['name' => 'L05 – Laundry Eco Softener',  'img' => 'l05-laundry-eco-softener.webp',  'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
-                ],
-                'note' => 'Product &amp; Safety Sheets (PDF) open in a new tab.',
-            ],
-            [
-                'label' => 'Nordic Swan Range',
-                'body'  => 'A Nordic Swan certified detergent range for sites looking for additional eco-labelled washing, bleaching and softening options.',
-                'certs' => [
-                    ['icon' => 'nordic-swan-ecolabel.png',         'label' => 'Nordic Swan Ecolabel'],
-                    ['icon' => 'icon-fragrance-free.png',          'label' => 'Fragrance free'],
-                    ['icon' => 'icon-dermatologically-tested.png', 'label' => 'Dermatologically tested'],
-                    ['icon' => 'icon-hypoallergenic.png',          'label' => 'Hypoallergenic'],
-                ],
-                'cols' => 'lg:grid-cols-4',
-                'products' => [
-                    ['name' => 'L06 – Laundry Swan Wash',        'img' => 'l06-laundry-swan-wash.jpg'],
-                    ['name' => 'L07 – Laundry Swan Gentle Wash', 'img' => 'l07-laundry-swan-gentle-wash.png'],
-                    ['name' => 'L08 – Laundry Swan Bleach',      'img' => 'l08-laundry-swan-bleach.png'],
-                    ['name' => 'L09 – Laundry Swan Softener',    'img' => 'l09-laundry-swan-softener.png'],
-                ],
-                'note' => null,
-            ],
-        ];
-        @endphp
-
-        <div class="space-y-8">
-            @foreach($detergentGroups as $grp)
-            <div class="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 reveal">
-
-                {{-- Group header: label + body + certification labels --}}
-                <div class="mb-8">
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $grp['label'] }}</p>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-3xl">{{ $grp['body'] }}</p>
-                    <div class="flex flex-wrap items-center gap-x-8 gap-y-4">
-                        @foreach($grp['certs'] as $cert)
-                        <div class="flex items-center gap-3">
-                            <img src="{{ asset('images/pages/accessories/'.$cert['icon']) }}" alt="{{ $cert['label'] }}"
-                                 loading="lazy" decoding="async" class="h-12 w-auto object-contain">
-                            <span class="font-body font-bold text-navy/70 text-xs uppercase tracking-wide">{{ $cert['label'] }}</span>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-
-                {{-- Compact product grid --}}
-                <div class="grid grid-cols-2 sm:grid-cols-3 {{ $grp['cols'] }} gap-x-6 gap-y-8">
-                    @foreach($grp['products'] as $prod)
-                    @if(!empty($prod['href']))
-                    <a href="{{ $prod['href'] }}" target="_blank" rel="noopener" class="group flex flex-col items-center text-center">
-                    @else
-                    <div class="flex flex-col items-center text-center">
-                    @endif
-                        <div class="flex items-end justify-center h-32 lg:h-36 mb-3">
-                            <img src="{{ asset('images/pages/accessories/'.$prod['img']) }}" alt="{{ $prod['name'] }}"
-                                 loading="lazy" decoding="async"
-                                 class="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105">
-                        </div>
-                        <p class="font-heading font-bold text-navy text-sm leading-snug">{{ $prod['name'] }}</p>
-                        @if(!empty($prod['href']))
-                        <span class="font-body font-semibold text-[#148af4] text-xs mt-1 group-hover:underline">Product &amp; Safety Sheet</span>
-                        @endif
-                    @if(!empty($prod['href']))
-                    </a>
-                    @else
-                    </div>
-                    @endif
-                    @endforeach
-                </div>
-
-                @if($grp['note'])
-                <p class="font-body text-gray-400 text-xs mt-6">{!! $grp['note'] !!}</p>
-                @endif
-
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-{{-- 8a. COMPACT RESOURCES BAR (detergent brochures + quick links, closes the detergent range) --}}
+{{-- 7a. COMPACT RESOURCES BAR (detergent brochures + quick links, follows the product range) --}}
 <section class="py-8 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
@@ -584,14 +468,112 @@
     </div>
 </section>
 
-{{-- 8b. ADDITIONAL LAUNDRY CARE PRODUCTS STRIP --}}
+{{-- 8. LINE 6000 ECO-DETERGENTS (mirrors Electrolux detergents page: certified range groups) --}}
+<section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="max-w-3xl mb-10 lg:mb-14 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Eco-Detergents</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                Certified detergents for <span style="color:#148af4;">quality wash results and textile care</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+                Electrolux Professional Line 6000 eco-range detergents are developed for high-quality, safe and effective washing while helping reduce environmental impact.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-8">
+                @foreach(['EU Ecolabel', 'Dermatologically tested', 'Hypoallergenic', 'Textile care'] as $proof)
+                <span class="font-body text-xs font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-3 py-1.5 rounded-full">{{ $proof }}</span>
+                @endforeach
+            </div>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                Ask About Eco-Detergents
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
+
+        @php
+        $detergentGroups = [
+            [
+                'label' => 'EU Ecolabel Range',
+                'body'  => 'A practical eco-detergent range for commercial laundry sites that need washing, degreasing, boosting, bleaching and softening support.',
+                'certs' => [
+                    ['icon' => 'eu-ecolabel-logo.png',             'label' => 'EU Ecolabel'],
+                    ['icon' => 'icon-dermatologically-tested.png', 'label' => 'Dermatologically tested'],
+                    ['icon' => 'icon-hypoallergenic.png',          'label' => 'Hypoallergenic'],
+                ],
+                'cols' => 'lg:grid-cols-3',
+                'products' => [
+                    ['name' => 'L00 – Laundry Eco Degreaser', 'sheet' => 'L00 Product & Safety Sheet', 'img' => 'l00-laundry-eco-degreaser.webp', 'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
+                    ['name' => 'L01 – Laundry Eco Powder',    'sheet' => 'L01 Product & Safety Sheet', 'img' => 'l01-laundry-eco-powder.webp',    'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
+                    ['name' => 'L02 – Laundry Eco Wash',      'sheet' => 'L02 Product & Data Sheet',   'img' => 'l02-laundry-eco-wash.webp',      'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
+                    ['name' => 'L03 – Laundry Eco Booster',   'sheet' => 'L03 Product & Safety Sheet', 'img' => 'l03-laundry-eco-booster.webp',   'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
+                    ['name' => 'L04 – Laundry Eco Bleach',    'sheet' => 'L04 Product & Safety Sheet', 'img' => 'l04-laundry-eco-bleach.webp',    'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
+                    ['name' => 'L05 – Laundry Eco Softener',  'sheet' => 'L05 Product & Safety Sheet', 'img' => 'l05-laundry-eco-softener.webp',  'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
+                ],
+            ],
+        ];
+        @endphp
+
+        <div class="space-y-8">
+            @foreach($detergentGroups as $grp)
+            <div class="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 reveal">
+
+                {{-- Group header: label + body + certification labels --}}
+                <div class="mb-8">
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $grp['label'] }}</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-3xl">{{ $grp['body'] }}</p>
+                    <div class="flex flex-wrap items-start justify-center gap-x-14 gap-y-6">
+                        @foreach($grp['certs'] as $cert)
+                        <div class="flex flex-col items-center text-center gap-3">
+                            <img src="{{ asset('images/pages/accessories/'.$cert['icon']) }}" alt="{{ $cert['label'] }}"
+                                 loading="lazy" decoding="async" class="h-20 lg:h-24 w-auto object-contain">
+                            <span class="font-body font-bold text-navy/70 text-sm uppercase tracking-wide">{{ $cert['label'] }}</span>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+
+                {{-- Product grid — image and label sizing mirrors the Electrolux reference (3 columns, large canisters) --}}
+                <div class="grid grid-cols-2 sm:grid-cols-3 {{ $grp['cols'] }} gap-x-6 gap-y-10">
+                    @foreach($grp['products'] as $prod)
+                    @if(!empty($prod['href']))
+                    <a href="{{ $prod['href'] }}" target="_blank" rel="noopener" class="group flex flex-col items-center text-center">
+                    @else
+                    <div class="flex flex-col items-center text-center">
+                    @endif
+                        <div class="flex items-end justify-center h-40 lg:h-48 mb-4">
+                            <img src="{{ asset('images/pages/accessories/'.$prod['img']) }}" alt="{{ $prod['name'] }}"
+                                 loading="lazy" decoding="async"
+                                 class="max-h-full w-auto object-contain transition-transform duration-500 group-hover:scale-105">
+                        </div>
+                        <p class="font-heading font-bold text-navy text-base lg:text-lg leading-snug">{{ $prod['name'] }}</p>
+                        @if(!empty($prod['href']))
+                        <span class="font-body font-semibold text-[#148af4] text-sm mt-1.5 group-hover:underline">{{ $prod['sheet'] }}</span>
+                        @endif
+                    @if(!empty($prod['href']))
+                    </a>
+                    @else
+                    </div>
+                    @endif
+                    @endforeach
+                </div>
+
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
+{{-- 8b. COMPLETE LAUNDRY OPERATION (stain care + descaling) --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Additional Laundry Care Products</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Complete Laundry Operation</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support the full <span style="color:#148af4;">laundry operation</span>
+                Support stain care and descaling <span style="color:#148af4;">around the wash process</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Selected laundry care products can support stain treatment, prebrushing and descaling as part of a wider laundry setup.
@@ -625,7 +607,114 @@
     </div>
 </section>
 
-{{-- 8c. CUSTOMER-FACING CERTIFICATE BLOCK --}}
+{{-- 8c. DETERGENTS BY LAUNDRY SETUP (myPRO Cleanstar + lagoon Advanced Care) --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-8 reveal">Detergents by Laundry Setup</p>
+
+        <div class="space-y-8">
+
+            {{-- myPRO Cleanstar Consumables (official wordmarks + product specifications from the Electrolux myPRO page) --}}
+            <div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 reveal">
+                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">myPRO Cleanstar Consumables</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
+                    For smaller myPRO laundry setups that need suitable detergents for everyday washing, garment care and semi-professional use.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                    @foreach([
+                        ['name' => 'Gentle Wash',  'img' => 'cleanstar-gentle-wash.png',  'spec' => 'With its formulation derived from vegetable raw material, Cleanstar Gentle Wash gently cleans delicate garments restoring their original softness.'],
+                        ['name' => 'Soft Touch',   'img' => 'cleanstar-soft-touch.png',   'spec' => 'Cleanstar Soft Touch restores elasticity and softness to the fibres of your garments; it makes ironing easier and prevents buildup of static electricity.'],
+                        ['name' => 'Green liquid', 'img' => 'cleanstar-green-liquid.png', 'spec' => 'Biodegradable, Cleanstar Green Liquid is an innovative detergent containing vegetal raw material surfactants; it efficiently removes stains while preserving colours and being gentle to the fibres.'],
+                        ['name' => 'Wash liquid',  'img' => 'cleanstar-wash-liquid.png',  'spec' => 'With its formulation derived from vegetable raw material, Cleanstar Wash Liquid cleans everyday garments while staying gentle on fabrics.'],
+                        ['name' => 'Magic white',  'img' => 'cleanstar-magic-white.png',  'spec' => 'Already active at low temperature, Cleanstar Magic White removes stains and whitens your garments without damaging them.'],
+                        ['name' => 'Wash powder',  'img' => 'cleanstar-wash-powder.png',  'spec' => 'Thanks to its enhanced formulation that combines surfactants and active oxygen, Cleanstar Wash Powder removes the most stubborn stains.'],
+                    ] as $cs)
+                    <div class="bg-white rounded-xl border border-gray-100 p-6 lg:p-8 flex flex-col items-center text-center">
+                        <div class="flex items-center justify-center h-28 lg:h-32 mb-4">
+                            <img src="{{ asset('images/pages/accessories/'.$cs['img']) }}" alt="Cleanstar {{ $cs['name'] }}"
+                                 loading="lazy" decoding="async" class="max-h-24 lg:max-h-28 w-auto object-contain">
+                        </div>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $cs['spec'] }}</p>
+                    </div>
+                    @endforeach
+                </div>
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                    Ask About myPRO Consumables
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            {{-- lagoon Advanced Care Products (products grouped by the 5-step lagoon process, matching the wet-cleaning page flow) --}}
+            <div class="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 reveal">
+                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">lagoon Advanced Care Products</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
+                    For specialist wet cleaning setups that need dedicated detergents, conditioner, stain-care products and colour transfer support.
+                </p>
+
+                {{-- 5-step process flow --}}
+                <div class="flex flex-wrap items-center gap-x-4 gap-y-4 mb-10">
+                    @foreach(['Prespotting agents', 'Dedicated detergents', 'Fabric conditioner', 'Lagoon programme + precise dosing', 'Softer, fresher, ready-to-wear finish'] as $step)
+                    @unless($loop->first)
+                    <svg class="w-8 h-4 text-[#148af4] flex-shrink-0" viewBox="0 0 48 24" fill="none"><path d="M2 12 L42 12 M34 5 L42 12 L34 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    @endunless
+                    <span class="inline-flex items-center rounded-full px-5 py-2.5 font-body font-bold text-sm {{ $loop->last ? 'bg-[#148af4] text-white' : 'bg-bg border border-gray-100 text-navy' }}">{{ $step }}</span>
+                    @endforeach
+                </div>
+
+                {{-- Products grouped by process step — one line of tiles per group --}}
+                <div class="flex flex-col gap-10 mb-10">
+                    @foreach([
+                        ['step' => 'Prespotting agents', 'items' => [
+                            ['name' => 'A01 – lagoon Pre-Treatment',           'img' => 'lagoon-a01-pre-treatment.png'],
+                            ['name' => 'P01 – lagoon Protein Stain Remover',   'img' => 'lagoon-p01-protein-stain-remover.png'],
+                            ['name' => 'P02 – lagoon Tannin Stain Remover',    'img' => 'lagoon-p02-tannin-stain-remover.png'],
+                            ['name' => 'P03 – lagoon Grease Stain Remover',    'img' => 'lagoon-p03-grease-stain-remover.png'],
+                            ['name' => 'P04 – lagoon Ink Stain Remover',       'img' => 'lagoon-p04-ink-stain-remover.png'],
+                        ]],
+                        ['step' => 'Dedicated detergents', 'items' => [
+                            ['name' => 'W01 – lagoon Sensitive Detergent',     'img' => 'lagoon-w01-sensitive-detergent.png'],
+                            ['name' => 'W02 – lagoon Delicate Detergent',      'img' => 'lagoon-w02-delicate-detergent.png'],
+                            ['name' => 'A02 – lagoon Colour Transfer Reducer', 'img' => 'lagoon-a02-colour-transfer-reducer.png'],
+                        ]],
+                        ['step' => 'Fabric conditioner', 'items' => [
+                            ['name' => 'W03 – lagoon Sensitive Conditioner',   'img' => 'lagoon-w03-sensitive-conditioner.png'],
+                        ]],
+                    ] as $lgrp)
+                    <div>
+                        <p class="font-heading font-bold text-navy text-base mb-4">{{ $lgrp['step'] }}</p>
+                        <div class="flex flex-wrap lg:flex-nowrap gap-x-4 gap-y-6">
+                            @foreach($lgrp['items'] as $it)
+                            <div class="flex flex-col items-center text-center w-24">
+                                <div class="flex items-end justify-center h-24 mb-2">
+                                    <img src="{{ asset('images/pages/accessories/'.$it['img']) }}" alt="{{ $it['name'] }}"
+                                         loading="lazy" decoding="async" class="h-full w-auto object-contain">
+                                </div>
+                                <p class="font-heading font-bold text-navy text-xs leading-snug">{{ $it['name'] }}</p>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+                <a href="{{ route('equipment.category', 'wet-cleaning') }}"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                    View Wet Cleaning Support
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- 8d. CUSTOMER-FACING CERTIFICATE BLOCK --}}
 <section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -801,7 +890,7 @@
             @foreach([
                 ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'washers'), 'img' => '/images/pages/commercial-washers/WH6-27.jpg', 'box' => 270],
                 ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity planned around the wash process, textile care and daily laundry demand.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-7.jpg', 'box' => 270],
-                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/lagoon-garment-care.jpg', 'box' => 260],
+                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 270],
                 ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash quality, fabric care and handling affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
@@ -812,7 +901,7 @@
                 <div class="w-full flex items-end justify-center" style="height:300px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="width:{{ $card['box'] }}px; max-width:100%; height:{{ $card['box'] }}px; object-fit:contain;">
+                         style="width:{{ $card['box'] }}px; max-width:100%; height:{{ $card['box'] }}px; object-fit:contain; object-position:bottom;">
                 </div>
                 <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
                     {{ $card['cta'] }}
