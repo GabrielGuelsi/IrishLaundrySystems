@@ -56,7 +56,7 @@
         <div class="flex items-center flex-wrap gap-y-2 {{ $miniHasIcons ? 'gap-x-4 lg:flex-nowrap '.$miniIconShift : ($miniNowrap ? 'gap-x-3 lg:flex-nowrap' : 'gap-x-5') }} mb-7">
             @foreach($miniPoints as $i => $pt)
             @if(is_array($pt))
-            <span class="flex items-center gap-2 flex-shrink-0">
+            <span class="flex items-center gap-5 flex-shrink-0">
                 @if(!empty($pt['icon']))
                 <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['iconClass'] ?? '' }}" style="{{ $pt['iconStyle'] ?? '' }}">
                 @endif
@@ -72,8 +72,8 @@
             @foreach($features as $i => $feat)
             @if($i > 0)
             @endif
-            <div class="flex items-center gap-3 mr-5 lg:mr-0">
-                <div class="flex-shrink-0" style="width:2.4rem;height:2.4rem;display:flex;align-items:center;justify-content:center;">
+            <div class="flex items-center gap-5 mr-5 lg:mr-0">
+                <div class="flex-shrink-0" style="width:3.5rem;height:3.5rem;display:flex;align-items:center;justify-content:center;">
                     {!! $feat['icon'] !!}
                 </div>
                 <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>

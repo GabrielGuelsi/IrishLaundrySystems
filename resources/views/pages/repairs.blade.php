@@ -101,15 +101,6 @@
                     </a>
                 </div>
 
-                {{-- Trust indicators --}}
-                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Commercial laundry repairs</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Electrolux Professional equipment knowledge</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Clear repair decisions</span>
-                </div>
-
             </div>
         </div>
     </div>
@@ -521,7 +512,7 @@ $faqs = [
     'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry service&nbsp;support</span>',
     'subheading' => 'Commercial sites choose Irish Laundry Systems for responsive repairs, clear communication and reliable equipment care.',
 ])
-<div class="bg-[#f7f8fa] -mt-10 lg:-mt-16">
+<div class="bg-[#f7f8fa] -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')
 </div>
 

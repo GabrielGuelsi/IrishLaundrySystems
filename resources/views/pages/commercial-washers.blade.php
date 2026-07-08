@@ -188,7 +188,7 @@
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'175',            'prefix'=>'Up to', 'stat'=>'40%',                 'size'=>'text-4xl', 'label'=>'lower operational expenditure', 'iconClass'=>'scale-[1.392] -translate-y-[2.9%]', 'body'=>'Electrolux Professional Line 6000 washer technology can reduce operating costs by up to 40% through better utilisation.'],
+            ['icon'=>'175',            'prefix'=>'Up to', 'stat'=>'40%',                 'size'=>'text-4xl', 'label'=>'lower operational expenditure', 'labelClass'=>'!ml-[4.25rem] xl:!ml-[5.25rem]', 'iconClass'=>'scale-[1.392] -translate-y-[2.9%]', 'body'=>'Electrolux Professional Line 6000 washer technology can reduce operating costs by up to 40% through better utilisation.'],
             ['icon'=>'dosing-control', 'prefix'=>'Over',  'stat'=>'30%',                 'size'=>'text-4xl', 'label'=>'detergent savings', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',       'body'=>'Efficient Dosing can reduce detergent costs where specified, with better control of each wash process.'],
             ['icon'=>'39',             'prefix'=>'',      'stat'=>'Less waste',          'size'=>'text-2xl', 'label'=>'water, energy and cycles', 'iconClass'=>'scale-[1.105] -translate-y-[10.1%]', 'body'=>'Automatic Savings and Integrated Savings improve load control, reducing water, energy and cycle waste.'],
             ['icon'=>'rental-gain-116','prefix'=>'',      'stat'=>'Time and<br>money',   'size'=>'text-2xl', 'label'=>'saved before drying', 'iconClass'=>'scale-[0.79] translate-y-[0.4%]',      'body'=>'Power Balance lowers moisture retention before drying, reducing the load on the drying stage and protecting laundry flow.'],
@@ -282,15 +282,15 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             Irish Laundry Systems reviews room layout, utilities, access and expected laundry volume before recommending washer capacity and installation approach.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
             @foreach([
-                ['icon' => '56', 'label' => 'Room fit'],
-                ['icon' => '37', 'label' => 'Utilities and access'],
-                ['icon' => '38', 'label' => 'Washer capacity'],
+                ['icon' => '56', 'label' => 'Room<br>fit'],
+                ['icon' => '37', 'label' => 'Utilities<br>and access'],
+                ['icon' => '38', 'label' => 'Washer<br>capacity'],
             ] as $pt)
-            <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain" style="filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
+            <span class="flex items-center gap-5 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @endforeach
         </div>

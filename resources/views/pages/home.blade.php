@@ -154,8 +154,8 @@
     'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
-        ['img' => 'Tumble-dryers_Heat-Pump_1-1', 'src' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',   'name' => 'Dryers',               'desc' => 'For daily drying demand, drying control and steady turnaround through the day.',                          'box' => 245],
-        ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
+        ['img' => 'TD6-7', 'src' => '/images/pages/dryers/TD6-7.jpg', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For daily drying demand, drying control and steady turnaround through the day.',                          'box' => 245],
+        ['img' => 'DC6-4', 'src' => '/images/pages/drying-cabinets/DC6-4.jpg', 'ext' => 'jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
         ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and stronger output across linen-heavy environments.'],
     ],
 ])
@@ -194,6 +194,7 @@
 
 <!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
+    'eyebrow'      => 'Preventive Maintenance & Aftercare',
     'headingLine1' => 'Keep service costs,',
     'headingLine2' => 'maintenance and next steps clear',
     'body'         => 'Planned maintenance and aftercare keep service history, equipment condition and follow-up needs clear, giving teams a better way to reduce surprise repair costs, protect equipment value and limit disruption over time.',
