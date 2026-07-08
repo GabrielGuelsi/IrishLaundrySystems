@@ -61,15 +61,6 @@
                     </a>
                 </div>
 
-                {{-- Trust indicators --}}
-                <div class="svc-hero-btns flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Engineering-led since 1987</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Electrolux Professional Partner</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Commercial laundry specialists</span>
-                </div>
-
             </div>
         </div>
     </div>
@@ -129,7 +120,7 @@
     'align'            => 'left',
     'cards'            => [
         ['title' => 'Repairs & Call-Outs',               'body' => 'Call-out and repair support when commercial laundry equipment needs to return to service.',                          'cta' => 'View Repairs & Call-Outs',              'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                'alt' => 'Repairs and Call-Outs',           'pos' => 'center 40%', 'bullets' => ['Fault review', 'Repair response', 'Service visit']],
-        ['title' => 'Preventive Maintenance Contracts',  'body' => 'Planned inspections to protect equipment reliability and keep service records clear.',                               'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',          'pos' => '80% center', 'bullets' => ['Planned checks', 'Service records', 'Maintenance control']],
+        ['title' => 'Maintenance Contracts',  'body' => 'Planned inspections to protect equipment reliability and keep service records clear.',                               'cta' => 'View Preventive Maintenance',           'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',          'pos' => '80% center', 'bullets' => ['Planned checks', 'Service records', 'Maintenance control']],
         ['title' => 'Equipment Rental',                  'body' => 'Access selected Electrolux Professional laundry equipment without one large purchase.',                              'cta' => 'View Equipment Rental',                 'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',                'pos' => '66% center', 'bullets' => ['Lower upfront cost', 'Installed equipment', 'Included support']],
         ['title' => 'Support & Aftercare',               'body' => 'Ongoing service for parts checks, service history and future equipment planning.',                                   'cta' => 'View Support & Aftercare',              'href' => route('parts-aftercare'),   'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare',             'pos' => 'center center', 'bullets' => ['Parts support', 'Service history', 'Aftercare planning']],
     ],
@@ -258,8 +249,8 @@
                 Report the service need and <span class="text-[#148af4]">we'll take care of the&nbsp;response</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
-                <span>Share the equipment details, site access and service history.</span>
-                <span><span>Irish Laundry Systems</span> will review the request, arrange the required service and keep the service record clear.</span>
+                <span class="block">Share the equipment details, site access and service history.</span>
+                <span class="block"><span>Irish Laundry Systems</span> will review the request, arrange the required service and keep the service record clear.</span>
             </p>
         </div>
     </div>
@@ -379,7 +370,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
-            Need service support for <span style="color:#011E41;">commercial laundry&nbsp;equipment</span>?
+            Need service support for <span style="color:#011E41;">commercial laundry&nbsp;equipment?</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Tell us what is happening with the equipment. Irish Laundry Systems will review the request and respond with the appropriate service recommendation.
@@ -394,7 +385,7 @@
             ] as $i => $feat)
             @if($i > 0)
             @endif
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-5">
                 <img src="{{ $feat['img'] }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;filter:brightness(0) invert(1);" alt="">
                 <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>

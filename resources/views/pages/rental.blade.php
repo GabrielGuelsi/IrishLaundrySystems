@@ -49,8 +49,11 @@
                 <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-5xl text-balance">
                     Commercial laundry equipment rental with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
                 </h1>
-                <p class="rn-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-xl text-pretty">
-                    Irish Laundry Systems rental agreements give commercial laundry sites access to selected Electrolux Professional equipment without one large upfront purchase. Supply, installation, service labour, preventive maintenance, replacement parts and ongoing support are included under one agreement, with filters and consumables excluded.
+                <p class="rn-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-4 max-w-2xl text-pretty">
+                    Irish Laundry Systems rental agreements give commercial laundry sites access to selected Electrolux Professional equipment without one large upfront purchase.
+                </p>
+                <p class="rn-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-2xl text-pretty">
+                    Supply, installation, service labour, preventive maintenance, replacement parts and ongoing support are included under one agreement, with filters and consumables excluded.
                 </p>
                 <div class="rn-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="#quote-form" data-ga-cta="hero-request-quote"
@@ -61,13 +64,6 @@
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to Our Team
                     </a>
-                </div>
-                <div class="rn-hero-btns mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-white/70 text-xs">
-                    <span class="lg:whitespace-nowrap">Selected Electrolux Professional equipment</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="lg:whitespace-nowrap">Supply and installation included</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="lg:whitespace-nowrap">Support throughout the agreement</span>
                 </div>
             </div>
         </div>
@@ -342,7 +338,7 @@
             ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
             ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/pages/sectors/hospitallityhero.png', 'pos' => '75% center'],
             ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/shared/td6-11-multihousing-room-front.jpg'],
-            ['env' => 'Multi Housing',               'route' => route('sectors'),             'img' => '/images/shared/Line 6000 solutions products_72dpi.jpg'],
+            ['env' => 'Multi Housing',               'route' => route('equipment'),           'img' => '/images/shared/Line 6000 solutions products_72dpi.jpg'],
         ];
         @endphp
 
@@ -491,17 +487,17 @@
             With rental, Irish Laundry Systems supplies, installs and supports the equipment during the rental term. Service labour, preventive maintenance and parts cover are included, with filters and consumables excluded.
         </p>
 
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
-            <div class="flex items-center gap-3">
-                <svg style="width:2.6rem;height:2.6rem;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437"/></svg>
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
+            <div class="flex items-center gap-5">
+                <svg style="width:3.5rem;height:3.5rem;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437"/></svg>
                 <span class="font-body text-white text-sm font-bold leading-snug">Service labour<br>included</span>
             </div>
-            <div class="flex items-center gap-3">
-                <svg style="width:2.6rem;height:2.6rem;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>
+            <div class="flex items-center gap-5">
+                <svg style="width:3.5rem;height:3.5rem;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg>
                 <span class="font-body text-white text-sm font-bold leading-snug">Preventive Maintenance<br>included</span>
             </div>
-            <div class="flex items-center gap-3">
-                <svg style="width:2.6rem;height:2.6rem;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
+            <div class="flex items-center gap-5">
+                <svg style="width:3.5rem;height:3.5rem;flex-shrink:0;" fill="none" viewBox="0 0 24 24" stroke="white" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg>
                 <span class="font-body text-white text-sm font-bold leading-snug">Parts<br>included</span>
             </div>
         </div>

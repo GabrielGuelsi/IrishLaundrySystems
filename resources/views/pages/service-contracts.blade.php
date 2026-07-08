@@ -187,7 +187,7 @@
                     Preventive Maintenance Contracts
                 </p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Keep your laundry operation&nbsp;running<br class="hidden lg:block"> with <span class="text-steel">fewer surprise&nbsp;costs</span>
                 </h1>
 
@@ -206,23 +206,6 @@
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Talk to Our Team
                     </a>
-                </div>
-
-                <div class="hero-trust mt-7 flex flex-wrap items-center gap-x-5 gap-y-2 text-xs font-body text-white">
-                    <span class="inline-flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
-                        Two planned inspections per year
-                    </span>
-                    <span class="hidden sm:inline opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
-                        Preferential call-out rates under the agreement
-                    </span>
-                    <span class="hidden sm:inline opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2">
-                        <span class="w-1.5 h-1.5 rounded-full bg-steel"></span>
-                        Support from people who know the equipment
-                    </span>
                 </div>
 
             </div>
@@ -332,9 +315,9 @@
             @foreach ($gainCards as $i => $card)
             <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-11 h-11 object-contain">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 object-contain">
                 @else
-                <svg class="w-11 h-11 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <svg class="w-16 h-16 lg:w-20 lg:h-20 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     {!! $card['svg'] !!}
                 </svg>
                 @endif
@@ -439,7 +422,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal text-balance" style="transition-delay:80ms;">
                 <span class="text-steel">Protect your maintenance budget</span> before small problems become expensive repairs
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty max-w-3xl mx-auto" style="transition-delay:140ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty max-w-5xl mx-auto" style="transition-delay:140ms;">
                 Waiting for breakdowns can lead to urgent call-outs, downtime, delays and unplanned repair costs. A Preventive Maintenance Contract gives your site planned servicing, service reports and earlier attention to smaller issues before they become expensive repair pressure. For Electrolux Professional equipment, regular servicing can also support more consistent energy, water and detergent use over time.
             </p>
         </div>
@@ -557,12 +540,17 @@
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
                     Planned inspections help identify wear, developing faults and service needs earlier, so your site can reduce downtime pressure, minimise disruption and keep maintenance decisions easier to&nbsp;manage.
                 </p>
-                <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs lg:text-sm font-body text-blue-200/90 mb-8">
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Spot issues earlier</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Keep equipment running</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Minimise disruption</span>
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 mb-8">
+                    @foreach([
+                        ['icon' => 'ativo-8',  'label' => 'Spot issues<br>earlier'],
+                        ['icon' => 'ativo-4',  'label' => 'Keep equipment<br>running'],
+                        ['icon' => 'ativo-7',  'label' => 'Minimise<br>disruption'],
+                    ] as $feat)
+                    <div class="flex items-center gap-5 text-left">
+                        <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                        <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                    </div>
+                    @endforeach
                 </div>
                 <a href="#book-visit-form" class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
                     Book a Preventive Maintenance Visit
@@ -826,19 +814,16 @@ $faqs = [
             When a preventive visit identifies wear, a recurring fault or a parts requirement, <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps follow-up straightforward, with quoted work and genuine parts support where&nbsp;needed.
         </p>
 
-        <div class="flex items-center flex-wrap gap-0 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
             @foreach([
-                ['icon' => 'ativo-8', 'label' => 'Clear follow-up'],
-                ['icon' => 'ativo-4', 'label' => 'Less delay after inspection'],
-                ['icon' => 'ativo-7', 'label' => 'Genuine parts support where needed'],
+                ['icon' => 'ativo-8', 'label' => 'Clear<br>follow-up'],
+                ['icon' => 'ativo-4', 'label' => 'Less delay<br>after inspection'],
+                ['icon' => 'ativo-7', 'label' => 'Genuine parts support<br>where needed'],
             ] as $i => $feat)
-            @if($i > 0)
-                <div class="w-px h-7 bg-white/20 mx-4 flex-shrink-0"></div>
-            @endif
-            <div class="flex items-center gap-2">
+            <div class="flex items-center gap-5">
                 <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     class="w-5 h-5 flex-shrink-0 opacity-80" alt="">
-                <span class="font-body text-white text-xs font-bold whitespace-nowrap">{{ $feat['label'] }}</span>
+                     style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>

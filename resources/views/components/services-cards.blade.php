@@ -25,7 +25,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-5xl leading-tight text-balance mb-4">
                 {{ $headingLead }}<span class="{{ $highlightClass }}">{{ $headingHighlight }}</span>{{ $headingTrail }}
             </h2>
-            <p class="font-body {{ $align === 'center' ? 'text-gray-500 mx-auto' : 'text-gray-600' }} {{ $introMaxW ?? 'max-w-3xl' }} text-base leading-relaxed {{ $introClass }}">{{ $intro }}</p>
+            <p class="font-body {{ $align === 'center' ? 'text-gray-500 mx-auto' : 'text-gray-600' }} {{ $introMaxW ?? 'max-w-3xl' }} text-base leading-relaxed {{ $introClass }}">{!! $intro !!}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">

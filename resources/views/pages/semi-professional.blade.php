@@ -312,7 +312,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For sites that need larger capacity, heavier use or full commercial washer performance.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For sites that need larger capacity, heavier use or full commercial washer performance.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'commercial-washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
                 ['title' => 'Commercial Tumble Dryers',    'copy' => 'For sites where drying demand is too high for a semi-professional dryer setup.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp', 'box' => 245],
                 ['title' => 'Drying Cabinets',             'copy' => 'For shoes, gloves, workwear, delicate garments and items that should not be tumble dried.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/shared/drying_cabinetscards.jpg', 'box' => 260],
                 ['title' => 'Finishing Equipment',         'copy' => 'For sites that need ironing, pressing or finishing support alongside washing and drying.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
@@ -350,7 +350,7 @@
                     ['l' => 'Browse semi-professional range', 'h' => route('equipment.category', ['category' => 'semi-professional'])],
                 ]],
                 ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'washers'])],
+                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
                     ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
                     ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
                 ]],

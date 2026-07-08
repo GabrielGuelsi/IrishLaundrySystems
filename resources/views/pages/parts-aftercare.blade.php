@@ -168,7 +168,7 @@
 
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
-                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Keep your laundry operation moving<br class="hidden lg:block"> with <span class="text-[#148af4]">long-term equipment&nbsp;care</span>
                 </h1>
 
@@ -187,15 +187,6 @@
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         View Service Options
                     </a>
-                </div>
-
-                {{-- Trust indicators --}}
-                <div class="pa-hero-btns mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Aftercare support</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Service history</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Genuine parts support where needed</span>
                 </div>
 
             </div>
@@ -248,7 +239,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Support &amp; Aftercare for <span class="text-[#148af4]">equipment already in use</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
                 Irish Laundry Systems keeps service records, parts information and equipment condition ready for future repairs, maintenance visits and equipment decisions.
             </p>
         </div>
@@ -287,9 +278,9 @@
             <div class="reveal group py-8 lg:py-0 border-t border-gray-200 first:border-t-0 lg:border-t-0 lg:border-l lg:first:border-l-0 lg:px-10 lg:first:pl-0 lg:last:pr-0 lg:grid lg:grid-rows-subgrid lg:row-span-3"
                  style="transition-delay:{{ $i * 80 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 mb-7 object-contain transition-transform duration-300 group-hover:-translate-y-1">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 mb-7 object-contain transition-transform duration-300 group-hover:-translate-y-1">
                 @else
-                <svg class="w-14 h-14 lg:w-16 lg:h-16 text-[#148af4] mb-7 transition-transform duration-300 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
+                <svg class="w-16 h-16 lg:w-20 lg:h-20 text-[#148af4] mb-7 transition-transform duration-300 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
                 @endif
                 <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-3 leading-snug text-balance self-start">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
@@ -302,7 +293,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      5. THE RIGHT PART NEEDS THE RIGHT CONTEXT — navy strip
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
+<section class="relative py-16 lg:py-24 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
         <img src="/images/shared/commercial-hero.jpg" alt="" loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
@@ -318,16 +309,20 @@
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
                     <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews equipment details, service records and site requirements before advising on parts, accessories or follow-up service.
                 </p>
-                <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs lg:text-sm font-body text-blue-200/90 mb-8">
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Equipment details</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Service history</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Genuine parts support</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-[#148af4]"></span>Accessories support</span>
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 mb-8">
+                    @foreach([
+                        ['icon' => 'ativo-8',  'label' => 'Equipment<br>details'],
+                        ['icon' => 'ativo-4',  'label' => 'Service<br>history'],
+                        ['icon' => 'ativo-7',  'label' => 'Genuine parts<br>support'],
+                        ['icon' => 'ativo-21', 'label' => 'Accessories<br>support'],
+                    ] as $feat)
+                    <div class="flex items-center gap-5 text-left">
+                        <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                        <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                    </div>
+                    @endforeach
                 </div>
-                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
+                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-white text-navy hover:bg-white/90 font-heading font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200">
                     Talk to Our Team
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -345,7 +340,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             Tell us what needs attention and <span class="text-[#148af4]">we&rsquo;ll arrange the&nbsp;follow-up</span>
         </h2>
-        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty max-w-3xl" style="transition-delay:160ms;">
+        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
             <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the equipment, service history and site details before arranging the required support.
         </p>
     </div>
@@ -409,12 +404,17 @@
                     <p class="font-body text-blue-200 text-base leading-relaxed reveal text-pretty">
                         If the same machine keeps needing attention, Support &amp; Aftercare can use the service history to review whether a Preventive Maintenance Contract would help reduce repeat disruption, protect equipment value and plan the next step.
                     </p>
-                    <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-blue-200/90 text-xs lg:text-sm reveal">
-                        <span class="whitespace-nowrap">Reduce repeat disruption</span>
-                        <span class="text-white/30">|</span>
-                        <span class="whitespace-nowrap">Protect equipment value</span>
-                        <span class="text-white/30">|</span>
-                        <span class="whitespace-nowrap">Planned maintenance support</span>
+                    <div class="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3 reveal">
+                        @foreach([
+                            ['icon' => 'ativo-8', 'label' => 'Reduce repeat<br>disruption'],
+                            ['icon' => 'ativo-4', 'label' => 'Protect equipment<br>value'],
+                            ['icon' => 'ativo-7', 'label' => 'Planned maintenance<br>support'],
+                        ] as $feat)
+                        <div class="flex items-center gap-5">
+                            <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                            <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                        </div>
+                        @endforeach
                     </div>
                 </div>
                 <div class="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-stretch reveal" style="transition-delay:120ms;">
@@ -424,7 +424,7 @@
                         <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border-2 border-white/30 hover:border-white text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors hover:bg-white/10">
+                       class="inline-flex items-center justify-center gap-2 border border-white/60 hover:border-white text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors hover:bg-white/10">
                         Talk to Our Team
                     </a>
                 </div>
@@ -489,10 +489,18 @@
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 text-pretty">
             For compatible Electrolux Professional equipment, OnE Connected provides digital insight into usage, performance and resource consumption. <span class="whitespace-nowrap">Irish Laundry Systems</span> can advise whether it suits the site and arrange supply and installation through its Electrolux Professional partnership.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Usage insight', 'Performance visibility', 'Resource awareness', 'Electrolux Professional technology', 'Irish setup support'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex items-center flex-wrap gap-x-8 gap-y-3 mb-7">
+            @foreach([
+                ['icon' => 'ativo-9',  'label' => 'Usage<br>insight'],
+                ['icon' => 'ativo-10', 'label' => 'Performance<br>visibility'],
+                ['icon' => 'ativo-11', 'label' => 'Resource<br>awareness'],
+                ['icon' => 'ativo-20', 'label' => 'Electrolux Professional<br>technology'],
+                ['icon' => 'ativo-21', 'label' => 'Irish setup<br>support'],
+            ] as $feat)
+            <div class="flex items-center gap-5">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
@@ -513,7 +521,7 @@
     'headingHighlight' => 'repairs, maintenance and Equipment Rental',
     'headingTrail'     => '',
     'highlightClass'   => 'text-[#148af4]',
-    'intro'            => 'Support & Aftercare keeps service history aligned across repair visits, Preventive Maintenance and Equipment Rental, so future service decisions reflect equipment condition and site priorities.',
+    'intro'            => 'Support & Aftercare keeps service history aligned across repair visits, Preventive Maintenance and Equipment Rental,<br class="hidden lg:block"> so future service decisions reflect equipment condition and site priorities.',
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
@@ -804,17 +812,23 @@ $aftercareFaqs = [
             <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">
                 Share the equipment details, service history or parts requirement. <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and advise on the appropriate support.
             </p>
-            <div class="mb-8 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-white/90 text-xs lg:text-sm reveal">
-                <span class="whitespace-nowrap">Organised service history</span>
-                <span class="text-white/40">|</span>
-                <span class="whitespace-nowrap">Clearer next costs</span>
-                <span class="text-white/40">|</span>
-                <span class="whitespace-nowrap">Support from people who know the equipment</span>
+            <div class="mb-8 flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 reveal">
+                @foreach([
+                    ['icon' => 'ativo-8', 'label' => 'Organised<br>service history'],
+                    ['icon' => 'ativo-4', 'label' => 'Clearer<br>next costs'],
+                    ['icon' => 'ativo-7', 'label' => 'Support from people<br>who know the equipment'],
+                ] as $feat)
+                <div class="flex items-center gap-5">
+                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
+                         style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                    <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                </div>
+                @endforeach
             </div>
             <div class="flex flex-wrap items-center gap-4 reveal">
                 <a href="#aftercare-form"
                    data-ga-cta="final-request-aftercare"
-                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-heading font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap">
                     Request Support &amp; Aftercare
                 </a>
                 <a href="{{ route('contact') }}"

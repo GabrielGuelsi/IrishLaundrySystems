@@ -59,7 +59,7 @@
 
                 <p class="ep-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Authorised Electrolux Professional Partner</p>
 
-                <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Electrolux Professional strength, delivered with <span class="text-[#148af4]">Irish engineering&nbsp;support</span>
                 </h1>
 
@@ -78,15 +78,6 @@
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5 whitespace-nowrap">
                         Explore Equipment
                     </a>
-                </div>
-
-                {{-- Trust indicators --}}
-                <div class="ep-hero-btns mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Authorised Electrolux Professional Partner</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Irish engineering expertise since 1987</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">100+ clients supported</span>
                 </div>
 
             </div>
@@ -324,22 +315,58 @@
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
-     8. ELECTROLUX PROFESSIONAL STATEMENT — RESERVED
-     ──────────────────────────────────────────────────────────────────────
-     Reserved for the official approved Electrolux Professional statement
-     (quote, certificate, signed statement or authorised partner confirmation).
-     Do NOT publish holding copy here — keep the space reserved until the
-     approved statement arrives, then build the visible section in this block.
+     8. ELECTROLUX PROFESSIONAL STATEMENT — official partnership testimonial
+     (approved statement from Paul Frost, Electrolux Professional Country Manager)
      ════════════════════════════════════════════════════════════════════════ --}}
+<section class="py-16 lg:py-24 bg-navy">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-{{-- ════════════════════════════════════════════════════════════════════════
-     9. CUSTOMER CONFIDENCE — compact trusted-by logo strip
-     ════════════════════════════════════════════════════════════════════════ --}}
-@include('components.testimonials', [
-    'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted support for <span style="color:#148af4;">commercial laundry operations</span>',
-    'subheading' => '',
-])
+        <div class="mb-12 lg:mb-14 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Partnership</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Over 30 years as an <span style="color:#148af4;">Electrolux Professional Authorised Partner</span>
+            </h2>
+            <p class="font-body text-white/70 text-base leading-relaxed">
+                A statement from Paul Frost, Electrolux Professional Country Manager.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+            {{-- Left: Electrolux Professional logo + partnership badges --}}
+            <div class="lg:col-span-4 flex flex-col items-center text-center gap-8 reveal reveal-left">
+                <img src="/images/logo/electrolux-partner.png" alt="Electrolux Professional Authorised Partner"
+                     loading="lazy" decoding="async" class="w-full max-w-[300px] h-auto object-contain"
+                     style="filter:brightness(0) invert(1);">
+                <div class="flex flex-wrap justify-center gap-2">
+                    @foreach(['Authorised Partner', 'Over 30 Years', 'Local Engineering Support', 'Genuine Parts Access'] as $badge)
+                    <span class="font-body text-xs font-bold uppercase tracking-wide text-white/80 bg-white/10 border border-white/20 px-3 py-1.5 rounded-full">{{ $badge }}</span>
+                    @endforeach
+                </div>
+            </div>
+
+            {{-- Right: white testimonial card --}}
+            <div class="lg:col-span-8 reveal reveal-right">
+                <div class="bg-white rounded-2xl shadow-card p-8 lg:p-12">
+                    <div class="font-heading font-bold text-[#148af4] text-6xl leading-none select-none" aria-hidden="true">&ldquo;</div>
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug text-balance mb-6">
+                        Local engineering support and genuine parts access, only a phone call away
+                    </h3>
+                    <div class="space-y-4 mb-8">
+                        <p class="font-body text-gray-600 text-base leading-relaxed">&ldquo;Irish Laundry Systems has been a trusted Authorised partner of Electrolux Professional in Ireland for more than 30 years, delivering expert support for our commercial laundry solutions.</p>
+                        <p class="font-body text-gray-600 text-base leading-relaxed">Maurice, Luana and the wider team do a superb job supporting customers with the supply, installation and ongoing service of our commercial laundry equipment.</p>
+                        <p class="font-body text-gray-600 text-base leading-relaxed">Their in-depth product knowledge and understanding of local customers ensures that they can confidently invest in Electrolux Professional solutions, knowing local engineering support and genuine parts access are only a phone call away.&rdquo;</p>
+                    </div>
+                    <div class="pt-6 border-t border-gray-100">
+                        <p class="font-heading font-bold text-navy text-base">Paul Frost</p>
+                        <p class="font-body text-gray-500 text-sm">Electrolux Professional Country Manager</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
 
 @include('components.proof-bar')
 
