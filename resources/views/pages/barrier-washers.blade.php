@@ -110,9 +110,15 @@
             OnE Connected is the digital ecosystem for compatible Electrolux Professional equipment, giving laundry teams clearer visibility over performance, consumption and service needs in one place.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Increase productivity', 'Improve efficiency', 'Increase sustainability'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @foreach([
+                ['icon' => 'ativo-9',  'label' => 'Increase<br>productivity'],
+                ['icon' => 'ativo-10', 'label' => 'Improve<br>efficiency'],
+                ['icon' => 'ativo-11', 'label' => 'Increase<br>sustainability'],
+            ] as $feat)
+            <div class="flex items-center gap-5">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
@@ -347,7 +353,7 @@
                 ['icon' => '166', 'label' => 'Access'],
                 ['icon' => '184', 'label' => 'Connections'],
             ] as $pt)
-            <span class="flex items-center gap-2 flex-shrink-0">
+            <span class="flex items-center gap-5 flex-shrink-0">
                 <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-12 w-auto object-contain" style="{{ !empty($pt['blend']) ? 'mix-blend-mode:screen;' : 'filter:brightness(0) invert(1);' }}">
                 <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
             </span>
@@ -369,7 +375,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
             @foreach([
                 ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 Evolution brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'], ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'], ['l' => 'Cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'], ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
-                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
+                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
                 ['title' => 'Rental & Support',    'links' => [['l' => 'Equipment Rental', 'h' => route('rental')], ['l' => 'Preventive Maintenance', 'h' => route('service-contracts')], ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')]]],
             ] as $grp)
             <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
@@ -804,7 +810,7 @@
                         ['icon' => '79',  'label' => 'Service<br>history'],
                         ['icon' => '61', 'label' => 'Parts<br>support'],
                     ] as $pt)
-                    <span class="flex items-center gap-2 flex-shrink-0">
+                    <span class="flex items-center gap-5 flex-shrink-0">
                         <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
                         <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
                     </span>

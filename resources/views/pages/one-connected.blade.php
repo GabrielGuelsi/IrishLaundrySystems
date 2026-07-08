@@ -39,10 +39,17 @@
                         Check Equipment Compatibility
                     </a>
                 </div>
-                <div class="flex items-center flex-wrap gap-x-5 gap-y-2">
-                    @foreach(['Reduce costs and waste', 'Improve production flow', 'Monitor consumption', 'Prolong equipment lifetime'] as $i => $pt)
-                    @if($i > 0)<span class="text-white/40">|</span>@endif
-                    <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+                <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3">
+                    @foreach([
+                        ['icon' => 'ativo-9',  'label' => 'Reduce costs<br>and waste'],
+                        ['icon' => 'ativo-10', 'label' => 'Improve<br>production flow'],
+                        ['icon' => 'ativo-11', 'label' => 'Monitor<br>consumption'],
+                        ['icon' => 'ativo-21', 'label' => 'Prolong<br>equipment lifetime'],
+                    ] as $feat)
+                    <div class="flex items-center gap-5">
+                        <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                        <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                    </div>
                     @endforeach
                 </div>
             </div>
@@ -266,7 +273,7 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial washers',          'body' => 'Selected compatible Electrolux Professional washers can connect to OnE Connected for status, cycle activity, load factor, consumption and process insight.', 'cta' => 'View Commercial Washers', 'route' => route('equipment.category', 'washers'),         'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+                ['title' => 'Commercial washers',          'body' => 'Selected compatible Electrolux Professional washers can connect to OnE Connected for status, cycle activity, load factor, consumption and process insight.', 'cta' => 'View Commercial Washers', 'route' => route('equipment.category', 'commercial-washers'),         'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
                 ['title' => 'Tumble dryers',               'body' => 'Selected compatible dryers can support connected visibility over equipment use, status, performance and service-related information.', 'cta' => 'View Tumble Dryers', 'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
                 ['title' => 'Barrier washers',             'body' => 'Selected compatible barrier washers can support connected process visibility for hygiene-focused and high-demand laundry environments.', 'cta' => 'View Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
                 ['title' => 'Selected flatwork solutions', 'body' => 'Selected Electrolux Professional flatwork solutions may support OnE Connected depending on model and configuration.', 'cta' => 'Ask About Compatibility', 'route' => route('contact'),         'img' => '/images/shared/line6000-ironer.webp'],

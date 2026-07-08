@@ -888,7 +888,7 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'washers'), 'img' => '/images/pages/commercial-washers/WH6-27.jpg', 'box' => 270],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'commercial-washers'), 'img' => '/images/pages/commercial-washers/WH6-27.jpg', 'box' => 270],
                 ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity planned around the wash process, textile care and daily laundry demand.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-7.jpg', 'box' => 270],
                 ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 270],
                 ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash quality, fabric care and handling affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],

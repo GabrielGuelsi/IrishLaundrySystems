@@ -260,7 +260,7 @@
             @foreach([
                 ['title' => 'Official Resources',  'links' => [['l' => 'Drying Cabinets leaflet', 'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
                 ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
-                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
+                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
             ] as $grp)
             <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
                 <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
@@ -494,12 +494,12 @@
         </p>
         <div class="flex items-center flex-wrap gap-x-6 gap-y-3 mb-7">
             @foreach([
-                ['icon' => '195', 'label' => 'Item type', 'iconClass' => 'h-20'],
+                ['icon' => '195', 'label' => 'Item type', 'iconClass' => 'h-14'],
                 ['icon' => '56', 'label' => 'Room fit'],
                 ['icon' => '196', 'label' => 'Cabinet choice'],
             ] as $pt)
-            <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="{{ $pt['iconClass'] ?? 'h-12' }} w-auto object-contain">
+            <span class="flex items-center gap-5 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="{{ $pt['iconClass'] ?? 'h-14' }} w-auto object-contain">
                 <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
             </span>
             @endforeach

@@ -59,7 +59,7 @@
 
                 <p class="ep-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Authorised Electrolux Professional Partner</p>
 
-                <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Electrolux Professional strength, delivered with <span class="text-[#148af4]">Irish engineering&nbsp;support</span>
                 </h1>
 
@@ -78,15 +78,6 @@
                        class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:bg-white/10 hover:-translate-y-0.5 whitespace-nowrap">
                         Explore Equipment
                     </a>
-                </div>
-
-                {{-- Trust indicators --}}
-                <div class="ep-hero-btns mt-8 flex flex-wrap items-center gap-x-5 gap-y-2 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Authorised Electrolux Professional Partner</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Irish engineering expertise since 1987</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">100+ clients supported</span>
                 </div>
 
             </div>

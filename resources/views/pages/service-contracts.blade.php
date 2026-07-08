@@ -540,12 +540,17 @@
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
                     Planned inspections help identify wear, developing faults and service needs earlier, so your site can reduce downtime pressure, minimise disruption and keep maintenance decisions easier to&nbsp;manage.
                 </p>
-                <div class="flex flex-wrap justify-center items-center gap-x-5 gap-y-2 text-xs lg:text-sm font-body text-blue-200/90 mb-8">
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Spot issues earlier</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Keep equipment running</span>
-                    <span class="opacity-30">|</span>
-                    <span class="inline-flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-steel"></span>Minimise disruption</span>
+                <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 mb-8">
+                    @foreach([
+                        ['icon' => 'ativo-8',  'label' => 'Spot issues<br>earlier'],
+                        ['icon' => 'ativo-4',  'label' => 'Keep equipment<br>running'],
+                        ['icon' => 'ativo-7',  'label' => 'Minimise<br>disruption'],
+                    ] as $feat)
+                    <div class="flex items-center gap-5 text-left">
+                        <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                        <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                    </div>
+                    @endforeach
                 </div>
                 <a href="#book-visit-form" class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
                     Book a Preventive Maintenance Visit

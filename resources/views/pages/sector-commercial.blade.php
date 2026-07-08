@@ -912,7 +912,7 @@
                     ['l' => 'Product resources', 'h' => route('resources')],
                 ]],
                 ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Commercial Washers', 'h' => route('equipment.category', 'washers')],
+                    ['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')],
                     ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
                     ['l' => 'Dosing & Accessories', 'h' => route('equipment.category', 'accessories')],
                 ]],

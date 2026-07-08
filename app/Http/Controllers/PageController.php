@@ -105,7 +105,12 @@ class PageController extends Controller
 
     public function equipmentCategory($category)
     {
+        // Legacy slug — the washers category now lives at /equipment/commercial-washers
         if ($category === 'washers') {
+            return redirect()->route('equipment.category', 'commercial-washers', 301);
+        }
+
+        if ($category === 'commercial-washers') {
             return view('pages.commercial-washers', [
                 'title' => 'Commercial Washing Machines | Electrolux Professional Washers | ILS',
             ]);
@@ -171,6 +176,11 @@ class PageController extends Controller
 
     public function equipmentProduct($category, $product)
     {
+        // Legacy slug — product URLs moved under /equipment/commercial-washers
+        if ($category === 'washers') {
+            return redirect()->route('equipment.product', ['category' => 'commercial-washers', 'product' => $product], 301);
+        }
+
         $item = Equipment::where('category', $category)
             ->where('slug', $product)
             ->where('is_active', true)
@@ -180,7 +190,7 @@ class PageController extends Controller
             // No detail page for this slug (e.g. a range/family card with no single SKU).
             // Fall back to the category listing instead of a dead end, but only for a
             // category we actually serve — otherwise it's a genuine 404.
-            $servedCategories = ['washers', 'tumble-dryers', 'ironers', 'finishing-equipment', 'drying-cabinets', 'barrier-washers'];
+            $servedCategories = ['commercial-washers', 'tumble-dryers', 'ironers', 'finishing-equipment', 'drying-cabinets', 'barrier-washers'];
 
             if (in_array($category, $servedCategories, true) || array_key_exists($category, config('equipment'))) {
                 return redirect()->route('equipment.category', $category);

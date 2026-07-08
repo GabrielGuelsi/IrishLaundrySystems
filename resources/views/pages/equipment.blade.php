@@ -36,7 +36,7 @@
 
                 <p class="eq-hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Guidance</p>
 
-                <h1 class="eq-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-[44px] text-balance">
+                <h1 class="eq-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Commercial laundry equipment<br class="hidden lg:block"> <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
                 </h1>
 
@@ -54,15 +54,6 @@
                        class="inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Ask About Purchase or Rental
                     </a>
-                </div>
-
-                {{-- Trust indicators --}}
-                <div class="eq-hero-btns flex flex-wrap items-center gap-x-5 gap-y-2 mt-8 font-body text-white/70 text-xs">
-                    <span class="whitespace-nowrap">Engineering-led since 1987</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Electrolux Professional Partner</span>
-                    <span class="w-px h-3 bg-white/25 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Supply, installation &amp; aftercare</span>
                 </div>
 
             </div>
@@ -132,7 +123,7 @@
                 'subline'  => 'Line 6000 equipment options for sites looking to manage energy use, water use and daily laundry demand.',
                 'points'   => ['Control running costs', 'Use less water and energy', 'Built for daily demand'],
                 'cta'      => 'Explore Line 6000 Options',
-                'route'    => route('equipment.category', 'washers'),
+                'route'    => route('equipment.category', 'commercial-washers'),
                 'img'      => '/images/shared/Line 6000 solutions products_72dpi.jpg',
                 'imgClass' => 'object-[50%_90%]',
             ],
@@ -188,7 +179,7 @@
                                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-xl">{{ $t['subline'] }}</p>
                                 <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-7">
                                     @foreach($t['points'] as $pt)
-                                    <span class="font-body text-white/90 text-sm">{{ $pt }}</span>
+                                    <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
                                     @if(!$loop->last)<span class="text-white/30">|</span>@endif
                                     @endforeach
                                 </div>
@@ -238,7 +229,7 @@
                 'title' => 'High Spin Commercial Washers',
                 'text'  => 'For sites that need stronger wash performance, better load handling and more control around daily laundry output.',
                 'cta'   => 'View Washer Options',
-                'route' => route('equipment.category', 'washers'),
+                'route' => route('equipment.category', 'commercial-washers'),
                 'img'   => '/images/pages/commercial-washers/commercialwasher.webp',
             ],
             [
@@ -343,7 +334,7 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             @foreach([
-                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'washers'),          'img' => '/images/pages/equipment/commercialwasherscard.png'],
+                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'commercial-washers'),          'img' => '/images/pages/equipment/commercialwasherscard.png'],
                 ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/pages/equipment/barrierwashercards.png'],
                 ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/equipment/tumbledryerscard.png'],
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/shared/drying_cabinetscards.jpg'],
@@ -442,10 +433,16 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
             Whether the right decision is purchase or rental, Irish Laundry Systems can guide your site toward the equipment option that fits the room, workload, budget and support needs.
         </p>
-        <div class="flex flex-wrap items-center gap-x-6 gap-y-2 mb-8">
-            @foreach(['Outright purchase', 'Rental where suitable', 'Supplied and commissioned'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white font-bold text-sm">{{ $pt }}</span>
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-8">
+            @foreach([
+                ['icon' => 'ativo-20', 'label' => 'Outright<br>purchase'],
+                ['icon' => 'ativo-10', 'label' => 'Rental where<br>suitable'],
+                ['icon' => 'ativo-21', 'label' => 'Supplied and<br>commissioned'],
+            ] as $feat)
+            <div class="flex items-center gap-5">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">

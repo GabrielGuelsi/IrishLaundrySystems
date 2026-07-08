@@ -8,7 +8,7 @@
 return [
 
     // ── Commercial Washers ────────────────────────────────────────────────────
-    'washers' => [
+    'commercial-washers' => [
         [
             'name' => 'WS6', 'slug' => 'ws6', 'capacity' => '8–35 kg',
             'title' => 'Line 6000 high-spin washer – WS6',

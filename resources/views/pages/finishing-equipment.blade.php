@@ -432,9 +432,15 @@
             Finishing equipment should match the room, the items handled every day and the steam or electrical setup required for the work.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Room fit', 'Item type', 'Steam needs'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @foreach([
+                ['icon' => '56',  'label' => 'Room<br>fit'],
+                ['icon' => '195', 'label' => 'Item<br>type'],
+                ['icon' => '38',  'label' => 'Steam<br>needs'],
+            ] as $pt)
+            <span class="flex items-center gap-5 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
+            </span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"

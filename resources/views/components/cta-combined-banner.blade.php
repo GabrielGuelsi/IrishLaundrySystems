@@ -61,7 +61,7 @@
             @endif
             <div class="flex items-center gap-5">
                 <img src="{{ $feat['img'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
-                     style="width:{{ isset($feat['img']) ? '3.5rem' : '2.4rem' }};height:{{ isset($feat['img']) ? '3.5rem' : '2.4rem' }};flex-shrink:0;{{ isset($feat['img']) ? 'filter:brightness(0) invert(1);' : '' }}" alt="">
+                     style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ isset($feat['img']) ? 'filter:brightness(0) invert(1);' : '' }}" alt="">
                 <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach

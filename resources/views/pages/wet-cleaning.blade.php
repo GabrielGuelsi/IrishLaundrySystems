@@ -451,9 +451,15 @@
             Match the washer, dryer, detergents and finishing setup to daily garment volume, room conditions and aftercare before installation.
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['System size', 'Drying fit', 'Aftercare'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+            @foreach([
+                ['icon' => '38', 'label' => 'System<br>size'],
+                ['icon' => '37', 'label' => 'Drying<br>fit'],
+                ['icon' => '79', 'label' => 'Aftercare<br>support'],
+            ] as $pt)
+            <span class="flex items-center gap-5 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
+            </span>
             @endforeach
         </div>
         <a href="{{ route('request-assessment') }}"
@@ -831,7 +837,7 @@
                     ['l' => 'Lagoon process video', 'h' => route('resources')],
                 ]],
                 ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'washers'])],
+                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
                     ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
                     ['l' => 'Finishing Equipment', 'h' => route('equipment.category', ['category' => 'finishing-equipment'])],
                     ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
@@ -876,7 +882,7 @@
         {{-- All product shots front-facing, matching the home equipment teaser --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For higher general laundry volumes or mixed loads alongside wet cleaning.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For higher general laundry volumes or mixed loads alongside wet cleaning.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'commercial-washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
                 ['title' => 'Tumble Dryers',    'copy' => 'For commercial drying demand outside delicate wet cleaning loads.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp', 'box' => 245],
                 ['title' => 'Finishing Equipment',         'copy' => 'For pressing, form finishing and garment presentation after cleaning.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
                 ['title' => 'Drying Cabinets',             'copy' => 'For shoes, gloves and specialist items that need controlled drying without tumble action.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/shared/drying_cabinetscards.jpg', 'box' => 260],

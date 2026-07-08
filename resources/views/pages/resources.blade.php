@@ -314,10 +314,17 @@
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Tell us what you are trying to manage, maintain or decide — Irish Laundry Systems will point you to the right resource or practical advice for the site.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
-            @foreach(['Guides', 'Checklists', 'Sector resources', 'Practical advice'] as $i => $pt)
-            @if($i > 0)<span class="text-white/40">|</span>@endif
-            <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
+            @foreach([
+                ['icon' => 'ativo-8',  'label' => 'Guides'],
+                ['icon' => 'ativo-4',  'label' => 'Checklists'],
+                ['icon' => 'ativo-20', 'label' => 'Sector<br>resources'],
+                ['icon' => 'ativo-7',  'label' => 'Practical<br>advice'],
+            ] as $feat)
+            <div class="flex items-center gap-5">
+                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+            </div>
             @endforeach
         </div>
         <a href="{{ route('contact') }}"
@@ -347,7 +354,7 @@
         @php
         $machines = [
             [
-                'href'  => route('equipment.category', 'washers'),
+                'href'  => route('equipment.category', 'commercial-washers'),
                 'title' => 'Washers',
                 'desc'  => 'Washer-extractors and commercial washing machines. Drum checks, programme faults, bearing wear and parts continuity.',
                 'img'   => 'images/pages/commercial-washers/commercialwasher.webp',
