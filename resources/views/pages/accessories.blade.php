@@ -542,6 +542,48 @@
     </div>
 </section>
 
+{{-- 8a. COMPACT RESOURCES BAR (detergent brochures + quick links, closes the detergent range) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Detergent Brochures', 'links' => [
+                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+                    ['l' => 'L00 Laundry Eco Degreaser', 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
+                    ['l' => 'L01 Laundry Eco Powder',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
+                    ['l' => 'L02 Laundry Eco Wash',      'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
+                    ['l' => 'L03 Laundry Eco Booster',   'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
+                    ['l' => 'L04 Laundry Eco Bleach',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
+                    ['l' => 'L05 Laundry Eco Softener',  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
+                ]],
+                ['title' => 'Dosing & Storage', 'links' => [
+                    ['l' => 'Dosing Systems', 'h' => route('contact')],
+                    ['l' => 'Detergent Storage', 'h' => route('contact')],
+                    ['l' => 'Product resources', 'h' => route('resources')],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request dosing advice', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-col gap-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
+                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 {{-- 8b. ADDITIONAL LAUNDRY CARE PRODUCTS STRIP --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -741,48 +783,6 @@
     </div>
 </section>
 
-{{-- 11. COMPACT RESOURCES BAR (matches commercial washers design) --}}
-<section class="py-8 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
-            @foreach([
-                ['title' => 'Detergent Brochures', 'links' => [
-                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
-                    ['l' => 'L00 Laundry Eco Degreaser', 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
-                    ['l' => 'L01 Laundry Eco Powder',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
-                    ['l' => 'L02 Laundry Eco Wash',      'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
-                    ['l' => 'L03 Laundry Eco Booster',   'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
-                    ['l' => 'L04 Laundry Eco Bleach',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
-                    ['l' => 'L05 Laundry Eco Softener',  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
-                ]],
-                ['title' => 'Dosing & Storage', 'links' => [
-                    ['l' => 'Dosing Systems', 'h' => route('contact')],
-                    ['l' => 'Detergent Storage', 'h' => route('contact')],
-                    ['l' => 'Product resources', 'h' => route('resources')],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request dosing advice', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-            ] as $grp)
-            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
-                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
-                <div class="flex flex-col gap-2">
-                    @foreach($grp['links'] as $lk)
-                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
-                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
-                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        {{ $lk['l'] }}
-                    </a>
-                    @endforeach
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
 {{-- 12. RELATED EQUIPMENT --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -790,16 +790,19 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment that may need <span style="color:#148af4;">dosing or detergent support</span>
+                Plan detergent support around the <span style="color:#148af4;">wider laundry setup</span>
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                Dosing, detergents, storage and accessories work best when they are matched to the equipment already in use or being planned for the site.
+            </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice and dosing accuracy affect results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'washers'), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity and energy use after the wash process.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp', 'box' => 245],
-                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For delicate garment care where detergents, dosing and finishing work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/finishing-equipment/FC48.jpg', 'box' => 260],
-                ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash and detergent quality affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'washers'), 'img' => '/images/pages/commercial-washers/WH6-27.jpg', 'box' => 270],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity planned around the wash process, textile care and daily laundry demand.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-7.jpg', 'box' => 270],
+                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/lagoon-garment-care.jpg', 'box' => 260],
+                ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash quality, fabric care and handling affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
@@ -826,16 +829,16 @@
 {{-- 13. FAQ --}}
 @include('components.faq', [
     'eyebrow' => 'Dosing & Detergent FAQs',
-    'heading' => 'Questions before choosing <span style="color:#148af4;">dosing systems, detergents or storage</span>',
+    'heading' => 'Questions before choosing <span style="color:#148af4;">dosing, detergents or storage</span>',
     'faqs' => [
-        ['question' => 'Why does detergent control matter in a commercial laundry?', 'answer' => 'It affects cost, wash quality, textile life, repeat washing and equipment condition.'],
-        ['question' => 'What is a laundry dosing system?', 'answer' => 'A dosing system automatically delivers detergent or chemicals into the wash process, using the required amount for the load, programme and result.'],
-        ['question' => 'Can automatic dosing reduce detergent costs?', 'answer' => 'Yes, where the selected system and equipment are suitable. Efficient Dosing can save over 30% on detergent costs.'],
-        ['question' => 'Can detergent overuse damage linen?', 'answer' => 'Yes. Overdosing can affect wash results and textile condition over time.'],
-        ['question' => 'Can poor chemical control affect equipment condition?', 'answer' => 'Poor chemical control can contribute to avoidable equipment issues. Better dosing and detergent choice reduce that pressure.'],
-        ['question' => 'What are eco-range detergents?', 'answer' => 'Electrolux Professional eco-range detergents support wash quality, textile care, safety and lower environmental impact, with certification proof where applicable.'],
-        ['question' => 'What does Detergent Storage do?', 'answer' => 'Detergent Storage keeps canisters organised and supports a cleaner, safer laundry room.'],
-        ['question' => 'Can Irish Laundry Systems advise on existing equipment?', 'answer' => 'Yes. Irish Laundry Systems can review your washers, detergent use, wash results, storage and service needs before recommending the next step.'],
+        ['question' => 'Why does detergent control matter in a commercial laundry?', 'answer' => 'Detergent control affects more than product use. The right dosing, detergent choice and storage can help reduce waste, support consistent wash quality, protect textiles and keep daily laundry costs easier to manage.'],
+        ['question' => 'What is a laundry dosing system?', 'answer' => 'A laundry dosing system helps deliver detergent and chemicals to the washer in a more controlled way. Depending on the setup, dosing can be based on the programme, load size, washer type or wider laundry room arrangement.'],
+        ['question' => 'Can automatic dosing reduce detergent costs?', 'answer' => 'Yes, on suitable Electrolux Professional setups. Automatic dosing can help reduce detergent overuse by matching the amount used more closely to the load and wash cycle, helping control product waste and operating cost.'],
+        ['question' => 'Can detergent overuse damage linen?', 'answer' => 'Too much detergent can affect wash quality, leave residue, increase repeat washing and put unnecessary pressure on textiles. Correct dosing helps protect linen, garments and the final wash result.'],
+        ['question' => 'What are Line 6000 eco-range detergents?', 'answer' => 'Line 6000 eco-range detergents are Electrolux Professional detergents developed for high-quality, safe and effective washing while helping reduce environmental impact. The range includes detergents for washing, degreasing, boosting, bleaching and softening.'],
+        ['question' => 'Are there detergents for myPRO and wet cleaning setups?', 'answer' => 'Yes. myPRO has Cleanstar consumables for semi-professional laundry use, while lagoon Advanced Care uses dedicated detergents, conditioner and stain-care products for specialist wet cleaning.'],
+        ['question' => 'What does Detergent Storage do?', 'answer' => 'Detergent Storage helps keep canisters, pumps and dosing equipment organised, safer and easier to manage. It can support a cleaner laundry room and make daily handling more practical.'],
+        ['question' => 'Can Irish Laundry Systems advise on existing equipment?', 'answer' => 'Yes. Irish Laundry Systems can review the equipment already in use and advise on suitable dosing, detergent, storage, accessories or support options around the site\'s laundry setup.'],
     ],
 ])
 
@@ -843,7 +846,7 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'accessories_cta',
     'heading'    => 'Take control of detergent use and <span style="color:#148af4;">laundry room costs</span>',
-    'body'       => 'Tell us what equipment you use, what you wash and how detergents are currently managed. Irish Laundry Systems will guide you toward the right dosing, detergent, storage, accessory or support option.',
+    'body'       => 'Tell us what equipment you use, what you wash and how detergents are currently managed. Irish Laundry Systems will guide you towards the right dosing, detergent, storage and support route.',
     'formTitle'  => 'Request Dosing, Detergent & Storage Advice',
     'buttonText' => 'Request Advice',
 ])
