@@ -84,11 +84,11 @@
         </div>
 
         @include('components.financial-metrics', ['tightLeft' => true, 'items' => [
-            ['icon'=>'34', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.134] -translate-y-[11.2%]',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
-            ['icon'=>'88', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'iconClass'=>'translate-y-[0.8%]', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
+            ['icon'=>'202', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.23] translate-y-[2.5%]',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
+            ['icon'=>'pmc-gain-86', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.953] translate-y-[0.1%]', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
             ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
-            ['icon'=>'11', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
+            ['icon'=>'88', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'iconClass'=>'translate-y-[0.9%]', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
         ]])
     </div>
 </section>
@@ -121,7 +121,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/163.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.101);">
+                    <img src="/images/icons/163.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.18);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Housekeeping routines</h3>
@@ -151,7 +151,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/166.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-5.1%) scale(1.349);">
+                    <img src="/images/icons/166.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-5.1%) scale(1.2);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
@@ -169,7 +169,7 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep hospitality laundry operating with the right service behind it
+                Keep hospitality laundry operating with <span style="color:#148af4;">the right service behind it</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Hotels often need repairs, Preventive Maintenance, rental review and aftercare to protect room standards and daily service.
@@ -243,7 +243,7 @@
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
     'heading'    => 'Plan the laundry room around <span style="color:#011E41;">space, utilities and peak demand</span>',
-    'body'       => 'A room review can check property demand, available space, utilities and equipment needs before purchase, rental or replacement.',
+    'body'       => 'A room review can check property demand, available space, utilities and equipment needs<br class="hidden lg:block"> before purchase, rental or replacement.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit',    'label' => 'Room fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost control'],
@@ -531,7 +531,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Protect <span style="color:#148af4;">textile quality</span> while reducing detergent waste
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Automatic dosing uses the right amount of detergent for each cycle, reducing chemical overuse while protecting towels, robes, bed linen and table linen.
             </p>
         </div>
@@ -588,9 +588,9 @@
                 >
                     <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
 
-                        {{-- Left: context photo --}}
+                        {{-- Left: context photo — one at a time, alternates per slide (detergentdoser first) --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="{{ $i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp' }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -681,7 +681,7 @@
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits the laundry room size, capacity need and operating profile.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront cost'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
         ['icon' => '125', 'iconClass' => 'scale-125', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range fit'],
         ['icon' => 'repairs-maintenance-review', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Included support'],
     ],
@@ -689,8 +689,9 @@
 ])
 
 @include('components.equipment-categories', [
-    'heading' => 'Equipment categories for <span style="color:#148af4;">hospitality laundry rooms</span>',
+    'heading' => '<span class="lg:whitespace-nowrap">Equipment categories for <span style="color:#148af4;">hospitality laundry rooms</span></span>',
     'subheading' => 'Choose the equipment category that fits property size, room fit, finishing standards, energy use and aftercare.',
+    'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
         ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For hospitality sites that need controlled dirty-side and clean-side handling.','box'=>250,'mb'=>-20],
         ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For bed linen, towels, robes, uniforms, guest items and food and beverage textiles.','box'=>270,'mb'=>-35],
@@ -744,14 +745,14 @@
 <!-- SERVICE CONTRACTS + SUPPORT & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'After Installation',
-    'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span>',
+    'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span><br class="hidden lg:block">',
     'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
     'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/shared/repairs-callouts.jpg',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service planning'],
-        ['icon' => '64', 'label' => 'Equipment care'],
-        ['icon' => '168', 'label' => 'Peace of mind'],
+        ['icon' => '61', 'label' => 'Service<br>planning'],
+        ['icon' => '64', 'label' => 'Equipment<br>care'],
+        ['icon' => '168', 'label' => 'Peace of<br>mind'],
     ],
     'cta1Label'    => 'View Preventive Maintenance Contracts',
     'cta1Route'    => 'service-contracts',
