@@ -18,10 +18,10 @@
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry Support</p>
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="block">Keep healthcare laundry moving<br class="hidden lg:block"> with <span style="color:#148af4;">hygiene control and<br class="hidden lg:block">lower running costs</span></span>
+                    <span class="block">Keep healthcare laundry<br class="hidden lg:block"> moving with <span style="color:#148af4;">hygiene control<br class="hidden lg:block">and lower running costs</span></span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-4xl">
-                    Irish Laundry Systems supplies and supports Electrolux Professional healthcare laundry equipment,<br class="hidden lg:block"> with rental, maintenance, repairs and aftercare to keep<br class="hidden lg:block"> clean textiles available and running costs easier to control.
+                    Irish Laundry Systems supplies and supports Electrolux Professional healthcare laundry equipment,<br class="hidden lg:block"> with rental, maintenance, repairs and aftercare to keep clean textiles available and running costs easier to control.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#healthcare-assessment"
@@ -83,7 +83,7 @@
                 <span><span style="color:#148af4;">The right level of control</span> for healthcare laundry</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
-                Healthcare sites do not all work the same way. Irish Laundry Systems supports smaller and larger operations with equipment choices that fit daily use, from commercial washers and dryers to barrier washer layouts where soiled loading and clean unloading must be kept separate.
+                Healthcare sites do not all work the same way. Irish Laundry Systems supports smaller and larger operations with equipment choices that fit daily use,<br class="hidden lg:block"> from commercial washers and dryers to barrier washer layouts where soiled loading and clean unloading must be kept separate.
             </p>
         </div>
 
@@ -129,16 +129,16 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Separation Layouts</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 <span>See how <span style="color:#148af4;">dirty-side and clean-side</span> separation works</span>
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Where stronger separation is required, Electrolux Professional barrier washer layouts separate soiled loading from clean unloading.
+            </p>
+            <p class="font-body text-gray-500 text-base leading-relaxed mt-2">
+                The visual shows the basic process.
+            </p>
         </div>
-        <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-            Where stronger separation is required, Electrolux Professional barrier washer layouts separate soiled loading from clean unloading.
-        </p>
-        <p class="font-body text-gray-500 text-base leading-relaxed mb-10">
-            The visual shows the basic process.
-        </p>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center reveal">
 
@@ -159,11 +159,6 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                 </div>
-                <a href="https://www.youtube.com/watch?v=26g9u4GPRVc" target="_blank" rel="noopener"
-                   class="inline-flex items-start gap-2 text-navy hover:text-[#148af4] font-heading font-bold text-sm mt-4 transition-colors">
-                    Watch healthcare laundry planning video
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
 
         </div>
@@ -244,7 +239,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Programme control</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">ClarusVibe and CompassPro give teams clear programmes, machine status and day-to-day&nbsp;control.</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed">ClarusVibe and CompassPro give teams clear programmes, machine status and <span class="whitespace-nowrap">day-to-day control</span>.</p>
                 </div>
             </div>
 
@@ -266,7 +261,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Controlled handling</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">AIDO supports controlled loading and unloading in barrier washer&nbsp;configurations.</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed">AIDO supports controlled loading and unloading in barrier washer configurations.</p>
                 </div>
             </div>
 
@@ -362,12 +357,12 @@
 
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Planning & Support',
-    'heading'    => 'Plan <span style="color:#011E41;">the healthcare laundry room</span> before money is spent',
-    'body'       => 'A room review can check layout, utilities, hygiene handling and equipment needs before purchase, rental or replacement.',
+    'heading'    => 'Plan <span style="color:#011E41;">the healthcare laundry room</span><br class="hidden lg:block"> before money is spent',
+    'body'       => 'A room review can check layout, utilities, hygiene handling and equipment needs before purchase,<br class="hidden lg:block"> rental or replacement.',
     'miniPoints' => [
-        ['icon' => 'home-planning-fit',    'label' => 'Room fit'],
-        ['icon' => 'home-planning-spend',  'label' => 'Cost control'],
-        ['icon' => 'home-planning-rework', 'label' => 'Less rework'],
+        ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
+        ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
+        ['icon' => 'home-planning-rework', 'label' => 'Less<br>rework'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -386,7 +381,7 @@
                 <span>Keep healthcare laundry moving with <span style="color:#148af4;">less downtime</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Irish Laundry Systems supplies and supports Electrolux Professional washers, dryers, barrier washers and finishing equipment to support hygiene control, efficiency and uptime.
+                Irish Laundry Systems supplies and supports Electrolux Professional washers, dryers, barrier washers<br class="hidden lg:block"> and finishing equipment to support hygiene control, efficiency and uptime.
             </p>
         </div>
 
@@ -761,8 +756,8 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 <span>Control <span style="color:#148af4;">detergent use and wash consistency</span></span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl">
-                Automatic dosing uses the right amount of detergent for each cycle,<br class="hidden lg:block"> reducing chemical waste while protecting textile quality and wash results.
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                Automatic dosing uses the right amount of detergent for each cycle, reducing chemical waste while protecting textile quality and wash results.
             </p>
         </div>
 

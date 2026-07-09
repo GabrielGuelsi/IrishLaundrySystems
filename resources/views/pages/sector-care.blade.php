@@ -45,7 +45,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-snug text-balance">
                     Laundry support that fits <span style="color:#148af4;">daily care</span>
                 </h2>
             </div>
@@ -94,9 +94,9 @@
                      class="w-full h-[320px] sm:h-[440px] lg:h-[580px] object-cover object-center">
             </div>
 
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-6 sm:p-10 lg:p-10 shadow-2xl">
+            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[420px] bg-navy rounded-2xl p-6 sm:p-10 lg:p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
-                    Care facility laundry support built around daily care
+                    Care facility laundry<br class="hidden lg:block"> support built around<br class="hidden lg:block"> daily care
                 </h3>
                 <ul class="space-y-3">
                     @foreach([
@@ -138,7 +138,7 @@
             ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
             ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
             ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
-            ['icon'=>'11', 'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
+            ['icon'=>'88', 'iconClass'=>'translate-y-[0.9%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
         ]])
     </div>
 </section>
@@ -791,11 +791,11 @@
     'eyebrow' => 'Equipment Rental',
     'headingLine1' => 'Keep care facility laundry moving',
     'headingLine2' => '<span style="color:#148af4;">without one large purchase upfront</span>',
-    'body' => 'Rental gives care facilities access to Electrolux Professional laundry equipment with installation and support included under the agreement.',
+    'body' => 'Rental gives care facilities access to Electrolux Professional laundry equipment<br class="hidden lg:block"> with installation and support included under the agreement.',
     'miniPoints' => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Included<br>support'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Clearer<br>budgeting'],
+        ['icon' => '146', 'label' => 'Included<br>support'],
+        ['icon' => '147', 'label' => 'Clearer<br>budgeting'],
     ],
 ])
 
@@ -859,12 +859,12 @@
     'eyebrow'      => 'After Installation',
     'headingLine1' => 'Keep care facility laundry',
     'headingLine2' => 'supported after installation',
-    'body'         => 'Planned maintenance and aftercare protect equipment value, support daily routines and keep essential laundry equipment running.',
+    'body'         => 'Planned maintenance and aftercare protect equipment value, support daily routines<br class="hidden lg:block"> and keep essential laundry equipment running.',
     'image'        => '/images/pages/services/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>planning'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Equipment<br>care'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Aftercare<br>support'],
+        ['icon' => 'home-rental-maintained',  'label' => 'Service<br>planning'],
+        ['icon' => 'home-maintenance-value',  'label' => 'Equipment<br>care'],
+        ['icon' => '75', 'label' => 'Aftercare<br>support'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
@@ -898,6 +898,6 @@
 ])
 
 <!-- 13. Final CTA / Form -->
-@include('components.cta-downtime-form', ['pageSource' => 'care_cta', 'heading' => 'Ready to review your <span style="color:#148af4;">care facility laundry setup</span>', 'body' => 'Talk to Irish Laundry Systems about your site, current equipment, running costs and support needs. We\'ll recommend the right equipment, rental, maintenance, repair or aftercare support.', 'formTitle' => 'Request a Care Facility Laundry Assessment', 'buttonText' => 'Request Care Facility Assessment'])
+@include('components.cta-downtime-form', ['pageSource' => 'care_cta', 'heading' => 'Ready to review your<br class="hidden lg:block"> <span style="color:#148af4;">care facility laundry setup</span>', 'body' => 'Talk to Irish Laundry Systems about your site, current equipment, running costs and support needs. We\'ll recommend the right equipment, rental, maintenance, repair or aftercare support.', 'formTitle' => 'Request a Care Facility Laundry Assessment', 'buttonText' => 'Request Care Facility Assessment'])
 
 @endsection

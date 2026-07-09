@@ -18,11 +18,11 @@ $equipmentList = $equipment ?? [
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">Browse by type</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
-                <p class="font-body text-gray-500 text-base leading-relaxed mt-4 {{ $subheadingClass }}">{{ $subheading }}</p>
+                <p class="font-body text-gray-500 text-base leading-relaxed mt-4 {{ $subheadingClass }}">{!! $subheading !!}</p>
                 @endif
             </div>
             <a href="{{ route('equipment') }}"
-               class="inline-flex self-start lg:self-auto lg:mb-2 items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-full text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap">
+               class="inline-flex self-start lg:self-auto items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-5 py-3 rounded-full text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap lg:-translate-x-4">
                 Browse All Equipment
                 <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
             </a>

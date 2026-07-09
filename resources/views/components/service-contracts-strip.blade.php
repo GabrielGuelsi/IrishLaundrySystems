@@ -38,8 +38,8 @@
             <span style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
         </h2>
 
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            {{ $body }}
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-2xl">
+            {!! $body !!}
         </p>
 
         @if($miniPoints)

@@ -19,7 +19,7 @@
                     <span style="color:#148af4;">Laundry equipment and support</span><br class="hidden lg:block"> for sites where downtime<br class="hidden lg:block"> carries real cost
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-5xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for<br class="hidden lg:block"> commercial, industrial, shared-use and specialist laundry rooms. Rental, Preventive Maintenance, repairs and aftercare<br class="hidden lg:block"> can be shaped around daily use, room fit and equipment care.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for<br class="hidden lg:block"> commercial, industrial, shared-use and specialist laundry rooms. Rental, Preventive Maintenance,<br class="hidden lg:block"> repairs and aftercare can be shaped around daily use, room fit and equipment care.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#commercial-assessment"
@@ -46,7 +46,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Plan the laundry room<br class="hidden lg:block"> around <span style="color:#148af4;">daily use<br class="hidden lg:block"> and operating demand</span>
+                    Plan the laundry room<br class="hidden lg:block"> around <span style="color:#148af4;">daily use and<br class="hidden lg:block"> operating demand</span>
                 </h2>
             </div>
 
@@ -79,7 +79,7 @@
                 Built for <span style="color:#148af4;">commercial, shared-use and specialist laundry environments</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                From commercial laundries and shared-use laundry rooms to facility management, protective workwear and remote sites, the equipment setup needs to match daily use, textile type and operating demand.
+                From commercial laundries and shared-use laundry rooms to facility management, protective workwear and remote sites,<br class="hidden lg:block"> the equipment setup needs to match daily use, textile type and operating demand.
             </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
@@ -171,7 +171,7 @@
             ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',      'body'=>'Electrolux Professional heat pump dryer technology can reduce dryer energy use in suitable applications.'],
             ['icon'=>'dosing-control', 'prefix'=>'Over', 'stat'=>'30%',  'size'=>'text-4xl', 'label'=>'Detergent savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',  'body'=>'Efficient dosing can reduce detergent use by applying the right amount at each cycle.'],
             ['icon'=>'19',  'prefix'=>'Up to', 'stat'=>'75%',           'size'=>'text-4xl', 'label'=>'Sick-day reduction', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.03]',  'body'=>'Electrolux Professional ergonomic design can reduce handling strain in daily laundry work.'],
-            ['icon'=>'88',  'prefix'=>'',     'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'iconClass'=>'translate-y-[0.8%]',     'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
+            ['icon'=>'166',  'prefix'=>'',     'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.95] -translate-y-[3.6%]',     'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
     </div>
 </section>
@@ -204,7 +204,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/170.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(0.9%) scale(1.275);">
+                    <img src="/images/icons/169.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(0.6%);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Textile mix</h3>
@@ -214,7 +214,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/169.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(0.8%) scale(1.311);">
+                    <img src="/images/icons/pmc-gain-90.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(0.2%) scale(1.099);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility costs</h3>
@@ -224,7 +224,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/171.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.45);">
+                    <img src="/images/icons/171.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.106);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Operator comfort</h3>
@@ -234,7 +234,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/172.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-7.2%) scale(1.531);">
+                    <img src="/images/icons/172.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-5.5%) scale(1.168);">
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene control</h3>
@@ -328,8 +328,8 @@
 <!-- PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
-    'heading'    => 'Plan the laundry room around <span style="color:#011E41;">daily use,</span><br class="hidden lg:block"> <span style="color:#011E41;">room layout</span> and <span style="color:#011E41;">running cost</span>',
-    'body'       => 'Before purchase, rental or replacement, review load types, utilities, access, space and service needs together.',
+    'heading'    => 'Plan the laundry room around<br class="hidden lg:block"> <span style="color:#011E41;">daily use,</span> <span style="color:#011E41;">room layout</span><br class="hidden lg:block"> and <span style="color:#011E41;">running cost</span>',
+    'body'       => 'Before purchase, rental or replacement, review load types, utilities, access,<br class="hidden lg:block"> space and service needs together.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
@@ -610,10 +610,10 @@
                 </div>
             </div>
 
-            <!-- 5. DRYING CABINETS / SPECIALIST ITEMS — text left, image right -->
+            <!-- 5. DRYING CABINETS / SPECIALIST ITEMS — image left, text right -->
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
-                <div class="order-2 lg:order-1">
+                <div class="order-2 lg:order-2">
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Drying <strong>Cabinets</strong> and Specialist Items</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Drying cabinets support gentle drying for workwear, protective clothing, bulky items, shoes, gloves and specialist garments where fabric protection matters.
@@ -643,7 +643,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
+                <div class="flex flex-col order-1 lg:order-1 lg:mr-20">
                     <img src="/images/pages/drying-cabinets/Drying-cabinets_image.webp"
                          alt="Drying Cabinet"
                          class="w-full h-96 object-contain object-left-top">
@@ -823,14 +823,15 @@
     'body' => 'Rental can support replacement, expansion or ageing equipment needs without one large purchase, where the available Electrolux Professional range fits the laundry room. Service and breakdown support are included under rental terms.',
     'miniPoints' => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => 'healthcarerentalstrip2', 'label' => 'Range<br>fit'],
+        ['icon' => '125', 'iconClass' => 'scale-125', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit'],
         ['icon' => 'healthcarerentalstrip3', 'label' => 'Included<br>support'],
     ],
 ])
 
 @include('components.equipment-categories', [
     'heading' => 'Equipment categories for <span style="color:#148af4;">commercial and industrial laundry</span>',
-    'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed choice should still begin with load type, room fit, utilities, running costs and service needs.',
+    'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed choice should still begin<br class="hidden lg:block"> with load type, room fit, utilities, running costs and service needs.',
+    'subheadingClass' => 'max-w-none',
     'equipment' => [
         ['img' => 'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp', 'name' => 'Barrier Washers', 'desc' => 'For sites that need controlled dirty-side and clean-side handling.', 'box' => 250, 'mb' => -20],
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',        'name' => 'Washing Machines', 'desc' => 'For daily wash demand across workwear, uniforms, towels, bedding, mops and mixed textiles.', 'box' => 270, 'mb' => -35],
