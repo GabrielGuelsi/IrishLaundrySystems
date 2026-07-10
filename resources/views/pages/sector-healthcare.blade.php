@@ -98,11 +98,11 @@
             </div>
 
             <!-- Navy card overlapping left -->
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[490px] bg-navy rounded-2xl p-6 sm:p-10 shadow-2xl">
+            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[540px] bg-navy rounded-2xl p-6 sm:p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-xl sm:text-2xl lg:text-3xl leading-snug mb-6">
-                    Healthcare laundry control starts with the right room setup
+                    Healthcare laundry control<br class="hidden lg:block"> starts with the right room setup
                 </h3>
-                <ul class="space-y-3">
+                <ul class="flex flex-wrap gap-x-8 gap-y-3">
                     @foreach([
                         'Soiled handling',
                         'Clean unloading',

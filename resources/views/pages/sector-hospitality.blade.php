@@ -754,8 +754,6 @@
     ],
     'cta1Label'    => 'View Preventive Maintenance Contracts',
     'cta1Route'    => 'service-contracts',
-    'cta2Label'    => 'Explore Support &amp; Aftercare',
-    'cta2Route'    => 'parts-aftercare',
 ])
 
 <!-- TESTIMONIAL / PROOF BLOCK -->
