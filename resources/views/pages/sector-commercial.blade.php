@@ -331,9 +331,9 @@
     'heading'    => 'Plan the laundry room around<br class="hidden lg:block"> <span style="color:#011E41;">daily use,</span> <span style="color:#011E41;">room layout</span><br class="hidden lg:block"> and <span style="color:#011E41;">running cost</span>',
     'body'       => 'Before purchase, rental or replacement, review load types, utilities, access,<br class="hidden lg:block"> space and service needs together.',
     'miniPoints' => [
-        ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
+        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
-        ['icon' => '174', 'label' => 'Capacity<br>planning'],
+        ['icon' => '174', 'iconClass' => 'scale-[0.95]', 'label' => 'Capacity<br>planning'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -823,8 +823,8 @@
     'body' => 'Rental can support replacement, expansion or ageing equipment needs without one large purchase, where the available Electrolux Professional range fits the laundry room. Service and breakdown support are included under rental terms.',
     'miniPoints' => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => '125', 'iconClass' => 'scale-125', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Included<br>support'],
+        ['icon' => '125', 'iconClass' => 'scale-[1.32]', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit'],
+        ['icon' => 'healthcarerentalstrip3', 'iconClass' => 'scale-[0.91]', 'label' => 'Included<br>support'],
     ],
 ])
 
@@ -890,9 +890,9 @@
     'body'         => 'Planned maintenance, service history and aftercare keep high-use laundry equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/shared/Parts%20%26%20Aftercare.png',
     'miniPoints'   => [
-        ['icon' => '149', 'iconClass' => 'scale-90', 'label' => 'Preventive<br>maintenance'],
-        ['icon' => '61', 'iconClass' => 'scale-90', 'label' => 'Service<br>history'],
-        ['icon' => '151', 'iconClass' => 'scale-90', 'label' => 'Parts<br>access'],
+        ['icon' => '149', 'iconClass' => 'scale-[0.78]', 'label' => 'Preventive<br>maintenance'],
+        ['icon' => '61', 'iconClass' => 'scale-[0.94]', 'label' => 'Service<br>history'],
+        ['icon' => '151', 'iconClass' => 'scale-[0.85]', 'label' => 'Parts<br>access'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
