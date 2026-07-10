@@ -360,9 +360,9 @@
     'heading'    => 'Plan <span style="color:#011E41;">the healthcare laundry room</span><br class="hidden lg:block"> before money is spent',
     'body'       => 'A room review can check layout, utilities, hygiene handling and equipment needs before purchase,<br class="hidden lg:block"> rental or replacement.',
     'miniPoints' => [
-        ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
+        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
-        ['icon' => 'home-planning-rework', 'label' => 'Less<br>rework'],
+        ['icon' => 'home-planning-rework', 'iconClass' => 'scale-[0.95]', 'label' => 'Less<br>rework'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -746,6 +746,46 @@
     </div>
 </section>
 
+{{-- COMPACT RESOURCES BAR (official brochures — matches equipment pages) --}}
+<section class="py-8 bg-bg border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
+            @foreach([
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+                    ['l' => 'Line 6000 Evolution Barrier Washers brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                    ['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                    ['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+                    ['l' => 'Product resources', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
+                    ['l' => 'Ironers', 'h' => route('equipment.category', 'ironers')],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request healthcare assessment', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+            ] as $grp)
+            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
+                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
+                <div class="flex flex-col gap-2">
+                    @foreach($grp['links'] as $lk)
+                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
+                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
+                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                        {{ $lk['l'] }}
+                    </a>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+
 <!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -919,9 +959,9 @@
     'headingLine2' => 'large purchase upfront',
     'body' => 'Rental gives healthcare sites access to Electrolux Professional laundry equipment<br class="hidden lg:block"> with installation and support included under the agreement.',
     'miniPoints' => [
-        ['icon' => '145', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => '146', 'label' => 'Included<br>support'],
-        ['icon' => '147', 'label' => 'Clearer<br>budgeting'],
+        ['icon' => '145', 'iconClass' => 'scale-[1.06]', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => '146', 'iconClass' => 'scale-[0.92]', 'label' => 'Included<br>support'],
+        ['icon' => '147', 'iconClass' => 'scale-[0.93]', 'label' => 'Clearer<br>budgeting'],
     ],
 ])
 
@@ -981,53 +1021,15 @@
     'body'         => 'Planned maintenance and aftercare protect equipment value, support hygiene routines and keep vital laundry equipment running.',
     'image'        => '/images/pages/services/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => '149', 'label' => 'Service<br>planning'],
-        ['icon' => '190', 'label' => 'Hygiene<br>support'],
-        ['icon' => '151', 'label' => 'Equipment<br>care'],
+        ['icon' => '149', 'iconClass' => 'scale-[0.78]', 'label' => 'Service<br>planning'],
+        ['icon' => '190', 'iconClass' => 'scale-[0.74]', 'label' => 'Hygiene<br>support'],
+        ['icon' => '151', 'iconClass' => 'scale-[0.85]', 'label' => 'Equipment<br>care'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
 ])
 
-{{-- COMPACT RESOURCES BAR (official brochures — matches equipment pages) --}}
-<section class="py-8 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
-            @foreach([
-                ['title' => 'Official Resources', 'links' => [
-                    ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
-                    ['l' => 'Line 6000 Evolution Barrier Washers brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                    ['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                    ['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
-                    ['l' => 'Product resources', 'h' => route('resources')],
-                ]],
-                ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')],
-                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
-                    ['l' => 'Ironers', 'h' => route('equipment.category', 'ironers')],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request healthcare assessment', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-            ] as $grp)
-            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
-                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
-                <div class="flex flex-col gap-2">
-                    @foreach($grp['links'] as $lk)
-                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
-                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
-                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        {{ $lk['l'] }}
-                    </a>
-                    @endforeach
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+
 
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',

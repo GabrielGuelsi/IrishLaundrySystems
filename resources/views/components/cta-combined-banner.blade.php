@@ -46,8 +46,8 @@
         <div class="flex items-center flex-wrap 2xl:flex-nowrap {{ $miniHasIcons ? 'gap-x-4' : 'gap-x-5' }} gap-y-2 mb-7">
             @foreach($miniPoints as $i => $pt)
             @if(is_array($pt))
-            <span class="flex items-center gap-5 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['iconClass'] ?? '' }}" style="{{ $pt['iconStyle'] ?? '' }}">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @else

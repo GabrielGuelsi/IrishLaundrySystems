@@ -301,9 +301,9 @@
     'heading'    => '<span class="lg:whitespace-nowrap">Plan the care facility laundry room<br><span style="color:#011E41;">before money is spent.</span></span>',
     'body'       => 'A room review can check layout, utilities, laundry routines and equipment needs.',
     'miniPoints' => [
-        ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
+        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
-        ['icon' => 'home-planning-rework', 'label' => 'Less<br>rework'],
+        ['icon' => 'home-planning-rework', 'iconClass' => 'scale-[0.95]', 'label' => 'Less<br>rework'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -794,8 +794,8 @@
     'body' => 'Rental gives care facilities access to Electrolux Professional laundry equipment<br class="hidden lg:block"> with installation and support included under the agreement.',
     'miniPoints' => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => '146', 'label' => 'Included<br>support'],
-        ['icon' => '147', 'label' => 'Clearer<br>budgeting'],
+        ['icon' => '146', 'iconClass' => 'scale-[0.92]', 'label' => 'Included<br>support'],
+        ['icon' => '147', 'iconClass' => 'scale-[0.93]', 'label' => 'Clearer<br>budgeting'],
     ],
 ])
 
@@ -860,9 +860,9 @@
     'body'         => 'Planned maintenance and aftercare protect equipment value, support daily routines<br class="hidden lg:block"> and keep essential laundry equipment running.',
     'image'        => '/images/pages/services/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => 'home-rental-maintained',  'label' => 'Service<br>planning'],
-        ['icon' => 'home-maintenance-value',  'label' => 'Equipment<br>care'],
-        ['icon' => '75', 'label' => 'Aftercare<br>support'],
+        ['icon' => 'home-rental-maintained', 'iconClass' => 'scale-[0.94]',  'label' => 'Service<br>planning'],
+        ['icon' => 'home-maintenance-value', 'iconClass' => 'scale-[1.06]',  'label' => 'Equipment<br>care'],
+        ['icon' => '75', 'iconClass' => 'scale-[0.93]', 'label' => 'Aftercare<br>support'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',

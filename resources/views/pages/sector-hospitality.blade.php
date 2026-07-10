@@ -88,7 +88,7 @@
             ['icon'=>'pmc-gain-86', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.953] translate-y-[0.1%]', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
             ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
             ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
-            ['icon'=>'88', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'iconClass'=>'translate-y-[0.9%]', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
+            ['icon'=>'88', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-y-2', 'iconClass'=>'translate-y-[0.9%]', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
         ]])
     </div>
 </section>
@@ -245,9 +245,9 @@
     'heading'    => 'Plan the laundry room around <span style="color:#011E41;">space, utilities and peak demand</span>',
     'body'       => 'A room review can check property demand, available space, utilities and equipment needs<br class="hidden lg:block"> before purchase, rental or replacement.',
     'miniPoints' => [
-        ['icon' => 'home-planning-fit',    'label' => 'Room fit'],
-        ['icon' => 'home-planning-spend',  'label' => 'Cost control'],
-        ['icon' => 'home-planning-rework', 'label' => 'Peak demand'],
+        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>fit'],
+        ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
+        ['icon' => 'home-planning-rework', 'iconClass' => 'scale-[0.95]', 'label' => 'Peak<br>demand'],
     ],
     'ctaText'    => 'Talk to Our Team',
 ])
@@ -682,8 +682,8 @@
     'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits the laundry room size, capacity need and operating profile.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => '125', 'iconClass' => 'scale-125', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range fit'],
-        ['icon' => 'repairs-maintenance-review', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Included support'],
+        ['icon' => '125', 'iconClass' => 'scale-[1.32]', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit'],
+        ['icon' => 'repairs-maintenance-review', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Included<br>support'],
     ],
     'miniNowrap'   => true,
 ])
@@ -748,9 +748,9 @@
     'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/shared/repairs-callouts.jpg',
     'miniPoints'   => [
-        ['icon' => '61', 'label' => 'Service<br>planning'],
-        ['icon' => '64', 'label' => 'Equipment<br>care'],
-        ['icon' => '168', 'label' => 'Peace of<br>mind'],
+        ['icon' => '61', 'iconClass' => 'scale-[0.94]', 'label' => 'Service<br>planning'],
+        ['icon' => '64', 'iconClass' => 'scale-[1.06]', 'label' => 'Equipment<br>care'],
+        ['icon' => '168', 'iconClass' => 'scale-[0.91]', 'label' => 'Peace of<br>mind'],
     ],
     'cta1Label'    => 'View Preventive Maintenance Contracts',
     'cta1Route'    => 'service-contracts',
