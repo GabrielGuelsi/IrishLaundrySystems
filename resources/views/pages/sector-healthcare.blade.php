@@ -183,9 +183,9 @@
 
         {{-- 5-item grid (aligned via shared component) --}}
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy',                'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
-            ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations support water recycling and lower water consumption.'],
-            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
+            ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',                'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
+            ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations support water recycling and lower water consumption.'],
+            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
             ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2', 'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
             ['icon'=>'88', 'prefix'=>'',      'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
@@ -217,7 +217,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene separation</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">Barrier washer layouts separate soiled loading from clean unloading to reduce cross-contamination risk.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier washer layouts separate soiled loading from clean unloading to reduce cross-contamination risk.</p>
                 </div>
             </div>
 
@@ -228,7 +228,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Staff wellbeing</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">Ergonomic door, drum and control design supports easier loading, unloading and daily handling.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic door, drum and control design supports easier loading, unloading and daily handling.</p>
                 </div>
             </div>
 
@@ -239,7 +239,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Programme control</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">ClarusVibe and CompassPro give teams clear programmes, machine status and <span class="whitespace-nowrap">day-to-day control</span>.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">ClarusVibe and CompassPro give teams clear&nbsp;programmes, machine status and <span class="whitespace-nowrap">day-to-day</span> control.</p>
                 </div>
             </div>
 
@@ -250,7 +250,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm tracking-tight leading-snug mb-1.5">Certified ergonomics</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">Line 6000 ergonomic design is recognised with 4-star ERGOCERT on relevant models.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Line 6000 ergonomic design is recognised with 4-star ERGOCERT on relevant models.</p>
                 </div>
             </div>
 
@@ -261,7 +261,7 @@
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Controlled handling</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">AIDO supports controlled loading and unloading in barrier washer configurations.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">AIDO supports controlled loading and unloading in barrier washer configurations.</p>
                 </div>
             </div>
 
@@ -956,10 +956,8 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
-                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
-                        <path d="M2 15 L110 15 M100 7 L110 15 L100 23" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
@@ -989,8 +987,6 @@
     ],
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
-    'cta2Label'    => 'Explore Support &amp; Aftercare',
-    'cta2Route'    => 'parts-aftercare',
 ])
 
 {{-- COMPACT RESOURCES BAR (official brochures — matches equipment pages) --}}

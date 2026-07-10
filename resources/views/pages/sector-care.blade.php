@@ -134,9 +134,9 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-65%',            'size'=>'text-4xl', 'label'=>'dryer energy',              'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
-            ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'-50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
-            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'-75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
+            ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',              'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
+            ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
+            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'sick days',              'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
             ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
             ['icon'=>'88', 'iconClass'=>'translate-y-[0.9%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
         ]])
@@ -834,10 +834,8 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
-                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
-                        <path d="M2 15 L110 15 M100 7 L110 15 L100 23" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">

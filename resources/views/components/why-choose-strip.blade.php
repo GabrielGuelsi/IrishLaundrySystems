@@ -28,7 +28,8 @@
     <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:56%;">
         <img src="{{ $image }}" alt="Commercial laundry equipment rental"
              class="w-full h-full object-cover" style="object-position: center 15%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to left, #011E41 0%, #011E41 12%, rgba(1,30,65,0.6) 38%, rgba(1,30,65,0.25) 60%, rgba(1,30,65,0.06) 78%, transparent 90%);"></div>
+        {{-- Smoothstep fade — the plateau covers the text column, then eases out with no visible seam --}}
+        <div class="absolute inset-0" style="background: linear-gradient(to left, rgba(1,30,65,1) 0%, rgba(1,30,65,1) 11%, rgba(1,30,65,0.989) 16.31%, rgba(1,30,65,0.957) 21.63%, rgba(1,30,65,0.908) 26.94%, rgba(1,30,65,0.844) 32.25%, rgba(1,30,65,0.768) 37.56%, rgba(1,30,65,0.684) 42.88%, rgba(1,30,65,0.593) 48.19%, rgba(1,30,65,0.5) 53.5%, rgba(1,30,65,0.407) 58.81%, rgba(1,30,65,0.316) 64.13%, rgba(1,30,65,0.232) 69.44%, rgba(1,30,65,0.156) 74.75%, rgba(1,30,65,0.092) 80.06%, rgba(1,30,65,0.043) 85.38%, rgba(1,30,65,0.011) 90.69%, rgba(1,30,65,0) 96%);"></div>
     </div>
 
     {{-- RIGHT: content — 50% width --}}
@@ -53,7 +54,7 @@
         </p>
 
         @if($miniPoints)
-        <div class="flex items-center flex-wrap gap-y-2 {{ $miniHasIcons ? 'gap-x-4 lg:flex-nowrap '.$miniIconShift : ($miniNowrap ? 'gap-x-3 lg:flex-nowrap' : 'gap-x-5') }} mb-7">
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-y-2 {{ $miniHasIcons ? 'gap-x-4 '.$miniIconShift : ($miniNowrap ? 'gap-x-3' : 'gap-x-5') }} mb-7">
             @foreach($miniPoints as $i => $pt)
             @if(is_array($pt))
             <span class="flex items-center gap-5 flex-shrink-0">
@@ -68,15 +69,14 @@
             @endforeach
         </div>
         @else
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-y-3 gap-x-0 mb-7">
-            @foreach($features as $i => $feat)
-            @if($i > 0)
-            @endif
-            <div class="flex items-center gap-5 mr-5 lg:mr-0">
+        {{-- same icon size, label style and spacing as the miniPoints row above --}}
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
+            @foreach($features as $feat)
+            <div class="flex items-center gap-5 flex-shrink-0">
                 <div class="flex-shrink-0" style="width:3.5rem;height:3.5rem;display:flex;align-items:center;justify-content:center;">
                     {!! $feat['icon'] !!}
                 </div>
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>

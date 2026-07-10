@@ -86,7 +86,7 @@
         @include('components.financial-metrics', ['tightLeft' => true, 'items' => [
             ['icon'=>'202', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.23] translate-y-[2.5%]',       'body'=>'On-site laundry can return bed linen, towels and robes to use faster during peak demand.'],
             ['icon'=>'pmc-gain-86', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.953] translate-y-[0.1%]', 'body'=>'Managing laundry in-house keeps more control over washing, handling and return-to-service timing.'],
-            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'-65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
             ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
             ['icon'=>'88', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-x-6 translate-y-2', 'iconClass'=>'translate-y-[0.9%]', 'body'=>'Preventive maintenance, repairs, rental review and aftercare keep essential laundry equipment easier to manage.'],
         ]])
@@ -151,7 +151,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/166.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-5.1%) scale(1.2);">
+                    <img src="/images/icons/166.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-5.1%) scale(1.02);">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Cost and quality control</h3>
@@ -722,10 +722,8 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
-                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
-                        <path d="M2 15 L110 15 M100 7 L110 15 L100 23" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">

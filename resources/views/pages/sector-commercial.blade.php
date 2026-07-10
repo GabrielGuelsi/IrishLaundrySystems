@@ -864,10 +864,8 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
-                <div class="hidden lg:block absolute -right-16 top-8 text-[#148af4]">
-                    <svg class="w-24 h-10" viewBox="0 0 120 30" fill="none">
-                        <path d="M2 15 L110 15 M100 7 L110 15 L100 23" stroke="#148af4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
+                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">

@@ -7,7 +7,7 @@
       • short accent divider, then gray body text
 
     Expects: $items = [
-        ['icon'=>'7','prefix'=>'Up to','stat'=>'-65%','size'=>'text-4xl','label'=>'…','body'=>'…'],
+        ['icon'=>'7','prefix'=>'Up to','stat'=>'65%','size'=>'text-4xl','label'=>'…','body'=>'…'],
         …
     ]
     'prefix' may be ''. 'size' => text-4xl marks a numeric stat (rendered larger),
