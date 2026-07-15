@@ -295,7 +295,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative py-16 lg:py-24 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
-        <img src="/images/shared/commercial-hero.jpg" alt="" loading="lazy" decoding="async"
+        <img src="/images/pages/services/parts-support-bg.jpg" alt="" loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
     </div>
     <div class="absolute inset-0 pa-dotgrid opacity-25" aria-hidden="true"></div>
@@ -311,13 +311,12 @@
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 mb-8">
                     @foreach([
-                        ['icon' => 'ativo-8',  'label' => 'Equipment<br>details'],
-                        ['icon' => 'ativo-4',  'label' => 'Service<br>history'],
-                        ['icon' => 'ativo-7',  'label' => 'Genuine parts<br>support'],
-                        ['icon' => 'ativo-21', 'label' => 'Accessories<br>support'],
+                        ['icon' => 'ativo-8',  'src' => '/images/icons/home-maintenance-value.png', 'label' => 'Equipment<br>details'],
+                        ['icon' => 'ativo-4',  'src' => '/images/icons/repairs-repeat-history.png', 'label' => 'Service<br>history'],
+                        ['icon' => 'ativo-7',  'src' => '/images/icons/151.png', 'style' => 'transform:scale(0.85);', 'label' => 'Genuine parts<br>support'],
                     ] as $feat)
                     <div class="flex items-center gap-5 text-left">
-                        <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                        <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
                         <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
                     </div>
                     @endforeach
@@ -406,12 +405,12 @@
                     </p>
                     <div class="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3 reveal">
                         @foreach([
-                            ['icon' => 'ativo-8', 'label' => 'Reduce repeat<br>disruption'],
-                            ['icon' => 'ativo-4', 'label' => 'Protect equipment<br>value'],
-                            ['icon' => 'ativo-7', 'label' => 'Planned maintenance<br>support'],
+                            ['icon' => 'ativo-8', 'src' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce repeat<br>breakdowns'],
+                            ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'style' => 'transform:scale(0.84);', 'label' => 'Protect equipment<br>value'],
+                            ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'style' => 'transform:scale(0.94);', 'label' => 'Planned maintenance<br>support'],
                         ] as $feat)
                         <div class="flex items-center gap-5">
-                            <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                            <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
                             <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
                         </div>
                         @endforeach
@@ -517,11 +516,11 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 @include('components.services-cards', [
     'eyebrow'          => 'Related Services',
-    'headingLead'      => 'Aftercare alongside ',
-    'headingHighlight' => 'repairs, maintenance and Equipment Rental',
+    'headingLead'      => 'Keep your laundry support ',
+    'headingHighlight' => 'connected beyond aftercare',
     'headingTrail'     => '',
     'highlightClass'   => 'text-[#148af4]',
-    'intro'            => 'Support & Aftercare keeps service history aligned across repair visits, Preventive Maintenance and Equipment Rental,<br class="hidden lg:block"> so future service decisions reflect equipment condition and site priorities.',
+    'intro'            => 'Support for repairs, planned maintenance, rental options and Electrolux Professional equipment guidance.',
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
