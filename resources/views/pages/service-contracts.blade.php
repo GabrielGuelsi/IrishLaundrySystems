@@ -282,7 +282,7 @@
             [
                 'title' => 'People who know the equipment',
                 'img'   => '/images/icons/pmc-gain-87.png',
-                'text'  => 'Support from engineers with commercial laundry experience and Electrolux Professional equipment knowledge.',
+                'text'  => 'Engineering support with commercial laundry experience and Electrolux Professional equipment knowledge.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>',
             ],
             [
@@ -293,6 +293,7 @@
             ],
             [
                 'title' => 'Reduce downtime pressure',
+                'img'   => '/images/icons/203.png',
                 'text'  => 'Planned servicing helps spot issues earlier, so your site can reduce downtime pressure and keep laundry moving.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>',
             ],
@@ -304,7 +305,8 @@
             ],
             [
                 'title' => 'Equipment value',
-                'img'   => '/images/icons/pmc-gain-91.png',
+                'img'   => '/images/icons/204.png',
+                'imgClass' => 'scale-[0.79]',
                 'text'  => 'Regular servicing can support more reliable performance and help protect equipment value over time.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99"/>',
             ],
@@ -315,7 +317,7 @@
             @foreach ($gainCards as $i => $card)
             <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 object-contain">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 object-contain {{ $card['imgClass'] ?? '' }}">
                 @else
                 <svg class="w-16 h-16 lg:w-20 lg:h-20 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     {!! $card['svg'] !!}
@@ -339,10 +341,10 @@
         <div class="max-w-5xl mb-12 lg:mb-14">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">What's Included</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
-                What's included in a<br class="hidden lg:block"><span class="text-steel">Preventive Maintenance Contract</span>
+                What's included in a <span class="text-steel">Preventive Maintenance Contract</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
-                Your contract brings planned visits, equipment checks, service reporting, preferential call-out support and practical recommendations around the laundry equipment your site depends on.
+                Your contract brings planned visits, equipment checks, service reporting, preferential call-out support and<br class="hidden lg:block"> practical recommendations around the laundry equipment your site depends on.
             </p>
         </div>
 
@@ -395,7 +397,7 @@
 
         {{-- Support between visits — thin horizontal strip below grid --}}
         <div class="mt-10 bg-bg border border-border rounded-xl px-6 py-5 flex items-start gap-4 reveal" style="transition-delay:480ms;">
-            <img src="/images/icons/support-gear.png" alt="" aria-hidden="true" class="w-12 h-12 lg:w-14 lg:h-14 flex-shrink-0 object-contain">
+            <img src="/images/icons/94.png" alt="" aria-hidden="true" class="w-12 h-12 lg:w-14 lg:h-14 flex-shrink-0 object-contain">
             <div>
                 <h3 class="font-heading font-bold text-navy text-base mb-1">Support between visits</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Talk to Our Team when equipment issues arise between planned inspections, with support from people who know the equipment.</p>
@@ -417,13 +419,13 @@
     <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 relative">
 
         {{-- Centered header — 2-line title --}}
-        <div class="max-w-5xl mx-auto text-center mb-10 lg:mb-12">
+        <div class="max-w-none mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Financial Value</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal text-balance" style="transition-delay:80ms;">
-                <span class="text-steel">Protect your maintenance budget</span> before small problems become expensive repairs
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal" style="transition-delay:80ms;">
+                <span class="text-steel">Protect your maintenance budget</span><br class="hidden lg:block"> <span class="lg:whitespace-nowrap">before small problems become expensive repairs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty max-w-5xl mx-auto" style="transition-delay:140ms;">
-                Waiting for breakdowns can lead to urgent call-outs, downtime, delays and unplanned repair costs. A Preventive Maintenance Contract gives your site planned servicing, service reports and earlier attention to smaller issues before they become expensive repair pressure. For Electrolux Professional equipment, regular servicing can also support more consistent energy, water and detergent use over time.
+                Waiting for breakdowns can create urgent call-outs, downtime and unplanned repair costs. A Preventive Maintenance Contract gives<br class="hidden lg:block"> your site planned servicing, reports and earlier issue detection before smaller problems become expensive repairs.
             </p>
         </div>
 
@@ -511,15 +513,6 @@
 
         </div>
 
-        {{-- Mini points --}}
-        <div class="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 mt-8 font-body text-gray-500 text-sm reveal">
-            <span class="whitespace-nowrap">Reduce surprise repair costs</span>
-            <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-            <span class="whitespace-nowrap">Spot issues earlier</span>
-            <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-            <span class="whitespace-nowrap">Protect equipment value</span>
-        </div>
-
     </div>
 </section>
 
@@ -535,19 +528,19 @@
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Planned Maintenance Value</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Keep essential laundry equipment running with <span class="text-steel">less&nbsp;disruption</span>
+                    Keep essential laundry equipment running with <span class="text-steel">less&nbsp;downtime</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                    Planned inspections help identify wear, developing faults and service needs earlier, so your site can reduce downtime pressure, minimise disruption and keep maintenance decisions easier to&nbsp;manage.
+                    Planned inspections help identify wear, developing faults and service needs earlier,<br class="hidden lg:block"> so your site can reduce downtime pressure, minimise disruption and<br class="hidden lg:block"> keep maintenance decisions easier to&nbsp;manage.
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 mb-8">
                     @foreach([
-                        ['icon' => 'ativo-8',  'label' => 'Spot issues<br>earlier'],
+                        ['icon' => 'ativo-8',  'src' => '/images/icons/rental-gain-119.png', 'style' => 'filter:brightness(0) invert(1);', 'label' => 'Spot issues<br>earlier'],
                         ['icon' => 'ativo-4',  'label' => 'Keep equipment<br>running'],
-                        ['icon' => 'ativo-7',  'label' => 'Minimise<br>disruption'],
+                        ['icon' => 'ativo-7',  'src' => '/images/icons/203.png', 'style' => 'filter:brightness(0) invert(1);', 'label' => 'Minimise<br>downtime'],
                     ] as $feat)
                     <div class="flex items-center gap-5 text-left">
-                        <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                        <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
                         <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
                     </div>
                     @endforeach
@@ -567,10 +560,10 @@
 <section class="w-full overflow-hidden pb-16 lg:pb-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Preventive Visits</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight max-w-3xl reveal text-balance" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
             How preventive visits create <span class="text-steel">clearer next&nbsp;steps</span>
         </h2>
-        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
             A preventive visit gives your site a clearer view of equipment condition, service needs and what should happen next.
         </p>
     </div>
@@ -580,26 +573,26 @@
             [
                 'num'   => '01.',
                 'title' => 'Inspect and assess',
-                'body'  => 'Review equipment condition, visible wear, daily use and any issues reported by the site.',
-                'img'   => '/images/shared/Customer-Care_Line-6000-_001.jpg',
+                'body'  => 'Review equipment condition, visible wear,<br class="hidden lg:block"> daily use and any issues reported by the site.',
+                'img'   => '/images/shared/services-overview-hero-portrait.jpg',
             ],
             [
                 'num'   => '02.',
                 'title' => 'Service and identify',
                 'body'  => 'Carry out scheduled preventive maintenance and identify wear, service needs or developing faults.',
-                'img'   => '/images/shared/repairs-hero.jpg',
+                'img'   => '/images/pages/services/repairs-how-02.jpg',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Report clearly',
                 'body'  => 'Provide maintenance notes so the site can track visits, recurring issues and inspection findings.',
-                'img'   => '/images/pages/services/service-contracts-hero.jpg',
+                'img'   => '/images/pages/services/repairs-how-03.jpg',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Agree the next step',
                 'body'  => 'Confirm recommendations, quoted follow-up work or parts requirements where follow-up is needed.',
-                'img'   => '/images/shared/td6-multihousing-room.jpg',
+                'img'   => '/images/pages/services/preventive-agree-step.jpg',
             ],
         ] as $card)
         <div class="sc-visit-card">
@@ -611,7 +604,7 @@
             <div class="sc-vcap2">
                 <span class="sc-num">{{ $card['num'] }}</span>
                 <h4>{{ $card['title'] }}</h4>
-                <p>{{ $card['body'] }}</p>
+                <p>{!! $card['body'] !!}</p>
             </div>
         </div>
         @endforeach
@@ -624,12 +617,12 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-12 lg:mb-14">
+        <div class="mb-12 lg:mb-14 text-center">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Sector Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 Planned maintenance for <span class="text-steel">different site&nbsp;demands</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl reveal text-pretty" style="transition-delay:160ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
                 Different sites place different pressure on laundry equipment. Preventive Maintenance should be planned around daily use, service needs and the cost of disruption.
             </p>
         </div>
@@ -700,7 +693,7 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial<br>&amp; Industrial</h3>
+                    <h3 class="font-heading font-bold text-white text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial &amp; Industrial</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         For higher-use sites where output, running cost and equipment reliability carry more operational weight.
                     </p>
@@ -726,7 +719,7 @@
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed mt-4 text-pretty">
-                <span class="whitespace-nowrap">Irish Laundry Systems</span> is trusted by organisations that need clear communication, reliable support and people who know the equipment when maintenance, repairs and laundry performance affect daily operations.
+                <span class="whitespace-nowrap">Irish Laundry Systems</span> supports organisations that need clear communication, experienced engineers and practical help when maintenance, repairs or laundry performance affect daily operations.
             </p>
         </div>
     </div>
@@ -807,22 +800,22 @@ $faqs = [
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">After the Visit</p>
 
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-            Turn preventive visit findings into <span class="text-steel">the right next&nbsp;step</span>
+            Know what needs attention <span class="text-steel">after the preventive&nbsp;visit</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            When a preventive visit identifies wear, a recurring fault or a parts requirement, <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps follow-up straightforward, with quoted work and genuine parts support where&nbsp;needed.
+            If a visit identifies wear, a recurring fault or a parts requirement, <span class="whitespace-nowrap">Irish Laundry Systems</span> explains the issue, quotes any recommended work and supports genuine parts where&nbsp;needed.
         </p>
 
         <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
             @foreach([
-                ['icon' => 'ativo-8', 'label' => 'Clear<br>follow-up'],
-                ['icon' => 'ativo-4', 'label' => 'Less delay<br>after inspection'],
-                ['icon' => 'ativo-7', 'label' => 'Genuine parts support<br>where needed'],
+                ['icon' => 'ativo-8', 'label' => 'Service<br>Report'],
+                ['icon' => 'ativo-4', 'label' => 'Clear<br>Recommendation'],
+                ['icon' => 'ativo-7', 'src' => '/images/icons/aftercare-connected-95.png', 'style' => 'filter:brightness(0) invert(1);', 'label' => 'Genuine Parts<br>Support'],
             ] as $i => $feat)
             <div class="flex items-center gap-5">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
+                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
+                     style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
                 <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
@@ -865,13 +858,13 @@ $faqs = [
                             with <span class="text-steel">planned maintenance support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                            Tell us about your equipment, site and current maintenance needs. <span class="whitespace-nowrap">Irish Laundry Systems</span> will guide you toward the right support across Preventive Maintenance Contracts, Repairs &amp; Call-Outs, Equipment Rental or Support &amp; Aftercare.
+                            Tell us about your equipment and maintenance needs. We&rsquo;ll guide you towards the right support route.
                         </p>
                         <div class="flex flex-col gap-3">
                             @foreach ([
-                                'Experienced engineer support',
-                                'Preventive Maintenance focus',
-                                'Commercial laundry specialists',
+                                'Experienced Engineers',
+                                'Planned Servicing',
+                                'Laundry Specialists',
                             ] as $point)
                             <div class="flex items-center gap-3 bg-white/10 rounded-xl px-5 py-3">
                                 <svg class="w-4 h-4 text-steel flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.8" aria-hidden="true">
@@ -885,7 +878,7 @@ $faqs = [
 
                     <div class="hidden lg:block relative rounded-2xl overflow-hidden mt-auto">
                         <div class="aspect-[16/9]">
-                            <img src="/images/pages/services/service-contracts-hero.jpg"
+                            <img src="/images/pages/services/preventive-agree-step.jpg"
                                  alt="ILS engineers reviewing service equipment"
                                  loading="lazy" decoding="async"
                                  class="w-full h-full object-cover object-[center_25%]">

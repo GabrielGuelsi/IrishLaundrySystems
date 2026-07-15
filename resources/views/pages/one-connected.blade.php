@@ -134,9 +134,7 @@
                 ['claim' => 'Reports',     'label' => 'Keep records visible',        'body' => 'Access saved data that helps teams review performance and process history.',                     'i' => 'M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'],
             ] as $v)
             <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-                <div class="w-12 h-12 rounded-lg border border-[#148af4]/50 bg-[#148af4]/5 flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $v['i'] }}"/></svg>
-                </div>
+                <svg class="w-10 h-10 text-[#148af4] mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $v['i'] }}"/></svg>
                 <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-1">{{ $v['claim'] }}</p>
                 <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $v['label'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $v['body'] }}</p>
@@ -179,9 +177,7 @@
                 ['claim' => 'Reports',     'label' => 'Data for review',             'body' => 'Keep records available for performance checks and future reference.',    'i' => 'M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'],
             ] as $dp)
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-                <div class="w-12 h-12 rounded-lg border border-[#148af4]/60 flex items-center justify-center mb-4">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['i'] }}"/></svg>
-                </div>
+                <svg class="w-10 h-10 text-[#148af4] mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $dp['i'] }}"/></svg>
                 <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-1">{{ $dp['claim'] }}</p>
                 <h3 class="font-heading font-bold text-white text-base leading-snug mb-2">{{ $dp['label'] }}</h3>
                 <p class="font-body text-white/65 text-sm leading-relaxed">{{ $dp['body'] }}</p>
@@ -198,30 +194,31 @@
     </div>
 </section>
 
-{{-- 7. COST, WASTE AND CONSUMPTION --}}
+{{-- 7. CONSUMPTION CONTROL — three resource signals (claim / label / body) --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Cost Control</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Consumption Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control energy, water and detergent use with <span style="color:#148af4;">better consumption insight</span>
+                Focus on the resources that affect <span style="color:#148af4;">cost and waste every day</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl mb-2">
-                Energy, water and detergent use can create major pressure over the life of a commercial laundry operation. OnE Connected gives teams a stronger way to monitor consumption across compatible equipment, compare usage and see where resources may be wasted.
-            </p>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                That visibility can support better decisions around running costs, sustainability and daily operation.
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                OnE Connected shows many areas of laundry performance. For cost and waste control, three resource signals matter most: energy, water and detergent use.
             </p>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
             @foreach([
-                ['t' => 'Reduce costs and waste', 'b' => 'Use real consumption insight to understand where resources are being used and where waste may be building.'],
-                ['t' => 'Save resources',         'b' => 'Monitor energy, water and detergent consumption across compatible equipment.'],
-                ['t' => 'Reduce running costs',   'b' => 'Use transparency and equipment intelligence to support better cost control over time.'],
-            ] as $cp)
-            <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50">
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $cp['t'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $cp['b'] }}</p>
+                ['claim' => 'Energy use',    'label' => 'See where power is being used',   'body' => 'Monitor energy consumption across compatible laundry equipment and cycles.',    'i' => 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z'],
+                ['claim' => 'Water use',     'label' => 'Compare use across cycles',       'body' => 'Review water consumption patterns and see where usage may need attention.',      'i' => 'M12 21a9 9 0 006.364-15.364L12 2.25 5.636 8.636A9 9 0 0012 21z'],
+                ['claim' => 'Detergent use', 'label' => 'Link product use to activity',    'body' => 'Track detergent consumption alongside washing activity where monitoring is available.', 'i' => 'M9 3.75h4.5l1.2 2.25v13.5A1.5 1.5 0 0113.2 21H8.55a1.5 1.5 0 01-1.5-1.5V6l1.2-2.25H9zm0 0V2.25h4.5m-6 8.25h7.5'],
+            ] as $c)
+            <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
+                <svg class="w-10 h-10 text-[#148af4] mb-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $c['i'] }}"/></svg>
+                <p class="font-heading font-bold text-[#148af4] text-sm mb-1">{{ $c['claim'] }}</p>
+                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-4">{{ $c['label'] }}</h3>
+                <div class="border-t border-gray-200 pt-4 mt-auto">
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $c['body'] }}</p>
+                </div>
             </div>
             @endforeach
         </div>
@@ -236,11 +233,17 @@
 
 {{-- 8. ILS ENGINEERING LAYER (image-backed strip) --}}
 @include('components.service-contracts-strip', [
-    'eyebrow'      => 'Irish Engineering Support',
-    'headingLine1' => 'Electrolux builds the intelligence.',
-    'headingLine2' => 'ILS connects it to the real laundry room',
-    'body'         => 'OnE Connected is Electrolux Professional technology. Irish Laundry Systems applies it through Irish engineering support — connecting dashboard insight to the equipment, room, workload, service plan and daily operation, backed by more than 30 years supporting Irish laundry operations.',
+    'eyebrow'      => 'Engineering Support',
+    'headingLine1' => 'The dashboard shows the data.',
+    'headingLine2' => 'Irish Laundry Systems helps decide what comes next',
+    'body'         => 'Our team helps interpret OnE Connected data around consumption, alerts, equipment use and process performance, so the site can make clearer decisions around maintenance, call-outs, parts, running costs and equipment care.',
     'image'        => '/images/shared/customer-care-line6000.jpg',
+    'miniPoints'   => [
+        {{-- icons placeholder — swap for final ones later --}}
+        ['icon' => '149', 'iconClass' => 'scale-[0.78]', 'label' => 'Earlier<br>Maintenance'],
+        ['icon' => '168', 'iconClass' => 'scale-[0.91]', 'label' => 'Downtime<br>Reduction'],
+        ['icon' => '151', 'iconClass' => 'scale-[0.85]', 'label' => 'Equipment<br>Lifespan'],
+    ],
     'cta1Label'    => 'Speak to Irish Laundry Systems',
     'cta1Route'    => 'contact',
 ])

@@ -429,21 +429,21 @@ $expectSteps = [
             <div class="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-14 pt-10 border-t border-white/10">
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-fault-patterns.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/repairs-repeat-history.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Repair history</h3>
                     <p class="font-body text-white text-xs leading-relaxed">See whether the same fault has appeared before.</p>
                 </div>
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-repeat-history.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/repairs-fault-patterns.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Parts needs</h3>
                     <p class="font-body text-white text-xs leading-relaxed">Identify parts that may need replacement or further checks.</p>
                 </div>
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-cost-control.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/61.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Maintenance timing</h3>
                     <p class="font-body text-white text-xs leading-relaxed">Know when Preventive Maintenance should be considered.</p>
@@ -524,9 +524,9 @@ $faqs = [
     'body'         => 'After a call-out, repair findings can support service records, parts checks, Preventive Maintenance or replacement planning.',
     'image'        => '/images/shared/Parts%20%26%20Aftercare.png',
     'miniPoints'   => [
-        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Repair<br>findings'],
-        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Service<br>history'],
-        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>checks'],
+        ['icon' => 'repairs-fault-patterns', 'label' => 'Repair<br>findings'],
+        ['icon' => '61', 'iconClass' => 'scale-[0.94]', 'label' => 'Service<br>history'],
+        ['icon' => '151', 'iconClass' => 'scale-[0.85]', 'label' => 'Parts<br>checks'],
     ],
     'cta1Label'    => 'Plan Aftercare',
     'cta1Route'    => 'parts-aftercare',

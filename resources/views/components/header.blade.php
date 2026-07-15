@@ -91,7 +91,7 @@
                          class="absolute left-0 top-full pt-1 w-52 z-50">
                     <div class="bg-white rounded-lg shadow-xl border border-gray-200 py-1">
                         <a href="{{ route('equipment') }}" class="block px-4 py-2.5 text-sm font-body text-navy hover:bg-bg hover:text-orange font-bold">Equipment Hub</a>
-                        <a href="{{ route('equipment.category', 'commercial-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Washing Machines</a>
+                        <a href="{{ route('equipment.category', 'commercial-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Washers</a>
                         <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Barrier Washers</a>
                         <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Commercial Dryers</a>
                         <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="block px-4 py-2.5 text-sm font-body text-gray-700 hover:bg-bg hover:text-orange">Drying Cabinets</a>
@@ -209,7 +209,7 @@
                 </button>
                 <div x-show="eOpen" x-cloak class="pl-3 pb-2 pt-1 space-y-0.5 border-b border-gray-100">
                     <a href="{{ route('equipment') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Equipment Hub</a>
-                    <a href="{{ route('equipment.category', 'commercial-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Washing Machines</a>
+                    <a href="{{ route('equipment.category', 'commercial-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Washers</a>
                     <a href="{{ route('equipment.category', 'barrier-washers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Barrier Washers</a>
                     <a href="{{ route('equipment.category', 'tumble-dryers') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Commercial Dryers</a>
                     <a href="{{ route('equipment.category', 'drying-cabinets') }}" class="block py-2.5 text-sm text-navy/60 hover:text-navy font-light transition-colors">Drying Cabinets</a>

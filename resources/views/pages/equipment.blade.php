@@ -40,8 +40,8 @@
                     Commercial laundry equipment<br class="hidden lg:block"> <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
                 </h1>
 
-                <p class="eq-hero-desc font-body text-white leading-relaxed mb-8 text-base max-w-2xl text-pretty">
-                    Irish Laundry Systems supports commercial laundry sites with equipment selection, quotation, supply, installation, rental advice and aftercare, including Electrolux Professional laundry equipment options.
+                <p class="eq-hero-desc font-body text-white leading-relaxed mb-8 text-base max-w-3xl text-pretty">
+                    Irish Laundry Systems supports commercial laundry sites with equipment selection,<br class="hidden lg:block"> quotation, supply, installation, rental advice and aftercare, including<br class="hidden lg:block"> Electrolux Professional laundry equipment options.
                 </p>
 
                 <div class="eq-hero-btns flex flex-col sm:flex-row gap-4">
@@ -106,9 +106,9 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore equipment lines built for <span style="color:#148af4;">different laundry needs</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                <span>The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
-                <span>Irish Laundry Systems helps match the right option to the site and the next step.</span>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-none">
+                <span class="block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
+                <span class="block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
             </p>
         </div>
     </div>
@@ -121,7 +121,6 @@
                 'eyebrow'  => 'Line 6000',
                 'headline' => 'Energy-saving options for professional laundry',
                 'subline'  => 'Line 6000 equipment options for sites looking to manage energy use, water use and daily laundry demand.',
-                'points'   => ['Control running costs', 'Use less water and energy', 'Built for daily demand'],
                 'cta'      => 'Explore Line 6000 Options',
                 'route'    => route('equipment.category', 'commercial-washers'),
                 'img'      => '/images/shared/Line 6000 solutions products_72dpi.jpg',
@@ -131,7 +130,6 @@
                 'eyebrow'  => 'myPROzip',
                 'headline' => 'High speed, long life and flexibility for smaller sites',
                 'subline'  => 'myPROzip washer and dryer options for operations that need more than domestic equipment in a compact professional setup.',
-                'points'   => ['More than domestic', 'Smaller-site fit', 'Faster turnaround'],
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
                 'img'      => '/images/pages/equipment/mypro-family.jpg',
@@ -141,7 +139,6 @@
                 'eyebrow'  => 'lagoon Advanced Care',
                 'headline' => 'Specialist textile care where the fabric needs more',
                 'subline'  => 'lagoon Advanced Care and wet cleaning options for garments and textiles that need a different approach.',
-                'points'   => ['Protect textile quality', 'Handle specialist garments', 'Reduce outsourcing where suitable'],
                 'cta'      => 'Explore Wet Cleaning',
                 'route'    => route('equipment.category', 'wet-cleaning'),
                 'img'      => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg',
@@ -171,18 +168,12 @@
                     <div class="relative" style="min-height:540px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover {{ $t['imgClass'] ?? 'object-center' }}">
-                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.7) 0%, rgba(1,30,65,0.32) 28%, rgba(1,30,65,0.05) 52%, transparent 72%);"></div>
+                        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.8) 25%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.25) 65%, rgba(1,30,65,0.06) 85%, transparent 100%);"></div>
                         <div class="relative z-10 flex items-end" style="min-height:540px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
                                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $t['eyebrow'] }}</p>
                                 <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-tight mb-4">{{ $t['headline'] }}</h3>
-                                <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-xl">{{ $t['subline'] }}</p>
-                                <div class="flex flex-wrap items-center gap-x-5 gap-y-2 mb-7">
-                                    @foreach($t['points'] as $pt)
-                                    <span class="font-body text-white text-sm font-bold">{{ $pt }}</span>
-                                    @if(!$loop->last)<span class="text-white/30">|</span>@endif
-                                    @endforeach
-                                </div>
+                                <p class="font-body text-white/80 text-base leading-relaxed mb-7 max-w-xl">{{ $t['subline'] }}</p>
                                 <a href="{{ $t['route'] }}"
                                    class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                                     {{ $t['cta'] }}
@@ -219,7 +210,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment options <span style="color:#148af4;">worth a closer look</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 These equipment options can help sites handle common laundry demands around output, drying performance, space and professional-grade use.
             </p>
         </div>
@@ -230,14 +221,14 @@
                 'text'  => 'For sites that need stronger wash performance, better load handling and more control around daily laundry output.',
                 'cta'   => 'View Washer Options',
                 'route' => route('equipment.category', 'commercial-washers'),
-                'img'   => '/images/pages/commercial-washers/commercialwasher.webp',
+                'img'   => '/images/pages/commercial-washers/WH6-27.jpg',
             ],
             [
                 'title' => 'Heat Pump Dryers',
                 'text'  => 'For sites looking to reduce energy pressure while keeping drying performance strong for busy laundry demand.',
                 'cta'   => 'View Dryer Options',
                 'route' => route('equipment.category', 'tumble-dryers'),
-                'img'   => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',
+                'img'   => '/images/pages/dryers/TD6-14.jpg',
             ],
             [
                 'title' => 'myPRO Washers &amp; Dryers',
@@ -327,7 +318,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Browse commercial laundry equipment available for quotation, supply, installation, rental discussion and ongoing support through Irish Laundry Systems.
             </p>
         </div>
@@ -339,15 +330,15 @@
                 ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/equipment/tumbledryerscard.png'],
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/shared/drying_cabinetscards.jpg'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/pages/equipment/hot_ciliders_ironerscards.jpg'],
-                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/pages/equipment/wetcleaningcards.png'],
+                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/pages/equipment/wetcleaningcards.png', 'pad' => 'p-0 scale-[1.15]'],
                 ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/pages/equipment/semiprofessionalcards.png'],
                 ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/pages/equipment/accessoriesandconsumablescardimage.png'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
-                     class="absolute inset-0 w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-contain {{ $cat['pad'] ?? 'p-6' }} transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.74) 11%, rgba(1,30,65,0.52) 21%, rgba(1,30,65,0.32) 31%, rgba(1,30,65,0.18) 41%, rgba(1,30,65,0.09) 51%, rgba(1,30,65,0.04) 61%, rgba(1,30,65,0.015) 71%, transparent 80%);"></div>
-                <div class="absolute inset-x-0 bottom-0 p-5 z-10">
+                <div class="absolute inset-x-0 bottom-0 p-5 z-10 text-center">
                     <h3 class="font-heading font-bold text-white text-lg lg:text-xl leading-snug">{!! $cat['title'] !!}</h3>
                 </div>
             </a>
@@ -368,13 +359,6 @@
                     <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed mb-5">
                         For care homes, nursing homes, hospitality sites and small-scale operations that need ironing tables, steam irons or hand-finishing support for linen, garments, uniforms and everyday presentation.
                     </p>
-                    <div class="flex flex-wrap items-center gap-x-3 gap-y-2 mb-6">
-                        <span class="font-body font-bold text-navy text-xs">Better presentation</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="font-body font-bold text-navy text-xs">Easier daily finishing</span>
-                        <span class="text-gray-300">|</span>
-                        <span class="font-body font-bold text-navy text-xs">Practical room fit</span>
-                    </div>
                     <div class="flex flex-col sm:flex-row gap-3">
                         <a href="{{ route('equipment.category', 'ironers') }}"
                            class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-5 py-3 rounded-lg text-sm transition-colors duration-200">
@@ -419,7 +403,7 @@
 <!-- 7. EQUIPMENT ACCESS & VALUE STRIP -->
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:340px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry equipment supply"
+        <img src="/images/shared/equipment-access-strip.jpg" alt="ILS laundry equipment supply"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -433,16 +417,16 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
             Whether the right decision is purchase or rental, Irish Laundry Systems can guide your site toward the equipment option that fits the room, workload, budget and support needs.
         </p>
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-8">
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-8">
             @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Outright<br>purchase'],
-                ['icon' => 'ativo-10', 'label' => 'Rental where<br>suitable'],
-                ['icon' => 'ativo-21', 'label' => 'Supplied and<br>commissioned'],
+                ['src' => '/images/icons/207.png', 'style' => 'transform:scale(1.07);', 'label' => 'Outright<br>purchase'],
+                ['src' => '/images/icons/home-planning-fit.png', 'style' => 'transform:scale(1.06);', 'label' => 'Rent<br>Equipment'],
+                ['src' => '/images/icons/208.png', 'style' => 'transform:scale(0.75);', 'label' => 'Plan the<br>Setup'],
             ] as $feat)
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="{{ $feat['src'] }}" class="h-14 w-auto object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
+            </span>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
@@ -464,19 +448,19 @@
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-                From equipment choice to <span style="color:#148af4;">ready for daily use</span>
+                Prepare new laundry equipment for <span style="color:#148af4;">daily use with less disruption</span>
             </h2>
-            <p class="font-body text-gray-500 text-base mb-2 max-w-2xl leading-relaxed text-center mx-auto">
-                A good equipment decision does not stop at the quote. Irish Laundry Systems can support the site review, supply, installation, commissioning and handover steps that help put the selected equipment into operation.
+            <p class="font-body text-gray-500 text-base mb-2 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
+                Irish Laundry Systems supports site review, installation, commissioning and handover,<br class="hidden lg:block"> so selected equipment is ready for your team and daily operation.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
             @foreach([
-                ['title' => 'Review the site',          'text' => 'Look at the room, access, utilities, workload, staff flow and current laundry demand.',                 'icon' => 'clipboard'],
-                ['title' => 'Confirm the equipment',    'text' => 'Match the equipment category, capacity and purchase or rental fit to the site and laundry demand.',     'icon' => 'Ativo%204'],
-                ['title' => 'Supply and commission',    'text' => 'Arrange equipment supply, positioning, installation, commissioning and test cycles.',    'icon' => 'Ativo%206'],
-                ['title' => 'Handover and next steps',  'text' => 'Give the site clearer guidance on use, support options and follow-up care.',               'icon' => 'Ativo%203'],
+                ['title' => 'Review the site',          'text' => 'Look at the room, access, utilities, workload, staff flow and current laundry demand.',                 'ic' => '126'],
+                ['title' => 'Confirm the equipment',    'text' => 'Match the equipment category, capacity and purchase or rental fit to the site and laundry demand.',     'ic' => '125'],
+                ['title' => 'Supply and commission',    'text' => 'Arrange equipment supply, positioning, installation, commissioning and test cycles.',    'ic' => '209'],
+                ['title' => 'Handover and next steps',  'text' => 'Give the site clearer guidance on use, support options and follow-up care.',               'ic' => '128'],
             ] as $i => $step)
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 3)
@@ -485,7 +469,7 @@
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
-                    <img src="/images/icons/{{ 125 + $i }}.png" alt=""
+                    <img src="/images/icons/{{ $step['ic'] }}.png" alt=""
                          style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
@@ -505,7 +489,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep the <span style="color:#148af4;">next support step clear</span> after installation
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Once equipment is in place, Irish Laundry Systems can help your site choose the right follow-up support, from planned maintenance to call-out support and aftercare.
             </p>
         </div>
@@ -597,8 +581,8 @@
             ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/pages/sectors/healthcarehero.png',                'pos' => '75% center'],
             ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
             ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/pages/sectors/hospitallityhero.png',           'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/shared/td6-11-multihousing-room-front.jpg'],
-            ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/shared/Line 6000 solutions products_72dpi.jpg'],
+            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/pages/sectors/Heavy-DutyandHigh-volume.png'],
+            ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/pages/sectors/selfservice.png'],
         ];
         @endphp
 
@@ -694,7 +678,7 @@
 @include('components.cta-downtime-form', [
     'pageSource'  => 'equipment_cta',
     'eyebrow'     => 'Request an Equipment Quote',
-    'heading'     => 'Talk to the team before you <span style="color:#148af4;">buy or rent</span> laundry equipment',
+    'heading'     => 'Talk to the team before<br class="hidden lg:block"> you <span style="color:#148af4;">buy or rent</span><br class="hidden lg:block"> laundry equipment',
     'body'        => 'Tell us about your site, workload, room and budget pressure. Irish Laundry Systems will guide you toward the right equipment quote, purchase option, rental discussion or aftercare support.',
     'formTitle'   => 'Request an Equipment Quote',
     'formIntro'   => 'Share the details that help direct the enquiry properly.',
