@@ -18,13 +18,11 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Dry items that should not go through</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">standard tumble drying</span>
+                    <span class="block lg:whitespace-nowrap">Protect specialist garments and gear with</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">cabinet drying</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    <span class="block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Electrolux Professional</span>
-                    <span class="block lg:whitespace-nowrap">drying cabinets for PPE, workwear, shoes, gloves, bulky items and delicate</span>
-                    <span class="block lg:whitespace-nowrap">garments across Ireland.</span>
+                    For PPE, workwear, footwear, gloves and delicate items that need controlled drying without tumbling. ILS supplies, installs and supports cabinets selected around your space and daily demand.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -33,7 +31,7 @@
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Ask About Purchase or Equipment Rental
+                        Explore Purchase &amp; Rental Options
                     </a>
                 </div>
             </div>
@@ -52,16 +50,16 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Dry items that need <span style="color:#148af4;">care, control and faster return to use</span>
+                    Choose the cabinet dryer<br>around <span style="color:#148af4;">item type, space</span><br><span style="color:#148af4;">and daily volume</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Drying cabinets are designed for items that need air movement, hanging space or shelf drying instead of tumble action.
+                    Drying cabinets suit items that need hanging space, shelves or air movement instead of tumble action.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems reviews item type, room fit, drying capacity and running cost before recommending the right setup.
+                    ILS reviews your items, room and required capacity before recommending the setup.
                 </p>
                 <a href="#cabinet-range"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -81,21 +79,21 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Performance</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Drying cabinets that support <span style="color:#148af4;">flexibility, speed and item care</span>
+                Compare the technology behind<br><span style="color:#148af4;">controlled cabinet drying</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Drying cabinets give sites a controlled way to dry delicate, bulky and specialist items without standard tumble action.
+                Review drying speed, automatic programmes, loading flexibility, textile care and controls across the drying cabinet range.
             </p>
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
-            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Outstanding<br>flexibility',   'size'=>'text-2xl', 'label'=>'skiwear to silk', 'iconClass'=>'translate-y-[0.6%]',        'body'=>'Dry delicate garments, outdoor clothing, PPE, shoes, gloves and bulky items in one cabinet setup.'],
-            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Save<br>time',                'size'=>'text-2xl', 'label'=>'under 45 minutes', 'iconClass'=>'scale-[1.059]',       'body'=>'Dry a 6 kg cotton load in less than 45 minutes for faster item return to use.'],
-            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Save, money and<br>energy',   'size'=>'text-2xl', 'label'=>'auto-stop programmes', 'iconClass'=>'scale-[1.207] translate-y-[3.1%]',   'body'=>'Programmes stop when the load is dry, helping reduce wasted time and running cost.'],
-            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>textile care',      'size'=>'text-2xl', 'label'=>'no tumble action', 'iconClass'=>'scale-[1.271]',       'body'=>'Cabinet drying protects delicate fabrics, coatings, reflective strips and bulky items.'],
-            ['icon'=>'194', 'prefix'=>'', 'stat'=>'User-friendly<br>operation',  'size'=>'text-2xl', 'label'=>'simple daily use', 'iconClass'=>'scale-[1.037]',       'body'=>'Clear controls and practical cabinet access support easier day-to-day drying.'],
+            ['icon'=>'169', 'prefix'=>'', 'stat'=>'Flexible<br>Loading',   'size'=>'text-2xl', 'label'=>'Mixed Items', 'iconClass'=>'translate-y-[0.6%]',        'body'=>'Dry garments, PPE, footwear, gloves and bulky items together within one practical cabinet setup.'],
+            ['icon'=>'191', 'prefix'=>'', 'stat'=>'Faster<br>Drying',     'size'=>'text-2xl', 'label'=>'45 Minutes', 'iconClass'=>'scale-[1.059]',       'body'=>'Dry a 6 kg cotton load in under 45 minutes, helping items return to use sooner.'],
+            ['icon'=>'192', 'prefix'=>'', 'stat'=>'Energy<br>Savings',    'size'=>'text-2xl', 'label'=>'Dryness Control', 'iconClass'=>'scale-[1.207] translate-y-[3.1%]',   'body'=>'Programmes stop when the load is dry, reducing unnecessary drying time and energy use.'],
+            ['icon'=>'193', 'prefix'=>'', 'stat'=>'Gentle<br>Drying',     'size'=>'text-2xl', 'label'=>'No Tumbling', 'iconClass'=>'scale-[1.271]',       'body'=>'Protect delicate fabrics, coatings, reflective strips and specialist items without tumble action.'],
+            ['icon'=>'194', 'prefix'=>'', 'stat'=>'Simple<br>Controls',   'size'=>'text-2xl', 'label'=>'Daily Operation', 'iconClass'=>'scale-[1.037]',       'body'=>'Clear controls and practical cabinet access make everyday loading and programme selection easier.'],
         ]])
     </div>
 </section>
@@ -121,7 +119,7 @@
             ['title' => 'Multi-housing',                          'copy' => 'For shared laundry rooms where residents need practical drying for everyday garments, bulky items and outdoor clothing.', 'img' => '/images/pages/drying-cabinets/Multi-housing.png', 'pos' => 'center center'],
             ['title' => 'Construction &amp; workwear',            'copy' => 'For workwear, boots, gloves and outdoor clothing used in demanding working environments.', 'img' => '/images/pages/drying-cabinets/Construction%20%26%20workwear.png', 'pos' => 'center center'],
             ['title' => 'Firefighters &amp; PPE',                 'copy' => 'For protective clothing and specialist items that need controlled drying after use.', 'img' => '/images/pages/drying-cabinets/Firefighters%20%26%20PPE.png', 'pos' => 'center center'],
-            ['title' => 'Schools &amp; childcare',                'copy' => 'For coats, uniforms, outdoor clothing and daily items that need to return to use quickly.', 'img' => '/images/shared/FacilityManagementandPublicSites.png', 'pos' => 'center center'],
+            ['title' => 'Schools &amp; childcare',                'copy' => 'For coats, uniforms, outdoor clothing and daily items that need to return to use quickly.', 'img' => '/images/pages/drying-cabinets/schools-childcare.webp', 'pos' => 'center center'],
         ];
         @endphp
 
@@ -155,7 +153,7 @@
                                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  style="object-position: {{ $card['pos'] ?? 'center center' }};">
                             <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                                 style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                                 style="background:linear-gradient(to top, rgba(1,30,65,0.75) 0%, rgba(1,30,65,0.28) 45%, rgba(1,30,65,0.02) 75%, transparent 100%);"></div>
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                                  style="background:rgba(1,30,65,0.90);"></div>
                             <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
@@ -201,7 +199,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose the cabinet type around <span style="color:#148af4;">items, room fit and running cost</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Irish Laundry Systems supplies Electrolux Professional drying cabinets for different item types, room conditions and running cost priorities.
             </p>
         </div>
@@ -246,10 +244,6 @@
             </div>
             @endforeach
         </div>
-
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-8 xl:whitespace-nowrap">
-            Irish Laundry Systems will assess the room, ventilation, item type, daily drying demand and budget before recommending the right drying cabinet.
-        </p>
     </div>
 </section>
 
@@ -283,12 +277,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Drying Cabinets</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare drying cabinet models around <span style="color:#148af4;">item type, room fit and energy use</span>
+                Explore cabinets built for<br><span style="color:#148af4;">different drying needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Start with what needs to dry, then compare cabinet type, capacity, room setup, ventilation, Heat Pump suitability and accessories.
+                Review each model by capacity, cabinet format and drying technology.
             </p>
         </div>
 
@@ -429,10 +423,6 @@
                 </div>
             </div>
         </div>
-
-        <p class="font-body text-gray-500 text-sm leading-relaxed mt-8 max-w-3xl">
-            Choosing between cabinet models? Irish Laundry Systems reviews capacity, item type, room setup, rental, installation and aftercare before recommending the right option.
-        </p>
     </div>
 </section>
 
@@ -487,10 +477,10 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan cabinet drying around <span style="color:#011E41;">item type, room fit and cabinet choice</span>
+            Plan the right cabinet setup for<br><span style="color:#011E41;">your space and daily use</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            Irish Laundry Systems reviews what needs to dry, where the cabinet will sit and whether Standard or Heat Pump drying is the right fit for the room.
+            ILS checks access, ventilation, available space and drying demand before recommending the cabinet and installation approach.
         </p>
         <div class="flex items-center flex-wrap gap-x-6 gap-y-3 mb-7">
             @foreach([

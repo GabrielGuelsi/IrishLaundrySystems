@@ -1,5 +1,6 @@
 @props([
     'eyebrow' => null,
+    'mirror' => false,
     'image' => '/images/shared/rentalstripimage.jpg',
     'body' => 'Rental gives your site a practical route for replacement, expansion or continuity when buying outright is not the right next step.',
     'headingLine1' => 'Keep laundry moving',
@@ -21,23 +22,25 @@
         ],
     ],
 ])
-{{-- "Why teams choose ILS" strip — image left, content right --}}
+{{-- "Why teams choose ILS" strip — image one side, content the other ($mirror flips them) --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:280px;">
 
-    {{-- LEFT: image pinned to 40% --}}
-    <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:56%;">
+    {{-- image pinned to 56% — left by default, right when mirrored --}}
+    <div class="absolute inset-y-0 {{ $mirror ? 'right-0' : 'left-0' }} hidden lg:block" style="width:56%;">
         <img src="{{ $image }}" alt="Commercial laundry equipment rental"
              class="w-full h-full object-cover" style="object-position: center 15%;">
         {{-- Smoothstep fade — the plateau covers the text column, then eases out with no visible seam --}}
-        <div class="absolute inset-0" style="background: linear-gradient(to left, rgba(1,30,65,1) 0%, rgba(1,30,65,1) 11%, rgba(1,30,65,0.989) 16.31%, rgba(1,30,65,0.957) 21.63%, rgba(1,30,65,0.908) 26.94%, rgba(1,30,65,0.844) 32.25%, rgba(1,30,65,0.768) 37.56%, rgba(1,30,65,0.684) 42.88%, rgba(1,30,65,0.593) 48.19%, rgba(1,30,65,0.5) 53.5%, rgba(1,30,65,0.407) 58.81%, rgba(1,30,65,0.316) 64.13%, rgba(1,30,65,0.232) 69.44%, rgba(1,30,65,0.156) 74.75%, rgba(1,30,65,0.092) 80.06%, rgba(1,30,65,0.043) 85.38%, rgba(1,30,65,0.011) 90.69%, rgba(1,30,65,0) 96%);"></div>
+        <div class="absolute inset-0" style="background: linear-gradient(to {{ $mirror ? 'right' : 'left' }}, rgba(1,30,65,1) 0%, rgba(1,30,65,1) 11%, rgba(1,30,65,0.989) 16.31%, rgba(1,30,65,0.957) 21.63%, rgba(1,30,65,0.908) 26.94%, rgba(1,30,65,0.844) 32.25%, rgba(1,30,65,0.768) 37.56%, rgba(1,30,65,0.684) 42.88%, rgba(1,30,65,0.593) 48.19%, rgba(1,30,65,0.5) 53.5%, rgba(1,30,65,0.407) 58.81%, rgba(1,30,65,0.316) 64.13%, rgba(1,30,65,0.232) 69.44%, rgba(1,30,65,0.156) 74.75%, rgba(1,30,65,0.092) 80.06%, rgba(1,30,65,0.043) 85.38%, rgba(1,30,65,0.011) 90.69%, rgba(1,30,65,0) 96%);"></div>
     </div>
 
-    {{-- RIGHT: content — 50% width --}}
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-10 lg:py-12 w-full lg:w-1/2 lg:ml-[50%]" style="box-sizing:border-box;">
+    {{-- content — 50% width, right by default, left when mirrored --}}
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 {{ $mirror ? 'lg:px-20' : 'lg:px-16' }} py-10 lg:py-12 w-full lg:w-1/2 {{ $mirror ? '' : 'lg:ml-[50%]' }}" style="box-sizing:border-box;">
 
         @php
             $miniHasIcons = is_array($miniPoints[0] ?? null);
-            $miniIconShift = $miniHasIcons ? 'lg:-ml-6 xl:-ml-8' : '';
+            // the negative shift optically aligns the icon column in the default (content-right) layout;
+            // mirrored, the content sits against the page gutter and must line up with the page grid instead
+            $miniIconShift = ($miniHasIcons && !$mirror) ? 'lg:-ml-6 xl:-ml-8' : '';
             // optional per-page override — longer two-line headings can pass a smaller lg size so each line fits
             $headingSize = $headingSize ?? 'text-3xl sm:text-4xl lg:text-5xl';
         @endphp
