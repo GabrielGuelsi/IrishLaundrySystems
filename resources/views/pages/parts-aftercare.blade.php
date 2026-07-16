@@ -172,8 +172,8 @@
                     Keep your laundry operation moving<br class="hidden lg:block"> with <span class="text-[#148af4]">long-term equipment&nbsp;care</span>
                 </h1>
 
-                <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> provides ongoing aftercare for commercial laundry equipment across Dublin and Ireland, covering service history, parts support and future service planning.
+                <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-none text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> provides ongoing aftercare for commercial laundry equipment across Dublin and Ireland,<br class="hidden lg:block"> covering service history, parts support and future service planning.
                 </p>
 
                 <div class="pa-hero-btns flex flex-row flex-wrap gap-4">
@@ -390,44 +390,42 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      7. PREVENTIVE MAINTENANCE BRIDGE
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-bg py-16 lg:py-20">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="bg-navy rounded-3xl p-8 lg:p-12 relative overflow-hidden">
-            <div class="absolute inset-0 pa-dotgrid opacity-50"></div>
-            <div class="relative grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                <div>
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">When Follow-Up Becomes a Pattern</p>
-                    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 reveal text-balance">
-                        Repeated issues may need <span class="text-[#148af4]">planned care</span>, not another isolated decision
-                    </h2>
-                    <p class="font-body text-blue-200 text-base leading-relaxed reveal text-pretty">
-                        If the same machine keeps needing attention, Support &amp; Aftercare can use the service history to review whether a Preventive Maintenance Contract would help reduce repeat disruption, protect equipment value and plan the next step.
-                    </p>
-                    <div class="mt-6 flex flex-wrap items-center gap-x-8 gap-y-3 reveal">
-                        @foreach([
-                            ['icon' => 'ativo-8', 'src' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce repeat<br>breakdowns'],
-                            ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'style' => 'transform:scale(0.84);', 'label' => 'Protect equipment<br>value'],
-                            ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'style' => 'transform:scale(0.94);', 'label' => 'Planned maintenance<br>support'],
-                        ] as $feat)
-                        <div class="flex items-center gap-5">
-                            <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
-                            <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-                <div class="flex flex-col sm:flex-row lg:flex-col gap-3 lg:items-stretch reveal" style="transition-delay:120ms;">
-                    <a href="{{ route('service-contracts') }}"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors">
-                        View Preventive Maintenance
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                    </a>
-                    <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border border-white/60 hover:border-white text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors hover:bg-white/10">
-                        Talk to Our Team
-                    </a>
-                </div>
+<section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/shared/service-contracts-hero.png" alt="Planned maintenance visit on commercial laundry equipment"
+             class="w-full h-full object-cover" style="object-position: center center;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
+    </div>
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">When Follow-Up Becomes a Pattern</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            Repeated issues may need <span style="color:#148af4;">planned care</span>, not another isolated decision
+        </h2>
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6 text-pretty">
+            If the same machine keeps needing attention, Support &amp; Aftercare can use the service history to review whether a Preventive Maintenance Contract would help reduce repeat disruption, protect equipment value and plan the next step.
+        </p>
+        <div class="flex items-center flex-wrap gap-x-8 gap-y-3 mb-7">
+            @foreach([
+                ['icon' => 'ativo-8', 'src' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce repeat<br>breakdowns'],
+                ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'style' => 'transform:scale(0.84);', 'label' => 'Protect equipment<br>value'],
+                ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'style' => 'transform:scale(0.94);', 'label' => 'Planned maintenance<br>support'],
+            ] as $feat)
+            <div class="flex items-center gap-5">
+                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
+                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
             </div>
+            @endforeach
+        </div>
+        <div class="flex flex-wrap gap-3">
+            <a href="{{ route('service-contracts') }}"
+               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                View Preventive Maintenance
+                <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </a>
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
+                Talk to Our Team
+            </a>
         </div>
     </div>
 </section>
@@ -540,6 +538,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Long-term support for <span class="text-[#148af4]">commercial laundry&nbsp;operations</span>',
     'subheading' => 'Irish Laundry Systems supports commercial customers across Ireland with equipment service, aftercare, parts support and clear communication over time.',
+    'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
 ])
 @include('components.proof-bar')
 
@@ -588,11 +587,11 @@ $aftercareFaqs = [
 
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Support &amp; Aftercare</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                Need aftercare for <span class="text-[#148af4]">commercial laundry&nbsp;equipment</span>?
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                Need aftercare for<br class="hidden lg:block"> <span class="text-[#148af4]">commercial laundry&nbsp;equipment?</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Tell us what equipment is on site and what needs attention. <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and respond with the appropriate aftercare recommendation.
+                Tell us what equipment is on site and what needs attention.<br class="hidden lg:block"> <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and respond with the appropriate aftercare recommendation.
             </p>
         </div>
 
@@ -804,12 +803,12 @@ $aftercareFaqs = [
 
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:360px;">
         <div class="lg:max-w-[55%]">
-            <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-4 reveal">Talk to Our Team</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal text-balance">
-                Speak to Irish Laundry Systems about <span class="text-navy">equipment care and&nbsp;aftercare</span>
+            <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-4 reveal">Support &amp; Aftercare</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal">
+                Speak to Irish Laundry Systems<br class="hidden lg:block"> about <span class="text-navy">equipment care<br class="hidden lg:block"> and&nbsp;aftercare</span>
             </h2>
             <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">
-                Share the equipment details, service history or parts requirement. <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and advise on the appropriate support.
+                Share the equipment details, service history or parts requirement.<br class="hidden lg:block"> <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and advise on the appropriate support.
             </p>
             <div class="mb-8 flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 reveal">
                 @foreach([

@@ -191,8 +191,8 @@
                     Keep your laundry operation&nbsp;running<br class="hidden lg:block"> with <span class="text-steel">fewer surprise&nbsp;costs</span>
                 </h1>
 
-                <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> gives commercial laundry sites a planned way to manage servicing, inspections and follow-up support, with preferential call-out labour rates under the agreement. It is built for sites that want fewer surprises, better cost control and more peace of mind around essential laundry equipment.
+                <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl text-pretty">
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> gives commercial laundry sites a planned way to manage servicing, inspections and follow-up support, with preferential call-out labour rates under the agreement. It is built for sites that want fewer surprises, better cost control and peace of mind around essential laundry equipment.
                 </p>
 
                 <div class="hero-btns flex flex-row flex-wrap gap-4">
@@ -261,9 +261,9 @@
 <section class="py-12 lg:py-16 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
+        <div class="max-w-3xl lg:max-w-5xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight tracking-tight mb-5 reveal text-balance lg:whitespace-nowrap" style="transition-delay:80ms;">
                 More control, fewer surprises and <span class="text-[#148af4]">peace of&nbsp;mind</span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
@@ -282,7 +282,7 @@
             [
                 'title' => 'People who know the equipment',
                 'img'   => '/images/icons/pmc-gain-87.png',
-                'text'  => 'Engineering support with commercial laundry experience and Electrolux Professional equipment knowledge.',
+                'text'  => 'Engineering support with commercial laundry experience and Electrolux Professional equipment knowledge.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.745 3.745 0 013.296-1.043A3.745 3.745 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>',
             ],
             [
@@ -294,6 +294,7 @@
             [
                 'title' => 'Reduce downtime pressure',
                 'img'   => '/images/icons/203.png',
+                'imgClass' => 'scale-[0.79]',
                 'text'  => 'Planned servicing helps spot issues earlier, so your site can reduce downtime pressure and keep laundry moving.',
                 'svg'   => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>',
             ],
@@ -491,7 +492,7 @@
                 <div class="relative z-10 flex flex-col gap-4 mt-auto">
                     <div class="inline-flex items-center gap-2 self-start rounded-full bg-steel px-3.5 py-1.5 shadow-lg">
                         <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                        <span class="font-body font-bold text-white text-sm uppercase tracking-[0.18em]">With a PM Contract</span>
+                        <span class="font-body font-bold text-white text-xs sm:text-sm uppercase tracking-[0.14em] sm:tracking-[0.18em]">With a Preventive Maintenance Contract</span>
                     </div>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
                         A planned way to protect essential equipment
@@ -671,7 +672,7 @@
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:160ms;">
                 <img src="/images/pages/sectors/hospitallityhero.png" alt="Hospitality laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                     style="object-position: 82% 30%;">
+                     style="object-position: 100% 30%;">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
@@ -689,7 +690,7 @@
             <a href="{{ route('sectors.commercial') }}"
                class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:240ms;">
                 <img src="/images/shared/line-6000-solutions.jpg" alt="Commercial and industrial laundry support"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 scale-[1.15] group-hover:scale-[1.21]">
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.55) 38%, transparent 68%);"></div>
                 <div class="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
@@ -854,8 +855,7 @@ $faqs = [
                     <div>
                         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Book a Preventive Maintenance Visit</p>
                         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight mb-5 text-balance">
-                            Protect your laundry operation<br class="hidden lg:block">
-                            with <span class="text-steel">planned maintenance support</span>
+                            Protect your laundry operation with <span class="text-steel">planned maintenance&nbsp;support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
                             Tell us about your equipment and maintenance needs. We&rsquo;ll guide you towards the right support route.
