@@ -254,13 +254,13 @@
             <span class="block lg:whitespace-nowrap">Irish Laundry Systems reviews room layout, utilities, access and expected laundry volume</span>
             <span class="block lg:whitespace-nowrap">before recommending washer capacity and installation approach.</span>
         </p>
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-4 gap-y-3 mb-7">
             @foreach([
                 ['icon' => '56', 'label' => 'Room<br>fit', 'sc' => '1.02'],
                 ['icon' => '215', 'label' => 'Utilities<br>and access', 'sc' => '1.08'],
                 ['icon' => '214', 'label' => 'Washer<br>capacity', 'sc' => '0.93'],
             ] as $pt)
-            <span class="flex items-center gap-5 flex-shrink-0">
+            <span class="flex items-center gap-2 flex-shrink-0">
                 <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);transform:scale({{ $pt['sc'] ?? '1' }});">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
@@ -769,13 +769,15 @@
 {{-- 11a. RENTAL / CAPITAL STRIP (moved below dosing) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
+    'mirror'       => true,
+    'image'        => '/images/pages/services/repairs-how-02.jpg',
     'headingLine1' => 'Keep laundry moving without',
     'headingLine2' => '<span style="color:#148af4;">one large capital purchase</span>',
     'body'         => 'For sites replacing washers, adding capacity or managing ageing equipment, Equipment Rental can keep the laundry room moving while spreading the cost under agreed rental terms.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'No large<br>purchase'],
-        ['icon' => '56',                     'label' => 'Clearer cost<br>planning'],
-        ['icon' => 'repairs-maintenance-review', 'label' => 'Service support<br>included'],
+        ['icon' => 'healthcarerentalstrip1', 'iconClass' => 'scale-[1.01] translate-y-[0.4%]', 'label' => 'No large<br>purchase'],
+        ['icon' => '56',                     'iconClass' => 'scale-[1.061] translate-y-[2.3%]', 'label' => 'Clearer cost<br>planning'],
+        ['icon' => 'repairs-maintenance-review', 'iconClass' => 'scale-[1.01] -translate-y-[0.4%]', 'label' => 'Service support<br>included'],
     ],
 ])
 
@@ -860,7 +862,7 @@
 {{-- 14. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="relative overflow-hidden py-12 lg:py-16" style="background-color:#148af4;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/shared/after-installation-strip.jpg" alt="Irish Laundry Systems after-installation support"
+        <img src="/images/pages/commercial-washers/after-installation-strip.jpg" alt="Irish Laundry Systems after-installation support"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 30%, rgba(20,138,244,0.15) 52%, transparent 70%);"></div>
     </div>
@@ -881,7 +883,7 @@
                         ['icon' => '75',  'label' => 'Service<br>records', 'sc' => '0.91'],
                         ['icon' => '151', 'label' => 'Parts<br>support', 'sc' => '0.84'],
                     ] as $pt)
-                    <span class="flex items-center gap-5 flex-shrink-0">
+                    <span class="flex items-center gap-2 flex-shrink-0">
                         <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);transform:scale({{ $pt['sc'] ?? '1' }});">
                         <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
                     </span>

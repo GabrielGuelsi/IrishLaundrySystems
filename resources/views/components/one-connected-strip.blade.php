@@ -17,15 +17,15 @@
         <p class="font-body text-white/80 text-base leading-relaxed mb-6">
             OnE Connected is the digital ecosystem for compatible Electrolux Professional equipment, giving laundry teams clearer visibility over performance, consumption and service needs in one place.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-2 mb-7">
             @foreach([
                 ['icon' => '211', 'label' => 'Increase<br>productivity', 'sc' => '1.05'],
                 ['icon' => '210', 'label' => 'Improve<br>efficiency', 'sc' => '0.93'],
                 ['icon' => '212', 'label' => 'Increase<br>sustainability', 'sc' => '1.00'],
             ] as $feat)
-            <div class="flex items-center gap-5">
+            <div class="flex items-center gap-2">
                 <img src="/images/icons/{{ $feat['icon'] }}.png" style="width:3.5rem;height:3.5rem;flex-shrink:0;filter:brightness(0) invert(1);transform:scale({{ $feat['sc'] ?? '1' }});" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </div>
             @endforeach
         </div>

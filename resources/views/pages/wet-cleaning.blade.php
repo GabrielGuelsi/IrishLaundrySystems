@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Wet cleaning equipment"
+    <img src="/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg" alt="Wet cleaning equipment"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -161,10 +161,10 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '193', 'title' => "ProV'tex Hydraulic Action", 'copy' => 'Controlled water movement replaces harsh mechanical action, cleaning delicate textiles with less stress on the fabric.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.667] translate-y-[0.6%]'],
-                ['icon' => 'dosing-control',  'title' => 'Intelligent Dosing',        'copy' => 'Detergent and water levels are adjusted around the load, keeping each programme properly balanced.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.373] -translate-y-[9.3%]'],
-                ['icon' => '213', 'title' => 'Power Balance',             'copy' => 'Extraction force is adjusted to keep the load balanced and ready for safer drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.346] translate-y-[0.5%]'],
-                ['icon' => '7',  'title' => 'Moisture Balance',          'copy' => 'Moisture levels are controlled so garments are dried safely without unnecessary over-drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.55] -translate-y-[17.4%]'],
+                ['icon' => '193', 'title' => "ProV'tex Hydraulic Action", 'copy' => 'Controlled water movement replaces harsh mechanical action, cleaning delicate textiles with less stress on the fabric.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.083] translate-y-[0.6%]'],
+                ['icon' => 'dosing-control',  'title' => 'Intelligent Dosing',        'copy' => 'Detergent and water levels are adjusted around the load, keeping each programme properly balanced.', 'imgClass' => 'w-24 h-24 object-contain scale-[0.892] -translate-y-[9.3%]'],
+                ['icon' => '213', 'title' => 'Power Balance',             'copy' => 'Extraction force is adjusted to keep the load balanced and ready for safer drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[0.875] translate-y-[0.5%]'],
+                ['icon' => '7',  'title' => 'Moisture Balance',          'copy' => 'Moisture levels are controlled so garments are dried safely without unnecessary over-drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.008] -translate-y-[17.4%]'],
                 ['icon' => '4',  'title' => 'ClarusVibe Controls',       'copy' => 'A clear touchscreen interface makes Lagoon programmes easier for staff to select and manage.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
@@ -402,37 +402,80 @@
             </p>
         </div>
 
-        {{-- Card photos are placeholders until the approved Canva images land (same card order as the Canva file) --}}
-        <div x-data class="relative reveal">
-            <div x-ref="track" class="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-                @foreach([
-                    ['title' => 'Delicate garments',        'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',            'img' => '/images/pages/services/services-overview-hero.jpg',          'pos' => 'center center'],
-                    ['title' => 'Leathers',                 'copy' => 'For selected leather items that need specialist cleaning and revitalising.',            'img' => '/images/shared/services-overview-hero-portrait.jpg', 'pos' => 'center center'],
-                    ['title' => 'Wool and silk',            'copy' => 'For delicate fibres that need careful programme control.',                              'img' => '/images/shared/line-6000-solutions.jpg',             'pos' => 'center 30%'],
-                    ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                    'img' => '/images/shared/render-double-page_72dpi.jpg',        'pos' => 'center center'],
-                    ['title' => 'Dry-clean-only garments',  'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.',    'img' => '/images/shared/commercial-industrial.jpg',           'pos' => 'center center'],
-                    ['title' => 'Shoes',                    'copy' => 'For selected shoes that can be treated through the Lagoon process.',                     'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg',   'pos' => 'center center'],
-                ] as $card)
-                <div class="relative overflow-hidden rounded-2xl flex-shrink-0 snap-start w-[280px] sm:w-[320px]" style="height:400px;">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
-                         class="absolute inset-0 w-full h-full object-cover" style="object-position: {{ $card['pos'] }};">
-                    <div class="absolute inset-0"
-                         style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.5) 40%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
-                    <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
-                        <h3 class="font-heading font-bold text-white text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
-                        <p class="font-body text-white/80 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+        @php
+        $fitCards = [
+            ['title' => 'Delicate garments',         'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',         'img' => '/images/pages/services/services-overview-hero.jpg',            'pos' => 'center center'],
+            ['title' => 'Leathers',                  'copy' => 'For selected leather items that need specialist cleaning and revitalising.',         'img' => '/images/shared/services-overview-hero-portrait.jpg',           'pos' => 'center center'],
+            ['title' => 'Wool and silk',             'copy' => 'For delicate fibres that need careful programme control.',                           'img' => '/images/shared/line-6000-solutions.jpg',                       'pos' => 'center 30%'],
+            ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                  'img' => '/images/shared/render-double-page_72dpi.jpg',                  'pos' => 'center center'],
+            ['title' => 'Dry-clean-only garments',   'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.', 'img' => '/images/shared/commercial-industrial.jpg',                     'pos' => 'center center'],
+            ['title' => 'Shoes',                     'copy' => 'For selected shoes that can be treated through the Lagoon process.',                  'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg', 'pos' => 'center center'],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($fitCards) }},
+                perView: 4,
+                timer: null,
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    calc();
+                    window.addEventListener('resize', calc);
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
+            }"
+            class="relative reveal"
+        >
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-2.5"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($fitCards as $card)
+                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
+                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                            <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                                 style="background:linear-gradient(to top, rgba(1,30,65,0.75) 0%, rgba(1,30,65,0.28) 45%, rgba(1,30,65,0.02) 75%, transparent 100%);"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                 style="background:rgba(1,30,65,0.90);"></div>
+                            <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                                <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
+                                <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
+                            </div>
+                        </div>
                     </div>
+                    @endforeach
                 </div>
-                @endforeach
             </div>
-            <button type="button" @click="$refs.track.scrollBy({left: -336, behavior: 'smooth'})" aria-label="Previous"
-                    class="hidden lg:flex absolute -left-5 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white border border-gray-200 shadow-md items-center justify-center text-navy hover:text-[#148af4] transition-colors">
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
-            </button>
-            <button type="button" @click="$refs.track.scrollBy({left: 336, behavior: 'smooth'})" aria-label="Next"
-                    class="hidden lg:flex absolute -right-5 top-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white border border-gray-200 shadow-md items-center justify-center text-navy hover:text-[#148af4] transition-colors">
-                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-            </button>
+
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-8 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    <template x-for="i in (maxIndex + 1)" :key="i">
+                        <button @click="go(i - 1)"
+                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                                class="rounded-full transition-all duration-300"></button>
+                    </template>
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-gray-200 text-navy hover:bg-navy hover:text-white transition-colors flex items-center justify-center" aria-label="Previous">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center" aria-label="Next">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -492,7 +535,7 @@
             ['step' => '02', 'label' => 'Dedicated Detergents',    'imgs' => ['/images/pages/accessories/lagoon-w01-sensitive-detergent.png'], 'imgClass' => 'max-h-[200px]'],
             ['step' => '03', 'label' => 'Fabric Conditioner',      'imgs' => ['/images/pages/accessories/lagoon-w03-sensitive-conditioner.png'], 'imgClass' => 'max-h-[200px]'],
             ['step' => '04', 'label' => 'Programme &amp; Dosing',  'imgs' => ['/images/shared/DOSAVEEQUIP.webp'], 'imgClass' => 'max-h-[200px]'],
-            ['step' => '05', 'label' => 'Consistent Care &amp; Finish', 'imgs' => ['/images/icons/229.png'], 'imgClass' => 'max-h-[120px]'],
+            ['step' => '05', 'label' => 'Consistent Care &amp; Finish', 'imgs' => ['/images/pages/wet-cleaning/consistent-care-finish.png'], 'imgClass' => 'max-h-[200px]'],
         ];
         @endphp
 
@@ -895,12 +938,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Other Laundry Needs</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment that supports <span style="color:#148af4;">wet cleaning, drying and garment finishing</span>
+                Explore equipment beyond <span style="color:#148af4;">wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Some sites may need additional washers, dryers, finishing equipment or drying cabinets around the wet cleaning service they offer.
+                Washers, dryers, finishing equipment and drying cabinets for other laundry tasks.
             </p>
         </div>
 
