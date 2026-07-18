@@ -295,36 +295,27 @@
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Getting Started</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Simple, stable and scalable for <span style="color:#148af4;">connected laundry control</span>
+                Start OnE Connected with<br><span style="color:#148af4;">a clear, secure setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Getting started with OnE Connected should feel clear. Irish Laundry Systems can review the room, equipment and connection requirements, then advise on the right next step for compatible Electrolux Professional equipment.
+                Getting started should feel simple. Irish Laundry Systems reviews the equipment, the connection requirements and the level of monitoring the site needs, then advises on the right next step for compatible Electrolux Professional equipment.
             </p>
         </div>
-        <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 reveal">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 reveal">
             @foreach([
-                ['n' => '1', 'title' => 'Check compatibility',          'body' => 'Review the equipment, model, controls and production details to confirm whether OnE Connected can apply.', 'img' => '/images/shared/render-double-page_72dpi.jpg', 'pos' => 'center'],
-                ['n' => '2', 'title' => 'Review connection needs',      'body' => 'Assess the site, room layout, signal, router and network requirements before setup.', 'img' => '/images/shared/line-6000-solutions.jpg', 'pos' => 'center'],
-                ['n' => '3', 'title' => 'Connect the equipment',        'body' => 'Use the required Electrolux Professional connectivity hardware and setup process for compatible equipment.', 'img' => '/images/shared/customer-care-line6000.jpg', 'pos' => 'center 30%'],
-                ['n' => '4', 'title' => 'Start monitoring performance', 'body' => 'Use the dashboard to review status, cycles, loading, consumption, alerts, user access and process data.', 'img' => '/images/shared/stripOneconnected.png', 'pos' => 'center'],
-                ['n' => '5', 'title' => 'Scale with the operation',     'body' => 'Add compatible equipment, users or sites as the operation grows and the need for visibility increases.', 'img' => '/images/shared/commercial-industrial.jpg', 'pos' => 'center'],
+                ['icon' => '243', 'title' => 'Easy Setup',         'body' => 'Compatible Electrolux Professional equipment connects using the required connectivity hardware and a straightforward setup process.'],
+                ['icon' => '244', 'title' => 'Secure Connection',  'body' => 'Site, signal and network requirements are reviewed first, so the connection stays stable and access stays controlled.'],
+                ['icon' => '245', 'title' => 'Scalable Monitoring','body' => 'Add compatible equipment, users or sites over time as the operation grows and the need for visibility increases.'],
             ] as $step)
-            <div class="group relative overflow-hidden rounded-2xl min-h-[300px] sm:min-h-[360px] {{ $loop->last ? 'col-span-2 lg:col-span-1' : '' }}">
-                <img src="{{ $step['img'] }}" alt="{{ $step['title'] }}"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" style="object-position:{{ $step['pos'] }};">
-                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0" style="background:linear-gradient(to top, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.18) 100%);"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background:rgba(1,30,65,0.9);"></div>
-                <div class="absolute inset-0 p-5 lg:p-6 flex flex-col justify-end z-10">
-                    <div class="font-heading font-bold text-[#148af4] leading-none mb-2" style="font-size:2rem;">{{ str_pad($step['n'], 2, '0', STR_PAD_LEFT) }}.</div>
-                    <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-44 group-hover:opacity-100 transition-all duration-500 mb-2">
-                        <p class="font-body text-white/80 text-sm leading-relaxed">{{ $step['body'] }}</p>
-                    </div>
-                    <h3 class="font-heading font-bold text-white text-base lg:text-lg leading-snug">{{ $step['title'] }}</h3>
-                </div>
+            <div class="text-center px-6 lg:px-10 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
+                <img src="/images/icons/{{ $step['icon'] }}.png" alt="{{ $step['title'] }}"
+                     class="w-28 h-28 object-contain mx-auto mb-6">
+                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-3">{{ $step['title'] }}</h3>
+                <p class="font-body text-gray-500 text-base leading-relaxed">{{ $step['body'] }}</p>
             </div>
             @endforeach
         </div>
-        <div class="mt-10">
+        <div class="mt-12 text-center">
             <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
                 Start With a Compatibility Check
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
@@ -364,12 +355,7 @@
     </div>
 </section>
 
-{{-- 11b. TESTIMONIALS + CLIENT PROOF --}}
-@include('components.testimonials', [
-    'eyebrow' => 'Customer Trust',
-    'heading' => 'Trusted by sites that depend on <span style="color:#148af4;">reliable laundry support</span>',
-])
-
+{{-- 11b. CLIENT PROOF --}}
 @include('components.proof-bar')
 
 {{-- 12. FAQs --}}
@@ -378,12 +364,12 @@
     'heading' => 'Clear answers before <span style="color:#148af4;">you connect your equipment</span>',
     'footerNote' => 'Have a different question? Ask about OnE Connected.',
     'faqs' => [
-        ['question' => 'What is OnE Connected?', 'answer' => 'OnE Connected is the official Electrolux Professional digital ecosystem for compatible equipment. It connects selected laundry equipment to dashboard data covering status, cycles, loading, consumption, alerts, process validation and service needs.'],
-        ['question' => 'What business benefits does OnE Connected support?', 'answer' => 'OnE Connected supports increased productivity, improved efficiency, reduced costs and waste, better resource use, stronger production flow, sustainability and equipment performance insight.'],
-        ['question' => 'Can OnE Connected reduce running costs?', 'answer' => 'OnE Connected monitors energy, water and detergent consumption across compatible equipment, helping sites see where resources are being used and where waste may be building.'],
-        ['question' => 'Can it support hygiene and process validation?', 'answer' => 'Yes, where compatible equipment and settings apply. OnE Connected can support cycle logs, process validation and hygiene validation visibility as part of the site\'s wider laundry process.'],
-        ['question' => 'Which equipment can connect?', 'answer' => 'Selected Electrolux Professional washers, dryers, barrier washers and flatwork solutions may be compatible. Some existing equipment may connect, while some models may need additional hardware or a conversion kit. Irish Laundry Systems can review this before the site commits.'],
-        ['question' => 'Can teams manage users, alerts and reports?', 'answer' => 'Yes. OnE Connected can support user profiles, access levels, notifications and data extraction, helping teams control who sees what, receive key alerts and export logs or reports for review where suitable.'],
+        ['question' => 'What is OnE Connected?', 'answer' => 'OnE Connected is Electrolux Professional&rsquo;s digital ecosystem for connected equipment, giving laundry teams clearer visibility over machine activity, performance, alerts and process data.'],
+        ['question' => 'Which laundry equipment can connect?', 'answer' => 'Compatibility depends on the model, controls and production date. Selected Line 6000 and Line 5000 washers and tumble dryers, selected barrier washers and IV648xx FFS ironers are listed as compatible in Electrolux Professional materials.'],
+        ['question' => 'Do we need a site check before connecting?', 'answer' => 'Yes. Irish Laundry Systems should review the equipment, controls, network requirements and any conversion kit needs before a recommendation is made.'],
+        ['question' => 'What can we monitor through the dashboard?', 'answer' => 'Teams can monitor machine status, cycle activity, load factor, alerts, reports, consumption data and process information from compatible connected equipment.'],
+        ['question' => 'Can it help with running costs and performance?', 'answer' => 'Yes, where compatible equipment is connected. OnE Connected can show energy, water and detergent consumption, helping teams review use and make better operational decisions.'],
+        ['question' => 'Is the connection secure?', 'answer' => 'Electrolux Professional presents OnE Connected as a secure cloud-based system, with GDPR and ISO 27001 referenced in its official material. Site network and access requirements should still be reviewed before connection.'],
     ],
 ])
 
@@ -391,11 +377,11 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'one_connected_cta',
     'eyebrow'    => 'Get Connected',
-    'heading'    => 'Ready to reduce waste and run your laundry with <span style="color:#148af4;">more control?</span>',
-    'body'       => 'Talk to Irish Laundry Systems about OnE Connected, compatible Electrolux Professional equipment, energy, water and detergent monitoring, production flow, hygiene validation, service alerts and the right next step for your laundry room.',
-    'formTitle'  => 'Ask About OnE Connected',
-    'formIntro'  => 'Tell us about your site, equipment and laundry room. We aim to respond within 24 hours.',
-    'buttonText' => 'Ask About OnE Connected',
+    'heading'    => 'Bring your laundry equipment into<br><span style="color:#148af4;">clearer connected control</span>',
+    'body'       => 'Talk to Irish Laundry Systems about connecting compatible Electrolux Professional equipment and using OnE Connected to monitor machine status, cycles, consumption, hygiene validation, alerts and reports.',
+    'formTitle'  => 'Request an OnE Connected Review',
+    'formIntro'  => 'Tell us what equipment you use and what your laundry team needs to monitor.',
+    'buttonText' => 'Request an OnE Connected Review',
     'equipmentLabel' => 'Equipment currently in use',
     'messageLabel'   => 'What would you like to improve?',
 ])
