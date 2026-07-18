@@ -608,7 +608,7 @@
 </section>
 
 {{-- 8c. DETERGENTS BY LAUNDRY SETUP (myPRO Cleanstar + lagoon Advanced Care) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section id="detergents-by-laundry-setup" class="py-12 lg:py-16 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-8 reveal">Detergents by Laundry Setup</p>

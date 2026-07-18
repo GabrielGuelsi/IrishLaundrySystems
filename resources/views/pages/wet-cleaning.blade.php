@@ -18,10 +18,13 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Professional wet cleaning for<br class="hidden lg:block"> <span style="color:#148af4;">delicate garments and solvent-free textile care</span>
+                    <span class="block">Professional wet cleaning</span>
+                    <span class="block">for <span style="color:#148af4;">delicate garments and</span></span>
+                    <span class="block" style="color:#148af4;">solvent-free textile care</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Lagoon Advanced Care for dry cleaners and garment care businesses moving beyond traditional solvent-based cleaning.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8">
+                    <span class="block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Lagoon Advanced Care for</span>
+                    <span class="block lg:whitespace-nowrap">dry cleaners and garment care businesses moving beyond traditional solvent-based cleaning.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -49,16 +52,16 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Care for more items with <span style="color:#148af4;">a gentler wet cleaning process</span>
+                    Professional wet cleaning for<br><span style="color:#148af4;">delicate garments and specialist textiles</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Lagoon Advanced Care supports professional cleaning for delicate garments, selected leathers, shoes and specialist textiles.
+                    Lagoon Advanced Care supports the professional cleaning of delicate garments, selected leathers, shoes and specialist textiles.
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems matches the setup to garment type, volume, drying, detergents and finishing needs.
+                    Irish Laundry Systems helps plan washing, drying, detergents and finishing around your service needs.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -125,20 +128,19 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial &amp; Operational Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Help your wet cleaning business save time and process more garments with <span style="color:#148af4;">faster cycles, higher capacity and less manual work</span>
+                Faster wet cleaning with<br><span style="color:#148af4;">more daily capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Lagoon Advanced Care helps professional cleaners reduce waiting time, use load capacity more effectively and move more suitable garments through the service each day.
+                Lagoon Advanced Care helps professional cleaners use time, load capacity and resources more effectively.
             </p>
         </div>
 
-        {{-- Card 4 uses icon 7 until the specified 45.png is added to /images/icons --}}
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'39',  'prefix'=>'', 'stat'=>'Save<br>time',           'size'=>'text-2xl', 'label'=>'55 min process', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.105] -translate-y-[10.1%]', 'body'=>'Suitable garments can move through washing and drying in 55 minutes, helping reduce hang-drying and waiting time.'],
-            ['icon'=>'31',  'prefix'=>'', 'stat'=>'Use more<br>capacity',   'size'=>'text-2xl', 'label'=>'up to 75% loading', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.028] -translate-y-[6.6%]', 'body'=>'Higher loading factor helps suitable loads use more drum capacity while keeping movement gentle for delicate textiles.'],
-            ['icon'=>'188', 'prefix'=>'', 'stat'=>'Produce<br>more',        'size'=>'text-2xl', 'label'=>'up to 50% increase', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.953]', 'body'=>'The Lagoon process can help increase production from each load, so the business can handle more garments with the right setup.'],
-            ['icon'=>'7',   'prefix'=>'', 'stat'=>'Lower<br>utility use',   'size'=>'text-2xl', 'label'=>'water, energy and detergents', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'body'=>'Lagoon Advanced Care supports efficient use of equipment and utilities, helping wet cleaning businesses control water, energy and detergent use.'],
-            ['icon'=>'16',  'prefix'=>'', 'stat'=>'70–400<br>items',        'size'=>'text-2xl', 'label'=>'per day', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.707] -translate-y-[36.1%]', 'statClass'=>'translate-x-3', 'body'=>'Choose the Lagoon Advanced Care equipment combination around your expected garment volume, from smaller wet cleaning operations to higher-volume setups.'],
+            ['icon'=>'202',  'prefix'=>'',      'stat'=>'55<br>Minutes',        'size'=>'text-2xl', 'label'=>'Faster Process', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.213] translate-y-[3%]', 'body'=>'Suitable garments can complete washing and drying in 55 minutes.'],
+            ['icon'=>'221',  'prefix'=>'Up to', 'stat'=>'75%<br>Loading',       'size'=>'text-2xl', 'label'=>'More Capacity', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.067] translate-y-[0.4%]', 'body'=>'Higher loading factors make better use of available drum space.'],
+            ['icon'=>'162', 'prefix'=>'Up to',  'stat'=>'50%<br>Increase',      'size'=>'text-2xl', 'label'=>'Higher Output', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.928]', 'body'=>'The right setup can process more garments from each load.'],
+            ['icon'=>'37',   'prefix'=>'',      'stat'=>'Lower<br>Consumption', 'size'=>'text-2xl', 'label'=>'Resource Control', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.067] -translate-y-[1.1%]', 'body'=>'Control water, energy and detergent use across daily wet cleaning.'],
+            ['icon'=>'23',  'prefix'=>'',       'stat'=>'70–400<br>Items',      'size'=>'text-2xl', 'label'=>'Daily Capacity', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.785] translate-y-[1.4%]', 'statClass'=>'translate-x-3', 'body'=>'Selected equipment combinations support different daily garment volumes.'],
         ]])
     </div>
 </section>
@@ -150,18 +152,18 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Advanced care <span style="color:#148af4;">without slowing the business down</span>
+                Built around <span style="color:#148af4;">controlled textile care</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Lagoon Advanced Care combines controlled textile action, intelligent dosing, balanced extraction, moisture control and clear programme management.
+                Lagoon Advanced Care combines reduced mechanical action, dedicated programmes and precise detergent dosing for wool, silk and other delicate textiles.
             </p>
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
-                ['icon' => '35', 'title' => "ProV'tex Hydraulic Action", 'copy' => 'Controlled water movement replaces harsh mechanical action, cleaning delicate textiles with less stress on the fabric.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.7%]'],
-                ['icon' => '8',  'title' => 'Intelligent Dosing',        'copy' => 'Detergent and water levels are adjusted around the load, keeping each programme properly balanced.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.9%]'],
-                ['icon' => '31', 'title' => 'Power Balance',             'copy' => 'Extraction force is adjusted to keep the load balanced and ready for safer drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.348] -translate-y-[8.7%]'],
+                ['icon' => '193', 'title' => "ProV'tex Hydraulic Action", 'copy' => 'Controlled water movement replaces harsh mechanical action, cleaning delicate textiles with less stress on the fabric.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.667] translate-y-[0.6%]'],
+                ['icon' => 'dosing-control',  'title' => 'Intelligent Dosing',        'copy' => 'Detergent and water levels are adjusted around the load, keeping each programme properly balanced.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.373] -translate-y-[9.3%]'],
+                ['icon' => '213', 'title' => 'Power Balance',             'copy' => 'Extraction force is adjusted to keep the load balanced and ready for safer drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.346] translate-y-[0.5%]'],
                 ['icon' => '7',  'title' => 'Moisture Balance',          'copy' => 'Moisture levels are controlled so garments are dried safely without unnecessary over-drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.55] -translate-y-[17.4%]'],
                 ['icon' => '4',  'title' => 'ClarusVibe Controls',       'copy' => 'A clear touchscreen interface makes Lagoon programmes easier for staff to select and manage.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
             ] as $card)
@@ -195,13 +197,15 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
-                ['title' => 'Woolmark approved',          'copy' => 'Lagoon Advanced Care wool programmes have been approved by The Woolmark Company for dry-clean-only Woolmark garments in specified markets.'],
-                ['title' => 'Tested by Hohenstein',        'copy' => 'Independent Hohenstein Institute testing showed comparable results to solvent cleaning for textile wear, dimensional change and colour loss after repeated cycles.'],
-                ['title' => 'Ergonomics certified by ErgoCert', 'copy' => 'Lagoon Advanced Care washers and dryers are designed around safe, comfortable operator use.'],
-                ['title' => 'Leather to sneakers',         'copy' => 'Lagoon Advanced Care can clean and revitalise leather shoes, jackets, bags, accessories and most leather items, helping preserve softness, colour and shape.'],
+                ['title' => 'Woolmark Approved',          'img' => '/images/pages/wet-cleaning/woolmark-approved.png',    'copy' => 'Approved programmes support professional care for eligible wool garments in specified markets.'],
+                ['title' => 'Tested by Hohenstein',        'img' => '/images/pages/wet-cleaning/tested-by-hohenstein.png', 'copy' => 'Independent testing assessed textile wear, dimensional change and colour loss after repeated cycles.'],
+                ['title' => 'ErgoCert Certified',          'img' => '/images/icons/227.png', 'imgClass' => 'scale-[1.25]',  'copy' => 'Washer and dryer design supports safer, more comfortable operator use.'],
+                ['title' => 'Leather to Sneakers',         'img' => '/images/pages/wet-cleaning/leather-to-sneakers.png',  'copy' => 'Professional care for selected leather items, shoes, bags and accessories.'],
             ] as $card)
-            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col h-full shadow-sm">
-                <div class="w-10 h-1 rounded-full bg-[#148af4] mb-4"></div>
+            <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col h-full shadow-sm text-center">
+                <div class="h-32 flex items-center justify-center mb-4">
+                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-32 w-auto object-contain {{ $card['imgClass'] ?? '' }}">
+                </div>
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
             </div>
@@ -224,15 +228,9 @@
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                     See how garments move through <span style="color:#148af4;">a faster wet cleaning process</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-5">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
                     Lagoon Advanced Care brings prespotting, cleaning, drying and finishing into one controlled process, helping suitable garments move from received to ready without hang-drying.
                 </p>
-                <p class="font-body text-gray-400 text-xs italic mb-7">Leathers and shoes may require longer drying time.</p>
-                <a href="#lagoon-process-video"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    Watch the Lagoon Advanced Care process
-                </a>
             </div>
 
             <div class="lg:col-span-7 reveal reveal-right">
@@ -268,19 +266,19 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Build the setup around <span style="color:#148af4;">washing, drying, detergents and finishing</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Wet cleaning works best when the washer, dryer, detergents and finishing support are matched to the garments, daily volume and room setup.
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                Match each part of the setup to the garments, daily volume and available space.
             </p>
         </div>
 
         {{-- Image slots (internal): 01 approved Lagoon Advanced Care washer · 02 matching Lagoon dryer · 03 Lagoon detergents, conditioner and prespotting products · 04 wet-cleaning ironing table / form finisher (not a rolling ironer) · 05 drying cabinet / Serenity Cabinet --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Washer',                    'copy' => 'For professional wet cleaning of delicate garments, textiles and specialist loads.', 'img' => '/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg'],
-                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Matched to the wet cleaning process to help suitable garments dry without hang-drying.', 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp'],
-                ['step' => '03', 'title' => 'Detergents and prespotting', 'copy' => 'Dedicated detergents and prespotting products support consistent results across garment types.', 'img' => '/images/pages/accessories/eco-detergents.webp'],
-                ['step' => '04', 'title' => 'Finishing equipment',        'copy' => 'Ironing tables, form finishers and finishing support help prepare garments before they return to customers.', 'img' => '/images/pages/finishing-equipment/FIT1-WC.jpg'],
-                ['step' => '05', 'title' => 'Optional cabinet support',   'copy' => 'For selected garments that need additional drying or finishing support.', 'img' => '/images/pages/wet-cleaning/Serenity Cabinet.jpg'],
+                ['step' => '01', 'title' => 'Washer',                    'copy' => 'Professional wet cleaning for delicate garments and specialist textiles.', 'img' => '/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg'],
+                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Dry suitable garments without relying on hang-drying.', 'img' => '/images/pages/dryers/TD6-14.jpg'],
+                ['step' => '03', 'title' => 'Detergents',                'copy' => 'Dedicated products support consistent care across garment types.', 'img' => '/images/pages/accessories/prespotting-prebrushing-agents.png'],
+                ['step' => '04', 'title' => 'Finishing Equipment',       'copy' => 'Tables and finishers prepare garments for return to customers.', 'img' => '/images/pages/finishing-equipment/FIT1-WC.jpg'],
+                ['step' => '05', 'title' => 'Optional Cabinet Support',   'copy' => 'Serenity Cabinet adds final-touch care and specialist support for selected garments, leather items and shoes.', 'img' => '/images/pages/finishing-equipment/FC48.jpg'],
             ] as $comp)
             <div class="relative flex flex-col h-full">
                 @unless($loop->last)
@@ -298,15 +296,19 @@
             @endforeach
         </div>
 
-        <div class="mt-10 rounded-2xl bg-navy px-6 lg:px-10 py-7 flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-8 reveal">
+        <div class="mt-10 rounded-2xl bg-navy px-6 lg:px-10 py-7 flex flex-col lg:flex-row lg:items-start gap-6 lg:gap-8 reveal">
             @foreach([
-                ['t' => 'One matched system',             'd' => 'Washer, dryer, detergents and finishing support planned together.',   'icon' => 'M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z'],
-                ['t' => 'Less hang-drying pressure',      'd' => 'Drying and finishing support matched to suitable garment types.',      'icon' => 'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
-                ['t' => 'Better care for delicate items', 'd' => 'Wet cleaning setup planned around garment finish and fabric care.',    'icon' => 'M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z'],
+                ['t' => 'One matched system',             'd' => 'Washer, dryer, detergents and finishing support planned together.',   'img' => '205', 'sc' => 'scale-[1.43]'],
+                ['t' => 'Less hang-drying pressure',      'd' => 'Drying and finishing support matched to suitable garment types.',      'img' => '228', 'sc' => 'scale-[1.914]'],
+                ['t' => 'Better care for delicate items', 'd' => 'Wet cleaning setup planned around garment finish and fabric care.',    'img' => '229', 'sc' => 'scale-[1.667]'],
             ] as $i => $b)
             <div class="flex items-start gap-4 lg:flex-1 {{ $i > 0 ? 'lg:border-l lg:border-white/15 lg:pl-8' : '' }}">
-                <span class="flex-shrink-0 w-11 h-11 rounded-full border border-white/40 flex items-center justify-center">
-                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $b['icon'] }}"/></svg>
+                <span class="flex-shrink-0 flex items-center justify-center">
+                    @if(!empty($b['img']))
+                    <img src="/images/icons/{{ $b['img'] }}.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain {{ $b['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
+                    @else
+                    <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $b['icon'] }}"/></svg>
+                    @endif
                 </span>
                 <span>
                     <span class="block font-heading font-bold text-white text-sm mb-1">{{ $b['t'] }}</span>
@@ -315,11 +317,11 @@
             </div>
             @endforeach
             <div class="flex items-start gap-4 lg:flex-1 lg:border-l lg:border-white/15 lg:pl-8">
-                <span class="flex-shrink-0 w-11 h-11 rounded-full border border-white/40 flex items-center justify-center">
-                    <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
+                <span class="flex-shrink-0 flex items-center justify-center">
+                    <img src="/images/icons/230.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain scale-[1.825]" style="filter:brightness(0) invert(1);">
                 </span>
                 <span>
-                    <span class="block font-heading font-bold text-white text-sm mb-2">Need help planning the right setup?</span>
+                    <span class="block font-heading font-bold text-white text-sm mb-2">Need setup advice?</span>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-5 py-2.5 rounded-lg transition-colors duration-200">
                         Get in touch
@@ -337,10 +339,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Capacity Planning</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose the Lagoon setup around<br class="hidden lg:block"> <span style="color:#148af4;">garment volume, room space and growth</span>
+                Plan the Lagoon setup around<br><span style="color:#148af4;">daily volume and available space</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Start with expected items per day, then match the washer, dryer, finishing equipment and optional cabinet support.
+                Match the washer, dryer, finishing equipment and optional cabinet support to your expected items per day.
             </p>
         </div>
 
@@ -452,12 +454,12 @@
         </p>
         <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
             @foreach([
-                ['icon' => '38', 'label' => 'System<br>size'],
-                ['icon' => '37', 'label' => 'Drying<br>fit'],
-                ['icon' => '79', 'label' => 'Aftercare<br>support'],
+                ['icon' => 'aftercarehealthcarestrip2', 'label' => 'System<br>size', 'sc' => 'scale-[0.932] translate-y-[0.3%]'],
+                ['icon' => '231', 'label' => 'Drying<br>fit', 'sc' => 'scale-[0.967] translate-y-[1%]'],
+                ['icon' => '151', 'label' => 'Aftercare<br>support', 'sc' => 'scale-[0.84] -translate-y-[0.9%]'],
             ] as $pt)
-            <span class="flex items-center gap-5 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @endforeach
@@ -475,20 +477,41 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Smart Detergents &amp; Prespotting</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                The right products <span style="color:#148af4;">built into the Lagoon process</span>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+                Dedicated products for <span style="color:#148af4;">every stage of wet cleaning</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Dedicated detergents, fabric conditioner and prespotting agents work with Lagoon programmes to help protect fibres and improve garment finish.
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                Lagoon detergents, conditioner and prespotting products work with programmed dosing to support consistent textile care and finishing.
             </p>
         </div>
 
-        <div class="flex flex-wrap items-center gap-x-4 gap-y-4 mb-10 reveal">
-            @foreach(['Prespotting agents', 'Dedicated detergents', 'Fabric conditioner', 'Lagoon programme + precise dosing', 'Softer, fresher, ready-to-wear finish'] as $step)
-            @unless($loop->first)
-            <svg class="w-8 h-4 text-[#148af4] flex-shrink-0" viewBox="0 0 48 24" fill="none"><path d="M2 12 L42 12 M34 5 L42 12 L34 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            @endunless
-            <span class="inline-flex items-center rounded-full px-5 py-2.5 font-body font-bold text-sm {{ $loop->last ? 'bg-[#148af4] text-white' : 'bg-bg border border-gray-100 text-navy' }}">{{ $step }}</span>
+        {{-- Product flow: prespotting + detergents + conditioner + dosing = finish (joined by plus signs at mid-height, equals before the result) --}}
+        @php
+        $lagoonFlow = [
+            ['step' => '01', 'label' => 'Prespotting Range',       'imgs' => ['/images/pages/accessories/prespotting-prebrushing-agents.png'], 'imgClass' => 'max-h-[200px]'],
+            ['step' => '02', 'label' => 'Dedicated Detergents',    'imgs' => ['/images/pages/accessories/lagoon-w01-sensitive-detergent.png'], 'imgClass' => 'max-h-[200px]'],
+            ['step' => '03', 'label' => 'Fabric Conditioner',      'imgs' => ['/images/pages/accessories/lagoon-w03-sensitive-conditioner.png'], 'imgClass' => 'max-h-[200px]'],
+            ['step' => '04', 'label' => 'Programme &amp; Dosing',  'imgs' => ['/images/shared/DOSAVEEQUIP.webp'], 'imgClass' => 'max-h-[200px]'],
+            ['step' => '05', 'label' => 'Consistent Care &amp; Finish', 'imgs' => ['/images/icons/229.png'], 'imgClass' => 'max-h-[120px]'],
+        ];
+        @endphp
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-14 mb-10 reveal">
+            @foreach($lagoonFlow as $s)
+            <div class="flex flex-col items-center text-center">
+                <div class="relative w-full flex flex-col items-center justify-center gap-2 mb-5" style="height:220px;">
+                    @unless($loop->last)
+                    <div class="hidden lg:flex absolute inset-y-0 items-center justify-center w-14" style="right:-56px;" aria-hidden="true">
+                        <span class="font-heading font-bold text-navy text-4xl leading-none select-none">{{ $loop->iteration === 4 ? '=' : '+' }}</span>
+                    </div>
+                    @endunless
+                    @foreach($s['imgs'] as $img)
+                    <img src="{{ $img }}" alt="{{ strip_tags($s['label']) }}" loading="lazy" decoding="async" class="{{ $s['imgClass'] }} w-auto object-contain">
+                    @endforeach
+                </div>
+                <span class="font-heading font-bold text-[#148af4] text-sm mb-1">{{ $s['step'] }}</span>
+                <h3 class="font-heading font-bold text-navy text-lg">{!! $s['label'] !!}</h3>
+            </div>
             @endforeach
         </div>
 
@@ -671,18 +694,16 @@
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-10 reveal">
-            <div class="max-w-3xl">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Serenity Cabinet Support</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                    Add sanitising support<br class="hidden lg:block"> <span style="color:#148af4;">before garments return to customers</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Serenity Cabinet supports selected garments with a fully automatic steam-based cycle, helping businesses add extra reassurance where garments are tried on, handled or returned to customers.
-                </p>
-            </div>
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Serenity Cabinet Support</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 lg:whitespace-nowrap">
+                Add sanitising support <span style="color:#148af4;">before garments return to customers</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                Serenity Cabinet supports selected garments with a fully automatic steam-based cycle, helping businesses add extra reassurance where garments are tried on, handled or returned to customers.
+            </p>
             <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200 whitespace-nowrap flex-shrink-0">
+               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200 whitespace-nowrap mt-6">
                 Ask About Serenity Cabinet
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
             </a>
@@ -699,14 +720,14 @@
 
             {{-- lifestyle + features --}}
             <div class="lg:col-span-4 flex flex-col gap-5">
-                <img src="/images/pages/wet-cleaning/serenitywomencabinet.png" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
-                     class="w-full h-56 object-cover rounded-2xl">
+                <img src="/images/pages/wet-cleaning/serenitywomencabinet3.png" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
+                     class="w-full aspect-video object-cover rounded-2xl">
                 <div class="bg-white border border-gray-100 rounded-2xl px-6 py-2 shadow-sm flex-1">
                     <ul class="divide-y divide-gray-100">
                         @foreach([
-                            ['t' => 'Up to 30 items per cycle',            'img' => '/images/icons/70.png', 'imgClass' => 'w-10 h-10 object-contain scale-[1.25]'],
-                            ['t' => '6–10 minute cycles',                  'img' => '/images/icons/72.png', 'imgClass' => 'w-10 h-10 object-contain scale-[1.25]'],
-                            ['t' => 'Programmes for different textiles',   'img' => '/images/icons/36.png', 'imgClass' => 'w-10 h-10 object-contain scale-[1.9]'],
+                            ['t' => 'Up to 30 items per cycle',            'img' => '/images/icons/234.png', 'imgClass' => 'w-10 h-10 object-contain scale-[1.988] translate-y-[0.7%]'],
+                            ['t' => '6–10 minute cycles',                  'img' => '/images/icons/202.png', 'imgClass' => 'w-10 h-10 object-contain scale-[1.591] translate-y-[4%]'],
+                            ['t' => 'Programmes for different textiles',   'img' => '/images/icons/232.png', 'imgClass' => 'w-10 h-10 object-contain scale-[1.667] translate-y-[0.6%]'],
                         ] as $feat)
                         <li class="flex items-center gap-4 py-4">
                             <img src="{{ $feat['img'] }}" alt="" class="flex-shrink-0 {{ $feat['imgClass'] }}">
@@ -720,10 +741,14 @@
             {{-- video thumbnail + reassurance microcards --}}
             <div class="lg:col-span-4 flex flex-col gap-5">
                 <div class="rounded-2xl overflow-hidden bg-navy">
-                    <video class="w-full h-44 object-cover" controls preload="metadata" playsinline>
-                        <source src="/images/pages/wet-cleaning/EPR_lagoon_Advanced_Care_ENG_1-1_3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                    <div class="relative w-full aspect-video">
+                        <iframe class="absolute inset-0 w-full h-full"
+                                src="https://www.youtube.com/embed/PCxXGazXIoU"
+                                title="See Serenity Cabinet in action"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </div>
                     <div class="px-5 py-4">
                         <p class="font-heading font-bold text-white text-sm mb-0.5">See Serenity Cabinet in action</p>
                         <p class="font-body text-white/70 text-xs">Steam-based garment sanitising support</p>
@@ -737,7 +762,7 @@
                     </span>
                 </div>
                 <div class="bg-[#148af4]/10 rounded-2xl p-5 flex items-start gap-4 flex-1">
-                    <img src="/images/icons/15.png" alt="" class="flex-shrink-0 w-10 h-10 object-contain scale-[1.27]">
+                    <img src="/images/icons/233.png" alt="" class="flex-shrink-0 w-10 h-10 object-contain scale-[1.489] translate-y-[0.5%]">
                     <span>
                         <span class="block font-heading font-bold text-navy text-sm mb-1">Try-on reassurance</span>
                         <span class="block font-body text-gray-500 text-xs leading-relaxed">Ready to return with more confidence.</span>
@@ -928,7 +953,7 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'wet_cleaning_cta',
     'eyebrow'    => 'Request Wet Cleaning Advice',
-    'heading'    => 'Ready to build a <span style="color:#148af4;">professional wet cleaning service</span>?',
+    'heading'    => 'Ready to build a <span style="color:#148af4;">professional wet cleaning service?</span>',
     'body'       => 'Tell Irish Laundry Systems what garments you handle, daily volume and the services you want to offer. Irish Laundry Systems reviews the washer, dryer, detergents, finishing, installation, rental where suitable, maintenance and aftercare around your site.',
     'formTitle'  => 'Request Wet Cleaning Equipment Advice',
     'buttonText' => 'Request Wet Cleaning Advice',
