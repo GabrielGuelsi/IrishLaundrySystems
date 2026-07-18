@@ -10,8 +10,8 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/pages/barrier-washers/barrierwasherhero.png" alt="Barrier washing machines"
-         class="absolute inset-0 w-full h-full object-cover object-center" style="transform:translateX(2.45%) scale(1.2);">
+    <img src="/images/pages/barrier-washers/barrierwashernewheropic.png" alt="Barrier washing machines"
+         class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
@@ -309,7 +309,7 @@
             <span class="block lg:whitespace-nowrap">Barrier washers need room planning before installation, including dirty / clean separation,</span>
             <span class="block lg:whitespace-nowrap">site access, wall opening, water supply, power and drainage.</span>
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
                 ['icon' => '183', 'label' => 'Dirty/Clean<br>Separation', 'blend' => true, 'sc' => 'scale-[0.923] translate-y-[0.7%]'],
                 ['icon' => '166', 'label' => 'Wall<br>Opening', 'sc' => 'scale-[0.986] -translate-y-[3.2%]'],
@@ -691,6 +691,7 @@
     'eyebrow'      => 'Equipment Rental',
     'image'        => '/images/pages/barrier-washers/equipmentrentalnewimagestrip.png',
     'mirror'       => true,
+    'gradientStrength' => 0.55,
     'headingSize'  => 'text-3xl sm:text-4xl lg:text-4xl',
     'headingLine1' => 'Keep hygiene-critical laundry<br>',
     'headingLine2' => 'moving with <span style="color:#148af4;">lower upfront cost</span>',
@@ -721,7 +722,7 @@
             @foreach([
                 ['title' => 'Repairs &amp; Call-Outs', 'text' => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',                          'cta' => 'Request Call-Out',         'route' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                   'pos' => '50% 35%'],
                 ['title' => 'Preventive Maintenance',  'text' => 'Planned servicing to reduce surprise repair costs and keep equipment condition clear.',                                 'cta' => 'View Maintenance Options', 'route' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',             'pos' => '90% 35%'],
-                ['title' => 'Equipment Rental',        'text' => 'Lower upfront cost for barrier washer replacement, capacity planning or expansion where rental is the right fit.',          'cta' => 'See Equipment Rental Options', 'route' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg',     'pos' => '66% center'],
+                ['title' => 'Equipment Rental',        'text' => 'Lower upfront cost for barrier washer replacement, capacity planning or expansion where rental is the right fit.',          'cta' => 'See Equipment Rental Options', 'route' => route('rental'),            'img' => '/images/pages/barrier-washers/card-equipment-rental.png', 'pos' => 'center center'],
                 ['title' => 'Support &amp; Aftercare', 'text' => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',            'cta' => 'Explore Support &amp; Aftercare', 'route' => route('parts-aftercare'),   'img' => '/images/shared/services-overview-hero-portrait.jpg',     'pos' => 'center center'],
             ] as $card)
             <a href="{{ $card['route'] }}"
@@ -753,8 +754,13 @@
 </section>
 
 {{-- 15. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
-<section class="py-12 lg:py-16" style="background-color:#148af4;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="relative overflow-hidden py-12 lg:py-16" style="background-color:#148af4;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
+        <img src="/images/pages/barrier-washers/after-installation-strip.png" alt="Irish Laundry Systems after-installation support"
+             class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 30%, rgba(20,138,244,0.15) 52%, transparent 70%);"></div>
+    </div>
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
@@ -764,22 +770,20 @@
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
                     After installation, Irish Laundry Systems keeps maintenance planning, service history and parts support organised for barrier washer sites.
                 </p>
-                <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
+                <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
-                        ['icon' => '127', 'label' => 'Planned<br>maintenance', 'sc' => 'scale-[0.915] translate-y-[0.3%]'],
-                        ['icon' => 'home-rental-maintained',  'label' => 'Service<br>history', 'sc' => 'scale-[0.932] translate-y-[0.3%]'],
-                        ['icon' => '151', 'label' => 'Parts<br>support', 'sc' => 'scale-[0.84] -translate-y-[0.9%]'],
+                        ['icon' => '127', 'label' => 'Planned<br>maintenance', 'sc' => '0.915'],
+                        ['icon' => 'home-rental-maintained',  'label' => 'Service<br>history', 'sc' => '0.932'],
+                        ['icon' => '151', 'label' => 'Parts<br>support', 'sc' => '0.84'],
                     ] as $pt)
                     <span class="flex items-center gap-2 flex-shrink-0">
-                        <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
+                        <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);transform:scale({{ $pt['sc'] ?? '1' }});">
                         <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
                     </span>
                     @endforeach
                 </div>
-            </div>
-            <div class="lg:col-span-5 flex lg:justify-end">
                 <a href="{{ route('parts-aftercare') }}"
-                   class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                   class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                     Explore Support &amp; Aftercare
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </a>

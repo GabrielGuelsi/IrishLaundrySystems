@@ -49,7 +49,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Small dosing mistakes can create <span style="color:#148af4;">bigger laundry costs</span>
+                    Small dosing mistakes<br>can create<br><span style="color:#148af4;">bigger laundry costs</span>
                 </h2>
             </div>
 
@@ -90,9 +90,9 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'30', 'prefix'=>'Up to',     'stat'=>'90%',                'size'=>'text-4xl', 'label'=>'Life-cycle cost sits in use', 'iconClass'=>'scale-[1.03] -translate-y-[6.7%]', 'body'=>'Electrolux links this cost to energy, water and chemicals over machine life.'],
             ['icon'=>'dosing-control', 'prefix'=>'Up to',  'stat'=>'30%',       'size'=>'text-4xl', 'label'=>'Detergent cost savings', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'body'=>'Efficient Dosing helps reduce detergent costs on suitable Electrolux Professional setups.'],
-            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Correct<br>dose',    'size'=>'text-2xl', 'label'=>'Less detergent overuse', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'body'=>'Automatic dosing helps reduce detergent overuse, waste and inconsistent wash quality.'],
-            ['icon'=>'31', 'prefix'=>'',          'stat'=>'Fewer wear<br>points','size'=>'text-2xl', 'label'=>'Lower pump maintenance', 'labelClass'=>'!ml-0', 'iconClass'=>'scale-[1.028] -translate-y-[6.6%]', 'body'=>'Water-powered pumps avoid moving parts and squeeze tubes that need replacement.'],
-            ['icon'=>'7',  'prefix'=>'',          'stat'=>'Better<br>control',  'size'=>'text-2xl', 'label'=>'Protect linen and equipment', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'body'=>'Better detergent control supports wash quality, textile care and equipment condition.'],
+            ['icon'=>'164','prefix'=>'',          'stat'=>'Wash<br>Quality',    'size'=>'text-2xl', 'label'=>'Cycle Consistency', 'iconClass'=>'scale-[0.836] translate-y-[0.3%]', 'body'=>'The right dose for each programme helps maintain consistent wash results across daily loads.'],
+            ['icon'=>'239','prefix'=>'',          'stat'=>'Lower<br>Maintenance','size'=>'text-2xl', 'label'=>'Fewer Parts', 'iconClass'=>'scale-[1.108] -translate-y-[1.2%]', 'body'=>'Water-powered pumps reduce moving parts and replacement needs.'],
+            ['icon'=>'193','prefix'=>'',          'stat'=>'Textile<br>Care',    'size'=>'text-2xl', 'label'=>'Equipment Protection', 'iconClass'=>'scale-[1.273] -translate-y-[0.2%]', 'body'=>'Controlled detergent use helps protect textiles and equipment.'],
         ]])
     </div>
 </section>
@@ -102,22 +102,22 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing, Detergent &amp; Storage</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Detergent Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
-                Plan detergent control around the <span style="color:#148af4;">full laundry setup</span>
+                Plan detergent control across <span style="color:#148af4;">the complete wash setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                The best result comes when dosing, detergent choice, storage and service support are planned together.
+                Washer data, automatic dosing, selected detergents and safe storage work together to control chemical use and wash costs.
             </p>
         </div>
 
         {{-- Setup flow mirroring the Electrolux slide: washer + dosing unit + detergents (stacked) + storage cabinet, joined by plus signs at mid-height --}}
         @php
         $setupSteps = [
-            ['label' => 'Dose to the load',       'points' => ['Right amount', 'Less overuse', 'Consistent wash quality'], 'imgs' => ['/images/pages/commercial-washers/commercialwasher.webp'], 'imgClass' => 'max-h-full'],
-            ['label' => 'Match the detergent',    'points' => ['Eco options', 'Textile care', 'Hygiene standards'],        'imgs' => ['/images/pages/accessories/dosing-unit.png'], 'imgClass' => 'max-h-[110px]'],
-            ['label' => 'Store chemicals safely', 'points' => ['Cleaner room', 'Safer handling', 'Easier refills'],        'imgs' => ['/images/pages/accessories/l02-laundry-eco-wash.webp', '/images/pages/accessories/l06-laundry-swan-wash.jpg'], 'imgClass' => 'max-h-[118px]'],
-            ['label' => 'Keep support in place',  'points' => ['Setup advice', 'Planned checks', 'Aftercare'],             'imgs' => ['/images/pages/accessories/dispenseringreycabinet.png'], 'imgClass' => 'max-h-full'],
+            ['n' => '01', 'label' => 'Washer',        'body' => 'Load weight and programme data provide the basis for accurate detergent dosing.',        'imgs' => ['/images/pages/commercial-washers/commercialwasher.webp'], 'imgClass' => 'max-h-full'],
+            ['n' => '02', 'label' => 'Dosing System', 'body' => 'Calculates and delivers the right detergent quantity for each load.',                     'imgs' => ['/images/pages/accessories/dosing-unit.png'], 'imgClass' => 'max-h-[110px]'],
+            ['n' => '03', 'label' => 'Detergents',    'body' => 'Selected products support the textiles, hygiene requirements and wash results needed.',   'imgs' => ['/images/pages/accessories/l02-laundry-eco-wash.webp', '/images/pages/accessories/l06-laundry-swan-wash.jpg'], 'imgClass' => 'max-h-[118px]'],
+            ['n' => '04', 'label' => 'Safe Storage',  'body' => 'Keeps dosing equipment and detergent containers organised, contained and accessible.',    'imgs' => ['/images/pages/accessories/dispenseringreycabinet.png'], 'imgClass' => 'max-h-full'],
         ];
         @endphp
 
@@ -134,14 +134,9 @@
                     <img src="{{ $img }}" alt="{{ $s['label'] }}" loading="lazy" decoding="async" class="{{ $s['imgClass'] }} w-auto object-contain">
                     @endforeach
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg mb-3">{{ $s['label'] }}</h3>
-                <ul class="space-y-1.5">
-                    @foreach($s['points'] as $pt)
-                    <li class="font-body font-semibold text-navy text-sm flex items-center justify-center gap-2">
-                        <span class="text-[#148af4]">&#9656;</span> {{ $pt }}
-                    </li>
-                    @endforeach
-                </ul>
+                <p class="font-heading font-bold text-[#148af4] text-sm tracking-[0.16em] mb-1">{{ $s['n'] }}</p>
+                <h3 class="font-heading font-bold text-navy text-lg mb-2">{{ $s['label'] }}</h3>
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-[260px]">{{ $s['body'] }}</p>
             </div>
             @endforeach
         </div>
@@ -149,7 +144,7 @@
         <div class="mt-10 reveal">
             <a href="{{ route('request-assessment') }}"
                class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                Plan Your Laundry Setup
+                Plan Your Detergent Setup
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                 </svg>
@@ -165,10 +160,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing System Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
-                Choose the dosing setup that fits <span style="color:#148af4;">your laundry room</span>
+                Compare dosing systems by <span style="color:#148af4;">washer setup and control needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Compare Electrolux Professional dosing options for load-based control, multi-washer rooms and simpler detergent management.
+                Review Electrolux Professional options for single or multiple washers, load-based dosing and simpler detergent management.
             </p>
         </div>
 
@@ -349,10 +344,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose the right detergent, storage and <span style="color:#148af4;">laundry room support</span>
+                Explore detergents, storage and <span style="color:#148af4;">laundry room accessories</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Once the dosing route is clear, the surrounding products matter too: detergent quality, chemical storage and practical accessories all support easier daily laundry use.
+                Browse products for detergent use, chemical organisation and everyday laundry room handling.
             </p>
         </div>
 
@@ -372,10 +367,10 @@
                 'copy'    => 'Electrolux Professional Detergent Storage helps keep canisters, dosing pumps and relevant items organised, safer and easier to manage.',
                 'badges'  => ['Canister storage', 'Pump support', 'Safer handling'],
                 'cta'     => 'Ask About Storage',
-                'img'     => '/images/pages/accessories/detergent-storage.webp',
+                'img'     => '/images/pages/accessories/dispenseringreycabinet.png',
             ],
             [
-                'name'    => 'Accessories & Consumables',
+                'name'    => 'Laundry Room Accessories',
                 'topLine' => 'For daily laundry room support',
                 'copy'    => 'Electrolux Professional accessories and consumables support sorting, transport, handling and everyday laundry room use.',
                 'badges'  => ['Baskets', 'Racks & trolleys', 'Cleaning essentials'],
@@ -468,15 +463,15 @@
     </div>
 </section>
 
-{{-- 8. LINE 6000 ECO-DETERGENTS (mirrors Electrolux detergents page: certified range groups) --}}
+{{-- 8. FAMILY 1 — LINE 6000 ECO-RANGE (core detergents + stain care & descaling) --}}
 <section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-3xl mb-10 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Eco-Detergents</p>
+        <div class="mb-10 lg:mb-14 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Eco-Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Certified detergents for <span style="color:#148af4;">quality wash results and textile care</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
+            <p class="font-body text-gray-500 text-base leading-relaxed mb-6 lg:whitespace-nowrap">
                 Electrolux Professional Line 6000 eco-range detergents are developed for high-quality, safe and effective washing while helping reduce environmental impact.
             </p>
             <div class="flex flex-wrap gap-2 mb-8">
@@ -496,7 +491,7 @@
         @php
         $detergentGroups = [
             [
-                'label' => 'EU Ecolabel Range',
+                'label' => 'Core Detergents',
                 'body'  => 'A practical eco-detergent range for commercial laundry sites that need washing, degreasing, boosting, bleaching and softening support.',
                 'certs' => [
                     ['icon' => 'eu-ecolabel-logo.png',             'label' => 'EU Ecolabel'],
@@ -513,6 +508,16 @@
                     ['name' => 'L05 – Laundry Eco Softener',  'sheet' => 'L05 Product & Safety Sheet', 'img' => 'l05-laundry-eco-softener.webp',  'href' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
                 ],
             ],
+            [
+                'label' => 'Stain Care &amp; Descaling',
+                'body'  => 'Selected laundry care products can support stain treatment, prebrushing and descaling as part of a wider laundry setup.',
+                'certs' => [],
+                'cols' => 'lg:grid-cols-3',
+                'products' => [
+                    ['name' => 'Prespotting and Prebrushing agents', 'img' => 'prespotting-prebrushing-agents.png'],
+                    ['name' => 'Descaling agent',                    'img' => 'descaling-agent.png'],
+                ],
+            ],
         ];
         @endphp
 
@@ -522,8 +527,8 @@
 
                 {{-- Group header: label + body + certification labels --}}
                 <div class="mb-8">
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $grp['label'] }}</p>
-                    <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-3xl">{{ $grp['body'] }}</p>
+                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{!! $grp['label'] !!}</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed {{ empty($grp['certs']) ? '' : 'mb-6' }} lg:whitespace-nowrap">{{ $grp['body'] }}</p>
                     <div class="flex flex-wrap items-start justify-center gap-x-14 gap-y-6">
                         @foreach($grp['certs'] as $cert)
                         <div class="flex flex-col items-center text-center gap-3">
@@ -566,61 +571,23 @@
     </div>
 </section>
 
-{{-- 8b. COMPLETE LAUNDRY OPERATION (stain care + descaling) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Complete Laundry Operation</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support stain care and descaling <span style="color:#148af4;">around the wash process</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Selected laundry care products can support stain treatment, prebrushing and descaling as part of a wider laundry setup.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-4xl reveal">
-            @foreach([
-                ['name' => 'Prespotting and Prebrushing agents', 'img' => 'prespotting-prebrushing-agents.png'],
-                ['name' => 'Descaling agent',                    'img' => 'descaling-agent.png'],
-            ] as $care)
-            <div class="flex flex-col items-center text-center">
-                <div class="flex items-end justify-center h-48 lg:h-56 mb-4">
-                    <img src="{{ asset('images/pages/accessories/'.$care['img']) }}" alt="{{ $care['name'] }}"
-                         loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
-                </div>
-                <p class="font-heading font-bold text-navy text-lg leading-snug">{{ $care['name'] }}</p>
-            </div>
-            @endforeach
-        </div>
-
-        <div class="mt-10 reveal">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                Ask About Laundry Care Products
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-</section>
-
-{{-- 8c. DETERGENTS BY LAUNDRY SETUP (myPRO Cleanstar + lagoon Advanced Care) --}}
+{{-- 8b. FAMILY 2 — myPRO CLEANSTAR CONSUMABLES --}}
 <section id="detergents-by-laundry-setup" class="py-12 lg:py-16 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-8 reveal">Detergents by Laundry Setup</p>
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Cleanstar Consumables</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3 lg:whitespace-nowrap">
+                Detergents for <span style="color:#148af4;">semi-professional laundry</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                For smaller myPRO laundry setups that need suitable detergents for everyday washing, garment care and semi-professional use.
+            </p>
+        </div>
 
         <div class="space-y-8">
 
-            {{-- myPRO Cleanstar Consumables (official wordmarks + product specifications from the Electrolux myPRO page) --}}
-            <div class="bg-gray-50 rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 reveal">
-                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">myPRO Cleanstar Consumables</h3>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
-                    For smaller myPRO laundry setups that need suitable detergents for everyday washing, garment care and semi-professional use.
-                </p>
+            <div class="reveal">
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
                     @foreach([
                         ['name' => 'Gentle Wash',  'img' => 'cleanstar-gentle-wash.png',  'spec' => 'With its formulation derived from vegetable raw material, Cleanstar Gentle Wash gently cleans delicate garments restoring their original softness.'],
@@ -648,48 +615,53 @@
                 </a>
             </div>
 
-            {{-- lagoon Advanced Care Products (products grouped by the 5-step lagoon process, matching the wet-cleaning page flow) --}}
-            <div class="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 lg:p-10 reveal">
-                <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">lagoon Advanced Care Products</h3>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
-                    For specialist wet cleaning setups that need dedicated detergents, conditioner, stain-care products and colour transfer support.
-                </p>
+        </div>
+    </div>
+</section>
 
-                {{-- 5-step process flow --}}
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-4 mb-10">
-                    @foreach(['Prespotting agents', 'Dedicated detergents', 'Fabric conditioner', 'Lagoon programme + precise dosing', 'Softer, fresher, ready-to-wear finish'] as $step)
-                    @unless($loop->first)
-                    <svg class="w-8 h-4 text-[#148af4] flex-shrink-0" viewBox="0 0 48 24" fill="none"><path d="M2 12 L42 12 M34 5 L42 12 L34 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    @endunless
-                    <span class="inline-flex items-center rounded-full px-5 py-2.5 font-body font-bold text-sm {{ $loop->last ? 'bg-[#148af4] text-white' : 'bg-bg border border-gray-100 text-navy' }}">{{ $step }}</span>
-                    @endforeach
-                </div>
+{{-- 8c. FAMILY 3 — lagoon ADVANCED CARE PRODUCTS --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-                {{-- Products grouped by process step — one line of tiles per group --}}
-                <div class="flex flex-col gap-10 mb-10">
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">lagoon Advanced Care Products</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3 lg:whitespace-nowrap">
+                Products for <span style="color:#148af4;">professional wet cleaning</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                For specialist wet cleaning setups that need dedicated detergents, conditioner, stain-care products and colour transfer support.
+            </p>
+        </div>
+
+        <div class="space-y-8">
+
+            <div class="reveal">
+
+                {{-- Subgroups side by side — column widths track the product count (5 / 3 / 1) --}}
+                <div class="grid grid-cols-1 lg:grid-cols-9 gap-y-10 mb-10">
                     @foreach([
-                        ['step' => 'Prespotting agents', 'items' => [
+                        ['step' => 'Prespotting agents', 'span' => 'lg:col-span-5', 'items' => [
                             ['name' => 'A01 – lagoon Pre-Treatment',           'img' => 'lagoon-a01-pre-treatment.png'],
                             ['name' => 'P01 – lagoon Protein Stain Remover',   'img' => 'lagoon-p01-protein-stain-remover.png'],
                             ['name' => 'P02 – lagoon Tannin Stain Remover',    'img' => 'lagoon-p02-tannin-stain-remover.png'],
                             ['name' => 'P03 – lagoon Grease Stain Remover',    'img' => 'lagoon-p03-grease-stain-remover.png'],
                             ['name' => 'P04 – lagoon Ink Stain Remover',       'img' => 'lagoon-p04-ink-stain-remover.png'],
                         ]],
-                        ['step' => 'Dedicated detergents', 'items' => [
+                        ['step' => 'Dedicated detergents', 'span' => 'lg:col-span-3', 'items' => [
                             ['name' => 'W01 – lagoon Sensitive Detergent',     'img' => 'lagoon-w01-sensitive-detergent.png'],
                             ['name' => 'W02 – lagoon Delicate Detergent',      'img' => 'lagoon-w02-delicate-detergent.png'],
                             ['name' => 'A02 – lagoon Colour Transfer Reducer', 'img' => 'lagoon-a02-colour-transfer-reducer.png'],
                         ]],
-                        ['step' => 'Fabric conditioner', 'items' => [
+                        ['step' => 'Fabric conditioner', 'span' => 'lg:col-span-1', 'items' => [
                             ['name' => 'W03 – lagoon Sensitive Conditioner',   'img' => 'lagoon-w03-sensitive-conditioner.png'],
                         ]],
                     ] as $lgrp)
-                    <div>
-                        <p class="font-heading font-bold text-navy text-base mb-4">{{ $lgrp['step'] }}</p>
-                        <div class="flex flex-wrap lg:flex-nowrap gap-x-4 gap-y-6">
+                    <div class="{{ $lgrp['span'] }} px-0 lg:px-6 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
+                        <p class="font-heading font-bold text-navy text-base mb-4">{!! $lgrp['step'] !!}</p>
+                        <div class="flex flex-wrap gap-x-7 gap-y-6">
                             @foreach($lgrp['items'] as $it)
-                            <div class="flex flex-col items-center text-center w-24">
-                                <div class="flex items-end justify-center h-24 mb-2">
+                            <div class="flex flex-col items-center text-center w-28">
+                                <div class="flex items-end justify-center h-32 mb-2">
                                     <img src="{{ asset('images/pages/accessories/'.$it['img']) }}" alt="{{ $it['name'] }}"
                                          loading="lazy" decoding="async" class="h-full w-auto object-contain">
                                 </div>
@@ -701,13 +673,15 @@
                     @endforeach
                 </div>
 
-                <a href="{{ route('equipment.category', 'wet-cleaning') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    View Wet Cleaning Support
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
+                <div class="text-center">
+                    <a href="{{ route('equipment.category', 'wet-cleaning') }}"
+                       class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                        Ask About Lagoon Products
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -752,32 +726,39 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories &amp; Consumables</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Room Accessories</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Small details that support <span style="color:#148af4;">easier daily laundry</span>
+                Practical accessories for <span style="color:#148af4;">sorting, transport and storage</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Practical accessories can help with sorting, transport, handling and day-to-day laundry room organisation.
+                Support everyday laundry handling with trolleys, racks, bags, nets and textile-care accessories.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Trolleys and racks',           'copy' => 'Support laundry movement, storage and daily handling around the laundry room.', 'img' => '/images/pages/accessories/trolleys-and-racks.webp'],
-                ['title' => 'Baskets and handling',         'copy' => 'Help staff sort, load, unload and move laundry more easily during daily use.',  'img' => '/images/pages/accessories/trolley_.webp'],
-                ['title' => 'Dryer balls and care items',   'copy' => 'Support practical drying, garment care and everyday laundry use.',              'img' => '/images/pages/accessories/dryer-balls.png'],
-                ['title' => 'Hygiene and room essentials',  'copy' => 'Help keep the laundry room cleaner, clearer and easier to manage.',             'img' => '/images/shared/JetsaveEQUIP.webp'],
+                ['title' => 'Trolleys &amp; Carts',          'copy' => 'For moving clean and soiled laundry safely around the site.',                        'img' => '/images/pages/accessories/trolley_.webp',            'mw' => '86%', 'align' => 'justify-start', 'href' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Trolleys_438918404_EN.pdf?version=1736598854', 'link' => 'View Trolleys Data Sheet'],
+                ['title' => 'Racks &amp; Shelving',          'copy' => 'For organising, separating and preparing laundry before or after processing.',       'img' => '/images/pages/accessories/ELS_PH_415x415_RACKGARM.jpg', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/garment-rack-RACKGARM/', 'link' => 'View Garment Racks'],
+                ['title' => 'Laundry Bags &amp; Nets',       'copy' => 'For separating loads and protecting selected items during handling and washing.',     'img' => '/images/pages/accessories/ELS_PH_415x415_WASHNET.jpg', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/laundry-net-and-bags-WASHNET/', 'link' => 'View Nets &amp; Bags'],
+                ['title' => 'Dryer Balls &amp; Care Items',  'copy' => 'For practical textile care and everyday drying requirements.',                       'img' => '/images/pages/accessories/dryer-balls.png',          'href' => 'https://www.electroluxprofessional.com/gb/accessories-consumables/', 'link' => 'View Care Items'],
             ] as $acc)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $acc['title'] }}</p>
+                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{!! $acc['title'] !!}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $acc['copy'] }}</p>
                 </div>
-                <div class="w-full flex items-end justify-center" style="height:300px;">
-                    <img src="{{ $acc['img'] }}" alt="{{ $acc['title'] }}" loading="lazy" decoding="async"
+                <div class="w-full flex items-end {{ $acc['align'] ?? 'justify-center' }}" style="height:300px;">
+                    @if(!empty($acc['img']))
+                    <img src="{{ $acc['img'] }}" alt="{{ strip_tags($acc['title']) }}" loading="lazy" decoding="async"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="max-width:100%; max-height:280px; width:auto; object-fit:contain;">
+                         style="max-width:{{ $acc['mw'] ?? '100%' }}; max-height:280px; width:auto; object-fit:contain;">
+                    @endif
                 </div>
+                <a href="{{ $acc['href'] }}" target="_blank" rel="noopener"
+                   class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] text-sm hover:underline">
+                    {!! $acc['link'] !!}
+                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                </a>
             </div>
             @endforeach
         </div>
@@ -802,10 +783,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support for dosing, detergents and <span style="color:#148af4;">laundry room setup</span>
+                Support beyond installation for <span style="color:#148af4;">dosing and laundry equipment</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Irish Laundry Systems can support dosing systems, detergent storage, accessories and the equipment already in use through service response, planned maintenance, rental options and aftercare.
+                Repairs, planned maintenance, Equipment Rental and aftercare for the equipment already in use.
             </p>
         </div>
 
@@ -877,19 +858,19 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Plan detergent support around the <span style="color:#148af4;">wider laundry setup</span>
+                Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Dosing, detergents, storage and accessories work best when they are matched to the equipment already in use or being planned for the site.
+                Browse commercial washers, tumble dryers, wet cleaning systems and ironers.
             </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
                 ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'commercial-washers'), 'img' => '/images/pages/commercial-washers/WH6-27.jpg', 'box' => 270],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity planned around the wash process, textile care and daily laundry demand.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-7.jpg', 'box' => 270],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity planned around the wash process, textile care and daily laundry demand.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp', 'box' => 270],
                 ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 270],
                 ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash quality, fabric care and handling affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
             ] as $card)
@@ -917,25 +898,23 @@
 
 {{-- 13. FAQ --}}
 @include('components.faq', [
-    'eyebrow' => 'Dosing & Detergent FAQs',
-    'heading' => 'Questions before choosing <span style="color:#148af4;">dosing, detergents or storage</span>',
+    'eyebrow' => 'Accessories & Consumables FAQs',
+    'heading' => 'Questions about <span style="color:#148af4;">compatibility, products and setup</span>',
     'faqs' => [
-        ['question' => 'Why does detergent control matter in a commercial laundry?', 'answer' => 'Detergent control affects more than product use. The right dosing, detergent choice and storage can help reduce waste, support consistent wash quality, protect textiles and keep daily laundry costs easier to manage.'],
-        ['question' => 'What is a laundry dosing system?', 'answer' => 'A laundry dosing system helps deliver detergent and chemicals to the washer in a more controlled way. Depending on the setup, dosing can be based on the programme, load size, washer type or wider laundry room arrangement.'],
-        ['question' => 'Can automatic dosing reduce detergent costs?', 'answer' => 'Yes, on suitable Electrolux Professional setups. Automatic dosing can help reduce detergent overuse by matching the amount used more closely to the load and wash cycle, helping control product waste and operating cost.'],
-        ['question' => 'Can detergent overuse damage linen?', 'answer' => 'Too much detergent can affect wash quality, leave residue, increase repeat washing and put unnecessary pressure on textiles. Correct dosing helps protect linen, garments and the final wash result.'],
-        ['question' => 'What are Line 6000 eco-range detergents?', 'answer' => 'Line 6000 eco-range detergents are Electrolux Professional detergents developed for high-quality, safe and effective washing while helping reduce environmental impact. The range includes detergents for washing, degreasing, boosting, bleaching and softening.'],
-        ['question' => 'Are there detergents for myPRO and wet cleaning setups?', 'answer' => 'Yes. myPRO has Cleanstar consumables for semi-professional laundry use, while lagoon Advanced Care uses dedicated detergents, conditioner and stain-care products for specialist wet cleaning.'],
-        ['question' => 'What does Detergent Storage do?', 'answer' => 'Detergent Storage helps keep canisters, pumps and dosing equipment organised, safer and easier to manage. It can support a cleaner laundry room and make daily handling more practical.'],
-        ['question' => 'Can Irish Laundry Systems advise on existing equipment?', 'answer' => 'Yes. Irish Laundry Systems can review the equipment already in use and advise on suitable dosing, detergent, storage, accessories or support options around the site\'s laundry setup.'],
+        ['question' => 'Can automatic dosing work with our existing washers?', 'answer' => 'It depends on the washer and the control system installed. Electrolux Professional dosing integrates with suitable washers and controls, so Irish Laundry Systems will review the equipment already on site before confirming which dosing route applies.'],
+        ['question' => 'What could automatic dosing save our laundry?', 'answer' => 'Automatic dosing matches the detergent quantity to the actual load weight and programme. That helps control chemical use, reduce overuse and waste, and keep running costs easier to plan across daily washing.'],
+        ['question' => 'Which detergent range suits our equipment and textiles?', 'answer' => 'Line 6000 eco-range detergents suit commercial laundry sites, myPRO Cleanstar consumables suit semi-professional setups, and lagoon Advanced Care products suit specialist wet cleaning. The right range depends on the equipment, the textiles handled and the wash results needed.'],
+        ['question' => 'Do we need dedicated detergent storage?', 'answer' => 'Detergent Storage keeps canisters, pumps and dosing equipment organised, contained and easier to reach. It helps where the laundry room needs safer handling, clearer space and more practical refilling.'],
+        ['question' => 'Which accessories suit our laundry room?', 'answer' => 'Trolleys, racks, bags, nets and textile-care items are chosen around sorting, transport and handling. The right combination depends on how laundry moves through the room and what makes daily work easier for staff.'],
+        ['question' => 'Can Irish Laundry Systems review the complete setup?', 'answer' => 'Yes. Irish Laundry Systems can review compatibility, products, available space and the equipment already installed, then advise on suitable dosing, detergents, storage and accessories for the site.'],
     ],
 ])
 
 {{-- 14. FINAL CTA / FORM --}}
 @include('components.cta-downtime-form', [
     'pageSource' => 'accessories_cta',
-    'heading'    => 'Take control of detergent use and <span style="color:#148af4;">laundry room costs</span>',
-    'body'       => 'Tell us what equipment you use, what you wash and how detergents are currently managed. Irish Laundry Systems will guide you towards the right dosing, detergent, storage and support route.',
+    'heading'    => 'Match products and accessories to <span style="color:#148af4;">your laundry room</span>',
+    'body'       => 'Tell us what equipment you use and what you wash. We\'ll recommend suitable dosing, detergents, storage and accessories.',
     'formTitle'  => 'Request Dosing, Detergent & Storage Advice',
     'buttonText' => 'Request Advice',
 ])

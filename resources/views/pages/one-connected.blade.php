@@ -252,39 +252,87 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Compatible Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Connect compatible equipment and improve <span style="color:#148af4;">business performance</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Portfolio Compatibility</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Connect your laundry equipment<br>in <span style="color:#148af4;">one digital ecosystem</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                OnE Connected works with selected compatible Electrolux Professional laundry equipment. Compatibility depends on model, production date, controls and connection requirements, so the site should be reviewed before a recommendation is made.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                <span class="block lg:whitespace-nowrap">Across washing, drying and ironing, OnE Connected is available for selected Electrolux Professional equipment.</span>
+                <span class="block lg:whitespace-nowrap">Irish Laundry Systems can review the model, controls and connection requirements before a recommendation is made.</span>
             </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
-            @foreach([
-                ['title' => 'Commercial washers',          'body' => 'Selected compatible Electrolux Professional washers can connect to OnE Connected for status, cycle activity, load factor, consumption and process insight.', 'cta' => 'View Commercial Washers', 'route' => route('equipment.category', 'commercial-washers'),         'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
-                ['title' => 'Tumble dryers',               'body' => 'Selected compatible dryers can support connected visibility over equipment use, status, performance and service-related information.', 'cta' => 'View Tumble Dryers', 'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
-                ['title' => 'Barrier washers',             'body' => 'Selected compatible barrier washers can support connected process visibility for hygiene-focused and high-demand laundry environments.', 'cta' => 'View Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
-                ['title' => 'Selected flatwork solutions', 'body' => 'Selected Electrolux Professional flatwork solutions may support OnE Connected depending on model and configuration.', 'cta' => 'Ask About Compatibility', 'route' => route('contact'),         'img' => '/images/shared/line6000-ironer.webp'],
-            ] as $card)
-            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm flex flex-col overflow-hidden">
-                <div class="flex items-center justify-center h-48 bg-gray-50 p-5">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain">
+
+        {{-- Compatibility infographic: hub + pills; each "+" reveals that equipment photo in the strip below --}}
+        @php
+        $portfolio = [
+            ['key' => 'w6', 'label' => 'Line 6000<br>Washers',       'side' => 'left',  'img' => '/images/pages/commercial-washers/WH6-27.jpg'],
+            ['key' => 'd6', 'label' => 'Line 6000<br>Tumble Dryers', 'side' => 'left',  'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
+            ['key' => 'i6', 'label' => 'Line 6000<br>FFS Vibe Ironers', 'side' => 'left', 'img' => '/images/shared/line6000-ironer.webp'],
+            ['key' => 'w5', 'label' => 'Line 5000<br>Washers',       'side' => 'right', 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+            ['key' => 'd5', 'label' => 'Line 5000<br>Tumble Dryers', 'side' => 'right', 'img' => '/images/pages/dryers/heat-pump-dryer-lineup.png'],
+            ['key' => 'bw', 'label' => 'Barrier Washers',            'side' => 'right', 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
+        ];
+        @endphp
+
+        <div x-data="{ open: {{ json_encode(array_column($portfolio, 'key')) }},
+                       toggle(k) { this.open.includes(k) ? this.open = this.open.filter(i => i !== k) : this.open.push(k) },
+                       shown(k) { return this.open.includes(k) } }"
+             class="reveal">
+
+            <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-10 items-center">
+
+                {{-- left pills --}}
+                <div class="flex flex-col gap-5 lg:items-end order-1">
+                    @foreach(array_filter($portfolio, fn($p) => $p['side'] === 'left') as $p)
+                    <button type="button" @click="toggle('{{ $p['key'] }}')"
+                            class="group flex items-center gap-3 rounded-full bg-[#eef2f8] hover:bg-[#e3e9f3] transition-colors pl-2 pr-6 py-2.5 w-full lg:w-auto">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-white border border-gray-200 text-[#148af4] font-heading font-bold text-lg leading-none flex-shrink-0"
+                              x-text="shown('{{ $p['key'] }}') ? '−' : '+'"></span>
+                        <span class="font-heading font-bold text-navy text-sm leading-tight text-left">{!! $p['label'] !!}</span>
+                    </button>
+                    @endforeach
                 </div>
-                <div class="p-6 flex flex-col flex-1">
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 flex-1">{{ $card['body'] }}</p>
-                    <a href="{{ $card['route'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm mt-auto">
-                        {{ $card['cta'] }}
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                    </a>
+
+                {{-- hub --}}
+                <div class="flex justify-center order-first lg:order-2">
+                    <div class="rounded-full flex flex-col items-center justify-center text-center px-8" style="background-color:#011E41; width:230px; height:230px;">
+                        <p class="font-heading font-bold text-white text-xl leading-none mb-3">OnE Connected</p>
+                        <span class="block w-10 h-px bg-white/30 mb-3"></span>
+                        <p class="font-body text-white/70 text-xs leading-relaxed">One digital ecosystem for connected laundry equipment.</p>
+                    </div>
+                </div>
+
+                {{-- right pills --}}
+                <div class="flex flex-col gap-5 lg:items-start order-3">
+                    @foreach(array_filter($portfolio, fn($p) => $p['side'] === 'right') as $p)
+                    <button type="button" @click="toggle('{{ $p['key'] }}')"
+                            class="group flex items-center gap-3 rounded-full bg-[#eef2f8] hover:bg-[#e3e9f3] transition-colors pl-2 pr-6 py-2.5 w-full lg:w-auto">
+                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-white border border-gray-200 text-[#148af4] font-heading font-bold text-lg leading-none flex-shrink-0"
+                              x-text="shown('{{ $p['key'] }}') ? '−' : '+'"></span>
+                        <span class="font-heading font-bold text-navy text-sm leading-tight text-left">{!! $p['label'] !!}</span>
+                    </button>
+                    @endforeach
                 </div>
             </div>
-            @endforeach
+
+            {{-- revealed equipment photos --}}
+            <div class="mt-12 flex flex-wrap items-end justify-center gap-x-10 gap-y-8" style="min-height:200px;">
+                @foreach($portfolio as $p)
+                <div x-show="shown('{{ $p['key'] }}')" x-transition.opacity.duration.400ms
+                     class="flex flex-col items-center text-center" style="width:170px;">
+                    <div class="flex items-end justify-center" style="height:190px;">
+                        <img src="{{ $p['img'] }}" alt="{{ strip_tags(str_replace('<br>', ' ', $p['label'])) }}"
+                             loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
+                    </div>
+                    <p class="font-body font-bold text-navy text-xs leading-tight mt-3">{!! $p['label'] !!}</p>
+                </div>
+                @endforeach
+            </div>
         </div>
-        <div class="mt-8 flex items-start gap-3 rounded-xl bg-gray-50 border border-gray-100 p-5 max-w-4xl">
+
+        <div class="mt-10 flex items-start gap-3 rounded-xl bg-gray-50 border border-gray-100 p-5 max-w-4xl">
             <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg>
-            <p class="font-body text-gray-500 text-sm leading-relaxed">Not every model is compatible. Some equipment may require additional connectivity hardware or a conversion kit. Irish Laundry Systems can review equipment compatibility before the site commits.</p>
+            <p class="font-body text-gray-500 text-sm leading-relaxed">Compatibility depends on model, controls, production date and connection requirements. Some equipment may require connectivity hardware or a conversion kit.</p>
         </div>
     </div>
 </section>
@@ -298,14 +346,14 @@
                 Start OnE Connected with<br><span style="color:#148af4;">a clear, secure setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Getting started should feel simple. Irish Laundry Systems reviews the equipment, the connection requirements and the level of monitoring the site needs, then advises on the right next step for compatible Electrolux Professional equipment.
+                Irish Laundry Systems reviews equipment compatibility, site connection needs and access requirements before helping your laundry move into connected monitoring.
             </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 reveal">
             @foreach([
-                ['icon' => '243', 'title' => 'Easy Setup',         'body' => 'Compatible Electrolux Professional equipment connects using the required connectivity hardware and a straightforward setup process.'],
-                ['icon' => '244', 'title' => 'Secure Connection',  'body' => 'Site, signal and network requirements are reviewed first, so the connection stays stable and access stays controlled.'],
-                ['icon' => '245', 'title' => 'Scalable Monitoring','body' => 'Add compatible equipment, users or sites over time as the operation grows and the need for visibility increases.'],
+                ['icon' => '243', 'title' => 'Easy Setup',         'body' => 'Check the selected equipment, controls and site requirements before connection work begins.'],
+                ['icon' => '244', 'title' => 'Secure Connection',  'body' => 'Review network, data and access requirements so the system is prepared correctly.'],
+                ['icon' => '245', 'title' => 'Scalable Monitoring','body' => 'Start with compatible equipment and expand connected monitoring as the laundry operation grows.'],
             ] as $step)
             <div class="text-center px-6 lg:px-10 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
                 <img src="/images/icons/{{ $step['icon'] }}.png" alt="{{ $step['title'] }}"

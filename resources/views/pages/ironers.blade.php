@@ -518,13 +518,15 @@
 {{-- 11b. EQUIPMENT RENTAL STRIP (moved before Connected Support) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
-    'headingLine1' => 'Access commercial ironers with',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost and included support</span>',
-    'body'         => 'Equipment Rental can support ironer replacement, added finishing capacity or selected finishing equipment without one large upfront purchase.',
+    'image'        => '/images/pages/ironers/equipment-rental-strip.jpg',
+    'imagePosition' => '62% 15%',
+    'headingLine1' => 'Access ironing equipment with',
+    'headingLine2' => '<span style="color:#148af4;">lower upfront cost and better budget control</span>',
+    'body'         => 'Equipment Rental gives your site access to commercial ironers and selected finishing equipment without one large upfront purchase.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>upfront cost'],
-        ['icon' => 'healthcarerentalstrip3', 'label' => 'Included<br>support'],
-        ['icon' => '34', 'label' => 'Capacity<br>planning', 'iconStyle' => 'filter:brightness(0) invert(1); transform:translateY(-13.16%) scale(1.35);'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>Outlay'],
+        ['icon' => '34', 'label' => 'Budget<br>Control', 'iconStyle' => 'filter:brightness(0) invert(1); transform:translateY(-13.16%) scale(1.35);'],
+        ['icon' => '146', 'label' => 'Included<br>Support'],
     ],
 ])
 
@@ -533,12 +535,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep ironer performance supported <span style="color:#148af4;">after installation</span>
+                Keep your ironer running with <span style="color:#148af4;">the right service support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Commercial ironers need the right support after they are installed. Irish Laundry Systems brings repairs, preventive maintenance, Equipment Rental and aftercare together for ironer and finishing equipment sites.
+                ILS provides repairs, preventive maintenance, Equipment Rental and aftercare to minimise disruption and protect equipment value over time.
             </p>
         </div>
 
@@ -608,23 +610,28 @@
 {{-- 13. (Rental Options strip moved up — now before Connected Support, §11b) --}}
 
 {{-- 14. AFTER INSTALLATION BAND --}}
-<section class="py-12 lg:py-16" style="background-color:#148af4;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="relative overflow-hidden py-12 lg:py-16" style="background-color:#148af4;">
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
+        <img src="/images/pages/ironers/support-aftercare-strip.jpg" alt="Irish Laundry Systems ironer support and aftercare"
+             class="w-full h-full object-cover" style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 30%, rgba(20,138,244,0.15) 52%, transparent 70%);"></div>
+    </div>
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
-                <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
+                <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Support &amp; Aftercare</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                    <span class="block lg:whitespace-nowrap">Keep ironer support organised</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#011E41;">after installation</span>
+                    <span class="block lg:whitespace-nowrap">Keep ironer care</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#011E41;">organised over time</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    Irish Laundry Systems helps keep service history, maintenance planning, breakdown support and parts access organised after installation, Equipment Rental, repair or inspection.
+                    ILS keeps service history, planned maintenance and parts access organised to reduce disruption and protect equipment value.
                 </p>
-                <div class="flex items-center flex-wrap gap-x-4 gap-y-3">
+                <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
-                        ['icon' => 'aftercarehealthcarestrip1', 'label' => 'Service<br>history'],
-                        ['icon' => 'aftercarehealthcarestrip2', 'label' => 'Maintenance<br>planning'],
-                        ['icon' => 'aftercarehealthcarestrip3', 'label' => 'Parts<br>access'],
+                        ['icon' => '189', 'label' => 'Service<br>History'],
+                        ['icon' => 'healthcarerentalstrip3', 'label' => 'Planned<br>Care'],
+                        ['icon' => '235', 'label' => 'Parts<br>Access'],
                     ] as $pt)
                     <span class="flex items-center gap-5 flex-shrink-0">
                         <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
@@ -632,10 +639,8 @@
                     </span>
                     @endforeach
                 </div>
-            </div>
-            <div class="lg:col-span-5 flex lg:justify-end">
                 <a href="{{ route('parts-aftercare') }}"
-                   class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                   class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                     View Support &amp; Aftercare
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -647,8 +652,8 @@
 {{-- 15. CUSTOMER CONFIDENCE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Confidence',
-    'heading'    => 'Trusted support behind<br class="hidden lg:block"> <span style="color:#148af4;">consistent ironed linen</span>',
-    'subheading' => 'Commercial ironers affect finish quality, handling, running costs and service needs after installation. Irish Laundry Systems is trusted by organisations that value clear communication, responsive service and peace of mind after installation.',
+    'heading'    => '<span class="lg:whitespace-nowrap">Trusted support for <span style="color:#148af4;">commercial ironing</span></span>',
+    'subheading' => 'See why organisations trust Irish Laundry Systems for equipment, service and ongoing support.',
 ])
 
 {{-- 16. TRUSTED BY LOGO STRIP --}}
@@ -680,7 +685,7 @@
             <span class="block lg:whitespace-nowrap">for your site?</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Tell Irish Laundry Systems what your site needs to finish, how much space you have and whether purchase or Equipment Rental is the better fit. We will help match the ironer setup to your linen, room and aftercare needs.
+            Tell us about your linen, space and finishing needs. We'll recommend the right ironer setup.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('request-assessment') }}"

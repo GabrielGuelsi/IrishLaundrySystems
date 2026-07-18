@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:h-[720px]" style="min-height:520px;">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial drying cabinets"
+    <img src="/images/pages/drying-cabinets/drying-cabinets-hero.jpg" alt="Commercial drying cabinets"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -105,7 +105,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Useful where sites dry <span style="color:#148af4;">sensitive, bulky or specialist items</span>
+                Protect specialist garments and<br><span style="color:#148af4;">gear with cabinet drying</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Drying cabinets are useful where garments, PPE, workwear, shoes, gloves or delicate textiles need controlled drying without standard tumble action.
@@ -215,6 +215,7 @@
                 ],
                 [
                     'name'       => 'Heat Pump Drying Cabinets',
+                    'img'        => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pump%201LZS03.jpg',
                     'copy'       => 'For sites focused on lower running costs where Heat Pump technology suits the room, item type and daily use.',
                     'highlights' => ['Save up to 40%', '0.33 kWh/kg', 'Auto-stop programmes', 'Energy-focused drying'],
                     'cta'        => 'Ask About Heat Pump Cabinets',
@@ -228,7 +229,7 @@
                 ],
             ] as $p)
             <div class="bg-white border border-gray-200 rounded-2xl p-6 lg:p-8 flex flex-col h-full">
-                <div class="flex items-center justify-center h-40 mb-5">
+                <div class="flex items-center justify-center h-56 mb-5">
                     <img src="{{ $p['img'] ?? '/images/pages/drying-cabinets/Drying-cabinets_image.webp' }}" alt="{{ $p['name'] }}" class="max-h-full w-auto object-contain">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
@@ -445,14 +446,14 @@
                 ['title' => 'Hanger sticks',          'copy' => 'For garments that need to hang properly while drying.', 'img' => '/images/pages/drying-cabinets/hangerSticks.webp'],
                 ['title' => 'Shoe shelves',           'copy' => 'For shoes, boots and bulky footwear that should not dry loose.', 'img' => '/images/pages/drying-cabinets/Shoe%20shelves.webp'],
                 ['title' => 'Glove hangers',          'copy' => 'For gloves, PPE and specialist workwear.', 'img' => '/images/pages/drying-cabinets/Glove%20hangers.webp'],
-                ['title' => 'Glove and boot drying',  'copy' => 'For workwear, emergency services and outdoor teams drying gloves, boots and protective clothing.', 'img' => '/images/pages/drying-cabinets/Glove%20and%20boot%20drying.webp', 'imgClass' => 'scale-125'],
+                ['title' => 'Glove and boot drying',  'copy' => 'For workwear, emergency services and outdoor teams drying gloves, boots and protective clothing.', 'img' => '/images/pages/drying-cabinets/glove-and-boot-drying.jpg'],
             ] as $card)
-            <div class="flex flex-col h-full">
+            <div class="flex flex-col h-full items-center text-center">
                 <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain {{ $card['imgClass'] ?? '' }}">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed max-w-[260px]">{{ $card['copy'] }}</p>
             </div>
             @endforeach
         </div>
@@ -538,8 +539,8 @@
                     'text'  => 'For sites considering lower upfront cost where rental is suitable for the selected equipment and site needs.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
-                    'pos'   => '66% center',
+                    'img'   => '/images/pages/drying-cabinets/equipmentrentalcards.png',
+                    'pos'   => '40% center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
