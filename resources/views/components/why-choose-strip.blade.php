@@ -7,6 +7,8 @@
     'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',
     'miniPoints' => null,
     'miniNowrap' => false,
+    'gradientStrength' => 1,
+    'imagePosition' => 'center 15%',
     'features' => [
         [
             'icon' => '<span style="font-size:2rem;font-weight:700;color:white;line-height:1;">€</span>',
@@ -28,9 +30,17 @@
     {{-- image pinned to 56% — left by default, right when mirrored --}}
     <div class="absolute inset-y-0 {{ $mirror ? 'right-0' : 'left-0' }} hidden lg:block" style="width:56%;">
         <img src="{{ $image }}" alt="Commercial laundry equipment rental"
-             class="w-full h-full object-cover" style="object-position: center 15%;">
-        {{-- Smoothstep fade — the plateau covers the text column, then eases out with no visible seam --}}
-        <div class="absolute inset-0" style="background: linear-gradient(to {{ $mirror ? 'right' : 'left' }}, rgba(1,30,65,1) 0%, rgba(1,30,65,1) 11%, rgba(1,30,65,0.989) 16.31%, rgba(1,30,65,0.957) 21.63%, rgba(1,30,65,0.908) 26.94%, rgba(1,30,65,0.844) 32.25%, rgba(1,30,65,0.768) 37.56%, rgba(1,30,65,0.684) 42.88%, rgba(1,30,65,0.593) 48.19%, rgba(1,30,65,0.5) 53.5%, rgba(1,30,65,0.407) 58.81%, rgba(1,30,65,0.316) 64.13%, rgba(1,30,65,0.232) 69.44%, rgba(1,30,65,0.156) 74.75%, rgba(1,30,65,0.092) 80.06%, rgba(1,30,65,0.043) 85.38%, rgba(1,30,65,0.011) 90.69%, rgba(1,30,65,0) 96%);"></div>
+             class="w-full h-full object-cover" style="object-position: {{ $imagePosition }};">
+        {{-- Smoothstep fade — the plateau covers the text column, then eases out with no visible seam.
+             $gradientStrength scales every stop past the plateau (1 = default, lower = more image showing). --}}
+        @php
+            $gradStops = [[0,1],[11,1],[16.31,0.989],[21.63,0.957],[26.94,0.908],[32.25,0.844],[37.56,0.768],[42.88,0.684],[48.19,0.593],[53.5,0.5],[58.81,0.407],[64.13,0.316],[69.44,0.232],[74.75,0.156],[80.06,0.092],[85.38,0.043],[90.69,0.011],[96,0]];
+            $gradCss = implode(', ', array_map(function ($s) use ($gradientStrength) {
+                $a = $s[0] <= 11 ? $s[1] : round($s[1] * $gradientStrength, 3);
+                return "rgba(1,30,65,{$a}) {$s[0]}%";
+            }, $gradStops));
+        @endphp
+        <div class="absolute inset-0" style="background: linear-gradient(to {{ $mirror ? 'right' : 'left' }}, {{ $gradCss }});"></div>
     </div>
 
     {{-- content — 50% width, right by default, left when mirrored --}}
