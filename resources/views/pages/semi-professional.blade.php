@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Semi-professional laundry equipment"
+    <img src="/images/pages/equipment/mypro-family.jpg" alt="Semi-professional laundry equipment"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -18,10 +18,11 @@
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] xl:text-5xl leading-tight mb-6">
-                    When domestic machines become<br class="hidden lg:block"> <span style="color:#148af4;">the weak point</span>
+                    When domestic machines<br><span style="color:#148af4;">become the weak point</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    For small businesses using laundry every day, Electrolux Professional myPRO XL, myPRO and myPROzip offer a stronger step up from standard domestic appliances.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8">
+                    <span class="block lg:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
+                    <span class="block lg:whitespace-nowrap">myPRO and myPROzip offer a stronger step up from standard domestic appliances.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -44,21 +45,18 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Built for Daily Small-Business Use</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Small-Business Laundry</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    The step between domestic appliances and <span style="color:#148af4;">full commercial laundry</span>
+                    Built for <span style="color:#148af4;">regular business use</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Semi-professional equipment gives smaller sites more capacity, durability and speed without starting with a full commercial laundry setup.
-                </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems helps match the right level of equipment to the room, workload, use pattern and budget.
+                    Semi-professional washers and dryers give smaller sites more capacity and faster cycles than domestic appliances, without the scale of a full commercial setup.
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -80,20 +78,20 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Level Guide</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose the right step up <span style="color:#148af4;">before laundry becomes a problem</span>
+                Compare the equipment level <span style="color:#148af4;">your site needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Not every site needs a full commercial laundry setup straight away. The right level depends on how often the equipment is used, the size of each load, the room available and how much pressure laundry puts on the business.
+                Use frequency, load size and available space to compare domestic, semi-professional and commercial equipment.
             </p>
         </div>
 
         {{-- Domestic machines is the starting point / current problem, not a sales option — muted image and gray step number; myPRO XL carries the visual focus --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
-                ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated daily business demand.', 'img' => '/images/pages/semi-professional/Domestic%20machines.png', 'imgClass' => 'saturate-[.3] contrast-[.85] brightness-105 opacity-80', 'stepClass' => 'text-gray-400'],
-                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For lighter small-site use where a domestic appliance is no longer the right fit.', 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg'],
-                ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For smaller businesses handling bigger loads, more frequent washing and heavier daily use.', 'img' => '/images/pages/semi-professional/myPROXL%2012kg.webp', 'imgClass' => 'scale-110 origin-bottom'],
-                ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For larger capacity, intensive use and full commercial laundry performance.', 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+                ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated daily business demand.', 'img' => '/images/pages/semi-professional/Domestic%20machines.png', 'imgClass' => 'saturate-[.3] contrast-[.85] brightness-105 opacity-80 scale-[1.06] origin-bottom translate-y-[6px]', 'stepClass' => 'text-gray-400'],
+                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For lighter small-site use where a domestic appliance is no longer the right fit.', 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg', 'imgClass' => 'scale-[0.91] origin-bottom'],
+                ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For smaller businesses handling bigger loads, more frequent washing and heavier daily use.', 'img' => '/images/pages/semi-professional/myPROXL%2012kg.webp', 'imgClass' => 'scale-[1.0] origin-bottom translate-y-[7px]'],
+                ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For larger capacity, intensive use and full commercial laundry performance.', 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'imgClass' => 'scale-[1.29] origin-bottom translate-y-[29px]'],
             ] as $lvl)
             <div class="flex flex-col h-full">
                 <div class="w-full flex items-end justify-center mb-5" style="height:240px;">
@@ -122,16 +120,19 @@
 <section class="py-12 lg:py-16 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO XL Highlight</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                A bigger step up for <span style="color:#148af4;">heavier daily laundry use</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl mb-7">
-                myPRO XL gives smaller businesses more capacity, durability and speed in a compact semi-professional setup, helping handle larger loads without moving straight to full commercial laundry scale.
-            </p>
+        <div class="mb-10 reveal flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+            <div class="min-w-0">
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO XL Highlight</p>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+                    A bigger step up for <span style="color:#148af4;">heavier daily laundry use</span>
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    <span class="block lg:whitespace-nowrap">myPRO XL gives smaller businesses more capacity, durability and speed in a compact semi-professional setup,</span>
+                    <span class="block lg:whitespace-nowrap">helping handle larger loads without moving straight to full commercial laundry scale.</span>
+                </p>
+            </div>
             <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200">
+               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap flex-shrink-0 lg:mt-[28px]">
                 Ask About myPRO XL
             </a>
         </div>
@@ -144,8 +145,8 @@
             <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
                 @foreach([
                     ['stat' => '12 kg',             'title' => 'More capacity for daily loads',      'body' => 'A practical step up for towels, bedding, workwear, mops and regular business use.', 'img' => '/images/icons/201.png', 'imgClass' => 'w-9 h-9 object-contain scale-[1.25]'],
-                    ['stat' => '15,000+ cycles',    'title' => 'Built for heavier use',              'body' => 'Designed for smaller sites where domestic machines are no longer the right fit.', 'img' => '/images/icons/38.png', 'imgClass' => 'w-9 h-9 object-contain scale-[1.27]'],
-                    ['stat' => 'Faster programmes', 'title' => 'Less waiting during busy periods',   'body' => 'Shorter washer programmes help keep laundry moving when the site is under pressure.', 'img' => '/images/icons/202.png', 'imgClass' => 'w-9 h-9 object-contain scale-[1.61]'],
+                    ['stat' => '15,000+ cycles',    'title' => 'Built for heavier use',              'body' => 'Designed for smaller sites where domestic machines are no longer the right fit.', 'img' => '/images/icons/221.png', 'imgClass' => 'w-9 h-9 object-contain scale-[1.4] translate-y-[0.5%]'],
+                    ['stat' => 'Fast programmes', 'title' => 'Less waiting during busy periods',   'body' => 'Shorter washer programmes help keep laundry moving when the site is under pressure.', 'img' => '/images/icons/202.png', 'imgClass' => 'w-9 h-9 object-contain scale-[1.61]'],
                 ] as $proof)
                 <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
                     @if(isset($proof['img']))
@@ -172,7 +173,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare the myPRO options <span style="color:#148af4;">before choosing a setup</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 See which semi-professional option best matches how your site will use laundry equipment, from higher-capacity daily loads to shared guest use and light finishing.
             </p>
         </div>
@@ -264,7 +265,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Add light finishing <span style="color:#148af4;">alongside washing and drying</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 For sites that also need practical ironing, myPRO steam ironers can support everyday garment and flatwork finishing without moving into a larger finishing line.
             </p>
         </div>
@@ -312,8 +313,8 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For sites that need larger capacity, heavier use or full commercial washer performance.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'commercial-washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 270],
-                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For sites where drying demand is too high for a semi-professional dryer setup.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp', 'box' => 245],
+                ['title' => 'Commercial Washers', 'copy' => 'For sites that need larger capacity, heavier use or full commercial washer performance.', 'cta' => 'View Washing Machine Options', 'route' => route('equipment.category', ['category' => 'commercial-washers']), 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'box' => 300],
+                ['title' => 'Commercial Tumble Dryers',    'copy' => 'For sites where drying demand is too high for a semi-professional dryer setup.', 'cta' => 'View Dryer Options', 'route' => route('equipment.category', ['category' => 'tumble-dryers']), 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp', 'box' => 245],
                 ['title' => 'Drying Cabinets',             'copy' => 'For shoes, gloves, workwear, delicate garments and items that should not be tumble dried.', 'cta' => 'View Drying Cabinets', 'route' => route('equipment.category', ['category' => 'drying-cabinets']), 'img' => '/images/shared/drying_cabinetscards.jpg', 'box' => 260],
                 ['title' => 'Finishing Equipment',         'copy' => 'For sites that need ironing, pressing or finishing support alongside washing and drying.', 'cta' => 'View Finishing Equipment', 'route' => route('equipment.category', ['category' => 'finishing-equipment']), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
             ] as $card)
@@ -386,7 +387,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for smaller sites with <span style="color:#148af4;">laundry to manage every day</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 For businesses and shared sites where laundry is not industrial scale, but still affects room turnover, staff time, customer standards, resident care or day-to-day operations.
             </p>
         </div>
@@ -431,9 +432,9 @@
     'heading'    => 'Plan the right setup around <span style="color:#011E41;">your room, workload and budget</span>',
     'body'       => 'Irish Laundry Systems can review space, daily use, washer and dryer pairing, utilities, stacked layouts and payment setup where needed before recommending the right next step.',
     'miniPoints' => [
-        ['icon' => 'home-planning-fit',    'label' => 'Room<br>fit'],
-        ['icon' => 'home-planning-spend',  'label' => 'Daily<br>use'],
-        ['icon' => 'home-planning-rework', 'label' => 'Utilities'],
+        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.061] translate-y-[2.3%]', 'label' => 'Room<br>fit'],
+        ['icon' => '225', 'iconClass' => 'scale-[1.05] translate-y-[0.4%]',  'label' => 'Daily<br>use'],
+        ['icon' => '215', 'iconClass' => 'scale-[1.094] -translate-y-[1.2%]', 'label' => 'Utilities<br>and access'],
     ],
     'ctaText'    => 'Request Equipment Advice',
 ])
@@ -445,7 +446,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep semi-professional laundry equipment <span style="color:#148af4;">running day to day</span>
+                Support for semi-professional equipment <span style="color:#148af4;">beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Irish Laundry Systems supports semi-professional laundry sites with repairs, Preventive Maintenance, rental where suitable and aftercare.
@@ -537,9 +538,9 @@
 
             <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4 reveal reveal-right">
                 @foreach([
-                    ['t' => 'Tutorial videos',            'd' => 'Practical guidance for everyday operation, setup and user instructions.',            'cta' => 'View Tutorials',          'h' => 'https://www.electroluxprofessional.com/gb/mypro-online-help-center/', 'ext' => true,  'icon' => 'M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z'],
-                    ['t' => 'FAQs & manuals',             'd' => 'Find product help for myPRO, myPROzip and myPRO XL washers, dryers and ironers.',    'cta' => 'View Support Resources',  'h' => 'https://www.electroluxprofessional.com/gb/mypro-online-help-center/', 'ext' => true,  'icon' => 'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'],
-                    ['t' => 'Accessories & consumables',  'd' => 'Get guidance on suitable accessories and consumables for day-to-day laundry use.',   'cta' => 'Ask About Supplies',      'h' => null, 'ext' => false, 'icon' => 'M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5'],
+                    ['t' => 'Tutorial videos',            'd' => 'Practical guidance for everyday operation, setup and user instructions.',            'cta' => 'View Tutorials',          'h' => route('resources').'#mypro-tutorial-videos', 'ext' => false,  'icon' => 'M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z'],
+                    ['t' => 'myPRO manuals',              'd' => 'Find product help for myPRO, myPROzip and myPRO XL washers, dryers and ironers.',    'cta' => 'View Support Resources',  'h' => route('resources').'#mypro-tutorial-videos', 'ext' => false,  'icon' => 'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'],
+                    ['t' => 'Accessories & consumables',  'd' => 'Get guidance on suitable accessories and consumables for day-to-day laundry use.',   'cta' => 'Ask About Supplies',      'h' => route('equipment.category', ['category' => 'accessories']).'#detergents-by-laundry-setup', 'ext' => false, 'icon' => 'M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5'],
                 ] as $card)
                 <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
                     <span class="w-14 h-14 rounded-full bg-[#148af4]/10 flex items-center justify-center mb-5">
@@ -563,23 +564,23 @@
 {{-- 13. FAQ --}}
 @include('components.faq', [
     'eyebrow' => 'Semi-Professional FAQs',
-    'heading' => 'Questions before choosing <span style="color:#148af4;">myPRO, myPRO XL or myPROzip</span>',
+    'heading' => 'Questions before choosing <span style="color:#148af4;">semi-professional laundry equipment</span>',
+    'footerNote' => 'Have another question? Talk to our team.',
     'faqs' => [
-        ['question' => 'What is semi-professional laundry equipment?', 'answer' => 'Semi-professional laundry equipment sits between domestic appliances and full commercial laundry systems. It is designed for smaller sites that use laundry equipment regularly and need more capacity, durability and speed than a standard household machine.'],
-        ['question' => 'When should a business step up from domestic machines?', 'answer' => 'A business should consider stepping up when domestic machines are too slow, too small, wearing out too often or creating delays for staff, guests, residents or daily operations.'],
-        ['question' => 'What is the difference between myPRO and myPRO XL?', 'answer' => 'myPRO is suited to lighter small-site use where a domestic appliance is no longer the right fit. myPRO XL gives more capacity for larger loads and heavier daily use, making it the stronger option for busier small businesses.'],
-        ['question' => 'What is myPROzip?', 'answer' => 'myPROzip is designed for shared or guest-operated laundry rooms, where guests, residents or customers may use the machines themselves. It can suit sites where simple operation and payment access may be needed.'],
-        ['question' => 'Can semi-professional machines be rented?', 'answer' => 'In some cases, yes. Irish Laundry Systems can advise whether rental is suitable for the site, equipment type, expected use and budget.'],
-        ['question' => 'When should a site choose Line 6000 instead?', 'answer' => 'Line 6000 may be the better route where the site needs higher capacity, intensive daily use, full commercial performance or a larger laundry setup than semi-professional equipment can support.'],
-        ['question' => 'What support is available after installation?', 'answer' => 'Irish Laundry Systems can support semi-professional laundry sites with repairs, Preventive Maintenance, aftercare and guidance on suitable resources, accessories and consumables.'],
+        ['question' => 'What is semi-professional laundry equipment?', 'answer' => 'It is designed for businesses that need greater durability and faster cycles than domestic appliances, without the capacity of a full commercial setup.'],
+        ['question' => 'When should a business move beyond domestic machines?', 'answer' => 'When regular business use, load volumes or turnaround needs begin to exceed what domestic appliances are designed to handle.'],
+        ['question' => 'What is the difference between myPRO and myPRO XL?', 'answer' => 'myPRO offers 8 kg capacity and is designed for up to 7,500 cycles. myPRO XL offers 12 kg capacity and is designed for 15,000+ cycles.'],
+        ['question' => 'Where does myPROzip fit?', 'answer' => 'myPROzip is designed for guest-operated laundry areas, with simple controls and options for payment-system integration.'],
+        ['question' => 'What should be checked before installation?', 'answer' => 'Available space, water, drainage, electrical supply, ventilation, stacking requirements and expected daily use should all be reviewed.'],
+        ['question' => 'When is Line 6000 the better choice?', 'answer' => 'Line 6000 is better suited to higher volumes, more intensive daily use and sites that need greater commercial capacity.'],
     ],
 ])
 
 {{-- 14. FINAL CTA / FORM --}}
 @include('components.cta-downtime-form', [
     'pageSource' => 'semi_professional_cta',
-    'heading'    => 'Choose the right semi-professional laundry equipment <span style="color:#148af4;">for your site</span>',
-    'body'       => 'Tell us what you wash, how often the machines are used and whether the laundry is staff-operated or guest-operated. Irish Laundry Systems will guide you toward the right equipment, rental or support option.',
+    'heading'    => 'Plan the right semi-professional setup for<br><span style="color:#148af4;">your site</span>',
+    'body'       => 'Tell us what you wash, how often the machines run and who uses them. We&rsquo;ll recommend the right equipment, purchase or rental option, and support.',
     'formTitle'  => 'Request Semi-Professional Laundry Advice',
     'buttonText' => 'Request Equipment Advice',
 ])

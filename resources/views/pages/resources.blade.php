@@ -412,6 +412,64 @@
 </section>
 
 {{-- ═══════════════════════════════════════
+     5a-2. myPRO TUTORIAL VIDEOS — official Electrolux Professional walkthroughs
+═══════════════════════════════════════ --}}
+<section id="mypro-tutorial-videos" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Online Assistant</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Video tutorials for <span style="color:#148af4;">myPRO and myPROzip</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Get the best out of your myPRO and myPROzip washer, dryer and ironer with official step-by-step walkthroughs for installation and everyday use.
+            </p>
+        </div>
+
+        @php
+        $myproVideoGroups = [
+            ['group' => 'Installation', 'videos' => [
+                ['id' => 'sc1IOSVYNEA', 'title' => 'Installing the machine with drain valve'],
+                ['id' => 'CsdAuR8lJuQ', 'title' => 'Installing the stacking kit'],
+            ]],
+            ['group' => 'Daily use', 'videos' => [
+                ['id' => 'ESPBN2YmyxA', 'title' => 'Select programs and start the machines'],
+                ['id' => 'sTAlhKw8-bE', 'title' => "Cleaning the washing machine's pump filter"],
+                ['id' => 'QZlDLCAjf1E', 'title' => "Cleaning the dryer's lint filter and condense unit"],
+            ]],
+        ];
+        @endphp
+
+        <div class="space-y-10 reveal">
+            @foreach($myproVideoGroups as $grp)
+            <div>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-5">{{ $grp['group'] }}</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    @foreach($grp['videos'] as $v)
+                    <div class="rounded-2xl overflow-hidden bg-navy border border-gray-100 shadow-sm">
+                        <div class="relative w-full aspect-video">
+                            <iframe class="absolute inset-0 w-full h-full"
+                                    src="https://www.youtube.com/embed/{{ $v['id'] }}"
+                                    title="{{ $v['title'] }}"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                        </div>
+                        <div class="px-5 py-4">
+                            <p class="font-heading font-bold text-white text-sm leading-snug">{{ $v['title'] }}</p>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+            @endforeach
+        </div>
+
+    </div>
+</section>
+
+{{-- ═══════════════════════════════════════
      5b. BROCHURE LIBRARY — every official brochure on the site, filterable
 ═══════════════════════════════════════ --}}
 <section id="brochure-library" class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
