@@ -29,21 +29,21 @@
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="h-[88px] flex items-center justify-center">
-                    <img src="/images/icons/SAFEELECTRIC.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.15] translate-y-[4px]">
+                    <img src="/images/icons/SAFEELECTRIC.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.15] -translate-y-[4.5px]">
                 </div>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Electrical Contractor</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="h-[88px] flex items-center justify-center">
-                    <img src="/images/icons/RGIGASINSTALLER.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.15] -translate-y-[6px]">
+                    <img src="/images/icons/RGIGASINSTALLER.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.15] -translate-y-[8px]">
                 </div>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
                 <div class="h-[88px] flex items-center justify-center overflow-visible">
-                    <img src="/images/icons/100-clients.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.8] translate-y-[10px]">
+                    <img src="/images/icons/100-clients.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.8] translate-y-[22px]">
                 </div>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Long-standing relationships</span>
             </div>
