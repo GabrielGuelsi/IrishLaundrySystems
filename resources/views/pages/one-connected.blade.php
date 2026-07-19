@@ -351,9 +351,9 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 reveal">
             @foreach([
-                ['icon' => '243', 'title' => 'Easy Setup',         'body' => 'Check the selected equipment, controls and site requirements before connection work begins.'],
-                ['icon' => '244', 'title' => 'Secure Connection',  'body' => 'Review network, data and access requirements so the system is prepared correctly.'],
-                ['icon' => '245', 'title' => 'Scalable Monitoring','body' => 'Start with compatible equipment and expand connected monitoring as the laundry operation grows.'],
+                ['icon' => '242', 'title' => 'Easy Setup',         'body' => 'Check the selected equipment, controls and site requirements before connection work begins.'],
+                ['icon' => '240', 'title' => 'Secure Connection',  'body' => 'Review network, data and access requirements so the system is prepared correctly.'],
+                ['icon' => '241', 'title' => 'Scalable Monitoring','body' => 'Start with compatible equipment and expand connected monitoring as the laundry operation grows.'],
             ] as $step)
             <div class="text-center px-6 lg:px-10 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
                 <img src="/images/icons/{{ $step['icon'] }}.png" alt="{{ $step['title'] }}"
