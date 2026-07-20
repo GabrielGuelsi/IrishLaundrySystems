@@ -498,9 +498,9 @@
 
             @foreach([
                 [
-                    'title'  => 'Repairs &amp; Call-outs',
+                    'title'  => 'Repairs &amp; Call-Outs',
                     'text'   => 'Engineering support when faults or breakdowns put laundry output, linen availability or daily routines under pressure.',
-                    'cta'    => 'Request Call-out',
+                    'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
                     'img'    => '/images/shared/repairs-callouts.jpg',
                     'pos'    => 'center 40%',
@@ -667,7 +667,7 @@
         ['question' => 'Can new equipment be rented?',                        'answer' => 'Rental may be available where the selected Electrolux Professional equipment range, site requirements and agreement terms are a good fit. Rental has a minimum term of 3 years.'],
         ['question' => 'Can equipment be purchased outright?',                'answer' => 'Yes. Outright purchase is available for sites that want full ownership of the equipment from day one.'],
         ['question' => 'Do new machines include warranty?',                   'answer' => 'New equipment purchases include a 12-month parts warranty. Service, maintenance or follow-up support can be discussed separately.'],
-        ['question' => 'Can you support the equipment after installation?',   'answer' => 'Yes. Irish Laundry Systems can discuss Preventive Maintenance Contracts, Repairs & Call-outs and Support & Aftercare options depending on the equipment and site needs.'],
+        ['question' => 'Can you support the equipment after installation?',   'answer' => 'Yes. Irish Laundry Systems can discuss Preventive Maintenance Contracts, Repairs & Call-Outs and Support & Aftercare options depending on the equipment and site needs.'],
         ['question' => 'Can you review an existing laundry room?',            'answer' => 'Yes. Irish Laundry Systems can review an existing laundry room and advise whether replacement equipment, rental, maintenance or service support is the right next step.'],
         ['question' => 'What is the best next step?',                         'answer' => 'Request an Equipment Quote or Talk to Our Team. Share the site type, equipment need, current laundry setup and whether you are considering purchase or rental.'],
     ],
