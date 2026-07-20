@@ -179,7 +179,7 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
-                    'title'  => 'Repairs &amp; Call-outs',
+                    'title'  => 'Repairs &amp; Call-Outs',
                     'text'   => 'For equipment faults that can delay washing, drying, finishing or room preparation.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),

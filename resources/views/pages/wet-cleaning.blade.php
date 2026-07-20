@@ -834,9 +834,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
-                    'title' => 'Repairs &amp; Call-outs',
+                    'title' => 'Repairs &amp; Call-Outs',
                     'text'  => 'For wet cleaning equipment issues that need assessment, repair support and clear next steps.',
-                    'cta'   => 'View Repairs &amp; Call-outs',
+                    'cta'   => 'View Repairs &amp; Call-Outs',
                     'route' => route('repairs'),
                     'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',

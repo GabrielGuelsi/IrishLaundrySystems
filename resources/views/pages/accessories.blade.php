@@ -793,7 +793,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
-                    'title' => 'Repairs &amp; Call-outs',
+                    'title' => 'Repairs &amp; Call-Outs',
                     'text'  => 'For faults or issues affecting laundry equipment, dosing systems or day-to-day operation.',
                     'cta'   => 'Request a Repair',
                     'route' => route('repairs'),

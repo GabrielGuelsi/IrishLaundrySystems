@@ -799,9 +799,9 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 [
-                    'title' => 'Repairs &amp; Call-outs',
+                    'title' => 'Repairs &amp; Call-Outs',
                     'text'  => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',
-                    'cta'   => 'Request Call-out',
+                    'cta'   => 'Request Call-Out',
                     'route' => route('repairs'),
                     'img'   => '/images/shared/repairs-callouts.jpg',
                     'pos'   => '50% 35%',

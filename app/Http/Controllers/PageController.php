@@ -42,7 +42,7 @@ class PageController extends Controller
     public function repairs()
     {
         return view('pages.repairs', [
-            'title' => 'Commercial Laundry Repairs & Call-outs Ireland | Field Engineers | ILS',
+            'title' => 'Commercial Laundry Repairs & Call-Outs Ireland | Field Engineers | ILS',
             'metaDescription' => 'Commercial laundry breakdown repairs and call-outs across the Republic of Ireland. Experienced engineers, genuine parts, clear communication.',
         ]);
     }

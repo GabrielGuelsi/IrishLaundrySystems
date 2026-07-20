@@ -249,92 +249,140 @@
 ])
 
 {{-- 9. COMPATIBLE LAUNDRY EQUIPMENT --}}
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
+<section class="relative overflow-hidden py-16 lg:py-24" style="background:linear-gradient(180deg,#ffffff 0%,#f7fafd 45%,#ffffff 100%);">
+
+    {{-- decorative line-work, right side (xl only, purely cosmetic) --}}
+    <svg class="hidden xl:block absolute pointer-events-none" aria-hidden="true" focusable="false" fill="none"
+         style="top:60px; right:-140px; width:520px; height:560px; color:#148af4;" viewBox="0 0 520 560">
+        <circle cx="360" cy="280" r="130" stroke="currentColor" stroke-opacity="0.09" stroke-width="1"/>
+        <circle cx="360" cy="280" r="200" stroke="currentColor" stroke-opacity="0.07" stroke-width="1"/>
+        <circle cx="360" cy="280" r="270" stroke="currentColor" stroke-opacity="0.05" stroke-width="1"/>
+        <path d="M20 550 C 150 460 250 330 300 170 C 325 80 370 25 450 0" stroke="currentColor" stroke-opacity="0.10" stroke-width="1"/>
+    </svg>
+
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="mb-12 lg:mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Portfolio Compatibility</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Connect your laundry equipment<br>in <span style="color:#148af4;">one digital ecosystem</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block lg:whitespace-nowrap">Across washing, drying and ironing, OnE Connected is available for selected Electrolux Professional equipment.</span>
-                <span class="block lg:whitespace-nowrap">Irish Laundry Systems can review the model, controls and connection requirements before a recommendation is made.</span>
+                <span class="block xl:whitespace-nowrap">Across washing, drying and ironing, OnE Connected is available for selected Electrolux Professional equipment.</span>
+                <span class="block xl:whitespace-nowrap">Irish Laundry Systems can review the model, controls and connection requirements before a recommendation is made.</span>
             </p>
         </div>
 
-        {{-- Compatibility infographic: hub + pills; each "+" reveals that equipment photo in the strip below --}}
+        {{-- Compatibility infographic: navy hub with six radiating pills.
+             Each "+" reveals that equipment photo in the strip below.
+             At lg+ the stage is a fixed 800x300 box so the SVG viewBox maps 1:1 to pixels:
+             hub centre (400,150) r=115, connector endpoints at x=230 / x=570, rows y=58/150/242. --}}
         @php
         $portfolio = [
-            ['key' => 'w6', 'label' => 'Line 6000<br>Washers',       'side' => 'left',  'img' => '/images/pages/commercial-washers/WH6-27.jpg'],
-            ['key' => 'd6', 'label' => 'Line 6000<br>Tumble Dryers', 'side' => 'left',  'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
-            ['key' => 'i6', 'label' => 'Line 6000<br>FFS Vibe Ironers', 'side' => 'left', 'img' => '/images/shared/line6000-ironer.webp'],
-            ['key' => 'w5', 'label' => 'Line 5000<br>Washers',       'side' => 'right', 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
-            ['key' => 'd5', 'label' => 'Line 5000<br>Tumble Dryers', 'side' => 'right', 'img' => '/images/pages/dryers/heat-pump-dryer-lineup.png'],
-            ['key' => 'bw', 'label' => 'Barrier Washers',            'side' => 'right', 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
+            ['key' => 'w6', 'label' => 'Line 6000<br>Washers',          'side' => 'left',  'row' => 0, 'img' => '/images/pages/commercial-washers/WH6-27.jpg'],
+            ['key' => 'd6', 'label' => 'Line 6000<br>Tumble Dryers',    'side' => 'left',  'row' => 1, 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
+            ['key' => 'i6', 'label' => 'Line 6000<br>FFS Vibe Ironers', 'side' => 'left',  'row' => 2, 'img' => '/images/shared/line6000-ironer.webp'],
+            ['key' => 'w5', 'label' => 'Line 5000<br>Washers',          'side' => 'right', 'row' => 0, 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
+            ['key' => 'd5', 'label' => 'Line 5000<br>Tumble Dryers',    'side' => 'right', 'row' => 1, 'img' => '/images/pages/dryers/heat-pump-dryer-lineup.png'],
+            ['key' => 'bw', 'label' => 'Barrier Washers',               'side' => 'right', 'row' => 2, 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
         ];
         @endphp
 
-        <div x-data="{ open: {{ json_encode(array_column($portfolio, 'key')) }},
-                       toggle(k) { this.open.includes(k) ? this.open = this.open.filter(i => i !== k) : this.open.push(k) },
-                       shown(k) { return this.open.includes(k) } }"
+        <div x-data="{
+                open: {{ \Illuminate\Support\Js::from(array_column($portfolio, 'key')) }},
+                toggle(k) { this.open.includes(k) ? this.open = this.open.filter(i => i !== k) : this.open.push(k) },
+                shown(k) { return this.open.includes(k) }
+             }"
              class="reveal">
 
-            <div class="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-6 lg:gap-10 items-center">
+            {{-- stage --}}
+            <div class="relative mx-auto w-full lg:w-[800px] lg:h-[300px]">
 
-                {{-- left pills --}}
-                <div class="flex flex-col gap-5 lg:items-end order-1">
-                    @foreach(array_filter($portfolio, fn($p) => $p['side'] === 'left') as $p)
-                    <button type="button" @click="toggle('{{ $p['key'] }}')"
-                            class="group flex items-center gap-3 rounded-full bg-[#eef2f8] hover:bg-[#e3e9f3] transition-colors pl-2 pr-6 py-2.5 w-full lg:w-auto">
-                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-white border border-gray-200 text-[#148af4] font-heading font-bold text-lg leading-none flex-shrink-0"
-                              x-text="shown('{{ $p['key'] }}') ? '−' : '+'"></span>
-                        <span class="font-heading font-bold text-navy text-sm leading-tight text-left">{!! $p['label'] !!}</span>
-                    </button>
-                    @endforeach
-                </div>
+                {{-- connectors (lg+ only, beneath the pills) --}}
+                <svg class="hidden lg:block absolute inset-0 w-full h-full pointer-events-none" style="z-index:0;"
+                     viewBox="0 0 800 300" fill="none" aria-hidden="true" focusable="false">
+                    <g stroke="#b3ccea" stroke-width="1" stroke-linecap="round">
+                        <path d="M299 95 C 272 78, 266 58, 242 58"/>
+                        <path d="M285 150 L 242 150"/>
+                        <path d="M299 205 C 272 222, 266 242, 242 242"/>
+                        <path d="M501 95 C 528 78, 534 58, 558 58"/>
+                        <path d="M515 150 L 558 150"/>
+                        <path d="M501 205 C 528 222, 534 242, 558 242"/>
+                    </g>
+                    <g fill="#b9d4f2">
+                        <circle cx="242" cy="58" r="3.5"/><circle cx="242" cy="150" r="3.5"/><circle cx="242" cy="242" r="3.5"/>
+                        <circle cx="558" cy="58" r="3.5"/><circle cx="558" cy="150" r="3.5"/><circle cx="558" cy="242" r="3.5"/>
+                    </g>
+                </svg>
 
                 {{-- hub --}}
-                <div class="flex justify-center order-first lg:order-2">
-                    <div class="rounded-full flex flex-col items-center justify-center text-center px-8" style="background-color:#011E41; width:230px; height:230px;">
-                        <p class="font-heading font-bold text-white text-xl leading-none mb-3">OnE Connected</p>
-                        <span class="block w-10 h-px bg-white/30 mb-3"></span>
-                        <p class="font-body text-white/70 text-xs leading-relaxed">One digital ecosystem for connected laundry equipment.</p>
-                    </div>
+                <div class="relative lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 mx-auto mb-8 lg:mb-0 flex flex-col items-center justify-center text-center rounded-full"
+                     style="z-index:10; width:230px; height:230px; background-color:#011E41; box-shadow:0 18px 40px -18px rgba(1,30,65,0.45); padding:0 34px;">
+                    <p class="font-heading font-bold text-white text-xl leading-none">OnE Connected</p>
+                    <span class="block w-8 h-px bg-white/25 my-3"></span>
+                    <p class="font-body text-white/70 text-xs leading-relaxed">One digital ecosystem for connected laundry equipment.</p>
                 </div>
 
-                {{-- right pills --}}
-                <div class="flex flex-col gap-5 lg:items-start order-3">
-                    @foreach(array_filter($portfolio, fn($p) => $p['side'] === 'right') as $p)
-                    <button type="button" @click="toggle('{{ $p['key'] }}')"
-                            class="group flex items-center gap-3 rounded-full bg-[#eef2f8] hover:bg-[#e3e9f3] transition-colors pl-2 pr-6 py-2.5 w-full lg:w-auto">
-                        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-white border border-gray-200 text-[#148af4] font-heading font-bold text-lg leading-none flex-shrink-0"
-                              x-text="shown('{{ $p['key'] }}') ? '−' : '+'"></span>
-                        <span class="font-heading font-bold text-navy text-sm leading-tight text-left">{!! $p['label'] !!}</span>
-                    </button>
-                    @endforeach
-                </div>
+                {{-- pills --}}
+                @foreach($portfolio as $p)
+                @php $plain = trim(strip_tags(str_replace('<br>', ' ', $p['label']))); @endphp
+                <button type="button"
+                        @click="toggle('{{ $p['key'] }}')"
+                        :aria-expanded="shown('{{ $p['key'] }}') ? 'true' : 'false'"
+                        aria-label="Show or hide the {{ $plain }} photo"
+                        data-side="{{ $p['side'] }}" data-row="{{ $p['row'] }}"
+                        class="pf-pill group relative lg:absolute w-full lg:w-[236px] lg:h-16 mb-3 lg:mb-0 flex items-center gap-3 rounded-full pl-2 pr-5 py-2.5 lg:py-0 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2"
+                        style="z-index:10;"
+                        :class="shown('{{ $p['key'] }}') ? 'pf-pill-on' : 'pf-pill-off'">
+                    <span class="flex items-center justify-center w-9 h-9 rounded-full bg-white text-[#148af4] font-heading font-bold text-lg leading-none flex-shrink-0"
+                          style="box-shadow:0 2px 6px -2px rgba(1,30,65,0.25);"
+                          x-text="shown('{{ $p['key'] }}') ? '−' : '+'">+</span>
+                    <span class="font-heading font-bold text-navy text-sm leading-tight">{!! $p['label'] !!}</span>
+                </button>
+                @endforeach
             </div>
 
             {{-- revealed equipment photos --}}
-            <div class="mt-12 flex flex-wrap items-end justify-center gap-x-10 gap-y-8" style="min-height:200px;">
+            <div class="mt-10 lg:mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-6 gap-y-10 items-start">
                 @foreach($portfolio as $p)
-                <div x-show="shown('{{ $p['key'] }}')" x-transition.opacity.duration.400ms
-                     class="flex flex-col items-center text-center" style="width:170px;">
-                    <div class="flex items-end justify-center" style="height:190px;">
-                        <img src="{{ $p['img'] }}" alt="{{ strip_tags(str_replace('<br>', ' ', $p['label'])) }}"
-                             loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
+                @php $plain = trim(strip_tags(str_replace('<br>', ' ', $p['label']))); @endphp
+                {{-- plain x-show: the x-transition opacity variant leaves the element stuck
+                     mid-transition on this page, so the photo never hides --}}
+                <div x-show="shown('{{ $p['key'] }}')"
+                     class="flex flex-col items-center text-center pf-fade">
+                    <div class="relative w-full flex items-end justify-center h-36 lg:h-48">
+                        {{-- grounding glow, scales with the column --}}
+                        <span class="absolute bottom-0 left-1/2 -translate-x-1/2 w-4/5 h-6 rounded-[50%] pointer-events-none"
+                              style="background:radial-gradient(ellipse at center, rgba(1,30,65,0.16) 0%, rgba(1,30,65,0) 70%);" aria-hidden="true"></span>
+                        <img src="{{ $p['img'] }}" alt="{{ $plain }}" loading="lazy" decoding="async"
+                             class="relative max-h-full max-w-full w-auto object-contain">
                     </div>
-                    <p class="font-body font-bold text-navy text-xs leading-tight mt-3">{!! $p['label'] !!}</p>
+                    <p class="font-body font-bold text-navy text-xs leading-tight mt-4">{!! $p['label'] !!}</p>
                 </div>
                 @endforeach
             </div>
         </div>
 
-        <div class="mt-10 flex items-start gap-3 rounded-xl bg-gray-50 border border-gray-100 p-5 max-w-4xl">
+        <div class="mt-12 flex items-start gap-3 rounded-xl bg-white/70 border border-gray-200 p-5 max-w-4xl">
             <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"/></svg>
             <p class="font-body text-gray-500 text-sm leading-relaxed">Compatibility depends on model, controls, production date and connection requirements. Some equipment may require connectivity hardware or a conversion kit.</p>
         </div>
     </div>
+
+    <style>
+        .pf-pill { transition: background-color .2s ease, box-shadow .25s ease, border-color .2s ease; border:1px solid #dfe8f4; background-color:#eef3fa; box-shadow:0 10px 35px -10px rgba(1,30,65,0.10); }
+        .pf-pill:hover { background-color:#e4edf9; border-color:#c9d9ee; }
+        .pf-pill-on { background-color:#e4edf9; border-color:#c9d9ee; }
+        /* Stage coordinates only apply once the pills are absolutely positioned (lg+).
+           Below lg they stack in normal flow, where a right/top offset would displace them. */
+        @media (min-width:1024px) {
+            .pf-pill[data-side="left"]  { right:564px; }
+            .pf-pill[data-side="right"] { left:564px; }
+            .pf-pill[data-row="0"] { top:26px; }
+            .pf-pill[data-row="1"] { top:118px; }
+            .pf-pill[data-row="2"] { top:210px; }
+        }
+        @media (prefers-reduced-motion: reduce) { .pf-pill { transition:none; } }
+    </style>
 </section>
 
 {{-- 10. GETTING STARTED --}}
@@ -351,9 +399,9 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 reveal">
             @foreach([
-                ['icon' => '243', 'title' => 'Easy Setup',         'body' => 'Check the selected equipment, controls and site requirements before connection work begins.'],
-                ['icon' => '244', 'title' => 'Secure Connection',  'body' => 'Review network, data and access requirements so the system is prepared correctly.'],
-                ['icon' => '245', 'title' => 'Scalable Monitoring','body' => 'Start with compatible equipment and expand connected monitoring as the laundry operation grows.'],
+                ['icon' => '242', 'title' => 'Easy Setup',         'body' => 'Check the selected equipment, controls and site requirements before connection work begins.'],
+                ['icon' => '240', 'title' => 'Secure Connection',  'body' => 'Review network, data and access requirements so the system is prepared correctly.'],
+                ['icon' => '241', 'title' => 'Scalable Monitoring','body' => 'Start with compatible equipment and expand connected monitoring as the laundry operation grows.'],
             ] as $step)
             <div class="text-center px-6 lg:px-10 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
                 <img src="/images/icons/{{ $step['icon'] }}.png" alt="{{ $step['title'] }}"
