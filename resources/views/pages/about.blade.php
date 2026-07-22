@@ -24,22 +24,22 @@
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">About Irish Laundry Systems</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-balance">
-                    Commercial laundry equipment, service and aftercare shaped by <span class="text-[#148af4]">Irish engineering since&nbsp;1987</span>
+                    Commercial laundry equipment and service expertise<br class="hidden lg:block"> <span class="text-[#148af4]">across Ireland since 1987</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment across Ireland. Customers work with us for equipment advice, rental, Preventive Maintenance, repairs and aftercare from people who know the machinery.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for commercial operations across Ireland.
                 </p>
                 <div class="flex flex-wrap gap-4 mb-10">
-                    <a href="{{ route('contact') }}"
+                    <a href="{{ route('services') }}"
                        class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
-                        Talk to Our Team
+                        Explore Our Services
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                         </svg>
                     </a>
-                    <a href="{{ route('services') }}"
+                    <a href="#company-history"
                        class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:border-white transition-colors">
-                        Explore Services
+                        Our Story
                     </a>
                 </div>
             </div>
@@ -61,30 +61,14 @@
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Irish Laundry Systems</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    A long-term partner for <span class="text-[#148af4]">commercial laundry&nbsp;operations</span>,<br class="hidden lg:block"> not just equipment supply
+                    Engineering knowledge that continues<br class="hidden lg:block"> <span class="text-[#148af4]">after installation</span>
                 </h2>
             </div>
 
             <div class="lg:pt-8 space-y-5">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    A commercial laundry depends on the decisions made before, during and after installation.
+                    From planning and installation to maintenance, repairs and aftercare, customers deal with people who know the equipment.
                 </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    Irish Laundry Systems keeps those decisions practical, supported and easier to manage over the lifetime of the equipment.
-                </p>
-                <div class="flex flex-wrap gap-4 pt-2">
-                    <a href="{{ route('contact') }}"
-                       class="inline-flex items-center gap-2 bg-navy text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors">
-                        Talk to Our Team
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                        </svg>
-                    </a>
-                    <a href="{{ route('electrolux') }}"
-                       class="inline-flex items-center gap-2 border border-gray-300 text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:border-navy transition-colors">
-                        Our Partnership
-                    </a>
-                </div>
             </div>
 
         </div>
@@ -98,28 +82,29 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Proof & Scale</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Experience & Scale</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                Long-standing experience, real scale and<br class="hidden lg:block"> <span class="text-[#148af4]">recognised equipment partnership</span>
+                Commercial laundry experience <span class="text-[#148af4]">backed by proven scale</span>
             </h2>
         </div>
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach([
-                ['1987',       'since 1987', 'Irish engineering since 1987',    'Commercial laundry support built on electrical contracting roots and long-term equipment experience.', null],
-                ['100+',       'clients',    'Clients supported',               'Commercial laundry customers supported across Dublin and Ireland.', null],
-                ['1,000+',     'installed',  'Machines installed',              'Professional laundry machines installed for commercial sites across Ireland.', null],
-                ['Authorised', 'partner',    'Electrolux Professional Partner', 'Official partner status for Electrolux Professional commercial laundry equipment.', 'images/logo/electrolux-partner.png'],
+                ['Since 1987', '',                         'Irish Engineering Heritage',         'Commercial laundry experience built on Irish electrical contracting and engineering roots.', null],
+                ['100+',       'Clients',                  'Long-standing Relationships',        'Commercial laundry customers supported across Dublin and throughout Ireland.', null],
+                ['1,000+',     'Equipments Installations', 'Installation Experience',            'Professional laundry equipment supplied and installed for commercial sites across Ireland.', null],
+                ['Authorised', 'Authorised Partner',       'Electrolux Professional Partnership', 'Authorised local supply, installation and aftercare for Electrolux Professional laundry equipment.', 'images/logo/electrolux-partner.png'],
             ] as [$num, $sub, $title, $desc, $logo])
             <div class="border-b border-gray-300 pb-5 reveal">
                 @if($logo)
-                <div class="flex items-end mb-3" style="min-height:3.75rem;">
-                    <img src="{{ asset($logo) }}" alt="{{ $title }}" class="h-14 lg:h-16 w-auto object-contain" loading="lazy" decoding="async">
+                <div class="flex items-end gap-3 mb-3" style="min-height:6.5rem;">
+                    <img src="{{ asset($logo) }}" alt="{{ $title }}" class="h-24 lg:h-[6.5rem] w-auto object-contain -ml-1" style="transform:translateY(26.8%);" loading="lazy" decoding="async">
+                    @if($sub)<p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $sub }}</p>@endif
                 </div>
                 @else
-                <div class="flex items-end gap-3 mb-3">
-                    <div class="font-heading font-bold text-navy text-4xl sm:text-5xl lg:text-6xl leading-none flex-shrink-0">{{ $num }}</div>
-                    <p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $sub }}</p>
+                <div class="flex items-end gap-3 mb-3" style="min-height:6.5rem;">
+                    <div class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-none flex-shrink-0">{{ $num }}</div>
+                    @if($sub)<p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $sub }}</p>@endif
                 </div>
                 @endif
                 <p class="font-body font-bold text-navy text-sm mb-1">{{ $title }}</p>
@@ -149,22 +134,21 @@
 
             <!-- Content -->
             <div class="reveal">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Foundations</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Standards</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Technical knowledge behind <span class="text-[#148af4]">installation, service and&nbsp;aftercare</span>
+                    Professional standards<br class="hidden lg:block">from <span class="text-[#148af4]">planning<br class="hidden lg:block">through aftercare</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6 text-pretty">
-                    Irish Laundry Systems works with commercial laundry equipment in daily use, from setup and installation to servicing, repairs and aftercare. The team stays current through product updates, manufacturer workshops and ongoing equipment training.
+                    Professional registrations, manufacturer training and ongoing technical development help keep product knowledge current and technical standards consistent.
                 </p>
 
-                <!-- Credential chips -->
+                <!-- Proof-point chips -->
                 <div class="flex flex-wrap gap-2.5 mb-8">
                     @foreach([
-                        'Registered Electrical Contractor',
-                        'Registered Gas Installer contractors',
-                        'Electrolux Professional equipment knowledge',
-                        'Ongoing training and workshops',
-                        'Installation, service and repair experience',
+                        'Professional Registrations',
+                        'Manufacturer Training',
+                        'Ongoing Development',
+                        'Planning to Aftercare',
                     ] as $chip)
                     <span class="font-body text-sm font-medium text-navy/70 border border-navy/20 rounded-full px-5 py-2.5">{{ $chip }}</span>
                     @endforeach
@@ -188,47 +172,7 @@
 </section>
 
 <!-- ══════════════════════════════════════════
-     6. ROOM PLANNING
-══════════════════════════════════════════ -->
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
-    </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-14 w-full max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-            <span class="text-white">Advice shaped around </span><span style="color:#011E41;">the room,</span><br class="hidden lg:block"> <span style="color:#011E41;">the equipment and daily&nbsp;use</span>
-        </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6 text-pretty">
-            Every laundry space has its own mix of access, utilities, workload, equipment condition and service needs. Irish Laundry Systems reviews those details before recommending equipment, rental, Preventive Maintenance, repairs or aftercare.
-        </p>
-        <div class="flex items-center flex-wrap sm:flex-nowrap gap-x-5 gap-y-4 mb-7">
-            @foreach([
-                ['icon' => 'ativo-20', 'label' => 'Room<br>fit'],
-                ['icon' => 'ativo-10', 'label' => 'Equipment<br>use'],
-                ['icon' => 'ativo-21', 'label' => 'Capacity<br>needs'],
-                ['icon' => 'ativo-9',  'label' => 'Service<br>history'],
-            ] as $i => $feat)
-            @if($i > 0)
-            @endif
-            <div class="flex items-center gap-3">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                     style="width:2.4rem;height:2.4rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
-            @endforeach
-        </div>
-        <a href="{{ route('contact') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
-            Talk to Our Team
-        </a>
-    </div>
-</section>
-
-<!-- ══════════════════════════════════════════
-     7. SUPPORT OVERVIEW — radial hub (white, logo centre)
+     6. SUPPORT OVERVIEW — radial hub (white, logo centre)
 ══════════════════════════════════════════ -->
 <section class="bg-white py-20 lg:py-28 overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -236,24 +180,24 @@
         @php
         // 6 nodes clockwise from top-left, matching the segmented ring (darkest segment = top-right)
         $ringNodes = [
-            ['icon' => '125',                    'label' => 'Equipment Supply',       'left' => '37.4%',  'top' => '20.1%', 'side' => 'left'],
-            ['icon' => '126',                    'label' => 'Installation & Setup',   'left' => '62.6%',  'top' => '20.1%', 'side' => 'right'],
-            ['icon' => '132',                    'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
-            ['icon' => '180',                    'label' => 'Repairs & Call-Outs',    'left' => '62.6%',  'top' => '79.9%', 'side' => 'right'],
-            ['icon' => '127',                    'label' => 'Preventive Maintenance', 'left' => '37.4%',  'top' => '79.9%', 'side' => 'left'],
-            ['icon' => 'aftercare-connected-95', 'label' => 'Support & Aftercare',    'left' => '25.95%', 'top' => '50%',   'side' => 'left'],
+            ['icon' => 'rental-gain-119', 'sc' => '0.871', 'label' => 'Equipment Supply',       'left' => '37.4%',  'top' => '20.1%', 'side' => 'left'],
+            ['icon' => 'pmc-gain-87', 'label' => 'Installation & Setup',   'left' => '62.6%',  'top' => '20.1%', 'side' => 'right'],
+            ['icon' => 'rental-gain-120', 'sc' => '0.803', 'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
+            ['icon' => '180', 'label' => 'Repairs & Call-Outs',    'left' => '62.6%',  'top' => '79.9%', 'side' => 'right'],
+            ['icon' => '127', 'label' => 'Preventive Maintenance', 'left' => '37.4%',  'top' => '79.9%', 'side' => 'left'],
+            ['icon' => 'aftercare-connected-94', 'label' => 'Support & Aftercare',    'left' => '25.95%', 'top' => '50%',   'side' => 'left'],
         ];
         $blueFilter = 'filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);';
         @endphp
 
         {{-- Header --}}
-        <div class="max-w-3xl mx-auto text-center mb-8 lg:mb-6 reveal">
+        <div class="max-w-4xl mb-8 lg:mb-6 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Overview</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                One clear support system around <span class="text-[#148af4]">the equipment your site depends&nbsp;on</span>
+                One complete support system around<br class="hidden lg:block"> <span class="text-[#148af4]">your laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Irish Laundry Systems supports commercial laundry sites through equipment supply, setup, rental, repairs, maintenance and aftercare.
+                Keep equipment supply, installation and long-term service under one local provider throughout the equipment life cycle.
             </p>
         </div>
 
@@ -267,10 +211,9 @@
                 </div>
 
                 {{-- centre: ILS logo + tagline (inside the ring's white circle) --}}
-                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center" style="width:12rem;">
-                    <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems"
-                         class="w-32 h-auto object-contain mb-2">
-                    <p class="font-body text-gray-500 text-xs leading-relaxed">Equipment, service and aftercare around the same laundry room</p>
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center" style="width:16rem;">
+                    <img src="/images/pages/about/ILSLOGO2.png" alt="Irish Laundry Systems"
+                         class="w-52 h-auto object-contain">
                 </div>
 
                 {{-- icon + label nodes around the ring --}}
@@ -279,9 +222,9 @@
                      style="left:{{ $n['left'] }}; top:{{ $n['top'] }};">
                     @if($n['side'] === 'left')
                     <span class="font-body font-bold text-navy text-sm leading-snug text-right max-w-[8.5rem]">{{ $n['label'] }}</span>
-                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-20 h-20 object-contain flex-shrink-0" style="{{ $blueFilter }}">
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-24 h-24 object-contain flex-shrink-0" style="{{ $blueFilter }}{{ isset($n['sc']) ? 'transform:scale('.$n['sc'].');' : '' }}">
                     @else
-                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-20 h-20 object-contain flex-shrink-0" style="{{ $blueFilter }}">
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-24 h-24 object-contain flex-shrink-0" style="{{ $blueFilter }}{{ isset($n['sc']) ? 'transform:scale('.$n['sc'].');' : '' }}">
                     <span class="font-body font-bold text-navy text-sm leading-snug max-w-[8.5rem]">{{ $n['label'] }}</span>
                     @endif
                 </div>
@@ -293,31 +236,24 @@
         {{-- Mobile: logo chip + dotted-circle nodes --}}
         <div class="lg:hidden reveal">
             <div class="flex justify-center mb-8">
-                <img src="/images/logo/ILSLOGO.png" alt="Irish Laundry Systems" class="w-48 h-auto object-contain">
+                <img src="/images/pages/about/ILSLOGO2.png" alt="Irish Laundry Systems" class="w-48 h-auto object-contain">
             </div>
             <div class="flex flex-wrap justify-center gap-4">
                 @foreach($ringNodes as $n)
                 <div class="flex flex-col items-center justify-center text-center rounded-full bg-white"
                      style="width:8.5rem; height:8.5rem; border:2px dotted rgba(1,30,65,0.30);">
-                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-10 h-10 object-contain mb-1.5" style="{{ $blueFilter }}">
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-12 h-12 object-contain mb-1.5" style="{{ $blueFilter }}{{ isset($n['sc']) ? 'transform:scale('.$n['sc'].');' : '' }}">
                     <span class="font-body font-bold text-navy text-xs leading-tight px-3">{{ $n['label'] }}</span>
                 </div>
                 @endforeach
             </div>
         </div>
 
-        {{-- Proof chips --}}
-        <div class="flex flex-wrap justify-center gap-2.5 mt-14 lg:mt-16 reveal">
-            @foreach(['Electrolux Professional equipment', 'Irish engineering expertise', 'Service history', 'Parts support'] as $chip)
-            <span class="font-body text-sm font-medium text-navy/70 bg-gray-50 border border-gray-200 rounded-full px-5 py-2">{{ $chip }}</span>
-            @endforeach
-        </div>
-
         {{-- CTA --}}
-        <div class="flex justify-center mt-10 reveal">
-            <a href="{{ route('contact') }}"
+        <div class="flex justify-center mt-14 lg:mt-16 reveal">
+            <a href="{{ route('services') }}"
                class="inline-flex items-center gap-2 bg-navy text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors">
-                Talk to Our Team
+                Explore Our Services
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                 </svg>
@@ -336,11 +272,11 @@
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
             <div class="max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">How We Work</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Clear support from first review to <span class="text-[#148af4]">aftercare</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-4xl xl:text-[42px] leading-tight text-balance mb-3 xl:whitespace-nowrap">
+                    A clear process from first review <span class="text-[#148af4]">through installation and aftercare</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    A simple process for choosing, installing and supporting commercial laundry equipment without leaving the next step unclear.
+                    Each stage is agreed before work begins, with clear information retained for future service.
                 </p>
             </div>
         </div>
@@ -349,10 +285,10 @@
     {{-- Full-width image strip — no container, no padding, edge to edge --}}
     @php
     $siteSteps = [
-        ['num'=>'1','title'=>'Review the operation',        'desc'=>'Review the equipment, access, utilities, usage, service history and priorities.',                       'img'=>'images/pages/about/Review%20the%20operation.png'],
-        ['num'=>'2','title'=>'Recommend the right support', 'desc'=>'Confirm whether equipment supply, rental, repair, Preventive Maintenance or aftercare is needed.',       'img'=>'images/pages/about/keepsupportclear.png'],
-        ['num'=>'3','title'=>'Plan the work',               'desc'=>'Coordinate delivery, installation, servicing, reports and follow-up around the equipment in use.',       'img'=>'images/shared/line-6000-solutions.jpg'],
-        ['num'=>'4','title'=>'Keep support clear',          'desc'=>'Use service records, parts support and aftercare to guide future service or replacement needs.',        'img'=>'images/shared/repairs-hero.jpg'],
+        ['num'=>'1','title'=>'Review the Operation',    'desc'=>'Review equipment, access, utilities, usage and service history.',                                       'img'=>'images/pages/about/Review%20the%20operation.png'],
+        ['num'=>'2','title'=>'Confirm the Requirement', 'desc'=>'Agree the equipment or service work needed and what it must cover.',                                     'img'=>'images/pages/about/keepsupportclear.png'],
+        ['num'=>'3','title'=>'Plan the Work',           'desc'=>'Coordinate delivery, installation or servicing around access and agreed timing.',                       'img'=>'images/shared/line-6000-solutions.jpg'],
+        ['num'=>'4','title'=>'Keep Records Clear',      'desc'=>'Maintain service history and parts information for future maintenance, repair or replacement.',          'img'=>'images/shared/repairs-hero.jpg'],
     ];
     @endphp
 
@@ -398,19 +334,16 @@
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Partnership</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Global professional laundry equipment<br class="hidden lg:block"> with <span class="text-[#148af4]">Irish service behind&nbsp;it</span>
+                    Global Electrolux<br class="hidden lg:block">Professional scale<br class="hidden lg:block"> <span class="text-[#148af4]">with Irish expertise<br class="hidden lg:block">since 1987</span>
                 </h2>
                 <div class="space-y-5 mb-8">
                     <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                        Irish Laundry Systems is an Authorised Electrolux Professional Partner, giving customers access to a recognised professional laundry range, product knowledge and equipment support through a local Irish team.
-                    </p>
-                    <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                        The partnership reflects a shared standard: professional Electrolux equipment, selected and supported by people who work with commercial laundry equipment every day.
+                        Through a partnership established in 1987, Irish Laundry Systems gives customers local access to Electrolux Professional laundry equipment, genuine parts and product knowledge.
                     </p>
                 </div>
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:text-navy text-sm transition-colors">
-                    About the Electrolux Partnership
+                    Explore the Electrolux Partnership
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
@@ -421,23 +354,24 @@
             <div>
                 <div class="rounded-2xl border border-gray-200 overflow-hidden" style="background:#f0f4f8;">
                     {{-- Logo header row --}}
-                    <div class="flex items-center gap-4 px-6 py-5">
+                    <div class="flex items-center gap-5 px-6 py-6">
                         <img src="/images/logo/electrolux-partner.png"
                              alt="Authorised Electrolux Professional Partner"
-                             class="h-12 w-auto object-contain flex-shrink-0">
-                        <p class="font-body font-bold text-navy text-sm leading-snug">
-                            <strong>Authorised Electrolux Professional Partner</strong>
-                        </p>
+                             class="h-20 lg:h-24 w-auto object-contain flex-shrink-0">
+                        <div>
+                            <p class="font-heading font-bold text-navy text-base leading-snug">Authorised Electrolux Professional Partner</p>
+                            <p class="font-body text-gray-500 text-sm mt-1">Working together since 1987</p>
+                        </div>
                     </div>
                     {{-- Divider --}}
                     <div class="h-px bg-gray-300 mx-6"></div>
-                    {{-- Checklist --}}
+                    {{-- Proof points --}}
                     <ul class="px-6 py-5 space-y-3">
                         @foreach([
-                            'Professional laundry equipment',
-                            'Product knowledge',
-                            'Equipment and parts support',
-                            'Irish installation and aftercare',
+                            'Global Professional Range',
+                            'Genuine Parts Access',
+                            'Manufacturer Knowledge',
+                            'Irish Installation & Aftercare',
                         ] as $item)
                         <li class="flex items-start gap-3">
                             <svg class="w-5 h-5 text-[#148af4] flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -448,49 +382,13 @@
                         </li>
                         @endforeach
                     </ul>
+                    {{-- Global proof line --}}
+                    <div class="px-6 pb-6 pt-1">
+                        <p class="font-body text-gray-500 text-xs leading-relaxed">Solutions sold in 110 countries &middot; 55,000 spare parts in stock &middot; 24&ndash;48-hour worldwide parts dispatch</p>
+                    </div>
                 </div>
             </div>
 
-        </div>
-    </div>
-</section>
-
-<!-- ══════════════════════════════════════════
-     10. RESPONSIBLE EQUIPMENT — compact strip
-══════════════════════════════════════════ -->
-<section class="relative overflow-hidden" style="min-height:540px;">
-    {{-- Background image --}}
-    <img src="{{ asset('images/pages/about/ecovadisbackground.webp') }}"
-         alt="Responsible equipment and sustainability"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    {{-- Dark overlay --}}
-    <div class="absolute inset-0" style="background:rgba(1,30,65,0.45);"></div>
-    {{-- Two-column: logo left, card right --}}
-    <div class="relative z-10 flex items-center px-6 lg:px-20 py-20 gap-10 lg:gap-16" style="min-height:580px;">
-        {{-- Left: EcoVadis medal, huge, outside the card --}}
-        <div class="hidden lg:flex flex-1 items-center justify-center">
-            <img src="{{ asset('images/pages/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
-                 alt="EcoVadis Sustainability Gold 2025"
-                 class="w-[480px] xl:w-[560px] h-auto object-contain drop-shadow-2xl">
-        </div>
-        {{-- Right: dark card --}}
-        <div class="rounded-2xl px-6 sm:px-10 lg:px-14 py-12 lg:py-14 w-full lg:max-w-xl text-center reveal"
-             style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Efficient equipment choices with <span class="text-[#148af4]">lower consumption in&nbsp;mind</span>
-            </h2>
-            <p class="font-body text-white/70 text-base leading-relaxed mb-6">
-                Electrolux Professional laundry technologies can reduce energy, water and detergent use when matched to the right equipment and site. Irish Laundry Systems includes those technologies in equipment advice, installation planning and aftercare.
-            </p>
-            <div class="flex flex-wrap justify-center gap-2.5 mb-6">
-                @foreach(['Energy use', 'Water control', 'Detergent control', 'Electrolux Professional Group credentials'] as $chip)
-                <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
-                @endforeach
-            </div>
-            <p class="font-body text-white/50 text-sm leading-relaxed border-l-2 border-[#148af4]/40 pl-4 text-left">
-                Awards, ratings and sustainability credentials shown in this section relate to Electrolux Professional Group.
-            </p>
         </div>
     </div>
 </section>
@@ -505,29 +403,25 @@
 .ils-history-box:hover .ils-history-img { opacity:1; transform:translateY(-50%) scale(1); pointer-events:auto; }
 </style>
 
-<section class="py-24 lg:py-36 bg-white overflow-hidden">
+<section id="company-history" class="py-24 lg:py-36 bg-white overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start mb-16 reveal">
-            <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Company History</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    From electrical contracting<br class="hidden lg:block"> to <span class="text-[#148af4]">commercial laundry expertise</span>
-                </h2>
-            </div>
-            <div class="lg:pt-9">
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    Irish Laundry Systems grew from practical electrical contracting and Electrolux service experience into a commercial laundry partner for sites that need equipment, maintenance, repairs and aftercare they can rely on.
-                </p>
-            </div>
+        <div class="max-w-4xl mb-16 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Company History</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5 lg:whitespace-nowrap">
+                From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
+                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience into a specialist commercial laundry equipment and service company.
+            </p>
         </div>
 
         @php
         $history = [
-            ['year'=>'1987',       'label'=>'year',    'title'=>'Electrical foundations',                  'body'=>'Maurice McDonagh started the company as an electrical contractor, establishing the practical technical base that still shapes Irish Laundry Systems today.', 'icon'=>'45',                                                                          'img'=>'images/about/about-team.jpg'],
-            ['year'=>'Electrolux', 'label'=>'roots',   'title'=>'Industrial laundry service experience',   'body'=>'Frank McDonagh brought more than 30 years of Electrolux experience, including service management and specialist industrial laundry knowledge.',                                                           'img'=>'images/logo/Electrolux_logo.svg.png', 'imgLogo'=>true],
-            ['year'=>'Mid-1990s',  'label'=>'decade',  'title'=>'Irish Laundry Systems takes shape',       'body'=>'Maurice and Frank combined electrical contracting experience with commercial laundry equipment knowledge to build Irish Laundry Systems.', 'icon'=>'46',                                                                  'img'=>'images/about/about-team.jpg'],
-            ['year'=>'Today',      'label'=>'ongoing', 'title'=>'Commercial laundry support across Ireland','body'=>'Today, Irish Laundry Systems supports commercial laundry sites across equipment supply, rental, maintenance, repairs and aftercare.',                                          'img'=>'images/about/about-engineers.jpg'],
+            ['year'=>'1987',       'label'=>'Foundations',    'title'=>'Electrical Foundations',                     'body'=>'Maurice McDonagh established the electrical contracting business that created the technical base for Irish Laundry Systems.', 'img'=>'images/icons/SAFEELECTRIC.png', 'imgLogo'=>true],
+            ['year'=>'Electrolux', 'label'=>'Service Roots',  'title'=>'Specialist Laundry Knowledge',               'body'=>'Frank McDonagh brought more than 30 years of Electrolux service management and industrial laundry experience to the business.', 'img'=>'images/logo/electrolux-partner.png', 'imgLogo'=>true],
+            ['year'=>'Mid-1990s',  'label'=>'Company Growth', 'title'=>'Irish Laundry Systems Takes Shape',          'body'=>'Maurice and Frank combined electrical contracting, Electrolux product knowledge and commercial laundry service experience to build Irish Laundry Systems.', 'img'=>'images/pages/about/ILSLOGO2.png', 'imgLogo'=>true],
+            ['year'=>'Today',      'label'=>'Ongoing',        'title'=>'Commercial Laundry Expertise Across Ireland','body'=>'Irish Laundry Systems provides commercial laundry equipment and long-term service for customers across Ireland.', 'img'=>'images/about/about-engineers.jpg'],
         ];
         @endphp
 
@@ -558,15 +452,56 @@
             @endforeach
         </div>
 
-        <p class="font-body text-gray-400 text-xs mt-10 reveal">Irish Laundry Systems is the trading name of D.S.B. Electrical (Templeogue) Limited.</p>
 
+    </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════
+     10. RESPONSIBLE EQUIPMENT — compact strip
+══════════════════════════════════════════ -->
+<section class="relative overflow-hidden">
+    {{-- Background image --}}
+    <img src="{{ asset('images/pages/about/ecovadisbackground.webp') }}"
+         alt="Responsible equipment and sustainability"
+         class="absolute inset-0 w-full h-full object-cover object-center">
+    {{-- Dark overlay --}}
+    <div class="absolute inset-0" style="background:rgba(1,30,65,0.45);"></div>
+    {{-- Two-column: medal left, card right --}}
+    <div class="relative z-10 flex items-center px-6 lg:px-20 py-12 lg:py-14 gap-10 lg:gap-16">
+        {{-- Left: EcoVadis medal --}}
+        <div class="hidden lg:flex flex-1 items-center justify-center">
+            <img src="{{ asset('images/pages/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
+                 alt="EcoVadis Sustainability Gold 2025"
+                 class="w-[340px] xl:w-[400px] h-auto object-contain drop-shadow-2xl">
+        </div>
+        {{-- Right: dark card --}}
+        <div class="rounded-2xl px-6 sm:px-10 lg:px-12 py-10 lg:py-11 w-full lg:max-w-xl text-center reveal"
+             style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
+            <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-tight text-balance mb-4">
+                Responsible equipment choices backed by<br class="hidden lg:block"> <span class="text-[#148af4]">recognised sustainability performance</span>
+            </h2>
+            <p class="font-body text-white/70 text-base leading-relaxed mb-6">
+                Irish Laundry Systems considers energy, water and detergent use when advising on equipment, supported by Electrolux Professional technologies and the Group&rsquo;s independently assessed sustainability performance.
+            </p>
+            <div class="flex flex-wrap justify-center gap-2.5 mb-5">
+                @foreach(['Energy Efficiency', 'Water Efficiency', 'Dosing Control'] as $chip)
+                <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
+                @endforeach
+            </div>
+            <p class="font-body text-white/80 text-sm font-bold mb-3">Electrolux Professional Group &middot; EcoVadis Gold 2025 &middot; Top 5% of companies assessed</p>
+            <p class="font-body text-white/50 text-xs leading-relaxed border-l-2 border-[#148af4]/40 pl-4 text-left">
+                EcoVadis rating and sustainability credentials shown relate to Electrolux Professional Group.
+            </p>
+        </div>
     </div>
 </section>
 
 <!-- ══════════════════════════════════════════
      12. LONG-TERM TRUST / TESTIMONIALS
 ══════════════════════════════════════════ -->
-@include('components.testimonials', ['heading' => 'Chosen by sites where laundry equipment<br><span class="text-[#148af4]">cannot be treated as an afterthought</span>', 'light' => false])
+@include('components.testimonials', ['eyebrow' => 'Customer Experience', 'heading' => 'What customers say about<br><span class="text-[#148af4]">working with Irish Laundry Systems</span>', 'subheading' => '', 'light' => false])
 
 @include('components.proof-bar')
 
@@ -576,10 +511,10 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'about_cta',
     'eyebrow'    => 'Talk to Irish Laundry Systems',
-    'heading'    => 'Ready to talk about <span class="text-[#148af4]">equipment, service or&nbsp;aftercare</span>?',
-    'body'       => 'Share what your site needs, from equipment advice or rental to Preventive Maintenance, repairs and aftercare. Irish Laundry Systems will point the request to the right equipment, rental, service or aftercare support.',
-    'formTitle'  => 'Request a Service Assessment',
-    'formIntro'  => 'We aim to respond within 24 hours.',
+    'heading'    => 'Tell us what your laundry<br class="hidden lg:block">operation needs from<br class="hidden lg:block"> <span class="text-[#148af4]">equipment to aftercare</span>',
+    'body'       => 'Share the main details about your site and what you need help with. Our team will review the enquiry and contact you directly.',
+    'formTitle'  => 'Equipment & Service Enquiry',
+    'formIntro'  => 'Provide the main details below. We aim to respond within 24 hours.',
     'buttonText' => 'Request Service Assessment',
 ])
 
