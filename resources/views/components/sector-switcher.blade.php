@@ -1,9 +1,14 @@
 @props([
+    'heading'         => 'Care shaped around <span class="text-[#148af4]">real operating environments</span>',
     'intro'           => 'Different sites carry different pressures. The right commercial laundry care depends on hygiene requirements, linen flow, staffing, throughput, installed equipment, budget pressure and service needs.',
     'healthcareBody'  => 'Care for healthcare laundry environments where hygiene process, room flow and equipment continuity affect daily service.',
     'careBody'        => 'Practical help for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
     'hospitalityBody' => 'Engineering care for guest-facing sites where linen availability, finishing quality, turnaround and response time affect the wider business.',
     'commercialBody'  => 'Care for higher-throughput laundry sites where output, lifecycle cost and engineering response carry more operational weight.',
+    'healthcareCta'   => 'Request Healthcare Assessment',
+    'careCta'         => 'View Care Facility Support',
+    'hospitalityCta'  => 'View Hospitality Support',
+    'commercialCta'   => 'Discuss Site Requirements',
     'commercialImg'   => '/images/shared/line-6000-solutions.jpg',
 ])
 {{--
@@ -20,7 +25,7 @@
             <div class="max-w-3xl">
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">Sectors</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                    Care shaped around <span class="text-[#148af4]">real operating environments</span>
+                    {!! $heading !!}
                 </h2>
             </div>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-5xl">
@@ -45,7 +50,7 @@
                         {{ $healthcareBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
-                        Request Healthcare Assessment
+                        {{ $healthcareCta }}
                     </span>
                 </div>
             </a>
@@ -63,7 +68,7 @@
                         {{ $careBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
-                        View Care Facility Support
+                        {{ $careCta }}
                     </span>
                 </div>
             </a>
@@ -82,7 +87,7 @@
                         {{ $hospitalityBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
-                        View Hospitality Support
+                        {{ $hospitalityCta }}
                     </span>
                 </div>
             </a>
@@ -101,7 +106,7 @@
                         {{ $commercialBody }}
                     </p>
                     <span class="inline-flex items-center justify-center bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-4 py-2 rounded-md text-xs transition-colors duration-200 whitespace-nowrap">
-                        Discuss Site Requirements
+                        {{ $commercialCta }}
                     </span>
                 </div>
             </a>

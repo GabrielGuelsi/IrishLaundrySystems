@@ -36,7 +36,7 @@
 
         <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span style="color:{{ $accentFirst ? '#011E41' : '#ffffff' }};">{!! $headingLine1 !!}</span>
-            <span style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
+            <br class="hidden lg:block"><span style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-2xl">
@@ -66,7 +66,7 @@
                 <span class="flex-shrink-0 flex items-center justify-center" style="width:3.5rem;height:3.5rem;">
                     <img src="{{ $feat['img'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
                          class="max-w-full max-h-full object-contain"
-                         style="{{ isset($feat['img']) ? 'filter:brightness(0) invert(1);' : '' }}" alt="">
+                         style="{{ isset($feat['img']) ? 'filter:brightness(0) invert(1);' : '' }}{{ $feat['iconStyle'] ?? '' }}" alt="">
                 </span>
                 <span class="font-body text-white text-sm font-bold leading-tight">{{ $feat['label'] }}</span>
             </div>

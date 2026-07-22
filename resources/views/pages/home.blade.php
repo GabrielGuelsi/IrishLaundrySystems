@@ -40,11 +40,11 @@
             <div class="max-w-4xl">
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
-                    Commercial laundry <br class="hidden lg:block"><span class="text-[#148af4]">engineering support</span> for sites <br class="hidden lg:block">where downtime carries real&nbsp;cost
+                    Commercial laundry equipment <br class="hidden lg:block">and support <span class="text-[#148af4]">planned <br class="hidden lg:block">around your site</span>
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supports commercial laundry sites with equipment supply, rental options, maintenance, repairs and aftercare from one experienced team, helping operators control costs, reduce disruption and keep laundry&nbsp;moving.
+                    Irish Laundry Systems supplies, installs and supports commercial laundry equipment across Ireland, with purchase and Equipment Rental options.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
@@ -52,9 +52,9 @@
                        class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 whitespace-nowrap">
                         Request Service Assessment
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="{{ route('equipment') }}"
                        class="inline-flex items-center justify-center border-2 border-white hover:border-white/70 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
-                        Talk to Our Team
+                        Explore Equipment
                     </a>
                 </div>
 
@@ -77,26 +77,20 @@
 <!-- Electrolux Partner Strip -->
 @include('components.partner-strip')
 
-<!-- 1.5 INTRO / BRIDGE — Built Around the Operation -->
+<!-- 1.5 INTRO / BRIDGE — Operational Performance -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around the Operation</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Laundry support built around <br class="hidden lg:block"><span class="text-[#148af4]">the site, the equipment</span><br class="hidden lg:block"> and daily demand
+                    Your laundry setup <br class="hidden lg:block">affects <span class="text-[#148af4]">cost control <br class="hidden lg:block">and daily turnaround</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Irish Laundry Systems starts with the site: the room, the workload, the equipment in use and the pressure on daily output. From there, we guide each customer toward the right service support, rental option, equipment quote or aftercare.
+                    Equipment choice, room layout and ongoing care all affect how the laundry performs in daily use.
                 </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed">
-                    That gives owners and operators a clearer next step when laundry affects cost control, staffing pressure, service continuity and the long-term value of the equipment they depend on every day.
-                </p>
-                <a href="{{ route('services') }}" class="inline-block font-body font-bold text-navy hover:text-navy/80 text-lg leading-snug transition-colors mt-2">
-                    See service options for your site &rarr;
-                </a>
             </div>
         </div>
     </div>
@@ -105,86 +99,93 @@
 <!-- 3. THREE CORE PATHWAYS -->
 @include('components.services-cards', [
     'eyebrow'          => 'Services',
-    'headingLead'      => 'Choose the ',
-    'headingHighlight' => 'right service support',
-    'headingTrail'     => ' for your site',
+    'headingLead'      => 'Support for urgent needs, planned care ',
+    'headingHighlight' => 'and ongoing equipment use',
+    'headingTrail'     => '',
     'highlightClass'   => 'text-[#148af4]',
-    'intro'            => 'Four clear service options to manage breakdowns, plan maintenance, make rental decisions easier and keep equipment running.',
+    'intro'            => '',
     'introClass'       => '',
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-Outs',     'body' => 'Engineer-led response when faults, breakdowns or performance issues put laundry output, staffing and service continuity under pressure.',          'cta' => 'Request Call-Out',         'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',             'alt' => 'Repairs and Call-Outs',   'pos' => 'center 40%'],
-        ['title' => 'Preventive Maintenance',  'body' => 'Planned maintenance contracts support better control of service timing, equipment condition and repair pressure over time.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
-        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement pressure, expansion or continuity, with equipment installed, maintained and easier to manage over time.',      'cta' => 'See Rental Options',       'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
-        ['title' => 'Support & Aftercare',     'body' => 'Follow-up care that keeps service history and next steps clear after repairs, rental, contracts, inspection or installation.',                       'cta' => 'Explore Support & Aftercare', 'href' => route('parts-aftercare'),  'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
+        ['title' => 'Repairs & Call-Outs',     'body' => 'Engineer-led fault diagnosis and repair to reduce downtime and return equipment to use.',          'cta' => 'Request Call-Out',         'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',             'alt' => 'Repairs and Call-Outs',   'pos' => 'center 40%'],
+        ['title' => 'Preventive Maintenance',  'body' => 'Planned servicing helps reduce breakdown risk and downtime while keeping equipment in better condition.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
+        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement or expansion, with equipment installed and maintained.',      'cta' => 'Explore Rental Options',   'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
+        ['title' => 'Support & Aftercare',     'body' => 'Ongoing advice after installation or repair, with clear information on servicing, parts and future equipment needs.',                       'cta' => 'View Aftercare',           'href' => route('parts-aftercare'),  'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
     ],
 ])
 
-<!-- 3.5 PLANNING STRIP — Designed around your site, workflow and capacity -->
+<!-- 3.5 EQUIPMENT PLANNING STRIP -->
 <div style="background-color:#148af4; margin-top:-1px; margin-bottom:-1px;">
     @include('components.cta-combined-banner', [
-        'eyebrow'  => 'Planning & Support',
-        'heading'  => 'Designed around your room, <span style="color:#011E41;">workload and budget</span> before money is&nbsp;spent',
-        'body'     => 'Poor equipment fit, weak layout and undersized capacity can create avoidable spend after installation. <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the room, workload and support needs before money is spent, so the site can make a better decision from the start.',
+        'eyebrow'  => 'Equipment Planning',
+        'heading'  => 'Plan capacity and layout around<br class="hidden lg:block"> <span style="color:#011E41;">daily laundry demand</span>',
+        'body'     => 'We assess available space, required capacity and installation needs to prepare a practical equipment plan for your site and budget.',
         'features' => [
-            ['img' => '/images/icons/home-planning-spend.png', 'label' => 'Avoid wasted<br>spend'],
-            ['img' => '/images/icons/home-planning-fit.png', 'label' => 'Right-fit<br>equipment'],
-            ['img' => '/images/icons/home-planning-rework.png', 'label' => 'Reduce costly<br>rework'],
+            ['img' => '/images/icons/home-planning-fit.png', 'label' => 'Space<br>Efficiency'],
+            ['img' => '/images/icons/home-maintenance-value.png', 'label' => 'Right<br>Capacity'],
+            ['img' => '/images/icons/home-planning-spend.png', 'label' => 'Cost<br>Control'],
         ],
-        'ctaText'  => 'Talk to Our Team',
+        'ctaText'  => 'Plan Your Setup',
     ])
 </div>
 
 <!-- 4. SECTOR ROUTING TABS -->
  
 @include('components.sector-switcher', [
-    'intro'           => 'Different sites carry different cost, staffing and service pressures. The right commercial laundry care depends on hygiene requirements, daily laundry demand, equipment in use, budget pressure and day-to-day operating needs.',
-    'healthcareBody'  => 'Care for healthcare laundry environments where hygiene process, room flow, equipment continuity and service pressure affect daily operations.',
-    'careBody'        => 'Practical support for care environments where daily laundry demand, smaller teams and planned maintenance need to stay manageable.',
-    'hospitalityBody' => 'Support for guest-facing sites where linen availability, finishing quality, turnaround and operating cost affect the wider business.',
-    'commercialBody'  => 'Care for higher-throughput laundry sites where output, running cost and engineering response carry more operational weight.',
+    'heading'         => 'Commercial laundry expertise for <span class="text-[#148af4]">healthcare, care facilities, hospitality and industry</span>',
+    'intro'           => 'Explore equipment and support for healthcare, care facilities, hospitality and commercial &amp; industrial sites.',
+    'healthcareBody'  => 'For hospitals and healthcare facilities managing hygiene requirements, linen handling and clean linen availability.',
+    'careBody'        => 'For care homes and residential settings managing resident clothing, bedding and regular daily loads.',
+    'hospitalityBody' => 'For hotels and accommodation providers where guest-ready linen supports room presentation and turnaround.',
+    'commercialBody'  => 'For commercial and industrial sites managing mixed loads, higher volumes and equipment uptime.',
+    'healthcareCta'   => 'Explore Healthcare',
+    'careCta'         => 'Explore Care Facilities',
+    'hospitalityCta'  => 'Explore Hospitality',
+    'commercialCta'   => 'Explore Commercial Laundry',
     'commercialImg'   => '/images/pages/home/0O3A9810_72dpi.jpg',
 ])
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => 'Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span>',
+    'heading'    => 'Commercial laundry equipment for <span class="text-[#148af4]">washing, drying and finishing</span>',
     'textMinH'   => '160px',
-    'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
+    'subheading' => 'Browse the main equipment categories, with more options available across the full range.',
     'equipment' => [
-        ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily wash capacity, steady performance and broader professional laundry needs.', 'box' => 270, 'mb' => -35],
-        ['img' => 'TD6-7', 'src' => '/images/pages/dryers/TD6-7.jpg', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For daily drying demand, drying control and steady turnaround through the day.',                          'box' => 245],
-        ['img' => 'DC6-4', 'src' => '/images/pages/drying-cabinets/DC6-4.jpg', 'ext' => 'jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, bulky items and specialist fabric care.', 'box' => 260, 'mb' => 0],
-        ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For finishing, presentation and stronger output across linen-heavy environments.'],
+        ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily commercial washing where capacity, cycle control and fabric care all matter.', 'cta' => 'View Washing Machines', 'route' => ['equipment.category', ['category' => 'commercial-washers']], 'box' => 300, 'mb' => -35],
+        ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For regular drying demand where fabric care and steady turnaround matter.', 'cta' => 'View Dryers', 'route' => ['equipment.category', ['category' => 'tumble-dryers']], 'box' => 300],
+        ['img' => 'DC6-15WW', 'src' => '/images/pages/drying-cabinets/Drying Cabinets - Heat PumpDC6-15WW.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, outdoor wear and specialist fabrics.', 'cta' => 'View Drying Cabinets', 'route' => ['equipment.category', ['category' => 'drying-cabinets']], 'box' => 300, 'mb' => 0],
+        ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For sheets, table linen and other flatwork requiring a consistent professional finish.', 'cta' => 'View Ironers', 'route' => ['equipment.category', ['category' => 'ironers']]],
     ],
 ])
 
 <!-- 6.5 EQUIPMENT RENTAL STRIP — Keep laundry moving with capital control -->
 @include('components.why-choose-strip', [
-    'eyebrow'  => 'Rental Options',
-    'body'     => 'Rental gives your site a practical option for replacement, expansion or continuity without one large purchase upfront. Equipment, installation and maintenance are included under the rental agreement, making budget planning easier to manage.',
+    'eyebrow'      => 'Equipment Rental',
+    'headingLine1' => 'Commercial laundry equipment',
+    'headingLine2' => '<span style="color:#148af4;">with lower upfront cost</span>',
+    'body'         => 'For replacement or expansion, Equipment Rental includes equipment, installation and maintenance under the rental agreement.',
     'features' => [
         [
-            'icon' => '<img src="/images/icons/home-rental-upfront.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);" alt="">',
-            'label' => 'Lower upfront<br>cost',
+            'icon' => '<img src="/images/icons/home-rental-upfront.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);transform:scale(1.068);" alt="">',
+            'label' => 'Lower<br>Outlay',
         ],
         [
-            'icon' => '<img src="/images/icons/home-rental-purchase.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);" alt="">',
-            'label' => 'Avoid one large<br>purchase',
+            'icon' => '<img src="/images/icons/243.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);transform:scale(0.936);" alt="">',
+            'label' => 'Planned<br>Payments',
         ],
         [
-            'icon' => '<img src="/images/icons/home-rental-maintained.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);" alt="">',
-            'label' => 'Installed and<br>maintained',
+            'icon' => '<img src="/images/icons/healthcarerentalstrip3.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);transform:scale(0.910) translateY(-1.7%);" alt="">',
+            'label' => 'Maintenance<br>Included',
         ],
     ],
 ])
 
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Trust',
-    'heading'    => 'What our customers say',
-    'subheading' => 'Irish Laundry Systems is trusted by organisations that need clear communication, reliable support and people who know the equipment when laundry performance affects cost, continuity and day-to-day operations.',
+    'eyebrow'    => 'Customer Feedback',
+    'heading'    => 'What <span style="color:#148af4;">our customers say</span>',
+    'subheading' => 'Feedback from organisations across Ireland on working with Irish Laundry Systems.',
 ])
 
 <!-- TRUST ANCHORS — proof / "Trusted by" logo strip -->
@@ -195,24 +196,24 @@
 <!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Preventive Maintenance & Aftercare',
-    'headingLine1' => 'Keep service costs,',
-    'headingLine2' => 'maintenance and next steps clear',
-    'body'         => 'Planned maintenance and aftercare keep service history, equipment condition and follow-up needs clear, giving teams a better way to reduce surprise repair costs, protect equipment value and limit disruption over time.',
+    'headingLine1' => 'Keep maintenance planned',
+    'headingLine2' => 'and equipment care organised',
+    'body'         => 'Preventive servicing, clear records and parts support help teams manage equipment throughout its working life.',
     'features'     => [
-        ['img' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce surprise repair costs'],
-        ['img' => '/images/icons/home-maintenance-value.png', 'label' => 'Protect equipment value'],
-        ['img' => '/images/icons/home-maintenance-disruption.png', 'label' => 'Minimise disruption'],
+        ['img' => '/images/icons/244.png', 'label' => 'Fewer Breakdowns', 'iconStyle' => 'transform:scale(1.039);'],
+        ['img' => '/images/icons/home-planning-spend.png', 'label' => 'Cost Control', 'iconStyle' => 'transform:scale(0.996) translateY(-3.6%);'],
+        ['img' => '/images/icons/151.png', 'label' => 'Parts Support', 'iconStyle' => 'transform:scale(0.851) translateY(-1.2%);'],
     ],
 ])
 
 <!-- 8. FINAL CTA + SHORT FORM -->
 @include('components.cta-downtime-form', [
     'pageSource' => 'homepage_cta',
-    'eyebrow'    => 'Next Step',
-    'heading'    => 'Start with the <span class="text-[#148af4]">right next step</span>',
-    'body'       => 'Tell us what is under pressure, what equipment is involved and what needs to happen next. Irish Laundry Systems will guide you toward the right service, rental, equipment or aftercare support.',
+    'eyebrow'    => 'Request an Assessment',
+    'heading'    => 'Tell us what you need<br class="hidden lg:block"> <span class="text-[#148af4]">from your commercial laundry</span>',
+    'body'       => 'Share whether your enquiry concerns equipment, rental, maintenance, repair or aftercare, together with the relevant site and equipment details.',
     'formTitle'  => 'Request a Service Assessment',
-    'formIntro'  => 'Share the details that make the next step clearer.',
+    'formIntro'  => 'Choose the enquiry type and provide the relevant site and equipment details.',
     'buttonText' => 'Request Service Assessment',
 ])
 

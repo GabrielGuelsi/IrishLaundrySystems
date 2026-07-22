@@ -495,7 +495,7 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             Match the washer, dryer, detergents and finishing setup to daily garment volume, room conditions and aftercare before installation.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-2 mb-7">
             @foreach([
                 ['icon' => 'aftercarehealthcarestrip2', 'label' => 'System<br>size', 'sc' => 'scale-[0.932] translate-y-[0.3%]'],
                 ['icon' => '231', 'label' => 'Drying<br>fit', 'sc' => 'scale-[0.967] translate-y-[1%]'],
