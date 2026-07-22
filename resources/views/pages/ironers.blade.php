@@ -284,7 +284,7 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             ILS reviews working width, heating, access and output needs before recommending the right ironer and installation approach.
         </p>
-        <div class="flex items-center flex-wrap gap-x-5 gap-y-2 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-2 mb-7">
             @foreach([
                 ['icon' => '56', 'label' => 'Room<br>Fit', 'sc' => 'scale-[1.035] translate-y-[2.2%]'],
                 ['icon' => '225', 'label' => 'Linen<br>Volume', 'sc' => 'scale-[1.025] translate-y-[0.4%]'],
@@ -629,12 +629,12 @@
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
-                        ['icon' => '189', 'label' => 'Service<br>History'],
-                        ['icon' => 'healthcarerentalstrip3', 'label' => 'Planned<br>Care'],
-                        ['icon' => '235', 'label' => 'Parts<br>Access'],
+                        ['icon' => '189', 'label' => 'Service<br>History', 'sc' => 'scale-[0.823] -translate-y-[3.5%]'],
+                        ['icon' => 'healthcarerentalstrip3', 'label' => 'Planned<br>Care', 'sc' => 'scale-[0.910] -translate-y-[1.7%]'],
+                        ['icon' => '235', 'label' => 'Parts<br>Access', 'sc' => 'scale-[1.174]'],
                     ] as $pt)
-                    <span class="flex items-center gap-5 flex-shrink-0">
-                        <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain">
+                    <span class="flex items-center gap-2 flex-shrink-0">
+                        <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
                         <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
                     </span>
                     @endforeach

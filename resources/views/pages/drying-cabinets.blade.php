@@ -483,14 +483,14 @@
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             ILS checks access, ventilation, available space and drying demand before recommending the cabinet and installation approach.
         </p>
-        <div class="flex items-center flex-wrap gap-x-6 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
-                ['icon' => '195', 'label' => 'Item type', 'iconClass' => 'h-14'],
-                ['icon' => '56', 'label' => 'Room fit'],
-                ['icon' => '196', 'label' => 'Cabinet choice'],
+                ['icon' => '195', 'label' => 'Item type', 'sc' => 'scale-[1.324] translate-y-[2.1%]'],
+                ['icon' => '56', 'label' => 'Room fit', 'sc' => 'scale-[1.054] translate-y-[1.7%]'],
+                ['icon' => '196', 'label' => 'Cabinet choice', 'sc' => 'scale-[0.991]'],
             ] as $pt)
-            <span class="flex items-center gap-5 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="{{ $pt['iconClass'] ?? 'h-14' }} w-auto object-contain">
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
             </span>
             @endforeach

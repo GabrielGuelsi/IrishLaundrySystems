@@ -333,7 +333,7 @@
             <span class="block lg:whitespace-nowrap">Irish Laundry Systems reviews room fit, airflow, utilities, access and</span>
             <span class="block lg:whitespace-nowrap">stacked options before recommending dryer capacity.</span>
         </p>
-        <div class="flex items-center flex-wrap gap-x-6 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
                 ['icon' => 'home-planning-fit',  'label' => 'Room fit', 'sc' => 'scale-[1.035] translate-y-[2.2%]'],
                 ['icon' => '219', 'label' => 'Airflow', 'sc' => 'scale-[1.025] translate-y-[0.4%]'],
