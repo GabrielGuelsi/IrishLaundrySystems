@@ -60,11 +60,11 @@
                 <p class="ep-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Authorised Electrolux Professional Partner</p>
 
                 <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
-                    Electrolux Professional strength, delivered with <span class="text-[#148af4]">Irish engineering&nbsp;support</span>
+                    Electrolux Professional strength,<br class="hidden lg:block"> delivered with <span class="text-[#148af4]">Irish engineering&nbsp;expertise</span>
                 </h1>
 
                 <p class="ep-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> helps businesses choose, install, maintain and support Electrolux Professional commercial laundry equipment with confidence. Built on more than 30 years of Electrolux Professional equipment and service experience, our partnership gives customers access to a major professional laundry range, genuine parts support and local engineers who know the equipment.
+                    Irish Laundry Systems supplies Electrolux Professional commercial laundry equipment across Ireland, with local installation and long-term service.
                 </p>
 
                 <div class="ep-hero-btns flex flex-row flex-wrap gap-4">
@@ -98,35 +98,39 @@
 
         <div class="mb-12 lg:mb-14 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why the Partnership Matters</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                More than a badge. A stronger way to <span class="text-[#148af4]">protect your laundry&nbsp;operation</span>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance lg:whitespace-nowrap">
+                What the partnership brings to <span class="text-[#148af4]">your laundry operation</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
-                The right equipment partner affects more than the purchase. It can shape running costs, downtime risk, repair confidence and the quality of support available after installation. Irish Laundry Systems works with Electrolux Professional so customers can make commercial laundry decisions with a stronger range, clearer advice and local engineering support behind them.
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
+                Access the Electrolux Professional range, product knowledge, genuine parts and local engineering through Irish Laundry Systems.
             </p>
         </div>
 
         @php
         $whyCards = [
             [
-                'title' => 'Equipment choice',
-                'body'  => 'Access the right range of professional laundry equipment, matched to the room, workload and budget.',
-                'icon'  => '<rect x="4.5" y="3" width="15" height="18" rx="2"/><circle cx="12" cy="13" r="4.25"/><path stroke-linecap="round" d="M7 6.5h3"/>',
+                'title' => 'Equipment Range',
+                'body'  => 'Professional laundry equipment across different capacities and applications.',
+                'img'   => '175',
+                'iconScale' => 'scale-[1.2]',
             ],
             [
-                'title' => 'Brand confidence',
-                'body'  => 'Backed by Electrolux Professional quality, engineered for demanding commercial use.',
-                'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>',
+                'title' => 'Product Knowledge',
+                'body'  => 'Advice informed by Electrolux Professional training, product updates and technical resources.',
+                'img'   => '245',
+                'iconScale' => 'scale-[1.037]',
             ],
             [
-                'title' => 'Parts support',
-                'body'  => 'Genuine parts, available locally to keep equipment performing at its best.',
-                'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.24-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>',
+                'title' => 'Genuine Parts Access',
+                'body'  => 'Access genuine parts through the Electrolux Professional network for service and repair.',
+                'img'   => '126',
+                'iconScale' => 'scale-[1.119]',
             ],
             [
-                'title' => 'Local service',
-                'body'  => 'Irish engineering expertise providing fast, reliable support across Ireland.',
-                'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>',
+                'title' => 'Irish Engineering',
+                'body'  => 'Local installation, maintenance and aftercare from people who know the equipment.',
+                'img'   => 'pmc-gain-87',
+                'iconScale' => 'scale-[1.027]',
             ],
         ];
         @endphp
@@ -135,7 +139,11 @@
             @foreach ($whyCards as $i => $card)
             <div class="reveal group py-8 lg:py-0 border-t border-gray-200 first:border-t-0 lg:border-t-0 lg:border-l lg:first:border-l-0 lg:px-10 lg:first:pl-0 lg:last:pr-0 lg:grid lg:grid-rows-subgrid lg:row-span-3"
                  style="transition-delay:{{ $i * 80 }}ms;">
+                @if(!empty($card['img']))
+                <img src="/images/icons/{{ $card['img'] }}.png" alt="" aria-hidden="true" class="w-16 h-16 lg:w-24 lg:h-24 object-contain mb-6 transition-transform duration-300 group-hover:-translate-y-1 {{ $card['iconScale'] ?? '' }}">
+                @else
                 <svg class="w-11 h-11 lg:w-12 lg:h-12 text-navy mb-7 transition-all duration-300 group-hover:-translate-y-1 group-hover:text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
+                @endif
                 <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-3 leading-snug text-balance self-start transition-colors duration-300 group-hover:text-[#148af4]">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
             </div>
@@ -154,15 +162,15 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Advantage</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Range</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    A serious <span class="text-[#148af4]">professional laundry range</span> behind the local advice
+                    Professional laundry equipment across<br class="hidden lg:block"> <span class="text-[#148af4]">washing, drying and finishing</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed text-pretty mb-8 max-w-xl">
-                    Electrolux Professional equipment is built for performance, efficiency and reliability in the most demanding environments. With Irish Laundry Systems by your side, you get expert advice, installation and ongoing support from a local team that understands your operation.
+                    Explore equipment for different capacities, sectors and specialist laundry applications.
                 </p>
                 <a href="{{ route('equipment') }}" class="group inline-flex items-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-black/25">
-                    Explore the range
+                    Explore the Range
                     <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
             </div>
@@ -181,11 +189,11 @@
                 @foreach([
                     'Washers'          => 'washers',
                     'Dryers'           => 'tumble-dryers',
-                    'Barrier washers'  => 'barrier-washers',
+                    'Barrier Washers'  => 'barrier-washers',
                     'Ironers'          => 'ironers',
-                    'Drying cabinets'  => 'drying-cabinets',
-                    'myPRO / myPRO XL' => 'semi-professional',
-                    'Dosing systems'   => 'accessories',
+                    'Drying Cabinets'  => 'drying-cabinets',
+                    'Semi Professional'=> 'semi-professional',
+                    'Dosing Systems'   => 'accessories',
                     'Accessories'      => 'accessories',
                 ] as $label => $slug)
                 <a href="{{ route('equipment.category', $slug) }}" class="relative font-body font-bold text-white/70 hover:text-white text-sm transition-colors after:content-[''] after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-[#148af4] after:transition-all after:duration-300 hover:after:w-full">{{ $label }}</a>
@@ -197,163 +205,77 @@
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
-     5. ILS LOCAL DELIVERY — 4 stat cards
+     5. PROFESSIONAL LAUNDRY HERITAGE — regular strip (image pinned right + fade)
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="relative overflow-hidden" style="background-color:#148af4;">
+    {{-- image pinned right, gradient fade toward the text column --}}
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
+        <img src="/images/shared/professional-laundry-heritage-strip.jpg" alt="Electrolux Professional laundry heritage supported by Irish Laundry Systems"
+             loading="lazy" decoding="async" class="w-full h-full object-cover" style="object-position:center center;">
+        <div class="absolute inset-0" style="background:linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 18%, rgba(20,138,244,0.35) 55%, transparent 100%);"></div>
+    </div>
 
-        <div class="mb-12 lg:mb-14 reveal max-w-4xl">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Local Irish Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                Global equipment strength, <span class="text-[#148af4]">local responsibility</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
-                The Electrolux Professional name gives customers confidence in the equipment. Irish Laundry Systems gives them confidence in the work around it: advice, installation planning, rental where suitable, maintenance, repairs, parts support and aftercare across Dublin and Ireland.
-            </p>
-        </div>
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[62%]">
+        <p class="font-body font-bold text-white/70 uppercase tracking-[0.22em] text-xs mb-3">Professional Laundry Heritage</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[42px] leading-tight mb-4 text-balance">
+            More than 120 years of<br class="hidden lg:block"> professional laundry innovation,<br class="hidden lg:block"> <span style="color:#011E41;">supported in Ireland since 1987</span>
+        </h2>
+        <p class="font-body text-white/90 text-base leading-relaxed mb-6 text-pretty max-w-xl">
+            Electrolux Professional brings generations of laundry development and a global Customer Care network. Irish Laundry Systems brings local product knowledge, genuine parts access, installation and aftercare.
+        </p>
 
-        @php
-        $localCards = [
-            ['label' => '1987',     'title' => 'Irish engineering roots',          'body' => 'Irish Laundry Systems grew from practical electrical contracting and commercial laundry equipment experience.'],
-            ['label' => '30+ years','title' => 'Electrolux Professional experience','body' => 'The business is built on more than 30 years of Electrolux Professional equipment and service knowledge.'],
-            ['label' => '100+',     'title' => 'Clients supported',                'body' => 'ILS supports commercial laundry sites across healthcare, care, hospitality and commercial operations.'],
-            ['label' => 'One team', 'title' => 'Advice to aftercare',              'body' => 'Customers can speak to one local team about equipment choice, installation, rental, Preventive Maintenance, repairs and aftercare.'],
-        ];
-        @endphp
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5">
-            @foreach ($localCards as $i => $card)
-            <article class="reveal ep-lift group bg-bg rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col" style="transition-delay:{{ $i * 60 }}ms;">
-                <span class="font-heading font-bold text-navy text-3xl lg:text-4xl leading-none mb-4 transition-colors duration-300 group-hover:text-[#148af4]">{{ $card['label'] }}</span>
-                <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-2 leading-snug">{{ $card['title'] }}</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
-            </article>
+        <div class="flex flex-wrap gap-x-10 gap-y-4 mb-6">
+            @foreach([
+                ['stat' => '120+', 'label' => 'Years in Professional Laundry'],
+                ['stat' => '110',  'label' => 'Countries'],
+                ['stat' => '55,000+', 'label' => 'Spare Parts'],
+            ] as $proof)
+            <div>
+                <div class="font-heading font-bold text-white text-3xl lg:text-4xl leading-none mb-1">{{ $proof['stat'] }}</div>
+                <div class="font-body text-white/80 text-sm leading-tight">{{ $proof['label'] }}</div>
+            </div>
             @endforeach
         </div>
+
+        <a href="{{ route('request-assessment') }}" class="group inline-flex items-center justify-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-black/25">
+            Discuss Electrolux Equipment
+            <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+        </a>
     </div>
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
-     6. DOWNTIME CONFIDENCE — navy strip with image
-     ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative bg-navy overflow-hidden">
-    <div class="grid grid-cols-1 lg:grid-cols-2">
-
-        {{-- Photo --}}
-        <div class="group relative min-h-[320px] lg:min-h-[540px] overflow-hidden">
-            <img src="/images/shared/customer-care-line6000.jpg" alt="Irish Laundry Systems engineer supporting Electrolux Professional equipment"
-                 loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-transform duration-[700ms] ease-out group-hover:scale-105">
-            <div class="absolute inset-0 lg:hidden" style="background:rgba(1,30,65,0.45);"></div>
-        </div>
-
-        {{-- Text --}}
-        <div class="relative flex items-center px-6 sm:px-10 lg:px-16 py-16 lg:py-24">
-            <div class="ep-dotgrid absolute inset-0 opacity-25" aria-hidden="true"></div>
-            <div class="relative max-w-xl reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Downtime Is Not An Option</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Protect uptime with <span class="text-[#148af4]">the right support</span> behind the&nbsp;equipment
-                </h2>
-                <p class="font-body text-blue-200 text-base leading-relaxed mb-8 text-pretty">
-                    A stopped washer, dryer or ironer can delay linen and interrupt the day’s operation. As an Authorised Electrolux Professional Partner, Irish Laundry Systems uses manufacturer support channels, genuine parts access and decades of equipment knowledge to help you reach the right repair decision faster.
-                </p>
-                <a href="{{ route('request-assessment') }}" class="group inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-[#148af4]/30">
-                    Request Service Assessment
-                    <svg class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-{{-- ════════════════════════════════════════════════════════════════════════
-     7. ILS EQUIPMENT CARE — 6 pillars (What You Gain style)
-     ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-
-            {{-- Left: heading + image --}}
-            <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Care</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Equipment support from <span class="text-[#148af4]">advice to&nbsp;aftercare</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty mb-8">
-                    Customers do not just need equipment supplied. They need the right machine, installed properly, maintained well, repaired correctly and supported when the next decision appears. Irish Laundry Systems brings those steps together through one local engineering team.
-                </p>
-                <div class="group rounded-2xl overflow-hidden shadow-card">
-                    <img src="/images/shared/render-double-page_72dpi.jpg" alt="Electrolux Professional laundry equipment supported by Irish Laundry Systems"
-                         loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
-                </div>
-            </div>
-
-            {{-- Right: 01–06 support list --}}
-            @php
-            $pillars = [
-                ['title' => 'Equipment Advice & Supply', 'body' => 'Choose Electrolux Professional equipment around the room, workload, budget and long-term support plan.'],
-                ['title' => 'Installation & Setup',      'body' => 'Plan delivery, access, utilities, installation and handover before the equipment starts working.'],
-                ['title' => 'Equipment Rental',          'body' => 'A lower-capital option where rental is suitable for the selected equipment and site needs.'],
-                ['title' => 'Preventive Maintenance',    'body' => 'Planned support to reduce avoidable disruption and keep laundry equipment easier to manage over time.'],
-                ['title' => 'Repairs & Call-Outs',       'body' => 'Engineering support when faults, breakdowns or performance issues affect the laundry room.'],
-                ['title' => 'Support & Aftercare',       'body' => 'Follow-up advice, service history, parts support where needed and clearer next steps after installation.'],
-            ];
-            @endphp
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-7 lg:pt-4">
-                @foreach ($pillars as $i => $p)
-                <div class="reveal group" style="transition-delay:{{ $i * 60 }}ms;">
-                    <div class="font-heading font-bold text-[#148af4] text-lg mb-2 transition-transform duration-300 origin-left group-hover:scale-110">{{ str_pad($i + 1, 2, '0', STR_PAD_LEFT) }}</div>
-                    <h3 class="font-heading font-bold text-navy text-base lg:text-lg mb-1.5 leading-snug transition-colors duration-300 group-hover:text-[#148af4]">{{ $p['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed text-pretty">{{ $p['body'] }}</p>
-                </div>
-                @endforeach
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{-- ════════════════════════════════════════════════════════════════════════
-     8. ELECTROLUX PROFESSIONAL STATEMENT — official partnership testimonial
+     6. ELECTROLUX PROFESSIONAL STATEMENT — official partnership testimonial
      (approved statement from Paul Frost, Electrolux Professional Country Manager)
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Partnership</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">From Electrolux Professional</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Over 30 years as an <span style="color:#148af4;">Electrolux Professional Authorised Partner</span>
+                <span class="lg:whitespace-nowrap">Trusted by Electrolux Professional <span style="color:#148af4;">since 1987</span></span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed">
-                A statement from Paul Frost, Electrolux Professional Country Manager.
+                A statement on the long-standing partnership with Irish Laundry Systems in Ireland.
             </p>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
 
             {{-- Left: Electrolux Professional logo + partnership badges --}}
-            <div class="lg:col-span-4 flex flex-col items-center text-center gap-8 reveal reveal-left">
+            <div class="lg:col-span-4 flex flex-col items-center text-center reveal reveal-left">
                 <img src="/images/logo/electrolux-partner.png" alt="Electrolux Professional Authorised Partner"
                      loading="lazy" decoding="async" class="w-full max-w-[300px] h-auto object-contain"
                      style="filter:brightness(0) invert(1);">
-                <div class="flex flex-wrap justify-center gap-2">
-                    @foreach(['Authorised Partner', 'Over 30 Years', 'Local Engineering Support', 'Genuine Parts Access'] as $badge)
-                    <span class="font-body text-xs font-bold uppercase tracking-wide text-white/80 bg-white/10 border border-white/20 px-3 py-1.5 rounded-full">{{ $badge }}</span>
-                    @endforeach
-                </div>
             </div>
 
             {{-- Right: white testimonial card --}}
             <div class="lg:col-span-8 reveal reveal-right">
                 <div class="bg-white rounded-2xl shadow-card p-8 lg:p-12">
-                    <div class="font-heading font-bold text-[#148af4] text-6xl leading-none select-none" aria-hidden="true">&ldquo;</div>
-                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug text-balance mb-6">
-                        Local engineering support and genuine parts access, only a phone call away
-                    </h3>
+                    <div class="font-heading font-bold text-[#148af4] text-6xl leading-none select-none mb-2" aria-hidden="true">&ldquo;</div>
+                    <p class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug text-balance mb-6">Irish Laundry Systems has been a trusted Authorised partner of Electrolux Professional in Ireland for more than 30 years, delivering expert support for our commercial laundry solutions.</p>
                     <div class="space-y-4 mb-8">
-                        <p class="font-body text-gray-600 text-base leading-relaxed">&ldquo;Irish Laundry Systems has been a trusted Authorised partner of Electrolux Professional in Ireland for more than 30 years, delivering expert support for our commercial laundry solutions.</p>
                         <p class="font-body text-gray-600 text-base leading-relaxed">Maurice, Luana and the wider team do a superb job supporting customers with the supply, installation and ongoing service of our commercial laundry equipment.</p>
                         <p class="font-body text-gray-600 text-base leading-relaxed">Their in-depth product knowledge and understanding of local customers ensures that they can confidently invest in Electrolux Professional solutions, knowing local engineering support and genuine parts access are only a phone call away.&rdquo;</p>
                     </div>
@@ -379,10 +301,10 @@
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Talk to an Engineer</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                Need Electrolux Professional equipment, <span class="text-[#148af4]">repair support or advice</span>?
+                Discuss Electrolux Professional equipment<br class="hidden lg:block"> with <span class="text-[#148af4]">our Irish engineering team</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Whether you are choosing new equipment, replacing a machine, planning maintenance or dealing with downtime, <span class="whitespace-nowrap">Irish Laundry Systems</span> can guide the next step with local engineering support and Electrolux Professional equipment knowledge.
+                Share the main details about your site, existing equipment and what you need help with.
             </p>
         </div>
 
@@ -414,7 +336,7 @@
             </div>
             @endif
 
-            <p class="font-heading font-bold text-navy text-lg mb-6">Request Electrolux Professional Equipment Support</p>
+            <p class="font-heading font-bold text-navy text-lg mb-6">Request Electrolux Professional Advice</p>
 
             <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5" data-utm>
                 @csrf
