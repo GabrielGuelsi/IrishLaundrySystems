@@ -347,30 +347,12 @@
     </div>
 </section>
 
-{{-- 8. COMPACT RESOURCES BAR (moved: after the Cabinet Range / Product Finder) --}}
-<section class="py-8 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
-            @foreach([
-                ['title' => 'Official Resources',  'links' => [['l' => 'Drying Cabinets leaflet', 'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
-                ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
-                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
-            ] as $grp)
-            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
-                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
-                <div class="flex flex-wrap gap-x-4 gap-y-2">
-                    @foreach($grp['links'] as $lk)
-                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
-                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        {{ $lk['l'] }}
-                    </a>
-                    @endforeach
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+{{-- RESOURCES BAR (slim inline) --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources',  'links' => [['l' => 'Drying Cabinets leaflet', 'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+    ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
+    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
+]])
 
 {{-- 9b. ACCESSORIES --}}
 <section class="py-12 lg:py-16 bg-white">
