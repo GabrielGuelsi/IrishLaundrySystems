@@ -340,43 +340,24 @@
     </div>
 </section>
 
-{{-- 6d. COMPACT RESOURCES BAR (matches accessories design) --}}
-<section class="py-8 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
-            @foreach([
-                ['title' => 'Official Resources', 'links' => [
-                    ['l' => 'myPRO XL leaflet', 'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
-                    ['l' => 'myPRO product resources', 'h' => route('resources')],
-                    ['l' => 'Browse semi-professional range', 'h' => route('equipment.category', ['category' => 'semi-professional'])],
-                ]],
-                ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
-                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
-                    ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request advice', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-            ] as $grp)
-            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
-                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
-                <div class="flex flex-col gap-2">
-                    @foreach($grp['links'] as $lk)
-                    <a href="{{ $lk['h'] }}" @if(str_ends_with($lk['h'], '.pdf')) target="_blank" rel="noopener" @endif
-                       class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
-                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        {{ $lk['l'] }}
-                    </a>
-                    @endforeach
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+{{-- RESOURCES BAR (slim inline) --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources', 'links' => [
+        ['l' => 'myPRO XL leaflet', 'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
+        ['l' => 'myPRO product resources', 'h' => route('resources')],
+        ['l' => 'Browse semi-professional range', 'h' => route('equipment.category', ['category' => 'semi-professional'])],
+    ]],
+    ['title' => 'Related Equipment', 'links' => [
+        ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
+        ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
+        ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
+    ]],
+    ['title' => 'Advice & Support', 'links' => [
+        ['l' => 'Request advice', 'h' => route('request-assessment')],
+        ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+        ['l' => 'Talk to our team', 'h' => route('contact')],
+    ]],
+]])
 
 {{-- 8. WHERE SEMI-PROFESSIONAL LAUNDRY FITS --}}
 <section class="py-12 lg:py-16 bg-gray-50">

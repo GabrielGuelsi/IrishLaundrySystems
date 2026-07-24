@@ -18,19 +18,19 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washers</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Control hygiene flow with<br><span style="color:#148af4;">dirty-side and clean-side separation</span>
+                    Keep dirty-side loading separate from<br><span style="color:#148af4;">clean-side unloading</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems helps hygiene-critical sites plan barrier washer capacity, room layout and dirty/clean separation, with supply, installation and support around daily laundry routines.
+                    Irish Laundry Systems plans Electrolux Professional barrier washers around capacity, room layout and installation requirements for hygiene-critical sites.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Equipment Advice
+                        Request Barrier Washer Advice
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="#barrier-range"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to Our Team
+                        View Barrier Washer Options
                     </a>
                 </div>
             </div>
@@ -49,21 +49,14 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Barrier washer choice affects <span style="color:#148af4;">hygiene flow, staff handling and room control</span>
+                    Plan barrier washer capacity around <span style="color:#148af4;">room layout and daily laundry demand</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Where clean and soiled handling must stay apart, the room, workflow and support plan need to protect that separation from day one. Irish Laundry Systems reviews capacity, wall opening, loading, unloading, drying, finishing, maintenance and aftercare before equipment is selected.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Access, utility connections and the separation between loading and unloading areas help define the installation approach.
                 </p>
-                <a href="#barrier-range"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    See the barrier washer options we provide
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -102,12 +95,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
-                Features that support <span style="color:#148af4;">separation, control and safer handling</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Technology</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Technology that supports<br><span style="color:#148af4;">hygiene control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Selected Electrolux Professional barrier washer features support separation, guided operation, process visibility and easier loading and unloading when matched to the right room.
+                Selected Electrolux Professional features help operators keep dirty and clean zones separate, monitor cycle completion and manage loading and unloading more easily.
             </p>
         </div>
 
@@ -141,11 +134,10 @@
         <div class="mb-10 lg:mb-16 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Barrier washer design for <span style="color:#148af4;">easier daily handling</span>
+                Reduce handling effort across <span style="color:#148af4;">daily loading and unloading</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
-                <span class="block">Barrier laundry needs controlled loading, unloading and separation between soiled and clean sides.</span>
-                <span class="block">Electrolux Professional features reduce handling effort while supporting daily hygiene routines.</span>
+                Selected Electrolux Professional features support easier door access, clearer programme selection and more comfortable repeated use.
             </p>
         </div>
 
@@ -331,30 +323,12 @@
 {{-- white separator band between the blue strip and the resources bar --}}
 <div class="bg-white h-8 lg:h-12"></div>
 
-{{-- 11. COMPACT RESOURCES BAR (low, light, supporting — matches commercial washers) --}}
-<section class="pt-14 pb-8 bg-bg">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
-            @foreach([
-                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 Evolution brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'], ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'], ['l' => 'Cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'], ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
-                ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
-                ['title' => 'Rental & Support',    'links' => [['l' => 'Equipment Rental', 'h' => route('rental')], ['l' => 'Preventive Maintenance', 'h' => route('service-contracts')], ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')]]],
-            ] as $grp)
-            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
-                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
-                <div class="flex flex-wrap gap-x-4 gap-y-2">
-                    @foreach($grp['links'] as $lk)
-                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
-                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        {{ $lk['l'] }}
-                    </a>
-                    @endforeach
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+{{-- RESOURCES BAR (slim inline) --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 Evolution brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'], ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'], ['l' => 'Cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'], ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
+    ['title' => 'Rental & Support',    'links' => [['l' => 'Equipment Rental', 'h' => route('rental')], ['l' => 'Preventive Maintenance', 'h' => route('service-contracts')], ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')]]],
+]])
 
 {{-- 12. PRODUCT FINDER / BARRIER WASHER RANGE (Option B — left filter) --}}
 <section id="barrier-range" class="py-16 lg:py-24 bg-white">
@@ -363,10 +337,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare barrier washer options around <span style="color:#148af4;">capacity, separation and support</span>
+                Browse barrier washer models by<br><span style="color:#148af4;">product line and capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-[1400px]">
-                Start with capacity and room layout, then match the washer to clean/dirty separation, utilities, installation and long-term support.
+                Filter the range, then open each model for full specifications, datasheets, brochures and manuals.
             </p>
         </div>
 
@@ -529,12 +503,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Wash Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Control detergent use before <span style="color:#148af4;">every barrier cycle starts</span>
+                Match detergent use to <span style="color:#148af4;">each barrier washer load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Accurate dosing keeps detergent use matched to the load, reducing waste and protecting wash consistency in hygiene-critical laundry rooms.
+                Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
             </p>
         </div>
 
@@ -693,12 +667,12 @@
     'mirror'       => true,
     'gradientStrength' => 0.55,
     'headingSize'  => 'text-3xl sm:text-4xl lg:text-4xl',
-    'headingLine1' => 'Keep hygiene-critical laundry<br>',
-    'headingLine2' => 'moving with <span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Rental can support barrier washer replacement, capacity planning<br>or ageing equipment without one large upfront purchase.',
+    'headingLine1' => 'Keep hygiene-critical laundry moving with<br>',
+    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
+    'body'         => 'Where suitable, rental can support barrier washer replacement or added capacity without one large capital purchase, with service included under agreed terms.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>cost', 'iconClass' => 'scale-[0.986] translate-y-[0.4%]'],
-        ['icon' => '146', 'label' => 'Included<br>support', 'iconClass' => 'scale-[0.899] translate-y-[0.3%]'],
+        ['icon' => 'healthcarerentalstrip1', 'label' => 'Budget<br>Control', 'iconClass' => 'scale-[0.986] translate-y-[0.4%]'],
+        ['icon' => '146', 'label' => 'Service<br>Included', 'iconClass' => 'scale-[0.899] translate-y-[0.3%]'],
         ['icon' => '216', 'label' => 'Capacity<br>planning', 'iconClass' => 'scale-[0.986] translate-y-[0.4%]'],
     ],
 ])
@@ -708,13 +682,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep barrier washer support aligned with<br><span style="color:#148af4;">maintenance, repair and aftercare</span>
+                Keep barrier washer support clear <span style="color:#148af4;">throughout daily operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block lg:whitespace-nowrap">Barrier washer performance depends on the right support after installation. Irish Laundry Systems provides</span>
-                <span class="block lg:whitespace-nowrap">Repairs &amp; Call-Outs, Preventive Maintenance, Equipment Rental and Support &amp; Aftercare for controlled laundry environments.</span>
+                Choose the follow-up support that fits the equipment and what the site needs.
             </p>
         </div>
 
@@ -765,16 +738,16 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep barrier washer support organised <span style="color:#011E41;">after installation</span>
+                    Keep barrier washer aftercare<br><span style="color:#011E41;">clear and easier to manage</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    After installation, Irish Laundry Systems keeps maintenance planning, service history and parts support organised for barrier washer sites.
+                    Irish Laundry Systems supports maintenance planning, service records and parts enquiries after installation.
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
-                        ['icon' => '127', 'label' => 'Planned<br>maintenance', 'sc' => '0.915'],
-                        ['icon' => 'home-rental-maintained',  'label' => 'Service<br>history', 'sc' => '0.932'],
-                        ['icon' => '151', 'label' => 'Parts<br>support', 'sc' => '0.84'],
+                        ['icon' => '127', 'label' => 'Planned<br>Maintenance', 'sc' => '0.915'],
+                        ['icon' => 'home-rental-maintained',  'label' => 'Service<br>Records', 'sc' => '0.932'],
+                        ['icon' => '151', 'label' => 'Parts<br>Support', 'sc' => '0.84'],
                     ] as $pt)
                     <span class="flex items-center gap-2 flex-shrink-0">
                         <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);transform:scale({{ $pt['sc'] ?? '1' }});">
@@ -794,10 +767,9 @@
 
 {{-- 16. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted support behind <span style="color:#148af4;">hygiene-critical laundry</span>',
-    'subheading' => 'Barrier washers affect controlled separation, staff routines, room planning and daily output. Irish Laundry Systems is trusted by organisations that value clear communication, responsive service support and peace of mind after equipment is installed.',
-    'subheadingClass' => 'max-w-5xl mx-auto',
+    'eyebrow'    => 'Customer Experience',
+    'heading'    => 'What customers say about<br><span style="color:#148af4;">working with Irish Laundry Systems</span>',
+    'subheading' => '',
 ])
 
 {{-- 17. TRUSTED BY LOGO STRIP --}}
@@ -822,21 +794,17 @@
 {{-- 19. FINAL CTA --}}
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Advice</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Barrier Washer Advice</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Need the right barrier washer for <span style="color:#148af4;">your laundry room?</span>
+            Discuss your barrier washer requirements<br>with <span style="color:#148af4;">our engineering team</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Talk to Irish Laundry Systems about barrier washer capacity, clean/dirty separation, room layout, installation, rental, maintenance and support options.
+            Share the main details about your site, capacity and installation requirements. Our team will review what is needed and contact you directly.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Talk to Our Team
-            </a>
             <a href="{{ route('request-assessment') }}"
-               class="inline-flex items-center justify-center gap-2 border-2 border-white/60 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                Request Equipment Advice
+               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
+                Request Barrier Washer Advice
             </a>
         </div>
     </div>

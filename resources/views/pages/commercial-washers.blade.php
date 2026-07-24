@@ -398,30 +398,12 @@
     </div>
 </section>
 
-{{-- 10. COMPACT RESOURCES BAR (low, light, supporting — before the Product Finder) --}}
-<section class="py-8 bg-bg border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-10">
-            @foreach([
-                ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 HS Washers & HP Dryers leaflet', 'h' => '/pdfs/EPR_leaflet_Line 6000 HS Washers and HP Dryers_ENG_LR_web.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Commercial washers at Electrolux Professional', 'h' => 'https://www.electroluxprofessional.com/commercial-laundry-equipment/commercial-washers/'], ['l' => 'Product resources', 'h' => route('resources')]]],
-                ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
-                ['title' => 'Related Equipment',   'links' => [['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
-            ] as $grp)
-            <div class="{{ !$loop->last ? 'sm:border-r sm:border-gray-200 sm:pr-6 lg:pr-10' : '' }}">
-                <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em] mb-3">{{ $grp['title'] }}</p>
-                <div class="flex flex-wrap gap-x-4 gap-y-2">
-                    @foreach($grp['links'] as $lk)
-                    <a href="{{ $lk['h'] }}" class="inline-flex items-center gap-1.5 font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors">
-                        <svg class="w-3.5 h-3.5 text-[#148af4] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
-                        {{ $lk['l'] }}
-                    </a>
-                    @endforeach
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
+{{-- RESOURCES BAR (slim inline) --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 HS Washers & HP Dryers leaflet', 'h' => '/pdfs/EPR_leaflet_Line 6000 HS Washers and HP Dryers_ENG_LR_web.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Commercial washers at Electrolux Professional', 'h' => 'https://www.electroluxprofessional.com/commercial-laundry-equipment/commercial-washers/'], ['l' => 'Product resources', 'h' => route('resources')]]],
+    ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
+    ['title' => 'Related Equipment',   'links' => [['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
+]])
 
 {{-- 11. PRODUCT FINDER / WASHER RANGE (Option B — left sidebar, full washer universe in 3 groups) --}}
 <section id="washer-range" class="py-16 lg:py-24 bg-white">
