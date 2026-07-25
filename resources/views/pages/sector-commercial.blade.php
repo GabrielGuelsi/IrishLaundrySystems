@@ -14,21 +14,23 @@
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-5xl">
-                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial</p>
+                <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span style="color:#148af4;">Laundry equipment and support</span><br class="hidden lg:block"> for sites where downtime<br class="hidden lg:block"> carries real cost
+                    <span class="block">Commercial laundry equipment</span>
+                    <span class="block">and support to improve productivity</span>
+                    <span class="block" style="color:#148af4;">and control operating costs</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-5xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for<br class="hidden lg:block"> commercial, industrial, shared-use and specialist laundry rooms. Rental, Preventive Maintenance,<br class="hidden lg:block"> repairs and aftercare can be shaped around daily use, room fit and equipment care.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
+                    From shared-use laundry rooms to industrial facilities, Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment, with purchase and Equipment Rental options.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#commercial-assessment"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Commercial Assessment
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="{{ route('equipment') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to Our Team
+                        View Commercial Equipment
                     </a>
                 </div>
             </div>
@@ -42,28 +44,18 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Room Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1.28fr] gap-12 lg:gap-12 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.45fr_1fr] gap-12 lg:gap-12 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Plan the laundry room<br class="hidden lg:block"> around <span style="color:#148af4;">daily use and<br class="hidden lg:block"> operating demand</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight">
+                    <span class="block lg:whitespace-nowrap">Plan the laundry room around</span><span class="block lg:whitespace-nowrap" style="color:#148af4;">volume, load type and operating hours</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Commercial and industrial laundry rooms need equipment that matches the workload,<br class="hidden lg:block"> available space, utilities and running costs.
+                <p class="font-body text-gray-500 text-base leading-relaxed lg:max-w-sm lg:ml-auto">
+                    Space, access and utilities shape the capacity, layout and installation the site needs.
                 </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems reviews the site, service history and laundry demand before recommending<br class="hidden lg:block"> Electrolux Professional equipment and support.
-                </p>
-                <a href="{{ route('equipment') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    View Commercial Laundry Equipment Options
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -76,11 +68,8 @@
         <div class="mb-12 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where This Fits</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Built for <span style="color:#148af4;">commercial, shared-use and specialist laundry environments</span>
+                Commercial laundry equipment across <span style="color:#148af4;">different operating environments</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                From commercial laundries and shared-use laundry rooms to facility management, protective workwear and remote sites,<br class="hidden lg:block"> the equipment setup needs to match daily use, textile type and operating demand.
-            </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
             @foreach([
@@ -159,18 +148,18 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control <span style="color:#148af4;">running costs</span> across daily laundry use
+                Control operating costs across <span style="color:#148af4;">high-use laundry operations</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                High-use laundry rooms carry costs beyond purchase: water, energy, detergent, drying time, service visits and replacement timing.
+                Purchase price is only one part of the cost. Consumption, drying efficiency and planned service all affect the cost of each load over time.
             </p>
         </div>
 
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'132', 'prefix'=>'Up to', 'stat'=>'90%',           'size'=>'text-4xl', 'label'=>'Post-purchase cost', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.914] -translate-y-[1.5%]',  'body'=>'Water, energy and chemicals can drive most washer and dryer lifetime cost, so efficient equipment matters after purchase.'],
-            ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',      'body'=>'Electrolux Professional heat pump dryer technology can reduce dryer energy use in suitable applications.'],
-            ['icon'=>'dosing-control', 'prefix'=>'Over', 'stat'=>'30%',  'size'=>'text-4xl', 'label'=>'Detergent savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',  'body'=>'Efficient dosing can reduce detergent use by applying the right amount at each cycle.'],
-            ['icon'=>'19',  'prefix'=>'Up to', 'stat'=>'75%',           'size'=>'text-4xl', 'label'=>'Sick-day reduction', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.03]',  'body'=>'Electrolux Professional ergonomic design can reduce handling strain in daily laundry work.'],
+            ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',      'body'=>'Electrolux Professional heat pump dryer technology can reduce energy use by up to 65% compared with a vented dryer.'],
+            ['icon'=>'dosing-control', 'prefix'=>'Over', 'stat'=>'30%',  'size'=>'text-4xl', 'label'=>'Detergent savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',  'body'=>'Efficient Dosing can save over 30% on detergent costs by calculating the amount required for each load.'],
+            ['icon'=>'19',  'prefix'=>'Average', 'stat'=>'75%',           'size'=>'text-4xl', 'label'=>'Sick-day reduction', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.03]',  'body'=>'Research cited by Electrolux Professional links ergonomic interventions to an average 75% decrease in sick days.'],
             ['icon'=>'166',  'prefix'=>'',     'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.95] -translate-y-[3.6%]',     'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
     </div>
@@ -183,10 +172,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Built for <span style="color:#148af4;">daily use, textile mix and control</span>
+                Choose equipment for <span style="color:#148af4;">the way each site operates</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Irish Laundry Systems matches selected Electrolux Professional features to load type, utility demand, operator handling and specialist laundry requirements.
+                Commercial and industrial sites place different demands on equipment. Capacity, controls and specialist features should reflect the conditions in which it will be used.
             </p>
         </div>
 
@@ -198,7 +187,7 @@
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Laundry volume</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Plan capacity around repeated use, peak periods and daily output.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Plan capacity around operating hours, peak periods and volumes processed each day.</p>
                 </div>
             </div>
 
@@ -208,7 +197,7 @@
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Textile mix</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Match the setup to uniforms, towels, bedding, mops and protective garments.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Select the setup for uniforms, towels, bedding, mops and protective garments.</p>
                 </div>
             </div>
 
@@ -218,7 +207,7 @@
                 </div>
                 <div class="text-center">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Utility costs</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Plan water, energy, detergent and cycle efficiency from the start.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Plan water, energy, detergent and cycle efficiency across daily operation.</p>
                 </div>
             </div>
 
@@ -251,12 +240,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Service support that keeps <span style="color:#148af4;">commercial laundry rooms working</span>
+                Service support that protects <span style="color:#148af4;">commercial laundry uptime</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Commercial and shared-use laundry rooms may need equipment advice, rental, Preventive Maintenance, breakdown support and aftercare around equipment already in use.
+                Select the service your site needs for equipment already in use.
             </p>
         </div>
 
@@ -345,10 +334,10 @@
         <div class="mb-16 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Equipment options for <span style="color:#148af4;">commercial laundry rooms</span>
+                Choose a complete commercial laundry setup for <span style="color:#148af4;">washing, drying and finishing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                The right equipment choice depends on load type, room fit, drying demand, finishing needs, utility use and aftercare.
+                Each stage should reflect the loads processed, capacity required and level of finishing expected.
             </p>
         </div>
 
@@ -428,7 +417,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp"
+                    <img src="/images/pages/dryers/TD6-14.jpg"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -473,10 +462,10 @@
             <div x-data="{ open: false, tab: 'diamms' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="flex flex-col">
-                    <img src="/images/shared/line6000-ironer.webp"
+                    <img src="/images/pages/ironers/flatwork-iv64821ffs-trim.jpg"
                          alt="Line 6000 Ironer"
-                         class="w-full h-80 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
+                         class="w-full h-auto object-contain object-left-top lg:scale-[1.12] lg:origin-top-left lg:-translate-x-40">
+                    <div class="mt-4 lg:mt-24 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
                             <span class="font-heading font-bold text-navy text-sm">System features: DIAMMS, Hygiene Guard, FoldFlex, Ceramic Burner</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
@@ -644,7 +633,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-1 lg:mr-20">
-                    <img src="/images/pages/drying-cabinets/Drying-cabinets_image.webp"
+                    <img src="/images/pages/drying-cabinets/workwear-dc6-15ww.jpg"
                          alt="Drying Cabinet"
                          class="w-full h-96 object-contain object-left-top">
                 </div>
@@ -663,10 +652,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Cut <span style="color:#148af4;">detergent waste</span> before it becomes an operating cost
+                Reduce detergent waste through <span style="color:#148af4;">precise automatic dosing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-6xl">
-                Automatic dosing uses the right amount of detergent for each cycle, reducing chemical overuse, protecting textiles and supporting consistent wash results across repeated cycles.
+                Automatic dosing applies the required amount for each cycle, supporting consistent wash results across repeated commercial use.
             </p>
         </div>
 
@@ -829,14 +818,16 @@
 ])
 
 @include('components.equipment-categories', [
-    'heading' => 'Equipment categories for <span style="color:#148af4;">commercial and industrial laundry</span>',
-    'subheading' => 'Use this section as a simple way into the main equipment categories. The detailed choice should still begin<br class="hidden lg:block"> with load type, room fit, utilities, running costs and service needs.',
+    'eyebrow' => 'Equipment Categories',
+    'textMinH' => '176px',
+    'heading' => 'Explore equipment for <span style="color:#148af4;">commercial and industrial laundry</span>',
+    'subheading' => 'Select a category to view the equipment available for different capacities and applications.',
     'subheadingClass' => 'max-w-none',
     'equipment' => [
         ['img' => 'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp', 'name' => 'Barrier Washers', 'desc' => 'For sites that need controlled dirty-side and clean-side handling.', 'box' => 250, 'mb' => -20],
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',        'name' => 'Washing Machines', 'desc' => 'For daily wash demand across workwear, uniforms, towels, bedding, mops and mixed textiles.', 'box' => 270, 'mb' => -35],
-        ['img' => 'Tumble-dryers_Heat-Pump_1-1', 'src' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',   'name' => 'Dryers',      'desc' => 'For controlled drying, fabric care and reliable daily turnaround.', 'box' => 245],
-        ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/Drying-cabinets_image.webp', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of workwear, protective clothing, bulky items, shoes and specialist garments.', 'box' => 260, 'mb' => 20],
+        ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg',   'name' => 'Dryers',      'desc' => 'For controlled drying, fabric care and reliable daily turnaround.', 'box' => 245],
+        ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/workwear-dc6-15ww.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of workwear, protective clothing, bulky items, shoes and specialist garments.', 'box' => 260, 'mb' => -11],
         ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For flatwork finishing, presentation standards and storage-ready results.'],
     ],
 ])
@@ -845,31 +836,30 @@
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">How We Work</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-            Clear advice before the next <span style="color:#148af4;">equipment or service decision</span>
+            Prepare commercial laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-xl leading-relaxed text-center mx-auto">
-            From room review through equipment advice, rental, Preventive Maintenance and aftercare, each step should make the next decision clearer.
+        <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">
+            Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
         </p>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Understand the site',              'text' => 'Review daily use, space, utilities,<br>access, service history and operating priorities.',    'icon' => 'clipboard'],
-                ['title' => 'Match the equipment',              'text' => 'Recommend the right washing, drying, finishing or specialist setup.',              'icon' => 'Ativo%204'],
-                ['title' => 'Plan maintenance and aftercare', 'text' => 'Align equipment in use with Preventive<br>Maintenance, repairs, parts access where<br>needed and aftercare.', 'icon' => 'Ativo%206'],
-                ['title' => 'Agree the next step',               'text' => 'Turn equipment needs and support requirements into a clear next step.',                        'icon' => 'Ativo%203'],
+                ['title' => 'Prepare the Site',      'text' => 'Confirm access, utilities and positioning before delivery.'],
+                ['title' => 'Install and Commission', 'text' => 'Deliver, position, install and test the selected equipment.'],
+                ['title' => 'Handover',               'text' => 'Provide operating guidance and explain available aftercare.'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
-                @if($i < 3)
+                @if($i < 2)
                 <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
                     <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </div>
                 @endif
                 <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
-                    <img src="/images/icons/{{ [126, 125, 127, 128][$i] }}.png" alt=""
+                    <img src="/images/icons/{{ [126, 125, 128][$i] }}.png" alt=""
                          style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
@@ -918,16 +908,16 @@
 ]])
 
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted support for <span style="color:#148af4;">commercial laundry operations</span>',
-    'subheading' => '',
+    'eyebrow'    => 'Client Feedback',
+    'heading'    => 'What commercial laundry operators say about <span style="color:#148af4;">working with Irish Laundry Systems</span>',
+    'subheading' => 'Feedback on communication, technical knowledge and service across commercial laundry operations.',
 ])
 
 @include('components.proof-bar')
 
 @include('components.faq', [
     'eyebrow' => 'Commercial Laundry FAQs',
-    'heading' => 'Questions before requesting a <span style="color:#148af4;">commercial laundry assessment</span>',
+    'heading' => 'Questions commercial laundry operators ask before <span style="color:#148af4;">choosing equipment or service</span>',
     'footerNote' => 'Have a different question? Talk to our team.',
     'faqs' => [
         ['question' => 'What types of commercial and industrial sites do you support?',        'answer' => 'Irish Laundry Systems supports commercial laundries, self-service and shared-use laundry rooms, managed residential sites, leisure and wellness facilities, public-sector sites, facility management environments, workwear operations and specialist laundry environments.'],
@@ -943,8 +933,8 @@
 
 @include('components.cta-downtime-form', [
     'pageSource'  => 'commercial_cta',
-    'heading'     => 'Ready to understand what your <span style="color:#148af4;">commercial laundry operation</span> is costing&nbsp;you?',
-    'body'        => 'Tell us about your laundry room, equipment, daily use, service history and current requirement. Irish Laundry Systems will guide you toward equipment advice, an equipment quote, rental, Preventive Maintenance, repair or aftercare support.',
+    'heading'     => 'Plan the next step for your<br class="hidden lg:block"> <span style="color:#148af4;">commercial laundry operation</span>',
+    'body'        => 'Tell us about the site, current equipment and priorities. Get clear advice on equipment, Equipment Rental, maintenance, repairs or aftercare.',
     'formTitle'   => 'Request a Commercial Laundry Assessment',
     'buttonText'  => 'Request Commercial Assessment',
 ])

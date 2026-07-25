@@ -939,7 +939,7 @@
     ],
 ])
 
-@include('components.equipment-categories', ['heading' => 'Explore <span style="color:#148af4;">more healthcare equipment options</span>', 'subheading' => 'Select an equipment category based on the room, laundry handled and level of hygiene control required.', 'subheadingClass' => 'lg:whitespace-nowrap', 'headerAlign' => 'lg:flex-row lg:items-start', 'equipment' => [
+@include('components.equipment-categories', ['eyebrow' => 'Equipment Categories', 'heading' => 'Explore <span style="color:#148af4;">more healthcare equipment options</span>', 'subheading' => 'Select an equipment category based on the room, laundry handled and level of hygiene control required.', 'subheadingClass' => 'lg:whitespace-nowrap', 'headerAlign' => 'lg:flex-row lg:items-start', 'equipment' => [
     ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For healthcare laundry rooms that need soiled handling and clean return kept physically separate.','box'=>250,'mb'=>-20],
     ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For healthcare wash loads that need capacity, consistency and dosing control.','box'=>270,'mb'=>-35],
     ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
