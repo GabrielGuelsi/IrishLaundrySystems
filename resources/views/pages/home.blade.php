@@ -154,13 +154,14 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => 'Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span>',
+    'heading'    => '<span class="lg:whitespace-nowrap lg:text-[2.5rem]">Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span></span>',
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
+    'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily commercial washing where capacity, cycle control and fabric care all matter.', 'cta' => 'View Washing Machines', 'route' => ['equipment.category', ['category' => 'commercial-washers']], 'box' => 300, 'mb' => -35],
         ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For regular drying demand where fabric care and steady turnaround matter.', 'cta' => 'View Dryers', 'route' => ['equipment.category', ['category' => 'tumble-dryers']], 'box' => 300],
-        ['img' => 'DC6-15WW', 'src' => '/images/pages/drying-cabinets/Drying Cabinets - Heat PumpDC6-15WW.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, outdoor wear and specialist fabrics.', 'cta' => 'View Drying Cabinets', 'route' => ['equipment.category', ['category' => 'drying-cabinets']], 'box' => 300, 'mb' => 0],
+        ['img' => 'DC6-15WW', 'src' => '/images/pages/drying-cabinets/workwear-dc6-15ww.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, outdoor wear and specialist fabrics.', 'cta' => 'View Drying Cabinets', 'route' => ['equipment.category', ['category' => 'drying-cabinets']], 'box' => 300, 'mb' => 0],
         ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For sheets, table linen and other flatwork requiring a consistent professional finish.', 'cta' => 'View Ironers', 'route' => ['equipment.category', ['category' => 'ironers']]],
     ],
 ])

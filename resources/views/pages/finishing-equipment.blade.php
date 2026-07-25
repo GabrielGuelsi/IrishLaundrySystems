@@ -567,20 +567,20 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
-                ['title' => 'Commercial Ironers', 'copy' => 'For sheets, table linen and other flatwork that require a consistent ironed finish.',                 'cta' => 'View Commercial Ironers', 'route' => route('equipment.category', 'ironers'),       'img' => '/images/pages/ironers/cylinder-480-ic648.jpg'],
-                ['title' => 'Wet Cleaning',       'copy' => 'For garments and delicate items that require a controlled water-based cleaning process before finishing.', 'cta' => 'View Wet Cleaning',       'route' => route('equipment.category', 'wet-cleaning'),  'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
-                ['title' => 'Commercial Dryers',  'copy' => 'For drying garments and other textiles before pressing, shaping or final finishing.',                    'cta' => 'View Commercial Dryers',  'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
-                ['title' => 'Spotting Equipment', 'copy' => 'For treating specific marks and stains before cleaning or final garment finishing.',                       'cta' => 'View Spotting Equipment', 'route' => route('contact'),                            'img' => '/images/pages/finishing-equipment/FSU1.jpg'],
+                ['title' => 'Commercial Ironers', 'copy' => 'For sheets, table linen and other flatwork that require a consistent ironed finish.',                 'cta' => 'View Commercial Ironers', 'route' => route('equipment.category', 'ironers'),       'img' => '/images/pages/ironers/bed-230-ib623.jpg', 'box' => 260, 'mb' => 0],
+                ['title' => 'Wet Cleaning',       'copy' => 'For garments and delicate items that require a controlled water-based cleaning process before finishing.', 'cta' => 'View Wet Cleaning',       'route' => route('equipment.category', 'wet-cleaning'),  'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 250, 'mb' => 32],
+                ['title' => 'Commercial Dryers',  'copy' => 'For drying garments and other textiles before pressing, shaping or final finishing.',                    'cta' => 'View Commercial Dryers',  'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-14.jpg', 'box' => 250, 'mb' => 32],
+                ['title' => 'Spotting Equipment', 'copy' => 'For treating specific marks and stains before cleaning or final garment finishing.',                       'cta' => 'View Spotting Equipment', 'route' => route('contact'),                            'img' => '/images/pages/finishing-equipment/FSU7.jpg', 'box' => 280, 'mb' => 22],
             ] as $card)
             <div class="flex flex-col gap-5 h-full">
                 <div style="min-height:120px;">
                     <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
                     <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
-                <div class="w-full flex items-end justify-center" style="height:200px;">
+                <div class="w-full flex items-end justify-center" style="height:300px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="max-width:100%; max-height:200px; object-fit:contain;">
+                         style="width:{{ $card['box'] ?? 260 }}px; max-width:100%; height:{{ $card['box'] ?? 260 }}px; object-fit:contain; margin-bottom:{{ $card['mb'] ?? 0 }}px;">
                 </div>
                 <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-heading font-bold text-sm px-5 py-3.5 rounded-lg transition-colors mt-auto">
                     {{ $card['cta'] }}
