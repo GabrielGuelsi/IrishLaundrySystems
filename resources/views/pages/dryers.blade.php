@@ -18,8 +18,9 @@
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Tumble Dryers</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Choose commercial tumble dryers to balance</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">daily demand and energy use</span>
+                    <span class="block lg:whitespace-nowrap">Choose commercial tumble dryers</span>
+                    <span class="block lg:whitespace-nowrap">to balance <span style="color:#148af4;">daily demand</span></span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">and energy use</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-3xl text-pretty">
                     Irish Laundry Systems supplies Electrolux Professional tumble dryers across Ireland, with advice on capacity, dryer type, room requirements and installation.
@@ -49,9 +50,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.4rem] leading-tight">
                     <span class="block lg:whitespace-nowrap">Plan dryer capacity around</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">space, ventilation and daily demand</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">space, ventilation and</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">daily demand</span>
                 </h2>
             </div>
 
@@ -152,7 +154,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight text-balance mb-3 lg:whitespace-nowrap">
                 Control dryer costs across <span style="color:#148af4;">energy, output and upfront spend</span>
             </h2>
         </div>
@@ -320,7 +322,7 @@
         <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
                 ['icon' => 'home-planning-fit',  'label' => 'Space &amp; Access', 'sc' => 'scale-[1.035] translate-y-[2.2%]'],
-                ['icon' => '219', 'label' => 'Ventilation Needs', 'sc' => 'scale-[1.025] translate-y-[0.4%]'],
+                ['icon' => '248', 'label' => 'Ventilation Needs', 'sc' => 'scale-[1.025] translate-y-[0.4%]'],
                 ['icon' => '218', 'label' => 'Capacity &amp; Stacking', 'sc' => 'scale-[0.923] translate-y-[0.7%]'],
             ] as $pt)
             <span class="flex items-center gap-2 flex-shrink-0">
@@ -472,7 +474,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Browse commercial dryer models by <span style="color:#148af4;">capacity and dryer type</span>
+                <span class="block">Browse commercial dryer models by</span><span class="block" style="color:#148af4;">capacity and dryer type</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Use the filters to narrow the range, then view each model for full product details.
