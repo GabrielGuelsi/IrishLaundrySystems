@@ -493,7 +493,7 @@
     'body'         => 'Equipment Rental gives your site access to commercial ironers and selected finishing equipment without one large upfront purchase.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>Outlay'],
-        ['icon' => '34', 'label' => 'Budget<br>Control', 'iconStyle' => 'filter:brightness(0) invert(1); transform:translateY(-13.16%) scale(1.35);'],
+        ['icon' => '166', 'label' => 'Budget<br>Control', 'iconStyle' => 'filter:brightness(0) invert(1);'],
         ['icon' => '146', 'label' => 'Included<br>Support'],
     ],
 ])
