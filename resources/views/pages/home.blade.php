@@ -39,22 +39,26 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div class="max-w-4xl">
 
+                <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Irish Laundry Specialists</p>
+
                 <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
-                    Commercial laundry equipment <br class="hidden lg:block">and support <span class="text-[#148af4]">planned <br class="hidden lg:block">around your site</span>
+                    <span class="block">Commercial laundry equipment and</span>
+                    <span class="block">engineering expertise <span class="text-[#148af4]">focused</span></span>
+                    <span class="block text-[#148af4]">on keeping operations running</span>
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports commercial laundry equipment across Ireland, with purchase and Equipment Rental options.
+                    From equipment selection and installation to Equipment Rental, maintenance, repairs and aftercare, Irish Laundry Systems works to reduce breakdowns, limit downtime and keep operating costs under control throughout the equipment&rsquo;s working life.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 whitespace-nowrap">
-                        Request Service Assessment
+                        Request an Assessment
                     </a>
                     <a href="{{ route('equipment') }}"
                        class="inline-flex items-center justify-center border-2 border-white hover:border-white/70 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
-                        Explore Equipment
+                        Browse Equipment
                     </a>
                 </div>
 
@@ -80,16 +84,18 @@
 <!-- 1.5 INTRO / BRIDGE — Operational Performance -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operational Performance</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around The Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Your laundry setup <br class="hidden lg:block">affects <span class="text-[#148af4]">cost control <br class="hidden lg:block">and daily turnaround</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight">
+                    <span class="block lg:whitespace-nowrap">Equipment decisions begin</span>
+                    <span class="block lg:whitespace-nowrap">with <span class="text-[#148af4]">the room, the workload</span></span>
+                    <span class="block lg:whitespace-nowrap text-[#148af4]">and the capacity needed</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Equipment choice, room layout and ongoing care all affect how the laundry performs in daily use.
+                    Room layout, workload, utilities, access, existing equipment and maintenance needs all influence operating cost, staff time and turnaround. Assessing them together gives owners and operators a clearer basis for capacity, installation and long-term investment.
                 </p>
             </div>
         </div>
@@ -99,11 +105,11 @@
 <!-- 3. THREE CORE PATHWAYS -->
 @include('components.services-cards', [
     'eyebrow'          => 'Services',
-    'headingLead'      => 'Support for urgent needs, planned care ',
-    'headingHighlight' => 'and ongoing equipment use',
-    'headingTrail'     => '',
+    'headingLead'      => 'Choose the ',
+    'headingHighlight' => 'right service support',
+    'headingTrail'     => ' for your site',
     'highlightClass'   => 'text-[#148af4]',
-    'intro'            => '',
+    'intro'            => 'Four clear service options to manage breakdowns, plan maintenance, make rental decisions easier and keep equipment running.',
     'introClass'       => '',
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
@@ -134,7 +140,7 @@
  
 @include('components.sector-switcher', [
     'heading'         => 'Commercial laundry expertise for <span class="text-[#148af4]">healthcare, care facilities, hospitality and industry</span>',
-    'intro'           => 'Explore equipment and support for healthcare, care facilities, hospitality and commercial &amp; industrial sites.',
+    'intro'           => 'Different sites carry different cost, staffing and service pressures. The right commercial laundry care depends on hygiene requirements, daily laundry demand, equipment in use, budget pressure and day-to-day operating needs.',
     'healthcareBody'  => 'For hospitals and healthcare facilities managing hygiene requirements, linen handling and clean linen availability.',
     'careBody'        => 'For care homes and residential settings managing resident clothing, bedding and regular daily loads.',
     'hospitalityBody' => 'For hotels and accommodation providers where guest-ready linen supports room presentation and turnaround.',
@@ -148,9 +154,9 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => 'Commercial laundry equipment for <span class="text-[#148af4]">washing, drying and finishing</span>',
+    'heading'    => 'Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span>',
     'textMinH'   => '160px',
-    'subheading' => 'Browse the main equipment categories, with more options available across the full range.',
+    'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily commercial washing where capacity, cycle control and fabric care all matter.', 'cta' => 'View Washing Machines', 'route' => ['equipment.category', ['category' => 'commercial-washers']], 'box' => 300, 'mb' => -35],
         ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For regular drying demand where fabric care and steady turnaround matter.', 'cta' => 'View Dryers', 'route' => ['equipment.category', ['category' => 'tumble-dryers']], 'box' => 300],

@@ -17,8 +17,8 @@
         <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
 
         <!-- Trust line -->
-        <p class="hidden lg:block font-body text-navy text-sm leading-snug max-w-[240px]">
-            Authorised Electrolux Professional Partner. Irish engineering expertise since 1987.
+        <p class="hidden lg:block font-body text-navy text-sm leading-snug max-w-[260px]">
+            Working with Electrolux Professional since 1987, combining manufacturer expertise with Irish engineering capability.
         </p>
 
         <!-- Vertical divider -->
@@ -38,7 +38,7 @@
                 <div class="h-[88px] flex items-center justify-center">
                     <img src="/images/icons/RGIGASINSTALLER.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.15] -translate-y-[8px]">
                 </div>
-                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer contractors</span>
+                <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap">Registered Gas Installer</span>
             </div>
 
             <div class="flex flex-col items-center gap-1.5 text-center">
@@ -50,14 +50,6 @@
 
         </div>
 
-        <!-- Learn more button -->
-        <a href="{{ route('electrolux') }}"
-           class="hidden md:inline-flex items-center gap-2 border border-navy/20 hover:border-navy text-navy/70 hover:text-navy font-body font-bold px-4 py-2 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap rounded">
-            Learn more
-            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
-            </svg>
-        </a>
 
     </div>
 </div>
