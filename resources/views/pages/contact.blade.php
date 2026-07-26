@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Contact Irish Laundry Systems | Request a Service Assessment')
+@section('pageTitle', 'Contact Irish Laundry Systems | Request an Assessment')
 @section('metaDescription', 'Request an assessment for service contracts, rental options, breakdown support or equipment planning. We confirm next steps and availability once we have site details.')
 
 @section('content')
@@ -40,9 +40,9 @@
                 </div>
                 <div class="flex flex-col sm:flex-row gap-6 sm:gap-0">
                     @foreach([
-                        ['num' => '1', 'title' => 'We review your details',      'desc' => 'Your request is assessed against site, equipment and urgency.'],
-                        ['num' => '2', 'title' => 'We may ask triage questions', 'desc' => 'A quick follow-up if we need to clarify scope or access.'],
-                        ['num' => '3', 'title' => 'We confirm next steps',       'desc' => 'We confirm approach, availability and what to expect from there.'],
+                        ['num' => '1', 'title' => 'We review your request',  'desc' => 'We assess the site, enquiry and any equipment information provided.'],
+                        ['num' => '2', 'title' => 'We clarify the details',    'desc' => 'We contact you if we need more information about the equipment, access or timing.'],
+                        ['num' => '3', 'title' => 'We confirm next steps',     'desc' => 'We confirm the recommended action, availability and expected timing.'],
                     ] as $i => $step)
                     <div class="flex-1 flex flex-col items-center text-center px-4">
                         <div class="flex items-center w-full mb-4">
@@ -73,55 +73,42 @@
 
 @else
 
-{{-- HERO IMAGE --}}
-<section class="relative overflow-hidden" style="height:480px; min-height:360px; background-color:#011E41;">
-
-    <img src="/images/hero/hero-technician-inspection.png"
-         alt="ILS engineer performing a service assessment on commercial laundry equipment"
-         loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-
-    {{-- Gradient overlay --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 40%, rgba(1,30,65,0.30) 70%, transparent 100%);"></div>
-
-    {{-- Content --}}
-    <div class="relative z-10 h-full flex items-center">
-        <div class="max-w-5xl mx-auto w-full px-6 sm:px-10">
-            <div class="max-w-xl">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Request a<br>Service Assessment
-                </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8">
-                    Share site location(s), equipment type/brand and urgency. We will confirm next steps and availability.
-                </p>
-                <div class="flex flex-wrap items-center gap-4">
-                    <a href="#contact-form"
-                       class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
-                        Send Request
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                        </svg>
-                    </a>
-                    <a href="tel:+35314910402"
-                       class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:border-white transition-colors">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
-                        </svg>
-                        Call an Engineer
-                    </a>
-                </div>
+{{-- HERO — typographic, navy, no image --}}
+<section style="background-color:#011E41;">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-[72px]">
+        <div class="max-w-[640px] reveal reveal-left">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-[15px]">Contact</p>
+            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-[23px]">
+                Request an<br>Assessment
+            </h1>
+            <p class="font-body text-white/80 text-base leading-relaxed mb-[30px] max-w-[600px]">
+                For equipment, equipment rental, preventive maintenance, repairs or aftercare, share a few details and our team will confirm the next step.
+            </p>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#contact-form"
+                   class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
+                    Send Request
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+                <a href="tel:+35314910402"
+                   class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:border-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                    </svg>
+                    Call Our Team
+                </a>
             </div>
         </div>
     </div>
-
 </section>
 
 {{-- Spacer between hero and strip --}}
-<div class="bg-white h-10 lg:h-14"></div>
+<div class="bg-white h-6 lg:h-7"></div>
 
 {{-- FULL-WIDTH What to include strip --}}
-<div class="bg-navy px-6 sm:px-10 lg:px-20 py-10 lg:py-12">
+<div class="bg-navy px-6 sm:px-10 lg:px-20 py-11 lg:py-12">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
 
                     {{-- Left: heading --}}
@@ -130,79 +117,59 @@
                             What to <span class="text-[#148af4]">include</span>
                         </h2>
                         <p class="font-body text-white/60 text-base leading-relaxed">
-                            Share these details to get the most accurate and fastest response.
+                            Share a few details so we can understand your request and respond with the right information.
                         </p>
                     </div>
 
-                    {{-- Right: 4-step horizontal flow --}}
-                    <div class="lg:col-span-9 flex items-start justify-between gap-2 sm:gap-3 flex-wrap sm:flex-nowrap">
+                    {{-- Right: 4 categories (no arrows) --}}
+                    <div class="lg:col-span-9 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 lg:gap-6">
 
-                        {{-- Step 1: Site location(s) --}}
-                        <div class="flex-1 min-w-[110px] text-center">
+                        {{-- 1. Site details --}}
+                        <div class="text-center">
                             <div class="flex justify-center mb-4">
                                 <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
                                 </svg>
                             </div>
-                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Site location(s)</p>
-                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">County, address or&nbsp;region</p>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Site details</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Location and sector</p>
                         </div>
 
-                        {{-- Arrow --}}
-                        <div class="hidden sm:flex flex-shrink-0 items-center pt-6">
-                            <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
-                                <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="rgba(20,138,244,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-
-                        {{-- Step 2: Equipment type & brand --}}
-                        <div class="flex-1 min-w-[110px] text-center">
-                            <div class="flex justify-center mb-4">
-                                <img src="/images/icons/brand/Ativo%2010.svg"
-                                     class="w-14 h-14"
-                                     style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);"
-                                     alt="">
-                            </div>
-                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Equipment type &amp; brand</p>
-                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Make, model and age if&nbsp;known</p>
-                        </div>
-
-                        {{-- Arrow --}}
-                        <div class="hidden sm:flex flex-shrink-0 items-center pt-6">
-                            <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
-                                <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="rgba(20,138,244,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-
-                        {{-- Step 3: Symptoms & urgency --}}
-                        <div class="flex-1 min-w-[110px] text-center">
+                        {{-- 2. Enquiry type --}}
+                        <div class="text-center">
                             <div class="flex justify-center mb-4">
                                 <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 3.75h4.5M9 5.25h6a2.25 2.25 0 0 1 2.25 2.25v12a2.25 2.25 0 0 1-2.25 2.25H9a2.25 2.25 0 0 1-2.25-2.25v-12A2.25 2.25 0 0 1 9 5.25Z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5.25A2.25 2.25 0 0 1 11.25 3h1.5A2.25 2.25 0 0 1 15 5.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 5.25Z"/>
                                 </svg>
                             </div>
-                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Symptoms &amp; urgency</p>
-                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">What's happening and how soon it's&nbsp;needed</p>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Enquiry type</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Equipment, equipment rental, contracts, repairs or aftercare</p>
                         </div>
 
-                        {{-- Arrow --}}
-                        <div class="hidden sm:flex flex-shrink-0 items-center pt-6">
-                            <svg class="w-10 lg:w-14 h-3" viewBox="0 0 80 12" fill="none">
-                                <path d="M2 6 L70 6 M62 1 L70 6 L62 11" stroke="rgba(20,138,244,0.55)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-
-                        {{-- Step 4: Number of machines --}}
-                        <div class="flex-1 min-w-[110px] text-center">
+                        {{-- 3. Equipment details --}}
+                        <div class="text-center">
                             <div class="flex justify-center mb-4">
-                                <img src="/images/icons/brand/Ativo%2017.svg"
-                                     class="w-14 h-14"
-                                     style="filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);"
-                                     alt="">
+                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
+                                    <rect x="4.75" y="3" width="14.5" height="18" rx="1.75" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <circle cx="12" cy="14" r="4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.25 6.25h.01M9.75 6.25h.01"/>
+                                </svg>
                             </div>
-                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Number of machines</p>
-                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">How many units on site or&nbsp;affected</p>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Equipment details</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Type, brand, model and quantity if known</p>
+                        </div>
+
+                        {{-- 4. Timing & priorities --}}
+                        <div class="text-center">
+                            <div class="flex justify-center mb-4">
+                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                </svg>
+                            </div>
+                            <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Timing &amp; priorities</p>
+                            <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Preferred timeframe and any operational impact</p>
                         </div>
 
                     </div>
@@ -296,13 +263,13 @@
                             <select name="request_type" required
                                     class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-800
                                            focus:outline-none focus:ring-2 focus:ring-navy/20 cursor-pointer transition-all">
-                                <option value="">Select type</option>
-                                <option value="breakdown"       {{ old('request_type') === 'breakdown'       ? 'selected' : '' }}>Breakdown / Repair</option>
-                                <option value="contract"        {{ old('request_type') === 'contract'        ? 'selected' : '' }}>Service Contract</option>
-                                <option value="rental"          {{ old('request_type') === 'rental'          ? 'selected' : '' }}>Equipment Rental</option>
-                                <option value="equipment_quote" {{ old('request_type') === 'equipment_quote' ? 'selected' : '' }}>Equipment Quote</option>
-                                <option value="parts"           {{ old('request_type') === 'parts'           ? 'selected' : '' }}>Parts Enquiry</option>
-                                <option value="other"           {{ old('request_type') === 'other'           ? 'selected' : '' }}>General Enquiry</option>
+                                <option value="">Select enquiry type</option>
+                                <option value="new_equipment"   {{ old('request_type') === 'new_equipment'   ? 'selected' : '' }}>New equipment &amp; installation</option>
+                                <option value="rental"          {{ old('request_type') === 'rental'          ? 'selected' : '' }}>Equipment rental</option>
+                                <option value="contract"        {{ old('request_type') === 'contract'        ? 'selected' : '' }}>Preventive maintenance contract</option>
+                                <option value="repairs"         {{ old('request_type') === 'repairs'         ? 'selected' : '' }}>Repairs &amp; call-outs</option>
+                                <option value="aftercare"       {{ old('request_type') === 'aftercare'       ? 'selected' : '' }}>Support &amp; aftercare</option>
+                                <option value="other"           {{ old('request_type') === 'other'           ? 'selected' : '' }}>General enquiry</option>
                             </select>
                         </div>
                         <div>
@@ -314,9 +281,10 @@
                                            focus:outline-none focus:ring-2 focus:ring-navy/20 cursor-pointer transition-all">
                                 <option value="">Select sector</option>
                                 <option value="healthcare"  {{ old('sector') === 'healthcare'  ? 'selected' : '' }}>Healthcare</option>
+                                <option value="care"        {{ old('sector') === 'care'        ? 'selected' : '' }}>Care facilities</option>
                                 <option value="hospitality" {{ old('sector') === 'hospitality' ? 'selected' : '' }}>Hospitality</option>
-                                <option value="care"        {{ old('sector') === 'care'        ? 'selected' : '' }}>Care Facilities</option>
-                                <option value="commercial"  {{ old('sector') === 'commercial'  ? 'selected' : '' }}>Commercial &amp; Industrial</option>
+                                <option value="commercial"  {{ old('sector') === 'commercial'  ? 'selected' : '' }}>Commercial &amp; industrial</option>
+                                <option value="other"       {{ old('sector') === 'other'       ? 'selected' : '' }}>Other</option>
                             </select>
                         </div>
                     </div>
@@ -324,15 +292,16 @@
                     {{-- Urgency --}}
                     <div>
                         <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
-                            Urgency <span class="text-red-400">*</span>
+                            Timeframe <span class="text-red-400">*</span>
                         </label>
                         <select name="urgency" required
                                 class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-800
                                        focus:outline-none focus:ring-2 focus:ring-navy/20 cursor-pointer transition-all">
-                            <option value="">How soon do you need this?</option>
-                            <option value="today"      {{ old('urgency') === 'today'      ? 'selected' : '' }}>Today — emergency</option>
-                            <option value="24_48h"     {{ old('urgency') === '24_48h'     ? 'selected' : '' }}>Within 24–48 hours</option>
-                            <option value="this_week"  {{ old('urgency') === 'this_week'  ? 'selected' : '' }}>This week</option>
+                            <option value="">When do you need this?</option>
+                            <option value="urgent"     {{ old('urgency') === 'urgent'     ? 'selected' : '' }}>Urgent / equipment down</option>
+                            <option value="asap"       {{ old('urgency') === 'asap'       ? 'selected' : '' }}>As soon as possible</option>
+                            <option value="1_2_weeks"  {{ old('urgency') === '1_2_weeks'  ? 'selected' : '' }}>Within 1–2 weeks</option>
+                            <option value="1_month"    {{ old('urgency') === '1_month'    ? 'selected' : '' }}>Within 1 month</option>
                             <option value="planning"   {{ old('urgency') === 'planning'   ? 'selected' : '' }}>Planning ahead</option>
                         </select>
                     </div>
@@ -351,10 +320,10 @@
                         </div>
                         <div>
                             <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
-                                Equipment <span class="text-gray-400 font-light text-xs">(if known)</span>
+                                Equipment details <span class="text-gray-400 font-light text-xs">(if known)</span>
                             </label>
                             <input type="text" name="equipment" value="{{ old('equipment') }}"
-                                   placeholder="Brand / model"
+                                   placeholder="Type, brand or model"
                                    class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-800
                                           focus:outline-none focus:ring-2 focus:ring-navy/20
                                           placeholder-gray-400 transition-all">
@@ -364,10 +333,10 @@
                     {{-- Message --}}
                     <div>
                         <label class="block font-body text-sm font-light text-gray-700 mb-1.5">
-                            Details <span class="text-gray-400 font-light text-xs">(symptoms, number of machines, urgency/impact)</span>
+                            Request details
                         </label>
                         <textarea name="message" rows="5"
-                                  placeholder="Describe the issue or what you need — the more context the better."
+                                  placeholder="Tell us what you need, any equipment details and the effect on your operation, if relevant."
                                   class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-800
                                          focus:outline-none focus:ring-2 focus:ring-navy/20
                                          placeholder-gray-400 resize-none leading-relaxed transition-all">{{ old('message') }}</textarea>
@@ -380,7 +349,7 @@
                                    {{ old('gdpr_consent') ? 'checked' : '' }}
                                    class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
                             <span class="font-body text-xs text-gray-500 leading-relaxed">
-                                I agree to ILS processing my details to respond to this enquiry. <span class="text-red-400">*</span>
+                                I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-400">*</span>
                                 <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.
                             </span>
                         </label>
@@ -389,7 +358,7 @@
                                    {{ old('marketing_consent') ? 'checked' : '' }}
                                    class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
                             <span class="font-body text-xs text-gray-400 leading-relaxed">
-                                I'm happy to receive occasional updates from ILS. (Optional)
+                                I would like to receive occasional updates from Irish Laundry Systems. Optional.
                             </span>
                         </label>
                     </div>
@@ -410,7 +379,7 @@
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
                             </svg>
-                            Call an Engineer
+                            Call Our Team
                         </a>
                     </div>
 
@@ -430,7 +399,7 @@
                                class="font-body text-gray-700 text-base hover:text-navy transition-colors block font-bold">
                                 +353 1 491 0402
                             </a>
-                            <p class="font-body text-gray-400 text-sm mt-0.5">Mon – Fri, 8am – 5pm · Emergency line available</p>
+                            <p class="font-body text-gray-400 text-sm mt-0.5">Mon–Fri, 8:00–17:00 · Emergency line available</p>
                         </div>
                         <div>
                             <a href="mailto:contact@irishlaundrysystems.com"
@@ -441,9 +410,10 @@
                         <div>
                             <p class="font-body text-gray-700 text-sm font-bold mb-1">Address</p>
                             <address class="font-body text-gray-500 text-sm not-italic leading-relaxed">
-                                95 Ranelagh Village, Ranelagh<br>
-                                Dublin 6, D06 V1W5<br>
-                                Dublin — Ireland
+                                95 Ranelagh Village<br>
+                                Ranelagh<br>
+                                Dublin 6, D06 VTW5<br>
+                                Dublin, Ireland
                             </address>
                         </div>
                     </div>
@@ -459,19 +429,19 @@
                         @foreach([
                             [
                                 'q' => 'What information should I include?',
-                                'a' => 'Site location(s), equipment type/brand, symptoms, number of machines affected, and urgency/impact.',
+                                'a' => 'Include the site location, enquiry type, preferred timeframe and any equipment details you have, such as type, brand, model and quantity. For a breakdown, also include the symptoms and how the issue is affecting the operation.',
                             ],
                             [
-                                'q' => 'Do you offer contracts and rental?',
-                                'a' => 'Yes. We confirm the best next step after assessment.',
+                                'q' => 'Do you offer service contracts and equipment rental?',
+                                'a' => 'Yes. Irish Laundry Systems provides preventive maintenance contracts and equipment rental alongside new equipment, installation, repairs and aftercare.',
                             ],
                             [
                                 'q' => 'How quickly will you respond?',
-                                'a' => 'We aim to respond within 24 hours. Emergency call-outs can be same day depending on location and availability.',
+                                'a' => 'Urgent breakdowns are prioritised. For equipment down or an immediate service requirement, call our emergency line on +353 1 491 0402. Other enquiries are reviewed according to the request, location and preferred timeframe.',
                             ],
                             [
-                                'q' => 'What sectors do you cover?',
-                                'a' => 'Healthcare, hospitality, care facilities, and commercial & industrial laundry operations across the Republic of Ireland.',
+                                'q' => 'Which sectors do you support?',
+                                'a' => 'We support healthcare, care facilities, hospitality and commercial and industrial sites across Ireland.',
                             ],
                         ] as $i => $faq)
                         <div>
@@ -509,7 +479,7 @@
                             title="Republic of Ireland coverage area">
                         </iframe>
                     </div>
-                    <p class="font-body text-gray-400 text-xs mt-2">Republic of Ireland — all 26 counties</p>
+                    <p class="font-body text-gray-400 text-xs mt-2">Republic of Ireland, all 26 counties</p>
                 </div>
 
                 <div class="w-10 h-px bg-gray-200"></div>
@@ -519,6 +489,7 @@
                     <img src="/images/logo/electrolux-partner.png"
                          alt="Authorised Electrolux Professional Partner"
                          class="h-24 w-auto object-contain">
+                    <p class="font-body text-gray-500 text-sm mt-3">Authorised Electrolux Professional Partner</p>
                 </div>
 
             </div>
@@ -526,7 +497,7 @@
         </div>
 
         {{-- What happens next --}}
-        <div class="mt-10 rounded-xl overflow-hidden">
+        <div class="mt-16 lg:mt-20 rounded-xl overflow-hidden">
             <div class="px-6 sm:px-8 lg:px-12 py-10" style="background:#eef5fd;">
                 <div class="flex items-center gap-2 mb-6">
                     <div class="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0" style="background:rgba(20,138,244,0.15);">
@@ -538,9 +509,9 @@
                 </div>
                 <div class="flex flex-col sm:flex-row gap-6 sm:gap-0">
                     @php $nextSteps = [
-                        ['num' => '1', 'title' => 'We review your details',      'desc' => 'Your request is assessed against site, equipment and urgency.'],
-                        ['num' => '2', 'title' => 'We may ask triage questions', 'desc' => 'A quick follow-up if we need to clarify scope or access.'],
-                        ['num' => '3', 'title' => 'We confirm next steps',       'desc' => 'We confirm approach, availability and what to expect from there.'],
+                        ['num' => '1', 'title' => 'We review your request',  'desc' => 'We assess the site, enquiry and any equipment information provided.'],
+                        ['num' => '2', 'title' => 'We clarify the details',    'desc' => 'We contact you if we need more information about the equipment, access or timing.'],
+                        ['num' => '3', 'title' => 'We confirm next steps',     'desc' => 'We confirm the recommended action, availability and expected timing.'],
                     ]; @endphp
                     @foreach($nextSteps as $i => $step)
                     <div class="flex-1 flex flex-col items-center text-center px-4">

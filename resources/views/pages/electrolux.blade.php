@@ -469,7 +469,7 @@
                     </button>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center border border-navy/30 hover:border-navy text-navy font-body font-bold px-7 py-4 rounded-md text-base transition-all duration-200 hover:-translate-y-0.5 w-full sm:w-auto">
-                        Request Service Assessment
+                        Request an Assessment
                     </a>
                 </div>
 

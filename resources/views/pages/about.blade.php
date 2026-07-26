@@ -515,7 +515,7 @@
     'body'       => 'Share the main details about your site and what you need help with. Our team will review the enquiry and contact you directly.',
     'formTitle'  => 'Equipment & Service Enquiry',
     'formIntro'  => 'Provide the main details below. We aim to respond within 24 hours.',
-    'buttonText' => 'Request Service Assessment',
+    'buttonText' => 'Request an Assessment',
 ])
 
 @endsection

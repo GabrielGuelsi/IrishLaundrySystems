@@ -221,7 +221,7 @@
     'body'       => 'Share whether your enquiry concerns equipment, rental, maintenance, repair or aftercare, together with the relevant site and equipment details.',
     'formTitle'  => 'Request a Service Assessment',
     'formIntro'  => 'Choose the enquiry type and provide the relevant site and equipment details.',
-    'buttonText' => 'Request Service Assessment',
+    'buttonText' => 'Request an Assessment',
 ])
 
 @endsection
