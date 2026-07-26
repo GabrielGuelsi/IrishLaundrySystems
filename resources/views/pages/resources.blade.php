@@ -1,12 +1,12 @@
 @extends('layouts.app')
 
-@section('pageTitle', 'Resources | Guides, Checklists & Industry Insights | ILS')
-@section('metaDescription', 'Practical guides, checklists and reference material to help commercial laundry operators manage equipment, reduce downtime and stay compliant.')
+@section('pageTitle', 'Resources | Commercial Laundry Guides & Official Electrolux Documents | ILS')
+@section('metaDescription', 'Irish Laundry Systems guides and official Electrolux Professional documents — brochures, range overviews, product leaflets and application guides for commercial laundry equipment, sectors and applications.')
 
 @section('content')
 
 {{-- ═══════════════════════════════════════
-     1. HERO — image background, left-aligned
+     1. HERO
 ═══════════════════════════════════════ --}}
 <section class="relative overflow-hidden flex flex-col min-h-[420px] lg:min-h-[520px]">
     <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry resources"
@@ -19,20 +19,21 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
 
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Resources for <br class="hidden lg:block"><span style="color:#148af4;">smarter laundry operations</span>
+                    <span class="block">Commercial laundry guidance and</span>
+                    <span class="block" style="color:#148af4;">official Electrolux resources</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Guides, checklists and reference material to help operators manage equipment, reduce downtime and stay compliant.
+                    Access Irish Laundry Systems guides, practical resources and official Electrolux Professional documents covering equipment, sectors and specialist laundry applications.
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#resources-library"
+                    <a href="#electrolux-documents"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Browse the Library
+                        Browse Documents
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="#ils-guides"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Talk to Our Team
+                        View Guides
                     </a>
                 </div>
 
@@ -41,389 +42,386 @@
     </div>
 </section>
 
+{{-- 2. Thin Electrolux Trust Strip --}}
 @include('components.partner-strip')
 
 {{-- ═══════════════════════════════════════
-     2. FEATURED RESOURCE
+     3. IRISH LAUNDRY SYSTEMS GUIDES (gated — landing pages, kept Draft until backend ready)
 ═══════════════════════════════════════ --}}
-<section id="resources-library" class="bg-white py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="flex items-center justify-between mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em]">Featured Resource</p>
-            <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline">Request any guide →</a>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-5 rounded-2xl overflow-hidden border border-gray-100 shadow-sm reveal" style="min-height:380px;">
-
-            {{-- Image --}}
-            <div class="lg:col-span-3 overflow-hidden relative" style="min-height:280px;">
-                <img src="{{ asset('images/shared/service-contracts-hero.png') }}"
-                     alt="Service Contract Buyer's Guide"
-                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
-                <div class="absolute inset-0 bg-gradient-to-r from-transparent to-gray-50/30 hidden lg:block"></div>
-                {{-- Floating badge --}}
-                <div class="absolute top-5 left-5">
-                    <span class="bg-[#148af4] text-white font-heading font-bold text-xs px-3 py-1.5 rounded-full">Featured</span>
-                </div>
-            </div>
-
-            {{-- Content --}}
-            <div class="lg:col-span-2 flex flex-col justify-center p-8 lg:p-12 bg-gray-50">
-                <div class="flex items-center gap-3 mb-5">
-                    <span class="font-heading font-bold text-xs px-3 py-1.5 rounded-full bg-[#148af4]/10 text-[#148af4]">Guide</span>
-                    <span class="text-gray-400 text-xs font-body flex items-center gap-1">
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                        8 min read
-                    </span>
-                </div>
-                <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-4">
-                    Service Contract<br>Buyer's Guide
-                </h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-7">
-                    What to look for in a commercial laundry service contract — and the questions you should be asking your provider before signing anything.
-                </p>
-                <div class="flex flex-wrap items-center gap-4">
-                    <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200">
-                        Request a Copy
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                        </svg>
-                    </a>
-                    <span class="font-body text-gray-400 text-xs">Healthcare · Hospitality · Care</span>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-{{-- ═══════════════════════════════════════
-     3. GUIDES GRID
-═══════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-gray-50">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 reveal">
-            <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Library</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Guides</h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">Practical reference material for operators and facilities managers</p>
-            </div>
-            <a href="{{ route('contact') }}" class="font-body font-bold text-[#148af4] text-sm hover:underline whitespace-nowrap">Request a guide →</a>
-        </div>
-
-        @php
-        $guides = [
-            [
-                'title'  => 'Preventive Maintenance Basics',
-                'desc'   => 'An overview of what a preventive maintenance programme for commercial laundry should include — and why it matters.',
-                'sector' => 'All machines',
-                'tag'    => 'Guide',
-                'read'   => '6 min',
-                'img'    => 'images/shared/repairs-callouts.jpg',
-            ],
-            [
-                'title'  => 'Barrier Washer Guide',
-                'desc'   => 'Understanding barrier washer operation, infection control benefits and maintenance requirements.',
-                'sector' => 'Barrier Washers',
-                'tag'    => 'Guide',
-                'read'   => '10 min',
-                'img'    => 'images/shared/render-double-page_72dpi.jpg',
-            ],
-            [
-                'title'  => 'Equipment Lifecycle Planning',
-                'desc'   => 'When to repair and when to replace — a practical guide to commercial laundry equipment lifecycle decisions.',
-                'sector' => 'All machines',
-                'tag'    => 'Guide',
-                'read'   => '7 min',
-                'img'    => 'images/shared/repairs-hero.jpg',
-            ],
-            [
-                'title'  => 'Rental vs Purchase Decision Guide',
-                'desc'   => 'A structured guide to deciding whether equipment rental or outright purchase makes more sense for your operation.',
-                'sector' => 'All machines',
-                'tag'    => 'Guide',
-                'read'   => '5 min',
-                'img'    => 'images/shared/td6-multihousing-room.jpg',
-            ],
-            [
-                'title'  => 'Tumble Dryer Maintenance Guide',
-                'desc'   => 'Key maintenance points, airflow checks and safety requirements for commercial tumble dryers in operational settings.',
-                'sector' => 'Tumble Dryers',
-                'tag'    => 'Guide',
-                'read'   => '8 min',
-                'img'    => 'images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',
-            ],
-            [
-                'title'  => 'Ironer Setup & Throughput Guide',
-                'desc'   => 'How to size, set up and get consistent throughput from a flatwork ironer in a commercial laundry environment.',
-                'sector' => 'Ironers',
-                'tag'    => 'Guide',
-                'read'   => '9 min',
-                'img'    => 'images/shared/line6000-ironer.webp',
-            ],
-        ];
-        @endphp
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            @foreach($guides as $i => $guide)
-            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col reveal" style="transition-delay:{{ ($i % 3) * 80 }}ms;">
-
-                {{-- Cover image --}}
-                <div class="overflow-hidden relative" style="height:210px;">
-                    <img src="{{ asset($guide['img']) }}" alt="{{ $guide['title'] }}"
-                         class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
-                    {{-- Category badge on image --}}
-                    <div class="absolute top-4 left-4">
-                        <span class="bg-[#148af4] text-white font-heading font-bold text-xs px-3 py-1.5 rounded-full">
-                            {{ $guide['tag'] }}
-                        </span>
-                    </div>
-                </div>
-
-                {{-- Content --}}
-                <div class="p-6 flex flex-col flex-1">
-                    <div class="flex items-center gap-2 mb-3">
-                        <span class="font-body text-gray-400 text-xs flex items-center gap-1">
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                            {{ $guide['read'] }} read
-                        </span>
-                        <span class="w-1 h-1 rounded-full bg-gray-300"></span>
-                        <span class="font-body text-gray-400 text-xs">{{ $guide['sector'] }}</span>
-                    </div>
-
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-3 flex-1">{{ $guide['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $guide['desc'] }}</p>
-
-                    <div class="pt-4 border-t border-gray-100">
-                        <a href="{{ route('request-assessment') }}"
-                           class="inline-flex items-center gap-1.5 font-body font-bold text-[#148af4] text-sm hover:underline">
-                            Request Guide
-                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            @endforeach
-        </div>
-
-    </div>
-</section>
-
-{{-- ═══════════════════════════════════════
-     4. CHECKLISTS
-═══════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 reveal">
-            <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ready to use</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Checklists</h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">Print-ready and digital checklists for operators and engineers</p>
-            </div>
-        </div>
-
-        @php
-        $checklists = [
-            [
-                'title'   => 'Monthly Operator Checks — Washers',
-                'desc'    => 'Routine checks your operators should carry out monthly on commercial washers to catch early signs of wear.',
-                'machine' => 'Washers',
-                'icon'    => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
-            ],
-            [
-                'title'   => 'Monthly Operator Checks — Dryers',
-                'desc'    => 'Essential monthly safety and performance checks for commercial tumble dryers — lint filters, temperatures, door seals.',
-                'machine' => 'Tumble Dryers',
-                'icon'    => 'M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z',
-            ],
-            [
-                'title'   => 'Barrier Washer Operator Checks',
-                'desc'    => 'Monthly checks for barrier washer operation — door seals, programme completion, cycle logs and hygiene documentation.',
-                'machine' => 'Barrier Washers',
-                'icon'    => 'M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766m0 0l3.024 3.024c.37-.14.716-.363 1.002-.67L21 11.25a2.25 2.25 0 00-2.25-2.25H15M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163.036 1.548.537l1.009 1.34c.386.5.393 1.187.02 1.695l-.007.01',
-            ],
-            [
-                'title'   => 'Ironer Pre-Start Safety Checklist',
-                'desc'    => 'Safety and readiness checks before starting a flatwork ironer — chest temperature, ribbon condition, feed alignment.',
-                'machine' => 'Ironers',
-                'icon'    => 'M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z',
-            ],
-        ];
-        @endphp
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            @foreach($checklists as $i => $item)
-            <div class="bg-bg border border-gray-100 rounded-2xl p-7 flex flex-col hover:shadow-lg transition-shadow duration-300 reveal" style="transition-delay:{{ $i * 60 }}ms;">
-
-                {{-- Icon --}}
-                <div class="w-12 h-12 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                    <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="{{ $item['icon'] }}"/>
-                    </svg>
-                </div>
-
-                {{-- Tag --}}
-                <div class="flex items-center gap-2 mb-4">
-                    <span class="font-heading font-bold text-xs px-2.5 py-1 rounded-full bg-[#148af4]/10 text-[#148af4]">Checklist</span>
-                    <span class="font-body text-gray-400 text-xs">{{ $item['machine'] }}</span>
-                </div>
-
-                <h3 class="font-heading font-bold text-navy text-sm leading-snug mb-3">{{ $item['title'] }}</h3>
-                <p class="font-body text-gray-500 text-xs leading-relaxed flex-1 mb-6">{{ $item['desc'] }}</p>
-
-                <a href="{{ route('request-assessment') }}"
-                   class="inline-flex items-center gap-1.5 font-body font-bold text-[#148af4] text-xs hover:underline">
-                    Request Checklist
-                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-
-            </div>
-            @endforeach
-        </div>
-
-    </div>
-</section>
-
-{{-- ═══════════════════════════════════════
-     4b. RESOURCE HELP STRIP
-═══════════════════════════════════════ --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
-
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
-             class="w-full h-full object-cover"
-             style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
-    </div>
-
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Resource Help</p>
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-            <span class="text-white">Not sure which <span style="color:#011E41;">guide or checklist</span></span><br class="hidden lg:block">
-            <span class="text-white">fits your site?</span>
-        </h2>
-        <p class="font-body text-white text-base leading-relaxed mb-6">
-            Tell us what you are trying to manage, maintain or decide — Irish Laundry Systems will point you to the right resource or practical advice for the site.
-        </p>
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
-            @foreach([
-                ['icon' => 'ativo-8',  'label' => 'Guides'],
-                ['icon' => 'ativo-4',  'label' => 'Checklists'],
-                ['icon' => 'ativo-20', 'label' => 'Sector<br>resources'],
-                ['icon' => 'ativo-7',  'label' => 'Practical<br>advice'],
-            ] as $feat)
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
-            @endforeach
-        </div>
-        <a href="{{ route('contact') }}"
-           class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
-            Talk to Our Team
-        </a>
-    </div>
-
-</section>
-
-{{-- ═══════════════════════════════════════
-     5. BY MACHINE — equipment card pattern
-═══════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section id="ils-guides" class="bg-white py-16 lg:py-24 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">By Machine</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Irish Laundry Systems Guides</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Resources by <span style="color:#148af4;">machine type</span>
+                Practical guidance for <span style="color:#148af4;">equipment, rental and maintenance decisions</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Each machine type has its own maintenance requirements, operator checks and service considerations — find resources specific to your equipment.
+                Practical resources for planning equipment, comparing purchase and Equipment Rental, and caring for equipment over time.
             </p>
         </div>
 
         @php
-        $machines = [
+        $ilsGuide = [
+            'label' => 'Featured Guide',
+            'title' => 'Commercial Laundry Equipment Buying Guide',
+            'desc'  => 'A practical guide to capacity, available space, installation requirements and key commercial considerations when choosing laundry equipment.',
+            'cta'   => 'Download the Guide',
+            'url'   => '/resources/commercial-laundry-equipment-buying-guide',
+        ];
+        $ilsSecondary = [
             [
-                'href'  => route('equipment.category', 'commercial-washers'),
-                'title' => 'Washers',
-                'desc'  => 'Washer-extractors and commercial washing machines. Drum checks, programme faults, bearing wear and parts continuity.',
-                'img'   => 'images/pages/commercial-washers/commercialwasher.webp',
+                'label' => 'Buyer Guide',
+                'title' => 'Equipment Rental or Purchase Guide',
+                'desc'  => 'Compare the cost, ownership and maintenance considerations behind purchasing equipment or choosing Equipment Rental.',
+                'cta'   => 'Download the Guide',
+                'url'   => '/resources/equipment-rental-or-purchase-guide',
             ],
             [
-                'href'  => route('equipment.category', 'tumble-dryers'),
-                'title' => 'Tumble Dryers',
-                'desc'  => 'Commercial tumble dryers. Lint management, airflow checks, temperature calibration and door seal maintenance.',
-                'img'   => 'images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp',
-            ],
-            [
-                'href'  => route('equipment.category', 'barrier-washers'),
-                'title' => 'Barrier Washers',
-                'desc'  => 'Infection control washers for healthcare and care. Cycle logs, hygiene validation, door seal checks and compliance records.',
-                'img'   => 'images/pages/barrier-washers/line6000-barrier-washer.webp',
-            ],
-            [
-                'href'  => route('equipment.category', 'ironers'),
-                'title' => 'Ironers',
-                'desc'  => 'Flatwork ironers and chest ironers. Chest temperature, ribbon condition, feed alignment and throughput planning.',
-                'img'   => 'images/shared/line6000-ironer.webp',
+                'label' => 'Maintenance Checklist',
+                'title' => 'Preventive Maintenance Checklist',
+                'desc'  => 'A practical checklist for planning servicing, monitoring equipment condition and reducing breakdown risk over time.',
+                'cta'   => 'Download the Checklist',
+                'url'   => '/resources/preventive-maintenance-checklist',
             ],
         ];
         @endphp
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            @foreach($machines as $i => $machine)
-            <div class="flex flex-col gap-6 h-full reveal" style="transition-delay:{{ $i * 80 }}ms;">
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
 
-                <div>
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $machine['title'] }}</p>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $machine['desc'] }}</p>
+            {{-- Featured (spans both rows on desktop, first on mobile) --}}
+            <a href="{{ $ilsGuide['url'] }}"
+               class="group lg:row-span-2 rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col reveal">
+                <div class="relative flex items-center justify-center" style="min-height:220px; background:linear-gradient(135deg,#011E41 0%,#0d3568 100%);">
+                    <span class="absolute top-5 left-5 bg-[#148af4] text-white font-heading font-bold text-xs px-3 py-1.5 rounded-full uppercase tracking-wide">{{ $ilsGuide['label'] }}</span>
+                    <svg class="w-20 h-20 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
                 </div>
-
-                <div class="w-full flex items-end justify-center mt-auto" style="height:300px;">
-                    <img src="{{ asset($machine['img']) }}"
-                         alt="{{ $machine['title'] }}"
-                         class="transition-transform duration-500 hover:-translate-y-2"
-                         style="max-width:100%; max-height:100%; object-fit:contain;">
+                <div class="p-8 lg:p-10 flex flex-col flex-1 bg-gray-50">
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-4">{{ $ilsGuide['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-7 flex-1">{{ $ilsGuide['desc'] }}</p>
+                    <span class="inline-flex items-center gap-2 bg-navy group-hover:bg-navy/90 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors w-fit">
+                        {{ $ilsGuide['cta'] }}
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
                 </div>
+            </a>
 
-                <a href="{{ $machine['href'] }}"
-                   class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold text-base px-5 py-4 rounded-lg transition-colors">
-                    View Resources
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-
-            </div>
+            {{-- Two secondary cards --}}
+            @foreach($ilsSecondary as $g)
+            <a href="{{ $g['url'] }}"
+               class="group rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col sm:flex-row reveal">
+                <div class="relative flex items-center justify-center sm:w-40 flex-shrink-0" style="min-height:140px; background:linear-gradient(135deg,#011E41 0%,#0d3568 100%);">
+                    <svg class="w-12 h-12 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div class="p-6 flex flex-col flex-1 bg-white">
+                    <span class="font-body font-bold text-[#148af4] text-[11px] uppercase tracking-[0.14em] mb-2">{{ $g['label'] }}</span>
+                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $g['title'] }}</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-4 flex-1">{{ $g['desc'] }}</p>
+                    <span class="inline-flex items-center gap-1.5 font-body font-bold text-[#148af4] text-sm group-hover:underline">
+                        {{ $g['cta'] }}
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                    </span>
+                </div>
+            </a>
             @endforeach
-        </div>
 
+        </div>
     </div>
 </section>
 
 {{-- ═══════════════════════════════════════
-     5a-2. myPRO TUTORIAL VIDEOS — official Electrolux Professional walkthroughs
+     4. OFFICIAL ELECTROLUX PROFESSIONAL DOCUMENTS — integrated library
 ═══════════════════════════════════════ --}}
-<section id="mypro-tutorial-videos" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
+<section id="electrolux-documents" class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100 scroll-mt-28">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-8 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Official Electrolux Professional Documents</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Find documents by <span style="color:#148af4;">equipment, sector or document type</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Browse official brochures, range overviews, product leaflets and application guides for the equipment and laundry environments supported by Irish Laundry Systems.
+            </p>
+        </div>
+
+        @php
+            $tb = 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/';
+            $wp = 'https://www.electroluxprofessional.com/wp-content/uploads/';
+            // Each PDF registered once. Cross-filters applied per approved packages.
+            // Display order follows the general priority: range overviews & general brochures,
+            // equipment brochures, application guides, then product leaflets.
+            $documents = [
+                ['title' => 'Professional Laundry Range Overview', 'type' => 'Range Overview',
+                 'equipment' => ['Laundry Range & Line 6000','Commercial Washers','Barrier Washers','Tumble Dryers','Heat Pump Dryers','Drying Cabinets','Hot Cylinder Ironers','Finishing Equipment','Wet Cleaning','Dosing & Detergents'],
+                 'sector' => [], 'pdf' => $tb.'RO/EPR_RO_Professional%20Laundry_ENG_01072025.pdf?version=1784915295'],
+
+                ['title' => 'Line 6000 Washers', 'type' => 'Brochure',
+                 'equipment' => ['Commercial Washers','Wet Cleaning'], 'sector' => [],
+                 'pdf' => $tb.'BRO/EPR_Line%206000%20Washers%20brochure-01072025_EN.pdf?version=1784915295'],
+
+                ['title' => 'Line 6000 Washers & Dryers', 'type' => 'Brochure',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers','Wet Cleaning'], 'sector' => ['Commercial & Industrial'],
+                 'pdf' => $tb.'BRO/EPR_Line%206000%20Washers%20%26%20Dryers%20brochure-01072025_EN.pdf'],
+
+                ['title' => 'Line 6000 Dryers', 'type' => 'Brochure',
+                 'equipment' => ['Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Healthcare','Care Facilities','Commercial & Industrial'],
+                 'pdf' => $tb.'BRO/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+
+                ['title' => 'Line 6000 Evolution Barrier Washers', 'type' => 'Brochure',
+                 'equipment' => ['Barrier Washers'], 'sector' => ['Healthcare','Care Facilities','Commercial Laundries','Firefighters','Clean Rooms'],
+                 'pdf' => $tb.'BRO/EPR-brochure-Line%206000%20Evolution%20Barrier%20Washers-20241119-EN.pdf'],
+
+                ['title' => 'Line 6000 Hot Cylinder Ironers', 'type' => 'Brochure',
+                 'equipment' => ['Laundry Range & Line 6000','Hot Cylinder Ironers'], 'sector' => ['Healthcare','Care Facilities','Hospitality','Commercial Laundries','Commercial & Industrial'],
+                 'pdf' => $tb.'BRO/EPR-Brochure%20Line%206000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+
+                ['title' => 'Cleanroom Laundry Solutions', 'type' => 'Brochure',
+                 'equipment' => ['Barrier Washers','Tumble Dryers'], 'sector' => ['Clean Rooms'],
+                 'pdf' => $tb.'BRO/EPR-Cleanroom%20Brochure-20250327-EN.pdf?version=1755506536'],
+
+                ['title' => 'Firefighters Laundry Solutions', 'type' => 'Brochure',
+                 'equipment' => ['Commercial Washers','Barrier Washers','Tumble Dryers','Drying Cabinets'], 'sector' => ['Firefighters'],
+                 'pdf' => $tb.'BRO/EPR_brochure_firefighters_16042025_EN.pdf'],
+
+                ['title' => 'Line 6000 lagoon® Advanced Care', 'type' => 'Brochure',
+                 'equipment' => ['Wet Cleaning'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'BRO/EPR-LAC-brochure-19022025_EN.pdf'],
+
+                ['title' => 'myPRO Range', 'type' => 'Brochure',
+                 'equipment' => ['myPRO','myPROzip'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'BRO/EPR_myPRO-RANGE-BROCHURE_A4-one%20page%20view_03072026_EN.pdf?version=1785005343'],
+
+                ['title' => 'Clean, Sanitize, Decontaminate: How to Choose Your Solution', 'type' => 'White Paper',
+                 'equipment' => ['Commercial Washers','Barrier Washers'], 'sector' => ['Healthcare','Care Facilities','Hospitality','Commercial & Industrial','Firefighters','Clean Rooms'],
+                 'pdf' => $wp.'2020/04/Electrolux_WhitePaper_CleaningSolution.pdf'],
+
+                ['title' => 'Healthcare & Care Laundry', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers'], 'sector' => ['Healthcare','Care Facilities'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers_Care%20segment_LR.pdf?version=1770273779'],
+
+                ['title' => 'Multi-Housing Laundry', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Multi-Housing'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20Multi-housing%20segment-LR.pdf?version=1784915295'],
+
+                ['title' => 'Self-Service Laundries', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Self-Service'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20Self%20service%20laundries-LR.pdf?version=1784915295'],
+
+                ['title' => 'On-Premises Laundry', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['On-Premises Laundry'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20On-premises%20laundries-LR.pdf?version=1784915295'],
+
+                ['title' => 'Heavy-Duty Laundries', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Commercial Laundries','Heavy-Duty Laundries'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20Heavy%20duty%20laundries-LR.pdf?version=1784915295'],
+
+                ['title' => 'Facility Management', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Facility Management'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20Facility%20management-LR.pdf?version=1784915295'],
+
+                ['title' => 'Professional Cleaning Shops', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Professional Cleaning Shops'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20Cleaning%20shops%20segment-LR.pdf?version=1784915295'],
+
+                ['title' => 'Hospitality Laundry', 'type' => 'Application Guide',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'CLFL/Line%206000%20Washers%20and%20Dryers%20HoReCa%20segment-LR.pdf?version=1784915295'],
+
+                ['title' => 'High-Spin Washers & Heat Pump Dryers', 'type' => 'Product Leaflet',
+                 'equipment' => ['Commercial Washers','Tumble Dryers','Heat Pump Dryers'], 'sector' => [],
+                 'pdf' => $tb.'CLFL/EPR_leaflet_Line%206000%20HS%20Washers%20%26%20HP%20Dryers_ENG_LR_web.pdf?version=1784915295'],
+
+                ['title' => 'Line 6000 Heat Pump Dryers', 'type' => 'Product Leaflet',
+                 'equipment' => ['Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Multi-Housing','On-Premises Laundry','Marine'],
+                 'pdf' => $tb.'CLFL/EPR-leaflet-heat-pump-dryer-04092024-EN-one%20page%20view.pdf?version=1738618424'],
+
+                ['title' => 'TD6-11 with Heat Pump', 'type' => 'Product Leaflet',
+                 'equipment' => ['Tumble Dryers','Heat Pump Dryers'], 'sector' => ['Multi-Housing','Self-Service'],
+                 'pdf' => $wp.'2024/09/EPR-TD6-11-with-Heat-Pump-Leaflet_04092024_EN-singlepage.pdf'],
+
+                ['title' => 'Line 6000 Pullman Barrier Washers', 'type' => 'Product Leaflet',
+                 'equipment' => ['Barrier Washers'], 'sector' => ['Healthcare','Care Facilities','Hospitality','Commercial Laundries','Clean Rooms'],
+                 'pdf' => $wp.'2023/10/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+
+                ['title' => 'Line 6000 FFS Vibe Ironers', 'type' => 'Product Leaflet',
+                 'equipment' => ['Laundry Range & Line 6000','Hot Cylinder Ironers'], 'sector' => ['Healthcare','Care Facilities','Hospitality','Commercial Laundries','Commercial & Industrial'],
+                 'pdf' => $wp.'2023/11/EPR-leaflet-IronerFFS-EN-20231122-LR-singlePage.pdf'],
+
+                ['title' => 'Serenity Cabinet', 'type' => 'Product Leaflet',
+                 'equipment' => ['Finishing Equipment'], 'sector' => [],
+                 'pdf' => $tb.'CLFL/EPR_Serenity_Cabinet_leaflet_ENG_LR.pdf?version=1784938173'],
+
+                ['title' => 'Line 6000 Drying Cabinets', 'type' => 'Product Leaflet',
+                 'equipment' => ['Drying Cabinets'], 'sector' => ['Hospitality','Commercial Laundries','Firefighters','Education','Sport & Fitness'],
+                 'pdf' => $tb.'CLFL/EPR-Drying%20Cabinets%20Leaflet-20250710-EN.pdf'],
+
+                ['title' => 'myPRO XL Laundry Solutions', 'type' => 'Product Leaflet',
+                 'equipment' => ['myPRO XL'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'CLFL/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf?version=1785004820'],
+
+                ['title' => 'The Professional heart for small Hotels, Bed & Breakfasts and Restaurants', 'type' => 'Product Leaflet',
+                 'equipment' => ['myPRO'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'CLFL/EPR-leaflet-mypro-B%26B_2021%20ENG_LR.pdf?version=1779086791'],
+
+                ['title' => 'myPROzip - Beach - Holidays segment', 'type' => 'Product Leaflet',
+                 'equipment' => ['myPROzip'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'CLFL/EPR_leaflet-myproZip-BEACH-new-logo_LR.pdf?version=1785005343'],
+
+                ['title' => 'myPROzip - InfoFlyer Campsite', 'type' => 'Product Leaflet',
+                 'equipment' => ['myPROzip'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'CLFL/EPR_leaflet-myproZip-CAMPSITE-LR.pdf?version=1785005343'],
+
+                ['title' => 'myPROzip - infoflyer - Countryside', 'type' => 'Product Leaflet',
+                 'equipment' => ['myPROzip'], 'sector' => ['Hospitality'],
+                 'pdf' => $tb.'CLFL/EPR_leaflet-myproZip-Countryside-LR.pdf?version=1785005343'],
+
+                ['title' => 'Detergents, Dosing Systems & Storage', 'type' => 'Product Leaflet',
+                 'equipment' => ['Dosing & Detergents','Accessories & Consumables'], 'sector' => ['Commercial & Industrial'],
+                 'pdf' => $tb.'CLFL/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+            ];
+
+            // Facet order (canonical); only families with at least one document are shown.
+            $equipOrder  = ['Laundry Range & Line 6000','Commercial Washers','Barrier Washers','Tumble Dryers','Heat Pump Dryers','Drying Cabinets','Hot Cylinder Ironers','Finishing Equipment','Wet Cleaning','myPRO','myPRO XL','myPROzip','Dosing & Detergents','Accessories & Consumables'];
+            $sectorOrder = ['Healthcare','Care Facilities','Hospitality','Commercial & Industrial'];
+            $typeOrder   = ['Brochure','Range Overview','Application Guide','Product Leaflet','White Paper'];
+
+            $pE = []; $pS = []; $pT = [];
+            foreach ($documents as $d) {
+                foreach ($d['equipment'] as $e) { $pE[$e] = 1; }
+                foreach (($d['sector'] ?? []) as $s) { $pS[$s] = 1; }
+                $pT[$d['type']] = 1;
+            }
+            $equipFilters  = array_values(array_filter($equipOrder,  fn($e) => isset($pE[$e])));
+            $sectorFilters = array_values(array_filter($sectorOrder, fn($e) => isset($pS[$e])));
+            $typeFilters   = array_values(array_filter($typeOrder,   fn($e) => isset($pT[$e])));
+        @endphp
+
+        <div x-data="{
+                q: '', equip: 'All Documents', sector: 'All', type: 'All Types', shown: 6,
+                docs: {{ \Illuminate\Support\Js::from($documents) }},
+                match(d) {
+                    const e = this.equip === 'All Documents' || d.equipment.includes(this.equip);
+                    const s = this.sector === 'All' || (d.sector || []).includes(this.sector);
+                    const t = this.type === 'All Types' || d.type === this.type;
+                    let ok = true;
+                    const query = this.q.trim().toLowerCase();
+                    if (query) {
+                        const hay = (d.title + ' ' + d.equipment.join(' ') + ' ' + (d.sector || []).join(' ') + ' ' + d.type).toLowerCase();
+                        ok = hay.includes(query);
+                    }
+                    return e && s && t && ok;
+                },
+                get filtered() { return this.docs.filter(d => this.match(d)); },
+                get visible() { return this.filtered.slice(0, this.shown); },
+                get hasFilters() { return this.q.trim() !== '' || this.equip !== 'All Documents' || this.sector !== 'All' || this.type !== 'All Types'; },
+                clearAll() { this.q = ''; this.equip = 'All Documents'; this.sector = 'All'; this.type = 'All Types'; this.shown = 6; },
+             }"
+             x-init="$watch('q', () => shown = 6); $watch('equip', () => shown = 6); $watch('sector', () => shown = 6); $watch('type', () => shown = 6);">
+
+            {{-- Search --}}
+            <div class="relative max-w-xl mb-6 reveal">
+                <svg class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg>
+                <input type="text" x-model="q" placeholder="Search by document, equipment or sector"
+                       class="w-full border border-gray-200 rounded-lg pl-11 pr-4 py-3.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-[#148af4] transition-colors bg-white">
+            </div>
+
+            {{-- Filter groups --}}
+            <div class="space-y-4 mb-8">
+                {{-- Equipment & Systems --}}
+                <div>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.14em] mb-2.5">By Equipment &amp; Systems</p>
+                    <div class="flex flex-wrap gap-2">
+                        @foreach(array_merge(['All Documents'], $equipFilters) as $e)
+                        <button type="button" @click="equip = '{{ $e }}'"
+                                :class="equip === '{{ $e }}' ? 'bg-[#148af4] border-[#148af4] text-white' : 'bg-white border-gray-200 text-gray-600 hover:text-navy hover:border-gray-300'"
+                                class="cursor-pointer font-body font-bold text-xs px-4 py-2 rounded-full border transition-colors duration-200">{{ $e }}</button>
+                        @endforeach
+                    </div>
+                </div>
+                {{-- Sector & Application --}}
+                <div>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.14em] mb-2.5">By Sector &amp; Application</p>
+                    <div class="flex flex-wrap gap-2">
+                        @foreach(array_merge(['All'], $sectorFilters) as $s)
+                        <button type="button" @click="sector = '{{ $s }}'"
+                                :class="sector === '{{ $s }}' ? 'bg-[#148af4] border-[#148af4] text-white' : 'bg-white border-gray-200 text-gray-600 hover:text-navy hover:border-gray-300'"
+                                class="cursor-pointer font-body font-bold text-xs px-4 py-2 rounded-full border transition-colors duration-200">{{ $s === 'All' ? 'All Sectors' : $s }}</button>
+                        @endforeach
+                    </div>
+                </div>
+                {{-- Document Type --}}
+                <div>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.14em] mb-2.5">By Document Type</p>
+                    <div class="flex flex-wrap gap-2">
+                        @foreach(array_merge(['All Types'], $typeFilters) as $t)
+                        <button type="button" @click="type = '{{ $t }}'"
+                                :class="type === '{{ $t }}' ? 'bg-[#148af4] border-[#148af4] text-white' : 'bg-white border-gray-200 text-gray-600 hover:text-navy hover:border-gray-300'"
+                                class="cursor-pointer font-body font-bold text-xs px-4 py-2 rounded-full border transition-colors duration-200">{{ $t }}</button>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+
+            {{-- Result count + Clear --}}
+            <div class="flex items-center justify-between mb-6">
+                <span class="font-body text-sm text-gray-500"><span x-text="filtered.length"></span> <span x-text="filtered.length === 1 ? 'document' : 'documents'"></span></span>
+                <button type="button" x-show="hasFilters" @click="clearAll()" class="font-body font-bold text-sm text-[#148af4] hover:underline">Clear filters</button>
+            </div>
+
+            {{-- Document cards --}}
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <template x-for="d in visible" :key="d.title">
+                    <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
+                        <div class="relative mb-5 rounded-xl overflow-hidden flex items-center justify-center" style="height:120px; background:linear-gradient(135deg,#011E41 0%,#0d3568 100%);">
+                            <span class="absolute top-3 left-3 bg-[#148af4] text-white font-heading font-bold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wide" x-text="d.type"></span>
+                            <svg class="w-10 h-10 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+                        </div>
+                        <h3 class="font-heading font-bold text-navy text-base leading-snug mb-5 flex-1" x-text="d.title"></h3>
+                        <a :href="d.pdf" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-2 font-body font-bold text-sm text-[#148af4] hover:underline py-1.5 -my-1.5 w-fit">
+                            <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
+                            Download PDF
+                        </a>
+                    </div>
+                </template>
+            </div>
+
+            {{-- Load More --}}
+            <div class="text-center mt-10" x-show="visible.length < filtered.length" x-cloak>
+                <button type="button" @click="shown += 6"
+                        class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-8 py-4 rounded-lg transition-colors">
+                    Load More
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/></svg>
+                </button>
+            </div>
+
+            {{-- No results --}}
+            <div class="text-center py-16" x-show="filtered.length === 0" x-cloak>
+                <h3 class="font-heading font-bold text-navy text-2xl mb-2">No documents found</h3>
+                <p class="font-body text-gray-500 text-base mb-6">Try changing the filters or request the document you need.</p>
+                <a href="#request-a-resource" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-7 py-3.5 rounded-lg transition-colors">
+                    Request a Resource
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{-- ═══════════════════════════════════════
+     5. VIDEO TUTORIALS
+═══════════════════════════════════════ --}}
+<section id="video-tutorials" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Online Assistant</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Video Tutorials</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Video tutorials for <span style="color:#148af4;">myPRO and myPROzip</span>
+                Watch guidance for <span style="color:#148af4;">selected equipment and controls</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Get the best out of your myPRO and myPROzip washer, dryer and ironer with official step-by-step walkthroughs for installation and everyday use.
+                Access official tutorials and user guidance for selected Electrolux Professional laundry ranges.
             </p>
         </div>
 
@@ -444,7 +442,7 @@
         <div class="space-y-10 reveal">
             @foreach($myproVideoGroups as $grp)
             <div>
-                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-5">{{ $grp['group'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-5">myPRO &amp; myPROzip — {{ $grp['group'] }}</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     @foreach($grp['videos'] as $v)
                     <div class="rounded-2xl overflow-hidden bg-navy border border-gray-100 shadow-sm">
@@ -470,154 +468,104 @@
 </section>
 
 {{-- ═══════════════════════════════════════
-     5b. BROCHURE LIBRARY — every official brochure on the site, filterable
+     6. SUPPORT STRIP
 ═══════════════════════════════════════ --}}
-<section id="brochure-library" class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Brochure Library</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Official <span style="color:#148af4;">Electrolux Professional brochures</span> in one place
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Every brochure, leaflet and white paper from across the site — filter by equipment type and download directly.
-            </p>
-        </div>
-
-        @php
-        $brochures = [
-            ['cat' => 'Washers',            'type' => 'Leaflet',       'title' => 'Line 6000 HS Washers & HP Dryers',        'h' => '/pdfs/EPR_leaflet_Line 6000 HS Washers and HP Dryers_ENG_LR_web.pdf'],
-            ['cat' => 'Washers',            'type' => 'Brochure',      'title' => 'Line 6000 Washers & Dryers',              'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
-            ['cat' => 'Dryers',             'type' => 'Leaflet',       'title' => 'TD6-11 with Heat Pump',                   'h' => '/pdfs/EPR-TD6-11-with-Heat-Pump-Leaflet_04092024_EN-singlepage.pdf'],
-            ['cat' => 'Dryers',             'type' => 'Leaflet',       'title' => 'Heat Pump Dryer',                         'h' => '/pdfs/EPR-leaflet-heat-pump-dryer-04092024-EN-one page view.pdf'],
-            ['cat' => 'Dryers',             'type' => 'Brochure',      'title' => 'Line 6000 Dryers',                        'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-            ['cat' => 'Drying Cabinets',    'type' => 'Leaflet',       'title' => 'Drying Cabinets',                         'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'],
-            ['cat' => 'Barrier Washers',    'type' => 'Brochure',      'title' => 'Line 6000 Evolution Barrier Washers',     'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-            ['cat' => 'Barrier Washers',    'type' => 'Leaflet',       'title' => 'Pullman Barrier Washer',                  'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
-            ['cat' => 'Ironers & Finishing','type' => 'Brochure',      'title' => 'Line 6000 Hot Cylinder Ironers',          'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
-            ['cat' => 'Ironers & Finishing','type' => 'Leaflet',       'title' => 'Ironer Feeding, Folding & Stacking',      'h' => '/pdfs/EPR-leaflet-IronerFFS-EN-20231122-LR-singlePage.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Leaflet',       'title' => 'Detergents, Dosing Systems & Storage',    'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L00 Laundry Eco Degreaser',               'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L01 Laundry Eco Powder',                  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L02 Laundry Eco Wash',                    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L03 Laundry Eco Booster',                 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L04 Laundry Eco Bleach',                  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
-            ['cat' => 'Detergents & Dosing','type' => 'Product sheet', 'title' => 'L05 Laundry Eco Softener',                'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
-            ['cat' => 'Wet Cleaning',       'type' => 'White paper',   'title' => 'Electrolux Cleaning Solution',            'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'],
-            ['cat' => 'myPRO',              'type' => 'Leaflet',       'title' => 'myPRO XL Semi-Professional Range',        'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
-            ['cat' => 'Marine',             'type' => 'Brochure',      'title' => 'SkyLine Marine Segment',                  'h' => '/pdfs/EPR-Brochure SkyLine Segmento Marine-EN-20251007-LR.pdf'],
-            ['cat' => 'Marine',             'type' => 'Brochure',      'title' => 'thermaline Modular 90 Marine',            'h' => '/pdfs/EPR_bro_thermaline Modular 90 Marine_ENG_26032024.pdf'],
-            ['cat' => 'Firefighters',       'type' => 'Brochure',      'title' => 'Firefighters Laundry Solutions',          'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'],
-        ];
-        $brochureCats = array_values(array_unique(array_column($brochures, 'cat')));
-        @endphp
-
-        <div x-data="{ cat: 'All' }">
-
-            {{-- Category filter pills --}}
-            <div class="flex flex-wrap gap-2 mb-8 reveal" role="tablist" aria-label="Filter brochures by equipment type">
-                @foreach(array_merge(['All'], $brochureCats) as $c)
-                <button type="button" @click="cat = '{{ $c }}'"
-                        :class="cat === '{{ $c }}' ? 'bg-[#148af4] border-[#148af4] text-white' : 'bg-white border-gray-200 text-gray-600 hover:text-navy hover:border-gray-300'"
-                        :aria-pressed="cat === '{{ $c }}'"
-                        class="cursor-pointer font-body font-bold text-sm px-5 py-2.5 rounded-full border transition-colors duration-200">
-                    {{ $c }}
-                </button>
-                @endforeach
-            </div>
-
-            {{-- Brochure cards --}}
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-                @foreach($brochures as $b)
-                <div x-show="cat === 'All' || cat === '{{ $b['cat'] }}'"
-                     class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
-                    <div class="flex items-center justify-between gap-3 mb-4">
-                        <span class="font-body font-bold text-[#148af4] text-[11px] uppercase tracking-[0.14em]">{{ $b['cat'] }}</span>
-                        <span class="font-body text-gray-400 text-xs whitespace-nowrap">{{ $b['type'] }} · PDF</span>
-                    </div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-5 flex-1">{{ $b['title'] }}</h3>
-                    <a href="{{ $b['h'] }}" target="_blank" rel="noopener"
-                       class="inline-flex items-center gap-2 font-body font-bold text-sm text-[#148af4] hover:underline py-1.5 -my-1.5">
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                        Download
-                    </a>
-                </div>
-                @endforeach
-            </div>
-
-        </div>
+    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+             class="w-full h-full object-cover"
+             style="object-position: center 30%;">
+        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
+
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+        <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Resource Help</p>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            Not sure which resource you need?
+        </h2>
+        <p class="font-body text-white text-base leading-relaxed mb-7 max-w-2xl">
+            Tell us the equipment, sector or document you are looking for and our team will point you to the appropriate resource.
+        </p>
+        <a href="#request-a-resource"
+           class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
+            Ask Our Team
+        </a>
+    </div>
+
 </section>
 
 {{-- ═══════════════════════════════════════
-     6. NOTIFY / NEWSLETTER CTA
+     7. REQUEST A RESOURCE
 ═══════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24 border-t border-gray-100">
+<section id="request-a-resource" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
-        <div class="rounded-2xl overflow-hidden bg-gray-50 border border-gray-100 reveal">
-            <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="reveal reveal-left">
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request a Resource</p>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                    Can&rsquo;t find the <span style="color:#148af4;">document you need?</span>
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed max-w-md">
+                    Tell us the equipment, model, sector or topic you are looking for and our team will identify the appropriate resource.
+                </p>
+            </div>
 
-                {{-- Left content --}}
-                <div class="p-10 lg:p-16 flex flex-col justify-center">
-                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Stay Informed</p>
-                    <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                        Get new resources as they're published
-                    </h2>
-                    <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-8">
-                        New guides, checklists and technical references — sent directly when available. No marketing, no frequency commitments.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-3 max-w-md">
-                        <input type="email"
-                               placeholder="Your email address"
-                               class="flex-1 border border-border rounded-lg px-5 py-3.5 font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:border-[#148af4] transition-colors bg-white">
-                        <button class="bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-7 py-3.5 rounded-lg transition-colors duration-200 whitespace-nowrap">
-                            Notify Me
+            <div class="reveal reveal-right">
+                <form action="{{ route('contact.submit') }}" method="POST" data-utm class="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    @csrf
+                    <input type="hidden" name="page_source" value="resources_request">
+                    <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term">
+                    <div>
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Name</label>
+                        <input type="text" name="name" required class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                    </div>
+                    <div>
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Organisation</label>
+                        <input type="text" name="organisation" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                    </div>
+                    <div>
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Work Email</label>
+                        <input type="email" name="email" required class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                    </div>
+                    <div>
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Phone</label>
+                        <input type="tel" name="phone" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                    </div>
+                    <div>
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Equipment or Model</label>
+                        <input type="text" name="equipment" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                    </div>
+                    <div>
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Sector</label>
+                        <select name="sector" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                            <option value="">Select a sector</option>
+                            <option>Healthcare</option>
+                            <option>Care Facilities</option>
+                            <option>Hospitality</option>
+                            <option>Commercial &amp; Industrial</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Resource or Topic Required</label>
+                        <input type="text" name="resource_required" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Message</label>
+                        <textarea name="message" rows="4" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white"></textarea>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <button type="submit" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-8 py-4 rounded-lg transition-colors w-full sm:w-auto">
+                            Request a Resource
                         </button>
                     </div>
-                    <p class="font-body text-gray-400 text-xs mt-3">No spam. Unsubscribe at any time.</p>
-                </div>
-
-                {{-- Right: resource type tiles --}}
-                <div class="p-10 lg:p-16 flex items-center justify-center border-t lg:border-t-0 lg:border-l border-gray-100">
-                    <div class="grid grid-cols-2 gap-4 w-full max-w-xs">
-                        @foreach([
-                            ['label'=>'Guides', 'count'=>'6', 'icon'=>'M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25'],
-                            ['label'=>'Checklists', 'count'=>'4', 'icon'=>'M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z'],
-                            ['label'=>'Sector Guides', 'count'=>'4', 'icon'=>'M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21'],
-                            ['label'=>'Coming Soon', 'count'=>'+8', 'icon'=>'M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z'],
-                        ] as $tile)
-                        <div class="bg-white rounded-2xl p-5 border border-gray-100 flex flex-col items-center text-center">
-                            <div class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center mb-3">
-                                <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="{{ $tile['icon'] }}"/>
-                                </svg>
-                            </div>
-                            <span class="font-heading font-bold text-navy text-xl leading-none mb-1">{{ $tile['count'] }}</span>
-                            <span class="font-body text-gray-500 text-xs">{{ $tile['label'] }}</span>
-                        </div>
-                        @endforeach
-                    </div>
-                </div>
-
+                </form>
             </div>
-        </div>
 
+        </div>
     </div>
 </section>
-
-@include('components.proof-bar')
-
-{{-- ═══════════════════════════════════════
-     7. CTA
-═══════════════════════════════════════ --}}
-@include('components.cta-downtime-form', [
-    'pageSource' => 'resources_cta',
-    'heading'    => 'Need a guide or resource for <span style="color:#148af4;">your laundry operation</span>?',
-    'body'       => 'Tell Irish Laundry Systems what you are trying to manage, maintain or decide. We will send the right guide, checklist or practical advice for your site.',
-    'formTitle'  => 'Request a Resource',
-    'buttonText' => 'Request Resource',
-])
 
 @endsection
