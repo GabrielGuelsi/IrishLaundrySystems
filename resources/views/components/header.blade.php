@@ -155,7 +155,7 @@
                 <a href="{{ route('request-assessment') }}"
                    class="bg-orange hover:bg-orange-dark text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap"
                    data-ga-cta="header_request_assessment">
-                    {{ request()->routeIs('sectors.commercial') ? 'Request Commercial Assessment' : 'Request Service Assessment' }}
+                    {{ request()->routeIs('sectors.commercial') ? 'Request Commercial Assessment' : 'Request an Assessment' }}
                 </a>
             </div>
 
@@ -250,7 +250,7 @@
             </a>
             <a href="{{ route('request-assessment') }}" class="flex items-center justify-center gap-2 w-full py-3.5 bg-orange hover:bg-orange-dark text-white rounded-lg font-bold font-body text-sm transition-colors cursor-pointer"
                data-ga-cta="mobile_header_request_assessment">
-                {{ request()->routeIs('sectors.commercial') ? 'Request Commercial Assessment' : 'Request Service Assessment' }}
+                {{ request()->routeIs('sectors.commercial') ? 'Request Commercial Assessment' : 'Request an Assessment' }}
             </a>
         </div>
     </div>

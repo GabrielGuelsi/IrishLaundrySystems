@@ -36,7 +36,7 @@
 
 {{-- ════════════ 2. HERO ════════════ --}}
 <section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 520px; background-color: #011E41;">
-    <img src="/images/pages/services/rental-hero.webp"
+    <img src="/images/pages/equipmentrentalhero.png"
          alt="Commercial laundry equipment supplied and installed by Irish Laundry Systems"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -293,9 +293,9 @@
 
     <div style="display:flex; flex-wrap:wrap;">
         @foreach([
-            ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us what equipment, capacity or laundry pressure needs to be covered.', 'img' => '/images/shared/customer-care-line6000.jpg'],
-            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review the equipment route, installation needs and agreement scope.', 'img' => '/images/pages/services/service-contracts-hero.jpg'],
-            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied, installed and supported under the agreed rental arrangement.', 'img' => '/images/shared/repairs-callouts.jpg'],
+            ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us what equipment, capacity or laundry pressure needs to be covered.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
+            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review the equipment route, installation needs and agreement scope.', 'img' => '/images/shared/Strip1.jpeg'],
+            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied, installed and supported under the agreed rental arrangement.', 'img' => '/images/pages/equipmentrentalhero.png'],
         ] as $step)
         <div class="rn-visit-card">
             <img src="{{ asset(ltrim($step['img'], '/')) }}" alt="{{ $step['title'] }}" loading="lazy">
@@ -331,8 +331,8 @@
             ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/pages/sectors/healthcarehero.png', 'pos' => '80% center'],
             ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
             ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/pages/sectors/hospitallityhero.png', 'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/pages/sectors/Heavy-DutyandHigh-volume.png'],
-            ['env' => 'Multi Housing',               'route' => route('equipment'),           'img' => '/images/shared/td6-11-multihousing-room-front.jpg'],
+            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/pages/commercialindustrialequipmentrental.png'],
+            ['env' => 'Multi Housing',               'route' => route('equipment'),           'img' => '/images/pages/sectors/selfservice.png'],
         ];
         @endphp
 

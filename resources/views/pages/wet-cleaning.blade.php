@@ -395,21 +395,21 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Useful for businesses built around<br class="hidden lg:block"> <span style="color:#148af4;">specialist garment care and customer trust</span>
+                Built for businesses handling <span style="color:#148af4;">specialist garments and fabrics</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Wet cleaning fits businesses where delicate garments, specialist items and visible garment quality matter.
+                Choose professional wet cleaning when specialist garment care needs to be handled in-house with control over quality, timing and finish.
             </p>
         </div>
 
         @php
         $fitCards = [
-            ['title' => 'Delicate garments',         'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',         'img' => '/images/pages/services/services-overview-hero.jpg',            'pos' => 'center center'],
-            ['title' => 'Leathers',                  'copy' => 'For selected leather items that need specialist cleaning and revitalising.',         'img' => '/images/shared/services-overview-hero-portrait.jpg',           'pos' => 'center center'],
-            ['title' => 'Wool and silk',             'copy' => 'For delicate fibres that need careful programme control.',                           'img' => '/images/shared/line-6000-solutions.jpg',                       'pos' => 'center 30%'],
-            ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                  'img' => '/images/shared/render-double-page_72dpi.jpg',                  'pos' => 'center center'],
-            ['title' => 'Dry-clean-only garments',   'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.', 'img' => '/images/shared/commercial-industrial.jpg',                     'pos' => 'center center'],
-            ['title' => 'Shoes',                     'copy' => 'For selected shoes that can be treated through the Lagoon process.',                  'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg', 'pos' => 'center center'],
+            ['title' => 'Delicate garments',         'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',         'img' => '/images/pages/wet-cleaning/103.png', 'pos' => 'center center'],
+            ['title' => 'Leathers',                  'copy' => 'For selected leather items that need specialist cleaning and revitalising.',         'img' => '/images/pages/wet-cleaning/104.png', 'pos' => 'center center'],
+            ['title' => 'Wool and silk',             'copy' => 'For delicate fibres that need careful programme control.',                           'img' => '/images/pages/wet-cleaning/105.png', 'pos' => 'center center'],
+            ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                  'img' => '/images/pages/wet-cleaning/106.png', 'pos' => 'center center'],
+            ['title' => 'Dry-clean-only garments',   'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.', 'img' => '/images/pages/wet-cleaning/107.png', 'pos' => 'center center'],
+            ['title' => 'Shoes',                     'copy' => 'For selected shoes that can be treated through the Lagoon process.',                  'img' => '/images/pages/wet-cleaning/108.png', 'pos' => 'center center'],
         ];
         @endphp
 
@@ -438,9 +438,9 @@
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($fitCards as $card)
                     <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
-                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                        <div class="group relative overflow-hidden rounded-2xl aspect-square">
                             <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 class="absolute inset-0 w-full h-full object-cover scale-[1.65] transition-transform duration-700 group-hover:scale-[1.73]"
                                  style="object-position: {{ $card['pos'] ?? 'center center' }};">
                             <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                                  style="background:linear-gradient(to top, rgba(1,30,65,0.75) 0%, rgba(1,30,65,0.28) 45%, rgba(1,30,65,0.02) 75%, transparent 100%);"></div>

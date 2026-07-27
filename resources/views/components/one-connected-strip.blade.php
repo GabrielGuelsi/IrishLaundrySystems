@@ -5,8 +5,8 @@
 @endphp
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
-             class="w-full h-full object-contain" style="object-position: center center; transform: translateX(32px);">
+        <img src="/images/pages/one-connected/oneconnectedstrip.png" alt="OnE Connected laundry dashboard"
+             class="w-full h-full object-cover" style="object-position: right center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">

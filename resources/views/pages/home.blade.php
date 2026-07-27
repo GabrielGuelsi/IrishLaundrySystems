@@ -42,13 +42,13 @@
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Irish Laundry Specialists</p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
-                    <span class="block">Commercial laundry equipment and</span>
-                    <span class="block">engineering expertise <span class="text-[#148af4]">focused</span></span>
-                    <span class="block text-[#148af4]">on keeping operations running</span>
+                    <span class="block">Commercial laundry equipment</span>
+                    <span class="block">and engineering expertise</span>
+                    <span class="block text-[#148af4]">to keep operations running</span>
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    From equipment selection and installation to Equipment Rental, maintenance, repairs and aftercare, Irish Laundry Systems works to reduce breakdowns, limit downtime and keep operating costs under control throughout the equipment&rsquo;s working life.
+                    From equipment selection and installation to equipment rental, maintenance, repairs and aftercare, Irish Laundry Systems reduces breakdown risk, limits costly downtime and keeps operating costs under control throughout the equipment&rsquo;s working life.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
@@ -139,8 +139,8 @@
 <!-- 4. SECTOR ROUTING TABS -->
  
 @include('components.sector-switcher', [
-    'heading'         => 'Commercial laundry expertise for <span class="text-[#148af4]">healthcare, care facilities, hospitality and industry</span>',
-    'intro'           => 'Different sites carry different cost, staffing and service pressures. The right commercial laundry care depends on hygiene requirements, daily laundry demand, equipment in use, budget pressure and day-to-day operating needs.',
+    'heading'         => 'Commercial laundry planned around <span class="text-[#148af4]">your sector</span>',
+    'intro'           => 'Choose your sector to explore equipment and service suited to its hygiene, capacity and turnaround needs.',
     'healthcareBody'  => 'For hospitals and healthcare facilities managing hygiene requirements, linen handling and clean linen availability.',
     'careBody'        => 'For care homes and residential settings managing resident clothing, bedding and regular daily loads.',
     'hospitalityBody' => 'For hotels and accommodation providers where guest-ready linen supports room presentation and turnaround.',
@@ -221,7 +221,7 @@
     'body'       => 'Share whether your enquiry concerns equipment, rental, maintenance, repair or aftercare, together with the relevant site and equipment details.',
     'formTitle'  => 'Request a Service Assessment',
     'formIntro'  => 'Choose the enquiry type and provide the relevant site and equipment details.',
-    'buttonText' => 'Request Service Assessment',
+    'buttonText' => 'Request an Assessment',
 ])
 
 @endsection
