@@ -139,26 +139,30 @@
     </div>
 </section>
 
-{{-- ============ ACCESSORIES BANNER + REQUEST FORM ============ --}}
+{{-- ============ ACCESSORIES STRIP (universal, photo left + navy right) ============ --}}
 <section class="bg-white py-12 lg:py-16">
-    <div class="max-w-5xl mx-auto px-6 sm:px-10">
-
-        {{-- Accessories banner --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden shadow-sm mb-14">
-            <div class="min-h-[200px] bg-gray-100">
-                <img src="{{ asset('images/shared/strip2.jpeg') }}" alt="Accessories and consumables" class="w-full h-full object-cover">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden shadow-sm">
+            <div class="min-h-[220px]">
+                <img src="{{ asset('images/pages/equipment/accessoriesandconsumablescardimage.png') }}" alt="Accessories and consumables" class="w-full h-full object-cover">
             </div>
-            <div class="bg-navy p-8 lg:p-10 flex flex-col justify-center">
-                <h3 class="font-heading font-bold text-white text-2xl leading-tight mb-3">Shop our Accessories and Consumables</h3>
-                <p class="font-body text-white/75 text-sm leading-relaxed mb-6">
-                    Rigorously tested, our accessories and consumables help keep your equipment performing at its best.
+            <div class="bg-navy p-8 lg:p-12 flex flex-col justify-center">
+                <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-3">Accessories and consumables for your equipment</h3>
+                <p class="font-body text-white/75 text-sm lg:text-base leading-relaxed mb-6">
+                    Choose compatible options for installation, daily use and ongoing equipment care.
                 </p>
-                <a href="{{ route('resources') }}"
+                <a href="{{ route('equipment.category', 'accessories') }}"
                    class="inline-flex w-fit items-center bg-white text-navy font-body font-bold text-xs uppercase tracking-wide px-6 py-3 rounded-full hover:bg-white/90 transition-colors">
-                    Shop Now
+                    View Accessories &amp; Consumables
                 </a>
             </div>
         </div>
+    </div>
+</section>
+
+{{-- ============ REQUEST FORM ============ --}}
+<section class="bg-white pb-12 lg:pb-16">
+    <div class="max-w-5xl mx-auto px-6 sm:px-10">
 
         {{-- Request form --}}
         <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl text-center text-balance mb-10">Complete the form below to request more information</h2>
@@ -213,21 +217,21 @@
 
 {{-- ============ 4-ICON SUPPORT ROW ============ --}}
 <section class="bg-[#eef2f7] py-14">
-    <div class="max-w-6xl mx-auto px-6 sm:px-10">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-6">
             @foreach([
-                ['t' => 'Explore our Service Network', 'h' => route('service-contracts'), 'd' => 'M11.48 3.5a.56.56 0 011.04 0l2.12 4.78 5.2.46c.5.04.7.66.32 1l-3.94 3.45 1.17 5.1c.11.49-.42.87-.85.61L12 17.7l-4.54 2.7c-.43.26-.96-.12-.85-.61l1.17-5.1L3.84 9.74c-.38-.34-.18-.96.32-1l5.2-.46L11.48 3.5z'],
-                ['t' => 'Where to buy this product', 'h' => route('contact'), 'd' => 'M15 10.5a3 3 0 11-6 0 3 3 0 016 0z M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z'],
-                ['t' => 'Download user manuals', 'h' => route('resources'), 'd' => 'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5A3.375 3.375 0 0010.125 2.25H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'],
-                ['t' => 'Register your products', 'h' => route('contact'), 'd' => 'M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75'],
+                ['t' => 'Repairs & Call-Outs', 'cta' => 'View Repairs', 'h' => route('repairs'), 'icon' => '291'],
+                ['t' => 'Preventive Maintenance Contracts', 'cta' => 'View Contracts', 'h' => route('service-contracts'), 'icon' => '292'],
+                ['t' => 'Equipment Rental', 'cta' => 'View Equipment Rental', 'h' => route('rental'), 'icon' => '293'],
+                ['t' => 'Support & Aftercare', 'cta' => 'View Support', 'h' => route('parts-aftercare'), 'icon' => '294'],
             ] as $card)
             <a href="{{ $card['h'] }}" class="flex flex-col items-center text-center group">
-                <span class="flex items-center justify-center w-16 h-16 rounded-full border border-navy/30 mb-4 group-hover:border-navy group-hover:bg-navy/5 transition-colors">
-                    <svg class="w-7 h-7 text-navy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['d'] }}"/></svg>
+                <span class="flex items-center justify-center h-20 mb-4">
+                    <img src="{{ asset('images/icons/'.$card['icon'].'.png') }}?v=2" alt="" class="w-16 h-16 object-contain">
                 </span>
-                <span class="font-heading font-bold text-navy text-base leading-tight mb-3 max-w-[160px]">{{ $card['t'] }}</span>
+                <span class="font-heading font-bold text-navy text-base leading-tight mb-3 max-w-[220px] lg:max-w-none lg:whitespace-nowrap">{{ $card['t'] }}</span>
                 <span class="inline-flex items-center gap-1.5 font-body font-bold text-navy text-xs uppercase tracking-wide">
-                    Discover More
+                    {{ $card['cta'] }}
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </span>
             </a>
