@@ -46,10 +46,12 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[680px]" style="background-color: #011E41;">
 
-    <img src="/images/shared/line-6000-solutions.jpg"
-         alt="Electrolux Professional commercial laundry equipment supported by Irish Laundry Systems"
-         loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+    <video autoplay muted loop playsinline
+           poster="/images/shared/line-6000-solutions.jpg"
+           aria-label="120 years of laundry solutions — Electrolux Professional"
+           class="absolute inset-0 w-full h-full object-cover object-center">
+        <source src="/images/pages/120_years_of_Laundry_solutions_Electrolux_Professional.mp4" type="video/mp4">
+    </video>
 
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
 

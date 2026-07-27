@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/pages/dryers/heroimagedryers.jpg" alt="Commercial tumble dryers"
+    <img src="/images/pages/dryers/tumbledryershero.png" alt="Commercial tumble dryers"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">

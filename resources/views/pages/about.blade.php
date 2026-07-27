@@ -11,13 +11,14 @@
 ══════════════════════════════════════════ -->
 <section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="{{ asset('images/pages/about/heroaboutusimage.webp') }}"
+    <img src="{{ asset('images/pages/about/aboutimagehero.png') }}"
          alt="ILS engineering team"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-[85%_center]">
+         class="absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
+         style="transform: scale(1.12); transform-origin: right center;">
 
-    {{-- Gradient overlay for headline legibility --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.72) 35%, rgba(1,30,65,0.30) 60%, transparent 82%);"></div>
+    {{-- Gradient overlay: navy fills the left and fades smoothly so the seam is invisible --}}
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
 
     <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
@@ -127,7 +128,7 @@
 
             <!-- Image -->
             <div class="overflow-hidden rounded-2xl reveal h-[320px] sm:h-[420px] lg:h-[520px]">
-                <img src="{{ asset('images/about/about-engineers.jpg') }}"
+                <img src="{{ asset('images/pages/about/Technical%20Standardsimage.png') }}"
                      alt="ILS engineering team on site"
                      class="w-full h-full object-cover object-center">
             </div>
@@ -468,15 +469,15 @@
     {{-- Dark overlay --}}
     <div class="absolute inset-0" style="background:rgba(1,30,65,0.45);"></div>
     {{-- Two-column: medal left, card right --}}
-    <div class="relative z-10 flex items-center px-6 lg:px-20 py-12 lg:py-14 gap-10 lg:gap-16">
+    <div class="relative z-10 flex items-center px-6 lg:px-20 py-7 lg:py-8 gap-10 lg:gap-16">
         {{-- Left: EcoVadis medal --}}
         <div class="hidden lg:flex flex-1 items-center justify-center">
             <img src="{{ asset('images/pages/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
                  alt="EcoVadis Sustainability Gold 2025"
-                 class="w-[340px] xl:w-[400px] h-auto object-contain drop-shadow-2xl">
+                 class="w-[400px] xl:w-[460px] h-auto object-contain drop-shadow-2xl">
         </div>
         {{-- Right: dark card --}}
-        <div class="rounded-2xl px-6 sm:px-10 lg:px-12 py-10 lg:py-11 w-full lg:max-w-xl text-center reveal"
+        <div class="rounded-2xl px-6 sm:px-10 lg:px-12 py-7 lg:py-8 w-full lg:max-w-xl text-center reveal"
              style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-tight text-balance mb-4">
@@ -490,10 +491,7 @@
                 <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
                 @endforeach
             </div>
-            <p class="font-body text-white/80 text-sm font-bold mb-3">Electrolux Professional Group &middot; EcoVadis Gold 2025 &middot; Top 5% of companies assessed</p>
-            <p class="font-body text-white/50 text-xs leading-relaxed border-l-2 border-[#148af4]/40 pl-4 text-left">
-                EcoVadis rating and sustainability credentials shown relate to Electrolux Professional Group.
-            </p>
+            <p class="font-body text-white/80 text-xs font-bold">Electrolux Professional Group &middot; EcoVadis Gold 2025 &middot; Top 5% of companies assessed</p>
         </div>
     </div>
 </section>

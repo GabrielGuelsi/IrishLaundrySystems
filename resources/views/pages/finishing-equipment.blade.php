@@ -10,8 +10,8 @@
 
 {{-- HERO --}}
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial finishing equipment"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+    <img src="/images/pages/finishing-equipment/finishingequipmenthero.png" alt="Commercial finishing equipment"
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 25%;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12 sm:py-20 lg:py-32">
