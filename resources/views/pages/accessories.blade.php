@@ -707,8 +707,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
                 ['title' => 'Trolleys &amp; Carts',          'copy' => 'For moving clean and soiled laundry safely around the site.',                        'img' => '/images/pages/accessories/trolley_.webp',            'mw' => '86%', 'align' => 'justify-start', 'href' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Trolleys_438918404_EN.pdf?version=1736598854', 'link' => 'View Trolleys Data Sheet'],
-                ['title' => 'Racks &amp; Shelving',          'copy' => 'For organising, separating and preparing laundry before or after processing.',       'img' => '/images/pages/accessories/ELS_PH_415x415_RACKGARM.jpg', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/garment-rack-RACKGARM/', 'link' => 'View Garment Racks'],
-                ['title' => 'Laundry Bags &amp; Nets',       'copy' => 'For separating loads and protecting selected items during handling and washing.',     'img' => '/images/pages/accessories/ELS_PH_415x415_WASHNET.jpg', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/laundry-net-and-bags-WASHNET/', 'link' => 'View Nets &amp; Bags'],
+                ['title' => 'Racks &amp; Shelving',          'copy' => 'For organising, separating and preparing laundry before or after processing.',       'img' => '/images/pages/accessories/Racks%20%26%20Shelvingimage.png', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/garment-rack-RACKGARM/', 'link' => 'View Garment Racks'],
+                ['title' => 'Laundry Bags &amp; Nets',       'copy' => 'For separating loads and protecting selected items during handling and washing.',     'img' => '/images/pages/accessories/laundrybagannets.png', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/laundry-net-and-bags-WASHNET/', 'link' => 'View Nets &amp; Bags'],
                 ['title' => 'Dryer Balls &amp; Care Items',  'copy' => 'For practical textile care and everyday drying requirements.',                       'img' => '/images/pages/accessories/dryer-balls.png',          'href' => 'https://www.electroluxprofessional.com/gb/accessories-consumables/', 'link' => 'View Care Items'],
             ] as $acc)
             <div class="flex flex-col gap-6 h-full">
@@ -902,8 +902,8 @@
                     'text'  => 'Rental options where a site needs laundry equipment flexibility without a full purchase route.',
                     'cta'   => 'Ask About Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
-                    'pos'   => '66% center',
+                    'img'   => '/images/pages/accessories/equipmentrentalcard.png',
+                    'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
