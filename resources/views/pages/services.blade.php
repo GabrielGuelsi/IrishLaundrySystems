@@ -45,7 +45,7 @@
                     Keep commercial laundry equipment <span class="text-[#148af4]">running with the right service&nbsp;support</span>
                 </h1>
 
-                <p class="svc-hero-desc font-body text-white leading-relaxed mb-10 text-lg max-w-xl text-pretty">
+                <p class="svc-hero-desc font-body text-white leading-relaxed mb-10 text-base max-w-xl text-pretty">
                     <span class="whitespace-nowrap">Irish Laundry Systems</span> provides repairs, Preventive Maintenance, equipment rental and aftercare for commercial laundry equipment across Dublin and Ireland.
                 </p>
 
@@ -369,7 +369,7 @@
     {{-- LEFT: content — 60% width (matches home cta-combined-banner) --}}
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
-        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-3xl sm:text-4xl lg:text-5xl text-white">
             Need service support for <span style="color:#011E41;">commercial laundry&nbsp;equipment?</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
@@ -411,7 +411,7 @@
 <section id="services-form" class="py-16 lg:py-24 bg-bg">
     <div class="max-w-3xl mx-auto px-6 sm:px-10">
         <div class="bg-white rounded-2xl shadow-2xl p-7 lg:p-10">
-            <p class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-1">Request a Service Assessment</p>
+            <p class="font-heading font-bold text-navy text-xl leading-snug mb-1">Request a Service Assessment</p>
             <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">We aim to respond within 24 hours.</p>
             <form action="{{ route('contact.submit') ?? '#' }}" method="POST" class="space-y-3">
                 @csrf

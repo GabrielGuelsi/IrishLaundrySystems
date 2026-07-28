@@ -278,11 +278,11 @@
             <div class="reveal group py-8 lg:py-0 border-t border-gray-200 first:border-t-0 lg:border-t-0 lg:border-l lg:first:border-l-0 lg:px-10 lg:first:pl-0 lg:last:pr-0 lg:grid lg:grid-rows-subgrid lg:row-span-3"
                  style="transition-delay:{{ $i * 80 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 mb-7 object-contain transition-transform duration-300 group-hover:-translate-y-1">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-24 h-24 mb-7 object-contain transition-transform duration-300 group-hover:-translate-y-1">
                 @else
                 <svg class="w-16 h-16 lg:w-20 lg:h-20 text-[#148af4] mb-7 transition-transform duration-300 group-hover:-translate-y-1" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
                 @endif
-                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-3 leading-snug text-balance self-start">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-3 leading-snug text-balance self-start">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
             </div>
             @endforeach
@@ -831,7 +831,7 @@ $aftercareFaqs = [
                 </a>
                 <a href="{{ route('contact') }}"
                    data-ga-cta="final-talk-team"
-                   class="inline-flex items-center justify-center border border-white/70 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                   class="inline-flex items-center justify-center border border-white/70 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-sm transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                     Talk to Our Team
                 </a>
             </div>

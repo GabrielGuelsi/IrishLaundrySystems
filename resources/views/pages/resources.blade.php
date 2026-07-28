@@ -14,7 +14,7 @@
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.78) 42%, rgba(1,30,65,0.4) 65%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-20 lg:py-28">
-            <div class="max-w-3xl reveal reveal-left">
+            <div class="max-w-3xl lg:max-w-4xl reveal reveal-left">
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>
 
@@ -97,7 +97,7 @@
                     <svg class="w-20 h-20 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
                 </div>
                 <div class="p-8 lg:p-10 flex flex-col flex-1 bg-gray-50">
-                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-4">{{ $ilsGuide['title'] }}</h3>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-4">{{ $ilsGuide['title'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed mb-7 flex-1">{{ $ilsGuide['desc'] }}</p>
                     <span class="inline-flex items-center gap-2 bg-navy group-hover:bg-navy/90 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors w-fit">
                         {{ $ilsGuide['cta'] }}
@@ -114,8 +114,8 @@
                     <svg class="w-12 h-12 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <div class="p-6 flex flex-col flex-1 bg-white">
-                    <span class="font-body font-bold text-[#148af4] text-[11px] uppercase tracking-[0.14em] mb-2">{{ $g['label'] }}</span>
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $g['title'] }}</h3>
+                    <span class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">{{ $g['label'] }}</span>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $g['title'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed mb-4 flex-1">{{ $g['desc'] }}</p>
                     <span class="inline-flex items-center gap-1.5 font-body font-bold text-[#148af4] text-sm group-hover:underline">
                         {{ $g['cta'] }}
@@ -330,7 +330,7 @@
             <div class="space-y-4 mb-8">
                 {{-- Equipment & Systems --}}
                 <div>
-                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.14em] mb-2.5">By Equipment &amp; Systems</p>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mb-2.5">By Equipment &amp; Systems</p>
                     <div class="flex flex-wrap gap-2">
                         @foreach(array_merge(['All Documents'], $equipFilters) as $e)
                         <button type="button" @click="equip = '{{ $e }}'"
@@ -341,7 +341,7 @@
                 </div>
                 {{-- Sector & Application --}}
                 <div>
-                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.14em] mb-2.5">By Sector &amp; Application</p>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mb-2.5">By Sector &amp; Application</p>
                     <div class="flex flex-wrap gap-2">
                         @foreach(array_merge(['All'], $sectorFilters) as $s)
                         <button type="button" @click="sector = '{{ $s }}'"
@@ -352,7 +352,7 @@
                 </div>
                 {{-- Document Type --}}
                 <div>
-                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.14em] mb-2.5">By Document Type</p>
+                    <p class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mb-2.5">By Document Type</p>
                     <div class="flex flex-wrap gap-2">
                         @foreach(array_merge(['All Types'], $typeFilters) as $t)
                         <button type="button" @click="type = '{{ $t }}'"
@@ -374,10 +374,10 @@
                 <template x-for="d in visible" :key="d.title">
                     <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
                         <div class="relative mb-5 rounded-xl overflow-hidden flex items-center justify-center" style="height:120px; background:linear-gradient(135deg,#011E41 0%,#0d3568 100%);">
-                            <span class="absolute top-3 left-3 bg-[#148af4] text-white font-heading font-bold text-[10px] px-2.5 py-1 rounded-full uppercase tracking-wide" x-text="d.type"></span>
+                            <span class="absolute top-3 left-3 bg-[#148af4] text-white font-heading font-bold text-xs px-2.5 py-1 rounded-full uppercase tracking-wide" x-text="d.type"></span>
                             <svg class="w-10 h-10 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
                         </div>
-                        <h3 class="font-heading font-bold text-navy text-base leading-snug mb-5 flex-1" x-text="d.title"></h3>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-5 flex-1" x-text="d.title"></h3>
                         <a :href="d.pdf" target="_blank" rel="noopener"
                            class="inline-flex items-center gap-2 font-body font-bold text-sm text-[#148af4] hover:underline py-1.5 -my-1.5 w-fit">
                             <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
@@ -398,7 +398,7 @@
 
             {{-- No results --}}
             <div class="text-center py-16" x-show="filtered.length === 0" x-cloak>
-                <h3 class="font-heading font-bold text-navy text-2xl mb-2">No documents found</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-2">No documents found</h3>
                 <p class="font-body text-gray-500 text-base mb-6">Try changing the filters or request the document you need.</p>
                 <a href="#request-a-resource" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-7 py-3.5 rounded-lg transition-colors">
                     Request a Resource
@@ -479,9 +479,9 @@
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
 
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[66%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Resource Help</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3 [@media(min-width:1460px)]:whitespace-nowrap">
             Not sure which resource you need?
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-7 max-w-2xl">
@@ -513,52 +513,100 @@
             </div>
 
             <div class="reveal reveal-right">
-                <form action="{{ route('contact.submit') }}" method="POST" data-utm class="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                @if ($errors->any())
+                <div class="mb-5 rounded-lg border border-red-200 bg-red-50 px-4 py-3">
+                    <p class="font-body font-bold text-red-700 text-sm mb-1">Please check the form</p>
+                    <ul class="list-disc list-inside font-body text-red-600 text-xs space-y-0.5">
+                        @foreach ($errors->all() as $error)<li>{{ $error }}</li>@endforeach
+                    </ul>
+                </div>
+                @endif
+
+                <form action="{{ route('contact.submit') }}" method="POST" data-utm class="bg-gray-50 border border-gray-100 rounded-2xl p-6 lg:p-8 space-y-4">
                     @csrf
+                    <input type="hidden" name="request_type" value="parts">
+                    <input type="hidden" name="urgency" value="planning">
                     <input type="hidden" name="page_source" value="resources_request">
                     <input type="hidden" name="utm_source"><input type="hidden" name="utm_medium"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="utm_term">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Name <span class="text-red-400">*</span></label>
+                            <input type="text" name="name" required value="{{ old('name') }}" placeholder="Your name"
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Organisation <span class="text-red-400">*</span></label>
+                            <input type="text" name="company" required value="{{ old('company') }}" placeholder="Organisation name"
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Work Email <span class="text-red-400">*</span></label>
+                            <input type="email" name="email" required value="{{ old('email') }}" placeholder="you@company.ie"
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Phone <span class="text-red-400">*</span></label>
+                            <input type="tel" name="phone" required value="{{ old('phone') }}" placeholder="+353 (0)..."
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Sector <span class="text-red-400">*</span></label>
+                            <select name="sector" required
+                                    class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] cursor-pointer transition-all">
+                                <option value="">Select sector</option>
+                                <option value="healthcare"  {{ old('sector') === 'healthcare'  ? 'selected' : '' }}>Healthcare</option>
+                                <option value="care"        {{ old('sector') === 'care'        ? 'selected' : '' }}>Care Facilities</option>
+                                <option value="hospitality" {{ old('sector') === 'hospitality' ? 'selected' : '' }}>Hospitality</option>
+                                <option value="commercial"  {{ old('sector') === 'commercial'  ? 'selected' : '' }}>Commercial &amp; Industrial</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Site location <span class="text-red-400">*</span></label>
+                            <input type="text" name="location" required value="{{ old('location') }}" placeholder="e.g. Dublin, Cork..."
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Equipment or model</label>
+                            <input type="text" name="equipment" value="{{ old('equipment') }}" placeholder="e.g. WH6-20, TD6-14..."
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                        <div>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Resource or topic required</label>
+                            <input type="text" name="part_required" value="{{ old('part_required') }}" placeholder="Brochure, data sheet, manual..."
+                                   class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 transition-all">
+                        </div>
+                    </div>
+
                     <div>
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Name</label>
-                        <input type="text" name="name" required class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
+                        <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Message</label>
+                        <textarea name="message" rows="4" placeholder="Anything else that would help us find the right document."
+                                  class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] placeholder-gray-400 resize-none leading-relaxed transition-all">{{ old('message') }}</textarea>
                     </div>
-                    <div>
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Organisation</label>
-                        <input type="text" name="organisation" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
-                    </div>
-                    <div>
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Work Email</label>
-                        <input type="email" name="email" required class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
-                    </div>
-                    <div>
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Phone</label>
-                        <input type="tel" name="phone" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
-                    </div>
-                    <div>
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Equipment or Model</label>
-                        <input type="text" name="equipment" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
-                    </div>
-                    <div>
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Sector</label>
-                        <select name="sector" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
-                            <option value="">Select a sector</option>
-                            <option>Healthcare</option>
-                            <option>Care Facilities</option>
-                            <option>Hospitality</option>
-                            <option>Commercial &amp; Industrial</option>
-                            <option>Other</option>
-                        </select>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Resource or Topic Required</label>
-                        <input type="text" name="resource_required" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white">
-                    </div>
-                    <div class="sm:col-span-2">
-                        <label class="block font-body font-bold text-navy text-xs mb-1.5">Message</label>
-                        <textarea name="message" rows="4" class="w-full border border-gray-200 rounded-lg px-4 py-3 font-body text-sm text-navy focus:outline-none focus:border-[#148af4] bg-white"></textarea>
-                    </div>
-                    <div class="sm:col-span-2">
-                        <button type="submit" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-8 py-4 rounded-lg transition-colors w-full sm:w-auto">
+
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" name="gdpr_consent" required value="1" {{ old('gdpr_consent') ? 'checked' : '' }}
+                               class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
+                        <span class="font-body text-xs text-gray-500 leading-relaxed">
+                            I agree to ILS processing my details to respond to this enquiry. <span class="text-red-400">*</span>
+                            <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.
+                        </span>
+                    </label>
+
+                    <div class="pt-2">
+                        <button type="submit" data-ga-cta="form-request-resource"
+                                class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-8 py-4 rounded-lg transition-colors w-full sm:w-auto">
                             Request a Resource
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
                         </button>
                     </div>
                 </form>

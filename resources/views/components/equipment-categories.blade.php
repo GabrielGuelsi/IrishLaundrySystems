@@ -37,7 +37,7 @@ $equipmentList = $equipment ?? [
             @foreach($equipmentList as $eq)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height: {{ $textMinH }};">
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $eq['name'] }}</p>
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $eq['name'] }}</p>
                     <p class="font-body text-gray-600 text-base leading-relaxed">{{ $eq['desc'] }}</p>
                 </div>
                 @php $imgSrc = $eq['src'] ?? '/images/shared/' . $eq['img'] . '.' . ($eq['ext'] ?? 'webp'); @endphp

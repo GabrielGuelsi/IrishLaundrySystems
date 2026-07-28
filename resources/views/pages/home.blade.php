@@ -87,10 +87,10 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around The Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight">
-                    <span class="block lg:whitespace-nowrap">Equipment decisions begin</span>
-                    <span class="block lg:whitespace-nowrap">with <span class="text-[#148af4]">the room, the workload</span></span>
-                    <span class="block lg:whitespace-nowrap text-[#148af4]">and the capacity needed</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block">Equipment decisions begin</span>
+                    <span class="block">with <span class="text-[#148af4]">the room, the workload</span></span>
+                    <span class="block text-[#148af4]">and the capacity needed</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">
@@ -154,7 +154,7 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => '<span class="lg:whitespace-nowrap lg:text-[2.5rem]">Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span></span>',
+    'heading'    => '<span>Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span></span>',
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
     'subheadingClass' => 'lg:whitespace-nowrap',

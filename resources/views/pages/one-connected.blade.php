@@ -56,7 +56,7 @@
                     OnE Connected gives laundry teams clearer insight into load factor, hygiene validation, energy, water and detergent consumption, helping support better control across compatible Electrolux Professional equipment.
                 </p>
                 <a href="#dashboard"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
                     See What OnE Connected Can Monitor
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -73,7 +73,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Use connected laundry data to improve <span style="color:#148af4;">performance and cost control</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 OnE Connected helps compatible Electrolux Professional laundry equipment turn daily operation into clearer business insight.
             </p>
         </div>
@@ -86,10 +86,10 @@
             ] as $b)
             <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-4">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/{{ $b['icon'] }}.png" alt="" class="w-28 h-28 object-contain">
+                    <img src="/images/icons/{{ $b['icon'] }}.png" alt="" class="w-24 h-24 object-contain">
                 </div>
                 <div>
-                    <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-1">{{ $b['claim'] }}</p>
+                    <p class="font-heading font-bold text-[#148af4] text-xl leading-snug mb-1">{{ $b['claim'] }}</p>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $b['label'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $b['body'] }}</p>
                 </div>
@@ -122,14 +122,14 @@
             ] as $v)
             <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
                 <svg class="w-10 h-10 text-[#148af4] mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $v['i'] }}"/></svg>
-                <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-1">{{ $v['claim'] }}</p>
+                <p class="font-heading font-bold text-[#148af4] text-xl leading-snug mb-1">{{ $v['claim'] }}</p>
                 <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $v['label'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $v['body'] }}</p>
             </div>
             @endforeach
         </div>
         <div class="mt-10">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
                 Explore Connected Laundry Intelligence
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -169,7 +169,7 @@
                 ['claim' => 'Reports',     'label' => 'Data for review',             'body' => 'Keep records available for performance checks and future reference.',    'icon' => '75'],
             ] as $dp)
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
-                <img src="/images/icons/{{ $dp['icon'] }}.png" alt="" class="w-16 h-16 object-contain mb-4">
+                <img src="/images/icons/{{ $dp['icon'] }}.png" alt="" class="w-24 h-24 object-contain mb-4">
                 <p class="font-heading font-bold text-[#148af4] text-lg leading-snug mb-1">{{ $dp['claim'] }}</p>
                 <h3 class="font-heading font-bold text-white text-base leading-snug mb-2">{{ $dp['label'] }}</h3>
                 <p class="font-body text-white/65 text-sm leading-relaxed">{{ $dp['body'] }}</p>
@@ -198,9 +198,9 @@
                 ['claim' => 'Detergent use', 'label' => 'Link product use to activity',    'body' => 'Track detergent consumption alongside washing activity where monitoring is available.', 'icon' => '258'],
             ] as $c)
             <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
-                <img src="/images/icons/{{ $c['icon'] }}.png" alt="" class="w-16 h-16 object-contain mb-8">
+                <img src="/images/icons/{{ $c['icon'] }}.png" alt="" class="w-24 h-24 object-contain mb-8">
                 <p class="font-heading font-bold text-[#148af4] text-sm mb-1">{{ $c['claim'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-4">{{ $c['label'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-4">{{ $c['label'] }}</h3>
                 <div class="border-t border-gray-200 pt-4 mt-auto">
                     <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $c['body'] }}</p>
                 </div>
@@ -208,7 +208,7 @@
             @endforeach
         </div>
         <div class="mt-10">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
                 Ask About Consumption Monitoring
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -219,7 +219,8 @@
 {{-- 8. ILS ENGINEERING LAYER (image-backed strip) --}}
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Engineering Support',
-    'headingLine1' => 'The dashboard shows the data.',
+    'textMaxW'     => 'lg:max-w-[60%]',
+    'headingLine1' => 'The dashboard shows the data',
     'headingLine2' => 'Irish Laundry Systems helps decide what comes next',
     'body'         => 'Our team helps interpret OnE Connected data around consumption, alerts, equipment use and process performance, so the site can make clearer decisions around maintenance, call-outs, parts, running costs and equipment care.',
     'image'        => '/images/shared/customer-care-line6000.jpg',
@@ -374,7 +375,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Start OnE Connected with <span style="color:#148af4;">a clear, secure setup</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed [@media(min-width:1425px)]:whitespace-nowrap">
                 Irish Laundry Systems reviews equipment compatibility, site connection needs and access requirements before helping your laundry move into connected monitoring.
             </p>
         </div>
@@ -386,14 +387,14 @@
             ] as $step)
             <div class="text-center px-6 lg:px-10 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
                 <img src="/images/icons/{{ $step['icon'] }}.png" alt="{{ $step['title'] }}"
-                     class="w-28 h-28 object-contain mx-auto mb-6">
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-3">{{ $step['title'] }}</h3>
+                     class="w-24 h-24 object-contain mx-auto mb-6">
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-3">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-base leading-relaxed">{{ $step['body'] }}</p>
             </div>
             @endforeach
         </div>
         <div class="mt-12 text-center">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
                 Start With a Compatibility Check
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -420,7 +421,7 @@
                 ['title' => 'Ask Irish Laundry Systems',    'body' => 'Need to know whether OnE Connected is right for your equipment, room and workload? Start with a compatibility conversation.', 'cta' => 'Ask Our Team', 'route' => route('contact')],
             ] as $r)
             <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $r['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $r['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 flex-1">{{ $r['body'] }}</p>
                 <a href="{{ $r['route'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm mt-auto">
                     {{ $r['cta'] }}

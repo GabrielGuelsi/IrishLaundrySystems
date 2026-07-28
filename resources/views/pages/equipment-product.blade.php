@@ -21,7 +21,7 @@
             <div class="order-2 lg:order-1 lg:pl-4">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $item->title ?? $product }}</p>
                 <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
-                <p class="font-body text-navy/70 text-sm leading-relaxed mb-8 max-w-md">{{ $summary }}</p>
+                <p class="font-body text-navy/70 text-base leading-relaxed mb-8 max-w-md">{{ $summary }}</p>
 
                 <div class="flex flex-wrap items-center gap-3">
                     <button type="button"
@@ -56,7 +56,7 @@
 
             {{-- Specifications --}}
             <div>
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Specifications</h2>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-6">Specifications</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
                     @foreach($specs as $groupName => $rows)
                     <div>
@@ -82,7 +82,7 @@
 
             {{-- Documents --}}
             <div>
-                <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl mb-6">Documents</h2>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-6">Documents</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
                     @php
                         $documents = $documents ?? [];
@@ -147,7 +147,7 @@
                 <img src="{{ asset('images/pages/equipment/accessoriesandconsumablescardimage.png') }}" alt="Accessories and consumables" class="w-full h-full object-cover">
             </div>
             <div class="bg-navy p-8 lg:p-12 flex flex-col justify-center">
-                <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight mb-3">Accessories and consumables for your equipment</h3>
+                <h3 class="font-heading font-bold text-white text-xl sm:text-2xl lg:text-3xl leading-tight mb-3">Accessories and consumables for your equipment</h3>
                 <p class="font-body text-white/75 text-sm lg:text-base leading-relaxed mb-6">
                     Choose compatible options for installation, daily use and ongoing equipment care.
                 </p>
@@ -165,7 +165,7 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-10">
 
         {{-- Request form --}}
-        <h2 class="font-heading font-bold text-navy text-2xl lg:text-3xl text-center text-balance mb-10">Complete the form below to request more information</h2>
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl text-center text-balance mb-10">Complete the form below to request more information</h2>
 
         <div class="max-w-2xl mx-auto">
             <div class="space-y-5">

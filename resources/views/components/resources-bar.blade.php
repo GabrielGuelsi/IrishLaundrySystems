@@ -10,7 +10,7 @@
         <div class="flex flex-wrap items-center gap-x-5 gap-y-3">
             @foreach($groups as $grp)
             <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-1">
-                <span class="font-heading font-bold text-navy text-[11px] uppercase tracking-[0.16em] mr-1">{{ $grp['title'] }}</span>
+                <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.22em] mr-1">{{ $grp['title'] }}</span>
                 @foreach($grp['links'] as $lk)
                 <a href="{{ $lk['h'] }}" class="font-body text-sm text-gray-600 hover:text-[#148af4] transition-colors whitespace-nowrap">{{ $lk['l'] }}</a>
                 @if(!$loop->last)<span class="text-gray-300 select-none" aria-hidden="true">&middot;</span>@endif

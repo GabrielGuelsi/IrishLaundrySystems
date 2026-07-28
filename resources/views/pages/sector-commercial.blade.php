@@ -47,8 +47,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-[1.45fr_1fr] gap-12 lg:gap-12 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight">
-                    <span class="block lg:whitespace-nowrap">Plan the laundry room around</span><span class="block lg:whitespace-nowrap" style="color:#148af4;">volume, load type and operating hours</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block">Plan the laundry room</span>
+                    <span class="block">around <span style="color:#148af4;">volume, load type</span></span>
+                    <span class="block" style="color:#148af4;">and operating hours</span>
                 </h2>
             </div>
 
@@ -299,7 +301,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -558,6 +560,7 @@
             </div>
 
             <!-- 4. BARRIER WASHERS / SPECIALIST WASHING — text left, image right -->
+            <div x-data="{ open: false, tab: 'aido' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1">
                     <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong> and Specialist Washing</h3>
@@ -593,10 +596,61 @@
                     <img src="/images/pages/barrier-washers/line6000-barrier-washer.webp"
                          alt="Barrier Washer"
                          class="w-full h-96 object-contain object-left-top">
-                    <div class="mt-1 pt-3 w-full">
-                        <span class="font-heading font-bold text-navy text-sm">System features: AIDO, Hygiene Watchdog, specialist handling</span>
+                    <div class="mt-1 pt-3 w-full flex justify-end lg:pr-[8%]">
+                        <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
+                            <span class="font-heading font-bold text-navy text-sm">System features: AIDO, Hygiene Watchdog, specialist handling</span>
+                            <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                            </span>
+                        </button>
                     </div>
                 </div>
+            </div>
+
+            <!-- Barrier Washer: AIDO + Watchdog collapsible -->
+            <div x-show="open" x-collapse class="py-6 border-t border-gray-100">
+                <div class="flex gap-6 border-b border-gray-200 mb-8">
+                    <button @click="tab = 'aido'"
+                            :class="tab === 'aido' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                            class="font-heading text-sm pb-3 transition-colors">AIDO System</button>
+                    <button @click="tab = 'watchdog'"
+                            :class="tab === 'watchdog' ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
+                            class="font-heading text-sm pb-3 transition-colors">Watchdog System</button>
+                </div>
+
+                <div x-show="tab === 'aido'">
+                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Auto Inner Door Opening (AIDO) System</h4>
+                    <div class="flex items-start gap-6 mb-8">
+                        <div class="w-32 h-32 flex-shrink-0">
+                            <img src="/images/shared/Auto%20Inner%20Door%20Opening%20(AIDO)%20System.png" alt="AIDO System" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            Large inner-drum doors make loading and unloading exceptionally easy, while the opening mechanism pre-opens <strong>the inner-drum doors automatically at the end</strong> of the wash cycle. This enables easy manual handling of large loads of wet linen while minimising potential strain for the operator.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <div class="relative w-full rounded-2xl overflow-hidden shadow-lg" style="padding-bottom: 56.25%;">
+                            <iframe class="absolute inset-0 w-full h-full" src="https://www.youtube.com/embed/4MAlhxGZj88" title="AIDO System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div>
+                            <h5 class="font-heading font-bold text-navy text-xl mb-3">Operator wellbeing is a priority</h5>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed">Controlled loading and unloading reduces repeated handling effort across busy commercial and industrial shifts.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div x-show="tab === 'watchdog'">
+                    <h4 class="font-heading font-bold text-navy text-xl mb-4">Hygiene Watchdog full-cycle completion</h4>
+                    <div class="flex items-start gap-6 mb-8">
+                        <div class="w-32 h-32 flex-shrink-0">
+                            <img src="/images/shared/HygieneGuard.png" alt="Hygiene Watchdog" class="w-full h-full object-contain">
+                        </div>
+                        <p class="font-body text-gray-500 text-sm leading-relaxed">
+                            Hygiene Watchdog helps confirm that the full wash process has been completed before the clean-side door can be opened, supporting controlled separation between soiled and clean textiles.
+                        </p>
+                    </div>
+                </div>
+            </div>
             </div>
 
             <!-- 5. DRYING CABINETS / SPECIALIST ITEMS — image left, text right -->
@@ -887,6 +941,9 @@
     'cta1Label'    => 'View Preventive Maintenance',
     'cta1Route'    => 'service-contracts',
 ])
+
+{{-- Breathing room between the After Installation strip and the resources bar --}}
+<div class="bg-white h-10 lg:h-16"></div>
 
 {{-- RESOURCES BAR (slim inline) --}}
 @include('components.resources-bar', ['groups' => [

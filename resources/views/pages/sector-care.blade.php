@@ -90,7 +90,7 @@
             </div>
 
             <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[420px] bg-navy rounded-2xl p-6 sm:p-10 lg:p-10 shadow-2xl">
-                <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-snug mb-6">
+                <h3 class="font-heading font-bold text-white text-xl sm:text-2xl lg:text-3xl leading-snug mb-6">
                     Barrier washer planning<br class="hidden lg:block"> for larger care environments
                 </h3>
                 <ul class="space-y-3">
@@ -143,7 +143,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology designed for <span style="color:#148af4;">clearer control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -273,7 +273,7 @@
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
                     {{-- Title (always visible) --}}
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
@@ -367,7 +367,7 @@
                     <div class="mt-1 pt-3">
                         <button @click="open = !open"
                                 class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, Moisture Control</span>
+                            <span class="font-heading font-bold text-navy text-sm">System Features, Moisture Control</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -471,7 +471,7 @@
                          class="w-full h-96 object-contain object-center">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
-                            <span class="font-heading font-bold text-navy text-lg">FIT2A, FIT2B Features &amp; Options</span>
+                            <span class="font-heading font-bold text-navy text-sm">FIT2A, FIT2B Features &amp; Options</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -517,7 +517,7 @@
                          class="w-full h-[440px] object-contain" style="object-position: 55% top;">
                     <div class="mt-1 pt-3 w-full flex justify-center">
                         <button @click="open = !open" class="inline-flex items-center gap-3 text-left group">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO &amp; Hygiene Watchdog</span>
+                            <span class="font-heading font-bold text-navy text-sm">System Features, AIDO &amp; Hygiene Watchdog</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>

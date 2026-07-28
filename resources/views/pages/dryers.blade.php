@@ -18,9 +18,9 @@
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Tumble Dryers</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Choose commercial tumble dryers</span>
-                    <span class="block lg:whitespace-nowrap">to balance <span style="color:#148af4;">daily demand</span></span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">and energy use</span>
+                    <span class="block">Choose commercial tumble dryers</span>
+                    <span class="block">to balance <span style="color:#148af4;">daily demand</span></span>
+                    <span class="block" style="color:#148af4;">and energy use</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-3xl text-pretty">
                     Irish Laundry Systems supplies Electrolux Professional tumble dryers across Ireland, with advice on capacity, dryer type, room requirements and installation.
@@ -50,10 +50,10 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.4rem] leading-tight">
-                    <span class="block lg:whitespace-nowrap">Plan dryer capacity around</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">space, ventilation and</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">daily demand</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block">Plan dryer capacity around</span>
+                    <span class="block" style="color:#148af4;">space, ventilation and</span>
+                    <span class="block" style="color:#148af4;">daily demand</span>
                 </h2>
             </div>
 
@@ -154,7 +154,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Control dryer costs across <span style="color:#148af4;">energy, output and upfront spend</span>
             </h2>
         </div>
@@ -196,11 +196,11 @@
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
-                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-24 h-24 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
             </div>
             @endforeach
@@ -282,7 +282,7 @@
                 </div>
                 <div class="rounded-2xl bg-white p-6 flex-1" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
                     <div class="flex items-start justify-between gap-3 mb-2">
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug">Filter access where you need it</h3>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug">Filter access where you need it</h3>
                         <img src="/images/shared/filterdrawer.svg" alt="Horizontal filter drawer" class="w-16 h-16 object-contain flex-shrink-0">
                     </div>
                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
@@ -408,7 +408,7 @@
                                 <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}" class="w-full h-52 lg:h-60 object-contain {{ $p['sc'] ?? '' }}">
                             </div>
                             <div class="flex flex-col">
-                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">{{ $p['name'] }}</h3>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
                                 <a href="{{ $p['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
                                     {{ $p['cta'] }}
@@ -425,7 +425,7 @@
                                 <img src="{{ $p['img'] }}" alt="" class="w-full h-52 lg:h-60 object-contain {{ $p['sc'] ?? '' }}">
                             </div>
                             <div class="flex flex-col">
-                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">{{ $p['name'] }}</h3>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
                                 <a href="{{ $p['route'] }}" tabindex="-1" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
                                     {{ $p['cta'] }}
@@ -642,7 +642,7 @@
 {{-- 12c. RENTAL / CAPITAL STRIP (moved below dosing) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
-    'headingSize'  => 'text-3xl sm:text-4xl lg:text-4xl',
+    'headingSize'  => 'text-3xl sm:text-4xl lg:text-5xl',
     'headingLine1' => 'Replace or add dryer capacity with<br>',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Where suitable, Equipment Rental can support dryer replacement or added capacity, with service included under agreed rental terms.',
@@ -716,7 +716,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

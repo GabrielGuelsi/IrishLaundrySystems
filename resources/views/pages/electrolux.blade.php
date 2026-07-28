@@ -100,7 +100,7 @@
 
         <div class="mb-12 lg:mb-14 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why the Partnership Matters</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 What the partnership brings to <span class="text-[#148af4]">your laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
@@ -142,11 +142,11 @@
             <div class="reveal group py-8 lg:py-0 border-t border-gray-200 first:border-t-0 lg:border-t-0 lg:border-l lg:first:border-l-0 lg:px-10 lg:first:pl-0 lg:last:pr-0 lg:grid lg:grid-rows-subgrid lg:row-span-3"
                  style="transition-delay:{{ $i * 80 }}ms;">
                 @if(!empty($card['img']))
-                <img src="/images/icons/{{ $card['img'] }}.png" alt="" aria-hidden="true" class="w-16 h-16 lg:w-24 lg:h-24 object-contain mb-6 transition-transform duration-300 group-hover:-translate-y-1 {{ $card['iconScale'] ?? '' }}">
+                <img src="/images/icons/{{ $card['img'] }}.png" alt="" aria-hidden="true" class="w-24 h-24 object-contain mb-6 transition-transform duration-300 group-hover:-translate-y-1 {{ $card['iconScale'] ?? '' }}">
                 @else
                 <svg class="w-11 h-11 lg:w-12 lg:h-12 text-navy mb-7 transition-all duration-300 group-hover:-translate-y-1 group-hover:text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor">{!! $card['icon'] !!}</svg>
                 @endif
-                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-3 leading-snug text-balance self-start transition-colors duration-300 group-hover:text-[#148af4]">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-3 leading-snug text-balance self-start transition-colors duration-300 group-hover:text-[#148af4]">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
             </div>
             @endforeach
@@ -161,14 +161,15 @@
     <div class="absolute inset-0 ep-dotgrid opacity-40" aria-hidden="true"></div>
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-10 lg:gap-8 items-center">
 
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Range</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Professional laundry equipment across<br class="hidden lg:block"> <span class="text-[#148af4]">washing, drying and finishing</span>
+                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+                    <span class="block lg:whitespace-nowrap">Professional laundry equipment</span>
+                    <span class="block lg:whitespace-nowrap">across <span class="text-[#148af4]">washing, drying and finishing</span></span>
                 </h2>
-                <p class="font-body text-blue-200 text-base leading-relaxed text-pretty mb-8 max-w-xl">
+                <p class="font-body text-blue-200 text-base leading-relaxed mb-8 lg:whitespace-nowrap">
                     Explore equipment for different capacities, sectors and specialist laundry applications.
                 </p>
                 <a href="{{ route('equipment') }}" class="group inline-flex items-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-black/25">
@@ -219,7 +220,7 @@
 
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[62%]">
         <p class="font-body font-bold text-white/70 uppercase tracking-[0.22em] text-xs mb-3">Professional Laundry Heritage</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[42px] leading-tight mb-4 text-balance">
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
             More than 120 years of<br class="hidden lg:block"> professional laundry innovation,<br class="hidden lg:block"> <span style="color:#011E41;">supported in Ireland since 1987</span>
         </h2>
         <p class="font-body text-white/90 text-base leading-relaxed mb-6 text-pretty max-w-xl">
@@ -256,7 +257,7 @@
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">From Electrolux Professional</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                <span class="lg:whitespace-nowrap">Trusted by Electrolux Professional <span style="color:#148af4;">since 1987</span></span>
+                <span class="">Trusted by Electrolux Professional <span style="color:#148af4;">since 1987</span></span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed">
                 A statement on the long-standing partnership with Irish Laundry Systems in Ireland.

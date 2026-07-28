@@ -18,8 +18,8 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Protect specialist garments and gear with</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">gentle cabinet drying</span>
+                    <span class="block">Protect specialist garments and</span>
+                    <span class="block">gear with <span style="color:#148af4;">gentle cabinet drying</span></span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     For PPE, workwear, footwear, gloves and delicate items where tumble drying is not suitable. Irish Laundry Systems supplies and installs Electrolux Professional drying cabinets across Ireland.
@@ -46,16 +46,17 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-8 lg:gap-10 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Select drying cabinet capacity for<br><span style="color:#148af4;">your items, space and daily volume</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block lg:whitespace-nowrap">Select drying cabinet capacity for</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">your items, space and daily volume</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed">
+                <p class="font-body text-gray-500 text-base leading-relaxed lg:ml-auto">
                     Hanging space, shelf layout and footwear accessories determine the cabinet configuration required.
                 </p>
             </div>
@@ -91,18 +92,19 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                Drying cabinets for<br><span style="color:#148af4;">delicate garments, shared laundry and workwear</span>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                <span class="block">Drying cabinets for <span style="color:#148af4;">delicate garments,</span></span>
+                <span class="block" style="color:#148af4;">shared laundry and workwear</span>
             </h2>
         </div>
 
         @php
         $fitCards = [
-            ['title' => 'Delicate Garments',        'copy' => 'For silk, wool, velvet and other items that need drying without mechanical action.', 'img' => '/images/pages/drying-cabinets/Delicate%20fabrics%20and%20fine%20clothing.png', 'pos' => 'center center'],
-            ['title' => 'Hotels &amp; Laundries',   'copy' => 'For hotels and professional laundries handling delicate, bulky or specialist garments that need cabinet drying.', 'img' => '/images/pages/drying-cabinets/Private%20residences%20%26%20wardrobe%20rooms.png', 'pos' => 'center center'],
-            ['title' => 'Multi-Housing',            'copy' => 'For apartment buildings, student homes and shared laundries handling everyday garments and bulky items.', 'img' => '/images/pages/drying-cabinets/Multi-housing.png', 'pos' => 'center center'],
-            ['title' => 'Construction &amp; Workwear', 'copy' => 'For workwear, overalls, boots and gloves used across construction and outdoor working environments.', 'img' => '/images/pages/drying-cabinets/Construction%20%26%20workwear.png', 'pos' => 'center center'],
-            ['title' => 'Firefighters &amp; PPE',   'copy' => 'For protective clothing, gloves, boots and specialist PPE that needs controlled drying after cleaning.', 'img' => '/images/pages/drying-cabinets/Firefighters%20%26%20PPE.png', 'pos' => 'center center'],
+            ['title' => 'Delicate Garments',        'copy' => 'For silk, wool, velvet and other items that need drying without mechanical action.', 'img' => '/images/pages/drying-cabinets/Delicate%20fabrics%20and%20fine%20clothing.png', 'pos' => 'center 50%',   'sc' => '1.47'],
+            ['title' => 'Hotels &amp; Laundries',   'copy' => 'For hotels and professional laundries handling delicate, bulky or specialist garments that need cabinet drying.', 'img' => '/images/pages/drying-cabinets/Private%20residences%20%26%20wardrobe%20rooms.png', 'pos' => '46% 48%',    'sc' => '1.58'],
+            ['title' => 'Multi-Housing',            'copy' => 'For apartment buildings, student homes and shared laundries handling everyday garments and bulky items.', 'img' => '/images/pages/drying-cabinets/Multi-housing.png', 'pos' => 'center 50%',   'sc' => '1.53'],
+            ['title' => 'Construction &amp; Workwear', 'copy' => 'For workwear, overalls, boots and gloves used across construction and outdoor working environments.', 'img' => '/images/pages/drying-cabinets/Construction%20%26%20workwear.png', 'pos' => '48% 50%',    'sc' => '1.46'],
+            ['title' => 'Firefighters &amp; PPE',   'copy' => 'For protective clothing, gloves, boots and specialist PPE that needs controlled drying after cleaning.', 'img' => '/images/pages/drying-cabinets/Firefighters%20%26%20PPE.png', 'pos' => '46% 50%',    'sc' => '1.48'],
             ['title' => 'Schools &amp; Childcare',  'copy' => 'For coats, outdoor clothing, gloves and everyday items used across schools and childcare settings.', 'img' => '/images/pages/drying-cabinets/schools-childcare.webp', 'pos' => 'center center'],
         ];
         @endphp
@@ -134,8 +136,8 @@
                     <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
                         <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
                             <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                 style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 {{ empty($card['sc']) ? 'group-hover:scale-105' : '' }}"
+                                 style="object-position: {{ $card['pos'] ?? 'center center' }};@if(!empty($card['sc'])) transform: scale({{ $card['sc'] }});@endif">
                             <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
                                  style="background:linear-gradient(to top, rgba(1,30,65,0.75) 0%, rgba(1,30,65,0.28) 45%, rgba(1,30,65,0.02) 75%, transparent 100%);"></div>
                             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -213,7 +215,7 @@
                 <div class="flex items-center justify-center h-56 mb-5">
                     <img src="{{ $p['img'] ?? '/images/pages/drying-cabinets/Drying-cabinets_image.webp' }}" alt="{{ $p['name'] }}" class="max-h-full w-auto object-contain">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">{{ $p['name'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-5">{{ $p['copy'] }}</p>
                 <div class="flex flex-wrap gap-1.5 mb-6">
                     @foreach($p['highlights'] as $hl)
@@ -236,7 +238,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Browse standard and heat pump<br><span style="color:#148af4;">drying cabinet models</span>
+                Browse standard and heat pump <span style="color:#148af4;">drying cabinet models</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Filter by cabinet type, then open each model for full product details.
@@ -378,7 +380,7 @@
                 <div class="h-40 flex items-center justify-center mb-4 overflow-hidden">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-full w-auto object-contain {{ $card['imgClass'] ?? '' }}">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed max-w-[260px]">{{ $card['copy'] }}</p>
             </div>
             @endforeach
@@ -491,7 +493,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

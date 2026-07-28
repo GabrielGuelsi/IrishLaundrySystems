@@ -45,11 +45,11 @@
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 720px;">
-                <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
-                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl xl:text-5xl text-balance">
+                <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
+                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
                     Rent the laundry equipment your site needs with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
                 </h1>
-                <p class="rn-hero-desc font-body text-blue-200 text-base lg:text-lg leading-relaxed mb-10 max-w-2xl text-pretty">
+                <p class="rn-hero-desc font-body text-blue-200 text-base leading-relaxed mb-10 max-w-2xl text-pretty">
                     A rental agreement gives your site access to selected Electrolux Professional equipment with supply, installation, servicing, planned maintenance and ongoing support included.
                 </p>
                 <div class="rn-hero-btns flex flex-row flex-wrap gap-4">
@@ -76,12 +76,12 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl 2xl:text-6xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Keep capital available while <span class="text-[#148af4]">your laundry stays&nbsp;equipped</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
-                <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+                <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                     Rental can help your site plan equipment costs without committing to one large purchase. Irish Laundry Systems supplies, installs, services and supports selected Electrolux Professional equipment under one agreement.
                 </p>
                 <a href="#quote-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
@@ -139,11 +139,11 @@
             @foreach ($gainCards as $i => $card)
             <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-11 h-11 object-contain">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-24 h-24 object-contain">
                 @else
                 <svg class="w-11 h-11 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">{!! $card['icon'] !!}</svg>
                 @endif
-                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['body'] }}</p>
             </article>
             @endforeach
@@ -155,11 +155,11 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-6xl mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">What's Included</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance lg:whitespace-nowrap">
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">What's Included</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 See what is covered under <span class="text-[#148af4]">the rental&nbsp;agreement</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                 Your rental agreement brings key equipment, service and support requirements into one clear arrangement from the start.
             </p>
         </div>
@@ -213,11 +213,11 @@
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Compare Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance lg:whitespace-nowrap">
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Compare Options</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                 Rental and outright purchase both have their place. The right decision depends on capital planning,<br class="hidden lg:block"> equipment needs, support requirements and how much your site wants included from the start.
             </p>
         </div>
@@ -225,7 +225,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
             {{-- Rental / Lease --}}
             <div class="reveal bg-white border-2 border-[#148af4] rounded-2xl p-7 lg:p-9 shadow-card flex flex-col h-full">
-                <h3 class="font-heading font-bold text-navy text-2xl mb-5">Rental / Lease</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-5">Rental / Lease</h3>
                 <ul class="space-y-3 mb-6">
                     @foreach ([
                         'No large capital outlay',
@@ -252,7 +252,7 @@
 
             {{-- Outright Purchase --}}
             <div class="reveal bg-white border border-border rounded-2xl p-7 lg:p-9 flex flex-col h-full" style="transition-delay:100ms;">
-                <h3 class="font-heading font-bold text-navy text-2xl mb-5">Outright Purchase</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-5">Outright Purchase</h3>
                 <ul class="space-y-3 mb-6">
                     @foreach ([
                         'Full ownership of the equipment from day one',
@@ -286,7 +286,7 @@
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl reveal text-balance" style="transition-delay:80ms;">
             A clear rental process from <span class="text-[#148af4]">site review to&nbsp;agreement</span>
         </h2>
-        <p class="font-body text-gray-600 text-lg leading-relaxed max-w-6xl reveal text-pretty" style="transition-delay:160ms;">
+        <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl reveal text-pretty" style="transition-delay:160ms;">
             Irish Laundry Systems reviews your site needs, confirms suitable equipment and sets out the rental scope before the agreement begins.
         </p>
     </div>
@@ -317,11 +317,11 @@
 <section class="bg-bg py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mb-10 lg:mb-12 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Where Rental Fits</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Where Rental Fits</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
                 Rental for sites that want equipment access<br class="hidden lg:block"> with <span class="text-[#148af4]">support built&nbsp;in</span>
             </h2>
-            <p class="font-body text-gray-600 text-lg leading-relaxed text-pretty">
+            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                 Rental can be a good fit for sites that need selected Electrolux Professional laundry equipment without one large capital purchase, while keeping service, parts and support included throughout the agreement.
             </p>
         </div>
@@ -366,7 +366,7 @@
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
                                      class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};{{ isset($env['zoom']) ? ' transform: scale('.$env['zoom'].'); transform-origin: center bottom;' : '' }}">
                             </a>
-                            <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{!! $env['env'] !!}</h3>
+                            <h3 class="font-heading font-bold text-navy text-xl mb-4">{!! $env['env'] !!}</h3>
                             <a href="{{ $env['route'] }}"
                                class="inline-flex items-center justify-center bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200">
                                 Discover more
@@ -420,7 +420,7 @@
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Confirm the rental setup fits <span class="text-[#148af4]">your site before it&nbsp;begins</span>
                 </h2>
-                <p class="font-body text-gray-600 text-lg leading-relaxed mt-5 text-pretty">
+                <p class="font-body text-gray-600 text-base leading-relaxed mt-5 text-pretty">
                     Before the agreement is confirmed, Irish Laundry Systems reviews room layout, utilities, access, workload and support needs.
                 </p>
                 <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-gray-500 text-sm">
@@ -449,9 +449,9 @@
             <div class="flex flex-col reveal" style="transition-delay:120ms;">
                 @foreach ($planProof as $i => $p)
                 <div class="flex items-start gap-5 py-6 border-t border-gray-100 first:border-t-0 first:pt-0 last:pb-0">
-                    <img src="{{ $p['img'] }}" alt="" aria-hidden="true" class="w-12 h-12 lg:w-14 lg:h-14 object-contain flex-shrink-0" style="{{ $p['style'] ?? '' }}">
+                    <img src="{{ $p['img'] }}" alt="" aria-hidden="true" class="w-14 h-14 object-contain flex-shrink-0" style="{{ $p['style'] ?? '' }}">
                     <div>
-                        <h3 class="font-heading font-bold text-navy text-lg lg:text-xl mb-1.5 leading-snug">{{ $p['title'] }}</h3>
+                        <h3 class="font-heading font-bold text-navy text-xl mb-1.5 leading-snug">{{ $p['title'] }}</h3>
                         <p class="font-body text-gray-600 text-sm lg:text-base leading-relaxed text-pretty">{{ $p['text'] }}</p>
                     </div>
                 </div>
@@ -564,11 +564,11 @@ $rentalFaqs = [
 
             {{-- Left: heading + contact --}}
             <div class="lg:col-span-5 reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] uppercase tracking-widest text-xs mb-4">Request a Quote</p>
+                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Request a Quote</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Ready to discuss <span class="text-[#148af4]">rental or lease&nbsp;options</span>
                 </h2>
-                <p class="font-body text-gray-600 text-lg leading-relaxed mb-8 text-pretty">
+                <p class="font-body text-gray-600 text-base leading-relaxed mb-8 text-pretty">
                     Tell us what equipment you need, what the site is dealing with and whether you are considering rental, lease or outright purchase. Irish Laundry Systems will review the requirement and confirm the right next step.
                 </p>
 

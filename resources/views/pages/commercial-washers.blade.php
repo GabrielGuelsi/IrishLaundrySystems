@@ -125,7 +125,7 @@
                         </p>
                     </div>
                     <div class="lg:max-w-[230px]">
-                        <h3 class="font-heading font-bold text-navy text-lg leading-tight mb-2">Competitors&rsquo; life cycle costs*</h3>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-2">Competitors&rsquo; life cycle costs*</h3>
                         <p class="font-body text-navy/70 text-sm leading-relaxed">
                             Here is a representation of what other brands cost over the life of their washers and dryers.
                         </p>
@@ -226,11 +226,11 @@
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
-                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-24 h-24 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
             </div>
             @endforeach
@@ -346,7 +346,7 @@
                                 <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}" class="w-full h-52 lg:h-60 object-contain {{ $p['sc'] ?? '' }}">
                             </div>
                             <div class="flex flex-col">
-                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">{{ $p['name'] }}</h3>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
                                 <a href="{{ $p['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
                                     {{ $p['cta'] }}
@@ -363,7 +363,7 @@
                                 <img src="{{ $p['img'] }}" alt="" class="w-full h-52 lg:h-60 object-contain {{ $p['sc'] ?? '' }}">
                             </div>
                             <div class="flex flex-col">
-                                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl leading-tight mb-3">{{ $p['name'] }}</h3>
+                                <h3 class="font-heading font-bold text-navy text-xl leading-tight mb-3">{{ $p['name'] }}</h3>
                                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">{{ $p['copy'] }}</p>
                                 <a href="{{ $p['route'] }}" tabindex="-1" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200 w-fit">
                                     {{ $p['cta'] }}
@@ -598,7 +598,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Cut detergent waste with <span style="color:#148af4;">smarter dosing and wash control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -827,7 +827,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

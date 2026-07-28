@@ -45,7 +45,7 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Healthcare</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         {{ $healthcareBody }}
                     </p>
@@ -63,7 +63,7 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Care Facilities</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Care Facilities</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         {{ $careBody }}
                     </p>
@@ -82,7 +82,7 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Hospitality</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Hospitality</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         {{ $hospitalityBody }}
                     </p>
@@ -101,7 +101,7 @@
                 <div class="absolute inset-0"
                      style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.45) 42%, rgba(1,30,65,0.05) 72%, transparent 88%);"></div>
                 <div class="absolute inset-0 p-6 sm:p-8 flex flex-col justify-end items-center text-center">
-                    <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial &amp; Industrial</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-[1.1] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-3">Commercial &amp; Industrial</h3>
                     <p class="font-body text-white text-sm leading-relaxed mb-4 max-w-md text-balance">
                         {{ $commercialBody }}
                     </p>

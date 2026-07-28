@@ -17,7 +17,7 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] xl:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     When domestic machines<br><span style="color:#148af4;">become the weak point</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
@@ -98,7 +98,7 @@
                     <img src="{{ $lvl['img'] }}" alt="{{ $lvl['title'] }}" class="max-h-full w-auto object-contain {{ $lvl['imgClass'] ?? '' }}">
                 </div>
                 <span class="font-heading font-bold {{ $lvl['stepClass'] ?? 'text-[#148af4]' }} text-xs tracking-[0.2em] mb-2">{{ $lvl['step'] }}</span>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $lvl['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $lvl['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $lvl['copy'] }}</p>
             </div>
             @endforeach
@@ -123,7 +123,7 @@
         <div class="mb-10 reveal flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
             <div class="min-w-0">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO XL Highlight</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     A bigger step up for <span style="color:#148af4;">heavier daily laundry use</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -231,7 +231,7 @@
                     <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['name']) }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5 {{ $card['imgClass'] ?? '' }}">
                 </a>
                 <p class="font-body text-xs font-bold text-navy/60 mb-1.5">{{ $card['topLine'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">
                     <a href="{{ $card['route'] }}" class="hover:text-[#148af4] transition-colors">{{ $card['name'] }}</a>
                 </h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $card['copy'] }}</p>
@@ -280,7 +280,7 @@
                     <img src="{{ $card['img'] }}" alt="{{ $card['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
                 </div>
                 <p class="font-body text-xs font-bold text-navy/60 mb-1.5">{{ $card['topLine'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['name'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['name'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $card['copy'] }}</p>
                 <div class="flex flex-wrap gap-1.5 mb-5">
                     @foreach($card['badges'] as $b)
@@ -320,15 +320,15 @@
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $card['title'] }}</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</p>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
                 <div class="w-full flex items-end justify-center" style="height:300px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
                          class="transition-transform duration-500 hover:-translate-y-2"
                          style="width:{{ $card['box'] }}px; max-width:100%; height:{{ $card['box'] }}px; object-fit:contain;">
                 </div>
-                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-4 rounded-lg transition-colors mt-auto">
                     {{ $card['cta'] }}
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -429,7 +429,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support for semi-professional equipment <span style="color:#148af4;">beyond installation</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Irish Laundry Systems supports semi-professional laundry sites with repairs, Preventive Maintenance, rental where suitable and aftercare.
             </p>
         </div>
@@ -483,7 +483,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

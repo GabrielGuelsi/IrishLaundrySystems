@@ -14,9 +14,10 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry</p>
-                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4">
-                    <span class="block lg:whitespace-nowrap">Commercial laundry equipment for hospitality</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">protecting guest standards and daily service</span>
+                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                    <span class="block">Commercial laundry equipment</span>
+                    <span class="block">for hospitality <span style="color:#148af4;">protecting guest</span></span>
+                    <span class="block" style="color:#148af4;">standards and daily service</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment for hotels, guesthouses, restaurants, spas and leisure facilities across Ireland.
@@ -38,12 +39,13 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Hospitality Laundry Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[1.75rem] leading-tight">
-                    <span class="block lg:whitespace-nowrap">Plan hospitality laundry around</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">volume, space and operating requirements</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block">Plan hospitality laundry</span>
+                    <span class="block">around <span style="color:#148af4;">volume, space and</span></span>
+                    <span class="block" style="color:#148af4;">operating requirements</span>
                 </h2>
             </div>
 
@@ -220,7 +222,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -256,7 +258,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Plan hospitality laundry equipment around <span style="color:#148af4;">capacity, textile care and finishing needs</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 The combination of washers, dryers and finishing equipment should reflect the loads processed and the turnaround required across the property.
             </p>
         </div>
@@ -312,7 +314,7 @@
                     <div class="mt-1 pt-3">
                         <button @click="open = !open"
                                 class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features and Moisture Control</span>
+                            <span class="font-heading font-bold text-navy text-sm">System Features and Moisture Control</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -398,7 +400,7 @@
                          class="w-full h-80 object-contain object-left-top">
                     <div class="mt-1 pt-3 w-full">
                         <button @click="open = !open" class="w-full flex items-center justify-start gap-3 text-left group pl-[10px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, DIAMMS and Hygiene Guard</span>
+                            <span class="font-heading font-bold text-navy text-sm">System Features, DIAMMS and Hygiene Guard</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -468,7 +470,7 @@
                     <div class="mt-1 pt-3">
                         <button @click="open = !open"
                                 class="w-full flex items-center justify-start gap-3 text-left group pl-[20px]">
-                            <span class="font-heading font-bold text-navy text-lg">System Features, AIDO and Hygiene Watchdog</span>
+                            <span class="font-heading font-bold text-navy text-sm">System Features, AIDO and Hygiene Watchdog</span>
                             <span class="flex-shrink-0 text-navy transition-transform duration-300" :class="open ? 'rotate-180' : ''">
                                 <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
                             </span>
@@ -739,7 +741,8 @@
 <!-- SERVICE CONTRACTS + SUPPORT & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'After Installation',
-    'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span><br class="hidden lg:block">',
+    'textMaxW'     => 'lg:max-w-[60%]',
+    'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span>',
     'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
     'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after installation, rental, repair or replacement.',
     'image'        => '/images/shared/repairs-callouts.jpg',

@@ -10,27 +10,29 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Laundry dosing systems, detergents and accessories"
+    <img src="/images/pages/accessories/heroaccesories.png" alt="Laundry dosing systems, detergents and accessories"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Cost Control</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Control detergent use, wash quality and <span style="color:#148af4;">daily laundry costs</span>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories &amp; Consumables</p>
+                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                    <span class="block">Efficient detergent dosing</span>
+                    <span class="block">and laundry room essentials</span>
+                    <span class="block" style="color:#148af4;">for better control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems helps commercial laundry rooms choose the right dosing, detergent and accessory support for everyday use.
+                    From automatic dosing and certified detergents to safe storage and practical accessories, choose what suits your equipment, textiles and wash requirements.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#dosing-systems"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Laundry Control Advice
+                        Explore Dosing Systems
                     </a>
                     <a href="{{ route('contact') }}"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        Ask About Dosing Systems
+                        Request Product Advice
                     </a>
                 </div>
             </div>
@@ -45,28 +47,19 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why It Matters</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-12 lg:gap-12 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Small dosing mistakes<br>can create<br><span style="color:#148af4;">bigger laundry costs</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block lg:whitespace-nowrap">Better product choices improve</span>
+                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">wash quality and cost control</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Too much detergent, the wrong product or poor storage can lead to wasted product, inconsistent wash quality, repeat washing, textile damage and avoidable service pressure.
+                <p class="font-body text-gray-500 text-base leading-relaxed lg:ml-auto">
+                    Automatic dosing, the right detergents, safe storage and practical accessories can reduce waste, protect textiles and equipment, and keep the laundry room better organised.
                 </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems helps match dosing systems, eco-detergents, storage and accessories to the way your laundry is used every day.
-                </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Talk to Our Team
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -103,7 +96,7 @@
 
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Detergent Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Plan detergent control across <span style="color:#148af4;">the complete wash setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -135,7 +128,7 @@
                     @endforeach
                 </div>
                 <p class="font-heading font-bold text-[#148af4] text-sm tracking-[0.16em] mb-1">{{ $s['n'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-lg mb-2">{{ $s['label'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-2">{{ $s['label'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed max-w-[260px]">{{ $s['body'] }}</p>
             </div>
             @endforeach
@@ -154,12 +147,12 @@
 </section>
 
 {{-- 6. DOSING SYSTEM OPTIONS / TABS (Alpine carousel) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section id="dosing-systems" class="py-12 lg:py-16 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing System Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare dosing systems by <span style="color:#148af4;">washer setup and control needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -266,9 +259,9 @@
 
                                 {{-- Copy --}}
                                 <div class="flex-1">
-                                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-2">{{ $p['small'] }}</p>
-                                    <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-3">{{ $p['title'] }}</h3>
-                                    <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
+                                    <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">{{ $p['small'] }}</p>
+                                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-3">{{ $p['title'] }}</h3>
+                                    <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex flex-wrap gap-2 mb-6">
                                         @foreach($p['chips'] as $chip)
                                         <span class="font-body text-xs font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-3 py-1.5 rounded-full">{{ $chip }}</span>
@@ -321,13 +314,8 @@
 
         </div>
 
-        {{-- Compatibility note --}}
-        <p class="font-body text-gray-400 text-sm mt-6 text-center reveal">
-            Compatibility depends on washer model, control system, laundry room layout and existing setup. Irish Laundry Systems can advise which dosing route is suitable.
-        </p>
-
         {{-- CTA --}}
-        <div class="mt-4 text-center">
+        <div class="mt-10 text-center">
             <a href="{{ route('contact') }}"
                class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-sm transition-colors duration-200">
                 Ask About Dosing Systems
@@ -386,8 +374,8 @@
 
                 {{-- Text side --}}
                 <div class="{{ $i % 2 === 1 ? 'lg:order-2' : '' }}">
-                    <p class="font-body text-xs font-bold uppercase tracking-[0.18em] text-[#148af4] mb-3">{{ $card['topLine'] }}</p>
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl leading-tight text-balance mb-4">{{ $card['name'] }}</h3>
+                    <p class="font-body text-xs font-bold uppercase tracking-[0.22em] text-[#148af4] mb-3">{{ $card['topLine'] }}</p>
+                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">{{ $card['name'] }}</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6 max-w-xl">{{ $card['copy'] }}</p>
                     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-8 max-w-xl">
                         @foreach($card['badges'] as $b)
@@ -420,29 +408,6 @@
         </div>
     </div>
 </section>
-
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-                ['title' => 'Detergent Brochures', 'links' => [
-                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
-                    ['l' => 'L00 Laundry Eco Degreaser', 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
-                    ['l' => 'L01 Laundry Eco Powder',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
-                    ['l' => 'L02 Laundry Eco Wash',      'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
-                    ['l' => 'L03 Laundry Eco Booster',   'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
-                    ['l' => 'L04 Laundry Eco Bleach',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
-                    ['l' => 'L05 Laundry Eco Softener',  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
-                ]],
-                ['title' => 'Dosing & Storage', 'links' => [
-                    ['l' => 'Dosing Systems', 'h' => route('contact')],
-                    ['l' => 'Detergent Storage', 'h' => route('contact')],
-                    ['l' => 'Product resources', 'h' => route('resources')],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request dosing advice', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-]])
 
 {{-- 8. FAMILY 1 — LINE 6000 ECO-RANGE (core detergents + stain care & descaling) --}}
 <section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
@@ -558,7 +523,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Cleanstar Consumables</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Detergents for <span style="color:#148af4;">semi-professional laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -606,7 +571,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">lagoon Advanced Care Products</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Products for <span style="color:#148af4;">professional wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -669,6 +634,29 @@
     </div>
 </section>
 
+{{-- BROCHURES BAR (slim inline) — every accessories/consumables document in one strip --}}
+@include('components.resources-bar', ['groups' => [
+                ['title' => 'Product Brochures', 'links' => [
+                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+                    ['l' => 'Detergent Storage — Product Data Sheet', 'h' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Detergent storage_438918186_EN.pdf?version=1750533471'],
+                    ['l' => 'lagoon Advanced Care overview', 'h' => route('equipment.category', 'wet-cleaning')],
+                ]],
+                ['title' => 'Detergent Range', 'links' => [
+                    ['l' => 'L00 Laundry Eco Degreaser', 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
+                    ['l' => 'L01 Laundry Eco Powder',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
+                    ['l' => 'L02 Laundry Eco Wash',      'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
+                    ['l' => 'L03 Laundry Eco Booster',   'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
+                    ['l' => 'L04 Laundry Eco Bleach',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
+                    ['l' => 'L05 Laundry Eco Softener',  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request product advice', 'h' => route('contact')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                    ['l' => 'All documents', 'h' => route('resources')],
+                ]],
+]])
+
 {{-- 8d. CUSTOMER-FACING CERTIFICATE BLOCK --}}
 <section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -725,8 +713,8 @@
             ] as $acc)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{!! $acc['title'] !!}</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $acc['copy'] }}</p>
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{!! $acc['title'] !!}</p>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $acc['copy'] }}</p>
                 </div>
                 <div class="w-full flex items-end {{ $acc['align'] ?? 'justify-center' }}" style="height:300px;">
                     @if(!empty($acc['img']))
@@ -754,6 +742,126 @@
                 </svg>
             </a>
         </div>
+    </div>
+</section>
+
+{{-- 9b. LAUNDRY MANAGEMENT & CONNECTIVITY --}}
+<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Management &amp; Connectivity</p>
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Digital tools for <span style="color:#148af4;">better oversight and control</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Monitor compatible equipment, configure programmes and manage performance, payment and booking needs through Electrolux Professional systems.
+            </p>
+        </div>
+
+        @php
+            $lmcDocLink = 'inline-flex items-center gap-1.5 font-body font-bold text-[#148af4] text-sm hover:underline';
+            $lmcBadge   = 'inline-flex items-center font-body text-navy/70 text-xs bg-[#148af4]/[0.07] border border-[#148af4]/20 rounded-full px-3 py-1.5';
+            // Secondary systems — image swaps in via 'img' once the official assets are uploaded
+            $lmcCards = [
+                [
+                    'title'  => 'Laundry Program Manager',
+                    'sub'    => '',
+                    'body'   => 'Create and organise compatible washer and dryer programmes from a PC.',
+                    'badges' => ['Programme Setup', 'Washers &amp; Dryers', 'PC Tool'],
+                    'doc'    => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_LPM_438919528_EN.pdf?version=1740422870',
+                    'img'    => '/images/pages/accessories/Laundry%20Program%20Managerimage.png',
+                ],
+                [
+                    'title'  => 'CMIS 5',
+                    'sub'    => 'Certus Management Information System',
+                    'body'   => 'Review machine use, performance, service data and maintenance needs.',
+                    'badges' => ['Performance Data', 'Service Statistics', 'Maintenance Planning'],
+                    'doc'    => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_CMIS_438919493_EN.pdf?version=1758366943',
+                    'img'    => '/images/pages/accessories/CMIS%205image.png',
+                ],
+                [
+                    'title'  => 'Payment &amp; Booking Systems',
+                    'sub'    => '',
+                    'body'   => 'Add payment, access and booking options for shared and self-service laundries.',
+                    'badges' => ['Payment Options', 'User Access', 'Booking Systems'],
+                    'doc'    => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2017/05/Payment-Systems-2017.pdf',
+                    'img'    => '/images/pages/accessories/Payment%20%26%20Booking%20Systemsimage.png',
+                ],
+            ];
+        @endphp
+
+        {{-- Featured platform — OnE Connected --}}
+        <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden bg-white reveal mb-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="order-2 lg:order-1 p-7 lg:p-10 flex flex-col justify-center">
+                    <span class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Featured Platform</span>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">OnE Connected</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 max-w-md">
+                        Monitor compatible equipment, machine status, usage and alerts remotely.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        @foreach(['Remote Monitoring', 'Machine Status', 'Alerts'] as $badge)
+                        <span class="{{ $lmcBadge }}">{{ $badge }}</span>
+                        @endforeach
+                    </div>
+                    <div class="flex flex-wrap items-center gap-3 mb-4">
+                        <a href="{{ route('equipment.category', 'one-connected') }}"
+                           class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold text-sm px-6 py-3 rounded-lg transition-colors">
+                            View OnE Connected
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
+                        <a href="{{ route('contact') }}"
+                           class="inline-flex items-center gap-2 border border-navy/25 hover:border-navy text-navy font-body font-bold text-sm px-6 py-3 rounded-lg transition-colors">
+                            Request Advice
+                        </a>
+                    </div>
+                    <a href="https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR_Line%206000%20Washers%20%26%20Dryers%20brochure-01072025_EN.pdf"
+                       target="_blank" rel="noopener" class="{{ $lmcDocLink }}">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v2.625a2.625 2.625 0 0 1-2.625 2.625H7.125A2.625 2.625 0 0 1 4.5 16.875V14.25M12 15V3.75m0 11.25-3.75-3.75M12 15l3.75-3.75"/></svg>
+                        View Line 6000 Brochure
+                    </a>
+                </div>
+                <div class="order-1 lg:order-2 bg-gray-50 flex items-center justify-center min-h-[220px] lg:min-h-[340px]">
+                    <img src="/images/pages/one-connected/onedashboradimage.png" alt="OnE Connected dashboard"
+                         class="w-full h-full object-contain p-6" loading="lazy" decoding="async">
+                </div>
+            </div>
+        </div>
+
+        {{-- Secondary systems --}}
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal">
+            @foreach($lmcCards as $c)
+            <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden bg-white flex flex-col">
+                <div class="bg-gray-50 flex items-center justify-center" style="height:200px;">
+                    @if(!empty($c['img']))
+                    <img src="{{ $c['img'] }}" alt="{{ strip_tags($c['title']) }}" class="w-full h-full object-cover" loading="lazy" decoding="async">
+                    @else
+                    <svg class="w-14 h-14 text-navy/15" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.75V12A2.25 2.25 0 0 1 4.5 9.75h15A2.25 2.25 0 0 1 21.75 12v.75m-8.69-6.44-2.12-2.12a1.5 1.5 0 0 0-1.061-.44H4.5A2.25 2.25 0 0 0 2.25 6v12a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18V9a2.25 2.25 0 0 0-2.25-2.25h-5.379a1.5 1.5 0 0 1-1.06-.44Z"/></svg>
+                    @endif
+                </div>
+                <div class="p-6 flex flex-col flex-1">
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-1">{!! $c['title'] !!}</h3>
+                    @if($c['sub'])<p class="font-body text-gray-400 text-xs mb-2">{{ $c['sub'] }}</p>@endif
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $c['body'] }}</p>
+                    <div class="flex flex-wrap gap-2 mb-5">
+                        @foreach($c['badges'] as $badge)
+                        <span class="{{ $lmcBadge }}">{!! $badge !!}</span>
+                        @endforeach
+                    </div>
+                    <a href="{{ route('contact') }}"
+                       class="inline-flex items-center justify-center gap-2 border border-navy/25 hover:border-navy text-navy font-body font-bold text-sm px-6 py-3 rounded-lg transition-colors mb-3 mt-auto">
+                        Request Advice
+                    </a>
+                    <a href="{{ $c['doc'] }}" target="_blank" rel="noopener" class="{{ $lmcDocLink }}">
+                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v2.625a2.625 2.625 0 0 1-2.625 2.625H7.125A2.625 2.625 0 0 1 4.5 16.875V14.25M12 15V3.75m0 11.25-3.75-3.75M12 15l3.75-3.75"/></svg>
+                        View Product Data Sheet
+                    </a>
+                </div>
+            </div>
+            @endforeach
+        </div>
+
     </div>
 </section>
 
@@ -857,15 +965,15 @@
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $card['title'] }}</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</p>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
                 <div class="w-full flex items-end justify-center" style="height:300px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
                          style="width:{{ $card['box'] }}px; max-width:100%; height:{{ $card['box'] }}px; object-fit:contain; object-position:bottom;">
                 </div>
-                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-4 rounded-lg transition-colors mt-auto">
                     {{ $card['cta'] }}
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>

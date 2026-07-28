@@ -114,11 +114,11 @@
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
-                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-24 h-24 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
             </div>
             @endforeach
@@ -136,7 +136,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Reduce handling effort across <span style="color:#148af4;">daily loading and unloading</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-3xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Selected Electrolux Professional features support easier door access, clearer programme selection and more comfortable repeated use.
             </p>
         </div>
@@ -213,11 +213,11 @@
             <div class="flex flex-col gap-5">
                 <div class="rounded-2xl bg-white p-6 flex-1" style="box-shadow: 0 10px 35px -10px rgba(1,30,65,0.10);">
                     <div class="flex items-start justify-between gap-3 mb-2">
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug">Lower handling effort</h3>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug">Lower handling effort</h3>
                         <img src="/images/shared/saferforusers.svg" alt="Safer handling" class="w-16 h-16 object-contain flex-shrink-0">
                     </div>
                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">Maximum comfort</p>
-                    <p class="font-body text-gray-500 text-xs leading-relaxed mb-3">A low <strong class="text-navy font-bold">40N</strong> opening force and automatic door handling reduce effort across repeated loading and unloading.</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-3">A low <strong class="text-navy font-bold">40N</strong> opening force and automatic door handling reduce effort across repeated loading and unloading.</p>
                     <div class="flex flex-wrap gap-x-4 gap-y-1.5">
                         @foreach(['40N opening force', 'Auto door handling', 'Space-saving design'] as $pt)
                         <span class="inline-flex items-center gap-1.5 font-body text-navy text-xs font-semibold">
@@ -274,7 +274,7 @@
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
                          class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $card['pos'] ?? 'center' }};">
                 </a>
-                <h3 class="font-heading font-bold text-navy text-xl lg:text-2xl mb-4">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-4">{{ $card['title'] }}</h3>
                 <a href="{{ $card['route'] }}"
                    class="inline-flex items-center justify-center bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-3 rounded-full text-sm transition-colors duration-200">
                     Discover more
@@ -294,7 +294,7 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight mb-4">
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             Plan the room around<br><span style="color:#011E41;">separation, access and connections</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
@@ -666,7 +666,7 @@
     'image'        => '/images/pages/barrier-washers/equipmentrentalnewimagestrip.png',
     'mirror'       => true,
     'gradientStrength' => 0.55,
-    'headingSize'  => 'text-3xl sm:text-4xl lg:text-4xl',
+    'headingSize'  => 'text-3xl sm:text-4xl lg:text-5xl',
     'headingLine1' => 'Keep hygiene-critical laundry moving with<br>',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Where suitable, rental can support barrier washer replacement or added capacity without one large capital purchase, with service included under agreed terms.',
@@ -712,7 +712,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

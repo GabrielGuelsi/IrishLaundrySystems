@@ -162,7 +162,7 @@
 
                 {{-- LEFT: content --}}
                 <div class="lg:col-span-7 flex items-center gap-6 lg:gap-8">
-                    <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-24 h-24 sm:w-28 sm:h-28 lg:w-36 lg:h-36 flex-shrink-0 object-contain">
+                    <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-24 h-24 flex-shrink-0 object-contain">
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Call-Out Support</p>
                         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-2 text-balance"><span class="text-[#148af4]">Responsive call-out support</span> when equipment needs&nbsp;attention</h2>
@@ -180,7 +180,7 @@
 
                     {{-- Phone number prominent --}}
                     <a href="tel:+35314910402" class="group lg:text-right">
-                        <span class="block font-body text-white/60 text-[11px] uppercase tracking-[0.22em] mb-1">Talk to a person now</span>
+                        <span class="block font-body text-white/60 text-xs uppercase tracking-[0.22em] mb-1">Talk to a person now</span>
                         <span class="block font-heading font-bold text-white text-2xl lg:text-3xl tracking-tight leading-none group-hover:text-[#148af4] transition-colors">
                             +353 1 491&nbsp;0402
                         </span>
@@ -429,28 +429,28 @@ $expectSteps = [
             <div class="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-14 pt-10 border-t border-white/10">
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-repeat-history.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/repairs-repeat-history.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Repair history</h3>
                     <p class="font-body text-white text-xs leading-relaxed">See whether the same fault has appeared before.</p>
                 </div>
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-fault-patterns.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/repairs-fault-patterns.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Parts needs</h3>
                     <p class="font-body text-white text-xs leading-relaxed">Identify parts that may need replacement or further checks.</p>
                 </div>
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/61.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/61.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Maintenance timing</h3>
                     <p class="font-body text-white text-xs leading-relaxed">Know when Preventive Maintenance should be considered.</p>
                 </div>
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-maintenance-review.png" alt="" aria-hidden="true" class="w-14 h-14 lg:w-16 lg:h-16 object-contain">
+                        <img src="/images/icons/repairs-maintenance-review.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
                     </div>
                     <h3 class="font-heading font-bold text-white text-sm mb-1.5">Replacement planning</h3>
                     <p class="font-body text-white text-xs leading-relaxed">Recognise when continued repair may no longer be the best use of budget.</p>
@@ -545,7 +545,7 @@ $faqs = [
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden mb-8 lg:mb-10">
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
-            <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="mx-auto mb-5 w-16 h-16 lg:w-20 lg:h-20 object-contain">
+            <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="mx-auto mb-5 w-24 h-24 object-contain">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request a Call-Out</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Need commercial laundry equipment <span class="text-[#148af4]">back in&nbsp;service</span>?
@@ -572,7 +572,7 @@ $faqs = [
 
         {{-- Repair Call-Out form --}}
         <div id="repairs-form" class="bg-white rounded-2xl shadow-2xl p-7 lg:p-10">
-            <p class="font-heading font-bold text-navy text-xl lg:text-2xl leading-snug mb-1">Request a Call-Out</p>
+            <p class="font-heading font-bold text-navy text-xl leading-snug mb-1">Request a Call-Out</p>
             <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">We aim to respond within 24 hours.</p>
             <form action="{{ route('contact.submit') ?? '#' }}" method="POST" class="space-y-3">
                 @csrf

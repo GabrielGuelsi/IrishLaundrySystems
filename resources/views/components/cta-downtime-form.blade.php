@@ -10,6 +10,7 @@
     'messageLabel'      => 'Message / Requirement',
     'messageRequired'   => false,
     'requestTypeLabel'  => 'Request Type',
+    'headingSize'       => 'text-3xl sm:text-4xl lg:text-5xl',
 ])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">
@@ -21,7 +22,7 @@
                 @if ($eyebrow)
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
                 @endif
-                <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-5xl mb-4 leading-tight">
+                <h2 class="font-heading font-bold text-white {{ $headingSize }} mb-4 leading-tight">
                     {!! $heading !!}
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8">
@@ -80,7 +81,7 @@
 
             {{-- RIGHT: Form --}}
             <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
-                <h3 class="font-heading font-bold text-navy text-lg mb-1">{{ $formTitle }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-1">{{ $formTitle }}</h3>
                 <p class="font-body text-gray-500 text-sm mb-6">{{ $formIntro }}</p>
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
                     @csrf
