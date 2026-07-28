@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Laundry dosing systems, detergents and accessories"
+    <img src="/images/pages/accessories/heroaccesories.png" alt="Laundry dosing systems, detergents and accessories"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -769,8 +769,8 @@
                     'sub'    => '',
                     'body'   => 'Create and organise compatible washer and dryer programmes from a PC.',
                     'badges' => ['Programme Setup', 'Washers &amp; Dryers', 'PC Tool'],
-                    'doc'    => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_LPM_438919528_EN.pdf',
-                    'img'    => null,
+                    'doc'    => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_LPM_438919528_EN.pdf?version=1740422870',
+                    'img'    => '/images/pages/accessories/Laundry%20Program%20Managerimage.png',
                 ],
                 [
                     'title'  => 'CMIS 5',
@@ -778,7 +778,7 @@
                     'body'   => 'Review machine use, performance, service data and maintenance needs.',
                     'badges' => ['Performance Data', 'Service Statistics', 'Maintenance Planning'],
                     'doc'    => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_CMIS_438919493_EN.pdf?version=1758366943',
-                    'img'    => null,
+                    'img'    => '/images/pages/accessories/CMIS%205image.png',
                 ],
                 [
                     'title'  => 'Payment &amp; Booking Systems',
@@ -786,7 +786,7 @@
                     'body'   => 'Add payment, access and booking options for shared and self-service laundries.',
                     'badges' => ['Payment Options', 'User Access', 'Booking Systems'],
                     'doc'    => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2017/05/Payment-Systems-2017.pdf',
-                    'img'    => null,
+                    'img'    => '/images/pages/accessories/Payment%20%26%20Booking%20Systemsimage.png',
                 ],
             ];
         @endphp
