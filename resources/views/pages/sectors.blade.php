@@ -44,7 +44,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </div>
-                <p class="font-body text-gray-600 leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
                     Uptime, hygiene compliance and governance — without the noise. We work with hospitals, HSE sites, nursing homes and multi-site healthcare groups across the Republic of Ireland.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
@@ -70,7 +70,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </div>
-                <p class="font-body text-gray-600 leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
                     Protect guest operations with predictable laundry uptime. Laundry failure in hospitality affects housekeeping, guest experience and reputation — ILS keeps operations moving.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
@@ -96,7 +96,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </div>
-                <p class="font-body text-gray-600 leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
                     Continuity, safety and confidence. In residential care environments, laundry is a hygiene-critical service. ILS provides the structured support that care operators need to maintain standards.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">
@@ -122,7 +122,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </div>
-                <p class="font-body text-gray-600 leading-relaxed mb-5">
+                <p class="font-body text-gray-600 text-sm leading-relaxed mb-5">
                     Throughput, lifecycle cost and uptime. Commercial laundry operations require maximum machine availability. We support operators with engineering-led maintenance and rapid reactive response.
                 </p>
                 <div class="mt-auto pt-4 border-t border-border flex flex-wrap gap-2">

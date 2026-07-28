@@ -15,6 +15,7 @@
     'cta1Route'    => 'parts-aftercare',
     'cta2Label'    => null,
     'cta2Route'    => 'parts-aftercare',
+    'textMaxW'     => 'lg:max-w-[54%]',
 ])
 {{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
@@ -28,7 +29,7 @@
     </div>
 
     {{-- LEFT: content — kept clear of the image strip --}}
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-10 lg:py-12 max-w-full lg:max-w-[54%]">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-10 lg:py-12 max-w-full {{ $textMaxW }}">
 
         @if($eyebrow)
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>

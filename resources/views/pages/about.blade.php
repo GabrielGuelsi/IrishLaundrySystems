@@ -32,14 +32,14 @@
                 </p>
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="{{ route('services') }}"
-                       class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
+                       class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-base px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
                         Explore Our Services
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                         </svg>
                     </a>
                     <a href="#company-history"
-                       class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:border-white transition-colors">
+                       class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-base px-6 py-3 rounded-lg hover:border-white transition-colors">
                         Our Story
                     </a>
                 </div>
@@ -243,7 +243,7 @@
                 @foreach($ringNodes as $n)
                 <div class="flex flex-col items-center justify-center text-center rounded-full bg-white"
                      style="width:8.5rem; height:8.5rem; border:2px dotted rgba(1,30,65,0.30);">
-                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-12 h-12 object-contain mb-1.5" style="{{ $blueFilter }}{{ isset($n['sc']) ? 'transform:scale('.$n['sc'].');' : '' }}">
+                    <img src="/images/icons/{{ $n['icon'] }}.png" alt="" class="w-14 h-14 object-contain mb-1.5" style="{{ $blueFilter }}{{ isset($n['sc']) ? 'transform:scale('.$n['sc'].');' : '' }}">
                     <span class="font-body font-bold text-navy text-xs leading-tight px-3">{{ $n['label'] }}</span>
                 </div>
                 @endforeach
@@ -271,10 +271,11 @@
     {{-- Header: white bg, padded --}}
     <div class="bg-white pt-20 lg:pt-28 pb-12 lg:pb-14">
         <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-            <div class="max-w-3xl">
+            <div class="max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">How We Work</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-4xl xl:text-[42px] leading-tight text-balance mb-3 xl:whitespace-nowrap">
-                    A clear process from first review <span class="text-[#148af4]">through installation and aftercare</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                    <span class="block">A clear process from first review</span>
+                    <span class="block text-[#148af4]">through installation and aftercare</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     Each stage is agreed before work begins, with clear information retained for future service.
@@ -409,7 +410,7 @@
 
         <div class="max-w-4xl mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Company History</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
@@ -439,7 +440,7 @@
                 </div>
                 <div class="flex-1 lg:pl-16 relative z-10">
                     <div class="lg:hidden font-heading font-bold text-[#148af4] leading-none mb-3" style="font-size:2.5rem;">{{ $m['year'] }}</div>
-                    <div class="font-heading font-bold text-navy text-xl lg:text-2xl mb-3">{{ $m['title'] }}</div>
+                    <div class="font-heading font-bold text-navy text-xl mb-3">{{ $m['title'] }}</div>
                     <p class="font-body text-gray-500 text-sm lg:text-base leading-relaxed max-w-xl">{{ $m['body'] }}</p>
                 </div>
                 <div class="ils-history-img absolute hidden lg:block rounded-2xl overflow-hidden shadow-2xl" style="right:0;top:50%;width:18.5rem;height:20.5rem;z-index:20;{{ (!empty($m['imgLogo']) || !empty($m['icon'])) ? 'background:#fff;' : '' }}">
@@ -480,7 +481,7 @@
         <div class="rounded-2xl px-6 sm:px-10 lg:px-12 py-7 lg:py-8 w-full lg:max-w-xl text-center reveal"
              style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
-            <h2 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Responsible equipment choices backed by<br class="hidden lg:block"> <span class="text-[#148af4]">recognised sustainability performance</span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed mb-6">

@@ -15,12 +15,11 @@
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
-            <div class="flex-1 reveal reveal-left max-w-3xl">
+            <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Commercial ironers for</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">consistent flatwork finishing</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">and easier handling</span>
+                    <span class="block">Commercial ironers for <span style="color:#148af4;">consistent</span></span>
+                    <span class="block" style="color:#148af4;">flatwork finishing and easier handling</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional ironers for sheets, table linen and other flatwork.
@@ -50,9 +49,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[43px] leading-tight">
-                    <span class="block lg:whitespace-nowrap">Plan the ironing setup for</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">your flatwork, volume and available space</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block">Plan the ironing setup for</span>
+                    <span class="block" style="color:#148af4;">your flatwork, volume and available space</span>
                 </h2>
             </div>
 
@@ -85,8 +84,8 @@
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:130px;">
-                    <h3 class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
                 <div class="w-full flex items-end justify-center" style="height:280px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}"
@@ -154,11 +153,11 @@
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
-                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-24 h-24 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
-                    <p class="font-body text-gray-500 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
             </div>
             @endforeach
@@ -170,12 +169,12 @@
 <section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="mb-10 lg:mb-12 reveal reveal-left max-w-4xl">
+        <div class="mb-10 lg:mb-12 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Layout</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Front or rear delivery for <span style="color:#148af4;">room layout and collection</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Delivery direction determines where finished flatwork is collected and how loading and collection are organised.
             </p>
         </div>
@@ -189,11 +188,11 @@
                         <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75"/></svg>
                     </span>
                     <div>
-                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-1">Front Delivery</p>
-                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">For compact layouts</h3>
+                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-1">Front Delivery</p>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug">For compact layouts</h3>
                     </div>
                 </div>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-6" style="min-height:78px;">
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6" style="min-height:78px;">
                     Front delivery returns finished linen to the front of the ironer, helping sites use a more compact room layout.
                 </p>
                 <div class="border-t border-gray-100 pt-6 pb-6">
@@ -220,11 +219,11 @@
                         <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7.5L7.5 3m0 0L12 7.5M7.5 3v13.5m13.5 0L16.5 21m0 0L12 16.5m4.5 4.5V7.5"/></svg>
                     </span>
                     <div>
-                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.18em] mb-1">Rear Delivery</p>
-                        <h3 class="font-heading font-bold text-navy text-2xl leading-snug">For separate collection</h3>
+                        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-1">Rear Delivery</p>
+                        <h3 class="font-heading font-bold text-navy text-xl leading-snug">For separate collection</h3>
                     </div>
                 </div>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-6" style="min-height:78px;">
+                <p class="font-body text-gray-500 text-sm leading-relaxed mb-6" style="min-height:78px;">
                     Rear delivery sends finished linen to the back of the ironer, helping separate loading and collection where the room allows it.
                 </p>
                 <div class="border-t border-gray-100 pt-6 pb-6">
@@ -264,8 +263,9 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-            <span class="block lg:whitespace-nowrap">Plan the complete ironer setup around</span>
-            <span class="block lg:whitespace-nowrap" style="color:#011E41;">your space and daily demand</span>
+            <span class="block">Plan the complete ironer</span>
+            <span class="block">setup around <span style="color:#011E41;">your space</span></span>
+            <span class="block" style="color:#011E41;">and daily demand</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             ILS reviews working width, heating, access and output needs before recommending the right ironer and installation approach.
@@ -298,7 +298,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Range Finder</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse ironer ranges for <span style="color:#148af4;">your flatwork operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -451,15 +451,17 @@
 {{-- 11. FINISHING EQUIPMENT BAND --}}
 <section id="finishing-equipment" class="pt-12 lg:pt-16 pb-20 lg:pb-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-8 lg:gap-16 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment</p>
                 <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                    <span class="block">Finishing equipment for garments,</span>
-                    <span class="block" style="color:#148af4;">uniforms and shaped items</span>
+                    <span class="block">Finishing equipment for</span>
+                    <span class="block">garments, <span style="color:#148af4;">uniforms</span></span>
+                    <span class="block" style="color:#148af4;">and shaped items</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-6">
-                    Explore ironing tables, presses and automated finishing options for different production volumes.
+                    <span class="block lg:whitespace-nowrap">Explore ironing tables, presses and automated finishing options</span>
+                    <span class="block">for different production volumes.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="{{ route('equipment.category', 'finishing-equipment') }}"
@@ -561,7 +563,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}

@@ -9,6 +9,7 @@
         ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
     ],
     'ctaText'  => 'Talk to an Engineer',
+    'textMaxW' => 'lg:max-w-[54%]',
 ])
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
 
@@ -24,14 +25,14 @@
     </div>
 
     {{-- Content — kept clear of the image strip --}}
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[54%]" style="width:100%;">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full {{ $textMaxW }}" style="width:100%;">
 
         @if($eyebrow)
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
         @endif
 
         {{-- Heading --}}
-        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-3xl sm:text-4xl lg:text-5xl text-white">
             {!! $heading !!}
         </h2>
 

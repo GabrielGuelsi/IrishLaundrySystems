@@ -74,7 +74,7 @@
 
                         <!-- Basic info -->
                         <fieldset>
-                            <legend class="font-body font-bold text-navy text-sm uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">Your Details</legend>
+                            <legend class="font-body font-bold text-navy text-xs uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">Your Details</legend>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                 <div>
                                     <label for="name" class="block text-sm font-body font-bold text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
@@ -101,7 +101,7 @@
 
                         <!-- Operation details -->
                         <fieldset>
-                            <legend class="font-body font-bold text-navy text-sm uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">About Your Operation</legend>
+                            <legend class="font-body font-bold text-navy text-xs uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">About Your Operation</legend>
                             <div class="space-y-5">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                                     <div>
@@ -147,7 +147,7 @@
 
                         <!-- What you need -->
                         <fieldset>
-                            <legend class="font-body font-bold text-navy text-sm uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">What You Need</legend>
+                            <legend class="font-body font-bold text-navy text-xs uppercase tracking-[0.22em] mb-4 pb-2 border-b border-border w-full">What You Need</legend>
                             <div class="space-y-5">
                                 <div>
                                     <label class="block text-sm font-body font-bold text-navy mb-2">What Are You Looking For? <span class="text-red-500">*</span></label>
@@ -232,7 +232,7 @@
             <!-- Right sidebar -->
             <div class="lg:col-span-1 space-y-5">
                 <div class="bg-navy text-white rounded-2xl p-6">
-                    <h3 class="font-heading font-bold text-white text-lg mb-3">What Happens Next</h3>
+                    <h3 class="font-heading font-bold text-white text-xl mb-3">What Happens Next</h3>
                     <div class="space-y-4">
                         <div class="flex items-start gap-3">
                             <div class="w-7 h-7 rounded-full bg-orange flex items-center justify-center flex-shrink-0 font-heading font-bold text-white text-xs mt-0.5">1</div>

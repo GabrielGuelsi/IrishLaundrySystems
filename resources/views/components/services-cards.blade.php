@@ -22,7 +22,7 @@
             @if ($eyebrow)
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
             @endif
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-3xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 {{ $headingLead }}<span class="{{ $highlightClass }}">{{ $headingHighlight }}</span>{{ $headingTrail }}
             </h2>
             @if (trim(strip_tags($intro)) !== '')
@@ -56,7 +56,7 @@
                         @endif
                     </div>
 
-                    <h3 class="font-heading font-bold text-white text-2xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4 text-balance">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-[1.05] tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.45)] mb-4 text-balance">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {{ $card['cta'] }}

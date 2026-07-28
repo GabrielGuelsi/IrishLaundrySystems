@@ -243,7 +243,7 @@
                 </p>
                 <a href="#book-visit-form"
                    data-ga-cta="intro-book-visit"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-2 w-fit">
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 mt-2 w-fit">
                     Book a Preventive Maintenance Visit
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -263,7 +263,7 @@
 
         <div class="max-w-3xl lg:max-w-5xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight tracking-tight mb-5 reveal text-balance lg:whitespace-nowrap" style="transition-delay:80ms;">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 More control, fewer surprises and <span class="text-[#148af4]">peace of&nbsp;mind</span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
@@ -318,13 +318,13 @@
             @foreach ($gainCards as $i => $card)
             <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 lg:w-20 lg:h-20 object-contain {{ $card['imgClass'] ?? '' }}">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-24 h-24 object-contain {{ $card['imgClass'] ?? '' }}">
                 @else
                 <svg class="w-16 h-16 lg:w-20 lg:h-20 text-steel" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                     {!! $card['svg'] !!}
                 </svg>
                 @endif
-                <h3 class="font-heading font-bold text-navy text-lg lg:text-xl leading-snug">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed text-pretty">{{ $card['text'] }}</p>
             </article>
             @endforeach
@@ -398,7 +398,7 @@
 
         {{-- Support between visits — thin horizontal strip below grid --}}
         <div class="mt-10 bg-bg border border-border rounded-xl px-6 py-5 flex items-start gap-4 reveal" style="transition-delay:480ms;">
-            <img src="/images/icons/94.png" alt="" aria-hidden="true" class="w-12 h-12 lg:w-14 lg:h-14 flex-shrink-0 object-contain">
+            <img src="/images/icons/94.png" alt="" aria-hidden="true" class="w-14 h-14 flex-shrink-0 object-contain">
             <div>
                 <h3 class="font-heading font-bold text-navy text-base mb-1">Support between visits</h3>
                 <p class="font-body text-gray-600 text-sm leading-relaxed">Talk to Our Team when equipment issues arise between planned inspections, with support from people who know the equipment.</p>
@@ -423,7 +423,7 @@
         <div class="max-w-none mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Financial Value</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-4 reveal" style="transition-delay:80ms;">
-                <span class="text-steel">Protect your maintenance budget</span><br class="hidden lg:block"> <span class="lg:whitespace-nowrap">before small problems become expensive repairs</span>
+                <span class="text-steel">Protect your maintenance budget</span><br class="hidden lg:block"> <span class="">before small problems become expensive repairs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty max-w-5xl mx-auto" style="transition-delay:140ms;">
                 Waiting for breakdowns can create urgent call-outs, downtime and unplanned repair costs. A Preventive Maintenance Contract gives<br class="hidden lg:block"> your site planned servicing, reports and earlier issue detection before smaller problems become expensive repairs.
@@ -449,7 +449,7 @@
                         <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-white/10 ring-1 ring-white/20">
                             <span class="w-1.5 h-1.5 rounded-full bg-white/70"></span>
                         </span>
-                        <span class="font-body font-bold text-white/80 text-[11px] uppercase tracking-[0.22em]">Without a contract</span>
+                        <span class="font-body font-bold text-white/80 text-xs uppercase tracking-[0.22em]">Without a contract</span>
                     </div>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
                         The cost of waiting for breakdowns
@@ -492,7 +492,7 @@
                 <div class="relative z-10 flex flex-col gap-4 mt-auto">
                     <div class="inline-flex items-center gap-2 self-start rounded-full bg-steel px-3.5 py-1.5 shadow-lg">
                         <span class="w-1.5 h-1.5 rounded-full bg-white"></span>
-                        <span class="font-body font-bold text-white text-xs sm:text-sm uppercase tracking-[0.14em] sm:tracking-[0.18em]">With a Preventive Maintenance Contract</span>
+                        <span class="font-body font-bold text-white text-xs uppercase tracking-[0.22em]">With a Preventive Maintenance Contract</span>
                     </div>
                     <h3 class="font-heading font-bold text-white text-2xl lg:text-3xl leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
                         A planned way to protect essential equipment
@@ -561,7 +561,7 @@
 <section class="w-full overflow-hidden pb-16 lg:pb-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Preventive Visits</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight reveal" style="transition-delay:80ms;">
             How preventive visits create <span class="text-steel">clearer next&nbsp;steps</span>
         </h2>
         <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
@@ -854,7 +854,7 @@ $faqs = [
                 <div class="relative lg:col-span-2 p-8 lg:p-12 flex flex-col gap-6 overflow-hidden">
                     <div>
                         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Book a Preventive Maintenance Visit</p>
-                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-4xl leading-tight mb-5 text-balance">
+                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                             Protect your laundry operation with <span class="text-steel">planned maintenance&nbsp;support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">

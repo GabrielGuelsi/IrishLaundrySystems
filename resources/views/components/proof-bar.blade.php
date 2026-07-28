@@ -11,7 +11,7 @@
 
             {{-- Left: trusted by label + divider — fixed, never moves --}}
             <div class="flex items-center gap-4 flex-shrink-0" style="transform: translateY(-8px);">
-                <p class="font-body text-[10px] font-bold text-gray-400 uppercase tracking-[0.22em] whitespace-nowrap">
+                <p class="font-body text-xs font-bold text-gray-400 uppercase tracking-[0.22em] whitespace-nowrap">
                     Trusted by
                 </p>
                 <div class="w-px h-5 bg-gray-200 hidden sm:block"></div>

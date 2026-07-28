@@ -19,8 +19,8 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     <span class="block">Professional wet cleaning</span>
-                    <span class="block">for <span style="color:#148af4;">delicate garments and</span></span>
-                    <span class="block" style="color:#148af4;">solvent-free textile care</span>
+                    <span class="block">for <span style="color:#148af4;">delicate garments</span></span>
+                    <span class="block" style="color:#148af4;">and specialist textiles</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     <span class="block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Lagoon Advanced Care for</span>
@@ -48,11 +48,13 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Professional Textile Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Professional wet cleaning for<br><span style="color:#148af4;">delicate garments and specialist textiles</span>
+                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="block">Professional wet cleaning</span>
+                    <span class="block">for <span style="color:#148af4;">delicate garments</span></span>
+                    <span class="block" style="color:#148af4;">and specialist textiles</span>
                 </h2>
             </div>
 
@@ -102,7 +104,7 @@
                 <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
                      class="w-full h-44 object-cover" style="object-position: {{ $card['pos'] }};">
                 <div class="p-6">
-                    <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
             </div>
@@ -128,7 +130,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial &amp; Operational Proof</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Faster wet cleaning with<br><span style="color:#148af4;">more daily capacity</span>
+                Faster wet cleaning with <span style="color:#148af4;">more daily capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Lagoon Advanced Care helps professional cleaners use time, load capacity and resources more effectively.
@@ -154,7 +156,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built around <span style="color:#148af4;">controlled textile care</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Lagoon Advanced Care combines reduced mechanical action, dedicated programmes and precise detergent dosing for wool, silk and other delicate textiles.
             </p>
         </div>
@@ -169,7 +171,7 @@
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
-                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-28 h-28 object-contain' }}">
+                    <img src="{{ $card['img'] ?? '/images/icons/'.$card['icon'].'.png' }}" alt="" class="{{ $card['imgClass'] ?? 'w-24 h-24 object-contain' }}">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $card['title'] }}</h3>
@@ -206,7 +208,7 @@
                 <div class="h-32 flex items-center justify-center mb-4">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" class="max-h-32 w-auto object-contain {{ $card['imgClass'] ?? '' }}">
                 </div>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $card['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $card['copy'] }}</p>
             </div>
             @endforeach
@@ -290,7 +292,7 @@
                     <img src="{{ $comp['img'] }}" alt="{{ $comp['title'] }}" loading="lazy" decoding="async" class="max-h-full w-auto object-contain">
                 </div>
                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#148af4] text-[#148af4] font-heading font-bold text-[11px] mb-3">{{ $comp['step'] }}</span>
-                <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-2">{{ $comp['title'] }}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $comp['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $comp['copy'] }}</p>
             </div>
             @endforeach
@@ -305,9 +307,9 @@
             <div class="flex items-start gap-4 lg:flex-1 {{ $i > 0 ? 'lg:border-l lg:border-white/15 lg:pl-8' : '' }}">
                 <span class="flex-shrink-0 flex items-center justify-center">
                     @if(!empty($b['img']))
-                    <img src="/images/icons/{{ $b['img'] }}.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain {{ $b['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
+                    <img src="/images/icons/{{ $b['img'] }}.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain" style="filter:brightness(0) invert(1);">
                     @else
-                    <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $b['icon'] }}"/></svg>
+                    <svg class="w-14 h-14 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $b['icon'] }}"/></svg>
                     @endif
                 </span>
                 <span>
@@ -318,7 +320,7 @@
             @endforeach
             <div class="flex items-start gap-4 lg:flex-1 lg:border-l lg:border-white/15 lg:pl-8">
                 <span class="flex-shrink-0 flex items-center justify-center">
-                    <img src="/images/icons/230.png" alt="" aria-hidden="true" class="w-8 h-8 object-contain scale-[1.825]" style="filter:brightness(0) invert(1);">
+                    <img src="/images/icons/230.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain" style="filter:brightness(0) invert(1);">
                 </span>
                 <span>
                     <span class="block font-heading font-bold text-white text-sm mb-2">Need setup advice?</span>
@@ -367,7 +369,7 @@
                     <div class="px-6 sm:px-8 pb-6 pt-5 border-t border-gray-100 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-x-6 gap-y-4">
                         @foreach([['Washer', $tier['washer']], ['Dryer', $tier['dryer']], ['Ironing table', $tier['table']], ['Form finisher', $tier['finisher']], ['Optional cabinet', $tier['cabinet']]] as [$lbl, $val])
                         <div>
-                            <p class="font-body font-bold text-[#148af4] text-[11px] uppercase tracking-[0.14em] mb-1">{{ $lbl }}</p>
+                            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-1">{{ $lbl }}</p>
                             <p class="font-heading font-bold text-navy text-base leading-snug">{{ $val }}</p>
                         </div>
                         @endforeach
@@ -397,7 +399,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for businesses handling <span style="color:#148af4;">specialist garments and fabrics</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Choose professional wet cleaning when specialist garment care needs to be handled in-house with control over quality, timing and finish.
             </p>
         </div>
@@ -520,7 +522,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Smart Detergents &amp; Prespotting</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Dedicated products for <span style="color:#148af4;">every stage of wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -553,7 +555,7 @@
                     @endforeach
                 </div>
                 <span class="font-heading font-bold text-[#148af4] text-sm mb-1">{{ $s['step'] }}</span>
-                <h3 class="font-heading font-bold text-navy text-lg">{!! $s['label'] !!}</h3>
+                <h3 class="font-heading font-bold text-navy text-xl">{!! $s['label'] !!}</h3>
             </div>
             @endforeach
         </div>
@@ -574,7 +576,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 xl:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep wet cleaning <span style="color:#148af4;">consistent from load to load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -739,7 +741,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Serenity Cabinet Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Add sanitising support <span style="color:#148af4;">before garments return to customers</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -798,14 +800,14 @@
                     </div>
                 </div>
                 <div class="bg-navy rounded-2xl p-5 flex items-start gap-4">
-                    <img src="/images/icons/2.png" alt="" class="flex-shrink-0 w-10 h-10 object-contain scale-[1.34]">
+                    <img src="/images/icons/2.png" alt="" class="flex-shrink-0 w-14 h-14 object-contain">
                     <span>
                         <span class="block font-heading font-bold text-white text-sm mb-1">Steam-based sanitising support</span>
                         <span class="block font-body text-white/70 text-xs leading-relaxed">Extra reassurance for tried-on, handled or returned garments.</span>
                     </span>
                 </div>
                 <div class="bg-[#148af4]/10 rounded-2xl p-5 flex items-start gap-4 flex-1">
-                    <img src="/images/icons/233.png" alt="" class="flex-shrink-0 w-10 h-10 object-contain scale-[1.489] translate-y-[0.5%]">
+                    <img src="/images/icons/233.png" alt="" class="flex-shrink-0 w-14 h-14 object-contain">
                     <span>
                         <span class="block font-heading font-bold text-navy text-sm mb-1">Try-on reassurance</span>
                         <span class="block font-body text-gray-500 text-xs leading-relaxed">Ready to return with more confidence.</span>
@@ -880,7 +882,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -938,15 +940,15 @@
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
-                    <p class="font-heading font-bold text-navy text-2xl leading-snug mb-2">{{ $card['title'] }}</p>
-                    <p class="font-body text-gray-600 text-base leading-relaxed">{{ $card['copy'] }}</p>
+                    <p class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['title'] }}</p>
+                    <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $card['copy'] }}</p>
                 </div>
                 <div class="w-full flex items-end justify-center" style="height:300px;">
                     <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
                          class="transition-transform duration-500 hover:-translate-y-2"
                          style="width:{{ $card['box'] }}px; max-width:100%; height:{{ $card['box'] }}px; object-fit:contain;">
                 </div>
-                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-base px-5 py-4 rounded-lg transition-colors mt-auto">
+                <a href="{{ $card['route'] }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-heading font-bold text-sm px-5 py-4 rounded-lg transition-colors mt-auto">
                     {{ $card['cta'] }}
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
@@ -977,7 +979,8 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'wet_cleaning_cta',
     'eyebrow'    => 'Request Wet Cleaning Advice',
-    'heading'    => 'Ready to build a <span style="color:#148af4;">professional wet cleaning service?</span>',
+    'heading'     => '<span class="block">Ready to build a <span style="color:#148af4;">professional</span></span><span class="block" style="color:#148af4;">wet cleaning service?</span>',
+    'headingSize' => 'text-3xl sm:text-4xl lg:text-[1.9rem] xl:text-[2.45rem] 2xl:text-[2.9rem]',
     'body'       => 'Tell Irish Laundry Systems what garments you handle, daily volume and the services you want to offer. Irish Laundry Systems reviews the washer, dryer, detergents, finishing, installation, rental where suitable, maintenance and aftercare around your site.',
     'formTitle'  => 'Request Wet Cleaning Equipment Advice',
     'buttonText' => 'Request Wet Cleaning Advice',

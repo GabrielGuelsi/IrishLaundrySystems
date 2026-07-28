@@ -86,14 +86,14 @@
             </p>
             <div class="flex flex-wrap items-center gap-4">
                 <a href="#contact-form"
-                   class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
+                   class="inline-flex items-center gap-2 bg-white text-navy font-body font-bold text-base px-6 py-3 rounded-lg hover:bg-white/90 transition-colors">
                     Send Request
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                     </svg>
                 </a>
                 <a href="tel:+35314910402"
-                   class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:border-white transition-colors">
+                   class="inline-flex items-center gap-2 border border-white/40 text-white font-body font-bold text-base px-6 py-3 rounded-lg hover:border-white transition-colors">
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
                     </svg>

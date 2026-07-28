@@ -15,11 +15,11 @@
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12 sm:py-20 lg:py-32">
-            <div class="flex-1 reveal reveal-left max-w-3xl">
+            <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-[960px]">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
                 <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block lg:whitespace-nowrap">Commercial finishing equipment for</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">garments, uniforms and specialist items</span>
+                    <span class="block">Commercial finishing equipment for</span>
+                    <span class="block" style="color:#148af4;">garments, uniforms and specialist items</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment for pressing, shaping and garment finishing.
@@ -69,7 +69,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Select equipment for <span style="color:#148af4;">pressing, shaping and garment finishing</span>
             </h2>
         </div>
@@ -155,7 +155,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Range</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Select finishing equipment for <span style="color:#148af4;">your garments and finish requirements</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -373,7 +373,7 @@
                 ] as $opt)
                 <a href="{{ route('contact') }}"
                    class="group px-5 py-2 {{ $loop->first ? '' : 'border-l border-gray-200' }}">
-                    <img src="/images/icons/{{ $opt['img'] }}.png" alt="" aria-hidden="true" class="w-28 h-28 object-contain mb-5">
+                    <img src="/images/icons/{{ $opt['img'] }}.png" alt="" aria-hidden="true" class="w-24 h-24 object-contain mb-5">
                     <p class="font-heading font-bold text-navy text-base leading-snug mb-4">{!! $opt['label'] !!}</p>
                     <span class="inline-flex text-[#148af4] group-hover:translate-x-1 transition-transform duration-200">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -392,7 +392,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Finishing equipment services from <span style="color:#148af4;">repair through to aftercare</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -449,7 +449,7 @@
                     <div class="max-h-0 overflow-hidden opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-4">
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     <div class="flex justify-end">
                         <span class="inline-flex items-center gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
                             {!! $card['cta'] !!}
@@ -469,7 +469,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Finishing equipment for <span style="color:#148af4;">different garment care operations</span>
             </h2>
         </div>
@@ -560,8 +560,9 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment used alongside<br class="hidden lg:block"> <span style="color:#148af4;">garment and flatwork finishing</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Explore equipment categories that may be considered alongside finishing, depending on the items processed and the services provided by your site.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                <span class="block lg:whitespace-nowrap">Explore equipment categories that may be considered alongside finishing,</span>
+                <span class="block lg:whitespace-nowrap">depending on the items processed and the services provided by your site.</span>
             </p>
         </div>
 

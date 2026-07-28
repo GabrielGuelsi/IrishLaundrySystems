@@ -73,7 +73,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                <span>The right level of control for healthcare laundry</span>
+                <span>The right level of control for <span style="color:#148af4;">healthcare laundry</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
                 Healthcare laundry requirements vary from one site to another. Irish Laundry Systems supports everything from commercial<br class="hidden lg:block"> washer-extractor installations to barrier layouts where soiled and clean handling must remain separate.
@@ -123,7 +123,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Separation Layouts</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                <span>See how dirty-side and clean-side separation works</span>
+                <span>See how <span style="color:#148af4;">dirty-side and clean-side separation</span> works</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Barrier washer layouts keep soiled loading and clean unloading physically separated.
@@ -332,7 +332,7 @@
                         <p class="font-body text-white/80 text-sm leading-relaxed">{!! $card['text'] !!}</p>
                     </div>
                     {{-- Title (always visible) --}}
-                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4 lg:whitespace-nowrap">{!! $card['title'] !!}</h3>
+                    <h3 class="font-heading font-bold text-white text-xl leading-tight mb-4">{!! $card['title'] !!}</h3>
                     {{-- Button (always visible) --}}
                     <div class="flex justify-end">
                         <span class="inline-flex items-start gap-2 bg-white/15 group-hover:bg-orange border border-white/30 group-hover:border-orange text-white font-body font-bold text-xs uppercase tracking-wide px-4 py-2.5 rounded-full transition-colors duration-200">
@@ -350,7 +350,8 @@
 
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Planning',
-    'heading'    => 'Plan the healthcare laundry room<br class="hidden lg:block"> for <span style="color:#011E41;">the right long-term investment</span>',
+    'textMaxW'   => 'lg:max-w-[60%]',
+    'heading'    => 'Plan the healthcare laundry room for <span style="color:#011E41;">the right long-term investment</span>',
     'body'       => 'Review room layout, utilities and operational requirements before purchasing,<br class="hidden lg:block"> renting or replacing healthcare laundry equipment.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>Fit'],
