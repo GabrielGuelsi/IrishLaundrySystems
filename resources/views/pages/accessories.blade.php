@@ -9,7 +9,7 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
+<section class="relative overflow-hidden flex flex-col lg:!h-[600px]" style="height:auto; min-height:520px;">
     <img src="/images/pages/accessories/heroaccesories.png" alt="Laundry dosing systems, detergents and accessories"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
@@ -754,7 +754,7 @@
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Digital tools for <span style="color:#148af4;">better oversight and control</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed [@media(min-width:1350px)]:whitespace-nowrap">
                 Monitor compatible equipment, configure programmes and manage performance, payment and booking needs through Electrolux Professional systems.
             </p>
         </div>
@@ -794,13 +794,13 @@
         {{-- Featured platform — OnE Connected --}}
         <div class="rounded-2xl border border-gray-100 shadow-sm overflow-hidden bg-white reveal mb-6">
             <div class="grid grid-cols-1 lg:grid-cols-2">
-                <div class="order-2 lg:order-1 p-7 lg:p-10 flex flex-col justify-center">
-                    <span class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Featured Platform</span>
-                    <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">OnE Connected</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 max-w-md">
+                <div class="order-2 lg:order-1 p-6 lg:p-8 flex flex-col justify-center">
+                    <span class="font-body font-bold text-[#148af4] text-sm uppercase tracking-[0.22em] mb-2">Featured Platform</span>
+                    <h3 class="font-heading font-bold text-navy text-2xl lg:text-3xl leading-snug mb-2">OnE Connected</h3>
+                    <p class="font-body text-gray-500 text-base leading-relaxed mb-4 max-w-md">
                         Monitor compatible equipment, machine status, usage and alerts remotely.
                     </p>
-                    <div class="flex flex-wrap gap-2 mb-6">
+                    <div class="flex flex-wrap gap-2 mb-5">
                         @foreach(['Remote Monitoring', 'Machine Status', 'Alerts'] as $badge)
                         <span class="{{ $lmcBadge }}">{{ $badge }}</span>
                         @endforeach
@@ -822,9 +822,9 @@
                         View Line 6000 Brochure
                     </a>
                 </div>
-                <div class="order-1 lg:order-2 bg-gray-50 flex items-center justify-center min-h-[220px] lg:min-h-[340px]">
-                    <img src="/images/pages/one-connected/onedashboradimage.png" alt="OnE Connected dashboard"
-                         class="w-full h-full object-contain p-6" loading="lazy" decoding="async">
+                <div class="order-1 lg:order-2 min-h-[200px] lg:min-h-[280px]">
+                    <img src="/images/pages/accessories/Featured%20Platformimage.png" alt="OnE Connected dashboard"
+                         class="w-full h-full object-cover" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>

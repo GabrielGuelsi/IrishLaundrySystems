@@ -158,30 +158,33 @@
             {{-- Soft glow accent (top-right) --}}
             <div class="absolute top-0 right-0 w-72 h-72 -translate-y-1/3 translate-x-1/4 rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(20,138,244,0.18) 0%, transparent 70%);"></div>
 
-            <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+            <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
                 {{-- LEFT: content --}}
-                <div class="lg:col-span-7 flex items-center gap-6 lg:gap-8">
+                <div class="lg:col-span-9 flex items-center gap-6 lg:gap-8">
                     <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="w-24 h-24 flex-shrink-0 object-contain">
                     <div>
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Call-Out Support</p>
-                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-2 text-balance"><span class="text-[#148af4]">Responsive call-out support</span> when equipment needs&nbsp;attention</h2>
-                        <p class="font-body text-white/80 text-base leading-relaxed text-pretty">
+                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-2">
+                            <span class="block text-[#148af4]">Responsive call-out support</span>
+                            <span class="block">when equipment needs attention</span>
+                        </h2>
+                        <p class="font-body text-white/80 text-base leading-relaxed [@media(min-width:1500px)]:whitespace-nowrap">
                             Active faults are reviewed by urgency, site impact and equipment details before a call-out is arranged.
                         </p>
-                        <p class="font-body text-white/60 text-xs mt-2 text-pretty">
+                        <p class="font-body text-white/60 text-sm mt-2.5 text-pretty">
                             Contract customers receive preferential call-out rates and scheduling.
                         </p>
                     </div>
                 </div>
 
                 {{-- RIGHT: phone + CTAs --}}
-                <div class="lg:col-span-5 flex flex-col gap-5 lg:items-end">
+                <div class="lg:col-span-3 flex flex-col gap-5 lg:items-end">
 
                     {{-- Phone number prominent --}}
                     <a href="tel:+35314910402" class="group lg:text-right">
-                        <span class="block font-body text-white/60 text-xs uppercase tracking-[0.22em] mb-1">Talk to a person now</span>
-                        <span class="block font-heading font-bold text-white text-2xl lg:text-3xl tracking-tight leading-none group-hover:text-[#148af4] transition-colors">
+                        <span class="block font-body text-white/60 text-xs uppercase tracking-[0.22em] mb-1.5">Talk to our team now</span>
+                        <span class="block font-heading font-bold text-white text-3xl lg:text-4xl tracking-tight leading-none group-hover:text-[#148af4] transition-colors">
                             +353 1 491&nbsp;0402
                         </span>
                     </a>
@@ -189,25 +192,22 @@
                     {{-- Divider --}}
                     <div class="h-px w-full lg:w-32 bg-white/10"></div>
 
-                    {{-- CTAs --}}
-                    <div class="flex flex-col sm:flex-row gap-3 w-full lg:w-auto">
-                        <a href="{{ route('contact') }}"
-                           class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200 cursor-pointer whitespace-nowrap">
-                            Request a Call-Out
-                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                        </a>
+                    {{-- CTAs — stacked --}}
+                    <div class="flex flex-col gap-3 w-full lg:w-[260px]">
                         <a href="tel:+35314910402"
-                           class="inline-flex items-center justify-center gap-2 bg-white text-navy font-heading font-bold px-6 py-3 rounded-lg text-sm hover:bg-white/90 transition-colors cursor-pointer whitespace-nowrap">
-                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                           class="inline-flex items-center justify-center gap-2 bg-white text-navy font-heading font-bold px-6 py-3.5 rounded-lg text-base hover:bg-white/90 transition-colors cursor-pointer whitespace-nowrap">
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
                             </svg>
                             Call Now
                         </a>
+                        <a href="{{ route('contact') }}"
+                           class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-6 py-3.5 rounded-lg text-base transition-colors duration-200 cursor-pointer whitespace-nowrap">
+                            Request a Call-Out
+                            <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        </a>
                     </div>
 
-                    <p class="font-body text-white/50 text-[11px] mt-1 lg:text-right text-pretty">
-                        For urgent equipment faults, call the team directly or request a&nbsp;call-out.
-                    </p>
 
                 </div>
 
@@ -381,7 +381,6 @@ $expectSteps = [
                         View Laundry Online
                     </a>
                 </div>
-                <p class="font-body text-gray-500 text-xs mt-3">Through Laundry Online&rsquo;s Dublin locations</p>
             </div>
 
             {{-- RIGHT: image --}}
@@ -401,72 +400,53 @@ $expectSteps = [
 </section>
 
 <!-- REPEAT FAULTS STRIP -->
-<section class="py-16 lg:py-20 bg-bg">
+<section class="py-12 lg:py-14 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="bg-navy rounded-2xl p-8 lg:p-12">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center mb-10">
+        <div class="bg-navy rounded-2xl p-8 lg:p-10">
+            <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-8 items-start mb-1">
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl mb-4 leading-tight text-balance">When the same fault returns, make <span class="text-[#148af4]">a better equipment&nbsp;decision</span></h2>
-                    <p class="font-body text-blue-200 text-base leading-relaxed text-pretty">
-                        A repeat fault can point to worn parts, missed maintenance or equipment reaching the end of its useful life. <span class="whitespace-nowrap">Irish Laundry Systems</span> can review the repair history and equipment condition so the site knows whether to repair, maintain or plan&nbsp;replacement.
-                    </p>
+                    <h2 class="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.3rem] 2xl:text-[3.7rem] mb-4 leading-tight">
+                        <span class="block">When the same fault returns,</span>
+                        <span class="block">make <span class="text-[#148af4]">a better equipment decision</span></span>
+                    </h2>
                 </div>
-                <div class="flex flex-col sm:flex-row lg:flex-col gap-4">
+                <div class="flex flex-col sm:items-end gap-3 lg:mt-[2.45rem]">
                     <a href="{{ route('service-contracts') }}"
-                       class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer">
+                       class="inline-flex w-full sm:w-[264px] items-center justify-center gap-2 bg-orange hover:bg-orange-dark border border-transparent text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors cursor-pointer whitespace-nowrap">
                         View Preventive Maintenance
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                     <a href="{{ route('parts-aftercare') }}"
-                       class="inline-flex items-center justify-center gap-2 border border-white/60 hover:border-white text-white font-body font-bold px-6 py-3 rounded-lg text-sm transition-colors cursor-pointer hover:bg-white/10">
+                       class="inline-flex w-full sm:w-[264px] items-center justify-center gap-2 border border-white/60 hover:border-white text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors cursor-pointer hover:bg-white/10 whitespace-nowrap">
                         Explore Support &amp; Aftercare
                     </a>
                 </div>
             </div>
 
+            <p class="font-body text-blue-200 text-base leading-relaxed mb-8">
+                <span class="block [@media(min-width:1340px)]:whitespace-nowrap">A repeat fault can point to worn parts, missed maintenance or equipment reaching the end of its useful life.</span>
+                <span class="block [@media(min-width:1340px)]:whitespace-nowrap"><span class="whitespace-nowrap">Irish Laundry Systems</span> can review the repair history and equipment condition so the site knows whether to repair, maintain or plan&nbsp;replacement.</span>
+            </p>
+
             {{-- 4 benefits grid --}}
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 lg:gap-14 pt-10 border-t border-white/10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t border-white/10">
+                @foreach([
+                    ['icon' => 'repairs-fault-patterns',     'title' => 'Fault patterns',     'body' => 'Identify what keeps coming back.'],
+                    ['icon' => 'home-rental-maintained',     'title' => 'Service history',    'body' => 'Review previous visits, parts and fault notes.'],
+                    ['icon' => 'repairs-cost-control',       'title' => 'Cost control',       'body' => 'Reduce the chance of repeated surprise repair costs.'],
+                    ['icon' => 'repairs-maintenance-review', 'title' => 'Maintenance review', 'body' => 'Consider whether preventive maintenance is the right next step.'],
+                ] as $mp)
                 <div>
                     <div class="mb-5">
-                        <img src="/images/icons/repairs-repeat-history.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
+                        <img src="/images/icons/{{ $mp['icon'] }}.png" alt="" aria-hidden="true" class="w-20 h-20 object-contain">
                     </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Repair history</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">See whether the same fault has appeared before.</p>
+                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">{{ $mp['title'] }}</h3>
+                    <p class="font-body text-white text-xs leading-relaxed">{{ $mp['body'] }}</p>
                 </div>
-                <div>
-                    <div class="mb-5">
-                        <img src="/images/icons/repairs-fault-patterns.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
-                    </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Parts needs</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Identify parts that may need replacement or further checks.</p>
-                </div>
-                <div>
-                    <div class="mb-5">
-                        <img src="/images/icons/61.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
-                    </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Maintenance timing</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Know when Preventive Maintenance should be considered.</p>
-                </div>
-                <div>
-                    <div class="mb-5">
-                        <img src="/images/icons/repairs-maintenance-review.png" alt="" aria-hidden="true" class="w-14 h-14 object-contain">
-                    </div>
-                    <h3 class="font-heading font-bold text-white text-sm mb-1.5">Replacement planning</h3>
-                    <p class="font-body text-white text-xs leading-relaxed">Recognise when continued repair may no longer be the best use of budget.</p>
-                </div>
+                @endforeach
             </div>
 
-            {{-- Mini points --}}
-            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mt-8 pt-6 border-t border-white/10 font-body text-white/70 text-xs">
-                <span class="whitespace-nowrap">Repeat fault patterns</span>
-                <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
-                <span class="whitespace-nowrap">Better cost control</span>
-                <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
-                <span class="whitespace-nowrap">Protect equipment value</span>
-                <span class="w-px h-3 bg-white/20 hidden sm:block" aria-hidden="true"></span>
-                <span class="whitespace-nowrap">Minimise disruption</span>
-            </div>
         </div>
     </div>
 </section>

@@ -279,6 +279,22 @@
                 ['title' => 'Detergents, Dosing Systems & Storage', 'type' => 'Product Leaflet',
                  'equipment' => ['Dosing & Detergents','Accessories & Consumables'], 'sector' => ['Commercial & Industrial'],
                  'pdf' => $tb.'CLFL/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+
+                ['title' => 'lagoon Advanced Care Essential Set - Line 6000', 'type' => 'Product Leaflet',
+                 'equipment' => ['Wet Cleaning','Commercial Washers','Dosing & Detergents'], 'sector' => [],
+                 'pdf' => $tb.'CLFL/EPR%20lagoon%20Advanced%20Care_Essential%20set%20Line%206000%2017022025_EN.pdf'],
+
+                ['title' => 'lagoon Advanced Care Detergents', 'type' => 'Product Leaflet',
+                 'equipment' => ['Wet Cleaning','Dosing & Detergents','Accessories & Consumables'], 'sector' => [],
+                 'pdf' => $tb.'CLFL/EPR_lagoon%20detergents%20leaflet_17022025_EN.pdf?version=1748548690'],
+
+                ['title' => 'Line 6000 Detergents - Ecolabel Certified', 'type' => 'Product Leaflet',
+                 'equipment' => ['Dosing & Detergents','Accessories & Consumables'], 'sector' => [],
+                 'pdf' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/EPR-Detergents-Ecolabel-Leaflet-GB-Web.pdf'],
+
+                ['title' => 'Efficient Dosing', 'type' => 'Product Leaflet',
+                 'equipment' => ['Dosing & Detergents','Accessories & Consumables'], 'sector' => [],
+                 'pdf' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2017/09/Efficient-Dosing-Brochure-2017.pdf'],
             ];
 
             // Facet order (canonical); only families with at least one document are shown.

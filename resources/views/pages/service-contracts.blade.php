@@ -339,12 +339,12 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-5xl mb-12 lg:mb-14">
+        <div class="mb-12 lg:mb-14">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">What's Included</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
+            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal" style="transition-delay:80ms;">
                 What's included in a <span class="text-steel">Preventive Maintenance Contract</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty max-w-5xl" style="transition-delay:160ms;">
                 Your contract brings planned visits, equipment checks, service reporting, preferential call-out support and<br class="hidden lg:block"> practical recommendations around the laundry equipment your site depends on.
             </p>
         </div>
@@ -396,13 +396,23 @@
 
         </div>
 
-        {{-- Support between visits — thin horizontal strip below grid --}}
-        <div class="mt-10 bg-bg border border-border rounded-xl px-6 py-5 flex items-start gap-4 reveal" style="transition-delay:480ms;">
-            <img src="/images/icons/94.png" alt="" aria-hidden="true" class="w-14 h-14 flex-shrink-0 object-contain">
-            <div>
-                <h3 class="font-heading font-bold text-navy text-base mb-1">Support between visits</h3>
-                <p class="font-body text-gray-600 text-sm leading-relaxed">Talk to Our Team when equipment issues arise between planned inspections, with support from people who know the equipment.</p>
-                <p class="font-body text-gray-600 text-sm leading-relaxed mt-2">Replacement parts are charged separately where required, unless separately agreed in the contract.</p>
+        {{-- Support between visits + Replacement parts — two-up strip below grid --}}
+        <div class="mt-10 bg-bg border border-border rounded-xl px-6 py-5 reveal" style="transition-delay:480ms;">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 lg:divide-x lg:divide-gray-300">
+                @foreach([
+                    ['icon' => '/images/icons/298.png', 'title' => 'Support between visits',
+                     'body' => 'Talk to Our Team when equipment issues arise between planned inspections, with support from people who know the equipment.'],
+                    ['icon' => '/images/icons/299.png', 'title' => 'Replacement parts',
+                     'body' => 'Replacement parts are charged separately where required, unless separately agreed in the contract.'],
+                ] as $i => $note)
+                <div class="flex items-start gap-4 {{ $i === 1 ? 'lg:pl-8' : 'lg:pr-8' }}">
+                    <img src="{{ $note['icon'] }}" alt="" aria-hidden="true" class="w-14 h-14 flex-shrink-0 object-contain">
+                    <div>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1">{{ $note['title'] }}</h3>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">{{ $note['body'] }}</p>
+                    </div>
+                </div>
+                @endforeach
             </div>
         </div>
 
@@ -796,23 +806,25 @@ $faqs = [
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.5) 35%, transparent 100%);"></div>
     </div>
 
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[62%]">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[70%]">
 
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">After the Visit</p>
 
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-            Know what needs attention <span class="text-steel">after the preventive&nbsp;visit</span>
+        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[1.8rem] xl:text-[2.35rem] 2xl:text-[2.9rem] leading-tight mb-5">
+            <span class="block">Receive a service report after every visit</span>
+            <span class="block text-steel">with further work quoted before approval</span>
         </h2>
 
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-xl">
-            If a visit identifies wear, a recurring fault or a parts requirement, <span class="whitespace-nowrap">Irish Laundry Systems</span> explains the issue, quotes any recommended work and supports genuine parts where&nbsp;needed.
+        <p class="font-body text-white/80 text-base leading-relaxed mb-6">
+            <span class="block">The report records equipment condition and any issues found,</span>
+            <span class="block">so you can review recommended repairs and genuine parts before deciding what goes ahead.</span>
         </p>
 
         <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
             @foreach([
-                ['icon' => 'ativo-8', 'label' => 'Service<br>Report'],
-                ['icon' => 'ativo-4', 'label' => 'Clear<br>Recommendation'],
-                ['icon' => 'ativo-7', 'src' => '/images/icons/aftercare-connected-95.png', 'style' => 'filter:brightness(0) invert(1);', 'label' => 'Genuine Parts<br>Support'],
+                ['src' => '/images/icons/295.png', 'label' => 'Equipment<br>Condition'],
+                ['src' => '/images/icons/296.png', 'label' => 'Quoted<br>Repairs'],
+                ['src' => '/images/icons/297.png', 'label' => 'Genuine<br>Parts'],
             ] as $i => $feat)
             <div class="flex items-center gap-5">
                 <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"

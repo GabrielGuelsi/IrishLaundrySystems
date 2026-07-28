@@ -519,14 +519,12 @@
 
             <div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-3 gap-4 reveal reveal-right">
                 @foreach([
-                    ['t' => 'Tutorial videos',            'd' => 'Practical guidance for everyday operation, setup and user instructions.',            'cta' => 'View Tutorials',          'h' => route('resources').'#mypro-tutorial-videos', 'ext' => false,  'icon' => 'M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z'],
-                    ['t' => 'myPRO manuals',              'd' => 'Find product help for myPRO, myPROzip and myPRO XL washers, dryers and ironers.',    'cta' => 'View Support Resources',  'h' => route('resources').'#mypro-tutorial-videos', 'ext' => false,  'icon' => 'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'],
-                    ['t' => 'Accessories & consumables',  'd' => 'Get guidance on suitable accessories and consumables for day-to-day laundry use.',   'cta' => 'Ask About Supplies',      'h' => route('equipment.category', ['category' => 'accessories']).'#detergents-by-laundry-setup', 'ext' => false, 'icon' => 'M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5'],
+                    ['t' => 'Tutorial videos',            'd' => 'Practical guidance for everyday operation, setup and user instructions.',            'cta' => 'View Tutorials',          'h' => route('resources').'#mypro-tutorial-videos', 'ext' => false,  'icon' => '276'],
+                    ['t' => 'myPRO manuals',              'd' => 'Find product help for myPRO, myPROzip and myPRO XL washers, dryers and ironers.',    'cta' => 'View Support Resources',  'h' => route('resources').'#mypro-tutorial-videos', 'ext' => false,  'icon' => '277'],
+                    ['t' => 'Accessories & consumables',  'd' => 'Get guidance on suitable accessories and consumables for day-to-day laundry use.',   'cta' => 'Ask About Supplies',      'h' => route('equipment.category', ['category' => 'accessories']).'#detergents-by-laundry-setup', 'ext' => false, 'icon' => '278'],
                 ] as $card)
                 <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 flex flex-col">
-                    <span class="w-14 h-14 rounded-full bg-[#148af4]/10 flex items-center justify-center mb-5">
-                        <svg class="w-6 h-6 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $card['icon'] }}"/></svg>
-                    </span>
+                    <img src="/images/icons/{{ $card['icon'] }}.png" alt="" aria-hidden="true" class="w-20 h-20 object-contain mb-5">
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-2">{{ $card['t'] }}</h3>
                     <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 flex-1">{{ $card['d'] }}</p>
                     <a href="{{ $card['h'] ?? route('contact') }}" @if($card['ext']) target="_blank" rel="noopener" @endif
