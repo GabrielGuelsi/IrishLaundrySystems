@@ -9,9 +9,9 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
+<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px; background-color:#011E41;">
     <img src="/images/pages/Oneconnectedhero.png" alt="OnE Connected laundry dashboard"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: right center;">
+         class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.55) 68%, rgba(1,30,65,0.25) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
@@ -138,8 +138,16 @@
 </section>
 
 {{-- 6. LIVE DASHBOARD (navy centrepiece) --}}
-<section id="dashboard" class="py-16 lg:py-24" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+<section id="dashboard" class="relative overflow-hidden pt-10 lg:pt-12 pb-16 lg:pb-20" style="background-color:#011E41;">
+
+    {{-- Section background --}}
+    <img src="/images/pages/one-connected/One%20Dashboardbackground.png" alt="" aria-hidden="true"
+         class="absolute inset-0 w-full h-full object-cover object-center" loading="lazy" decoding="async"
+         style="transform: scale(1.72); transform-origin: center 46%;">
+    <div class="absolute inset-0" style="background:rgba(1,30,65,0.62);"></div>
+
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-12 lg:mb-16">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">One Dashboard</p>
@@ -155,7 +163,7 @@
                 </a>
             </div>
             <div class="reveal">
-                <img src="/images/pages/one-connected/onedashboradimage.png" alt="OnE Connected dashboard" class="w-full h-auto object-contain">
+                <img src="/images/pages/one-connected/laptoponedashboard.png" alt="OnE Connected dashboard" class="w-full h-auto object-contain">
             </div>
         </div>
 

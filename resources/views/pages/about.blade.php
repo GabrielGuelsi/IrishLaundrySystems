@@ -182,17 +182,17 @@
         // 6 nodes clockwise from top-left, matching the segmented ring (darkest segment = top-right)
         $ringNodes = [
             ['icon' => 'rental-gain-119', 'sc' => '0.871', 'label' => 'Equipment Supply',       'left' => '37.4%',  'top' => '20.1%', 'side' => 'left'],
-            ['icon' => 'pmc-gain-87', 'label' => 'Installation & Setup',   'left' => '62.6%',  'top' => '20.1%', 'side' => 'right'],
-            ['icon' => 'rental-gain-120', 'sc' => '0.803', 'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
+            ['icon' => '302', 'label' => 'Installation & Setup',   'left' => '62.6%',  'top' => '20.1%', 'side' => 'right'],
+            ['icon' => '300', 'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
             ['icon' => '180', 'label' => 'Repairs & Call-Outs',    'left' => '62.6%',  'top' => '79.9%', 'side' => 'right'],
-            ['icon' => '127', 'label' => 'Preventive Maintenance', 'left' => '37.4%',  'top' => '79.9%', 'side' => 'left'],
-            ['icon' => 'aftercare-connected-94', 'label' => 'Support & Aftercare',    'left' => '25.95%', 'top' => '50%',   'side' => 'left'],
+            ['icon' => '301', 'label' => 'Preventive Maintenance', 'left' => '37.4%',  'top' => '79.9%', 'side' => 'left'],
+            ['icon' => 'aftercare-connected-94', 'sc' => '1.22', 'label' => 'Support & Aftercare',    'left' => '25.95%', 'top' => '50%',   'side' => 'left'],
         ];
         $blueFilter = 'filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);';
         @endphp
 
         {{-- Header --}}
-        <div class="max-w-4xl mb-8 lg:mb-6 reveal">
+        <div class="max-w-4xl mx-auto text-center mb-8 lg:mb-6 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Overview</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 One complete support system around<br class="hidden lg:block"> <span class="text-[#148af4]">your laundry operation</span>
@@ -251,7 +251,7 @@
         </div>
 
         {{-- CTA --}}
-        <div class="flex justify-center mt-14 lg:mt-16 reveal">
+        <div class="flex justify-center mt-6 lg:mt-4 reveal">
             <a href="{{ route('services') }}"
                class="inline-flex items-center gap-2 bg-navy text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors">
                 Explore Our Services
