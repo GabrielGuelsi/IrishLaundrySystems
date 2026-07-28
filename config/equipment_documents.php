@@ -26,6 +26,15 @@ return [
 
     'categories' => [
 
+        // Range-wide washer brochures — shown on every commercial washer that
+        // doesn't define its own Brochures (wn6, wh6-cv, wh6-lac, wh6-lag, …).
+        'commercial-washers' => [
+            'Brochures' => [
+                ['label' => 'Line 6000 Washers & Dryers — Brochure', 'url' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+                ['label' => 'Line 6000 High-Spin Washers & Heat-Pump Dryers — Leaflet', 'url' => '/pdfs/EPR_leaflet_Line 6000 HS Washers and HP Dryers_ENG_LR_web.pdf'],
+            ],
+        ],
+
         'tumble-dryers' => [
             'Brochures' => [
                 ['label' => 'Line 6000 Tumble Dryers — Brochure', 'url' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
@@ -152,6 +161,90 @@ return [
             'User Manuals' => [
                 ['label' => 'WS6 — Operating Manual (CompassPro)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WS6-8,%20WS6-9,%20WS6-11,%20WS6-14,%20WS6-20,%20WS6-28,%20WS6-35_Compass%20Pro_438917938_EN.pdf?version=1781180087'],
                 ['label' => 'WS6 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_WS6-8,%20WS6-9,%20WS6-11,%20WS6-14,%20WS6-20,%20WS6-28,%20WS6-35_438917558_EN.pdf?version=1781180087'],
+            ],
+        ],
+
+        // WN6 — Line 6000 Normal-Spin Washer (CompassPro) — WN6-8 representative
+        'wn6' => [
+            'CAD Drawings' => [
+                ['label' => 'WN6-8 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNTJ_WN6-8.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'WN6-8 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WN6-8_438908941_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'CompassPro Washer Instructions — CARE', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Washer%20instructions-CARE_LR.pdf'],
+                ['label' => 'CompassPro Washer Instructions — COIN', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Washer%20instructions-COIN_LR.pdf'],
+                ['label' => 'CompassPro Washer Instructions — Facility Management', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Washer%20instructions-FM_LR.pdf'],
+                ['label' => 'CompassPro Washer Instructions — Multi-Housing Laundry', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Washer%20instructions%20MHL_LR.pdf'],
+                ['label' => 'CompassPro Washer Instructions — OPL', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Washer%20instructions-OPL_LR.pdf'],
+                ['label' => 'CompassPro Washer Instructions — QSR', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Washers%20instructions-QSR_LR.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WN6-8 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNTJ_WN6-8_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WN6 — Operating Manual (CompassPro)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WN6-8,%20WN6-9,%20WN6-11,%20WN6-14,%20WN6-20,%20WN6-28,%20WN6-35_Compass%20Pro_438917934_EN.pdf'],
+                ['label' => 'WN6 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_WN6-8,%20WN6-9,%20WN6-11,%20WN6-14,%20WN6-20,%20WN6-28,%20WN6-35_438917554_EN.pdf'],
+            ],
+        ],
+
+        // WH6-CV — ClarusVibe Washer Variants — WH6-14CV representative
+        'wh6-cv' => [
+            'CAD Drawings' => [
+                ['label' => 'WH6-14CV — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSP43_WH6-14CV.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'WH6-14CV — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WH6-14CV_438900693_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'ClarusVibe Washer Instructions — Multi-Housing Laundry', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20ClarusVibe%20Washers-instructions%20MHL_LR.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WH6-14CV — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSP43_WH6-14CV_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WH6-CV — Operating Manual (ClarusVibe)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WH6-7CV,%20WH6-8CV,%20WH6-11CV,%20WH6-14CV,%20WH6-20CV,%20WH6-27CV,%20WH6-33CV_438917840_EN.pdf'],
+                ['label' => 'WH6-CV — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_WH6%E2%80%937CV,%20WH6%E2%80%938CV,%20WH6%E2%80%9311CV,%20WH6%E2%80%9314CV,%20WH6%E2%80%9320CV,%20WH6%E2%80%9327CV,%20WH6%E2%80%9333CV_438905970_EN.pdf'],
+            ],
+        ],
+
+        // WH6-LAC — Lagoon Advanced Care Washer Variants — WH6-6LAC representative
+        'wh6-lac' => [
+            'Brochures' => [
+                ['label' => 'Line 6000 Washers & Dryers — Brochure', 'url' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+                ['label' => 'lagoon Advanced Care — Brochure', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR-LAC-brochure-19022025_EN.pdf'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'lagoon Advanced Care Essential Set (WH6-6 / TD6-7) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_438913911_Lagoon%20concept_Essential%20set%20TD6-7%20and%20WH6-6_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WH6-6LAC — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSN2D_WH6-6LAC_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WH6-6LAC — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WH6-6LAC_438917900_EN.pdf'],
+                ['label' => 'WH6-6LAC — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_WH6-6LAC_438917520_EN.pdf'],
+            ],
+        ],
+
+        // WH6-LAG — Lagoon Washer Variant (ClarusVibe) — WH6-14LAG representative
+        'wh6-lag' => [
+            'Brochures' => [
+                ['label' => 'Line 6000 Washers & Dryers — Brochure', 'url' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+                ['label' => 'lagoon Advanced Care — Brochure', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR-LAC-brochure-19022025_EN.pdf'],
+            ],
+            'CAD Drawings' => [
+                ['label' => 'WH6-14LAG — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNX9_WH6-14LAG.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'lagoon Advanced Care (WH6-14 / TD6-14) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_438913913_Lagoon%20concept_TD6-14%20and%20WH6-14_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WH6-14LAG — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNX9_WH6-14LAG_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WH6-14LAG — Operating Manual (ClarusVibe)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WH6-14LAG_Clarus%20Vibe_438921390_EN.pdf'],
+                ['label' => 'WH6-14LAG — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_WH6-14LAG_Clarus%20Vibe_438917670_EN.pdf'],
             ],
         ],
 
