@@ -275,6 +275,8 @@ return [
         'traditional-form-finishers' => [
             'CAD Drawings' => [
                 ['label' => 'FF1 — CAD Drawing (DWG)', 'url' => '/pdfs/FF1.dwg'],
+                ['label' => 'FF2 — CAD Drawing (DWG)', 'url' => '/pdfs/FF2.dwg'],
+                ['label' => 'FF3 — CAD Drawing (DWG)', 'url' => '/pdfs/FF3.dwg'],
             ],
             'Data Sheet' => [
                 ['label' => 'FF1 / FF2 / FF3 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918801EN_FF1_FF2_FF3_EN.pdf?version=1781534252'],
@@ -283,6 +285,7 @@ return [
         'multi-form-finishers' => [
             'CAD Drawings' => [
                 ['label' => 'FFM1 — CAD Drawing (DWG)', 'url' => '/pdfs/FFM1.dwg'],
+                ['label' => 'FFM2 — CAD Drawing (DWG)', 'url' => '/pdfs/FFM2.dwg'],
             ],
             'Data Sheet' => [
                 ['label' => 'FFM1 / FFM2 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FFM1,%20FFM2_438918911_EN.pdf?version=1781534321'],
@@ -305,9 +308,15 @@ return [
         'vacuum-ironing-tables' => [
             'CAD Drawings' => [
                 ['label' => 'FIT1 — CAD Drawing (DWG)', 'url' => '/pdfs/FIT1.dwg'],
+                ['label' => 'FIT2A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT2A.dwg'],
+                ['label' => 'FIT2B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT2B.dwg'],
+                ['label' => 'FIT3A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT3A.dwg'],
+                ['label' => 'FIT3B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT3B.dwg'],
             ],
             'Data Sheet' => [
-                ['label' => 'FIT1 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918961_FIT1_EN.pdf?version=1781534531'],
+                ['label' => 'FIT1 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918961_FIT1_EN.pdf?version=1785322796'],
+                ['label' => 'FIT2A / FIT2B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FIT2A_FIT2B_438913101_EN.pdf?version=1785322859'],
+                ['label' => 'FIT3A / FIT3B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FIT3A,%20FIT3B_438913121_EN.pdf?version=1785322937'],
             ],
             'BIM/Revit' => [
                 ['label' => 'FIT1 — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951009_FIT1_E.rfa'],
