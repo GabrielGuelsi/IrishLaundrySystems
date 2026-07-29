@@ -849,6 +849,100 @@ return [
             ],
         ],
 
+        // ── Drying cabinets — heat-pump DC7 ──
+
+        'dc7-4hp' => [
+            'Data Sheet' => [
+                ['label' => 'DC7-4HP — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_DC7-4HP_438900496A_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'DC7-4HP — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_DC7-4HP_427001219A_EN.pdf'],
+                ['label' => 'DC7-4HP — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC7-4HP_427001220A_EN.pdf'],
+            ],
+        ],
+
+        'dc7-4hph' => [
+            'Data Sheet' => [
+                ['label' => 'DC7-4HP series — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_DC7-4HP_438900496A_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'DC7-4HPh — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_DC7-4HP_h_427001222A_EN.pdf'],
+                ['label' => 'DC7-4HPh — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC7-4HP_h_427001223A_EN.pdf'],
+            ],
+        ],
+
+        // ── Barrier washers — Line 6000 (WB6 series) ──
+
+        'wb6-13' => [
+            'CAD Drawings' => [
+                ['label' => 'WB6-13 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LT614_WB6-13.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'WB6-13 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WB6-13_438918184_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WB6-13 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LT614_WB6-13_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WB6-13 / WB6-18 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WB6-13,%20WB6-18_438917990_EN.pdf'],
+                ['label' => 'WB6-13 / WB6-18 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_WB6-13,%20WB6-18_438917594_EN.pdf'],
+            ],
+        ],
+
+        'wb6-20' => [
+            'CAD Drawings' => [
+                ['label' => 'WB6-20 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/WB6-20.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'WB6-20 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WB6-20_438913959_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'WB6-20 / 27 / 35 — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/Poster_WB6%20-20-27-35%20GB.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WB6-20 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSN7S_WB6-20_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WB6-20 / 27 / 35 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_01201266_WB6-20-27-35%20GB%20W2127.pdf'],
+                ['label' => 'WB6-20 / 27 / 35 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_05201148_WB6%2020-27-35%20GB.pdf'],
+            ],
+        ],
+
+        'wb6-35' => [
+            'CAD Drawings' => [
+                ['label' => 'WB6-35 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/WB6-35.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'WB6-35 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WB6-35_438913993_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'WB6-20 / 27 / 35 — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/Poster_WB6%20-20-27-35%20GB.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WB6-35 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSN7U_WB6-35_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WB6-20 / 27 / 35 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_01201266_WB6-20-27-35%20GB%20W2127.pdf'],
+                ['label' => 'WB6-20 / 27 / 35 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_05201148_WB6%2020-27-35%20GB.pdf'],
+            ],
+        ],
+
+        'wb6-110' => [
+            'CAD Drawings' => [
+                ['label' => 'WB6-110 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSPP7_WB6-110.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'WB6-110 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WB6-110_438913991_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WB6-110 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSPP7_WB6-110_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WB6-70 / 90 / 110 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_01201218_WB6%2070-WB6%2090-WB6%20110%20GB%20v2.pdf'],
+                ['label' => 'WB6-70 / 90 / 110 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_01201217_WB6%2070-WB6%2090-WB6%20110%20GB.pdf'],
+            ],
+        ],
+
     ],
 
 ];
