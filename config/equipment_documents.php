@@ -35,6 +35,14 @@ return [
             ],
         ],
 
+        // Range-wide drying-cabinet leaflet — shown on every drying cabinet
+        // (range cards + heat-pump variants) that has no product-specific docs.
+        'drying-cabinets' => [
+            'Brochures' => [
+                ['label' => 'Line 6000 Drying Cabinets — Leaflet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CLFL/EPR-Drying%20Cabinets%20Leaflet-20250710-EN.pdf'],
+            ],
+        ],
+
         'tumble-dryers' => [
             'Brochures' => [
                 ['label' => 'Line 6000 Tumble Dryers — Brochure', 'url' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
@@ -647,6 +655,65 @@ return [
             'User Manuals' => [
                 ['label' => 'PW9C — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_438921490EN_PW9C_EN.pdf?version=1781187430'],
                 ['label' => 'PW9C — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_PW9C_438921790_EN.pdf?version=1781187430'],
+            ],
+        ],
+
+        // ── Drying cabinets — standard DC6 (heat-pump variants still inherit the range leaflet) ──
+
+        'dc6-4' => [
+            'CAD Drawings' => [
+                ['label' => 'DC6-4 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNY5_DC6-4.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'DC6-4 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_DC6-4_438900491_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'DC6-4 — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20instructions%20DC6-4_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'DC6-4 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNY5_DC6-4_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'DC6-4 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_DC6-4_427001178_EN.pdf'],
+                ['label' => 'DC6-4 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC6-4_427001179_EN.pdf'],
+            ],
+        ],
+
+        'dc6-8' => [
+            'CAD Drawings' => [
+                ['label' => 'DC6-8 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNY6_DC6-8.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'DC6-8 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_DC6-8_438900492_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'DC6-8 — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20instructions%20DC6-8_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'DC6-8 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNY6_DC6-8_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'DC6-8 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_DC6-8_427001185_EN.pdf'],
+                ['label' => 'DC6-8 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC6-8_427001186_EN.pdf'],
+            ],
+        ],
+
+        'dc6-14' => [
+            'CAD Drawings' => [
+                ['label' => 'DC6-14 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNY8_DC6-14.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'DC6-14 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_DC6-14_438900494_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'DC6-14 — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20instructions%20DC6-14_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'DC6-14 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNY8_DC6-14_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'DC6-14 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_DC6-14_427001193_EN.pdf'],
+                ['label' => 'DC6-14 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC6-14_427001194_EN.pdf'],
             ],
         ],
 
