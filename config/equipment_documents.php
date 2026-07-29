@@ -989,6 +989,42 @@ return [
             ],
         ],
 
+        // ── Tumble dryers — Lagoon (TD6-30LAC) & QuickDry ──
+
+        'td6-lac' => [
+            'Data Sheet' => [
+                ['label' => 'lagoon Advanced Care (WH6-27 / TD6-30) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913914EN_Lagoon%20concept_WH6-27%20and%20TD6-30_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-30LAC — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-30LAC_438917954_EN.pdf'],
+                ['label' => 'TD6-30 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-30_438917570_EN.pdf'],
+            ],
+        ],
+
+        'quickdry-condense' => [
+            'Data Sheet' => [
+                ['label' => 'QuickDry QDC — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919466EN_QuickDry_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'QuickDry QDC — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_QuickDry%20QDC_438909600_EN.pdf'],
+            ],
+        ],
+
+        // ── Ironers — Ø 330 mm cylinder (IC6 33xx series) ──
+
+        'cylinder-330mm' => [
+            'CAD Drawings' => [
+                ['label' => 'IC6-3316 (Ø 330 mm) — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LT6CA_IC63316.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'IC6-3316 / IC6-3320 (Ø 330 mm) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_IC63316_IC63320_438918188_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'IC6-3316 / IC6-3320 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_01103055_IC63316-IC63320%20GB.pdf'],
+                ['label' => 'IC6-3316 / IC6-3320 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_01103054_IC63316-IC63320%20GB.pdf'],
+            ],
+        ],
+
     ],
 
 ];
