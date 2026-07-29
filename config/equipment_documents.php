@@ -47,6 +47,9 @@ return [
             'Brochures' => [
                 ['label' => 'Line 6000 Tumble Dryers — Brochure', 'url' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
             ],
+            'Wall Instructions' => [
+                ['label' => 'CompassPro Dryers — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20Line%206000%20CompassPro%20Dryers%20instructions_LR.pdf'],
+            ],
         ],
 
         'ironers' => [
@@ -714,6 +717,135 @@ return [
             'User Manuals' => [
                 ['label' => 'DC6-14 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_DC6-14_427001193_EN.pdf'],
                 ['label' => 'DC6-14 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC6-14_427001194_EN.pdf'],
+            ],
+        ],
+
+        // ── Drying cabinets — heat-pump ──
+
+        'dc6-14hp' => [
+            'CAD Drawings' => [
+                ['label' => 'DC6-14HP — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSP2X_DC6-14HP.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'DC6-14HP — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_DC6-14HP_438900498_EN.pdf'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'DC6-14HP — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR%20instructions%20DC6-14HP_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'DC6-14HP — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSP2X_DC6-14HP_HP.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'DC6-14HP — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_427001216EN_DC6-14HP_EN.pdf'],
+                ['label' => 'DC6-14HP — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_DC6-14HP_427001217_EN.pdf'],
+            ],
+        ],
+
+        // ── Tumble dryers — Line 6000 CompassPro (TD6 series) ──
+
+        'td6-6' => [
+            'CAD Drawings' => [
+                ['label' => 'TD6-6 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSN2X_TD6-6.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'TD6-6 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-6_438913950_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TD6-6 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSN2X_TD6-6_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-6 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-6_438917880_EN.pdf'],
+                ['label' => 'TD6-6 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-6_438907500_EN.pdf'],
+            ],
+        ],
+
+        'td6-11' => [
+            'CAD Drawings' => [
+                ['label' => 'TD6-11 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSPHP_TD6-11_HP.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'TD6-11 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-11_438918154_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TD6-11 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSPHP_TD6-11_HP.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-11 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-11_438921530_EN.pdf'],
+                ['label' => 'TD6-11 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-11_438917660_EN.pdf'],
+            ],
+        ],
+
+        'td6-14' => [
+            'CAD Drawings' => [
+                ['label' => 'TD6-14 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/TD6-14%20IS.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'TD6-14 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-14_471151360_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TD6-14 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1L059Y_TD6-14_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-14 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-14_438909980_EN.pdf'],
+                ['label' => 'TD6-14 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-14_438905900_EN.pdf'],
+            ],
+        ],
+
+        'td6-16' => [
+            'CAD Drawings' => [
+                ['label' => 'TD6-16 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNSR_TD6-16.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'TD6-16 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-16_438908654_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TD6-16 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNSR_TD6-16_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-16 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-16_438917946_EN.pdf'],
+                ['label' => 'TD6-16 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-16_438917566_EN.pdf'],
+            ],
+        ],
+
+        'td6-30' => [
+            'CAD Drawings' => [
+                ['label' => 'TD6-30 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNSS_TD6-30.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'TD6-30 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-30_438908655_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TD6-30 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNSS_TD6-30_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-30 — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-30_438917950_EN.pdf'],
+                ['label' => 'TD6-30 — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-30_438917570_EN.pdf'],
+            ],
+        ],
+
+        'td6-45' => [
+            'CAD Drawings' => [
+                ['label' => 'TD6-45 — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSPHM_TD6-45_S.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'TD6-45 — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-45_438918180_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TD6-45 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSPHM_TD6-45_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-45 / TD6-45SLD — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-45,%20TD6-45SLD,%20TD6-60,%20TD6-60SLD_438917993_EN.pdf'],
+                ['label' => 'TD6-45 / TD6-45SLD — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-45,%20TD6-45SLD,%20TD6-60,%20TD6-60SLD_438917603_EN.pdf'],
+            ],
+        ],
+
+        'td6-45sld' => [
+            'Data Sheet' => [
+                ['label' => 'TD6-45 series — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD6-45_438918180_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD6-45SLD — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD6-45,%20TD6-45SLD,%20TD6-60,%20TD6-60SLD_438917993_EN.pdf'],
+                ['label' => 'TD6-45SLD — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_TD6-45,%20TD6-45SLD,%20TD6-60,%20TD6-60SLD_438917603_EN.pdf'],
             ],
         ],
 
