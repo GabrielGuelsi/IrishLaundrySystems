@@ -256,46 +256,185 @@
     </div>
 </section>
 
-{{-- 6b. EQUIPMENT RANGE (myPRO ironing & finishing) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+{{-- 6a-bis. PRODUCT FINDER — myPRO range (washers, dryers and light finishing) --}}
+<section id="mypro-range" class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Ironing Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Range</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Add light finishing <span style="color:#148af4;">alongside washing and drying</span>
+                Compare myPRO options around <span style="color:#148af4;">capacity, cost and support</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                For sites that also need practical ironing, myPRO steam ironers can support everyday garment and flatwork finishing without moving into a larger finishing line.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Start with the equipment you need, then connect the choice to room fit, drying route, finishing needs, installation and long-term support.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 reveal">
-            @foreach([
-                ['name' => 'myPRO Steam Ironer IS1103', 'topLine' => 'For everyday ironing support', 'copy' => 'A myPRO steam ironer for practical garment and flatwork finishing alongside washing and drying.', 'badges' => ['Light ironing', 'Practical finishing', 'myPRO setup', 'Small sites'], 'img' => '/images/pages/semi-professional/IS1103.jpg'],
-                ['name' => 'myPRO Steam Ironer IS185', 'topLine' => 'For faster light finishing', 'copy' => 'A foldable myPRO steam ironer for sites that need a more consistent finish than hand ironing alone.', 'badges' => ['Light finishing', 'Foldable format', 'Faster ironing', 'myPRO setup'], 'img' => '/images/pages/semi-professional/myPRO%20-%20IronersIS185.jpg'],
-            ] as $card)
-            <div class="flex flex-col rounded-2xl p-6 bg-white border border-gray-200">
-                <div class="flex items-center justify-center h-60 lg:h-72 mb-5">
-                    <img src="{{ $card['img'] }}" alt="{{ $card['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
+        @php
+            $route = fn($slug) => route('equipment.product', ['category' => 'semi-professional', 'product' => $slug]);
+            $myproModels = [
+                ['group' => 'myPRO Edge Washers', 'line' => 'myPRO Edge', 'type' => 'Washer',
+                 'name' => 'WE170P', 'topLine' => 'myPRO Edge Washer', 'slug' => 'we170p',
+                 'fit' => 'Semi-professional washer for small sites moving beyond domestic appliances.',
+                 'badges' => ['Semi-professional', 'Daily use', 'Small sites'],
+                 'img' => '/images/pages/semi-professional/myPRO%20Edge%20-%20WashersWE170P.jpg'],
+                ['group' => 'myPRO Edge Washers', 'line' => 'myPRO Edge', 'type' => 'Washer',
+                 'name' => 'WE170V', 'topLine' => 'myPRO Edge Washer', 'slug' => 'we170v',
+                 'fit' => 'myPRO Edge washer variant for everyday commercial washing.',
+                 'badges' => ['Semi-professional', 'Daily use', 'Small sites'],
+                 'img' => '/images/pages/semi-professional/myPRO%20Edge%20-%20WashersWE170V.jpg'],
+                ['group' => 'myPRO Edge Washers', 'line' => 'myPRO Edge', 'type' => 'Washer',
+                 'name' => 'WE2-9', 'topLine' => 'myPRO Edge Washer', 'slug' => 'we2-9',
+                 'fit' => 'Larger myPRO Edge washer for sites handling heavier daily volumes.',
+                 'badges' => ['Semi-professional', 'Heavier loads', 'Busier sites'],
+                 'img' => '/images/pages/semi-professional/myPRO%20Edge%20-%20Washers%20we2-9.jpg'],
+
+                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Condense Dryer',
+                 'name' => 'TE1120', 'topLine' => 'Condense Dryer', 'slug' => 'te1120',
+                 'fit' => 'Condense dryer that pairs with myPRO Edge washers where venting is not possible.',
+                 'badges' => ['No venting needed', 'Pairs with washers'],
+                 'img' => '/images/pages/semi-professional/Condense%20dryerte1120.jpg'],
+                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Heat Pump Dryer',
+                 'name' => 'TE1120HP', 'topLine' => 'Heat Pump Dryer', 'slug' => 'te1120hp',
+                 'fit' => 'Heat pump dryer for lower energy use across regular drying cycles.',
+                 'badges' => ['Lower energy use', 'Heat pump'],
+                 'img' => '/images/pages/semi-professional/Heat%20pump%20dryersTE1120HP.jpg'],
+                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Condense Dryer',
+                 'name' => 'TD2-8', 'topLine' => 'Condense Dryer', 'slug' => 'td2-8',
+                 'fit' => 'Compact condense dryer for smaller laundry rooms without external venting.',
+                 'badges' => ['No venting needed', 'Compact'],
+                 'img' => '/images/pages/semi-professional/Condense%20dryertd2-8.jpg'],
+                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Heat Pump Dryer',
+                 'name' => 'TD2-9HP', 'topLine' => 'Heat Pump Dryer', 'slug' => 'td2-9hp',
+                 'fit' => 'Heat pump dryer for sites prioritising running costs and gentler drying.',
+                 'badges' => ['Lower energy use', 'Heat pump', 'Gentler drying'],
+                 'img' => '/images/pages/semi-professional/Heat%20pump%20dryers%20TD2-9HP.jpg'],
+
+                ['group' => 'Ironing & Light Finishing', 'line' => 'myPRO', 'type' => 'Steam Ironer',
+                 'name' => 'IS1103', 'topLine' => 'myPRO Steam Ironer', 'slug' => 'is1103',
+                 'fit' => 'A myPRO steam ironer for practical garment and flatwork finishing.',
+                 'badges' => ['Light ironing', 'Practical finishing'],
+                 'img' => '/images/pages/semi-professional/IS1103.jpg'],
+                ['group' => 'Ironing & Light Finishing', 'line' => 'myPRO', 'type' => 'Steam Ironer',
+                 'name' => 'IS185', 'topLine' => 'myPRO Steam Ironer', 'slug' => 'is185',
+                 'fit' => 'A foldable myPRO steam ironer for a more consistent finish than hand ironing.',
+                 'badges' => ['Light finishing', 'Foldable format'],
+                 'img' => '/images/pages/semi-professional/myPRO%20-%20IronersIS185.jpg'],
+            ];
+
+            $groupOrder = ['myPRO Edge Washers', 'myPRO Edge Dryers', 'Ironing & Light Finishing'];
+            $lineOrder  = ['myPRO Edge', 'myPRO'];
+            $typeOrder  = ['Washer', 'Condense Dryer', 'Heat Pump Dryer', 'Steam Ironer'];
+
+            $lineOpts = []; $typeOpts = [];
+            foreach ($myproModels as $m) {
+                $lineOpts[$m['line']] = ($lineOpts[$m['line']] ?? 0) + 1;
+                $typeOpts[$m['type']] = ($typeOpts[$m['type']] ?? 0) + 1;
+            }
+            $modelsJs = array_map(fn($m) => ['group' => $m['group'], 'line' => $m['line'], 'type' => $m['type']], $myproModels);
+        @endphp
+
+        <div x-data="{
+                line: [],
+                type: [],
+                models: {{ \Illuminate\Support\Js::from($modelsJs) }},
+                matches(m) {
+                    const ln = this.line.length === 0 || this.line.includes(m.line);
+                    const tp = this.type.length === 0 || this.type.includes(m.type);
+                    return ln && tp;
+                },
+                groupShown(g) { return this.models.some(m => m.group === g && this.matches(m)); },
+                get count() { return this.models.filter(m => this.matches(m)).length; },
+                clearAll() { this.line = []; this.type = []; },
+             }"
+             class="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-8 lg:gap-10 items-start">
+
+            {{-- LEFT: filter sidebar --}}
+            <aside class="lg:sticky lg:top-28 self-start border border-gray-200 rounded-xl p-5">
+                <div class="flex items-center justify-between">
+                    <span class="font-heading font-bold text-navy text-xs uppercase tracking-[0.16em]">Filter myPRO range</span>
+                    <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Reset all</button>
                 </div>
-                <p class="font-body text-xs font-bold text-navy/60 mb-1.5">{{ $card['topLine'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $card['name'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $card['copy'] }}</p>
-                <div class="flex flex-wrap gap-1.5 mb-5">
-                    @foreach($card['badges'] as $b)
-                    <span class="font-body text-[10px] font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-2 py-1 rounded">{{ $b }}</span>
-                    @endforeach
+
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Product Line</p>
+                    <div class="space-y-2.5">
+                        @foreach($lineOrder as $val) @if(isset($lineOpts[$val]))
+                        <label class="flex items-center justify-between cursor-pointer group">
+                            <span class="flex items-center gap-2.5">
+                                <input type="checkbox" value="{{ $val }}" x-model="line" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
+                            </span>
+                            <span class="font-body text-xs text-gray-400">{{ $lineOpts[$val] }}</span>
+                        </label>
+                        @endif @endforeach
+                    </div>
                 </div>
-                <a href="{{ route('contact') }}" class="mt-auto inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-3 rounded-lg text-sm transition-colors">
-                    Request Advice
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
+
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <p class="font-heading font-bold text-navy text-sm mb-3">Equipment Type</p>
+                    <div class="space-y-2.5">
+                        @foreach($typeOrder as $val) @if(isset($typeOpts[$val]))
+                        <label class="flex items-center justify-between cursor-pointer group">
+                            <span class="flex items-center gap-2.5">
+                                <input type="checkbox" value="{{ $val }}" x-model="type" class="w-4 h-4 rounded border-gray-300 accent-[#148af4] cursor-pointer">
+                                <span class="font-body text-sm text-gray-600 group-hover:text-navy transition-colors">{{ $val }}</span>
+                            </span>
+                            <span class="font-body text-xs text-gray-400">{{ $typeOpts[$val] }}</span>
+                        </label>
+                        @endif @endforeach
+                    </div>
+                </div>
+
+                <div class="mt-4 pt-4 border-t border-gray-100 flex items-center justify-between">
+                    <span class="font-body text-sm text-navy font-bold"><span x-text="count"></span> <span x-text="count === 1 ? 'option' : 'options'"></span></span>
+                    <button @click="clearAll()" class="font-body text-xs text-[#148af4] hover:underline">Clear filters</button>
+                </div>
+            </aside>
+
+            {{-- RIGHT: grouped product tiles --}}
+            <div>
+                @foreach($groupOrder as $gName)
+                @php $groupItems = array_values(array_filter($myproModels, fn($m) => $m['group'] === $gName)); @endphp
+                <div x-show="groupShown('{{ $gName }}')" class="mb-12 last:mb-0">
+                    <h3 class="font-heading font-bold text-navy text-lg mb-6 pb-2 border-b border-gray-200">{{ $gName }}</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
+                        @foreach($groupItems as $m)
+                        <div x-show="matches({{ \Illuminate\Support\Js::from(['line' => $m['line'], 'type' => $m['type']]) }})" class="flex flex-col">
+                            <a href="{{ $route($m['slug']) }}" class="flex items-center justify-center h-48 lg:h-56 mb-5">
+                                <img src="{{ $m['img'] }}" alt="{{ $m['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5" loading="lazy" decoding="async">
+                            </a>
+                            <p class="font-body text-xs font-bold text-[#148af4] mb-1.5">{{ $m['topLine'] }}</p>
+                            <h4 class="font-heading font-bold text-navy text-lg leading-snug mb-2"><a href="{{ $route($m['slug']) }}" class="hover:text-[#148af4] transition-colors">{{ $m['name'] }}</a></h4>
+                            <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $m['fit'] }}</p>
+                            <div class="flex flex-wrap gap-1.5 mb-5">
+                                @foreach($m['badges'] as $b)
+                                <span class="font-body text-[10px] font-bold uppercase tracking-wide text-[#148af4] bg-[#148af4]/10 px-2 py-1 rounded">{{ $b }}</span>
+                                @endforeach
+                            </div>
+                            <div class="mt-auto flex flex-col gap-2.5">
+                                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                    Request Advice
+                                </a>
+                                <a href="{{ $route($m['slug']) }}" class="inline-flex items-center justify-center gap-2 border border-gray-300 text-navy hover:border-navy font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                    View Details
+                                    <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
+                @endforeach
+
+                <div x-show="count === 0" class="text-center py-16" style="display:none">
+                    <p class="font-body text-gray-500 text-base">No models match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
+                </div>
             </div>
-            @endforeach
         </div>
     </div>
 </section>
+
 
 {{-- 6c. RELATED EQUIPMENT — the next equipment route, front-facing product shots --}}
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">

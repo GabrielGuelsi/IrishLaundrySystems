@@ -420,6 +420,129 @@ return [
             ],
             'sectors' => [],
         ],
+        [
+            'name' => 'myPRO Edge Washer WE170P', 'slug' => 'we170p', 'capacity' => null,
+            'title' => 'myPRO Edge washer WE170P',
+            'summary' => 'Semi-professional myPRO Edge washer for small sites moving beyond domestic appliances, built for more frequent daily use.',
+            'image_path' => 'images/pages/semi-professional/myPRO Edge - WashersWE170P.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Semi-professional washer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPRO Edge Washer WE170V', 'slug' => 'we170v', 'capacity' => null,
+            'title' => 'myPRO Edge washer WE170V',
+            'summary' => 'myPRO Edge washer variant for everyday commercial washing where a stronger build than a domestic machine is required.',
+            'image_path' => 'images/pages/semi-professional/myPRO Edge - WashersWE170V.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Semi-professional washer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPRO Edge Washer WE2-9', 'slug' => 'we2-9', 'capacity' => null,
+            'title' => 'myPRO Edge washer WE2-9',
+            'summary' => 'Larger myPRO Edge washer for sites handling heavier daily laundry volumes within a semi-professional setup.',
+            'image_path' => 'images/pages/semi-professional/myPRO Edge - Washers we2-9.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Semi-professional washer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Condense Dryer TE1120', 'slug' => 'te1120', 'capacity' => null,
+            'title' => 'myPRO Edge condense dryer TE1120',
+            'summary' => 'Condense dryer that pairs with myPRO Edge washers where external venting is not possible.',
+            'image_path' => 'images/pages/semi-professional/Condense dryerte1120.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Condense dryer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Heat Pump Dryer TE1120HP', 'slug' => 'te1120hp', 'capacity' => null,
+            'title' => 'myPRO Edge heat pump dryer TE1120HP',
+            'summary' => 'Heat pump dryer for lower energy use across regular drying cycles in a semi-professional laundry room.',
+            'image_path' => 'images/pages/semi-professional/Heat pump dryersTE1120HP.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Heat pump dryer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Condense Dryer TD2-8', 'slug' => 'td2-8', 'capacity' => null,
+            'title' => 'myPRO Edge condense dryer TD2-8',
+            'summary' => 'Compact condense dryer for smaller laundry rooms without external venting.',
+            'image_path' => 'images/pages/semi-professional/Condense dryertd2-8.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Condense dryer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'Heat Pump Dryer TD2-9HP', 'slug' => 'td2-9hp', 'capacity' => null,
+            'title' => 'myPRO Edge heat pump dryer TD2-9HP',
+            'summary' => 'Heat pump dryer for sites prioritising running costs and gentler drying across daily loads.',
+            'image_path' => 'images/pages/semi-professional/Heat pump dryers TD2-9HP.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO Edge', 'Type' => 'Heat pump dryer',
+                    'Install' => 'Freestanding',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPRO Steam Ironer IS1103', 'slug' => 'is1103', 'capacity' => null,
+            'title' => 'myPRO steam ironer IS1103',
+            'summary' => 'A myPRO steam ironer for practical garment and flatwork finishing alongside washing and drying.',
+            'image_path' => 'images/pages/semi-professional/IS1103.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO', 'Type' => 'Steam ironer',
+                    'Install' => 'Freestanding',
+                ],
+                'Dimensions' => [
+                    'Width' => '1120 mm', 'Depth' => '400 mm', 'Height' => '1050 mm',
+                ],
+            ],
+            'sectors' => [],
+        ],
+        [
+            'name' => 'myPRO Steam Ironer IS185', 'slug' => 'is185', 'capacity' => null,
+            'title' => 'myPRO steam ironer IS185',
+            'summary' => 'A foldable myPRO steam ironer for sites that need a more consistent finish than hand ironing alone.',
+            'image_path' => 'images/pages/semi-professional/myPRO - IronersIS185.jpg',
+            'specs' => [
+                'Main specification' => [
+                    'Range' => 'myPRO', 'Type' => 'Steam ironer, foldable',
+                    'Install' => 'Freestanding',
+                ],
+                'Dimensions' => [
+                    'Width' => '940 mm', 'Depth' => '400 mm', 'Height' => '1050 mm',
+                ],
+            ],
+            'sectors' => [],
+        ],
     ],
 
     // ── Accessories & Consumables ─────────────────────────────────────────────

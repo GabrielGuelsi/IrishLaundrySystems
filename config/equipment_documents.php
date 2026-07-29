@@ -54,6 +54,12 @@ return [
             ],
         ],
 
+        'semi-professional' => [
+            'Brochures' => [
+                ['label' => 'myPRO Range — Brochure', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR_myPRO-RANGE-BROCHURE_A4-one%20page%20view_03072026_EN.pdf?version=1785321574'],
+            ],
+        ],
+
         // Finishing equipment — declare the document types so the CAD Drawings and
         // Data Sheet sections appear on every finishing product ("available on request"
         // until files are attached here, or per-product under 'products').
@@ -65,6 +71,205 @@ return [
     ],
 
     'products' => [
+
+        // ── Semi-professional / myPRO Edge ──
+        'we170p' => [
+            'CAD Drawings' => [
+                ['label' => 'WE170P — CAD Drawing (DWG)', 'url' => '/pdfs/WE170P.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'myPRO Washer WE170P / WE170V — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_myPRO_Washer_WE170P-V_EN.pdf?version=1785320161'],
+            ],
+            'Energy Label' => [
+                ['label' => 'WE170P — Energy Label (914535315)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170P_914535315_20210223110418865.pdf?version=1785320161'],
+                ['label' => 'WE170P — Energy Label (914535316)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170P_914535316_20210223110418865.pdf?version=1785320161'],
+                ['label' => 'WE170P — Energy Label (914535317)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170P_914535317_20210223110418865.pdf?version=1785320161'],
+                ['label' => 'WE170P — Energy Label (914535318)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170P_914535318_20210223110418865.pdf?version=1785320161'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO Washers — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-myPRO%20Wahers%20wall%20instructions_50x70_EN.pdf?version=1785320161'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WE170P — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_1L0A44_WE170P_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WE170P — Operating Manual (PNC 914535305)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_132900975_PNC%20914535305_EN.pdf?version=1785320161'],
+                ['label' => 'WE170P — Operating Manual (PNC 914535307)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_132897227_PNC%20914535307_EN.pdf?version=1785320161'],
+                ['label' => 'WE170P — Operating Manual (PNC 914535312)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_157016025_PNC%20914535312_EN.pdf?version=1785320161'],
+                ['label' => 'WE170P — Operating Manual (PNC 914535315)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_157037151_PNC%20914535315_EN.pdf?version=1785320161'],
+                ['label' => 'WE170P — Operating Manual (PNC 914535316)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_157034071_PNC%20914535316_EN.pdf?version=1785320161'],
+                ['label' => 'WE170P — Operating Manual (PNC 914535317)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_157037161_PNC%20914535317_EN.pdf?version=1785320161'],
+                ['label' => 'WE170P — Operating Manual (PNC 914535318)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170P_157037211_PNC%20914535318_EN.pdf?version=1785320161'],
+                ['label' => 'WE170V / WE170P / TE1120 — Pedestal Installation Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IS_132902910_WE170V_WE170P_TE1120_Pedestal_EN.pdf?version=1785320161'],
+            ],
+        ],
+
+        'we170v' => [
+            'CAD Drawings' => [
+                ['label' => 'WE170V — CAD Drawing (DWG)', 'url' => '/pdfs/WE170V.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'myPRO Washer WE170P / WE170V — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_myPRO_Washer_WE170P-V_EN.pdf?version=1785321361'],
+            ],
+            'Energy Label' => [
+                ['label' => 'WE170V — Energy Label (914535413)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170V_914535413_20210223110418865.pdf?version=1785321361'],
+                ['label' => 'WE170V — Energy Label (914535415)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170V_914535415_20210223110418865.pdf?version=1785321361'],
+                ['label' => 'WE170V — Energy Label (914535416)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_EPRELNL_WE170V_914535416_20210223110418865.pdf?version=1785321361'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO Washers — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-myPRO%20Wahers%20wall%20instructions_50x70_EN.pdf?version=1785321361'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'WE170V — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_1L0A45_WE170V_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WE170V — Operating Manual (PNC 914535410)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170V_157016005_PNC%20914535410_EN.pdf?version=1785321361'],
+                ['label' => 'WE170V — Operating Manual (PNC 914535413)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170V_157037181_PNC%20914535413_EN.pdf?version=1785321361'],
+                ['label' => 'WE170V — Operating Manual (PNC 914535414)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170V_157037171_PNC%20914535414_EN.pdf?version=1785321361'],
+                ['label' => 'WE170V — Operating Manual (PNC 914535416)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE170V_157037321_PNC%20914535416_EN.pdf?version=1785321361'],
+                ['label' => 'WE170V Marine — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_132899290_WE170V%20Marine_EN.pdf?version=1785321361'],
+                ['label' => 'WE170V / WE170P / TE1120 — Pedestal Installation Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IS_132902910_WE170V_WE170P_TE1120_Pedestal_EN.pdf?version=1785321361'],
+            ],
+        ],
+
+        'td2-8' => [
+            'Data Sheet' => [
+                ['label' => 'TD2-8 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD2-8_438946004_EN.pdf?version=1785321574'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD2-8 — Operating Manual (PNC 916900927)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-8_136233120-A_PNC%20916900927_EN.pdf?version=1785321574'],
+                ['label' => 'TD2-8 — Operating Manual (PNC 916900928)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-8_136233130-A_PNC%20916900928_EN.pdf?version=1785321574'],
+                ['label' => 'TD2-8 — Operating Manual (PNC 916900929)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-8_136233180-A_PNC%20916900929_EN.pdf?version=1785321574'],
+                ['label' => 'TD2-8 — Operating Manual (PNC 916900930)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-8_136233200-A_PNC%20916900930_EN.pdf?version=1785321574'],
+            ],
+        ],
+
+        'is1103' => [
+            'Brochures' => [
+                ['label' => 'myPRO Steam Ironers — Leaflet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CLFL/myPRO%20leaflet-Steam%20Ironers_Electrolux%20Pro_LR.pdf?version=1785322102'],
+                ['label' => 'myPRO Essentia Card', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/CLF/CLF_CLF-9JE00183_1_5_1_3_EPR_Essentia_Card_myPRO_ENG_2020-LR.pdf?version=1785322102'],
+            ],
+            'CAD Drawings' => [
+                ['label' => 'IS1103 — CAD Drawing (DWG)', 'url' => '/pdfs/IS1103.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'myPRO Fixed Ironer IS1103 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_myPRO_Fixed%20ironer_IS1103_EN.pdf?version=1785322102'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-myPRO_wall%20instructions_50x70_EN.pdf?version=1785322102'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'IS1103 — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_1LSN0M_IS1103_E.rfa'],
+            ],
+        ],
+
+        'is185' => [
+            'Brochures' => [
+                ['label' => 'myPRO Steam Ironers — Leaflet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CLFL/myPRO%20leaflet-Steam%20Ironers_Electrolux%20Pro_LR.pdf?version=1785322190'],
+                ['label' => 'myPRO Essentia Card', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/CLF/CLF_CLF-9JE00183_1_5_1_3_EPR_Essentia_Card_myPRO_ENG_2020-LR.pdf?version=1785322190'],
+            ],
+            'CAD Drawings' => [
+                ['label' => 'IS185 — CAD Drawing (DWG)', 'url' => '/pdfs/IS185.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'myPRO Foldable Ironer IS185 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_myPRO_Foldable%20ironer_IS185_EN.pdf?version=1785322190'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-myPRO_wall%20instructions_50x70_EN.pdf?version=1785322190'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'IS185 — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_1LSMZ3_IS185_E.rfa'],
+            ],
+        ],
+
+        'td2-9hp' => [
+            'Data Sheet' => [
+                ['label' => 'TD2-9HP — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_TD2-9HP_438946000_EN.pdf?version=1785321666'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TD2-9HP — Operating Manual (PNC 916900932)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-9HP_136233320-A_PNC%20916900932_EN.pdf?version=1785321666'],
+                ['label' => 'TD2-9HP — Operating Manual (PNC 916900933)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-9HP_136233330-A_PNC%20916900933_EN.pdf?version=1785321666'],
+                ['label' => 'TD2-9HP — Operating Manual (PNC 916900934)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-9HP_136233440-A_PNC%20916900934_EN.pdf?version=1785321666'],
+                ['label' => 'TD2-9HP — Operating Manual (PNC 916900936)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TD2-9HP_136233460-A_PNC%20916900936_EN.pdf?version=1785321666'],
+            ],
+        ],
+
+        'te1120hp' => [
+            'CAD Drawings' => [
+                ['label' => 'TE1120HP — CAD Drawing (DWG)', 'url' => '/pdfs/1LSN49_TE1120HP.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'myPRO Heat Pump Dryer TE1120HP — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/myPRO%20heat%20pump%20dryer%20TE1120HP_EN.pdf?version=1785321029'],
+            ],
+            'Energy Label' => [
+                ['label' => 'TE1120HP — Energy Label (PNC 916099831)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120HP_PNC%20916099831_NEL%201.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Energy Label (PNC 916099832)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120HP_PNC%20916099832_NEL%201.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Energy Label (PNC 916900245)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120HP_PNC%20916900245_NEL%201.PDF?version=1785321029'],
+                ['label' => 'TE1120HP — Energy Label (PNC 916900384)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120HP_PNC%20916900384_NEL%201.PDF?version=1785321029'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO Dryers — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-wall%20instruction%20MYPRO%20Dryer-50x70_29012025_EN.pdf?version=1785321029'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TE1120HP — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_1LSN49_TE1120HP_HP.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TE1120HP — Operating Manual (PNC 916098428)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120HP_136946304_PNC%20916098428_EN.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Operating Manual (PNC 916098429)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120HP_136954603_PNC%20916098429_EN.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Operating Manual (PNC 916098430)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120HP_136954621_PNC%20916098430_EN.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Operating Manual, Propane (PNC 916099802)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120HP_136211230_PNC%20916099802_Propane_EN.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Operating Manual, Propane (PNC 916099831)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120HP_136211740_PNC%20916099831_Propane_EN.pdf?version=1785321029'],
+                ['label' => 'TE1120HP — Operating Manual, Propane (PNC 916099832)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120HP_136211200_PNC%20916099832_Propane_EN.pdf?version=1785321029'],
+            ],
+        ],
+
+        'we2-9' => [
+            'Data Sheet' => [
+                ['label' => 'WE2-9 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_WE2-9_438946002_EN.pdf?version=1785321731'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO Washers — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-myPRO%20Wahers%20wall%20instructions_50x70_EN.pdf?version=1785320161'],
+            ],
+            'User Manuals' => [
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535325)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128034760-A_PNC%20914535325_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535326)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128036940-A_PNC%20914535326_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535327)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128036930-A_PNC%20914535327_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535328)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128034910-A_PNC%20914535328_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535329)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128034950-A_PNC%20914535329_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535330)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128034940-A_PNC%20914535330_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535331)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128034990-A_PNC%20914535331_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535421)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128036900-B_PNC%20914535421_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual (PNC 914535423)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_WE2-9_128034930-A_PNC%20914535423_EN.pdf?version=1785321731'],
+                ['label' => 'WE2-9 — Operating Manual, EU variant (PNC 914535422)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/914535422_WE2-9_128034920_EU=2=electrolux%202.3%20professional=en-GB.pdf?version=1785321731'],
+            ],
+        ],
+
+        'te1120' => [
+            'CAD Drawings' => [
+                ['label' => 'TE1120 — CAD Drawing (DWG)', 'url' => '/pdfs/TE1120.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'myPRO Dryer TE1120 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_myPRO_Dryer_TE1120_EN.pdf?version=1785320709'],
+            ],
+            'Energy Label' => [
+                ['label' => 'TE1120 — Energy Label (916097621)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120_916097621_20190611120917863.pdf?version=1785320709'],
+                ['label' => 'TE1120 — Energy Label (916097622)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120_916097622_20190611120937385.pdf?version=1785320709'],
+                ['label' => 'TE1120 — Energy Label (916097623)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120_916097623_20190610083136518.pdf?version=1785320709'],
+                ['label' => 'TE1120 — Energy Label (916097681)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/ENLA/EnergyLabel_TE1120_916097681_20190613072943653.pdf?version=1785320709'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'myPRO Dryers — Wall Instructions', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/WI/EPR-wall%20instruction%20MYPRO%20Dryer-50x70_29012025_EN.pdf?version=1785320709'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'TE1120 — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_1L0A46_TE1120_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'TE1120 — Operating Manual (PNC 916097621)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120_136934724_PNC%20916097621_EN.pdf?version=1785320709'],
+                ['label' => 'TE1120 — Operating Manual (PNC 916097622)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120_136934744_PNC%20916097622_EN.pdf?version=1785320709'],
+                ['label' => 'TE1120 — Operating Manual (PNC 916097681)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_TE1120_136937102_PNC%20916097681_EN.pdf?version=1785320709'],
+                ['label' => 'WE170V / WE170P / TE1120 — Pedestal Installation Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IS_132902910_WE170V_WE170P_TE1120_Pedestal_EN.pdf?version=1785320709'],
+            ],
+        ],
 
         // ── Finishing equipment ──
         'traditional-form-finishers' => [
