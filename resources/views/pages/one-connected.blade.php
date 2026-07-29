@@ -99,44 +99,6 @@
     </div>
 </section>
 
-{{-- 5. VALUE FOR LAUNDRY OPERATIONS --}}
-<section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Intelligence</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                See the operational data that <span style="color:#148af4;">supports better decisions</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                OnE Connected gives laundry teams clearer visibility of equipment activity, consumption, validation, alerts and reports.
-            </p>
-        </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
-            @foreach([
-                ['claim' => 'Status',      'label' => 'Equipment visibility',        'body' => 'See whether compatible machines are running, idle, complete or waiting for attention.',        'i' => 'M9.348 14.651a3.75 3.75 0 0 1 0-5.303m5.304 0a3.75 3.75 0 0 1 0 5.303m-7.425 2.122a6.75 6.75 0 0 1 0-9.546m9.546 0a6.75 6.75 0 0 1 0 9.546M5.106 18.894c-3.808-3.808-3.808-9.98 0-13.789m13.788 0c3.808 3.808 3.808 9.981 0 13.79M12 12h.008v.008H12V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z'],
-                ['claim' => 'Load factor', 'label' => 'Better loading insight',      'body' => 'Understand how effectively machines are being loaded against their working capacity.',          'i' => 'M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z'],
-                ['claim' => 'Consumption', 'label' => 'Energy, water and detergent', 'body' => 'Track key resource use across compatible laundry equipment and processes.',                     'i' => 'M2.25 18 9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941'],
-                ['claim' => 'Validation',  'label' => 'Process and hygiene support', 'body' => 'Use process data to support hygiene control, quality standards and future reference.',           'i' => 'M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z'],
-                ['claim' => 'Alerts',      'label' => 'Respond faster',              'body' => 'Receive notifications when a process, machine or batch needs attention.',                        'i' => 'M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0'],
-                ['claim' => 'Reports',     'label' => 'Keep records visible',        'body' => 'Access saved data that helps teams review performance and process history.',                     'i' => 'M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z'],
-            ] as $v)
-            <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm">
-                <svg class="w-10 h-10 text-[#148af4] mb-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6"><path stroke-linecap="round" stroke-linejoin="round" d="{{ $v['i'] }}"/></svg>
-                <p class="font-heading font-bold text-[#148af4] text-xl leading-snug mb-1">{{ $v['claim'] }}</p>
-                <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">{{ $v['label'] }}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $v['body'] }}</p>
-            </div>
-            @endforeach
-        </div>
-        <div class="mt-10">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
-                Explore Connected Laundry Intelligence
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-            </a>
-        </div>
-    </div>
-</section>
-
 {{-- 6. LIVE DASHBOARD (navy centrepiece) --}}
 <section id="dashboard" class="relative overflow-hidden pt-10 lg:pt-12 pb-16 lg:pb-20" style="background-color:#011E41;">
 
@@ -201,8 +163,8 @@
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
             @foreach([
-                ['claim' => 'Energy use',    'label' => 'See where power is being used',   'body' => 'Monitor energy consumption across compatible laundry equipment and cycles.',    'icon' => '256'],
-                ['claim' => 'Water use',     'label' => 'Compare use across cycles',       'body' => 'Review water consumption patterns and see where usage may need attention.',      'icon' => '257'],
+                ['claim' => 'Energy use',    'label' => 'See where power is being used',   'body' => 'Monitor energy consumption across compatible laundry equipment and cycles.',    'icon' => '257'],
+                ['claim' => 'Water use',     'label' => 'Compare use across cycles',       'body' => 'Review water consumption patterns and see where usage may need attention.',      'icon' => '256'],
                 ['claim' => 'Detergent use', 'label' => 'Link product use to activity',    'body' => 'Track detergent consumption alongside washing activity where monitoring is available.', 'icon' => '258'],
             ] as $c)
             <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
@@ -416,22 +378,22 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Official Resources</p>
             <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Find out how OnE Connected can work <span style="color:#148af4;">for your site</span>
+                Find out how OnE Connected can work <span style="color:#148af4;">for your laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Use official Electrolux Professional resources to explore OnE Connected benefits, compatible equipment and connection requirements before speaking with Irish Laundry Systems about your laundry room.
+                Use official Electrolux Professional resources to review the benefits, compatible equipment and connection requirements before discussing your setup with Irish Laundry Systems.
             </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 reveal">
             @foreach([
-                ['title' => 'OnE Connected Quick Guide',    'body' => 'A simple guide to the dashboard, key benefits and how OnE Connected supports connected equipment performance.', 'cta' => 'Download Quick Guide', 'route' => route('resources')],
-                ['title' => 'Connectivity Technical Sheet', 'body' => 'Useful for checking equipment categories, hardware requirements, connection needs and compatibility details.', 'cta' => 'View Technical Sheet', 'route' => route('resources')],
-                ['title' => 'Ask Irish Laundry Systems',    'body' => 'Need to know whether OnE Connected is right for your equipment, room and workload? Start with a compatibility conversation.', 'cta' => 'Ask Our Team', 'route' => route('contact')],
+                ['title' => 'OnE Connected Quick Guide',                  'body' => 'Explore compatible laundry equipment, dashboard benefits, hygiene validation, maintenance alerts and resource monitoring.', 'cta' => 'Download Quick Guide', 'href' => asset('pdfs/OnE-Connected-Quick-Guide.pdf'), 'newTab' => true],
+                ['title' => 'OnE Connected Connectivity Technical Sheet', 'body' => 'Review compatible models, required hardware, network specifications and installation requirements.', 'cta' => 'View Technical Sheet', 'href' => asset('pdfs/OnE-Connected-Connectivity-Technical-Sheet.pdf'), 'newTab' => true],
+                ['title' => 'Ask Irish Laundry Systems',                  'body' => 'Speak with our team about equipment compatibility, connection requirements and how OnE Connected could fit your laundry room.', 'cta' => 'Ask Our Team', 'href' => route('contact'), 'newTab' => false],
             ] as $r)
             <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
                 <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $r['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed mb-5 flex-1">{{ $r['body'] }}</p>
-                <a href="{{ $r['route'] }}" class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm mt-auto">
+                <a href="{{ $r['href'] }}" @if($r['newTab']) target="_blank" rel="noopener" @endif class="inline-flex items-center gap-2 font-body font-bold text-[#148af4] hover:underline text-sm mt-auto">
                     {{ $r['cta'] }}
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                 </a>

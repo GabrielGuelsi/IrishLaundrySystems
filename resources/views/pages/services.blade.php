@@ -68,10 +68,12 @@
 </section>
 
 <!-- Electrolux Partner Strip -->
-@include('components.partner-strip')
+<div class="pt-8 lg:pt-12 bg-white">
+    @include('components.partner-strip')
+</div>
 
 <!-- 1.5 COMMERCIAL INTRO / BRIDGE -->
-<section class="py-12 sm:py-16 lg:py-28 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
@@ -241,7 +243,7 @@
 }
 </style>
 
-<section class="pt-16 lg:pt-20 pb-10 lg:pb-12 bg-bg">
+<section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Service Response</p>
@@ -441,6 +443,14 @@
                         <input type="radio" name="preferred_contact" value="email" checked class="accent-[#148af4]"> Email
                     </label>
                 </div>
+                <label class="flex items-start gap-2 pt-1">
+                    <input type="checkbox" name="gdpr_consent" value="1" required class="mt-1 accent-[#148af4]">
+                    <span class="font-body text-gray-500 text-xs leading-relaxed">I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-400">*</span> <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.</span>
+                </label>
+                <label class="flex items-start gap-2">
+                    <input type="checkbox" name="marketing_consent" value="1" class="mt-1 accent-[#148af4]">
+                    <span class="font-body text-gray-400 text-xs leading-relaxed">I would like to receive occasional updates from Irish Laundry Systems. Optional.</span>
+                </label>
                 <button type="submit" class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors">
                     Request a Service Assessment
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>

@@ -613,8 +613,15 @@
                         <input type="checkbox" name="gdpr_consent" required value="1" {{ old('gdpr_consent') ? 'checked' : '' }}
                                class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
                         <span class="font-body text-xs text-gray-500 leading-relaxed">
-                            I agree to ILS processing my details to respond to this enquiry. <span class="text-red-400">*</span>
+                            I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-400">*</span>
                             <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.
+                        </span>
+                    </label>
+                    <label class="flex items-start gap-3 cursor-pointer">
+                        <input type="checkbox" name="marketing_consent" value="1" {{ old('marketing_consent') ? 'checked' : '' }}
+                               class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
+                        <span class="font-body text-xs text-gray-400 leading-relaxed">
+                            I would like to receive occasional updates from Irish Laundry Systems. Optional.
                         </span>
                     </label>
 

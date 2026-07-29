@@ -462,37 +462,23 @@
 <!-- ══════════════════════════════════════════
      10. RESPONSIBLE EQUIPMENT — compact strip
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden">
-    {{-- Background image --}}
-    <img src="{{ asset('images/pages/about/ecovadisbackground.webp') }}"
-         alt="Responsible equipment and sustainability"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    {{-- Dark overlay --}}
-    <div class="absolute inset-0" style="background:rgba(1,30,65,0.45);"></div>
-    {{-- Two-column: medal left, card right --}}
-    <div class="relative z-10 flex items-center px-6 lg:px-20 py-7 lg:py-8 gap-10 lg:gap-16">
-        {{-- Left: EcoVadis medal --}}
-        <div class="hidden lg:flex flex-1 items-center justify-center">
-            <img src="{{ asset('images/pages/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png') }}"
-                 alt="EcoVadis Sustainability Gold 2025"
-                 class="w-[400px] xl:w-[460px] h-auto object-contain drop-shadow-2xl">
-        </div>
-        {{-- Right: dark card --}}
-        <div class="rounded-2xl px-6 sm:px-10 lg:px-12 py-7 lg:py-8 w-full lg:max-w-xl text-center reveal"
-             style="background:rgba(1,30,65,0.82); backdrop-filter:blur(6px);">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Responsible equipment choices backed by<br class="hidden lg:block"> <span class="text-[#148af4]">recognised sustainability performance</span>
+<section class="relative overflow-hidden bg-navy">
+    {{-- Background image (right side) --}}
+    <img src="{{ asset('images/pages/about/responsible-equipment.png') }}"
+         alt="Responsible equipment choices"
+         class="absolute inset-y-0 right-0 w-full lg:w-[62%] h-full object-cover object-center">
+    {{-- Navy gradient: solid on the left, fading to reveal the image on the right --}}
+    <div class="absolute inset-0" style="background:linear-gradient(to right, #011e41 0%, #011e41 34%, rgba(1,30,65,0.75) 50%, rgba(1,30,65,0.15) 68%, rgba(1,30,65,0) 82%);"></div>
+    {{-- Content: left-aligned text --}}
+    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-24">
+        <div class="max-w-2xl reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment Choices</p>
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 lg:whitespace-nowrap">
+                Better equipment choices for<br> <span class="text-[#148af4]">lower resource use and running costs</span>
             </h2>
-            <p class="font-body text-white/70 text-base leading-relaxed mb-6">
-                Irish Laundry Systems considers energy, water and detergent use when advising on equipment, supported by Electrolux Professional technologies and the Group&rsquo;s independently assessed sustainability performance.
+            <p class="font-body text-white/80 text-base leading-relaxed max-w-2xl">
+                Irish Laundry Systems recommends equipment, technologies and services that support more sustainable laundry operations through lower energy, water and detergent use, supported by Electrolux Professional resource-efficient solutions.
             </p>
-            <div class="flex flex-wrap justify-center gap-2.5 mb-5">
-                @foreach(['Energy Efficiency', 'Water Efficiency', 'Dosing Control'] as $chip)
-                <span class="font-body text-sm font-medium text-white/80 bg-white/10 border border-white/20 rounded-full px-5 py-2">{{ $chip }}</span>
-                @endforeach
-            </div>
-            <p class="font-body text-white/80 text-xs font-bold">Electrolux Professional Group &middot; EcoVadis Gold 2025 &middot; Top 5% of companies assessed</p>
         </div>
     </div>
 </section>

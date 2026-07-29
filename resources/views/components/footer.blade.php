@@ -88,7 +88,7 @@
             <!-- CTA -->
             <div>
                 <h3 class="font-heading font-bold text-white text-xs uppercase tracking-[0.22em] mb-5 pb-2 border-b border-white/10">The right next step</h3>
-                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Tell us about your site and what you need. Our team will confirm the right equipment, equipment rental, maintenance, repair or aftercare support.</p>
+                <p class="text-sm font-body text-gray-400 mb-5 leading-relaxed">Tell us what you need and our team will review the site, equipment and timing before confirming how we can proceed.</p>
                 <a href="{{ route('request-assessment') }}"
                    class="inline-flex items-center gap-2 bg-orange hover:bg-orange-dark text-white font-heading font-bold text-sm px-5 py-3 rounded-lg transition-colors"
                    data-ga-cta="footer_request_assessment">
