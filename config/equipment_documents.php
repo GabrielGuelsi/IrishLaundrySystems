@@ -275,6 +275,8 @@ return [
         'traditional-form-finishers' => [
             'CAD Drawings' => [
                 ['label' => 'FF1 — CAD Drawing (DWG)', 'url' => '/pdfs/FF1.dwg'],
+                ['label' => 'FF2 — CAD Drawing (DWG)', 'url' => '/pdfs/FF2.dwg'],
+                ['label' => 'FF3 — CAD Drawing (DWG)', 'url' => '/pdfs/FF3.dwg'],
             ],
             'Data Sheet' => [
                 ['label' => 'FF1 / FF2 / FF3 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918801EN_FF1_FF2_FF3_EN.pdf?version=1781534252'],
@@ -283,6 +285,7 @@ return [
         'multi-form-finishers' => [
             'CAD Drawings' => [
                 ['label' => 'FFM1 — CAD Drawing (DWG)', 'url' => '/pdfs/FFM1.dwg'],
+                ['label' => 'FFM2 — CAD Drawing (DWG)', 'url' => '/pdfs/FFM2.dwg'],
             ],
             'Data Sheet' => [
                 ['label' => 'FFM1 / FFM2 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FFM1,%20FFM2_438918911_EN.pdf?version=1781534321'],
@@ -305,9 +308,15 @@ return [
         'vacuum-ironing-tables' => [
             'CAD Drawings' => [
                 ['label' => 'FIT1 — CAD Drawing (DWG)', 'url' => '/pdfs/FIT1.dwg'],
+                ['label' => 'FIT2A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT2A.dwg'],
+                ['label' => 'FIT2B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT2B.dwg'],
+                ['label' => 'FIT3A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT3A.dwg'],
+                ['label' => 'FIT3B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT3B.dwg'],
             ],
             'Data Sheet' => [
-                ['label' => 'FIT1 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918961_FIT1_EN.pdf?version=1781534531'],
+                ['label' => 'FIT1 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918961_FIT1_EN.pdf?version=1785322796'],
+                ['label' => 'FIT2A / FIT2B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FIT2A_FIT2B_438913101_EN.pdf?version=1785322859'],
+                ['label' => 'FIT3A / FIT3B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FIT3A,%20FIT3B_438913121_EN.pdf?version=1785322937'],
             ],
             'BIM/Revit' => [
                 ['label' => 'FIT1 — BIM / Revit (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951009_FIT1_E.rfa'],
@@ -316,6 +325,7 @@ return [
         'wet-cleaning-ironing-tables' => [
             'CAD Drawings' => [
                 ['label' => 'FIT1-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FIT1-WC.dwg'],
+                ['label' => 'FIT2-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FIT2-WC.dwg'],
             ],
             'Data Sheet' => [
                 ['label' => 'FIT1-WC / FIT2-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438918981EN_FIT1-WC_FIT2-WC_EN.pdf?version=1781534665'],
@@ -327,6 +337,7 @@ return [
         'vac-blow-steaming-ironing-tables' => [
             'CAD Drawings' => [
                 ['label' => 'FIT4A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT4A.dwg'],
+                ['label' => 'FIT4B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT4B.dwg'],
             ],
             'Data Sheet' => [
                 ['label' => 'FIT4A / FIT4B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913141EN_FIT4A_FIT4B_EN.pdf?version=1781534779'],
@@ -335,9 +346,152 @@ return [
         'rectangular-vacuum-ironing-tables' => [
             'CAD Drawings' => [
                 ['label' => 'FIT5A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT5A.dwg'],
+                ['label' => 'FIT5B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT5B.dwg'],
             ],
             'Data Sheet' => [
-                ['label' => 'FIT5A / FIT5B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913161EN_FIT5A_FIT5B_EN.pdf?version=1781536226'],
+                ['label' => 'FIT5A / FIT5B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913161EN_FIT5A_FIT5B_EN.pdf?version=1785338557'],
+            ],
+        ],
+
+        'vacuum-blowing-ironing-tables' => [
+            'CAD Drawings' => [
+                ['label' => 'FIT6A — CAD Drawing (DWG)', 'url' => '/pdfs/FIT6A.dwg'],
+                ['label' => 'FIT6B — CAD Drawing (DWG)', 'url' => '/pdfs/FIT6B.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FIT6A / FIT6B — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913181EN_FIT6A_FIT6B_EN.pdf?version=1785338692'],
+                ['label' => 'FIT7 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919593EN_FIT7_EN.pdf?version=1785338730'],
+            ],
+        ],
+
+        'dry-work-presses-air-operated' => [
+            'CAD Drawings' => [
+                ['label' => 'FPA1-D — CAD Drawing (DWG)', 'url' => '/pdfs/FPA1-D.dwg'],
+                ['label' => 'FPA2-D — CAD Drawing (DWG)', 'url' => '/pdfs/FPA2-D.dwg'],
+                ['label' => 'FPA3-D — CAD Drawing (DWG)', 'url' => '/pdfs/FPA3-D.dwg'],
+                ['label' => 'FPA4-D — CAD Drawing (DWG)', 'url' => '/pdfs/FPA4-D.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FPA1-D — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FPA1-D_438913201_EN.pdf?version=1785338764'],
+                ['label' => 'FPA2-D / FPA3-D / FPA4-D — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913241EN_FPA2-D_FPA3-D_FPA4-D_EN.pdf?version=1785338861'],
+            ],
+        ],
+
+        'laundry-presses-air-operated' => [
+            'CAD Drawings' => [
+                ['label' => 'FPA1-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPA1-WC.dwg'],
+                ['label' => 'FPA2-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPA2-WC.dwg'],
+                ['label' => 'FPA3-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPA3-WC.dwg'],
+                ['label' => 'FPA4-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPA4-WC.dwg'],
+                ['label' => 'FPA5-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPA5-WC.dwg'],
+                ['label' => 'FPA6-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPA6-WC.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FPA1-WC / FPA2-WC / FPA3-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FPA1-WC_FPA2-WC_FPA3-WC_438913221_EN.pdf?version=1785339033'],
+                ['label' => 'FPA4-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913261EN_FPA4-WC_EN.pdf?version=1785339153'],
+                ['label' => 'FPA5-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913281EN_FPA5-WC_EN.pdf?version=1785339190'],
+                ['label' => 'FPA6-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FPA6-WC_438913301_EN.pdf?version=1785339226'],
+            ],
+        ],
+
+        'trouser-topper-creased-trousers' => [
+            'CAD Drawings' => [
+                ['label' => 'FTT2 — CAD Drawing (DWG)', 'url' => '/pdfs/FTT2.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FTT2 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913521EN_FTT2_EN.pdf?version=1785339836'],
+            ],
+        ],
+
+        'trouser-topper' => [
+            'CAD Drawings' => [
+                ['label' => 'FTT1 — CAD Drawing (DWG)', 'url' => '/pdfs/FTT1.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FTT1 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913501EN_FTT1_EN.pdf?version=1785339800'],
+            ],
+        ],
+
+        'steam-boilers' => [
+            'CAD Drawings' => [
+                ['label' => 'FSB18C — CAD Drawing (DWG)', 'url' => '/pdfs/FSB18C.dwg'],
+                ['label' => 'FSB18C (951039) — CAD Drawing (DWG)', 'url' => '/pdfs/951039_FSB18C.dwg'],
+                ['label' => 'FSB24C — CAD Drawing (DWG)', 'url' => '/pdfs/FSB24C.dwg'],
+                ['label' => 'FSB24C (951040) — CAD Drawing (DWG)', 'url' => '/pdfs/951040_FSB24C.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FSB3.3 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FSB3_3_438913381_EN.pdf?version=1785339618'],
+                ['label' => 'FSB18C / FSB24C — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913421EN_FSB18C_FSB24C_EN.pdf?version=1785339642'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'FSB18C — Revit Family (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951039_FSB18C.rfa'],
+                ['label' => 'FSB24C — Revit Family (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951040_FSB24C.rfa'],
+                ['label' => 'FSB24C-E — Revit Family (RFA)', 'url' => '/pdfs/QF_ELECTROLUXPROFESSIONAL_951040_FSB24C_E.rfa'],
+            ],
+        ],
+
+        'spotting-cabinet' => [
+            'CAD Drawings' => [
+                ['label' => 'FSU4 — CAD Drawing (DWG)', 'url' => '/pdfs/FSU4.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FSU4 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_FSU4_438913481_EN.pdf?version=1785339587'],
+            ],
+        ],
+
+        'spotting-tables' => [
+            'CAD Drawings' => [
+                ['label' => 'FSU1 — CAD Drawing (DWG)', 'url' => '/pdfs/FSU1.dwg'],
+                ['label' => 'FSU2 — CAD Drawing (DWG)', 'url' => '/pdfs/FSU2.dwg'],
+                ['label' => 'FSU3 — CAD Drawing (DWG)', 'url' => '/pdfs/FSU3.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FSU1 / FSU3 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913461EN_FSU1-FSU3_EN.pdf?version=1785339467'],
+                ['label' => 'FSU7 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919595EN_FSU7_EN.pdf?version=1785339567'],
+            ],
+        ],
+
+        'rotary-finishing-cabinets' => [
+            'CAD Drawings' => [
+                ['label' => 'FRC1 — CAD Drawing (DWG)', 'url' => '/pdfs/FRC1.dwg'],
+                ['label' => 'FRC2 — CAD Drawing (DWG)', 'url' => '/pdfs/FRC2.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FRC1 / FRC2 / FRC3 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913361EN_FRC1_FRC2_FRC3_EN.pdf?version=1785339381'],
+            ],
+        ],
+
+        'finishing-cabinets' => [
+            'Brochures' => [
+                ['label' => 'FC48 — Serenity Cabinet Leaflet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CLFL/EPR_Serenity_Cabinet_leaflet_ENG_LR.pdf?version=1785339323'],
+                ['label' => 'Environmental Declaration', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR_brochure_EnvironmentalDeclaration_ENG-LR.pdf?version=1785339323'],
+            ],
+            'CAD Drawings' => [
+                ['label' => 'FC48 — CAD Drawing (DWG)', 'url' => '/pdfs/FC48.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FC48 — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438900421_FC48_EN.pdf?version=1785339323'],
+            ],
+            'Wall Instructions' => [
+                ['label' => 'FC48 — Installation Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_05306004_FC48_GB.pdf?version=1785339323'],
+            ],
+        ],
+
+        'laundry-presses-manually-operated' => [
+            'CAD Drawings' => [
+                ['label' => 'FPM-WC — CAD Drawing (DWG)', 'url' => '/pdfs/FPM-WC.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FPM-WC — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913321EN_FPM-WC_EN.pdf?version=1785339290'],
+            ],
+        ],
+
+        'dry-work-presses-manually-operated' => [
+            'CAD Drawings' => [
+                ['label' => 'FPM1-D — CAD Drawing (DWG)', 'url' => '/pdfs/FPM1-D.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'FPM1-D / FPM2-D / FPM3-D / FPM4-D — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913341EN_FPM1-D_FPM2-D_FPM3-D_FPM4-D_EN.pdf?version=1785338960'],
             ],
         ],
 

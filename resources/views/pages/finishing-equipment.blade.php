@@ -186,7 +186,6 @@
                     ['cat' => 'Traditional Form Finishers', 'models' => ['FF1', 'FF2', 'FF3']],
                     ['cat' => 'Multi-Form Finishers',       'models' => ['FFM1', 'FFM2']],
                     ['cat' => 'Tensioning Form Finishers',  'models' => ['FFT6-WC']],
-                    ['cat' => 'Shirt Finisher',             'models' => ['FSF2', 'FSF3']],
                 ]],
                 ['group' => 'Ironing Tables', 'items' => [
                     ['cat' => 'Vacuum Ironing Tables',                'models' => ['FIT1', 'FIT2A', 'FIT2B', 'FIT3A', 'FIT3B']],
@@ -223,7 +222,6 @@
                 'Traditional Form Finishers'           => 'Form finishers that shape and finish jackets, coats and garments on a heated, inflated form.',
                 'Multi-Form Finishers'                 => 'Multi-form finishers for higher-volume garment shaping across a wider range of garment types.',
                 'Tensioning Form Finishers'            => 'Tensioning form finishers that stretch and finish garments for a sharper, more uniform result.',
-                'Shirt Finisher'                       => 'Dedicated shirt finishers for fast, consistent shirt presentation in garment-led laundries.',
                 'Vacuum Ironing Tables'                => 'Heated vacuum ironing tables for everyday linen, uniforms and garment finishing.',
                 'Wet Cleaning Ironing Tables'          => 'Vacuum ironing tables set up for wet cleaning and delicate textile finishing.',
                 'Vac / Blow / Steaming Ironing Tables' => 'Ironing tables with vacuum, blowing and steaming for more demanding garment finishing.',
