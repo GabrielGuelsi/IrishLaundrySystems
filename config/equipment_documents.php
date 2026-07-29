@@ -1025,6 +1025,15 @@ return [
             ],
         ],
 
+        // ── Accessories — detergents & consumables ──
+
+        'detergents-consumables' => [
+            'Brochures' => [
+                ['label' => 'Line 6000 Detergents (Ecolabel) — Leaflet', 'url' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/EPR-Detergents-Ecolabel-Leaflet-GB-Web.pdf'],
+                ['label' => 'lagoon Detergents — Leaflet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CLFL/EPR_lagoon%20detergents%20leaflet_17022025_EN.pdf'],
+            ],
+        ],
+
     ],
 
 ];
