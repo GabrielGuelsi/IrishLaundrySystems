@@ -943,6 +943,52 @@ return [
             ],
         ],
 
+        // ── Tumble dryers — PD9C compact ──
+
+        'pd9c' => [
+            'CAD Drawings' => [
+                ['label' => 'PD9C — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1L07YC_PD9C.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'PD9C — Product Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438919530EN_PD9C_EN.pdf'],
+            ],
+            'User Manuals' => [
+                ['label' => 'PD9C — Operating Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_PD9C_438909630_EN.pdf'],
+                ['label' => 'PD9C — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_PD9C_438905500_EN.pdf'],
+            ],
+        ],
+
+        // ── Ironers — Ø 480 mm cylinder (IC6 48xx series) ──
+
+        'cylinder-480mm' => [
+            'CAD Drawings' => [
+                ['label' => 'IC6-4832 (Ø 480 mm) — CAD Drawing (DWG)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CAD/1LSNJZ_IC64832FLF.dwg'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'IC6-4821 / IC6-4832 (Ø 480 mm) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438900483EN_IC64821-IC64832_FLF_EN.pdf'],
+            ],
+            'BIM/Revit' => [
+                ['label' => 'IC6-4832 — BIM / Revit Family (RFA)', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/REV/QF_ELECTROLUXPROFESSIONAL_1LSNJZ_IC64832FLF_E.rfa'],
+            ],
+            'User Manuals' => [
+                ['label' => 'IC6 48xx — Operating Handbook', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM%20IC648xx%20GB.pdf'],
+                ['label' => 'IC6 48xx — Installation Manual', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/IN/IN_01102059_IC6%2048xx%20GB.pdf'],
+            ],
+        ],
+
+        // ── Wet cleaning — lagoon Advanced Care ──
+
+        'lagoon-advanced-care' => [
+            'Brochures' => [
+                ['label' => 'lagoon Advanced Care — Brochure', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR-LAC-brochure-19022025_EN.pdf'],
+                ['label' => 'lagoon Detergents — Leaflet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/CLFL/EPR_lagoon%20detergents%20leaflet_17022025_EN.pdf'],
+            ],
+            'Data Sheet' => [
+                ['label' => 'lagoon Advanced Care (WH6-14 / TD6-14) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_438913913_Lagoon%20concept_TD6-14%20and%20WH6-14_EN.pdf'],
+                ['label' => 'lagoon Advanced Care (WH6-33 / TD6-37) — Data Sheet', 'url' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PS_438913915EN_Lagoon%20concept_WH6-33%20and%20TD6-37_EN.pdf'],
+            ],
+        ],
+
     ],
 
 ];
