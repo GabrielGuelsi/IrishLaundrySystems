@@ -94,7 +94,7 @@
 </section>
 
 {{-- ════════════ 5. WHAT YOU GAIN ════════════ --}}
-<section class="py-12 lg:py-16 bg-navy">
+<section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">Rental Benefits</p>
@@ -400,9 +400,6 @@
         </div>
 
         <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 reveal">
-            <p class="font-body text-gray-500 text-sm leading-relaxed text-pretty max-w-2xl">
-                Rental suitability depends on the available Electrolux Professional equipment range, site size, access, utilities, laundry demand and agreement terms. For larger or more complex operations, Irish Laundry Systems will confirm whether the available rental range is the right fit before recommending this option.
-            </p>
             <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap sm:ml-auto">
                 Talk to Our Team
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
@@ -423,13 +420,6 @@
                 <p class="font-body text-gray-600 text-base leading-relaxed mt-5 text-pretty">
                     Before the agreement is confirmed, Irish Laundry Systems reviews room layout, utilities, access, workload and support needs.
                 </p>
-                <div class="mt-6 flex flex-wrap items-center gap-x-4 gap-y-2 font-body text-gray-500 text-sm">
-                    <span class="whitespace-nowrap">Right-fit equipment</span>
-                    <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Clear rental cost</span>
-                    <span class="w-px h-3 bg-gray-300 hidden sm:block" aria-hidden="true"></span>
-                    <span class="whitespace-nowrap">Planned installation</span>
-                </div>
                 <a href="#quote-form" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 mt-7 w-fit">
                     Request a Quote
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
@@ -712,8 +702,15 @@ $rentalFaqs = [
                             <input type="checkbox" name="gdpr_consent" required value="1" {{ old('gdpr_consent') ? 'checked' : '' }}
                                    class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
                             <span class="font-body text-xs text-gray-500 leading-relaxed">
-                                I agree to ILS processing my details to respond to this enquiry. <span class="text-red-400">*</span>
+                                I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-400">*</span>
                                 <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.
+                            </span>
+                        </label>
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" name="marketing_consent" value="1" {{ old('marketing_consent') ? 'checked' : '' }}
+                                   class="mt-0.5 w-4 h-4 rounded border-gray-300 text-navy focus:ring-navy/30 flex-shrink-0 cursor-pointer">
+                            <span class="font-body text-xs text-gray-400 leading-relaxed">
+                                I would like to receive occasional updates from Irish Laundry Systems. Optional.
                             </span>
                         </label>
 

@@ -165,7 +165,14 @@
                         <input type="checkbox" id="cta_gdpr" name="gdpr_consent" value="1" required
                                class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel/30 cursor-pointer flex-shrink-0">
                         <label for="cta_gdpr" class="font-body text-gray-500 text-xs leading-relaxed cursor-pointer">
-                            I consent to ILS storing and using my data to respond to this request. <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy">Privacy policy</a>. <span class="text-red-500">*</span>
+                            I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-500">*</span> <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy" target="_blank">Privacy Policy</a>.
+                        </label>
+                    </div>
+                    <div class="flex items-start gap-2.5">
+                        <input type="checkbox" id="cta_marketing" name="marketing_consent" value="1"
+                               class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel/30 cursor-pointer flex-shrink-0">
+                        <label for="cta_marketing" class="font-body text-gray-400 text-xs leading-relaxed cursor-pointer">
+                            I would like to receive occasional updates from Irish Laundry Systems. Optional.
                         </label>
                     </div>
                     <input type="hidden" name="utm_source" id="cta_utm_source">

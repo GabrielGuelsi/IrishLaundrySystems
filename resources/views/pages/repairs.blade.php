@@ -110,7 +110,7 @@
 @include('components.partner-strip')
 
 <!-- FIRST RESPONSE -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">First Response</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
@@ -148,7 +148,7 @@
 </section>
 
 <!-- CALL-OUT SUPPORT STRIP -->
-<section class="pt-4 pb-16 lg:pt-6 lg:pb-20 bg-white">
+<section class="pt-4 pb-16 lg:pt-6 lg:pb-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl">
 
@@ -338,7 +338,7 @@ $expectSteps = [
 </script>
 
 <!-- TEMPORARY LAUNDRY SUPPORT -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -400,7 +400,7 @@ $expectSteps = [
 </section>
 
 <!-- REPEAT FAULTS STRIP -->
-<section class="py-12 lg:py-14 bg-bg">
+<section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="bg-navy rounded-2xl p-8 lg:p-10">
             <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-8 items-start mb-1">
@@ -486,13 +486,13 @@ $faqs = [
 @endphp
 <!-- TESTIMONIAL / PROOF -->
 @include('components.testimonials', [
-    'light'      => true,
+    'light'      => false,
     'bordered'   => false,
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry service&nbsp;support</span>',
     'subheading' => 'Commercial sites choose Irish Laundry Systems for responsive repairs, clear communication and reliable equipment care.',
 ])
-<div class="bg-[#f7f8fa] -mt-10 lg:-mt-16 pb-12 lg:pb-16">
+<div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')
 </div>
 
@@ -521,7 +521,7 @@ $faqs = [
 ])
 
 <!-- FINAL CTA + REPAIR CALL-OUT FORM -->
-<section class="py-16 lg:py-20 bg-bg">
+<section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden mb-8 lg:mb-10">
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
@@ -584,8 +584,12 @@ $faqs = [
                 <input type="text" name="service_history" placeholder="Recent service history, if known" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
                 <textarea name="message" rows="3" placeholder="Message" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400 resize-none"></textarea>
                 <label class="flex items-start gap-2 pt-1">
-                    <input type="checkbox" name="consent" value="1" required class="mt-1 accent-[#148af4]">
-                    <span class="font-body text-gray-500 text-xs leading-relaxed">I agree to <span class="whitespace-nowrap">Irish Laundry Systems</span> contacting me about this repair enquiry.</span>
+                    <input type="checkbox" name="gdpr_consent" value="1" required class="mt-1 accent-[#148af4]">
+                    <span class="font-body text-gray-500 text-xs leading-relaxed">I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-400">*</span> <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.</span>
+                </label>
+                <label class="flex items-start gap-2">
+                    <input type="checkbox" name="marketing_consent" value="1" class="mt-1 accent-[#148af4]">
+                    <span class="font-body text-gray-400 text-xs leading-relaxed">I would like to receive occasional updates from Irish Laundry Systems. Optional.</span>
                 </label>
                 <button type="submit" class="w-full mt-2 inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors">
                     Request a Call-Out

@@ -193,16 +193,12 @@
 
                 <div class="space-y-3 pt-2">
                     <label class="flex items-start gap-3 cursor-pointer">
-                        <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
-                        <span class="font-body text-sm text-navy underline">Please read and agree to our Terms &amp; Conditions *</span>
+                        <input type="checkbox" name="gdpr_consent" value="1" required class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
+                        <span class="font-body text-sm text-navy/80">I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-400">*</span> <a href="{{ route('privacy') }}" class="underline hover:text-navy transition-colors" target="_blank">Privacy Policy</a>.</span>
                     </label>
                     <label class="flex items-start gap-3 cursor-pointer">
-                        <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
-                        <span class="font-body text-sm text-navy/80">Yes, I agree to receive marketing communications regarding products, services, and events.</span>
-                    </label>
-                    <label class="flex items-start gap-3 cursor-pointer">
-                        <input type="checkbox" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
-                        <span class="font-body text-sm text-navy/80">Yes, I agree to receive marketing communications in line with my preferences.</span>
+                        <input type="checkbox" name="marketing_consent" value="1" class="mt-0.5 w-4 h-4 rounded border-gray-300 accent-[#148af4]">
+                        <span class="font-body text-sm text-navy/60">I would like to receive occasional updates from Irish Laundry Systems. Optional.</span>
                     </label>
                 </div>
 

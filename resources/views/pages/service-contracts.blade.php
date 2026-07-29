@@ -258,7 +258,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      4. WHAT YOU GAIN — 6 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-12 lg:py-16 bg-navy">
+<section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl lg:max-w-5xl mx-auto text-center mb-10 lg:mb-12">
@@ -422,7 +422,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      6. FINANCIAL VALUE — full-width diptych with imagery
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-12 lg:py-16 bg-bg relative overflow-hidden">
+<section class="py-16 lg:py-24 bg-bg relative overflow-hidden">
 
     {{-- Decorative ambient blur --}}
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(20,138,244,0.06) 0%, transparent 60%);" aria-hidden="true"></div>
@@ -530,7 +530,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      PLANNED MAINTENANCE VALUE STRIP
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
+<section class="relative py-16 lg:py-24 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
         <img src="/images/shared/commercial-hero.jpg" alt="" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
     </div>
@@ -722,7 +722,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      11. TESTIMONIALS / PROOF
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="pt-12 lg:pt-16 bg-white">
+<section class="pt-16 lg:pt-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mx-auto text-center reveal">
             <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Customer Proof</p>
@@ -1032,7 +1032,14 @@ $faqs = [
                             <input type="checkbox" name="gdpr_consent" required value="1" {{ old('gdpr_consent') ? 'checked' : '' }}
                                    class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel flex-shrink-0">
                             <span class="font-body text-xs text-gray-600 leading-relaxed">
-                                I agree to ILS processing my details to respond to this enquiry. <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy" target="_blank">Privacy Policy</a>. <span class="text-red-500">*</span>
+                                I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-500">*</span> <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy" target="_blank">Privacy Policy</a>.
+                            </span>
+                        </label>
+                        <label class="flex items-start gap-3 cursor-pointer">
+                            <input type="checkbox" name="marketing_consent" value="1" {{ old('marketing_consent') ? 'checked' : '' }}
+                                   class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel flex-shrink-0">
+                            <span class="font-body text-xs text-gray-400 leading-relaxed">
+                                I would like to receive occasional updates from Irish Laundry Systems. Optional.
                             </span>
                         </label>
 

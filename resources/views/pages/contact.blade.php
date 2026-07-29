@@ -79,7 +79,7 @@
         <div class="max-w-[640px] reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-[15px]">Contact</p>
             <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-[23px]">
-                Request an<br>Assessment
+                Request an Assessment
             </h1>
             <p class="font-body text-white/80 text-base leading-relaxed mb-[30px] max-w-[600px]">
                 For equipment, equipment rental, preventive maintenance, repairs or aftercare, share a few details and our team will confirm the next step.
@@ -127,10 +127,7 @@
                         {{-- 1. Site details --}}
                         <div class="text-center">
                             <div class="flex justify-center mb-4">
-                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/>
-                                </svg>
+                                <img src="{{ asset('images/icons/287.png') }}" alt="" class="w-14 h-14 object-contain">
                             </div>
                             <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Site details</p>
                             <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Location and sector</p>
@@ -139,10 +136,7 @@
                         {{-- 2. Enquiry type --}}
                         <div class="text-center">
                             <div class="flex justify-center mb-4">
-                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 3.75h4.5M9 5.25h6a2.25 2.25 0 0 1 2.25 2.25v12a2.25 2.25 0 0 1-2.25 2.25H9a2.25 2.25 0 0 1-2.25-2.25v-12A2.25 2.25 0 0 1 9 5.25Z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5.25A2.25 2.25 0 0 1 11.25 3h1.5A2.25 2.25 0 0 1 15 5.25a.75.75 0 0 1-.75.75h-4.5A.75.75 0 0 1 9 5.25Z"/>
-                                </svg>
+                                <img src="{{ asset('images/icons/288.png') }}" alt="" class="w-14 h-14 object-contain">
                             </div>
                             <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Enquiry type</p>
                             <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Equipment, equipment rental, contracts, repairs or aftercare</p>
@@ -151,11 +145,7 @@
                         {{-- 3. Equipment details --}}
                         <div class="text-center">
                             <div class="flex justify-center mb-4">
-                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
-                                    <rect x="4.75" y="3" width="14.5" height="18" rx="1.75" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <circle cx="12" cy="14" r="4" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.25 6.25h.01M9.75 6.25h.01"/>
-                                </svg>
+                                <img src="{{ asset('images/icons/289.png') }}" alt="" class="w-14 h-14 object-contain">
                             </div>
                             <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Equipment details</p>
                             <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Type, brand, model and quantity if known</p>
@@ -164,9 +154,7 @@
                         {{-- 4. Timing & priorities --}}
                         <div class="text-center">
                             <div class="flex justify-center mb-4">
-                                <svg class="w-14 h-14" fill="none" viewBox="0 0 24 24" stroke="#148af4" stroke-width="1.4">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
-                                </svg>
+                                <img src="{{ asset('images/icons/290.png') }}" alt="" class="w-14 h-14 object-contain">
                             </div>
                             <p class="font-heading font-bold text-white text-sm lg:text-base mb-1">Timing &amp; priorities</p>
                             <p class="font-body text-white/55 text-xs lg:text-sm leading-snug">Preferred timeframe and any operational impact</p>
