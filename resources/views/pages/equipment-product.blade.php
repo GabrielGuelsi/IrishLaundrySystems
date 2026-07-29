@@ -87,7 +87,7 @@
                     @php
                         $documents = $documents ?? [];
                         // canonical order, but only show the types this product actually declares
-                        $docOrder = ['Brochures', 'CAD Drawings', 'Data Sheet', 'Wall Instructions', 'BIM/Revit', 'User Manuals'];
+                        $docOrder = ['Brochures', 'CAD Drawings', 'Data Sheet', 'Energy Label', 'Wall Instructions', 'BIM/Revit', 'User Manuals'];
                         $docTypes = array_values(array_filter($docOrder, fn($t) => array_key_exists($t, $documents)));
                     @endphp
                     @forelse($docTypes as $i => $doc)
