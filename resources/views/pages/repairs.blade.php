@@ -134,7 +134,7 @@
                 <span class="font-body font-bold text-navy text-sm">Site urgency</span>
             </div>
             <div class="flex flex-col items-center text-center">
-                <img src="/images/icons/repairs-service-history.png" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
+                <img src="/images/icons/aftercare-connected-93.png" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
                 <span class="font-body font-bold text-navy text-sm">Service history</span>
             </div>
         </div>
@@ -148,7 +148,7 @@
 </section>
 
 <!-- CALL-OUT SUPPORT STRIP -->
-<section class="pt-4 pb-16 lg:pt-6 lg:pb-24 bg-white">
+<section class="pt-16 pb-40 lg:pt-24 lg:pb-52 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl">
 
@@ -259,7 +259,7 @@ $expectSteps = [
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Call-Out Process</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From service visit to <span class="text-[#148af4]">repair&nbsp;action</span></h2>
-            <p class="font-body text-blue-200 text-base leading-relaxed max-w-2xl mx-auto text-pretty">Each call-out is focused on diagnosis, repair requirements and the best action for the equipment.</p>
+            <p class="font-body text-blue-200 text-base leading-relaxed mx-auto lg:whitespace-nowrap">Each call-out is focused on diagnosis, repair requirements and the best action for the equipment.</p>
         </div>
 
         <div class="expect-timeline">

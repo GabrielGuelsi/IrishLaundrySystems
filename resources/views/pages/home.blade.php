@@ -95,7 +95,10 @@
             </div>
             <div class="flex flex-col gap-4">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Room layout, workload, utilities, access, existing equipment and maintenance needs all influence operating cost, staff time and turnaround. Assessing them together gives owners and operators a clearer basis for capacity, installation and long-term investment.
+                    Room layout, workload, utilities, access, existing equipment and maintenance<br class="hidden lg:block"> needs all influence operating cost, staff time and turnaround.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Assessing them together gives owners and operators a clearer basis for capacity, installation and long-term investment.
                 </p>
             </div>
         </div>
@@ -139,7 +142,7 @@
 <!-- 4. SECTOR ROUTING TABS -->
  
 @include('components.sector-switcher', [
-    'heading'         => 'Commercial laundry planned around <span class="text-[#148af4]">your sector</span>',
+    'heading'         => '<span class="lg:whitespace-nowrap">Commercial laundry planned around <span class="text-[#148af4]">your sector</span></span>',
     'intro'           => 'Choose your sector to explore equipment and service suited to its hygiene, capacity and turnaround needs.',
     'healthcareBody'  => 'For hospitals and healthcare facilities managing hygiene requirements, linen handling and clean linen availability.',
     'careBody'        => 'For care homes and residential settings managing resident clothing, bedding and regular daily loads.',
