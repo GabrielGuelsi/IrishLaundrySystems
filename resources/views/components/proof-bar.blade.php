@@ -7,7 +7,6 @@
     <style>
         /* Mobile: tame the scaled logos so they fit the 2-column grid without overflow/overlap */
         @media (max-width: 1023px) {
-            .pb-logo-grace { transform: scale(3.6) !important; }
             .pb-logo-square { transform: scale(3.4) !important; }
         }
     </style>
@@ -27,8 +26,8 @@
 
             {{-- Logos spread across remaining width --}}
             <div class="grid grid-cols-2 lg:flex items-center w-full lg:flex-1 lg:w-auto gap-x-4 gap-y-6 lg:gap-y-0" style="min-height:100px;">
-                <div class="flex-1 flex items-center justify-center overflow-hidden">
-                    <img src="/images/logo/Logo_Grace_Healthcare_(1).png" alt="Grace Healthcare" class="pb-logo-grace h-10 w-auto object-contain opacity-80" style="transform: scale(7) translateY(0px); transform-origin: center;">
+                <div class="flex-1 flex items-center justify-center">
+                    <img src="/images/logo/grace-healthcare-cropped.png" alt="Grace Healthcare" class="h-8 lg:h-9 w-auto object-contain opacity-80">
                 </div>
                 <div class="flex-1 flex items-center justify-center">
                     <img src="/images/logo/abbvie.png" alt="AbbVie" class="h-8 w-auto object-contain opacity-80" style="transform: translateY(-8px);">
