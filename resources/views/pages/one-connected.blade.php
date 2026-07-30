@@ -9,9 +9,9 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px; background-color:#011E41;">
-    <img src="/images/pages/Oneconnectedhero.png" alt="OnE Connected laundry dashboard"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+<section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]" style="min-height:520px; background-color:#011E41;">
+    <img src="/images/pages/one-connected/hero-oneconnected.png" alt="OnE Connected laundry dashboard"
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: 78% center;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.55) 68%, rgba(1,30,65,0.25) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
@@ -190,15 +190,14 @@
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Engineering Support',
     'textMaxW'     => 'lg:max-w-[60%]',
-    'headingLine1' => 'The dashboard shows the data',
-    'headingLine2' => 'Irish Laundry Systems helps decide what comes next',
-    'body'         => 'Our team helps interpret OnE Connected data around consumption, alerts, equipment use and process performance, so the site can make clearer decisions around maintenance, call-outs, parts, running costs and equipment care.',
+    'headingLine1' => 'Use OnE Connected data',
+    'headingLine2' => 'to improve maintenance<br class="hidden lg:block">and operational performance',
+    'body'         => 'Our team helps interpret OnE Connected data on consumption, alerts, equipment use and process performance, so you can make clearer decisions about maintenance, call-outs, parts, running costs and equipment care.',
     'image'        => '/images/shared/customer-care-line6000.jpg',
     'miniPoints'   => [
-        {{-- icons placeholder — swap for final ones later --}}
-        ['icon' => '149', 'iconClass' => 'scale-[0.78]', 'label' => 'Earlier<br>Maintenance'],
-        ['icon' => '168', 'iconClass' => 'scale-[0.91]', 'label' => 'Downtime<br>Reduction'],
-        ['icon' => '151', 'iconClass' => 'scale-[0.85]', 'label' => 'Equipment<br>Lifespan'],
+        ['icon' => '307', 'label' => 'Earlier<br>Maintenance'],
+        ['icon' => '308', 'label' => 'Reduced<br>Downtime'],
+        ['icon' => '309', 'label' => 'Longer Equipment<br>Life'],
     ],
     'cta1Label'    => 'Speak to Irish Laundry Systems',
     'cta1Route'    => 'contact',
