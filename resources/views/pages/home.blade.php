@@ -95,7 +95,10 @@
             </div>
             <div class="flex flex-col gap-4">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Room layout, workload, utilities, access, existing equipment and maintenance needs all influence operating cost, staff time and turnaround. Assessing them together gives owners and operators a clearer basis for capacity, installation and long-term investment.
+                    Room layout, workload, utilities, access, existing equipment and maintenance<br class="hidden lg:block"> needs all influence operating cost, staff time and turnaround.
+                </p>
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    Assessing them together gives owners and operators a clearer basis for capacity, installation and long-term investment.
                 </p>
             </div>
         </div>
@@ -139,7 +142,7 @@
 <!-- 4. SECTOR ROUTING TABS -->
  
 @include('components.sector-switcher', [
-    'heading'         => 'Commercial laundry planned around <span class="text-[#148af4]">your sector</span>',
+    'heading'         => '<span class="lg:whitespace-nowrap">Commercial laundry planned around <span class="text-[#148af4]">your sector</span></span>',
     'intro'           => 'Choose your sector to explore equipment and service suited to its hygiene, capacity and turnaround needs.',
     'healthcareBody'  => 'For hospitals and healthcare facilities managing hygiene requirements, linen handling and clean linen availability.',
     'careBody'        => 'For care homes and residential settings managing resident clothing, bedding and regular daily loads.',
@@ -206,11 +209,15 @@
     'headingLine1' => 'Keep maintenance planned',
     'headingLine2' => 'and equipment care organised',
     'body'         => 'Preventive servicing, clear records and parts support help teams manage equipment throughout its working life.',
-    'features'     => [
-        ['img' => '/images/icons/244.png', 'label' => 'Fewer Breakdowns', 'iconStyle' => 'transform:scale(1.039);'],
-        ['img' => '/images/icons/home-planning-spend.png', 'label' => 'Cost Control', 'iconStyle' => 'transform:scale(0.996) translateY(-3.6%);'],
-        ['img' => '/images/icons/151.png', 'label' => 'Parts Support', 'iconStyle' => 'transform:scale(0.851) translateY(-1.2%);'],
+    'miniPoints'   => [
+        ['icon' => '244', 'iconClass' => 'brightness-0 invert', 'label' => 'Fewer<br>Breakdowns'],
+        ['icon' => 'home-planning-spend', 'iconClass' => 'brightness-0 invert', 'label' => 'Cost<br>Control'],
+        ['icon' => '151', 'iconClass' => 'brightness-0 invert', 'label' => 'Parts<br>Support'],
     ],
+    'cta1Label'    => 'View Preventive Maintenance',
+    'cta1Route'    => 'service-contracts',
+    'cta2Label'    => 'Explore Aftercare',
+    'cta2Route'    => 'parts-aftercare',
 ])
 
 <!-- 8. FINAL CTA + SHORT FORM -->

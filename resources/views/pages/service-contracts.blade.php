@@ -422,7 +422,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      6. FINANCIAL VALUE — full-width diptych with imagery
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-bg relative overflow-hidden">
+<section class="py-16 lg:py-24 bg-white relative overflow-hidden">
 
     {{-- Decorative ambient blur --}}
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(20,138,244,0.06) 0%, transparent 60%);" aria-hidden="true"></div>
@@ -820,17 +820,17 @@ $faqs = [
             <span class="block">so you can review recommended repairs and genuine parts before deciding what goes ahead.</span>
         </p>
 
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
             @foreach([
                 ['src' => '/images/icons/295.png', 'label' => 'Equipment<br>Condition'],
                 ['src' => '/images/icons/296.png', 'label' => 'Quoted<br>Repairs'],
                 ['src' => '/images/icons/297.png', 'label' => 'Genuine<br>Parts'],
             ] as $i => $feat)
-            <div class="flex items-center gap-5">
+            <span class="flex items-center gap-2 flex-shrink-0">
                 <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
-                     style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+                     class="h-14 w-auto object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
+            </span>
             @endforeach
         </div>
 

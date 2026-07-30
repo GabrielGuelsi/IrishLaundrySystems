@@ -139,7 +139,7 @@
             @foreach ($gainCards as $i => $card)
             <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-24 h-24 object-contain">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-20 h-20 object-contain">
                 @else
                 <svg class="w-11 h-11 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">{!! $card['icon'] !!}</svg>
                 @endif
@@ -210,7 +210,7 @@
 </section>
 
 {{-- ════════════ 7. RENTAL VS OUTRIGHT PURCHASE ════════════ --}}
-<section class="bg-bg py-16 lg:py-24">
+<section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Compare Options</p>
@@ -283,7 +283,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Rental Works</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl reveal text-balance" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-5 reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
             A clear rental process from <span class="text-[#148af4]">site review to&nbsp;agreement</span>
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl reveal text-pretty" style="transition-delay:160ms;">
@@ -314,7 +314,7 @@
 </section>
 
 {{-- ════════════ 9. WHERE RENTAL FITS ════════════ --}}
-<section class="bg-bg py-16 lg:py-24">
+<section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Where Rental Fits</p>
@@ -439,7 +439,7 @@
             <div class="flex flex-col reveal" style="transition-delay:120ms;">
                 @foreach ($planProof as $i => $p)
                 <div class="flex items-start gap-5 py-6 border-t border-gray-100 first:border-t-0 first:pt-0 last:pb-0">
-                    <img src="{{ $p['img'] }}" alt="" aria-hidden="true" class="w-14 h-14 object-contain flex-shrink-0" style="{{ $p['style'] ?? '' }}">
+                    <img src="{{ $p['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 object-contain flex-shrink-0" style="{{ $p['style'] ?? '' }}">
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl mb-1.5 leading-snug">{{ $p['title'] }}</h3>
                         <p class="font-body text-gray-600 text-sm lg:text-base leading-relaxed text-pretty">{{ $p['text'] }}</p>
@@ -471,19 +471,19 @@
             With rental, Irish Laundry Systems supplies, installs and supports the equipment during the rental term. Service labour, preventive maintenance and parts cover are included, with filters and consumables excluded.
         </p>
 
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" style="width:3.5rem;height:3.5rem;flex-shrink:0;object-fit:contain;filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-snug">Service labour<br>included</span>
-            </div>
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" style="width:3.5rem;height:3.5rem;flex-shrink:0;object-fit:contain;filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-snug">Preventive Maintenance<br>included</span>
-            </div>
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/151.png" alt="" aria-hidden="true" style="width:3.5rem;height:3.5rem;flex-shrink:0;object-fit:contain;filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-snug">Parts<br>included</span>
-            </div>
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Service labour<br>included</span>
+            </span>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Preventive Maintenance<br>included</span>
+            </span>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/151.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Parts<br>included</span>
+            </span>
         </div>
 
         <div class="flex flex-wrap gap-3">
@@ -501,13 +501,13 @@
 
 {{-- ════════════ 12. TESTIMONIAL / TRUSTED BY LOGO STRIP ════════════ --}}
 @include('components.testimonials', [
-    'light'      => true,
+    'light'      => false,
     'bordered'   => false,
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry rental&nbsp;&amp; support</span>',
     'subheading' => 'Sites across Ireland choose Irish Laundry Systems for equipment supply, rental and reliable ongoing support.',
 ])
-<div class="bg-[#f7f8fa] -mt-10 lg:-mt-16 pb-12 lg:pb-16">
+<div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')
 </div>
 
@@ -548,7 +548,7 @@ $rentalFaqs = [
 ])
 
 {{-- ════════════ 14. FINAL RENTAL QUOTE FORM ════════════ --}}
-<section id="quote-form" class="bg-bg py-16 lg:py-24">
+<section id="quote-form" class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 
