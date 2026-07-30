@@ -283,7 +283,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Rental Works</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl reveal text-balance" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-5 reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
             A clear rental process from <span class="text-[#148af4]">site review to&nbsp;agreement</span>
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl reveal text-pretty" style="transition-delay:160ms;">
@@ -471,19 +471,19 @@
             With rental, Irish Laundry Systems supplies, installs and supports the equipment during the rental term. Service labour, preventive maintenance and parts cover are included, with filters and consumables excluded.
         </p>
 
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 mb-7">
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" style="width:3.5rem;height:3.5rem;flex-shrink:0;object-fit:contain;filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-snug">Service labour<br>included</span>
-            </div>
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" style="width:3.5rem;height:3.5rem;flex-shrink:0;object-fit:contain;filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-snug">Preventive Maintenance<br>included</span>
-            </div>
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/151.png" alt="" aria-hidden="true" style="width:3.5rem;height:3.5rem;flex-shrink:0;object-fit:contain;filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-snug">Parts<br>included</span>
-            </div>
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Service labour<br>included</span>
+            </span>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Preventive Maintenance<br>included</span>
+            </span>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="/images/icons/151.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Parts<br>included</span>
+            </span>
         </div>
 
         <div class="flex flex-wrap gap-3">

@@ -407,16 +407,16 @@
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 text-pretty">
             If the same machine keeps needing attention, Support &amp; Aftercare can use the service history to review whether a Preventive Maintenance Contract would help reduce repeat disruption, protect equipment value and plan the next step.
         </p>
-        <div class="flex items-center flex-wrap gap-x-8 gap-y-3 mb-7">
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
             @foreach([
                 ['icon' => 'ativo-8', 'src' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce repeat<br>breakdowns'],
-                ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'style' => 'transform:scale(0.84);', 'label' => 'Protect equipment<br>value'],
-                ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'style' => 'transform:scale(0.94);', 'label' => 'Planned maintenance<br>support'],
+                ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'label' => 'Protect equipment<br>value'],
+                ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'label' => 'Planned maintenance<br>support'],
             ] as $feat)
-            <div class="flex items-center gap-5">
-                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" class="h-14 w-auto object-contain" alt="">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
+            </span>
             @endforeach
         </div>
         <div class="flex flex-wrap gap-3">
@@ -473,42 +473,9 @@
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
-     ONE CONNECTED — Electrolux digital support strip
+     ONE CONNECTED — universal strip
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/stripOneconnected.png" alt="OnE Connected laundry dashboard"
-             class="w-full h-full object-cover" style="object-position: center center;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
-    </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Digital Support</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-            Digital insight for <span style="color:#148af4;">compatible Electrolux Professional&nbsp;equipment</span>
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-6 text-pretty">
-            For compatible Electrolux Professional equipment, OnE Connected provides digital insight into usage, performance and resource consumption. <span class="whitespace-nowrap">Irish Laundry Systems</span> can advise whether it suits the site and arrange supply and installation through its Electrolux Professional partnership.
-        </p>
-        <div class="flex items-center flex-wrap gap-x-8 gap-y-3 mb-7">
-            @foreach([
-                ['icon' => 'ativo-9',  'label' => 'Usage<br>insight'],
-                ['icon' => 'ativo-10', 'label' => 'Performance<br>visibility'],
-                ['icon' => 'ativo-11', 'label' => 'Resource<br>awareness'],
-            ] as $feat)
-            <div class="flex items-center gap-5">
-                <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
-            @endforeach
-        </div>
-        <div class="flex flex-wrap gap-3">
-            <a href="{{ route('equipment.category', 'one-connected') }}"
-               class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-                Ask About OnE Connected
-            </a>
-        </div>
-    </div>
-</section>
+@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected'])
 
 {{-- ════════════════════════════════════════════════════════════════════════
      RELATED SERVICES — 4 routes
@@ -811,17 +778,16 @@ $aftercareFaqs = [
             <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">
                 Share the equipment details, service history or parts requirement.<br class="hidden lg:block"> <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and advise on the appropriate support.
             </p>
-            <div class="mb-8 flex items-center flex-wrap lg:flex-nowrap gap-x-8 gap-y-3 reveal">
+            <div class="mb-8 flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 reveal">
                 @foreach([
                     ['icon' => 'ativo-8', 'label' => 'Organised<br>service history'],
                     ['icon' => 'ativo-4', 'label' => 'Clearer<br>next costs'],
                     ['icon' => 'ativo-7', 'label' => 'Support from people<br>who know the equipment'],
                 ] as $feat)
-                <div class="flex items-center gap-5">
-                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg"
-                         style="width:3.5rem;height:3.5rem;flex-shrink:0;" alt="">
-                    <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-                </div>
+                <span class="flex items-center gap-2 flex-shrink-0">
+                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" class="object-contain flex-shrink-0" style="width:3rem;height:3rem;" alt="">
+                    <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
+                </span>
                 @endforeach
             </div>
             <div class="flex flex-wrap items-center gap-4 reveal">

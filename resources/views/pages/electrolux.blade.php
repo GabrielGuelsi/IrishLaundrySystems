@@ -61,7 +61,7 @@
 
                 <p class="ep-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Authorised Electrolux Professional Partner</p>
 
-                <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
+                <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
                     Electrolux Professional strength,<br class="hidden lg:block"> delivered with <span class="text-[#148af4]">Irish engineering&nbsp;expertise</span>
                 </h1>
 
@@ -165,9 +165,9 @@
 
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Range</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
-                    <span class="block lg:whitespace-nowrap">Professional laundry equipment</span>
-                    <span class="block lg:whitespace-nowrap">across <span class="text-[#148af4]">washing, drying and finishing</span></span>
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                    <span class="sm:block lg:whitespace-nowrap">Professional laundry equipment</span>
+                    <span class="sm:block lg:whitespace-nowrap">across <span class="text-[#148af4]">washing, drying and finishing</span></span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8 lg:whitespace-nowrap">
                     Explore equipment for different capacities, sectors and specialist laundry applications.

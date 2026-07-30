@@ -209,11 +209,15 @@
     'headingLine1' => 'Keep maintenance planned',
     'headingLine2' => 'and equipment care organised',
     'body'         => 'Preventive servicing, clear records and parts support help teams manage equipment throughout its working life.',
-    'features'     => [
-        ['img' => '/images/icons/244.png', 'label' => 'Fewer Breakdowns', 'iconStyle' => 'transform:scale(1.039);'],
-        ['img' => '/images/icons/home-planning-spend.png', 'label' => 'Cost Control', 'iconStyle' => 'transform:scale(0.996) translateY(-3.6%);'],
-        ['img' => '/images/icons/151.png', 'label' => 'Parts Support', 'iconStyle' => 'transform:scale(0.851) translateY(-1.2%);'],
+    'miniPoints'   => [
+        ['icon' => '244', 'iconClass' => 'brightness-0 invert', 'label' => 'Fewer<br>Breakdowns'],
+        ['icon' => 'home-planning-spend', 'iconClass' => 'brightness-0 invert', 'label' => 'Cost<br>Control'],
+        ['icon' => '151', 'iconClass' => 'brightness-0 invert', 'label' => 'Parts<br>Support'],
     ],
+    'cta1Label'    => 'View Preventive Maintenance',
+    'cta1Route'    => 'service-contracts',
+    'cta2Label'    => 'Explore Aftercare',
+    'cta2Route'    => 'parts-aftercare',
 ])
 
 <!-- 8. FINAL CTA + SHORT FORM -->

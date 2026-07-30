@@ -389,18 +389,16 @@
         </p>
 
         {{-- 3 horizontal features — icon + label, matches the home strip --}}
-        <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-5 gap-y-3 lg:gap-0 mb-7">
+        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
             @foreach([
                 ['img' => '/images/icons/home-maintenance-costs.png',      'label' => 'Reduce<br>uncertainty'],
                 ['img' => '/images/icons/home-maintenance-value.png',      'label' => 'Protect daily<br>operation'],
                 ['img' => '/images/icons/home-maintenance-disruption.png', 'label' => 'Keep laundry<br>moving'],
             ] as $i => $feat)
-            @if($i > 0)
-            @endif
-            <div class="flex items-center gap-5">
-                <img src="{{ $feat['img'] }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;filter:brightness(0) invert(1);" alt="">
-                <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
-            </div>
+            <span class="flex items-center gap-2 flex-shrink-0">
+                <img src="{{ $feat['img'] }}" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);" alt="">
+                <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
+            </span>
             @endforeach
         </div>
 
