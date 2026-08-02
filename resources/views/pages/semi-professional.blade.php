@@ -17,12 +17,12 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     When domestic machines<br><span style="color:#148af4;">become the weak point</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
-                    <span class="block lg:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
-                    <span class="block lg:whitespace-nowrap">myPRO and myPROzip offer a stronger step up from standard domestic appliances.</span>
+                    <span class="sm:block lg:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
+                    <span class="sm:block lg:whitespace-nowrap">myPRO and myPROzip offer a stronger step up from standard domestic appliances.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -49,7 +49,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Built for <span style="color:#148af4;">regular business use</span>
                 </h2>
             </div>
@@ -77,7 +77,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Level Guide</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare the equipment level <span style="color:#148af4;">your site needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -123,12 +123,12 @@
         <div class="mb-10 reveal flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
             <div class="min-w-0">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO XL Highlight</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     A bigger step up for <span style="color:#148af4;">heavier daily laundry use</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    <span class="block lg:whitespace-nowrap">myPRO XL gives smaller businesses more capacity, durability and speed in a compact semi-professional setup,</span>
-                    <span class="block lg:whitespace-nowrap">helping handle larger loads without moving straight to full commercial laundry scale.</span>
+                    <span class="sm:block lg:whitespace-nowrap">myPRO XL gives smaller businesses more capacity, durability and speed in a compact semi-professional setup,</span>
+                    <span class="sm:block lg:whitespace-nowrap">helping handle larger loads without moving straight to full commercial laundry scale.</span>
                 </p>
             </div>
             <a href="{{ route('contact') }}"
@@ -170,7 +170,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Range Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare the myPRO options <span style="color:#148af4;">before choosing a setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -262,7 +262,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Range</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare myPRO options around <span style="color:#148af4;">capacity, cost and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -443,7 +443,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Not sure semi-professional is <span style="color:#148af4;">the right level?</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -505,7 +505,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for smaller sites with <span style="color:#148af4;">laundry to manage every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -566,7 +566,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support for semi-professional equipment <span style="color:#148af4;">beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -644,7 +644,7 @@
 
             <div class="lg:col-span-4 reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Owner Support</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                     Support resources for <span style="color:#148af4;">day-to-day use</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-7">

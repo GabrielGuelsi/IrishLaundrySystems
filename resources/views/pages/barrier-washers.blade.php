@@ -17,7 +17,7 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washers</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Keep dirty-side loading separate from<br><span style="color:#148af4;">clean-side unloading</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Plan barrier washer capacity around <span style="color:#148af4;">room layout and daily laundry demand</span>
                 </h2>
             </div>
@@ -69,7 +69,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose barrier washers around <span style="color:#148af4;">water, productivity and process control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -96,7 +96,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Technology</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology that supports<br><span style="color:#148af4;">hygiene control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -133,7 +133,7 @@
         {{-- Heading + intro (full width) --}}
         <div class="mb-10 lg:mb-16 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Reduce handling effort across <span style="color:#148af4;">daily loading and unloading</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -254,7 +254,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where Barrier Washers Fit</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for sites that need <span style="color:#148af4;">controlled separation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -294,12 +294,12 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             Plan the room around<br><span style="color:#011E41;">separation, access and connections</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            <span class="block lg:whitespace-nowrap">Barrier washers need room planning before installation, including dirty / clean separation,</span>
-            <span class="block lg:whitespace-nowrap">site access, wall opening, water supply, power and drainage.</span>
+            <span class="sm:block lg:whitespace-nowrap">Barrier washers need room planning before installation, including dirty / clean separation,</span>
+            <span class="sm:block lg:whitespace-nowrap">site access, wall opening, water supply, power and drainage.</span>
         </p>
         <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
@@ -336,7 +336,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Range</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse barrier washer models by<br><span style="color:#148af4;">product line and capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-[1400px]">
@@ -504,7 +504,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Wash Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Match detergent use to <span style="color:#148af4;">each barrier washer load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -666,7 +666,7 @@
     'image'        => '/images/pages/barrier-washers/equipmentrentalnewimagestrip.png',
     'mirror'       => true,
     'gradientStrength' => 0.55,
-    'headingSize'  => 'text-3xl sm:text-4xl lg:text-5xl',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
     'headingLine1' => 'Keep hygiene-critical laundry moving with<br>',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Where suitable, rental can support barrier washer replacement or added capacity without one large capital purchase, with service included under agreed terms.',
@@ -683,7 +683,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep barrier washer support clear <span style="color:#148af4;">throughout daily operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -737,7 +737,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Keep barrier washer aftercare<br><span style="color:#011E41;">clear and easier to manage</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
@@ -795,7 +795,7 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Barrier Washer Advice</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Discuss your barrier washer requirements<br>with <span style="color:#148af4;">our engineering team</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

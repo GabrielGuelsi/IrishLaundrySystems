@@ -22,7 +22,7 @@
         </div>
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request received</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">We'll be in touch shortly</h2>
+        <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">We'll be in touch shortly</h2>
         <p class="font-body text-gray-500 text-base leading-relaxed max-w-md mb-12">
             Your request has been sent. One of our engineers will review your details and confirm the next step with you.
         </p>
@@ -78,7 +78,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-[72px]">
         <div class="max-w-[640px] reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-[15px]">Contact</p>
-            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-[23px]">
+            <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-[23px]">
                 Request an Assessment
             </h1>
             <p class="font-body text-white/80 text-base leading-relaxed mb-[30px] max-w-[600px]">
@@ -113,7 +113,7 @@
 
                     {{-- Left: heading --}}
                     <div class="lg:col-span-3">
-                        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                             What to <span class="text-[#148af4]">include</span>
                         </h2>
                         <p class="font-body text-white/60 text-base leading-relaxed">

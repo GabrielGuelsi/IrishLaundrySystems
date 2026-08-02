@@ -100,7 +100,7 @@
 
         <div class="mb-12 lg:mb-14 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why the Partnership Matters</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 What the partnership brings to <span class="text-[#148af4]">your laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
@@ -220,7 +220,7 @@
 
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[62%]">
         <p class="font-body font-bold text-white/70 uppercase tracking-[0.22em] text-xs mb-3">Professional Laundry Heritage</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
             More than 120 years of<br class="hidden lg:block"> professional laundry innovation,<br class="hidden lg:block"> <span style="color:#011E41;">supported in Ireland since 1987</span>
         </h2>
         <p class="font-body text-white/90 text-base leading-relaxed mb-6 text-pretty max-w-xl">
@@ -256,7 +256,7 @@
 
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">From Electrolux Professional</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 <span class="">Trusted by Electrolux Professional <span style="color:#148af4;">since 1987</span></span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed">
@@ -303,7 +303,7 @@
 
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Talk to an Engineer</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Discuss Electrolux Professional equipment<br class="hidden lg:block"> with <span class="text-[#148af4]">our Irish engineering team</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">

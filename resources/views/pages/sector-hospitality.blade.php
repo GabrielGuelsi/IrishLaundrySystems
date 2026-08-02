@@ -14,9 +14,9 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry</p>
-                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="block">Commercial laundry equipment</span>
-                    <span class="block">for hospitality <span style="color:#148af4;">protecting guest</span></span>
+                <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                    <span class="sm:block">Commercial laundry equipment</span>
+                    <span class="sm:block">for hospitality <span style="color:#148af4;">protecting guest</span></span>
                     <span class="block" style="color:#148af4;">standards and daily service</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
@@ -42,9 +42,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="block">Plan hospitality laundry</span>
-                    <span class="block">around <span style="color:#148af4;">volume, space and</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="sm:block">Plan hospitality laundry</span>
+                    <span class="sm:block">around <span style="color:#148af4;">volume, space and</span></span>
                     <span class="block" style="color:#148af4;">operating requirements</span>
                 </h2>
             </div>
@@ -72,7 +72,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Control hospitality laundry costs while protecting <span style="color:#148af4;">guest standards</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -96,7 +96,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Plan hospitality laundry around <span style="color:#148af4;">room standards and service needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -165,7 +165,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep hospitality laundry running with <span style="color:#148af4;">support from call-out to aftercare</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -255,7 +255,7 @@
 
         <div class="mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Plan hospitality laundry equipment around <span style="color:#148af4;">capacity, textile care and finishing needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -268,7 +268,7 @@
             <!-- 1. COMMERCIAL WASHERS — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Commercial <strong>Washers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Commercial <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Commercial washers support bed linen, towels, robes, uniforms, guest items and food and beverage textiles where wash quality, capacity and repeatable results matter.
                     </p>
@@ -322,7 +322,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Tumble <strong>Dryers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
                         Tumble dryers support fast, controlled drying where residual moisture, energy use and room layout affect daily service.
                     </p>
@@ -364,7 +364,7 @@
             <div x-data="{ open: false, tab: 'diamms' }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Ironers &amp; <strong>Finishing</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Ironers &amp; <strong>Finishing</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Ironers and finishing equipment support flatwork presentation, table linen, bed linen standards and storage-ready results for hospitality environments.
                     </p>
@@ -478,7 +478,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong></h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">Barrier <strong>Washers</strong></h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         Barrier washers are a specialist option for hospitality sites that need controlled dirty-side loading and clean-side unloading.
                     </p>
@@ -525,7 +525,7 @@
         {{-- Section header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Protect <span style="color:#148af4;">textile quality</span> while reducing detergent waste
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -704,7 +704,7 @@
 <section class="py-14 lg:py-20 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
+        <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Prepare hospitality laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">

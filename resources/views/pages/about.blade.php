@@ -24,7 +24,7 @@
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">About Irish Laundry Systems</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-balance">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-balance">
                     Commercial laundry equipment and service expertise<br class="hidden lg:block"> <span class="text-[#148af4]">across Ireland since 1987</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
@@ -61,7 +61,7 @@
 
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Irish Laundry Systems</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Engineering knowledge that continues<br class="hidden lg:block"> <span class="text-[#148af4]">after installation</span>
                 </h2>
             </div>
@@ -84,7 +84,7 @@
 
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Experience & Scale</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                 Commercial laundry experience <span class="text-[#148af4]">backed by proven scale</span>
             </h2>
         </div>
@@ -104,7 +104,7 @@
                 </div>
                 @else
                 <div class="flex items-end gap-3 mb-3" style="min-height:6.5rem;">
-                    <div class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-none flex-shrink-0">{{ $num }}</div>
+                    <div class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-none flex-shrink-0">{{ $num }}</div>
                     @if($sub)<p class="font-body text-gray-400 text-xs uppercase tracking-widest pb-1">{{ $sub }}</p>@endif
                 </div>
                 @endif
@@ -136,7 +136,7 @@
             <!-- Content -->
             <div class="reveal">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Standards</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Professional standards<br class="hidden lg:block">from <span class="text-[#148af4]">planning<br class="hidden lg:block">through aftercare</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6 text-pretty">
@@ -194,7 +194,7 @@
         {{-- Header --}}
         <div class="max-w-4xl mx-auto text-center mb-8 lg:mb-6 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Overview</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 One complete support system around<br class="hidden lg:block"> <span class="text-[#148af4]">your laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
@@ -335,7 +335,7 @@
             {{-- Left: copy --}}
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Partnership</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Global Electrolux<br class="hidden lg:block">Professional scale<br class="hidden lg:block"> <span class="text-[#148af4]">with Irish expertise<br class="hidden lg:block">since 1987</span>
                 </h2>
                 <div class="space-y-5 mb-8">
@@ -410,7 +410,7 @@
 
         <div class="max-w-4xl mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Company History</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">

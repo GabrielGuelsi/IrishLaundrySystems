@@ -41,10 +41,10 @@
 
                 <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Irish Laundry Specialists</p>
 
-                <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-3xl sm:text-4xl lg:text-5xl">
-                    <span class="block">Commercial laundry equipment</span>
-                    <span class="block">and engineering expertise</span>
-                    <span class="block text-[#148af4]">to keep operations running</span>
+                <h1 class="hero-title font-heading font-bold text-white leading-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
+                    <span class="sm:block">Commercial laundry equipment</span>
+                    <span class="sm:block">and engineering expertise</span>
+                    <span class="sm:block text-[#148af4]">to keep operations running</span>
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -87,10 +87,10 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Built Around The Operation</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="block">Equipment decisions begin</span>
-                    <span class="block">with <span class="text-[#148af4]">the room, the workload</span></span>
-                    <span class="block text-[#148af4]">and the capacity needed</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                    <span class="sm:block">Equipment decisions begin</span>
+                    <span class="sm:block">with <span class="text-[#148af4]">the room, the workload</span></span>
+                    <span class="sm:block text-[#148af4]">and the capacity needed</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4">

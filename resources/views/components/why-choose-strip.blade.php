@@ -52,7 +52,7 @@
             // mirrored, the content sits against the page gutter and must line up with the page grid instead
             $miniIconShift = ($miniHasIcons && !$mirror) ? 'lg:-ml-6 xl:-ml-8' : '';
             // optional per-page override — longer two-line headings can pass a smaller lg size so each line fits
-            $headingSize = $headingSize ?? 'text-3xl sm:text-4xl lg:text-5xl';
+            $headingSize = $headingSize ?? 'text-2xl sm:text-4xl lg:text-5xl';
         @endphp
         @if ($eyebrow)
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3 {{ $miniIconShift }}">{{ $eyebrow }}</p>

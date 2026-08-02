@@ -16,7 +16,7 @@ $equipmentList = $equipment ?? [
         <div class="flex flex-col {{ $headerAlign }} justify-between gap-4 mb-10">
             <div>
                 <p class="font-body font-bold text-orange text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">{!! $heading !!}</h2>
                 @if($subheading)
                 <p class="font-body text-gray-500 text-base leading-relaxed mt-4 {{ $subheadingClass }}">{!! $subheading !!}</p>
                 @endif

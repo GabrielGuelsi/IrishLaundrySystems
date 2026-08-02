@@ -32,7 +32,7 @@
         @endif
 
         {{-- Heading --}}
-        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-3xl sm:text-4xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-4xl lg:text-5xl text-white">
             {!! $heading !!}
         </h2>
 

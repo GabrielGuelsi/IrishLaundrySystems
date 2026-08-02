@@ -41,7 +41,7 @@
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Services Overview</p>
 
-                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
+                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
                     Keep commercial laundry equipment <span class="text-[#148af4]">running with the right service&nbsp;support</span>
                 </h1>
 
@@ -78,7 +78,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Service support built around <span class="text-[#148af4]">uptime, cost control and equipment&nbsp;care</span>
                 </h2>
             </div>
@@ -247,12 +247,12 @@
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         <div class="text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Service Response</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Report the service need and <span class="text-[#148af4]">we'll take care of the&nbsp;response</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
-                <span class="block">Share the equipment details, site access and service history.</span>
-                <span class="block"><span>Irish Laundry Systems</span> will review the request, arrange the required service and keep the service record clear.</span>
+                <span class="sm:block">Share the equipment details, site access and service history.</span>
+                <span class="sm:block"><span>Irish Laundry Systems</span> will review the request, arrange the required service and keep the service record clear.</span>
             </p>
         </div>
     </div>
@@ -292,7 +292,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Installed Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Keep equipment already in use <span class="text-[#148af4]">service-ready</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
@@ -381,7 +381,7 @@
     {{-- LEFT: content — 60% width (matches home cta-combined-banner) --}}
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
-        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-3xl sm:text-4xl lg:text-5xl text-white">
+        <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-4xl lg:text-5xl text-white">
             Need service support for <span style="color:#011E41;">commercial laundry&nbsp;equipment?</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">

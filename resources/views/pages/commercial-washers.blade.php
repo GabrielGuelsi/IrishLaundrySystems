@@ -17,7 +17,7 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Washers</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     Choose washers that match <span style="color:#148af4;">your site, loads and running costs</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -48,7 +48,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Get the right washer for <span style="color:#148af4;">your room, workload and budget</span>
                 </h2>
             </div>
@@ -80,12 +80,12 @@
         {{-- Title + intro (original copy) --}}
         <div class="reveal mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl">
                 Look beyond the purchase price to see<br><span style="color:#148af4;">where washer costs really sit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                <span class="block">The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost.</span>
-                <span class="block">Electrolux Professional washer technologies are designed to reduce that cost and support lower long-term running costs.</span>
+                <span class="sm:block">The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost.</span>
+                <span class="sm:block">Electrolux Professional washer technologies are designed to reduce that cost and support lower long-term running costs.</span>
             </p>
         </div>
 
@@ -141,7 +141,7 @@
                 {{-- RIGHT column --}}
                 <div class="order-3 lg:order-3 flex flex-col gap-8">
                     <div>
-                        <div class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-none">10%</div>
+                        <div class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-none">10%</div>
                         <div class="font-body font-semibold text-navy text-sm mt-1">Up-front investment</div>
                     </div>
                     <div class="border border-dotted border-gray-400 rounded-lg p-6 lg:max-w-[280px]">
@@ -180,7 +180,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose washers around <span style="color:#148af4;">daily cost control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -207,12 +207,12 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Washer Technology</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Features that support <span style="color:#148af4;">capacity, control and daily handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                <span class="block">Selected Electrolux Professional washer features support load control, detergent accuracy, clearer operation,</span>
-                <span class="block">stronger extraction and easier daily handling when matched to the right laundry room.</span>
+                <span class="sm:block">Selected Electrolux Professional washer features support load control, detergent accuracy, clearer operation,</span>
+                <span class="sm:block">stronger extraction and easier daily handling when matched to the right laundry room.</span>
             </p>
         </div>
 
@@ -247,12 +247,12 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Build the washer setup around <span style="color:#011E41;">room, access and daily demand</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            <span class="block lg:whitespace-nowrap">Irish Laundry Systems reviews room layout, utilities, access and expected laundry volume</span>
-            <span class="block lg:whitespace-nowrap">before recommending washer capacity and installation approach.</span>
+            <span class="sm:block lg:whitespace-nowrap">Irish Laundry Systems reviews room layout, utilities, access and expected laundry volume</span>
+            <span class="sm:block lg:whitespace-nowrap">before recommending washer capacity and installation approach.</span>
         </p>
         <div class="flex items-center flex-wrap lg:flex-nowrap gap-x-4 gap-y-3 mb-7">
             @foreach([
@@ -279,7 +279,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Washer Range Starting Points</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Start with the washer option for <span style="color:#148af4;">your daily demand</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -411,7 +411,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Washer Range</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare washer options around <span style="color:#148af4;">capacity, cost and support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -598,12 +598,12 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Cut detergent waste with <span style="color:#148af4;">smarter dosing and wash control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                <span class="block lg:whitespace-nowrap">Automatic dosing supports commercial laundry rooms by using the right amount of detergent for each cycle.</span>
-                <span class="block lg:whitespace-nowrap">That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.</span>
+                <span class="sm:block lg:whitespace-nowrap">Automatic dosing supports commercial laundry rooms by using the right amount of detergent for each cycle.</span>
+                <span class="sm:block lg:whitespace-nowrap">That can reduce waste, lower chemical overuse, protect textile quality and support more consistent wash results over time.</span>
             </p>
         </div>
 
@@ -769,12 +769,12 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Washer Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep washer performance supported<br><span style="color:#148af4;">after the first decision</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block lg:whitespace-nowrap">Commercial washer performance depends on more than the first installation. Irish Laundry Systems connects equipment access,</span>
-                <span class="block lg:whitespace-nowrap">planned maintenance, repairs and aftercare around the way the laundry room operates.</span>
+                <span class="sm:block lg:whitespace-nowrap">Commercial washer performance depends on more than the first installation. Irish Laundry Systems connects equipment access,</span>
+                <span class="sm:block lg:whitespace-nowrap">planned maintenance, repairs and aftercare around the way the laundry room operates.</span>
             </p>
         </div>
 
@@ -852,12 +852,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Keep washer support organised <span style="color:#011E41;">after installation</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5">
-                    <span class="block lg:whitespace-nowrap">Once equipment is installed, Irish Laundry Systems keeps maintenance planning,</span>
-                    <span class="block lg:whitespace-nowrap">service history and parts details organised so future support is easier to manage.</span>
+                    <span class="sm:block lg:whitespace-nowrap">Once equipment is installed, Irish Laundry Systems keeps maintenance planning,</span>
+                    <span class="sm:block lg:whitespace-nowrap">service history and parts details organised so future support is easier to manage.</span>
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
@@ -886,7 +886,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted support behind <span style="color:#148af4;">commercial laundry decisions</span>',
     'subheadingClass' => 'mx-auto',
-    'subheading' => '<span class="block lg:whitespace-nowrap">Commercial washer choices affect cost, workflow, staff routines and daily output.</span><span class="block lg:whitespace-nowrap">Irish Laundry Systems is trusted by organisations that need clear communication, responsive support and equipment knowledge after the equipment is on site.</span>',
+    'subheading' => '<span class="sm:block lg:whitespace-nowrap">Commercial washer choices affect cost, workflow, staff routines and daily output.</span><span class="sm:block lg:whitespace-nowrap">Irish Laundry Systems is trusted by organisations that need clear communication, responsive support and equipment knowledge after the equipment is on site.</span>',
     'subheadingClass' => 'max-w-5xl mx-auto',
 ])
 
@@ -914,7 +914,7 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Advice</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Need the right washer for <span style="color:#148af4;">your laundry room?</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
