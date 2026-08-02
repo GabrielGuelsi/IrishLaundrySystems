@@ -9,7 +9,7 @@
 <section class="bg-navy py-16 lg:py-20">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-2xl">
-            <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">Privacy Policy</h1>
+            <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">Privacy Policy</h1>
             <p class="font-body text-white/80 text-base leading-relaxed">How Irish Laundry Systems collects, uses and protects your personal data.</p>
         </div>
     </div>

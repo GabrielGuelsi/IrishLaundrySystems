@@ -168,7 +168,7 @@
 
                 <p class="pa-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Support &amp; Aftercare</p>
 
-                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
+                <h1 class="pa-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
                     Keep your laundry operation moving<br class="hidden lg:block"> with <span class="text-[#148af4]">long-term equipment&nbsp;care</span>
                 </h1>
 
@@ -207,7 +207,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     We take care of your equipment, so <span class="text-[#148af4]">your laundry operation can keep&nbsp;moving</span>
                 </h2>
             </div>
@@ -236,7 +236,7 @@
 
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Aftercare Coverage</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Support &amp; Aftercare for <span class="text-[#148af4]">equipment already in use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
@@ -303,7 +303,7 @@
         <div class="max-w-3xl mx-auto reveal">
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Parts Support</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     The right part starts with <span class="text-[#148af4]">accurate equipment&nbsp;details</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
@@ -336,7 +336,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Aftercare Works</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             Tell us what needs attention and <span class="text-[#148af4]">we&rsquo;ll arrange the&nbsp;follow-up</span>
         </h2>
         <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
@@ -401,7 +401,7 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">When Follow-Up Becomes a Pattern</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
             Repeated issues may need <span style="color:#148af4;">planned care</span>, not another isolated decision
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 text-pretty">
@@ -444,7 +444,7 @@
 
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">When Aftercare Matters</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 For the moments that shape <span class="text-[#148af4]">future equipment&nbsp;decisions</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
@@ -555,7 +555,7 @@ $aftercareFaqs = [
 
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Support &amp; Aftercare</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                 Need aftercare for<br class="hidden lg:block"> <span class="text-[#148af4]">commercial laundry&nbsp;equipment?</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
@@ -772,7 +772,7 @@ $aftercareFaqs = [
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:360px;">
         <div class="lg:max-w-[55%]">
             <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-4 reveal">Support &amp; Aftercare</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal">
+            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal">
                 Speak to Irish Laundry Systems<br class="hidden lg:block"> about <span class="text-navy">equipment care<br class="hidden lg:block"> and&nbsp;aftercare</span>
             </h2>
             <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">

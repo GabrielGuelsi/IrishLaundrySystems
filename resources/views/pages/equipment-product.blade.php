@@ -20,7 +20,7 @@
             {{-- Left: title / model / description / actions --}}
             <div class="order-2 lg:order-1 lg:pl-4">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $item->title ?? $product }}</p>
-                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
+                <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">{{ $product }}</h1>
                 <p class="font-body text-navy/70 text-base leading-relaxed mb-8 max-w-md">{{ $summary }}</p>
 
                 <div class="flex flex-wrap items-center gap-3">
@@ -56,7 +56,7 @@
 
             {{-- Specifications --}}
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-6">Specifications</h2>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl mb-6">Specifications</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
                     @foreach($specs as $groupName => $rows)
                     <div>
@@ -82,7 +82,7 @@
 
             {{-- Documents --}}
             <div>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-6">Documents</h2>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl mb-6">Documents</h2>
                 <div class="divide-y divide-gray-200 border-t border-gray-200">
                     @php
                         $documents = $documents ?? [];
@@ -165,7 +165,7 @@
     <div class="max-w-5xl mx-auto px-6 sm:px-10">
 
         {{-- Request form --}}
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl text-center text-balance mb-10">Complete the form below to request more information</h2>
+        <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl text-center text-balance mb-10">Complete the form below to request more information</h2>
 
         <div class="max-w-2xl mx-auto">
             <div class="space-y-5">

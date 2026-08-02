@@ -46,7 +46,7 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 720px;">
                 <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
-                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
+                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
                     Rent the laundry equipment your site needs with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
                 </h1>
                 <p class="rn-hero-desc font-body text-blue-200 text-base leading-relaxed mb-10 max-w-2xl text-pretty">
@@ -76,7 +76,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Keep capital available while <span class="text-[#148af4]">your laundry stays&nbsp;equipped</span>
                 </h2>
             </div>
@@ -98,7 +98,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">Rental Benefits</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
+            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 Lower upfront cost, included support and <span class="text-[#148af4]">more peace of&nbsp;mind</span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
@@ -156,7 +156,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-6xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">What's Included</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 See what is covered under <span class="text-[#148af4]">the rental&nbsp;agreement</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
@@ -214,7 +214,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Compare Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
@@ -318,7 +318,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Where Rental Fits</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5">
                 Rental for sites that want equipment access<br class="hidden lg:block"> with <span class="text-[#148af4]">support built&nbsp;in</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
@@ -414,7 +414,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Confirm the rental setup fits <span class="text-[#148af4]">your site before it&nbsp;begins</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mt-5 text-pretty">
@@ -463,7 +463,7 @@
 
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">During the Agreement</p>
 
-        <h2 class="font-heading font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             <span style="color:#ffffff;">We supply, install and</span><br class="hidden sm:block"> <span style="color:#011E41;">take care of&nbsp;it</span>
         </h2>
 
@@ -555,7 +555,7 @@ $rentalFaqs = [
             {{-- Left: heading + contact --}}
             <div class="lg:col-span-5 reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Request a Quote</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Ready to discuss <span class="text-[#148af4]">rental or lease&nbsp;options</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-8 text-pretty">

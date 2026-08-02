@@ -17,7 +17,7 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     Use connected laundry data to improve <span style="color:#148af4;">performance, control and compliance</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-7 max-w-2xl">
@@ -47,7 +47,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Connected Laundry Intelligence</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Turn equipment data into <span style="color:#148af4;">better laundry decisions</span>
                 </h2>
             </div>
@@ -70,7 +70,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Business Value</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Use connected laundry data to improve <span style="color:#148af4;">performance and cost control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -113,7 +113,7 @@
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-12 lg:mb-16">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">One Dashboard</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                     See the signals that help you <span style="color:#148af4;">control laundry performance</span>
                 </h2>
                 <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
@@ -154,7 +154,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Consumption Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Focus on the resources that affect <span style="color:#148af4;">cost and waste every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -218,12 +218,12 @@
     <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 lg:mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Portfolio Compatibility</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Connect your laundry equipment<br>in <span style="color:#148af4;">one digital ecosystem</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="block xl:whitespace-nowrap">Across washing, drying and ironing, OnE Connected is available for selected Electrolux Professional equipment.</span>
-                <span class="block xl:whitespace-nowrap">Irish Laundry Systems can review the model, controls and connection requirements before a recommendation is made.</span>
+                <span class="sm:block xl:whitespace-nowrap">Across washing, drying and ironing, OnE Connected is available for selected Electrolux Professional equipment.</span>
+                <span class="sm:block xl:whitespace-nowrap">Irish Laundry Systems can review the model, controls and connection requirements before a recommendation is made.</span>
             </p>
         </div>
 
@@ -341,7 +341,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Getting Started</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Start OnE Connected with <span style="color:#148af4;">a clear, secure setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed [@media(min-width:1425px)]:whitespace-nowrap">
@@ -376,7 +376,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Official Resources</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Find out how OnE Connected can work <span style="color:#148af4;">for your laundry</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">

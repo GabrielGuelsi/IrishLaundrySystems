@@ -17,8 +17,8 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block">Commercial ironers for <span style="color:#148af4;">consistent</span></span>
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                    <span class="sm:block">Commercial ironers for <span style="color:#148af4;">consistent</span></span>
                     <span class="block" style="color:#148af4;">flatwork finishing and easier handling</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
@@ -49,8 +49,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="block">Plan the ironing setup for</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="sm:block">Plan the ironing setup for</span>
                     <span class="block" style="color:#148af4;">your flatwork, volume and available space</span>
                 </h2>
             </div>
@@ -71,7 +71,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironing &amp; Finishing Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Select the equipment category for <span style="color:#148af4;">the items your site needs to finish</span>
             </h2>
         </div>
@@ -108,7 +108,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Review the factors that shape <span style="color:#148af4;">ironing cost, output and handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -135,7 +135,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology that supports <span style="color:#148af4;">controlled ironing performance</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -171,7 +171,7 @@
 
         <div class="mb-10 lg:mb-12 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Layout</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Front or rear delivery for <span style="color:#148af4;">room layout and collection</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -262,9 +262,9 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-            <span class="block">Plan the complete ironer</span>
-            <span class="block">setup around <span style="color:#011E41;">your space</span></span>
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            <span class="sm:block">Plan the complete ironer</span>
+            <span class="sm:block">setup around <span style="color:#011E41;">your space</span></span>
             <span class="block" style="color:#011E41;">and daily demand</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
@@ -298,7 +298,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Range Finder</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse ironer ranges for <span style="color:#148af4;">your flatwork operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -454,14 +454,14 @@
         <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-8 lg:gap-16 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                    <span class="block">Finishing equipment for</span>
-                    <span class="block">garments, <span style="color:#148af4;">uniforms</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                    <span class="sm:block">Finishing equipment for</span>
+                    <span class="sm:block">garments, <span style="color:#148af4;">uniforms</span></span>
                     <span class="block" style="color:#148af4;">and shaped items</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-6">
-                    <span class="block lg:whitespace-nowrap">Explore ironing tables, presses and automated finishing options</span>
-                    <span class="block">for different production volumes.</span>
+                    <span class="sm:block lg:whitespace-nowrap">Explore ironing tables, presses and automated finishing options</span>
+                    <span class="sm:block">for different production volumes.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">
                     <a href="{{ route('equipment.category', 'finishing-equipment') }}"
@@ -506,7 +506,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Commercial ironer support from <span style="color:#148af4;">repair through to aftercare</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -610,8 +610,8 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Ironer Advice</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
-            <span class="block">Discuss commercial ironer requirements for</span>
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
+            <span class="sm:block">Discuss commercial ironer requirements for</span>
             <span class="block" style="color:#148af4;">your flatwork, volume and available space</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

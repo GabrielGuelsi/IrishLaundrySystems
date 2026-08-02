@@ -17,9 +17,9 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Tumble Dryers</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="block">Choose commercial tumble dryers</span>
-                    <span class="block">to balance <span style="color:#148af4;">daily demand</span></span>
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                    <span class="sm:block">Choose commercial tumble dryers</span>
+                    <span class="sm:block">to balance <span style="color:#148af4;">daily demand</span></span>
                     <span class="block" style="color:#148af4;">and energy use</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-3xl text-pretty">
@@ -50,8 +50,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="block">Plan dryer capacity around</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="sm:block">Plan dryer capacity around</span>
                     <span class="block" style="color:#148af4;">space, ventilation and</span>
                     <span class="block" style="color:#148af4;">daily demand</span>
                 </h2>
@@ -73,7 +73,7 @@
         {{-- Full-width heading + intro so the title and body both sit wide, above the panels --}}
         <div class="reveal reveal-left mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Cut drying energy use with <span style="color:#148af4;">heat pump dryer technology</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -154,7 +154,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Control dryer costs across <span style="color:#148af4;">energy, output and upfront spend</span>
             </h2>
         </div>
@@ -178,7 +178,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Technology</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Dryer features that support <span style="color:#148af4;">fabric care and easier daily use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -215,7 +215,7 @@
         {{-- Heading + intro (full width) --}}
         <div class="mb-12 lg:mb-16 reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Operator Comfort</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Reduce effort across <span style="color:#148af4;">loading, unloading and cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -313,7 +313,7 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan the dryer setup around<br><span style="color:#011E41;">space, ventilation and access</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
@@ -344,7 +344,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Options</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose the dryer range for <span style="color:#148af4;">your site and level of use</span>
             </h2>
         </div>
@@ -473,8 +473,8 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="block">Browse commercial dryer models by</span><span class="block" style="color:#148af4;">capacity and dryer type</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                <span class="sm:block">Browse commercial dryer models by</span><span class="block" style="color:#148af4;">capacity and dryer type</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Use the filters to narrow the range, then view each model for full product details.
@@ -642,7 +642,7 @@
 {{-- 12c. RENTAL / CAPITAL STRIP (moved below dosing) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
-    'headingSize'  => 'text-3xl sm:text-4xl lg:text-5xl',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
     'headingLine1' => 'Replace or add dryer capacity with<br>',
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Where suitable, Equipment Rental can support dryer replacement or added capacity, with service included under agreed rental terms.',
@@ -659,7 +659,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support options for <span style="color:#148af4;">commercial dryers in daily use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -741,7 +741,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     Make future dryer servicing easier with<br><span style="color:#011E41;">clear equipment records</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
@@ -798,7 +798,7 @@
 <section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Dryer Advice</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
             Discuss your commercial dryer requirements<br>with <span style="color:#148af4;">our engineering team</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">

@@ -17,14 +17,14 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
-                <h1 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    <span class="block">Professional wet cleaning</span>
-                    <span class="block">for <span style="color:#148af4;">delicate garments</span></span>
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
+                    <span class="sm:block">Professional wet cleaning</span>
+                    <span class="sm:block">for <span style="color:#148af4;">delicate garments</span></span>
                     <span class="block" style="color:#148af4;">and specialist textiles</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
-                    <span class="block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Lagoon Advanced Care for</span>
-                    <span class="block lg:whitespace-nowrap">dry cleaners and garment care businesses moving beyond traditional solvent-based cleaning.</span>
+                    <span class="sm:block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Lagoon Advanced Care for</span>
+                    <span class="sm:block lg:whitespace-nowrap">dry cleaners and garment care businesses moving beyond traditional solvent-based cleaning.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -51,9 +51,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="block">Professional wet cleaning</span>
-                    <span class="block">for <span style="color:#148af4;">delicate garments</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="sm:block">Professional wet cleaning</span>
+                    <span class="sm:block">for <span style="color:#148af4;">delicate garments</span></span>
                     <span class="block" style="color:#148af4;">and specialist textiles</span>
                 </h2>
             </div>
@@ -84,7 +84,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Business Case</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Build a stronger garment care offer with <span style="color:#148af4;">fast, solvent-free wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -129,7 +129,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial &amp; Operational Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Faster wet cleaning with <span style="color:#148af4;">more daily capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -153,7 +153,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built around <span style="color:#148af4;">controlled textile care</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -189,7 +189,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Certified Textile Care</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Smart care, <span style="color:#148af4;">certified results</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -227,7 +227,7 @@
 
             <div class="lg:col-span-5 reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Lagoon Process</p>
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                     See how garments move through <span style="color:#148af4;">a faster wet cleaning process</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -265,7 +265,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Complete Wet Cleaning Setup</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Build the setup around <span style="color:#148af4;">washing, drying, detergents and finishing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -340,7 +340,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Capacity Planning</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Plan the Lagoon setup around<br><span style="color:#148af4;">daily volume and available space</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -396,7 +396,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for businesses handling <span style="color:#148af4;">specialist garments and fabrics</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -491,7 +491,7 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">System Planning</p>
-        <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
             Plan wet cleaning around <span style="color:#011E41;">garment volume, room fit and finishing</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
@@ -522,7 +522,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Smart Detergents &amp; Prespotting</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Dedicated products for <span style="color:#148af4;">every stage of wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -576,7 +576,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep wet cleaning <span style="color:#148af4;">consistent from load to load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -741,7 +741,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Serenity Cabinet Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Add sanitising support <span style="color:#148af4;">before garments return to customers</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -825,7 +825,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Wet cleaning support from <span style="color:#148af4;">installation to aftercare</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
@@ -922,7 +922,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Other Laundry Needs</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore equipment beyond <span style="color:#148af4;">wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
@@ -979,7 +979,7 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'wet_cleaning_cta',
     'eyebrow'    => 'Request Wet Cleaning Advice',
-    'heading'     => '<span class="block">Ready to build a <span style="color:#148af4;">professional</span></span><span class="block" style="color:#148af4;">wet cleaning service?</span>',
+    'heading'     => '<span class="sm:block">Ready to build a <span style="color:#148af4;">professional</span></span><span class="block" style="color:#148af4;">wet cleaning service?</span>',
     'headingSize' => 'text-3xl sm:text-4xl lg:text-[1.9rem] xl:text-[2.45rem] 2xl:text-[2.9rem]',
     'body'       => 'Tell Irish Laundry Systems what garments you handle, daily volume and the services you want to offer. Irish Laundry Systems reviews the washer, dryer, detergents, finishing, installation, rental where suitable, maintenance and aftercare around your site.',
     'formTitle'  => 'Request Wet Cleaning Equipment Advice',

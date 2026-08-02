@@ -10,7 +10,7 @@
     'messageLabel'      => 'Message / Requirement',
     'messageRequired'   => false,
     'requestTypeLabel'  => 'Request Type',
-    'headingSize'       => 'text-3xl sm:text-4xl lg:text-5xl',
+    'headingSize'       => 'text-2xl sm:text-4xl lg:text-5xl',
 ])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">

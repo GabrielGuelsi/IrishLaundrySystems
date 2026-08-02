@@ -14,9 +14,9 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-3xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry</p>
-                <h1 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="block">Care facility laundry</span>
-                    <span class="block">designed for resident care,</span>
+                <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                    <span class="sm:block">Care facility laundry</span>
+                    <span class="sm:block">designed for resident care,</span>
                     <span class="block" style="color:#148af4;">hygiene and daily efficiency</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
@@ -43,8 +43,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-snug text-balance">
-                    <span class="block">The right approach for</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-snug text-balance">
+                    <span class="sm:block">The right approach for</span>
                     <span class="block" style="color:#148af4;">each care environment</span>
                 </h2>
             </div>
@@ -72,7 +72,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Separation</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Greater separation for care facilities <span style="color:#148af4;">with higher hygiene requirements</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
@@ -119,7 +119,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 <span class="">Control care facility <span style="color:#148af4;">laundry costs</span></span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -143,7 +143,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology designed for <span style="color:#148af4;">clearer control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -213,7 +213,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support for the laundry equipment <span style="color:#148af4;">your care team depends on</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -308,7 +308,7 @@
 
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose the equipment mix for <span style="color:#148af4;">your care facility&rsquo;s daily demand</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -321,7 +321,7 @@
             <!-- 1. COMMERCIAL WASHERS — text left, image right -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-3">Commercial Washers</h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl mb-3">Commercial Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         For resident clothing, bedding, towels and staff items that need consistent wash results and dosing control.
                     </p>
@@ -375,7 +375,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-3">Tumble Dryers</h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl mb-3">Tumble Dryers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         For controlled drying, lower energy use and moisture control after washing.
                     </p>
@@ -436,7 +436,7 @@
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal lg:pl-[10%]">
                 <div class="order-2 lg:order-1 lg:pt-10">
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-3">Vacuum Ironing Tables</h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl mb-3">Vacuum Ironing Tables</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         For moisture control, consistent finishing and textiles ready for storage or use.
                     </p>
@@ -525,7 +525,7 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl mb-3">Barrier Washers</h3>
+                    <h3 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl mb-3">Barrier Washers</h3>
                     <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                         For larger care settings or sites that need dirty-side loading, clean-side unloading and stronger separation control.
                     </p>
@@ -635,7 +635,7 @@
         {{-- Section header --}}
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Control detergent use and <span style="color:#148af4;">wash consistency</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
@@ -812,7 +812,7 @@
     <div class="max-w-screen-xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
+        <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             From site review to <span style="color:#148af4;">supported installation</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">

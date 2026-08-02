@@ -36,7 +36,7 @@
 
                 <p class="eq-hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Equipment Guidance</p>
 
-                <h1 class="eq-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-3xl sm:text-4xl lg:text-5xl text-balance">
+                <h1 class="eq-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
                     Commercial laundry equipment<br class="hidden lg:block"> <span class="text-[#148af4]">supplied, installed and&nbsp;supported</span>
                 </h1>
 
@@ -72,7 +72,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     A better equipment fit can mean <span style="color:#148af4;">less waste,</span> less pressure and <span style="color:#148af4;">smoother laundry flow</span>
                 </h2>
             </div>
@@ -103,12 +103,12 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Lines</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore equipment lines built for <span style="color:#148af4;">different laundry needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-none">
-                <span class="block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
-                <span class="block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
+                <span class="sm:block">The available Electrolux Professional range includes options for high-use laundry rooms, smaller professional sites and specialist textile care.</span>
+                <span class="sm:block">Irish Laundry Systems helps match the right option to the site and the next step.</span>
             </p>
         </div>
     </div>
@@ -207,7 +207,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Highlighted Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment options <span style="color:#148af4;">worth a closer look</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -315,7 +315,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Categories</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -410,9 +410,9 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 lg:py-16 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Equipment Access</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4">
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">Choose whether to</span>
-            <span class="text-3xl sm:text-4xl lg:text-5xl whitespace-nowrap" style="color:#011E41;">purchase or rent</span>
-            <span class="text-white text-3xl sm:text-4xl lg:text-5xl">equipment</span>
+            <span class="text-white text-2xl sm:text-4xl lg:text-5xl">Choose whether to</span>
+            <span class="text-2xl sm:text-4xl lg:text-5xl whitespace-nowrap" style="color:#011E41;">purchase or rent</span>
+            <span class="text-white text-2xl sm:text-4xl lg:text-5xl">equipment</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-2xl">
             Whether the right decision is purchase or rental, Irish Laundry Systems can guide your site toward the equipment option that fits the room, workload, budget and support needs.
@@ -447,7 +447,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
                 Prepare new laundry equipment for <span style="color:#148af4;">daily use with less disruption</span>
             </h2>
             <p class="font-body text-gray-500 text-base mb-2 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
@@ -486,7 +486,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep the <span style="color:#148af4;">next support step clear</span> after installation
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -568,7 +568,7 @@
 
         <div class="text-center mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Fit</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Match equipment to the way <span style="color:#148af4;">each laundry room works</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">
