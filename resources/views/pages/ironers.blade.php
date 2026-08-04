@@ -19,7 +19,7 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial ironers for <span style="color:#148af4;">consistent</span></span>
-                    <span class="block" style="color:#148af4;">flatwork finishing and easier handling</span>
+                    <span class="sm:block" style="color:#148af4;">flatwork finishing and easier handling</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional ironers for sheets, table linen and other flatwork.
@@ -51,7 +51,7 @@
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Plan the ironing setup for</span>
-                    <span class="block" style="color:#148af4;">your flatwork, volume and available space</span>
+                    <span class="sm:block" style="color:#148af4;">your flatwork, volume and available space</span>
                 </h2>
             </div>
 
@@ -265,7 +265,7 @@
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             <span class="sm:block">Plan the complete ironer</span>
             <span class="sm:block">setup around <span style="color:#011E41;">your space</span></span>
-            <span class="block" style="color:#011E41;">and daily demand</span>
+            <span class="sm:block" style="color:#011E41;">and daily demand</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             ILS reviews working width, heating, access and output needs before recommending the right ironer and installation approach.
@@ -457,7 +457,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                     <span class="sm:block">Finishing equipment for</span>
                     <span class="sm:block">garments, <span style="color:#148af4;">uniforms</span></span>
-                    <span class="block" style="color:#148af4;">and shaped items</span>
+                    <span class="sm:block" style="color:#148af4;">and shaped items</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-6">
                     <span class="sm:block lg:whitespace-nowrap">Explore ironing tables, presses and automated finishing options</span>
@@ -612,7 +612,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Ironer Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
             <span class="sm:block">Discuss commercial ironer requirements for</span>
-            <span class="block" style="color:#148af4;">your flatwork, volume and available space</span>
+            <span class="sm:block" style="color:#148af4;">your flatwork, volume and available space</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Tell us what you process, the expected daily volume and the space available. Irish Laundry Systems will review the requirements and advise on suitable ironer options.

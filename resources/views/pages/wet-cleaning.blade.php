@@ -20,7 +20,7 @@
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                     <span class="sm:block">Professional wet cleaning</span>
                     <span class="sm:block">for <span style="color:#148af4;">delicate garments</span></span>
-                    <span class="block" style="color:#148af4;">and specialist textiles</span>
+                    <span class="sm:block" style="color:#148af4;">and specialist textiles</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     <span class="sm:block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Lagoon Advanced Care for</span>
@@ -54,7 +54,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Professional wet cleaning</span>
                     <span class="sm:block">for <span style="color:#148af4;">delicate garments</span></span>
-                    <span class="block" style="color:#148af4;">and specialist textiles</span>
+                    <span class="sm:block" style="color:#148af4;">and specialist textiles</span>
                 </h2>
             </div>
 
@@ -341,7 +341,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Capacity Planning</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Plan the Lagoon setup around<br><span style="color:#148af4;">daily volume and available space</span>
+                Plan the Lagoon setup around <br class="hidden sm:block"><span style="color:#148af4;">daily volume and available space</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Match the washer, dryer, finishing equipment and optional cabinet support to your expected items per day.
@@ -979,7 +979,7 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'wet_cleaning_cta',
     'eyebrow'    => 'Request Wet Cleaning Advice',
-    'heading'     => '<span class="sm:block">Ready to build a <span style="color:#148af4;">professional</span></span><span class="block" style="color:#148af4;">wet cleaning service?</span>',
+    'heading'     => '<span class="sm:block">Ready to build a <span style="color:#148af4;">professional</span></span> <span class="sm:block" style="color:#148af4;">wet cleaning service?</span>',
     'headingSize' => 'text-3xl sm:text-4xl lg:text-[1.9rem] xl:text-[2.45rem] 2xl:text-[2.9rem]',
     'body'       => 'Tell Irish Laundry Systems what garments you handle, daily volume and the services you want to offer. Irish Laundry Systems reviews the washer, dryer, detergents, finishing, installation, rental where suitable, maintenance and aftercare around your site.',
     'formTitle'  => 'Request Wet Cleaning Equipment Advice',

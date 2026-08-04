@@ -223,7 +223,7 @@
      3. COMMERCIAL INTRO / WHY PREVENTIVE MAINTENANCE CONTRACTS MATTER
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
             Planned Equipment Care
         </p>
@@ -262,7 +262,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl lg:max-w-5xl mx-auto text-center mb-10 lg:mb-12">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">What You Gain</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal">What You Gain</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 More control, fewer surprises and <span class="text-[#148af4]">peace of&nbsp;mind</span>
             </h2>
@@ -427,7 +427,7 @@
     {{-- Decorative ambient blur --}}
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] rounded-full pointer-events-none" style="background: radial-gradient(circle, rgba(20,138,244,0.06) 0%, transparent 60%);" aria-hidden="true"></div>
 
-    <div class="max-w-7xl mx-auto px-6 sm:px-10 lg:px-20 relative">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 relative">
 
         {{-- Centered header — 2-line title --}}
         <div class="max-w-none mx-auto text-center mb-10 lg:mb-12">
@@ -537,7 +537,7 @@
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto reveal">
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
-                <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Planned Maintenance Value</p>
+                <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Planned Maintenance Value</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Keep essential laundry equipment running with <span class="text-steel">less&nbsp;downtime</span>
                 </h2>
@@ -570,7 +570,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="w-full overflow-hidden pb-16 lg:pb-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
-        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Preventive Visits</p>
+        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Preventive Visits</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight reveal" style="transition-delay:80ms;">
             How preventive visits create <span class="text-steel">clearer next&nbsp;steps</span>
         </h2>
@@ -629,7 +629,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 text-center">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4 reveal">Sector Support</p>
+            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Sector Support</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 Planned maintenance for <span class="text-steel">different site&nbsp;demands</span>
             </h2>
@@ -725,7 +725,7 @@
 <section class="pt-16 lg:pt-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mx-auto text-center reveal">
-            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Customer Proof</p>
+            <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Customer Proof</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance max-w-3xl mx-auto">
                 Trusted by teams that need <span class="text-steel">equipment to keep&nbsp;running</span>
             </h2>
@@ -808,7 +808,7 @@ $faqs = [
 
     <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 lg:px-16 py-12 lg:py-16 max-w-full lg:max-w-[70%]">
 
-        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">After the Visit</p>
+        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">After the Visit</p>
 
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[1.8rem] xl:text-[2.35rem] 2xl:text-[2.9rem] leading-tight mb-5">
             <span class="sm:block">Receive a service report after every visit</span>
@@ -865,7 +865,7 @@ $faqs = [
                 {{-- Left: heading + bullets + photo --}}
                 <div class="relative lg:col-span-2 p-8 lg:p-12 flex flex-col gap-6 overflow-hidden">
                     <div>
-                        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-4">Book a Preventive Maintenance Visit</p>
+                        <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Book a Preventive Maintenance Visit</p>
                         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                             Protect your laundry operation with <span class="text-steel">planned maintenance&nbsp;support</span>
                         </h2>

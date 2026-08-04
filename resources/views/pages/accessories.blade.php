@@ -20,7 +20,7 @@
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Efficient detergent dosing</span>
                     <span class="sm:block">and laundry room essentials</span>
-                    <span class="block" style="color:#148af4;">for better control</span>
+                    <span class="sm:block" style="color:#148af4;">for better control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     From automatic dosing and certified detergents to safe storage and practical accessories, choose what suits your equipment, textiles and wash requirements.

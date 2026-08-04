@@ -80,8 +80,8 @@
         {{-- Title + intro (original copy) --}}
         <div class="reveal mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl">
-                Look beyond the purchase price to see<br><span style="color:#148af4;">where washer costs really sit</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 max-w-5xl text-balance">
+                Look beyond the purchase price to see <br class="hidden sm:block"><span style="color:#148af4;">where washer costs really sit</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 <span class="sm:block">The upfront cost is only one part of a commercial washer decision. Over the life of the equipment, water, energy and detergent use can create far more cost.</span>
@@ -770,7 +770,7 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Washer Support</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep washer performance supported<br><span style="color:#148af4;">after the first decision</span>
+                Keep washer performance supported <br class="hidden sm:block"><span style="color:#148af4;">after the first decision</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 <span class="sm:block lg:whitespace-nowrap">Commercial washer performance depends on more than the first installation. Irish Laundry Systems connects equipment access,</span>

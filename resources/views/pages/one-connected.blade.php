@@ -424,7 +424,7 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'one_connected_cta',
     'eyebrow'    => 'Get Connected',
-    'heading'    => 'Bring your laundry equipment into<br><span style="color:#148af4;">clearer connected control</span>',
+    'heading'    => 'Bring your laundry equipment into <br class="hidden sm:block"><span style="color:#148af4;">clearer connected control</span>',
     'body'       => 'Talk to Irish Laundry Systems about connecting compatible Electrolux Professional equipment and using OnE Connected to monitor machine status, cycles, consumption, hygiene validation, alerts and reports.',
     'formTitle'  => 'Request an OnE Connected Review',
     'formIntro'  => 'Tell us what equipment you use and what your laundry team needs to monitor.',

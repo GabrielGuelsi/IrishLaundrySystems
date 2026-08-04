@@ -215,7 +215,7 @@
 
     @include('components.header')
 
-    <main class="pb-20 md:pb-0">
+    <main>
         @yield('content')
     </main>
 
