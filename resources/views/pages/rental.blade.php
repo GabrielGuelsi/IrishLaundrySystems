@@ -72,7 +72,7 @@
 
 {{-- ════════════ 4. RENTAL INTRO / BRIDGE ════════════ --}}
 <section class="bg-white py-16 lg:py-24">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
@@ -97,7 +97,7 @@
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4 reveal">Rental Benefits</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal">Rental Benefits</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 Lower upfront cost, included support and <span class="text-[#148af4]">more peace of&nbsp;mind</span>
             </h2>
@@ -155,7 +155,7 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-6xl mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">What's Included</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">What's Included</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 See what is covered under <span class="text-[#148af4]">the rental&nbsp;agreement</span>
             </h2>
@@ -213,7 +213,7 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Compare Options</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Compare Options</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
             </h2>
@@ -282,7 +282,7 @@
 {{-- ════════════ 8. HOW RENTAL WORKS ════════════ --}}
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
-        <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Rental Works</p>
+        <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3 reveal">How Rental Works</p>
         <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-5 reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
             A clear rental process from <span class="text-[#148af4]">site review to&nbsp;agreement</span>
         </h2>
@@ -317,7 +317,7 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mb-10 lg:mb-12 reveal">
-            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Where Rental Fits</p>
+            <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Where Rental Fits</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5">
                 Rental for sites that want equipment access<br class="hidden lg:block"> with <span class="text-[#148af4]">support built&nbsp;in</span>
             </h2>
@@ -410,7 +410,7 @@
 
 {{-- ════════════ 10. RENTAL FIT / PLANNING BLOCK ════════════ --}}
 <section class="bg-white py-16 lg:py-24">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
@@ -554,7 +554,7 @@ $rentalFaqs = [
 
             {{-- Left: heading + contact --}}
             <div class="lg:col-span-5 reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Request a Quote</p>
+                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Request a Quote</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     Ready to discuss <span class="text-[#148af4]">rental or lease&nbsp;options</span>
                 </h2>

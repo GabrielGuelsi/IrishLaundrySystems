@@ -18,7 +18,7 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washers</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    Keep dirty-side loading separate from<br><span style="color:#148af4;">clean-side unloading</span>
+                    Keep dirty-side loading separate from <br class="hidden sm:block"><span style="color:#148af4;">clean-side unloading</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     Irish Laundry Systems plans Electrolux Professional barrier washers around capacity, room layout and installation requirements for hygiene-critical sites.
@@ -97,7 +97,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Technology</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Technology that supports<br><span style="color:#148af4;">hygiene control and easier handling</span>
+                Technology that supports <br class="hidden sm:block"><span style="color:#148af4;">hygiene control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Selected Electrolux Professional features help operators keep dirty and clean zones separate, monitor cycle completion and manage loading and unloading more easily.
@@ -295,7 +295,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-            Plan the room around<br><span style="color:#011E41;">separation, access and connections</span>
+            Plan the room around <br class="hidden sm:block"><span style="color:#011E41;">separation, access and connections</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             <span class="sm:block lg:whitespace-nowrap">Barrier washers need room planning before installation, including dirty / clean separation,</span>
@@ -337,7 +337,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Range</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Browse barrier washer models by<br><span style="color:#148af4;">product line and capacity</span>
+                Browse barrier washer models by <br class="hidden sm:block"><span style="color:#148af4;">product line and capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-[1400px]">
                 Filter the range, then open each model for full specifications, datasheets, brochures and manuals.
@@ -738,7 +738,7 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep barrier washer aftercare<br><span style="color:#011E41;">clear and easier to manage</span>
+                    Keep barrier washer aftercare <br class="hidden sm:block"><span style="color:#011E41;">clear and easier to manage</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
                     Irish Laundry Systems supports maintenance planning, service records and parts enquiries after installation.
@@ -768,7 +768,7 @@
 {{-- 16. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Experience',
-    'heading'    => 'What customers say about<br><span style="color:#148af4;">working with Irish Laundry Systems</span>',
+    'heading'    => 'What customers say about <br class="hidden sm:block"><span style="color:#148af4;">working with Irish Laundry Systems</span>',
     'subheading' => '',
 ])
 
@@ -796,7 +796,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Barrier Washer Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Discuss your barrier washer requirements<br>with <span style="color:#148af4;">our engineering team</span>
+            Discuss your barrier washer requirements <br class="hidden sm:block">with <span style="color:#148af4;">our engineering team</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Share the main details about your site, capacity and installation requirements. Our team will review what is needed and contact you directly.

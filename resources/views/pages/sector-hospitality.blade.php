@@ -17,7 +17,7 @@
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                     <span class="sm:block">Commercial laundry equipment</span>
                     <span class="sm:block">for hospitality <span style="color:#148af4;">protecting guest</span></span>
-                    <span class="block" style="color:#148af4;">standards and daily service</span>
+                    <span class="sm:block" style="color:#148af4;">standards and daily service</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment for hotels, guesthouses, restaurants, spas and leisure facilities across Ireland.
@@ -45,7 +45,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Plan hospitality laundry</span>
                     <span class="sm:block">around <span style="color:#148af4;">volume, space and</span></span>
-                    <span class="block" style="color:#148af4;">operating requirements</span>
+                    <span class="sm:block" style="color:#148af4;">operating requirements</span>
                 </h2>
             </div>
 

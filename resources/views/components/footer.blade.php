@@ -1,4 +1,4 @@
-<footer class="bg-navy-dark text-white">
+<footer class="bg-navy-dark text-white pb-20 md:pb-0">
 
     <!-- Main footer -->
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12">

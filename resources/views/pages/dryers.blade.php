@@ -20,7 +20,7 @@
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Choose commercial tumble dryers</span>
                     <span class="sm:block">to balance <span style="color:#148af4;">daily demand</span></span>
-                    <span class="block" style="color:#148af4;">and energy use</span>
+                    <span class="sm:block" style="color:#148af4;">and energy use</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-3xl text-pretty">
                     Irish Laundry Systems supplies Electrolux Professional tumble dryers across Ireland, with advice on capacity, dryer type, room requirements and installation.
@@ -52,8 +52,8 @@
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Plan dryer capacity around</span>
-                    <span class="block" style="color:#148af4;">space, ventilation and</span>
-                    <span class="block" style="color:#148af4;">daily demand</span>
+                    <span class="sm:block" style="color:#148af4;">space, ventilation and</span>
+                    <span class="sm:block" style="color:#148af4;">daily demand</span>
                 </h2>
             </div>
 
@@ -314,7 +314,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the dryer setup around<br><span style="color:#011E41;">space, ventilation and access</span>
+            Plan the dryer setup around <br class="hidden sm:block"><span style="color:#011E41;">space, ventilation and access</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             Irish Laundry Systems reviews room dimensions, utility connections and expected drying demand before recommending dryer type, capacity and installation.
@@ -474,7 +474,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Dryer Range</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="sm:block">Browse commercial dryer models by</span><span class="block" style="color:#148af4;">capacity and dryer type</span>
+                <span class="sm:block">Browse commercial dryer models by</span> <span class="sm:block" style="color:#148af4;">capacity and dryer type</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Use the filters to narrow the range, then view each model for full product details.
@@ -742,7 +742,7 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Make future dryer servicing easier with<br><span style="color:#011E41;">clear equipment records</span>
+                    Make future dryer servicing easier with <br class="hidden sm:block"><span style="color:#011E41;">clear equipment records</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
                     Model details, previous service work and parts information help our team identify what is needed when maintenance or repairs arise.
@@ -772,7 +772,7 @@
 {{-- 16. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Experience',
-    'heading'    => 'What customers say about<br><span style="color:#148af4;">working with Irish Laundry Systems</span>',
+    'heading'    => 'What customers say about <br class="hidden sm:block"><span style="color:#148af4;">working with Irish Laundry Systems</span>',
     'subheading' => '',
 ])
 
@@ -799,7 +799,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Dryer Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Discuss your commercial dryer requirements<br>with <span style="color:#148af4;">our engineering team</span>
+            Discuss your commercial dryer requirements <br class="hidden sm:block">with <span style="color:#148af4;">our engineering team</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             Share the main details about your site, drying demand and existing equipment. Our team will review what is needed and contact you directly.

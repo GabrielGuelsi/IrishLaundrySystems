@@ -17,7 +17,7 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
-                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-balance">
                     <span class="sm:block">Protect specialist garments and</span>
                     <span class="sm:block">gear with <span style="color:#148af4;">gentle cabinet drying</span></span>
                 </h1>
@@ -94,7 +94,7 @@
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                 <span class="sm:block">Drying cabinets for <span style="color:#148af4;">delicate garments,</span></span>
-                <span class="block" style="color:#148af4;">shared laundry and workwear</span>
+                <span class="sm:block" style="color:#148af4;">shared laundry and workwear</span>
             </h2>
         </div>
 
@@ -363,7 +363,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Configure cabinet drying for<br><span style="color:#148af4;">garments, footwear and gloves</span>
+                Configure cabinet drying for <br class="hidden sm:block"><span style="color:#148af4;">garments, footwear and gloves</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Choose accessories for the articles each drying cabinet needs to accommodate.
@@ -406,7 +406,7 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 w-full max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan the right cabinet setup for<br><span style="color:#011E41;">your space and daily use</span>
+            Plan the right cabinet setup for <br class="hidden sm:block"><span style="color:#011E41;">your space and daily use</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
             ILS checks access, ventilation, available space and drying demand before recommending the cabinet and installation approach.
@@ -539,7 +539,7 @@
 @include('components.cta-downtime-form', [
     'pageSource'        => 'drying_cabinets_cta',
     'eyebrow'           => 'Request Drying Cabinet Advice',
-    'heading'           => 'Discuss drying cabinet requirements for<br><span style="color:#148af4;">your items, space and daily use</span>',
+    'heading'           => 'Discuss drying cabinet requirements for <br class="hidden sm:block"><span style="color:#148af4;">your items, space and daily use</span>',
     'body'              => 'Tell us what needs to be dried, the available space and expected use. Irish Laundry Systems will recommend suitable cabinet options.',
     'formTitle'         => 'Request Drying Cabinet Advice',
     'buttonText'        => 'Request Drying Cabinet Advice',

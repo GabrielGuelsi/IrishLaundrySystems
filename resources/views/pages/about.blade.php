@@ -474,7 +474,7 @@
         <div class="max-w-2xl reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment Choices</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 lg:whitespace-nowrap">
-                Better equipment choices for<br> <span class="text-[#148af4]">lower resource use and running costs</span>
+                Better equipment choices for <br class="hidden sm:block"><span class="text-[#148af4]">lower resource use and running costs</span>
             </h2>
             <p class="font-body text-white/80 text-base leading-relaxed max-w-2xl">
                 Irish Laundry Systems recommends equipment, technologies and services that support more sustainable laundry operations through lower energy, water and detergent use, supported by Electrolux Professional resource-efficient solutions.
@@ -486,7 +486,7 @@
 <!-- ══════════════════════════════════════════
      12. LONG-TERM TRUST / TESTIMONIALS
 ══════════════════════════════════════════ -->
-@include('components.testimonials', ['eyebrow' => 'Customer Experience', 'heading' => 'What customers say about<br><span class="text-[#148af4]">working with Irish Laundry Systems</span>', 'subheading' => '', 'light' => false])
+@include('components.testimonials', ['eyebrow' => 'Customer Experience', 'heading' => 'What customers say about <br class="hidden sm:block"><span class="text-[#148af4]">working with Irish Laundry Systems</span>', 'subheading' => '', 'light' => false])
 
 @include('components.proof-bar')
 

@@ -17,7 +17,7 @@
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                     <span class="sm:block">Care facility laundry</span>
                     <span class="sm:block">designed for resident care,</span>
-                    <span class="block" style="color:#148af4;">hygiene and daily efficiency</span>
+                    <span class="sm:block" style="color:#148af4;">hygiene and daily efficiency</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment <br class="hidden lg:block">for care homes, nursing homes and residential care facilities.
@@ -45,7 +45,7 @@
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-snug text-balance">
                     <span class="sm:block">The right approach for</span>
-                    <span class="block" style="color:#148af4;">each care environment</span>
+                    <span class="sm:block" style="color:#148af4;">each care environment</span>
                 </h2>
             </div>
 

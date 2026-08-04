@@ -16,7 +16,7 @@
      heading layout, bullets and per-card content are passed via props. --}}
 
 <section class="py-16 lg:py-24 bg-white">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="{{ $align === 'center' ? 'text-center mb-12 lg:mb-16' : 'mb-10 lg:mb-12' }}">
             @if ($eyebrow)

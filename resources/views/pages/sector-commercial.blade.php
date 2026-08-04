@@ -18,7 +18,7 @@
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial laundry equipment</span>
                     <span class="sm:block">and support to improve productivity</span>
-                    <span class="block" style="color:#148af4;">and control operating costs</span>
+                    <span class="sm:block" style="color:#148af4;">and control operating costs</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
                     From shared-use laundry rooms to industrial facilities, Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment, with purchase and Equipment Rental options.
@@ -50,7 +50,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Plan the laundry room</span>
                     <span class="sm:block">around <span style="color:#148af4;">volume, load type</span></span>
-                    <span class="block" style="color:#148af4;">and operating hours</span>
+                    <span class="sm:block" style="color:#148af4;">and operating hours</span>
                 </h2>
             </div>
 

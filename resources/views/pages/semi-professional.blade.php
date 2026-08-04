@@ -18,7 +18,7 @@
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    When domestic machines<br><span style="color:#148af4;">become the weak point</span>
+                    When domestic machines <br class="hidden sm:block"><span style="color:#148af4;">become the weak point</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     <span class="sm:block lg:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
@@ -698,7 +698,7 @@
 {{-- 14. FINAL CTA / FORM --}}
 @include('components.cta-downtime-form', [
     'pageSource' => 'semi_professional_cta',
-    'heading'    => 'Plan the right semi-professional setup for<br><span style="color:#148af4;">your site</span>',
+    'heading'    => 'Plan the right semi-professional setup for <br class="hidden sm:block"><span style="color:#148af4;">your site</span>',
     'body'       => 'Tell us what you wash, how often the machines run and who uses them. We&rsquo;ll recommend the right equipment, purchase or rental option, and support.',
     'formTitle'  => 'Request Semi-Professional Laundry Advice',
     'buttonText' => 'Request Equipment Advice',

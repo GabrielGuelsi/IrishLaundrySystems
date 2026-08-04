@@ -19,7 +19,7 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial finishing equipment for</span>
-                    <span class="block" style="color:#148af4;">garments, uniforms and specialist items</span>
+                    <span class="sm:block" style="color:#148af4;">garments, uniforms and specialist items</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment for pressing, shaping and garment finishing.

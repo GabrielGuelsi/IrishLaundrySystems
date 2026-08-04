@@ -76,7 +76,7 @@
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 820px;">
 
-                <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Repairs &amp; Call-Outs</p>
+                <p class="hero-title font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repairs &amp; Call-Outs</p>
 
                 <h1 class="hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
                     Commercial laundry repair support<br class="hidden lg:block"> to keep <span class="text-[#148af4]">essential equipment&nbsp;running</span>
@@ -112,7 +112,7 @@
 <!-- FIRST RESPONSE -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">First Response</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">First Response</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
             Report the fault once, with <span class="text-[#148af4]">the details that&nbsp;matter</span>
         </h2>
@@ -148,7 +148,7 @@
 </section>
 
 <!-- CALL-OUT SUPPORT STRIP -->
-<section class="pt-16 pb-40 lg:pt-24 lg:pb-52 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl">
 
@@ -257,7 +257,7 @@ $expectSteps = [
 <section class="relative py-16 lg:py-24 bg-navy expect-dotgrid overflow-hidden">
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Call-Out Process</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Call-Out Process</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From service visit to <span class="text-[#148af4]">repair&nbsp;action</span></h2>
             <p class="font-body text-blue-200 text-base leading-relaxed mx-auto lg:whitespace-nowrap">Each call-out is focused on diagnosis, repair requirements and the best action for the equipment.</p>
         </div>
@@ -344,7 +344,7 @@ $expectSteps = [
 
             {{-- LEFT: content --}}
             <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Temporary Laundry Support</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Temporary Laundry Support</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     <span class="text-[#148af4]">Short-term laundry support</span><br class="hidden lg:block"> while equipment is being&nbsp;repaired
                 </h2>
@@ -400,7 +400,7 @@ $expectSteps = [
 </section>
 
 <!-- REPEAT FAULTS STRIP -->
-<section class="py-16 lg:py-24 bg-bg">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="bg-navy rounded-2xl p-8 lg:p-10">
             <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-8 items-start mb-1">
@@ -521,12 +521,12 @@ $faqs = [
 ])
 
 <!-- FINAL CTA + REPAIR CALL-OUT FORM -->
-<section class="py-16 lg:py-24 bg-bg">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden mb-8 lg:mb-10">
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
             <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="mx-auto mb-5 w-24 h-24 object-contain">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request a Call-Out</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request a Call-Out</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Need commercial laundry equipment <span class="text-[#148af4]">back in&nbsp;service</span>?
             </h2>

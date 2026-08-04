@@ -202,8 +202,8 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      3. CONNECTED AFTERCARE INTRO
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-20 lg:py-32">
-    <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+<section class="bg-white py-16 lg:py-24">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
@@ -231,11 +231,11 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      4. WHAT SUPPORT & AFTERCARE COVERS — 4 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-20 lg:py-32">
+<section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Aftercare Coverage</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Aftercare Coverage</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Support &amp; Aftercare for <span class="text-[#148af4]">equipment already in use</span>
             </h2>
@@ -293,7 +293,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      5. THE RIGHT PART NEEDS THE RIGHT CONTEXT — navy strip
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative py-20 lg:py-32 bg-navy overflow-hidden">
+<section class="relative py-16 lg:py-24 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
         <img src="/images/pages/services/parts-support-bg.jpg" alt="" loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
@@ -302,7 +302,7 @@
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto reveal">
             <div class="rounded-3xl p-8 lg:p-12 text-center" style="background: rgba(1,30,65,0.82); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.08);">
-                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4">Parts Support</p>
+                <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Parts Support</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                     The right part starts with <span class="text-[#148af4]">accurate equipment&nbsp;details</span>
                 </h2>
@@ -335,7 +335,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
-        <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-4 reveal">How Aftercare Works</p>
+        <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3 reveal">How Aftercare Works</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             Tell us what needs attention and <span class="text-[#148af4]">we&rsquo;ll arrange the&nbsp;follow-up</span>
         </h2>
@@ -439,11 +439,11 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      WHEN AFTERCARE MATTERS — use-case grid
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-20 lg:py-32">
+<section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">When Aftercare Matters</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">When Aftercare Matters</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 For the moments that shape <span class="text-[#148af4]">future equipment&nbsp;decisions</span>
             </h2>
@@ -550,11 +550,11 @@ $aftercareFaqs = [
 {{-- ════════════════════════════════════════════════════════════════════════
      12. SUPPORT & AFTERCARE ENQUIRY FORM
      ════════════════════════════════════════════════════════════════════════ --}}
-<section id="aftercare-form" class="bg-white py-20 lg:py-32">
+<section id="aftercare-form" class="bg-white py-16 lg:py-24">
     <div class="max-w-4xl mx-auto px-6 sm:px-10">
 
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Support &amp; Aftercare</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support &amp; Aftercare</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                 Need aftercare for<br class="hidden lg:block"> <span class="text-[#148af4]">commercial laundry&nbsp;equipment?</span>
             </h2>
@@ -771,7 +771,7 @@ $aftercareFaqs = [
 
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:360px;">
         <div class="lg:max-w-[55%]">
-            <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-4 reveal">Support &amp; Aftercare</p>
+            <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3 reveal">Support &amp; Aftercare</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal">
                 Speak to Irish Laundry Systems<br class="hidden lg:block"> about <span class="text-navy">equipment care<br class="hidden lg:block"> and&nbsp;aftercare</span>
             </h2>
