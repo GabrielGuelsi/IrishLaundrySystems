@@ -74,7 +74,7 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Keep capital available while <span class="text-[#148af4]">your laundry stays&nbsp;equipped</span>
@@ -82,12 +82,8 @@
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Rental can help your site plan equipment costs without committing to one large purchase. Irish Laundry Systems supplies, installs, services and supports selected Electrolux Professional equipment under one agreement.
+                    <span class="lg:whitespace-nowrap">Rental can help your site plan equipment costs without committing to</span><br class="hidden lg:block"> <span class="lg:whitespace-nowrap">one large purchase. <span class="whitespace-nowrap">Irish Laundry Systems</span> supplies, installs, services and supports</span><br class="hidden lg:block"> selected Electrolux Professional equipment under one agreement.
                 </p>
-                <a href="#quote-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
-                    Request a Quote
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
         </div>
     </div>
@@ -411,19 +407,15 @@
 {{-- ════════════ 10. RENTAL FIT / PLANNING BLOCK ════════════ --}}
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[7fr_4fr] gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Confirm the rental setup fits <span class="text-[#148af4]">your site before it&nbsp;begins</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:whitespace-nowrap">Confirm the equipment and&nbsp;site</span><br class="hidden lg:block"> <span class="text-[#148af4] lg:whitespace-nowrap">requirements before&nbsp;signing</span><br class="hidden lg:block"> <span class="text-[#148af4] lg:whitespace-nowrap">the Equipment Rental&nbsp;agreement</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mt-5 text-pretty">
-                    Before the agreement is confirmed, Irish Laundry Systems reviews room layout, utilities, access, workload and support needs.
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews space, utilities, access and expected workload so the equipment, agreed cost and installation requirements are confirmed in advance.
                 </p>
-                <a href="#quote-form" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-[#0f70cc] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 mt-7 w-fit">
-                    Request a Quote
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
 
             @php

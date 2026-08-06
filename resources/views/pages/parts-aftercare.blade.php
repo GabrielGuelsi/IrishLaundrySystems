@@ -173,7 +173,7 @@
                 </h1>
 
                 <p class="pa-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-none text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> provides ongoing aftercare for commercial laundry equipment across Dublin and Ireland,<br class="hidden lg:block"> covering service history, parts support and future service planning.
+                    <span class="whitespace-nowrap">Irish Laundry Systems</span> provides ongoing aftercare for commercial laundry equipment across<br class="hidden lg:block"> Dublin and Ireland, covering service history, parts support and future service planning.
                 </p>
 
                 <div class="pa-hero-btns flex flex-row flex-wrap gap-4">
@@ -205,10 +205,10 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[7fr_4fr] gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    We take care of your equipment, so <span class="text-[#148af4]">your laundry operation can keep&nbsp;moving</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:whitespace-nowrap">We take care of your&nbsp;equipment,</span><br class="hidden lg:block"> so <span class="text-[#148af4]">your laundry&nbsp;operation</span><br class="hidden lg:block"> <span class="text-[#148af4]">can keep&nbsp;moving</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
@@ -218,11 +218,6 @@
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps service records, parts needs and equipment condition organised for better service decisions over time.
                 </p>
-
-                <a href="#aftercare-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 mt-4 w-fit">
-                    Request Support &amp; Aftercare
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
         </div>
     </div>
@@ -231,7 +226,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      4. WHAT SUPPORT & AFTERCARE COVERS — 4 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white pt-16 lg:pt-24 pb-36 lg:pb-56">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
@@ -313,9 +308,9 @@
                     @foreach([
                         ['icon' => 'ativo-8',  'src' => '/images/icons/home-maintenance-value.png', 'label' => 'Equipment<br>details'],
                         ['icon' => 'ativo-4',  'src' => '/images/icons/repairs-repeat-history.png', 'label' => 'Service<br>history'],
-                        ['icon' => 'ativo-7',  'src' => '/images/icons/151.png', 'style' => 'transform:scale(0.85);', 'label' => 'Genuine parts<br>support'],
+                        ['icon' => 'ativo-7',  'src' => '/images/icons/151.png', 'style' => 'transform:translateX(4px) scale(0.85);', 'label' => 'Genuine parts<br>support'],
                     ] as $feat)
-                    <div class="flex items-center gap-5 text-left">
+                    <div class="flex items-center gap-2.5 text-left">
                         <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
                         <span class="font-body text-white text-sm font-bold leading-snug">{!! $feat['label'] !!}</span>
                     </div>
@@ -334,7 +329,7 @@
      6. HOW SUPPORT & AFTERCARE WORKS — 4-step process
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="w-full overflow-hidden bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 pt-32 lg:pt-48 pb-8 lg:pb-10">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3 reveal">How Aftercare Works</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             Tell us what needs attention and <span class="text-[#148af4]">we&rsquo;ll arrange the&nbsp;follow-up</span>
@@ -388,7 +383,7 @@
 </section>
 
 {{-- White gap so the photo row above reads separately from the navy strip below --}}
-<div class="h-12 lg:h-20 bg-white"></div>
+<div class="h-24 lg:h-44 bg-white"></div>
 
 {{-- ════════════════════════════════════════════════════════════════════════
      7. PREVENTIVE MAINTENANCE BRIDGE
@@ -399,22 +394,22 @@
              class="w-full h-full object-cover" style="object-position: center center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[74%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">When Follow-Up Becomes a Pattern</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-            Repeated issues may need <span style="color:#148af4;">planned care</span>, not another isolated decision
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            Recurring faults may&nbsp;point&nbsp;to<br class="hidden lg:block"> <span style="color:#148af4;">a Preventive Maintenance&nbsp;Contract</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 text-pretty">
-            If the same machine keeps needing attention, Support &amp; Aftercare can use the service history to review whether a Preventive Maintenance Contract would help reduce repeat disruption, protect equipment value and plan the next step.
+            If the same machine keeps needing attention, <span class="whitespace-nowrap">Irish Laundry Systems</span> can review its service history<br class="hidden lg:block"> and assess whether planned maintenance could reduce repeat breakdowns, protect equipment value and keep servicing costs under control.
         </p>
         <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
             @foreach([
-                ['icon' => 'ativo-8', 'src' => '/images/icons/home-maintenance-costs.png', 'label' => 'Reduce repeat<br>breakdowns'],
-                ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'label' => 'Protect equipment<br>value'],
-                ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'label' => 'Planned maintenance<br>support'],
+                ['icon' => 'ativo-8', 'src' => '/images/icons/home-maintenance-costs.png', 'sc' => '1.08', 'label' => 'Reduce Repeat<br>Breakdowns'],
+                ['icon' => 'ativo-4', 'src' => '/images/icons/205.png', 'sc' => '0.94', 'label' => 'Protect Equipment<br>Value'],
+                ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'sc' => '1.06', 'label' => 'Budget<br>Control'],
             ] as $feat)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" class="h-14 w-auto object-contain" alt="">
+                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" class="h-14 w-auto object-contain" style="transform:scale({{ $feat['sc'] ?? '1' }});" alt="">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </span>
             @endforeach
@@ -434,70 +429,6 @@
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
-     8. RELATED NEXT STEPS — 3 routes
-     ════════════════════════════════════════════════════════════════════════ --}}
-{{-- ════════════════════════════════════════════════════════════════════════
-     WHEN AFTERCARE MATTERS — use-case grid
-     ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-12 lg:mb-14 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">When Aftercare Matters</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                For the moments that shape <span class="text-[#148af4]">future equipment&nbsp;decisions</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty max-w-3xl">
-                Aftercare matters after installation, after a repair, when parts are required or when the same fault returns. It also supports decisions to repair, maintain or replace equipment.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
-            @foreach ([
-                'After installation',
-                'After a repair',
-                'Before planned maintenance',
-                'When parts are required',
-                'When the same fault returns',
-                'When replacement is being considered',
-            ] as $useCase)
-            <div class="flex items-center gap-3 rounded-2xl border border-gray-200 bg-bg px-5 py-4">
-                <span class="flex-shrink-0 w-9 h-9 rounded-full bg-[#148af4]/10 flex items-center justify-center">
-                    <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-                </span>
-                <span class="font-heading font-bold text-navy text-base leading-snug">{{ $useCase }}</span>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
-{{-- ════════════════════════════════════════════════════════════════════════
-     ONE CONNECTED — universal strip
-     ════════════════════════════════════════════════════════════════════════ --}}
-@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected'])
-
-{{-- ════════════════════════════════════════════════════════════════════════
-     RELATED SERVICES — 4 routes
-     ════════════════════════════════════════════════════════════════════════ --}}
-@include('components.services-cards', [
-    'eyebrow'          => 'Related Services',
-    'headingLead'      => 'Keep your laundry support ',
-    'headingHighlight' => 'connected beyond aftercare',
-    'headingTrail'     => '',
-    'highlightClass'   => 'text-[#148af4]',
-    'intro'            => 'Support for repairs, planned maintenance, rental options and Electrolux Professional equipment guidance.',
-    'introMaxW'        => 'max-w-none',
-    'align'            => 'left',
-    'cards'            => [
-        ['title' => 'Repairs & Call-Outs',                'body' => 'For urgent faults, breakdowns or equipment issues affecting daily operation.',                          'cta' => 'View Repairs & Call-Outs',    'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                'alt' => 'Repairs & Call-Outs',                'pos' => 'center 40%'],
-        ['title' => 'Preventive Maintenance',             'body' => 'For recurring faults, planned visits and better maintenance control.',                                 'cta' => 'View Preventive Maintenance', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',          'alt' => 'Preventive Maintenance',             'pos' => '80% center'],
-        ['title' => 'Equipment Rental',                   'body' => 'For replacement, added capacity or cases where buying outright is not the right option.',              'cta' => 'View Equipment Rental',       'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',                   'pos' => '66% center'],
-        ['title' => 'Electrolux Professional Partnership','body' => 'For genuine parts, technology and equipment backed by an Authorised Electrolux Professional Partner.', 'cta' => 'View Partnership',            'href' => route('electrolux'),       'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Electrolux Professional Partnership', 'pos' => 'center center'],
-    ],
-])
-
-{{-- ════════════════════════════════════════════════════════════════════════
      9 + 10. TESTIMONIAL / PROOF + TRUSTED BY LOGO STRIP
      ════════════════════════════════════════════════════════════════════════ --}}
 @include('components.testimonials', [
@@ -509,6 +440,11 @@
     'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
 ])
 @include('components.proof-bar')
+
+{{-- ════════════════════════════════════════════════════════════════════════
+     ONE CONNECTED — universal strip
+     ════════════════════════════════════════════════════════════════════════ --}}
+@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected'])
 
 {{-- ════════════════════════════════════════════════════════════════════════
      11. SUPPORT & AFTERCARE FAQs
@@ -553,7 +489,7 @@ $aftercareFaqs = [
 <section id="aftercare-form" class="bg-white py-16 lg:py-24">
     <div class="max-w-4xl mx-auto px-6 sm:px-10">
 
-        <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
+        <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support &amp; Aftercare</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
                 Need aftercare for<br class="hidden lg:block"> <span class="text-[#148af4]">commercial laundry&nbsp;equipment?</span>
@@ -750,58 +686,6 @@ $aftercareFaqs = [
                 </div>
 
             </form>
-        </div>
-    </div>
-</section>
-
-{{-- ════════════════════════════════════════════════════════════════════════
-     13. FINAL CTA STRIP
-     ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden" style="min-height: 360px; background-color: #148af4;">
-
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/shared/repairs-hero.jpg"
-             alt="ILS engineer reviewing equipment and the next support step on site"
-             class="w-full h-full object-cover"
-             style="filter: saturate(0.9) contrast(1.05);">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.72) 25%, rgba(20,138,244,0.35) 55%, transparent 100%);"></div>
-    </div>
-
-    <div class="absolute inset-0 pa-dotgrid opacity-25 pointer-events-none"></div>
-
-    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20 flex items-center" style="min-height:360px;">
-        <div class="lg:max-w-[55%]">
-            <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3 reveal">Support &amp; Aftercare</p>
-            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal">
-                Speak to Irish Laundry Systems<br class="hidden lg:block"> about <span class="text-navy">equipment care<br class="hidden lg:block"> and&nbsp;aftercare</span>
-            </h2>
-            <p class="font-body text-white/90 text-base leading-relaxed mb-6 max-w-2xl reveal text-pretty">
-                Share the equipment details, service history or parts requirement.<br class="hidden lg:block"> <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and advise on the appropriate support.
-            </p>
-            <div class="mb-8 flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 reveal">
-                @foreach([
-                    ['icon' => 'ativo-8', 'label' => 'Organised<br>service history'],
-                    ['icon' => 'ativo-4', 'label' => 'Clearer<br>next costs'],
-                    ['icon' => 'ativo-7', 'label' => 'Support from people<br>who know the equipment'],
-                ] as $feat)
-                <span class="flex items-center gap-2 flex-shrink-0">
-                    <img src="/images/icons/brand-white/{{ $feat['icon'] }}.svg" class="object-contain flex-shrink-0" style="width:3rem;height:3rem;" alt="">
-                    <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
-                </span>
-                @endforeach
-            </div>
-            <div class="flex flex-wrap items-center gap-4 reveal">
-                <a href="#aftercare-form"
-                   data-ga-cta="final-request-aftercare"
-                   class="inline-flex items-center justify-center bg-white text-navy hover:bg-white/90 font-heading font-bold px-6 py-3 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap">
-                    Request Support &amp; Aftercare
-                </a>
-                <a href="{{ route('contact') }}"
-                   data-ga-cta="final-talk-team"
-                   class="inline-flex items-center justify-center border border-white/70 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-sm transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
-                    Talk to Our Team
-                </a>
-            </div>
         </div>
     </div>
 </section>
