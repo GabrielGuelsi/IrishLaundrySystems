@@ -18,7 +18,7 @@
             <div class="max-w-4xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="sm:block">Healthcare laundry designed for<br class="hidden lg:block"><span style="color:#148af4;">hygiene, safety and continuous operation</span></span>
+                    <span class="sm:block">Healthcare laundry designed<br class="hidden lg:block"> for <span style="color:#148af4;">hygiene, safety and<br class="hidden lg:block"> continuous operation</span></span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-4xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial laundry<br class="hidden lg:block"> equipment for hospitals, nursing homes and other healthcare environments.
@@ -39,26 +39,19 @@
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Planning</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    <span>Every healthcare operation requires<br class="hidden lg:block"><span style="color:#148af4;">the right laundry approach</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:whitespace-nowrap">Every healthcare operation</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">requires <span style="color:#148af4;">the right laundry approach</span></span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right lg:pt-8">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
                     Every healthcare operation is different. Irish Laundry Systems assesses your requirements before recommending the right laundry equipment, layout and ongoing support.
                 </p>
-                <a href="{{ route('sectors.healthcare') }}#healthcare-equipment"
-                   class="inline-flex items-start gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    View Healthcare Equipment Options
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -76,7 +69,7 @@
                 <span>The right level of control for <span style="color:#148af4;">healthcare laundry</span></span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
-                Healthcare laundry requirements vary from one site to another. Irish Laundry Systems supports everything from commercial<br class="hidden lg:block"> washer-extractor installations to barrier layouts where soiled and clean handling must remain separate.
+                Healthcare laundry requirements vary from one site to another. Irish Laundry Systems supports everything from<br class="hidden lg:block"> commercial washer-extractor installations to barrier layouts where soiled and clean handling must remain separate.
             </p>
         </div>
 
@@ -91,7 +84,7 @@
             </div>
 
             <!-- Navy card overlapping left -->
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[540px] bg-navy rounded-2xl p-6 sm:p-10 shadow-2xl">
+            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[600px] bg-navy rounded-2xl p-6 sm:p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-xl sm:text-2xl lg:text-3xl leading-snug mb-6">
                     Healthcare laundry control<br class="hidden lg:block"> starts with the right room setup
                 </h3>
@@ -126,10 +119,7 @@
                 <span>See how <span style="color:#148af4;">dirty-side and clean-side separation</span> works</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Barrier washer layouts keep soiled loading and clean unloading physically separated.
-            </p>
-            <p class="font-body text-gray-500 text-base leading-relaxed mt-2">
-                The visual below shows how the process works in a healthcare laundry.
+                Barrier washer layouts keep soiled loading and clean unloading physically separated. The visual below shows how the process works in a healthcare laundry.
             </p>
         </div>
 
@@ -179,8 +169,8 @@
             ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',                'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
             ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations support water recycling and lower water consumption.'],
             ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
-            ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2', 'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
-            ['icon'=>'88', 'prefix'=>'',      'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
+            ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
+            ['icon'=>'88', 'prefix'=>'',      'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
     </div>
 </section>
@@ -239,7 +229,7 @@
             {{-- Card 4: ERGOCERT --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/224.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-full h-full object-contain scale-[1.32]">
+                    <img src="/images/icons/224.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="w-full h-full object-contain scale-[1.6]">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-sm tracking-tight leading-snug mb-1.5">Certified ergonomics</h3>
@@ -270,7 +260,7 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                Keep healthcare laundry moving with <span style="color:#148af4;">the right service behind it</span>
+                Keep healthcare laundry moving<br class="hidden lg:block"> with <span style="color:#148af4;">the right service behind it</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Irish Laundry Systems provides repairs, Preventive Maintenance, equipment rental and aftercare for healthcare laundry operations.
@@ -347,6 +337,9 @@
         </div>
     </div>
 </section>
+
+{{-- White spacing between the services cards and the Planning banner --}}
+<div class="h-16 lg:h-28 bg-white"></div>
 
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Planning',
@@ -956,25 +949,25 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Prepare healthcare laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">
+        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
             Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Prepare the Site',      'text' => 'Confirm access, utilities and positioning before delivery.'],
-                ['title' => 'Install and Commission', 'text' => 'Deliver, position, install and test the selected equipment.'],
-                ['title' => 'Handover',               'text' => 'Provide operating guidance and explain available aftercare.'],
+                ['title' => 'Prepare the Site',      'text' => 'Confirm access, utilities and positioning<br class="hidden lg:block"> before delivery.'],
+                ['title' => 'Install and Commission', 'text' => 'Deliver, position, install and test<br class="hidden lg:block"> the selected equipment.'],
+                ['title' => 'Handover',               'text' => 'Provide operating guidance and explain<br class="hidden lg:block"> available aftercare.'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 2)
-                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <div class="hidden lg:block absolute -right-[4.5rem] top-[2.45rem] text-[#148af4]">
+                    <svg class="w-14 h-8" fill="none" viewBox="0 0 40 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M29.5 4.5 37 12m0 0-7.5 7.5M37 12H3"/></svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                <div class="w-full flex justify-center items-center mb-1" style="height:8rem;">
                     <img src="/images/icons/{{ [126, 125, 128][$i] }}.png" alt=""
                          style="width:{{ $i === 1 ? '8rem' : '7rem' }};height:{{ $i === 1 ? '8rem' : '7rem' }};filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
@@ -995,8 +988,8 @@
     'body'         => 'Ongoing maintenance and aftercare keep equipment performing, protect your investment and support reliable healthcare laundry operations.',
     'image'        => '/images/pages/services/support-aftercare-hero.png',
     'miniPoints'   => [
-        ['icon' => '149', 'iconClass' => 'scale-[0.78]', 'label' => 'Planned<br>Service'],
-        ['icon' => '247', 'iconClass' => 'scale-[0.74]', 'label' => 'Long-Term<br>Performance'],
+        ['icon' => '149', 'iconClass' => 'scale-[0.78] translate-x-[2px]', 'label' => 'Planned<br>Service'],
+        ['icon' => '247', 'iconClass' => 'scale-[0.95] -translate-x-[3px]', 'label' => 'Long-Term<br>Performance'],
         ['icon' => '151', 'iconClass' => 'scale-[0.85]', 'label' => 'Equipment<br>Care'],
     ],
     'cta1Label'    => 'View Preventive Maintenance',

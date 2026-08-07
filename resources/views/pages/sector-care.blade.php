@@ -50,16 +50,9 @@
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    We assess capacity, room layout and hygiene requirements before defining the equipment and configuration for your facility.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    We assess capacity, room layout and hygiene requirements before defining<br class="hidden lg:block"> the equipment and configuration for your facility.
                 </p>
-                <a href="{{ route('equipment') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    View Care Facility Equipment Options
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -89,7 +82,7 @@
                      class="w-full h-[320px] sm:h-[440px] lg:h-[580px] object-cover object-center">
             </div>
 
-            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[420px] bg-navy rounded-2xl p-6 sm:p-10 lg:p-10 shadow-2xl">
+            <div class="lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:left-0 mt-6 lg:mt-0 w-full lg:w-[520px] bg-navy rounded-2xl p-6 sm:p-10 lg:p-10 shadow-2xl">
                 <h3 class="font-heading font-bold text-white text-xl sm:text-2xl lg:text-3xl leading-snug mb-6">
                     Barrier washer planning<br class="hidden lg:block"> for larger care environments
                 </h3>
@@ -130,9 +123,9 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',              'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
             ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
-            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'', 'stat'=>'Lower<br>strain',      'size'=>'text-2xl', 'label'=>'staff handling', 'labelClass'=>'translate-y-2',      'body'=>'Ergonomic equipment design can reduce physical effort during loading, unloading and other repetitive laundry tasks.'],
-            ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'labelClass'=>'translate-y-2',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
-            ['icon'=>'88', 'iconClass'=>'translate-y-[0.9%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs', 'labelClass'=>'translate-y-2',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
+            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'', 'stat'=>'Lower<br>strain',      'size'=>'text-2xl', 'label'=>'staff handling',      'body'=>'Ergonomic equipment design can reduce physical effort during loading, unloading and other repetitive laundry tasks.'],
+            ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
+            ['icon'=>'88', 'iconClass'=>'translate-y-[0.9%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
         ]])
     </div>
 </section>
@@ -155,7 +148,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/13.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/13.png" alt="" class="w-24 h-24 object-contain scale-[1.3]">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Resident laundry</h3>
@@ -165,7 +158,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/ergocertnew.png" alt="ERGOCERT ergonomics certified" class="h-24 w-auto object-contain">
+                    <img src="/images/icons/224.png" alt="ERGOCERT ergonomics certified" class="h-24 w-auto object-contain scale-[1.6]">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Staff wellbeing</h3>
@@ -195,7 +188,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/24.png" alt="" class="w-24 h-24 object-contain">
+                    <img src="/images/icons/24.png" alt="" class="w-24 h-24 object-contain scale-[1.3]">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Textile care</h3>
@@ -288,6 +281,9 @@
         </div>
     </div>
 </section>
+
+{{-- White spacing between the services cards and the Site Planning banner --}}
+<div class="h-16 lg:h-28 bg-white"></div>
 
 <!-- 8. PLANNING STRIP -->
 @include('components.cta-combined-banner', [
@@ -796,7 +792,7 @@
 @include('components.equipment-categories', [
     'eyebrow' => 'Browse by type',
     'textMinH' => '176px',
-    'heading' => 'Explore equipment for <span style="color:#148af4;">different care facility needs</span>',
+    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">different care facility needs</span></span>',
     'subheading' => 'Choose the equipment category that fits the room, load type, hygiene needs and aftercare.',
     'equipment' => [
         ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For sites that need dirty-side and clean-side handling kept separate.','box'=>250,'mb'=>-20],
@@ -815,7 +811,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             From site review to <span style="color:#148af4;">supported installation</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">
+        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
             Irish Laundry Systems reviews the room, defines the right equipment setup and manages installation and handover for your care facility.
         </p>
 
@@ -829,16 +825,16 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 2)
-                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <div class="hidden lg:block absolute -right-[4.5rem] top-[2.45rem] text-[#148af4]">
+                    <svg class="w-14 h-8" fill="none" viewBox="0 0 40 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M29.5 4.5 37 12m0 0-7.5 7.5M37 12H3"/></svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                <div class="w-full flex justify-center items-center mb-1" style="height:8rem;">
                     <img src="/images/icons/{{ [126, 125, 128][$i] }}.png" alt=""
                          style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{!! $step['title'] !!}</h3>
-                <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
+                <p class="font-body text-gray-500 text-sm leading-relaxed">{!! $step['text'] !!}</p>
             </div>
 
             @endforeach

@@ -36,7 +36,7 @@
 
 {{-- ════════════ 2. HERO ════════════ --}}
 <section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 520px; background-color: #011E41;">
-    <img src="/images/pages/equipmentrentalhero.png"
+    <img src="/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png"
          alt="Commercial laundry equipment supplied and installed by Irish Laundry Systems"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -71,7 +71,7 @@
 @include('components.partner-strip')
 
 {{-- ════════════ 4. RENTAL INTRO / BRIDGE ════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-24 lg:py-40">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
         <div class="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
@@ -98,7 +98,7 @@
                 Lower upfront cost, included support and <span class="text-[#148af4]">more peace of&nbsp;mind</span>
             </h2>
             <p class="font-body text-white/70 text-base leading-relaxed reveal text-pretty" style="transition-delay:160ms;">
-                Rental is designed for sites that want selected professional laundry equipment without one large upfront purchase, with the main support needs built into the agreement from the start.
+                Rental is designed for sites that want selected professional laundry equipment without<br class="hidden lg:block"> one large upfront purchase, with the main support needs built into the agreement from the start.
             </p>
         </div>
 
@@ -114,6 +114,7 @@
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-5.25m0-11.25h2.25c.621 0 1.125.504 1.125 1.125v9m-9-12v9.75M7.5 6.75v9.75"/>'],
             ['title' => 'Fixed rental fee',
              'img'   => '/images/icons/206.png',
+             'scale' => '1.15',
              'body'  => 'A fixed rental fee for the contract period gives your site clearer budgeting and better control over equipment cost.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z"/>'],
             ['title' => 'Service labour included',
@@ -135,7 +136,7 @@
             @foreach ($gainCards as $i => $card)
             <article class="card-hover group relative bg-white rounded-2xl border border-navy/5 p-6 lg:p-7 flex flex-col gap-3 reveal transition-all duration-300 ease-out hover:shadow-[0_20px_40px_-15px_rgba(1,30,65,0.25)]" style="transition-delay:{{ $i * 60 }}ms;">
                 @if (!empty($card['img']))
-                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-20 h-20 object-contain">
+                    <img src="{{ $card['img'] }}" alt="" aria-hidden="true" class="w-20 h-20 object-contain" @if(!empty($card['scale'])) style="transform:scale({{ $card['scale'] }});" @endif>
                 @else
                 <svg class="w-11 h-11 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">{!! $card['icon'] !!}</svg>
                 @endif
@@ -207,14 +208,14 @@
 
 {{-- ════════════ 7. RENTAL VS OUTRIGHT PURCHASE ════════════ --}}
 <section class="bg-white py-16 lg:py-24">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-8">
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Compare Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                Choose the equipment option that <span class="text-[#148af4]">fits how your site&nbsp;budgets</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 min-[1360px]:whitespace-nowrap">
+                Choose the equipment option that <span class="text-[#148af4]">fits how your site budgets</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                Rental and outright purchase both have their place. The right decision depends on capital planning,<br class="hidden lg:block"> equipment needs, support requirements and how much your site wants included from the start.
+                Rental and outright purchase both have their place. The right decision depends on capital planning, equipment needs, support requirements and how much your site wants included from the start.
             </p>
         </div>
 
@@ -291,7 +292,7 @@
         @foreach([
             ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us what equipment, capacity or laundry pressure needs to be covered.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
             ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review the equipment route, installation needs and agreement scope.', 'img' => '/images/shared/Strip1.jpeg'],
-            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied, installed and supported under the agreed rental arrangement.', 'img' => '/images/pages/equipmentrentalhero.png'],
+            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied, installed and supported under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
         ] as $step)
         <div class="rn-visit-card">
             <img src="{{ asset(ltrim($step['img'], '/')) }}" alt="{{ $step['title'] }}" loading="lazy">
@@ -328,7 +329,7 @@
             ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
             ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/pages/sectors/hospitallityhero.png', 'pos' => '75% center'],
             ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/pages/commercialindustrialequipmentrental.png'],
-            ['env' => 'Multi Housing',               'route' => route('equipment'),           'img' => '/images/pages/sectors/selfservice.png'],
+            ['env' => 'Multi Housing',               'route' => route('sectors.commercial'),  'img' => '/images/pages/sectors/selfservice.png'],
         ];
         @endphp
 
@@ -395,12 +396,6 @@
             </div>
         </div>
 
-        <div class="mt-8 flex flex-col sm:flex-row sm:items-center gap-4 reveal">
-            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy-dark text-white font-body font-bold px-6 py-3.5 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap sm:ml-auto">
-                Talk to Our Team
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-            </a>
-        </div>
     </div>
 </section>
 
@@ -421,7 +416,7 @@
             @php
             $planProof = [
                 ['title' => 'Right-fit equipment', 'text' => 'Equipment matched to space, workload and laundry demand.',
-                 'img' => '/images/icons/175.png'],
+                 'img' => '/images/icons/175.png', 'scale' => '1.25'],
                 ['title' => 'Clear rental cost', 'text' => 'Rental fee confirmed before the agreement begins.',
                  'img' => '/images/icons/206.png'],
                 ['title' => 'Planned installation', 'text' => 'Supply, access and support planned around your room and operation.',
@@ -431,7 +426,7 @@
             <div class="flex flex-col reveal" style="transition-delay:120ms;">
                 @foreach ($planProof as $i => $p)
                 <div class="flex items-start gap-5 py-6 border-t border-gray-100 first:border-t-0 first:pt-0 last:pb-0">
-                    <img src="{{ $p['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 object-contain flex-shrink-0" style="{{ $p['style'] ?? '' }}">
+                    <img src="{{ $p['img'] }}" alt="" aria-hidden="true" class="w-16 h-16 object-contain flex-shrink-0" style="{{ $p['style'] ?? '' }}{{ !empty($p['scale']) ? 'transform:scale('.$p['scale'].');' : '' }}">
                     <div>
                         <h3 class="font-heading font-bold text-navy text-xl mb-1.5 leading-snug">{{ $p['title'] }}</h3>
                         <p class="font-body text-gray-600 text-sm lg:text-base leading-relaxed text-pretty">{{ $p['text'] }}</p>
@@ -498,6 +493,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry rental&nbsp;&amp; support</span>',
     'subheading' => 'Sites across Ireland choose Irish Laundry Systems for equipment supply, rental and reliable ongoing support.',
+    'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
 ])
 <div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')
