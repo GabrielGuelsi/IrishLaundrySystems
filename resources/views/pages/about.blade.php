@@ -28,7 +28,7 @@
                     Commercial laundry equipment and service expertise<br class="hidden lg:block"> <span class="text-[#148af4]">across Ireland since 1987</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional laundry equipment for commercial operations across Ireland.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional<br class="hidden lg:block"> laundry equipment for commercial operations across Ireland.
                 </p>
                 <div class="flex flex-wrap gap-4 mb-10">
                     <a href="{{ route('services') }}"
@@ -57,18 +57,18 @@
 ══════════════════════════════════════════ -->
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
 
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Irish Laundry Systems</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Engineering knowledge that continues<br class="hidden lg:block"> <span class="text-[#148af4]">after installation</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    Engineering knowledge<br class="hidden lg:block"> that continues throughout<br class="hidden lg:block"> <span class="text-[#148af4]">the equipment’s working life</span>
                 </h2>
             </div>
 
             <div class="lg:pt-8 space-y-5">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    From planning and installation to maintenance, repairs and aftercare, customers deal with people who know the equipment.
+                    Our engineers remain involved after installation, with maintenance, repairs and aftercare focused on keeping equipment running, protecting its value and limiting disruption to your operation.
                 </p>
             </div>
 
@@ -183,7 +183,7 @@
         $ringNodes = [
             ['icon' => 'rental-gain-119', 'sc' => '0.871', 'label' => 'Equipment Supply',       'left' => '37.4%',  'top' => '20.1%', 'side' => 'left'],
             ['icon' => '302', 'label' => 'Installation & Setup',   'left' => '62.6%',  'top' => '20.1%', 'side' => 'right'],
-            ['icon' => '300', 'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
+            ['icon' => '300', 'sc' => '1.25', 'label' => 'Equipment Rental',       'left' => '74.05%', 'top' => '50%',   'side' => 'right'],
             ['icon' => '180', 'label' => 'Repairs & Call-Outs',    'left' => '62.6%',  'top' => '79.9%', 'side' => 'right'],
             ['icon' => '301', 'label' => 'Preventive Maintenance', 'left' => '37.4%',  'top' => '79.9%', 'side' => 'left'],
             ['icon' => 'aftercare-connected-94', 'sc' => '1.22', 'label' => 'Support & Aftercare',    'left' => '25.95%', 'top' => '50%',   'side' => 'left'],
@@ -251,7 +251,7 @@
         </div>
 
         {{-- CTA --}}
-        <div class="flex justify-center mt-6 lg:mt-4 reveal">
+        <div class="flex justify-center mt-6 lg:-mt-10 reveal">
             <a href="{{ route('services') }}"
                class="inline-flex items-center gap-2 bg-navy text-white font-body font-bold text-sm px-6 py-3 rounded-lg hover:bg-navy/90 transition-colors">
                 Explore Our Services
@@ -270,15 +270,14 @@
 <section>
     {{-- Header: white bg, padded --}}
     <div class="bg-white pt-20 lg:pt-28 pb-12 lg:pb-14">
-        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-            <div class="max-w-5xl">
+        <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-12">
+            <div class="max-w-none">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">How We Work</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 text-balance">
-                    <span class="sm:block">A clear process from first review</span>
-                    <span class="sm:block text-[#148af4]">through installation and aftercare</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.55rem] leading-tight mb-3 min-[1400px]:whitespace-nowrap">
+                    A clear process from first review <span class="text-[#148af4]">through installation and aftercare</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    Each stage is agreed before work begins, with clear information retained for future service.
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty min-[1280px]:whitespace-nowrap">
+                    Customers work with experienced commercial laundry engineers who understand the equipment, the site and the operating priorities behind every recommendation.
                 </p>
             </div>
         </div>
@@ -287,10 +286,10 @@
     {{-- Full-width image strip — no container, no padding, edge to edge --}}
     @php
     $siteSteps = [
-        ['num'=>'1','title'=>'Review the Operation',    'desc'=>'Review equipment, access, utilities, usage and service history.',                                       'img'=>'images/pages/about/Review%20the%20operation.png'],
-        ['num'=>'2','title'=>'Confirm the Requirement', 'desc'=>'Agree the equipment or service work needed and what it must cover.',                                     'img'=>'images/pages/about/keepsupportclear.png'],
-        ['num'=>'3','title'=>'Plan the Work',           'desc'=>'Coordinate delivery, installation or servicing around access and agreed timing.',                       'img'=>'images/shared/line-6000-solutions.jpg'],
-        ['num'=>'4','title'=>'Keep Records Clear',      'desc'=>'Maintain service history and parts information for future maintenance, repair or replacement.',          'img'=>'images/shared/repairs-hero.jpg'],
+        ['num'=>'1','title'=>'Understand the Operation',            'desc'=>'We review workload, equipment condition, access, utilities and service history before recommending equipment or service work.',                 'img'=>'images/pages/about/01%20Understand%20the%20Operation.png'],
+        ['num'=>'2','title'=>'Plan for Long-Term Value',            'desc'=>'We consider equipment, installation, utilities and maintenance together, giving the site a clearer basis for budget control and long-term investment.', 'img'=>'images/pages/about/02%20Plan%20for%20Long-Term%20Value.png'],
+        ['num'=>'3','title'=>'Coordinate Delivery and Installation','desc'=>'We coordinate delivery and installation around site access, utilities and agreed timing to minimise disruption.',                                     'img'=>'images/pages/about/03%20Coordinate%20the%20Work.png'],
+        ['num'=>'4','title'=>'Keep Equipment Records',              'desc'=>'We keep equipment, service and parts history on record to inform future maintenance, repairs and replacement decisions.',                            'img'=>'images/pages/about/04%20Keep%20Equipment%20History.png'],
     ];
     @endphp
 
@@ -408,13 +407,13 @@
 <section id="company-history" class="py-24 lg:py-36 bg-white overflow-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-        <div class="max-w-4xl mb-16 reveal">
+        <div class="max-w-6xl mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Company History</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1320px]:whitespace-nowrap">
                 From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience into a specialist commercial laundry equipment and service company.
+                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience<br class="hidden lg:block"> into a specialist commercial laundry equipment and service company.
             </p>
         </div>
 
@@ -462,7 +461,7 @@
 <!-- ══════════════════════════════════════════
      10. RESPONSIBLE EQUIPMENT — compact strip
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden bg-navy">
+<section class="relative overflow-hidden bg-navy flex items-center" style="min-height:480px;">
     {{-- Background image (right side) --}}
     <img src="{{ asset('images/pages/about/responsible-equipment.png') }}"
          alt="Responsible equipment choices"
@@ -470,7 +469,7 @@
     {{-- Navy gradient: solid on the left, fading to reveal the image on the right --}}
     <div class="absolute inset-0" style="background:linear-gradient(to right, #011e41 0%, #011e41 34%, rgba(1,30,65,0.75) 50%, rgba(1,30,65,0.15) 68%, rgba(1,30,65,0) 82%);"></div>
     {{-- Content: left-aligned text --}}
-    <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-24">
+    <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-14 lg:py-16">
         <div class="max-w-2xl reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment Choices</p>
             <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 lg:whitespace-nowrap">
@@ -497,7 +496,7 @@
     'pageSource' => 'about_cta',
     'eyebrow'    => 'Talk to Irish Laundry Systems',
     'heading'    => 'Tell us what your laundry<br class="hidden lg:block">operation needs from<br class="hidden lg:block"> <span class="text-[#148af4]">equipment to aftercare</span>',
-    'body'       => 'Share the main details about your site and what you need help with. Our team will review the enquiry and contact you directly.',
+    'body'       => 'Share the main details about your site and what you need help with.<br class="hidden lg:block"> Our team will review the enquiry and contact you directly.',
     'formTitle'  => 'Equipment & Service Enquiry',
     'formIntro'  => 'Provide the main details below. We aim to respond within 24 hours.',
     'buttonText' => 'Request an Assessment',
