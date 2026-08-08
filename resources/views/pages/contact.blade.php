@@ -74,8 +74,11 @@
 @else
 
 {{-- HERO — typographic, navy, no image --}}
-<section style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-[72px]">
+<section class="relative overflow-hidden" style="background-color:#011E41;">
+    <img src="/images/logo/electrolux-partner.png" alt="Authorised Electrolux Professional Partner"
+         class="hidden lg:block absolute top-1/2 -translate-y-1/2 right-40 z-10 w-[320px] h-auto object-contain"
+         style="filter:brightness(0) invert(1);">
+    <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-[72px]">
         <div class="max-w-[640px] reveal reveal-left">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-[15px]">Contact</p>
             <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-[23px]">
@@ -468,16 +471,6 @@
                         </iframe>
                     </div>
                     <p class="font-body text-gray-400 text-xs mt-2">Republic of Ireland, all 26 counties</p>
-                </div>
-
-                <div class="w-10 h-px bg-gray-200"></div>
-
-                {{-- Partner badge --}}
-                <div>
-                    <img src="/images/logo/electrolux-partner.png"
-                         alt="Authorised Electrolux Professional Partner"
-                         class="h-24 w-auto object-contain">
-                    <p class="font-body text-gray-500 text-sm mt-3">Authorised Electrolux Professional Partner</p>
                 </div>
 
             </div>

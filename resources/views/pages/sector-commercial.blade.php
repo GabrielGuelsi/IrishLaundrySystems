@@ -8,7 +8,7 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry operation"
+    <img src="/images/pages/home/HOMEHERO1.png" alt="Commercial laundry operation"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0 z-0" style="background: linear-gradient(to right, rgba(1,30,65,0.85) 0%, rgba(1,30,65,0.45) 50%, rgba(20,138,244,0.18) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -18,10 +18,10 @@
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial laundry equipment</span>
                     <span class="sm:block">and support to improve productivity</span>
-                    <span class="sm:block" style="color:#148af4;">and control operating costs</span>
+                    <span class="sm:block" style="color:#148af4;">and keep costs under control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
-                    From shared-use laundry rooms to industrial facilities, Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment, with purchase and Equipment Rental options.
+                    Irish Laundry Systems supplies, installs and services Electrolux Professional equipment,<br class="hidden lg:block"> with Equipment Rental available.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#commercial-assessment"
@@ -49,14 +49,14 @@
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Plan the laundry room</span>
-                    <span class="sm:block">around <span style="color:#148af4;">volume, load type</span></span>
-                    <span class="sm:block" style="color:#148af4;">and operating hours</span>
+                    <span class="sm:block" style="color:#148af4;">around volume, load type</span>
+                    <span class="sm:block" style="color:#148af4;">and daily demand</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed lg:max-w-sm lg:ml-auto">
-                    Space, access and utilities shape the capacity, layout and installation the site needs.
+                    Space, access and utilities determine the practical capacity, layout and installation requirements for each site.
                 </p>
             </div>
 
@@ -70,7 +70,7 @@
         <div class="mb-12 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where This Fits</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Commercial laundry equipment across <span style="color:#148af4;">different operating environments</span>
+                High-volume, <span style="color:#148af4;">shared-use and specialist sites</span>
             </h2>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
@@ -149,11 +149,11 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control operating costs across <span style="color:#148af4;">high-use laundry operations</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
+                Plan beyond the purchase price <span style="color:#148af4;">for better budget control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Purchase price is only one part of the cost. Consumption, drying efficiency and planned service all affect the cost of each load over time.
+                Energy, water and detergent use, drying efficiency, ergonomics and planned servicing all affect costs throughout the equipment’s working life.
             </p>
         </div>
 
@@ -172,12 +172,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose equipment for <span style="color:#148af4;">the way each site operates</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Priorities</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl leading-tight mb-3 min-[1200px]:whitespace-nowrap">
+                Choose the capacity and features <span style="color:#148af4;">each application requires</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Commercial and industrial sites place different demands on equipment. Capacity, controls and specialist features should reflect the conditions in which it will be used.
+                Load volumes, textile types, utilities, operator needs and hygiene standards should guide the equipment specification.
             </p>
         </div>
 
@@ -859,6 +859,31 @@
     </div>
 </section>
 
+{{-- Breathing room before the resources bar --}}
+<div class="bg-white h-10 lg:h-16"></div>
+
+{{-- RESOURCES BAR (slim inline) — after Dosing & Laundry Control --}}
+@include('components.resources-bar', ['groups' => [
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
+                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+                    ['l' => 'Product resources', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
+                    ['l' => 'Dosing & Accessories', 'h' => route('equipment.category', 'accessories')],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request laundry assessment', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+]])
+
+{{-- Breathing room between the resources bar and the Equipment Rental strip --}}
+<div class="bg-white h-20 lg:h-32"></div>
+
 @include('components.why-choose-strip', [
     'eyebrow' => 'Equipment Rental',
     'headingLine1' => 'Keep laundry moving with',
@@ -866,20 +891,20 @@
     'body' => 'Rental can support replacement, expansion or ageing equipment needs without one large purchase, where the available Electrolux Professional range fits the laundry room. Service and breakdown support are included under rental terms.',
     'miniPoints' => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
-        ['icon' => '125', 'iconClass' => 'scale-[1.32]', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit'],
-        ['icon' => 'healthcarerentalstrip3', 'iconClass' => 'scale-[0.91]', 'label' => 'Included<br>support'],
+        ['icon' => '125', 'iconClass' => 'scale-[1.15] -translate-x-[4px]', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit', 'class' => 'lg:ml-2'],
+        ['icon' => 'healthcarerentalstrip3', 'iconClass' => 'scale-[0.91]', 'label' => 'Included<br>support', 'class' => 'lg:-ml-2'],
     ],
 ])
 
 @include('components.equipment-categories', [
     'eyebrow' => 'Equipment Categories',
     'textMinH' => '176px',
-    'heading' => 'Explore equipment for <span style="color:#148af4;">commercial and industrial laundry</span>',
+    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">commercial and industrial laundry</span></span>',
     'subheading' => 'Select a category to view the equipment available for different capacities and applications.',
     'subheadingClass' => 'max-w-none',
     'equipment' => [
-        ['img' => 'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp', 'name' => 'Barrier Washers', 'desc' => 'For sites that need controlled dirty-side and clean-side handling.', 'box' => 250, 'mb' => -20],
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',        'name' => 'Washing Machines', 'desc' => 'For daily wash demand across workwear, uniforms, towels, bedding, mops and mixed textiles.', 'box' => 270, 'mb' => -35],
+        ['img' => 'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp', 'name' => 'Barrier Washers', 'desc' => 'For sites that need controlled dirty-side and clean-side handling.', 'box' => 250, 'mb' => -20],
         ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg',   'name' => 'Dryers',      'desc' => 'For controlled drying, fabric care and reliable daily turnaround.', 'box' => 245],
         ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/workwear-dc6-15ww.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of workwear, protective clothing, bulky items, shoes and specialist garments.', 'box' => 260, 'mb' => -11],
         ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For flatwork finishing, presentation standards and storage-ready results.'],
@@ -894,7 +919,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Prepare commercial laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">
+        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
             Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
         </p>
 
@@ -908,13 +933,13 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 2)
-                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <div class="hidden lg:block absolute -right-[4.5rem] top-[2.45rem] text-[#148af4]">
+                    <svg class="w-14 h-8" fill="none" viewBox="0 0 40 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M29.5 4.5 37 12m0 0-7.5 7.5M37 12H3"/></svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                <div class="w-full flex justify-center items-center mb-1" style="height:8rem;">
                     <img src="/images/icons/{{ [126, 125, 128][$i] }}.png" alt=""
-                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                         style="width:{{ $i === 1 ? '8rem' : '7rem' }};height:{{ $i === 1 ? '8rem' : '7rem' }};filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{!! $step['text'] !!}</p>
@@ -942,28 +967,6 @@
     'cta1Route'    => 'service-contracts',
 ])
 
-{{-- Breathing room between the After Installation strip and the resources bar --}}
-<div class="bg-white h-10 lg:h-16"></div>
-
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-                ['title' => 'Official Resources', 'links' => [
-                    ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'],
-                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
-                    ['l' => 'Product resources', 'h' => route('resources')],
-                ]],
-                ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')],
-                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
-                    ['l' => 'Dosing & Accessories', 'h' => route('equipment.category', 'accessories')],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request laundry assessment', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-]])
-
 @include('components.testimonials', [
     'eyebrow'    => 'Client Feedback',
     'heading'    => 'What commercial laundry operators say about <span style="color:#148af4;">working with Irish Laundry Systems</span>',
@@ -990,7 +993,7 @@
 
 @include('components.cta-downtime-form', [
     'pageSource'  => 'commercial_cta',
-    'heading'     => 'Plan the next step for your<br class="hidden lg:block"> <span style="color:#148af4;">commercial laundry operation</span>',
+    'heading'     => 'Plan the next step<br class="hidden lg:block"> for your <span style="color:#148af4;">commercial<br class="hidden lg:block"> laundry operation</span>',
     'body'        => 'Tell us about the site, current equipment and priorities. Get clear advice on equipment, Equipment Rental, maintenance, repairs or aftercare.',
     'formTitle'   => 'Request a Commercial Laundry Assessment',
     'buttonText'  => 'Request Commercial Assessment',

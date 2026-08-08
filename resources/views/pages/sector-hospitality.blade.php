@@ -39,27 +39,20 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Hospitality Laundry Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[7fr_5fr] gap-12 lg:gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block">Plan hospitality laundry</span>
-                    <span class="sm:block">around <span style="color:#148af4;">volume, space and</span></span>
-                    <span class="sm:block" style="color:#148af4;">operating requirements</span>
+                    <span class="sm:block min-[1360px]:whitespace-nowrap">Plan hospitality laundry around</span>
+                    <span class="sm:block min-[1360px]:whitespace-nowrap">peak demand, available space and</span>
+                    <span class="sm:block min-[1360px]:whitespace-nowrap" style="color:#148af4;">the turnaround your operation needs</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    We assess the items processed, peak demand, utilities and access before defining the equipment capacity and layout required for the property.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    The items processed, utilities, access and staff handling all influence equipment capacity, room layout, installation requirements and which equipment categories may be relevant to the site.
                 </p>
-                <a href="{{ route('equipment') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    View Hospitality Equipment Options
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -236,11 +229,14 @@
     </div>
 </section>
 
+{{-- White spacing between the services cards and the Site Planning banner --}}
+<div class="h-16 lg:h-28 bg-white"></div>
+
 <!-- PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
     'heading'    => 'Plan the laundry room around <span style="color:#011E41;">space, utilities and peak demand</span>',
-    'body'       => 'A room review can check property demand, available space, utilities and equipment needs<br class="hidden lg:block"> before purchase, rental or replacement.',
+    'body'       => 'A room review can check property demand, available space, utilities and<br class="hidden lg:block"> equipment needs before purchase, rental or replacement.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
@@ -678,7 +674,7 @@
     'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Rental can suit selected hospitality sites where the available Electrolux Professional range fits the laundry room size, capacity need and operating profile.',
     'miniPoints'   => [
-        ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower upfront<br>cost'],
+        ['icon' => 'healthcarerentalstrip1', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Lower<br>upfront cost', 'class' => 'lg:mr-6'],
         ['icon' => '125', 'iconClass' => 'scale-[1.32]', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Range<br>fit'],
         ['icon' => 'repairs-maintenance-review', 'iconStyle' => 'filter:brightness(0) invert(1);', 'label' => 'Included<br>support'],
     ],
@@ -688,11 +684,11 @@
 @include('components.equipment-categories', [
     'eyebrow' => 'Equipment Categories',
     'textMinH' => '176px',
-    'heading' => 'Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span>',
+    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
     'subheading' => 'Select a category to see the equipment available for different hospitality laundry requirements.',
     'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
-        ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For hospitality sites that need controlled dirty-side and clean-side handling.','box'=>250,'mb'=>-20],
+        ['img'=>'FIT1', 'src' => '/images/pages/finishing-equipment/FIT1.jpg','ext'=>'jpg','name'=>'Vacuum Ironing Tables','desc'=>'For pressing garments, linens and delicate items to presentation standard.'],
         ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For bed linen, towels, robes, uniforms, guest items and food and beverage textiles.','box'=>270,'mb'=>-35],
         ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg','name'=>'Dryers','desc'=>'For controlled drying, fabric care and daily room preparation.','box'=>245],
         ['img'=>'drying-cabinet','src'=>'/images/pages/drying-cabinets/workwear-dc6-15ww.jpg','name'=>'Drying Cabinets','desc'=>'For gentle drying of garments, bulky items and specialist textiles.','box'=>260,'mb'=>-11],
@@ -720,13 +716,13 @@
 
             <div class="flex flex-col items-center text-center relative">
                 @if($i < 2)
-                <div class="hidden lg:block absolute -right-[3.125rem] top-[2.625rem] text-[#148af4]">
-                    <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <div class="hidden lg:block absolute -right-[4.5rem] top-[2.45rem] text-[#148af4]">
+                    <svg class="w-14 h-8" fill="none" viewBox="0 0 40 24" stroke="currentColor" stroke-width="2.2"><path stroke-linecap="round" stroke-linejoin="round" d="M29.5 4.5 37 12m0 0-7.5 7.5M37 12H3"/></svg>
                 </div>
                 @endif
-                <div class="w-full flex justify-center items-center mb-4" style="height:8rem;">
+                <div class="w-full flex justify-center items-center mb-1" style="height:8rem;">
                     <img src="/images/icons/{{ [126, 125, 128][$i] }}.png" alt=""
-                         style="width:7rem;height:7rem;filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
+                         style="width:{{ $i === 1 ? '8rem' : '7rem' }};height:{{ $i === 1 ? '8rem' : '7rem' }};filter:brightness(0) saturate(100%) invert(35%) sepia(96%) saturate(1500%) hue-rotate(196deg) brightness(103%);">
                 </div>
                 <h3 class="font-heading font-bold text-navy text-sm lg:text-base mb-1">{{ $step['title'] }}</h3>
                 <p class="font-body text-gray-500 text-sm leading-relaxed">{{ $step['text'] }}</p>
@@ -744,7 +740,7 @@
     'textMaxW'     => 'lg:max-w-[60%]',
     'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span>',
     'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
-    'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after installation, rental, repair or replacement.',
+    'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after<br class="hidden lg:block"> installation, rental, repair or replacement.',
     'image'        => '/images/shared/repairs-callouts.jpg',
     'miniPoints'   => [
         ['icon' => '61', 'iconClass' => 'scale-[0.94]', 'label' => 'Service<br>planning'],
