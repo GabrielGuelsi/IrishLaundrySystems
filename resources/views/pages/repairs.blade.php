@@ -138,19 +138,13 @@
                 <span class="font-body font-bold text-navy text-sm">Service history</span>
             </div>
         </div>
-
-        <a href="{{ route('contact') }}"
-           class="inline-flex items-center justify-center gap-2 bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-3.5 rounded-md text-sm transition-colors duration-200">
-            Request a Call-Out
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-        </a>
     </div>
 </section>
 
 <!-- CALL-OUT SUPPORT STRIP -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl">
+        <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl -mt-10 lg:-mt-14">
 
             {{-- Top gradient accent line --}}
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>
@@ -491,6 +485,7 @@ $faqs = [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry service&nbsp;support</span>',
     'subheading' => 'Commercial sites choose Irish Laundry Systems for responsive repairs, clear communication and reliable equipment care.',
+    'subheadingClass' => 'max-w-none mx-auto lg:whitespace-nowrap',
 ])
 <div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')
@@ -501,7 +496,7 @@ $faqs = [
     'eyebrow'      => 'After the Repair',
     'headingLine1' => 'Use repair findings to protect',
     'headingLine2' => 'equipment reliability',
-    'body'         => 'After a call-out, repair findings can support service records, parts checks, Preventive Maintenance or replacement planning.',
+    'body'         => 'After a call-out, repair findings can support service records, parts checks,<br class="hidden lg:block"> Preventive Maintenance or replacement planning.',
     'image'        => '/images/shared/Parts%20%26%20Aftercare.png',
     'miniPoints'   => [
         ['icon' => 'repairs-fault-patterns', 'label' => 'Repair<br>findings'],
@@ -528,7 +523,7 @@ $faqs = [
             <img src="/images/icons/repairs-urgent-support.png" alt="" aria-hidden="true" class="mx-auto mb-5 w-24 h-24 object-contain">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Request a Call-Out</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                Need commercial laundry equipment <span class="text-[#148af4]">back in&nbsp;service</span>?
+                Need commercial laundry equipment <span class="text-[#148af4]">back in&nbsp;service?</span>
             </h2>
             <p class="font-body text-white/80 text-base leading-relaxed max-w-xl mx-auto mb-6 text-pretty">
                 Send the fault details and site information. Irish Laundry Systems will review the request and arrange the appropriate call-out or repair response.

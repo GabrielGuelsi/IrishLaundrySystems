@@ -78,16 +78,16 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
             <div>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Service support built around <span class="text-[#148af4]">uptime, cost control and equipment&nbsp;care</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    Service support built <br class="hidden sm:block"><span class="sm:whitespace-nowrap">around <span class="text-[#148af4]">uptime, cost control</span></span> <br class="hidden sm:block"><span class="text-[#148af4]">and equipment&nbsp;care</span>
                 </h2>
             </div>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 lg:pl-[10%]">
                 <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Repairs, planned maintenance, equipment rental and aftercare all affect uptime,<br class="hidden lg:block"> service costs and equipment value.
+                    Repairs, planned maintenance, equipment rental and aftercare all affect uptime, service costs and equipment value.
                 </p>
                 <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Irish Laundry Systems keeps those service needs under control for commercial<br class="hidden lg:block"> laundry operations across Dublin and Ireland.
+                    Irish Laundry Systems keeps those service needs under control for commercial laundry operations across Dublin and Ireland.
                 </p>
             </div>
         </div>

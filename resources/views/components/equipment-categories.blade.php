@@ -56,7 +56,7 @@ $equipmentList = $equipment ?? [
                     <img src="{{ $imgSrc }}"
                          alt="{{ $eq['name'] }}"
                          class="transition-transform duration-500 hover:-translate-y-2"
-                         style="width:{{ $box }}px; max-width:100%; height:{{ $box }}px; object-fit:contain; margin-bottom:{{ $mb }}px;">
+                         style="width:{{ $box }}px; max-width:100%; height:{{ $box }}px; object-fit:contain; margin-bottom:{{ $mb }}px;{{ isset($eq['shiftX']) ? ' transform:translateX('.$eq['shiftX'].');' : '' }}">
                 </div>
                 @endif
                 @php
