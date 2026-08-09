@@ -187,7 +187,7 @@
                 'body'  => 'Connects up to seven washing machines with one unit for simpler dosing control.',
                 'chips' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'cta'   => 'Ask About Multisave',
-                'img'   => '/images/shared/MultisaveEQUIP.webp',
+                'img'   => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'  => 'JETSAVE',
@@ -196,7 +196,7 @@
                 'body'  => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
                 'chips' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'cta'   => 'Ask About JETSAVE',
-                'img'   => '/images/shared/JetsaveEQUIP.webp',
+                'img'   => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'  => 'DOSAVE',
@@ -205,7 +205,7 @@
                 'body'  => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
                 'chips' => ['Peristaltic pumps', 'Easy programming', 'Controlled delivery'],
                 'cta'   => 'Ask About DOSAVE',
-                'img'   => '/images/shared/DOSAVEEQUIP.webp',
+                'img'   => '/images/pages/accessories/DOSAVE.jpg',
             ],
         ];
         @endphp

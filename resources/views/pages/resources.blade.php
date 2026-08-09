@@ -68,6 +68,7 @@
             'desc'  => 'A practical guide to capacity, available space, installation requirements and key commercial considerations when choosing laundry equipment.',
             'cta'   => 'Download the Guide',
             'url'   => '/resources/commercial-laundry-equipment-buying-guide',
+            'img'   => '/images/pages/about/Commercial Laundry Equipment Buying Guide.png',
         ];
         $ilsSecondary = [
             [
@@ -76,6 +77,7 @@
                 'desc'  => 'Compare the cost, ownership and maintenance considerations behind purchasing equipment or choosing Equipment Rental.',
                 'cta'   => 'Download the Guide',
                 'url'   => '/resources/equipment-rental-or-purchase-guide',
+                'img'   => '/images/pages/about/Buyer Guide Equipment Rental or Purchase Guide.png',
             ],
             [
                 'label' => 'Maintenance Checklist',
@@ -83,6 +85,7 @@
                 'desc'  => 'A practical checklist for planning servicing, monitoring equipment condition and reducing breakdown risk over time.',
                 'cta'   => 'Download the Checklist',
                 'url'   => '/resources/preventive-maintenance-checklist',
+                'img'   => '/images/pages/about/Preventive Maintenance Checklist.png',
             ],
         ];
         @endphp
@@ -92,9 +95,9 @@
             {{-- Featured (spans both rows on desktop, first on mobile) --}}
             <a href="{{ $ilsGuide['url'] }}"
                class="group lg:row-span-2 rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col reveal">
-                <div class="relative flex items-center justify-center" style="min-height:220px; background:linear-gradient(135deg,#011E41 0%,#0d3568 100%);">
-                    <span class="absolute top-5 left-5 bg-[#148af4] text-white font-heading font-bold text-xs px-3 py-1.5 rounded-full uppercase tracking-wide">{{ $ilsGuide['label'] }}</span>
-                    <svg class="w-20 h-20 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+                <div class="relative overflow-hidden" style="min-height:340px;">
+                    <img src="{{ str_replace(' ', '%20', $ilsGuide['img']) }}" alt="{{ $ilsGuide['title'] }}" class="absolute inset-0 w-full h-full object-cover">
+                    <span class="absolute top-5 left-5 z-10 bg-[#148af4] text-white font-heading font-bold text-xs px-3 py-1.5 rounded-full uppercase tracking-wide">{{ $ilsGuide['label'] }}</span>
                 </div>
                 <div class="p-8 lg:p-10 flex flex-col flex-1 bg-gray-50">
                     <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-4">{{ $ilsGuide['title'] }}</h3>
@@ -110,8 +113,8 @@
             @foreach($ilsSecondary as $g)
             <a href="{{ $g['url'] }}"
                class="group rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col sm:flex-row reveal">
-                <div class="relative flex items-center justify-center sm:w-40 flex-shrink-0" style="min-height:140px; background:linear-gradient(135deg,#011E41 0%,#0d3568 100%);">
-                    <svg class="w-12 h-12 text-white/40" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.3"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <div class="relative overflow-hidden sm:w-56 flex-shrink-0" style="min-height:200px;">
+                    <img src="{{ str_replace(' ', '%20', $g['img']) }}" alt="{{ $g['title'] }}" class="absolute inset-0 w-full h-full object-cover">
                 </div>
                 <div class="p-6 flex flex-col flex-1 bg-white">
                     <span class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">{{ $g['label'] }}</span>
@@ -295,12 +298,24 @@
                 ['title' => 'Efficient Dosing', 'type' => 'Product Leaflet',
                  'equipment' => ['Dosing & Detergents','Accessories & Consumables'], 'sector' => [],
                  'pdf' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2017/09/Efficient-Dosing-Brochure-2017.pdf'],
+
+                ['title' => 'CMIS 5 — Certus Management Information System®', 'type' => 'Management Systems & Software',
+                 'equipment' => [], 'sector' => [],
+                 'pdf' => $tb.'PDS/PDS_CMIS_438919493_EN.pdf?version=1755564401'],
+
+                ['title' => 'Laundry Program Manager — LPM', 'type' => 'Management Systems & Software',
+                 'equipment' => [], 'sector' => [],
+                 'pdf' => $tb.'PDS/PDS_LPM_438919528_EN.pdf?version=1754961459'],
+
+                ['title' => 'Payment Systems', 'type' => 'Payment Systems',
+                 'equipment' => [], 'sector' => [],
+                 'pdf' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2017/05/Payment-Systems-2017.pdf'],
             ];
 
             // Facet order (canonical); only families with at least one document are shown.
             $equipOrder  = ['Laundry Range & Line 6000','Commercial Washers','Barrier Washers','Tumble Dryers','Heat Pump Dryers','Drying Cabinets','Hot Cylinder Ironers','Finishing Equipment','Wet Cleaning','myPRO','myPRO XL','myPROzip','Dosing & Detergents','Accessories & Consumables'];
             $sectorOrder = ['Healthcare','Care Facilities','Hospitality','Commercial & Industrial'];
-            $typeOrder   = ['Brochure','Range Overview','Application Guide','Product Leaflet','White Paper'];
+            $typeOrder   = ['Brochure','Range Overview','Application Guide','Product Leaflet','White Paper','Management Systems & Software','Payment Systems'];
 
             $pE = []; $pS = []; $pT = [];
             foreach ($documents as $d) {
