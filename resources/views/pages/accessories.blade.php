@@ -44,7 +44,7 @@
 @include('components.partner-strip')
 
 {{-- 3. INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why It Matters</p>
         <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-12 lg:gap-12 items-start">
@@ -67,7 +67,7 @@
 </section>
 
 {{-- 4. FINANCIAL & OPERATIONAL PROOF --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -91,7 +91,7 @@
 </section>
 
 {{-- 5. LAUNDRY CONTROL SETUP (dose + detergent + storage + support) --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
@@ -147,7 +147,7 @@
 </section>
 
 {{-- 6. DOSING SYSTEM OPTIONS / TABS (Alpine carousel) --}}
-<section id="dosing-systems" class="py-12 lg:py-16 bg-white border-t border-gray-100 scroll-mt-28">
+<section id="dosing-systems" class="py-16 lg:py-28 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -326,7 +326,7 @@
 </section>
 
 {{-- 7. PRODUCT / RANGE SECTION --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-32 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -410,7 +410,7 @@
 </section>
 
 {{-- 8. FAMILY 1 — LINE 6000 ECO-RANGE (core detergents + stain care & descaling) --}}
-<section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Eco-Range</p>
@@ -518,7 +518,7 @@
 </section>
 
 {{-- 8b. FAMILY 2 — myPRO CLEANSTAR CONSUMABLES --}}
-<section id="detergents-by-laundry-setup" class="py-12 lg:py-16 bg-white border-t border-gray-100 scroll-mt-28">
+<section id="detergents-by-laundry-setup" class="py-16 lg:py-28 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -566,7 +566,7 @@
 </section>
 
 {{-- 8c. FAMILY 3 — lagoon ADVANCED CARE PRODUCTS --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -658,7 +658,7 @@
 ]])
 
 {{-- 8d. CUSTOMER-FACING CERTIFICATE BLOCK --}}
-<section class="py-12 lg:py-16 bg-gray-50 border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -691,7 +691,7 @@
 </section>
 
 {{-- 9. ACCESSORIES MINI GRID --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -746,7 +746,7 @@
 </section>
 
 {{-- 9b. LAUNDRY MANAGEMENT & CONNECTIVITY --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -866,7 +866,7 @@
 </section>
 
 {{-- 10. SERVICE AND SUPPORT OPTIONS (image-cards) --}}
-<section class="py-16 lg:py-20 bg-gray-50 border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -943,7 +943,7 @@
 </section>
 
 {{-- 12. RELATED EQUIPMENT --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">

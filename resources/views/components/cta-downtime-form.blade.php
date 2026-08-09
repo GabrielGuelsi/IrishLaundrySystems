@@ -11,14 +11,30 @@
     'messageRequired'   => false,
     'requestTypeLabel'  => 'Request Type',
     'headingSize'       => 'text-2xl sm:text-4xl lg:text-5xl',
+    'headingFull'       => false,
 ])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
 <section class="py-16 lg:py-24 bg-navy">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
+        @if ($headingFull)
+        <div class="mb-10 lg:mb-14">
+            @if ($eyebrow)
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
+            @endif
+            <h2 class="font-heading font-bold text-white {{ $headingSize }} mb-4 leading-tight">
+                {!! $heading !!}
+            </h2>
+            <p class="font-body text-blue-200 text-base leading-relaxed">
+                {!! $body !!}
+            </p>
+        </div>
+        @endif
+
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
 
             {{-- LEFT: heading + contact methods + electrolux + map --}}
             <div class="flex flex-col">
+                @unless ($headingFull)
                 @if ($eyebrow)
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">{{ $eyebrow }}</p>
                 @endif
@@ -28,6 +44,7 @@
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8">
                     {!! $body !!}
                 </p>
+                @endunless
 
                 <div class="space-y-4 mb-8">
                     {{-- Phone --}}

@@ -43,7 +43,7 @@
 @include('components.partner-strip')
 
 {{-- INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Finishing Performance</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -65,7 +65,7 @@
 </section>
 
 {{-- FINISHING EQUIPMENT OPTIONS (visual selector — main card-based selector) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Options</p>
@@ -150,7 +150,7 @@
 ]])
 
 {{-- FINISHING EQUIPMENT RANGE (product grid) --}}
-<section id="finishing-range" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
+<section id="finishing-range" class="py-20 lg:py-32 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -343,7 +343,7 @@
 </section>
 
 {{-- SPECIALIST FINISHING --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-32 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
@@ -385,7 +385,7 @@
 </section>
 
 {{-- ONGOING SUPPORT --}}
-<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -462,7 +462,7 @@
 </section>
 
 {{-- WHERE IT FITS (4 cards) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -550,7 +550,7 @@
 </section>
 
 {{-- RELATED EQUIPMENT (4 cards) --}}
-<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -606,7 +606,7 @@
 ])
 
 {{-- FINAL CTA --}}
-<section class="py-16 lg:py-24" style="background-color:#011E41;">
+<section class="py-20 lg:py-32" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Finishing Equipment Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">

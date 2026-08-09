@@ -42,7 +42,7 @@
 @include('components.partner-strip')
 
 {{-- 3. INTELLIGENCE BEHIND THE EQUIPMENT --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Connected Laundry Intelligence</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -66,7 +66,7 @@
 </section>
 
 {{-- 4. BIG ICON BENEFITS --}}
-<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
+<section class="py-20 lg:py-32 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Business Value</p>
@@ -150,7 +150,7 @@
 </section>
 
 {{-- 7. CONSUMPTION CONTROL — three resource signals (claim / label / body) --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Consumption Control</p>
@@ -204,7 +204,7 @@
 ])
 
 {{-- 9. COMPATIBLE LAUNDRY EQUIPMENT --}}
-<section class="relative overflow-hidden py-16 lg:py-24" style="background:linear-gradient(180deg,#ffffff 0%,#f7fafd 45%,#ffffff 100%);">
+<section class="relative overflow-hidden py-20 lg:py-32" style="background:linear-gradient(180deg,#ffffff 0%,#f7fafd 45%,#ffffff 100%);">
 
     {{-- decorative line-work, right side (xl only, purely cosmetic) --}}
     <svg class="hidden xl:block absolute pointer-events-none" aria-hidden="true" focusable="false" fill="none"
@@ -337,7 +337,7 @@
 </section>
 
 {{-- 10. GETTING STARTED --}}
-<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
+<section class="py-20 lg:py-32 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Getting Started</p>
@@ -372,7 +372,7 @@
 </section>
 
 {{-- 11. OFFICIAL RESOURCES --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Official Resources</p>

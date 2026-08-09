@@ -109,9 +109,9 @@
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
             @foreach([
                 ['title' => 'Hygiene Safeguard',        'copy' => 'Hygiene Watchdog prevents accidental door opening, helping protect the separation between dirty and clean laundry throughout the wash cycle.', 'img' => '/images/icons/Hygiene-Watchdog1.webp', 'imgClass' => 'w-24 h-24 object-contain'],
-                ['title' => 'Easier Daily Handling',    'copy' => 'Ergocert 4-star design, ergonomic door handles and optimised door height make loading and unloading easier for operators.', 'img' => '/images/icons/224.png', 'imgClass' => 'w-24 h-24 object-contain'],
-                ['title' => 'Easier Unloading',         'copy' => 'Auto Inner Door Opening pre-opens the drum doors at the end of the cycle, making wet linen easier to extract on equipped models.', 'img' => '/images/icons/Foto-web-BW.jpg', 'imgClass' => 'w-full h-full object-cover rounded-xl'],
-                ['title' => 'Clearer Operator Control', 'copy' => 'On Pullman models, ClarusVibe provides self-explanatory programmes and displays on both sides, reducing unnecessary movement between dirty and clean zones.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-full object-cover rounded-xl'],
+                ['title' => 'Easier Daily Handling',    'copy' => 'Ergocert 4-star design, ergonomic door handles and optimised door height make loading and unloading easier for operators.', 'img' => '/images/pages/barrier-washers/Easier%20Daily%20Handling.webp', 'imgClass' => 'w-full h-full object-cover rounded-xl'],
+                ['title' => 'Easier Unloading',         'copy' => 'Auto Inner Door Opening pre-opens the drum doors at the end of the cycle, making wet linen easier to extract on equipped models.', 'img' => '/images/pages/barrier-washers/Easier%20Unloading.png', 'imgClass' => 'w-full h-full object-cover rounded-xl'],
+                ['title' => 'Clearer Operator Control', 'copy' => 'On Pullman models, ClarusVibe provides self-explanatory programmes and displays on both sides, reducing unnecessary movement between dirty and clean zones.', 'img' => '/images/pages/barrier-washers/Clearer%20Operator%20Control.png', 'imgClass' => 'w-full h-full object-cover rounded-xl'],
                 ['icon' => '175', 'title' => 'Cycle Visibility',        'copy' => 'Monitoring options can show cycle status, alarms and key process data for supported barrier washer setups.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.07] -translate-y-[2.6%]'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
@@ -665,7 +665,7 @@
 {{-- 12a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
-    'image'        => '/images/pages/barrier-washers/equipmentrentalnewimagestrip.png',
+    'image'        => '/images/pages/barrier-washers/rentalstripnewimage.png',
     'mirror'       => true,
     'gradientStrength' => 0.55,
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
