@@ -45,7 +45,7 @@
 @include('components.partner-strip')
 
 {{-- 3. INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Professional Textile Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
@@ -72,7 +72,7 @@
 </section>
 
 {{-- 4. WET CLEANING BUSINESS CASE --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -117,7 +117,7 @@
 </section>
 
 {{-- 5. FINANCIAL & OPERATIONAL PROOF --}}
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-16 lg:py-28 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -141,7 +141,7 @@
 </section>
 
 {{-- 6. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -177,7 +177,7 @@
 </section>
 
 {{-- 7. CERTIFIED TEXTILE CARE --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -210,7 +210,7 @@
 </section>
 
 {{-- 7. LAGOON PROCESS / INFOGRAPHIC + VIDEO --}}
-<section class="py-16 lg:py-24 bg-gray-50 overflow-x-hidden">
+<section class="py-20 lg:py-32 bg-gray-50 overflow-x-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         @php
             // Official process infographic (Trello asset) — becomes the main piece once saved to this path.
@@ -253,7 +253,7 @@
 </section>
 
 {{-- 8. SYSTEM COMPONENTS --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -328,7 +328,7 @@
 </section>
 
 {{-- 9. CAPACITY PLANNING / VOLUME ACCORDION --}}
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-16 lg:py-28 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -384,7 +384,7 @@
 </section>
 
 {{-- 10. WHERE WET CLEANING FITS / CAROUSEL --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -510,7 +510,7 @@
 </section>
 
 {{-- 13. SMART DETERGENTS & PRESPOTTING — quick-scan chemistry flow --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -564,7 +564,7 @@
 </section>
 
 {{-- DOSING INTELLIGENCE (Alpine carousel — matches sector pages) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -729,7 +729,7 @@
 {{-- Asset notes (internal): lifestyle slot = garments being handled/tried on before return; video stays a small
      thumbnail (Serenity clip when available); no ghost mannequins or AI-generated garments in the reassurance card;
      right column stays lighter than the product side. --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -813,7 +813,7 @@
 </section>
 
 {{-- 15. SERVICE AND SUPPORT OPTIONS --}}
-<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -910,7 +910,7 @@
 ]])
 
 {{-- 17. RELATED EQUIPMENT --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
