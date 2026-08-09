@@ -43,21 +43,22 @@
 @include('components.partner-strip')
 
 {{-- 4. INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Planning</p>
         <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-8 lg:gap-10 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block lg:whitespace-nowrap">Select drying cabinet capacity for</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">your items, space and daily volume</span>
+                    <span class="sm:block lg:whitespace-nowrap">Plan drying cabinet capacity</span>
+                    <span class="block lg:whitespace-nowrap">around the items you dry</span>
+                    <span class="block lg:whitespace-nowrap">and <span style="color:#148af4;">daily drying volume</span></span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed lg:ml-auto">
-                    Hanging space, shelf layout and footwear accessories determine the cabinet configuration required.
+                    Available space, hanging requirements, shelf layout and footwear accessories all influence the cabinet configuration, internal arrangement and installation planning for the site.
                 </p>
             </div>
 
@@ -66,14 +67,17 @@
 </section>
 
 {{-- 4b. DRYING CABINET PERFORMANCE (combined financial + technical) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Technology</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                Drying cabinet features that make <span style="color:#148af4;">specialist drying easier to manage</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Drying cabinet technology for <span style="color:#148af4;">easier specialist drying</span>
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                See how Electrolux Professional features support the practical demands of specialist drying applications.
+            </p>
         </div>
 
         @include('components.financial-metrics', ['labelDrop' => true, 'items' => [
@@ -87,15 +91,17 @@
 </section>
 
 {{-- 6b. WHERE DRYING CABINETS FIT --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where They Fit</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                <span class="sm:block">Drying cabinets for <span style="color:#148af4;">delicate garments,</span></span>
-                <span class="sm:block" style="color:#148af4;">shared laundry and workwear</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Drying cabinets for <span style="color:#148af4;">specialist laundry needs</span>
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Explore common applications to see how cabinet drying is used across different garments, gear and laundry environments.
+            </p>
         </div>
 
         @php
@@ -177,14 +183,17 @@
 </section>
 
 {{-- 7. RANGE OVERVIEW --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                Choose the drying cabinet type for <span style="color:#148af4;">your items and running-cost priorities</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
+                Compare drying cabinet types for <span style="color:#148af4;">different drying needs</span>
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Consider the items, available space and running-cost priorities before selecting equipment.
+            </p>
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -232,7 +241,7 @@
 </section>
 
 {{-- 9. PRODUCT FINDER / CABINET RANGE --}}
-<section id="cabinet-range" class="py-16 lg:py-24 bg-white">
+<section id="cabinet-range" class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -349,21 +358,14 @@
     </div>
 </section>
 
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-    ['title' => 'Official Resources',  'links' => [['l' => 'Drying Cabinets leaflet', 'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
-    ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
-    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
-]])
-
 {{-- 9b. ACCESSORIES --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Configure cabinet drying for <br class="hidden sm:block"><span style="color:#148af4;">garments, footwear and gloves</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Configure cabinet drying for<br class="hidden sm:block"> <span style="color:#148af4;">garments, footwear and gloves</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Choose accessories for the articles each drying cabinet needs to accommodate.
@@ -395,6 +397,16 @@
         </div>
     </div>
 </section>
+
+{{-- RESOURCES BAR (slim inline) — after Accessories --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources',  'links' => [['l' => 'Drying Cabinets leaflet', 'h' => '/pdfs/EPR-Drying Cabinets Leaflet-20250710-EN.pdf'], ['l' => 'Line 6000 Washers & Dryers brochure', 'h' => '/pdfs/EPR_Line 6000 Washers and Dryers brochure-01072025_EN.pdf'], ['l' => 'Firefighters laundry brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+    ['title' => 'Chemicals & Dosing',  'links' => [['l' => 'Efficient Dosing', 'h' => route('equipment')], ['l' => 'Dosing Systems', 'h' => route('equipment')]]],
+    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Wet Cleaning', 'h' => route('equipment')]]],
+]])
+
+{{-- White breathing space around the resources bar and the room-planning strip --}}
+<div class="h-16 lg:h-28 bg-white"></div>
 
 {{-- 9c. PLANNING / ROOM FIT STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
@@ -431,16 +443,16 @@
 </section>
 
 {{-- 10. SUPPORT OPTIONS --}}
-<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Drying cabinet services for <span style="color:#148af4;">ongoing operation and flexible capacity</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
+                Engineering care throughout <span style="color:#148af4;">the cabinet’s working life</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Irish Laundry Systems provides repairs and call-outs, preventive maintenance, equipment rental and ongoing aftercare.
+                Ongoing support can be planned around the equipment, site requirements and maintenance needs.
             </p>
         </div>
 
@@ -539,8 +551,9 @@
 @include('components.cta-downtime-form', [
     'pageSource'        => 'drying_cabinets_cta',
     'eyebrow'           => 'Request Drying Cabinet Advice',
-    'heading'           => 'Discuss drying cabinet requirements for <br class="hidden sm:block"><span style="color:#148af4;">your items, space and daily use</span>',
-    'body'              => 'Tell us what needs to be dried, the available space and expected use. Irish Laundry Systems will recommend suitable cabinet options.',
+    'headingSize'       => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'heading'           => 'Discuss your drying cabinet<br> requirements with <span style="color:#148af4;">our<br> engineering team</span>',
+    'body'              => 'Tell us what you need from the equipment and your site.<br class="hidden lg:block"> We’ll review the requirements and contact you directly.',
     'formTitle'         => 'Request Drying Cabinet Advice',
     'buttonText'        => 'Request Drying Cabinet Advice',
     'showLocationField' => true,
