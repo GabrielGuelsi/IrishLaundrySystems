@@ -842,19 +842,6 @@
                                     </div>
                                 </div>
 
-                                {{-- Unit image --}}
-                                @if($p['img'])
-                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
-                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
-                                         class="w-full h-auto object-contain">
-                                </div>
-                                @else
-                                <div class="flex-shrink-0 w-32 lg:w-44 flex items-center justify-center">
-                                    <div class="w-24 h-24 rounded-2xl bg-[#f7f8fa] border border-gray-100 flex items-center justify-center">
-                                        <span class="font-heading font-bold text-navy/30 text-xs text-center leading-tight px-2">{{ $p['name'] }}</span>
-                                    </div>
-                                </div>
-                                @endif
 
                             </div>
 

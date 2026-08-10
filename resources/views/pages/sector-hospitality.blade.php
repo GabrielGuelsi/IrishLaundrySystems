@@ -615,13 +615,6 @@
                                     </div>
                                 </div>
 
-                                {{-- Unit image --}}
-                                @if($p['img'])
-                                <div class="flex-shrink-0 w-full sm:w-56 lg:w-80 flex items-center justify-center">
-                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
-                                         class="w-full h-auto object-contain">
-                                </div>
-                                @endif
 
                             </div>
 
