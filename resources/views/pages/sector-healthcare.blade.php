@@ -756,7 +756,8 @@
                 'label'   => 'Multi-tank dosing with water saving',
                 'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
                 'points'  => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
-                'img'     => '/images/pages/accessories/MULTISAVE.png',
+                'img'     => '/images/shared/MultisaveEQUIP.webp',
+                'scene'   => '/images/pages/accessories/MULTISAVE.png',
                 'color'   => '#011E41',
             ],
             [
@@ -764,7 +765,8 @@
                 'label'   => 'Precise dosing for consistent results',
                 'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
                 'points'  => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
-                'img'     => '/images/pages/accessories/DOSAVE.jpg',
+                'img'     => '/images/shared/DOSAVEEQUIP.webp',
+                'scene'   => '/images/pages/accessories/DOSAVE.jpg',
                 'color'   => '#0d2d5e',
             ],
             [
@@ -772,7 +774,8 @@
                 'label'   => 'Jet-based dosing with integrated saving',
                 'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
                 'points'  => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
-                'img'     => '/images/pages/accessories/JETSAVE.png',
+                'img'     => '/images/shared/JetsaveEQUIP.webp',
+                'scene'   => '/images/pages/accessories/JETSAVE.png',
                 'color'   => '#0a2448',
             ],
             [
@@ -810,7 +813,7 @@
 
                         {{-- Left: context photo — one at a time, alternates per slide (detergentdoser first) --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="{{ $i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp' }}"
+                            <img src="{{ $p['scene'] ?? ($i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp') }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -842,6 +845,19 @@
                                     </div>
                                 </div>
 
+                                {{-- Unit image --}}
+                                @if($p['img'])
+                                <div class="flex-shrink-0 w-full max-w-[220px] sm:max-w-none sm:w-56 lg:w-80 mx-auto flex items-center justify-center">
+                                    <img src="{{ $p['img'] }}" alt="{{ $p['name'] }}"
+                                         class="w-full h-auto object-contain">
+                                </div>
+                                @else
+                                <div class="flex-shrink-0 w-32 lg:w-44 flex items-center justify-center">
+                                    <div class="w-24 h-24 rounded-2xl bg-[#f7f8fa] border border-gray-100 flex items-center justify-center">
+                                        <span class="font-heading font-bold text-navy/30 text-xs text-center leading-tight px-2">{{ $p['name'] }}</span>
+                                    </div>
+                                </div>
+                                @endif
 
                             </div>
 
