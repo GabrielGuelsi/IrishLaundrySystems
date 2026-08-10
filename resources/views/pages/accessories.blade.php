@@ -187,7 +187,8 @@
                 'body'  => 'Connects up to seven washing machines with one unit for simpler dosing control.',
                 'chips' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'cta'   => 'Ask About Multisave',
-                'img'   => '/images/pages/accessories/MULTISAVE.png',
+                'img'   => '/images/shared/MultisaveEQUIP.webp',
+                'scene' => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'  => 'JETSAVE',
@@ -196,7 +197,8 @@
                 'body'  => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
                 'chips' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'cta'   => 'Ask About JETSAVE',
-                'img'   => '/images/pages/accessories/JETSAVE.png',
+                'img'   => '/images/shared/JetsaveEQUIP.webp',
+                'scene' => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'  => 'DOSAVE',
@@ -205,7 +207,8 @@
                 'body'  => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
                 'chips' => ['Peristaltic pumps', 'Easy programming', 'Controlled delivery'],
                 'cta'   => 'Ask About DOSAVE',
-                'img'   => '/images/pages/accessories/DOSAVE.jpg',
+                'img'   => '/images/shared/DOSAVEEQUIP.webp',
+                'scene' => '/images/pages/accessories/DOSAVE.jpg',
             ],
         ];
         @endphp
@@ -235,7 +238,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="{{ $p['scene'] ?? '/images/shared/Laundry-Double-Banner-965x965-1.webp' }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>

@@ -159,8 +159,8 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                 <span>Reduce <span style="color:#148af4;">everyday running costs</span></span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                The right healthcare laundry strategy can improve financial performance across your operation.<br class="hidden lg:block"> The examples below highlight where measurable savings can be achieved.
+            <p class="font-body text-gray-500 text-base leading-relaxed min-[1440px]:whitespace-nowrap">
+                The right healthcare laundry strategy can improve financial performance across your operation. The examples below highlight where measurable savings can be achieved.
             </p>
         </div>
 
@@ -259,8 +259,8 @@
         <!-- Heading -->
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                Keep healthcare laundry moving<br class="hidden lg:block"> with <span style="color:#148af4;">the right service behind it</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl leading-tight mb-6 min-[1300px]:whitespace-nowrap">
+                Keep healthcare laundry moving with <span style="color:#148af4;">the right service behind it</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Irish Laundry Systems provides repairs, Preventive Maintenance, equipment rental and aftercare for healthcare laundry operations.
@@ -733,27 +733,6 @@
     </div>
 </section>
 
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-                ['title' => 'Official Resources', 'links' => [
-                    ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
-                    ['l' => 'Line 6000 Evolution Barrier Washers brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
-                    ['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
-                    ['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
-                    ['l' => 'Product resources', 'h' => route('resources')],
-                ]],
-                ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')],
-                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
-                    ['l' => 'Ironers', 'h' => route('equipment.category', 'ironers')],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request healthcare assessment', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-]])
-
 <!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
 <section class="py-12 lg:py-16 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -778,6 +757,7 @@
                 'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
                 'points'  => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
+                'scene'   => '/images/pages/accessories/MULTISAVE.png',
                 'color'   => '#011E41',
             ],
             [
@@ -786,6 +766,7 @@
                 'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
                 'points'  => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
                 'img'     => '/images/shared/DOSAVEEQUIP.webp',
+                'scene'   => '/images/pages/accessories/DOSAVE.jpg',
                 'color'   => '#0d2d5e',
             ],
             [
@@ -794,6 +775,7 @@
                 'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
                 'points'  => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
+                'scene'   => '/images/pages/accessories/JETSAVE.png',
                 'color'   => '#0a2448',
             ],
             [
@@ -831,7 +813,7 @@
 
                         {{-- Left: context photo — one at a time, alternates per slide (detergentdoser first) --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="{{ $i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp' }}"
+                            <img src="{{ $p['scene'] ?? ($i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp') }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -920,6 +902,30 @@
 
     </div>
 </section>
+
+{{-- RESOURCES BAR (slim inline) — after Dosing & Laundry Control --}}
+@include('components.resources-bar', ['groups' => [
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'],
+                    ['l' => 'Line 6000 Evolution Barrier Washers brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'],
+                    ['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'],
+                    ['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure Line 6000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'],
+                    ['l' => 'Product resources', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Barrier Washers', 'h' => route('equipment.category', 'barrier-washers')],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')],
+                    ['l' => 'Ironers', 'h' => route('equipment.category', 'ironers')],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request healthcare assessment', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+]])
+
+{{-- breathing space between the Resources bar and the Equipment Rental strip --}}
+<div class="bg-white h-12 lg:h-20"></div>
 
 @include('components.why-choose-strip', [
     'eyebrow' => 'Equipment Rental',

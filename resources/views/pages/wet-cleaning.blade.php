@@ -592,6 +592,7 @@
                 'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting accurate consumption control in multi-washer laundry rooms.',
                 'points' => ['Up to 7 washers', 'Lower setup complexity', 'Low running costs', 'Multi-machine control'],
                 'img'    => '/images/shared/MultisaveEQUIP.webp',
+                'scene'  => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'   => 'JETSAVE',
@@ -599,6 +600,7 @@
                 'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes to replace, supporting reliable dosage and easier long-term upkeep.',
                 'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
                 'img'    => '/images/shared/JetsaveEQUIP.webp',
+                'scene'  => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'   => 'DOSAVE',
@@ -606,6 +608,7 @@
                 'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming, supporting accurate dosing where this system is the best fit.',
                 'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Savings-focused setup'],
                 'img'    => '/images/shared/DOSAVEEQUIP.webp',
+                'scene'  => '/images/pages/accessories/DOSAVE.jpg',
             ],
             [
                 'name'   => 'Efficient Dosing',
@@ -641,7 +644,7 @@
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="/images/shared/Laundry-Double-Banner-965x965-1.webp"
+                            <img src="{{ $p['scene'] ?? '/images/shared/Laundry-Double-Banner-965x965-1.webp' }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
