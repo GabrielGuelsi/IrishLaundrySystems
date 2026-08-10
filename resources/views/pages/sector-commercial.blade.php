@@ -721,7 +721,7 @@
                 'label'   => 'Multi-tank dosing with water saving',
                 'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
                 'points'  => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
-                'img'     => '/images/shared/MultisaveEQUIP.webp',
+                'img'     => '/images/pages/accessories/MULTISAVE.png',
                 'color'   => '#011E41',
             ],
             [
@@ -729,7 +729,7 @@
                 'label'   => 'Precise dosing for consistent results',
                 'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
                 'points'  => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
-                'img'     => '/images/shared/DOSAVEEQUIP.webp',
+                'img'     => '/images/pages/accessories/DOSAVE.jpg',
                 'color'   => '#0d2d5e',
             ],
             [
@@ -737,7 +737,7 @@
                 'label'   => 'Jet-based dosing with integrated saving',
                 'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
                 'points'  => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
-                'img'     => '/images/shared/JetsaveEQUIP.webp',
+                'img'     => '/images/pages/accessories/JETSAVE.png',
                 'color'   => '#0a2448',
             ],
             [
