@@ -11,7 +11,7 @@
 {{-- HERO --}}
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]">
     <img src="/images/pages/finishing-equipment/finishingequipmenthero.png" alt="Commercial finishing equipment"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 25%;">
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 40%;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12 sm:py-20 lg:py-32">
@@ -19,19 +19,20 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial finishing equipment for</span>
-                    <span class="sm:block" style="color:#148af4;">garments, uniforms and specialist items</span>
+                    <span class="sm:block" style="color:#148af4;">consistent, high-quality garment finishing</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment for pressing, shaping and garment finishing.
+                    <span class="lg:block">Irish Laundry Systems supplies, installs and supports Electrolux Professional finishing equipment across Ireland,</span>
+                    <span class="lg:block">with options for ironing, pressing, shaping and garment finishing.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Finishing Equipment Advice
                     </a>
-                    <a href="{{ route('equipment.category', 'ironers') }}"
+                    <a href="#finishing-range"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                        View Commercial Ironers
+                        View Finishing Equipment
                     </a>
                 </div>
             </div>
@@ -45,18 +46,20 @@
 {{-- INTRO / BRIDGE --}}
 <section class="py-20 lg:py-32 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Finishing Performance</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Finishing Equipment Planning</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-10 lg:gap-14 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Plan garment finishing for <span style="color:#148af4;">your tasks, volume and available space</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="sm:block lg:whitespace-nowrap">Plan finishing equipment around</span>
+                    <span class="sm:block lg:whitespace-nowrap">garment type, production volume</span>
+                    <span class="sm:block lg:whitespace-nowrap">and <span style="color:#148af4;">available space</span></span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    We review garment types, operator tasks and available room before recommending a finishing setup.
+                    Utility requirements, operator handling and the finishing method all influence equipment choice and installation. Reviewing them together gives a clearer basis for the final specification.
                 </p>
             </div>
 
@@ -69,8 +72,8 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal max-w-4xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Select equipment for <span style="color:#148af4;">pressing, shaping and garment finishing</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Explore equipment for <span style="color:#148af4;">different finishing requirements</span>
             </h2>
         </div>
 
@@ -80,16 +83,16 @@
                     'id'       => 'ironing-tables',
                     'title'    => 'Ironing Tables',
                     'body'     => 'For everyday garments, uniforms, resident clothing and smaller items that need a cleaner final finish.',
-                    'points'   => ['Daily finishing', 'Garment care', 'Room fit'],
+                    'points'   => ['Daily finishing', 'Garment care', 'Detailed Pressing'],
                     'primary'  => 'Ask About Ironing Tables',
                     'img'      => '/images/pages/finishing-equipment/FIT1.jpg',
                 ],
                 [
                     'id'       => 'steam-support',
-                    'title'    => 'Steam Boilers & Steam Support',
-                    'body'     => 'For hand-finishing, touch-ups and garment presentation where steady steam support matters.',
-                    'points'   => ['Hand finishing', 'Steam support', 'Flexible use'],
-                    'primary'  => 'Ask About Steam Support',
+                    'title'    => 'Steam Boilers',
+                    'body'     => 'For finishing equipment that requires a dedicated steam supply as part of the installation.',
+                    'points'   => ['Steam Supply', 'Finishing Equipment', 'Installation Planning'],
+                    'primary'  => 'Explore Steam Boilers',
                     'img'      => '/images/pages/finishing-equipment/FSB3.3.jpeg',
                 ],
                 [
@@ -155,11 +158,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Range</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Select finishing equipment for <span style="color:#148af4;">your garments and finish requirements</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Browse finishing equipment by <span style="color:#148af4;">type and application</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Review each range by equipment type, application and available configuration.
+                Use the filters to narrow the range, then open each option for full product details.
             </p>
         </div>
 
@@ -345,15 +348,18 @@
 {{-- SPECIALIST FINISHING --}}
 <section class="py-20 lg:py-32 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-12 lg:gap-16 items-start">
 
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Specialist Finishing</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                    Specialist equipment for<br class="hidden lg:block"> <span style="color:#148af4;">specific garment finishing tasks</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl leading-tight mb-4">
+                    <span class="sm:block lg:whitespace-nowrap">Explore specialist equipment</span>
+                    <span class="sm:block lg:whitespace-nowrap">for specific garment</span>
+                    <span class="sm:block lg:whitespace-nowrap" style="color:#148af4;">finishing requirements</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
-                    For spotting, cabinet finishing and other specialist garment-care applications.
+                    <span class="lg:block">Go directly to equipment for spotting, cabinet finishing</span>
+                    <span class="lg:block">and dedicated garment applications.</span>
                 </p>
                 <a href="{{ route('contact') }}"
                    class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
@@ -367,7 +373,7 @@
                     ['label' => 'Spotting<br>Equipment',              'img' => '235'],
                     ['label' => 'Finishing<br>Cabinets',              'img' => '236'],
                     ['label' => 'Rotary<br>Finishing Cabinets',       'img' => '237'],
-                    ['label' => 'Trouser Finishing<br>Equipment',     'img' => '246'],
+                    ['label' => 'Trouser Finishing',     'img' => '246'],
                 ] as $opt)
                 <a href="{{ route('contact') }}"
                    class="group px-5 py-2 {{ $loop->first ? '' : 'border-l border-gray-200' }}">
@@ -390,11 +396,11 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Finishing equipment services from <span style="color:#148af4;">repair through to aftercare</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1300px]:whitespace-nowrap">
+                Engineering care throughout <span style="color:#148af4;">the equipment’s working life</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Irish Laundry Systems provides repairs, preventive maintenance, equipment rental and ongoing aftercare.
+                Ongoing support can be planned around the equipment, site requirements and maintenance needs.
             </p>
         </div>
 
@@ -421,8 +427,8 @@
                     'text'  => 'Lower upfront cost for finishing equipment replacement, capacity planning or expansion where rental is the right fit.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
-                    'pos'   => '66% center',
+                    'img'   => '/images/pages/finishing-equipment/imageimage.png',
+                    'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Support &amp; Aftercare',
@@ -467,9 +473,12 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Finishing equipment for <span style="color:#148af4;">different garment care operations</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Finishing equipment for <span style="color:#148af4;">different commercial settings</span>
             </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                Different sites handle different garments and presentation requirements, which can influence the finishing equipment they need.
+            </p>
         </div>
 
         @php
@@ -555,12 +564,13 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Equipment used alongside<br class="hidden lg:block"> <span style="color:#148af4;">garment and flatwork finishing</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                <span class="sm:block">Related equipment for</span>
+                <span class="sm:block" style="color:#148af4;">washing, drying and finishing</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="sm:block lg:whitespace-nowrap">Explore equipment categories that may be considered alongside finishing,</span>
-                <span class="sm:block lg:whitespace-nowrap">depending on the items processed and the services provided by your site.</span>
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+                <span class="lg:block">Explore other equipment categories that may be relevant to the</span>
+                <span class="lg:block">garments, linen and processes handled by your site.</span>
             </p>
         </div>
 
@@ -569,7 +579,7 @@
                 ['title' => 'Commercial Ironers', 'copy' => 'For sheets, table linen and other flatwork that require a consistent ironed finish.',                 'cta' => 'View Commercial Ironers', 'route' => route('equipment.category', 'ironers'),       'img' => '/images/pages/ironers/bed-230-ib623.jpg', 'box' => 260, 'mb' => 0],
                 ['title' => 'Wet Cleaning',       'copy' => 'For garments and delicate items that require a controlled water-based cleaning process before finishing.', 'cta' => 'View Wet Cleaning',       'route' => route('equipment.category', 'wet-cleaning'),  'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 250, 'mb' => 32],
                 ['title' => 'Commercial Dryers',  'copy' => 'For drying garments and other textiles before pressing, shaping or final finishing.',                    'cta' => 'View Commercial Dryers',  'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-14.jpg', 'box' => 250, 'mb' => 32],
-                ['title' => 'Spotting Equipment', 'copy' => 'For treating specific marks and stains before cleaning or final garment finishing.',                       'cta' => 'View Spotting Equipment', 'route' => route('contact'),                            'img' => '/images/pages/finishing-equipment/FSU7.jpg', 'box' => 280, 'mb' => 22],
+                ['title' => 'Drying Cabinets',    'copy' => 'For garments and delicate items that are better suited to cabinet drying than tumble drying.',            'cta' => 'View Drying Cabinets',    'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/pages/drying-cabinets/DC6-4.jpg', 'box' => 260, 'mb' => 0],
             ] as $card)
             <div class="flex flex-col gap-5 h-full">
                 <div style="min-height:120px;">
@@ -609,11 +619,13 @@
 <section class="py-20 lg:py-32" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Finishing Equipment Advice</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Discuss finishing equipment for<br class="hidden lg:block"> <span style="color:#148af4;">your garments, workload and available space</span>
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 max-w-5xl mx-auto">
+            <span class="sm:block">Discuss your finishing equipment requirements</span>
+            <span class="sm:block" style="color:#148af4;">with our engineering team</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Tell us what you finish each day and your available space. Irish Laundry Systems will review your requirements and recommend suitable finishing equipment.
+            <span class="lg:block">Tell us what you finish, your expected volume and the space available.</span>
+            <span class="lg:block">We’ll review the requirements and contact you directly.</span>
         </p>
         <div class="flex justify-center">
             <a href="{{ route('request-assessment') }}"
