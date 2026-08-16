@@ -360,7 +360,7 @@
                         For care homes, nursing homes, hospitality sites and small-scale operations that need ironing tables, steam irons or hand-finishing support for linen, garments, uniforms and everyday presentation.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-3">
-                        <a href="{{ route('equipment.category', 'ironers') }}"
+                        <a href="{{ route('equipment.category', 'finishing-equipment') }}"
                            class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-5 py-3 rounded-lg text-sm transition-colors duration-200">
                             View Finishing Equipment
                             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -376,9 +376,9 @@
                 <div class="lg:col-span-7 bg-white p-6 lg:p-8 lg:border-l border-gray-200">
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 h-full">
                         @foreach([
-                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'ironers'), 'img' => 'FIT1.jpg'],
+                            ['t' => 'Ironing Tables',                'b' => 'Professional ironing table support for everyday linen, garments, uniforms and smaller items that need a cleaner final finish.', 'cta' => 'View Ironing Tables',      'href' => route('equipment.category', 'finishing-equipment'), 'img' => 'FIT1.jpg'],
                             ['t' => 'Steam Irons',                   'b' => 'Flexible hand-finishing support for touch-ups, resident clothing, guest garments, uniforms and daily presentation work.',          'cta' => 'Ask About Steam Irons',    'href' => route('contact'),                       'img' => 'FSU1.jpg'],
-                            ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'ironers'), 'img' => 'FF1.jpg'],
+                            ['t' => 'Presses &amp; Form Finishers',  'b' => 'Selected finishing options for shirts, garments and presentation-led laundry where a stronger, more consistent finish is needed.',  'cta' => 'Explore Finishing Options', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => 'FF1.jpg'],
                         ] as $fc)
                         <div class="rounded-xl border border-gray-200 bg-white p-4 flex flex-col">
                             <div class="rounded-lg bg-white border border-gray-100 overflow-hidden h-44 mb-3 flex items-center justify-center">

@@ -2,6 +2,7 @@
      Universal across equipment pages — the only per-page value is the secondary CTA label. --}}
 @php
     $ctaLabel = $ctaLabel ?? 'Ask About Connected Equipment';
+    $ctaHref = $ctaHref ?? route('contact');
 @endphp
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
@@ -34,7 +35,7 @@
                class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                 Explore OnE Connected
             </a>
-            <a href="{{ route('contact') }}"
+            <a href="{{ $ctaHref }}"
                class="inline-flex items-center gap-2 border border-white/60 text-white font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/10 transition-colors tracking-wide">
                 {{ $ctaLabel }}
             </a>

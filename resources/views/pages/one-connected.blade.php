@@ -24,11 +24,11 @@
                     OnE Connected brings compatible Electrolux Professional laundry equipment into one digital ecosystem, helping teams monitor performance, consumption, alerts and process validation.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
-                    <a href="{{ route('contact') }}"
+                    <a href="#one-connected-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Ask About OnE Connected
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="#one-connected-form"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
                         Check Equipment Compatibility
                     </a>
@@ -119,7 +119,7 @@
                 <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
                     OnE Connected gives compatible Electrolux Professional laundry equipment one digital view of activity, consumption, alerts and process data.
                 </p>
-                <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-7 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
+                <a href="{{ asset('pdfs/OnE-Connected-Quick-Guide.pdf') }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-7 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
                     Explore the OnE Connected Dashboard
                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                 </a>
@@ -178,7 +178,7 @@
             @endforeach
         </div>
         <div class="mt-10">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
+            <a href="#one-connected-form" class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
                 Ask About Consumption Monitoring
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -363,7 +363,7 @@
             @endforeach
         </div>
         <div class="mt-12 text-center">
-            <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
+            <a href="#one-connected-form" class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
                 Start With a Compatibility Check
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
             </a>
@@ -421,6 +421,7 @@
 ])
 
 {{-- 13. FINAL CTA / FORM --}}
+<div id="one-connected-form"></div>
 @include('components.cta-downtime-form', [
     'pageSource' => 'one_connected_cta',
     'eyebrow'    => 'Get Connected',

@@ -50,7 +50,7 @@
                 </p>
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#services-form"
                        class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request a Service Assessment
                     </a>
