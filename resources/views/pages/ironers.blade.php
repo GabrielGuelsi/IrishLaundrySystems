@@ -9,13 +9,17 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
+<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
+
     <img src="/images/pages/ironers/heroironers-wide.jpg" alt="Commercial ironers and flatwork finishing"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: 35% center;">
+         loading="eager" decoding="async"
+         class="absolute left-0 top-0 w-[180%] max-w-none h-auto">
+
     <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
-    <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
-            <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-4xl">
+
+    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
+        <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
+            <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial ironers for</span>
@@ -677,7 +681,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Ironer Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
             <span class="sm:block">Discuss your commercial ironer requirements</span>
-            <span class="sm:block" style="color:#148af4;">with our engineering team</span>
+            <span class="sm:block">with <span style="color:#148af4;">our engineering team</span></span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
             <span class="lg:block">Tell us what you process, your expected volume and the space available.</span>
