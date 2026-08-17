@@ -9,13 +9,18 @@
 @section('content')
 
 {{-- HERO --}}
-<section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[620px] lg:h-[820px]">
+<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
+
     <img src="/images/pages/finishing-equipment/finishingequipmenthero.png" alt="Commercial finishing equipment"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 42%;">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
-    <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-12 sm:py-20 lg:py-32">
-            <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-[960px]">
+         loading="eager" decoding="async"
+         class="absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
+         style="transform: scale(1.12); transform-origin: right center;">
+
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
+
+    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
+        <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
+            <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial finishing equipment for</span>
@@ -474,7 +479,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Finishing equipment for <span style="color:#148af4;">different commercial settings</span>
+                Explore equipment for <span style="color:#148af4;">different finishing requirements</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Different sites handle different garments and presentation requirements, which can influence the finishing equipment they need.
@@ -565,12 +570,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="sm:block">Related equipment for</span>
-                <span class="sm:block" style="color:#148af4;">washing, drying and finishing</span>
+                Related equipment for <span style="color:#148af4;">washing, drying and finishing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                <span class="lg:block">Explore other equipment categories that may be relevant to the</span>
-                <span class="lg:block">garments, linen and processes handled by your site.</span>
+                Explore other equipment categories that may be relevant to the garments, linen and processes handled by your site.
             </p>
         </div>
 
