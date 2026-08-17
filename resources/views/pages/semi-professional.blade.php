@@ -25,11 +25,11 @@
                     <span class="sm:block lg:whitespace-nowrap">myPRO and myPROzip offer a stronger step up from standard domestic appliances.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#semi-pro-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Equipment Advice
                     </a>
-                    <a href="{{ route('contact') }}"
+                    <a href="#semi-pro-form"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
                         Ask About myPRO XL
                     </a>
@@ -49,22 +49,17 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Built for <span style="color:#148af4;">regular business use</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="sm:block">Built for the demands</span>
+                    <span class="sm:block">of <span style="color:#148af4;">everyday</span></span>
+                    <span class="sm:block" style="color:#148af4;">business laundry</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                <p class="font-body text-gray-500 text-base leading-relaxed">
                     Semi-professional washers and dryers give smaller sites more capacity and faster cycles than domestic appliances, without the scale of a full commercial setup.
                 </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Talk to Our Team
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -105,13 +100,61 @@
         </div>
 
         <div class="mt-8 reveal">
-            <a href="{{ route('contact') }}"
+            <a href="#semi-pro-form"
                class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
                 Ask Which Level Fits Your Site
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
                 </svg>
             </a>
+        </div>
+    </div>
+</section>
+
+{{-- 8. WHERE SEMI-PROFESSIONAL LAUNDRY FITS (moved below Equipment Level Guide) --}}
+<section class="py-16 lg:py-28 bg-gray-50">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+                Built for smaller sites with <span style="color:#148af4;">laundry to manage every day</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+                For businesses and shared sites where laundry is not industrial scale, but still affects room turnover, staff time, customer standards, resident care or day-to-day operations.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+            @foreach([
+                ['title' => 'B&amp;Bs, guesthouses, small hotels and food service', 'items' => ['Guest linen', 'Towels', 'Room readiness'],       'img' => '/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.png', 'pos' => 'center center'],
+                ['title' => 'Facility management and cleaning teams',               'items' => ['Mops', 'Uniforms', 'Frequent washing'],           'img' => '/images/pages/semi-professional/Facility management and cleaning teams.png',           'pos' => 'center center'],
+                ['title' => 'Salons, spas and wellness businesses',                 'items' => ['Towels', 'Robes', 'Daily use'],                   'img' => '/images/pages/semi-professional/Salons, spas and wellness businesses.png',             'pos' => 'center center'],
+                ['title' => 'Gyms, sports clubs and fitness studios',               'items' => ['Towels', 'Training kit', 'Daily turnover'],       'img' => '/images/pages/semi-professional/Gyms, sports clubs and fitness studios.png',           'pos' => 'center center'],
+                ['title' => 'Smaller care and nursing settings',                    'items' => ['Resident items', 'Bedding', 'Towels'],            'img' => '/images/pages/semi-professional/Smaller care and nursing settings.png',                'pos' => 'center center'],
+                ['title' => 'Shared, apartment and guest-operated laundry',         'items' => ['Shared use', 'Guest operation', 'Payment-ready'], 'img' => '/images/pages/semi-professional/Shared, apartment and guest-operated laundry.png',     'pos' => 'center center'],
+            ] as $card)
+            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
+                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                     style="object-position: {{ $card['pos'] }};">
+                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                     style="background:rgba(1,30,65,0.90);"></div>
+                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                    <ul class="font-body text-white/80 text-sm space-y-2 overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-5">
+                        @foreach($card['items'] as $item)
+                        <li class="flex items-start gap-2.5">
+                            <span class="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-white/60"></span>
+                            <span>{{ $item }}</span>
+                        </li>
+                        @endforeach
+                    </ul>
+                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
+                </div>
+            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -131,7 +174,7 @@
                     <span class="sm:block lg:whitespace-nowrap">helping handle larger loads without moving straight to full commercial laundry scale.</span>
                 </p>
             </div>
-            <a href="{{ route('contact') }}"
+            <a href="#semi-pro-form"
                class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap flex-shrink-0 lg:mt-[28px]">
                 Ask About myPRO XL
             </a>
@@ -194,7 +237,7 @@
                 'name'      => 'myPRO',
                 'topLine'   => 'For lighter daily use',
                 'copy'      => 'A semi-professional washer, dryer and light finishing setup for smaller sites that have outgrown domestic appliances.',
-                'badges'    => ['8 kg loads', '7,500 cycles', 'Daily use', 'Small sites'],
+                'badges'    => ['8–9 kg loads', '7,500 cycles', 'Daily use', 'Small sites'],
                 'img'       => '/images/pages/semi-professional/mypro-hp-front.jpg',
                 'imgClass'  => 'scale-[.85]',
                 'route'     => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']),
@@ -241,7 +284,7 @@
                     @endforeach
                 </div>
                 <div class="mt-auto flex flex-col gap-2.5">
-                    <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                    <a href="#semi-pro-form" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                         Request Advice
                     </a>
@@ -261,12 +304,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Range</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare myPRO options around <span style="color:#148af4;">capacity, cost and support</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Product Finder</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Compare individual myPRO models for <span style="color:#148af4;">your setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Start with the equipment you need, then connect the choice to room fit, drying route, finishing needs, installation and long-term support.
+                Browse washers, dryers and steam ironers, then filter by product line and equipment type to narrow the options for your site.
             </p>
         </div>
 
@@ -413,7 +456,7 @@
                                 @endforeach
                             </div>
                             <div class="mt-auto flex flex-col gap-2.5">
-                                <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
+                                <a href="#semi-pro-form" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors">
                                     <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                     Request Advice
                                 </a>
@@ -429,13 +472,32 @@
                 @endforeach
 
                 <div x-show="count === 0" class="text-center py-16" style="display:none">
-                    <p class="font-body text-gray-500 text-base">No models match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
+                    <p class="font-body text-gray-500 text-base">No models match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="#semi-pro-form" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
+{{-- RESOURCES BAR (slim inline) — moved directly below the myPRO Product Finder range --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources', 'links' => [
+        ['l' => 'myPRO XL leaflet', 'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
+        ['l' => 'myPRO product resources', 'h' => route('resources')],
+        ['l' => 'Browse semi-professional range', 'h' => route('equipment.category', ['category' => 'semi-professional'])],
+    ]],
+    ['title' => 'Related Equipment', 'links' => [
+        ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
+        ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
+        ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
+    ]],
+    ['title' => 'Advice & Support', 'links' => [
+        ['l' => 'Request advice', 'h' => '#semi-pro-form'],
+        ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+        ['l' => 'Talk to our team', 'h' => '#semi-pro-form'],
+    ]],
+]])
 
 {{-- 6c. RELATED EQUIPMENT — the next equipment route, front-facing product shots --}}
 <section class="py-16 lg:py-28 bg-white border-t border-gray-100">
@@ -480,73 +542,6 @@
     </div>
 </section>
 
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-    ['title' => 'Official Resources', 'links' => [
-        ['l' => 'myPRO XL leaflet', 'h' => '/pdfs/EPR-leaflet-General-myPRO-XL_2021-eng-lr.pdf'],
-        ['l' => 'myPRO product resources', 'h' => route('resources')],
-        ['l' => 'Browse semi-professional range', 'h' => route('equipment.category', ['category' => 'semi-professional'])],
-    ]],
-    ['title' => 'Related Equipment', 'links' => [
-        ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
-        ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
-        ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
-    ]],
-    ['title' => 'Advice & Support', 'links' => [
-        ['l' => 'Request advice', 'h' => route('request-assessment')],
-        ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-        ['l' => 'Talk to our team', 'h' => route('contact')],
-    ]],
-]])
-
-{{-- 8. WHERE SEMI-PROFESSIONAL LAUNDRY FITS --}}
-<section class="py-16 lg:py-28 bg-gray-50">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Built for smaller sites with <span style="color:#148af4;">laundry to manage every day</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                For businesses and shared sites where laundry is not industrial scale, but still affects room turnover, staff time, customer standards, resident care or day-to-day operations.
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
-            @foreach([
-                ['title' => 'B&amp;Bs, guesthouses, small hotels and food service', 'items' => ['Guest linen', 'Towels', 'Room readiness'],       'img' => '/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.png', 'pos' => 'center center'],
-                ['title' => 'Facility management and cleaning teams',               'items' => ['Mops', 'Uniforms', 'Frequent washing'],           'img' => '/images/pages/semi-professional/Facility management and cleaning teams.png',           'pos' => 'center center'],
-                ['title' => 'Salons, spas and wellness businesses',                 'items' => ['Towels', 'Robes', 'Daily use'],                   'img' => '/images/pages/semi-professional/Salons, spas and wellness businesses.png',             'pos' => 'center center'],
-                ['title' => 'Gyms, sports clubs and fitness studios',               'items' => ['Towels', 'Training kit', 'Daily turnover'],       'img' => '/images/pages/semi-professional/Gyms, sports clubs and fitness studios.png',           'pos' => 'center center'],
-                ['title' => 'Smaller care and nursing settings',                    'items' => ['Resident items', 'Bedding', 'Towels'],            'img' => '/images/pages/semi-professional/Smaller care and nursing settings.png',                'pos' => 'center center'],
-                ['title' => 'Shared, apartment and guest-operated laundry',         'items' => ['Shared use', 'Guest operation', 'Payment-ready'], 'img' => '/images/pages/semi-professional/Shared, apartment and guest-operated laundry.png',     'pos' => 'center center'],
-            ] as $card)
-            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
-                <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                     style="object-position: {{ $card['pos'] }};">
-                <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                     style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
-                <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                     style="background:rgba(1,30,65,0.90);"></div>
-                <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
-                    <ul class="font-body text-white/80 text-sm space-y-2 overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-5">
-                        @foreach($card['items'] as $item)
-                        <li class="flex items-start gap-2.5">
-                            <span class="flex-shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-white/60"></span>
-                            <span>{{ $item }}</span>
-                        </li>
-                        @endforeach
-                    </ul>
-                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-</section>
-
 {{-- 9. PLANNING / SITE FIT STRIP — Home-style medium-height strip (absorbs Right Fit Advice) --}}
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Planning Before Installation',
@@ -558,6 +553,7 @@
         ['icon' => '215', 'iconClass' => 'scale-[1.094] -translate-y-[1.2%]', 'label' => 'Utilities<br>and access'],
     ],
     'ctaText'    => 'Request Equipment Advice',
+    'ctaHref'    => '#semi-pro-form',
 ])
 
 {{-- 10. SERVICE AND SUPPORT OPTIONS --}}
@@ -685,10 +681,11 @@
     'eyebrow' => 'Semi-Professional FAQs',
     'heading' => 'Questions before choosing <span style="color:#148af4;">semi-professional laundry equipment</span>',
     'footerNote' => 'Have another question? Talk to our team.',
+    'ctaHref' => '#semi-pro-form',
     'faqs' => [
         ['question' => 'What is semi-professional laundry equipment?', 'answer' => 'It is designed for businesses that need greater durability and faster cycles than domestic appliances, without the capacity of a full commercial setup.'],
         ['question' => 'When should a business move beyond domestic machines?', 'answer' => 'When regular business use, load volumes or turnaround needs begin to exceed what domestic appliances are designed to handle.'],
-        ['question' => 'What is the difference between myPRO and myPRO XL?', 'answer' => 'myPRO offers 8 kg capacity and is designed for up to 7,500 cycles. myPRO XL offers 12 kg capacity and is designed for 15,000+ cycles.'],
+        ['question' => 'What is the difference between myPRO and myPRO XL?', 'answer' => 'myPRO models are available in 8–9 kg capacities, while myPRO XL offers 12 kg capacity. myPRO is designed for up to 7,500 cycles and myPRO XL for 15,000+ cycles.'],
         ['question' => 'Where does myPROzip fit?', 'answer' => 'myPROzip is designed for guest-operated laundry areas, with simple controls and options for payment-system integration.'],
         ['question' => 'What should be checked before installation?', 'answer' => 'Available space, water, drainage, electrical supply, ventilation, stacking requirements and expected daily use should all be reviewed.'],
         ['question' => 'When is Line 6000 the better choice?', 'answer' => 'Line 6000 is better suited to higher volumes, more intensive daily use and sites that need greater commercial capacity.'],
@@ -696,9 +693,11 @@
 ])
 
 {{-- 14. FINAL CTA / FORM --}}
+<div id="semi-pro-form"></div>
 @include('components.cta-downtime-form', [
     'pageSource' => 'semi_professional_cta',
-    'heading'    => 'Plan the right semi-professional setup for <br class="hidden sm:block"><span style="color:#148af4;">your site</span>',
+    'headingSize' => 'text-2xl sm:text-3xl lg:text-[2rem]',
+    'heading'    => 'Plan the right semi-professional<br class="hidden sm:block"> setup for <span style="color:#148af4;">your site</span>',
     'body'       => 'Tell us what you wash, how often the machines run and who uses them. We&rsquo;ll recommend the right equipment, purchase or rental option, and support.',
     'formTitle'  => 'Request Semi-Professional Laundry Advice',
     'buttonText' => 'Request Equipment Advice',

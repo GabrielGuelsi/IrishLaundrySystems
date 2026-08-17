@@ -136,6 +136,7 @@
             ['img' => '/images/icons/home-planning-spend.png', 'label' => 'Cost<br>Control'],
         ],
         'ctaText'  => 'Plan Your Setup',
+        'ctaHref'  => route('equipment').'#equipment-quote',
     ])
 </div>
 

@@ -548,6 +548,7 @@
 ])
 
 {{-- 16. FINAL CTA --}}
+<div id="drying-cabinet-form"></div>
 @include('components.cta-downtime-form', [
     'pageSource'        => 'drying_cabinets_cta',
     'eyebrow'           => 'Request Drying Cabinet Advice',

@@ -444,7 +444,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      ONE CONNECTED — universal strip
      ════════════════════════════════════════════════════════════════════════ --}}
-@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected'])
+@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected', 'ctaHref' => route('equipment.category', 'one-connected').'#one-connected-form'])
 
 {{-- ════════════════════════════════════════════════════════════════════════
      11. SUPPORT & AFTERCARE FAQs

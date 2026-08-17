@@ -9,6 +9,7 @@
         ['icon' => 'ativo-21', 'label' => 'Capacity<br>planning'],
     ],
     'ctaText'  => 'Talk to an Engineer',
+    'ctaHref'  => null,
     'textMaxW' => 'lg:max-w-[54%]',
 ])
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
@@ -74,7 +75,7 @@
         @endif
 
         {{-- CTA --}}
-        <a href="{{ route('contact') }}"
+        <a href="{{ $ctaHref ?? route('contact') }}"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
             {{ $ctaText }}
         </a>
