@@ -47,13 +47,15 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Connected Laundry Intelligence</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Turn equipment data into <span style="color:#148af4;">better laundry decisions</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:block" style="color:#148af4;">One connected&nbsp;view</span>
+                    <span class="lg:block">across your&nbsp;entire</span>
+                    <span class="lg:block">laundry&nbsp;operation</span>
                 </h2>
             </div>
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    OnE Connected gives laundry teams clearer insight into load factor, hygiene validation, energy, water and detergent consumption, helping support better control across compatible Electrolux Professional equipment.
+                    OnE Connected brings data from compatible Electrolux Professional equipment into one clear view, helping teams understand performance across the laundry room without checking each machine separately.
                 </p>
                 <a href="#dashboard"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
@@ -191,13 +193,14 @@
     'eyebrow'      => 'Engineering Support',
     'textMaxW'     => 'lg:max-w-[60%]',
     'headingLine1' => 'Use OnE Connected data',
-    'headingLine2' => 'to improve maintenance<br class="hidden lg:block">and operational performance',
+    'headingLine2' => 'to improve maintenance <br class="hidden lg:block">and operational performance',
     'body'         => 'Our team helps interpret OnE Connected data on consumption, alerts, equipment use and process performance, so you can make clearer decisions about maintenance, call-outs, parts, running costs and equipment care.',
     'image'        => '/images/pages/one-connected/engineering-support.png',
+    'imgPosition'  => '68% center',
     'miniPoints'   => [
-        ['icon' => '307', 'iconClass' => 'brightness-0 invert', 'label' => 'Earlier<br>Maintenance'],
+        ['icon' => '307', 'iconClass' => 'brightness-0 invert', 'label' => 'Timely<br>Maintenance'],
         ['icon' => '308', 'iconClass' => 'brightness-0 invert', 'label' => 'Reduced<br>Downtime'],
-        ['icon' => '309', 'iconClass' => 'brightness-0 invert', 'label' => 'Longer Equipment<br>Life'],
+        ['icon' => '309', 'iconClass' => 'brightness-0 invert', 'label' => 'Parts<br>Planning'],
     ],
     'cta1Label'    => 'Speak to Irish Laundry Systems',
     'cta1Route'    => 'contact',
@@ -216,14 +219,13 @@
     </svg>
 
     <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-12 lg:mb-16 reveal">
+        <div class="mb-12 lg:mb-16 reveal text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Portfolio Compatibility</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Connect your laundry equipment<br>in <span style="color:#148af4;">one digital ecosystem</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl 2xl:text-[2.6rem] leading-tight mb-3">
+                Compatible across selected Electrolux Professional equipment
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="sm:block xl:whitespace-nowrap">Across washing, drying and ironing, OnE Connected is available for selected Electrolux Professional equipment.</span>
-                <span class="sm:block xl:whitespace-nowrap">Irish Laundry Systems can review the model, controls and connection requirements before a recommendation is made.</span>
+                Compatibility varies by model and configuration, so Irish Laundry Systems can confirm what applies to your equipment.
             </p>
         </div>
 
@@ -425,8 +427,9 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'one_connected_cta',
     'eyebrow'    => 'Get Connected',
-    'heading'    => 'Bring your laundry equipment into <br class="hidden sm:block"><span style="color:#148af4;">clearer connected control</span>',
-    'body'       => 'Talk to Irish Laundry Systems about connecting compatible Electrolux Professional equipment and using OnE Connected to monitor machine status, cycles, consumption, hygiene validation, alerts and reports.',
+    'heading'    => '<span class="sm:block">Connect your laundry equipment</span> <span class="sm:block" style="color:#148af4;">for clearer visibility</span> <span class="sm:block" style="color:#148af4;">across your operation</span>',
+    'headingSize' => 'text-2xl sm:text-4xl lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]',
+    'body'       => 'Talk to Irish Laundry Systems about connecting compatible Electrolux Professional equipment to OnE Connected, with machine status, cycles and consumption monitored alongside hygiene validation, alerts and reports.',
     'formTitle'  => 'Request an OnE Connected Review',
     'formIntro'  => 'Tell us what equipment you use and what your laundry team needs to monitor.',
     'buttonText' => 'Request an OnE Connected Review',

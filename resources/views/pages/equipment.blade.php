@@ -69,28 +69,21 @@
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Choosing Equipment</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_4fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    A better equipment fit can mean <span style="color:#148af4;">less waste,</span> less pressure and <span style="color:#148af4;">smoother laundry flow</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[1.95rem] 2xl:text-[2.3rem] leading-tight">
+                    <span class="lg:whitespace-nowrap">Choose equipment around</span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">how your laundry works</span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">and the workload it handles</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    The right equipment choice can save time, reduce waste, improve linen flow and support lower energy and water use.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    <span class="lg:block">Irish Laundry Systems looks at the room, workload and workflow</span>
+                    <span class="lg:block">before guiding the next equipment decision for your site.</span>
+                    <span class="lg:block">From purchase or rental to installation, commissioning and follow-up care,</span>
+                    <span class="lg:block">each step is considered around what the operation actually needs.</span>
                 </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Irish Laundry Systems looks at the room, workload, workflow and support needs before guiding the next equipment decision, whether the right step is purchase, rental where suitable, installation and commissioning or follow-up care.
-                </p>
-                <a href="#equipment-categories"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Explore Equipment
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
             </div>
 
         </div>
@@ -98,7 +91,7 @@
 </section>
 
 <!-- 4. ELECTROLUX SOLUTION TEASERS -->
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -121,7 +114,7 @@
                 'eyebrow'  => 'Line 6000',
                 'headline' => 'Energy-saving options for professional laundry',
                 'subline'  => 'Line 6000 equipment options for sites looking to manage energy use, water use and daily laundry demand.',
-                'cta'      => 'Explore Line 6000 Options',
+                'cta'      => 'Explore Commercial Washers',
                 'route'    => route('equipment.category', 'commercial-washers'),
                 'img'      => '/images/shared/Line 6000 solutions products_72dpi.jpg',
                 'imgClass' => 'object-[50%_90%]',
@@ -571,8 +564,9 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Match equipment to the way <span style="color:#148af4;">each laundry room works</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mx-auto">
-                A hotel, care facility, healthcare site, commercial laundry and shared-use laundry room may each need a different balance of capacity, hygiene flow, drying performance, finishing, space and support.
+            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl mx-auto">
+                <span class="lg:block">A hotel, care facility, healthcare site, commercial laundry and shared-use laundry room may each need</span>
+                <span class="lg:block">a different balance of capacity, hygiene flow, drying performance, finishing, space and support.</span>
             </p>
         </div>
 
@@ -680,7 +674,7 @@
     'eyebrow'     => 'Request an Equipment Quote',
     'heading'     => 'Talk to the team before<br class="hidden lg:block"> you <span style="color:#148af4;">buy or rent</span><br class="hidden lg:block"> laundry equipment',
     'body'        => 'Tell us about your site, workload, room and budget pressure. Irish Laundry Systems will guide you toward the right equipment quote, purchase option, rental discussion or aftercare support.',
-    'formTitle'   => 'Request an Equipment Quote',
+    'formTitle'   => 'Request Equipment Advice',
     'formIntro'   => 'Share the details that help direct the enquiry properly.',
     'buttonText'  => 'Request Equipment Advice',
 ])
