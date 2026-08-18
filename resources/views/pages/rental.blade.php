@@ -82,7 +82,10 @@
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    <span class="lg:whitespace-nowrap">Rental can help your site plan equipment costs without committing to</span><br class="hidden lg:block"> <span class="lg:whitespace-nowrap">one large purchase. <span class="whitespace-nowrap">Irish Laundry Systems</span> supplies, installs, services and supports</span><br class="hidden lg:block"> selected Electrolux Professional equipment under one agreement.
+                    <span class="lg:block">Rental can help your site plan equipment costs without</span>
+                    <span class="lg:block">committing to one large purchase. <span class="whitespace-nowrap">Irish Laundry Systems</span></span>
+                    <span class="lg:block">supplies, installs, services and supports selected</span>
+                    <span class="lg:block">Electrolux Professional equipment under one agreement.</span>
                 </p>
             </div>
         </div>

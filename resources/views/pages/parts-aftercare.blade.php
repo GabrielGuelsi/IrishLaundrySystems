@@ -205,18 +205,18 @@
 <section class="bg-white py-16 lg:py-24">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[7fr_4fr] gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:whitespace-nowrap">We take care of your&nbsp;equipment,</span><br class="hidden lg:block"> so <span class="text-[#148af4]">your laundry&nbsp;operation</span><br class="hidden lg:block"> <span class="text-[#148af4]">can keep&nbsp;moving</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.15rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="lg:whitespace-nowrap">Stay ahead of equipment&nbsp;needs</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">with <span class="text-[#148af4]">organised&nbsp;follow-up</span></span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">and ongoing&nbsp;support</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    After installation, repair, maintenance or Equipment Rental, equipment still needs the right follow-up.
-                </p>
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> keeps service records, parts needs and equipment condition organised for better service decisions over time.
+                    <span class="lg:block">After installation, repair, maintenance or Equipment Rental,</span>
+                    <span class="lg:block">equipment still needs the right follow-up. Irish Laundry Systems</span>
+                    <span class="lg:block">keeps service records, parts needs and equipment condition organised</span>
+                    <span class="lg:block">for better service decisions over time.</span>
                 </p>
             </div>
         </div>
