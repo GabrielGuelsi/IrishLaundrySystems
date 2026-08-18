@@ -231,15 +231,18 @@
 
             {{-- Left column: heading --}}
             <div class="reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:whitespace-nowrap">See what needs&nbsp;attention</span><br class="hidden lg:block"> and <span class="text-steel">plan&nbsp;maintenance</span><br class="hidden lg:block"> <span class="text-steel">in&nbsp;advance</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl xl:text-[2.5rem] 2xl:text-5xl leading-tight">
+                    <span class="xl:whitespace-nowrap">See what needs&nbsp;attention</span><br class="hidden xl:block"><span class="xl:whitespace-nowrap">and <span class="text-steel">plan&nbsp;maintenance</span></span><br class="hidden xl:block"><span class="xl:whitespace-nowrap">before it becomes&nbsp;urgent</span>
                 </h2>
             </div>
 
             {{-- Right column: lead + body --}}
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    Our service contracts are designed to help sites manage maintenance more proactively, reduce avoidable downtime and maintain reliable equipment performance across day-to-day operations.
+                    <span class="xl:block">Our service contracts are designed to help sites</span>
+                    <span class="xl:block">manage maintenance more proactively, reduce avoidable</span>
+                    <span class="xl:block">downtime and maintain reliable equipment performance</span>
+                    <span class="xl:block">across day-to-day operations.</span>
                 </p>
             </div>
 
@@ -625,7 +628,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 reveal text-balance" style="transition-delay:80ms;">
                 Planned maintenance for <span class="text-steel">different site&nbsp;demands</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
+            <p class="font-body text-gray-500 text-base leading-relaxed reveal text-pretty 2xl:whitespace-nowrap" style="transition-delay:160ms;">
                 Different sites place different pressure on laundry equipment. Preventive Maintenance should be planned around daily use, service needs and the cost of disruption.
             </p>
         </div>

@@ -21,7 +21,7 @@
                     <span class="sm:block">Healthcare laundry designed<br class="hidden lg:block"> for <span style="color:#148af4;">hygiene, safety and<br class="hidden lg:block"> continuous operation</span></span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-4xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional commercial laundry<br class="hidden lg:block"> equipment for hospitals, nursing homes and other healthcare environments.
+                    Commercial laundry equipment, installation and ongoing support<br class="hidden lg:block"> for hospitals, clinics and other healthcare facilities across Ireland.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#healthcare-assessment"
@@ -39,18 +39,21 @@
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Planning</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:whitespace-nowrap">Every healthcare operation</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">requires <span style="color:#148af4;">the right laundry approach</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="lg:whitespace-nowrap">Clear processes matter throughout</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">healthcare laundry, from soiled</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">handling through to <span style="color:#148af4;">clean linen</span></span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right lg:pt-8">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Every healthcare operation is different. Irish Laundry Systems assesses your requirements before recommending the right laundry equipment, layout and ongoing support.
+                    <span class="lg:block">The right setup makes each stage easier for staff to manage,</span>
+                    <span class="lg:block">supports consistent handling and gives the operation the level</span>
+                    <span class="lg:block">of hygiene control it actually needs, without adding</span>
+                    <span class="lg:block">unnecessary complexity to the laundry process.</span>
                 </p>
             </div>
 
