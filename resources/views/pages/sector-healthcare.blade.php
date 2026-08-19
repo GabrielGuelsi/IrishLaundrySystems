@@ -172,7 +172,7 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',                'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
             ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations support water recycling and lower water consumption.'],
-            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
+            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Average', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'decrease in sick days',                   'body'=>'Based on research into ergonomic interventions cited by Electrolux Professional, linking better ergonomics with fewer sick days and less disruption.'],
             ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
             ['icon'=>'88', 'prefix'=>'',      'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
@@ -200,22 +200,22 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/2.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.342);">
+                    <img src="/images/shared/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="max-h-full w-auto object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene separation</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier washer layouts separate soiled loading from clean unloading to reduce cross-contamination risk.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene Watchdog</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ensures full-cycle completion so linen is fully washed and thoroughly decontaminated, helping reduce cross-contamination risk.</p>
                 </div>
             </div>
 
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/3.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-8.55%) scale(1.351);">
+                    <img src="/images/shared/MoistureBalance.png" alt="Moisture control" class="max-h-full w-auto object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Staff wellbeing</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic door, drum and control design supports easier loading, unloading and daily handling.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Moisture control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance monitors residual moisture throughout drying and automatically stops the cycle at the required dryness level.</p>
                 </div>
             </div>
 
@@ -303,7 +303,7 @@
                     'title'  => 'Support &amp; Aftercare',
                     'text'   => 'For ongoing technical support, parts guidance and long-term equipment care.',
                     'cta'    => 'Explore Support Options',
-                    'route'  => route('service-contracts'),
+                    'route'  => route('parts-aftercare'),
                     'img'    => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'    => 'center center',
                 ],
@@ -1019,7 +1019,7 @@
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted <span style="color:#148af4;">healthcare laundry support</span> in Ireland',
-    'subheading' => 'See how healthcare organisations across Ireland describe their experience working with Irish Laundry Systems.',
+    'subheading' => 'Hear directly from customers about their experience with Irish Laundry Systems.',
     'subheadingClass' => 'max-w-6xl mx-auto',
 ])
 
