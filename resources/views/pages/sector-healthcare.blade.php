@@ -15,10 +15,11 @@
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
-            <div class="max-w-4xl reveal reveal-left">
+            <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="sm:block">Healthcare laundry designed<br class="hidden lg:block"> for <span style="color:#148af4;">hygiene, safety and<br class="hidden lg:block"> continuous operation</span></span>
+                    <span class="sm:block">Healthcare laundry for <span style="color:#148af4;">hygiene, safety</span></span>
+                    <span class="sm:block" style="color:#148af4;">and continuous operation</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-4xl">
                     Commercial laundry equipment, installation and ongoing support<br class="hidden lg:block"> for hospitals, clinics and other healthcare facilities across Ireland.
@@ -42,9 +43,9 @@
         <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Planning</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
-                    <span class="lg:whitespace-nowrap">Clear processes matter throughout</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">healthcare laundry, from soiled</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">handling through to <span style="color:#148af4;">clean linen</span></span>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Process</p>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:whitespace-nowrap">Healthcare laundry</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">from soiled linen</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">to <span style="color:#148af4;">clean linen</span></span>
                 </h2>
             </div>
 
@@ -171,7 +172,7 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',                'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
             ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',                   'body'=>'Double-drain barrier washer configurations support water recycling and lower water consumption.'],
-            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Up to', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'sick days',                   'body'=>'Electrolux ergonomic design supports easier handling, fewer sick days and higher productivity.'],
+            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'Average', 'stat'=>'75%',            'size'=>'text-4xl', 'label'=>'decrease in sick days',                   'body'=>'Based on research into ergonomic interventions cited by Electrolux Professional, linking better ergonomics with fewer sick days and less disruption.'],
             ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'',      'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use', 'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
             ['icon'=>'88', 'prefix'=>'',      'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
         ]])
@@ -199,22 +200,22 @@
             {{-- Card 1: Hygiene --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/2.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.342);">
+                    <img src="/images/shared/HygieneWatchdog.webp" alt="Hygiene Watchdog" class="max-h-full w-auto object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene separation</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Barrier washer layouts separate soiled loading from clean unloading to reduce cross-contamination risk.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Hygiene Watchdog</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ensures full-cycle completion so linen is fully washed and thoroughly decontaminated, helping reduce cross-contamination risk.</p>
                 </div>
             </div>
 
             {{-- Card 2: Operator --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/3.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-8.55%) scale(1.351);">
+                    <img src="/images/shared/MoistureBalance.png" alt="Moisture control" class="max-h-full w-auto object-contain">
                 </div>
                 <div>
-                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Staff wellbeing</h3>
-                    <p class="font-body text-gray-500 text-sm leading-relaxed">Ergonomic door, drum and control design supports easier loading, unloading and daily handling.</p>
+                    <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Moisture control</h3>
+                    <p class="font-body text-gray-500 text-sm leading-relaxed">Moisture Balance monitors residual moisture throughout drying and automatically stops the cycle at the required dryness level.</p>
                 </div>
             </div>
 
@@ -302,7 +303,7 @@
                     'title'  => 'Support &amp; Aftercare',
                     'text'   => 'For ongoing technical support, parts guidance and long-term equipment care.',
                     'cta'    => 'Explore Support Options',
-                    'route'  => route('service-contracts'),
+                    'route'  => route('parts-aftercare'),
                     'img'    => '/images/shared/services-overview-hero-portrait.jpg',
                     'pos'    => 'center center',
                 ],
@@ -756,36 +757,40 @@
         $dosingProducts = [
             [
                 'name'    => 'Multisave',
-                'label'   => 'Multi-tank dosing with water saving',
-                'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
-                'points'  => ['Multi-tank machine compatible', 'Reduces water and detergent per cycle', 'Supports wash cycle optimisation'],
+                'label'   => 'One unit for multiple washers',
+                'body'    => 'Connects up to seven washing machines with one unit for simpler dosing control.',
+                'points'  => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
+                'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/MULTISAVE.png',
                 'color'   => '#011E41',
             ],
             [
                 'name'    => 'DOSAVE',
-                'label'   => 'Precise dosing for consistent results',
-                'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
-                'points'  => ['Accurate cycle-by-cycle dosing', 'Reduces chemical waste', 'Lowers detergent running cost'],
+                'label'   => 'Programmable dosing support',
+                'body'    => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
+                'points'  => ['Peristaltic pumps', 'Easy programming', 'Controlled delivery'],
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/DOSAVEEQUIP.webp',
                 'scene'   => '/images/pages/accessories/DOSAVE.jpg',
                 'color'   => '#0d2d5e',
             ],
             [
                 'name'    => 'JETSAVE',
-                'label'   => 'Jet-based dosing with integrated saving',
-                'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
-                'points'  => ['Jet-based detergent delivery', 'Water and detergent saving', 'Compatible with CompassPro control'],
+                'label'   => 'Lower-maintenance dosing control',
+                'body'    => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
+                'points'  => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/JETSAVE.png',
                 'color'   => '#0a2448',
             ],
             [
                 'name'    => 'Efficient Dosing',
-                'label'   => 'Integrated dosing through CompassPro',
-                'body'    => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
-                'points'  => ['Integrated with CompassPro', 'Removes manual dosing errors', 'Lower detergent cost per cycle'],
+                'label'   => 'Adjust detergent to the real load',
+                'body'    => 'Measures the load at the start of the programme and adjusts detergent use to match the cycle.',
+                'points'  => ['Real load measured', 'Less overuse', 'Cost control'],
+                'logos'   => ['compasspro'],
                 'img'     => '/images/shared/efficientDosing_equip.webp',
                 'color'   => '#011E41',
             ],
@@ -843,8 +848,12 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
+                                        @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
+                                        @if(in_array('compasspro', $p['logos'] ?? []))
                                         <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
                                     </div>
                                 </div>
 
@@ -1010,7 +1019,7 @@
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted <span style="color:#148af4;">healthcare laundry support</span> in Ireland',
-    'subheading' => 'See how healthcare organisations across Ireland describe their experience working with Irish Laundry Systems.',
+    'subheading' => 'Hear directly from customers about their experience with Irish Laundry Systems.',
     'subheadingClass' => 'max-w-6xl mx-auto',
 ])
 

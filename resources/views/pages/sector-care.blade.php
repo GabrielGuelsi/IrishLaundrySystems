@@ -12,15 +12,14 @@
          class="absolute inset-0 w-full h-full object-cover" style="object-position: center 38%; transform: scale(1.22);">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
-            <div class="max-w-3xl reveal reveal-left">
+            <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="sm:block">Care facility laundry</span>
-                    <span class="sm:block">designed for resident care,</span>
-                    <span class="sm:block" style="color:#148af4;">hygiene and daily efficiency</span>
+                    <span class="sm:block">Care facility laundry designed for</span>
+                    <span class="sm:block">resident care, <span style="color:#148af4;">hygiene and daily efficiency</span></span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment <br class="hidden lg:block">for care homes, nursing homes and residential care facilities.
+                    Irish Laundry Systems supplies, installs and supports Electrolux Professional <br class="hidden lg:block">equipment for care homes, nursing homes and residential care facilities.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#care-assessment"
@@ -44,14 +43,18 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-snug text-balance">
-                    <span class="sm:block">The right approach for</span>
-                    <span class="sm:block" style="color:#148af4;">each care environment</span>
+                    <span class="sm:block">The right setup for</span>
+                    <span class="sm:block" style="color:#148af4;">your space, workload</span>
+                    <span class="sm:block" style="color:#148af4;">and hygiene needs</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    We assess capacity, room layout and hygiene requirements before defining<br class="hidden lg:block"> the equipment and configuration for your facility.
+                    <span class="lg:block">We assess capacity, room layout</span>
+                    <span class="lg:block">and hygiene requirements before</span>
+                    <span class="lg:block">defining the equipment and</span>
+                    <span class="lg:block">configuration for your facility.</span>
                 </p>
             </div>
 
@@ -66,10 +69,10 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Separation</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Greater separation for care facilities <span style="color:#148af4;">with higher hygiene requirements</span>
+                Clear separation <span style="color:#148af4;">where hygiene control requires it</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed mb-4">
-                Larger care environments may require clearer separation between incoming and processed items.<br class="hidden lg:block"> Irish Laundry Systems can assess whether a barrier washer configuration is appropriate for the site.
+                Where separation is required, we plan a clear flow from soiled to clean areas.
             </p>
         </div>
 
@@ -123,7 +126,7 @@
         @include('components.financial-metrics', ['items' => [
             ['icon'=>'6',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'65%',            'size'=>'text-4xl', 'label'=>'dryer energy',              'body'=>'Heat Pump dryer technology can reduce energy use while supporting controlled drying performance.'],
             ['icon'=>'7',  'iconClass'=>'scale-[1.181] -translate-y-[13.2%]', 'prefix'=>'Up to', 'stat'=>'50%',            'size'=>'text-4xl', 'label'=>'water use',              'body'=>'Double-drain barrier washer configurations support water recycling and lower water use in rooms with separated handling.'],
-            ['icon'=>'9',  'iconClass'=>'scale-[1.027] -translate-y-[6.7%]', 'prefix'=>'', 'stat'=>'Lower<br>strain',      'size'=>'text-2xl', 'label'=>'staff handling',      'body'=>'Ergonomic equipment design can reduce physical effort during loading, unloading and other repetitive laundry tasks.'],
+            ['icon'=>'126',  'prefix'=>'Up to', 'stat'=>'40%',      'size'=>'text-4xl', 'label'=>'lower operating costs',      'body'=>'Line 6000 washer technologies optimise utilisation to reduce operating costs without compromising productivity.'],
             ['icon'=>'dosing-control', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]', 'prefix'=>'', 'stat'=>'Less<br>waste',      'size'=>'text-2xl', 'label'=>'detergent use',      'body'=>'Integrated Savings and Efficient Dosing reduce waste from poor loading and detergent overuse.'],
             ['icon'=>'88', 'iconClass'=>'translate-y-[0.9%]', 'prefix'=>'', 'stat'=>'Service<br>planning',  'size'=>'text-2xl', 'label'=>'service costs',  'body'=>'Preventive maintenance and aftercare keep service costs easier to plan and manage.'],
         ]])
@@ -288,8 +291,8 @@
 <!-- 8. PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
-    'heading'    => 'Plan the right laundry room<br class="hidden lg:block"> <span style="color:#011E41;">for your care facility</span>',
-    'body'       => 'Irish Laundry Systems reviews the room, utilities and daily requirements to define the equipment layout before installation.',
+    'heading'    => 'Plan the right laundry setup<br class="hidden lg:block"> <span style="color:#011E41;">for the space you have</span>',
+    'body'       => 'We assess room layout, utilities and workflow to design a practical setup,<br class="hidden lg:block"> from adapting compact spaces to planning larger care facility laundries.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>Fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>Control'],
@@ -305,10 +308,10 @@
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Choose the equipment mix for <span style="color:#148af4;">your care facility&rsquo;s daily demand</span>
+                Choose the <span style="color:#148af4;">right equipment mix</span> for your care facility
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                From washing and drying to finishing and barrier separation where required, we help define the right equipment combination for the room and workload.
+                We match the right equipment mix to your space, workload and hygiene needs.
             </p>
         </div>
 
@@ -341,7 +344,7 @@
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                         <a href="{{ route('contact') }}" class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
-                            Request Equipment Advice
+                            Request Care Facility Equipment Advice
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                         </a>
                     </div>
@@ -635,7 +638,7 @@
                 Control detergent use and <span style="color:#148af4;">wash consistency</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
-                Automatic dosing delivers the right amount of detergent for each cycle, helping care facilities reduce chemical waste and maintain consistent results.
+                Automatic dosing helps reduce detergent waste and keep wash results consistent across every cycle.
             </p>
         </div>
 
@@ -644,29 +647,33 @@
         $dosingProducts = [
             [
                 'name'    => 'Multisave',
-                'label'   => 'Multi-tank dosing with water saving',
-                'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
+                'label'   => 'One unit for multiple washers',
+                'body'    => 'Connects up to seven washing machines with one unit for simpler dosing control.',
+                'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'    => 'DOSAVE',
-                'label'   => 'Precise dosing for consistent results',
-                'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
+                'label'   => 'Programmable dosing support',
+                'body'    => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/DOSAVEEQUIP.webp',
                 'scene'   => '/images/pages/accessories/DOSAVE.jpg',
             ],
             [
                 'name'    => 'JETSAVE',
-                'label'   => 'Jet-based dosing with integrated saving',
-                'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
+                'label'   => 'Lower-maintenance dosing control',
+                'body'    => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'    => 'Efficient Dosing',
-                'label'   => 'Integrated dosing through CompassPro',
-                'body'    => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
+                'label'   => 'Adjust detergent to the real load',
+                'body'    => 'Measures the load at the start of the programme and adjusts detergent use to match the cycle.',
+                'logos'   => ['compasspro'],
                 'img'     => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
@@ -723,8 +730,12 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
+                                        @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
+                                        @if(in_array('compasspro', $p['logos'] ?? []))
                                         <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
                                     </div>
                                 </div>
 
@@ -812,18 +823,18 @@
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-            From site review to <span style="color:#148af4;">supported installation</span>
+            Prepare care facility laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
-            Irish Laundry Systems reviews the room, defines the right equipment setup and manages installation and handover for your care facility.
+            Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Site Review', 'text' => 'Assess the room, utilities, hygiene needs and daily requirements before equipment is selected.'],
-                ['title' => 'Equipment Selection', 'text' => 'Choose the right washers, dryers and finishing equipment for the facility&rsquo;s capacity and items handled.'],
-                ['title' => 'Installation &amp; Handover', 'text' => 'Plan delivery, installation and setup, then prepare the equipment for daily use with clear guidance for the team.'],
+                ['title' => 'Prepare the Site', 'text' => 'Confirm access, utilities and positioning before delivery.'],
+                ['title' => 'Install and Commission', 'text' => 'Deliver, position, install and test the selected equipment.'],
+                ['title' => 'Handover', 'text' => 'Provide operating guidance and explain available aftercare.'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
@@ -849,9 +860,9 @@
 <!-- 11. Service Contracts, Support & Aftercare Strip -->
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'After Installation',
-    'headingLine1' => 'Support that continues',
-    'headingLine2' => 'long after installation',
-    'body'         => 'Irish Laundry Systems continues to support your care facility with planned maintenance, equipment care and ongoing technical assistance.',
+    'headingLine1' => 'Keep care facility laundry',
+    'headingLine2' => 'performing reliably every day',
+    'body'         => 'Ongoing maintenance and aftercare help minimise disruption and protect equipment value, helping keep your laundry operation reliable long after installation.',
     'image'        => '/images/pages/services/support-aftercare-hero.png',
     'miniPoints'   => [
         ['icon' => 'home-rental-maintained', 'iconClass' => 'scale-[0.94]',  'label' => 'Service<br>Planning'],
@@ -865,8 +876,8 @@
 <!-- 12. Testimonial / Proof Block -->
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted by care facilities <span style="color:#148af4;">across Ireland</span>',
-    'subheading' => 'See how Irish Laundry Systems supports care facilities with equipment, installation and ongoing service.',
+    'heading'    => 'Trusted commercial laundry support <span style="color:#148af4;">across Ireland</span>',
+    'subheading' => 'See how organisations across Ireland describe their experience working with Irish Laundry Systems.',
     'subheadingClass' => 'max-w-6xl mx-auto',
 ])
 

@@ -12,15 +12,15 @@
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 50% 20%;">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
-            <div class="max-w-5xl reveal reveal-left">
+            <div class="max-w-6xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="sm:block">Commercial laundry equipment</span>
-                    <span class="sm:block">for hospitality <span style="color:#148af4;">protecting guest</span></span>
-                    <span class="sm:block" style="color:#148af4;">standards and daily service</span>
+                    <span class="sm:block">Commercial laundry equipment for hospitality</span>
+                    <span class="sm:block" style="color:#148af4;">built around daily service demands</span>
                 </h1>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-2xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment for hotels, guesthouses, restaurants, spas and leisure facilities across Ireland.
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-4xl">
+                    <span class="lg:block">Irish Laundry Systems supplies, installs and supports Electrolux Professional equipment</span>
+                    <span class="lg:block">for hotels, guesthouses, restaurants, spas and leisure facilities across Ireland.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#hospitality-assessment"
@@ -38,20 +38,23 @@
 <!-- INTRO COMMERCIAL BLOCK -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Hospitality Laundry Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-16 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Hospitality Planning</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block min-[1360px]:whitespace-nowrap">Plan hospitality laundry around</span>
-                    <span class="sm:block min-[1360px]:whitespace-nowrap">peak demand, available space and</span>
-                    <span class="sm:block min-[1360px]:whitespace-nowrap" style="color:#148af4;">the turnaround your operation needs</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block min-[1360px]:whitespace-nowrap">Plan capacity around</span>
+                    <span class="sm:block min-[1360px]:whitespace-nowrap">peak demand, available space</span>
+                    <span class="sm:block min-[1360px]:whitespace-nowrap" style="color:#148af4;">and the turnaround required</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    The items processed, utilities, access and staff handling all influence equipment capacity, room layout, installation requirements and which equipment categories may be relevant to the site.
+                    <span class="lg:block">What you process, available utilities and site access</span>
+                    <span class="lg:block">help define the right capacity and room layout.</span>
+                    <span class="lg:block">Staff handling and installation requirements then help</span>
+                    <span class="lg:block">determine which equipment categories fit the operation.</span>
                 </p>
             </div>
 
@@ -66,7 +69,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Control hospitality laundry costs while protecting <span style="color:#148af4;">guest standards</span>
+                Control laundry costs and <span style="color:#148af4;">protect guest standards</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Energy use, detergent control, textile care and equipment planning all affect the cost of keeping rooms and service areas supplied during busy periods.
@@ -76,7 +79,7 @@
         @include('components.financial-metrics', ['tightLeft' => true, 'items' => [
             ['icon'=>'202', 'prefix'=>'', 'stat'=>'Faster<br>turnaround', 'size'=>'text-2xl', 'label'=>'room readiness', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.23] translate-y-[2.5%]',       'body'=>'On-site laundry can return bed linen, towels and robes to service sooner during peak demand.'],
             ['icon'=>'pmc-gain-86', 'prefix'=>'', 'stat'=>'Higher<br>quality control',    'size'=>'text-2xl', 'label'=>'guest standards', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.953] translate-y-[0.1%]', 'body'=>'Managing laundry in-house gives teams greater control over washing, handling and return-to-service timing.'],
-            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',              'body'=>'Electrolux Professional Heat Pump dryer technology can reduce energy consumption by up to 65% in suitable applications.'],
+            ['icon'=>'6',  'prefix'=>'Up to', 'stat'=>'65%',              'size'=>'text-4xl', 'label'=>'dryer energy use', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',              'body'=>'Line 6000 Heat Pump Dryers can use up to 65% less energy than vented dryers.'],
             ['icon'=>'dosing-control', 'prefix'=>'', 'stat'=>'Less<br>waste',        'size'=>'text-2xl', 'label'=>'detergent and textile care', 'labelClass'=>'translate-x-[3.25rem] translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',       'body'=>'Efficient dosing and the right wash setup can reduce detergent overuse and protect textile quality.'],
             ['icon'=>'88', 'prefix'=>'', 'stat'=>'Service<br>planning',    'size'=>'text-2xl', 'label'=>'equipment care', 'labelClass'=>'translate-y-2', 'iconClass'=>'translate-y-[0.9%]', 'body'=>'Preventive maintenance, repairs and aftercare make essential laundry equipment easier to manage.'],
         ]])
@@ -90,7 +93,7 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Priorities</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Plan hospitality laundry around <span style="color:#148af4;">room standards and service needs</span>
+                Plan laundry around <span style="color:#148af4;">room standards and service needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Housekeeping schedules, food service, spa use, staff uniforms and busy periods all influence the capacity and equipment the operation needs.
@@ -159,10 +162,10 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep hospitality laundry running with <span style="color:#148af4;">support from call-out to aftercare</span>
+                Keep hospitality laundry running with <span style="color:#148af4;">the right support</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Choose the service your operation needs to keep essential equipment in use.
+                Choose the service that fits your operation, from repairs and maintenance to rental and aftercare.
             </p>
         </div>
 
@@ -250,12 +253,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-16 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Plan hospitality laundry equipment around <span style="color:#148af4;">capacity, textile care and finishing needs</span>
+                Choose the <span style="color:#148af4;">right equipment mix</span> for hospitality
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                The combination of washers, dryers and finishing equipment should reflect the loads processed and the turnaround required across the property.
+                Washers, dryers and finishing equipment should match your loads and turnaround needs.
             </p>
         </div>
 
@@ -525,7 +528,7 @@
                 Protect <span style="color:#148af4;">textile quality</span> while reducing detergent waste
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Automatic dosing uses the right amount of detergent for each cycle, reducing chemical overuse while protecting towels, robes, bed linen and table linen.
+                Automatic dosing controls detergent use while protecting hospitality textiles.
             </p>
         </div>
 
@@ -534,29 +537,33 @@
         $dosingProducts = [
             [
                 'name'    => 'Multisave',
-                'label'   => 'Multi-tank dosing with water saving',
-                'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
+                'label'   => 'One unit for multiple washers',
+                'body'    => 'Connects up to seven washing machines with one unit for simpler dosing control.',
+                'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'    => 'DOSAVE',
-                'label'   => 'Precise dosing for consistent results',
-                'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
+                'label'   => 'Programmable dosing support',
+                'body'    => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/DOSAVEEQUIP.webp',
                 'scene'   => '/images/pages/accessories/DOSAVE.jpg',
             ],
             [
                 'name'    => 'JETSAVE',
-                'label'   => 'Jet-based dosing with integrated saving',
-                'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
+                'label'   => 'Lower-maintenance dosing control',
+                'body'    => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'    => 'Efficient Dosing',
-                'label'   => 'Integrated dosing through CompassPro',
-                'body'    => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
+                'label'   => 'Adjust detergent to the real load',
+                'body'    => 'Measures the load at the start of the programme and adjusts detergent use to match the cycle.',
+                'logos'   => ['compasspro'],
                 'img'     => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
@@ -613,8 +620,12 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
+                                        @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
+                                        @if(in_array('compasspro', $p['logos'] ?? []))
                                         <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
                                     </div>
                                 </div>
 
@@ -707,7 +718,7 @@
             Prepare hospitality laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 max-w-2xl leading-relaxed text-center mx-auto">
-            Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
+            Site checks, installation and commissioning are coordinated before handover.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 lg:gap-20">
 
@@ -757,8 +768,8 @@
 <!-- TESTIMONIAL / PROOF BLOCK -->
 @include('components.testimonials', [
     'eyebrow'    => 'Client Feedback',
-    'heading'    => 'What hospitality teams say about <span style="color:#148af4;">working with Irish Laundry Systems</span>',
-    'subheading' => 'Feedback from hospitality operators on communication, technical knowledge and day-to-day service.',
+    'heading'    => 'What clients say about <span style="color:#148af4;">Irish Laundry Systems</span>',
+    'subheading' => 'Feedback from clients on service, technical knowledge and long-term support',
     'subheadingClass' => 'max-w-5xl mx-auto',
 ])
 

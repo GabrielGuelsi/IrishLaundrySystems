@@ -581,37 +581,42 @@
                 'label'  => 'Dosing based on the load',
                 'body'   => 'Intelligent Dosing adds detergent according to the load inside the drum, helping reduce overuse while protecting wash consistency.',
                 'points' => ['Load-based dosing', 'Less waste', 'Better consistency', 'ClarusVibe where applicable'],
+                'logos'  => ['clarusvibe'],
                 'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
             [
                 'name'   => 'Multisave',
-                'label'  => 'One dosing unit for multiple washers',
-                'body'   => 'Multisave can connect up to 7 washing machines with one unit, supporting accurate consumption control in multi-washer laundry rooms.',
-                'points' => ['Up to 7 washers', 'Lower setup complexity', 'Low running costs', 'Multi-machine control'],
+                'label'  => 'One unit for multiple washers',
+                'body'   => 'Connects up to seven washing machines with one unit for simpler dosing control.',
+                'points' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
+                'logos'  => ['clarusvibe', 'compasspro'],
                 'img'    => '/images/shared/MultisaveEQUIP.webp',
                 'scene'  => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'   => 'JETSAVE',
-                'label'  => 'Lower upkeep with water-powered dosing',
-                'body'   => 'JETSAVE uses water-powered pumps with no moving parts or squeeze tubes to replace, supporting reliable dosage and easier long-term upkeep.',
-                'points' => ['Water-powered dosing', 'No squeeze tubes', 'Reliable dosage', 'Less maintenance'],
+                'label'  => 'Lower-maintenance dosing control',
+                'body'   => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
+                'points' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
+                'logos'  => ['clarusvibe'],
                 'img'    => '/images/shared/JetsaveEQUIP.webp',
                 'scene'  => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'   => 'DOSAVE',
-                'label'  => 'Straightforward dosing setup',
-                'body'   => 'DOSAVE uses peristaltic technology with easy installation and programming, supporting accurate dosing where this system is the best fit.',
-                'points' => ['Easy installation', 'Easy programming', 'Accurate dosing', 'Savings-focused setup'],
+                'label'  => 'Programmable dosing support',
+                'body'   => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
+                'points' => ['Peristaltic pumps', 'Easy programming', 'Controlled delivery'],
+                'logos'  => ['clarusvibe'],
                 'img'    => '/images/shared/DOSAVEEQUIP.webp',
                 'scene'  => '/images/pages/accessories/DOSAVE.jpg',
             ],
             [
                 'name'   => 'Efficient Dosing',
-                'label'  => 'Detergent control for selected CompassPro setups',
-                'body'   => 'Efficient Dosing uses the correct amount of detergent for each cycle, supporting lower detergent costs and more controlled wash results.',
-                'points' => ['Correct amount each cycle', 'Over 30% detergent cost saving where suitable', 'CompassPro', 'Cost control'],
+                'label'  => 'Adjust detergent to the real load',
+                'body'   => 'Measures the load at the start of the programme and adjusts detergent use to match the cycle.',
+                'points' => ['Real load measured', 'Less overuse', 'Cost control'],
+                'logos'  => ['compasspro'],
                 'img'    => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
@@ -668,8 +673,12 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
+                                        @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
+                                        @if(in_array('compasspro', $p['logos'] ?? []))
                                         <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
                                     </div>
                                 </div>
 
