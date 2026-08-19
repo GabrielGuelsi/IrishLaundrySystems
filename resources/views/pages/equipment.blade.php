@@ -158,11 +158,11 @@
                     class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="relative" style="min-height:540px;">
+                    <div class="relative" style="min-height:640px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover {{ $t['imgClass'] ?? 'object-center' }}">
                         <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.8) 25%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.25) 65%, rgba(1,30,65,0.06) 85%, transparent 100%);"></div>
-                        <div class="relative z-10 flex items-end" style="min-height:540px;">
+                        <div class="relative z-10 flex items-end" style="min-height:640px;">
                             <div class="p-8 lg:p-14 max-w-2xl">
                                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{{ $t['eyebrow'] }}</p>
                                 <h3 class="font-heading font-bold text-white text-2xl sm:text-3xl lg:text-4xl leading-tight mb-4">{{ $t['headline'] }}</h3>
@@ -671,7 +671,7 @@
 <div id="equipment-quote"></div>
 @include('components.cta-downtime-form', [
     'pageSource'  => 'equipment_cta',
-    'eyebrow'     => 'Request an Equipment Quote',
+    'eyebrow'     => 'Request Equipment Advice',
     'heading'     => 'Talk to the team before<br class="hidden lg:block"> you <span style="color:#148af4;">buy or rent</span><br class="hidden lg:block"> laundry equipment',
     'body'        => 'Tell us about your site, workload, room and budget pressure. Irish Laundry Systems will guide you toward the right equipment quote, purchase option, rental discussion or aftercare support.',
     'formTitle'   => 'Request Equipment Advice',
