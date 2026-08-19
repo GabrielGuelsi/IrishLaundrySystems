@@ -644,29 +644,33 @@
         $dosingProducts = [
             [
                 'name'    => 'Multisave',
-                'label'   => 'Multi-tank dosing with water saving',
-                'body'    => 'Multisave combines dosing control with cylinder-to-cylinder water saving across multi-tank machines. It reduces the volume of water and detergent used per cycle without compromising wash quality or hygiene standards.',
+                'label'   => 'One unit for multiple washers',
+                'body'    => 'Connects up to seven washing machines with one unit for simpler dosing control.',
+                'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/MULTISAVE.png',
             ],
             [
                 'name'    => 'DOSAVE',
-                'label'   => 'Precise dosing for consistent results',
-                'body'    => 'DOSAVE delivers accurate detergent dosing for each wash cycle, reducing chemical overuse and waste. It supports more consistent wash quality while lowering detergent running cost over time.',
+                'label'   => 'Programmable dosing support',
+                'body'    => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/DOSAVEEQUIP.webp',
                 'scene'   => '/images/pages/accessories/DOSAVE.jpg',
             ],
             [
                 'name'    => 'JETSAVE',
-                'label'   => 'Jet-based dosing with integrated saving',
-                'body'    => 'JETSAVE uses a water jet to mix and deliver detergent precisely into the drum. It is designed to reduce both water and detergent consumption while maintaining consistent wash performance across cycles.',
+                'label'   => 'Lower-maintenance dosing control',
+                'body'    => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
+                'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
                 'scene'   => '/images/pages/accessories/JETSAVE.png',
             ],
             [
                 'name'    => 'Efficient Dosing',
-                'label'   => 'Integrated dosing through CompassPro',
-                'body'    => 'Efficient Dosing integrates directly with CompassPro to ensure the correct amount of detergent is used in every cycle. It removes manual dosing decisions and supports lower chemical costs over time.',
+                'label'   => 'Adjust detergent to the real load',
+                'body'    => 'Measures the load at the start of the programme and adjusts detergent use to match the cycle.',
+                'logos'   => ['compasspro'],
                 'img'     => '/images/shared/efficientDosing_equip.webp',
             ],
         ];
@@ -723,8 +727,12 @@
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
                                     <div class="flex items-center gap-8">
+                                        @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
+                                        @if(in_array('compasspro', $p['logos'] ?? []))
                                         <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-12 w-auto object-contain opacity-80">
+                                        @endif
                                     </div>
                                 </div>
 
