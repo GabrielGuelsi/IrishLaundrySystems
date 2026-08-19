@@ -168,6 +168,7 @@
                 'title' => 'Dose by the load inside the drum',
                 'body'  => 'Automatically adjusts detergent and chemicals to the load weight on compatible Electrolux Professional washers.',
                 'chips' => ['Load-weight based', 'Consistent quality', 'Less manual judgement'],
+                'logos' => ['clarusvibe'],
                 'cta'   => 'Ask About Intelligent Dosing',
                 'img'   => '/images/shared/efficientDosing_equip.webp',
             ],
@@ -177,6 +178,7 @@
                 'title' => 'Adjust detergent to the real load',
                 'body'  => 'Measures the load at the start of the programme and adjusts detergent use to match the cycle.',
                 'chips' => ['Real load measured', 'Less overuse', 'Cost control'],
+                'logos' => ['compasspro'],
                 'cta'   => 'Ask About Efficient Dosing',
                 'img'   => '/images/shared/efficientDosing_equip.webp',
             ],
@@ -186,6 +188,7 @@
                 'title' => 'One unit for multiple washers',
                 'body'  => 'Connects up to seven washing machines with one unit for simpler dosing control.',
                 'chips' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
+                'logos' => ['clarusvibe', 'compasspro'],
                 'cta'   => 'Ask About Multisave',
                 'img'   => '/images/shared/MultisaveEQUIP.webp',
                 'scene' => '/images/pages/accessories/MULTISAVE.png',
@@ -196,6 +199,7 @@
                 'title' => 'Lower-maintenance dosing control',
                 'body'  => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
                 'chips' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
+                'logos' => ['clarusvibe'],
                 'cta'   => 'Ask About JETSAVE',
                 'img'   => '/images/shared/JetsaveEQUIP.webp',
                 'scene' => '/images/pages/accessories/JETSAVE.png',
@@ -206,6 +210,7 @@
                 'title' => 'Programmable dosing support',
                 'body'  => 'A peristaltic dosing option for easy connection, programming and controlled detergent delivery.',
                 'chips' => ['Peristaltic pumps', 'Easy programming', 'Controlled delivery'],
+                'logos' => ['clarusvibe'],
                 'cta'   => 'Ask About DOSAVE',
                 'img'   => '/images/shared/DOSAVEEQUIP.webp',
                 'scene' => '/images/pages/accessories/DOSAVE.jpg',
@@ -270,6 +275,16 @@
                                         <span class="font-body text-xs font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-3 py-1.5 rounded-full">{{ $chip }}</span>
                                         @endforeach
                                     </div>
+                                    @if(!empty($p['logos']))
+                                    <div class="flex items-center gap-6 mb-6">
+                                        @if(in_array('clarusvibe', $p['logos']))
+                                        <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-10 w-auto object-contain opacity-80">
+                                        @endif
+                                        @if(in_array('compasspro', $p['logos']))
+                                        <img src="/images/shared/Compass-Pro_1-300x88.webp" alt="CompassPro" class="h-10 w-auto object-contain opacity-80">
+                                        @endif
+                                    </div>
+                                    @endif
                                     <a href="{{ route('contact') }}"
                                        class="inline-flex items-center gap-2 border border-[#148af4] text-[#148af4] hover:bg-[#148af4] hover:text-white font-heading font-bold text-sm px-5 py-3 rounded-lg transition-colors">
                                         {{ $p['cta'] }}
