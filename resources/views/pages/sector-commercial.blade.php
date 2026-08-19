@@ -17,11 +17,10 @@
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial laundry equipment</span>
-                    <span class="sm:block">and support to improve productivity</span>
-                    <span class="sm:block" style="color:#148af4;">and keep costs under control</span>
+                    <span class="sm:block" style="color:#148af4;">for productivity and better cost control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
-                    Irish Laundry Systems supplies, installs and services Electrolux Professional equipment,<br class="hidden lg:block"> with Equipment Rental available.
+                    Irish Laundry Systems supplies, installs and services<br class="hidden lg:block"> Electrolux Professional equipment, with Equipment Rental available.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#commercial-assessment"
@@ -43,20 +42,23 @@
 <!-- INTRO COMMERCIAL BLOCK -->
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Room Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[1.45fr_1fr] gap-12 lg:gap-12 items-start">
+        <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Commercial Laundry Planning</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block">Plan the laundry room</span>
-                    <span class="sm:block" style="color:#148af4;">around volume, load type</span>
-                    <span class="sm:block" style="color:#148af4;">and daily demand</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Match the laundry setup</span>
+                    <span class="sm:block" style="color:#148af4;">to volume, textile mix</span>
+                    <span class="sm:block" style="color:#148af4;">and operating demand</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed lg:max-w-sm lg:ml-auto">
-                    Space, access and utilities determine the practical capacity, layout and installation requirements for each site.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    <span class="lg:block">Commercial and industrial laundry sites can place different</span>
+                    <span class="lg:block">demands on equipment, capacity and workflow.</span>
+                    <span class="lg:block">The right setup starts with what is being processed,</span>
+                    <span class="lg:block">how much is handled and how the operation needs to run.</span>
                 </p>
             </div>
 
@@ -158,8 +160,8 @@
         </div>
 
         @include('components.financial-metrics', ['items' => [
-            ['icon'=>'132', 'prefix'=>'Up to', 'stat'=>'90%',           'size'=>'text-4xl', 'label'=>'Post-purchase cost', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.914] -translate-y-[1.5%]',  'body'=>'Water, energy and chemicals can drive most washer and dryer lifetime cost, so efficient equipment matters after purchase.'],
-            ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',      'body'=>'Electrolux Professional heat pump dryer technology can reduce energy use by up to 65% compared with a vented dryer.'],
+            ['icon'=>'132', 'prefix'=>'Around', 'stat'=>'90%',           'size'=>'text-4xl', 'label'=>'of lifetime costs', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.914] -translate-y-[1.5%]',  'body'=>'Energy, water and chemicals can account for around 90% of a commercial washing machine’s life-cycle cost.'],
+            ['icon'=>'6',   'prefix'=>'Up to', 'stat'=>'65%',           'size'=>'text-4xl', 'label'=>'Energy savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.181] -translate-y-[13.2%]',      'body'=>'Electrolux Professional Line 6000 Heat Pump Dryers can reduce energy use by up to 65% compared with a vented dryer.'],
             ['icon'=>'dosing-control', 'prefix'=>'Over', 'stat'=>'30%',  'size'=>'text-4xl', 'label'=>'Detergent savings', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.051] -translate-y-[7.5%]',  'body'=>'Efficient Dosing can save over 30% on detergent costs by calculating the amount required for each load.'],
             ['icon'=>'19',  'prefix'=>'Average', 'stat'=>'75%',           'size'=>'text-4xl', 'label'=>'Sick-day reduction', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[1.03]',  'body'=>'Research cited by Electrolux Professional links ergonomic interventions to an average 75% decrease in sick days.'],
             ['icon'=>'166',  'prefix'=>'',     'stat'=>'Cost<br>control', 'size'=>'text-2xl', 'label'=>'planned service', 'labelClass'=>'translate-y-2', 'iconClass'=>'scale-[0.95] -translate-y-[3.6%]',     'body'=>'Preventive Maintenance and aftercare make service costs easier to plan and manage over time.'],
@@ -244,10 +246,10 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Service support that protects <span style="color:#148af4;">commercial laundry uptime</span>
+                Choose the <span style="color:#148af4;">right service support</span> for your site
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Select the service your site needs for equipment already in use.
+                Practical options to keep equipment running, minimise disruption and support your operation over time.
             </p>
         </div>
 
@@ -319,8 +321,8 @@
 <!-- PLANNING STRIP -->
 @include('components.cta-combined-banner', [
     'eyebrow'    => 'Site Planning',
-    'heading'    => 'Plan the laundry room around<br class="hidden lg:block"> <span style="color:#011E41;">daily use,</span> <span style="color:#011E41;">room layout</span><br class="hidden lg:block"> and <span style="color:#011E41;">running cost</span>',
-    'body'       => 'Before purchase, rental or replacement, review load types, utilities, access,<br class="hidden lg:block"> space and service needs together.',
+    'heading'    => 'Plan the site for a smoother<br class="hidden lg:block"> <span style="color:#011E41;">equipment installation</span>',
+    'body'       => 'Confirm space, access and utilities before equipment is installed,<br class="hidden lg:block"> so practical site requirements are clear before work begins.',
     'miniPoints' => [
         ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.06]',    'label' => 'Room<br>fit'],
         ['icon' => 'home-planning-spend',  'label' => 'Cost<br>control'],
@@ -334,12 +336,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-16 reveal">
-            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Equipment</p>
+            <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                Choose a complete commercial laundry setup for <span style="color:#148af4;">washing, drying and finishing</span>
+                Choose equipment <span style="color:#148af4;">around your commercial laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Each stage should reflect the loads processed, capacity required and level of finishing expected.
+                Match washing, drying and finishing equipment to your loads, capacity and finishing requirements.
             </p>
         </div>
 
@@ -706,10 +708,10 @@
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">Dosing &amp; Laundry Control</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Reduce detergent waste through <span style="color:#148af4;">precise automatic dosing</span>
+                Protect <span style="color:#148af4;">textile quality</span> while reducing detergent waste
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-6xl">
-                Automatic dosing applies the required amount for each cycle, supporting consistent wash results across repeated commercial use.
+                Automatic dosing delivers the right amount of detergent for each cycle, helping control chemical use.
             </p>
         </div>
 
@@ -928,18 +930,18 @@
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
-            Prepare commercial laundry equipment for <span style="color:#148af4;">daily use</span>
+            Prepare your commercial laundry <span style="color:#148af4;">for a smooth handover</span>
         </h2>
         <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
-            Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
+            Site checks, installation and commissioning help ensure the selected equipment is ready for operation.
         </p>
 
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 lg:gap-20">
 
             @foreach([
-                ['title' => 'Prepare the Site',      'text' => 'Confirm access, utilities and positioning before delivery.'],
-                ['title' => 'Install and Commission', 'text' => 'Deliver, position, install and test the selected equipment.'],
-                ['title' => 'Handover',               'text' => 'Provide operating guidance and explain available aftercare.'],
+                ['title' => 'Prepare the Site',      'text' => 'Confirm access, utilities and positioning before equipment is delivered.'],
+                ['title' => 'Install and Commission', 'text' => 'Position, install and test the equipment before it goes into operation.'],
+                ['title' => 'Handover',               'text' => 'Provide operating guidance and explain the aftercare support available.'],
             ] as $i => $step)
 
             <div class="flex flex-col items-center text-center relative">
@@ -980,8 +982,8 @@
 
 @include('components.testimonials', [
     'eyebrow'    => 'Client Feedback',
-    'heading'    => 'What commercial laundry operators say about <span style="color:#148af4;">working with Irish Laundry Systems</span>',
-    'subheading' => 'Feedback on communication, technical knowledge and service across commercial laundry operations.',
+    'heading'    => 'What clients say about <span style="color:#148af4;">Irish Laundry Systems</span>',
+    'subheading' => 'Feedback from clients on service, technical knowledge and long-term support.',
 ])
 
 @include('components.proof-bar')
