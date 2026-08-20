@@ -66,7 +66,7 @@
 @include('components.partner-strip')
 
 <!-- 3. INTRO / BRIDGE -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Choosing Equipment</p>
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_4fr] gap-8 lg:gap-8 items-start">
@@ -91,7 +91,7 @@
 </section>
 
 <!-- 4. ELECTROLUX SOLUTION TEASERS -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -196,7 +196,7 @@
 </section>
 
 <!-- 5. HIGHLIGHTED EQUIPMENT -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Highlighted Equipment</p>
@@ -304,7 +304,7 @@
 </section>
 
 <!-- 6. EQUIPMENT CATEGORIES -->
-<section id="equipment-categories" class="py-16 lg:py-24 bg-white">
+<section id="equipment-categories" class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Categories</p>
@@ -436,7 +436,7 @@
 </section>
 
 <!-- 8. INSTALLATION, COMMISSIONING & HANDOVER -->
-<section class="py-14 lg:py-20 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
@@ -474,7 +474,7 @@
 </section>
 
 <!-- 9. SUPPORT AFTER INSTALLATION -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -556,7 +556,7 @@
 </section>
 
 <!-- 10. EQUIPMENT FOR DIFFERENT LAUNDRY ENVIRONMENTS -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="text-center mb-10 reveal">

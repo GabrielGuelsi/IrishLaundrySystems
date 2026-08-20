@@ -21,8 +21,9 @@
                     <span class="sm:block">Protect specialist garments and</span>
                     <span class="sm:block">gear with <span style="color:#148af4;">gentle cabinet drying</span></span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    For PPE, workwear, footwear, gloves and delicate items where tumble drying is not suitable. Irish Laundry Systems supplies and installs Electrolux Professional drying cabinets across Ireland.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
+                    <span class="lg:block">For PPE, workwear, footwear and delicate items where tumble drying is unsuitable,</span>
+                    <span class="lg:block">Irish Laundry Systems supplies and installs Electrolux Professional drying cabinets across Ireland.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -43,22 +44,25 @@
 @include('components.partner-strip')
 
 {{-- 4. INTRO / BRIDGE --}}
-<section class="py-20 lg:py-32 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Drying Cabinet Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-8 lg:gap-10 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Equipment Selection</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block lg:whitespace-nowrap">Plan drying cabinet capacity</span>
-                    <span class="block lg:whitespace-nowrap">around the items you dry</span>
-                    <span class="block lg:whitespace-nowrap">and <span style="color:#148af4;">daily drying volume</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Choose drying cabinets around</span>
+                    <span class="sm:block" style="color:#148af4;">the items you handle</span>
+                    <span class="sm:block" style="color:#148af4;">and daily drying demand</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed lg:ml-auto">
-                    Available space, hanging requirements, shelf layout and footwear accessories all influence the cabinet configuration, internal arrangement and installation planning for the site.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    <span class="lg:block">Specialist garments and equipment can place different demands</span>
+                    <span class="lg:block">on how drying is managed throughout the day.</span>
+                    <span class="lg:block">The right cabinet choice starts with what needs to be dried,</span>
+                    <span class="lg:block">how much is handled and how often it is used.</span>
                 </p>
             </div>
 
@@ -67,7 +71,7 @@
 </section>
 
 {{-- 4b. DRYING CABINET PERFORMANCE (combined financial + technical) --}}
-<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -91,7 +95,7 @@
 </section>
 
 {{-- 6b. WHERE DRYING CABINETS FIT --}}
-<section class="py-16 lg:py-28 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -183,7 +187,7 @@
 </section>
 
 {{-- 7. RANGE OVERVIEW --}}
-<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -359,16 +363,19 @@
 </section>
 
 {{-- 9b. ACCESSORIES --}}
-<section class="py-16 lg:py-28 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Configure cabinet drying for<br class="hidden sm:block"> <span style="color:#148af4;">garments, footwear and gloves</span>
+                <span class="sm:block">Configure cabinet drying for</span>
+                <span class="sm:block" style="color:#148af4;">garments, footwear</span>
+                <span class="sm:block" style="color:#148af4;">and gloves</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Choose accessories for the articles each drying cabinet needs to accommodate.
+                <span class="lg:block">Choose accessories for the articles each</span>
+                <span class="lg:block">drying cabinet needs to accommodate.</span>
             </p>
         </div>
 
@@ -447,12 +454,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
-                Engineering care throughout <span style="color:#148af4;">the cabinet’s working life</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl leading-tight mb-3">
+                Keep drying cabinets <span style="color:#148af4;">supported beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Ongoing support can be planned around the equipment, site requirements and maintenance needs.
+                Choose the service option that best fits your equipment, site and current support needs.
             </p>
         </div>
 
@@ -521,9 +528,9 @@
 
 {{-- 13. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Experience',
-    'heading'    => 'What customers say about <span style="color:#148af4;">working with Irish Laundry Systems</span>',
-    'subheading' => '',
+    'eyebrow'    => 'Client Feedback',
+    'heading'    => 'What clients say about <span style="color:#148af4;">Irish Laundry Systems</span>',
+    'subheading' => 'Feedback from clients on service, technical knowledge and long-term support.',
 ])
 
 {{-- 14. TRUSTED BY LOGO STRIP --}}

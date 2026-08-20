@@ -110,7 +110,7 @@
 @include('components.partner-strip')
 
 <!-- FIRST RESPONSE -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">First Response</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
@@ -142,7 +142,7 @@
 </section>
 
 <!-- CALL-OUT SUPPORT STRIP -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl -mt-10 lg:-mt-14">
 
@@ -248,7 +248,7 @@ $expectSteps = [
 ];
 @endphp
 
-<section class="relative py-16 lg:py-24 bg-navy expect-dotgrid overflow-hidden">
+<section class="relative py-20 lg:py-28 bg-navy expect-dotgrid overflow-hidden">
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Call-Out Process</p>
@@ -332,7 +332,7 @@ $expectSteps = [
 </script>
 
 <!-- TEMPORARY LAUNDRY SUPPORT -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
 
@@ -394,7 +394,7 @@ $expectSteps = [
 </section>
 
 <!-- REPEAT FAULTS STRIP -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="bg-navy rounded-2xl p-8 lg:p-10">
             <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-8 items-start mb-1">
@@ -516,7 +516,7 @@ $faqs = [
 ])
 
 <!-- FINAL CTA + REPAIR CALL-OUT FORM -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl p-8 lg:p-12 text-center ring-1 ring-white/10 shadow-xl overflow-hidden mb-8 lg:mb-10">
             <div class="absolute inset-x-0 top-0 h-px" style="background: linear-gradient(90deg, transparent 0%, #148af4 50%, transparent 100%);"></div>

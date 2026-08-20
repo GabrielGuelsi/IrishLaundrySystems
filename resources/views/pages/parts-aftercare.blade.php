@@ -202,7 +202,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      3. CONNECTED AFTERCARE INTRO
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
@@ -288,7 +288,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      5. THE RIGHT PART NEEDS THE RIGHT CONTEXT — navy strip
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative py-16 lg:py-24 bg-navy overflow-hidden">
+<section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
         <img src="/images/pages/services/parts-support-bg.jpg" alt="" loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
@@ -486,7 +486,7 @@ $aftercareFaqs = [
 {{-- ════════════════════════════════════════════════════════════════════════
      12. SUPPORT & AFTERCARE ENQUIRY FORM
      ════════════════════════════════════════════════════════════════════════ --}}
-<section id="aftercare-form" class="bg-white py-16 lg:py-24">
+<section id="aftercare-form" class="bg-white py-20 lg:py-28">
     <div class="max-w-4xl mx-auto px-6 sm:px-10">
 
         <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12">

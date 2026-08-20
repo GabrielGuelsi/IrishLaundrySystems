@@ -17,7 +17,7 @@
     Title + description + CTA centered at bottom of each card, always visible.
     Hover: card lifts, image zooms.
 --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         <!-- Heading -->

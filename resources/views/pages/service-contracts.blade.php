@@ -222,7 +222,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      3. COMMERCIAL INTRO / WHY PREVENTIVE MAINTENANCE CONTRACTS MATTER
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-24 lg:py-36 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
             Proactive Maintenance
@@ -253,7 +253,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      4. WHAT YOU GAIN — 6 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-navy">
+<section class="py-20 lg:py-28 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="max-w-3xl lg:max-w-5xl min-[1400px]:max-w-none mx-auto text-center mb-10 lg:mb-12">
@@ -525,7 +525,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      PLANNED MAINTENANCE VALUE STRIP
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative py-16 lg:py-24 bg-navy overflow-hidden">
+<section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
         <img src="/images/shared/commercial-hero.jpg" alt="" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover">
     </div>
@@ -620,7 +620,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      10. INDUSTRY-SPECIFIC MESSAGING
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 text-center">
@@ -855,7 +855,7 @@ $faqs = [
 {{-- ════════════════════════════════════════════════════════════════════════
      14. BOOK A PREVENTIVE MAINTENANCE VISIT FORM
      ════════════════════════════════════════════════════════════════════════ --}}
-<section id="book-visit-form" class="py-16 lg:py-24 bg-navy">
+<section id="book-visit-form" class="py-20 lg:py-28 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-8">
         <div class="relative reveal">
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 p-0 lg:p-6">

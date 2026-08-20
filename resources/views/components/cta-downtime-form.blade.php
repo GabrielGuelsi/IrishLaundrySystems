@@ -14,7 +14,7 @@
     'headingFull'       => false,
 ])
 {{-- Ready to Reduce Downtime Risk — final CTA + contact info + map + short form --}}
-<section class="py-16 lg:py-24 bg-navy">
+<section class="py-20 lg:py-28 bg-navy">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
         @if ($headingFull)
         <div class="mb-10 lg:mb-14">

@@ -73,7 +73,7 @@
 </div>
 
 <!-- 1.5 COMMERCIAL INTRO / BRIDGE -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
@@ -243,7 +243,7 @@
 }
 </style>
 
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Response</p>
@@ -287,7 +287,7 @@
 <div class="h-12 lg:h-20 bg-white"></div>
 
 <!-- 6. INSTALLED EQUIPMENT / ELECTROLUX PROFESSIONAL PARTNERSHIP -->
-<section id="parts-aftercare" class="py-16 lg:py-24 bg-white">
+<section id="parts-aftercare" class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
@@ -418,7 +418,7 @@
 </section>
 
 <!-- 8b. SERVICE ASSESSMENT FORM — below the strip -->
-<section id="services-form" class="py-16 lg:py-24 bg-white">
+<section id="services-form" class="py-20 lg:py-28 bg-white">
     <div class="max-w-3xl mx-auto px-6 sm:px-10">
         <div class="bg-white rounded-2xl shadow-2xl p-7 lg:p-10">
             <p class="font-heading font-bold text-navy text-xl leading-snug mb-1">Request a Service Assessment</p>

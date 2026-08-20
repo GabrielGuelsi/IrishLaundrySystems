@@ -93,7 +93,7 @@
 </section>
 
 {{-- ════════════ 5. WHAT YOU GAIN ════════════ --}}
-<section class="py-16 lg:py-24 bg-navy">
+<section class="py-20 lg:py-28 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-3xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal">Rental Benefits</p>
@@ -152,7 +152,7 @@
 </section>
 
 {{-- ════════════ 6. WHAT'S INCLUDED IN THE RENTAL AGREEMENT ════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-6xl mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">What's Included</p>
@@ -210,7 +210,7 @@
 </section>
 
 {{-- ════════════ 7. RENTAL VS OUTRIGHT PURCHASE ════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-8">
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Compare Options</p>
@@ -314,7 +314,7 @@
 </section>
 
 {{-- ════════════ 9. WHERE RENTAL FITS ════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Where Rental Fits</p>
@@ -403,7 +403,7 @@
 </section>
 
 {{-- ════════════ 10. RENTAL FIT / PLANNING BLOCK ════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-[7fr_4fr] gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
@@ -539,7 +539,7 @@ $rentalFaqs = [
 ])
 
 {{-- ════════════ 14. FINAL RENTAL QUOTE FORM ════════════ --}}
-<section id="quote-form" class="bg-white py-16 lg:py-24">
+<section id="quote-form" class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
 

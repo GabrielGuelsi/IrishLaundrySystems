@@ -36,7 +36,7 @@
 @include('components.partner-strip')
 
 <!-- 4. INTRO COMMERCIAL BLOCK -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Care Facility Planning</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
@@ -63,7 +63,7 @@
 </section>
 
 <!-- 5. LAUNDRY AND HYGIENE-SENSITIVE HANDLING SUPPORT -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -110,7 +110,7 @@
 </section>
 
 {{-- Financial Performance Bento: metric cards --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -134,7 +134,7 @@
 </section>
 
 <!-- 6. COMPACT CARE FACILITIES BENTO -->
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-20 lg:py-28 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -204,7 +204,7 @@
 </section>
 
 <!-- 7. FOUR SERVICE CARDS -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -302,7 +302,7 @@
 ])
 
 <!-- 9. DETAILED EQUIPMENT SECTION -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 reveal">
@@ -628,7 +628,7 @@
 </section>
 
 <!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Section header --}}

@@ -15,7 +15,7 @@
      Used on home + services overview. Card shell is unified;
      heading layout, bullets and per-card content are passed via props. --}}
 
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="{{ $align === 'center' ? 'text-center mb-12 lg:mb-16' : 'mb-10 lg:mb-12' }}">

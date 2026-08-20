@@ -23,7 +23,7 @@
 @include('components.sector-switcher')
 
 <!-- SECTOR CARDS -->
-<section class="py-16 lg:py-24 bg-bg">
+<section class="py-20 lg:py-28 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="text-center font-body text-gray-500 text-xs mb-8 uppercase tracking-[0.22em] font-bold">Or browse by sector</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
@@ -136,7 +136,7 @@
 </section>
 
 <!-- HOW WE SUPPORT CRITICAL OPS -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-10">
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">How We Support Critical Operations</h2>
