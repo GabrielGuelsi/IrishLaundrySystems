@@ -18,10 +18,12 @@
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washers</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Barrier washers for <span style="color:#148af4;">controlled separation</span><br class="hidden lg:block"> in hygiene-critical laundries
+                    <span class="sm:block">Barrier washers for controlled</span>
+                    <span class="sm:block" style="color:#148af4;">separation in hygiene-critical laundries</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl">
-                    Irish Laundry Systems supplies, installs and supports Electrolux Professional barrier washers across Ireland for sites where soiled and clean laundry need physical separation.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-4xl">
+                    <span class="lg:block">Irish Laundry Systems supplies, installs and supports Electrolux Professional barrier washers</span>
+                    <span class="lg:block">for sites that require physical separation between soiled and clean laundry.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -44,20 +46,23 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Barrier Washer Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Equipment Selection</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block">Capacity, room layout</span>
-                    <span class="sm:block">and access guide the</span>
-                    <span class="sm:block" style="color:#148af4;">final equipment selection</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Choose barrier washers around</span>
+                    <span class="sm:block" style="color:#148af4;">hygiene requirements and</span>
+                    <span class="sm:block" style="color:#148af4;">daily laundry demand</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Utility connections and the position of loading and unloading areas can also affect equipment placement and installation requirements.
+                    <span class="lg:block">Barrier washers support laundries where soiled and clean loads</span>
+                    <span class="lg:block">need to move through clearly separated sides of the process.</span>
+                    <span class="lg:block">Capacity and workflow should reflect the textiles handled,</span>
+                    <span class="lg:block">daily volume and the level of hygiene control required.</span>
                 </p>
             </div>
 
@@ -93,7 +98,7 @@
 @include('components.one-connected-strip', ['ctaLabel' => 'Ask About Connected Washers'])
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-24 bg-gray-50 border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -129,7 +134,7 @@
 </section>
 
 {{-- 8. OPERATOR COMFORT / ERGOCERT --}}
-<section class="py-12 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Heading + intro (full width) --}}
@@ -325,13 +330,6 @@
 {{-- white separator band between the blue strip and the resources bar --}}
 <div class="bg-white h-8 lg:h-12"></div>
 
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-    ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 Evolution brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'], ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'], ['l' => 'Cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'], ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
-    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
-    ['title' => 'Rental & Support',    'links' => [['l' => 'Equipment Rental', 'h' => route('rental')], ['l' => 'Preventive Maintenance', 'h' => route('service-contracts')], ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')]]],
-]])
-
 {{-- 12. PRODUCT FINDER / BARRIER WASHER RANGE (Option B — left filter) --}}
 <section id="barrier-range" class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -500,8 +498,15 @@
     </div>
 </section>
 
+{{-- RESOURCES BAR (slim inline) — after the barrier washer range --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources',  'links' => [['l' => 'Line 6000 Evolution brochure', 'h' => '/pdfs/EPR-brochure-Line 6000 Evolution Barrier Washers-20241119-EN.pdf'], ['l' => 'Pullman barrier washer leaflet', 'h' => '/pdfs/EPR-leaflet-pullman-barrier-washer-EN-20230919-LR.pdf'], ['l' => 'Cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'], ['l' => 'Firefighters laundry solutions brochure', 'h' => '/pdfs/EPR_brochure_firefighters_16042025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
+    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Healthcare Laundry', 'h' => route('sectors.healthcare')]]],
+    ['title' => 'Rental & Support',    'links' => [['l' => 'Equipment Rental', 'h' => route('rental')], ['l' => 'Preventive Maintenance', 'h' => route('service-contracts')], ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')]]],
+]])
+
 {{-- DOSING INTELLIGENCE (Alpine carousel — matches sector pages) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -681,9 +686,9 @@
     'mirror'       => true,
     'gradientStrength' => 0.55,
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
-    'headingLine1' => 'Replace equipment or add capacity<br>',
+    'headingLine1' => 'Replace equipment or add capacity',
     'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Where suitable, Equipment Rental can support barrier washer replacement or added capacity without one large capital purchase, with service included under agreed terms.',
+    'body'         => 'Where suitable, Equipment Rental can support barrier washer replacement or added capacity, with service included under agreed terms.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Budget<br>Control', 'iconClass' => 'scale-[0.986] translate-y-[0.4%]', 'iconStyle' => 'filter:brightness(0) invert(1);'],
         ['icon' => '146', 'label' => 'Service<br>Included', 'iconClass' => 'scale-[0.899] translate-y-[0.3%]', 'iconStyle' => 'filter:brightness(0) invert(1);'],
@@ -696,9 +701,9 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
-                Engineering care throughout <span style="color:#148af4;">the barrier washer’s working life</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Engineering support <span style="color:#148af4;">throughout the barrier washer’s working life</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Ongoing support can be planned around the equipment, site requirements and maintenance needs.
@@ -755,7 +760,8 @@
                     Keep barrier washer aftercare <br class="hidden sm:block"><span style="color:#011E41;">clear and easier to manage</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    Irish Laundry Systems supports maintenance planning, service records and parts enquiries after installation.
+                    <span class="lg:block">Irish Laundry Systems supports maintenance planning, service records</span>
+                    <span class="lg:block">and parts enquiries throughout the equipment’s working life.</span>
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
@@ -781,9 +787,9 @@
 
 {{-- 16. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Experience',
-    'heading'    => 'What customers say about <br class="hidden sm:block"><span style="color:#148af4;">working with Irish Laundry Systems</span>',
-    'subheading' => '',
+    'eyebrow'    => 'Client Feedback',
+    'heading'    => 'What clients say about <span style="color:#148af4;">Irish Laundry Systems</span>',
+    'subheading' => 'Feedback from clients on service, technical knowledge and long-term support.',
 ])
 
 {{-- 17. TRUSTED BY LOGO STRIP --}}
