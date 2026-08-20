@@ -110,7 +110,7 @@
 </section>
 
 {{-- Financial Performance Bento: metric cards --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -134,7 +134,7 @@
 </section>
 
 <!-- 6. COMPACT CARE FACILITIES BENTO -->
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-16 lg:py-24 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -204,7 +204,7 @@
 </section>
 
 <!-- 7. FOUR SERVICE CARDS -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -628,7 +628,7 @@
 </section>
 
 <!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Section header --}}

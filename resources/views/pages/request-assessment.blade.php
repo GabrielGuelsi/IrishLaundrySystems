@@ -26,7 +26,7 @@
 @include('components.proof-bar')
 
 <!-- FORM -->
-<section class="py-16 lg:py-20 bg-bg">
+<section class="py-16 lg:py-24 bg-bg">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
 

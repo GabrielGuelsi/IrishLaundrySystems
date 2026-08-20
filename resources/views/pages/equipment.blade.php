@@ -196,7 +196,7 @@
 </section>
 
 <!-- 5. HIGHLIGHTED EQUIPMENT -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Highlighted Equipment</p>
@@ -436,7 +436,7 @@
 </section>
 
 <!-- 8. INSTALLATION, COMMISSIONING & HANDOVER -->
-<section class="py-14 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
@@ -474,7 +474,7 @@
 </section>
 
 <!-- 9. SUPPORT AFTER INSTALLATION -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -556,7 +556,7 @@
 </section>
 
 <!-- 10. EQUIPMENT FOR DIFFERENT LAUNDRY ENVIRONMENTS -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="text-center mb-10 reveal">

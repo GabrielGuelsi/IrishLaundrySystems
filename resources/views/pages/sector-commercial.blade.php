@@ -146,7 +146,7 @@
 </section>
 
 {{-- Financial Performance Bento --}}
-<section class="py-12 lg:py-16 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -170,7 +170,7 @@
 </section>
 
 <!-- TECHNICAL PROOF ICONS -->
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-16 lg:py-24 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -240,7 +240,7 @@
 </section>
 
 <!-- FOUR SERVICE CARDS -->
-<section class="py-16 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -701,7 +701,7 @@
 </section>
 
 <!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Section header --}}
@@ -925,7 +925,7 @@
 ])
 
 <!-- PROCESS BLOCK -->
-<section class="py-14 lg:py-20 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>

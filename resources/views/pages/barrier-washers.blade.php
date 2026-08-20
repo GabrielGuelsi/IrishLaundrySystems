@@ -697,7 +697,7 @@
 ])
 
 {{-- 13. CONNECTED SERVICE ROUTES --}}
-<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">

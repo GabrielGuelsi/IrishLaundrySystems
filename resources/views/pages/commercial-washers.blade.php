@@ -164,7 +164,7 @@
 </section>
 
 {{-- 6. FINANCIAL / OPERATIONAL PERFORMANCE --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -191,7 +191,7 @@
 @include('components.one-connected-strip', ['ctaLabel' => 'Ask About Connected Washers'])
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-12 lg:py-16 bg-gray-50">
+<section class="py-16 lg:py-24 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -261,7 +261,7 @@
 </section>
 
 {{-- 9. RANGE TEASERS CAROUSEL (Equipment Hub visual — commercial chamarizes, not the real grid) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -580,7 +580,7 @@
 </section>
 
 {{-- 11b. DOSING & LAUNDRY CONTROL (Alpine carousel — sector module) --}}
-<section class="py-12 lg:py-16 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -761,7 +761,7 @@
 ])
 
 {{-- 12. CONNECTED WASHER SUPPORT --}}
-<section class="py-16 lg:py-20 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">

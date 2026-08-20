@@ -47,7 +47,7 @@
 @include('components.partner-strip')
 
 {{-- 4. INTRO / BRIDGE --}}
-<section class="py-20 lg:py-32 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Ironer Planning</p>
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
@@ -71,7 +71,7 @@
 </section>
 
 {{-- 5. IRONING & FINISHING OPTIONS --}}
-<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -111,7 +111,7 @@
 </section>
 
 {{-- 6. OPERATIONAL PERFORMANCE --}}
-<section class="py-16 lg:py-28 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -135,7 +135,7 @@
 </section>
 
 {{-- 7. ELECTROLUX PROFESSIONAL PROOF --}}
-<section class="py-16 lg:py-28 bg-gray-50">
+<section class="py-16 lg:py-24 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -174,7 +174,7 @@
 @include('components.one-connected-strip', ['ctaLabel' => 'Ask About Connected Ironers'])
 
 {{-- 8. IRONER LAYOUT --}}
-<section class="py-20 lg:py-32 bg-bg border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-bg border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 lg:mb-12 reveal reveal-left">
@@ -570,7 +570,7 @@
 ])
 
 {{-- 12. CONNECTED SUPPORT --}}
-<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
+<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -676,7 +676,7 @@
 {{-- 18. Resources moved up into the COMPACT RESOURCES BAR (§9b, before the Product Finder) — matches other equipment pages --}}
 
 {{-- 19. FINAL CTA --}}
-<section class="py-20 lg:py-32" style="background-color:#011E41;">
+<section class="py-16 lg:py-24" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Ironer Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">

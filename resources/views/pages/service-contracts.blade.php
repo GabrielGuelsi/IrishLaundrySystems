@@ -222,7 +222,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      3. COMMERCIAL INTRO / WHY PREVENTIVE MAINTENANCE CONTRACTS MATTER
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-24 lg:py-36 bg-white">
+<section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
             Proactive Maintenance
