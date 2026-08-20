@@ -17,12 +17,13 @@
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-7xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Tumble Dryers</p>
-                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="sm:block min-[1360px]:whitespace-nowrap">Commercial tumble dryers sized for your laundry volume</span>
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-6">
+                    <span class="sm:block">Commercial tumble dryers for consistent performance</span>
                     <span class="sm:block">with <span style="color:#148af4;">energy use under control</span></span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-3xl text-pretty">
-                    Irish Laundry Systems supplies Electrolux Professional tumble dryers across Ireland, with advice on capacity, dryer type and installation.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-4xl text-pretty">
+                    <span class="lg:block">Irish Laundry Systems supplies Electrolux Professional tumble dryers</span>
+                    <span class="lg:block">across Ireland, with advice on capacity, dryer type and installation.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -45,20 +46,23 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Dryer Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12 lg:gap-16 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Equipment Selection</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block min-[1360px]:whitespace-nowrap">Capacity is only part of the decision:</span>
-                    <span class="sm:block min-[1360px]:whitespace-nowrap">space, access and utilities shape</span>
-                    <span class="sm:block min-[1360px]:whitespace-nowrap" style="color:#148af4;">the final dryer specification</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Capacity is only one part of</span>
+                    <span class="sm:block" style="color:#148af4;">choosing the right dryer</span>
+                    <span class="sm:block">for the laundry room</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Room conditions can influence dryer type, positioning and installation requirements. Reviewing them before equipment is selected gives a clearer basis for what the site can accommodate.
+                    <span class="lg:block">Space, access and utilities can influence dryer type,</span>
+                    <span class="lg:block">positioning and installation requirements.</span>
+                    <span class="lg:block">Reviewing these before equipment is selected</span>
+                    <span class="lg:block">helps narrow the right option for the laundry room.</span>
                 </p>
             </div>
 
@@ -73,10 +77,10 @@
         <div class="reveal reveal-left mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Energy Performance</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Cut drying energy use with <span style="color:#148af4;">heat pump dryer technology</span>
+                Reduce drying energy use with <span style="color:#148af4;">heat pump technology</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Where suitable, Electrolux Professional Line 6000 Heat Pump Dryers can reduce energy consumption by up to 65% compared with vented dryers, without exhaust or water cooling.
+                Suitability depends on the site, required capacity and how the dryers will be used.
             </p>
         </div>
 
@@ -153,11 +157,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
-                Balance energy costs, drying capacity and <span style="color:#148af4;">upfront investment</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Look beyond the purchase price for <span style="color:#148af4;">better cost control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Dryer sizing, day-to-day use and acquisition choice can all influence operating costs over time.
+                Energy use, output, drying efficiency and purchase or rental choice all shape costs over time.
             </p>
         </div>
 
@@ -316,16 +320,17 @@
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[68%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-            Plan the dryer installation around <br class="hidden sm:block"><span style="color:#011E41;">space, access and available utilities</span>
+            Plan dryer installation around space and access<br class="hidden sm:block"><span style="color:#011E41;">with utility requirements clear from the start</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            Irish Laundry Systems reviews room dimensions, utility connections and laundry volume before recommending dryer type, capacity and installation requirements.
+            <span class="lg:block">Irish Laundry Systems reviews room dimensions, access and utilities</span>
+            <span class="lg:block">before recommending dryer type, capacity and installation requirements.</span>
         </p>
         <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
-                ['icon' => 'home-planning-fit',  'label' => 'Space &amp; Access', 'sc' => 'scale-[1.035] translate-y-[2.2%] translate-x-[2px]'],
-                ['icon' => '248', 'label' => 'Utility Requirements', 'sc' => 'scale-[1.025] translate-y-[0.4%] translate-x-[3px]'],
-                ['icon' => '218', 'label' => 'Capacity &amp; Stacking', 'sc' => 'scale-[0.923] translate-y-[0.7%] translate-x-[4px]'],
+                ['icon' => 'home-planning-fit',  'label' => 'Space &amp;<br>Access', 'sc' => 'scale-[1.035] translate-y-[2.2%] translate-x-[2px]'],
+                ['icon' => '248', 'label' => 'Utility<br>Requirements', 'sc' => 'scale-[1.025] translate-y-[0.4%] translate-x-[3px]'],
+                ['icon' => '218', 'label' => 'Capacity &amp;<br>Stacking', 'sc' => 'scale-[0.923] translate-y-[0.7%] translate-x-[4px]'],
             ] as $pt)
             <span class="flex items-center gap-2 flex-shrink-0">
                 <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
@@ -634,6 +639,8 @@
     </div>
 </section>
 
+<div class="bg-white h-8 lg:h-12"></div>
+
 {{-- RESOURCES BAR (slim inline) — after the full dryer range --}}
 @include('components.resources-bar', ['groups' => [
     ['title' => 'Official Resources',              'links' => [['l' => 'TD6-11 Heat Pump dryer leaflet', 'h' => '/pdfs/EPR-TD6-11-with-Heat-Pump-Leaflet_04092024_EN-singlepage.pdf'], ['l' => 'Heat Pump dryer leaflet', 'h' => '/pdfs/EPR-leaflet-heat-pump-dryer-04092024-EN-one page view.pdf'], ['l' => 'Line 6000 dryers brochure', 'h' => '/pdfs/EPR-Line6000-DryersBrochure-01072025_EN.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
@@ -645,9 +652,9 @@
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
-    'headingLine1' => 'Replace or add dryer capacity with<br>',
-    'headingLine2' => '<span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Where suitable, Equipment Rental can support dryer replacement or added capacity, with service included under agreed rental terms.',
+    'headingLine1' => 'Replace dryers or add capacity',
+    'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
+    'body'         => 'Equipment Rental can support dryer replacement or added capacity, with service included under agreed terms for clearer cost planning.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>upfront cost', 'iconClass' => 'scale-[0.986] translate-y-[0.4%]', 'iconStyle' => 'filter:brightness(0) invert(1);'],
         ['icon' => '146', 'label' => 'Included<br>support', 'iconClass' => 'scale-[0.899] translate-y-[0.3%] translate-x-[4px]', 'iconStyle' => 'filter:brightness(0) invert(1);'],
@@ -660,12 +667,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support options for <span style="color:#148af4;">commercial dryers in daily use</span>
+                Keep commercial dryers <span style="color:#148af4;">supported beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Select the option that fits the equipment and site.
+                Choose the service option that best fits your equipment, site and current support needs.
             </p>
         </div>
 
@@ -744,10 +751,11 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Make future dryer servicing easier with <br class="hidden sm:block"><span style="color:#011E41;">a recorded service history</span>
+                    Keep dryer service history clear<br class="hidden sm:block"><span style="color:#011E41;">for easier maintenance and repairs</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
-                    Model details, previous service work and parts information give our engineers a clearer basis for future maintenance and repairs.
+                    <span class="lg:block">Equipment details and previous work stay easier to trace,</span>
+                    <span class="lg:block">giving engineers clearer context when support is needed.</span>
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
@@ -773,9 +781,9 @@
 
 {{-- 16. TESTIMONIAL MODULE --}}
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Experience',
-    'heading'    => 'What customers say about <br class="hidden sm:block"><span style="color:#148af4;">working with Irish Laundry Systems</span>',
-    'subheading' => '',
+    'eyebrow'    => 'Client Feedback',
+    'heading'    => 'What clients say about <span style="color:#148af4;">Irish Laundry Systems</span>',
+    'subheading' => 'Feedback from clients on service, technical knowledge and long-term support.',
 ])
 
 {{-- 17. TRUSTED BY LOGO STRIP --}}
