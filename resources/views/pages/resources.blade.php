@@ -48,7 +48,7 @@
 {{-- ═══════════════════════════════════════
      3. IRISH LAUNDRY SYSTEMS GUIDES (gated — landing pages, kept Draft until backend ready)
 ═══════════════════════════════════════ --}}
-<section id="ils-guides" class="bg-white py-16 lg:py-24 scroll-mt-28">
+<section id="ils-guides" class="bg-white py-20 lg:py-28 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -135,7 +135,7 @@
 {{-- ═══════════════════════════════════════
      4. OFFICIAL ELECTROLUX PROFESSIONAL DOCUMENTS — integrated library
 ═══════════════════════════════════════ --}}
-<section id="electrolux-documents" class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100 scroll-mt-28">
+<section id="electrolux-documents" class="py-20 lg:py-28 bg-gray-50 border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -443,7 +443,7 @@
 {{-- ═══════════════════════════════════════
      5. VIDEO TUTORIALS
 ═══════════════════════════════════════ --}}
-<section id="video-tutorials" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
+<section id="video-tutorials" class="py-20 lg:py-28 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -510,7 +510,7 @@
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
 
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-16 lg:py-24 w-full max-w-full lg:max-w-[66%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-12 sm:py-20 lg:py-28 w-full max-w-full lg:max-w-[66%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Resource Help</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 [@media(min-width:1460px)]:whitespace-nowrap">
             Not sure which resource you need?
@@ -529,7 +529,7 @@
 {{-- ═══════════════════════════════════════
      7. REQUEST A RESOURCE
 ═══════════════════════════════════════ --}}
-<section id="request-a-resource" class="py-16 lg:py-24 bg-white border-t border-gray-100 scroll-mt-28">
+<section id="request-a-resource" class="py-20 lg:py-28 bg-white border-t border-gray-100 scroll-mt-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 

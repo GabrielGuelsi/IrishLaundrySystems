@@ -95,7 +95,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      3. WHY THE PARTNERSHIP MATTERS — 4 cards
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="bg-white py-16 lg:py-24">
+<section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal max-w-6xl">
@@ -251,7 +251,7 @@
      6. ELECTROLUX PROFESSIONAL STATEMENT — official partnership testimonial
      (approved statement from Paul Frost, Electrolux Professional Country Manager)
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="py-16 lg:py-24 bg-navy">
+<section class="py-20 lg:py-28 bg-navy">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 lg:mb-14 reveal">
@@ -300,7 +300,7 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      10. FINAL CTA / ENQUIRY FORM
      ════════════════════════════════════════════════════════════════════════ --}}
-<section id="electrolux-form" class="bg-white py-16 lg:py-24">
+<section id="electrolux-form" class="bg-white py-20 lg:py-28">
     <div class="max-w-4xl mx-auto px-6 sm:px-10">
 
         <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12 reveal">

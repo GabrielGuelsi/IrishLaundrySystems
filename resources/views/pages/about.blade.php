@@ -79,7 +79,7 @@
 <!-- ══════════════════════════════════════════
      4. PROOF & SCALE
 ══════════════════════════════════════════ -->
-<section class="bg-white py-16 lg:py-24 border-t border-gray-100">
+<section class="bg-white py-20 lg:py-28 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-12 reveal">

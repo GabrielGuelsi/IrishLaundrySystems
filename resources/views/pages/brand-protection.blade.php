@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- HERO -->
-<section class="bg-navy py-16 lg:py-24">
+<section class="bg-navy py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <div class="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-1.5 mb-6">
             <svg class="w-4 h-4 text-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -23,7 +23,7 @@
 @include('components.proof-bar')
 
 <!-- DISAMBIGUATION -->
-<section class="py-16 lg:py-24 bg-bg">
+<section class="py-20 lg:py-28 bg-bg">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="bg-white border border-border rounded-2xl p-6 sm:p-8 lg:p-10 mb-8">

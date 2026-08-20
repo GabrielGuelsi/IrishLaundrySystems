@@ -36,7 +36,7 @@
 @include('components.partner-strip')
 
 <!-- INTRO COMMERCIAL BLOCK -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Hospitality Planning</p>
         <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-start">
@@ -63,7 +63,7 @@
 </section>
 
 {{-- Financial Performance Bento: metric cards --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -87,7 +87,7 @@
 </section>
 
 <!-- HOSPITALITY LAUNDRY PRIORITIES BENTO -->
-<section class="py-16 lg:py-24 bg-gray-50">
+<section class="py-20 lg:py-28 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -157,7 +157,7 @@
 </section>
 
 <!-- SUPPORT OPTIONS -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
@@ -249,7 +249,7 @@
 ])
 
 <!-- DETAILED EQUIPMENT SECTION -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-16 reveal">
@@ -518,7 +518,7 @@
 </section>
 
 <!-- DOSING & LAUNDRY CONTROL CAROUSEL -->
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Section header --}}
@@ -711,7 +711,7 @@
 ])
 
 <!-- PROCESS BLOCK -->
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 text-center">Installation &amp; Handover</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">

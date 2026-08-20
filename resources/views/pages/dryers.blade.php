@@ -44,7 +44,7 @@
 @include('components.partner-strip')
 
 {{-- 4. INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Equipment Selection</p>
         <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
@@ -71,7 +71,7 @@
 </section>
 
 {{-- 5. HEAT PUMP ENERGY FEATURE --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         {{-- Full-width heading + intro so the title and body both sit wide, above the panels --}}
         <div class="reveal reveal-left mb-10 lg:mb-12">
@@ -152,7 +152,7 @@
 </section>
 
 {{-- 6. FINANCIAL / OPERATIONAL PERFORMANCE --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-8">
 
         <div class="mb-10 reveal">
@@ -176,7 +176,7 @@
 </section>
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-16 lg:py-24 bg-gray-50 border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-gray-50 border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -215,7 +215,7 @@
 @include('components.one-connected-strip', ['ctaLabel' => 'Ask About Connected Equipment'])
 
 {{-- 8. OPERATOR COMFORT / ERGOCERT --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Heading + intro (full width) --}}
@@ -346,7 +346,7 @@
 </section>
 
 {{-- 10. RANGE TEASERS CAROUSEL (Equipment Hub visual — drying-route chamarizes, not the full grid) --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -468,7 +468,7 @@
 </section>
 
 {{-- 12. PRODUCT FINDER / DRYER RANGE (Option B — left sidebar, core commercial dryer range) --}}
-<section id="dryer-range" class="py-16 lg:py-24 bg-white">
+<section id="dryer-range" class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -663,7 +663,7 @@
 ])
 
 {{-- 13. CONNECTED SERVICE ROUTES --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -805,7 +805,7 @@
 ])
 
 {{-- 19. FINAL CTA --}}
-<section class="py-16 lg:py-24" style="background-color:#011E41;">
+<section class="py-20 lg:py-28" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Dryer Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">

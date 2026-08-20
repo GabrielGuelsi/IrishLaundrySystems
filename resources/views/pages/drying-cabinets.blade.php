@@ -44,7 +44,7 @@
 @include('components.partner-strip')
 
 {{-- 4. INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Equipment Selection</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
@@ -71,7 +71,7 @@
 </section>
 
 {{-- 4b. DRYING CABINET PERFORMANCE (combined financial + technical) --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -95,7 +95,7 @@
 </section>
 
 {{-- 6b. WHERE DRYING CABINETS FIT --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -187,7 +187,7 @@
 </section>
 
 {{-- 7. RANGE OVERVIEW --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -363,7 +363,7 @@
 </section>
 
 {{-- 9b. ACCESSORIES --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -450,7 +450,7 @@
 </section>
 
 {{-- 10. SUPPORT OPTIONS --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">

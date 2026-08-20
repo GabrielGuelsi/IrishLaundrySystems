@@ -70,7 +70,7 @@ $slides = $single && isset($testimonials[$single])
 $showChrome = ! $single && count($slides) > 1;
 @endphp
 
-<section class="py-16 lg:py-24 {{ $light ? ('bg-[#f7f8fa]' . ($bordered ? ' border-y border-border' : '')) : 'bg-white' }}">
+<section class="py-20 lg:py-28 {{ $light ? ('bg-[#f7f8fa]' . ($bordered ? ' border-y border-border' : '')) : 'bg-white' }}">
     <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 2xl:px-16">
 
         @if (! $single && ! empty($heading))

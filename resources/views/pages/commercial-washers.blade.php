@@ -42,7 +42,7 @@
 @include('components.partner-strip')
 
 {{-- 4. INTRO / BRIDGE --}}
-<section class="py-16 lg:py-24 bg-white">
+<section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Commercial Washers</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
@@ -69,7 +69,7 @@
 </section>
 
 {{-- 5. LIFE-CYCLE COST FEATURE — washer + iceberg infographic --}}
-<section class="py-16 lg:py-24 bg-white overflow-x-hidden">
+<section class="py-20 lg:py-28 bg-white overflow-x-hidden">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         {{-- Title + intro (original copy) --}}
@@ -169,7 +169,7 @@
 </section>
 
 {{-- 6. FINANCIAL / OPERATIONAL PERFORMANCE --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -196,7 +196,7 @@
 @include('components.one-connected-strip', ['ctaLabel' => 'Ask About Connected Washers'])
 
 {{-- 7. TECHNICAL PROOF --}}
-<section class="py-16 lg:py-24 bg-gray-50">
+<section class="py-20 lg:py-28 bg-gray-50">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -266,7 +266,7 @@
 </section>
 
 {{-- 9. RANGE TEASERS CAROUSEL (Equipment Hub visual — commercial chamarizes, not the real grid) --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
@@ -398,7 +398,7 @@
 ]])
 
 {{-- 11. PRODUCT FINDER / WASHER RANGE (Option B — left sidebar, full washer universe in 3 groups) --}}
-<section id="washer-range" class="py-16 lg:py-24 bg-white">
+<section id="washer-range" class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -585,7 +585,7 @@
 </section>
 
 {{-- 11b. DOSING & LAUNDRY CONTROL (Alpine carousel — sector module) --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
@@ -766,7 +766,7 @@
 ])
 
 {{-- 12. CONNECTED WASHER SUPPORT --}}
-<section class="py-16 lg:py-24 bg-white border-t border-gray-100">
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
@@ -911,7 +911,7 @@
 ])
 
 {{-- 18. FINAL CTA --}}
-<section class="py-16 lg:py-24" style="background-color:#011E41;">
+<section class="py-20 lg:py-28" style="background-color:#011E41;">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Advice</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">

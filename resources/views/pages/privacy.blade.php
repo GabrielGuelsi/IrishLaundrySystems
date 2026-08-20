@@ -16,7 +16,7 @@
 </section>
 
 <!-- CONTENT -->
-<section class="py-16 lg:py-24 bg-bg">
+<section class="py-20 lg:py-28 bg-bg">
     <div class="max-w-4xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="bg-white border border-border rounded-2xl p-8 lg:p-12 space-y-8 font-body text-gray-700 leading-relaxed">
 
