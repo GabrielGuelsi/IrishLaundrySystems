@@ -44,18 +44,23 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-16 lg:py-24 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Washer Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Commercial Washers</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    Plan washer capacity<br class="hidden lg:block"> around <span style="color:#148af4;">space, access<br class="hidden lg:block"> and utilities</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Plan washer capacity around</span>
+                    <span class="sm:block" style="color:#148af4;">site access, available space</span>
+                    <span class="sm:block" style="color:#148af4;">and utility requirements</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Expected load volume, installation requirements and running costs help narrow the suitable washer options.
+                    <span class="lg:block">Expected load volume helps define the capacity required,</span>
+                    <span class="lg:block">while space and access shape the practical setup.</span>
+                    <span class="lg:block">Utilities and running costs help narrow the options</span>
+                    <span class="lg:block">to washers suited to the operation</span>
                 </p>
             </div>
 
@@ -70,11 +75,11 @@
         {{-- Title + intro (original copy) --}}
         <div class="reveal mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1300px]:whitespace-nowrap">
-                <span style="color:#148af4;">Look beyond the purchase price</span> to see the full cost
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-5">
+                See how washer technology can support <span style="color:#148af4;">lower operating costs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Water, energy and detergent use all contribute to the total cost of ownership over the washer’s working life.
+                Electrolux Professional washers can help reduce operating inputs, drying demand and staff time.
             </p>
         </div>
 
@@ -169,7 +174,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1410px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 See how washer technology can support <span style="color:#148af4;">lower day-to-day costs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -589,7 +594,7 @@
                 Control detergent use and spend with <span style="color:#148af4;">automatic dosing</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Explore dosing options designed to reduce overuse, improve wash consistency and make detergent costs easier to manage.
+                Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
             </p>
         </div>
 
@@ -765,13 +770,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Connected Washer Support</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep washer performance supported <br class="hidden sm:block"><span style="color:#148af4;">after the first decision</span>
+                Keep commercial washers <span style="color:#148af4;">supported beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                <span class="sm:block lg:whitespace-nowrap">Commercial washer performance depends on more than the first installation. Irish Laundry Systems connects equipment access,</span>
-                <span class="sm:block lg:whitespace-nowrap">planned maintenance, repairs and aftercare around the way the laundry room operates.</span>
+                Repairs, maintenance, rental and aftercare help keep equipment running with less disruption.
             </p>
         </div>
 
@@ -849,11 +853,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1410px]:whitespace-nowrap">
-                    Keep <span style="color:#011E41;">washer maintenance planned</span> after installation
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.3rem] leading-tight mb-3">
+                    Keep washer maintenance planned<br class="hidden sm:block"><span style="color:#011E41;">throughout the equipment&rsquo;s working life</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5">
-                    Access call-outs, preventive maintenance and aftercare throughout the washer’s working life.
+                    <span class="lg:block">Access call-outs, preventive maintenance and aftercare</span>
+                    <span class="lg:block">to minimise disruption and keep service needs easier to manage.</span>
                 </p>
                 <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
                     @foreach([
@@ -913,7 +918,7 @@
             Discuss washer options for<br class="hidden sm:block"> <span style="color:#148af4;">your laundry room</span>
         </h2>
         <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Share your expected laundry volume, available space and whether you plan to purchase or rent.
+            Share the main details about your site, capacity and installation requirements.<br class="hidden lg:block"> Our team will review them and contact you directly.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="{{ route('request-assessment') }}"
