@@ -570,7 +570,7 @@
                 Keep wet cleaning <span style="color:#148af4;">consistent from load to load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Automatic dosing controls detergent use for consistent textile care with less waste.
+                Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
             </p>
         </div>
 
