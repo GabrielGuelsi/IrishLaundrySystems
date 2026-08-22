@@ -7,6 +7,7 @@
     'headingLine2' => 'with <span style="color:#148af4;">capital control</span>',
     'miniPoints' => null,
     'miniNowrap' => false,
+    'wideContent' => false,
     'gradientStrength' => 1,
     'imagePosition' => 'center 15%',
     'features' => [
@@ -44,7 +45,7 @@
     </div>
 
     {{-- content — 50% width, right by default, left when mirrored --}}
-    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 {{ $mirror ? 'lg:px-20' : 'lg:px-16' }} py-10 lg:py-12 w-full lg:w-1/2 {{ $mirror ? '' : 'lg:ml-[50%]' }}" style="box-sizing:border-box;">
+    <div class="relative z-10 flex flex-col justify-center px-6 sm:px-10 {{ $wideContent ? 'lg:px-12' : ($mirror ? 'lg:px-20' : 'lg:px-16') }} py-10 lg:py-12 w-full {{ $wideContent ? 'lg:w-[58%]' : 'lg:w-1/2' }} {{ $mirror ? '' : ($wideContent ? 'lg:ml-[42%]' : 'lg:ml-[50%]') }}" style="box-sizing:border-box;">
 
         @php
             $miniHasIcons = is_array($miniPoints[0] ?? null);

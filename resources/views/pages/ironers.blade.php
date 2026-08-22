@@ -23,7 +23,7 @@
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
                     <span class="sm:block">Commercial ironers for</span>
-                    <span class="sm:block" style="color:#148af4;">consistent, high-quality finishing</span>
+                    <span class="sm:block" style="color:#148af4;">consistent ironing results</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional ironers across Ireland for sheets, table linen and other flatwork.
@@ -49,20 +49,23 @@
 {{-- 4. INTRO / BRIDGE --}}
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Ironer Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Choosing an Ironer</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block">Linen volume, working width</span>
-                    <span class="sm:block">and room layout all influence</span>
-                    <span class="sm:block" style="color:#148af4;">the ironer configuration</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">The <span style="color:#148af4;">right ironer</span> depends</span>
+                    <span class="sm:block">on what you process and</span>
+                    <span class="sm:block">the volume you handle</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Delivery direction and any feeding or folding requirements also affect equipment positioning and installation, so the ironing area should be reviewed before equipment is selected.
+                    <span class="lg:block">Working width, feeding and folding options, and the level</span>
+                    <span class="lg:block">of automation can be considered around the flatwork mix,</span>
+                    <span class="lg:block">expected output and how much operator input makes sense</span>
+                    <span class="lg:block">for the way your laundry runs.</span>
                 </p>
             </div>
 
@@ -76,8 +79,8 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironing &amp; Finishing Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Compare equipment types for <span style="color:#148af4;">different finishing requirements</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Compare equipment types for <span style="color:#148af4;">different finishing needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Different formats suit different items, processing volumes and levels of operator input.
@@ -87,7 +90,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             @foreach([
                 ['title' => 'Flatwork Ironers', 'copy' => 'For sheets, table linen and other flatwork that needs a consistent finish at higher volumes.', 'cta' => 'Explore Flatwork Ironers', 'href' => '#ironer-range', 'img' => '/images/pages/ironers/flatwork-iv64821ffs.jpg'],
-                ['title' => 'Steam Ironers',         'copy' => 'For smaller operations handling regular flatwork in a compact format.', 'cta' => 'Explore Steam Ironers', 'href' => '#ironer-range', 'img' => '/images/pages/ironers/roller-ic63316.jpg'],
+                ['title' => 'Steam Ironers',         'copy' => 'For smaller operations handling regular flatwork in a compact format.', 'cta' => 'Explore Steam Ironers', 'href' => route('equipment.category', 'semi-professional'), 'img' => '/images/pages/ironers/roller-ic63316.jpg'],
                 ['title' => 'Finishing Equipment',             'copy' => 'For garments, uniforms, resident clothing and smaller items that need hand finishing or extra care.', 'cta' => 'View Finishing Equipment', 'href' => route('equipment.category', 'finishing-equipment'), 'img' => '/images/pages/ironers/finishing-fit1.jpg'],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">
@@ -308,8 +311,8 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Range</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Browse ironer configurations by <span style="color:#148af4;">cylinder size and automation</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Browse ironers by <span style="color:#148af4;">cylinder size and automation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
                 Use the filters to compare configurations and view the available size options.
@@ -547,6 +550,7 @@
 </section>
 
 {{-- RESOURCES BAR (slim inline) — after Finishing Equipment --}}
+<div class="bg-white h-8 lg:h-12"></div>
 @include('components.resources-bar', ['groups' => [
     ['title' => 'Official Resources',  'links' => [['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure%20Line%206000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'], ['l' => 'Ironer FFS leaflet', 'h' => '/pdfs/EPR-leaflet-IronerFFS-EN-20231122-LR-singlePage.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
     ['title' => 'Finishing Equipment', 'links' => [['l' => 'Ironing tables & presses', 'h' => route('equipment.category', 'finishing-equipment')], ['l' => 'Ask about finishing', 'h' => route('contact')]]],
@@ -559,6 +563,8 @@
     'mirror'       => true,
     'image'        => '/images/pages/ironers/equipment-rental-strip.jpg',
     'imagePosition' => '62% 15%',
+    'wideContent'  => true,
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.75rem] 2xl:text-[2.1rem]',
     'headingLine1' => 'Replace equipment or expand ironing capacity',
     'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Equipment Rental can support ironer replacement or additional capacity without one large capital purchase, with service included under agreed terms.',
@@ -575,8 +581,8 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Commercial ironer support from <span style="color:#148af4;">repair through to aftercare</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Keep commercial ironers <span style="color:#148af4;">supported beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Choose the support your site needs to keep ironers running and manage maintenance needs over time.
@@ -651,7 +657,7 @@
 {{-- 15. CUSTOMER CONFIDENCE --}}
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Experience',
-    'heading'    => 'What customers say about <span style="color:#148af4;">working with Irish Laundry Systems</span>',
+    'heading'    => 'What customers say about <span style="color:#148af4;">Irish Laundry Systems</span>',
     'subheading' => '',
 ])
 
