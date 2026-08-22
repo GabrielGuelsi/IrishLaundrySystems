@@ -26,7 +26,7 @@
                     <span class="lg:block">Irish Laundry Systems supplies and installs Electrolux Professional drying cabinets across Ireland.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#drying-cabinet-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Drying Cabinet Advice
                     </a>
@@ -442,7 +442,7 @@
             </span>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
+        <a href="#drying-cabinet-form"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
             Request Equipment Advice
         </a>

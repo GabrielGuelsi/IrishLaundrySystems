@@ -29,7 +29,7 @@
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional ironers across Ireland for sheets, table linen and other flatwork.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#ironer-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Ironer Advice
                     </a>
@@ -254,7 +254,7 @@
         </div>
 
         <div class="mt-12 lg:mt-14 flex justify-center">
-            <a href="{{ route('request-assessment') }}"
+            <a href="#ironer-form"
                class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
                 Plan Your Ironer Layout
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -292,7 +292,7 @@
             </span>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
+        <a href="#ironer-form"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
             Request Ironer Advice
         </a>
@@ -675,25 +675,20 @@
 
 {{-- 18. Resources moved up into the COMPACT RESOURCES BAR (§9b, before the Product Finder) — matches other equipment pages --}}
 
-{{-- 19. FINAL CTA --}}
-<section class="py-20 lg:py-28" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Ironer Advice</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
-            <span class="sm:block">Discuss your commercial ironer requirements</span>
-            <span class="sm:block">with <span style="color:#148af4;">our engineering team</span></span>
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            <span class="lg:block">Tell us what you process, your expected volume and the space available.</span>
-            <span class="lg:block">We’ll review the requirements and contact you directly.</span>
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('request-assessment') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Request Ironer Advice
-            </a>
-        </div>
-    </div>
-</section>
+{{-- 19. FINAL CTA — embedded advice form --}}
+<div id="ironer-form"></div>
+@include('components.cta-downtime-form', [
+    'pageSource'        => 'ironers_cta',
+    'eyebrow'           => 'Request Ironer Advice',
+    'headingSize'       => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'heading'           => 'Discuss your commercial ironer<br> requirements with <span style="color:#148af4;">our<br> engineering team</span>',
+    'body'              => 'Tell us what you process, your expected volume and the space available.<br class="hidden lg:block"> We’ll review the requirements and contact you directly.',
+    'formTitle'         => 'Request Ironer Advice',
+    'buttonText'        => 'Request Ironer Advice',
+    'showLocationField' => true,
+    'equipmentLabel'    => 'Current laundry setup',
+    'messageLabel'      => 'What do you need to iron / finish?',
+    'requestTypeLabel'  => 'Are you looking at equipment purchase, rental, repair or maintenance?',
+])
 
 @endsection
