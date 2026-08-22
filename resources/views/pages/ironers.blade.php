@@ -273,17 +273,17 @@
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-12 py-10 lg:py-14 w-full max-w-full lg:max-w-[66%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[68%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-4xl leading-tight mb-4">
-            <span class="sm:block min-[1180px]:whitespace-nowrap">Plan the ironer configuration around</span>
-            <span class="sm:block min-[1180px]:whitespace-nowrap" style="color:#011E41;">your space and daily demand</span>
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            <span class="sm:block">Plan the ironer configuration around</span>
+            <span class="sm:block" style="color:#011E41;">your space and daily demand</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-none">
-            <span class="lg:block min-[1180px]:whitespace-nowrap">Irish Laundry Systems reviews working width, heating requirements and site access</span>
-            <span class="lg:block min-[1180px]:whitespace-nowrap">before recommending the ironer and installation approach.</span>
+            <span class="lg:block">Irish Laundry Systems reviews working width, heating requirements and site access</span>
+            <span class="lg:block">before recommending the ironer and installation approach.</span>
         </p>
-        <div class="flex items-center flex-wrap gap-x-4 gap-y-2 mb-7">
+        <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([
                 ['icon' => '56', 'label' => 'Room<br>Layout', 'sc' => 'scale-[1.035] translate-y-[2.2%]'],
                 ['icon' => '225', 'label' => 'Linen<br>Volume', 'sc' => 'scale-[1.025] translate-y-[0.4%]'],

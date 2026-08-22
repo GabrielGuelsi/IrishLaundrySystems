@@ -236,7 +236,7 @@
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
             <div class="flex flex-col gap-6 justify-between">
                 <div class="flex flex-col sm:flex-row gap-5 items-start">
-                    <div class="h-52 lg:h-60 flex-shrink-0 flex items-start justify-center">
+                    <div class="h-64 lg:h-72 flex-shrink-0 flex items-start justify-center">
                         <img src="/images/icons/ergocertnew.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="h-full w-auto object-contain">
                     </div>
                     <div>
