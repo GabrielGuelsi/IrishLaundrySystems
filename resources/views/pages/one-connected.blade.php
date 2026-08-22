@@ -113,7 +113,7 @@
     <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center mb-12 lg:mb-16">
-            <div class="reveal reveal-left">
+            <div class="reveal reveal-left lg:pl-8">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">One Dashboard</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                     See the signals that help you <span style="color:#148af4;">control laundry performance</span>
