@@ -557,6 +557,8 @@
     ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Tumble Dryers', 'h' => route('equipment.category', 'tumble-dryers')], ['l' => 'Drying Cabinets', 'h' => route('equipment.category', 'drying-cabinets')]]],
 ]])
 
+<div class="bg-white h-8 lg:h-12"></div>
+
 {{-- 11b. EQUIPMENT RENTAL STRIP (moved before Connected Support) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
@@ -574,6 +576,8 @@
         ['icon' => '146', 'label' => 'Included<br>Support'],
     ],
 ])
+
+<div class="bg-white h-8 lg:h-12"></div>
 
 {{-- 12. CONNECTED SUPPORT --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
