@@ -20,6 +20,10 @@ yarn-error.log
 # Claude AI — local only, never commit
 .claude/
 
+# Installed skills (skills CLI) — local tooling, never commit
+.agents/
+skills-lock.json
+
 # Scope & proposal documents — keep locally, not in repo
 Scope and Proposal/
 
