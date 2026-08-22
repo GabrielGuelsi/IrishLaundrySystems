@@ -24,7 +24,7 @@
                     Explore Electrolux Professional washers for smaller professional laundries through to higher-capacity operations, available to purchase or rent with installation and aftercare.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#washer-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Washer Advice
                     </a>
@@ -258,7 +258,7 @@
             </span>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
+        <a href="#washer-form"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
             Request Equipment Advice
         </a>
@@ -910,27 +910,20 @@
     ],
 ])
 
-{{-- 18. FINAL CTA --}}
-<section class="py-20 lg:py-28" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment Advice</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 max-w-4xl mx-auto">
-            Discuss washer options for<br class="hidden sm:block"> <span style="color:#148af4;">your laundry room</span>
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Share the main details about your site, capacity and installation requirements.<br class="hidden lg:block"> Our team will review them and contact you directly.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('request-assessment') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Request Washer Advice
-            </a>
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center justify-center gap-2 border-2 border-white/60 hover:border-white text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
-                Contact Irish Laundry Systems
-            </a>
-        </div>
-    </div>
-</section>
+{{-- 18. FINAL CTA — embedded advice form --}}
+<div id="washer-form"></div>
+@include('components.cta-downtime-form', [
+    'pageSource'        => 'commercial_washers_cta',
+    'eyebrow'           => 'Request Washer Advice',
+    'headingSize'       => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'heading'           => 'Discuss washer options for <span style="color:#148af4;">your<br> laundry room</span>',
+    'body'              => 'Share the main details about your site, capacity and installation requirements.<br class="hidden lg:block"> Our team will review them and contact you directly.',
+    'formTitle'         => 'Request Washer Advice',
+    'buttonText'        => 'Request Washer Advice',
+    'showLocationField' => true,
+    'equipmentLabel'    => 'Current laundry setup',
+    'messageLabel'      => 'What do you need to wash?',
+    'requestTypeLabel'  => 'Are you looking at equipment purchase, rental, repair or maintenance?',
+])
 
 @endsection

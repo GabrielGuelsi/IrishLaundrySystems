@@ -31,9 +31,9 @@
                     <span class="lg:block">with options for ironing, pressing, shaping and garment finishing.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#finishing-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                        Request Finishing Equipment Advice
+                        Request Finishing Advice
                     </a>
                     <a href="#finishing-range"
                        class="inline-flex items-center justify-center gap-2 border-2 border-white hover:border-white/70 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10">
@@ -619,24 +619,19 @@
 ])
 
 {{-- FINAL CTA --}}
-<section class="py-20 lg:py-28" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Request Finishing Equipment Advice</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 max-w-5xl mx-auto">
-            <span class="sm:block">Discuss your finishing equipment requirements</span>
-            <span class="sm:block" style="color:#148af4;">with our engineering team</span>
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            <span class="lg:block">Tell us what you finish, your expected volume and the space available.</span>
-            <span class="lg:block">We’ll review the requirements and contact you directly.</span>
-        </p>
-        <div class="flex justify-center">
-            <a href="{{ route('request-assessment') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Request Finishing Equipment Advice
-            </a>
-        </div>
-    </div>
-</section>
+<div id="finishing-form"></div>
+@include('components.cta-downtime-form', [
+    'pageSource'        => 'finishing_equipment_cta',
+    'eyebrow'           => 'Request Finishing Advice',
+    'headingSize'       => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'heading'           => 'Discuss your finishing equipment<br> requirements with <span style="color:#148af4;">our<br> engineering team</span>',
+    'body'              => 'Tell us what you finish, your expected volume and the space available.<br class="hidden lg:block"> We’ll review the requirements and contact you directly.',
+    'formTitle'         => 'Request Finishing Advice',
+    'buttonText'        => 'Request Finishing Advice',
+    'showLocationField' => true,
+    'equipmentLabel'    => 'Current laundry setup',
+    'messageLabel'      => 'What do you need to finish?',
+    'requestTypeLabel'  => 'Are you looking at equipment purchase, rental, repair or maintenance?',
+])
 
 @endsection

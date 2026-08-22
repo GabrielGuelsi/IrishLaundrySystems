@@ -26,7 +26,7 @@
                     <span class="lg:block">across Ireland, with advice on capacity, dryer type and installation.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="{{ route('request-assessment') }}"
+                    <a href="#dryer-form"
                        class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
                         Request Dryer Advice
                     </a>
@@ -236,7 +236,7 @@
             {{-- COL 1: ERGOCERT proof + Pioneers + CompassPro --}}
             <div class="flex flex-col gap-6 justify-between">
                 <div class="flex flex-col sm:flex-row gap-5 items-start">
-                    <div class="h-52 lg:h-60 flex-shrink-0 flex items-start justify-center">
+                    <div class="h-64 lg:h-72 flex-shrink-0 flex items-start justify-center">
                         <img src="/images/icons/ergocertnew.png" alt="ERGOCERT — Ergonomics Certifying Institute" class="h-full w-auto object-contain">
                     </div>
                     <div>
@@ -338,7 +338,7 @@
             </span>
             @endforeach
         </div>
-        <a href="{{ route('request-assessment') }}"
+        <a href="#dryer-form"
            class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-6 py-3 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
             Request Dryer Advice
         </a>
@@ -804,23 +804,20 @@
     ],
 ])
 
-{{-- 19. FINAL CTA --}}
-<section class="py-20 lg:py-28" style="background-color:#011E41;">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Dryer Advice</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4 max-w-4xl mx-auto">
-            Discuss your commercial dryer requirements <br class="hidden sm:block">with <span style="color:#148af4;">our engineering team</span>
-        </h2>
-        <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl mx-auto">
-            Share the main details about your site, drying demand and existing equipment.<br class="hidden lg:block"> Our team will review what is needed and contact you directly.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="{{ route('request-assessment') }}"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-8 py-4 rounded-lg text-base transition-colors duration-200">
-                Request Dryer Advice
-            </a>
-        </div>
-    </div>
-</section>
+{{-- 19. FINAL CTA — embedded advice form --}}
+<div id="dryer-form"></div>
+@include('components.cta-downtime-form', [
+    'pageSource'        => 'dryers_cta',
+    'eyebrow'           => 'Request Dryer Advice',
+    'headingSize'       => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'heading'           => 'Discuss your commercial dryer<br> requirements with <span style="color:#148af4;">our<br> engineering team</span>',
+    'body'              => 'Share the main details about your site, drying demand and existing equipment.<br class="hidden lg:block"> Our team will review what is needed and contact you directly.',
+    'formTitle'         => 'Request Dryer Advice',
+    'buttonText'        => 'Request Dryer Advice',
+    'showLocationField' => true,
+    'equipmentLabel'    => 'Current laundry setup',
+    'messageLabel'      => 'What do you need to dry?',
+    'requestTypeLabel'  => 'Are you looking at equipment purchase, rental, repair or maintenance?',
+])
 
 @endsection
