@@ -11,9 +11,9 @@
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="/images/pages/ironers/heroironers-wide.jpg" alt="Commercial ironers and flatwork finishing"
+    <img src="/images/pages/ironers/ironers-hero-new.png" alt="Commercial ironers and flatwork finishing"
          loading="eager" decoding="async"
-         class="absolute left-0 top-0 w-[180%] max-w-none h-auto">
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 60%;">
 
     <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
 
