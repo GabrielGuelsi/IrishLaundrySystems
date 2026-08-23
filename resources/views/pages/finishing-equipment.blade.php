@@ -23,12 +23,12 @@
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="sm:block">Commercial finishing equipment for</span>
-                    <span class="sm:block" style="color:#148af4;">consistent, high-quality garment finishing</span>
+                    <span class="sm:block">Commercial finishing equipment</span>
+                    <span class="sm:block">for <span style="color:#148af4;">professional garment care</span></span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    <span class="lg:block">Irish Laundry Systems supplies, installs and supports Electrolux Professional finishing equipment across Ireland,</span>
-                    <span class="lg:block">with options for ironing, pressing, shaping and garment finishing.</span>
+                    <span class="lg:block">Electrolux Professional equipment for pressing, shaping and finishing,</span>
+                    <span class="lg:block">supplied, installed and supported across Ireland by Irish Laundry Systems.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#finishing-form"
@@ -52,19 +52,22 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Finishing Equipment Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-10 lg:gap-14 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block lg:whitespace-nowrap">Plan finishing equipment around</span>
-                    <span class="sm:block lg:whitespace-nowrap">garment type, production volume</span>
-                    <span class="sm:block lg:whitespace-nowrap">and <span style="color:#148af4;">available space</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Choose finishing equipment</span>
+                    <span class="sm:block">around the <span style="color:#148af4;">finish you need</span></span>
+                    <span class="sm:block">and the <span style="color:#148af4;">volume you handle</span></span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Utility requirements, operator handling and the finishing method all influence equipment choice and installation. Reviewing them together gives a clearer basis for the final specification.
+                    <span class="lg:block">Garment type and finishing task help determine the right equipment,</span>
+                    <span class="lg:block">while workflow and handling affect what works best in practice.</span>
+                    <span class="lg:block">The options below cover different finishing requirements,</span>
+                    <span class="lg:block">helping narrow the equipment that best suits your operation.</span>
                 </p>
             </div>
 
@@ -75,10 +78,10 @@
 {{-- FINISHING EQUIPMENT OPTIONS (visual selector — main card-based selector) --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="mb-10 reveal max-w-4xl">
+        <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Finishing Equipment Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Explore equipment for <span style="color:#148af4;">different finishing requirements</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Compare equipment types for <span style="color:#148af4;">different finishing tasks</span>
             </h2>
         </div>
 
@@ -147,15 +150,96 @@
     </div>
 </section>
 
-{{-- white spacer between the finishing equipment options and the resources bar --}}
-<div class="bg-white h-10 lg:h-14"></div>
+{{-- WHERE IT FITS (4 cards) --}}
+<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-    ['title' => 'Official Resources',  'links' => [['l' => 'Hot Cylinder Ironers brochure', 'h' => '/pdfs/EPR-Brochure%20Line%206000-Hot_Cylinder_Ironers-ENG-2023_LR.pdf'], ['l' => 'Product resources', 'h' => route('resources')]]],
-    ['title' => 'Browse Finishing',    'links' => [['l' => 'Ironing Tables', 'h' => '#ironing-tables'], ['l' => 'Steam Support', 'h' => '#steam-support'], ['l' => 'Presses & Finishers', 'h' => '#presses']]],
-    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Ironers', 'h' => route('equipment.category', 'ironers')], ['l' => 'Wet Cleaning', 'h' => route('equipment.category', 'wet-cleaning')], ['l' => 'Commercial Dryers', 'h' => route('equipment.category', 'tumble-dryers')]]],
-]])
+        <div class="mb-10 reveal">
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.3rem] 2xl:text-5xl leading-tight mb-3">
+                Finishing equipment for <span style="color:#148af4;">different garment care operations</span>
+            </h2>
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Different sites handle different garments and presentation requirements, which can influence the finishing equipment they need.
+            </p>
+        </div>
+
+        @php
+        $fitCards = [
+            ['title' => 'Commercial Laundries',   'copy' => 'For businesses handling varied garment types and regular production volumes.', 'img' => '/images/pages/finishing-equipment/where-commercial-laundries.jpg', 'pos' => 'center center'],
+            ['title' => 'Hotels &amp; Hospitality',   'copy' => 'For guest garments, staff clothing and valet or in-house laundry services.', 'img' => '/images/pages/finishing-equipment/where-hotels-hospitality.jpg', 'pos' => 'center center'],
+            ['title' => 'Care Facilities',        'copy' => 'For resident clothing, staff garments and other items that need individual finishing.', 'img' => '/images/pages/finishing-equipment/where-care-facilities.jpg', 'pos' => 'center center'],
+            ['title' => 'Dry Cleaners',           'copy' => 'For professional garment cleaning and pressing where finish quality is essential.', 'img' => '/images/pages/finishing-equipment/where-dry-cleaners.jpg', 'pos' => 'center center'],
+            ['title' => 'Wet Cleaning Businesses','copy' => 'For delicate garments that need professional washing, drying and finishing.', 'img' => '/images/pages/finishing-equipment/where-wet-cleaning.jpg', 'pos' => 'center center'],
+        ];
+        @endphp
+
+        <div
+            x-data="{
+                active: 0,
+                count: {{ count($fitCards) }},
+                perView: 4,
+                timer: null,
+                get maxIndex() { return Math.max(0, this.count - this.perView); },
+                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
+                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
+                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
+                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
+                init() {
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    calc();
+                    window.addEventListener('resize', calc);
+                    this.timer = setInterval(() => this.next(), 6000);
+                },
+            }"
+            class="relative reveal"
+        >
+            <div class="overflow-hidden">
+                <div class="flex transition-transform duration-500 ease-out -mx-2.5"
+                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
+                    @foreach($fitCards as $card)
+                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
+                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
+                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                 style="object-position: {{ $card['pos'] ?? 'center center' }};">
+                            <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
+                                 style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
+                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                                 style="background:rgba(1,30,65,0.90);"></div>
+                            <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
+                                <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
+                                <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+
+            {{-- Dots centered + arrows bottom-right --}}
+            <div class="relative mt-8 flex items-center justify-center">
+                <div class="flex items-center gap-2">
+                    <template x-for="i in (maxIndex + 1)" :key="i">
+                        <button @click="go(i - 1)"
+                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
+                                class="rounded-full transition-all duration-300"></button>
+                    </template>
+                </div>
+                <div class="absolute right-0 flex gap-2">
+                    <button @click="prev()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
+                    </button>
+                    <button @click="next()"
+                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 {{-- FINISHING EQUIPMENT RANGE (product grid) --}}
 <section id="finishing-range" class="py-20 lg:py-32 bg-white border-t border-gray-100 scroll-mt-28">
@@ -358,9 +442,9 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Specialist Finishing</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl leading-tight mb-4">
-                    <span class="sm:block lg:whitespace-nowrap">Explore specialist equipment</span>
-                    <span class="sm:block lg:whitespace-nowrap">for specific garment</span>
-                    <span class="sm:block lg:whitespace-nowrap" style="color:#148af4;">finishing requirements</span>
+                    <span class="sm:block">Specialist equipment</span>
+                    <span class="sm:block">for garments with <span style="color:#148af4;">specific</span></span>
+                    <span class="sm:block" style="color:#148af4;">finishing requirements</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-6">
                     <span class="lg:block">Go directly to equipment for spotting, cabinet finishing</span>
@@ -375,15 +459,15 @@
 
             <div class="reveal reveal-right grid grid-cols-2 lg:grid-cols-4">
                 @foreach([
-                    ['label' => 'Spotting<br>Equipment',              'img' => '235'],
-                    ['label' => 'Finishing<br>Cabinets',              'img' => '236'],
-                    ['label' => 'Rotary<br>Finishing Cabinets',       'img' => '237'],
-                    ['label' => 'Trouser Finishing',     'img' => '246'],
+                    ['label' => 'Spotting<br>Equipment',        'img' => '235', 'href' => route('equipment.product', ['category' => 'finishing-equipment', 'product' => 'spotting-tables'])],
+                    ['label' => 'Finishing<br>Cabinets',        'img' => '236', 'href' => route('equipment.product', ['category' => 'finishing-equipment', 'product' => 'finishing-cabinets'])],
+                    ['label' => 'Rotary<br>Finishing Cabinets', 'img' => '237', 'href' => route('contact')],
+                    ['label' => 'Trouser Finishing',            'img' => '246', 'href' => route('equipment.product', ['category' => 'finishing-equipment', 'product' => 'trouser-topper'])],
                 ] as $opt)
-                <a href="{{ route('contact') }}"
+                <a href="{{ $opt['href'] }}"
                    class="group px-5 py-2 {{ $loop->first ? '' : 'border-l border-gray-200' }}">
-                    <img src="/images/icons/{{ $opt['img'] }}.png" alt="" aria-hidden="true" class="w-24 h-24 object-contain mb-5">
-                    <p class="font-heading font-bold text-navy text-base leading-snug mb-4">{!! $opt['label'] !!}</p>
+                    <img src="/images/icons/{{ $opt['img'] }}.png" alt="" aria-hidden="true" class="w-28 h-28 object-contain mb-5">
+                    <p class="font-heading font-bold text-navy text-lg leading-snug mb-4">{!! $opt['label'] !!}</p>
                     <span class="inline-flex text-[#148af4] group-hover:translate-x-1 transition-transform duration-200">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
                     </span>
@@ -394,6 +478,15 @@
         </div>
     </div>
 </section>
+
+{{-- white spacer before the resources bar --}}
+<div class="bg-white h-10 lg:h-14"></div>
+
+{{-- RESOURCES BAR (slim inline) — after Specialist Finishing --}}
+@include('components.resources-bar', ['groups' => [
+    ['title' => 'Official Resources',  'links' => [['l' => 'Professional Laundry Range Overview', 'h' => route('equipment')], ['l' => 'Finishing Equipment Resources', 'h' => route('resources')], ['l' => 'Electrolux Professional Finishing Equipment', 'h' => route('electrolux')]]],
+    ['title' => 'Related Equipment',   'links' => [['l' => 'Commercial Ironers', 'h' => route('equipment.category', 'ironers')], ['l' => 'Wet Cleaning', 'h' => route('equipment.category', 'wet-cleaning')], ['l' => 'Drying Cabinets', 'h' => route('equipment.category', 'drying-cabinets')]]],
+]])
 
 {{-- ONGOING SUPPORT --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
@@ -468,97 +561,6 @@
                 </div>
             </a>
             @endforeach
-        </div>
-    </div>
-</section>
-
-{{-- WHERE IT FITS (4 cards) --}}
-<section class="py-20 lg:py-28 bg-white border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-
-        <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                Explore equipment for <span style="color:#148af4;">different finishing requirements</span>
-            </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Different sites handle different garments and presentation requirements, which can influence the finishing equipment they need.
-            </p>
-        </div>
-
-        @php
-        $fitCards = [
-            ['title' => 'Commercial Laundries',   'copy' => 'For businesses handling varied garment types and regular production volumes.', 'img' => '/images/pages/finishing-equipment/where-commercial-laundries.jpg', 'pos' => 'center center'],
-            ['title' => 'Hotels &amp; Hospitality',   'copy' => 'For guest garments, staff clothing and valet or in-house laundry services.', 'img' => '/images/pages/finishing-equipment/where-hotels-hospitality.jpg', 'pos' => 'center center'],
-            ['title' => 'Care Facilities',        'copy' => 'For resident clothing, staff garments and other items that need individual finishing.', 'img' => '/images/pages/finishing-equipment/where-care-facilities.jpg', 'pos' => 'center center'],
-            ['title' => 'Dry Cleaners',           'copy' => 'For professional garment cleaning and pressing where finish quality is essential.', 'img' => '/images/pages/finishing-equipment/where-dry-cleaners.jpg', 'pos' => 'center center'],
-            ['title' => 'Wet Cleaning Businesses','copy' => 'For delicate garments that need professional washing, drying and finishing.', 'img' => '/images/pages/finishing-equipment/where-wet-cleaning.jpg', 'pos' => 'center center'],
-        ];
-        @endphp
-
-        <div
-            x-data="{
-                active: 0,
-                count: {{ count($fitCards) }},
-                perView: 4,
-                timer: null,
-                get maxIndex() { return Math.max(0, this.count - this.perView); },
-                next()  { this.active = this.active >= this.maxIndex ? 0 : this.active + 1; this.restart(); },
-                prev()  { this.active = this.active <= 0 ? this.maxIndex : this.active - 1; this.restart(); },
-                go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
-                restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
-                init() {
-                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
-                    calc();
-                    window.addEventListener('resize', calc);
-                    this.timer = setInterval(() => this.next(), 6000);
-                },
-            }"
-            class="relative reveal"
-        >
-            <div class="overflow-hidden">
-                <div class="flex transition-transform duration-500 ease-out -mx-2.5"
-                     :style="`transform: translateX(-${active * (100 / perView)}%)`">
-                    @foreach($fitCards as $card)
-                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
-                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
-                            <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
-                                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                 style="object-position: {{ $card['pos'] ?? 'center center' }};">
-                            <div class="absolute inset-0 transition-opacity duration-300 group-hover:opacity-0"
-                                 style="background:linear-gradient(to top, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.45) 45%, rgba(1,30,65,0.05) 75%, transparent 100%);"></div>
-                            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                                 style="background:rgba(1,30,65,0.90);"></div>
-                            <div class="absolute inset-0 p-7 flex flex-col justify-end z-10">
-                                <p class="font-body text-white/80 text-sm leading-relaxed overflow-hidden max-h-0 opacity-0 group-hover:max-h-40 group-hover:opacity-100 transition-all duration-500 mb-0 group-hover:mb-4">{{ $card['copy'] }}</p>
-                                <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $card['title'] !!}</h3>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-            </div>
-
-            {{-- Dots centered + arrows bottom-right --}}
-            <div class="relative mt-8 flex items-center justify-center">
-                <div class="flex items-center gap-2">
-                    <template x-for="i in (maxIndex + 1)" :key="i">
-                        <button @click="go(i - 1)"
-                                :class="active === (i - 1) ? 'bg-navy w-2.5 h-2.5' : 'bg-navy/25 hover:bg-navy/50 w-2.5 h-2.5'"
-                                class="rounded-full transition-all duration-300"></button>
-                    </template>
-                </div>
-                <div class="absolute right-0 flex gap-2">
-                    <button @click="prev()"
-                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
-                    </button>
-                    <button @click="next()"
-                            class="w-11 h-11 rounded-full bg-navy text-white hover:bg-navy/90 transition-colors flex items-center justify-center">
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-                    </button>
-                </div>
-            </div>
         </div>
     </div>
 </section>
