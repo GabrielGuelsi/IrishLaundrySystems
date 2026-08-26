@@ -156,7 +156,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Consumption Control</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.3rem] 2xl:text-[2.8rem] leading-tight mb-3">
                 Focus on the resources that affect <span style="color:#148af4;">cost and waste every day</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -207,7 +207,7 @@
 ])
 
 {{-- 9. COMPATIBLE LAUNDRY EQUIPMENT --}}
-<section class="relative overflow-hidden py-20 lg:py-32" style="background:linear-gradient(180deg,#ffffff 0%,#f7fafd 45%,#ffffff 100%);">
+<section class="relative overflow-hidden py-20 lg:py-32 bg-white">
 
     {{-- decorative line-work, right side (xl only, purely cosmetic) --}}
     <svg class="hidden xl:block absolute pointer-events-none" aria-hidden="true" focusable="false" fill="none"
@@ -239,7 +239,7 @@
             ['key' => 'd6', 'label' => 'Line 6000<br>Tumble Dryers',    'side' => 'left',  'row' => 1, 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
             ['key' => 'i6', 'label' => 'Line 6000<br>FFS Vibe Ironers', 'side' => 'left',  'row' => 2, 'img' => '/images/shared/line6000-ironer.webp'],
             ['key' => 'w5', 'label' => 'Line 5000<br>Washers',          'side' => 'right', 'row' => 0, 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
-            ['key' => 'd5', 'label' => 'Line 5000<br>Tumble Dryers',    'side' => 'right', 'row' => 1, 'img' => '/images/pages/dryers/heat-pump-dryer-lineup.png'],
+            ['key' => 'd5', 'label' => 'Line 5000<br>Tumble Dryers',    'side' => 'right', 'row' => 1, 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-2.PNG'],
             ['key' => 'bw', 'label' => 'Barrier Washers',               'side' => 'right', 'row' => 2, 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
         ];
         @endphp
@@ -381,7 +381,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Find out how OnE Connected can work <span style="color:#148af4;">for your laundry</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base lg:text-[13px] 2xl:text-base leading-relaxed">
                 Use official Electrolux Professional resources to review the benefits, compatible equipment and connection requirements before discussing your setup with Irish Laundry Systems.
             </p>
         </div>

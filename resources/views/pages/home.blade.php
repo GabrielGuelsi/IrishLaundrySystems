@@ -158,7 +158,7 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => '<span>Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span></span>',
+    'heading'    => '<span class="lg:text-[1.7rem] 2xl:text-[2rem]">Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span></span>',
     'textMinH'   => '160px',
     'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
     'subheadingClass' => 'lg:whitespace-nowrap',

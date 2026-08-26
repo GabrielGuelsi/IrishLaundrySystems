@@ -319,7 +319,7 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[68%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.1rem] leading-tight mb-4">
             Plan dryer installation around space and access<br class="hidden sm:block"><span style="color:#011E41;">with utility requirements clear from the start</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
@@ -647,6 +647,8 @@
     ['title' => 'Energy & Installation Guidance',  'links' => [['l' => 'Heat Pump Dryer technology', 'h' => '#dryer-range'], ['l' => 'Ventilation and room planning', 'h' => route('request-assessment')], ['l' => 'Energy performance', 'h' => route('resources')]]],
     ['title' => 'Related Equipment',               'links' => [['l' => 'Commercial Washers', 'h' => route('equipment.category', 'commercial-washers')], ['l' => 'Drying Cabinets', 'h' => route('equipment.category', 'drying-cabinets')], ['l' => 'myPRO Dryers', 'h' => route('equipment')]]],
 ]])
+
+<div class="bg-white h-8 lg:h-12"></div>
 
 {{-- 12c. RENTAL / CAPITAL STRIP (moved below dosing) --}}
 @include('components.why-choose-strip', [

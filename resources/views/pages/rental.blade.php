@@ -318,8 +318,8 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Where Rental Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5">
-                Rental for sites that want equipment access<br class="hidden lg:block"> with <span class="text-[#148af4]">support built&nbsp;in</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2rem] leading-tight mb-5">
+                Rental for sites that want equipment access with <span class="text-[#148af4]">support built&nbsp;in</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
                 Rental can be a good fit for sites that need selected Electrolux Professional laundry equipment without one large capital purchase, while keeping service, parts and support included throughout the agreement.

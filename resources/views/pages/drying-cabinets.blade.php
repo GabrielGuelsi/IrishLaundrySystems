@@ -368,14 +368,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
-                <span class="sm:block">Configure cabinet drying for</span>
-                <span class="sm:block" style="color:#148af4;">garments, footwear</span>
-                <span class="sm:block" style="color:#148af4;">and gloves</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.3rem] 2xl:text-[2.8rem] leading-tight mb-3">
+                Configure cabinet drying for <span style="color:#148af4;">garments, footwear and gloves</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                <span class="lg:block">Choose accessories for the articles each</span>
-                <span class="lg:block">drying cabinet needs to accommodate.</span>
+                Choose accessories for the articles each drying cabinet needs to accommodate.
             </p>
         </div>
 
