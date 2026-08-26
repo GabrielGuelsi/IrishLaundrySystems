@@ -9,16 +9,16 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
+<section class="relative overflow-hidden flex flex-col lg:!h-[640px]" style="height:auto; min-height:560px;">
     <img src="/images/pages/equipment/mypro-family.jpg" alt="Semi-professional laundry equipment"
-         class="absolute inset-0 w-full h-full object-cover object-center">
+         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 62%;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
+        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-24">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    When domestic machines <br class="hidden sm:block"><span style="color:#148af4;">become the weak point</span>
+                    When <span style="color:#148af4;">domestic machines</span> <br class="hidden sm:block">become the weak point
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     <span class="sm:block lg:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
@@ -45,20 +45,21 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Small-Business Laundry</p>
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Equipment Selection</p>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Built for the demands</span>
-                    <span class="sm:block">of <span style="color:#148af4;">everyday</span></span>
-                    <span class="sm:block" style="color:#148af4;">business laundry</span>
+                    <span class="sm:block">of <span style="color:#148af4;">everyday business</span></span>
+                    <span class="sm:block" style="color:#148af4;">washing and drying</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Semi-professional washers and dryers give smaller sites more capacity and faster cycles than domestic appliances, without the scale of a full commercial setup.
+                    <span class="lg:block">Semi-professional washers and dryers offer greater durability and faster cycles than domestic appliances.</span>
+                    <span class="lg:block">They suit sites that need more from their laundry equipment without moving to a full commercial setup.</span>
                 </p>
             </div>
 
@@ -165,13 +166,12 @@
 
         <div class="mb-10 reveal flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
             <div class="min-w-0">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO XL Highlight</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO XL</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                     A bigger step up for <span style="color:#148af4;">heavier daily laundry use</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    <span class="sm:block lg:whitespace-nowrap">myPRO XL gives smaller businesses more capacity, durability and speed in a compact semi-professional setup,</span>
-                    <span class="sm:block lg:whitespace-nowrap">helping handle larger loads without moving straight to full commercial laundry scale.</span>
+                    myPRO XL gives smaller businesses a clear next step as daily laundry demand grows.
                 </p>
             </div>
             <a href="#semi-pro-form"
@@ -298,6 +298,20 @@
         </div>
     </div>
 </section>
+
+{{-- PLANNING / SITE FIT STRIP — moved before the Product Finder --}}
+@include('components.cta-combined-banner', [
+    'eyebrow'    => 'Planning Before Installation',
+    'heading'    => 'Plan the right setup around <span style="color:#011E41;">your room, workload and budget</span>',
+    'body'       => 'Check room layout, utilities and expected workload before choosing the final setup.<br class="hidden lg:block"> Pairing, stacking and payment options can then be planned around the site.',
+    'miniPoints' => [
+        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.061] translate-y-[2.3%]', 'label' => 'Room<br>fit'],
+        ['icon' => '225', 'iconClass' => 'scale-[1.05] translate-y-[0.4%]',  'label' => 'Daily<br>use'],
+        ['icon' => '215', 'iconClass' => 'scale-[1.094] -translate-y-[1.2%]', 'label' => 'Utilities<br>and access'],
+    ],
+    'ctaText'    => 'Request Equipment Advice',
+    'ctaHref'    => '#semi-pro-form',
+])
 
 {{-- 6a-bis. PRODUCT FINDER — myPRO range (washers, dryers and light finishing) --}}
 <section id="mypro-range" class="py-20 lg:py-32 bg-white border-t border-gray-100">
@@ -504,12 +518,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Related Equipment</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Equipment</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Not sure semi-professional is <span style="color:#148af4;">the right level?</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                If your site needs higher capacity, heavier daily use or specialist drying and finishing, Irish Laundry Systems can help you compare the next equipment route before you decide.
+                Move up to commercial equipment when laundry demand goes beyond a semi-professional setup.
             </p>
         </div>
 
@@ -542,31 +556,17 @@
     </div>
 </section>
 
-{{-- 9. PLANNING / SITE FIT STRIP — Home-style medium-height strip (absorbs Right Fit Advice) --}}
-@include('components.cta-combined-banner', [
-    'eyebrow'    => 'Planning Before Installation',
-    'heading'    => 'Plan the right setup around <span style="color:#011E41;">your room, workload and budget</span>',
-    'body'       => 'Irish Laundry Systems can review space, daily use, washer and dryer pairing, utilities, stacked layouts and payment setup where needed before recommending the right next step.',
-    'miniPoints' => [
-        ['icon' => 'home-planning-fit', 'iconClass' => 'scale-[1.061] translate-y-[2.3%]', 'label' => 'Room<br>fit'],
-        ['icon' => '225', 'iconClass' => 'scale-[1.05] translate-y-[0.4%]',  'label' => 'Daily<br>use'],
-        ['icon' => '215', 'iconClass' => 'scale-[1.094] -translate-y-[1.2%]', 'label' => 'Utilities<br>and access'],
-    ],
-    'ctaText'    => 'Request Equipment Advice',
-    'ctaHref'    => '#semi-pro-form',
-])
-
 {{-- 10. SERVICE AND SUPPORT OPTIONS --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support for semi-professional equipment <span style="color:#148af4;">beyond installation</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.6rem] leading-tight mb-3">
+                Keep semi-professional equipment <span style="color:#148af4;">supported after installation</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Irish Laundry Systems supports semi-professional laundry sites with repairs, Preventive Maintenance, rental where suitable and aftercare.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Choose the service option that best fits your equipment and site.
             </p>
         </div>
 
@@ -639,12 +639,12 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
 
             <div class="lg:col-span-4 reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Owner Support</p>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">myPRO Owner Resources</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-                    Support resources for <span style="color:#148af4;">day-to-day use</span>
+                    Practical help for <span style="color:#148af4;">day-to-day use</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-7">
-                    After installation, your team can access myPRO tutorials, FAQs, manuals and product support resources for washers, dryers, ironers and selected accessories.
+                    Access manuals, tutorials and product resources for everyday operation of myPRO equipment.
                 </p>
                 <a href="https://www.electroluxprofessional.com/gb/mypro-online-help-center/" target="_blank" rel="noopener"
                    class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
@@ -696,9 +696,9 @@
 <div id="semi-pro-form"></div>
 @include('components.cta-downtime-form', [
     'pageSource' => 'semi_professional_cta',
-    'headingSize' => 'text-2xl sm:text-3xl lg:text-[2rem]',
-    'heading'    => 'Plan the right semi-professional<br class="hidden sm:block"> setup for <span style="color:#148af4;">your site</span>',
-    'body'       => 'Tell us what you wash, how often the machines run and who uses them. We&rsquo;ll recommend the right equipment, purchase or rental option, and support.',
+    'headingSize' => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'heading'    => 'Plan a semi-professional<br class="hidden sm:block"> laundry setup around<br class="hidden sm:block"> <span style="color:#148af4;">your site and workload</span>',
+    'body'       => 'Tell us what you wash, how often the machines run and who uses them.<br class="hidden lg:block"> We&rsquo;ll recommend the right equipment, purchase or rental option, and support.',
     'formTitle'  => 'Request Semi-Professional Laundry Advice',
     'buttonText' => 'Request Equipment Advice',
 ])

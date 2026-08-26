@@ -18,8 +18,8 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
-                    <span class="sm:block">Professional wet cleaning for delicate garments</span>
-                    <span class="sm:block">and <span style="color:#148af4;">specialist textile care</span></span>
+                    <span class="sm:block">Professional wet cleaning for</span>
+                    <span class="sm:block" style="color:#148af4;">delicate garments and textiles</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
                     <span class="sm:block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Electrolux Professional lagoon® Advanced Care across Ireland</span>
@@ -46,23 +46,25 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Wet Cleaning Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Wet Cleaning Setup</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
-                    <span class="sm:block">Plan the wet-cleaning system around</span>
-                    <span class="sm:block">garment mix, daily volume</span>
-                    <span class="sm:block">and <span style="color:#148af4;">finishing requirements</span></span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.3rem] leading-tight">
+                    <span class="sm:block">The right wet-cleaning</span>
+                    <span class="sm:block">system starts with <span style="color:#148af4;">garment mix,</span></span>
+                    <span class="sm:block" style="color:#148af4;">volume and finishing needs</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-4">
-                    Washer and dryer capacity, detergent requirements and finishing equipment all influence how the system is configured.
+                    <span class="lg:block">Washer and dryer capacity, detergent requirements and available space</span>
+                    <span class="lg:block">need to work together with the finishing equipment used on site.</span>
                 </p>
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    Reviewing them together gives a clearer basis for equipment selection and installation.
+                    <span class="lg:block">Reviewing the full setup helps select the right equipment,</span>
+                    <span class="lg:block">size the system correctly and plan installation around the operation.</span>
                 </p>
             </div>
 
@@ -75,9 +77,9 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Business Case</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight text-balance mb-3">
-                Expand your garment care offer with <span style="color:#148af4;">fast, solvent-free wet cleaning</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Wet Cleaning</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.8rem] 2xl:text-5xl leading-tight mb-3">
+                Expand your garment care offer with <span style="color:#148af4;">wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
                 Faster turnaround, specialist garment care and more work handled in-house.
@@ -90,7 +92,7 @@
                 ['title' => 'Fast results',           'copy' => 'Dry-to-Dry in 1 hour helps garments move through the process faster, with no hang-drying required.',        'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg', 'pos' => 'center center'],
                 ['title' => 'Delicate Garment Care',  'copy' => 'Designed for delicate garments, fine textiles, selected leathers and shoes.',                                'img' => '/images/pages/services/services-overview-hero.jpg',        'pos' => 'center center'],
                 ['title' => 'Solvent-free process',   'copy' => 'A water-based process for businesses moving beyond traditional solvent-based cleaning.',                      'img' => '/images/pages/accessories/eco-detergents.webp',                'pos' => 'center center'],
-                ['title' => 'More Services In-House',  'copy' => 'Handle more specialist textile care in-house.',                 'img' => '/images/shared/render-double-page_72dpi.jpg',      'pos' => 'center center'],
+                ['title' => 'More Garment Care In-House',  'copy' => 'Handle more specialist textile care in-house.',                 'img' => '/images/shared/render-double-page_72dpi.jpg',      'pos' => 'center center'],
             ] as $card)
             <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col">
                 <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
@@ -256,11 +258,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Complete Wet Cleaning Setup</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Plan the complete wet cleaning setup around <span style="color:#148af4;">garments, volume and finishing needs</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Bring every part of wet cleaning <span style="color:#148af4;">into one complete setup</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                Match each part of the setup to the garments, daily volume and available space.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Washer, dryer, detergents and finishing are planned together as one system.
             </p>
         </div>
 
@@ -341,10 +343,10 @@
         <div x-data="{ open: 0 }" class="max-w-4xl reveal">
             @foreach([
                 ['volume' => '70',  'summary' => 'For smaller wet cleaning starts or lower daily garment volume.',                 'washer' => 'WH6-6 LAC',  'dryer' => 'TD6-7 LAC',  'table' => '1 × FIT7',  'finisher' => '–',      'cabinet' => 'Serenity Cabinet'],
-                ['volume' => '110', 'summary' => 'For growing garment care operations with more regular wet cleaning demand.',     'washer' => 'WH6-14 LAC', 'dryer' => 'TD6-14 LAC', 'table' => 'FIT7',      'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
-                ['volume' => '240', 'summary' => 'For established wet cleaning operations handling higher daily volume.',          'washer' => 'WH6-20 LAC', 'dryer' => 'TD6-20 LAC', 'table' => 'FIT1-2 WC', 'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
-                ['volume' => '320', 'summary' => 'For larger garment care businesses needing more capacity and finishing support.', 'washer' => 'WH6-27 LAC', 'dryer' => 'TD6-30 LAC', 'table' => 'FIT1-2 WC', 'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
-                ['volume' => '400', 'summary' => 'For high-volume wet cleaning operations with greater daily throughput.',          'washer' => 'WH6-33 LAC', 'dryer' => 'TD6-37 LAC', 'table' => 'FIT1-2 WC', 'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
+                ['volume' => '110', 'summary' => 'For growing garment care operations with more regular wet cleaning demand.',     'washer' => 'WH6-14 LAG', 'dryer' => 'TD6-14 LAC', 'table' => '1 × FIT1-2 WC', 'finisher' => '–', 'cabinet' => 'Serenity Cabinet'],
+                ['volume' => '240', 'summary' => 'For established wet cleaning operations handling higher daily volume.',          'washer' => 'WH6-20 LAC', 'dryer' => 'TD6-20 LAC', 'table' => '2 × FIT1-2 WC', 'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
+                ['volume' => '320', 'summary' => 'For larger garment care businesses needing more capacity and finishing support.', 'washer' => 'WH6-27 LAC', 'dryer' => 'TD6-30 LAC', 'table' => '2 × FIT1-2 WC', 'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
+                ['volume' => '400', 'summary' => 'For high-volume wet cleaning operations with greater daily throughput.',          'washer' => 'WH6-33 LAC', 'dryer' => 'TD6-37 LAC', 'table' => '3 × FIT1-2 WC', 'finisher' => 'FFT-WC', 'cabinet' => 'Serenity Cabinet'],
             ] as $i => $tier)
             <div class="bg-white border border-gray-100 rounded-2xl shadow-sm mb-3 overflow-hidden">
                 <button type="button" @click="open = open === {{ $i }} ? null : {{ $i }}" :aria-expanded="open === {{ $i }}"
@@ -481,11 +483,13 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">System Planning</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            Plan wet cleaning around <span style="color:#011E41;">garment volume, room fit and finishing</span>
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-4">
+            <span class="sm:block">Plan the right laundry setup around</span>
+            <span class="sm:block" style="color:#011E41;">your site and workload</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6 max-w-xl">
-            Match the washer, dryer, detergents and finishing setup to daily garment volume, room conditions and aftercare before installation.
+            <span class="lg:block">We assess layout, workflow and equipment needs as one system,</span>
+            <span class="lg:block">then design a practical setup to fit the scale of your operation.</span>
         </p>
         <div class="flex items-center flex-wrap gap-x-4 gap-y-2 mb-7">
             @foreach([
@@ -566,11 +570,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Keep wet cleaning <span style="color:#148af4;">consistent from load to load</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl leading-tight mb-3">
+                Automatic dosing for <span style="color:#148af4;">better control of every load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
+                Automatic dosing controls detergent use by programme, reducing overuse and supporting consistent results.
             </p>
         </div>
 
@@ -743,17 +747,12 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Optional Serenity Cabinet</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight text-balance mb-4">
-                Add an <span style="color:#148af4;">optional sanitising step</span> before garments are returned
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.6rem] leading-tight mb-4">
+                Add optional sanitising before garments <span style="color:#148af4;">return to use</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 Serenity Cabinet provides a fully automatic steam-based cycle for selected garments.
             </p>
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200 whitespace-nowrap mt-6">
-                Ask About Serenity Cabinet
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
-            </a>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 reveal">
@@ -764,7 +763,7 @@
                     {{-- RISE panel behind, indented left so the cabinet image overlaps it --}}
                     <div class="ml-24 sm:ml-28 bg-white border border-gray-100 shadow-sm rounded-2xl pl-28 sm:pl-32 pr-5 py-6 min-h-[280px] flex flex-col justify-center">
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">RISE Confirmed</p>
-                        <p class="font-heading font-bold text-navy text-lg leading-snug mb-2">Log 6 SARS-CoV-2 Reduction</p>
+                        <p class="font-heading font-bold text-navy text-base leading-snug mb-2">Log 6 SARS-CoV-2 Reduction</p>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">RISE confirmed reduced SARS-CoV-2 infectivity on textiles treated in the Serenity Cabinet.</p>
                     </div>
                     {{-- Cabinet image in front, large, popping out on the left and top/bottom --}}
@@ -772,6 +771,11 @@
                          class="absolute left-0 top-1/2 -translate-y-1/2 w-52 sm:w-56 h-auto object-contain z-10 drop-shadow-xl">
                 </div>
                 <p class="font-heading font-bold text-navy text-sm mt-4 pl-2">Serenity Cabinet</p>
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200 whitespace-nowrap mt-6 self-start">
+                    Ask About Serenity Cabinet
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/></svg>
+                </a>
             </div>
 
             {{-- lifestyle + features --}}
@@ -828,23 +832,29 @@
 
         </div>
 
-        {{-- Serenity Cabinet brochure --}}
-        <div class="mt-10 rounded-2xl bg-navy px-6 lg:px-10 py-7 flex flex-col sm:flex-row sm:items-center gap-5 reveal">
-            <div class="flex items-center gap-4 flex-1">
-                <img src="/images/icons/230.png" alt="" aria-hidden="true" class="w-12 h-12 object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
-                <div>
-                    <p class="font-heading font-bold text-white text-base mb-0.5">Serenity Cabinet brochure</p>
-                    <p class="font-body text-white/70 text-sm">Full product details, specifications and programmes (PDF).</p>
-                </div>
-            </div>
-            <a href="/pdfs/EPR_Serenity_Cabinet_leaflet_ENG_LR.pdf" target="_blank" rel="noopener"
-               class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors duration-200 flex-shrink-0 whitespace-nowrap">
-                Download Brochure (PDF)
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v11m0 0l4-4m-4 4l-4-4M4.5 19.5h15"/></svg>
-            </a>
-        </div>
     </div>
 </section>
+
+{{-- RESOURCES BAR (slim inline) — moved directly below Serenity Cabinet --}}
+@include('components.resources-bar', ['groups' => [
+                ['title' => 'Official Resources', 'links' => [
+                    ['l' => 'Serenity Cabinet brochure', 'h' => '/pdfs/EPR_Serenity_Cabinet_leaflet_ENG_LR.pdf'],
+                    ['l' => 'Electrolux cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'],
+                    ['l' => 'Lagoon Advanced Care resources', 'h' => route('resources')],
+                    ['l' => 'Lagoon process video', 'h' => route('resources')],
+                ]],
+                ['title' => 'Related Equipment', 'links' => [
+                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
+                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
+                    ['l' => 'Finishing Equipment', 'h' => route('equipment.category', ['category' => 'finishing-equipment'])],
+                    ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request advice', 'h' => route('request-assessment')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                ]],
+]])
 
 {{-- 15. SERVICE AND SUPPORT OPTIONS --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
@@ -923,25 +933,6 @@
     </div>
 </section>
 
-{{-- RESOURCES BAR (slim inline) --}}
-@include('components.resources-bar', ['groups' => [
-                ['title' => 'Official Resources', 'links' => [
-                    ['l' => 'Electrolux cleaning solution white paper', 'h' => '/pdfs/Electrolux_WhitePaper_CleaningSolution.pdf'],
-                    ['l' => 'Lagoon Advanced Care resources', 'h' => route('resources')],
-                    ['l' => 'Lagoon process video', 'h' => route('resources')],
-                ]],
-                ['title' => 'Related Equipment', 'links' => [
-                    ['l' => 'Washing Machines', 'h' => route('equipment.category', ['category' => 'commercial-washers'])],
-                    ['l' => 'Tumble Dryers', 'h' => route('equipment.category', ['category' => 'tumble-dryers'])],
-                    ['l' => 'Finishing Equipment', 'h' => route('equipment.category', ['category' => 'finishing-equipment'])],
-                    ['l' => 'Drying Cabinets', 'h' => route('equipment.category', ['category' => 'drying-cabinets'])],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request advice', 'h' => route('request-assessment')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                ]],
-]])
 
 {{-- 17. RELATED EQUIPMENT --}}
 <section class="py-20 lg:py-28 bg-white">
@@ -1007,9 +998,9 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'wet_cleaning_cta',
     'eyebrow'    => 'Request Wet Cleaning Advice',
-    'heading'     => '<span class="sm:block">Discuss your wet cleaning</span> <span class="sm:block">requirements</span> <span class="sm:block">with <span style="color:#148af4;">our engineering team</span></span>',
+    'heading'     => '<span class="sm:block">Discuss your wet cleaning</span> <span class="sm:block">requirements with</span> <span class="sm:block" style="color:#148af4;">our engineering team</span>',
     'headingSize' => 'text-3xl sm:text-4xl lg:text-[1.9rem] xl:text-[2.45rem] 2xl:text-[2.9rem]',
-    'body'       => 'Tell us what garments you handle, your daily volume and the space available. We’ll review the requirements and contact you directly.',
+    'body'       => 'Tell us what garments you handle, your daily volume and the space<br class="hidden lg:block"> available. We&rsquo;ll review the requirements and contact you directly.',
     'formTitle'  => 'Request Wet Cleaning Equipment Advice',
     'buttonText' => 'Request Wet Cleaning Advice',
 ])
