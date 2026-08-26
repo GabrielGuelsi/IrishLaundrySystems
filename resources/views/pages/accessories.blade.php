@@ -18,12 +18,12 @@
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories &amp; Consumables</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    <span class="sm:block">Efficient detergent dosing</span>
-                    <span class="sm:block">and laundry room essentials</span>
-                    <span class="sm:block" style="color:#148af4;">for better control</span>
+                    <span class="sm:block">Smarter laundry essentials for</span>
+                    <span class="sm:block" style="color:#148af4;">better everyday control</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    From automatic dosing and certified detergents to safe storage and practical accessories, choose what suits your equipment, textiles and wash requirements.
+                    <span class="lg:block">From automatic dosing and certified detergents to safe storage and accessories,</span>
+                    <span class="lg:block">choose what best suits your equipment, textiles and wash requirements.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#dosing-systems"
@@ -46,19 +46,23 @@
 {{-- 3. INTRO / BRIDGE --}}
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why It Matters</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[auto_minmax(0,1fr)] gap-12 lg:gap-12 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Product Selection</p>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-start">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="sm:block lg:whitespace-nowrap">Better product choices improve</span>
-                    <span class="block lg:whitespace-nowrap" style="color:#148af4;">wash quality and cost control</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">The right products support</span>
+                    <span class="sm:block" style="color:#148af4;">consistent wash quality</span>
+                    <span class="sm:block" style="color:#148af4;">and better cost control</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed lg:ml-auto">
-                    Automatic dosing, the right detergents, safe storage and practical accessories can reduce waste, protect textiles and equipment, and keep the laundry room better organised.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    <span class="lg:block">Automatic dosing, the right detergents and safe storage</span>
+                    <span class="lg:block">can help reduce waste and protect textiles and equipment,</span>
+                    <span class="lg:block">while practical accessories help keep the laundry room</span>
+                    <span class="lg:block">organised and make handling easier for staff.</span>
                 </p>
             </div>
 
@@ -152,11 +156,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing System Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Compare dosing systems by <span style="color:#148af4;">washer setup and control needs</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                Better dosing control, <span style="color:#148af4;">less detergent waste</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                Match the right dosing system to your washer setup to reduce detergent overuse and support consistent wash results.
             </p>
         </div>
 
@@ -348,7 +352,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Range</p>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Categories</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore detergents, storage and <span style="color:#148af4;">laundry room accessories</span>
             </h2>
@@ -382,6 +386,7 @@
                 'badges'  => ['Baskets', 'Racks & trolleys', 'Cleaning essentials'],
                 'cta'     => 'Ask About Accessories',
                 'img'     => '/images/pages/accessories/trolleys-and-racks.webp',
+                'imgMax'  => 400,
             ],
         ];
         @endphp
@@ -418,7 +423,7 @@
                 {{-- Image side --}}
                 <div class="{{ $i % 2 === 1 ? 'lg:order-1' : '' }} flex items-center justify-center">
                     <img src="{{ $card['img'] }}" alt="{{ $card['name'] }}" loading="lazy" decoding="async"
-                         class="w-auto object-contain" style="max-height:300px; max-width:100%;">
+                         class="w-auto object-contain" style="max-height:{{ $card['imgMax'] ?? 300 }}px; max-width:100%;">
                 </div>
 
             </div>
@@ -433,23 +438,11 @@
         <div class="mb-10 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Line 6000 Eco-Range</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                Certified detergents for <span style="color:#148af4;">quality wash results and textile care</span>
+                Certified detergents for <span style="color:#148af4;">quality wash results</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed mb-6 lg:whitespace-nowrap">
                 Electrolux Professional Line 6000 eco-range detergents are developed for high-quality, safe and effective washing while helping reduce environmental impact.
             </p>
-            <div class="flex flex-wrap gap-2 mb-8">
-                @foreach(['EU Ecolabel', 'Dermatologically tested', 'Hypoallergenic', 'Textile care'] as $proof)
-                <span class="font-body text-xs font-bold uppercase tracking-wide text-navy/70 bg-navy/[0.06] px-3 py-1.5 rounded-full">{{ $proof }}</span>
-                @endforeach
-            </div>
-            <a href="{{ route('contact') }}"
-               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                Ask About Eco-Detergents
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                </svg>
-            </a>
         </div>
 
         @php
@@ -531,6 +524,49 @@
 
             </div>
             @endforeach
+        </div>
+
+        <div class="mt-12 reveal">
+            <a href="{{ route('contact') }}"
+               class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                Ask About Eco-Detergents
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+{{-- 8d. CUSTOMER-FACING CERTIFICATE BLOCK --}}
+<section class="py-20 lg:py-28 bg-gray-50 border-t border-gray-100">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+            <div class="reveal reveal-left">
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer-Facing Confidence</p>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
+                    Show customers your laundry uses <span style="color:#148af4;">certified eco-detergents</span>
+                </h2>
+                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
+                    Sites using Line 6000 eco-range detergents may be able to communicate their detergent choice with customer-facing certification material.
+                </p>
+                <a href="{{ route('contact') }}"
+                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
+                    Ask About Eco-Detergent Certification
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+            </div>
+
+            <div class="reveal reveal-right flex justify-center lg:justify-end">
+                <img src="{{ asset('images/pages/accessories/line6000-chemicals-certificate.jpg') }}"
+                     alt="Electrolux Professional Line 6000 eco-range detergents certificate"
+                     loading="lazy" decoding="async"
+                     class="w-full max-w-md rounded-xl shadow-lg object-contain">
+            </div>
+
         </div>
     </div>
 </section>
@@ -652,62 +688,6 @@
     </div>
 </section>
 
-{{-- BROCHURES BAR (slim inline) — every accessories/consumables document in one strip --}}
-@include('components.resources-bar', ['groups' => [
-                ['title' => 'Product Brochures', 'links' => [
-                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
-                    ['l' => 'Detergent Storage — Product Data Sheet', 'h' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Detergent storage_438918186_EN.pdf?version=1750533471'],
-                    ['l' => 'lagoon Advanced Care overview', 'h' => route('equipment.category', 'wet-cleaning')],
-                ]],
-                ['title' => 'Detergent Range', 'links' => [
-                    ['l' => 'L00 Laundry Eco Degreaser', 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
-                    ['l' => 'L01 Laundry Eco Powder',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
-                    ['l' => 'L02 Laundry Eco Wash',      'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
-                    ['l' => 'L03 Laundry Eco Booster',   'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
-                    ['l' => 'L04 Laundry Eco Bleach',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
-                    ['l' => 'L05 Laundry Eco Softener',  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
-                ]],
-                ['title' => 'Advice & Support', 'links' => [
-                    ['l' => 'Request product advice', 'h' => route('contact')],
-                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
-                    ['l' => 'Talk to our team', 'h' => route('contact')],
-                    ['l' => 'All documents', 'h' => route('resources')],
-                ]],
-]])
-
-{{-- 8d. CUSTOMER-FACING CERTIFICATE BLOCK --}}
-<section class="py-20 lg:py-28 bg-gray-50 border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-
-            <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer-Facing Confidence</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
-                    Show customers your laundry uses <span style="color:#148af4;">certified eco-detergents</span>
-                </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    Sites using Line 6000 eco-range detergents may be able to communicate their detergent choice with customer-facing certification material.
-                </p>
-                <a href="{{ route('contact') }}"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200">
-                    Ask About Eco-Detergent Certification
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
-                    </svg>
-                </a>
-            </div>
-
-            <div class="reveal reveal-right flex justify-center lg:justify-end">
-                <img src="{{ asset('images/pages/accessories/line6000-chemicals-certificate.jpg') }}"
-                     alt="Electrolux Professional Line 6000 eco-range detergents certificate"
-                     loading="lazy" decoding="async"
-                     class="w-full max-w-md rounded-xl shadow-lg object-contain">
-            </div>
-
-        </div>
-    </div>
-</section>
-
 {{-- 9. ACCESSORIES MINI GRID --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
@@ -762,6 +742,34 @@
         </div>
     </div>
 </section>
+
+{{-- BROCHURES BAR (slim inline) — every accessories/consumables document in one strip --}}
+@include('components.resources-bar', ['groups' => [
+                ['title' => 'Product Resources', 'links' => [
+                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+                    ['l' => 'Detergent Storage — Product Data Sheet', 'h' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Detergent storage_438918186_EN.pdf?version=1750533471'],
+                    ['l' => 'lagoon Advanced Care overview', 'h' => route('equipment.category', 'wet-cleaning')],
+                ]],
+                ['title' => 'Laundry Accessories', 'links' => [
+                    ['l' => 'Detergents, Dosing Systems & Storage leaflet', 'h' => '/pdfs/EPR-leaflet-DetergentsDosingSystems-Storage_singlepageview.pdf'],
+                    ['l' => 'Detergent Storage — Product Data Sheet', 'h' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Detergent storage_438918186_EN.pdf?version=1750533471'],
+                    ['l' => 'Ask about accessories', 'h' => route('contact')],
+                ]],
+                ['title' => 'Detergent Range', 'links' => [
+                    ['l' => 'L00 Laundry Eco Degreaser', 'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2022/02/COMBINED-L00-Laundry-Eco-Degreaser.pdf'],
+                    ['l' => 'L01 Laundry Eco Powder',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L01-Laundry-Eco-Powder.pdf'],
+                    ['l' => 'L02 Laundry Eco Wash',      'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L02-Laundry-Eco-Wash.pdf'],
+                    ['l' => 'L03 Laundry Eco Booster',   'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L03-Laundry-Eco-Booster.pdf'],
+                    ['l' => 'L04 Laundry Eco Bleach',    'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L04-Laundry-Eco-Bleach.pdf'],
+                    ['l' => 'L05 Laundry Eco Softener',  'h' => 'https://www.electroluxprofessional.com/gb/wp-content/uploads/2021/11/COMBINED-L05-Laundry-Eco-Softener.pdf'],
+                ]],
+                ['title' => 'Advice & Support', 'links' => [
+                    ['l' => 'Request product advice', 'h' => route('contact')],
+                    ['l' => 'Support & Aftercare', 'h' => route('parts-aftercare')],
+                    ['l' => 'Talk to our team', 'h' => route('contact')],
+                    ['l' => 'All documents', 'h' => route('resources')],
+                ]],
+]])
 
 {{-- 9b. LAUNDRY MANAGEMENT & CONNECTIVITY --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
@@ -834,11 +842,6 @@
                             Request Advice
                         </a>
                     </div>
-                    <a href="https://tools.electroluxprofessional.com/Mirror/Doc/ELS/BRO/EPR_Line%206000%20Washers%20%26%20Dryers%20brochure-01072025_EN.pdf"
-                       target="_blank" rel="noopener" class="{{ $lmcDocLink }}">
-                        <svg class="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v2.625a2.625 2.625 0 0 1-2.625 2.625H7.125A2.625 2.625 0 0 1 4.5 16.875V14.25M12 15V3.75m0 11.25-3.75-3.75M12 15l3.75-3.75"/></svg>
-                        View Line 6000 Brochure
-                    </a>
                 </div>
                 <div class="order-1 lg:order-2 min-h-[200px] lg:min-h-[280px]">
                     <img src="/images/pages/accessories/Featured%20Platformimage.png" alt="OnE Connected dashboard"
@@ -888,12 +891,12 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-8 reveal">
-            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Support beyond installation for <span style="color:#148af4;">dosing and laundry equipment</span>
+            <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Choose the <span style="color:#148af4;">right service</span> for your laundry equipment
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
-                Repairs, planned maintenance, Equipment Rental and aftercare for the equipment already in use.
+                Find the right level of support for what your site needs now and as requirements change.
             </p>
         </div>
 
@@ -1009,11 +1012,11 @@
     'heading' => 'Questions about <span style="color:#148af4;">compatibility, products and setup</span>',
     'faqs' => [
         ['question' => 'Can automatic dosing work with our existing washers?', 'answer' => 'It depends on the washer and the control system installed. Electrolux Professional dosing integrates with suitable washers and controls, so Irish Laundry Systems will review the equipment already on site before confirming which dosing route applies.'],
-        ['question' => 'What could automatic dosing save our laundry?', 'answer' => 'Automatic dosing matches the detergent quantity to the actual load weight and programme. That helps control chemical use, reduce overuse and waste, and keep running costs easier to plan across daily washing.'],
+        ['question' => 'What could automatic dosing save our laundry?', 'answer' => 'Automatic dosing can help reduce detergent overuse, improve consistency and give better control of chemical costs. Actual savings depend on your equipment, wash programmes, load profile and current dosing method.'],
         ['question' => 'Which detergent range suits our equipment and textiles?', 'answer' => 'Line 6000 eco-range detergents suit commercial laundry sites, myPRO Cleanstar consumables suit semi-professional setups, and lagoon Advanced Care products suit specialist wet cleaning. The right range depends on the equipment, the textiles handled and the wash results needed.'],
-        ['question' => 'Do we need dedicated detergent storage?', 'answer' => 'Detergent Storage keeps canisters, pumps and dosing equipment organised, contained and easier to reach. It helps where the laundry room needs safer handling, clearer space and more practical refilling.'],
+        ['question' => 'Do we need dedicated detergent storage?', 'answer' => 'Not always. It depends on your setup, available space and how detergents are supplied. Dedicated storage can help keep products organised, contained and easier for staff to manage.'],
         ['question' => 'Which accessories suit our laundry room?', 'answer' => 'Trolleys, racks, bags, nets and textile-care items are chosen around sorting, transport and handling. The right combination depends on how laundry moves through the room and what makes daily work easier for staff.'],
-        ['question' => 'Can Irish Laundry Systems review the complete setup?', 'answer' => 'Yes. Irish Laundry Systems can review compatibility, products, available space and the equipment already installed, then advise on suitable dosing, detergents, storage and accessories for the site.'],
+        ['question' => 'Can Irish Laundry Systems review the complete setup?', 'answer' => 'Yes. We can review dosing, detergents, storage, accessories and laundry management and connectivity alongside your equipment and site requirements.'],
     ],
 ])
 
@@ -1021,9 +1024,10 @@
 <div id="dosing-advice-form"></div>
 @include('components.cta-downtime-form', [
     'pageSource' => 'accessories_cta',
-    'heading'    => 'Match products and accessories to <span style="color:#148af4;">your laundry room</span>',
-    'body'       => 'Tell us what equipment you use and what you wash. We\'ll recommend suitable dosing, detergents, storage and accessories.',
-    'formTitle'  => 'Request Dosing, Detergent & Storage Advice',
+    'heading'    => '<span class="sm:block">Match the right products</span> <span class="sm:block">and accessories to your</span> <span class="sm:block" style="color:#148af4;">laundry room setup</span>',
+    'headingSize' => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
+    'body'       => 'Tell us what equipment you use and what you wash. We&rsquo;ll recommend suitable dosing,<br class="hidden lg:block"> detergents, storage and accessories.',
+    'formTitle'  => 'Request Product & Accessories Advice',
     'buttonText' => 'Request Advice',
 ])
 

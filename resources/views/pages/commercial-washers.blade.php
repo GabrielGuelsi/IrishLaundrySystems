@@ -174,10 +174,10 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3">
                 See how washer technology can support <span style="color:#148af4;">lower day-to-day costs</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base leading-relaxed">
                 The features below show where Electrolux Professional washers can help reduce operating inputs, drying demand and staff time.
             </p>
         </div>
@@ -593,7 +593,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1410px]:whitespace-nowrap">
                 Control detergent use and spend with <span style="color:#148af4;">automatic dosing</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base lg:text-[15px] 2xl:text-base leading-relaxed">
                 Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
             </p>
         </div>

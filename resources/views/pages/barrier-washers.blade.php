@@ -702,7 +702,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.1rem] 2xl:text-[2.6rem] leading-tight mb-3">
                 Engineering support <span style="color:#148af4;">throughout the barrier washer’s working life</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

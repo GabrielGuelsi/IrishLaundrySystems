@@ -337,7 +337,7 @@
 
         <div class="mb-16 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.7rem] leading-tight mb-4">
                 Choose equipment <span style="color:#148af4;">around your commercial laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -710,7 +710,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Protect <span style="color:#148af4;">textile quality</span> while reducing detergent waste
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
+            <p class="font-body text-gray-500 text-base lg:text-[15px] 2xl:text-base leading-relaxed">
                 Electrolux Professional dosing options can help reduce detergent overuse and support more consistent wash results when matched to the equipment and site.
             </p>
         </div>
