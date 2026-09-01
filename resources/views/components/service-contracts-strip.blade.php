@@ -16,6 +16,7 @@
     'cta2Label'    => null,
     'cta2Route'    => 'parts-aftercare',
     'textMaxW'     => 'lg:max-w-[54%]',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
 ])
 {{-- Service Contracts, Support & Aftercare strip — content left, image right --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
@@ -35,7 +36,7 @@
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">{{ $eyebrow }}</p>
         @endif
 
-        <h2 class="font-heading font-bold text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
+        <h2 class="font-heading font-bold {{ $headingSize }} leading-tight text-balance mb-4">
             <span style="color:{{ $accentFirst ? '#011E41' : '#ffffff' }};">{!! $headingLine1 !!}</span>
             <br class="hidden lg:block"><span style="color:{{ $accentFirst ? '#ffffff' : '#011E41' }};">{!! $headingLine2 !!}</span>
         </h2>

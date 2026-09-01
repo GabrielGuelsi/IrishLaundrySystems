@@ -12,16 +12,18 @@
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]" style="min-height:520px; background-color:#011E41;">
     <img src="/images/pages/one-connected/hero-oneconnected.png" alt="OnE Connected laundry dashboard"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 78% center;">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.55) 68%, rgba(1,30,65,0.25) 100%);"></div>
+    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 38%, rgba(1,30,65,0.38) 66%, rgba(1,30,65,0.05) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
-            <div class="flex-1 reveal reveal-left max-w-3xl">
+            <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
-                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
-                    Use connected laundry data to improve <span style="color:#148af4;">performance, control and compliance</span>
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl leading-tight mb-6">
+                    <span class="sm:block">Use connected laundry data to improve</span>
+                    <span class="sm:block" style="color:#148af4;">laundry performance and control</span>
                 </h1>
-                <p class="font-body text-white/80 text-base leading-relaxed mb-7 max-w-2xl">
-                    OnE Connected brings compatible Electrolux Professional laundry equipment into one digital ecosystem, helping teams monitor performance, consumption, alerts and process validation.
+                <p class="font-body text-white/80 text-base leading-relaxed mb-7 max-w-3xl">
+                    <span class="lg:block">Connect compatible Electrolux Professional laundry equipment in one digital ecosystem.</span>
+                    <span class="lg:block">Monitor performance, consumption, alerts and process validation from one place.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 mb-8">
                     <a href="#one-connected-form"
@@ -54,14 +56,12 @@
                 </h2>
             </div>
             <div class="reveal reveal-right">
-                <p class="font-body text-gray-500 text-base leading-relaxed mb-8">
-                    OnE Connected brings data from compatible Electrolux Professional equipment into one clear view, helping teams understand performance across the laundry room without checking each machine separately.
+                <p class="font-body text-gray-500 text-base leading-relaxed">
+                    <span class="lg:block">OnE Connected brings compatible equipment data together</span>
+                    <span class="lg:block">in one clear view across the laundry room,</span>
+                    <span class="lg:block">helping teams understand performance more easily</span>
+                    <span class="lg:block">without having to check each machine separately.</span>
                 </p>
-                <a href="#dashboard"
-                   class="inline-flex items-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-7 py-4 rounded-lg text-sm transition-colors duration-200">
-                    See What OnE Connected Can Monitor
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
         </div>
     </div>
@@ -72,19 +72,19 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Business Value</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Use connected laundry data to improve <span style="color:#148af4;">performance and cost control</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+                Turn operational data into <span style="color:#148af4;">clearer business decisions</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                OnE Connected helps compatible Electrolux Professional laundry equipment turn daily operation into clearer business insight.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                See how OnE Connected can support productivity, equipment use, cost control and resource use.
             </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
                 ['claim' => 'Productivity',   'label' => 'Improve production flow',  'body' => 'Use connected data to understand cycle activity, loading and output across the laundry room.', 'icon' => '173'],
                 ['claim' => 'Efficiency',     'label' => 'Use equipment better',     'body' => 'See how compatible machines are being used and where daily operation can improve.', 'icon' => '11'],
-                ['claim' => 'Running costs',  'label' => 'Make consumption visible', 'body' => 'Monitor energy, water and detergent use to support better cost decisions.', 'icon' => '166'],
-                ['claim' => 'Sustainability', 'label' => 'Reduce resource waste',    'body' => 'Use consumption data to support more efficient energy, water and detergent use.', 'icon' => '6'],
+                ['claim' => 'Running costs',  'label' => 'Make cost drivers easier to see', 'body' => 'Use connected data to understand where day-to-day operation is putting pressure on running costs.', 'icon' => '166'],
+                ['claim' => 'Sustainability', 'label' => 'Reduce resource waste',    'body' => 'Use consumption data to identify opportunities for more efficient energy, water and detergent use.', 'icon' => '6'],
             ] as $b)
             <div class="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm flex flex-col gap-4">
                 <div class="flex items-center justify-center h-32">
@@ -121,10 +121,6 @@
                 <p class="font-body text-white/75 text-base leading-relaxed mb-8 max-w-xl">
                     OnE Connected gives compatible Electrolux Professional laundry equipment one digital view of activity, consumption, alerts and process data.
                 </p>
-                <a href="{{ asset('pdfs/OnE-Connected-Quick-Guide.pdf') }}" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-white text-navy font-heading font-bold text-sm px-7 py-4 rounded-lg hover:bg-white/90 transition-colors tracking-wide">
-                    Explore the OnE Connected Dashboard
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
             </div>
             <div class="reveal">
                 <img src="/images/pages/one-connected/laptoponedashboard.png" alt="OnE Connected dashboard" class="w-full h-auto object-contain">
@@ -138,7 +134,7 @@
                 ['claim' => 'Consumption', 'label' => 'Energy, water and detergent', 'body' => 'Monitor resource use across compatible laundry equipment.',              'icon' => '252'],
                 ['claim' => 'Validation',  'label' => 'Hygiene process support',     'body' => 'Track process validation status and issues.',                            'icon' => '253'],
                 ['claim' => 'Alerts',      'label' => 'Faster response',             'body' => 'Receive notifications when a process or machine needs attention.',       'icon' => '254'],
-                ['claim' => 'Reports',     'label' => 'Data for review',             'body' => 'Keep records available for performance checks and future reference.',    'icon' => '75'],
+                ['claim' => 'Reports',     'label' => 'Data for review',             'body' => 'Use cycle logs and downloadable reports to review performance and process validation over time.',    'icon' => '75'],
             ] as $dp)
             <div class="rounded-xl border border-white/10 bg-white/[0.03] p-6">
                 <img src="/images/icons/{{ $dp['icon'] }}.png" alt="" class="w-24 h-24 object-contain mb-4">
@@ -156,18 +152,18 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Consumption Control</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.3rem] 2xl:text-[2.8rem] leading-tight mb-3">
-                Focus on the resources that affect <span style="color:#148af4;">cost and waste every day</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.1rem] 2xl:text-[2.6rem] leading-tight mb-3">
+                Use consumption data to <span style="color:#148af4;">spot where resource use needs attention</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
-                OnE Connected shows many areas of laundry performance. For cost and waste control, three resource signals matter most: energy, water and detergent use.
+            <p class="font-body text-gray-500 text-base leading-relaxed">
+                See centralised energy, water and detergent data in one place and identify patterns worth reviewing.
             </p>
         </div>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
             @foreach([
-                ['claim' => 'Energy use',    'label' => 'See where power is being used',   'body' => 'Monitor energy consumption across compatible laundry equipment and cycles.',    'icon' => '257'],
-                ['claim' => 'Water use',     'label' => 'Compare use across cycles',       'body' => 'Review water consumption patterns and see where usage may need attention.',      'icon' => '256'],
-                ['claim' => 'Detergent use', 'label' => 'Link product use to activity',    'body' => 'Track detergent consumption alongside washing activity where monitoring is available.', 'icon' => '258'],
+                ['claim' => 'Energy use',    'label' => 'See energy-use patterns',     'body' => 'Review energy consumption data and identify usage patterns that may need attention.',    'icon' => '257'],
+                ['claim' => 'Water use',     'label' => 'Review water-use patterns',   'body' => 'Review water consumption data and identify patterns where usage may need attention.',      'icon' => '256'],
+                ['claim' => 'Detergent use', 'label' => 'Track detergent consumption', 'body' => 'Use OnE Connected to review detergent consumption where detergent monitoring is available.', 'icon' => '258'],
             ] as $c)
             <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
                 <img src="/images/icons/{{ $c['icon'] }}.png" alt="" class="w-24 h-24 object-contain mb-8">
@@ -191,12 +187,13 @@
 {{-- 8. ILS ENGINEERING LAYER (image-backed strip) --}}
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Engineering Support',
-    'textMaxW'     => 'lg:max-w-[60%]',
-    'headingLine1' => 'Use OnE Connected data',
-    'headingLine2' => 'to improve maintenance <br class="hidden lg:block">and operational performance',
-    'body'         => 'Our team helps interpret OnE Connected data on consumption, alerts, equipment use and process performance, so you can make clearer decisions about maintenance, call-outs, parts, running costs and equipment care.',
+    'textMaxW'     => 'lg:max-w-[64%]',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[2.1rem] 2xl:text-[2.5rem]',
+    'headingLine1' => 'Turn connected equipment data into',
+    'headingLine2' => 'clearer maintenance decisions',
+    'body'         => 'Irish Laundry Systems can use OnE Connected data to identify<br class="hidden lg:block"> what needs attention, support maintenance planning and prepare<br class="hidden lg:block"> service interventions with clearer information from the start.',
     'image'        => '/images/pages/one-connected/engineering-support.png',
-    'imgPosition'  => '68% center',
+    'imgPosition'  => 'center center',
     'miniPoints'   => [
         ['icon' => '307', 'iconClass' => 'brightness-0 invert', 'label' => 'Timely<br>Maintenance'],
         ['icon' => '308', 'iconClass' => 'brightness-0 invert', 'label' => 'Reduced<br>Downtime'],
@@ -347,13 +344,13 @@
                 Start OnE Connected with <span style="color:#148af4;">a clear, secure setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed [@media(min-width:1425px)]:whitespace-nowrap">
-                Irish Laundry Systems reviews equipment compatibility, site connection needs and access requirements before helping your laundry move into connected monitoring.
+                A few practical checks help make sure OnE Connected is set up correctly for your site from the start.
             </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-0 reveal">
             @foreach([
                 ['icon' => '242', 'title' => 'Easy Setup',         'body' => 'Check the selected equipment, controls and site requirements before connection work begins.'],
-                ['icon' => '240', 'title' => 'Secure Connection',  'body' => 'Review network, data and access requirements so the system is prepared correctly.'],
+                ['icon' => '240', 'title' => 'Secure Connection',  'body' => 'Review network and access requirements so the connection can be prepared correctly.'],
                 ['icon' => '241', 'title' => 'Scalable Monitoring','body' => 'Start with compatible equipment and expand connected monitoring as the laundry operation grows.'],
             ] as $step)
             <div class="text-center px-6 lg:px-10 {{ $loop->first ? '' : 'lg:border-l lg:border-gray-200' }}">
@@ -387,9 +384,9 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 reveal">
             @foreach([
-                ['title' => 'OnE Connected Quick Guide',                  'body' => 'Explore compatible laundry equipment, dashboard benefits, hygiene validation, maintenance alerts and resource monitoring.', 'cta' => 'Download Quick Guide', 'href' => asset('pdfs/OnE-Connected-Quick-Guide.pdf'), 'newTab' => true],
-                ['title' => 'OnE Connected Connectivity Technical Sheet', 'body' => 'Review compatible models, required hardware, network specifications and installation requirements.', 'cta' => 'View Technical Sheet', 'href' => asset('pdfs/OnE-Connected-Connectivity-Technical-Sheet.pdf'), 'newTab' => true],
-                ['title' => 'Ask Irish Laundry Systems',                  'body' => 'Speak with our team about equipment compatibility, connection requirements and how OnE Connected could fit your laundry room.', 'cta' => 'Ask Our Team', 'href' => route('contact'), 'newTab' => false],
+                ['title' => 'OnE Connected Quick Guide',                  'body' => 'Explore compatible laundry equipment, dashboard benefits, hygiene validation, maintenance alerts and resource monitoring.', 'cta' => 'Download Quick Guide', 'href' => 'https://www.electroluxprofessional.com/wp-content/uploads/2025/11/EPR_OnEConnected-Laundry_Quick-Guide_OPL_INTERNAL_20251120_EN.pdf', 'newTab' => true],
+                ['title' => 'OnE Connected Connectivity Technical Sheet', 'body' => 'Review compatible models, required hardware, network specifications and installation requirements.', 'cta' => 'View Technical Sheet', 'href' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/EPR-Update-TechnicalSheet-Connectivity-17122025-EN.pdf?version=1768840521', 'newTab' => true],
+                ['title' => 'OnE Connected User Manual',                  'body' => 'Explore the platform, dashboard functions and day-to-day use of OnE Connected in more detail.', 'cta' => 'View User Manual', 'href' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/OM/OM_438917929AA_One%20connected%20platform_OPL_ROW_EN.pdf?version=1778079953', 'newTab' => true],
             ] as $r)
             <div class="rounded-2xl p-7 border border-gray-100 bg-gray-50 flex flex-col">
                 <h3 class="font-heading font-bold text-navy text-xl leading-snug mb-2">{{ $r['title'] }}</h3>
@@ -404,21 +401,21 @@
     </div>
 </section>
 
-{{-- 11b. CLIENT PROOF --}}
-@include('components.proof-bar')
+{{-- 11b. CLIENT PROOF — logo strip removed per request --}}
+{{-- @include('components.proof-bar') --}}
 
 {{-- 12. FAQs --}}
 @include('components.faq', [
     'eyebrow' => 'OnE Connected FAQs',
     'heading' => 'Clear answers before <span style="color:#148af4;">you connect your equipment</span>',
-    'footerNote' => 'Have a different question? Ask about OnE Connected.',
+    'footerNote' => '',
     'faqs' => [
         ['question' => 'What is OnE Connected?', 'answer' => 'OnE Connected is Electrolux Professional&rsquo;s digital ecosystem for connected equipment, giving laundry teams clearer visibility over machine activity, performance, alerts and process data.'],
-        ['question' => 'Which laundry equipment can connect?', 'answer' => 'Compatibility depends on the model, controls and production date. Selected Line 6000 and Line 5000 washers and tumble dryers, selected barrier washers and IV648xx FFS ironers are listed as compatible in Electrolux Professional materials.'],
-        ['question' => 'Do we need a site check before connecting?', 'answer' => 'Yes. Irish Laundry Systems should review the equipment, controls, network requirements and any conversion kit needs before a recommendation is made.'],
+        ['question' => 'Which laundry equipment can connect?', 'answer' => 'Compatibility depends on the model, configuration and, for some equipment, production date. Irish Laundry Systems can confirm whether your equipment can connect and whether a conversion kit is required.'],
+        ['question' => 'What needs to be checked before connecting?', 'answer' => 'Before setup, the equipment must be confirmed as compatible and the site must have suitable Wi-Fi coverage, internet connection and network configuration.'],
         ['question' => 'What can we monitor through the dashboard?', 'answer' => 'Teams can monitor machine status, cycle activity, load factor, alerts, reports, consumption data and process information from compatible connected equipment.'],
         ['question' => 'Can it help with running costs and performance?', 'answer' => 'Yes, where compatible equipment is connected. OnE Connected can show energy, water and detergent consumption, helping teams review use and make better operational decisions.'],
-        ['question' => 'Is the connection secure?', 'answer' => 'Electrolux Professional presents OnE Connected as a secure cloud-based system, with GDPR and ISO 27001 referenced in its official material. Site network and access requirements should still be reviewed before connection.'],
+        ['question' => 'Is the connection secure?', 'answer' => 'OnE Connected cloud technology is GDPR and ISO 27001 compliant for privacy and data security. The site network must also meet the required connectivity and firewall settings.'],
     ],
 ])
 
@@ -427,9 +424,9 @@
 @include('components.cta-downtime-form', [
     'pageSource' => 'one_connected_cta',
     'eyebrow'    => 'Get Connected',
-    'heading'    => '<span class="sm:block">Connect your laundry equipment</span> <span class="sm:block" style="color:#148af4;">for clearer visibility</span> <span class="sm:block" style="color:#148af4;">across your operation</span>',
+    'heading'    => '<span class="sm:block">Plan an OnE Connected setup</span> <span class="sm:block">around your equipment and</span> <span class="sm:block" style="color:#148af4;">what you need to monitor</span>',
     'headingSize' => 'text-2xl sm:text-4xl lg:text-[1.9rem] xl:text-[2.2rem] 2xl:text-[2.5rem]',
-    'body'       => 'Talk to Irish Laundry Systems about connecting compatible Electrolux Professional equipment to OnE Connected, with machine status, cycles and consumption monitored alongside hygiene validation, alerts and reports.',
+    'body'       => 'Tell us what equipment is on site and what you need to monitor.<br class="hidden lg:block"> We&rsquo;ll review compatibility and connection requirements<br class="hidden lg:block"> and recommend the right next step for your laundry.',
     'formTitle'  => 'Request an OnE Connected Review',
     'formIntro'  => 'Tell us what equipment you use and what your laundry team needs to monitor.',
     'buttonText' => 'Request an OnE Connected Review',

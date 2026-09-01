@@ -41,6 +41,7 @@
             @endforeach
         </div>
 
+        @if(!empty($footerNote))
         <div class="mt-10 text-center max-w-3xl mx-auto">
             <p class="font-body text-gray-500 text-sm mb-4">{{ $footerNote }}</p>
             <a href="{{ $ctaHref ?? route('contact') }}"
@@ -51,5 +52,6 @@
                 Ask a Question
             </a>
         </div>
+        @endif
     </div>
 </section>
