@@ -74,7 +74,7 @@
 <section class="bg-white py-24 lg:py-40">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
                     Keep capital available while <span class="text-[#148af4]">your laundry stays&nbsp;equipped</span>

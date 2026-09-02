@@ -57,16 +57,16 @@
 ══════════════════════════════════════════ -->
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Irish Laundry Systems</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
 
             <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Irish Laundry Systems</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     Engineering knowledge<br class="hidden lg:block"> that continues throughout<br class="hidden lg:block"> <span class="text-[#148af4]">the equipment’s working life</span>
                 </h2>
             </div>
 
-            <div class="lg:pt-8 space-y-5">
+            <div class="space-y-5">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                     Our engineers remain involved after installation, with maintenance, repairs and aftercare focused on keeping equipment running, protecting its value and limiting disruption to your operation.
                 </p>

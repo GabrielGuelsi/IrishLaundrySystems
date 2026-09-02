@@ -39,7 +39,7 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Care Facility Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-snug text-balance">

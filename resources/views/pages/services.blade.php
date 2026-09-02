@@ -76,7 +76,7 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-start mb-12 lg:mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
             <div>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     Service support built <br class="hidden sm:block"><span class="sm:whitespace-nowrap">around <span class="text-[#148af4]">uptime, cost control</span></span> <br class="hidden sm:block"><span class="text-[#148af4]">and equipment&nbsp;care</span>
