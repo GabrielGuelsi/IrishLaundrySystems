@@ -205,7 +205,7 @@
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-center">
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.15rem] 2xl:text-[2.4rem] leading-tight">
                     <span class="lg:whitespace-nowrap">Stay ahead of equipment&nbsp;needs</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">with <span class="text-[#148af4]">organised&nbsp;follow-up</span></span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">and ongoing&nbsp;support</span>
