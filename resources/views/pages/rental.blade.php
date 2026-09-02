@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('pageTitle', $title ?? 'Commercial Laundry Equipment Rental & Lease | Lower Upfront Cost | Irish Laundry Systems')
+@section('pageTitle', $title ?? 'Commercial Laundry Equipment Rental | Lower Upfront Cost | Irish Laundry Systems')
 @section('metaDescription', $metaDescription ?? 'Rent selected Electrolux Professional commercial laundry equipment with lower upfront cost. Supply, installation, service labour, preventive maintenance, parts and ongoing support included in one agreement.')
 
 @section('content')
