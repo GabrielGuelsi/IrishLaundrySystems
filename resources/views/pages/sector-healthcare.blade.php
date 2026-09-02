@@ -40,16 +40,16 @@
 <!-- 3. SPLIT STATEMENT -->
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-start">
+        <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Laundry Process</p>
+        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-center">
 
             <div class="reveal reveal-left">
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Laundry Process</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="lg:whitespace-nowrap">Healthcare laundry</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">from soiled linen</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">to <span style="color:#148af4;">clean linen</span></span>
                 </h2>
             </div>
 
-            <div class="reveal reveal-right lg:pt-8">
+            <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
                     <span class="lg:block">The right setup makes each stage easier for staff to manage,</span>
                     <span class="lg:block">supports consistent handling and gives the operation the level</span>
