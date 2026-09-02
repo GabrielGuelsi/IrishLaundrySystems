@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('pageTitle', $title ?? 'Commercial Laundry Equipment Rental & Lease | Lower Upfront Cost | Irish Laundry Systems')
+@section('pageTitle', $title ?? 'Commercial Laundry Equipment Rental | Lower Upfront Cost | Irish Laundry Systems')
 @section('metaDescription', $metaDescription ?? 'Rent selected Electrolux Professional commercial laundry equipment with lower upfront cost. Supply, installation, service labour, preventive maintenance, parts and ongoing support included in one agreement.')
 
 @section('content')
@@ -44,13 +44,15 @@
 
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div style="max-width: 720px;">
-                <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-5" style="opacity:1;">Equipment Rental &amp; Lease</p>
-                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
-                    Rent the laundry equipment your site needs with <span class="text-[#148af4]">lower upfront&nbsp;cost</span>
+            <div style="max-width: 820px;">
+                <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-5" style="opacity:1;">Equipment Rental</p>
+                <h1 class="rn-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl">
+                    <span class="sm:block">Rent the equipment your site needs</span>
+                    <span class="sm:block">with <span class="text-[#148af4]">lower upfront&nbsp;cost</span></span>
                 </h1>
-                <p class="rn-hero-desc font-body text-blue-200 text-base leading-relaxed mb-10 max-w-2xl text-pretty">
-                    A rental agreement gives your site access to selected Electrolux Professional equipment with supply, installation, servicing, planned maintenance and ongoing support included.
+                <p class="rn-hero-desc font-body text-blue-200 text-base leading-relaxed mb-10 max-w-3xl text-pretty">
+                    <span class="lg:block">A rental agreement gives your site access to selected Electrolux Professional equipment</span>
+                    <span class="lg:block">with supply, installation, servicing, preventive maintenance and ongoing support included.</span>
                 </p>
                 <div class="rn-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="#quote-form" data-ga-cta="hero-request-quote"
@@ -74,10 +76,12 @@
 <section class="bg-white py-24 lg:py-40">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Why Rental</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[2fr_3fr] gap-12 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance">
-                    Keep capital available while <span class="text-[#148af4]">your laundry stays&nbsp;equipped</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:block">Keep capital available</span>
+                    <span class="lg:block">while <span class="text-[#148af4]">your&nbsp;laundry</span></span>
+                    <span class="lg:block text-[#148af4]">stays&nbsp;equipped</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
@@ -111,26 +115,26 @@
              'img'   => '/images/icons/rental-gain-115.png',
              'body'  => 'Avoid one large equipment purchase and keep more budget available for other operational needs.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>'],
-            ['title' => 'Supply and installation included',
+            ['title' => 'Easier setup',
              'img'   => '/images/icons/rental-gain-119.png',
-             'body'  => 'Irish Laundry Systems supplies and installs the selected Electrolux Professional equipment as part of the rental agreement.',
+             'body'  => 'Irish Laundry Systems supplies and installs the selected equipment, reducing what your site needs to arrange before use.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-5.25m0-11.25h2.25c.621 0 1.125.504 1.125 1.125v9m-9-12v9.75M7.5 6.75v9.75"/>'],
             ['title' => 'Fixed rental fee',
              'img'   => '/images/icons/206.png',
              'scale' => '1.15',
              'body'  => 'A fixed rental fee for the contract period gives your site clearer budgeting and better control over equipment cost.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M16.5 6v.75m0 3v.75m0 3v.75m0 3V18m-9-5.25h5.25M7.5 15h3M3.375 5.25c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h17.25c.621 0 1.125-.504 1.125-1.125V6.375c0-.621-.504-1.125-1.125-1.125H3.375Z"/>'],
-            ['title' => 'Service labour included',
+            ['title' => 'Simpler service support',
              'img'   => '/images/icons/rental-gain-118.png',
-             'body'  => 'Service labour is included, giving your team less to arrange separately when support is needed.',
+             'body'  => 'Service labour is covered, giving your team less to arrange when the equipment needs attention.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26"/>'],
-            ['title' => 'Preventive maintenance and parts included',
+            ['title' => 'Predictable support costs',
              'img'   => '/images/icons/rental-gain-116.png',
-             'body'  => 'Preventive maintenance service and replacement parts are included, except filters and consumables.',
+             'body'  => 'Preventive maintenance and covered parts help reduce surprise support costs throughout the agreement.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>'],
-            ['title' => 'Support throughout the agreement',
+            ['title' => 'Support beyond installation',
              'img'   => '/images/icons/rental-gain-120.png',
-             'body'  => 'Irish Laundry Systems supports the rented equipment throughout the agreement, giving your site more peace of mind after installation.',
+             'body'  => 'Irish Laundry Systems continues to support the rented equipment after installation throughout the agreement.',
              'icon'  => '<path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>'],
         ];
         @endphp
@@ -223,9 +227,9 @@
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-start">
-            {{-- Rental / Lease --}}
+            {{-- Rental --}}
             <div class="reveal bg-white border-2 border-[#148af4] rounded-2xl p-7 lg:p-9 shadow-card flex flex-col h-full">
-                <h3 class="font-heading font-bold text-navy text-xl mb-5">Rental / Lease</h3>
+                <h3 class="font-heading font-bold text-navy text-xl mb-5">Rental</h3>
                 <ul class="space-y-3 mb-6">
                     @foreach ([
                         'No large capital outlay',
@@ -283,7 +287,7 @@
 <section class="w-full overflow-hidden bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 lg:py-20">
         <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3 reveal">How Rental Works</p>
-        <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-5 reveal lg:whitespace-nowrap" style="transition-delay:80ms;">
+        <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 reveal" style="transition-delay:80ms;">
             A clear rental process from <span class="text-[#148af4]">site review to&nbsp;agreement</span>
         </h2>
         <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl reveal text-pretty" style="transition-delay:160ms;">
@@ -293,9 +297,9 @@
 
     <div style="display:flex; flex-wrap:wrap;">
         @foreach([
-            ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us what equipment, capacity or laundry pressure needs to be covered.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
-            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review the equipment route, installation needs and agreement scope.', 'img' => '/images/shared/Strip1.jpeg'],
-            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied, installed and supported under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
+            ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us the equipment, capacity and workload your site needs the equipment to handle.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
+            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review equipment fit and installation needs, then confirm the scope of the agreement.', 'img' => '/images/shared/Strip1.jpeg'],
+            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied and installed with support under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
         ] as $step)
         <div class="rn-visit-card">
             <img src="{{ asset(ltrim($step['img'], '/')) }}" alt="{{ $step['title'] }}" loading="lazy">
@@ -316,13 +320,13 @@
 {{-- ════════════ 9. WHERE RENTAL FITS ════════════ --}}
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="max-w-5xl mb-10 lg:mb-12 reveal">
+        <div class="mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Where Rental Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2rem] leading-tight mb-5">
-                Rental for sites that want equipment access with <span class="text-[#148af4]">support built&nbsp;in</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.4rem] 2xl:text-[2.9rem] leading-tight mb-5 lg:whitespace-nowrap">
+                Rental for <span class="text-[#148af4]">different commercial laundry&nbsp;sectors</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                Rental can be a good fit for sites that need selected Electrolux Professional laundry equipment without one large capital purchase, while keeping service, parts and support included throughout the agreement.
+            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
+                Choose your sector to see how rental can support your site&rsquo;s equipment requirements.
             </p>
         </div>
 
@@ -409,10 +413,13 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:whitespace-nowrap">Confirm the equipment and&nbsp;site</span><br class="hidden lg:block"> <span class="text-[#148af4] lg:whitespace-nowrap">requirements before&nbsp;signing</span><br class="hidden lg:block"> <span class="text-[#148af4] lg:whitespace-nowrap">the Equipment Rental&nbsp;agreement</span>
+                    <span class="lg:block lg:whitespace-nowrap">Confirm equipment and&nbsp;site</span>
+                    <span class="lg:block lg:whitespace-nowrap">requirements before&nbsp;signing</span>
+                    <span class="lg:block lg:whitespace-nowrap text-[#148af4]">your rental&nbsp;agreement</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mt-5 text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews space, utilities, access and expected workload so the equipment, agreed cost and installation requirements are confirmed in advance.
+                    <span class="lg:block"><span class="whitespace-nowrap">Irish Laundry Systems</span> reviews space, utilities, access and expected workload</span>
+                    <span class="lg:block">so the equipment, agreed cost and installation requirements are confirmed in advance.</span>
                 </p>
             </div>
 
@@ -453,26 +460,28 @@
 
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">During the Agreement</p>
 
-        <h2 class="font-heading font-bold text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
-            <span style="color:#ffffff;">We supply, install and</span><br class="hidden sm:block"> <span style="color:#011E41;">take care of&nbsp;it</span>
+        <h2 class="font-heading font-bold text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            <span class="sm:block" style="color:#ffffff;">Support stays in place</span>
+            <span class="sm:block" style="color:#011E41;">throughout your&nbsp;rental</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6 max-w-2xl text-pretty">
-            With rental, Irish Laundry Systems supplies, installs and supports the equipment during the rental term. Service labour, preventive maintenance and parts cover are included, with filters and consumables excluded.
+            <span class="lg:block">After installation, Irish Laundry Systems continues to support the rented equipment,</span>
+            <span class="lg:block">so your site has ongoing service support in place throughout the agreement.</span>
         </p>
 
-        <div class="flex items-center flex-wrap 2xl:flex-nowrap gap-x-4 gap-y-2 mb-7">
-            <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-tight">Service labour<br>included</span>
+        <div class="grid grid-cols-3 gap-4 mb-7 max-w-lg">
+            <span class="flex items-center gap-2">
+                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Service<br>labour</span>
             </span>
-            <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-tight">Preventive Maintenance<br>included</span>
+            <span class="flex items-center gap-2">
+                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Preventive<br>Maintenance</span>
             </span>
-            <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/151.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);">
-                <span class="font-body text-white text-sm font-bold leading-tight">Parts<br>included</span>
+            <span class="flex items-center gap-2">
+                <img src="/images/icons/151.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
+                <span class="font-body text-white text-sm font-bold leading-tight">Covered<br>parts</span>
             </span>
         </div>
 
@@ -494,8 +503,8 @@
     'light'      => false,
     'bordered'   => false,
     'eyebrow'    => 'Customer Trust',
-    'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry rental&nbsp;&amp; support</span>',
-    'subheading' => 'Sites across Ireland choose Irish Laundry Systems for equipment supply, rental and reliable ongoing support.',
+    'heading'    => 'Trusted for commercial laundry <span class="text-[#148af4]">service and&nbsp;support</span>',
+    'subheading' => 'Sites across Ireland rely on Irish Laundry Systems for equipment supply, responsive service and dependable ongoing support.',
     'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
 ])
 <div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
@@ -539,18 +548,21 @@ $rentalFaqs = [
 ])
 
 {{-- ════════════ 14. FINAL RENTAL QUOTE FORM ════════════ --}}
-<section id="quote-form" class="bg-white py-20 lg:py-28">
+<section id="quote-form" class="bg-navy py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
 
             {{-- Left: heading + contact --}}
-            <div class="lg:col-span-5 reveal reveal-left">
+            <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Request a Quote</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Ready to discuss <span class="text-[#148af4]">rental or lease&nbsp;options</span>
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+                    <span class="lg:block">Plan equipment rental</span>
+                    <span class="lg:block">around your site and</span>
+                    <span class="lg:block text-[#148af4]">laundry&nbsp;requirements</span>
                 </h2>
-                <p class="font-body text-gray-600 text-base leading-relaxed mb-8 text-pretty">
-                    Tell us what equipment you need, what the site is dealing with and whether you are considering rental, lease or outright purchase. Irish Laundry Systems will review the requirement and confirm the right next step.
+                <p class="font-body text-blue-200 text-base leading-relaxed mb-8 text-pretty">
+                    <span class="lg:block">Tell us what equipment you need, your current setup and whether you are considering rental or outright purchase.</span>
+                    <span class="lg:block">We&rsquo;ll review the site requirements, equipment fit and agreement scope, then confirm the right next step.</span>
                 </p>
 
                 <div class="space-y-4">
@@ -558,25 +570,25 @@ $rentalFaqs = [
                         <span class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
                         </span>
-                        <span class="font-body text-navy font-bold group-hover:text-[#148af4] transition-colors">+353 1 491 0402</span>
+                        <span class="font-body text-white font-bold group-hover:text-[#148af4] transition-colors">+353 1 491 0402</span>
                     </a>
                     <a href="mailto:contact@irishlaundrysystems.com" class="flex items-center gap-3 group">
                         <span class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
                         </span>
-                        <span class="font-body text-navy font-bold group-hover:text-[#148af4] transition-colors">contact@irishlaundrysystems.com</span>
+                        <span class="font-body text-white font-bold group-hover:text-[#148af4] transition-colors">contact@irishlaundrysystems.com</span>
                     </a>
                     <div class="flex items-center gap-3">
                         <span class="w-10 h-10 rounded-lg bg-[#148af4]/10 flex items-center justify-center flex-shrink-0">
                             <svg class="w-5 h-5 text-[#148af4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
                         </span>
-                        <span class="font-body text-navy font-bold">Dublin &amp; Ireland-wide service</span>
+                        <span class="font-body text-white font-bold">Dublin &amp; Ireland-wide service</span>
                     </div>
                 </div>
             </div>
 
             {{-- Right: form card --}}
-            <div class="lg:col-span-7 reveal" style="transition-delay:120ms;">
+            <div class="reveal" style="transition-delay:120ms;">
                 <div class="bg-white rounded-2xl shadow-card p-8 lg:p-10">
                     @if (session('success'))
                     <div class="bg-green-50 border border-green-200 rounded-xl p-5 mb-6">
@@ -672,12 +684,11 @@ $rentalFaqs = [
                         </div>
 
                         <div>
-                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Are you considering rental, lease or purchase?</label>
+                            <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Are you considering rental or purchase?</label>
                             <select name="rental_intent"
                                     class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/20 cursor-pointer transition-all">
                                 <option value="">Select</option>
                                 <option value="Rental">Rental</option>
-                                <option value="Lease">Lease</option>
                                 <option value="Outright purchase">Outright purchase</option>
                                 <option value="Not sure yet">Not sure yet</option>
                             </select>

@@ -34,8 +34,8 @@ class PageController extends Controller
     public function rental()
     {
         return view('pages.rental', [
-            'title' => 'Commercial Laundry Equipment Rental & Lease Ireland | ILS',
-            'metaDescription' => 'Equipment rental and lease options for commercial laundry — managed maintenance included. Flexible terms for healthcare, hospitality and care facilities.',
+            'title' => 'Commercial Laundry Equipment Rental Ireland | ILS',
+            'metaDescription' => 'Equipment rental options for commercial laundry — managed maintenance included. Flexible terms for healthcare, hospitality and care facilities.',
         ]);
     }
 
