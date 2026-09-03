@@ -175,7 +175,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Priorities</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl leading-tight mb-3 min-[1200px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Choose the capacity and features <span style="color:#148af4;">each application requires</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -337,7 +337,7 @@
 
         <div class="mb-16 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.7rem] leading-tight mb-4">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Choose equipment <span style="color:#148af4;">around your commercial laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
