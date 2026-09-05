@@ -32,3 +32,8 @@ screenshots/
 
 # WhatsApp / misc images dropped in root
 WhatsApp Image*
+
+# Scratch / handoff artifacts (not part of the site)
+output/
+tmp/
+tools/
