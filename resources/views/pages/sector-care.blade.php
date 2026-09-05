@@ -212,7 +212,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support for the laundry equipment <span style="color:#148af4;">your care team depends on</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed">
+            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
                 Irish Laundry Systems provides repairs, preventive maintenance, equipment rental and aftercare for care facility laundry equipment.
             </p>
         </div>
