@@ -191,8 +191,8 @@
                     Keep your laundry operation&nbsp;running<br class="hidden lg:block"> with <span class="text-steel">Preventive&nbsp;Maintenance</span>
                 </h1>
 
-                <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-3xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> provides engineering support, service reporting and practical aftercare structured around the commercial laundry equipment already in operation at your site.
+                <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-none lg:max-w-[880px] text-pretty">
+                    Preventive Maintenance Contracts give commercial laundry sites planned servicing, clear reporting and experienced engineering support to keep maintenance organised around the equipment already in operation.
                 </p>
 
                 <div class="hero-btns flex flex-row flex-wrap gap-4">
@@ -227,7 +227,7 @@
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
             Proactive Maintenance
         </p>
-        <div class="grid grid-cols-1 xl:grid-cols-2 gap-12 xl:gap-20 items-start">
+        <div class="grid grid-cols-1 xl:grid-cols-[6fr_7fr] gap-12 xl:gap-8 items-center">
 
             {{-- Left column: heading --}}
             <div class="reveal">
@@ -239,10 +239,10 @@
             {{-- Right column: lead + body --}}
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    <span class="xl:block">Our service contracts are designed to help sites</span>
-                    <span class="xl:block">manage maintenance more proactively, reduce avoidable</span>
-                    <span class="xl:block">downtime and maintain reliable equipment performance</span>
-                    <span class="xl:block">across day-to-day operations.</span>
+                    <span class="xl:block">Regular planned visits give you a clearer picture of equipment condition</span>
+                    <span class="xl:block">and any recommended work, helping you decide what needs attention first,</span>
+                    <span class="xl:block">what can be scheduled around site operations and where maintenance spend</span>
+                    <span class="xl:block">should be prioritised to keep planning practical and under control.</span>
                 </p>
             </div>
 
@@ -537,13 +537,15 @@
                     Keep essential laundry equipment running with <span class="text-steel">less&nbsp;downtime</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
-                    Planned inspections help identify wear, developing faults and service needs earlier,<br class="hidden lg:block"> so your site can reduce downtime pressure, minimise disruption and<br class="hidden lg:block"> keep maintenance decisions easier to&nbsp;manage.
+                    <span class="lg:block">Regular planned inspections give you time to identify wear, prioritise servicing</span>
+                    <span class="lg:block">and schedule follow-up work before developing problems turn into</span>
+                    <span class="lg:block">more disruptive breakdowns for the laundry operation.</span>
                 </p>
                 <div class="flex flex-wrap justify-center items-center gap-x-8 gap-y-3 mb-8">
                     @foreach([
-                        ['icon' => 'ativo-8',  'src' => '/images/icons/rental-gain-119.png', 'style' => 'filter:brightness(0) invert(1);', 'label' => 'Spot issues<br>earlier'],
-                        ['icon' => 'ativo-4',  'label' => 'Keep equipment<br>running'],
-                        ['icon' => 'ativo-7',  'src' => '/images/icons/203.png', 'style' => 'filter:brightness(0) invert(1);transform:translateX(-6px) scale(1.3);', 'label' => 'Minimise<br>downtime'],
+                        ['icon' => 'ativo-8',  'src' => '/images/icons/rental-gain-119.png', 'style' => 'filter:brightness(0) invert(1);', 'label' => 'Plan<br>servicing'],
+                        ['icon' => 'ativo-4',  'label' => 'Prioritise<br>work'],
+                        ['icon' => 'ativo-7',  'src' => '/images/icons/203.png', 'style' => 'filter:brightness(0) invert(1);transform:translateX(-6px) scale(1.3);', 'label' => 'Reduce<br>breakdowns'],
                     ] as $feat)
                     <div class="flex items-center gap-2.5 text-left">
                         <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" style="width:3.5rem;height:3.5rem;flex-shrink:0;{{ $feat['style'] ?? '' }}" alt="">
@@ -762,7 +764,7 @@ $faqs = [
     ],
     [
         'question' => 'Can this support insurance or compliance requirements?',
-        'answer'   => 'Yes. Maintenance reports and service records can support insurance or compliance requirements where evidence of planned maintenance is required.',
+        'answer'   => 'Maintenance reports and service records may support insurance or compliance requirements where evidence of planned maintenance is required. Your insurer or relevant compliance body should confirm the specific records your site needs.',
     ],
     [
         'question' => 'Can you provide support between visits?',
