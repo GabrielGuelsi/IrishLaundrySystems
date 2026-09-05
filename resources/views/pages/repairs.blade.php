@@ -164,7 +164,7 @@
                             <span class="sm:block">when equipment needs attention</span>
                         </h2>
                         <p class="font-body text-white/80 text-base leading-relaxed [@media(min-width:1500px)]:whitespace-nowrap">
-                            When equipment stops or develops a fault, our team assesses the issue and arranges the repair response.
+                            When equipment develops a fault, we assess the issue and arrange the repair.
                         </p>
                         <p class="font-body text-white/60 text-sm mt-2.5 text-pretty">
                             Contract customers receive preferential call-out rates and scheduling.
@@ -427,9 +427,9 @@ $expectSteps = [
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t border-white/10">
                 @foreach([
                     ['icon' => 'repairs-fault-patterns',     'title' => 'Fault patterns',     'body' => 'Identify what keeps coming back.'],
-                    ['icon' => 'home-rental-maintained',     'title' => 'Service history',    'body' => 'Review previous visits, parts and fault notes.'],
+                    ['icon' => 'home-rental-maintained',     'title' => 'Service history',    'body' => 'Review past visits, parts and faults.'],
                     ['icon' => 'repairs-cost-control',       'title' => 'Cost control',       'body' => 'Reduce repeated surprise repair costs.'],
-                    ['icon' => 'repairs-maintenance-review', 'title' => 'Maintenance review', 'body' => 'Consider preventive maintenance as the next step.'],
+                    ['icon' => 'repairs-maintenance-review', 'title' => 'Maintenance review', 'body' => 'Consider preventive maintenance.'],
                 ] as $mp)
                 <div>
                     <div class="mb-5">
