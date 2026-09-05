@@ -72,7 +72,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Business Value</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Turn operational data into <span style="color:#148af4;">clearer business decisions</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -218,7 +218,7 @@
     <div class="relative z-10 max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-12 lg:mb-16 reveal text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Portfolio Compatibility</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-4xl 2xl:text-[2.6rem] leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Compatible across selected Electrolux Professional equipment
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

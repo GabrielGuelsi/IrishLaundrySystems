@@ -78,7 +78,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Wet Cleaning</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.8rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Expand your garment care offer with <span style="color:#148af4;">wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -258,7 +258,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Complete Wet Cleaning Setup</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Bring every part of wet cleaning <span style="color:#148af4;">into one complete setup</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -570,7 +570,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dosing Intelligence</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Automatic dosing for <span style="color:#148af4;">better control of every load</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">

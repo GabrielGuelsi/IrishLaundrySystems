@@ -79,7 +79,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironing &amp; Finishing Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Compare equipment types for <span style="color:#148af4;">different finishing needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -311,7 +311,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Ironer Range</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Browse ironers by <span style="color:#148af4;">cylinder size and automation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -585,7 +585,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Keep commercial ironers <span style="color:#148af4;">supported beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
