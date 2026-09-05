@@ -411,7 +411,7 @@
                 ['icon' => 'ativo-7', 'src' => '/images/icons/61.png', 'sc' => '1.06', 'label' => 'Budget<br>Control'],
             ] as $feat)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" class="h-14 w-auto object-contain" style="transform:scale({{ $feat['sc'] ?? '1' }});" alt="">
+                <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}" class="h-14 w-14 object-contain" style="transform:scale({{ $feat['sc'] ?? '1' }});" alt="">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </span>
             @endforeach

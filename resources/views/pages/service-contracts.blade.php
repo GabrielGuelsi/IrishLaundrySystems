@@ -231,7 +231,7 @@
 
             {{-- Left column: heading --}}
             <div class="reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl xl:text-[2.5rem] 2xl:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
                     <span class="xl:whitespace-nowrap">See what needs&nbsp;attention</span><br class="hidden xl:block"><span class="xl:whitespace-nowrap">and <span class="text-steel">plan&nbsp;maintenance</span></span><br class="hidden xl:block"><span class="xl:whitespace-nowrap">before it becomes&nbsp;urgent</span>
                 </h2>
             </div>
@@ -825,7 +825,7 @@ $faqs = [
             ] as $i => $feat)
             <span class="flex items-center gap-2 flex-shrink-0">
                 <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
-                     class="h-14 w-auto object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
+                     class="h-14 w-14 object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </span>
             @endforeach

@@ -28,7 +28,7 @@ Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
 Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
-Route::get('/brand-protection', [PageController::class, 'brandProtection'])->name('brand-protection');
+Route::redirect('/brand-protection', '/', 301);
 Route::get('/request-assessment', [PageController::class, 'requestAssessment'])->name('request-assessment');
 Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
 

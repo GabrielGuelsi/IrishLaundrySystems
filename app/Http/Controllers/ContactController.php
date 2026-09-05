@@ -24,7 +24,7 @@ class ContactController extends Controller
             'model_number'    => 'nullable|string|max:120',
             'serial_number'   => 'nullable|string|max:120',
             'part_required'   => 'nullable|string|max:255',
-            'request_type'  => 'required|string|in:contract,rental,breakdown,parts,equipment_quote',
+            'request_type'  => 'required|string|in:contract,rental,breakdown,parts,equipment_quote,other',
             'urgency'       => 'required|string|in:today,24_48h,this_week,planning',
             'message'           => 'nullable|string|max:2000',
             'gdpr_consent'      => 'required|accepted',
