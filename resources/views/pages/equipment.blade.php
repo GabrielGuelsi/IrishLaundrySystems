@@ -417,7 +417,7 @@
                 ['src' => '/images/icons/208.png', 'style' => 'transform:scale(0.75);', 'label' => 'Plan the<br>Setup'],
             ] as $feat)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="{{ $feat['src'] }}" class="h-14 w-auto object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
+                <img src="{{ $feat['src'] }}" class="h-14 w-14 object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </span>
             @endforeach

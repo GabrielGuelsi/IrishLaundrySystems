@@ -472,15 +472,15 @@
 
         <div class="grid grid-cols-3 gap-4 mb-7 max-w-lg">
             <span class="flex items-center gap-2">
-                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
+                <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-14 object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">Service<br>labour</span>
             </span>
             <span class="flex items-center gap-2">
-                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
+                <img src="/images/icons/rental-gain-116.png" alt="" aria-hidden="true" class="h-14 w-14 object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">Preventive<br>Maintenance</span>
             </span>
             <span class="flex items-center gap-2">
-                <img src="/images/icons/151.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
+                <img src="/images/icons/151.png" alt="" aria-hidden="true" class="h-14 w-14 object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">Covered<br>parts</span>
             </span>
         </div>

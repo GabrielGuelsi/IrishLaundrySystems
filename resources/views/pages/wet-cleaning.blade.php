@@ -498,7 +498,7 @@
                 ['icon' => '151', 'label' => 'Aftercare<br>support', 'sc' => 'scale-[0.84] -translate-y-[0.9%]'],
             ] as $pt)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-14 object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @endforeach

@@ -825,7 +825,7 @@ $faqs = [
             ] as $i => $feat)
             <span class="flex items-center gap-2 flex-shrink-0">
                 <img src="{{ $feat['src'] ?? '/images/icons/brand-white/'.$feat['icon'].'.svg' }}"
-                     class="h-14 w-auto object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
+                     class="h-14 w-14 object-contain" style="{{ $feat['style'] ?? '' }}" alt="">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </span>
             @endforeach

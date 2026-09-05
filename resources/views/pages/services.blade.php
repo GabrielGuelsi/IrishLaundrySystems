@@ -407,7 +407,7 @@
                 ['img' => '/images/icons/home-maintenance-disruption.png', 'label' => 'Keep laundry<br>moving'],
             ] as $i => $feat)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="{{ $feat['img'] }}" class="h-14 w-auto object-contain" style="filter:brightness(0) invert(1);" alt="">
+                <img src="{{ $feat['img'] }}" class="h-14 w-14 object-contain" style="filter:brightness(0) invert(1);" alt="">
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $feat['label'] !!}</span>
             </span>
             @endforeach

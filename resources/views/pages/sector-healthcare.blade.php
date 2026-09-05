@@ -263,7 +263,7 @@
         <!-- Heading -->
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight text-balance mb-6">
                 Keep healthcare laundry moving with <span style="color:#148af4;">the right service behind it</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

@@ -139,7 +139,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight text-balance mb-3">
                 Technology designed for <span style="color:#148af4;">clearer control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">

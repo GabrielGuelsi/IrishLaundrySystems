@@ -434,7 +434,7 @@
                 ['icon' => '196', 'label' => 'Cabinet choice', 'sc' => 'scale-[0.991]'],
             ] as $pt)
             <span class="flex items-center gap-2 flex-shrink-0">
-                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-auto object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
+                <img src="/images/icons/{{ $pt['icon'] }}.png" alt="" aria-hidden="true" class="h-14 w-14 object-contain {{ $pt['sc'] ?? '' }}" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">{{ $pt['label'] }}</span>
             </span>
             @endforeach
