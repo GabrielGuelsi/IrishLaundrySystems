@@ -15,10 +15,12 @@ class ContactRequest extends Mailable
     use Queueable, SerializesModels;
 
     public array $data;
+    public array $photos;
 
-    public function __construct(array $data)
+    public function __construct(array $data, array $photos = [])
     {
         $this->data = $data;
+        $this->photos = $photos;
     }
 
     public function envelope(): Envelope
@@ -43,6 +45,10 @@ class ContactRequest extends Mailable
 
     public function attachments(): array
     {
-        return [];
+        return collect($this->photos)
+            ->map(fn ($file) => Attachment::fromPath($file->getRealPath())
+                ->as($file->getClientOriginalName())
+                ->withMime($file->getClientMimeType()))
+            ->all();
     }
 }
