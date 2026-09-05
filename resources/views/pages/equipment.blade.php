@@ -72,7 +72,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_4fr] gap-8 lg:gap-8 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[1.95rem] 2xl:text-[2.3rem] leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
                     <span class="lg:whitespace-nowrap">Choose equipment around</span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">how your laundry works</span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">and the workload it handles</span>
                 </h2>
             </div>

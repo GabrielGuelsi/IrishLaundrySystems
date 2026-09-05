@@ -231,7 +231,7 @@
 
             {{-- Left column: heading --}}
             <div class="reveal">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl xl:text-[2.5rem] 2xl:text-5xl leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
                     <span class="xl:whitespace-nowrap">See what needs&nbsp;attention</span><br class="hidden xl:block"><span class="xl:whitespace-nowrap">and <span class="text-steel">plan&nbsp;maintenance</span></span><br class="hidden xl:block"><span class="xl:whitespace-nowrap">before it becomes&nbsp;urgent</span>
                 </h2>
             </div>
