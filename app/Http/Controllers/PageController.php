@@ -251,14 +251,6 @@ class PageController extends Controller
         ]);
     }
 
-    public function brandProtection()
-    {
-        return view('pages.brand-protection', [
-            'title' => 'Irish Laundry Systems (ILS) — Official Website',
-            'metaDescription' => 'This is the official website of Irish Laundry Systems (ILS), the commercial laundry engineering specialists based in Ireland.',
-        ]);
-    }
-
     public function requestAssessment()
     {
         return view('pages.request-assessment', [
