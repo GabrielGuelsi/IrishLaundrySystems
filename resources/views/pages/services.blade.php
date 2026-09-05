@@ -41,12 +41,14 @@
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services Overview</p>
 
-                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
-                    Keep commercial laundry equipment <span class="text-[#148af4]">running with the right service&nbsp;support</span>
+                <h1 class="svc-hero-title font-heading font-bold text-white leading-[1.05] tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl">
+                    <span class="sm:block">Keep commercial laundry running</span>
+                    <span class="sm:block text-[#148af4]">with the right service&nbsp;support</span>
                 </h1>
 
                 <p class="svc-hero-desc font-body text-white leading-relaxed mb-10 text-base max-w-2xl text-pretty">
-                    <span class="whitespace-nowrap">Irish Laundry Systems</span> provides repairs, Preventive Maintenance,<br class="hidden lg:block"> equipment rental and aftercare for commercial laundry equipment<br class="hidden lg:block"> across Dublin and Ireland.
+                    <span class="lg:block">Repairs, Preventive Maintenance, equipment rental and aftercare</span>
+                    <span class="lg:block">for commercial laundry equipment across Dublin and Ireland.</span>
                 </p>
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
@@ -76,18 +78,22 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center mb-12 lg:mb-16">
+        <div class="grid grid-cols-1 lg:grid-cols-[5fr_6fr] gap-12 lg:gap-10 items-center mb-12 lg:mb-16">
             <div>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    Service support built <br class="hidden sm:block"><span class="sm:whitespace-nowrap">around <span class="text-[#148af4]">uptime, cost control</span></span> <br class="hidden sm:block"><span class="text-[#148af4]">and equipment&nbsp;care</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="sm:block">Service support built around</span>
+                    <span class="sm:block text-[#148af4]">uptime, cost control</span>
+                    <span class="sm:block text-[#148af4]">and equipment&nbsp;care</span>
                 </h2>
             </div>
-            <div class="flex flex-col gap-4 lg:pl-[10%]">
+            <div class="flex flex-col gap-4">
                 <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Repairs, planned maintenance, equipment rental and aftercare all affect uptime, service costs and equipment value.
+                    <span class="lg:block">Service needs change as equipment ages, workloads shift and</span>
+                    <span class="lg:block">unexpected faults put pressure on site operations.</span>
                 </p>
                 <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
-                    Irish Laundry Systems keeps those service needs under control for commercial laundry operations across Dublin and Ireland.
+                    <span class="lg:block">Irish Laundry Systems helps you choose the right support, minimise</span>
+                    <span class="lg:block">disruption and keep service costs easier to plan and control.</span>
                 </p>
             </div>
         </div>
@@ -248,11 +254,12 @@
         <div class="text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Response</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
-                Report the service need and <span class="text-[#148af4]">we'll take care of the&nbsp;response</span>
+                <span class="sm:block">Tell us what your site needs</span>
+                <span class="sm:block text-[#148af4]">and we&rsquo;ll confirm the right next&nbsp;step</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed max-w-6xl mx-auto text-pretty">
-                <span class="sm:block">Share the equipment details, site access and service history.</span>
-                <span class="sm:block"><span>Irish Laundry Systems</span> will review the request, arrange the required service and keep the service record clear.</span>
+                <span class="sm:block">Share the equipment, site and service details relevant to your enquiry.</span>
+                <span class="sm:block">We&rsquo;ll review what matters and confirm how the request should move forward.</span>
             </p>
         </div>
     </div>
@@ -261,10 +268,10 @@
 <section class="w-full overflow-hidden">
     <div style="display:flex; flex-wrap:wrap;">
         @foreach ([
-            ['num' => '01.', 'title' => 'Report the service need', 'body' => 'Tell us the equipment type, fault, maintenance requirement or equipment rental enquiry.', 'img' => '/images/pages/services/services-how-01.jpg'],
-            ['num' => '02.', 'title' => 'Confirm the details',     'body' => 'Equipment condition, access details and service history are reviewed before the response is arranged.', 'img' => '/images/pages/services/services-how-02.jpg'],
-            ['num' => '03.', 'title' => 'Arrange the service',     'body' => 'Call-out, inspection, equipment rental setup, installation or follow-up service is arranged according to the requirement.', 'img' => '/images/shared/rentalstripimage.jpg', 'pos' => '20% center'],
-            ['num' => '04.', 'title' => 'Keep records clear',      'body' => 'Service history, parts information and aftercare notes support future equipment decisions.', 'img' => '/images/shared/service-contracts-hero.png', 'pos' => '70% center'],
+            ['num' => '01.', 'title' => 'Share the service need', 'body' => 'Tell us what is happening with the equipment or what support your site requires.', 'img' => '/images/pages/services/services-how-01.jpg'],
+            ['num' => '02.', 'title' => 'Review the details',     'body' => 'We review the equipment, site requirements and any relevant service information.', 'img' => '/images/pages/services/services-how-02.jpg'],
+            ['num' => '03.', 'title' => 'Confirm the scope',      'body' => 'We clarify what support is required and what needs to be arranged next.', 'img' => '/images/shared/rentalstripimage.jpg', 'pos' => '20% center'],
+            ['num' => '04.', 'title' => 'Arrange the next step',  'body' => 'We confirm the appropriate visit, proposal, service action or follow-up for your enquiry.', 'img' => '/images/shared/service-contracts-hero.png', 'pos' => '70% center'],
         ] as $card)
         <div class="svc-gallery-card">
             <img src="{{ asset(ltrim($card['img'], '/')) }}" alt="{{ $card['title'] }}" loading="lazy"
@@ -289,14 +296,18 @@
 <!-- 6. INSTALLED EQUIPMENT / ELECTROLUX PROFESSIONAL PARTNERSHIP -->
 <section id="parts-aftercare" class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+        <div class="grid grid-cols-1 lg:grid-cols-[11fr_9fr] gap-12 lg:gap-12 items-start">
             <div>
-                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Installed Equipment</p>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    Keep equipment already in use <span class="text-[#148af4]">service-ready</span>
+                <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Partnership</p>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.5rem] leading-tight mb-5">
+                    <span class="lg:block">Service strengthened by Electrolux&nbsp;Professional</span>
+                    <span class="lg:block text-[#148af4]">product knowledge and genuine parts&nbsp;access</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
-                    Commercial laundry equipment still needs support after installation.<br class="hidden lg:block"> Irish Laundry Systems reviews service history, parts needs, maintenance timing<br class="hidden lg:block"> and replacement planning for equipment already working on site.
+                    <span class="lg:block">Access to genuine Electrolux Professional parts and product knowledge</span>
+                    <span class="lg:block">supports the way our engineers service and maintain your equipment.</span>
+                    <span class="lg:block">That means better-informed decisions around repairs, maintenance</span>
+                    <span class="lg:block">and aftercare throughout the working life of the equipment.</span>
                 </p>
                 <a href="{{ route('electrolux') }}"
                    class="inline-flex items-center gap-2 text-steel hover:text-navy font-body font-bold text-sm transition-colors">
@@ -348,7 +359,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mx-auto text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Trust</p>
-            <h2 class="font-heading font-bold text-navy text-3xl sm:text-4xl lg:text-[2.5rem] leading-tight mb-4 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
                 Trusted for <span class="text-[#148af4]">commercial laundry service&nbsp;support</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed lg:whitespace-nowrap">
