@@ -35,14 +35,20 @@ class ContactController extends Controller
             'utm_content'   => 'nullable|string|max:100',
             'utm_term'      => 'nullable|string|max:100',
             'page_source'   => 'nullable|string|max:255',
+            'photos'        => 'nullable|array|max:5',
+            'photos.*'      => 'image|mimes:jpeg,jpg,png,webp|max:8192',
         ]);
 
-        // Persist to database
-        ContactSubmission::create($validated);
+        // Uploaded photos are emailed as attachments, not stored on the submission row.
+        $photos  = $request->file('photos', []);
+        $rowData = collect($validated)->except('photos')->all();
 
-        // Send email notification
+        // Persist to database
+        ContactSubmission::create($rowData);
+
+        // Send email notification (with any uploaded photos attached)
         Mail::to(config('mail.to_address', 'contact@irishlaundrysystems.com'))
-            ->send(new ContactRequest($validated));
+            ->send(new ContactRequest($rowData, $photos));
 
         return back()->with(
             'success',

@@ -205,18 +205,20 @@
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Customer Care</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-12 items-center">
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.15rem] 2xl:text-[2.4rem] leading-tight">
-                    <span class="lg:whitespace-nowrap">Stay ahead of equipment&nbsp;needs</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">with <span class="text-[#148af4]">organised&nbsp;follow-up</span></span><br class="hidden lg:block"><span class="text-[#148af4] lg:whitespace-nowrap">and ongoing&nbsp;support</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
+                    <span class="lg:block">Organised follow-up</span>
+                    <span class="lg:block">makes future equipment</span>
+                    <span class="lg:block text-[#148af4]">decisions clearer</span>
                 </h2>
             </div>
             <div class="flex flex-col gap-4 reveal" style="transition-delay:120ms;">
                 <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                    <span class="lg:block">After installation, repair, maintenance or Equipment Rental,</span>
-                    <span class="lg:block">equipment still needs the right follow-up. Irish Laundry Systems</span>
-                    <span class="lg:block">keeps service records, parts needs and equipment condition organised</span>
-                    <span class="lg:block">for better service decisions over time.</span>
+                    <span class="lg:block">Once equipment is in use, future support should not</span>
+                    <span class="lg:block">start from scratch. Keeping the right information together</span>
+                    <span class="lg:block">helps your site understand what each machine needs next</span>
+                    <span class="lg:block">and choose the right response when support is needed.</span>
                 </p>
             </div>
         </div>
@@ -235,7 +237,7 @@
                 Support &amp; Aftercare for <span class="text-[#148af4]">equipment already in use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
-                Irish Laundry Systems keeps service records, parts information and equipment condition ready for future repairs, maintenance visits and equipment decisions.
+                See the key areas that help make ongoing equipment support easier to manage.
             </p>
         </div>
 
@@ -429,6 +431,11 @@
 </section>
 
 {{-- ════════════════════════════════════════════════════════════════════════
+     ONE CONNECTED — universal strip
+     ════════════════════════════════════════════════════════════════════════ --}}
+@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected', 'ctaHref' => route('equipment.category', 'one-connected').'#one-connected-form'])
+
+{{-- ════════════════════════════════════════════════════════════════════════
      9 + 10. TESTIMONIAL / PROOF + TRUSTED BY LOGO STRIP
      ════════════════════════════════════════════════════════════════════════ --}}
 @include('components.testimonials', [
@@ -440,11 +447,6 @@
     'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
 ])
 @include('components.proof-bar')
-
-{{-- ════════════════════════════════════════════════════════════════════════
-     ONE CONNECTED — universal strip
-     ════════════════════════════════════════════════════════════════════════ --}}
-@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected', 'ctaHref' => route('equipment.category', 'one-connected').'#one-connected-form'])
 
 {{-- ════════════════════════════════════════════════════════════════════════
      11. SUPPORT & AFTERCARE FAQs
@@ -486,16 +488,17 @@ $aftercareFaqs = [
 {{-- ════════════════════════════════════════════════════════════════════════
      12. SUPPORT & AFTERCARE ENQUIRY FORM
      ════════════════════════════════════════════════════════════════════════ --}}
-<section id="aftercare-form" class="bg-white py-20 lg:py-28">
-    <div class="max-w-4xl mx-auto px-6 sm:px-10">
+<section id="aftercare-form" class="bg-navy py-20 lg:py-28">
+    <div class="max-w-5xl mx-auto px-6 sm:px-10">
 
-        <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12">
+        <div class="max-w-5xl mx-auto text-center mb-10 lg:mb-12">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Support &amp; Aftercare</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                Need aftercare for<br class="hidden lg:block"> <span class="text-[#148af4]">commercial laundry&nbsp;equipment?</span>
+            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                <span class="lg:block">Need aftercare for commercial laundry</span>
+                <span class="lg:block text-[#148af4]">equipment already in use?</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Tell us what equipment is on site and what needs attention.<br class="hidden lg:block"> <span class="whitespace-nowrap">Irish Laundry Systems</span> will review the request and respond with the appropriate aftercare recommendation.
+            <p class="font-body text-blue-200 text-base leading-relaxed text-pretty">
+                Tell us what equipment is on site and what needs attention. We&rsquo;ll recommend the right support.
             </p>
         </div>
 
@@ -511,7 +514,6 @@ $aftercareFaqs = [
                         <p class="font-heading font-bold text-green-700 text-sm mb-1">Request received</p>
                         <p class="font-body text-gray-700 text-sm leading-relaxed">
                             {{ session('success') }}
-                            If you have a photo of the equipment or rating plate, reply to our email with it attached so we can review it faster.
                         </p>
                     </div>
                 </div>
@@ -532,9 +534,10 @@ $aftercareFaqs = [
 
             <p class="font-body text-gray-500 text-sm mb-6">We aim to respond within 24 hours.</p>
 
-            <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5" data-utm>
+            <form action="{{ route('contact.submit') }}" method="POST" class="space-y-5" data-utm enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="request_type" value="parts">
+                <input type="hidden" name="urgency" value="planning">
                 <input type="hidden" name="utm_source">
                 <input type="hidden" name="utm_medium">
                 <input type="hidden" name="utm_campaign">
@@ -642,17 +645,13 @@ $aftercareFaqs = [
                     </div>
                 </div>
 
-                {{-- Message --}}
+                {{-- Photo upload --}}
                 <div>
-                    <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Message</label>
-                    <textarea name="message" rows="4" placeholder="Anything else that would help us review the equipment, history and next step."
-                              class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-800 focus:outline-none focus:ring-2 focus:ring-navy/20 placeholder-gray-400 resize-none leading-relaxed transition-all">{{ old('message') }}</textarea>
+                    <label class="block font-body text-sm font-light text-gray-700 mb-1.5">Photos <span class="text-gray-400">(optional)</span></label>
+                    <input type="file" name="photos[]" accept="image/*" multiple
+                           class="w-full bg-[#f7f7f5] border-0 rounded-lg px-4 py-3 text-sm font-body text-gray-700 file:mr-4 file:rounded-md file:border-0 file:bg-navy file:px-4 file:py-2 file:text-white file:font-body file:font-bold file:cursor-pointer focus:outline-none focus:ring-2 focus:ring-navy/20 transition-all">
+                    <p class="font-body text-gray-400 text-xs leading-relaxed mt-1.5">Add photos of the machine, rating plate or fault area — up to 5 images, 8&nbsp;MB each.</p>
                 </div>
-
-                {{-- Photo note --}}
-                <p class="font-body text-gray-500 text-xs leading-relaxed">
-                    Photo upload, if possible: once we reply, send photos of the machine, rating plate or fault area as an email attachment — it helps us review the equipment faster.
-                </p>
 
                 {{-- GDPR --}}
                 <div class="space-y-2">

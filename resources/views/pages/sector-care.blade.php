@@ -15,8 +15,8 @@
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                    <span class="sm:block">Care facility laundry designed for</span>
-                    <span class="sm:block">resident care, <span style="color:#148af4;">hygiene and daily efficiency</span></span>
+                    <span class="sm:block">Care facility laundry built around</span>
+                    <span class="sm:block" style="color:#148af4;">resident care, hygiene and efficiency</span>
                 </h1>
                 <p class="font-body text-gray-500 text-base leading-relaxed mb-8 max-w-3xl">
                     Irish Laundry Systems supplies, installs and supports Electrolux Professional <br class="hidden lg:block">equipment for care homes, nursing homes and residential care facilities.
@@ -39,22 +39,22 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Care Facility Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div class="grid grid-cols-1 lg:grid-cols-[3fr_4fr] gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-snug text-balance">
-                    <span class="sm:block">The right setup for</span>
-                    <span class="sm:block" style="color:#148af4;">your space, workload</span>
-                    <span class="sm:block" style="color:#148af4;">and hygiene needs</span>
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                    <span class="lg:block">The right laundry setup for</span>
+                    <span class="lg:block" style="color:#148af4;">your space, daily workload</span>
+                    <span class="lg:block" style="color:#148af4;">and hygiene requirements</span>
                 </h2>
             </div>
 
             <div class="reveal reveal-right">
                 <p class="font-body text-gray-500 text-base leading-relaxed">
-                    <span class="lg:block">We assess capacity, room layout</span>
-                    <span class="lg:block">and hygiene requirements before</span>
-                    <span class="lg:block">defining the equipment and</span>
-                    <span class="lg:block">configuration for your facility.</span>
+                    <span class="lg:block">We assess capacity, room layout, daily workload and hygiene requirements</span>
+                    <span class="lg:block">before recommending the equipment and configuration for your facility,</span>
+                    <span class="lg:block">so staff have a practical setup they can manage consistently</span>
+                    <span class="lg:block">without unnecessary complexity in the daily laundry process.</span>
                 </p>
             </div>
 
@@ -139,7 +139,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.3rem] 2xl:text-[2.8rem] leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology designed for <span style="color:#148af4;">clearer control and easier handling</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
@@ -209,7 +209,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.7rem] leading-tight mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Support for the laundry equipment <span style="color:#148af4;">your care team depends on</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

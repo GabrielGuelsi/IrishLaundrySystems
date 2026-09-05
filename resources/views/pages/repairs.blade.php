@@ -82,7 +82,7 @@
                     Commercial laundry repair support<br class="hidden lg:block"> to keep <span class="text-[#148af4]">essential equipment&nbsp;running</span>
                 </h1>
 
-                <p class="hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-2xl text-pretty">
+                <p class="hero-desc font-body text-white/80 leading-relaxed mb-8 text-base max-w-3xl text-pretty">
                     <span class="whitespace-nowrap">Irish Laundry Systems</span> provides call-out and repair support for commercial washers, dryers, ironers and finishing equipment across Ireland. Report the fault and we&rsquo;ll arrange the repair&nbsp;response.
                 </p>
 
@@ -111,12 +111,12 @@
 
 <!-- FIRST RESPONSE -->
 <section class="py-20 lg:py-28 bg-white">
-    <div class="max-w-5xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
+    <div class="max-w-6xl mx-auto px-6 sm:px-10 lg:px-20 text-center">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">First Response</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
             Report the fault once, with <span class="text-[#148af4]">the details that&nbsp;matter</span>
         </h2>
-        <p class="font-body text-gray-500 text-base leading-relaxed mb-12 lg:mb-16 max-w-3xl mx-auto text-pretty">
+        <p class="font-body text-gray-500 text-base leading-relaxed mb-12 lg:mb-16 max-w-5xl mx-auto text-pretty">
             Machine type, fault symptoms, access details and service history help our engineers prepare before the visit. If the same fault keeps returning, the service visit can also identify whether maintenance, parts or replacement should be&nbsp;considered.
         </p>
 
@@ -142,7 +142,7 @@
 </section>
 
 <!-- CALL-OUT SUPPORT STRIP -->
-<section class="py-20 lg:py-28 bg-white">
+<section class="pt-16 lg:pt-20 pb-14 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="relative bg-navy rounded-2xl overflow-hidden p-8 sm:p-10 lg:p-14 shadow-xl -mt-10 lg:-mt-14">
 
@@ -164,7 +164,7 @@
                             <span class="sm:block">when equipment needs attention</span>
                         </h2>
                         <p class="font-body text-white/80 text-base leading-relaxed [@media(min-width:1500px)]:whitespace-nowrap">
-                            Active faults are reviewed by urgency, site impact and equipment details before a call-out is arranged.
+                            When equipment develops a fault, we assess the issue and arrange the repair.
                         </p>
                         <p class="font-body text-white/60 text-sm mt-2.5 text-pretty">
                             Contract customers receive preferential call-out rates and scheduling.
@@ -214,8 +214,8 @@
 @php
 $expectSteps = [
     [
-        'title'    => 'Report the fault',
-        'desc'     => 'Send the machine type, symptoms, site access and&nbsp;urgency.',
+        'title'    => 'Confirm the request',
+        'desc'     => 'We confirm the equipment, site and contact details needed to move the call-out&nbsp;forward.',
         'image'    => '/images/pages/services/repairs-how-01.jpg',
         'alt'      => 'Site team sharing commercial laundry fault details to request a call-out',
         'meta'     => 'Step 1',
@@ -252,7 +252,7 @@ $expectSteps = [
     <div class="relative max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Call-Out Process</p>
-            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From service visit to <span class="text-[#148af4]">repair&nbsp;action</span></h2>
+            <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From call-out request to <span class="text-[#148af4]">repair&nbsp;action</span></h2>
             <p class="font-body text-blue-200 text-base leading-relaxed mx-auto lg:whitespace-nowrap">Each call-out is focused on diagnosis, repair requirements and the best action for the equipment.</p>
         </div>
 
@@ -359,8 +359,8 @@ $expectSteps = [
                     </div>
                     <div>
                         <img src="/images/icons/repairs-short-term.png" alt="" aria-hidden="true" class="w-14 h-14 mb-3 object-contain">
-                        <h3 class="font-heading font-bold text-navy text-base mb-1">Short-term support</h3>
-                        <p class="font-body text-gray-600 text-sm leading-relaxed">Useful when equipment is out of service and the site needs a temporary laundry option.</p>
+                        <h3 class="font-heading font-bold text-navy text-base mb-1">Keep laundry moving</h3>
+                        <p class="font-body text-gray-600 text-sm leading-relaxed">Maintain a temporary laundry route while on-site equipment is unavailable or follow-up repair work is completed.</p>
                     </div>
                 </div>
 
@@ -379,10 +379,10 @@ $expectSteps = [
 
             {{-- RIGHT: image --}}
             <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto lg:h-[460px]">
-                <img src="/images/pages/services/repairs-temporary-laundry.jpg"
+                <img src="/images/pages/services/repairs-temporary-laundry-online.png"
                      alt="Laundry Online Dublin store as a temporary processing route while on-site equipment is down"
                      loading="lazy" decoding="async"
-                     style="object-position: center;"
+                     style="object-position: center center;"
                      class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-navy/80 to-transparent">
                     <p class="font-body font-bold text-white text-xs uppercase tracking-[0.22em]">Laundry Online &mdash; Dublin</p>
@@ -400,7 +400,7 @@ $expectSteps = [
             <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_auto] gap-8 items-start mb-1">
                 <div>
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Repeat Faults</p>
-                    <h2 class="font-heading font-bold text-white text-4xl sm:text-5xl lg:text-[3.3rem] 2xl:text-[3.7rem] mb-4 leading-tight">
+                    <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.7rem] 2xl:text-5xl mb-4 leading-tight">
                         <span class="sm:block">When the same fault returns,</span>
                         <span class="sm:block">make <span class="text-[#148af4]">a better equipment decision</span></span>
                     </h2>
@@ -427,9 +427,9 @@ $expectSteps = [
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 pt-8 border-t border-white/10">
                 @foreach([
                     ['icon' => 'repairs-fault-patterns',     'title' => 'Fault patterns',     'body' => 'Identify what keeps coming back.'],
-                    ['icon' => 'home-rental-maintained',     'title' => 'Service history',    'body' => 'Review previous visits, parts and fault notes.'],
-                    ['icon' => 'repairs-cost-control',       'title' => 'Cost control',       'body' => 'Reduce the chance of repeated surprise repair costs.'],
-                    ['icon' => 'repairs-maintenance-review', 'title' => 'Maintenance review', 'body' => 'Consider whether preventive maintenance is the right next step.'],
+                    ['icon' => 'home-rental-maintained',     'title' => 'Service history',    'body' => 'Review past visits, parts and faults.'],
+                    ['icon' => 'repairs-cost-control',       'title' => 'Cost control',       'body' => 'Reduce repeated surprise repair costs.'],
+                    ['icon' => 'repairs-maintenance-review', 'title' => 'Maintenance review', 'body' => 'Consider preventive maintenance.'],
                 ] as $mp)
                 <div>
                     <div class="mb-5">
@@ -496,7 +496,7 @@ $faqs = [
     'eyebrow'      => 'After the Repair',
     'headingLine1' => 'Use repair findings to protect',
     'headingLine2' => 'equipment reliability',
-    'body'         => 'After a call-out, repair findings can support service records, parts checks,<br class="hidden lg:block"> Preventive Maintenance or replacement planning.',
+    'body'         => 'After a call-out, keep the repair outcome, service history<br class="hidden lg:block"> and follow-up requirements clear for future equipment support.',
     'image'        => '/images/shared/Parts%20%26%20Aftercare.png',
     'miniPoints'   => [
         ['icon' => 'repairs-fault-patterns', 'label' => 'Repair<br>findings'],
@@ -561,7 +561,7 @@ $faqs = [
                     <input type="text"  name="equipment_type" placeholder="Equipment type"         class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
                 </div>
                 <input type="text" name="equipment_model" placeholder="Equipment make / model, if known" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400">
-                <textarea name="fault_details" rows="3" placeholder="Fault details *" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400 resize-none"></textarea>
+                <textarea name="fault_details" rows="3" placeholder="Fault details / symptoms — describe the fault, any error message or what the equipment is doing. *" required class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy placeholder-gray-400 resize-none"></textarea>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <select name="urgency" class="w-full px-4 py-2.5 rounded-lg border border-gray-300 focus:border-[#148af4] focus:ring-1 focus:ring-[#148af4] outline-none font-body text-sm text-navy bg-white">
                         <option value="">How urgent is the issue?</option>
