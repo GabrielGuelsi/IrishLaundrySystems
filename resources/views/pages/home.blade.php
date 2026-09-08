@@ -48,7 +48,7 @@
                 </h1>
 
                 <p class="hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl">
-                    From equipment selection and installation to equipment rental, maintenance, repairs and aftercare, Irish Laundry Systems reduces breakdown risk, limits costly downtime and keeps operating costs under control throughout the equipment&rsquo;s working life.
+                    From supply and installation to rental and ongoing support,<br class="hidden lg:block"> we help prevent breakdowns, minimise downtime and control costs.
                 </p>
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
@@ -129,7 +129,7 @@
     @include('components.cta-combined-banner', [
         'eyebrow'  => 'Equipment Planning',
         'heading'  => 'Plan capacity and layout around<br class="hidden lg:block"> <span style="color:#011E41;">daily laundry demand</span>',
-        'body'     => 'We assess available space, required capacity and installation needs to prepare a practical equipment plan for your site and budget.',
+        'body'     => 'We turn your operational needs into a practical equipment plan,<br class="hidden lg:block"> giving you clearer costs, fewer surprises and a setup that works.',
         'features' => [
             ['img' => '/images/icons/home-planning-fit.png', 'label' => 'Space<br>Efficiency'],
             ['img' => '/images/icons/home-maintenance-value.png', 'label' => 'Right<br>Capacity'],
@@ -158,9 +158,9 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => '<span class="lg:text-[1.7rem] 2xl:text-[2rem]">Equipment categories selected around <span class="text-[#148af4]">workload and daily output</span></span>',
+    'heading'    => 'Commercial laundry equipment for demanding daily use',
     'textMinH'   => '160px',
-    'subheading' => 'The right equipment should fit the room, workload, daily use, running costs and the support needed to keep it performing.',
+    'subheading' => 'Washers, dryers and finishing equipment, backed by installation and support.',
     'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily commercial washing where capacity, cycle control and fabric care all matter.', 'cta' => 'View Washing Machines', 'route' => ['equipment.category', ['category' => 'commercial-washers']], 'box' => 300, 'mb' => -35],
@@ -175,7 +175,7 @@
     'eyebrow'      => 'Equipment Rental',
     'headingLine1' => 'Commercial laundry equipment',
     'headingLine2' => '<span style="color:#148af4;">with lower upfront cost</span>',
-    'body'         => 'For replacement or expansion, Equipment Rental includes equipment, installation and maintenance under the rental agreement.',
+    'body'         => 'For replacement or expansion, Equipment Rental includes equipment,<br class="hidden lg:block"> installation and maintenance under the rental agreement.',
     'features' => [
         [
             'icon' => '<img src="/images/icons/home-rental-upfront.png" style="width:3.5rem;height:3.5rem;object-fit:contain;filter:brightness(0) invert(1);transform:scale(1.068);" alt="">',
@@ -207,9 +207,10 @@
 <!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Preventive Maintenance & Aftercare',
-    'headingLine1' => 'Keep maintenance planned',
-    'headingLine2' => 'and equipment care organised',
-    'body'         => 'Preventive servicing, clear records and parts support help teams manage equipment throughout its working life.',
+    'headingLine1' => 'Keep equipment running with planned maintenance',
+    'headingLine2' => 'and support that continues beyond installation',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.35rem] 2xl:text-[1.7rem]',
+    'body'         => 'Preventive servicing, clear records and parts support<br class="hidden lg:block"> help reduce breakdown risk and bring better cost control.',
     'miniPoints'   => [
         ['icon' => '244', 'iconClass' => 'brightness-0 invert', 'label' => 'Fewer<br>Breakdowns'],
         ['icon' => 'home-planning-spend', 'iconClass' => 'brightness-0 invert', 'label' => 'Cost<br>Control'],
@@ -226,8 +227,8 @@
     'pageSource' => 'homepage_cta',
     'eyebrow'    => 'Request an Assessment',
     'heading'    => 'Tell us what you need<br class="hidden lg:block"> <span class="text-[#148af4]">from your commercial laundry</span>',
-    'body'       => 'Share whether your enquiry concerns equipment, rental, maintenance, repair or aftercare, together with the relevant site and equipment details.',
-    'formTitle'  => 'Request a Service Assessment',
+    'body'       => 'Share whether your enquiry concerns equipment, rental, maintenance,<br class="hidden lg:block"> repair or aftercare, together with the relevant site and equipment details.',
+    'formTitle'  => 'Request an Assessment',
     'formIntro'  => 'Choose the enquiry type and provide the relevant site and equipment details.',
     'buttonText' => 'Request an Assessment',
 ])
