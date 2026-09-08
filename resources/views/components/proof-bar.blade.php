@@ -26,13 +26,13 @@
                 <img src="/images/logo/grace-healthcare-cropped.png" alt="Grace Healthcare" class="h-8 lg:h-9 w-auto object-contain opacity-80">
             </div>
             <div class="flex-1 flex items-center justify-center">
-                <img src="/images/logo/abbvie.png" alt="AbbVie" class="h-8 w-auto object-contain opacity-80" style="transform: translateY(-8px);">
+                <img src="/images/logo/abbvie.png" alt="AbbVie" class="h-8 w-auto object-contain opacity-80">
             </div>
             <div class="flex-1 flex items-center justify-center overflow-hidden">
                 <img src="/images/shared/charlemontgroupsquare.png" alt="Charlemont Group" class="pb-logo-square h-10 w-auto object-contain opacity-80" style="transform: scale(5.5); transform-origin: center;">
             </div>
             <div class="flex-1 flex items-center justify-center overflow-hidden">
-                <img src="/images/shared/laundryonlinesquare2.png" alt="Laundry Online" class="pb-logo-square h-10 w-auto object-contain opacity-80" style="transform: scale(5.5) translateY(-1px); transform-origin: center;">
+                <img src="/images/shared/laundryonlinesquare2.png" alt="Laundry Online" class="pb-logo-square h-10 w-auto object-contain opacity-80" style="transform: scale(5.5); transform-origin: center;">
             </div>
         </div>
 
