@@ -158,7 +158,7 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => 'Commercial laundry equipment for demanding daily use',
+    'heading'    => '<span class="lg:text-[1.95rem] 2xl:text-[2.5rem]">Commercial laundry equipment for demanding daily use</span>',
     'textMinH'   => '160px',
     'subheading' => 'Washers, dryers and finishing equipment, backed by installation and support.',
     'subheadingClass' => 'lg:whitespace-nowrap',
@@ -207,9 +207,9 @@
 <!-- 6.6 PREVENTIVE MAINTENANCE & AFTERCARE STRIP -->
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Preventive Maintenance & Aftercare',
-    'headingLine1' => 'Keep equipment running with planned maintenance',
-    'headingLine2' => 'and support that continues beyond installation',
-    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.35rem] 2xl:text-[1.7rem]',
+    'headingLine1' => 'Keep equipment running with',
+    'headingLine2' => 'planned maintenance and support<br class="hidden lg:block"> that continues beyond installation',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.5rem]',
     'body'         => 'Preventive servicing, clear records and parts support<br class="hidden lg:block"> help reduce breakdown risk and bring better cost control.',
     'miniPoints'   => [
         ['icon' => '244', 'iconClass' => 'brightness-0 invert', 'label' => 'Fewer<br>Breakdowns'],
