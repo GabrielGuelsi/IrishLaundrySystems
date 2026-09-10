@@ -194,9 +194,10 @@
 
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', [
-    'eyebrow'    => 'Customer Feedback',
-    'heading'    => 'What <span style="color:#148af4;">our customers say</span>',
-    'subheading' => 'Feedback from organisations across Ireland on working with Irish Laundry Systems.',
+    'eyebrow'    => 'Trusted across Ireland',
+    'heading'    => 'Commercial laundry expertise trusted across sectors',
+    'subheading' => 'Supporting organisations across Ireland with equipment, engineering and service since 1987.',
+    'subheadingClass' => 'max-w-4xl mx-auto',
 ])
 
 <!-- TRUST ANCHORS — proof / "Trusted by" logo strip -->
