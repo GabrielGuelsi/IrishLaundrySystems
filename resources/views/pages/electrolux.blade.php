@@ -57,12 +57,12 @@
 
     <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
-            <div class="max-w-full lg:max-w-[920px]">
+            <div class="max-w-full lg:max-w-[960px]">
 
                 <p class="ep-hero-desc font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-5" style="opacity:1;">Authorised Electrolux Professional Partner</p>
 
                 <h1 class="ep-hero-title font-heading font-bold text-white leading-tight tracking-tight mb-6 text-2xl sm:text-4xl lg:text-5xl text-balance">
-                    Electrolux Professional strength,<br class="hidden lg:block"> delivered with <span class="text-[#148af4]">Irish engineering&nbsp;expertise</span>
+                    Electrolux Professional strength, delivered<br class="hidden lg:block"> with <span class="text-[#148af4]">Irish engineering&nbsp;expertise</span>
                 </h1>
 
                 <p class="ep-hero-desc font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl text-pretty">
