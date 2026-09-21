@@ -23,7 +23,7 @@
 
         <!-- Trust line -->
         <p class="hidden lg:block font-body text-navy text-sm leading-snug max-w-[260px]">
-            Working with Electrolux Professional since 1987, combining manufacturer expertise with Irish engineering capability.
+            Working with Electrolux Professional since 1987, combining manufacturer expertise with Irish engineering&nbsp;capability.
         </p>
 
         <!-- Vertical divider -->
@@ -48,7 +48,7 @@
 
             <div class="flex flex-col items-center gap-0 text-center">
                 <div class="h-[88px] flex items-center justify-center overflow-visible">
-                    <img src="/images/icons/100-clients.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.8] translate-y-[22px]">
+                    <img src="/images/icons/100-clients.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.8] -translate-y-[6px]">
                 </div>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap -mt-2">Long-standing relationships</span>
             </div>
@@ -57,6 +57,7 @@
 
         <!-- Learn more button -->
         <a href="{{ route('electrolux') }}"
+           aria-label="Learn about our Electrolux Professional partnership"
            class="hidden md:inline-flex items-center gap-2 border border-navy/20 hover:border-navy text-navy/70 hover:text-navy font-body font-bold px-4 py-2 text-xs uppercase tracking-wide transition-all duration-200 whitespace-nowrap rounded">
             Learn more
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">

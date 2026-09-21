@@ -3,6 +3,10 @@
 @section('pageTitle', 'Commercial Laundry Engineering Ireland | Preventive Maintenance, Repairs & Equipment | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
 
+@section('meta')
+<link rel="preload" as="image" href="/images/pages/home/HOMEHERO1.png" fetchpriority="high">
+@endsection
+
 @section('content')
 
 <!-- 1. HERO -->
@@ -23,10 +27,12 @@
     <!-- Background carousel -->
     <img src="/images/pages/home/HOMEHERO1.png"
          alt="Commercial laundry operation"
+         fetchpriority="high" width="1916" height="821"
          class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
     <img src="/images/pages/home/HOMEHERO2.jpg"
          alt="Irish Laundry Systems engineering team on site"
+         fetchpriority="low" loading="lazy" width="1916" height="821"
          style="object-position: center 72%;"
          class="absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 1 ? 'opacity-100' : 'opacity-0'">
@@ -158,7 +164,7 @@
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => '<span class="lg:text-[1.95rem] 2xl:text-[2.5rem]">Commercial laundry equipment for demanding daily use</span>',
+    'heading'    => '<span class="lg:text-[1.95rem] 2xl:text-[2.5rem]">Commercial laundry equipment <span class="text-[#148af4]">for daily use</span></span>',
     'textMinH'   => '160px',
     'subheading' => 'Washers, dryers and finishing equipment, backed by installation and support.',
     'subheadingClass' => 'lg:whitespace-nowrap',
@@ -194,7 +200,7 @@
 
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', [
-    'eyebrow'    => 'Trusted across Ireland',
+    'eyebrow'    => 'Customer Experience',
     'heading'    => 'Commercial laundry expertise trusted across sectors',
     'subheading' => 'Supporting organisations across Ireland with equipment, engineering and service since 1987.',
     'subheadingClass' => 'max-w-4xl mx-auto',
@@ -209,7 +215,7 @@
 @include('components.service-contracts-strip', [
     'eyebrow'      => 'Preventive Maintenance & Aftercare',
     'headingLine1' => 'Keep equipment running with',
-    'headingLine2' => 'planned maintenance and support<br class="hidden lg:block"> that continues beyond installation',
+    'headingLine2' => 'planned maintenance and support',
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.5rem]',
     'body'         => 'Preventive servicing, clear records and parts support<br class="hidden lg:block"> help reduce breakdown risk and bring better cost control.',
     'miniPoints'   => [
