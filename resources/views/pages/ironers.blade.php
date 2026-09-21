@@ -566,7 +566,7 @@
     'image'        => '/images/pages/ironers/equipment-rental-strip.webp',
     'imagePosition' => '62% 15%',
     'wideContent'  => true,
-    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.7rem] 2xl:text-[1.9rem]',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.15rem]',
     'headingLine1' => 'Replace equipment or expand ironing capacity',
     'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Equipment Rental can support ironer replacement or additional capacity without one large capital purchase, with service included under agreed terms.',
