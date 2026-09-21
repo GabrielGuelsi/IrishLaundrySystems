@@ -153,7 +153,7 @@
 
 {{-- 6. FINANCIAL / OPERATIONAL PERFORMANCE --}}
 <section class="py-20 lg:py-28 bg-white border-t border-gray-100">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-8">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>

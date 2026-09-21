@@ -332,7 +332,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Capacity Planning</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.4rem] 2xl:text-[2.9rem] leading-tight text-balance mb-3">
                 Plan the Lagoon setup around <span style="color:#148af4;">daily volume and available space</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
@@ -388,7 +388,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight text-balance mb-3">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 lg:whitespace-nowrap">
                 Explore garments and fabrics suited to <span style="color:#148af4;">professional wet cleaning</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
