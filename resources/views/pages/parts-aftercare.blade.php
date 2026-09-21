@@ -155,7 +155,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
 
-    <img src="/images/pages/services/support-aftercare-hero.png"
+    <img src="/images/pages/services/support-aftercare-hero.webp"
          alt="ILS engineer reviewing commercial laundry equipment after a service visit"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -292,7 +292,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative py-20 lg:py-28 bg-navy overflow-hidden">
     <div class="absolute inset-0" aria-hidden="true">
-        <img src="/images/pages/services/parts-support-bg.jpg" alt="" loading="lazy" decoding="async"
+        <img src="/images/pages/services/parts-support-bg.webp" alt="" loading="lazy" decoding="async"
              class="absolute inset-0 w-full h-full object-cover">
     </div>
     <div class="absolute inset-0 pa-dotgrid opacity-25" aria-hidden="true"></div>
@@ -347,25 +347,25 @@
                 'num'   => '01.',
                 'title' => 'Tell us what needs attention',
                 'body'  => 'Share the equipment type, fault details, service history or parts requirement.',
-                'img'   => '/images/shared/repairs-callouts.jpg',
+                'img'   => '/images/shared/repairs-callouts.webp',
             ],
             [
                 'num'   => '02.',
                 'title' => 'Review the service history',
                 'body'  => 'Previous visits, maintenance notes and known faults are checked before support is arranged.',
-                'img'   => '/images/pages/services/service-contracts-hero.jpg',
+                'img'   => '/images/pages/services/service-contracts-hero.webp',
             ],
             [
                 'num'   => '03.',
                 'title' => 'Confirm the support needed',
                 'body'  => 'Irish Laundry Systems confirms whether aftercare, repair, maintenance, parts support or replacement planning is needed.',
-                'img'   => '/images/shared/Customer-Care_Line-6000-_001.jpg',
+                'img'   => '/images/shared/Customer-Care_Line-6000-_001.webp',
             ],
             [
                 'num'   => '04.',
                 'title' => 'Keep service records organised',
                 'body'  => 'Service notes and parts information stay available for future equipment decisions.',
-                'img'   => '/images/pages/services/services-overview-hero.jpg',
+                'img'   => '/images/pages/services/services-overview-hero.webp',
             ],
         ] as $step)
         <div class="pa-visit-card">
@@ -392,7 +392,7 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/service-contracts-hero.png" alt="Planned maintenance visit on commercial laundry equipment"
+        <img src="/images/shared/service-contracts-hero.webp" alt="Planned maintenance visit on commercial laundry equipment"
              class="w-full h-full object-cover" style="object-position: center center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>

@@ -8,7 +8,7 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]">
-    <img src="/images/pages/sectors/carefacilitiesheroimage.jpg" alt="Care facility laundry"
+    <img src="/images/pages/sectors/carefacilitiesheroimage.webp" alt="Care facility laundry"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: center 38%; transform: scale(1.22);">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
@@ -80,7 +80,7 @@
         <div class="relative reveal">
 
             <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/shared/render-double-page_72dpi.jpg"
+                <img src="/images/shared/render-double-page_72dpi.webp"
                      alt="Care facility laundry room"
                      class="w-full h-[320px] sm:h-[440px] lg:h-[580px] object-cover object-center">
             </div>
@@ -171,7 +171,7 @@
 
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/clarusvibe.jpeg" alt="ClarusVibe" class="w-full h-24 object-cover rounded-lg">
+                    <img src="/images/icons/clarusvibe.webp" alt="ClarusVibe" class="w-full h-24 object-cover rounded-lg">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Programme control</h3>
@@ -225,7 +225,7 @@
                     'text'   => 'For urgent faults affecting resident laundry and essential daily routines.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/pages/services/support-aftercare-hero.png',
+                    'img'    => '/images/pages/services/support-aftercare-hero.webp',
                     'pos'    => 'center 40%',
                 ],
                 [
@@ -233,7 +233,7 @@
                     'text'   => 'For planned servicing, maintenance records and regular care of essential equipment.',
                     'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/shared/service-contracts-hero.png',
+                    'img'    => '/images/shared/service-contracts-hero.webp',
                     'pos'    => '90% 35%',
                 ],
                 [
@@ -241,7 +241,7 @@
                     'text'   => 'For temporary replacement, added capacity or longer-term equipment needs.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
-                    'img'    => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'    => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'    => '66% center',
                 ],
                 [
@@ -360,7 +360,7 @@
             <div x-data="{ open: false }">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-start py-12 lg:py-16 reveal">
                 <div class="flex flex-col">
-                    <img src="/images/pages/dryers/TD6-14.jpg"
+                    <img src="/images/pages/dryers/TD6-14.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain" style="object-position: 68% top;">
                     <div class="mt-1 pt-3">
@@ -651,7 +651,7 @@
                 'body'    => 'Connects up to seven washing machines with one unit for simpler dosing control.',
                 'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/MULTISAVE.png',
+                'scene'   => '/images/pages/accessories/MULTISAVE.webp',
             ],
             [
                 'name'    => 'DOSAVE',
@@ -667,7 +667,7 @@
                 'body'    => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
                 'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/JETSAVE.png',
+                'scene'   => '/images/pages/accessories/JETSAVE.webp',
             ],
             [
                 'name'    => 'Efficient Dosing',
@@ -811,7 +811,7 @@
     'equipment' => [
         ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For sites that need dirty-side and clean-side handling kept separate.','box'=>250,'mb'=>-20],
         ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For everyday care facility loads that need capacity, consistency and dosing control.','box'=>270,'mb'=>-35],
-        ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
+        ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
         ['img'=>'drying-cabinet','src'=>'/images/pages/drying-cabinets/workwear-dc6-15ww.jpg','name'=>'Drying Cabinets','desc'=>'For garments, bulky items and specialist textiles that need gentle drying and fabric care.','box'=>260,'mb'=>-11],
         ['img'=>'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg','ext'=>'jpg','name'=>'Ironers & Flatwork','desc'=>'For finishing, moisture control and textiles ready for storage or use.'],
     ],
@@ -863,7 +863,7 @@
     'headingLine1' => 'Keep care facility laundry',
     'headingLine2' => 'performing reliably every day',
     'body'         => 'Ongoing maintenance and aftercare help minimise disruption and protect equipment value, helping keep your laundry operation reliable long after installation.',
-    'image'        => '/images/pages/services/support-aftercare-hero.png',
+    'image'        => '/images/pages/services/support-aftercare-hero.webp',
     'miniPoints'   => [
         ['icon' => 'home-rental-maintained', 'iconClass' => 'scale-[0.94]',  'label' => 'Service<br>Planning'],
         ['icon' => 'home-maintenance-value', 'iconClass' => 'scale-[1.06]',  'label' => 'Equipment<br>Care'],

@@ -11,7 +11,7 @@
 @php
 $testimonials = [
     'grace' => [
-        'logo'      => '/images/shared/3.png',
+        'logo'      => '/images/shared/3.webp',
         'logoClass' => 'h-[140px] sm:h-[200px] lg:h-[240px] w-auto object-contain',
         'name'      => 'Grace Healthcare',
         'pills'     => ['Valued Partnership', 'Operational Excellence', 'Reliability', 'Quick Resolution'],
@@ -31,7 +31,7 @@ $testimonials = [
         'cite_role' => 'Operations at St. Mary\'s Hospital',
     ],
     'charlemont' => [
-        'logo'      => '/images/shared/charlemontgroup.png',
+        'logo'      => '/images/shared/charlemontgroup.webp',
         'logoClass' => 'h-[160px] sm:h-[220px] lg:h-[280px] w-auto object-contain',
         'name'      => 'Charlemont Group',
         'pills'     => ['Long-Term Partnership', 'Reliable Service', 'Fast Response', 'Minimal Disruption'],
@@ -198,11 +198,13 @@ $showChrome = ! $single && count($slides) > 1;
                             <button
                                 type="button"
                                 @click="go({{ $i }})"
-                                :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"
-                                class="h-2 rounded-full transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2"
+                                class="flex items-center justify-center h-6 min-w-[24px] px-0.5 rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#148af4] focus-visible:ring-offset-2"
                                 aria-label="Go to slide {{ $i + 1 }}"
                                 :aria-current="active === {{ $i }} ? 'true' : 'false'"
-                            ></button>
+                            >
+                                <span class="block h-2 rounded-full transition-all duration-300"
+                                      :class="active === {{ $i }} ? 'bg-[#148af4] w-6' : 'bg-navy/20 hover:bg-navy/40 w-2'"></span>
+                            </button>
                         @endforeach
                     </div>
 

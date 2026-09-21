@@ -11,7 +11,7 @@
 {{-- HERO --}}
 <section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="/images/pages/finishing-equipment/finishingequipmenthero.png" alt="Commercial finishing equipment"
+    <img src="/images/pages/finishing-equipment/finishingequipmenthero.webp" alt="Commercial finishing equipment"
          loading="eager" decoding="async"
          class="absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
          style="transform: scale(1.12); transform-origin: right center;">
@@ -166,11 +166,11 @@
 
         @php
         $fitCards = [
-            ['title' => 'Commercial Laundries',   'copy' => 'For businesses handling varied garment types and regular production volumes.', 'img' => '/images/pages/finishing-equipment/where-commercial-laundries.jpg', 'pos' => 'center center'],
+            ['title' => 'Commercial Laundries',   'copy' => 'For businesses handling varied garment types and regular production volumes.', 'img' => '/images/pages/finishing-equipment/where-commercial-laundries.webp', 'pos' => 'center center'],
             ['title' => 'Hotels &amp; Hospitality',   'copy' => 'For guest garments, staff clothing and valet or in-house laundry services.', 'img' => '/images/pages/finishing-equipment/where-hotels-hospitality.jpg', 'pos' => 'center center'],
             ['title' => 'Care Facilities',        'copy' => 'For resident clothing, staff garments and other items that need individual finishing.', 'img' => '/images/pages/finishing-equipment/where-care-facilities.jpg', 'pos' => 'center center'],
-            ['title' => 'Dry Cleaners',           'copy' => 'For professional garment cleaning and pressing where finish quality is essential.', 'img' => '/images/pages/finishing-equipment/where-dry-cleaners.jpg', 'pos' => 'center center'],
-            ['title' => 'Wet Cleaning Businesses','copy' => 'For delicate garments that need professional washing, drying and finishing.', 'img' => '/images/pages/finishing-equipment/where-wet-cleaning.jpg', 'pos' => 'center center'],
+            ['title' => 'Dry Cleaners',           'copy' => 'For professional garment cleaning and pressing where finish quality is essential.', 'img' => '/images/pages/finishing-equipment/where-dry-cleaners.webp', 'pos' => 'center center'],
+            ['title' => 'Wet Cleaning Businesses','copy' => 'For delicate garments that need professional washing, drying and finishing.', 'img' => '/images/pages/finishing-equipment/where-wet-cleaning.webp', 'pos' => 'center center'],
         ];
         @endphp
 
@@ -509,7 +509,7 @@
                     'text'  => 'Service and breakdown support when finishing equipment faults interrupt garment presentation or daily output.',
                     'cta'   => 'Request Call-Out',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -517,7 +517,7 @@
                     'text'  => 'Planned servicing to reduce unexpected repairs and keep finishing equipment condition visible.',
                     'cta'   => 'View Maintenance Options',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -582,8 +582,8 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             @foreach([
                 ['title' => 'Commercial Ironers', 'copy' => 'For sheets, table linen and other flatwork that require a consistent ironed finish.',                 'cta' => 'View Commercial Ironers', 'route' => route('equipment.category', 'ironers'),       'img' => '/images/pages/ironers/bed-230-ib623.jpg', 'box' => 260, 'mb' => 0],
-                ['title' => 'Wet Cleaning',       'copy' => 'For garments and delicate items that require a controlled water-based cleaning process before finishing.', 'cta' => 'View Wet Cleaning',       'route' => route('equipment.category', 'wet-cleaning'),  'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 250, 'mb' => 32],
-                ['title' => 'Commercial Dryers',  'copy' => 'For drying garments and other textiles before pressing, shaping or final finishing.',                    'cta' => 'View Commercial Dryers',  'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-14.jpg', 'box' => 250, 'mb' => 32],
+                ['title' => 'Wet Cleaning',       'copy' => 'For garments and delicate items that require a controlled water-based cleaning process before finishing.', 'cta' => 'View Wet Cleaning',       'route' => route('equipment.category', 'wet-cleaning'),  'img' => '/images/pages/wet-cleaning/WH6-27LAC.webp', 'box' => 250, 'mb' => 32],
+                ['title' => 'Commercial Dryers',  'copy' => 'For drying garments and other textiles before pressing, shaping or final finishing.',                    'cta' => 'View Commercial Dryers',  'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/TD6-14.webp', 'box' => 250, 'mb' => 32],
                 ['title' => 'Drying Cabinets',    'copy' => 'For garments and delicate items that are better suited to cabinet drying than tumble drying.',            'cta' => 'View Drying Cabinets',    'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/pages/drying-cabinets/DC6-4.jpg', 'box' => 260, 'mb' => 0],
             ] as $card)
             <div class="flex flex-col gap-5 h-full">

@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg" alt="Wet cleaning equipment"
+    <img src="/images/pages/wet-cleaning/lagoon-advanced-care-internal.webp" alt="Wet cleaning equipment"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -89,10 +89,10 @@
         {{-- Card photos are placeholders until the approved Canva images land --}}
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal mb-8">
             @foreach([
-                ['title' => 'Fast results',           'copy' => 'Dry-to-Dry in 1 hour helps garments move through the process faster, with no hang-drying required.',        'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg', 'pos' => 'center center'],
-                ['title' => 'Delicate Garment Care',  'copy' => 'Designed for delicate garments, fine textiles, selected leathers and shoes.',                                'img' => '/images/pages/services/services-overview-hero.jpg',        'pos' => 'center center'],
+                ['title' => 'Fast results',           'copy' => 'Dry-to-Dry in 1 hour helps garments move through the process faster, with no hang-drying required.',        'img' => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.webp', 'pos' => 'center center'],
+                ['title' => 'Delicate Garment Care',  'copy' => 'Designed for delicate garments, fine textiles, selected leathers and shoes.',                                'img' => '/images/pages/services/services-overview-hero.webp',        'pos' => 'center center'],
                 ['title' => 'Solvent-free process',   'copy' => 'A water-based process for businesses moving beyond traditional solvent-based cleaning.',                      'img' => '/images/pages/accessories/eco-detergents.webp',                'pos' => 'center center'],
-                ['title' => 'More Garment Care In-House',  'copy' => 'Handle more specialist textile care in-house.',                 'img' => '/images/shared/render-double-page_72dpi.jpg',      'pos' => 'center center'],
+                ['title' => 'More Garment Care In-House',  'copy' => 'Handle more specialist textile care in-house.',                 'img' => '/images/shared/render-double-page_72dpi.webp',      'pos' => 'center center'],
             ] as $card)
             <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden flex flex-col">
                 <img src="{{ $card['img'] }}" alt="{{ $card['title'] }}" loading="lazy" decoding="async"
@@ -161,7 +161,7 @@
                 ['icon' => 'dosing-control',  'title' => 'Intelligent Dosing',        'copy' => 'Detergent and water levels are adjusted around the load, keeping each programme properly balanced.', 'imgClass' => 'w-24 h-24 object-contain scale-[0.892] -translate-y-[9.3%]'],
                 ['icon' => '213', 'title' => 'Power Balance',             'copy' => 'Extraction force is adjusted to keep the load balanced and ready for safer drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[0.875] translate-y-[0.5%]'],
                 ['icon' => '7',  'title' => 'Moisture Balance',          'copy' => 'Moisture levels are controlled so garments are dried safely without unnecessary over-drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.008] -translate-y-[17.4%]'],
-                ['icon' => '4',  'title' => 'ClarusVibe Controls',       'copy' => 'A clear touchscreen interface makes Lagoon programmes easier for staff to select and manage.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
+                ['icon' => '4',  'title' => 'ClarusVibe Controls',       'copy' => 'A clear touchscreen interface makes Lagoon programmes easier for staff to select and manage.', 'img' => '/images/icons/clarusvibe.webp', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
             ] as $card)
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm {{ $loop->last ? 'col-span-2 lg:col-span-1' : 'col-span-1' }}">
                 <div class="flex items-center justify-center h-32">
@@ -194,7 +194,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 reveal">
             @foreach([
                 ['title' => 'Woolmark Approved',          'img' => '/images/pages/wet-cleaning/woolmark-approved.png',    'copy' => 'Approved programmes support professional care for eligible wool garments in specified markets.'],
-                ['title' => 'Tested by Hohenstein',        'img' => '/images/pages/wet-cleaning/tested-by-hohenstein.png', 'copy' => 'Independent testing assessed textile wear, dimensional change and colour loss after repeated cycles.'],
+                ['title' => 'Tested by Hohenstein',        'img' => '/images/pages/wet-cleaning/tested-by-hohenstein.webp', 'copy' => 'Independent testing assessed textile wear, dimensional change and colour loss after repeated cycles.'],
                 ['title' => 'ErgoCert Certified',          'img' => '/images/icons/227.png', 'imgClass' => 'scale-[1.25]',  'copy' => 'Washer and dryer design supports safer, more comfortable operator use.'],
             ] as $card)
             <div class="bg-white border border-gray-100 rounded-2xl p-7 flex flex-col h-full shadow-sm text-center">
@@ -270,7 +270,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5 reveal">
             @foreach([
                 ['step' => '01', 'title' => 'Washer',                    'copy' => 'Professional wet cleaning for delicate garments and specialist textiles.', 'img' => '/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg'],
-                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Dry suitable garments without relying on hang-drying.', 'img' => '/images/pages/dryers/TD6-14.jpg'],
+                ['step' => '02', 'title' => 'Dryer',                     'copy' => 'Dry suitable garments without relying on hang-drying.', 'img' => '/images/pages/dryers/TD6-14.webp'],
                 ['step' => '03', 'title' => 'Detergents',                'copy' => 'Dedicated products support consistent care across garment types.', 'img' => '/images/pages/accessories/prespotting-prebrushing-agents.png'],
                 ['step' => '04', 'title' => 'Finishing Equipment',       'copy' => 'Tables and finishers prepare garments for return to customers.', 'img' => '/images/pages/finishing-equipment/FIT1-WC.jpg'],
                 ['step' => '05', 'title' => 'Optional Serenity Cabinet',   'copy' => 'Optional cabinet finishing for selected garments and specialist items.', 'img' => '/images/pages/finishing-equipment/FC48.jpg'],
@@ -398,12 +398,12 @@
 
         @php
         $fitCards = [
-            ['title' => 'Delicate garments',         'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',         'img' => '/images/pages/wet-cleaning/103.png', 'pos' => 'center center'],
-            ['title' => 'Leathers',                  'copy' => 'For selected leather items that need specialist cleaning and revitalising.',         'img' => '/images/pages/wet-cleaning/104.png', 'pos' => 'center center'],
-            ['title' => 'Wool and silk',             'copy' => 'For delicate fibres that need careful programme control.',                           'img' => '/images/pages/wet-cleaning/105.png', 'pos' => 'center center'],
-            ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                  'img' => '/images/pages/wet-cleaning/106.png', 'pos' => 'center center'],
-            ['title' => 'Dry-clean-only garments',   'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.', 'img' => '/images/pages/wet-cleaning/107.png', 'pos' => 'center center'],
-            ['title' => 'Shoes',                     'copy' => 'For selected shoes that can be treated through the Lagoon process.',                  'img' => '/images/pages/wet-cleaning/108.png', 'pos' => 'center center'],
+            ['title' => 'Delicate garments',         'copy' => 'For garments that need professional wet cleaning with gentler fabric care.',         'img' => '/images/pages/wet-cleaning/103.webp', 'pos' => 'center center'],
+            ['title' => 'Leathers',                  'copy' => 'For selected leather items that need specialist cleaning and revitalising.',         'img' => '/images/pages/wet-cleaning/104.webp', 'pos' => 'center center'],
+            ['title' => 'Wool and silk',             'copy' => 'For delicate fibres that need careful programme control.',                           'img' => '/images/pages/wet-cleaning/105.webp', 'pos' => 'center center'],
+            ['title' => 'Cotton, linen and viscose', 'copy' => 'For common garment fabrics that need consistent professional care.',                  'img' => '/images/pages/wet-cleaning/106.webp', 'pos' => 'center center'],
+            ['title' => 'Dry-clean-only garments',   'copy' => 'For Woolmark garments labelled as dry-clean only, where approved programmes apply.', 'img' => '/images/pages/wet-cleaning/107.webp', 'pos' => 'center center'],
+            ['title' => 'Shoes',                     'copy' => 'For selected shoes that can be treated through the Lagoon process.',                  'img' => '/images/pages/wet-cleaning/108.webp', 'pos' => 'center center'],
         ];
         @endphp
 
@@ -477,7 +477,7 @@
 {{-- 11. SYSTEM PLANNING / SITE FIT STRIP — the page's ONLY full-width blue strip --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -595,7 +595,7 @@
                 'points' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'logos'  => ['clarusvibe', 'compasspro'],
                 'img'    => '/images/shared/MultisaveEQUIP.webp',
-                'scene'  => '/images/pages/accessories/MULTISAVE.png',
+                'scene'  => '/images/pages/accessories/MULTISAVE.webp',
             ],
             [
                 'name'   => 'JETSAVE',
@@ -604,7 +604,7 @@
                 'points' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'logos'  => ['clarusvibe'],
                 'img'    => '/images/shared/JetsaveEQUIP.webp',
-                'scene'  => '/images/pages/accessories/JETSAVE.png',
+                'scene'  => '/images/pages/accessories/JETSAVE.webp',
             ],
             [
                 'name'   => 'DOSAVE',
@@ -780,7 +780,7 @@
 
             {{-- lifestyle + features --}}
             <div class="lg:col-span-4 flex flex-col gap-5">
-                <img src="/images/pages/wet-cleaning/serenitywomencabinet3.png" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
+                <img src="/images/pages/wet-cleaning/serenitywomencabinet3.webp" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
                      class="w-full aspect-video object-cover rounded-2xl">
                 <div class="bg-white border border-gray-100 rounded-2xl px-6 py-2 shadow-sm flex-1">
                     <ul class="divide-y divide-gray-100">
@@ -877,7 +877,7 @@
                     'text'  => 'For wet cleaning equipment issues that need assessment, repair support and clear next steps.',
                     'cta'   => 'View Repairs &amp; Call-Outs',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -885,7 +885,7 @@
                     'text'  => 'Planned servicing to keep wet cleaning equipment checked, maintained and better protected against avoidable disruption.',
                     'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -893,7 +893,7 @@
                     'text'  => 'Access selected Electrolux Professional equipment with lower upfront cost where rental is suitable.',
                     'cta'   => 'Ask About Equipment Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'   => '66% center',
                 ],
                 [

@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/pages/dryers/tumbledryershero.png" alt="Commercial tumble dryers"
+    <img src="/images/pages/dryers/tumbledryershero.webp" alt="Commercial tumble dryers"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -89,7 +89,7 @@
             {{-- LEFT: dryer lineup + CTA --}}
             <div class="reveal reveal-left">
                 <div class="mb-8 flex items-center justify-center h-[300px] lg:h-[440px]">
-                    <img src="/images/pages/dryers/heat-pump-dryer-lineup.png" alt="Line 6000 Heat Pump Dryer range" class="max-w-full max-h-full w-auto h-auto object-contain">
+                    <img src="/images/pages/dryers/heat-pump-dryer-lineup.webp" alt="Line 6000 Heat Pump Dryer range" class="max-w-full max-h-full w-auto h-auto object-contain">
                 </div>
                 <a href="#dryer-range"
                    class="inline-flex items-center gap-2 bg-[#148af4] hover:bg-blue-600 text-white font-body font-bold px-7 py-3.5 rounded-lg text-base transition-colors duration-200">
@@ -313,7 +313,7 @@
 {{-- 9. PLANNING / INSTALLATION STRIP (before the selection journey) --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -358,7 +358,7 @@
 
         @php
         $rangeCards = [
-            ['name' => 'Line 6000 Tumble Dryers', 'copy' => 'Main commercial dryer range for busy laundry rooms where drying performance, controls and fabric care matter every day.', 'cta' => 'View Dryer Range', 'route' => '#dryer-range', 'img' => '/images/pages/dryers/TD6-14.jpg', 'sc' => 'scale-[0.854]'],
+            ['name' => 'Line 6000 Tumble Dryers', 'copy' => 'Main commercial dryer range for busy laundry rooms where drying performance, controls and fabric care matter every day.', 'cta' => 'View Dryer Range', 'route' => '#dryer-range', 'img' => '/images/pages/dryers/TD6-14.webp', 'sc' => 'scale-[0.854]'],
             ['name' => 'Heat Pump Dryers',        'copy' => 'For sites looking to reduce drying energy use where room setup and installation conditions are suitable.', 'cta' => 'Explore Heat Pump Dryers', 'route' => route('equipment.product', ['category' => 'tumble-dryers', 'product' => 'heat-pump']), 'img' => '/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp', 'sc' => 'scale-[0.966]'],
             ['name' => 'Drying Cabinets',         'copy' => 'For bulky, sensitive or specialist items that need drying without standard tumble action.', 'cta' => 'Explore Drying Cabinets', 'route' => route('equipment.category', 'drying-cabinets'), 'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pump%201LZS03.jpg', 'sc' => 'scale-[1.164]'],
             ['name' => 'myPRO / Semi-Professional Dryers', 'copy' => 'For smaller sites that need more than domestic drying without a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-dryer']), 'img' => '/images/pages/dryers/myprotumbledryer.jpg', 'sc' => 'scale-[1.09]'],
@@ -486,7 +486,7 @@
             $dryerFamilies = [
                 ['name' => 'TD6-6',    'slug' => 'td6-6', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 6–7 kg',   'ranges' => ['6–10 kg'],  'fit' => 'Single pocket commercial tumble dryer (6–7 kg) with Moisture Balance and CompassPro control.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-6.jpg'],
                 ['name' => 'TD6-11',   'slug' => 'td6-11', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 11 kg',    'ranges' => ['11–20 kg'], 'fit' => 'Single pocket commercial tumble dryer for 11 kg loads.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-11.jpg'],
-                ['name' => 'TD6-14',   'slug' => 'td6-14', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 14 kg',    'ranges' => ['11–20 kg'], 'fit' => 'Single pocket commercial tumble dryer for 14 kg loads.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-14.jpg'],
+                ['name' => 'TD6-14',   'slug' => 'td6-14', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 14 kg',    'ranges' => ['11–20 kg'], 'fit' => 'Single pocket commercial tumble dryer for 14 kg loads.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-14.webp'],
                 ['name' => 'TD6-16',   'slug' => 'td6-16', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 16–20 kg', 'ranges' => ['11–20 kg'], 'fit' => 'Single pocket commercial tumble dryer for 16–20 kg loads.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-16.jpg'],
                 ['name' => 'TD6-30',   'slug' => 'td6-30', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 30–37 kg', 'ranges' => ['30–37 kg'], 'fit' => 'Single pocket commercial tumble dryer for 30–37 kg loads.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-30.jpg'],
                 ['name' => 'TD6-45',   'slug' => 'td6-45', 'line' => 'Single Pocket Dryers', 'topLine' => 'Line 6000 · 45 kg',    'ranges' => ['45–60 kg'], 'fit' => 'Single pocket commercial tumble dryer for 45 kg loads.', 'badges' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'tech' => ['Moisture Balance','Drum Speed','CompassPro','ERGOCERT'], 'img' => '/images/pages/dryers/TD6-45.jpg'],
@@ -685,7 +685,7 @@
                     'text'  => 'Service and breakdown support when dryer faults interrupt drying capacity or daily output.',
                     'cta'   => 'Request Call-Out',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -693,7 +693,7 @@
                     'text'  => 'Planned dryer servicing to reduce unexpected repairs and keep equipment condition visible.',
                     'cta'   => 'View Maintenance Options',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -701,7 +701,7 @@
                     'text'  => 'Lower upfront cost for dryer replacement, capacity planning or expansion where rental is the right fit.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'   => '66% center',
                 ],
                 [
@@ -744,7 +744,7 @@
 {{-- 15. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="relative overflow-hidden py-12 lg:py-16" style="background-color:#148af4;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/shared/after-installation-tumble-dryers-strip.jpg" alt="Irish Laundry Systems dryer support after installation"
+        <img src="/images/shared/after-installation-tumble-dryers-strip.webp" alt="Irish Laundry Systems dryer support after installation"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 30%, rgba(20,138,244,0.15) 52%, transparent 70%);"></div>
     </div>

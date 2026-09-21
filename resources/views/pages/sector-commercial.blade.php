@@ -8,7 +8,7 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]">
-    <img src="/images/pages/home/HOMEHERO1.png" alt="Commercial laundry operation"
+    <img src="/images/pages/home/HOMEHERO1.webp" alt="Commercial laundry operation"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0 z-0" style="background: linear-gradient(to right, rgba(1,30,65,0.85) 0%, rgba(1,30,65,0.45) 50%, rgba(20,138,244,0.18) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -81,21 +81,21 @@
                     'title' => 'Facility Management &amp; Public Sector',
                     'items' => ['Managed buildings and councils', 'Schools and public-sector institutions', 'Shared-use laundry rooms'],
                     'icon'  => 'ativo-21',
-                    'img'   => '/images/shared/FacilityManagementandPublicSites.png',
+                    'img'   => '/images/shared/FacilityManagementandPublicSites.webp',
                     'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Heavy-Duty Commercial Laundries',
                     'items' => ['Commercial laundries', 'Industrial laundries', 'High-volume laundry operations'],
                     'icon'  => 'ativo-9',
-                    'img'   => '/images/pages/sectors/Heavy-DutyandHigh-volume.png',
+                    'img'   => '/images/pages/sectors/Heavy-DutyandHigh-volume.webp',
                     'pos'   => 'center center',
                 ],
                 [
                     'title' => 'Multi-Housing, Self-Service &amp; Leisure',
                     'items' => ['Self-service laundries', 'Apartment blocks and managed accommodation', 'Gyms, spas and leisure facilities'],
                     'icon'  => 'ativo-20',
-                    'img'   => '/images/pages/sectors/selfservice.png',
+                    'img'   => '/images/pages/sectors/selfservice.webp',
                     'pos'   => 'center center',
                 ],
                 [
@@ -116,7 +116,7 @@
                     'title' => 'Marine, Transport &amp; Remote Sites',
                     'items' => ['Onboard and offshore facilities', 'Transport and crew-support sites', 'Remote sites where continuity matters'],
                     'icon'  => 'ativo-6',
-                    'img'   => '/images/pages/sectors/Marine_navy.png',
+                    'img'   => '/images/pages/sectors/Marine_navy.webp',
                     'pos'   => '20% center',
                 ],
             ] as $card)
@@ -269,7 +269,7 @@
                     'text'   => 'For planned visits, service records and better care for equipment used every day.',
                     'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/shared/service-contracts-hero.png',
+                    'img'    => '/images/shared/service-contracts-hero.webp',
                     'pos'    => '90% 35%',
                 ],
                 [
@@ -277,7 +277,7 @@
                     'text'   => 'For selected sites that need professional laundry equipment without one large purchase, where rental fits the room and equipment need.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
-                    'img'    => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'    => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'    => '66% center',
                 ],
                 [
@@ -421,7 +421,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/pages/dryers/TD6-14.jpg"
+                    <img src="/images/pages/dryers/TD6-14.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -725,7 +725,7 @@
                 'points'  => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/MULTISAVE.png',
+                'scene'   => '/images/pages/accessories/MULTISAVE.webp',
                 'color'   => '#011E41',
             ],
             [
@@ -745,7 +745,7 @@
                 'points'  => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/JETSAVE.png',
+                'scene'   => '/images/pages/accessories/JETSAVE.webp',
                 'color'   => '#0a2448',
             ],
             [
@@ -918,7 +918,7 @@
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',        'name' => 'Washing Machines', 'desc' => 'For daily wash demand across workwear, uniforms, towels, bedding, mops and mixed textiles.', 'box' => 270, 'mb' => -35],
         ['img' => 'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp', 'name' => 'Barrier Washers', 'desc' => 'For sites that need controlled dirty-side and clean-side handling.', 'box' => 250, 'mb' => -20],
-        ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg',   'name' => 'Dryers',      'desc' => 'For controlled drying, fabric care and reliable daily turnaround.', 'box' => 245],
+        ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp',   'name' => 'Dryers',      'desc' => 'For controlled drying, fabric care and reliable daily turnaround.', 'box' => 245],
         ['img' => 'drying-cabinet', 'src' => '/images/pages/drying-cabinets/workwear-dc6-15ww.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of workwear, protective clothing, bulky items, shoes and specialist garments.', 'box' => 260, 'mb' => -11],
         ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For flatwork finishing, presentation standards and storage-ready results.'],
     ],

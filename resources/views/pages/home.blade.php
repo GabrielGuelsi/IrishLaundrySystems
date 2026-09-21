@@ -4,7 +4,7 @@
 @section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
 
 @section('meta')
-<link rel="preload" as="image" href="/images/pages/home/HOMEHERO1.png" fetchpriority="high">
+<link rel="preload" as="image" href="/images/pages/home/HOMEHERO1.webp" fetchpriority="high">
 @endsection
 
 @section('content')
@@ -25,12 +25,12 @@
          x-init="setInterval(() => active = (active + 1) % slides, 6000)">
 
     <!-- Background carousel -->
-    <img src="/images/pages/home/HOMEHERO1.png"
+    <img src="/images/pages/home/HOMEHERO1.webp"
          alt="Commercial laundry operation"
          fetchpriority="high" width="1916" height="821"
          class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
-    <img src="/images/pages/home/HOMEHERO2.jpg"
+    <img src="/images/pages/home/HOMEHERO2.webp"
          alt="Irish Laundry Systems engineering team on site"
          fetchpriority="low" loading="lazy" width="1916" height="821"
          style="object-position: center 72%;"
@@ -123,9 +123,9 @@
     'introMaxW'        => 'max-w-none',
     'align'            => 'left',
     'cards'            => [
-        ['title' => 'Repairs & Call-Outs',     'body' => 'Engineer-led fault diagnosis and repair to reduce downtime and return equipment to use.',          'cta' => 'Request Call-Out',         'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',             'alt' => 'Repairs and Call-Outs',   'pos' => 'center 40%'],
-        ['title' => 'Preventive Maintenance',  'body' => 'Planned servicing helps reduce breakdown risk and downtime while keeping equipment in better condition.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
-        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement or expansion, with equipment installed and maintained.',      'cta' => 'Explore Rental Options',   'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.jpg', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
+        ['title' => 'Repairs & Call-Outs',     'body' => 'Engineer-led fault diagnosis and repair to reduce downtime and return equipment to use.',          'cta' => 'Request Call-Out',         'href' => route('repairs'),           'img' => '/images/shared/repairs-callouts.webp',             'alt' => 'Repairs and Call-Outs',   'pos' => 'center 40%'],
+        ['title' => 'Preventive Maintenance',  'body' => 'Planned servicing helps reduce breakdown risk and downtime while keeping equipment in better condition.',                       'cta' => 'View Maintenance Options', 'href' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.webp',       'alt' => 'Preventive Maintenance',  'pos' => '80% center'],
+        ['title' => 'Equipment Rental',        'body' => 'A lower upfront cost option for replacement or expansion, with equipment installed and maintained.',      'cta' => 'Explore Rental Options',   'href' => route('rental'),            'img' => '/images/shared/td6-11-multihousing-room-front.webp', 'alt' => 'Equipment Rental',        'pos' => '66% center'],
         ['title' => 'Support & Aftercare',     'body' => 'Ongoing advice after installation or repair, with clear information on servicing, parts and future equipment needs.',                       'cta' => 'View Aftercare',           'href' => route('parts-aftercare'),  'img' => '/images/shared/services-overview-hero-portrait.jpg', 'alt' => 'Support & Aftercare', 'pos' => 'center center'],
     ],
 ])
@@ -159,18 +159,18 @@
     'careCta'         => 'Explore Care Facilities',
     'hospitalityCta'  => 'Explore Hospitality',
     'commercialCta'   => 'Explore Commercial Laundry',
-    'commercialImg'   => '/images/pages/home/0O3A9810_72dpi.jpg',
+    'commercialImg'   => '/images/pages/home/0O3A9810_72dpi.webp',
 ])
 
 <!-- 6. EQUIPMENT TEASER — Product Category Grid -->
 @include('components.equipment-categories', [
-    'heading'    => '<span class="lg:text-[1.95rem] 2xl:text-[2.5rem]">Commercial laundry equipment <span class="text-[#148af4]">for daily use</span></span>',
+    'heading'    => 'Commercial laundry equipment <span class="text-[#148af4]">for daily use</span>',
     'textMinH'   => '160px',
     'subheading' => 'Washers, dryers and finishing equipment, backed by installation and support.',
     'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily commercial washing where capacity, cycle control and fabric care all matter.', 'cta' => 'View Washing Machines', 'route' => ['equipment.category', ['category' => 'commercial-washers']], 'box' => 300, 'mb' => -35],
-        ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For regular drying demand where fabric care and steady turnaround matter.', 'cta' => 'View Dryers', 'route' => ['equipment.category', ['category' => 'tumble-dryers']], 'box' => 300],
+        ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For regular drying demand where fabric care and steady turnaround matter.', 'cta' => 'View Dryers', 'route' => ['equipment.category', ['category' => 'tumble-dryers']], 'box' => 300],
         ['img' => 'DC6-15WW', 'src' => '/images/pages/drying-cabinets/workwear-dc6-15ww.jpg', 'name' => 'Drying Cabinets', 'desc' => 'For gentle drying of delicate garments, outdoor wear and specialist fabrics.', 'cta' => 'View Drying Cabinets', 'route' => ['equipment.category', ['category' => 'drying-cabinets']], 'box' => 300, 'mb' => 0],
         ['img' => 'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'ext' => 'jpg', 'name' => 'Ironers & Flatwork', 'desc' => 'For sheets, table linen and other flatwork requiring a consistent professional finish.', 'cta' => 'View Ironers', 'route' => ['equipment.category', ['category' => 'ironers']]],
     ],

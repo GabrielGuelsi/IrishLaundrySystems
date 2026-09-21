@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[600px]" style="height:auto; min-height:520px;">
-    <img src="/images/pages/accessories/heroaccesories.png" alt="Laundry dosing systems, detergents and accessories"
+    <img src="/images/pages/accessories/heroaccesories.webp" alt="Laundry dosing systems, detergents and accessories"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -112,9 +112,9 @@
         @php
         $setupSteps = [
             ['n' => '01', 'label' => 'Washer',        'body' => 'Load weight and programme data provide the basis for accurate detergent dosing.',        'imgs' => ['/images/pages/commercial-washers/commercialwasher.webp'], 'imgClass' => 'max-h-full'],
-            ['n' => '02', 'label' => 'Dosing System', 'body' => 'Calculates and delivers the right detergent quantity for each load.',                     'imgs' => ['/images/pages/accessories/dosing-unit.png'], 'imgClass' => 'max-h-[110px]'],
+            ['n' => '02', 'label' => 'Dosing System', 'body' => 'Calculates and delivers the right detergent quantity for each load.',                     'imgs' => ['/images/pages/accessories/dosing-unit.webp'], 'imgClass' => 'max-h-[110px]'],
             ['n' => '03', 'label' => 'Detergents',    'body' => 'Selected products support the textiles, hygiene requirements and wash results needed.',   'imgs' => ['/images/pages/accessories/l02-laundry-eco-wash.webp', '/images/pages/accessories/l06-laundry-swan-wash.jpg'], 'imgClass' => 'max-h-[118px]'],
-            ['n' => '04', 'label' => 'Safe Storage',  'body' => 'Keeps dosing equipment and detergent containers organised, contained and accessible.',    'imgs' => ['/images/pages/accessories/dispenseringreycabinet.png'], 'imgClass' => 'max-h-full'],
+            ['n' => '04', 'label' => 'Safe Storage',  'body' => 'Keeps dosing equipment and detergent containers organised, contained and accessible.',    'imgs' => ['/images/pages/accessories/dispenseringreycabinet.webp'], 'imgClass' => 'max-h-full'],
         ];
         @endphp
 
@@ -195,7 +195,7 @@
                 'logos' => ['clarusvibe', 'compasspro'],
                 'cta'   => 'Ask About Multisave',
                 'img'   => '/images/shared/MultisaveEQUIP.webp',
-                'scene' => '/images/pages/accessories/MULTISAVE.png',
+                'scene' => '/images/pages/accessories/MULTISAVE.webp',
             ],
             [
                 'name'  => 'JETSAVE',
@@ -206,7 +206,7 @@
                 'logos' => ['clarusvibe'],
                 'cta'   => 'Ask About JETSAVE',
                 'img'   => '/images/shared/JetsaveEQUIP.webp',
-                'scene' => '/images/pages/accessories/JETSAVE.png',
+                'scene' => '/images/pages/accessories/JETSAVE.webp',
             ],
             [
                 'name'  => 'DOSAVE',
@@ -377,7 +377,7 @@
                 'copy'    => 'Electrolux Professional Detergent Storage helps keep canisters, dosing pumps and relevant items organised, safer and easier to manage.',
                 'badges'  => ['Canister storage', 'Pump support', 'Safer handling'],
                 'cta'     => 'Ask About Storage',
-                'img'     => '/images/pages/accessories/dispenseringreycabinet.png',
+                'img'     => '/images/pages/accessories/dispenseringreycabinet.webp',
             ],
             [
                 'name'    => 'Laundry Room Accessories',
@@ -706,8 +706,8 @@
             @foreach([
                 ['title' => 'Trolleys &amp; Carts',          'copy' => 'For moving clean and soiled laundry safely around the site.',                        'img' => '/images/pages/accessories/trolley_.webp',            'mw' => '86%', 'align' => 'justify-start', 'href' => 'https://tools.electroluxprofessional.com/Mirror/Doc/ELS/PDS/PDS_Trolleys_438918404_EN.pdf?version=1736598854', 'link' => 'View Trolleys Data Sheet'],
                 ['title' => 'Racks &amp; Shelving',          'copy' => 'For organising, separating and preparing laundry before or after processing.',       'img' => '/images/pages/accessories/Racks%20%26%20Shelvingimage.png', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/garment-rack-RACKGARM/', 'link' => 'View Garment Racks'],
-                ['title' => 'Laundry Bags &amp; Nets',       'copy' => 'For separating loads and protecting selected items during handling and washing.',     'img' => '/images/pages/accessories/laundrybagannets.png', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/laundry-net-and-bags-WASHNET/', 'link' => 'View Nets &amp; Bags'],
-                ['title' => 'Dryer Balls &amp; Care Items',  'copy' => 'For practical textile care and everyday drying requirements.',                       'img' => '/images/pages/accessories/dryer-balls.png',          'href' => 'https://www.electroluxprofessional.com/gb/accessories-consumables/', 'link' => 'View Care Items'],
+                ['title' => 'Laundry Bags &amp; Nets',       'copy' => 'For separating loads and protecting selected items during handling and washing.',     'img' => '/images/pages/accessories/laundrybagannets.webp', 'href' => 'https://www.electroluxprofessional.com/gb/commercial-laundry-equipment/auxiliaries/laundry-net-and-bags-WASHNET/', 'link' => 'View Nets &amp; Bags'],
+                ['title' => 'Dryer Balls &amp; Care Items',  'copy' => 'For practical textile care and everyday drying requirements.',                       'img' => '/images/pages/accessories/dryer-balls.webp',          'href' => 'https://www.electroluxprofessional.com/gb/accessories-consumables/', 'link' => 'View Care Items'],
             ] as $acc)
             <div class="flex flex-col gap-6 h-full">
                 <div style="min-height:112px;">
@@ -907,7 +907,7 @@
                     'text'  => 'For faults or issues affecting laundry equipment, dosing systems or day-to-day operation.',
                     'cta'   => 'Request a Repair',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => 'center 40%',
                 ],
                 [
@@ -915,7 +915,7 @@
                     'text'  => 'Planned support to help keep equipment, dosing and laundry room systems working properly.',
                     'cta'   => 'View Maintenance Support',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '88% 35%',
                 ],
                 [
@@ -923,7 +923,7 @@
                     'text'  => 'Rental options where a site needs laundry equipment flexibility without a full purchase route.',
                     'cta'   => 'Ask About Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/pages/accessories/equipmentrentalcard.png',
+                    'img'   => '/images/pages/accessories/equipmentrentalcard.webp',
                     'pos'   => 'center center',
                 ],
                 [
@@ -979,9 +979,9 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'commercial-washers'), 'img' => '/images/pages/commercial-washers/WH6-27.jpg', 'box' => 270],
+                ['title' => 'Commercial Washing Machines', 'copy' => 'For washer setups where detergent choice, dosing accuracy and load type directly affect wash results.', 'cta' => 'View Washing Machines', 'route' => route('equipment.category', 'commercial-washers'), 'img' => '/images/pages/commercial-washers/WH6-27.webp', 'box' => 270],
                 ['title' => 'Commercial Tumble Dryers',    'copy' => 'For drying capacity planned around the wash process, textile care and daily laundry demand.', 'cta' => 'View Dryers', 'route' => route('equipment.category', 'tumble-dryers'), 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp', 'box' => 270],
-                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/WH6-27LAC.jpg', 'box' => 270],
+                ['title' => 'Wet Cleaning Equipment',      'copy' => 'For specialist garment care where detergents, stain treatment, drying and finishing need to work together.', 'cta' => 'View Wet Cleaning', 'route' => route('equipment.category', 'wet-cleaning'), 'img' => '/images/pages/wet-cleaning/WH6-27LAC.webp', 'box' => 270],
                 ['title' => 'Commercial Ironers',          'copy' => 'For finishing and flatwork where wash quality, fabric care and handling affect the final result.', 'cta' => 'View Ironers', 'route' => route('equipment.category', 'ironers'), 'img' => '/images/pages/ironers/IB623_FRONT_NEW.jpg', 'box' => 300],
             ] as $card)
             <div class="flex flex-col gap-6 h-full">

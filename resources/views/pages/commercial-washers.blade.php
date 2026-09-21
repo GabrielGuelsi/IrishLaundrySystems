@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
-    <img src="/images/pages/commercial-washers/0O3A9746_72dpi.jpg" alt="Commercial washers"
+    <img src="/images/pages/commercial-washers/0O3A9746_72dpi.webp" alt="Commercial washers"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -90,10 +90,10 @@
             <div x-data="{
                     cur: 0,
                     imgs: [
-                        '/images/pages/commercial-washers/WH6-7.jpg',
-                        '/images/pages/commercial-washers/WH6-14.jpg',
-                        '/images/pages/commercial-washers/WH6-6.jpg',
-                        '/images/pages/semi-professional/mypro-hp-front.jpg',
+                        '/images/pages/commercial-washers/WH6-7.webp',
+                        '/images/pages/commercial-washers/WH6-14.webp',
+                        '/images/pages/commercial-washers/WH6-6.webp',
+                        '/images/pages/semi-professional/mypro-hp-front.webp',
                     ],
                     init() { setInterval(() => { this.cur = (this.cur + 1) % this.imgs.length }, 3000); }
                  }"
@@ -213,7 +213,7 @@
             @foreach([
                 ['icon' => '7',             'title' => 'Water control',      'copy' => 'Automatic Savings adjusts water intake to the actual load, reducing waste on smaller wash loads.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.291] -translate-y-[14.5%]'],
                 ['icon' => '201',           'title' => 'Load accuracy',      'copy' => 'Integrated Savings gives load visibility, helping avoid underloading and overloading before the cycle starts.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.041] -translate-y-[0.3%]'],
-                ['icon' => '4',             'title' => 'Programme control',  'copy' => 'ClarusVibe and CompassPro support clearer programme selection, editable programmes and easier operator control.', 'img' => '/images/icons/clarusvibe.jpeg', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
+                ['icon' => '4',             'title' => 'Programme control',  'copy' => 'ClarusVibe and CompassPro support clearer programme selection, editable programmes and easier operator control.', 'img' => '/images/icons/clarusvibe.webp', 'imgClass' => 'w-full h-24 object-cover rounded-lg'],
                 ['icon' => 'dosing-control','title' => 'Dosing control',     'copy' => 'Intelligent / Efficient Dosing links detergent use to load weight and cycle needs for better wash control.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.149] -translate-y-[8.3%]'],
                 ['icon' => '213',           'title' => 'Extraction control', 'copy' => 'Power Balance controls extraction strength, reducing moisture left in the load before drying.', 'imgClass' => 'w-24 h-24 object-contain scale-[1.118]'],
             ] as $card)
@@ -234,7 +234,7 @@
 {{-- 8. PLANNING / INSTALLATION STRIP (before the selection journey) --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -282,7 +282,7 @@
         @php
         $rangeCards = [
             ['name' => 'Line 6000 Commercial Washers', 'copy' => 'Main commercial washer range for busy laundry rooms where capacity, controls, dosing, high spin and support need to work together.', 'cta' => 'View Washer Range', 'route' => '#washer-range', 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'sc' => 'scale-[1.30]'],
-            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg', 'sc' => 'scale-[0.90]'],
+            ['name' => 'myPRO / myPRO XL',             'copy' => 'For smaller sites that need more than domestic equipment without moving straight into a full commercial laundry setup.', 'cta' => 'Discover myPRO', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'img' => '/images/pages/semi-professional/mypro-hp-front.webp', 'sc' => 'scale-[0.90]'],
             ['name' => 'Barrier Washers',               'copy' => 'For hygiene-critical laundry rooms where soiled and clean handling must stay separate.', 'cta' => 'Explore Barrier Washers', 'route' => route('equipment.category', 'barrier-washers'), 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp', 'sc' => 'scale-[1.28]'],
             ['name' => 'Lagoon Advanced Care',          'copy' => 'For specialist wet cleaning and textile care where delicate garments, leathers or shoes need a different process.', 'cta' => 'Explore Wet Cleaning', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'img' => '/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg', 'sc' => 'scale-[1.10]'],
         ];
@@ -426,7 +426,7 @@
                 ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'PW9C Compact Washer', 'slug' => 'pw9c', 'route' => route('equipment.product', ['category' => 'commercial-washers', 'product' => 'pw9c']), 'line' => 'Compact / Small Business', 'topLine' => 'Compact · 9 kg', 'ranges' => ['6–9 kg'], 'fit' => 'Compact professional washer for smaller sites needing more than domestic laundry equipment.', 'badges' => ['Compact Fit','Professional Wash','Small Site','Support Available'], 'tech' => [], 'img' => '/images/pages/commercial-washers/PW9C.jpg'],
                 ['group' => 'Compact / Heavy-Duty Washer Options', 'name' => 'W4-Series Washer-Extractors', 'slug' => 'w4-series', 'route' => route('equipment.product', ['category' => 'commercial-washers', 'product' => 'w4-series']), 'line' => 'Heavy-Duty Washer-Extractors', 'topLine' => 'Heavy Duty · 40 kg+', 'ranges' => ['40 kg+'], 'fit' => 'Heavy-duty washer-extractor route for large-volume laundry rooms needing strong throughput and long-term support.', 'badges' => ['High Capacity','Heavy Duty','Service Support','Long-Term Use'], 'tech' => [], 'img' => '/images/pages/commercial-washers/W4-Series Washer-Extractors.png'],
                 // Specialist Washing Routes
-                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg'],
+                ['group' => 'Specialist Washing Routes', 'name' => 'myPRO / myPRO XL', 'slug' => 'mypro', 'route' => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']), 'line' => 'Semi-Professional', 'topLine' => 'Semi-Professional', 'ranges' => ['6–9 kg'], 'fit' => 'Semi-professional washer route for smaller sites needing more than domestic equipment.', 'badges' => ['Small Site','Professional Wash','Compact Fit','Support Available'], 'tech' => [], 'img' => '/images/pages/semi-professional/mypro-hp-front.webp'],
                 ['group' => 'Specialist Washing Routes', 'name' => 'Barrier Washers', 'slug' => 'barrier', 'route' => route('equipment.category', 'barrier-washers'), 'line' => 'Barrier Washers', 'topLine' => 'Hygiene-Critical Laundry', 'ranges' => ['11–14 kg','20–35 kg','40 kg+'], 'fit' => 'Barrier washer route for laundry rooms where soiled and clean handling must stay separate.', 'badges' => ['Clean / Dirty Separation','Hygiene Watchdog','ERGOCERT','AIDO'], 'tech' => ['ERGOCERT'], 'img' => '/images/pages/barrier-washers/line6000-barrier-washer.webp'],
                 ['group' => 'Specialist Washing Routes', 'name' => 'Lagoon Advanced Care', 'slug' => 'lagoon', 'route' => route('equipment.product', ['category' => 'wet-cleaning', 'product' => 'lagoon-advanced-care']), 'line' => 'Lagoon / Wet Cleaning Variants', 'topLine' => 'Specialist Wet Cleaning', 'ranges' => ['11–14 kg','20–35 kg'], 'fit' => 'Specialist wet cleaning route for delicate garments, textile care and advanced fabric handling.', 'badges' => ['Wet Cleaning','Textile Care','Efficient Dosing','Lagoon'], 'tech' => ['Efficient Dosing'], 'img' => '/images/pages/finishing-equipment/FC48.jpg'],
             ];
@@ -607,7 +607,7 @@
                 'points' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'logos'  => ['clarusvibe', 'compasspro'],
                 'img'    => '/images/shared/MultisaveEQUIP.webp',
-                'scene'  => '/images/pages/accessories/MULTISAVE.png',
+                'scene'  => '/images/pages/accessories/MULTISAVE.webp',
             ],
             [
                 'name'   => 'DOSAVE',
@@ -625,7 +625,7 @@
                 'points' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'logos'  => ['clarusvibe'],
                 'img'    => '/images/shared/JetsaveEQUIP.webp',
-                'scene'  => '/images/pages/accessories/JETSAVE.png',
+                'scene'  => '/images/pages/accessories/JETSAVE.webp',
             ],
             [
                 'name'   => 'Efficient Dosing',
@@ -754,7 +754,7 @@
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
     'mirror'       => true,
-    'image'        => '/images/pages/services/repairs-how-02.jpg',
+    'image'        => '/images/pages/services/repairs-how-02.webp',
     'headingLine1' => 'Replace or add washer capacity',
     'headingLine2' => '<span style="color:#148af4;">with lower upfront cost</span>',
     'body'         => 'Equipment Rental includes washers, installation and maintenance under planned rental payments.',
@@ -786,7 +786,7 @@
                     'text'  => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',
                     'cta'   => 'Request Call-Out',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -794,7 +794,7 @@
                     'text'  => 'Planned washer servicing to reduce unexpected repairs and keep equipment condition visible.',
                     'cta'   => 'View Maintenance Options',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -802,7 +802,7 @@
                     'text'  => 'Lower upfront cost for washer replacement, capacity planning or expansion where rental is the right fit.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'   => '66% center',
                 ],
                 [
@@ -845,7 +845,7 @@
 {{-- 14. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="relative overflow-hidden py-12 lg:py-16" style="background-color:#148af4;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/pages/commercial-washers/after-installation-strip.jpg" alt="Irish Laundry Systems after-installation support"
+        <img src="/images/pages/commercial-washers/after-installation-strip.webp" alt="Irish Laundry Systems after-installation support"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 30%, rgba(20,138,244,0.15) 52%, transparent 70%);"></div>
     </div>

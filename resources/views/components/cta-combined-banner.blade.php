@@ -16,7 +16,7 @@
 
     {{-- Background image pinned to the right --}}
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:46%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         {{-- Fade the left edge into the blue. Smoothstep ramp: the slope is zero where the

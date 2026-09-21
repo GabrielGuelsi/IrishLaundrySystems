@@ -6,7 +6,7 @@
 @endphp
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/pages/one-connected/oneconnectedstrip.png" alt="OnE Connected laundry dashboard"
+        <img src="/images/pages/one-connected/oneconnectedstrip.webp" alt="OnE Connected laundry dashboard"
              class="w-full h-full object-cover" style="object-position: 87% center;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.45) 8%, rgba(1,30,65,0.12) 22%, transparent 40%);"></div>
     </div>
