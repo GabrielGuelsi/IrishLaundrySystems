@@ -3,6 +3,10 @@
 @section('pageTitle', 'Commercial Laundry Engineering Ireland | Preventive Maintenance, Repairs & Equipment | Irish Laundry Systems')
 @section('metaDescription', 'Engineering-led commercial laundry care since 1987. Preventive maintenance, repairs, equipment rental and aftercare across Dublin and Ireland. Request a service assessment.')
 
+@section('meta')
+<link rel="preload" as="image" href="/images/pages/home/HOMEHERO1.png" fetchpriority="high">
+@endsection
+
 @section('content')
 
 <!-- 1. HERO -->
@@ -23,10 +27,12 @@
     <!-- Background carousel -->
     <img src="/images/pages/home/HOMEHERO1.png"
          alt="Commercial laundry operation"
+         fetchpriority="high" width="1916" height="821"
          class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
     <img src="/images/pages/home/HOMEHERO2.jpg"
          alt="Irish Laundry Systems engineering team on site"
+         fetchpriority="low" loading="lazy" width="1916" height="821"
          style="object-position: center 72%;"
          class="absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 1 ? 'opacity-100' : 'opacity-0'">
