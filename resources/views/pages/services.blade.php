@@ -300,8 +300,10 @@
             <div>
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Electrolux Professional Partnership</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.2rem] 2xl:text-[2.5rem] leading-tight mb-5">
-                    <span class="lg:block">Service strengthened by Electrolux&nbsp;Professional</span>
-                    <span class="lg:block text-[#148af4]">product knowledge and genuine parts&nbsp;access</span>
+                    <span class="lg:block">Service strengthened by</span>
+                    <span class="lg:block">Electrolux&nbsp;Professional</span>
+                    <span class="lg:block text-[#148af4]">product knowledge and</span>
+                    <span class="lg:block text-[#148af4]">genuine parts&nbsp;access</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mb-6 text-pretty">
                     <span class="lg:block">Access to genuine Electrolux Professional parts and product knowledge</span>
@@ -359,7 +361,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="max-w-5xl mx-auto text-center">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Trust</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance lg:whitespace-nowrap">
                 Trusted for <span class="text-[#148af4]">commercial laundry service&nbsp;support</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed lg:whitespace-nowrap">

@@ -30,7 +30,7 @@
         <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
 
         <!-- 3 feature icons -->
-        <div class="hidden lg:flex items-start gap-20">
+        <div class="hidden lg:flex items-start gap-6 2xl:gap-20">
 
             <div class="flex flex-col items-center gap-0 text-center">
                 <div class="h-[88px] flex items-center justify-center">
