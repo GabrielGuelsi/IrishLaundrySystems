@@ -104,7 +104,7 @@ $showChrome = ! $single && count($slides) > 1;
             {{-- Slides stacked in the same grid cell --}}
             <div class="grid [&>*]:[grid-area:1/1]">
                 @foreach ($slides as $i => $t)
-                    <article
+                    <div
                         role="group"
                         aria-roledescription="slide"
                         aria-label="{{ $i + 1 }} of {{ count($slides) }}"
@@ -184,7 +184,7 @@ $showChrome = ! $single && count($slides) > 1;
 
                             </div>
                         </div>
-                    </article>
+                    </div>
                 @endforeach
             </div>
 

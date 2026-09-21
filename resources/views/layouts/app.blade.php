@@ -8,6 +8,51 @@
     <title>@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')</title>
     <meta name="description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
 
+    <!-- Canonical + Open Graph / Twitter -->
+    <link rel="canonical" href="{{ url()->current() }}">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Irish Laundry Systems">
+    <meta property="og:locale" content="en_IE">
+    <meta property="og:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
+    <meta property="og:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:image" content="{{ url('/images/pages/home/HOMEHERO1.png') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
+    <meta name="twitter:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    <meta name="twitter:image" content="{{ url('/images/pages/home/HOMEHERO1.png') }}">
+
+    <!-- Organization structured data (JSON-LD) -->
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Irish Laundry Systems",
+        "legalName": "D.S.B. Electrical (Templeogue) Limited",
+        "url": "https://irishlaundrysystems.com",
+        "logo": "https://irishlaundrysystems.com/email/logo-ils.png",
+        "image": "https://irishlaundrysystems.com/images/pages/home/HOMEHERO1.png",
+        "description": "Engineering-led commercial laundry specialist serving the Republic of Ireland since 1987 — preventive maintenance, repairs and call-outs, equipment supply and rental, and aftercare. Authorised Electrolux Professional Partner.",
+        "foundingDate": "1987",
+        "telephone": "+353-1-491-0402",
+        "email": "contact@irishlaundrysystems.com",
+        "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" },
+        "areaServed": { "@type": "Country", "name": "Ireland" },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+353-1-491-0402",
+            "email": "contact@irishlaundrysystems.com",
+            "contactType": "customer service",
+            "areaServed": "IE",
+            "availableLanguage": "English"
+        },
+        "brand": { "@type": "Brand", "name": "Electrolux Professional" },
+        "knowsAbout": ["Commercial laundry equipment", "Preventive maintenance", "Equipment rental", "Laundry repairs and call-outs", "Electrolux Professional laundry"]
+    }
+    </script>
+    @endverbatim
+
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico?v=2" sizes="any">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
