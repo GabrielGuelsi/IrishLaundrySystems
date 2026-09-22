@@ -50,7 +50,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.3rem] leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">The right wet-cleaning</span>
                     <span class="sm:block">system starts with <span style="color:#148af4;">garment mix,</span></span>
                     <span class="sm:block" style="color:#148af4;">volume and finishing needs</span>

@@ -50,7 +50,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-8 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Choose drying cabinets around</span>
                     <span class="sm:block" style="color:#148af4;">the items you handle</span>
                     <span class="sm:block" style="color:#148af4;">and daily drying demand</span>

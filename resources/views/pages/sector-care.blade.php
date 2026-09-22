@@ -42,7 +42,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-[3fr_4fr] gap-12 lg:gap-16 items-center">
 
             <div class="reveal reveal-left">
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="lg:block">The right laundry setup for</span>
                     <span class="lg:block" style="color:#148af4;">your space, daily workload</span>
                     <span class="lg:block" style="color:#148af4;">and hygiene requirements</span>
