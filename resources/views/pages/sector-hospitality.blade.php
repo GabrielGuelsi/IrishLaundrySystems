@@ -698,7 +698,7 @@
 @include('components.equipment-categories', [
     'eyebrow' => 'Equipment Categories',
     'textMinH' => '176px',
-    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
+    'heading' => '<span class="lg:text-[2.6rem] 2xl:text-[3rem] lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
     'subheading' => 'Select a category to see the equipment available for different hospitality laundry requirements.',
     'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
