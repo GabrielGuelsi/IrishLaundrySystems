@@ -66,7 +66,7 @@
     <img src="/images/shared/repairs-hero.webp"
          alt="ILS engineer providing reactive repair and call-out support on commercial laundry equipment"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+         class="absolute inset-0 w-full h-full object-cover object-right lg:origin-left lg:scale-[1.18]">
 
     <!-- Gradient overlay — tight, clears by 70% -->
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
@@ -384,9 +384,6 @@ $expectSteps = [
                      loading="lazy" decoding="async"
                      style="object-position: left center;"
                      class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-x-0 bottom-0 p-5 bg-gradient-to-t from-navy/80 to-transparent">
-                    <p class="font-body font-bold text-white text-xs uppercase tracking-[0.22em]">Laundry Online &mdash; Dublin</p>
-                </div>
             </div>
 
         </div>
