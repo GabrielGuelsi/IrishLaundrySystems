@@ -201,7 +201,7 @@
 <!-- 7. PROOF — TESTIMONIALS -->
 @include('components.testimonials', [
     'eyebrow'    => 'Customer Experience',
-    'heading'    => 'Commercial laundry expertise trusted across sectors',
+    'heading'    => 'Commercial laundry expertise <span class="text-[#148af4]">trusted across sectors</span>',
     'subheading' => 'Supporting organisations across Ireland with equipment, engineering and service since 1987.',
     'subheadingClass' => 'max-w-4xl mx-auto',
 ])
@@ -216,7 +216,7 @@
     'eyebrow'      => 'Preventive Maintenance & Aftercare',
     'headingLine1' => 'Keep equipment running with',
     'headingLine2' => 'planned maintenance and support',
-    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.5rem]',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
     'body'         => 'Preventive servicing, clear records and parts support<br class="hidden lg:block"> help reduce breakdown risk and bring better cost control.',
     'miniPoints'   => [
         ['icon' => '244', 'iconClass' => 'brightness-0 invert', 'label' => 'Fewer<br>Breakdowns'],
