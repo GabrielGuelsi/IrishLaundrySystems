@@ -412,8 +412,8 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1320px]:whitespace-nowrap">
                 From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience<br class="hidden lg:block"> into a specialist commercial laundry equipment and service company.
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty 2xl:whitespace-nowrap">
+                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience into a specialist commercial laundry equipment and service company.
             </p>
         </div>
 
@@ -422,7 +422,7 @@
             ['year'=>'1987',       'label'=>'Foundations',    'title'=>'Electrical Foundations',                     'body'=>'Maurice McDonagh established the electrical contracting business that created the technical base for Irish Laundry Systems.', 'img'=>'images/icons/SAFEELECTRIC.png', 'imgLogo'=>true],
             ['year'=>'Electrolux', 'label'=>'Service Roots',  'title'=>'Specialist Laundry Knowledge',               'body'=>'Frank McDonagh brought more than 30 years of Electrolux service management and industrial laundry experience to the business.', 'img'=>'images/logo/electrolux-partner.png', 'imgLogo'=>true],
             ['year'=>'Mid-1990s',  'label'=>'Company Growth', 'title'=>'Irish Laundry Systems Takes Shape',          'body'=>'Maurice and Frank combined electrical contracting, Electrolux product knowledge and commercial laundry service experience to build Irish Laundry Systems.', 'img'=>'images/pages/about/ILSLOGO2.png', 'imgLogo'=>true],
-            ['year'=>'Today',      'label'=>'Ongoing',        'title'=>'Commercial Laundry Expertise Across Ireland','body'=>'Irish Laundry Systems provides commercial laundry equipment and long-term service for customers across Ireland.', 'img'=>'images/about/about-engineers.jpg'],
+            ['year'=>'Today',      'label'=>'Ongoing',        'title'=>'Commercial Laundry Expertise Across Ireland','body'=>'Irish Laundry Systems provides commercial laundry equipment and long-term service for customers across Ireland.', 'img'=>'images/pages/home/HOMEHERO2.webp'],
         ];
         @endphp
 

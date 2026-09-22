@@ -22,7 +22,7 @@
 
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
 
-    <img src="/images/pages/home/HOMEHERO2.jpg" alt="Irish Laundry Systems engineering team on site"
+    <img src="/images/pages/home/HOMEHERO2.webp" alt="Irish Laundry Systems engineering team on site"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover scale-125"
          style="object-position: center 72%;">
@@ -116,7 +116,7 @@
                 'subline'  => 'Line 6000 equipment options for sites looking to manage energy use, water use and daily laundry demand.',
                 'cta'      => 'Explore Commercial Washers',
                 'route'    => route('equipment.category', 'commercial-washers'),
-                'img'      => '/images/shared/Line 6000 solutions products_72dpi.jpg',
+                'img'      => '/images/shared/Line 6000 solutions products_72dpi.webp',
                 'imgClass' => 'object-[50%_90%]',
             ],
             [
@@ -125,7 +125,7 @@
                 'subline'  => 'myPROzip washer and dryer options for operations that need more than domestic equipment in a compact professional setup.',
                 'cta'      => 'Explore myPRO Options',
                 'route'    => route('equipment.category', 'semi-professional'),
-                'img'      => '/images/pages/equipment/mypro-family.jpg',
+                'img'      => '/images/pages/equipment/mypro-family.webp',
                 'imgClass' => 'object-[50%_80%]',
             ],
             [
@@ -134,7 +134,7 @@
                 'subline'  => 'lagoon Advanced Care and wet cleaning options for garments and textiles that need a different approach.',
                 'cta'      => 'Explore Wet Cleaning',
                 'route'    => route('equipment.category', 'wet-cleaning'),
-                'img'      => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg',
+                'img'      => '/images/pages/wet-cleaning/lagoon-advanced-care-internal.webp',
             ],
         ];
         @endphp
@@ -214,21 +214,21 @@
                 'text'  => 'For sites that need stronger wash performance, better load handling and more control around daily laundry output.',
                 'cta'   => 'View Washer Options',
                 'route' => route('equipment.category', 'commercial-washers'),
-                'img'   => '/images/pages/commercial-washers/WH6-27.jpg',
+                'img'   => '/images/pages/commercial-washers/WH6-27.webp',
             ],
             [
                 'title' => 'Heat Pump Dryers',
                 'text'  => 'For sites looking to reduce energy pressure while keeping drying performance strong for busy laundry demand.',
                 'cta'   => 'View Dryer Options',
                 'route' => route('equipment.category', 'tumble-dryers'),
-                'img'   => '/images/pages/dryers/TD6-14.jpg',
+                'img'   => '/images/pages/dryers/TD6-14.webp',
             ],
             [
                 'title' => 'myPRO Washers &amp; Dryers',
                 'text'  => 'For smaller operations that need more than domestic equipment without moving straight into a full commercial laundry setup.',
                 'cta'   => 'View myPRO Options',
                 'route' => route('equipment.category', 'semi-professional'),
-                'img'   => '/images/pages/semi-professional/mypro-hp-front.jpg',
+                'img'   => '/images/pages/semi-professional/mypro-hp-front.webp',
             ],
         ];
         @endphp
@@ -318,14 +318,14 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
 
             @foreach([
-                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'commercial-washers'),          'img' => '/images/pages/equipment/commercialwasherscard.png'],
-                ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/pages/equipment/barrierwashercards.png'],
-                ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/equipment/tumbledryerscard.png'],
+                ['title' => 'Commercial Washers',           'route' => route('equipment.category', 'commercial-washers'),          'img' => '/images/pages/equipment/commercialwasherscard.webp'],
+                ['title' => 'Barrier Washers',              'route' => route('equipment.category', 'barrier-washers'),  'img' => '/images/pages/equipment/barrierwashercards.webp'],
+                ['title' => 'Tumble Dryers',                'route' => route('equipment.category', 'tumble-dryers'),    'img' => '/images/pages/equipment/tumbledryerscard.webp'],
                 ['title' => 'Drying Cabinets',              'route' => route('equipment.category', 'drying-cabinets'),  'img' => '/images/shared/drying_cabinetscards.jpg'],
                 ['title' => 'Hot Cylinder Ironers',         'route' => route('equipment.category', 'ironers'),          'img' => '/images/pages/equipment/hot_ciliders_ironerscards.jpg'],
-                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/pages/equipment/wetcleaningcards.png', 'pad' => 'p-0 scale-[1.15]'],
-                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/pages/equipment/semiprofessionalcards.png'],
-                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/pages/equipment/accessoriesandconsumablescardimage.png'],
+                ['title' => 'Wet Cleaning',                 'route' => route('equipment.category', 'wet-cleaning'),     'img' => '/images/pages/equipment/wetcleaningcards.webp', 'pad' => 'p-0 scale-[1.15]'],
+                ['title' => 'Semi-Professional',            'route' => route('equipment.category', 'semi-professional'),'img' => '/images/pages/equipment/semiprofessionalcards.webp'],
+                ['title' => 'Accessories &amp; Consumables','route' => route('equipment.category', 'accessories'),      'img' => '/images/pages/equipment/accessoriesandconsumablescardimage.webp'],
             ] as $cat)
             <a href="{{ $cat['route'] }}" class="group relative rounded-xl overflow-hidden block aspect-square border border-gray-100 bg-white">
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
@@ -396,7 +396,7 @@
 <!-- 7. EQUIPMENT ACCESS & VALUE STRIP -->
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:340px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/equipment-access-strip.jpg" alt="ILS laundry equipment supply"
+        <img src="/images/shared/equipment-access-strip.webp" alt="ILS laundry equipment supply"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -495,7 +495,7 @@
                     'text'   => 'Engineering support when faults or breakdowns put laundry output, linen availability or daily routines under pressure.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/shared/repairs-callouts.jpg',
+                    'img'    => '/images/shared/repairs-callouts.webp',
                     'pos'    => 'center 40%',
                 ],
                 [
@@ -503,7 +503,7 @@
                     'text'   => 'For sites that need planned visits, fewer reactive maintenance decisions and better control around essential laundry equipment.',
                     'cta'    => 'View Contracts',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/shared/service-contracts-hero.png',
+                    'img'    => '/images/shared/service-contracts-hero.webp',
                     'pos'    => '88% 35%',
                 ],
                 [
@@ -511,7 +511,7 @@
                     'text'   => 'For selected equipment where lower upfront cost and included support make sense.',
                     'cta'    => 'See Equipment Rental',
                     'route'  => route('rental'),
-                    'img'    => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'    => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'    => '66% center',
                 ],
                 [
@@ -572,11 +572,11 @@
 
         @php
         $environments = [
-            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/pages/sectors/healthcarehero.png',                'pos' => '75% center'],
-            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg',   'pos' => '75% center'],
-            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/pages/sectors/hospitallityhero.png',           'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/pages/sectors/Heavy-DutyandHigh-volume.png'],
-            ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/pages/sectors/selfservice.png'],
+            ['env' => 'Healthcare',                      'route' => route('sectors.healthcare'),   'img' => '/images/pages/sectors/healthcarehero.webp',                'pos' => '75% center'],
+            ['env' => 'Care Facilities',                 'route' => route('sectors.care'),         'img' => '/images/pages/sectors/carefacilitiesheroimage.webp',   'pos' => '75% center'],
+            ['env' => 'Hospitality',                     'route' => route('sectors.hospitality'),  'img' => '/images/pages/sectors/hospitallityhero.webp',           'pos' => '75% center'],
+            ['env' => 'Commercial &amp; Industrial',     'route' => route('sectors.commercial'),   'img' => '/images/pages/sectors/Heavy-DutyandHigh-volume.webp'],
+            ['env' => 'Multi Housing',                   'route' => route('sectors'),              'img' => '/images/pages/sectors/selfservice.webp'],
         ];
         @endphp
 

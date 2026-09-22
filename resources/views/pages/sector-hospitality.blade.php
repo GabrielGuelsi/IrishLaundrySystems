@@ -8,7 +8,7 @@
 
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/pages/sectors/hospitallityhero.png" alt="Hospitality laundry installation"
+    <img src="/images/pages/sectors/hospitallityhero.webp" alt="Hospitality laundry installation"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 50% 20%;">
     <div class="relative z-10 flex-1 flex items-center w-full">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
@@ -176,7 +176,7 @@
                     'text'   => 'For equipment faults that can delay washing, drying, finishing or room preparation.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/shared/repairs-callouts.jpg',
+                    'img'    => '/images/shared/repairs-callouts.webp',
                     'pos'    => '50% 35%',
                 ],
                 [
@@ -184,7 +184,7 @@
                     'text'   => 'For planned visits, service records and better care for laundry equipment used every day.',
                     'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/shared/service-contracts-hero.png',
+                    'img'    => '/images/shared/service-contracts-hero.webp',
                     'pos'    => '90% 35%',
                 ],
                 [
@@ -192,7 +192,7 @@
                     'text'   => 'For selected replacement or capacity needs where the available rental range fits the property size and laundry demand.',
                     'cta'    => 'See Rental Options',
                     'route'  => route('rental'),
-                    'img'    => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'    => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'    => '66% center',
                 ],
                 [
@@ -541,7 +541,7 @@
                 'body'    => 'Connects up to seven washing machines with one unit for simpler dosing control.',
                 'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/MULTISAVE.png',
+                'scene'   => '/images/pages/accessories/MULTISAVE.webp',
             ],
             [
                 'name'    => 'DOSAVE',
@@ -557,7 +557,7 @@
                 'body'    => 'Uses water-powered pumps with no moving parts or squeeze tubes to replace.',
                 'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/JETSAVE.png',
+                'scene'   => '/images/pages/accessories/JETSAVE.webp',
             ],
             [
                 'name'    => 'Efficient Dosing',
@@ -593,7 +593,7 @@
 
                         {{-- Left: context photo — one at a time, alternates per slide (detergentdoser first) --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="{{ $p['scene'] ?? ($i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp') }}"
+                            <img src="{{ $p['scene'] ?? ($i % 2 === 0 ? '/images/pages/sectors/detergentdoser.webp' : '/images/shared/Laundry-Double-Banner-965x965-1.webp') }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -698,13 +698,13 @@
 @include('components.equipment-categories', [
     'eyebrow' => 'Equipment Categories',
     'textMinH' => '176px',
-    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
+    'heading' => '<span class="lg:text-[2.6rem] 2xl:text-[3rem] lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
     'subheading' => 'Select a category to see the equipment available for different hospitality laundry requirements.',
     'subheadingClass' => 'lg:whitespace-nowrap',
     'equipment' => [
         ['img'=>'FIT1', 'src' => '/images/pages/finishing-equipment/FIT1.jpg','ext'=>'jpg','name'=>'Vacuum Ironing Tables','desc'=>'For pressing garments, linens and delicate items to presentation standard.'],
         ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For bed linen, towels, robes, uniforms, guest items and food and beverage textiles.','box'=>270,'mb'=>-35],
-        ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg','name'=>'Dryers','desc'=>'For controlled drying, fabric care and daily room preparation.','box'=>245],
+        ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp','name'=>'Dryers','desc'=>'For controlled drying, fabric care and daily room preparation.','box'=>245],
         ['img'=>'drying-cabinet','src'=>'/images/pages/drying-cabinets/workwear-dc6-15ww.jpg','name'=>'Drying Cabinets','desc'=>'For gentle drying of garments, bulky items and specialist textiles.','box'=>260,'mb'=>-11],
         ['img'=>'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg','ext'=>'jpg','name'=>'Ironers & Flatwork','desc'=>'For flatwork finishing, presentation standards and storage-ready results.'],
     ],
@@ -755,7 +755,7 @@
     'headingLine1' => 'Protect <span style="color:#011E41;">equipment performance</span>',
     'headingLine2' => '<span style="color:#ffffff;">after installation</span>',
     'body'         => 'Planned maintenance and aftercare keep equipment easier to manage after<br class="hidden lg:block"> installation, rental, repair or replacement.',
-    'image'        => '/images/shared/repairs-callouts.jpg',
+    'image'        => '/images/shared/repairs-callouts.webp',
     'miniPoints'   => [
         ['icon' => '61', 'iconClass' => 'scale-[0.94]', 'label' => 'Service<br>planning'],
         ['icon' => '64', 'iconClass' => 'scale-[1.06]', 'label' => 'Equipment<br>care'],

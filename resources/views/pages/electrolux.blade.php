@@ -47,7 +47,7 @@
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[680px]" style="background-color: #011E41;">
 
     <video autoplay muted loop playsinline
-           poster="/images/shared/line-6000-solutions.jpg"
+           poster="/images/shared/line-6000-solutions.webp"
            aria-label="120 years of laundry solutions — Electrolux Professional"
            class="absolute inset-0 w-full h-full object-cover object-center">
         <source src="/images/pages/120_years_of_Laundry_solutions_Electrolux_Professional.mp4" type="video/mp4">
@@ -180,7 +180,7 @@
 
             <div class="reveal reveal-right" style="transition-delay:120ms;">
                 <div class="group rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-                    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Electrolux Professional commercial laundry range" loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
+                    <img src="/images/shared/Line 6000 solutions products_72dpi.webp" alt="Electrolux Professional commercial laundry range" loading="lazy" decoding="async" class="w-full h-auto object-cover transition-transform duration-[600ms] ease-out group-hover:scale-[1.04]">
                 </div>
             </div>
 

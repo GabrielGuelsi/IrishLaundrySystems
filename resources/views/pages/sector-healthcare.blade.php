@@ -10,7 +10,7 @@
 <!-- 1. HERO -->
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:!min-h-[560px] lg:!h-[720px]" style="height:auto;">
     <!-- Background image -->
-    <img src="/images/pages/sectors/healthcarehero.png" alt="Healthcare laundry installation"
+    <img src="/images/pages/sectors/healthcarehero.webp" alt="Healthcare laundry installation"
          class="absolute inset-0 w-full h-full object-cover object-right">
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -82,7 +82,7 @@
 
             <!-- Image -->
             <div class="w-full lg:w-4/5 ml-auto rounded-2xl overflow-hidden">
-                <img src="/images/shared/render-double-page_72dpi.jpg"
+                <img src="/images/shared/render-double-page_72dpi.webp"
                      alt="Healthcare laundry room"
                      class="w-full h-[280px] sm:h-[400px] lg:h-[580px] object-cover object-center">
             </div>
@@ -222,7 +222,7 @@
             {{-- Card 3: Control --}}
             <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
-                    <img src="/images/icons/clarusvibe.jpeg" alt="ClarusVibe" class="w-full h-24 object-cover rounded-lg">
+                    <img src="/images/icons/clarusvibe.webp" alt="ClarusVibe" class="w-full h-24 object-cover rounded-lg">
                 </div>
                 <div>
                     <h3 class="font-heading font-bold text-navy text-base leading-snug mb-1.5">Programme control</h3>
@@ -280,7 +280,7 @@
                     'text'   => 'For urgent equipment faults that interrupt essential healthcare laundry operations.',
                     'cta'    => 'Request Call-Out',
                     'route'  => route('repairs'),
-                    'img'    => '/images/pages/services/support-aftercare-hero.png',
+                    'img'    => '/images/pages/services/support-aftercare-hero.webp',
                     'pos'    => 'center 40%',
                 ],
                 [
@@ -288,7 +288,7 @@
                     'text'   => 'For planned servicing that keeps healthcare laundry equipment performing day after day.',
                     'cta'    => 'View Preventive Maintenance',
                     'route'  => route('service-contracts'),
-                    'img'    => '/images/shared/service-contracts-hero.png',
+                    'img'    => '/images/shared/service-contracts-hero.webp',
                     'pos'    => '90% 35%',
                 ],
                 [
@@ -572,7 +572,7 @@
                     </div>
                 </div>
                 <div class="flex flex-col order-1 lg:order-2 lg:ml-20">
-                    <img src="/images/pages/dryers/TD6-14.jpg"
+                    <img src="/images/pages/dryers/TD6-14.webp"
                          alt="Line 6000 Tumble Dryer"
                          class="w-full h-96 object-contain object-left-top">
                     <div class="mt-1 pt-3">
@@ -762,7 +762,7 @@
                 'points'  => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'logos'   => ['clarusvibe', 'compasspro'],
                 'img'     => '/images/shared/MultisaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/MULTISAVE.png',
+                'scene'   => '/images/pages/accessories/MULTISAVE.webp',
                 'color'   => '#011E41',
             ],
             [
@@ -782,7 +782,7 @@
                 'points'  => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'logos'   => ['clarusvibe'],
                 'img'     => '/images/shared/JetsaveEQUIP.webp',
-                'scene'   => '/images/pages/accessories/JETSAVE.png',
+                'scene'   => '/images/pages/accessories/JETSAVE.webp',
                 'color'   => '#0a2448',
             ],
             [
@@ -821,7 +821,7 @@
 
                         {{-- Left: context photo — one at a time, alternates per slide (detergentdoser first) --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
-                            <img src="{{ $p['scene'] ?? ($i % 2 === 0 ? '/images/pages/sectors/detergentdoser.png' : '/images/shared/Laundry-Double-Banner-965x965-1.webp') }}"
+                            <img src="{{ $p['scene'] ?? ($i % 2 === 0 ? '/images/pages/sectors/detergentdoser.webp' : '/images/shared/Laundry-Double-Banner-965x965-1.webp') }}"
                                  alt="Electrolux Professional laundry equipment"
                                  class="w-full object-cover object-center" style="height:260px;">
                         </div>
@@ -954,7 +954,7 @@
 @include('components.equipment-categories', ['eyebrow' => 'Equipment Categories', 'heading' => 'Explore <span style="color:#148af4;">more healthcare equipment options</span>', 'subheading' => 'Select an equipment category based on the room, laundry handled and level of hygiene control required.', 'subheadingClass' => 'lg:whitespace-nowrap', 'headerAlign' => 'lg:flex-row lg:items-start', 'equipment' => [
     ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For healthcare laundry rooms that need soiled handling and clean return kept physically separate.','box'=>250,'mb'=>-20],
     ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For healthcare wash loads that need capacity, consistency and dosing control.','box'=>270,'mb'=>-35],
-    ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.jpg','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
+    ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
     ['img'=>'drying-cabinet','src'=>'/images/pages/drying-cabinets/workwear-dc6-15ww.jpg','name'=>'Drying Cabinets','desc'=>'For garments, bulky items and specialist textiles that need gentle drying and fabric care.','box'=>260,'mb'=>-11],
     ['img'=>'IB623_FRONT_NEW', 'src' => '/images/pages/ironers/IB623_FRONT_NEW.jpg','ext'=>'jpg','name'=>'Ironers & Flatwork','desc'=>'For finishing, moisture control and textiles ready for storage or use.'],
 ]])
@@ -1004,7 +1004,7 @@
     'headingLine1' => 'Keep healthcare laundry',
     'headingLine2' => '<span style="color:#011E41;">performing every day</span>',
     'body'         => 'Ongoing maintenance and aftercare keep equipment performing, protect your investment and support reliable healthcare laundry operations.',
-    'image'        => '/images/pages/services/support-aftercare-hero.png',
+    'image'        => '/images/pages/services/support-aftercare-hero.webp',
     'miniPoints'   => [
         ['icon' => '149', 'iconClass' => 'scale-[0.78] translate-x-[2px]', 'label' => 'Planned<br>Service'],
         ['icon' => '247', 'iconClass' => 'scale-[0.95] -translate-x-[3px]', 'label' => 'Long-Term<br>Performance'],

@@ -9,7 +9,7 @@
      1. HERO
 ═══════════════════════════════════════ --}}
 <section class="relative overflow-hidden flex flex-col min-h-[420px] lg:min-h-[520px]">
-    <img src="/images/shared/Line 6000 solutions products_72dpi.jpg" alt="Commercial laundry resources"
+    <img src="/images/shared/Line 6000 solutions products_72dpi.webp" alt="Commercial laundry resources"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.78) 42%, rgba(1,30,65,0.4) 65%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -68,7 +68,7 @@
             'desc'  => 'A practical guide to capacity, available space, installation requirements and key commercial considerations when choosing laundry equipment.',
             'cta'   => 'Download the Guide',
             'url'   => '/resources/commercial-laundry-equipment-buying-guide',
-            'img'   => '/images/pages/about/Commercial Laundry Equipment Buying Guide.png',
+            'img'   => '/images/pages/about/Commercial Laundry Equipment Buying Guide.webp',
         ];
         $ilsSecondary = [
             [
@@ -77,7 +77,7 @@
                 'desc'  => 'Compare the cost, ownership and maintenance considerations behind purchasing equipment or choosing Equipment Rental.',
                 'cta'   => 'Download the Guide',
                 'url'   => '/resources/equipment-rental-or-purchase-guide',
-                'img'   => '/images/pages/about/Buyer Guide Equipment Rental or Purchase Guide.png',
+                'img'   => '/images/pages/about/Buyer Guide Equipment Rental or Purchase Guide.webp',
             ],
             [
                 'label' => 'Maintenance Checklist',
@@ -85,7 +85,7 @@
                 'desc'  => 'A practical checklist for planning servicing, monitoring equipment condition and reducing breakdown risk over time.',
                 'cta'   => 'Download the Checklist',
                 'url'   => '/resources/preventive-maintenance-checklist',
-                'img'   => '/images/pages/about/Preventive Maintenance Checklist.png',
+                'img'   => '/images/pages/about/Preventive Maintenance Checklist.webp',
             ],
         ];
         @endphp
@@ -504,7 +504,7 @@
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
 
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>

@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col lg:!h-[640px]" style="height:auto; min-height:560px;">
-    <img src="/images/pages/equipment/mypro-family.jpg" alt="Semi-professional laundry equipment"
+    <img src="/images/pages/equipment/mypro-family.webp" alt="Semi-professional laundry equipment"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: center 62%;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -85,7 +85,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
             @foreach([
                 ['step' => '01', 'title' => 'Domestic machines', 'copy' => 'For light household use, not repeated daily business demand.', 'img' => '/images/pages/semi-professional/Domestic%20machines.png', 'imgClass' => 'saturate-[.3] contrast-[.85] brightness-105 opacity-80 scale-[1.06] origin-bottom translate-y-[6px]', 'stepClass' => 'text-gray-400'],
-                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For lighter small-site use where a domestic appliance is no longer the right fit.', 'img' => '/images/pages/semi-professional/mypro-hp-front.jpg', 'imgClass' => 'scale-[0.91] origin-bottom'],
+                ['step' => '02', 'title' => 'myPRO',             'copy' => 'For lighter small-site use where a domestic appliance is no longer the right fit.', 'img' => '/images/pages/semi-professional/mypro-hp-front.webp', 'imgClass' => 'scale-[0.91] origin-bottom'],
                 ['step' => '03', 'title' => 'myPRO XL',          'copy' => 'For smaller businesses handling bigger loads, more frequent washing and heavier daily use.', 'img' => '/images/pages/semi-professional/myPROXL%2012kg.webp', 'imgClass' => 'scale-[1.0] origin-bottom translate-y-[7px]'],
                 ['step' => '04', 'title' => 'Line 6000',         'copy' => 'For larger capacity, intensive use and full commercial laundry performance.', 'img' => '/images/pages/commercial-washers/commercialwasher.webp', 'imgClass' => 'scale-[1.29] origin-bottom translate-y-[29px]'],
             ] as $lvl)
@@ -128,12 +128,12 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
             @foreach([
-                ['title' => 'B&amp;Bs, guesthouses, small hotels and food service', 'items' => ['Guest linen', 'Towels', 'Room readiness'],       'img' => '/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.png', 'pos' => 'center center'],
-                ['title' => 'Facility management and cleaning teams',               'items' => ['Mops', 'Uniforms', 'Frequent washing'],           'img' => '/images/pages/semi-professional/Facility management and cleaning teams.png',           'pos' => 'center center'],
-                ['title' => 'Salons, spas and wellness businesses',                 'items' => ['Towels', 'Robes', 'Daily use'],                   'img' => '/images/pages/semi-professional/Salons, spas and wellness businesses.png',             'pos' => 'center center'],
-                ['title' => 'Gyms, sports clubs and fitness studios',               'items' => ['Towels', 'Training kit', 'Daily turnover'],       'img' => '/images/pages/semi-professional/Gyms, sports clubs and fitness studios.png',           'pos' => 'center center'],
-                ['title' => 'Smaller care and nursing settings',                    'items' => ['Resident items', 'Bedding', 'Towels'],            'img' => '/images/pages/semi-professional/Smaller care and nursing settings.png',                'pos' => 'center center'],
-                ['title' => 'Shared, apartment and guest-operated laundry',         'items' => ['Shared use', 'Guest operation', 'Payment-ready'], 'img' => '/images/pages/semi-professional/Shared, apartment and guest-operated laundry.png',     'pos' => 'center center'],
+                ['title' => 'B&amp;Bs, guesthouses, small hotels and food service', 'items' => ['Guest linen', 'Towels', 'Room readiness'],       'img' => '/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.webp', 'pos' => 'center center'],
+                ['title' => 'Facility management and cleaning teams',               'items' => ['Mops', 'Uniforms', 'Frequent washing'],           'img' => '/images/pages/semi-professional/Facility management and cleaning teams.webp',           'pos' => 'center center'],
+                ['title' => 'Salons, spas and wellness businesses',                 'items' => ['Towels', 'Robes', 'Daily use'],                   'img' => '/images/pages/semi-professional/Salons, spas and wellness businesses.webp',             'pos' => 'center center'],
+                ['title' => 'Gyms, sports clubs and fitness studios',               'items' => ['Towels', 'Training kit', 'Daily turnover'],       'img' => '/images/pages/semi-professional/Gyms, sports clubs and fitness studios.webp',           'pos' => 'center center'],
+                ['title' => 'Smaller care and nursing settings',                    'items' => ['Resident items', 'Bedding', 'Towels'],            'img' => '/images/pages/semi-professional/Smaller care and nursing settings.webp',                'pos' => 'center center'],
+                ['title' => 'Shared, apartment and guest-operated laundry',         'items' => ['Shared use', 'Guest operation', 'Payment-ready'], 'img' => '/images/pages/semi-professional/Shared, apartment and guest-operated laundry.webp',     'pos' => 'center center'],
             ] as $card)
             <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
@@ -182,7 +182,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center reveal">
             <div class="lg:col-span-5 flex items-center justify-center">
-                <img src="/images/pages/semi-professional/Built Beyond Domestic Use.png" alt="myPRO XL washer and dryer" loading="lazy" decoding="async"
+                <img src="/images/pages/semi-professional/Built Beyond Domestic Use.webp" alt="myPRO XL washer and dryer" loading="lazy" decoding="async"
                      class="w-full max-w-xl h-auto object-contain">
             </div>
             <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -238,7 +238,7 @@
                 'topLine'   => 'For lighter daily use',
                 'copy'      => 'A semi-professional washer, dryer and light finishing setup for smaller sites that have outgrown domestic appliances.',
                 'badges'    => ['8–9 kg loads', '7,500 cycles', 'Daily use', 'Small sites'],
-                'img'       => '/images/pages/semi-professional/mypro-hp-front.jpg',
+                'img'       => '/images/pages/semi-professional/mypro-hp-front.webp',
                 'imgClass'  => 'scale-[.85]',
                 'route'     => route('equipment.product', ['category' => 'semi-professional', 'product' => 'mypro-washer']),
                 'featured'  => false,
@@ -577,7 +577,7 @@
                     'text'  => 'For washer, dryer or finishing faults that need practical service support.',
                     'cta'   => 'Request a Repair',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -585,7 +585,7 @@
                     'text'  => 'Planned maintenance for sites that want fewer avoidable disruptions.',
                     'cta'   => 'View Maintenance Support',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -593,7 +593,7 @@
                     'text'  => 'For selected equipment where lower upfront cost and included support make sense.',
                     'cta'   => 'Ask About Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/pages/semi-professional/ILSEQUIPMENTRENTALMYPRO.png',
+                    'img'   => '/images/pages/semi-professional/ILSEQUIPMENTRENTALMYPRO.webp',
                     'pos'   => '72% center',
                 ],
                 [
@@ -601,7 +601,7 @@
                     'text'  => 'For service history, parts access where needed and clearer repair or replacement calls.',
                     'cta'   => 'Explore Support &amp; Aftercare',
                     'route' => route('parts-aftercare'),
-                    'img'   => '/images/pages/semi-professional/ILSSUPPORTMYPRO.png',
+                    'img'   => '/images/pages/semi-professional/ILSSUPPORTMYPRO.webp',
                     'pos'   => '58% 25%',
                 ],
             ] as $card)

@@ -63,7 +63,7 @@
 <section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
 
     <!-- Background image -->
-    <img src="/images/shared/repairs-hero.jpg"
+    <img src="/images/shared/repairs-hero.webp"
          alt="ILS engineer providing reactive repair and call-out support on commercial laundry equipment"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover object-right">
@@ -126,7 +126,7 @@
                 <span class="font-body font-bold text-navy text-sm">Equipment type</span>
             </div>
             <div class="flex flex-col items-center text-center">
-                <img src="/images/icons/repairs-fault-symptoms.png" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
+                <img src="/images/icons/repairs-fault-symptoms.webp" alt="" aria-hidden="true" class="w-14 h-14 mb-4 object-contain">
                 <span class="font-body font-bold text-navy text-sm">Fault details</span>
             </div>
             <div class="flex flex-col items-center text-center">
@@ -216,7 +216,7 @@ $expectSteps = [
     [
         'title'    => 'Confirm the request',
         'desc'     => 'We confirm the equipment, site and contact details needed to move the call-out&nbsp;forward.',
-        'image'    => '/images/pages/services/repairs-how-01.jpg',
+        'image'    => '/images/pages/services/repairs-how-01.webp',
         'alt'      => 'Site team sharing commercial laundry fault details to request a call-out',
         'meta'     => 'Step 1',
         'position' => 'center',
@@ -224,7 +224,7 @@ $expectSteps = [
     [
         'title'    => 'Prepare the call-out',
         'desc'     => 'The fault details and service history are reviewed before the engineer&nbsp;arrives.',
-        'image'    => '/images/pages/services/repairs-how-02.jpg',
+        'image'    => '/images/pages/services/repairs-how-02.webp',
         'alt'      => 'Irish Laundry Systems team preparing a commercial laundry repair call-out',
         'meta'     => 'Step 2',
         'position' => 'center',
@@ -232,7 +232,7 @@ $expectSteps = [
     [
         'title'    => 'Diagnose on site',
         'desc'     => 'The engineer checks the equipment, confirms the likely cause and completes repair work when&nbsp;possible.',
-        'image'    => '/images/pages/services/repairs-how-03.jpg',
+        'image'    => '/images/pages/services/repairs-how-03.webp',
         'alt'      => 'Irish Laundry Systems engineer diagnosing commercial laundry equipment on-site',
         'meta'     => 'Step 3',
         'position' => 'center',
@@ -240,7 +240,7 @@ $expectSteps = [
     [
         'title'    => 'Confirm the outcome',
         'desc'     => 'The visit confirms whether repair, parts, follow-up work, maintenance or replacement should be&nbsp;considered.',
-        'image'    => '/images/pages/services/repairs-how-04.jpg',
+        'image'    => '/images/pages/services/repairs-how-04.webp',
         'alt'      => 'Irish Laundry Systems engineer explaining the clear next step after a repair',
         'meta'     => 'Step 4',
         'position' => 'center',
@@ -379,7 +379,7 @@ $expectSteps = [
 
             {{-- RIGHT: image --}}
             <div class="relative rounded-2xl overflow-hidden shadow-lg aspect-[4/3] lg:aspect-auto lg:h-[460px]">
-                <img src="/images/pages/services/repairs-temporary-laundry-online.png"
+                <img src="/images/pages/services/repairs-temporary-laundry-online.webp"
                      alt="Laundry Online Dublin store as a temporary processing route while on-site equipment is down"
                      loading="lazy" decoding="async"
                      style="object-position: left center;"

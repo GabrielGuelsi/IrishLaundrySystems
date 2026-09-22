@@ -171,7 +171,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-stretch">
             <div class="lg:col-span-5 reveal reveal-left">
                 <div class="relative rounded-3xl overflow-hidden bg-navy shadow-xl h-72 sm:h-96 lg:h-full">
-                    <img src="/images/pages/services/agreementiclusions.png"
+                    <img src="/images/pages/services/agreementiclusions.webp"
                          alt="Irish Laundry Systems engineer installing and commissioning rented commercial laundry equipment"
                          loading="lazy" decoding="async"
                          class="absolute inset-0 w-full h-full object-cover" style="object-position: 28% center;">
@@ -298,7 +298,7 @@
     <div style="display:flex; flex-wrap:wrap;">
         @foreach([
             ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us the equipment, capacity and workload your site needs the equipment to handle.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
-            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review equipment fit and installation needs, then confirm the scope of the agreement.', 'img' => '/images/shared/Strip1.jpeg'],
+            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review equipment fit and installation needs, then confirm the scope of the agreement.', 'img' => '/images/shared/Strip1.webp'],
             ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied and installed with support under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
         ] as $step)
         <div class="rn-visit-card">
@@ -332,11 +332,11 @@
 
         @php
         $rentalFits = [
-            ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/pages/sectors/healthcarehero.png', 'pos' => '80% center'],
-            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/pages/sectors/carefacilitiesheroimage.jpg', 'pos' => '75% center', 'zoom' => '1.18'],
-            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/pages/sectors/hospitallityhero.png', 'pos' => '75% center'],
-            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/pages/commercialindustrialequipmentrental.png'],
-            ['env' => 'Multi Housing',               'route' => route('sectors.commercial'),  'img' => '/images/pages/sectors/selfservice.png'],
+            ['env' => 'Healthcare',                  'route' => route('sectors.healthcare'),  'img' => '/images/pages/sectors/healthcarehero.webp', 'pos' => '80% center'],
+            ['env' => 'Care Facilities',             'route' => route('sectors.care'),        'img' => '/images/pages/sectors/carefacilitiesheroimage.webp', 'pos' => '75% center', 'zoom' => '1.18'],
+            ['env' => 'Hospitality',                 'route' => route('sectors.hospitality'), 'img' => '/images/pages/sectors/hospitallityhero.webp', 'pos' => '75% center'],
+            ['env' => 'Commercial &amp; Industrial', 'route' => route('sectors.commercial'),  'img' => '/images/pages/commercialindustrialequipmentrental.webp'],
+            ['env' => 'Multi Housing',               'route' => route('sectors.commercial'),  'img' => '/images/pages/sectors/selfservice.webp'],
         ];
         @endphp
 
@@ -451,7 +451,7 @@
 {{-- ════════════ 11. SUPPORT DURING THE AGREEMENT BLOCK (#148AF4) ════════════ --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
     <div class="absolute inset-y-0 left-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/rentalstripimage.jpg" alt="Irish Laundry Systems engineer supporting rented commercial laundry equipment"
+        <img src="/images/shared/rentalstripimage.webp" alt="Irish Laundry Systems engineer supporting rented commercial laundry equipment"
              loading="lazy" decoding="async" class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to left, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>

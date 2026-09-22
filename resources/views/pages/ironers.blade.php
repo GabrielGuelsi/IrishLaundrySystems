@@ -11,7 +11,7 @@
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="/images/pages/ironers/ironers-hero-new.png" alt="Commercial ironers and flatwork finishing"
+    <img src="/images/pages/ironers/ironers-hero-new.webp" alt="Commercial ironers and flatwork finishing"
          loading="eager" decoding="async"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: center 60%;">
 
@@ -208,7 +208,7 @@
                 </p>
                 <div class="border-t border-gray-100 pt-6 pb-6">
                     <div class="w-full aspect-square rounded-xl overflow-hidden" style="clip-path: inset(0 round 12px);">
-                        <img src="/images/pages/ironers/Front Delivery.png"
+                        <img src="/images/pages/ironers/Front Delivery.webp"
                              alt="Front delivery ironer layout diagram — top-down view showing linen flow and operator positions at the ironer and folding table"
                              class="w-full h-full object-cover" style="transform:translateY(2.31%) scale(1.086);">
                     </div>
@@ -239,7 +239,7 @@
                 </p>
                 <div class="border-t border-gray-100 pt-6 pb-6">
                     <div class="w-full aspect-square rounded-xl overflow-hidden">
-                        <img src="/images/pages/ironers/Rear Delivery.png"
+                        <img src="/images/pages/ironers/Rear Delivery.webp"
                              alt="Rear delivery ironer layout diagram — top-down view showing linen exiting to the rear with operator positions at the front"
                              class="w-full h-full object-cover">
                     </div>
@@ -269,7 +269,7 @@
 {{-- 9. ROOM PLANNING STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
@@ -563,10 +563,10 @@
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
     'mirror'       => true,
-    'image'        => '/images/pages/ironers/equipment-rental-strip.jpg',
+    'image'        => '/images/pages/ironers/equipment-rental-strip.webp',
     'imagePosition' => '62% 15%',
     'wideContent'  => true,
-    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.7rem] 2xl:text-[1.9rem]',
+    'headingSize'  => 'text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.15rem]',
     'headingLine1' => 'Replace equipment or expand ironing capacity',
     'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Equipment Rental can support ironer replacement or additional capacity without one large capital purchase, with service included under agreed terms.',
@@ -600,7 +600,7 @@
                     'text'  => 'Service and breakdown support when ironer faults interrupt linen finishing or daily operation.',
                     'cta'   => 'Request Support',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -608,7 +608,7 @@
                     'text'  => 'Planned servicing to help keep ironer condition, safety checks and maintenance needs organised.',
                     'cta'   => 'View Maintenance Support',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -616,7 +616,7 @@
                     'text'  => 'Lower upfront cost where suitable, with selected ironer equipment installed and supported under Equipment Rental terms.',
                     'cta'   => 'Explore Equipment Rental',
                     'route' => route('rental'),
-                    'img'   => '/images/shared/td6-11-multihousing-room-front.jpg',
+                    'img'   => '/images/shared/td6-11-multihousing-room-front.webp',
                     'pos'   => '66% center',
                 ],
                 [

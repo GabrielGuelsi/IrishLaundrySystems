@@ -16,11 +16,11 @@
     <meta property="og:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
     <meta property="og:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
     <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:image" content="{{ url('/images/pages/home/HOMEHERO1.png') }}">
+    <meta property="og:image" content="{{ url('/images/pages/home/HOMEHERO1.webp') }}">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
     <meta name="twitter:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
-    <meta name="twitter:image" content="{{ url('/images/pages/home/HOMEHERO1.png') }}">
+    <meta name="twitter:image" content="{{ url('/images/pages/home/HOMEHERO1.webp') }}">
 
     <!-- Organization structured data (JSON-LD) -->
     @verbatim
@@ -32,7 +32,7 @@
         "legalName": "D.S.B. Electrical (Templeogue) Limited",
         "url": "https://irishlaundrysystems.com",
         "logo": "https://irishlaundrysystems.com/email/logo-ils.png",
-        "image": "https://irishlaundrysystems.com/images/pages/home/HOMEHERO1.png",
+        "image": "https://irishlaundrysystems.com/images/pages/home/HOMEHERO1.webp",
         "description": "Engineering-led commercial laundry specialist serving the Republic of Ireland since 1987 — preventive maintenance, repairs and call-outs, equipment supply and rental, and aftercare. Authorised Electrolux Professional Partner.",
         "foundingDate": "1987",
         "telephone": "+353-1-491-0402",
@@ -74,8 +74,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter (loaded non-render-blocking) -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"></noscript>
 
     <!-- Tailwind CSS Play CDN -->
     <script src="https://cdn.tailwindcss.com"></script>

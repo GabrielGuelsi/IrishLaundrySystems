@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col min-h-[520px] lg:h-[720px]" style="min-height:520px;">
-    <img src="/images/pages/drying-cabinets/drying-cabinets-hero.jpg" alt="Commercial drying cabinets"
+    <img src="/images/pages/drying-cabinets/drying-cabinets-hero.webp" alt="Commercial drying cabinets"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -112,7 +112,7 @@
         $fitCards = [
             ['title' => 'Delicate Garments',        'copy' => 'For silk, wool, velvet and other items that need drying without mechanical action.', 'img' => '/images/pages/drying-cabinets/Delicate%20fabrics%20and%20fine%20clothing.png', 'pos' => 'center 50%',   'sc' => '1.47'],
             ['title' => 'Hotels &amp; Laundries',   'copy' => 'For hotels and professional laundries handling delicate, bulky or specialist garments that need cabinet drying.', 'img' => '/images/pages/drying-cabinets/Private%20residences%20%26%20wardrobe%20rooms.png', 'pos' => '46% 48%',    'sc' => '1.58'],
-            ['title' => 'Multi-Housing',            'copy' => 'For apartment buildings, student homes and shared laundries handling everyday garments and bulky items.', 'img' => '/images/pages/drying-cabinets/Multi-housing.png', 'pos' => 'center 50%',   'sc' => '1.53'],
+            ['title' => 'Multi-Housing',            'copy' => 'For apartment buildings, student homes and shared laundries handling everyday garments and bulky items.', 'img' => '/images/pages/drying-cabinets/Multi-housing.webp', 'pos' => 'center 50%',   'sc' => '1.53'],
             ['title' => 'Construction &amp; Workwear', 'copy' => 'For workwear, overalls, boots and gloves used across construction and outdoor working environments.', 'img' => '/images/pages/drying-cabinets/Construction%20%26%20workwear.png', 'pos' => '48% 50%',    'sc' => '1.46'],
             ['title' => 'Firefighters &amp; PPE',   'copy' => 'For protective clothing, gloves, boots and specialist PPE that needs controlled drying after cleaning.', 'img' => '/images/pages/drying-cabinets/Firefighters%20%26%20PPE.png', 'pos' => '46% 50%',    'sc' => '1.48'],
             ['title' => 'Schools &amp; Childcare',  'copy' => 'For coats, outdoor clothing, gloves and everyday items used across schools and childcare settings.', 'img' => '/images/pages/drying-cabinets/schools-childcare.webp', 'pos' => 'center center'],
@@ -415,7 +415,7 @@
 {{-- 9c. PLANNING / ROOM FIT STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
@@ -467,7 +467,7 @@
                     'text'  => 'For drying cabinet faults, drying performance issues, control problems or service needs that require practical engineering support.',
                     'cta'   => 'Request a Repair',
                     'route' => route('repairs'),
-                    'img'   => '/images/shared/repairs-callouts.jpg',
+                    'img'   => '/images/shared/repairs-callouts.webp',
                     'pos'   => '50% 35%',
                 ],
                 [
@@ -475,7 +475,7 @@
                     'text'  => 'Planned servicing to reduce avoidable disruption and keep cabinet condition on track.',
                     'cta'   => 'View Preventive Maintenance',
                     'route' => route('service-contracts'),
-                    'img'   => '/images/shared/service-contracts-hero.png',
+                    'img'   => '/images/shared/service-contracts-hero.webp',
                     'pos'   => '90% 35%',
                 ],
                 [
@@ -483,7 +483,7 @@
                     'text'  => 'For sites considering lower upfront cost where rental is suitable for the selected equipment and site needs.',
                     'cta'   => 'See Rental Options',
                     'route' => route('rental'),
-                    'img'   => '/images/pages/drying-cabinets/equipmentrentalcards.png',
+                    'img'   => '/images/pages/drying-cabinets/equipmentrentalcards.webp',
                     'pos'   => '40% center',
                 ],
                 [

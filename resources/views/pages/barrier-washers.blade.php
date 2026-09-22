@@ -10,7 +10,7 @@
 
 {{-- 2. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[480px] lg:h-[720px]" style="min-height:480px;">
-    <img src="/images/pages/barrier-washers/barrierwashernewheropic.png" alt="Barrier washing machines"
+    <img src="/images/pages/barrier-washers/barrierwashernewheropic.webp" alt="Barrier washing machines"
          class="absolute inset-0 w-full h-full object-cover object-center">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -188,7 +188,7 @@
 
             {{-- COL 2: barrier washer image (the big equipment image) --}}
             <div class="flex items-center justify-center py-2">
-                <img src="/images/pages/barrier-washers/barrierwasheroperatorconfort.png" alt="Barrier washer operator comfort" class="w-auto h-auto max-h-[440px] object-contain">
+                <img src="/images/pages/barrier-washers/barrierwasheroperatorconfort.webp" alt="Barrier washer operator comfort" class="w-auto h-auto max-h-[440px] object-contain">
             </div>
 
             {{-- COL 3: The door that makes the difference --}}
@@ -271,10 +271,10 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
             @foreach([
-                ['title' => 'Healthcare',                          'img' => '/images/pages/barrier-washers/Barrier_Washers_Healthcare.png',    'route' => route('sectors.healthcare'), 'pos' => 'center'],
-                ['title' => 'Care facilities',                    'img' => '/images/pages/barrier-washers/Barrier_Washers_Care_facilitie_(1).png', 'route' => route('sectors.care'), 'pos' => 'center'],
-                ['title' => 'Pharma & food',                       'img' => '/images/pages/barrier-washers/Pharmaceutical & food processing.png', 'route' => route('sectors.commercial')],
-                ['title' => 'Protective workwear',                 'img' => '/images/pages/barrier-washers/firefighters.png',              'route' => route('request-assessment')],
+                ['title' => 'Healthcare',                          'img' => '/images/pages/barrier-washers/Barrier_Washers_Healthcare.webp',    'route' => route('sectors.healthcare'), 'pos' => 'center'],
+                ['title' => 'Care facilities',                    'img' => '/images/pages/barrier-washers/Barrier_Washers_Care_facilitie_(1).webp', 'route' => route('sectors.care'), 'pos' => 'center'],
+                ['title' => 'Pharma & food',                       'img' => '/images/pages/barrier-washers/Pharmaceutical & food processing.webp', 'route' => route('sectors.commercial')],
+                ['title' => 'Protective workwear',                 'img' => '/images/pages/barrier-washers/firefighters.webp',              'route' => route('request-assessment')],
             ] as $card)
             <div class="flex flex-col items-center text-center">
                 <a href="{{ $card['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
@@ -295,7 +295,7 @@
 {{-- 10. PLANNING / INSTALLATION STRIP --}}
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
-        <img src="/images/shared/Strip1.jpeg" alt="ILS laundry engineering"
+        <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.85) 15%, rgba(20,138,244,0.3) 55%, transparent 100%);"></div>
     </div>
@@ -536,7 +536,7 @@
                 'points' => ['Up to 7 washers', 'Multi-machine control', 'Controlled consumption'],
                 'logos'  => ['clarusvibe', 'compasspro'],
                 'img'    => '/images/shared/MultisaveEQUIP.webp',
-                'scene'  => '/images/pages/accessories/MULTISAVE.png',
+                'scene'  => '/images/pages/accessories/MULTISAVE.webp',
             ],
             [
                 'name'   => 'JETSAVE',
@@ -545,7 +545,7 @@
                 'points' => ['Water-powered pumps', 'Fewer wear points', 'Lower maintenance'],
                 'logos'  => ['clarusvibe'],
                 'img'    => '/images/shared/JetsaveEQUIP.webp',
-                'scene'  => '/images/pages/accessories/JETSAVE.png',
+                'scene'  => '/images/pages/accessories/JETSAVE.webp',
             ],
             [
                 'name'   => 'DOSAVE',
@@ -682,7 +682,7 @@
 {{-- 12a. RENTAL / CAPITAL PRESSURE STRIP (after the washer range) --}}
 @include('components.why-choose-strip', [
     'eyebrow'      => 'Equipment Rental',
-    'image'        => '/images/pages/barrier-washers/rentalstripnewimage.png',
+    'image'        => '/images/pages/barrier-washers/rentalstripnewimage.webp',
     'mirror'       => true,
     'gradientStrength' => 0.55,
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
@@ -712,9 +712,9 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
-                ['title' => 'Repairs &amp; Call-Outs', 'text' => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',                          'cta' => 'Request Call-Out',         'route' => route('repairs'),           'img' => '/images/shared/repairs-callouts.jpg',                   'pos' => '50% 35%'],
-                ['title' => 'Preventive Maintenance',  'text' => 'Planned servicing to reduce surprise repair costs and keep equipment condition clear.',                                 'cta' => 'View Maintenance Options', 'route' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.png',             'pos' => '90% 35%'],
-                ['title' => 'Equipment Rental',        'text' => 'Lower upfront cost for barrier washer replacement, capacity planning or expansion where rental is the right fit.',          'cta' => 'See Equipment Rental Options', 'route' => route('rental'),            'img' => '/images/pages/barrier-washers/card-equipment-rental.png', 'pos' => 'center center'],
+                ['title' => 'Repairs &amp; Call-Outs', 'text' => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',                          'cta' => 'Request Call-Out',         'route' => route('repairs'),           'img' => '/images/shared/repairs-callouts.webp',                   'pos' => '50% 35%'],
+                ['title' => 'Preventive Maintenance',  'text' => 'Planned servicing to reduce surprise repair costs and keep equipment condition clear.',                                 'cta' => 'View Maintenance Options', 'route' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.webp',             'pos' => '90% 35%'],
+                ['title' => 'Equipment Rental',        'text' => 'Lower upfront cost for barrier washer replacement, capacity planning or expansion where rental is the right fit.',          'cta' => 'See Equipment Rental Options', 'route' => route('rental'),            'img' => '/images/pages/barrier-washers/card-equipment-rental.webp', 'pos' => 'center center'],
                 ['title' => 'Support &amp; Aftercare', 'text' => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',            'cta' => 'Explore Support &amp; Aftercare', 'route' => route('parts-aftercare'),   'img' => '/images/shared/services-overview-hero-portrait.jpg',     'pos' => 'center center'],
             ] as $card)
             <a href="{{ $card['route'] }}"
@@ -748,7 +748,7 @@
 {{-- 15. COMPACT AFTER-INSTALLATION SUPPORT BAND --}}
 <section class="relative overflow-hidden py-12 lg:py-16" style="background-color:#148af4;">
     <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:42%;">
-        <img src="/images/pages/barrier-washers/after-installation-strip.png" alt="Irish Laundry Systems after-installation support"
+        <img src="/images/pages/barrier-washers/after-installation-strip.webp" alt="Irish Laundry Systems after-installation support"
              class="w-full h-full object-cover" style="object-position: center 30%;">
         <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 30%, rgba(20,138,244,0.15) 52%, transparent 70%);"></div>
     </div>

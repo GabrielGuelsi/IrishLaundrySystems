@@ -10,7 +10,7 @@
 
 {{-- 1. HERO --}}
 <section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]" style="min-height:520px; background-color:#011E41;">
-    <img src="/images/pages/one-connected/hero-oneconnected.png" alt="OnE Connected laundry dashboard"
+    <img src="/images/pages/one-connected/hero-oneconnected.webp" alt="OnE Connected laundry dashboard"
          class="absolute inset-0 w-full h-full object-cover" style="object-position: 78% center;">
     <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 38%, rgba(1,30,65,0.38) 66%, rgba(1,30,65,0.05) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
@@ -123,7 +123,7 @@
                 </p>
             </div>
             <div class="reveal">
-                <img src="/images/pages/one-connected/laptoponedashboard.png" alt="OnE Connected dashboard" class="w-full h-auto object-contain">
+                <img src="/images/pages/one-connected/laptoponedashboard.webp" alt="OnE Connected dashboard" class="w-full h-auto object-contain">
             </div>
         </div>
 
@@ -192,7 +192,7 @@
     'headingLine1' => 'Turn connected equipment data into',
     'headingLine2' => 'clearer maintenance decisions',
     'body'         => 'Irish Laundry Systems can use OnE Connected data to identify<br class="hidden lg:block"> what needs attention, support maintenance planning and prepare<br class="hidden lg:block"> service interventions with clearer information from the start.',
-    'image'        => '/images/pages/one-connected/engineering-support.png',
+    'image'        => '/images/pages/one-connected/engineering-support.webp',
     'imgPosition'  => 'center center',
     'miniPoints'   => [
         ['icon' => '307', 'iconClass' => 'brightness-0 invert', 'label' => 'Timely<br>Maintenance'],
@@ -232,7 +232,7 @@
              hub centre (400,150) r=115, connector endpoints at x=230 / x=570, rows y=58/150/242. --}}
         @php
         $portfolio = [
-            ['key' => 'w6', 'label' => 'Line 6000<br>Washers',          'side' => 'left',  'row' => 0, 'img' => '/images/pages/commercial-washers/WH6-27.jpg'],
+            ['key' => 'w6', 'label' => 'Line 6000<br>Washers',          'side' => 'left',  'row' => 0, 'img' => '/images/pages/commercial-washers/WH6-27.webp'],
             ['key' => 'd6', 'label' => 'Line 6000<br>Tumble Dryers',    'side' => 'left',  'row' => 1, 'img' => '/images/pages/dryers/line6000-tumble-dryer.webp'],
             ['key' => 'i6', 'label' => 'Line 6000<br>FFS Vibe Ironers', 'side' => 'left',  'row' => 2, 'img' => '/images/shared/line6000-ironer.webp'],
             ['key' => 'w5', 'label' => 'Line 5000<br>Washers',          'side' => 'right', 'row' => 0, 'img' => '/images/pages/commercial-washers/commercialwasher.webp'],
