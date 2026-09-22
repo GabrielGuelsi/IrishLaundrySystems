@@ -412,8 +412,8 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1320px]:whitespace-nowrap">
                 From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
-                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience<br class="hidden lg:block"> into a specialist commercial laundry equipment and service company.
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty 2xl:whitespace-nowrap">
+                Irish Laundry Systems grew from electrical contracting and long-standing Electrolux service experience into a specialist commercial laundry equipment and service company.
             </p>
         </div>
 
