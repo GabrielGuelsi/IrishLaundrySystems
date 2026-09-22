@@ -80,7 +80,7 @@
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Customer Care</p>
         <div class="grid grid-cols-1 lg:grid-cols-[5fr_6fr] gap-12 lg:gap-10 items-center mb-12 lg:mb-16">
             <div>
-                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight">
+                <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
                     <span class="sm:block">Service support built around</span>
                     <span class="sm:block text-[#148af4]">uptime, cost control</span>
                     <span class="sm:block text-[#148af4]">and equipment&nbsp;care</span>
