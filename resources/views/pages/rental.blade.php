@@ -297,9 +297,9 @@
 
     <div style="display:flex; flex-wrap:wrap;">
         @foreach([
-            ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us the equipment, capacity and workload your site needs the equipment to handle.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
-            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review equipment fit and installation needs, then confirm the scope of the agreement.', 'img' => '/images/shared/Strip1.webp'],
-            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied and installed with support under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
+            ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us the equipment, capacity and workload<br class="hidden lg:block"> your site needs the equipment to handle.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
+            ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review equipment fit and installation needs,<br class="hidden lg:block"> then confirm the scope of the agreement.', 'img' => '/images/shared/Strip1.webp'],
+            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied and installed<br class="hidden lg:block"> with support under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
         ] as $step)
         <div class="rn-visit-card">
             <img src="{{ asset(ltrim($step['img'], '/')) }}" alt="{{ $step['title'] }}" loading="lazy">
@@ -310,7 +310,7 @@
             <div class="rn-vcap2">
                 <span class="rn-num">{{ $step['num'] }}</span>
                 <h4>{{ $step['title'] }}</h4>
-                <p>{{ $step['body'] }}</p>
+                <p>{!! $step['body'] !!}</p>
             </div>
         </div>
         @endforeach
@@ -470,7 +470,7 @@
             <span class="lg:block">so your site has ongoing service support in place throughout the agreement.</span>
         </p>
 
-        <div class="grid grid-cols-3 gap-4 mb-7 max-w-lg">
+        <div class="flex flex-wrap gap-x-8 gap-y-4 mb-7 max-w-lg">
             <span class="flex items-center gap-2">
                 <img src="/images/icons/rental-gain-118.png" alt="" aria-hidden="true" class="h-14 w-14 object-contain flex-shrink-0" style="filter:brightness(0) invert(1);">
                 <span class="font-body text-white text-sm font-bold leading-tight">Service<br>labour</span>
@@ -561,8 +561,10 @@ $rentalFaqs = [
                     <span class="lg:block text-[#148af4]">laundry&nbsp;requirements</span>
                 </h2>
                 <p class="font-body text-blue-200 text-base leading-relaxed mb-8 text-pretty">
-                    <span class="lg:block">Tell us what equipment you need, your current setup and whether you are considering rental or outright purchase.</span>
-                    <span class="lg:block">We&rsquo;ll review the site requirements, equipment fit and agreement scope, then confirm the right next step.</span>
+                    <span class="lg:block">Tell us what equipment you need, your current setup and whether</span>
+                    <span class="lg:block">you are considering rental or outright purchase.</span>
+                    <span class="lg:block">We&rsquo;ll review the site requirements, equipment fit and agreement scope,</span>
+                    <span class="lg:block">then confirm the right next step.</span>
                 </p>
 
                 <div class="space-y-4">

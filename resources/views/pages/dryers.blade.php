@@ -18,7 +18,7 @@
             <div class="flex-1 reveal reveal-left max-w-3xl lg:max-w-7xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Tumble Dryers</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.5rem] 2xl:text-5xl leading-tight mb-6">
-                    <span class="sm:block">Commercial tumble dryers for consistent performance</span>
+                    <span class="sm:block">Consistent drying performance</span>
                     <span class="sm:block">with <span style="color:#148af4;">energy use under control</span></span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8 max-w-2xl lg:max-w-4xl text-pretty">
@@ -319,8 +319,8 @@
     </div>
     <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[68%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
-        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.1rem] leading-tight mb-4">
-            Plan dryer installation around space and access<br class="hidden sm:block"><span style="color:#011E41;">with utility requirements clear from the start</span>
+        <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+            Plan dryer installation for your space<br class="hidden sm:block"><span style="color:#011E41;">with utilities clear from the start</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
             <span class="lg:block">Irish Laundry Systems reviews room dimensions, access and utilities</span>
@@ -656,7 +656,7 @@
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
     'headingLine1' => 'Replace dryers or add capacity',
     'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
-    'body'         => 'Equipment Rental can support dryer replacement or added capacity, with service included under agreed terms for clearer cost planning.',
+    'body'         => 'Equipment Rental can support dryer replacement or added capacity,<br class="hidden lg:block"> with service included under agreed terms for clearer cost planning.',
     'miniPoints'   => [
         ['icon' => 'healthcarerentalstrip1', 'label' => 'Lower<br>upfront cost', 'iconClass' => 'scale-[0.986] translate-y-[0.4%]', 'iconStyle' => 'filter:brightness(0) invert(1);'],
         ['icon' => '146', 'label' => 'Included<br>support', 'iconClass' => 'scale-[0.899] translate-y-[0.3%] translate-x-[4px]', 'iconStyle' => 'filter:brightness(0) invert(1);'],
@@ -753,7 +753,7 @@
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                    Keep dryer service history clear<br class="hidden sm:block"><span style="color:#011E41;">for easier maintenance and repairs</span>
+                    Keep dryer service history clear<br class="hidden sm:block"><span style="color:#011E41;">for easier service and repairs</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5 max-w-2xl">
                     <span class="lg:block">Equipment details and previous work stay easier to trace,</span>

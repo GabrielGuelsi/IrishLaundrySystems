@@ -337,7 +337,7 @@
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Barrier Washer Range</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
-                Browse barrier washer models by <br class="hidden sm:block"><span style="color:#148af4;">product line and capacity</span>
+                Browse barrier washers by <span style="color:#148af4;">line and capacity</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-[1400px]">
                 Filter the range, then open each model for full specifications, datasheets, brochures and manuals.
@@ -587,7 +587,7 @@
                     class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:340px;">
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
@@ -684,9 +684,8 @@
     'eyebrow'      => 'Equipment Rental',
     'image'        => '/images/pages/barrier-washers/rentalstripnewimage.webp',
     'mirror'       => true,
-    'gradientStrength' => 0.55,
     'headingSize'  => 'text-2xl sm:text-4xl lg:text-5xl',
-    'headingLine1' => 'Replace equipment or add capacity',
+    'headingLine1' => 'Replace or add capacity<br class="hidden lg:block">',
     'headingLine2' => 'with <span style="color:#148af4;">lower upfront cost</span>',
     'body'         => 'Where suitable, Equipment Rental can support barrier washer replacement or added capacity, with service included under agreed terms.',
     'miniPoints'   => [
@@ -703,10 +702,10 @@
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Options</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.1rem] 2xl:text-[2.6rem] leading-tight mb-3">
-                Engineering support <span style="color:#148af4;">throughout the barrier washer’s working life</span>
+                Keep barrier washers <span style="color:#148af4;">supported beyond installation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Ongoing support can be planned around the equipment, site requirements and maintenance needs.
+                Repairs, maintenance, rental and aftercare help keep equipment running with less disruption.
             </p>
         </div>
 
