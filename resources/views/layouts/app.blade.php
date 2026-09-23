@@ -59,14 +59,37 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 
-    <!-- Google Analytics 4 -->
-    @if(env('GA4_MEASUREMENT_ID'))
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ env('GA4_MEASUREMENT_ID') }}"></script>
+    <!-- Google Analytics 4 + Consent Mode v2 -->
+    @if(config('services.google_analytics.measurement_id'))
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
+        // Consent Mode v2 — deny storage by default until the visitor accepts (GDPR/EU)
+        gtag('consent', 'default', {
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            analytics_storage: 'denied',
+            functionality_storage: 'granted',
+            security_storage: 'granted',
+            wait_for_update: 500
+        });
+        // Re-apply a previously granted choice on repeat visits
+        try {
+            if (localStorage.getItem('cookie_consent') === 'granted') {
+                gtag('consent', 'update', {
+                    ad_storage: 'granted',
+                    ad_user_data: 'granted',
+                    ad_personalization: 'granted',
+                    analytics_storage: 'granted'
+                });
+            }
+        } catch (e) {}
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google_analytics.measurement_id') }}"></script>
+    <script>
         gtag('js', new Date());
-        gtag('config', '{{ env('GA4_MEASUREMENT_ID') }}');
+        gtag('config', '{{ config('services.google_analytics.measurement_id') }}');
     </script>
     @endif
 
@@ -269,6 +292,8 @@
     @include('components.footer')
 
     @include('components.mobile-sticky-bar')
+
+    @include('components.cookie-consent')
 
     <!-- GA4 event tracking: CTA clicks + form submissions -->
     <script>
