@@ -780,7 +780,7 @@
                     class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:340px;">
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">

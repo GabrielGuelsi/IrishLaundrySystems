@@ -338,9 +338,13 @@
             @endforeach
 
         </div>
+    </div>
+</section>
 
-        {{-- Finishing Equipment — secondary equipment route strip (after Categories, before Access) --}}
-        <div class="mt-12 lg:mt-16 rounded-2xl border border-gray-200 bg-[#f7f9fc] overflow-hidden reveal">
+{{-- Finishing Equipment — own section (after Categories, before Access) for full breathing room --}}
+<section class="py-20 lg:py-28 bg-white">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
+        <div class="rounded-2xl border border-gray-200 bg-[#f7f9fc] overflow-hidden reveal">
             <div class="grid grid-cols-1 lg:grid-cols-12">
 
                 {{-- LEFT: copy (~40%) --}}

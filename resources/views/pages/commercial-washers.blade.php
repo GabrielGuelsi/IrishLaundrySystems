@@ -75,11 +75,11 @@
         {{-- Title + intro (original copy) --}}
         <div class="reveal mb-12 lg:mb-14">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Life-Cycle Cost</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-5">
-                See how washer technology can support <span style="color:#148af4;">lower operating costs</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5">
+                Compare purchase price with <span style="color:#148af4;">lifetime operating cost</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                Electrolux Professional washers can help reduce operating inputs, drying demand and staff time.
+                Water, energy and chemicals shape the cost of running a washer over time.
             </p>
         </div>
 
@@ -174,11 +174,11 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3">
-                See how washer technology can support <span style="color:#148af4;">lower day-to-day costs</span>
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
+                See where washer technology can <span style="color:#148af4;">lower daily costs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
-                The features below show where Electrolux Professional washers can help reduce operating inputs, drying demand and staff time.
+                Explore features that reduce resource use, drying demand and staff time.
             </p>
         </div>
 
@@ -658,7 +658,7 @@
                     class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:420px;">
+                    <div class="grid grid-cols-1 lg:grid-cols-12" style="min-height:340px;">
 
                         {{-- Left: context photo --}}
                         <div class="lg:col-span-3 overflow-hidden pt-8 lg:pt-10" style="align-self:start;">
@@ -853,8 +853,8 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7">
                 <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">After Installation</p>
-                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[1.9rem] 2xl:text-[2.3rem] leading-tight mb-3">
-                    Keep washer maintenance planned<br class="hidden sm:block"><span style="color:#011E41;">throughout the equipment&rsquo;s working life</span>
+                <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-[3rem] leading-tight mb-3">
+                    Keep washer maintenance planned <span style="color:#011E41;">throughout the equipment&rsquo;s working life</span>
                 </h2>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-5">
                     <span class="lg:block">Access call-outs, preventive maintenance and aftercare</span>
@@ -916,7 +916,7 @@
     'pageSource'        => 'commercial_washers_cta',
     'eyebrow'           => 'Request Washer Advice',
     'headingSize'       => 'text-2xl sm:text-4xl lg:text-[2.625rem]',
-    'heading'           => 'Discuss washer options for <span style="color:#148af4;">your<br> laundry room</span>',
+    'heading'           => 'Discuss washer options for<br> <span style="color:#148af4;">your laundry room</span>',
     'body'              => 'Share the main details about your site, capacity and installation requirements.<br class="hidden lg:block"> Our team will review them and contact you directly.',
     'formTitle'         => 'Request Washer Advice',
     'buttonText'        => 'Request Washer Advice',

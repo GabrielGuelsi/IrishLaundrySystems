@@ -566,7 +566,7 @@
      7. HOW PREVENTIVE VISITS WORK — wide 4-image process strip
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="w-full overflow-hidden pb-16 lg:pb-24 bg-white">
-    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-32 lg:py-40">
+    <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 pt-32 lg:pt-40 pb-10 lg:pb-14">
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">Preventive Visits</p>
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight reveal" style="transition-delay:80ms;">
             What happens during a <span class="text-steel">planned maintenance&nbsp;visit</span>
@@ -808,8 +808,8 @@ $faqs = [
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">After the Visit</p>
 
         <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[1.8rem] xl:text-[2.35rem] 2xl:text-[2.9rem] leading-tight mb-5">
-            <span class="sm:block">Receive a service report after every visit</span>
-            <span class="sm:block text-steel">with further work quoted before approval</span>
+            <span class="sm:block">Receive a clear service report</span>
+            <span class="sm:block text-steel">with further work quoted first</span>
         </h2>
 
         <p class="font-body text-white/80 text-base leading-relaxed mb-6">
