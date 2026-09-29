@@ -97,21 +97,38 @@
             </div>
 
             {{-- RIGHT: Form --}}
-            <div class="bg-white rounded-xl p-6 lg:p-8 shadow-card">
+            <div id="cta-form" class="bg-white rounded-xl p-6 lg:p-8 shadow-card scroll-mt-28">
                 <h3 class="font-heading font-bold text-navy text-xl mb-1">{{ $formTitle }}</h3>
                 <p class="font-body text-gray-500 text-sm mb-6">{{ $formIntro }}</p>
+
+                @if (session('success'))
+                <div data-form-feedback role="status" class="mb-6 rounded-lg border border-green-200 bg-green-50 p-4 flex gap-3">
+                    <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                    <p class="font-body text-sm text-green-800 leading-relaxed">{{ session('success') }}</p>
+                </div>
+                @elseif ($errors->any())
+                <div data-form-feedback role="alert" class="mb-6 rounded-lg border border-red-200 bg-red-50 p-4">
+                    <p class="font-body font-bold text-sm text-red-800 mb-1">Please check the form:</p>
+                    <ul class="font-body text-sm text-red-700 list-disc pl-5 space-y-0.5">
+                        @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+                @endif
+
                 <form action="{{ route('contact.submit') }}" method="POST" class="space-y-4">
                     @csrf
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label for="cta_name" class="block text-sm font-body font-light text-navy mb-1.5">Name <span class="text-red-500">*</span></label>
-                            <input type="text" id="cta_name" name="name" required
+                            <input type="text" id="cta_name" name="name" value="{{ old('name') }}" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="Your name">
                         </div>
                         <div>
                             <label for="cta_company" class="block text-sm font-body font-light text-navy mb-1.5">Organisation <span class="text-red-500">*</span></label>
-                            <input type="text" id="cta_company" name="company" required
+                            <input type="text" id="cta_company" name="company" value="{{ old('company') }}" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="Company or organisation">
                         </div>
@@ -119,13 +136,13 @@
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div>
                             <label for="cta_phone" class="block text-sm font-body font-light text-navy mb-1.5">Phone <span class="text-red-500">*</span></label>
-                            <input type="tel" id="cta_phone" name="phone" required
+                            <input type="tel" id="cta_phone" name="phone" value="{{ old('phone') }}" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="+353...">
                         </div>
                         <div>
                             <label for="cta_email" class="block text-sm font-body font-light text-navy mb-1.5">Email <span class="text-red-500">*</span></label>
-                            <input type="email" id="cta_email" name="email" required
+                            <input type="email" id="cta_email" name="email" value="{{ old('email') }}" required
                                    class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                    placeholder="you@company.ie">
                         </div>
@@ -135,31 +152,31 @@
                             <label for="cta_sector" class="block text-sm font-body font-light text-navy mb-1.5">Sector <span class="text-red-500">*</span></label>
                             <select id="cta_sector" name="sector" required
                                     class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
-                                <option value="" disabled selected>Select sector</option>
-                                <option value="healthcare">Healthcare</option>
-                                <option value="hospitality">Hospitality</option>
-                                <option value="care">Care Facilities</option>
-                                <option value="commercial">Commercial &amp; Industrial</option>
-                                <option value="other">Other</option>
+                                <option value="" disabled {{ old('sector') ? '' : 'selected' }}>Select sector</option>
+                                <option value="healthcare" {{ old('sector') === 'healthcare' ? 'selected' : '' }}>Healthcare</option>
+                                <option value="hospitality" {{ old('sector') === 'hospitality' ? 'selected' : '' }}>Hospitality</option>
+                                <option value="care" {{ old('sector') === 'care' ? 'selected' : '' }}>Care Facilities</option>
+                                <option value="commercial" {{ old('sector') === 'commercial' ? 'selected' : '' }}>Commercial &amp; Industrial</option>
+                                <option value="other" {{ old('sector') === 'other' ? 'selected' : '' }}>Other</option>
                             </select>
                         </div>
                         <div>
                             <label for="cta_request_type" class="block text-sm font-body font-light text-navy mb-1.5">{{ $requestTypeLabel }} <span class="text-red-500">*</span></label>
                             <select id="cta_request_type" name="request_type" required
                                     class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors bg-white">
-                                <option value="" disabled selected>What do you need?</option>
-                                <option value="contract">Preventive Maintenance</option>
-                                <option value="rental">Equipment Rental</option>
-                                <option value="breakdown">Breakdown / Repair</option>
-                                <option value="parts">Support &amp; Aftercare</option>
-                                <option value="equipment_quote">Equipment Purchase / Quote</option>
+                                <option value="" disabled {{ old('request_type') ? '' : 'selected' }}>What do you need?</option>
+                                <option value="contract" {{ old('request_type') === 'contract' ? 'selected' : '' }}>Preventive Maintenance</option>
+                                <option value="rental" {{ old('request_type') === 'rental' ? 'selected' : '' }}>Equipment Rental</option>
+                                <option value="breakdown" {{ old('request_type') === 'breakdown' ? 'selected' : '' }}>Breakdown / Repair</option>
+                                <option value="parts" {{ old('request_type') === 'parts' ? 'selected' : '' }}>Support &amp; Aftercare</option>
+                                <option value="equipment_quote" {{ old('request_type') === 'equipment_quote' ? 'selected' : '' }}>Equipment Purchase / Quote</option>
                             </select>
                         </div>
                     </div>
                     @if ($showLocationField)
                     <div>
                         <label for="cta_location" class="block text-sm font-body font-light text-navy mb-1.5">Site location <span class="text-red-500">*</span></label>
-                        <input type="text" id="cta_location" name="location" required
+                        <input type="text" id="cta_location" name="location" value="{{ old('location') }}" required
                                class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                placeholder="Town / county">
                     </div>
@@ -167,7 +184,7 @@
                     @if ($equipmentLabel)
                     <div>
                         <label for="cta_equipment" class="block text-sm font-body font-light text-navy mb-1.5">{{ $equipmentLabel }}</label>
-                        <input type="text" id="cta_equipment" name="equipment" maxlength="500"
+                        <input type="text" id="cta_equipment" name="equipment" value="{{ old('equipment') }}" maxlength="500"
                                class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors"
                                placeholder="What is on site today?">
                     </div>
@@ -176,17 +193,17 @@
                         <label for="cta_message" class="block text-sm font-body font-light text-navy mb-1.5">{{ $messageLabel }}@if ($messageRequired) <span class="text-red-500">*</span>@endif</label>
                         <textarea id="cta_message" name="message" rows="3" @if ($messageRequired) required @endif
                                   class="w-full px-3.5 py-2.5 border border-border rounded-lg font-body text-sm text-navy placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-steel/30 focus:border-steel transition-colors resize-none"
-                                  placeholder="Tell us what is under pressure, what equipment is involved and what needs to happen next."></textarea>
+                                  placeholder="Tell us what is under pressure, what equipment is involved and what needs to happen next.">{{ old('message') }}</textarea>
                     </div>
                     <div class="flex items-start gap-2.5">
-                        <input type="checkbox" id="cta_gdpr" name="gdpr_consent" value="1" required
+                        <input type="checkbox" id="cta_gdpr" name="gdpr_consent" value="1" required {{ old('gdpr_consent') ? 'checked' : '' }}
                                class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel/30 cursor-pointer flex-shrink-0">
                         <label for="cta_gdpr" class="font-body text-gray-500 text-xs leading-relaxed cursor-pointer">
                             I agree to the Privacy Policy and to Irish Laundry Systems using my details to respond to this enquiry. <span class="text-red-500">*</span> <a href="{{ route('privacy') }}" class="text-steel underline hover:text-navy" target="_blank">Privacy Policy</a>.
                         </label>
                     </div>
                     <div class="flex items-start gap-2.5">
-                        <input type="checkbox" id="cta_marketing" name="marketing_consent" value="1"
+                        <input type="checkbox" id="cta_marketing" name="marketing_consent" value="1" {{ old('marketing_consent') ? 'checked' : '' }}
                                class="mt-0.5 w-4 h-4 rounded border-border text-steel focus:ring-steel/30 cursor-pointer flex-shrink-0">
                         <label for="cta_marketing" class="font-body text-gray-400 text-xs leading-relaxed cursor-pointer">
                             I would like to receive occasional updates from Irish Laundry Systems. Optional.
@@ -210,3 +227,16 @@
         </div>
     </div>
 </section>
+@if (session('success') || $errors->any())
+<script>
+    // After the redirect back, bring the visitor to the form so they see the result.
+    // Instant (the site uses smooth scrolling) and repeated once, as images loading above can shift the form.
+    window.addEventListener('load', function () {
+        var box = document.getElementById('cta-form');
+        if (!box) return;
+        var jump = function () { box.scrollIntoView({ block: 'start', behavior: 'instant' }); };
+        jump();
+        setTimeout(jump, 400);
+    });
+</script>
+@endif
