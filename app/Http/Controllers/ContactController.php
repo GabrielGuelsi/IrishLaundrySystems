@@ -6,11 +6,23 @@ use App\Mail\ContactRequest;
 use App\Models\ContactSubmission;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\RateLimiter;
 
 class ContactController extends Controller
 {
     public function submit(Request $request)
     {
+        // Only successful sends count, so visitors fixing validation errors are never blocked.
+        $limiterKey = 'contact-submit:'.$request->ip();
+
+        if (RateLimiter::tooManyAttempts($limiterKey, 5)) {
+            $minutes = (int) ceil(RateLimiter::availableIn($limiterKey) / 60);
+
+            return back()
+                ->withInput($request->except('photos'))
+                ->withErrors(['rate_limit' => "Too many requests from this connection. Please try again in {$minutes} minutes or call us on +353 1 491 0402."]);
+        }
+
         $validated = $request->validate([
             'name'          => 'required|string|max:255',
             'company'       => 'required|string|max:255',
@@ -49,6 +61,8 @@ class ContactController extends Controller
         // Send email notification (with any uploaded photos attached)
         Mail::to(config('mail.to_address', 'contact@irishlaundrysystems.com'))
             ->send(new ContactRequest($rowData, $photos));
+
+        RateLimiter::hit($limiterKey, 3600);
 
         return back()->with(
             'success',
