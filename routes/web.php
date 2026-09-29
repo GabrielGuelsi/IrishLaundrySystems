@@ -26,7 +26,7 @@ Route::get('/equipment/{category}/{product}', [PageController::class, 'equipment
 Route::get('/electrolux-partnership', [PageController::class, 'electrolux'])->name('electrolux');
 Route::get('/about', [PageController::class, 'about'])->name('about');
 Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
+Route::post('/contact', [ContactController::class, 'submit'])->middleware('throttle:20,1')->name('contact.submit');
 Route::get('/resources', [PageController::class, 'resources'])->name('resources');
 Route::redirect('/brand-protection', '/', 301);
 Route::get('/request-assessment', [PageController::class, 'requestAssessment'])->name('request-assessment');
@@ -35,7 +35,7 @@ Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy
 // Admin
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('login',  [Admin\AuthController::class, 'showLogin'])->name('login');
-    Route::post('login', [Admin\AuthController::class, 'login'])->name('login.post');
+    Route::post('login', [Admin\AuthController::class, 'login'])->middleware('throttle:5,1')->name('login.post');
 
     Route::middleware('admin.auth')->group(function () {
         Route::get('/', fn () => redirect()->route('admin.equipment.index'));
