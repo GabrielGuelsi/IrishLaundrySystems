@@ -7,12 +7,12 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col min-h-[520px] lg:min-h-[560px] lg:h-[720px]" style="--mobile-photo-position: 72% center;">
     <img src="/images/pages/home/HOMEHERO1.webp" alt="Commercial laundry operation"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0 z-0" style="background: linear-gradient(to right, rgba(1,30,65,0.85) 0%, rgba(1,30,65,0.45) 50%, rgba(20,138,244,0.18) 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-center">
+    <div class="mobile-photo-hero__overlay absolute inset-0 z-0" style="background: linear-gradient(to right, rgba(1,30,65,0.85) 0%, rgba(1,30,65,0.45) 50%, rgba(20,138,244,0.18) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-32">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">

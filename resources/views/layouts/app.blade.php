@@ -280,17 +280,25 @@
         .reveal-left.is-visible,
         .reveal-right.is-visible { transform: none; }
 
-        /* Show wide hero photos above the copy on phones, without the desktop crop. */
-        @media (max-width: 639px) {
+        /* Show wide hero photos above the copy on phones and tablets. */
+        @media (max-width: 1023px) {
             .mobile-photo-hero {
                 min-height: 0 !important;
                 height: auto !important;
-                padding-top: clamp(190px, 58vw, 240px);
+                padding-top: clamp(190px, 58vw, 420px);
+                background-color: #011E41;
+            }
+            .mobile-photo-hero--light {
+                background-color: #fff !important;
             }
             .mobile-photo-hero__image {
                 top: 0 !important;
                 bottom: auto !important;
-                height: clamp(190px, 58vw, 240px) !important;
+                left: 0 !important;
+                width: 100% !important;
+                max-width: none !important;
+                height: clamp(190px, 58vw, 420px) !important;
+                object-fit: cover !important;
                 object-position: var(--mobile-photo-position, center) !important;
                 transform: none !important;
             }
@@ -300,7 +308,7 @@
                 padding-bottom: 4rem !important;
             }
             .mobile-photo-hero__dots {
-                top: calc(clamp(190px, 58vw, 240px) - 1.5rem);
+                top: calc(clamp(190px, 58vw, 420px) - 1.5rem);
                 bottom: auto !important;
             }
             .mobile-photo-hero .mobile-hero-cta {
@@ -308,10 +316,86 @@
                 white-space: normal !important;
                 text-align: center;
             }
+            .mobile-photo-hero__content a {
+                max-width: 100%;
+                white-space: normal !important;
+                text-align: center;
+            }
+            main a[href$="/contact"].whitespace-nowrap {
+                max-width: 100%;
+                white-space: normal !important;
+                text-align: center;
+            }
         }
         @media (max-width: 1023px) {
             [data-mobile-photo-strip] { width: 100% !important; }
             [data-mobile-photo-strip] img { object-position: center 45% !important; }
+        }
+        @media (max-width: 1023px) {
+            .mobile-service-card {
+                height: auto !important;
+                padding-top: 200px;
+                background: #011E41;
+            }
+            .mobile-service-card__image {
+                height: 200px !important;
+                bottom: auto !important;
+                transform: none !important;
+            }
+            .mobile-service-card__overlay { display: none !important; }
+            .mobile-service-card__content {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.25rem !important;
+            }
+            .mobile-service-card__details {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+            }
+            .mobile-sector-card {
+                height: auto !important;
+                padding-top: 200px;
+                background: #011E41;
+            }
+            .mobile-sector-card > img {
+                height: 200px !important;
+                bottom: auto !important;
+                transform: none !important;
+            }
+            .mobile-sector-card > img + div { display: none !important; }
+            .mobile-sector-card > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+            }
+            .mobile-sector-card > div:last-child span {
+                max-width: 100%;
+                white-space: normal !important;
+            }
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card) {
+                min-height: 0 !important;
+                height: auto !important;
+                padding-top: 210px;
+                background: #011E41;
+            }
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card) img {
+                bottom: auto !important;
+                height: 210px !important;
+                transform: none !important;
+            }
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card)::before,
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card)::after,
+            :is(.rn-vcap1, .sc-vcap1, .pa-vcap1) { display: none !important; }
+            :is(.rn-vcap2, .sc-vcap2, .pa-vcap2) {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                opacity: 1 !important;
+                transform: none !important;
+                padding: 1.5rem;
+            }
         }
     </style>
 </head>

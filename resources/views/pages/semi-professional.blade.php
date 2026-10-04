@@ -9,12 +9,12 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col lg:!h-[640px]" style="height:auto; min-height:560px;">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col lg:!h-[640px]" style="--mobile-photo-position: center 62%; height:auto; min-height:560px;">
     <img src="/images/pages/equipment/mypro-family.webp" alt="Semi-professional laundry equipment"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 62%;">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover" style="object-position: center 62%;">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-24">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-24">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Semi-Professional Laundry Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">

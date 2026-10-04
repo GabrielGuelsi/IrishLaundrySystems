@@ -8,12 +8,12 @@
 {{-- ═══════════════════════════════════════
      1. HERO
 ═══════════════════════════════════════ --}}
-<section class="relative overflow-hidden flex flex-col min-h-[420px] lg:min-h-[520px]">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col min-h-[420px] lg:min-h-[520px]" style="--mobile-photo-position: center;">
     <img src="/images/shared/Line 6000 solutions products_72dpi.webp" alt="Commercial laundry resources"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.78) 42%, rgba(1,30,65,0.4) 65%, rgba(1,30,65,0.15) 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-center">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.78) 42%, rgba(1,30,65,0.4) 65%, rgba(1,30,65,0.15) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-20 lg:py-28">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-20 lg:py-28">
             <div class="max-w-3xl lg:max-w-4xl reveal reveal-left">
 
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Resources</p>

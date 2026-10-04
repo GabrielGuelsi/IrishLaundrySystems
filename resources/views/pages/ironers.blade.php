@@ -9,15 +9,15 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden lg:!h-[720px]" style="--mobile-photo-position: center 60%; height:auto; min-height:540px; background-color:#011E41;">
 
     <img src="/images/pages/ironers/ironers-hero-new.webp" alt="Commercial ironers and flatwork finishing"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 60%;">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover" style="object-position: center 60%;">
 
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
 
-    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center py-16 lg:py-0">
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>

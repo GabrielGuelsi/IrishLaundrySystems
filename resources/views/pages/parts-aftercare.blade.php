@@ -153,16 +153,16 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      1. HERO
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
+<section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="--mobile-photo-position: 68% center; background-color: #011E41;">
 
     <img src="/images/pages/services/support-aftercare-hero.webp"
          alt="ILS engineer reviewing commercial laundry equipment after a service visit"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-right">
 
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div class="max-w-full lg:max-w-[920px]">
 

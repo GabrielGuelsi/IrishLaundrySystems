@@ -9,12 +9,12 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]" style="min-height:520px; background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]" style="--mobile-photo-position: 78% center; min-height:520px; background-color:#011E41;">
     <img src="/images/pages/one-connected/hero-oneconnected.webp" alt="OnE Connected laundry dashboard"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: 78% center;">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 38%, rgba(1,30,65,0.38) 66%, rgba(1,30,65,0.05) 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover" style="object-position: 78% center;">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.80) 38%, rgba(1,30,65,0.38) 66%, rgba(1,30,65,0.05) 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-28">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-[2.6rem] 2xl:text-5xl leading-tight mb-6">

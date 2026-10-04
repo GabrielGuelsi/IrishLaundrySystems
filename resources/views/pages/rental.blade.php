@@ -35,14 +35,14 @@
 </style>
 
 {{-- ════════════ 2. HERO ════════════ --}}
-<section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 520px; background-color: #011E41;">
-    <img src="/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png"
+<section class="mobile-photo-hero relative overflow-hidden lg:!h-[720px]" style="--mobile-photo-position: 54% center; height: auto; min-height: 520px; background-color: #011E41;">
+    <img src="/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.webp"
          alt="Commercial laundry equipment supplied and installed by Irish Laundry Systems"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 82%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-right">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.96) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 82%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 820px;">
                 <p class="rn-hero-desc font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-5" style="opacity:1;">Equipment Rental</p>
@@ -299,7 +299,7 @@
         @foreach([
             ['num' => '01.', 'title' => 'Share your site needs',    'body' => 'Tell us the equipment, capacity and workload<br class="hidden lg:block"> your site needs the equipment to handle.', 'img' => '/images/pages/Share%20your%20site%20needsimage.png'],
             ['num' => '02.', 'title' => 'Confirm the right fit',    'body' => 'We review equipment fit and installation needs,<br class="hidden lg:block"> then confirm the scope of the agreement.', 'img' => '/images/shared/Strip1.webp'],
-            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied and installed<br class="hidden lg:block"> with support under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.png'],
+            ['num' => '03.', 'title' => 'Start the rental term',    'body' => 'The selected equipment is supplied and installed<br class="hidden lg:block"> with support under the agreed rental arrangement.', 'img' => '/images/pages/services/Rental%20Hero%20Image%20equipment%20rental.webp'],
         ] as $step)
         <div class="rn-visit-card">
             <img src="{{ asset(ltrim($step['img'], '/')) }}" alt="{{ $step['title'] }}" loading="lazy">

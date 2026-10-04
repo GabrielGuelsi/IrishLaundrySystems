@@ -8,13 +8,13 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden flex flex-col min-h-[520px] lg:!min-h-[560px] lg:!h-[720px]" style="height:auto;">
+<section class="mobile-photo-hero--light mobile-photo-hero relative overflow-hidden flex flex-col min-h-[520px] lg:!min-h-[560px] lg:!h-[720px]" style="--mobile-photo-position: 76% 20%; height:auto;">
     <!-- Background image -->
     <img src="/images/pages/sectors/healthcarehero.webp" alt="Healthcare laundry installation"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-right">
     <!-- Content -->
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
+        <div class="mobile-photo-hero__content max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Healthcare Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">

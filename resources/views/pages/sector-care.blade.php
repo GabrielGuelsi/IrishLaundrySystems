@@ -7,11 +7,11 @@
 @section('content')
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]">
+<section class="mobile-photo-hero--light mobile-photo-hero relative overflow-hidden flex flex-col h-auto min-h-[520px] lg:h-[720px]" style="--mobile-photo-position: 70% center;">
     <img src="/images/pages/sectors/carefacilitiesheroimage.webp" alt="Care facility laundry"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 38%; transform: scale(1.22);">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover" style="object-position: center 38%; transform: scale(1.22);">
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
+        <div class="mobile-photo-hero__content max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-24 lg:py-32">
             <div class="max-w-5xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Care Facility Laundry</p>
                 <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
