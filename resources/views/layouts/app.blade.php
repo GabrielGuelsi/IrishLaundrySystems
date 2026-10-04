@@ -279,6 +279,40 @@
         .reveal-right { transform: translateX(48px); }
         .reveal-left.is-visible,
         .reveal-right.is-visible { transform: none; }
+
+        /* Show wide hero photos above the copy on phones, without the desktop crop. */
+        @media (max-width: 639px) {
+            .mobile-photo-hero {
+                min-height: 0 !important;
+                height: auto !important;
+                padding-top: clamp(190px, 58vw, 240px);
+            }
+            .mobile-photo-hero__image {
+                top: 0 !important;
+                bottom: auto !important;
+                height: clamp(190px, 58vw, 240px) !important;
+                object-position: var(--mobile-photo-position, center) !important;
+                transform: none !important;
+            }
+            .mobile-photo-hero__overlay { display: none; }
+            .mobile-photo-hero__content {
+                padding-top: 2rem !important;
+                padding-bottom: 4rem !important;
+            }
+            .mobile-photo-hero__dots {
+                top: calc(clamp(190px, 58vw, 240px) - 1.5rem);
+                bottom: auto !important;
+            }
+            .mobile-photo-hero .mobile-hero-cta {
+                width: 100%;
+                white-space: normal !important;
+                text-align: center;
+            }
+        }
+        @media (max-width: 1023px) {
+            [data-mobile-photo-strip] { width: 100% !important; }
+            [data-mobile-photo-strip] img { object-position: center 45% !important; }
+        }
     </style>
 </head>
 <body class="antialiased">

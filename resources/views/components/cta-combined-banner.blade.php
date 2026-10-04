@@ -15,14 +15,14 @@
 <section class="relative overflow-hidden" style="background-color:#148af4; min-height:280px;">
 
     {{-- Background image pinned to the right --}}
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:46%;">
+    <div class="relative h-48 sm:h-64 lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto" style="width:46%;" data-mobile-photo-strip>
         <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
              class="w-full h-full object-cover"
              style="object-position: center 30%;">
         {{-- Fade the left edge into the blue. Smoothstep ramp: the slope is zero where the
              image meets the flat background, so no seam is visible, and it clears the image
              before the monitor. --}}
-        <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(20,138,244,1) 0%, rgba(20,138,244,0.989) 1.25%, rgba(20,138,244,0.957) 2.5%, rgba(20,138,244,0.908) 3.75%, rgba(20,138,244,0.844) 5%, rgba(20,138,244,0.768) 6.25%, rgba(20,138,244,0.684) 7.5%, rgba(20,138,244,0.593) 8.75%, rgba(20,138,244,0.5) 10%, rgba(20,138,244,0.407) 11.25%, rgba(20,138,244,0.316) 12.5%, rgba(20,138,244,0.232) 13.75%, rgba(20,138,244,0.156) 15%, rgba(20,138,244,0.092) 16.25%, rgba(20,138,244,0.043) 17.5%, rgba(20,138,244,0.011) 18.75%, rgba(20,138,244,0) 20%);"></div>
+        <div class="absolute inset-0 hidden lg:block" style="background: linear-gradient(to right, rgba(20,138,244,1) 0%, rgba(20,138,244,0.989) 1.25%, rgba(20,138,244,0.957) 2.5%, rgba(20,138,244,0.908) 3.75%, rgba(20,138,244,0.844) 5%, rgba(20,138,244,0.768) 6.25%, rgba(20,138,244,0.684) 7.5%, rgba(20,138,244,0.593) 8.75%, rgba(20,138,244,0.5) 10%, rgba(20,138,244,0.407) 11.25%, rgba(20,138,244,0.316) 12.5%, rgba(20,138,244,0.232) 13.75%, rgba(20,138,244,0.156) 15%, rgba(20,138,244,0.092) 16.25%, rgba(20,138,244,0.043) 17.5%, rgba(20,138,244,0.011) 18.75%, rgba(20,138,244,0) 20%);"></div>
     </div>
 
     {{-- Content — kept clear of the image strip --}}

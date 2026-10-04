@@ -20,17 +20,17 @@
 }
 </style>
 
-<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
 
     <img src="/images/pages/home/HOMEHERO2.webp" alt="Irish Laundry Systems engineering team on site"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover scale-125"
-         style="object-position: center 72%;">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover scale-125"
+         style="object-position: center 72%; --mobile-photo-position: center 72%;">
 
     {{-- Gradient overlay — same fade as the Repairs & Call-Outs hero --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 820px;">
 
@@ -46,12 +46,12 @@
 
                 <div class="eq-hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="#equipment-quote"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Equipment Quote
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Ask About Purchase or Rental
                     </a>
                 </div>
