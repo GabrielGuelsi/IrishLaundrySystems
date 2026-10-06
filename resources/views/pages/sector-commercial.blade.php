@@ -151,7 +151,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Financial Performance</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1490px]:whitespace-nowrap">
                 Plan beyond the purchase price <span style="color:#148af4;">for better budget control</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -175,7 +175,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Priorities</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 xl:whitespace-nowrap">
                 Choose the capacity and features <span style="color:#148af4;">each application requires</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -337,7 +337,7 @@
 
         <div class="mb-16 reveal">
             <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Equipment</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-4 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-4 xl:whitespace-nowrap">
                 Choose equipment <span style="color:#148af4;">around your commercial laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -583,7 +583,7 @@
                         </li>
                         @endforeach
                     </ul>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+                    <div class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-6 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
                             View Barrier Washer Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -677,7 +677,7 @@
                         </li>
                         @endforeach
                     </ul>
-                    <div class="flex flex-col sm:flex-row sm:items-center gap-3 mb-6">
+                    <div class="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-3 mb-6">
                         <a href="{{ route('equipment') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-6 py-4 rounded-lg text-sm transition-colors duration-200 whitespace-nowrap w-fit">
                             View Drying Cabinet Options
                             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -910,9 +910,10 @@
 ])
 
 @include('components.equipment-categories', [
+    'headerAlign' => 'items-start 2xl:flex-row 2xl:items-end',
     'eyebrow' => 'Equipment Categories',
     'textMinH' => '176px',
-    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">commercial and industrial laundry</span></span>',
+    'heading' => '<span class="lg:text-4xl xl:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">commercial and industrial laundry</span></span>',
     'subheading' => 'Select a category to view the equipment available for different capacities and applications.',
     'subheadingClass' => 'max-w-none',
     'equipment' => [
@@ -932,7 +933,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Prepare your commercial laundry <span style="color:#148af4;">for a smooth handover</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
+        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto xl:whitespace-nowrap">
             Site checks, installation and commissioning help ensure the selected equipment is ready for operation.
         </p>
 

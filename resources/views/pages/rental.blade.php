@@ -218,7 +218,7 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-8">
         <div class="mb-12 lg:mb-14 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Compare Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 min-[1360px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight mb-5 min-[1460px]:whitespace-nowrap">
                 Choose the equipment option that <span class="text-[#148af4]">fits how your site budgets</span>
             </h2>
             <p class="font-body text-gray-600 text-base leading-relaxed text-pretty">
@@ -322,10 +322,10 @@
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <div class="mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] uppercase tracking-[0.22em] text-xs mb-3">Where Rental Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.4rem] 2xl:text-[2.9rem] leading-tight mb-5 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2.4rem] 2xl:text-[2.9rem] leading-tight mb-5 xl:whitespace-nowrap">
                 Rental for <span class="text-[#148af4]">different commercial laundry&nbsp;sectors</span>
             </h2>
-            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
+            <p class="font-body text-gray-600 text-base leading-relaxed text-pretty xl:whitespace-nowrap">
                 Choose your sector to see how rental can support your site&rsquo;s equipment requirements.
             </p>
         </div>
@@ -413,9 +413,9 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Site Planning</p>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:block lg:whitespace-nowrap">Confirm equipment and&nbsp;site</span>
-                    <span class="lg:block lg:whitespace-nowrap">requirements before&nbsp;signing</span>
-                    <span class="lg:block lg:whitespace-nowrap text-[#148af4]">your rental&nbsp;agreement</span>
+                    <span class="lg:block xl:whitespace-nowrap">Confirm equipment and&nbsp;site</span>
+                    <span class="lg:block xl:whitespace-nowrap">requirements before&nbsp;signing</span>
+                    <span class="lg:block xl:whitespace-nowrap text-[#148af4]">your rental&nbsp;agreement</span>
                 </h2>
                 <p class="font-body text-gray-600 text-base leading-relaxed mt-5 text-pretty">
                     <span class="lg:block"><span class="whitespace-nowrap">Irish Laundry Systems</span> reviews space, utilities, access and expected workload</span>
@@ -505,7 +505,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted for commercial laundry <span class="text-[#148af4]">service and&nbsp;support</span>',
     'subheading' => 'Sites across Ireland rely on Irish Laundry Systems for equipment supply, responsive service and dependable ongoing support.',
-    'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
+    'subheadingClass' => 'max-w-none xl:whitespace-nowrap mx-auto',
 ])
 <div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')

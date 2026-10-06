@@ -78,7 +78,7 @@
                 <span class="font-body text-white text-sm font-bold leading-tight">{!! $pt['label'] !!}</span>
             </span>
             @else
-            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] lg:whitespace-nowrap' : 'text-sm' }} font-bold">{!! $pt !!}</span>
+            <span class="font-body text-white {{ $miniNowrap ? 'text-[11px] xl:whitespace-nowrap' : 'text-sm' }} font-bold">{!! $pt !!}</span>
             @endif
             @endforeach
         </div>

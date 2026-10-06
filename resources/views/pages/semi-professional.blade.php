@@ -21,8 +21,8 @@
                     When <span style="color:#148af4;">domestic machines</span> <br class="hidden sm:block">become the weak point
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
-                    <span class="sm:block lg:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
-                    <span class="sm:block lg:whitespace-nowrap">myPRO and myPROzip offer a stronger step up from standard domestic appliances.</span>
+                    <span class="sm:block xl:whitespace-nowrap">For small businesses using laundry every day, Electrolux Professional myPRO XL,</span>
+                    <span class="sm:block xl:whitespace-nowrap">myPRO and myPROzip offer a stronger step up from standard domestic appliances.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#semi-pro-form"
@@ -121,7 +121,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for smaller sites with <span style="color:#148af4;">laundry to manage every day</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 For businesses and shared sites where laundry is not industrial scale, but still affects room turnover, staff time, customer standards, resident care or day-to-day operations.
             </p>
         </div>
@@ -216,7 +216,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Compare the myPRO options <span style="color:#148af4;">before choosing a setup</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 See which semi-professional option best matches how your site will use laundry equipment, from higher-capacity daily loads to shared guest use and light finishing.
             </p>
         </div>

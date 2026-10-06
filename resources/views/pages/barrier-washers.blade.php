@@ -143,7 +143,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Reduce handling effort across <span style="color:#148af4;">daily loading and unloading</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Selected Electrolux Professional features support easier door access, clearer programme selection and more comfortable repeated use.
             </p>
         </div>
@@ -264,7 +264,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Built for sites that need <span style="color:#148af4;">controlled separation</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Barrier washers are most relevant where clean and soiled handling need to stay apart, supporting hygiene routines, staff handling and process control.
             </p>
         </div>
@@ -305,8 +305,8 @@
             Plan the room around <br class="hidden sm:block"><span style="color:#011E41;">separation, access and connections</span>
         </h2>
         <p class="font-body text-white text-base leading-relaxed mb-6">
-            <span class="sm:block lg:whitespace-nowrap">Barrier washers need room planning before installation, including dirty / clean separation,</span>
-            <span class="sm:block lg:whitespace-nowrap">site access, wall opening, water supply, power and drainage.</span>
+            <span class="sm:block xl:whitespace-nowrap">Barrier washers need room planning before installation, including dirty / clean separation,</span>
+            <span class="sm:block xl:whitespace-nowrap">site access, wall opening, water supply, power and drainage.</span>
         </p>
         <div class="flex items-center flex-wrap gap-x-4 gap-y-3 mb-7">
             @foreach([

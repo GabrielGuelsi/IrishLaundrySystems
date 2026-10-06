@@ -276,7 +276,7 @@
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                     A clear process from first review <span class="text-[#148af4]">through installation and aftercare</span>
                 </h2>
-                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty min-[1280px]:whitespace-nowrap">
+                <p class="font-body text-gray-500 text-base leading-relaxed text-pretty min-[1300px]:whitespace-nowrap">
                     Customers work with experienced commercial laundry engineers who understand the equipment, the site and the operating priorities behind every recommendation.
                 </p>
             </div>
@@ -409,7 +409,7 @@
 
         <div class="max-w-6xl mb-16 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Company History</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1320px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1510px]:whitespace-nowrap">
                 From electrical contracting to <span class="text-[#148af4]">commercial laundry expertise</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty 2xl:whitespace-nowrap">
@@ -472,7 +472,7 @@
     <div class="relative z-10 w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-14 lg:py-16">
         <div class="max-w-2xl reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Responsible Equipment Choices</p>
-            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-white text-3xl sm:text-4xl lg:text-[2.6rem] leading-tight mb-4 xl:whitespace-nowrap">
                 Better equipment choices for <br class="hidden sm:block"><span class="text-[#148af4]">lower resource use and running costs</span>
             </h2>
             <p class="font-body text-white/80 text-base leading-relaxed max-w-2xl">

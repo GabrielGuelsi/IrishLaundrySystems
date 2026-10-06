@@ -79,7 +79,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Control the costs <span style="color:#148af4;">built into every wash</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Detergent use, water, energy, repeat washing, textile quality and maintenance all affect the real cost of a laundry room over time.
             </p>
         </div>
@@ -103,7 +103,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Plan detergent control across <span style="color:#148af4;">the complete wash setup</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Washer data, automatic dosing, selected detergents and safe storage work together to control chemical use and wash costs.
             </p>
         </div>
@@ -353,10 +353,10 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Product Categories</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 xl:whitespace-nowrap">
                 Explore detergents, storage and <span style="color:#148af4;">laundry room accessories</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Browse products for detergent use, chemical organisation and everyday laundry room handling.
             </p>
         </div>
@@ -440,7 +440,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-5">
                 Certified detergents for <span style="color:#148af4;">quality wash results</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed mb-6 lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed mb-6 xl:whitespace-nowrap">
                 Electrolux Professional Line 6000 eco-range detergents are developed for high-quality, safe and effective washing while helping reduce environmental impact.
             </p>
         </div>
@@ -485,7 +485,7 @@
                 {{-- Group header: label + body + certification labels --}}
                 <div class="mb-8">
                     <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">{!! $grp['label'] !!}</p>
-                    <p class="font-body text-gray-500 text-base leading-relaxed {{ empty($grp['certs']) ? '' : 'mb-6' }} lg:whitespace-nowrap">{{ $grp['body'] }}</p>
+                    <p class="font-body text-gray-500 text-base leading-relaxed {{ empty($grp['certs']) ? '' : 'mb-6' }} xl:whitespace-nowrap">{{ $grp['body'] }}</p>
                     <div class="flex flex-wrap items-start justify-center gap-x-14 gap-y-6">
                         @foreach($grp['certs'] as $cert)
                         <div class="flex flex-col items-center text-center gap-3">
@@ -580,7 +580,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Detergents for <span style="color:#148af4;">semi-professional laundry</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 For smaller myPRO laundry setups that need suitable detergents for everyday washing, garment care and semi-professional use.
             </p>
         </div>
@@ -628,7 +628,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3">
                 Products for <span style="color:#148af4;">professional wet cleaning</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 For specialist wet cleaning setups that need dedicated detergents, conditioner, stain-care products and colour transfer support.
             </p>
         </div>
@@ -972,7 +972,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Browse commercial washers, tumble dryers, wet cleaning systems and ironers.
             </p>
         </div>

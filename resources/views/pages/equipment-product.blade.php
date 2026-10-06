@@ -225,7 +225,7 @@
                 <span class="flex items-center justify-center h-20 mb-4">
                     <img src="{{ asset('images/icons/'.$card['icon'].'.png') }}?v=2" alt="" class="w-16 h-16 object-contain">
                 </span>
-                <span class="font-heading font-bold text-navy text-base leading-tight mb-3 max-w-[220px] lg:max-w-none lg:whitespace-nowrap">{{ $card['t'] }}</span>
+                <span class="font-heading font-bold text-navy text-base leading-tight mb-3 max-w-[220px] lg:max-w-none xl:whitespace-nowrap">{{ $card['t'] }}</span>
                 <span class="inline-flex items-center gap-1.5 font-body font-bold text-navy text-xs uppercase tracking-wide">
                     {{ $card['cta'] }}
                     <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>

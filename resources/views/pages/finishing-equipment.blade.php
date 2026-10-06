@@ -494,7 +494,7 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Service Support</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1300px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1450px]:whitespace-nowrap">
                 Engineering care throughout <span style="color:#148af4;">the equipment’s working life</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed max-w-4xl">
