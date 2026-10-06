@@ -380,19 +380,19 @@
 </div>
 
 <!-- 8. FINAL CTA — standard image strip + form below -->
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative flex flex-col-reverse overflow-hidden 2xl:block" style="background-color:#148af4; min-height:320px;">
 
-    {{-- RIGHT: image pinned to 40% (matches the standard home strip) --}}
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+    {{-- Full-width image on smaller screens; right-side image on wide desktops. --}}
+    <div class="relative h-[220px] sm:h-[300px] lg:h-[380px] 2xl:absolute 2xl:inset-y-0 2xl:right-0 2xl:h-auto 2xl:w-[40%]">
         <img src="/images/pages/services/services-overview-hero.webp"
              alt="ILS engineer with a commercial laundry customer"
              class="w-full h-full object-cover" style="object-position: center 30%;"
              loading="lazy" decoding="async">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
+        <div class="absolute inset-0 hidden 2xl:block" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
 
-    {{-- LEFT: content — 60% width (matches home cta-combined-banner) --}}
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
+    {{-- Content above the image on smaller screens; left column on wide desktops. --}}
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full 2xl:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-4xl lg:text-5xl text-white">
             Need service support for <span style="color:#011E41;">commercial laundry&nbsp;equipment?</span>
