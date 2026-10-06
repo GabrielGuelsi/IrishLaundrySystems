@@ -50,7 +50,7 @@
             </div>
 
             <!-- Desktop Navigation -->
-            <nav class="hidden lg:flex items-center gap-1" role="navigation" aria-label="Main navigation">
+            <nav class="hidden xl:flex items-center gap-1" role="navigation" aria-label="Main navigation">
 
                 <!-- Services Dropdown -->
                 <div class="relative" x-data="{ servicesOpen: false }" @mouseenter="servicesOpen = true" @mouseleave="servicesOpen = false">
@@ -154,9 +154,9 @@
             </nav>
 
             <!-- Desktop CTA + Phone -->
-            <div class="hidden lg:flex items-center gap-3">
+            <div class="hidden xl:flex items-center gap-3">
                 <a href="tel:+35314910402"
-                   class="flex flex-col items-end text-navy hover:text-orange transition-colors duration-150 group">
+                   class="hidden 2xl:flex flex-col items-end text-navy hover:text-orange transition-colors duration-150 group">
                     <span class="flex items-center gap-1.5 text-sm font-body font-bold">
                         <svg class="w-4 h-4 text-orange group-hover:text-orange-dark transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
@@ -174,7 +174,7 @@
 
             <!-- Mobile Hamburger -->
             <button @click="open = !open"
-                    class="lg:hidden text-navy p-2 rounded-md hover:bg-bg transition-colors duration-150 cursor-pointer"
+                    class="xl:hidden text-navy p-2 rounded-md hover:bg-bg transition-colors duration-150 cursor-pointer"
                     :aria-expanded="open" aria-label="Toggle menu">
                 <svg x-show="!open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
@@ -194,7 +194,7 @@
          x-transition:leave="transition ease-in duration-150"
          x-transition:leave-start="opacity-100 translate-y-0"
          x-transition:leave-end="opacity-0 -translate-y-2"
-         class="lg:hidden bg-white border-t border-gray-200 overflow-y-auto max-h-screen"
+         class="xl:hidden bg-white border-t border-gray-200 overflow-y-auto max-h-screen"
          @click.away="open = false">
 
         <nav class="px-5 py-2 font-body">
