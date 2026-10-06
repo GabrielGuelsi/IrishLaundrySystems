@@ -60,19 +60,19 @@
 }
 </style>
 
-<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
+<section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="--mobile-photo-position: 50% center; background-color: #011E41;">
 
     <!-- Background image -->
     <img src="/images/shared/repairs-hero.webp"
          alt="ILS engineer providing reactive repair and call-out support on commercial laundry equipment"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right lg:origin-left lg:scale-[1.18]">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-right lg:origin-left lg:scale-[1.18]">
 
     <!-- Gradient overlay — tight, clears by 70% -->
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
 
     <!-- Text — vertically centered -->
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 820px;">
 

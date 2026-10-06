@@ -44,18 +44,47 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      1. HERO
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[680px]" style="background-color: #011E41;">
+<section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[680px]" style="--mobile-photo-position: center; background-color: #011E41;">
 
-    <video autoplay muted loop playsinline
+    <video autoplay muted loop playsinline preload="none" data-desktop-hero-video
            poster="/images/shared/line-6000-solutions.webp"
            aria-label="120 years of laundry solutions — Electrolux Professional"
-           class="absolute inset-0 w-full h-full object-cover object-center">
-        <source src="/images/pages/120_years_of_Laundry_solutions_Electrolux_Professional.mp4" type="video/mp4">
+           class="mobile-photo-hero__image hidden lg:block absolute inset-0 w-full h-full object-cover object-center">
+        <source data-src="/images/pages/120_years_of_Laundry_solutions_Electrolux_Professional.mp4" type="video/mp4">
     </video>
+    <script>
+        (function () {
+            const video = document.querySelector('[data-desktop-hero-video]');
+            const source = video.querySelector('source');
+            const desktop = window.matchMedia('(min-width: 1024px)');
+            function syncVideo() {
+                if (desktop.matches) {
+                    if (!source.hasAttribute('src')) {
+                        source.src = source.dataset.src;
+                        video.load();
+                    }
+                    video.play().catch(function () {});
+                } else {
+                    video.pause();
+                    if (source.hasAttribute('src')) {
+                        source.removeAttribute('src');
+                        video.load();
+                    }
+                }
+            }
+            if (desktop.addEventListener) desktop.addEventListener('change', syncVideo);
+            else desktop.addListener(syncVideo);
+            syncVideo();
+        })();
+    </script>
+    <img src="/images/shared/line-6000-solutions.webp"
+         alt="Electrolux Professional commercial laundry equipment"
+         loading="eager" fetchpriority="high" decoding="async"
+         class="mobile-photo-hero__image block lg:hidden absolute inset-0 w-full h-full object-cover object-center">
 
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div class="max-w-full lg:max-w-[960px]">
 

@@ -4,33 +4,33 @@
     Use directly below the hero section on every page.
 --}}
 <div class="bg-white border-b border-gray-200">
-    <div class="max-w-screen-2xl mx-auto px-6 lg:pl-[52px] lg:pr-[62px] py-4 lg:py-2.5 flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-2 lg:gap-4 text-center lg:text-left">
+    <div class="max-w-screen-2xl mx-auto px-6 2xl:pl-[52px] 2xl:pr-[62px] py-4 2xl:py-2.5 flex flex-col 2xl:flex-row items-center justify-center 2xl:justify-between gap-2 2xl:gap-4 text-center 2xl:text-left">
 
         <!-- Logo -->
         <div class="flex-shrink-0">
             <img src="/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg"
                  alt="Electrolux Professional Authorized Partner"
-                 class="h-12 sm:h-14 lg:h-20 w-auto mx-auto">
+                 class="h-12 sm:h-14 2xl:h-20 w-auto mx-auto">
         </div>
 
         <!-- Trust line (mobile: compact, centered) -->
-        <p class="lg:hidden font-body text-navy text-xs leading-snug max-w-xs">
+        <p class="2xl:hidden font-body text-navy text-xs leading-snug max-w-xs">
             Working with Electrolux Professional since 1987.
         </p>
 
         <!-- Vertical divider -->
-        <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
+        <div class="hidden 2xl:block w-px h-14 bg-gray-200"></div>
 
         <!-- Trust line -->
-        <p class="hidden lg:block font-body text-navy text-sm leading-snug max-w-[260px]">
+        <p class="hidden 2xl:block font-body text-navy text-sm leading-snug max-w-[260px]">
             Working with Electrolux Professional since 1987, combining manufacturer expertise with Irish engineering&nbsp;capability.
         </p>
 
         <!-- Vertical divider -->
-        <div class="hidden lg:block w-px h-14 bg-gray-200"></div>
+        <div class="hidden 2xl:block w-px h-14 bg-gray-200"></div>
 
         <!-- 3 feature icons -->
-        <div class="hidden lg:flex items-start gap-6 2xl:gap-20">
+        <div class="hidden 2xl:flex items-start gap-20">
 
             <div class="flex flex-col items-center gap-0 text-center">
                 <div class="h-[88px] flex items-center justify-center">

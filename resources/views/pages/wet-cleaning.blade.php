@@ -9,12 +9,12 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col lg:!h-[720px]" style="height:auto; min-height:560px;">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col lg:!h-[720px]" style="--mobile-photo-position: center; height:auto; min-height:560px;">
     <img src="/images/pages/wet-cleaning/lagoon-advanced-care-internal.webp" alt="Wet cleaning equipment"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-center">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Wet Cleaning Equipment</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
@@ -419,7 +419,7 @@
                 go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
                 init() {
-                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1280 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
                     calc();
                     window.addEventListener('resize', calc);
                     this.timer = setInterval(() => this.next(), 6000);
@@ -431,8 +431,8 @@
                 <div class="flex transition-transform duration-500 ease-out -mx-2.5"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($fitCards as $card)
-                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
-                        <div class="group relative overflow-hidden rounded-2xl aspect-square">
+                    <div class="flex-shrink-0 w-full sm:w-1/2 xl:w-1/4 px-2.5">
+                        <div class="mobile-fit-card mobile-fit-card--source-margins group relative overflow-hidden rounded-2xl aspect-square">
                             <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                                  class="absolute inset-0 w-full h-full object-cover scale-[1.65] transition-transform duration-700 group-hover:scale-[1.73]"
                                  style="object-position: {{ $card['pos'] ?? 'center center' }};">
@@ -676,7 +676,7 @@
                                 <div class="flex-1">
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex flex-wrap items-center gap-x-8 gap-y-3">
                                         @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
                                         @endif
@@ -755,20 +755,20 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 reveal">
+        <div class="grid grid-cols-1 2xl:grid-cols-12 gap-5 reveal">
 
             {{-- Serenity Cabinet — large product visual overlapping the RISE / SARS-CoV-2 proof panel (image pops in front, panel peeks from behind) --}}
-            <div class="lg:col-span-4 flex flex-col">
-                <div class="relative">
+            <div class="2xl:col-span-4 flex flex-col">
+                <div class="relative flex flex-col-reverse gap-4 2xl:block">
                     {{-- RISE panel behind, indented left so the cabinet image overlaps it --}}
-                    <div class="ml-24 sm:ml-28 bg-white border border-gray-100 shadow-sm rounded-2xl pl-28 sm:pl-32 pr-5 py-6 min-h-[280px] flex flex-col justify-center">
+                    <div class="bg-white border border-gray-100 shadow-sm rounded-2xl p-5 sm:p-6 2xl:ml-28 2xl:pl-32 2xl:pr-5 2xl:py-6 2xl:min-h-[280px] flex flex-col justify-center">
                         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-2">RISE Confirmed</p>
                         <p class="font-heading font-bold text-navy text-base leading-snug mb-2">Log 6 SARS-CoV-2 Reduction</p>
                         <p class="font-body text-gray-500 text-sm leading-relaxed">RISE confirmed reduced SARS-CoV-2 infectivity on textiles treated in the Serenity Cabinet.</p>
                     </div>
                     {{-- Cabinet image in front, large, popping out on the left and top/bottom --}}
                     <img src="/images/pages/wet-cleaning/Serenity Cabinet.jpg" alt="Serenity Cabinet" loading="lazy" decoding="async"
-                         class="absolute left-0 top-1/2 -translate-y-1/2 w-52 sm:w-56 h-auto object-contain z-10 drop-shadow-xl">
+                         class="relative mx-auto w-44 sm:w-52 md:w-80 h-auto object-contain z-10 drop-shadow-xl 2xl:absolute 2xl:left-0 2xl:top-1/2 2xl:mx-0 2xl:-translate-y-1/2 2xl:w-56">
                 </div>
                 <p class="font-heading font-bold text-navy text-sm mt-4 pl-2">Serenity Cabinet</p>
                 <a href="{{ route('contact') }}"
@@ -779,7 +779,7 @@
             </div>
 
             {{-- lifestyle + features --}}
-            <div class="lg:col-span-4 flex flex-col gap-5">
+            <div class="2xl:col-span-4 flex flex-col gap-5">
                 <img src="/images/pages/wet-cleaning/serenitywomencabinet3.webp" alt="Garments prepared before returning to customers" loading="lazy" decoding="async"
                      class="w-full aspect-video object-cover rounded-2xl">
                 <div class="bg-white border border-gray-100 rounded-2xl px-6 py-2 shadow-sm flex-1">
@@ -799,7 +799,7 @@
             </div>
 
             {{-- video thumbnail + reassurance microcards --}}
-            <div class="lg:col-span-4 flex flex-col gap-5">
+            <div class="2xl:col-span-4 flex flex-col gap-5">
                 <div class="rounded-2xl overflow-hidden bg-navy">
                     <div class="relative w-full aspect-video">
                         <iframe class="absolute inset-0 w-full h-full"
@@ -906,7 +906,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

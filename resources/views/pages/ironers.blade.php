@@ -9,15 +9,15 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden lg:!h-[720px]" style="--mobile-photo-position: center 60%; height:auto; min-height:540px; background-color:#011E41;">
 
     <img src="/images/pages/ironers/ironers-hero-new.webp" alt="Commercial ironers and flatwork finishing"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: center 60%;">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover" style="object-position: center 60%;">
 
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
 
-    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center py-16 lg:py-0">
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial Ironers</p>
@@ -267,13 +267,13 @@
 </section>
 
 {{-- 9. ROOM PLANNING STRIP --}}
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:300px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+<section class="relative flex flex-col-reverse overflow-hidden 2xl:block" style="background-color:#148af4; min-height:300px;">
+    <div class="relative h-[220px] sm:h-[300px] lg:h-[380px] 2xl:absolute 2xl:inset-y-0 2xl:right-0 2xl:h-auto 2xl:w-[40%]">
         <img src="/images/shared/Strip1.webp" alt="ILS laundry engineering"
-             class="w-full h-full object-cover" style="object-position: center 30%;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
+             class="w-full h-full object-cover" style="object-position: center 30%;" loading="lazy" decoding="async">
+        <div class="absolute inset-0 hidden 2xl:block" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[68%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full 2xl:max-w-[68%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Room Planning</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             <span class="sm:block">Plan the ironer configuration around</span>
@@ -629,7 +629,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

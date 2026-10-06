@@ -9,12 +9,12 @@
 @section('content')
 
 {{-- 2. HERO --}}
-<section class="relative overflow-hidden flex flex-col min-h-[520px] lg:h-[720px]" style="min-height:520px;">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col min-h-[520px] lg:h-[720px]" style="--mobile-photo-position: center; min-height:520px;">
     <img src="/images/pages/drying-cabinets/drying-cabinets-hero.webp" alt="Commercial drying cabinets"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-center">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Drying Cabinets</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6 text-balance">
@@ -131,7 +131,7 @@
                 go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
                 init() {
-                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1280 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
                     calc();
                     window.addEventListener('resize', calc);
                     this.timer = setInterval(() => this.next(), 6000);
@@ -143,8 +143,8 @@
                 <div class="flex transition-transform duration-500 ease-out -mx-2.5"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($fitCards as $card)
-                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
-                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                    <div class="flex-shrink-0 w-full sm:w-1/2 xl:w-1/4 px-2.5">
+                        <div class="mobile-fit-card group relative overflow-hidden rounded-2xl" style="height:320px;">
                             <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 {{ empty($card['sc']) ? 'group-hover:scale-105' : '' }}"
                                  style="object-position: {{ $card['pos'] ?? 'center center' }};@if(!empty($card['sc'])) transform: scale({{ $card['sc'] }});@endif">
@@ -496,7 +496,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

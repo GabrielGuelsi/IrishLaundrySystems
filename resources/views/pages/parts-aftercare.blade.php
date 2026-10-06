@@ -153,16 +153,16 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      1. HERO
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color: #011E41;">
+<section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="--mobile-photo-position: 68% center; background-color: #011E41;">
 
     <img src="/images/pages/services/support-aftercare-hero.webp"
          alt="ILS engineer reviewing commercial laundry equipment after a service visit"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover object-right">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-right">
 
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.97) 0%, rgba(1,30,65,0.90) 25%, rgba(1,30,65,0.65) 45%, rgba(1,30,65,0.25) 65%, transparent 80%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div class="max-w-full lg:max-w-[920px]">
 
@@ -390,13 +390,13 @@
 {{-- ════════════════════════════════════════════════════════════════════════
      7. PREVENTIVE MAINTENANCE BRIDGE
      ════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+<section class="relative flex flex-col-reverse overflow-hidden 2xl:block" style="background-color:#011E41; min-height:300px;">
+    <div class="relative h-[220px] sm:h-[300px] lg:h-[380px] 2xl:absolute 2xl:inset-y-0 2xl:right-0 2xl:h-auto 2xl:w-[40%]">
         <img src="/images/shared/service-contracts-hero.webp" alt="Planned maintenance visit on commercial laundry equipment"
-             class="w-full h-full object-cover" style="object-position: center center;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
+             class="w-full h-full object-cover" style="object-position: center center;" loading="lazy" decoding="async">
+        <div class="absolute inset-0 hidden 2xl:block" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.85) 18%, rgba(1,30,65,0.35) 55%, transparent 100%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[74%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full 2xl:max-w-[74%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">When Follow-Up Becomes a Pattern</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             Recurring faults may&nbsp;point&nbsp;to<br class="hidden lg:block"> <span style="color:#148af4;">a Preventive Maintenance&nbsp;Contract</span>

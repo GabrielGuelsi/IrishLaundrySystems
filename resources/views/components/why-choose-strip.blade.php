@@ -29,7 +29,7 @@
 <section class="relative overflow-hidden" style="background-color:#011E41; min-height:280px;">
 
     {{-- image pinned to 56% — left by default, right when mirrored --}}
-    <div class="absolute inset-y-0 {{ $mirror ? 'right-0' : 'left-0' }} hidden lg:block" style="width:56%;">
+    <div class="relative h-48 sm:h-64 lg:absolute lg:inset-y-0 {{ $mirror ? 'lg:right-0' : 'lg:left-0' }} lg:h-auto" style="width:56%;" data-mobile-photo-strip>
         <img src="{{ $image }}" alt="Commercial laundry equipment rental"
              class="w-full h-full object-cover" style="object-position: {{ $imagePosition }};">
         {{-- Smoothstep fade — the plateau covers the text column, then eases out with no visible seam.
@@ -41,7 +41,7 @@
                 return "rgba(1,30,65,{$a}) {$s[0]}%";
             }, $gradStops));
         @endphp
-        <div class="absolute inset-0" style="background: linear-gradient(to {{ $mirror ? 'right' : 'left' }}, {{ $gradCss }});"></div>
+        <div class="absolute inset-0 hidden lg:block" style="background: linear-gradient(to {{ $mirror ? 'right' : 'left' }}, {{ $gradCss }});"></div>
     </div>
 
     {{-- content — 50% width, right by default, left when mirrored --}}

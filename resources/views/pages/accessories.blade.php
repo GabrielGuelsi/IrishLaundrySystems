@@ -9,12 +9,12 @@
 @section('content')
 
 {{-- 1. HERO --}}
-<section class="relative overflow-hidden flex flex-col lg:!h-[600px]" style="height:auto; min-height:520px;">
+<section class="mobile-photo-hero relative overflow-hidden flex flex-col lg:!h-[600px]" style="--mobile-photo-position: center; height:auto; min-height:520px;">
     <img src="/images/pages/accessories/heroaccesories.webp" alt="Laundry dosing systems, detergents and accessories"
-         class="absolute inset-0 w-full h-full object-cover object-center">
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-center">
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.75) 42%, rgba(1,30,65,0.35) 65%, transparent 100%);"></div>
     <div class="relative z-10 flex-1 flex items-center w-full">
-        <div class="w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
+        <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-20 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-3xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Accessories &amp; Consumables</p>
                 <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
@@ -280,7 +280,7 @@
                                         @endforeach
                                     </div>
                                     @if(!empty($p['logos']))
-                                    <div class="flex items-center gap-6 mb-6">
+                                    <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-6">
                                         @if(in_array('clarusvibe', $p['logos']))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-10 w-auto object-contain opacity-80">
                                         @endif
@@ -936,7 +936,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

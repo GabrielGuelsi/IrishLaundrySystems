@@ -9,18 +9,18 @@
 <!-- ══════════════════════════════════════════
      1. HERO
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden lg:!h-[720px]" style="--mobile-photo-position: 72% center; height:auto; min-height:540px; background-color:#011E41;">
 
-    <img src="{{ asset('images/pages/about/aboutimagehero.png') }}"
+    <img src="{{ asset('images/pages/about/aboutimagehero.webp') }}"
          alt="ILS engineering team"
          loading="eager" decoding="async"
-         class="absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
+         class="mobile-photo-hero__image absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
          style="transform: scale(1.12); transform-origin: right center;">
 
     {{-- Gradient overlay: navy fills the left and fades smoothly so the seam is invisible --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
 
-    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center py-16 lg:py-0">
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">About Irish Laundry Systems</p>
@@ -89,7 +89,7 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach([
                 ['Since 1987', '',                         'Irish Engineering Heritage',         'Commercial laundry experience built on Irish electrical contracting and engineering roots.', null],
                 ['100+',       'Clients',                  'Long-standing Relationships',        'Commercial laundry customers supported across Dublin and throughout Ireland.', null],
@@ -293,9 +293,9 @@
     ];
     @endphp
 
-    <div class="flex flex-col sm:flex-row items-stretch gap-0 overflow-hidden reveal" style="transition-delay:100ms;">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-stretch gap-0 overflow-hidden reveal" style="transition-delay:100ms;">
         @foreach($siteSteps as $i => $step)
-        <div class="group flex-1 relative overflow-hidden min-h-[300px] sm:!min-h-[460px]">
+        <div class="mobile-story-step group flex-1 relative overflow-hidden min-h-[300px] sm:!min-h-[460px]">
             <img src="{{ asset($step['img']) }}" alt="{{ $step['title'] }}"
                  class="w-full h-full object-cover object-center absolute inset-0 transition-transform duration-700 group-hover:scale-105">
             {{-- Default gradient --}}
@@ -461,7 +461,7 @@
 <!-- ══════════════════════════════════════════
      10. RESPONSIBLE EQUIPMENT — compact strip
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden bg-navy flex items-center" style="min-height:480px;">
+<section class="mobile-responsible-equipment relative overflow-hidden bg-navy flex items-center" style="min-height:480px;">
     {{-- Background image (right side) --}}
     <img src="{{ asset('images/pages/about/responsible-equipment.png') }}"
          alt="Responsible equipment choices"

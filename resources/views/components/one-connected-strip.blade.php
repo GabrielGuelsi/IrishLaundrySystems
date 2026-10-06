@@ -4,13 +4,13 @@
     $ctaLabel = $ctaLabel ?? 'Ask About Connected Equipment';
     $ctaHref = $ctaHref ?? route('contact');
 @endphp
-<section class="relative overflow-hidden" style="background-color:#011E41; min-height:300px;">
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+<section class="relative flex flex-col-reverse overflow-hidden 2xl:block" style="background-color:#011E41; min-height:300px;">
+    <div class="relative h-[240px] sm:h-[320px] lg:h-[430px] 2xl:absolute 2xl:inset-y-0 2xl:right-0 2xl:h-auto 2xl:w-[40%]">
         <img src="/images/pages/one-connected/oneconnectedstrip.webp" alt="OnE Connected laundry dashboard"
-             class="w-full h-full object-cover" style="object-position: 87% center;">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.45) 8%, rgba(1,30,65,0.12) 22%, transparent 40%);"></div>
+             class="w-full h-full object-cover object-right" loading="lazy">
+        <div class="absolute inset-0 hidden 2xl:block" style="background: linear-gradient(to right, #011E41 0%, rgba(1,30,65,0.45) 8%, rgba(1,30,65,0.12) 22%, transparent 40%);"></div>
     </div>
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full 2xl:max-w-[60%]">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">OnE Connected</p>
         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
             Take your laundry operation<br>to <span style="color:#148af4;">the next level</span>

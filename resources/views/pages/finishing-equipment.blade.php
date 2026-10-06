@@ -9,16 +9,16 @@
 @section('content')
 
 {{-- HERO --}}
-<section class="relative overflow-hidden lg:!h-[720px]" style="height:auto; min-height:540px; background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden lg:!h-[720px]" style="--mobile-photo-position: 72% center; height:auto; min-height:540px; background-color:#011E41;">
 
     <img src="/images/pages/finishing-equipment/finishingequipmenthero.webp" alt="Commercial finishing equipment"
          loading="eager" decoding="async"
-         class="absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
+         class="mobile-photo-hero__image absolute inset-y-0 right-0 h-full w-auto max-w-none object-cover object-right"
          style="transform: scale(1.12); transform-origin: right center;">
 
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, #011E41 0%, #011E41 26%, rgba(1,30,65,0.88) 40%, rgba(1,30,65,0.60) 54%, rgba(1,30,65,0.30) 68%, rgba(1,30,65,0.10) 80%, transparent 90%);"></div>
 
-    <div class="relative z-10 h-full flex items-center py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center py-16 lg:py-0">
         <div class="max-w-screen-2xl mx-auto w-full px-6 sm:px-10 lg:px-20">
             <div class="max-w-4xl">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Finishing Equipment</p>
@@ -186,7 +186,7 @@
                 go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
                 init() {
-                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1280 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
                     calc();
                     window.addEventListener('resize', calc);
                     this.timer = setInterval(() => this.next(), 6000);
@@ -198,8 +198,8 @@
                 <div class="flex transition-transform duration-500 ease-out -mx-2.5"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($fitCards as $card)
-                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
-                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                    <div class="flex-shrink-0 w-full sm:w-1/2 xl:w-1/4 px-2.5">
+                        <div class="mobile-fit-card group relative overflow-hidden rounded-2xl" style="height:320px;">
                             <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                  style="object-position: {{ $card['pos'] ?? 'center center' }};">
@@ -538,7 +538,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

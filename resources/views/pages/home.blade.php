@@ -20,7 +20,7 @@
 .hero-btns  { animation: heroFadeUp 0.7s ease 0.4s forwards; opacity: 0; }
 </style>
 
-<section class="relative overflow-hidden min-h-[520px] lg:h-[720px] lg:min-h-[560px]" style="background-color: #011E41;"
+<section class="mobile-photo-hero relative overflow-hidden min-h-[520px] lg:h-[720px] lg:min-h-[560px]" style="background-color: #011E41;"
          x-data="{ active: 0, slides: 2 }"
          x-init="setInterval(() => active = (active + 1) % slides, 6000)">
 
@@ -28,20 +28,21 @@
     <img src="/images/pages/home/HOMEHERO1.webp"
          alt="Commercial laundry operation"
          fetchpriority="high" width="1916" height="821"
-         class="absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover object-center transition-opacity ease-in-out duration-[1200ms]"
+         style="--mobile-photo-position: 72% center;"
          :class="active === 0 ? 'opacity-100' : 'opacity-0'">
     <img src="/images/pages/home/HOMEHERO2.webp"
          alt="Irish Laundry Systems engineering team on site"
          fetchpriority="low" loading="lazy" width="1916" height="821"
-         style="object-position: center 72%;"
-         class="absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
+         style="object-position: center 72%; --mobile-photo-position: center 72%;"
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover scale-125 transition-opacity ease-in-out duration-[1200ms]"
          :class="active === 1 ? 'opacity-100' : 'opacity-0'">
 
     <!-- Gradient overlay — tight, clears by 70% -->
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
 
     <!-- Text — vertically centered -->
-    <div class="relative z-10 h-full flex items-center w-full py-20 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-20 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div class="max-w-4xl">
 
@@ -59,11 +60,11 @@
 
                 <div class="hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
-                       class="inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center bg-orange hover:bg-orange-dark text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 whitespace-nowrap">
                         Request an Assessment
                     </a>
                     <a href="{{ route('equipment') }}"
-                       class="inline-flex items-center justify-center border-2 border-white hover:border-white/70 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center border-2 border-white hover:border-white/70 text-white font-body font-bold px-7 py-4 rounded-lg text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Browse Equipment
                     </a>
                 </div>
@@ -73,7 +74,7 @@
     </div>
 
     {{-- Carousel indicators --}}
-    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
+    <div class="mobile-photo-hero__dots absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex items-center gap-2">
         <template x-for="i in slides" :key="i">
             <button type="button" @click="active = i - 1"
                     :class="active === (i - 1) ? 'bg-white w-6' : 'bg-white/40 hover:bg-white/70 w-2.5'"

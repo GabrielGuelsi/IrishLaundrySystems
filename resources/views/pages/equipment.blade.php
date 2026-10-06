@@ -20,17 +20,17 @@
 }
 </style>
 
-<section class="relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
+<section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[720px]" style="background-color:#011E41;">
 
     <img src="/images/pages/home/HOMEHERO2.webp" alt="Irish Laundry Systems engineering team on site"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover scale-125"
-         style="object-position: center 72%;">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover scale-125"
+         style="object-position: center 72%; --mobile-photo-position: center 72%;">
 
     {{-- Gradient overlay — same fade as the Repairs & Call-Outs hero --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,1.00) 0%, rgba(1,30,65,0.92) 30%, rgba(1,30,65,0.50) 50%, rgba(1,30,65,0.10) 65%, transparent 75%);"></div>
 
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 820px;">
 
@@ -46,12 +46,12 @@
 
                 <div class="eq-hero-btns flex flex-col sm:flex-row gap-4">
                     <a href="#equipment-quote"
-                       class="inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center gap-2 bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request Equipment Quote
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
                     <a href="{{ route('contact') }}"
-                       class="inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center gap-2 border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap">
                         Ask About Purchase or Rental
                     </a>
                 </div>
@@ -73,7 +73,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:block">Choose equipment around</span><span class="text-[#148af4] lg:block">how your laundry works</span><span class="text-[#148af4] lg:block">and the workload it handles</span>
+                    <span class="lg:block">Choose equipment around</span> <span class="text-[#148af4] lg:block">how your laundry works</span> <span class="text-[#148af4] lg:block">and the workload it handles</span>
                 </h2>
             </div>
 
@@ -158,7 +158,7 @@
                     class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="relative" style="min-height:640px;">
+                    <div class="mobile-equipment-teaser relative" style="min-height:640px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover {{ $t['imgClass'] ?? 'object-center' }}">
                         <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.8) 25%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.25) 65%, rgba(1,30,65,0.06) 85%, transparent 100%);"></div>
@@ -179,7 +179,7 @@
                 @endforeach
 
                 {{-- Prev / Next circular arrows, bottom-right --}}
-                <div class="self-end justify-self-end z-20 flex gap-2 p-6">
+                <div class="mobile-equipment-teaser-controls self-end justify-self-end z-20 flex gap-2 p-6">
                     <button @click="prev()"
                             class="w-11 h-11 rounded-full bg-white/90 hover:bg-white text-navy shadow flex items-center justify-center transition-colors">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
@@ -528,7 +528,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
@@ -596,7 +596,7 @@
                 go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
                 init() {
-                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1280 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
                     calc();
                     window.addEventListener('resize', calc);
                     this.timer = setInterval(() => this.next(), 6000);
@@ -608,11 +608,11 @@
                 <div class="flex transition-transform duration-500 ease-out -mx-3"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($environments as $i => $env)
-                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-3">
+                    <div class="flex-shrink-0 w-full sm:w-1/2 xl:w-1/4 px-3">
                         <div class="flex flex-col items-center text-center">
                             <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
-                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
+                                     class="mobile-sector-carousel-image w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
                             </a>
                             <h3 class="font-heading font-bold text-navy text-xl mb-4">{!! $env['env'] !!}</h3>
                             <a href="{{ $env['route'] }}"

@@ -23,19 +23,19 @@
 </style>
 
 <!-- 1. HERO -->
-<section class="relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 480px; background-color: #011E41;">
+<section class="mobile-photo-hero relative overflow-hidden lg:!h-[720px]" style="height: auto; min-height: 480px; background-color: #011E41;">
 
     {{-- Background image --}}
     <img src="/images/pages/services/services-overview-hero.webp"
          alt="ILS engineer shaking hands with a customer in a laundry room"
          loading="eager" decoding="async"
-         class="absolute inset-0 w-full h-full object-cover" style="object-position: 30% top;">
+         class="mobile-photo-hero__image absolute inset-0 w-full h-full object-cover" style="object-position: 30% top; --mobile-photo-position: 55% center;">
 
     {{-- Gradient overlay --}}
-    <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.78) 18%, rgba(1,30,65,0.40) 35%, rgba(1,30,65,0.10) 55%, transparent 70%);"></div>
+    <div class="mobile-photo-hero__overlay absolute inset-0" style="background: linear-gradient(90deg, rgba(1,30,65,0.95) 0%, rgba(1,30,65,0.78) 18%, rgba(1,30,65,0.40) 35%, rgba(1,30,65,0.10) 55%, transparent 70%);"></div>
 
     {{-- Text --}}
-    <div class="relative z-10 h-full flex items-center w-full py-16 lg:py-0">
+    <div class="mobile-photo-hero__content relative z-10 h-full flex items-center w-full py-16 lg:py-0">
         <div class="max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16">
             <div style="max-width: 760px;">
 
@@ -53,11 +53,11 @@
 
                 <div class="svc-hero-btns flex flex-row flex-wrap gap-4">
                     <a href="#services-form"
-                       class="inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
+                       class="mobile-hero-cta inline-flex items-center justify-center bg-[#148af4] hover:bg-[#0e79d8] text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 whitespace-nowrap">
                         Request a Service Assessment
                     </a>
                     <a href="#service-routes"
-                       class="inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap gap-2">
+                       class="mobile-hero-cta inline-flex items-center justify-center border border-white/50 hover:border-white text-white font-body font-bold px-7 py-4 rounded-md text-base transition-colors duration-200 hover:bg-white/10 whitespace-nowrap gap-2">
                         Compare Service Options
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
                     </a>
@@ -380,19 +380,19 @@
 </div>
 
 <!-- 8. FINAL CTA — standard image strip + form below -->
-<section class="relative overflow-hidden" style="background-color:#148af4; min-height:320px;">
+<section class="relative flex flex-col-reverse overflow-hidden 2xl:block" style="background-color:#148af4; min-height:320px;">
 
-    {{-- RIGHT: image pinned to 40% (matches the standard home strip) --}}
-    <div class="absolute inset-y-0 right-0 hidden lg:block" style="width:40%;">
+    {{-- Full-width image on smaller screens; right-side image on wide desktops. --}}
+    <div class="relative h-[220px] sm:h-[300px] lg:h-[380px] 2xl:absolute 2xl:inset-y-0 2xl:right-0 2xl:h-auto 2xl:w-[40%]">
         <img src="/images/pages/services/services-overview-hero.webp"
              alt="ILS engineer with a commercial laundry customer"
              class="w-full h-full object-cover" style="object-position: center 30%;"
              loading="lazy" decoding="async">
-        <div class="absolute inset-0" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
+        <div class="absolute inset-0 hidden 2xl:block" style="background: linear-gradient(to right, #148af4 0%, rgba(20,138,244,0.82) 8%, rgba(20,138,244,0.45) 28%, rgba(20,138,244,0.18) 48%, transparent 65%);"></div>
     </div>
 
-    {{-- LEFT: content — 60% width (matches home cta-combined-banner) --}}
-    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full lg:max-w-[60%]">
+    {{-- Content above the image on smaller screens; left column on wide desktops. --}}
+    <div class="relative z-10 px-6 sm:px-10 lg:px-16 py-10 lg:py-14 max-w-full 2xl:max-w-[60%]">
         <p class="font-body font-bold text-white/70 text-xs uppercase tracking-[0.22em] mb-3">Service Assessment</p>
         <h2 class="font-heading font-bold leading-tight text-balance mb-4 text-2xl sm:text-4xl lg:text-5xl text-white">
             Need service support for <span style="color:#011E41;">commercial laundry&nbsp;equipment?</span>
