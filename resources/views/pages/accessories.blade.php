@@ -280,7 +280,7 @@
                                         @endforeach
                                     </div>
                                     @if(!empty($p['logos']))
-                                    <div class="flex items-center gap-6 mb-6">
+                                    <div class="flex flex-wrap items-center gap-x-6 gap-y-3 mb-6">
                                         @if(in_array('clarusvibe', $p['logos']))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-10 w-auto object-contain opacity-80">
                                         @endif

@@ -617,7 +617,7 @@
                                 <div class="flex-1">
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex flex-wrap items-center gap-x-8 gap-y-3">
                                         @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
                                         @endif
