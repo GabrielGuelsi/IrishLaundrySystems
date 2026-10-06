@@ -1,6 +1,6 @@
 // Generates smaller WebP copies of the site's photos for srcset.
 // Output: public/images/_r/<original path>-<width>w.webp + public/images/_r/manifest.json
-// The ResponsiveImages middleware reads the manifest and adds srcset to <img> tags.
+// The ResponsiveImages middleware reads the manifest and adds srcset (and width/height) to <img> tags.
 //
 // Run after adding or replacing photos (sharp is not a project dependency):
 //   npm i --no-save sharp && node scripts/build-responsive-images.mjs
@@ -24,7 +24,7 @@ const refs = new Set();
 for (const d of SCAN) {
     for (const f of walk(path.join(ROOT, d))) {
         const src = fs.readFileSync(f, 'utf8');
-        for (const m of src.matchAll(/\/images\/[^"' )]+\.(?:webp|jpe?g|png)/gi)) {
+        for (const m of src.matchAll(/\/images\/[^"' )]+\.(?:webp|jpe?g|png|svg)/gi)) {
             if (!m[0].startsWith('/images/_r/')) refs.add(decodeURIComponent(m[0]));
         }
     }
@@ -35,9 +35,9 @@ for (const ref of [...refs].sort()) {
     const file = path.join(PUBLIC, ref);
     if (!fs.existsSync(file)) continue;
     const buf = fs.readFileSync(file);
-    const { width } = await sharp(buf).metadata();
+    const { width, height } = await sharp(buf).metadata();
     const widths = [];
-    for (const w of WIDTHS) {
+    for (const w of ref.endsWith('.svg') ? [] : WIDTHS) {
         if (w > width * 0.85) break;
         const dest = path.join(OUT, ref.replace(/^\/images\//, '').replace(/\.[^.]+$/, '') + `-${w}w.webp`);
         if (!fs.existsSync(dest)) {
@@ -47,7 +47,17 @@ for (const ref of [...refs].sort()) {
         }
         widths.push(w);
     }
-    if (widths.length) manifest[ref] = { w: width, v: widths };
+    manifest[ref] = { w: width, h: height, v: widths };
+}
+
+// Dimensions only (no copies) for every other image, e.g. icons whose path is built from a name in Blade.
+for (const file of walk(path.join(PUBLIC, 'images'))) {
+    const ref = '/' + path.relative(PUBLIC, file).split(path.sep).join('/');
+    if (manifest[ref] || ref.startsWith('/images/_r/') || !/\.(?:webp|jpe?g|png|svg)$/i.test(ref)) continue;
+    try {
+        const { width, height } = await sharp(fs.readFileSync(file)).metadata();
+        manifest[ref] = { w: width, h: height, v: [] };
+    } catch { /* not a readable image */ }
 }
 
 fs.mkdirSync(OUT, { recursive: true });

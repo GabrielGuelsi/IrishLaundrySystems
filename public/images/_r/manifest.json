@@ -1,20 +1,393 @@
 {
+ "/images/icons/100-clients.png": {
+  "w": 474,
+  "h": 474,
+  "v": []
+ },
+ "/images/icons/13.png": {
+  "w": 375,
+  "h": 148,
+  "v": []
+ },
+ "/images/icons/15.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/151.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/162.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/163.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/164.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/165.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/166.png": {
+  "w": 294,
+  "h": 294,
+  "v": []
+ },
+ "/images/icons/169.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/171.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/172.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/175.png": {
+  "w": 512,
+  "h": 301,
+  "v": []
+ },
+ "/images/icons/2.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/201.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/202.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/203.png": {
+  "w": 228,
+  "h": 228,
+  "v": []
+ },
+ "/images/icons/204.png": {
+  "w": 228,
+  "h": 228,
+  "v": []
+ },
+ "/images/icons/205.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/206.png": {
+  "w": 276,
+  "h": 276,
+  "v": []
+ },
+ "/images/icons/207.png": {
+  "w": 180,
+  "h": 180,
+  "v": []
+ },
+ "/images/icons/208.png": {
+  "w": 126,
+  "h": 126,
+  "v": []
+ },
+ "/images/icons/221.png": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/icons/224.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/227.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/230.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/232.png": {
+  "w": 201,
+  "h": 201,
+  "v": []
+ },
+ "/images/icons/233.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/234.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/24.png": {
+  "w": 375,
+  "h": 375,
+  "v": []
+ },
+ "/images/icons/243.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/295.webp": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/296.webp": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/297.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/298.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/299.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/34.png": {
+  "w": 429,
+  "h": 429,
+  "v": []
+ },
+ "/images/icons/61.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/Hygiene-Watchdog1.webp": {
+  "w": 135,
+  "h": 136,
+  "v": []
+ },
+ "/images/icons/RGIGASINSTALLER.png": {
+  "w": 303,
+  "h": 303,
+  "v": []
+ },
+ "/images/icons/SAFEELECTRIC.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/aftercare-connected-93.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/aftercare-connected-94.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/aftercare-connected-95.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/aftercare-connected-96.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
  "/images/icons/clarusvibe.webp": {
   "w": 1600,
+  "h": 484,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/icons/ergocertnew.png": {
+  "w": 280,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/healthcarerentalstrip3.png": {
+  "w": 153,
+  "h": 153,
+  "v": []
+ },
+ "/images/icons/home-maintenance-costs.png": {
+  "w": 180,
+  "h": 180,
+  "v": []
+ },
+ "/images/icons/home-maintenance-disruption.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/home-maintenance-value.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/home-planning-fit.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/home-planning-spend.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/home-rental-upfront.png": {
+  "w": 180,
+  "h": 180,
+  "v": []
+ },
+ "/images/icons/pmc-gain-86.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/pmc-gain-87.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/pmc-gain-88.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/pmc-gain-90.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/rental-gain-115.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/rental-gain-116.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/rental-gain-118.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/rental-gain-119.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/rental-gain-120.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/repairs-dropoff.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-dublin-network.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-fault-symptoms.webp": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-machine-type.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-repeat-history.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-short-term.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-site-urgency.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/repairs-urgent-support.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/logo/EPR_Authorized_Partner_horizontal_positive_CMYK.jpg": {
+  "w": 465,
+  "h": 239,
+  "v": []
+ },
+ "/images/logo/ILS-LOGO-HORIZONTAL-WHITE.svg": {
+  "w": 1650,
+  "h": 540,
+  "v": []
+ },
+ "/images/logo/abbvie.png": {
+  "w": 520,
+  "h": 128,
+  "v": []
+ },
  "/images/logo/electrolux-partner.png": {
   "w": 800,
+  "h": 533,
   "v": [
    480
   ]
  },
+ "/images/logo/grace-healthcare-cropped.png": {
+  "w": 412,
+  "h": 72,
+  "v": []
+ },
  "/images/pages/Share your site needsimage.png": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
@@ -23,6 +396,7 @@
  },
  "/images/pages/about/ILSLOGO2.png": {
   "w": 2041,
+  "h": 1681,
   "v": [
    480,
    800,
@@ -32,6 +406,7 @@
  },
  "/images/pages/accessories/CMIS 5image.png": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -40,12 +415,14 @@
  },
  "/images/pages/accessories/DOSAVE.jpg": {
   "w": 800,
+  "h": 600,
   "v": [
    480
   ]
  },
  "/images/pages/accessories/Featured Platformimage.png": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -54,6 +431,7 @@
  },
  "/images/pages/accessories/JETSAVE.webp": {
   "w": 1254,
+  "h": 945,
   "v": [
    480,
    800
@@ -61,6 +439,7 @@
  },
  "/images/pages/accessories/Laundry Program Managerimage.png": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
@@ -69,6 +448,7 @@
  },
  "/images/pages/accessories/MULTISAVE.webp": {
   "w": 1254,
+  "h": 953,
   "v": [
    480,
    800
@@ -76,14 +456,36 @@
  },
  "/images/pages/accessories/Payment & Booking Systemsimage.png": {
   "w": 1536,
+  "h": 1024,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/accessories/Racks & Shelvingimage.png": {
+  "w": 491,
+  "h": 663,
+  "v": []
+ },
+ "/images/pages/accessories/dispenseringreycabinet.webp": {
+  "w": 412,
+  "h": 601,
+  "v": []
+ },
+ "/images/pages/accessories/dosing-unit.webp": {
+  "w": 448,
+  "h": 220,
+  "v": []
+ },
+ "/images/pages/accessories/dryer-balls.webp": {
+  "w": 560,
+  "h": 560,
+  "v": []
+ },
  "/images/pages/accessories/eco-detergents.webp": {
   "w": 978,
+  "h": 600,
   "v": [
    480,
    800
@@ -91,6 +493,7 @@
  },
  "/images/pages/accessories/equipmentrentalcard.webp": {
   "w": 1418,
+  "h": 2000,
   "v": [
    480,
    800,
@@ -99,6 +502,7 @@
  },
  "/images/pages/accessories/heroaccesories.webp": {
   "w": 2000,
+  "h": 667,
   "v": [
    480,
    800,
@@ -106,32 +510,57 @@
    1600
   ]
  },
+ "/images/pages/accessories/l02-laundry-eco-wash.webp": {
+  "w": 237,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/l06-laundry-swan-wash.jpg": {
+  "w": 279,
+  "h": 354,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-w01-sensitive-detergent.png": {
+  "w": 345,
+  "h": 482,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-w03-sensitive-conditioner.png": {
+  "w": 224,
+  "h": 315,
+  "v": []
+ },
  "/images/pages/accessories/laundrybagannets.webp": {
   "w": 746,
+  "h": 560,
   "v": [
    480
   ]
  },
  "/images/pages/accessories/prespotting-prebrushing-agents.png": {
   "w": 750,
+  "h": 500,
   "v": [
    480
   ]
  },
  "/images/pages/accessories/trolley_.webp": {
   "w": 778,
+  "h": 467,
   "v": [
    480
   ]
  },
  "/images/pages/accessories/trolleys-and-racks.webp": {
   "w": 764,
+  "h": 485,
   "v": [
    480
   ]
  },
  "/images/pages/barrier-washers/Barrier_Washers_Healthcare.webp": {
   "w": 2000,
+  "h": 2000,
   "v": [
    480,
    800,
@@ -141,6 +570,7 @@
  },
  "/images/pages/barrier-washers/Clearer Operator Control.png": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -148,19 +578,42 @@
  },
  "/images/pages/barrier-washers/Easier Daily Handling.webp": {
   "w": 700,
+  "h": 700,
   "v": [
    480
   ]
  },
  "/images/pages/barrier-washers/Easier Unloading.png": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
   ]
  },
+ "/images/pages/barrier-washers/WB6-110.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/barrier-washers/WB6-13.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/barrier-washers/WB6-20.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/barrier-washers/WB6-35.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/barrier-washers/after-installation-strip.webp": {
   "w": 1816,
+  "h": 866,
   "v": [
    480,
    800,
@@ -169,14 +622,21 @@
  },
  "/images/pages/barrier-washers/barrierwashernewheropic.webp": {
   "w": 1717,
+  "h": 916,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/barrier-washers/barrierwasheroperatorconfort.webp": {
+  "w": 528,
+  "h": 881,
+  "v": []
+ },
  "/images/pages/barrier-washers/card-equipment-rental.webp": {
   "w": 1816,
+  "h": 866,
   "v": [
    480,
    800,
@@ -185,6 +645,7 @@
  },
  "/images/pages/barrier-washers/firefighters.webp": {
   "w": 1483,
+  "h": 1061,
   "v": [
    480,
    800,
@@ -193,6 +654,7 @@
  },
  "/images/pages/barrier-washers/line6000-barrier-washer.webp": {
   "w": 2250,
+  "h": 2250,
   "v": [
    480,
    800,
@@ -202,6 +664,7 @@
  },
  "/images/pages/barrier-washers/rentalstripnewimage.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -210,6 +673,7 @@
  },
  "/images/pages/commercial-washers/0O3A9746_72dpi.webp": {
   "w": 2000,
+  "h": 1334,
   "v": [
    480,
    800,
@@ -217,8 +681,14 @@
    1600
   ]
  },
+ "/images/pages/commercial-washers/PW9C.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/commercial-washers/WH6-14.webp": {
   "w": 1469,
+  "h": 2000,
   "v": [
    480,
    800,
@@ -227,12 +697,14 @@
  },
  "/images/pages/commercial-washers/WH6-27.webp": {
   "w": 638,
+  "h": 915,
   "v": [
    480
   ]
  },
  "/images/pages/commercial-washers/WH6-6.webp": {
   "w": 984,
+  "h": 1203,
   "v": [
    480,
    800
@@ -240,6 +712,7 @@
  },
  "/images/pages/commercial-washers/WH6-7.webp": {
   "w": 1350,
+  "h": 2000,
   "v": [
    480,
    800
@@ -247,6 +720,7 @@
  },
  "/images/pages/commercial-washers/after-installation-strip.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -255,12 +729,24 @@
  },
  "/images/pages/commercial-washers/commercialwasher.webp": {
   "w": 600,
+  "h": 600,
   "v": [
    480
   ]
  },
+ "/images/pages/commercial-washers/iceberg.png": {
+  "w": 417,
+  "h": 762,
+  "v": []
+ },
+ "/images/pages/commercial-washers/lacandlag.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/commercialindustrialequipmentrental.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -269,18 +755,81 @@
  },
  "/images/pages/dryers/Asset-1.webp": {
   "w": 800,
+  "h": 626,
   "v": [
    480
   ]
+ },
+ "/images/pages/dryers/PD9C.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/Quickdry Condense.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/T4900CR.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-11.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-14.webp": {
+  "w": 440,
+  "h": 981,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-16.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-17S.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-30.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-45.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-45SLD.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-6.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
  },
  "/images/pages/dryers/Tumble-dryers_Heat-Pump_1-1.webp": {
   "w": 600,
+  "h": 600,
   "v": [
    480
   ]
  },
+ "/images/pages/dryers/Tumble-dryers_Heat-Pump_1-2.PNG": {
+  "w": 315,
+  "h": 600,
+  "v": []
+ },
  "/images/pages/dryers/equipment2.jpg": {
   "w": 1200,
+  "h": 894,
   "v": [
    480,
    800
@@ -288,6 +837,7 @@
  },
  "/images/pages/dryers/heat-pump-dryer-lineup.webp": {
   "w": 1500,
+  "h": 1061,
   "v": [
    480,
    800,
@@ -296,18 +846,21 @@
  },
  "/images/pages/dryers/line6000-tumble-dryer.webp": {
   "w": 800,
+  "h": 1268,
   "v": [
    480
   ]
  },
  "/images/pages/dryers/myprotumbledryer.jpg": {
   "w": 800,
+  "h": 800,
   "v": [
    480
   ]
  },
  "/images/pages/dryers/tumbledryershero.webp": {
   "w": 2000,
+  "h": 691,
   "v": [
    480,
    800,
@@ -317,33 +870,68 @@
  },
  "/images/pages/drying-cabinets/Construction & workwear.png": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
   ]
+ },
+ "/images/pages/drying-cabinets/DC6-4.jpg": {
+  "w": 392,
+  "h": 968,
+  "v": []
  },
  "/images/pages/drying-cabinets/Delicate fabrics and fine clothing.png": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
   ]
  },
+ "/images/pages/drying-cabinets/Drying Cabinets - Heat Pump 1LZS03.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Drying Cabinets - Heat PumpDC7-4HPH.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Drying Cabinets - Heat Pumpdc6-14hp.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Drying Cabinets - Heat Pumpdc7-4hp.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/drying-cabinets/Drying-cabinets_image.webp": {
   "w": 600,
+  "h": 600,
   "v": [
    480
   ]
  },
  "/images/pages/drying-cabinets/Firefighters & PPE.png": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
   ]
  },
+ "/images/pages/drying-cabinets/Glove hangers.webp": {
+  "w": 500,
+  "h": 334,
+  "v": []
+ },
  "/images/pages/drying-cabinets/Multi-housing.webp": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
@@ -351,13 +939,30 @@
  },
  "/images/pages/drying-cabinets/Private residences & wardrobe rooms.png": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
   ]
  },
+ "/images/pages/drying-cabinets/Shoe shelves.webp": {
+  "w": 500,
+  "h": 334,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Standard Drying Cabinets.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Standard Drying CabinetsDC6-8.jpg": {
+  "w": 255,
+  "h": 254,
+  "v": []
+ },
  "/images/pages/drying-cabinets/drying-cabinets-hero.webp": {
   "w": 2000,
+  "h": 885,
   "v": [
    480,
    800,
@@ -367,26 +972,45 @@
  },
  "/images/pages/drying-cabinets/equipmentrentalcards.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/drying-cabinets/hangerSticks.webp": {
+  "w": 500,
+  "h": 334,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/heatpump-dc7-10hp.jpg": {
+  "w": 448,
+  "h": 448,
+  "v": []
+ },
  "/images/pages/drying-cabinets/schools-childcare.webp": {
   "w": 700,
+  "h": 700,
   "v": [
    480
   ]
  },
+ "/images/pages/drying-cabinets/standard-dc6-14.jpg": {
+  "w": 448,
+  "h": 448,
+  "v": []
+ },
  "/images/pages/drying-cabinets/workwear-dc6-15ww.jpg": {
   "w": 800,
+  "h": 800,
   "v": [
    480
   ]
  },
  "/images/pages/equipment/accessoriesandconsumablescardimage.webp": {
   "w": 2000,
+  "h": 1125,
   "v": [
    480,
    800,
@@ -396,6 +1020,7 @@
  },
  "/images/pages/equipment/barrierwashercards.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -403,6 +1028,7 @@
  },
  "/images/pages/equipment/commercialwasherscard.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -410,6 +1036,7 @@
  },
  "/images/pages/equipment/hot_ciliders_ironerscards.jpg": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
@@ -417,6 +1044,7 @@
  },
  "/images/pages/equipment/mypro-family.webp": {
   "w": 2000,
+  "h": 1032,
   "v": [
    480,
    800,
@@ -426,6 +1054,7 @@
  },
  "/images/pages/equipment/semiprofessionalcards.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -433,6 +1062,7 @@
  },
  "/images/pages/equipment/tumbledryerscard.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -440,28 +1070,62 @@
  },
  "/images/pages/equipment/wetcleaningcards.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
   ]
+ },
+ "/images/pages/finishing-equipment/FC48.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FF1.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FIT1-WC.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
  },
  "/images/pages/finishing-equipment/FIT1.jpg": {
   "w": 1133,
+  "h": 1240,
   "v": [
    480,
    800
   ]
  },
+ "/images/pages/finishing-equipment/FPA1-D.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FSB3.3.jpeg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/finishing-equipment/finishingequipmenthero.webp": {
   "w": 1591,
+  "h": 1062,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/finishing-equipment/imageimage.png": {
+  "w": 402,
+  "h": 518,
+  "v": []
+ },
  "/images/pages/finishing-equipment/where-care-facilities.jpg": {
   "w": 1200,
+  "h": 798,
   "v": [
    480,
    800
@@ -469,6 +1133,7 @@
  },
  "/images/pages/finishing-equipment/where-commercial-laundries.webp": {
   "w": 1200,
+  "h": 801,
   "v": [
    480,
    800
@@ -476,6 +1141,7 @@
  },
  "/images/pages/finishing-equipment/where-dry-cleaners.webp": {
   "w": 1200,
+  "h": 801,
   "v": [
    480,
    800
@@ -483,6 +1149,7 @@
  },
  "/images/pages/finishing-equipment/where-hotels-hospitality.jpg": {
   "w": 1200,
+  "h": 798,
   "v": [
    480,
    800
@@ -490,6 +1157,7 @@
  },
  "/images/pages/finishing-equipment/where-wet-cleaning.webp": {
   "w": 1200,
+  "h": 795,
   "v": [
    480,
    800
@@ -497,6 +1165,7 @@
  },
  "/images/pages/home/0O3A9810_72dpi.webp": {
   "w": 2000,
+  "h": 1334,
   "v": [
    480,
    800,
@@ -506,6 +1175,7 @@
  },
  "/images/pages/home/HOMEHERO1.webp": {
   "w": 1916,
+  "h": 821,
   "v": [
    480,
    800,
@@ -515,6 +1185,7 @@
  },
  "/images/pages/home/HOMEHERO2.webp": {
   "w": 2000,
+  "h": 1111,
   "v": [
    480,
    800,
@@ -524,14 +1195,31 @@
  },
  "/images/pages/ironers/IB623_FRONT_NEW.jpg": {
   "w": 1518,
+  "h": 1118,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/ironers/bed-230-ib623.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/ironers/cylinder-330-ic633.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/ironers/cylinder-480-ic648.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/ironers/equipment-rental-strip.webp": {
   "w": 2000,
+  "h": 1497,
   "v": [
    480,
    800,
@@ -539,22 +1227,40 @@
    1600
   ]
  },
+ "/images/pages/ironers/finishing-fit1.jpg": {
+  "w": 560,
+  "h": 560,
+  "v": []
+ },
  "/images/pages/ironers/flatwork-iv64821ffs-trim.jpg": {
   "w": 924,
+  "h": 322,
   "v": [
    480
   ]
  },
+ "/images/pages/ironers/flatwork-iv64821ffs.jpg": {
+  "w": 560,
+  "h": 560,
+  "v": []
+ },
  "/images/pages/ironers/ironers-hero-new.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/ironers/roller-ic63316.jpg": {
+  "w": 560,
+  "h": 560,
+  "v": []
+ },
  "/images/pages/one-connected/One Dashboardbackground.png": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -564,6 +1270,7 @@
  },
  "/images/pages/one-connected/engineering-support.webp": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
@@ -572,6 +1279,7 @@
  },
  "/images/pages/one-connected/hero-oneconnected.webp": {
   "w": 2000,
+  "h": 667,
   "v": [
    480,
    800,
@@ -581,6 +1289,7 @@
  },
  "/images/pages/one-connected/laptoponedashboard.webp": {
   "w": 2000,
+  "h": 944,
   "v": [
    480,
    800,
@@ -590,14 +1299,21 @@
  },
  "/images/pages/one-connected/oneconnectedstrip.webp": {
   "w": 1728,
+  "h": 728,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/sectors/ELS_PH_415x415_FIT2B.jpg": {
+  "w": 415,
+  "h": 415,
+  "v": []
+ },
  "/images/pages/sectors/Electrolux-Barrier-infografica-LOW.webp": {
   "w": 1000,
+  "h": 665,
   "v": [
    480,
    800
@@ -605,6 +1321,7 @@
  },
  "/images/pages/sectors/Heavy-DutyandHigh-volume.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -613,6 +1330,7 @@
  },
  "/images/pages/sectors/How-barrier-washers-can-help-maximize-OPL-hygiene-and-safety_phone.webp": {
   "w": 966,
+  "h": 712,
   "v": [
    480,
    800
@@ -620,6 +1338,7 @@
  },
  "/images/pages/sectors/Marine_navy.webp": {
   "w": 1916,
+  "h": 821,
   "v": [
    480,
    800,
@@ -629,6 +1348,7 @@
  },
  "/images/pages/sectors/Protective Workwear & Controlled Laundry.jpeg": {
   "w": 1200,
+  "h": 697,
   "v": [
    480,
    800
@@ -636,6 +1356,7 @@
  },
  "/images/pages/sectors/carefacilitiesheroimage.webp": {
   "w": 1920,
+  "h": 883,
   "v": [
    480,
    800,
@@ -645,6 +1366,7 @@
  },
  "/images/pages/sectors/detergentdoser.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -652,6 +1374,7 @@
  },
  "/images/pages/sectors/healthcarehero.webp": {
   "w": 2000,
+  "h": 1125,
   "v": [
    480,
    800,
@@ -661,6 +1384,7 @@
  },
  "/images/pages/sectors/hospitallityhero.webp": {
   "w": 1912,
+  "h": 823,
   "v": [
    480,
    800,
@@ -670,6 +1394,7 @@
  },
  "/images/pages/sectors/selfservice.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
@@ -677,14 +1402,41 @@
  },
  "/images/pages/sectors/workwear,uniforms.png": {
   "w": 1483,
+  "h": 1061,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/semi-professional/Condense dryertd2-8.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/Condense dryerte1120.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/Domestic machines.png": {
+  "w": 218,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/semi-professional/Heat pump dryers TD2-9HP.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/Heat pump dryersTE1120HP.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
  "/images/pages/semi-professional/ILSEQUIPMENTRENTALMYPRO.webp": {
   "w": 1340,
+  "h": 1174,
   "v": [
    480,
    800
@@ -692,14 +1444,46 @@
  },
  "/images/pages/semi-professional/ILSSUPPORTMYPRO.webp": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/pages/semi-professional/IS1103.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/myPRO - IronersIS185.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/myPRO Edge - Washers we2-9.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/myPRO Edge - WashersWE170P.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/myPRO Edge - WashersWE170V.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/semi-professional/myPROXL 12kg.webp": {
+  "w": 407,
+  "h": 560,
+  "v": []
+ },
  "/images/pages/semi-professional/mypro-hp-front.webp": {
   "w": 1489,
+  "h": 2000,
   "v": [
    480,
    800,
@@ -708,6 +1492,7 @@
  },
  "/images/pages/services/Complete planned maintenance.png": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -716,6 +1501,7 @@
  },
  "/images/pages/services/Recommend follow-up work.png": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
@@ -724,6 +1510,7 @@
  },
  "/images/pages/services/Record the findings.png": {
   "w": 1535,
+  "h": 1024,
   "v": [
    480,
    800,
@@ -732,6 +1519,7 @@
  },
  "/images/pages/services/Rental Hero Image equipment rental.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -740,6 +1528,7 @@
  },
  "/images/pages/services/Review equipment condition.png": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -748,6 +1537,7 @@
  },
  "/images/pages/services/agreementiclusions.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -756,6 +1546,7 @@
  },
  "/images/pages/services/on-site-diagnosis.webp": {
   "w": 1473,
+  "h": 1068,
   "v": [
    480,
    800,
@@ -764,6 +1555,7 @@
  },
  "/images/pages/services/parts-support-bg.webp": {
   "w": 1600,
+  "h": 900,
   "v": [
    480,
    800,
@@ -772,6 +1564,7 @@
  },
  "/images/pages/services/preventive-agree-step.webp": {
   "w": 1600,
+  "h": 900,
   "v": [
    480,
    800,
@@ -780,6 +1573,7 @@
  },
  "/images/pages/services/repairs-how-01.webp": {
   "w": 1280,
+  "h": 852,
   "v": [
    480,
    800
@@ -787,6 +1581,7 @@
  },
  "/images/pages/services/repairs-how-02.webp": {
   "w": 1280,
+  "h": 854,
   "v": [
    480,
    800
@@ -794,6 +1589,7 @@
  },
  "/images/pages/services/repairs-how-03.webp": {
   "w": 1173,
+  "h": 941,
   "v": [
    480,
    800
@@ -801,6 +1597,7 @@
  },
  "/images/pages/services/repairs-how-04.webp": {
   "w": 1025,
+  "h": 719,
   "v": [
    480,
    800
@@ -808,6 +1605,7 @@
  },
  "/images/pages/services/repairs-temporary-laundry-online.webp": {
   "w": 1652,
+  "h": 952,
   "v": [
    480,
    800,
@@ -816,6 +1614,7 @@
  },
  "/images/pages/services/service-contracts-hero.webp": {
   "w": 1272,
+  "h": 716,
   "v": [
    480,
    800
@@ -823,6 +1622,7 @@
  },
  "/images/pages/services/services-how-01.webp": {
   "w": 1400,
+  "h": 932,
   "v": [
    480,
    800
@@ -830,6 +1630,7 @@
  },
  "/images/pages/services/services-how-02.webp": {
   "w": 1400,
+  "h": 788,
   "v": [
    480,
    800
@@ -837,6 +1638,7 @@
  },
  "/images/pages/services/services-overview-hero.webp": {
   "w": 1600,
+  "h": 900,
   "v": [
    480,
    800,
@@ -845,6 +1647,7 @@
  },
  "/images/pages/services/support-aftercare-hero.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -853,6 +1656,7 @@
  },
  "/images/pages/wet-cleaning/103.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -862,6 +1666,7 @@
  },
  "/images/pages/wet-cleaning/104.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -871,6 +1676,7 @@
  },
  "/images/pages/wet-cleaning/105.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -880,6 +1686,7 @@
  },
  "/images/pages/wet-cleaning/106.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -889,6 +1696,7 @@
  },
  "/images/pages/wet-cleaning/107.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -898,6 +1706,7 @@
  },
  "/images/pages/wet-cleaning/108.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -907,12 +1716,19 @@
  },
  "/images/pages/wet-cleaning/WH6-27LAC.webp": {
   "w": 674,
+  "h": 955,
   "v": [
    480
   ]
  },
+ "/images/pages/wet-cleaning/consistent-care-finish.png": {
+  "w": 415,
+  "h": 600,
+  "v": []
+ },
  "/images/pages/wet-cleaning/lagoon-advanced-care-internal.webp": {
   "w": 2000,
+  "h": 1125,
   "v": [
    480,
    800,
@@ -922,19 +1738,37 @@
  },
  "/images/pages/wet-cleaning/serenitywomencabinet3.webp": {
   "w": 1200,
+  "h": 849,
   "v": [
    480,
    800
   ]
  },
+ "/images/pages/wet-cleaning/tested-by-hohenstein.webp": {
+  "w": 543,
+  "h": 384,
+  "v": []
+ },
  "/images/pages/wet-cleaning/woolmark-approved.png": {
   "w": 900,
+  "h": 636,
   "v": [
    480
   ]
  },
+ "/images/shared/3.webp": {
+  "w": 480,
+  "h": 480,
+  "v": []
+ },
+ "/images/shared/Compass-Pro_1-300x88.webp": {
+  "w": 300,
+  "h": 115,
+  "v": []
+ },
  "/images/shared/Customer-Care_Line-6000-_001.webp": {
   "w": 1272,
+  "h": 848,
   "v": [
    480,
    800
@@ -942,20 +1776,38 @@
  },
  "/images/shared/DOSAVEEQUIP.webp": {
   "w": 1200,
+  "h": 720,
   "v": [
    480,
    800
   ]
+ },
+ "/images/shared/Diamms.png": {
+  "w": 168,
+  "h": 165,
+  "v": []
  },
  "/images/shared/FacilityManagementandPublicSites.webp": {
   "w": 1254,
+  "h": 1254,
   "v": [
    480,
    800
   ]
  },
+ "/images/shared/HygieneGuard.png": {
+  "w": 172,
+  "h": 173,
+  "v": []
+ },
+ "/images/shared/HygieneWatchdog.webp": {
+  "w": 135,
+  "h": 136,
+  "v": []
+ },
  "/images/shared/JetsaveEQUIP.webp": {
   "w": 1200,
+  "h": 720,
   "v": [
    480,
    800
@@ -963,13 +1815,20 @@
  },
  "/images/shared/Laundry-Double-Banner-965x965-1.webp": {
   "w": 965,
+  "h": 965,
   "v": [
    480,
    800
   ]
  },
+ "/images/shared/MoistureBalance.png": {
+  "w": 175,
+  "h": 173,
+  "v": []
+ },
  "/images/shared/MultisaveEQUIP.webp": {
   "w": 1200,
+  "h": 720,
   "v": [
    480,
    800
@@ -977,6 +1836,7 @@
  },
  "/images/shared/Parts & Aftercare.png": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -985,12 +1845,14 @@
  },
  "/images/shared/St-Marys-Hospital-Phooenix-Park-Dublin-Rainwater-System-old-Building.webp": {
   "w": 800,
+  "h": 541,
   "v": [
    480
   ]
  },
  "/images/shared/Strip1.webp": {
   "w": 1600,
+  "h": 900,
   "v": [
    480,
    800,
@@ -999,14 +1861,31 @@
  },
  "/images/shared/after-installation-tumble-dryers-strip.webp": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/shared/charlemontgroup.webp": {
+  "w": 560,
+  "h": 560,
+  "v": []
+ },
+ "/images/shared/charlemontgroupsquare.png": {
+  "w": 440,
+  "h": 440,
+  "v": []
+ },
+ "/images/shared/clarusvibeicon.webp": {
+  "w": 300,
+  "h": 88,
+  "v": []
+ },
  "/images/shared/commercial-hero.webp": {
   "w": 2000,
+  "h": 1125,
   "v": [
    480,
    800,
@@ -1016,6 +1895,7 @@
  },
  "/images/shared/customer-care-line6000.webp": {
   "w": 2000,
+  "h": 1333,
   "v": [
    480,
    800,
@@ -1025,6 +1905,7 @@
  },
  "/images/shared/drying_cabinetscards.jpg": {
   "w": 1000,
+  "h": 1000,
   "v": [
    480,
    800
@@ -1032,6 +1913,7 @@
  },
  "/images/shared/efficientDosing_equip.webp": {
   "w": 1200,
+  "h": 720,
   "v": [
    480,
    800
@@ -1039,14 +1921,31 @@
  },
  "/images/shared/equipment-access-strip.webp": {
   "w": 1448,
+  "h": 1086,
   "v": [
    480,
    800,
    1200
   ]
  },
+ "/images/shared/filterdrawer.svg": {
+  "w": 29,
+  "h": 61,
+  "v": []
+ },
+ "/images/shared/laundryonlinesquare.png": {
+  "w": 560,
+  "h": 560,
+  "v": []
+ },
+ "/images/shared/laundryonlinesquare2.png": {
+  "w": 440,
+  "h": 440,
+  "v": []
+ },
  "/images/shared/line-6000-solutions.webp": {
   "w": 2000,
+  "h": 1111,
   "v": [
    480,
    800,
@@ -1056,6 +1955,7 @@
  },
  "/images/shared/line6000-ironer.webp": {
   "w": 1920,
+  "h": 1152,
   "v": [
    480,
    800,
@@ -1065,6 +1965,7 @@
  },
  "/images/shared/professional-laundry-heritage-strip.jpg": {
   "w": 2000,
+  "h": 1126,
   "v": [
    480,
    800,
@@ -1074,6 +1975,7 @@
  },
  "/images/shared/render-double-page_72dpi.webp": {
   "w": 2000,
+  "h": 1111,
   "v": [
    480,
    800,
@@ -1083,6 +1985,7 @@
  },
  "/images/shared/rentalstripimage.webp": {
   "w": 1600,
+  "h": 1132,
   "v": [
    480,
    800,
@@ -1091,6 +1994,7 @@
  },
  "/images/shared/repairs-callouts.webp": {
   "w": 1153,
+  "h": 864,
   "v": [
    480,
    800
@@ -1098,6 +2002,7 @@
  },
  "/images/shared/repairs-hero.webp": {
   "w": 2000,
+  "h": 1334,
   "v": [
    480,
    800,
@@ -1105,8 +2010,14 @@
    1600
   ]
  },
+ "/images/shared/saferforusers.svg": {
+  "w": 51,
+  "h": 47,
+  "v": []
+ },
  "/images/shared/service-contracts-hero.webp": {
   "w": 1672,
+  "h": 941,
   "v": [
    480,
    800,
@@ -1115,12 +2026,14 @@
  },
  "/images/shared/services-overview-hero-portrait.jpg": {
   "w": 750,
+  "h": 900,
   "v": [
    480
   ]
  },
  "/images/shared/td6-11-multihousing-room-front.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
@@ -1130,11 +2043,2082 @@
  },
  "/images/shared/td6-multihousing-room.webp": {
   "w": 2000,
+  "h": 1414,
   "v": [
    480,
    800,
    1200,
    1600
   ]
+ },
+ "/images/icons/11.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/125.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/126.png": {
+  "w": 336,
+  "h": 336,
+  "v": []
+ },
+ "/images/icons/126.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/127.png": {
+  "w": 153,
+  "h": 153,
+  "v": []
+ },
+ "/images/icons/128.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/132.png": {
+  "w": 219,
+  "h": 219,
+  "v": []
+ },
+ "/images/icons/145.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/146.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/147.png": {
+  "w": 156,
+  "h": 156,
+  "v": []
+ },
+ "/images/icons/149.png": {
+  "w": 132,
+  "h": 132,
+  "v": []
+ },
+ "/images/icons/16.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/167.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/168.png": {
+  "w": 153,
+  "h": 153,
+  "v": []
+ },
+ "/images/icons/170.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/173.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/174.png": {
+  "w": 159,
+  "h": 159,
+  "v": []
+ },
+ "/images/icons/176.png": {
+  "w": 243,
+  "h": 243,
+  "v": []
+ },
+ "/images/icons/180.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/181.png": {
+  "w": 291,
+  "h": 291,
+  "v": []
+ },
+ "/images/icons/182.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/183.png": {
+  "w": 156,
+  "h": 156,
+  "v": []
+ },
+ "/images/icons/184.png": {
+  "w": 156,
+  "h": 156,
+  "v": []
+ },
+ "/images/icons/185.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/186.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/187.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/188.png": {
+  "w": 324,
+  "h": 324,
+  "v": []
+ },
+ "/images/icons/189.png": {
+  "w": 141,
+  "h": 141,
+  "v": []
+ },
+ "/images/icons/19.png": {
+  "w": 246,
+  "h": 246,
+  "v": []
+ },
+ "/images/icons/190.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/191.png": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/icons/192.png": {
+  "w": 291,
+  "h": 291,
+  "v": []
+ },
+ "/images/icons/193.png": {
+  "w": 312,
+  "h": 312,
+  "v": []
+ },
+ "/images/icons/194.png": {
+  "w": 249,
+  "h": 249,
+  "v": []
+ },
+ "/images/icons/195.png": {
+  "w": 222,
+  "h": 222,
+  "v": []
+ },
+ "/images/icons/196.png": {
+  "w": 165,
+  "h": 165,
+  "v": []
+ },
+ "/images/icons/197.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/198.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/199.png": {
+  "w": 237,
+  "h": 237,
+  "v": []
+ },
+ "/images/icons/200.png": {
+  "w": 228,
+  "h": 228,
+  "v": []
+ },
+ "/images/icons/209.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/210.png": {
+  "w": 201,
+  "h": 201,
+  "v": []
+ },
+ "/images/icons/211.png": {
+  "w": 228,
+  "h": 228,
+  "v": []
+ },
+ "/images/icons/212.png": {
+  "w": 216,
+  "h": 216,
+  "v": []
+ },
+ "/images/icons/213.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/214.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/215.png": {
+  "w": 183,
+  "h": 183,
+  "v": []
+ },
+ "/images/icons/216.png": {
+  "w": 165,
+  "h": 165,
+  "v": []
+ },
+ "/images/icons/217.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/218.png": {
+  "w": 156,
+  "h": 156,
+  "v": []
+ },
+ "/images/icons/219.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/220.png": {
+  "w": 291,
+  "h": 291,
+  "v": []
+ },
+ "/images/icons/222.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/223.png": {
+  "w": 366,
+  "h": 366,
+  "v": []
+ },
+ "/images/icons/225.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/226.png": {
+  "w": 192,
+  "h": 192,
+  "v": []
+ },
+ "/images/icons/228.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/229.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/23.png": {
+  "w": 189,
+  "h": 189,
+  "v": []
+ },
+ "/images/icons/231.png": {
+  "w": 162,
+  "h": 162,
+  "v": []
+ },
+ "/images/icons/235.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/236.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/237.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/238.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/239.png": {
+  "w": 267,
+  "h": 267,
+  "v": []
+ },
+ "/images/icons/240.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/241.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/242.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/244.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/245.png": {
+  "w": 300,
+  "h": 300,
+  "v": []
+ },
+ "/images/icons/246.png": {
+  "w": 336,
+  "h": 336,
+  "v": []
+ },
+ "/images/icons/247.png": {
+  "w": 159,
+  "h": 159,
+  "v": []
+ },
+ "/images/icons/248.png": {
+  "w": 171,
+  "h": 171,
+  "v": []
+ },
+ "/images/icons/249.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/250.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/251.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/252.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/253.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/253.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/254.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/255.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/256.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/257.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/258.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/26.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/276.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/277.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/277.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/278.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/287.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/287.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/288.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/289.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/289.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/290.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/291.png": {
+  "w": 192,
+  "h": 192,
+  "v": []
+ },
+ "/images/icons/292.png": {
+  "w": 192,
+  "h": 192,
+  "v": []
+ },
+ "/images/icons/293.png": {
+  "w": 192,
+  "h": 192,
+  "v": []
+ },
+ "/images/icons/294.png": {
+  "w": 192,
+  "h": 192,
+  "v": []
+ },
+ "/images/icons/295.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/296.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/3.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/30.png": {
+  "w": 246,
+  "h": 246,
+  "v": []
+ },
+ "/images/icons/300.png": {
+  "w": 360,
+  "h": 360,
+  "v": []
+ },
+ "/images/icons/300.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/301.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/302.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/302.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/icons/307.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/308.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/309.png": {
+  "w": 168,
+  "h": 168,
+  "v": []
+ },
+ "/images/icons/35.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/36.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/36.webp": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/37.png": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/icons/38.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/39.png": {
+  "w": 264,
+  "h": 264,
+  "v": []
+ },
+ "/images/icons/52.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/56.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/6.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/64.png": {
+  "w": 177,
+  "h": 177,
+  "v": []
+ },
+ "/images/icons/7.png": {
+  "w": 372,
+  "h": 372,
+  "v": []
+ },
+ "/images/icons/70.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/72.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/75.png": {
+  "w": 288,
+  "h": 288,
+  "v": []
+ },
+ "/images/icons/79.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/8.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/88.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/9.png": {
+  "w": 246,
+  "h": 246,
+  "v": []
+ },
+ "/images/icons/94.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/95.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/96.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/aftercarehealthcarestrip1.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/aftercarehealthcarestrip2.png": {
+  "w": 156,
+  "h": 156,
+  "v": []
+ },
+ "/images/icons/aftercarehealthcarestrip3.png": {
+  "w": 496,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/brand/Ativo 10.svg": {
+  "w": 95,
+  "h": 112,
+  "v": []
+ },
+ "/images/icons/brand/Ativo 17.svg": {
+  "w": 101,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/brand/Ativo 3.svg": {
+  "w": 70,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/brand/Ativo 4.svg": {
+  "w": 101,
+  "h": 88,
+  "v": []
+ },
+ "/images/icons/brand/Ativo 6.svg": {
+  "w": 101,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/brand/clipboard.svg": {
+  "w": 24,
+  "h": 24,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-10.svg": {
+  "w": 95,
+  "h": 112,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-11.svg": {
+  "w": 101,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-20.svg": {
+  "w": 101,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-21.svg": {
+  "w": 33,
+  "h": 33,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-4.svg": {
+  "w": 101,
+  "h": 88,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-7.svg": {
+  "w": 101,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-8.svg": {
+  "w": 101,
+  "h": 73,
+  "v": []
+ },
+ "/images/icons/brand-white/ativo-9.svg": {
+  "w": 91,
+  "h": 101,
+  "v": []
+ },
+ "/images/icons/clarusvibe.jpeg": {
+  "w": 1600,
+  "h": 484,
+  "v": []
+ },
+ "/images/icons/dosing-control.png": {
+  "w": 330,
+  "h": 330,
+  "v": []
+ },
+ "/images/icons/FeedNow.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/FoldFlex.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/Foto-web-BW.jpg": {
+  "w": 1920,
+  "h": 1920,
+  "v": []
+ },
+ "/images/icons/healthcarerentalstrip1.png": {
+  "w": 171,
+  "h": 171,
+  "v": []
+ },
+ "/images/icons/healthcarerentalstrip2.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/home-planning-rework.png": {
+  "w": 159,
+  "h": 159,
+  "v": []
+ },
+ "/images/icons/home-rental-maintained.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/home-rental-purchase.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/hypoallergenic.png": {
+  "w": 512,
+  "h": 512,
+  "v": []
+ },
+ "/images/icons/pmc-gain-91.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/rental-gain-117.png": {
+  "w": 320,
+  "h": 320,
+  "v": []
+ },
+ "/images/icons/repairs-cost-control.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/repairs-fault-patterns.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/repairs-fault-symptoms.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/repairs-maintenance-review.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/icons/repairs-service-history.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/icons/support-gear.png": {
+  "w": 600,
+  "h": 600,
+  "v": []
+ },
+ "/images/logo/Electrolux_logo.svg.png": {
+  "w": 960,
+  "h": 124,
+  "v": []
+ },
+ "/images/logo/ILS-LOGO-HORIZONTAL-WHITE.png": {
+  "w": 3301,
+  "h": 1081,
+  "v": []
+ },
+ "/images/logo/ILSLOGO.png": {
+  "w": 834,
+  "h": 592,
+  "v": []
+ },
+ "/images/logo/Logo_Grace_Healthcare_(1).png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/logo/rgi-logo.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/logo/rgi-logo.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/logo/safe-electric.png": {
+  "w": 240,
+  "h": 240,
+  "v": []
+ },
+ "/images/logo/safe-electric.webp": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/about/01 Understand the Operation.png": {
+  "w": 1122,
+  "h": 1402,
+  "v": []
+ },
+ "/images/pages/about/01 Understand the Operation.webp": {
+  "w": 1122,
+  "h": 1402,
+  "v": []
+ },
+ "/images/pages/about/02 Plan for Long-Term Value.png": {
+  "w": 1122,
+  "h": 1402,
+  "v": []
+ },
+ "/images/pages/about/02 Plan for Long-Term Value.webp": {
+  "w": 1122,
+  "h": 1402,
+  "v": []
+ },
+ "/images/pages/about/03 Coordinate the Work.png": {
+  "w": 1024,
+  "h": 1536,
+  "v": []
+ },
+ "/images/pages/about/03 Coordinate the Work.webp": {
+  "w": 1024,
+  "h": 1536,
+  "v": []
+ },
+ "/images/pages/about/04 Keep Equipment History.png": {
+  "w": 1024,
+  "h": 1536,
+  "v": []
+ },
+ "/images/pages/about/04 Keep Equipment History.webp": {
+  "w": 1024,
+  "h": 1536,
+  "v": []
+ },
+ "/images/pages/about/aboutimagehero.png": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/about/aboutimagehero.webp": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/about/Buyer Guide Equipment Rental or Purchase Guide.png": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/about/Buyer Guide Equipment Rental or Purchase Guide.webp": {
+  "w": 620,
+  "h": 465,
+  "v": []
+ },
+ "/images/pages/about/Commercial Laundry Equipment Buying Guide.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/Commercial Laundry Equipment Buying Guide.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/Ecovadis-Sustainability-Gold_2025_medal-1-e1773061619801-V3.png": {
+  "w": 1000,
+  "h": 1000,
+  "v": []
+ },
+ "/images/pages/about/ecovadisbackground.webp": {
+  "w": 1920,
+  "h": 1080,
+  "v": []
+ },
+ "/images/pages/about/heroaboutusimage.webp": {
+  "w": 2000,
+  "h": 534,
+  "v": []
+ },
+ "/images/pages/about/keepsupportclear.png": {
+  "w": 1535,
+  "h": 1024,
+  "v": []
+ },
+ "/images/pages/about/keepsupportclear.webp": {
+  "w": 1535,
+  "h": 1024,
+  "v": []
+ },
+ "/images/pages/about/Preventive Maintenance Checklist.png": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/about/Preventive Maintenance Checklist.webp": {
+  "w": 620,
+  "h": 465,
+  "v": []
+ },
+ "/images/pages/about/responsible-equipment.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/responsible-equipment.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/Review the operation.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/Review the operation.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/Technical Standardsimage.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/about/Technical Standardsimage.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/accessories/cleanstar-gentle-wash.png": {
+  "w": 288,
+  "h": 139,
+  "v": []
+ },
+ "/images/pages/accessories/cleanstar-green-liquid.png": {
+  "w": 288,
+  "h": 139,
+  "v": []
+ },
+ "/images/pages/accessories/cleanstar-magic-white.png": {
+  "w": 288,
+  "h": 139,
+  "v": []
+ },
+ "/images/pages/accessories/cleanstar-soft-touch.png": {
+  "w": 288,
+  "h": 139,
+  "v": []
+ },
+ "/images/pages/accessories/cleanstar-wash-liquid.png": {
+  "w": 288,
+  "h": 139,
+  "v": []
+ },
+ "/images/pages/accessories/cleanstar-wash-powder.png": {
+  "w": 288,
+  "h": 139,
+  "v": []
+ },
+ "/images/pages/accessories/CMIS 5image.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/accessories/descaling-agent.png": {
+  "w": 750,
+  "h": 500,
+  "v": []
+ },
+ "/images/pages/accessories/detergent-storage.webp": {
+  "w": 1200,
+  "h": 1920,
+  "v": []
+ },
+ "/images/pages/accessories/dispenseringreycabinet.png": {
+  "w": 1038,
+  "h": 1515,
+  "v": []
+ },
+ "/images/pages/accessories/dosing-unit.png": {
+  "w": 612,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/dryer-balls.png": {
+  "w": 800,
+  "h": 800,
+  "v": []
+ },
+ "/images/pages/accessories/equipmentrentalcard.png": {
+  "w": 1418,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/accessories/eu-ecolabel-logo.png": {
+  "w": 525,
+  "h": 527,
+  "v": []
+ },
+ "/images/pages/accessories/Featured Platformimage.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/accessories/heroaccesories.png": {
+  "w": 2000,
+  "h": 667,
+  "v": []
+ },
+ "/images/pages/accessories/icon-dermatologically-tested.png": {
+  "w": 282,
+  "h": 281,
+  "v": []
+ },
+ "/images/pages/accessories/icon-hypoallergenic.png": {
+  "w": 282,
+  "h": 281,
+  "v": []
+ },
+ "/images/pages/accessories/JETSAVE.png": {
+  "w": 1254,
+  "h": 945,
+  "v": []
+ },
+ "/images/pages/accessories/l00-laundry-eco-degreaser.webp": {
+  "w": 237,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/l01-laundry-eco-powder.webp": {
+  "w": 220,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/l03-laundry-eco-booster.webp": {
+  "w": 244,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/l04-laundry-eco-bleach.webp": {
+  "w": 244,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/l05-laundry-eco-softener.webp": {
+  "w": 244,
+  "h": 300,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-a01-pre-treatment.png": {
+  "w": 145,
+  "h": 222,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-a02-colour-transfer-reducer.png": {
+  "w": 219,
+  "h": 338,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-p01-protein-stain-remover.png": {
+  "w": 103,
+  "h": 241,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-p02-tannin-stain-remover.png": {
+  "w": 249,
+  "h": 382,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-p02-tannin-stain-remover.webp": {
+  "w": 544,
+  "h": 834,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-p03-grease-stain-remover.png": {
+  "w": 213,
+  "h": 328,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-p04-ink-stain-remover.png": {
+  "w": 184,
+  "h": 500,
+  "v": []
+ },
+ "/images/pages/accessories/lagoon-w02-delicate-detergent.png": {
+  "w": 347,
+  "h": 486,
+  "v": []
+ },
+ "/images/pages/accessories/Laundry Program Managerimage.webp": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/accessories/laundrybagannets.png": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/accessories/line6000-chemicals-certificate.jpg": {
+  "w": 859,
+  "h": 612,
+  "v": []
+ },
+ "/images/pages/accessories/MULTISAVE.png": {
+  "w": 1254,
+  "h": 953,
+  "v": []
+ },
+ "/images/pages/accessories/WH6-27LAC.jpg": {
+  "w": 415,
+  "h": 415,
+  "v": []
+ },
+ "/images/pages/barrier-washers/after-installation-strip.png": {
+  "w": 1816,
+  "h": 866,
+  "v": []
+ },
+ "/images/pages/barrier-washers/barrierwashernewheropic.png": {
+  "w": 1717,
+  "h": 916,
+  "v": []
+ },
+ "/images/pages/barrier-washers/barrierwasheroperatorconfort.png": {
+  "w": 1199,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Barrier_Washers_Care_facilitie_(1).png": {
+  "w": 2000,
+  "h": 1339,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Barrier_Washers_Care_facilitie_(1).webp": {
+  "w": 904,
+  "h": 605,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Barrier_Washers_Healthcare.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/barrier-washers/card-equipment-rental.png": {
+  "w": 1816,
+  "h": 866,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Clearer Operator Control.webp": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Easier Unloading.webp": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/barrier-washers/equipmentrentalnewimagestrip.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/barrier-washers/equipmentrentalnewimagestrip.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/barrier-washers/firefighters.png": {
+  "w": 1483,
+  "h": 1061,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Pharmaceutical & food processing.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/barrier-washers/Pharmaceutical & food processing.webp": {
+  "w": 904,
+  "h": 904,
+  "v": []
+ },
+ "/images/pages/barrier-washers/rentalstripnewimage.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/commercial-washers/0O3A9746_72dpi.jpg": {
+  "w": 2000,
+  "h": 1334,
+  "v": []
+ },
+ "/images/pages/commercial-washers/after-installation-strip.jpg": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/commercial-washers/Quickwash QWC.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/commercial-washers/W4-Series Washer-Extractors.png": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/commercial-washers/WH6-14.jpg": {
+  "w": 1469,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/commercial-washers/WH6-27.jpg": {
+  "w": 638,
+  "h": 915,
+  "v": []
+ },
+ "/images/pages/commercial-washers/WH6-6.jpg": {
+  "w": 984,
+  "h": 1203,
+  "v": []
+ },
+ "/images/pages/commercial-washers/WH6-7.jpg": {
+  "w": 1350,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/commercial-washers/WN6 — Line 6000 Normal-Spin Washer.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/commercial-washers/WS6 — Line 6000 High-Spin Washer.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/commercialindustrialequipmentrental.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/dryers/heat-pump-dryer-lineup.png": {
+  "w": 1500,
+  "h": 1061,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-14.jpg": {
+  "w": 440,
+  "h": 981,
+  "v": []
+ },
+ "/images/pages/dryers/TD6-7.jpg": {
+  "w": 538,
+  "h": 945,
+  "v": []
+ },
+ "/images/pages/dryers/tumbledryershero.png": {
+  "w": 2000,
+  "h": 691,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Delicate fabrics and fine clothing.webp": {
+  "w": 1000,
+  "h": 1000,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Drying Cabinets - Heat PumpDC6-15WW.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/drying-cabinets-hero.jpg": {
+  "w": 2000,
+  "h": 885,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/equipmentrentalcards.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Glove and boot drying.webp": {
+  "w": 308,
+  "h": 408,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Multi-housing.png": {
+  "w": 1000,
+  "h": 1000,
+  "v": []
+ },
+ "/images/pages/drying-cabinets/Standard Drying CabinetsDC6-14.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/equipment/accessoriesandconsumablescardimage.png": {
+  "w": 2000,
+  "h": 1125,
+  "v": []
+ },
+ "/images/pages/equipment/barrierwashercards.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/equipment/commercialwasherscard.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/equipment/mypro-family.jpg": {
+  "w": 2000,
+  "h": 1032,
+  "v": []
+ },
+ "/images/pages/equipment/semiprofessionalcards.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/equipment/tumbledryerscard.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/equipment/wetcleaningcards.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FFM1.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FFT6-WC.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/finishingequipmenthero.png": {
+  "w": 1591,
+  "h": 1062,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FIT4A.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FIT5A.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FIT6A.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FPA1-WC.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FPM-WC.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FPM1-D.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FRC2.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FSU1.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FSU4.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FSU7.jpg": {
+  "w": 415,
+  "h": 415,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FTT1.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/FTT2.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/where-commercial-laundries.jpg": {
+  "w": 1200,
+  "h": 801,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/where-dry-cleaners.jpg": {
+  "w": 1200,
+  "h": 801,
+  "v": []
+ },
+ "/images/pages/finishing-equipment/where-wet-cleaning.jpg": {
+  "w": 1200,
+  "h": 795,
+  "v": []
+ },
+ "/images/pages/home/0O3A9810_72dpi.jpg": {
+  "w": 2000,
+  "h": 1334,
+  "v": []
+ },
+ "/images/pages/home/HOMEHERO1.png": {
+  "w": 1916,
+  "h": 821,
+  "v": []
+ },
+ "/images/pages/home/HOMEHERO2.jpg": {
+  "w": 2000,
+  "h": 1111,
+  "v": []
+ },
+ "/images/pages/ironers/equipment-rental-strip.jpg": {
+  "w": 2000,
+  "h": 1497,
+  "v": []
+ },
+ "/images/pages/ironers/FFT6-WC.jpg": {
+  "w": 415,
+  "h": 415,
+  "v": []
+ },
+ "/images/pages/ironers/FIT2B.jpg": {
+  "w": 415,
+  "h": 415,
+  "v": []
+ },
+ "/images/pages/ironers/flatwork-ib57.jpg": {
+  "w": 255,
+  "h": 255,
+  "v": []
+ },
+ "/images/pages/ironers/FPM-WC.jpg": {
+  "w": 415,
+  "h": 415,
+  "v": []
+ },
+ "/images/pages/ironers/Front Delivery.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/ironers/Front Delivery.webp": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/ironers/ironers-hero-new.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/ironers/Rear Delivery.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/ironers/Rear Delivery.webp": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/one-connected/engineering-support.png": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/one-connected/hero-oneconnected.png": {
+  "w": 2000,
+  "h": 667,
+  "v": []
+ },
+ "/images/pages/one-connected/laptoponedashboard.png": {
+  "w": 2000,
+  "h": 944,
+  "v": []
+ },
+ "/images/pages/one-connected/One Dashboardbackground.webp": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/one-connected/oneconnectedstrip.png": {
+  "w": 1728,
+  "h": 728,
+  "v": []
+ },
+ "/images/pages/sectors/carefacilitiesheroimage.jpg": {
+  "w": 1920,
+  "h": 883,
+  "v": []
+ },
+ "/images/pages/sectors/detergentdoser.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/sectors/healthcarehero.png": {
+  "w": 2000,
+  "h": 1125,
+  "v": []
+ },
+ "/images/pages/sectors/Heavy-DutyandHigh-volume.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/sectors/hospitallityhero.png": {
+  "w": 1912,
+  "h": 823,
+  "v": []
+ },
+ "/images/pages/sectors/Marine_navy.png": {
+  "w": 1916,
+  "h": 821,
+  "v": []
+ },
+ "/images/pages/sectors/selfservice.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.png": {
+  "w": 2000,
+  "h": 1332,
+  "v": []
+ },
+ "/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.webp": {
+  "w": 1088,
+  "h": 725,
+  "v": []
+ },
+ "/images/pages/semi-professional/Built Beyond Domestic Use.png": {
+  "w": 2000,
+  "h": 1556,
+  "v": []
+ },
+ "/images/pages/semi-professional/Built Beyond Domestic Use.webp": {
+  "w": 1152,
+  "h": 896,
+  "v": []
+ },
+ "/images/pages/semi-professional/Facility management and cleaning teams.png": {
+  "w": 1999,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/semi-professional/Facility management and cleaning teams.webp": {
+  "w": 1088,
+  "h": 1089,
+  "v": []
+ },
+ "/images/pages/semi-professional/Gyms, sports clubs and fitness studios.png": {
+  "w": 2000,
+  "h": 1333,
+  "v": []
+ },
+ "/images/pages/semi-professional/Gyms, sports clubs and fitness studios.webp": {
+  "w": 1088,
+  "h": 725,
+  "v": []
+ },
+ "/images/pages/semi-professional/ILSEQUIPMENTRENTALMYPRO.png": {
+  "w": 1340,
+  "h": 1174,
+  "v": []
+ },
+ "/images/pages/semi-professional/ILSSUPPORTMYPRO.png": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/semi-professional/my pro zip.webp": {
+  "w": 576,
+  "h": 576,
+  "v": []
+ },
+ "/images/pages/semi-professional/myPRO-8K-washer.webp": {
+  "w": 500,
+  "h": 670,
+  "v": []
+ },
+ "/images/pages/semi-professional/mypro-hp-front.jpg": {
+  "w": 1489,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/semi-professional/Salons, spas and wellness businesses.png": {
+  "w": 2000,
+  "h": 1332,
+  "v": []
+ },
+ "/images/pages/semi-professional/Salons, spas and wellness businesses.webp": {
+  "w": 1088,
+  "h": 725,
+  "v": []
+ },
+ "/images/pages/semi-professional/Self Service Laundry.png": {
+  "w": 1232,
+  "h": 928,
+  "v": []
+ },
+ "/images/pages/semi-professional/Self Service Laundry.webp": {
+  "w": 1232,
+  "h": 928,
+  "v": []
+ },
+ "/images/pages/semi-professional/Shared, apartment and guest-operated laundry.png": {
+  "w": 1999,
+  "h": 2000,
+  "v": []
+ },
+ "/images/pages/semi-professional/Shared, apartment and guest-operated laundry.webp": {
+  "w": 1088,
+  "h": 1089,
+  "v": []
+ },
+ "/images/pages/semi-professional/Smaller care and nursing settings.png": {
+  "w": 2000,
+  "h": 1463,
+  "v": []
+ },
+ "/images/pages/semi-professional/Smaller care and nursing settings.webp": {
+  "w": 1088,
+  "h": 796,
+  "v": []
+ },
+ "/images/pages/services/agreementiclusions.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/services/Complete planned maintenance.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/services/on-site-diagnosis.jpeg": {
+  "w": 1473,
+  "h": 1068,
+  "v": []
+ },
+ "/images/pages/services/parts-support-bg.jpg": {
+  "w": 1600,
+  "h": 900,
+  "v": []
+ },
+ "/images/pages/services/preventive-agree-step.jpg": {
+  "w": 1600,
+  "h": 900,
+  "v": []
+ },
+ "/images/pages/services/Recommend follow-up work.webp": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/services/Record the findings.webp": {
+  "w": 1535,
+  "h": 1024,
+  "v": []
+ },
+ "/images/pages/services/Rental Hero Image equipment rental.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/services/rental-hero.webp": {
+  "w": 947,
+  "h": 533,
+  "v": []
+ },
+ "/images/pages/services/repairs-how-01.jpg": {
+  "w": 1280,
+  "h": 852,
+  "v": []
+ },
+ "/images/pages/services/repairs-how-02.jpg": {
+  "w": 1280,
+  "h": 854,
+  "v": []
+ },
+ "/images/pages/services/repairs-how-03.jpg": {
+  "w": 1173,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/services/repairs-how-04.jpg": {
+  "w": 1025,
+  "h": 719,
+  "v": []
+ },
+ "/images/pages/services/repairs-temporary-laundry-online.png": {
+  "w": 1652,
+  "h": 952,
+  "v": []
+ },
+ "/images/pages/services/repairs-temporary-laundry.jpg": {
+  "w": 1280,
+  "h": 753,
+  "v": []
+ },
+ "/images/pages/services/repairs-temporary-laundry.webp": {
+  "w": 1280,
+  "h": 753,
+  "v": []
+ },
+ "/images/pages/services/Review equipment condition.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/services/service-contracts-hero.jpg": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/services/services-how-01.jpg": {
+  "w": 1400,
+  "h": 932,
+  "v": []
+ },
+ "/images/pages/services/services-how-02.jpg": {
+  "w": 1400,
+  "h": 788,
+  "v": []
+ },
+ "/images/pages/services/services-overview-hero.jpg": {
+  "w": 1600,
+  "h": 900,
+  "v": []
+ },
+ "/images/pages/services/support-aftercare-hero.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/pages/Share your site needsimage.webp": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/103.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/104.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/105.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/106.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/107.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/108.png": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/lagoon-advanced-care-internal.jpg": {
+  "w": 2000,
+  "h": 1125,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/lagoon-advanced-care.webp": {
+  "w": 320,
+  "h": 500,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/Serenity Cabinet.jpg": {
+  "w": 640,
+  "h": 640,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/serenitywomencabinet3.png": {
+  "w": 1200,
+  "h": 849,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/tested-by-hohenstein.png": {
+  "w": 900,
+  "h": 636,
+  "v": []
+ },
+ "/images/pages/wet-cleaning/WH6-27LAC.jpg": {
+  "w": 674,
+  "h": 955,
+  "v": []
+ },
+ "/images/shared/3.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/shared/abettergrip.svg": {
+  "w": 48,
+  "h": 75,
+  "v": []
+ },
+ "/images/shared/after-installation-strip.jpg": {
+  "w": 1600,
+  "h": 900,
+  "v": []
+ },
+ "/images/shared/after-installation-strip.webp": {
+  "w": 1600,
+  "h": 900,
+  "v": []
+ },
+ "/images/shared/after-installation-tumble-dryers-strip.jpg": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/shared/Auto Inner Door Opening (AIDO) System.png": {
+  "w": 155,
+  "h": 150,
+  "v": []
+ },
+ "/images/shared/charlemontgroup.png": {
+  "w": 2000,
+  "h": 2000,
+  "v": []
+ },
+ "/images/shared/commercial-hero.jpg": {
+  "w": 2000,
+  "h": 1125,
+  "v": []
+ },
+ "/images/shared/commercial-industrial.jpg": {
+  "w": 2000,
+  "h": 1125,
+  "v": []
+ },
+ "/images/shared/commercial-industrial.webp": {
+  "w": 2000,
+  "h": 1125,
+  "v": []
+ },
+ "/images/shared/customer-care-line6000.jpg": {
+  "w": 2000,
+  "h": 1333,
+  "v": []
+ },
+ "/images/shared/Customer-Care_Line-6000-_001.jpg": {
+  "w": 2000,
+  "h": 1334,
+  "v": []
+ },
+ "/images/shared/equipment-access-strip.jpg": {
+  "w": 1448,
+  "h": 1086,
+  "v": []
+ },
+ "/images/shared/FacilityManagementandPublicSites.png": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/shared/idealheight.svg": {
+  "w": 30,
+  "h": 37,
+  "v": []
+ },
+ "/images/shared/Line 6000 solutions products_72dpi.jpg": {
+  "w": 2000,
+  "h": 1111,
+  "v": []
+ },
+ "/images/shared/Line 6000 solutions products_72dpi.webp": {
+  "w": 2000,
+  "h": 1111,
+  "v": []
+ },
+ "/images/shared/line-6000-solutions.jpg": {
+  "w": 2000,
+  "h": 1111,
+  "v": []
+ },
+ "/images/shared/Parts & Aftercare.webp": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/shared/render-double-page_72dpi.jpg": {
+  "w": 2000,
+  "h": 1111,
+  "v": []
+ },
+ "/images/shared/rentalstripimage.jpg": {
+  "w": 1600,
+  "h": 1132,
+  "v": []
+ },
+ "/images/shared/repairs-callouts.jpg": {
+  "w": 1153,
+  "h": 864,
+  "v": []
+ },
+ "/images/shared/repairs-hero.jpg": {
+  "w": 2000,
+  "h": 1334,
+  "v": []
+ },
+ "/images/shared/service-contracts-hero.png": {
+  "w": 1672,
+  "h": 941,
+  "v": []
+ },
+ "/images/shared/Strip1.jpeg": {
+  "w": 1600,
+  "h": 900,
+  "v": []
+ },
+ "/images/shared/strip2.jpeg": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/shared/strip2.webp": {
+  "w": 1254,
+  "h": 1254,
+  "v": []
+ },
+ "/images/shared/stripOneconnected.png": {
+  "w": 2000,
+  "h": 1486,
+  "v": []
+ },
+ "/images/shared/stripOneconnected.webp": {
+  "w": 2000,
+  "h": 1486,
+  "v": []
+ },
+ "/images/shared/td6-11-multihousing-room-front.jpg": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
+ },
+ "/images/shared/td6-multihousing-room.jpg": {
+  "w": 2000,
+  "h": 1414,
+  "v": []
  }
 }
