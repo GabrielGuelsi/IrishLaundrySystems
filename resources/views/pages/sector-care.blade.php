@@ -712,7 +712,7 @@
                         <div class="lg:col-span-9 flex flex-col justify-between p-5 sm:p-8 lg:p-10">
 
                             {{-- Tab indicators (product selector) --}}
-                            <div class="flex gap-1 border-b border-gray-100 mb-6">
+                            <div class="mobile-dosing-tabs flex gap-1 border-b border-gray-100 mb-6">
                                 @foreach($dosingProducts as $j => $tab)
                                 <button @click="go({{ $j }})"
                                         :class="active === {{ $j }} ? 'border-b-2 border-navy text-navy font-bold' : 'text-gray-400 hover:text-navy'"
@@ -729,7 +729,7 @@
                                 <div class="flex-1">
                                     <p class="font-body font-bold text-[#148af4] text-sm mb-2">{{ $p['label'] }}</p>
                                     <p class="font-body text-gray-600 text-base leading-relaxed mb-5">{{ $p['body'] }}</p>
-                                    <div class="flex items-center gap-8">
+                                    <div class="flex flex-wrap items-center gap-4 sm:gap-8">
                                         @if(in_array('clarusvibe', $p['logos'] ?? []))
                                         <img src="/images/shared/clarusvibeicon.webp" alt="ClarusVibe" class="h-12 w-auto object-contain opacity-80">
                                         @endif

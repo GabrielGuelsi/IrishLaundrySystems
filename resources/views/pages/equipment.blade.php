@@ -612,7 +612,7 @@
                         <div class="flex flex-col items-center text-center">
                             <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"
-                                     class="w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
+                                     class="mobile-sector-carousel-image w-full object-cover transition-transform duration-500 hover:scale-105" style="height:320px; object-position: {{ $env['pos'] ?? 'center' }};">
                             </a>
                             <h3 class="font-heading font-bold text-navy text-xl mb-4">{!! $env['env'] !!}</h3>
                             <a href="{{ $env['route'] }}"

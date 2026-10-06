@@ -332,6 +332,7 @@
             [data-mobile-photo-strip] img { object-position: center 45% !important; }
         }
         @media (max-width: 1023px) {
+            .reveal-right:not(.is-visible) { transform: translateY(24px); }
             .mobile-service-card {
                 height: auto !important;
                 padding-top: 200px;
@@ -500,7 +501,7 @@
                 inset: auto !important;
                 padding: 1.5rem !important;
             }
-            .mobile-rental-sector-image {
+            .mobile-sector-carousel-image {
                 height: 200px !important;
                 transform: none !important;
             }
@@ -534,6 +535,17 @@
                 opacity: 1 !important;
                 transform: none !important;
                 padding: 1.5rem;
+            }
+        }
+        @media (max-width: 639px) {
+            .mobile-dosing-tabs {
+                display: grid !important;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+            .mobile-dosing-tabs > button {
+                white-space: normal !important;
+                text-align: left;
+                padding-right: 0.25rem !important;
             }
         }
     </style>
