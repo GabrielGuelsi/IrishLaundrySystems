@@ -639,7 +639,7 @@
 
             <!-- Healthcare -->
             <a href="{{ route('sectors.healthcare') }}"
-               class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal">
+               class="mobile-maintenance-sector group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal">
                 <img src="/images/pages/sectors/healthcarehero.webp" alt="Healthcare laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 80% center;">
@@ -658,7 +658,7 @@
 
             <!-- Care Facilities -->
             <a href="{{ route('sectors.care') }}"
-               class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:80ms;">
+               class="mobile-maintenance-sector group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:80ms;">
                 <img src="/images/pages/sectors/carefacilitiesheroimage.webp" alt="Care facility laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                 <div class="absolute inset-0"
@@ -676,7 +676,7 @@
 
             <!-- Hospitality -->
             <a href="{{ route('sectors.hospitality') }}"
-               class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:160ms;">
+               class="mobile-maintenance-sector group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:160ms;">
                 <img src="/images/pages/sectors/hospitallityhero.webp" alt="Hospitality laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: 100% 30%;">
@@ -695,7 +695,7 @@
 
             <!-- Commercial & Industrial -->
             <a href="{{ route('sectors.commercial') }}"
-               class="group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:240ms;">
+               class="mobile-maintenance-sector group relative overflow-hidden h-[420px] rounded-2xl block cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl reveal" style="transition-delay:240ms;">
                 <img src="/images/shared/line-6000-solutions.webp" alt="Commercial and industrial laundry support"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 scale-[1.15] group-hover:scale-[1.21]">
                 <div class="absolute inset-0"

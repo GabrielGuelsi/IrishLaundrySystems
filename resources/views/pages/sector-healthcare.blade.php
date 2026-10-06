@@ -272,7 +272,7 @@
         </div>
 
         <!-- 4-column card grid -->
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
 
             @foreach([
                 [
@@ -309,7 +309,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block h-[280px] sm:h-[360px] lg:h-[400px]">
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block h-[280px] sm:h-[360px] lg:h-[400px]">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: {{ $card['pos'] }};">

@@ -89,7 +89,7 @@
             </h2>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             @foreach([
                 ['Since 1987', '',                         'Irish Engineering Heritage',         'Commercial laundry experience built on Irish electrical contracting and engineering roots.', null],
                 ['100+',       'Clients',                  'Long-standing Relationships',        'Commercial laundry customers supported across Dublin and throughout Ireland.', null],
@@ -295,7 +295,7 @@
 
     <div class="flex flex-col sm:flex-row items-stretch gap-0 overflow-hidden reveal" style="transition-delay:100ms;">
         @foreach($siteSteps as $i => $step)
-        <div class="group flex-1 relative overflow-hidden min-h-[300px] sm:!min-h-[460px]">
+        <div class="mobile-story-step group flex-1 relative overflow-hidden min-h-[300px] sm:!min-h-[460px]">
             <img src="{{ asset($step['img']) }}" alt="{{ $step['title'] }}"
                  class="w-full h-full object-cover object-center absolute inset-0 transition-transform duration-700 group-hover:scale-105">
             {{-- Default gradient --}}
@@ -461,7 +461,7 @@
 <!-- ══════════════════════════════════════════
      10. RESPONSIBLE EQUIPMENT — compact strip
 ══════════════════════════════════════════ -->
-<section class="relative overflow-hidden bg-navy flex items-center" style="min-height:480px;">
+<section class="mobile-responsible-equipment relative overflow-hidden bg-navy flex items-center" style="min-height:480px;">
     {{-- Background image (right side) --}}
     <img src="{{ asset('images/pages/about/responsible-equipment.png') }}"
          alt="Responsible equipment choices"

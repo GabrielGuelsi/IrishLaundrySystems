@@ -73,7 +73,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:block">Choose equipment around</span><span class="text-[#148af4] lg:block">how your laundry works</span><span class="text-[#148af4] lg:block">and the workload it handles</span>
+                    <span class="lg:block">Choose equipment around</span> <span class="text-[#148af4] lg:block">how your laundry works</span> <span class="text-[#148af4] lg:block">and the workload it handles</span>
                 </h2>
             </div>
 
@@ -158,7 +158,7 @@
                     class="transition-opacity duration-500"
                     :class="active === {{ $i }} ? 'opacity-100' : 'opacity-0 pointer-events-none'"
                 >
-                    <div class="relative" style="min-height:640px;">
+                    <div class="mobile-equipment-teaser relative" style="min-height:640px;">
                         <img src="{{ $t['img'] }}" alt="{{ $t['eyebrow'] }}"
                              class="absolute inset-0 w-full h-full object-cover {{ $t['imgClass'] ?? 'object-center' }}">
                         <div class="absolute inset-0" style="background: linear-gradient(to right, rgba(1,30,65,0.92) 0%, rgba(1,30,65,0.8) 25%, rgba(1,30,65,0.55) 45%, rgba(1,30,65,0.25) 65%, rgba(1,30,65,0.06) 85%, transparent 100%);"></div>
@@ -179,7 +179,7 @@
                 @endforeach
 
                 {{-- Prev / Next circular arrows, bottom-right --}}
-                <div class="self-end justify-self-end z-20 flex gap-2 p-6">
+                <div class="mobile-equipment-teaser-controls self-end justify-self-end z-20 flex gap-2 p-6">
                     <button @click="prev()"
                             class="w-11 h-11 rounded-full bg-white/90 hover:bg-white text-navy shadow flex items-center justify-center transition-colors">
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/></svg>
@@ -528,7 +528,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

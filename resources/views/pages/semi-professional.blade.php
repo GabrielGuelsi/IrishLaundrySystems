@@ -135,7 +135,7 @@
                 ['title' => 'Smaller care and nursing settings',                    'items' => ['Resident items', 'Bedding', 'Towels'],            'img' => '/images/pages/semi-professional/Smaller care and nursing settings.webp',                'pos' => 'center center'],
                 ['title' => 'Shared, apartment and guest-operated laundry',         'items' => ['Shared use', 'Guest operation', 'Payment-ready'], 'img' => '/images/pages/semi-professional/Shared, apartment and guest-operated laundry.webp',     'pos' => 'center center'],
             ] as $card)
-            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
+            <div class="mobile-application-card group relative overflow-hidden rounded-2xl" style="height:380px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: {{ $card['pos'] }};">
@@ -606,7 +606,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

@@ -373,6 +373,145 @@
                 max-width: 100%;
                 white-space: normal !important;
             }
+            .mobile-support-card,
+            .mobile-application-card {
+                height: auto !important;
+                padding-top: 200px;
+                background: #011E41;
+            }
+            .mobile-support-card > img,
+            .mobile-application-card > img {
+                bottom: auto !important;
+                height: 200px !important;
+                transform: none !important;
+            }
+            .mobile-support-card > img + div,
+            .mobile-support-card > img + div + div,
+            .mobile-application-card > img + div,
+            .mobile-application-card > img + div + div { display: none !important; }
+            .mobile-support-card > div:last-child,
+            .mobile-application-card > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.25rem !important;
+            }
+            .mobile-support-card > div:last-child > div:first-child,
+            .mobile-application-card > div:last-child > ul {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 1;
+                margin-bottom: 1rem !important;
+            }
+            .mobile-support-card > div:last-child > h3,
+            .mobile-application-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
+            .mobile-support-card > div:last-child > div:last-child { order: 2; }
+            .mobile-support-card > div:last-child span { max-width: 100%; white-space: normal; }
+            .mobile-story-step {
+                min-height: 0 !important;
+                padding-top: 200px;
+                background: #011E41;
+            }
+            .mobile-story-step > img {
+                bottom: auto !important;
+                height: 200px !important;
+                transform: none !important;
+            }
+            .mobile-story-step > img + div,
+            .mobile-story-step > img + div + div { display: none !important; }
+            .mobile-story-step > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.25rem !important;
+            }
+            .mobile-story-step > div:last-child > div:nth-child(2) {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 2;
+            }
+            .mobile-story-step > div:last-child > div:nth-child(3) {
+                order: 1;
+                margin-bottom: 0.75rem;
+            }
+            .mobile-fit-card {
+                height: auto !important;
+                aspect-ratio: auto !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-fit-card > img {
+                bottom: auto !important;
+                height: 220px !important;
+                transform: none !important;
+            }
+            .mobile-fit-card--source-margins > img { transform: scale(2.2) !important; }
+            .mobile-fit-card > img + div,
+            .mobile-fit-card > img + div + div { display: none !important; }
+            .mobile-fit-card > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.25rem !important;
+                background: #011E41;
+            }
+            .mobile-fit-card > div:last-child > p {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 1;
+                margin-bottom: 0 !important;
+            }
+            .mobile-fit-card > div:last-child > h3 { order: 0; margin-bottom: 0.75rem; }
+            .mobile-equipment-teaser {
+                min-height: 0 !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-equipment-teaser > img {
+                height: 220px !important;
+                bottom: auto !important;
+                transform: none !important;
+            }
+            .mobile-equipment-teaser > img + div { display: none !important; }
+            .mobile-equipment-teaser > div:last-child {
+                min-height: 0 !important;
+                display: block !important;
+            }
+            .mobile-equipment-teaser > div:last-child > div { padding: 1.5rem !important; }
+            .mobile-equipment-teaser-controls {
+                grid-area: 2 / 1 !important;
+                justify-self: end;
+                background: #011E41;
+                width: 100%;
+            }
+            .mobile-maintenance-sector {
+                height: auto !important;
+                padding-top: 200px;
+                background: #011E41;
+            }
+            .mobile-maintenance-sector > img {
+                bottom: auto !important;
+                height: 200px !important;
+                transform: none !important;
+            }
+            .mobile-maintenance-sector > img + div { display: none !important; }
+            .mobile-maintenance-sector > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+            }
+            .mobile-rental-sector-image {
+                height: 200px !important;
+                transform: none !important;
+            }
+            .mobile-responsible-equipment {
+                min-height: 0 !important;
+                display: block !important;
+                padding-top: 220px;
+            }
+            .mobile-responsible-equipment > img { height: 220px !important; bottom: auto !important; }
+            .mobile-responsible-equipment > img + div { display: none !important; }
+            .mobile-responsible-equipment > div:last-child { padding-top: 2rem !important; padding-bottom: 2rem !important; }
             :is(.rn-visit-card, .sc-visit-card, .pa-visit-card) {
                 min-height: 0 !important;
                 height: auto !important;

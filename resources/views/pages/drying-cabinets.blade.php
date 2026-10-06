@@ -144,7 +144,7 @@
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($fitCards as $card)
                     <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-2.5">
-                        <div class="group relative overflow-hidden rounded-2xl" style="height:320px;">
+                        <div class="mobile-fit-card group relative overflow-hidden rounded-2xl" style="height:320px;">
                             <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                                  class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 {{ empty($card['sc']) ? 'group-hover:scale-105' : '' }}"
                                  style="object-position: {{ $card['pos'] ?? 'center center' }};@if(!empty($card['sc'])) transform: scale({{ $card['sc'] }});@endif">
@@ -496,7 +496,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

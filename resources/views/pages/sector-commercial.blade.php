@@ -120,7 +120,7 @@
                     'pos'   => '20% center',
                 ],
             ] as $card)
-            <div class="group relative overflow-hidden rounded-2xl" style="height:380px;">
+            <div class="mobile-application-card group relative overflow-hidden rounded-2xl" style="height:380px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                      style="object-position: {{ $card['pos'] }};">
@@ -253,7 +253,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
 
             @foreach([
                 [
@@ -290,7 +290,7 @@
                 ],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

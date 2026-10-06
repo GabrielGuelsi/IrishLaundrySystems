@@ -709,7 +709,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
             @foreach([
                 ['title' => 'Repairs &amp; Call-Outs', 'text' => 'Service and breakdown support when washer faults interrupt wash flow, staff routines or daily output.',                          'cta' => 'Request Call-Out',         'route' => route('repairs'),           'img' => '/images/shared/repairs-callouts.webp',                   'pos' => '50% 35%'],
                 ['title' => 'Preventive Maintenance',  'text' => 'Planned servicing to reduce surprise repair costs and keep equipment condition clear.',                                 'cta' => 'View Maintenance Options', 'route' => route('service-contracts'), 'img' => '/images/shared/service-contracts-hero.webp',             'pos' => '90% 35%'],
@@ -717,7 +717,7 @@
                 ['title' => 'Support &amp; Aftercare', 'text' => 'Service history, follow-up guidance and parts access where needed after installation, rental, repair or inspection.',            'cta' => 'Explore Support &amp; Aftercare', 'route' => route('parts-aftercare'),   'img' => '/images/shared/services-overview-hero-portrait.jpg',     'pos' => 'center center'],
             ] as $card)
             <a href="{{ $card['route'] }}"
-               class="group relative overflow-hidden rounded-2xl block"
+               class="mobile-support-card group relative overflow-hidden rounded-2xl block"
                style="height:400px;">
                 <img src="{{ $card['img'] }}" alt="{{ strip_tags($card['title']) }}"
                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"

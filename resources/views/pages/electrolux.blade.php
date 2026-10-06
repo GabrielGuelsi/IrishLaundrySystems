@@ -46,12 +46,37 @@
      ════════════════════════════════════════════════════════════════════════ --}}
 <section class="mobile-photo-hero relative overflow-hidden h-auto min-h-[520px] lg:h-[680px]" style="--mobile-photo-position: center; background-color: #011E41;">
 
-    <video autoplay muted loop playsinline preload="none"
+    <video autoplay muted loop playsinline preload="none" data-desktop-hero-video
            poster="/images/shared/line-6000-solutions.webp"
            aria-label="120 years of laundry solutions — Electrolux Professional"
            class="mobile-photo-hero__image hidden lg:block absolute inset-0 w-full h-full object-cover object-center">
-        <source src="/images/pages/120_years_of_Laundry_solutions_Electrolux_Professional.mp4" type="video/mp4">
+        <source data-src="/images/pages/120_years_of_Laundry_solutions_Electrolux_Professional.mp4" type="video/mp4">
     </video>
+    <script>
+        (function () {
+            const video = document.querySelector('[data-desktop-hero-video]');
+            const source = video.querySelector('source');
+            const desktop = window.matchMedia('(min-width: 1024px)');
+            function syncVideo() {
+                if (desktop.matches) {
+                    if (!source.hasAttribute('src')) {
+                        source.src = source.dataset.src;
+                        video.load();
+                    }
+                    video.play().catch(function () {});
+                } else {
+                    video.pause();
+                    if (source.hasAttribute('src')) {
+                        source.removeAttribute('src');
+                        video.load();
+                    }
+                }
+            }
+            if (desktop.addEventListener) desktop.addEventListener('change', syncVideo);
+            else desktop.addListener(syncVideo);
+            syncVideo();
+        })();
+    </script>
     <img src="/images/shared/line-6000-solutions.webp"
          alt="Electrolux Professional commercial laundry equipment"
          loading="eager" fetchpriority="high" decoding="async"
