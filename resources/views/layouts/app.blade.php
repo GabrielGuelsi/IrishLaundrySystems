@@ -86,10 +86,20 @@
             }
         } catch (e) {}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google_analytics.measurement_id') }}"></script>
     <script>
         gtag('js', new Date());
         gtag('config', '{{ config('services.google_analytics.measurement_id') }}');
+        // Load the 178 KB gtag library after the page has loaded and the main thread is idle.
+        // Commands above are queued in dataLayer and replayed when it arrives, so no hits are lost.
+        window.addEventListener('load', function () {
+            var inject = function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id={{ config('services.google_analytics.measurement_id') }}';
+                document.head.appendChild(s);
+            };
+            if ('requestIdleCallback' in window) { requestIdleCallback(inject, { timeout: 3000 }); } else { setTimeout(inject, 1500); }
+        });
     </script>
     @endif
 
