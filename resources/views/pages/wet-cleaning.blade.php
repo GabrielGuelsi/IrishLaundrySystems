@@ -22,8 +22,8 @@
                     <span class="sm:block" style="color:#148af4;">delicate garments and textiles</span>
                 </h1>
                 <p class="font-body text-white/80 text-base leading-relaxed mb-8">
-                    <span class="sm:block lg:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Electrolux Professional lagoon® Advanced Care across Ireland</span>
-                    <span class="sm:block lg:whitespace-nowrap">for dry cleaners and professional garment care businesses.</span>
+                    <span class="sm:block xl:whitespace-nowrap">Irish Laundry Systems supplies, installs and supports Electrolux Professional lagoon® Advanced Care across Ireland</span>
+                    <span class="sm:block xl:whitespace-nowrap">for dry cleaners and professional garment care businesses.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="{{ route('request-assessment') }}"
@@ -150,7 +150,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Technology for <span style="color:#148af4;">controlled delicate textile care</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 lagoon® Advanced Care combines reduced mechanical action, dedicated programmes and precise detergent dosing for wool, silk and other delicate textiles.
             </p>
         </div>
@@ -388,10 +388,10 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Where It Fits</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 xl:whitespace-nowrap">
                 Explore garments and fabrics suited to <span style="color:#148af4;">professional wet cleaning</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Garment type, fabric and care requirements determine the programme used for each item.
             </p>
         </div>
@@ -519,7 +519,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Dedicated products for <span style="color:#148af4;">controlled wet cleaning results</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 lagoon® detergents, conditioner and prespotting products work with programmed dosing for consistent textile care.
             </p>
         </div>

@@ -271,7 +271,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Washer Range Highlights</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1410px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1440px]:whitespace-nowrap">
                 Explore washer options for <span style="color:#148af4;">different laundry applications</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">
@@ -403,7 +403,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Commercial Washer Range</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1410px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1480px]:whitespace-nowrap">
                 Compare commercial washers by <span style="color:#148af4;">capacity and application</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

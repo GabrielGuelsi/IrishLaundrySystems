@@ -37,8 +37,12 @@ class AuthController extends Controller
             $request->session()->put('admin_email', $request->email);
             $request->session()->regenerate();
 
+            static::audit('info', 'Admin login succeeded', $request);
+
             return redirect()->route('admin.equipment.index');
         }
+
+        static::audit('warning', 'Admin login failed', $request);
 
         return back()
             ->withInput($request->only('email'))
@@ -62,9 +66,23 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
+        static::audit('info', 'Admin logout', $request, ['email' => $request->session()->get('admin_email')]);
+
         $request->session()->forget(['admin_logged_in', 'admin_email']);
         $request->session()->regenerate();
 
         return redirect()->route('admin.login');
+    }
+
+    /**
+     * Write to the security log (storage/logs/security-*.log). Never include the password.
+     */
+    public static function audit(string $level, string $message, Request $request, array $extra = []): void
+    {
+        Log::channel('security')->log($level, $message, array_merge([
+            'email'      => mb_substr((string) $request->input('email'), 0, 255),
+            'ip'         => $request->ip(),
+            'user_agent' => mb_substr((string) $request->userAgent(), 0, 255),
+        ], $extra));
     }
 }

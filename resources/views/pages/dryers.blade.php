@@ -181,7 +181,7 @@
 
         <div class="mb-10 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Dryer Technology</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1490px]:whitespace-nowrap">
                 Dryer features that support <span style="color:#148af4;">fabric care and easier daily use</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

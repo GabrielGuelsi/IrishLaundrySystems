@@ -203,7 +203,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Equipment options <span style="color:#148af4;">worth a closer look</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 These equipment options can help sites handle common laundry demands around output, drying performance, space and professional-grade use.
             </p>
         </div>
@@ -311,7 +311,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Browse commercial laundry equipment <span style="color:#148af4;">by category</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Browse commercial laundry equipment available for quotation, supply, installation, rental discussion and ongoing support through Irish Laundry Systems.
             </p>
         </div>
@@ -331,8 +331,8 @@
                 <img src="{{ $cat['img'] }}" alt="{{ strip_tags($cat['title']) }}"
                      class="absolute inset-0 w-full h-full object-contain {{ $cat['pad'] ?? 'p-6' }} transition-transform duration-500 group-hover:scale-105">
                 <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(1,30,65,0.90) 0%, rgba(1,30,65,0.74) 11%, rgba(1,30,65,0.52) 21%, rgba(1,30,65,0.32) 31%, rgba(1,30,65,0.18) 41%, rgba(1,30,65,0.09) 51%, rgba(1,30,65,0.04) 61%, rgba(1,30,65,0.015) 71%, transparent 80%);"></div>
-                <div class="absolute inset-x-0 bottom-0 p-5 z-10 text-center">
-                    <h3 class="font-heading font-bold text-white text-xl leading-snug">{!! $cat['title'] !!}</h3>
+                <div class="absolute inset-x-0 bottom-0 p-3 sm:p-5 z-10 text-center">
+                    <h3 class="font-heading font-bold text-white text-base sm:text-xl leading-snug">{!! $cat['title'] !!}</h3>
                 </div>
             </a>
             @endforeach
@@ -447,7 +447,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
                 Prepare new laundry equipment for <span style="color:#148af4;">daily use with less disruption</span>
             </h2>
-            <p class="font-body text-gray-500 text-base mb-2 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base mb-2 leading-relaxed text-center mx-auto xl:whitespace-nowrap">
                 Irish Laundry Systems supports site review, installation, commissioning and handover,<br class="hidden lg:block"> so selected equipment is ready for your team and daily operation.
             </p>
         </div>
@@ -486,7 +486,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                 Keep the <span style="color:#148af4;">next support step clear</span> after installation
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Once equipment is in place, Irish Laundry Systems can help your site choose the right follow-up support, from planned maintenance to call-out support and aftercare.
             </p>
         </div>

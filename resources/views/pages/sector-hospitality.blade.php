@@ -102,7 +102,7 @@
 
         <div class="grid grid-cols-2 lg:grid-cols-5 gap-3">
 
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+            <div class="bg-white rounded-2xl p-4 sm:p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/162.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.216);">
                 </div>
@@ -112,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+            <div class="bg-white rounded-2xl p-4 sm:p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/163.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.18);">
                 </div>
@@ -122,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+            <div class="bg-white rounded-2xl p-4 sm:p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/164.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.097);">
                 </div>
@@ -132,7 +132,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
+            <div class="bg-white rounded-2xl p-4 sm:p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-1">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/165.png" alt="" class="w-24 h-24 object-contain" style="transform:scale(1.25);">
                 </div>
@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="bg-white rounded-2xl p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
+            <div class="bg-white rounded-2xl p-4 sm:p-6 flex flex-col gap-4 border border-gray-100 shadow-sm col-span-2 lg:col-span-1">
                 <div class="flex items-center justify-center h-32">
                     <img src="/images/icons/166.png" alt="" class="w-24 h-24 object-contain" style="transform:translateY(-5.1%) scale(1.02);">
                 </div>
@@ -257,7 +257,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-4">
                 Choose the <span style="color:#148af4;">right equipment mix</span> for hospitality
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Washers, dryers and finishing equipment should match your loads and turnaround needs.
             </p>
         </div>
@@ -696,11 +696,12 @@
 ])
 
 @include('components.equipment-categories', [
+    'headerAlign' => 'items-start',
     'eyebrow' => 'Equipment Categories',
     'textMinH' => '176px',
-    'heading' => '<span class="lg:text-[2.6rem] 2xl:text-[3rem] lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
+    'heading' => '<span class="lg:text-[2.6rem] 2xl:text-[3rem] xl:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">washing, drying and finishing</span></span>',
     'subheading' => 'Select a category to see the equipment available for different hospitality laundry requirements.',
-    'subheadingClass' => 'lg:whitespace-nowrap',
+    'subheadingClass' => 'xl:whitespace-nowrap',
     'equipment' => [
         ['img'=>'FIT1', 'src' => '/images/pages/finishing-equipment/FIT1.jpg','ext'=>'jpg','name'=>'Vacuum Ironing Tables','desc'=>'For pressing garments, linens and delicate items to presentation standard.'],
         ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For bed linen, towels, robes, uniforms, guest items and food and beverage textiles.','box'=>270,'mb'=>-35],

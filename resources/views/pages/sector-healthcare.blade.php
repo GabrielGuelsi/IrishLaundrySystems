@@ -45,7 +45,7 @@
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
-                    <span class="lg:whitespace-nowrap">Healthcare laundry</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">from soiled linen</span><br class="hidden lg:block"><span class="lg:whitespace-nowrap">to <span style="color:#148af4;">clean linen</span></span>
+                    <span class="xl:whitespace-nowrap">Healthcare laundry</span><br class="hidden lg:block"><span class="xl:whitespace-nowrap">from soiled linen</span><br class="hidden lg:block"><span class="xl:whitespace-nowrap">to <span style="color:#148af4;">clean linen</span></span>
                 </h2>
             </div>
 
@@ -371,7 +371,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-6">
                 <span>The <span style="color:#148af4;">right equipment range</span> for healthcare laundry</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Explore the equipment categories recommended for different healthcare laundry requirements, from barrier separation to everyday washing, drying and finishing.
             </p>
         </div>
@@ -951,7 +951,7 @@
     ],
 ])
 
-@include('components.equipment-categories', ['eyebrow' => 'Equipment Categories', 'heading' => 'Explore <span style="color:#148af4;">more healthcare equipment options</span>', 'subheading' => 'Select an equipment category based on the room, laundry handled and level of hygiene control required.', 'subheadingClass' => 'lg:whitespace-nowrap', 'headerAlign' => 'lg:flex-row lg:items-start', 'equipment' => [
+@include('components.equipment-categories', ['eyebrow' => 'Equipment Categories', 'heading' => 'Explore <span style="color:#148af4;">more healthcare equipment options</span>', 'subheading' => 'Select an equipment category based on the room, laundry handled and level of hygiene control required.', 'subheadingClass' => 'xl:whitespace-nowrap', 'headerAlign' => 'lg:flex-row lg:items-start', 'equipment' => [
     ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For healthcare laundry rooms that need soiled handling and clean return kept physically separate.','box'=>250,'mb'=>-20],
     ['img'=>'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp','name'=>'Washing Machines','desc'=>'For healthcare wash loads that need capacity, consistency and dosing control.','box'=>270,'mb'=>-35],
     ['img'=>'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp','name'=>'Dryers','desc'=>'For controlled drying, lower energy use and moisture management after washing.','box'=>245],
@@ -967,7 +967,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Prepare healthcare laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
+        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto xl:whitespace-nowrap">
             Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
         </p>
 

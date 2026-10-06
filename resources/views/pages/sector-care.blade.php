@@ -139,10 +139,10 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Technical Proof</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 xl:whitespace-nowrap">
                 Technology designed for <span style="color:#148af4;">clearer control and easier handling</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Electrolux Professional features support simpler operation, consistent programmes and the right level of hygiene and textile care for each facility.
             </p>
         </div>
@@ -209,10 +209,10 @@
 
         <div class="mb-8">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Services</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 lg:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-[2rem] 2xl:text-[2.4rem] leading-tight mb-3 xl:whitespace-nowrap">
                 Support for the laundry equipment <span style="color:#148af4;">your care team depends on</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed xl:whitespace-nowrap">
                 Irish Laundry Systems provides repairs, preventive maintenance, equipment rental and aftercare for care facility laundry equipment.
             </p>
         </div>
@@ -806,7 +806,7 @@
 @include('components.equipment-categories', [
     'eyebrow' => 'Browse by type',
     'textMinH' => '176px',
-    'heading' => '<span class="lg:text-4xl lg:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">different care facility needs</span></span>',
+    'heading' => '<span class="lg:text-4xl xl:whitespace-nowrap">Explore equipment for <span style="color:#148af4;">different care facility needs</span></span>',
     'subheading' => 'Choose the equipment category that fits the room, load type, hygiene needs and aftercare.',
     'equipment' => [
         ['img'=>'line6000-barrier-washer', 'src' => '/images/pages/barrier-washers/line6000-barrier-washer.webp','name'=>'Barrier Washers','desc'=>'For sites that need dirty-side and clean-side handling kept separate.','box'=>250,'mb'=>-20],
@@ -825,7 +825,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3 text-center">
             Prepare care facility laundry equipment for <span style="color:#148af4;">daily use</span>
         </h2>
-        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto lg:whitespace-nowrap">
+        <p class="font-body text-gray-500 text-base mb-12 leading-relaxed text-center mx-auto xl:whitespace-nowrap">
             Site checks, installation, commissioning and handover are coordinated so the selected equipment is ready for use.
         </p>
 

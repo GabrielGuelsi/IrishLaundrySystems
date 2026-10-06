@@ -521,7 +521,7 @@
                     <span class="sm:block" style="color:#148af4;">and shaped items</span>
                 </h2>
                 <p class="font-body text-gray-500 text-base leading-relaxed max-w-2xl mb-6">
-                    <span class="sm:block lg:whitespace-nowrap">Explore ironing tables, presses and automated finishing options</span>
+                    <span class="sm:block xl:whitespace-nowrap">Explore ironing tables, presses and automated finishing options</span>
                     <span class="sm:block">for different production volumes.</span>
                 </p>
                 <div class="flex flex-col sm:flex-row gap-3">

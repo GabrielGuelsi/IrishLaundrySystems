@@ -236,7 +236,7 @@
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
                 Support &amp; Aftercare for <span class="text-[#148af4]">equipment already in use</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty xl:whitespace-nowrap">
                 See the key areas that help make ongoing equipment support easier to manage.
             </p>
         </div>
@@ -336,7 +336,7 @@
         <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-balance reveal" style="transition-delay:80ms;">
             Tell us what needs attention and <span class="text-[#148af4]">we&rsquo;ll arrange the&nbsp;follow-up</span>
         </h2>
-        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty lg:whitespace-nowrap" style="transition-delay:160ms;">
+        <p class="font-body text-gray-500 text-base leading-relaxed mt-4 reveal text-pretty xl:whitespace-nowrap" style="transition-delay:160ms;">
             <span class="whitespace-nowrap">Irish Laundry Systems</span> reviews the equipment, service history and site details before arranging the required support.
         </p>
     </div>
@@ -446,7 +446,7 @@
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Long-term support for <span class="text-[#148af4]">commercial laundry&nbsp;operations</span>',
     'subheading' => 'Irish Laundry Systems supports commercial customers across Ireland with equipment service, aftercare, parts support and clear communication over time.',
-    'subheadingClass' => 'max-w-none lg:whitespace-nowrap mx-auto',
+    'subheadingClass' => 'max-w-none xl:whitespace-nowrap mx-auto',
 ])
 @include('components.proof-bar')
 

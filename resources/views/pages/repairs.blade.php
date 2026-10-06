@@ -253,7 +253,7 @@ $expectSteps = [
         <div class="text-center mb-14 lg:mb-20 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Call-Out Process</p>
             <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4 text-balance">From call-out request to <span class="text-[#148af4]">repair&nbsp;action</span></h2>
-            <p class="font-body text-blue-200 text-base leading-relaxed mx-auto lg:whitespace-nowrap">Each call-out is focused on diagnosis, repair requirements and the best action for the equipment.</p>
+            <p class="font-body text-blue-200 text-base leading-relaxed mx-auto xl:whitespace-nowrap">Each call-out is focused on diagnosis, repair requirements and the best action for the equipment.</p>
         </div>
 
         <div class="expect-timeline">
@@ -482,7 +482,7 @@ $faqs = [
     'eyebrow'    => 'Customer Trust',
     'heading'    => 'Trusted for <span class="text-[#148af4]">commercial laundry service&nbsp;support</span>',
     'subheading' => 'Commercial sites choose Irish Laundry Systems for responsive repairs, clear communication and reliable equipment care.',
-    'subheadingClass' => 'max-w-none mx-auto lg:whitespace-nowrap',
+    'subheadingClass' => 'max-w-none mx-auto xl:whitespace-nowrap',
 ])
 <div class="bg-white -mt-10 lg:-mt-16 pb-12 lg:pb-16">
     @include('components.proof-bar')

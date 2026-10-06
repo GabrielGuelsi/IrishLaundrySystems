@@ -129,10 +129,10 @@
 
         <div class="mb-12 lg:mb-14 reveal max-w-6xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why the Partnership Matters</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1200px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1440px]:whitespace-nowrap">
                 What the partnership brings to <span class="text-[#148af4]">your laundry operation</span>
             </h2>
-            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty lg:whitespace-nowrap">
+            <p class="font-body text-gray-500 text-base leading-relaxed text-pretty xl:whitespace-nowrap">
                 Access the Electrolux Professional range, product knowledge, genuine parts and local engineering through Irish Laundry Systems.
             </p>
         </div>
@@ -195,10 +195,10 @@
             <div class="reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Electrolux Professional Range</p>
                 <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                    <span class="sm:block lg:whitespace-nowrap">Professional laundry equipment</span>
-                    <span class="sm:block lg:whitespace-nowrap">across <span class="text-[#148af4]">washing, drying and finishing</span></span>
+                    <span class="sm:block xl:whitespace-nowrap">Professional laundry equipment</span>
+                    <span class="sm:block xl:whitespace-nowrap">across <span class="text-[#148af4]">washing, drying and finishing</span></span>
                 </h2>
-                <p class="font-body text-blue-200 text-base leading-relaxed mb-8 lg:whitespace-nowrap">
+                <p class="font-body text-blue-200 text-base leading-relaxed mb-8 xl:whitespace-nowrap">
                     Explore equipment for different capacities, sectors and specialist laundry applications.
                 </p>
                 <a href="{{ route('equipment') }}" class="group inline-flex items-center gap-2 bg-white text-navy hover:bg-white/90 font-body font-bold px-7 py-3.5 rounded-md text-sm transition-all duration-200 hover:shadow-lg hover:shadow-black/25">
@@ -335,7 +335,7 @@
         <div class="max-w-4xl mx-auto text-center mb-10 lg:mb-12 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Talk to an Engineer</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
-                <span class="lg:whitespace-nowrap">Discuss Electrolux Professional equipment</span><br class="hidden lg:block"> with <span class="text-[#148af4]">our Irish engineering team</span>
+                <span class="xl:whitespace-nowrap">Discuss Electrolux Professional equipment</span><br class="hidden lg:block"> with <span class="text-[#148af4]">our Irish engineering team</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty">
                 Share the main details about your site, existing equipment and what you need help with.

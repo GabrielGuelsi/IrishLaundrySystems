@@ -867,7 +867,7 @@ $faqs = [
                     <div>
                         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3">Book a Preventive Maintenance Visit</p>
                         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 text-balance">
-                            Protect your laundry operation with <span class="text-steel">planned maintenance&nbsp;support</span>
+                            Protect your laundry operation with <span class="text-steel">planned maintenance support</span>
                         </h2>
                         <p class="font-body text-blue-200 text-base leading-relaxed mb-7 text-pretty">
                             Tell us about your equipment and maintenance needs. We&rsquo;ll guide you towards the right support route.

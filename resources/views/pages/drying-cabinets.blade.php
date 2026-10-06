@@ -192,7 +192,7 @@
 
         <div class="mb-8 reveal">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Drying Cabinet Options</p>
-            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1350px]:whitespace-nowrap">
+            <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-3 min-[1430px]:whitespace-nowrap">
                 Compare drying cabinet types for <span style="color:#148af4;">different drying needs</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed">

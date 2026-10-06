@@ -150,7 +150,7 @@
 <!-- 4. SECTOR ROUTING TABS -->
  
 @include('components.sector-switcher', [
-    'heading'         => '<span class="lg:whitespace-nowrap">Commercial laundry planned around <span class="text-[#148af4]">your sector</span></span>',
+    'heading'         => '<span class="xl:whitespace-nowrap">Commercial laundry planned around <span class="text-[#148af4]">your sector</span></span>',
     'intro'           => 'Choose your sector to explore equipment and service suited to its hygiene, capacity and turnaround needs.',
     'healthcareBody'  => 'For hospitals and healthcare facilities managing hygiene requirements, linen handling and clean linen availability.',
     'careBody'        => 'For care homes and residential settings managing resident clothing, bedding and regular daily loads.',
@@ -168,7 +168,7 @@
     'heading'    => 'Commercial laundry equipment <span class="text-[#148af4]">for daily use</span>',
     'textMinH'   => '160px',
     'subheading' => 'Washers, dryers and finishing equipment, backed by installation and support.',
-    'subheadingClass' => 'lg:whitespace-nowrap',
+    'subheadingClass' => 'xl:whitespace-nowrap',
     'equipment' => [
         ['img' => 'commercialwasher', 'src' => '/images/pages/commercial-washers/commercialwasher.webp',              'name' => 'Washing Machines',     'desc' => 'For daily commercial washing where capacity, cycle control and fabric care all matter.', 'cta' => 'View Washing Machines', 'route' => ['equipment.category', ['category' => 'commercial-washers']], 'box' => 300, 'mb' => -35],
         ['img' => 'TD6-14', 'src' => '/images/pages/dryers/TD6-14.webp', 'ext' => 'jpg',   'name' => 'Dryers',               'desc' => 'For regular drying demand where fabric care and steady turnaround matter.', 'cta' => 'View Dryers', 'route' => ['equipment.category', ['category' => 'tumble-dryers']], 'box' => 300],

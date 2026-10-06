@@ -29,7 +29,7 @@ class ContactController extends Controller
             'email'         => 'required|email|max:255',
             'phone'         => 'required|string|max:50',
             'location'      => 'required|string|max:255',
-            'sector'        => 'required|string|in:healthcare,hospitality,care,commercial',
+            'sector'        => 'required|string|in:healthcare,hospitality,care,commercial,other',
             'equipment'     => 'nullable|string|max:500',
             'equipment_brand' => 'nullable|string|max:120',
             'machine_type'    => 'nullable|string|max:120',
