@@ -330,6 +330,7 @@
         @media (max-width: 1023px) {
             [data-mobile-photo-strip] { width: 100% !important; }
             [data-mobile-photo-strip] img { object-position: center 45% !important; }
+            [data-mobile-photo-strip] img[src*="engineering-support"] { object-position: center 10% !important; }
         }
         @media (max-width: 1023px) {
             .reveal-right:not(.is-visible) { transform: translateY(24px); }
@@ -408,6 +409,8 @@
             .mobile-application-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
             .mobile-support-card > div:last-child > div:last-child { order: 2; }
             .mobile-support-card > div:last-child span { max-width: 100%; white-space: normal; }
+            .mobile-service-card__image[src*="services-overview-hero-portrait"], .mobile-support-card > img[src*="services-overview-hero-portrait"] { object-position: 50% 10% !important; }
+            img[alt="Commercial laundry equipment rental"][src*="rentalstripimage"] { object-position: 20% 15% !important; }
             .mobile-story-step {
                 min-height: 0 !important;
                 padding-top: 200px;
@@ -420,6 +423,8 @@
             }
             .mobile-story-step > img + div,
             .mobile-story-step > img + div + div { display: none !important; }
+            .mobile-story-step > img[src*="01%20Understand"], .mobile-story-step > img[src*="02%20Plan"], .mobile-story-step > img[src*="03%20Coordinate"] { object-position: 50% 20% !important; }
+            .mobile-story-step > img[src*="04%20Keep"] { object-position: 50% 10% !important; }
             .mobile-story-step > div:last-child {
                 position: relative !important;
                 inset: auto !important;
@@ -549,6 +554,13 @@
             }
         }
         @media (min-width: 1024px) and (max-width: 1279px) {
+            img[src*="support-aftercare-hero"] { object-position: 85% 30% !important; }
+            img[src*="repairs-how-02"] { object-position: 70% 15% !important; }
+            img[src*="professional-laundry-heritage"] { object-fit: contain !important; background-color: #aebac8; }
+            img[src*="Parts%20%26%20Aftercare"] { object-position: 85% 30% !important; }
+            img[src*="agreementiclusions"] { object-position: 55% center !important; }
+            img[src*="rentalstripimage"][style*="center 30%"] { object-position: 10% 30% !important; }
+            img[src*="Technical%20Standards"] { object-position: 20% center !important; }
             .grid:has(> .mobile-service-card) {
                 grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
             }
@@ -606,6 +618,8 @@
             }
             .mobile-support-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
             .mobile-support-card > div:last-child > div:last-child { order: 2; }
+            .mobile-service-card__image[src*="services-overview-hero-portrait"], .mobile-support-card > img[src*="services-overview-hero-portrait"] { object-position: 50% 10% !important; }
+            img[alt="Commercial laundry equipment rental"][src*="rentalstripimage"] { object-position: 20% 15% !important; }
             .mobile-application-card {
                 height: auto !important;
                 padding-top: 220px;
@@ -643,6 +657,8 @@
             }
             .mobile-story-step > img + div,
             .mobile-story-step > img + div + div { display: none !important; }
+            .mobile-story-step > img[src*="01%20Understand"], .mobile-story-step > img[src*="02%20Plan"], .mobile-story-step > img[src*="03%20Coordinate"] { object-position: 50% 20% !important; }
+            .mobile-story-step > img[src*="04%20Keep"] { object-position: 50% 10% !important; }
             .mobile-story-step > div:last-child {
                 position: relative !important;
                 inset: auto !important;
