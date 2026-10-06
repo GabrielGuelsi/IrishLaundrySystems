@@ -15,6 +15,7 @@ return Application::configure(basePath: dirname(__DIR__))
             'admin.auth' => \App\Http\Middleware\AdminAuth::class,
         ]);
         $middleware->append(\App\Http\Middleware\SecurityHeaders::class);
+        $middleware->web(append: [\App\Http\Middleware\ResponsiveImages::class]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         // Record admin login lockouts in the security log — once per IP per minute so a flood can't fill the disk.
