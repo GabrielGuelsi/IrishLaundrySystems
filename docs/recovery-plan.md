@@ -14,6 +14,7 @@ What to do when irishlaundrysystems.com breaks, loses data or is compromised. Ke
 | Laravel root (live) | `httpdocs/ILS/public` — holds the live `.env` (confirmed 2026-09-29). |
 | Web root | `httpdocs/ILS/public/public` |
 | Health check | `https://irishlaundrysystems.com/up` → 200 when the app boots. |
+| Uptime monitoring | UptimeRobot (João's account), every 5 min: `ILS – app health` (`/up`) and `ILS – homepage` (`/`). Alerts by email. |
 | Logs | `storage/logs/laravel*.log` (app), `storage/logs/security-*.log` (admin logins, 90 days). |
 
 A second Plesk repo (`IrishLaundrySystems`) auto-deploys `main` to `/irishlaundrysystems.com`. It does not hold the live `.env`; confirm whether it is still needed.
@@ -86,5 +87,5 @@ Leads are saved in the database first — check `/admin/submissions`. Then check
 - [ ] Delete `__phpinfo.php`, `phpcheck.php`, `icon-preview.html` from the web root
 - [ ] Hashed `ADMIN_PASSWORD` in the live `.env`
 - [ ] Confirm the deploy runs `composer install`
-- [ ] Uptime monitoring on `/up`
+- [x] Uptime monitoring on `/up` (UptimeRobot, 2026-10-06)
 - [ ] Fill in the hosting provider contact
