@@ -48,7 +48,7 @@
 
             <div class="flex flex-col items-center gap-0 text-center">
                 <div class="h-[88px] flex items-center justify-center overflow-visible">
-                    <img src="/images/icons/100-clients.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.8] -translate-y-[6px]">
+                    <img src="/images/icons/100-clients.png" alt="" aria-hidden="true" class="max-h-[88px] w-auto object-contain scale-[1.8] translate-y-[9px]">
                 </div>
                 <span class="text-sm font-body text-gray-700 leading-snug whitespace-nowrap -mt-2">Long-standing relationships</span>
             </div>
