@@ -102,52 +102,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"></noscript>
 
-    <!-- Tailwind CSS Play CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Config with ILS Design System -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            DEFAULT: '#011E41',
-                            light:   '#0d3568',
-                            dark:    '#010f2a',
-                        },
-                        steel: {
-                            DEFAULT: '#148af4',
-                            light:   '#5babf7',
-                            dark:    '#0f70cc',
-                        },
-                        orange: {
-                            DEFAULT: '#148af4',
-                            light:   '#5babf7',
-                            dark:    '#0f70cc',
-                        },
-                        emerald: {
-                            DEFAULT: '#16A34A',
-                            light:   '#22C55E',
-                            dark:    '#15803D',
-                        },
-                        muted:  '#b2b2b2',
-                        border: '#b2b2b2',
-                        bg:     '#eaeff5',
-                        card:   '#FFFFFF',
-                    },
-                    fontFamily: {
-                        heading: ['Inter', 'system-ui', 'sans-serif'],
-                        body:    ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        card: '0 1px 3px 0 rgba(0,0,0,0.08), 0 1px 2px -1px rgba(0,0,0,0.05)',
-                        'card-hover': '0 4px 16px 0 rgba(0,0,0,0.10)',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Compiled Tailwind v3 (npm run build:css). Version query busts the long-lived cache on each rebuild. -->
+    <link rel="stylesheet" href="{{ asset('css/site.css') }}?v={{ filemtime(public_path('css/site.css')) }}">
 
     <!-- GSAP CDN (deferred — only used by the repairs page, guarded there) -->
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
