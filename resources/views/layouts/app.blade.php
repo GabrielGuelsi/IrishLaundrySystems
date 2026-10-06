@@ -86,10 +86,20 @@
             }
         } catch (e) {}
     </script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google_analytics.measurement_id') }}"></script>
     <script>
         gtag('js', new Date());
         gtag('config', '{{ config('services.google_analytics.measurement_id') }}');
+        // Load the 178 KB gtag library after the page has loaded and the main thread is idle.
+        // Commands above are queued in dataLayer and replayed when it arrives, so no hits are lost.
+        window.addEventListener('load', function () {
+            var inject = function () {
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://www.googletagmanager.com/gtag/js?id={{ config('services.google_analytics.measurement_id') }}';
+                document.head.appendChild(s);
+            };
+            if ('requestIdleCallback' in window) { requestIdleCallback(inject, { timeout: 3000 }); } else { setTimeout(inject, 1500); }
+        });
     </script>
     @endif
 
@@ -102,52 +112,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&display=swap"></noscript>
 
-    <!-- Tailwind CSS Play CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Tailwind Config with ILS Design System -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            DEFAULT: '#011E41',
-                            light:   '#0d3568',
-                            dark:    '#010f2a',
-                        },
-                        steel: {
-                            DEFAULT: '#148af4',
-                            light:   '#5babf7',
-                            dark:    '#0f70cc',
-                        },
-                        orange: {
-                            DEFAULT: '#148af4',
-                            light:   '#5babf7',
-                            dark:    '#0f70cc',
-                        },
-                        emerald: {
-                            DEFAULT: '#16A34A',
-                            light:   '#22C55E',
-                            dark:    '#15803D',
-                        },
-                        muted:  '#b2b2b2',
-                        border: '#b2b2b2',
-                        bg:     '#eaeff5',
-                        card:   '#FFFFFF',
-                    },
-                    fontFamily: {
-                        heading: ['Inter', 'system-ui', 'sans-serif'],
-                        body:    ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                    boxShadow: {
-                        card: '0 1px 3px 0 rgba(0,0,0,0.08), 0 1px 2px -1px rgba(0,0,0,0.05)',
-                        'card-hover': '0 4px 16px 0 rgba(0,0,0,0.10)',
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- Compiled Tailwind v3 (npm run build:css). Version query busts the long-lived cache on each rebuild. -->
+    <link rel="stylesheet" href="{{ asset('css/site.css') }}?v={{ filemtime(public_path('css/site.css')) }}">
 
     <!-- GSAP CDN (deferred — only used by the repairs page, guarded there) -->
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
@@ -330,6 +296,7 @@
         @media (max-width: 1023px) {
             [data-mobile-photo-strip] { width: 100% !important; }
             [data-mobile-photo-strip] img { object-position: center 45% !important; }
+            [data-mobile-photo-strip] img[src*="engineering-support"] { object-position: center 10% !important; }
         }
         @media (max-width: 1023px) {
             .reveal-right:not(.is-visible) { transform: translateY(24px); }
@@ -408,6 +375,8 @@
             .mobile-application-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
             .mobile-support-card > div:last-child > div:last-child { order: 2; }
             .mobile-support-card > div:last-child span { max-width: 100%; white-space: normal; }
+            .mobile-service-card__image[src*="services-overview-hero-portrait"], .mobile-support-card > img[src*="services-overview-hero-portrait"] { object-position: 50% 10% !important; }
+            img[alt="Commercial laundry equipment rental"][src*="rentalstripimage"] { object-position: 20% 15% !important; }
             .mobile-story-step {
                 min-height: 0 !important;
                 padding-top: 200px;
@@ -420,6 +389,8 @@
             }
             .mobile-story-step > img + div,
             .mobile-story-step > img + div + div { display: none !important; }
+            .mobile-story-step > img[src*="01%20Understand"], .mobile-story-step > img[src*="02%20Plan"], .mobile-story-step > img[src*="03%20Coordinate"] { object-position: 50% 20% !important; }
+            .mobile-story-step > img[src*="04%20Keep"] { object-position: 50% 10% !important; }
             .mobile-story-step > div:last-child {
                 position: relative !important;
                 inset: auto !important;
@@ -549,6 +520,13 @@
             }
         }
         @media (min-width: 1024px) and (max-width: 1279px) {
+            img[src*="support-aftercare-hero"] { object-position: 85% 30% !important; }
+            img[src*="repairs-how-02"] { object-position: 70% 15% !important; }
+            img[src*="professional-laundry-heritage"] { object-fit: contain !important; background-color: #aebac8; }
+            img[src*="Parts%20%26%20Aftercare"] { object-position: 85% 30% !important; }
+            img[src*="agreementiclusions"] { object-position: 55% center !important; }
+            img[src*="rentalstripimage"][style*="center 30%"] { object-position: 10% 30% !important; }
+            img[src*="Technical%20Standards"] { object-position: 20% center !important; }
             .grid:has(> .mobile-service-card) {
                 grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
             }
@@ -606,6 +584,8 @@
             }
             .mobile-support-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
             .mobile-support-card > div:last-child > div:last-child { order: 2; }
+            .mobile-service-card__image[src*="services-overview-hero-portrait"], .mobile-support-card > img[src*="services-overview-hero-portrait"] { object-position: 50% 10% !important; }
+            img[alt="Commercial laundry equipment rental"][src*="rentalstripimage"] { object-position: 20% 15% !important; }
             .mobile-application-card {
                 height: auto !important;
                 padding-top: 220px;
@@ -643,6 +623,8 @@
             }
             .mobile-story-step > img + div,
             .mobile-story-step > img + div + div { display: none !important; }
+            .mobile-story-step > img[src*="01%20Understand"], .mobile-story-step > img[src*="02%20Plan"], .mobile-story-step > img[src*="03%20Coordinate"] { object-position: 50% 20% !important; }
+            .mobile-story-step > img[src*="04%20Keep"] { object-position: 50% 10% !important; }
             .mobile-story-step > div:last-child {
                 position: relative !important;
                 inset: auto !important;
