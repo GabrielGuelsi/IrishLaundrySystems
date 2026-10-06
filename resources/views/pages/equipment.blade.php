@@ -596,7 +596,7 @@
                 go(i)   { this.active = Math.min(i, this.maxIndex); this.restart(); },
                 restart() { clearInterval(this.timer); this.timer = setInterval(() => this.next(), 6000); },
                 init() {
-                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1024 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
+                    const calc = () => { this.perView = window.innerWidth < 640 ? 1 : (window.innerWidth < 1280 ? 2 : 4); if (this.active > this.maxIndex) this.active = this.maxIndex; };
                     calc();
                     window.addEventListener('resize', calc);
                     this.timer = setInterval(() => this.next(), 6000);
@@ -608,7 +608,7 @@
                 <div class="flex transition-transform duration-500 ease-out -mx-3"
                      :style="`transform: translateX(-${active * (100 / perView)}%)`">
                     @foreach($environments as $i => $env)
-                    <div class="flex-shrink-0 w-full sm:w-1/2 lg:w-1/4 px-3">
+                    <div class="flex-shrink-0 w-full sm:w-1/2 xl:w-1/4 px-3">
                         <div class="flex flex-col items-center text-center">
                             <a href="{{ $env['route'] }}" class="block w-full overflow-hidden rounded-sm mb-5">
                                 <img src="{{ $env['img'] }}" alt="{{ strip_tags($env['env']) }}"

@@ -293,7 +293,7 @@
     ];
     @endphp
 
-    <div class="flex flex-col sm:flex-row items-stretch gap-0 overflow-hidden reveal" style="transition-delay:100ms;">
+    <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 items-stretch gap-0 overflow-hidden reveal" style="transition-delay:100ms;">
         @foreach($siteSteps as $i => $step)
         <div class="mobile-story-step group flex-1 relative overflow-hidden min-h-[300px] sm:!min-h-[460px]">
             <img src="{{ asset($step['img']) }}" alt="{{ $step['title'] }}"

@@ -126,7 +126,7 @@
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 reveal">
             @foreach([
                 ['title' => 'B&amp;Bs, guesthouses, small hotels and food service', 'items' => ['Guest linen', 'Towels', 'Room readiness'],       'img' => '/images/pages/semi-professional/B&Bs, guesthouses, small hotels and food service.webp', 'pos' => 'center center'],
                 ['title' => 'Facility management and cleaning teams',               'items' => ['Mops', 'Uniforms', 'Frequent washing'],           'img' => '/images/pages/semi-professional/Facility management and cleaning teams.webp',           'pos' => 'center center'],

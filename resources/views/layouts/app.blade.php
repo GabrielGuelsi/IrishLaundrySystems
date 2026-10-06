@@ -548,6 +548,165 @@
                 padding-right: 0.25rem !important;
             }
         }
+        @media (min-width: 1024px) and (max-width: 1279px) {
+            .grid:has(> .mobile-service-card) {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            }
+            .mobile-service-card {
+                height: auto !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-service-card__image {
+                height: 220px !important;
+                bottom: auto !important;
+                transform: none !important;
+            }
+            .mobile-service-card__overlay { display: none !important; }
+            .mobile-service-card__content {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+            }
+            .mobile-service-card__details {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+            }
+            .mobile-sector-carousel-image {
+                height: 220px !important;
+                transform: none !important;
+            }
+            .grid:has(> .mobile-support-card) {
+                grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+            }
+            .mobile-support-card {
+                height: auto !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-support-card > img {
+                bottom: auto !important;
+                height: 220px !important;
+                transform: none !important;
+            }
+            .mobile-support-card > img + div,
+            .mobile-support-card > img + div + div { display: none !important; }
+            .mobile-support-card > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+            }
+            .mobile-support-card > div:last-child > div:first-child {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 1;
+                margin-bottom: 1rem !important;
+            }
+            .mobile-support-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
+            .mobile-support-card > div:last-child > div:last-child { order: 2; }
+            .mobile-application-card {
+                height: auto !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-application-card > img {
+                bottom: auto !important;
+                height: 220px !important;
+                transform: none !important;
+            }
+            .mobile-application-card > img + div,
+            .mobile-application-card > img + div + div { display: none !important; }
+            .mobile-application-card > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+            }
+            .mobile-application-card > div:last-child > ul {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 1;
+                margin-bottom: 1rem !important;
+            }
+            .mobile-application-card > div:last-child > h3 { order: 0; margin-bottom: 1rem; }
+            .mobile-story-step {
+                min-height: 0 !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-story-step > img {
+                bottom: auto !important;
+                height: 220px !important;
+                transform: none !important;
+            }
+            .mobile-story-step > img + div,
+            .mobile-story-step > img + div + div { display: none !important; }
+            .mobile-story-step > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+            }
+            .mobile-story-step > div:last-child > div:nth-child(2) {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 2;
+            }
+            .mobile-story-step > div:last-child > div:nth-child(3) { order: 1; margin-bottom: 0.75rem; }
+            .mobile-fit-card {
+                height: auto !important;
+                aspect-ratio: auto !important;
+                padding-top: 220px;
+                background: #011E41;
+            }
+            .mobile-fit-card > img {
+                bottom: auto !important;
+                height: 220px !important;
+                transform: none !important;
+            }
+            .mobile-fit-card--source-margins > img { transform: scale(2.2) !important; }
+            .mobile-fit-card > img + div,
+            .mobile-fit-card > img + div + div { display: none !important; }
+            .mobile-fit-card > div:last-child {
+                position: relative !important;
+                inset: auto !important;
+                padding: 1.5rem !important;
+                background: #011E41;
+            }
+            .mobile-fit-card > div:last-child > p {
+                max-height: none !important;
+                overflow: visible !important;
+                opacity: 1 !important;
+                order: 1;
+                margin-bottom: 0 !important;
+            }
+            .mobile-fit-card > div:last-child > h3 { order: 0; margin-bottom: 0.75rem; }
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card) {
+                min-height: 0 !important;
+                height: auto !important;
+                padding-top: 180px;
+                background: #011E41;
+            }
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card) img {
+                bottom: auto !important;
+                height: 180px !important;
+                transform: none !important;
+            }
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card)::before,
+            :is(.rn-visit-card, .sc-visit-card, .pa-visit-card)::after,
+            :is(.rn-vcap1, .sc-vcap1, .pa-vcap1) { display: none !important; }
+            :is(.rn-vcap2, .sc-vcap2, .pa-vcap2) {
+                position: relative !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                opacity: 1 !important;
+                transform: none !important;
+                padding: 1.25rem;
+            }
+        }
     </style>
 </head>
 <body class="antialiased">

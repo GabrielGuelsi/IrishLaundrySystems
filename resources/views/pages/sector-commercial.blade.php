@@ -75,7 +75,7 @@
                 High-volume, <span style="color:#148af4;">shared-use and specialist sites</span>
             </h2>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 reveal">
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 reveal">
             @foreach([
                 [
                     'title' => 'Facility Management &amp; Public Sector',
