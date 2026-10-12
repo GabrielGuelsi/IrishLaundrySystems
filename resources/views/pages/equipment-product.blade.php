@@ -1,5 +1,23 @@
 @extends('layouts.app')
 
+@section('meta')
+@php
+    // Product structured data. No price or offer: ILS quotes per site, so none is published.
+    $productSchema = array_filter([
+        '@context' => 'https://schema.org',
+        '@type' => 'Product',
+        'name' => $item->name,
+        'description' => $summary ?: null,
+        'category' => $category,
+        // Skip placeholder logos used where no product photo exists yet.
+        'image' => $imagePath && ! str_contains($imagePath, '/images/logo/') ? url($imagePath) : null,
+        'brand' => $categorySlug !== 'accessories' ? ['@type' => 'Brand', 'name' => 'Electrolux Professional'] : null,
+        'url' => url()->current(),
+    ]);
+@endphp
+<script type="application/ld+json">{!! json_encode($productSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) !!}</script>
+@endsection
+
 @section('content')
 
 {{-- ============ PRODUCT HEADER ============ --}}
