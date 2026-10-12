@@ -193,7 +193,7 @@ class PageController extends Controller
             $servedCategories = ['commercial-washers', 'tumble-dryers', 'ironers', 'finishing-equipment', 'drying-cabinets', 'barrier-washers'];
 
             if (in_array($category, $servedCategories, true) || array_key_exists($category, config('equipment'))) {
-                return redirect()->route('equipment.category', $category);
+                return redirect()->route('equipment.category', $category, 301);
             }
 
             abort(404);
