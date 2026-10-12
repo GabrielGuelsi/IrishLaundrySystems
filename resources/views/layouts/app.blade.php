@@ -737,19 +737,29 @@
                 });
             });
 
-            // Track form submissions as generate_lead
-            document.querySelectorAll('form[data-utm]').forEach(function (form) {
-                form.addEventListener('submit', function () {
-                    var sectorEl  = form.querySelector('[name="sector"]');
-                    var typeEl    = form.querySelector('[name="request_type"]');
-                    gtag('event', 'generate_lead', {
-                        event_category: 'form',
-                        event_label: (typeEl ? typeEl.value : 'unknown'),
-                        sector: (sectorEl ? sectorEl.value : 'unknown'),
-                        page_path: window.location.pathname,
-                    });
+            // Phone and email link clicks (every tel:/mailto: link on the site)
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+                if (!link) return;
+                var href = link.getAttribute('href');
+                var isPhone = href.indexOf('tel:') === 0;
+                gtag('event', isPhone ? 'phone_click' : 'email_click', {
+                    event_category: 'contact',
+                    event_label: href.replace(/^(tel:|mailto:)/, '').split('?')[0],
+                    page_path: window.location.pathname,
                 });
             });
+
+            // generate_lead: sent once, on the page shown after the server accepted a form
+            // (any form posting to the contact route), so failed or blocked attempts don't count.
+            @if (session('lead'))
+            gtag('event', 'generate_lead', {
+                event_category: 'form',
+                event_label: @json(session('lead.request_type')),
+                sector: @json(session('lead.sector')),
+                page_path: window.location.pathname,
+            });
+            @endif
         })();
     </script>
 

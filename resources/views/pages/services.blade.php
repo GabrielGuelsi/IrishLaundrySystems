@@ -436,6 +436,7 @@
         <div class="bg-white rounded-2xl shadow-2xl p-7 lg:p-10">
             <p class="font-heading font-bold text-navy text-xl leading-snug mb-1">Request a Service Assessment</p>
             <p class="font-body text-gray-500 text-sm leading-relaxed mb-6">We aim to respond within 24 hours.</p>
+            @include('components.form-feedback', ['target' => 'services-form'])
             <form action="{{ route('contact.submit') ?? '#' }}" method="POST" class="space-y-3">
                 @csrf
                 <input type="hidden" name="page_source" value="services_overview_cta">
