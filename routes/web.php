@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\Admin;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -31,6 +32,7 @@ Route::get('/resources', [PageController::class, 'resources'])->name('resources'
 Route::redirect('/brand-protection', '/', 301);
 Route::get('/request-assessment', [PageController::class, 'requestAssessment'])->name('request-assessment');
 Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
 
 // Admin
 Route::prefix('admin')->name('admin.')->group(function () {
