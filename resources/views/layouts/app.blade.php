@@ -4,54 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @yield('meta')
-    <title>@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')</title>
-    <meta name="description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    @php
+        // One title and one description per page. Precedence: what the page view sets
+        // (@section pageTitle, a description inside @section meta, @section metaDescription),
+        // then the SEO text the controller passes (shared as seoTitle/seoDescription by
+        // AppServiceProvider before the view runs, so loop variables can't overwrite it),
+        // then the site default.
+        $metaBlock = $__env->yieldContent('meta');
+        $pageMetaDescription = preg_match('/<meta\s+name="description"\s+content="([^"]*)"/i', $metaBlock, $m) ? html_entity_decode($m[1], ENT_QUOTES) : null;
+        $seoTitle = html_entity_decode(trim($__env->yieldContent('pageTitle')), ENT_QUOTES)
+            ?: ($seoTitle ?? 'Irish Laundry Systems | Commercial Laundry Engineering Ireland');
+        $seoDescription = $pageMetaDescription
+            ?? (html_entity_decode(trim($__env->yieldContent('metaDescription')), ENT_QUOTES)
+            ?: ($seoDescription ?? 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.'));
+    @endphp
+    {!! $metaBlock !!}
+    <title>{{ $seoTitle }}</title>
+    @unless($pageMetaDescription)
+    <meta name="description" content="{{ $seoDescription }}">
+    @endunless
 
     <!-- Canonical + Open Graph / Twitter -->
     <link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Irish Laundry Systems">
     <meta property="og:locale" content="en_IE">
-    <meta property="og:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
-    <meta property="og:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ url('/images/pages/home/HOMEHERO1.webp') }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
-    <meta name="twitter:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
     <meta name="twitter:image" content="{{ url('/images/pages/home/HOMEHERO1.webp') }}">
 
-    <!-- Organization structured data (JSON-LD) -->
-    @verbatim
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Irish Laundry Systems",
-        "legalName": "D.S.B. Electrical (Templeogue) Limited",
-        "url": "https://irishlaundrysystems.com",
-        "logo": "https://irishlaundrysystems.com/email/logo-ils.png",
-        "image": "https://irishlaundrysystems.com/images/pages/home/HOMEHERO1.webp",
-        "description": "Engineering-led commercial laundry specialist serving the Republic of Ireland since 1987 — preventive maintenance, repairs and call-outs, equipment supply and rental, and aftercare. Authorised Electrolux Professional Partner.",
-        "foundingDate": "1987",
-        "telephone": "+353-1-491-0402",
-        "email": "contact@irishlaundrysystems.com",
-        "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" },
-        "areaServed": { "@type": "Country", "name": "Ireland" },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+353-1-491-0402",
-            "email": "contact@irishlaundrysystems.com",
-            "contactType": "customer service",
-            "areaServed": "IE",
-            "availableLanguage": "English"
-        },
-        "brand": { "@type": "Brand", "name": "Electrolux Professional" },
-        "knowsAbout": ["Commercial laundry equipment", "Preventive maintenance", "Equipment rental", "Laundry repairs and call-outs", "Electrolux Professional laundry"]
-    }
-    </script>
-    @endverbatim
+    <!-- Structured data (JSON-LD): the business on every page, plus breadcrumbs below the home page -->
+    @php
+        $siteUrl = 'https://irishlaundrysystems.com';
+        $business = [
+            '@context' => 'https://schema.org',
+            '@type' => ['Organization', 'LocalBusiness'],
+            '@id' => $siteUrl.'/#organization',
+            'name' => 'Irish Laundry Systems',
+            'legalName' => 'D.S.B. Electrical (Templeogue) Limited',
+            'url' => $siteUrl,
+            'logo' => $siteUrl.'/email/logo-ils.png',
+            'image' => $siteUrl.'/images/pages/home/HOMEHERO1.webp',
+            'description' => 'Engineering-led commercial laundry specialist serving the Republic of Ireland since 1987 — preventive maintenance, repairs and call-outs, equipment supply and rental, and aftercare. Authorised Electrolux Professional Partner.',
+            'foundingDate' => '1987',
+            'telephone' => '+353-1-491-0402',
+            'email' => 'contact@irishlaundrysystems.com',
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => '95 Ranelagh Village, Ranelagh',
+                'addressLocality' => 'Dublin 6',
+                'postalCode' => 'D06 VTW5',
+                'addressRegion' => 'Dublin',
+                'addressCountry' => 'IE',
+            ],
+            'openingHoursSpecification' => [[
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+                'opens' => '08:00',
+                'closes' => '17:00',
+            ]],
+            'areaServed' => ['@type' => 'Country', 'name' => 'Ireland'],
+            'contactPoint' => [
+                '@type' => 'ContactPoint',
+                'telephone' => '+353-1-491-0402',
+                'email' => 'contact@irishlaundrysystems.com',
+                'contactType' => 'customer service',
+                'areaServed' => 'IE',
+                'availableLanguage' => 'English',
+            ],
+            'brand' => ['@type' => 'Brand', 'name' => 'Electrolux Professional'],
+            'knowsAbout' => ['Commercial laundry equipment', 'Preventive maintenance', 'Equipment rental', 'Laundry repairs and call-outs', 'Electrolux Professional laundry'],
+        ];
+
+        // Breadcrumbs from the URL path: every parent path is a real page on this site.
+        $crumbLabels = [
+            'equipment' => 'Equipment', 'sectors' => 'Sectors', 'services' => 'Services',
+            'support-aftercare' => 'Support & Aftercare', 'equipment-rental' => 'Equipment Rental',
+            'preventive-maintenance' => 'Preventive Maintenance', 'repairs-call-outs' => 'Repairs & Call-Outs',
+            'electrolux-partnership' => 'Electrolux Partnership', 'request-assessment' => 'Request an Assessment',
+            'one-connected' => 'OnE Connected', 'semi-professional' => 'Semi-Professional',
+            'commercial-industrial' => 'Commercial & Industrial',
+        ];
+        $segments = array_values(array_filter(explode('/', request()->path()), fn ($s) => $s !== ''));
+        $breadcrumbs = null;
+        if ($segments) {
+            $items = [['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $siteUrl.'/']];
+            $path = '';
+            foreach ($segments as $i => $segment) {
+                $path .= '/'.$segment;
+                $isLast = $i === count($segments) - 1;
+                // A product page's last crumb is the product name (first part of its title).
+                $isProduct = $isLast && count($segments) === 3 && $segments[0] === 'equipment';
+                $name = $isProduct && str_contains($seoTitle, ' | ') ? trim(explode(' | ', $seoTitle)[0]) : null;
+                $items[] = [
+                    '@type' => 'ListItem',
+                    'position' => $i + 2,
+                    'name' => $name ?: ($crumbLabels[$segment] ?? ucwords(str_replace('-', ' ', $segment))),
+                    'item' => $siteUrl.$path,
+                ];
+            }
+            $breadcrumbs = ['@context' => 'https://schema.org', '@type' => 'BreadcrumbList', 'itemListElement' => $items];
+        }
+    @endphp
+    <script type="application/ld+json">{!! json_encode($business, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) !!}</script>
+    @if ($breadcrumbs)
+    <script type="application/ld+json">{!! json_encode($breadcrumbs, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) !!}</script>
+    @endif
 
     <!-- Favicons -->
     <link rel="icon" href="/favicon.ico?v=2" sizes="any">
@@ -721,19 +784,48 @@
                 });
             });
 
-            // Track form submissions as generate_lead
-            document.querySelectorAll('form[data-utm]').forEach(function (form) {
-                form.addEventListener('submit', function () {
-                    var sectorEl  = form.querySelector('[name="sector"]');
-                    var typeEl    = form.querySelector('[name="request_type"]');
-                    gtag('event', 'generate_lead', {
-                        event_category: 'form',
-                        event_label: (typeEl ? typeEl.value : 'unknown'),
-                        sector: (sectorEl ? sectorEl.value : 'unknown'),
-                        page_path: window.location.pathname,
-                    });
+            // Every other CTA: links to the contact / assessment pages or to a form on the same page
+            // (#…-form). Buttons with data-ga-cta are already tracked above, so they're skipped here.
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest && e.target.closest('a[href]');
+                if (!link || link.hasAttribute('data-ga-cta')) return;
+                var href = link.getAttribute('href');
+                var url;
+                try { url = new URL(href, window.location.href); } catch (err) { return; }
+                var toForm = href.charAt(0) === '#' && /-form$/.test(href);
+                var toPage = url.origin === window.location.origin && /^\/(contact|request-assessment)\/?$/.test(url.pathname);
+                if (!toForm && !toPage) return;
+                gtag('event', 'cta_click', {
+                    event_category: 'engagement',
+                    event_label: (link.innerText || link.getAttribute('aria-label') || href).replace(/\s+/g, ' ').trim().slice(0, 100),
+                    link_url: toForm ? href : url.pathname,
+                    page_path: window.location.pathname,
                 });
             });
+
+            // Phone and email link clicks (every tel:/mailto: link on the site)
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
+                if (!link) return;
+                var href = link.getAttribute('href');
+                var isPhone = href.indexOf('tel:') === 0;
+                gtag('event', isPhone ? 'phone_click' : 'email_click', {
+                    event_category: 'contact',
+                    event_label: href.replace(/^(tel:|mailto:)/, '').split('?')[0],
+                    page_path: window.location.pathname,
+                });
+            });
+
+            // generate_lead: sent once, on the page shown after the server accepted a form
+            // (any form posting to the contact route), so failed or blocked attempts don't count.
+            @if (session('lead'))
+            gtag('event', 'generate_lead', {
+                event_category: 'form',
+                event_label: @json(session('lead.request_type')),
+                sector: @json(session('lead.sector')),
+                page_path: window.location.pathname,
+            });
+            @endif
         })();
     </script>
 

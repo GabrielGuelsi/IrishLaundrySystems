@@ -84,7 +84,7 @@ Leads are saved in the database first — check `/admin/submissions`. Then check
 
 - [ ] Scheduled off-server backups (section 2)
 - [ ] Redirect HTTP → HTTPS (Plesk → Hosting Settings)
-- [ ] Delete `__phpinfo.php`, `phpcheck.php`, `icon-preview.html` from the web root
+- [x] Delete `__phpinfo.php`, `phpcheck.php`, `icon-preview.html` from the web root (2026-10-07; icon-preview.html also removed from the repo)
 - [ ] Hashed `ADMIN_PASSWORD` in the live `.env`
 - [ ] Confirm the deploy runs `composer install`
 - [x] Uptime monitoring on `/up` (UptimeRobot, 2026-10-06)

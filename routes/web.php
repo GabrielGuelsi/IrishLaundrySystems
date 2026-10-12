@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\Admin;
 
 Route::get('/', [PageController::class, 'home'])->name('home');
@@ -31,6 +32,18 @@ Route::get('/resources', [PageController::class, 'resources'])->name('resources'
 Route::redirect('/brand-protection', '/', 301);
 Route::get('/request-assessment', [PageController::class, 'requestAssessment'])->name('request-assessment');
 Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
+Route::get('/sitemap.xml', [SitemapController::class, 'index'])->name('sitemap');
+
+// Pages of the old site (2011–2016, seen in the Web Archive) that still have an equivalent today.
+foreach ([
+    '/about.html' => '/about', '/about.aspx' => '/about', '/aboutus' => '/about',
+    '/contact.html' => '/contact', '/contact.aspx' => '/contact',
+    '/services.html' => '/services', '/services.aspx' => '/services',
+    '/products.html' => '/equipment',
+    '/default.htm' => '/', '/FlashIntro/FlashIntro.aspx' => '/',
+] as $old => $new) {
+    Route::redirect($old, $new, 301);
+}
 
 // Admin
 Route::prefix('admin')->name('admin.')->group(function () {
