@@ -1,0 +1,50 @@
+# This folder is the Laravel app root (it holds the database, logs and code), not a web root:
+# irishlaundrysystems.com is served from ./public. Some domains in Plesk point here directly
+# (irishlaundrysystems.ie and the Plesk preview domain), so they must never serve its files.
+# The first rules only match those hosts; irishlaundrysystems.com and local development are untouched.
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    # irishlaundrysystems.ie → the same page on irishlaundrysystems.com (301, query string kept).
+    # Pages of the 2008 .ie site that have a different address today:
+    RewriteCond %{HTTP_HOST} ^(www\.)?irishlaundrysystems\.ie$ [NC]
+    RewriteRule ^about\.html$ https://irishlaundrysystems.com/about [R=301,L]
+    RewriteCond %{HTTP_HOST} ^(www\.)?irishlaundrysystems\.ie$ [NC]
+    RewriteRule ^contact\.html$ https://irishlaundrysystems.com/contact [R=301,L]
+    RewriteCond %{HTTP_HOST} ^(www\.)?irishlaundrysystems\.ie$ [NC]
+    RewriteRule ^products\.html$ https://irishlaundrysystems.com/equipment [R=301,L]
+    RewriteCond %{HTTP_HOST} ^(www\.)?irishlaundrysystems\.ie$ [NC]
+    RewriteRule ^services\.html$ https://irishlaundrysystems.com/services [R=301,L]
+    # Everything else keeps its path:
+    RewriteCond %{HTTP_HOST} ^(www\.)?irishlaundrysystems\.ie$ [NC]
+    RewriteRule ^(.*)$ https://irishlaundrysystems.com/$1 [R=301,L]
+
+    # Plesk preview domain (*.plesk.page): refuse everything.
+    RewriteCond %{HTTP_HOST} \.plesk\.page$ [NC]
+    RewriteRule ^ - [F,L]
+
+    # --- Rules that were already in this file on the server (standard Laravel) ---
+
+    # Handle Authorization Header
+    RewriteCond %{HTTP:Authorization} .
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+    # Handle X-XSRF-Token Header
+    RewriteCond %{HTTP:x-xsrf-token} .
+    RewriteRule .* - [E=HTTP_X_XSRF_TOKEN:%{HTTP:X-XSRF-Token}]
+
+    # Redirect Trailing Slashes If Not A Folder...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} (.+)/$
+    RewriteRule ^ %1 [L,R=301]
+
+    # Send Requests To Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
