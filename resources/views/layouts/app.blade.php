@@ -784,6 +784,25 @@
                 });
             });
 
+            // Every other CTA: links to the contact / assessment pages or to a form on the same page
+            // (#…-form). Buttons with data-ga-cta are already tracked above, so they're skipped here.
+            document.addEventListener('click', function (e) {
+                var link = e.target.closest && e.target.closest('a[href]');
+                if (!link || link.hasAttribute('data-ga-cta')) return;
+                var href = link.getAttribute('href');
+                var url;
+                try { url = new URL(href, window.location.href); } catch (err) { return; }
+                var toForm = href.charAt(0) === '#' && /-form$/.test(href);
+                var toPage = url.origin === window.location.origin && /^\/(contact|request-assessment)\/?$/.test(url.pathname);
+                if (!toForm && !toPage) return;
+                gtag('event', 'cta_click', {
+                    event_category: 'engagement',
+                    event_label: (link.innerText || link.getAttribute('aria-label') || href).replace(/\s+/g, ' ').trim().slice(0, 100),
+                    link_url: toForm ? href : url.pathname,
+                    page_path: window.location.pathname,
+                });
+            });
+
             // Phone and email link clicks (every tel:/mailto: link on the site)
             document.addEventListener('click', function (e) {
                 var link = e.target.closest && e.target.closest('a[href^="tel:"], a[href^="mailto:"]');
