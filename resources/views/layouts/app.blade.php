@@ -4,22 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    @yield('meta')
-    <title>@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')</title>
-    <meta name="description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    @php
+        // One title and one description per page. Precedence: what the page view sets
+        // (@section pageTitle, a description inside @section meta, @section metaDescription),
+        // then the SEO text the controller passes (shared as seoTitle/seoDescription by
+        // AppServiceProvider before the view runs, so loop variables can't overwrite it),
+        // then the site default.
+        $metaBlock = $__env->yieldContent('meta');
+        $pageMetaDescription = preg_match('/<meta\s+name="description"\s+content="([^"]*)"/i', $metaBlock, $m) ? html_entity_decode($m[1], ENT_QUOTES) : null;
+        $seoTitle = html_entity_decode(trim($__env->yieldContent('pageTitle')), ENT_QUOTES)
+            ?: ($seoTitle ?? 'Irish Laundry Systems | Commercial Laundry Engineering Ireland');
+        $seoDescription = $pageMetaDescription
+            ?? (html_entity_decode(trim($__env->yieldContent('metaDescription')), ENT_QUOTES)
+            ?: ($seoDescription ?? 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.'));
+    @endphp
+    {!! $metaBlock !!}
+    <title>{{ $seoTitle }}</title>
+    @unless($pageMetaDescription)
+    <meta name="description" content="{{ $seoDescription }}">
+    @endunless
 
     <!-- Canonical + Open Graph / Twitter -->
     <link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Irish Laundry Systems">
     <meta property="og:locale" content="en_IE">
-    <meta property="og:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
-    <meta property="og:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    <meta property="og:title" content="{{ $seoTitle }}">
+    <meta property="og:description" content="{{ $seoDescription }}">
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:image" content="{{ url('/images/pages/home/HOMEHERO1.webp') }}">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="@yield('pageTitle', 'Irish Laundry Systems | Commercial Laundry Engineering Ireland')">
-    <meta name="twitter:description" content="@yield('metaDescription', 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.')">
+    <meta name="twitter:title" content="{{ $seoTitle }}">
+    <meta name="twitter:description" content="{{ $seoDescription }}">
     <meta name="twitter:image" content="{{ url('/images/pages/home/HOMEHERO1.webp') }}">
 
     <!-- Organization structured data (JSON-LD) -->
