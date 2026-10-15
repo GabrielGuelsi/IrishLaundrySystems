@@ -227,7 +227,7 @@
         <p class="font-body font-bold text-steel text-xs uppercase tracking-[0.22em] mb-3 reveal">
             Proactive Maintenance
         </p>
-        <div class="grid grid-cols-1 xl:grid-cols-[6fr_7fr] gap-12 xl:gap-8 items-center">
+        <div class="grid grid-cols-1 xl:grid-cols-[max-content_minmax(0,1fr)] [&_p]:text-pretty gap-12 xl:gap-8 items-center">
 
             {{-- Left column: heading --}}
             <div class="reveal">

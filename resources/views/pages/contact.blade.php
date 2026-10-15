@@ -112,10 +112,10 @@
 
 {{-- FULL-WIDTH What to include strip --}}
 <div class="bg-navy px-6 sm:px-10 lg:px-20 py-11 lg:py-12">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
+                <div class="grid grid-cols-1 xl:grid-cols-[26rem_minmax(0,1fr)] gap-8 xl:gap-10 items-center">
 
                     {{-- Left: heading --}}
-                    <div class="lg:col-span-3">
+                    <div>
                         <h2 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight text-balance mb-3">
                             What to <span class="text-[#148af4]">include</span>
                         </h2>
@@ -125,7 +125,7 @@
                     </div>
 
                     {{-- Right: 4 categories (no arrows) --}}
-                    <div class="lg:col-span-9 grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 lg:gap-6">
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-8 lg:gap-6">
 
                         {{-- 1. Site details --}}
                         <div class="text-center">

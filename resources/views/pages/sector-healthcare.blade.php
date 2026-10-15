@@ -41,7 +41,7 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Laundry Process</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 xl:grid-cols-[max-content_minmax(0,1fr)] [&_p]:text-pretty gap-8 xl:gap-8 items-center">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">

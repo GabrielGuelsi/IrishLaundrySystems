@@ -130,7 +130,7 @@
         <div class="mb-12 lg:mb-14 reveal max-w-6xl">
             <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Why the Partnership Matters</p>
             <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-5 min-[1440px]:whitespace-nowrap">
-                What the partnership brings to <span class="text-[#148af4]">your laundry operation</span>
+                What the partnership brings to <span class="text-[#148af4] lg:block min-[1440px]:inline">your laundry operation</span>
             </h2>
             <p class="font-body text-gray-500 text-base leading-relaxed text-pretty xl:whitespace-nowrap">
                 Access the Electrolux Professional range, product knowledge, genuine parts and local engineering through Irish Laundry Systems.

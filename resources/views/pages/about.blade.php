@@ -58,7 +58,7 @@
 <section class="bg-white py-20 lg:py-28">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Why Irish Laundry Systems</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-center">
+        <div class="grid grid-cols-1 xl:grid-cols-[max-content_minmax(0,1fr)] [&_p]:text-pretty gap-12 xl:gap-16 items-center">
 
             <div>
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">

@@ -15,7 +15,7 @@
         <div class="mobile-photo-hero__content w-full max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20 py-16 sm:py-24 lg:py-32">
             <div class="flex-1 reveal reveal-left max-w-5xl">
                 <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-4">Commercial &amp; Industrial Laundry</p>
-                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl leading-tight mb-6">
+                <h1 class="font-heading font-bold text-white text-2xl sm:text-4xl lg:text-5xl text-balance leading-tight mb-6">
                     <span class="sm:block">Commercial laundry equipment</span>
                     <span class="sm:block" style="color:#148af4;">for productivity and better cost control</span>
                 </h1>
@@ -43,7 +43,7 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-semibold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Commercial Laundry Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-8 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 xl:grid-cols-[max-content_minmax(0,1fr)] [&_p]:text-pretty gap-8 xl:gap-8 items-center">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
