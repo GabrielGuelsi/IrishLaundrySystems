@@ -433,11 +433,6 @@
 <div class="h-16 lg:h-24 bg-white"></div>
 
 {{-- ════════════════════════════════════════════════════════════════════════
-     ONE CONNECTED — universal strip
-     ════════════════════════════════════════════════════════════════════════ --}}
-@include('components.one-connected-strip', ['ctaLabel' => 'Ask About OnE Connected', 'ctaHref' => route('equipment.category', 'one-connected').'#one-connected-form'])
-
-{{-- ════════════════════════════════════════════════════════════════════════
      9 + 10. TESTIMONIAL / PROOF + TRUSTED BY LOGO STRIP
      ════════════════════════════════════════════════════════════════════════ --}}
 @include('components.testimonials', [
