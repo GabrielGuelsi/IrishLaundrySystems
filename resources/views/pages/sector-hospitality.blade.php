@@ -14,7 +14,7 @@
         <div class="mobile-photo-hero__content max-w-7xl 2xl:max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8 2xl:px-16 py-16 lg:py-32">
             <div class="max-w-6xl reveal reveal-left">
                 <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3">Hospitality Laundry</p>
-                <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight mb-4">
+                <h1 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl text-balance leading-tight mb-4">
                     <span class="sm:block">Commercial laundry equipment for hospitality</span>
                     <span class="sm:block" style="color:#148af4;">built around daily service demands</span>
                 </h1>
@@ -39,7 +39,7 @@
 <section class="py-20 lg:py-28 bg-white">
     <div class="max-w-screen-2xl mx-auto px-6 sm:px-10 lg:px-20">
         <p class="font-body font-bold text-[#148af4] text-xs uppercase tracking-[0.22em] mb-3 reveal reveal-left">Hospitality Planning</p>
-        <div class="grid grid-cols-1 lg:grid-cols-[6fr_5fr] gap-8 lg:gap-8 items-center">
+        <div class="grid grid-cols-1 xl:grid-cols-[max-content_minmax(0,1fr)] [&_p]:text-pretty gap-8 xl:gap-8 items-center">
 
             <div class="reveal reveal-left">
                 <h2 class="font-heading font-bold text-navy text-2xl sm:text-4xl lg:text-5xl leading-tight">
