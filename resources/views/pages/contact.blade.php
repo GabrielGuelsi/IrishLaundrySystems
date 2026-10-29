@@ -217,7 +217,7 @@
                             <address class="font-body text-gray-500 text-sm not-italic leading-relaxed">
                                 95 Ranelagh Village<br>
                                 Ranelagh<br>
-                                Dublin 6, D06 VTW5<br>
+                                Dublin 6, D06 V1W5<br>
                                 Dublin, Ireland
                             </address>
                         </div>
