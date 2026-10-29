@@ -58,7 +58,7 @@
                 '@type' => 'PostalAddress',
                 'streetAddress' => '95 Ranelagh Village, Ranelagh',
                 'addressLocality' => 'Dublin 6',
-                'postalCode' => 'D06 VTW5',
+                'postalCode' => 'D06 V1W5',
                 'addressRegion' => 'Dublin',
                 'addressCountry' => 'IE',
             ],
