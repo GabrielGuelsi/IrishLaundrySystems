@@ -44,7 +44,7 @@
                         <td class="text-muted small align-middle">{{ $item->sort_order }}</td>
                         <td class="align-middle">
                             @if ($item->image_path)
-                            <img src="{{ asset('storage/' . $item->image_path) }}"
+                            <img src="{{ $item->image_url }}"
                                  alt="{{ $item->name }}"
                                  class="rounded" style="width:48px;height:36px;object-fit:cover;">
                             @else
