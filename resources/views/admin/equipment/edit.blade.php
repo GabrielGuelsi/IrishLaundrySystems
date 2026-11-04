@@ -110,7 +110,7 @@
                 <div class="card-body">
                     @if ($equipment->image_path)
                     <div class="mb-2">
-                        <img src="{{ asset('storage/' . $equipment->image_path) }}"
+                        <img src="{{ $equipment->image_url }}"
                              alt="{{ $equipment->name }}"
                              class="img-fluid rounded" style="max-height:150px;">
                         <div class="form-text text-muted small mt-1">Current image. Upload a new one to replace it.</div>
