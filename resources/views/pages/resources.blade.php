@@ -66,8 +66,8 @@
             'label' => 'Featured Guide',
             'title' => 'Commercial Laundry Equipment Buying Guide',
             'desc'  => 'A practical guide to capacity, available space, installation requirements and key commercial considerations when choosing laundry equipment.',
-            'cta'   => 'Download the Guide',
-            'url'   => '/resources/commercial-laundry-equipment-buying-guide',
+            'cta'   => 'Coming soon',
+            'url'   => null, // guide not published yet: set the PDF path here when it exists
             'img'   => '/images/pages/about/Commercial Laundry Equipment Buying Guide.webp',
         ];
         $ilsSecondary = [
@@ -75,16 +75,16 @@
                 'label' => 'Buyer Guide',
                 'title' => 'Equipment Rental or Purchase Guide',
                 'desc'  => 'Compare the cost, ownership and maintenance considerations behind purchasing equipment or choosing Equipment Rental.',
-                'cta'   => 'Download the Guide',
-                'url'   => '/resources/equipment-rental-or-purchase-guide',
+                'cta'   => 'Coming soon',
+                'url'   => null, // guide not published yet: set the PDF path here when it exists
                 'img'   => '/images/pages/about/Buyer Guide Equipment Rental or Purchase Guide.webp',
             ],
             [
                 'label' => 'Maintenance Checklist',
                 'title' => 'Preventive Maintenance Checklist',
                 'desc'  => 'A practical checklist for planning servicing, monitoring equipment condition and reducing breakdown risk over time.',
-                'cta'   => 'Download the Checklist',
-                'url'   => '/resources/preventive-maintenance-checklist',
+                'cta'   => 'Coming soon',
+                'url'   => null, // guide not published yet: set the PDF path here when it exists
                 'img'   => '/images/pages/about/Preventive Maintenance Checklist.webp',
             ],
         ];
@@ -93,7 +93,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-6">
 
             {{-- Featured (spans both rows on desktop, first on mobile) --}}
-            <a href="{{ $ilsGuide['url'] }}"
+            <a @if($ilsGuide['url']) href="{{ $ilsGuide['url'] }}" @endif
                class="group lg:row-span-2 rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col reveal">
                 <div class="relative overflow-hidden" style="min-height:340px;">
                     <img src="{{ str_replace(' ', '%20', $ilsGuide['img']) }}" alt="{{ $ilsGuide['title'] }}" class="absolute inset-0 w-full h-full object-cover">
@@ -104,14 +104,14 @@
                     <p class="font-body text-gray-500 text-sm leading-relaxed mb-7 flex-1">{{ $ilsGuide['desc'] }}</p>
                     <span class="inline-flex items-center gap-2 bg-navy group-hover:bg-navy/90 text-white font-body font-bold text-sm px-6 py-3.5 rounded-lg transition-colors w-fit">
                         {{ $ilsGuide['cta'] }}
-                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        @if($ilsGuide['url'])<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>@endif
                     </span>
                 </div>
             </a>
 
             {{-- Two secondary cards --}}
             @foreach($ilsSecondary as $g)
-            <a href="{{ $g['url'] }}"
+            <a @if($g['url']) href="{{ $g['url'] }}" @endif
                class="group rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-lg transition-shadow duration-300 flex flex-col sm:flex-row reveal">
                 <div class="relative overflow-hidden sm:w-56 flex-shrink-0" style="min-height:200px;">
                     <img src="{{ str_replace(' ', '%20', $g['img']) }}" alt="{{ $g['title'] }}" class="absolute inset-0 w-full h-full object-cover">
@@ -122,7 +122,7 @@
                     <p class="font-body text-gray-500 text-sm leading-relaxed mb-4 flex-1">{{ $g['desc'] }}</p>
                     <span class="inline-flex items-center gap-1.5 font-body font-bold text-[#148af4] text-sm group-hover:underline">
                         {{ $g['cta'] }}
-                        <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                        @if($g['url'])<svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>@endif
                     </span>
                 </div>
             </a>
