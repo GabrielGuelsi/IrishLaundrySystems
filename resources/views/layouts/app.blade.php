@@ -17,6 +17,17 @@
         $seoDescription = $pageMetaDescription
             ?? (html_entity_decode(trim($__env->yieldContent('metaDescription')), ENT_QUOTES)
             ?: ($seoDescription ?? 'Irish Laundry Systems — specialist commercial laundry engineering since 1987. Service contracts, repairs, equipment and parts across the Republic of Ireland.'));
+
+        // The approved metadata pack (config/seo.php) wins over all of the above.
+        $seoOverride = config('seo.pages')['/'.ltrim(request()->path(), '/')] ?? null;
+        if ($seoOverride) {
+            $seoTitle = $seoOverride['title'] ?? $seoTitle;
+            if (isset($seoOverride['description'])) {
+                $seoDescription = $seoOverride['description'];
+                $metaBlock = preg_replace('/\s*<meta\s+name="description"[^>]*>/i', '', $metaBlock);
+                $pageMetaDescription = null;
+            }
+        }
     @endphp
     {!! $metaBlock !!}
     <title>{{ $seoTitle }}</title>
