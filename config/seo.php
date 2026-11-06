@@ -132,6 +132,312 @@ return [
             'description' => 'Explore detergents and consumables for commercial laundry operations. Contact Irish Laundry Systems for information about suitable supply options.',
         ],
 
+        // Product & range pages (Annex B, approved by ILS 06 Nov 2026)
+        '/equipment/barrier-washers/wb6' => [
+            'title' => 'WB6 Barrier Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional WB6 barrier washer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/barrier-washers/wb6-13' => [
+            'title' => 'WB6-13 Barrier Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional WB6-13 barrier washer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/barrier-washers/wb6-20' => [
+            'title' => 'WB6-20 Barrier Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional WB6-20 barrier washer. Review technical information and request equipment advice from Irish Laundry Systems.',
+        ],
+        '/equipment/barrier-washers/wb6-35' => [
+            'title' => 'WB6-35 Barrier Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional WB6-35 barrier washer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/barrier-washers/wb6-110' => [
+            'title' => 'WB6-110 Barrier Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional WB6-110 barrier washer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/ws6' => [
+            'title' => 'WS6 Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional WS6 commercial washers. See technical information and request equipment guidance or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/wn6' => [
+            'title' => 'WN6 Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional WN6 commercial washers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/wh6-cv' => [
+            'title' => 'WH6-CV Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional WH6-CV commercial washers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/wh6-lac' => [
+            'title' => 'WH6-LAC Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional WH6-LAC commercial washers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/wh6-lag' => [
+            'title' => 'WH6-LAG Commercial Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional WH6-LAG commercial washer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/w4-series' => [
+            'title' => 'W4-Series Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional W4-Series commercial washers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/quickwash-qwc' => [
+            'title' => 'Quickwash QWC Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional Quickwash QWC commercial washers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/commercial-washers/pw9c' => [
+            'title' => 'PW9C Commercial Washers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional PW9C commercial washers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/standard-drying-cabinets' => [
+            'title' => 'Standard Drying Cabinets | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional standard drying cabinets. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/dc6-4' => [
+            'title' => 'DC6-4 Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional DC6-4 drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/dc6-8' => [
+            'title' => 'DC6-8 Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional DC6-8 drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/dc6-14' => [
+            'title' => 'DC6-14 Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional DC6-14 drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/heat-pump-drying-cabinets' => [
+            'title' => 'Heat Pump Drying Cabinets | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional heat pump drying cabinets. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/dc6-14hp' => [
+            'title' => 'DC6-14HP Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional DC6-14HP drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/dc7-4hp' => [
+            'title' => 'DC7-4HP Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional DC7-4HP drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/dc7-4hph' => [
+            'title' => 'DC7-4HPh Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional DC7-4HPh drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/1lzs03' => [
+            'title' => '1LZS03 Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional 1LZS03 drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/drying-cabinets/workwear-drying-cabinet' => [
+            'title' => 'Workwear Drying Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional workwear drying cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/traditional-form-finishers' => [
+            'title' => 'Traditional Form Finishers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional traditional form finishers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/multi-form-finishers' => [
+            'title' => 'Multi-Form Finishers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional multi-form finishers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/tensioning-form-finishers' => [
+            'title' => 'Tensioning Form Finishers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional tensioning form finishers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/shirt-finisher' => [
+            'title' => 'Shirt Finisher | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional shirt finisher. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/vacuum-ironing-tables' => [
+            'title' => 'Vacuum Ironing Tables | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional vacuum ironing tables. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/wet-cleaning-ironing-tables' => [
+            'title' => 'Wet Cleaning Ironing Tables | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional wet cleaning ironing tables. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/vac-blow-steaming-ironing-tables' => [
+            'title' => 'Vac / Blow / Steaming Ironing Tables | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional vac / blow / steaming ironing tables. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/rectangular-vacuum-ironing-tables' => [
+            'title' => 'Rectangular Vacuum Ironing Tables | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional rectangular vacuum ironing tables. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/vacuum-blowing-ironing-tables' => [
+            'title' => 'Vacuum / Blowing Ironing Tables | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional vacuum / blowing ironing tables. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/dry-work-presses-air-operated' => [
+            'title' => 'Dry Work Presses · Air Operated | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional dry work presses · air operated. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/dry-work-presses-manually-operated' => [
+            'title' => 'Dry Work Presses · Manually Operated | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional dry work presses · manually operated. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/laundry-presses-air-operated' => [
+            'title' => 'Laundry Presses · Air Operated | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional laundry presses · air operated. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/laundry-presses-manually-operated' => [
+            'title' => 'Laundry Presses · Manually Operated | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional laundry presses · manually operated. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/finishing-cabinets' => [
+            'title' => 'Finishing Cabinets | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional finishing cabinets. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/rotary-finishing-cabinets' => [
+            'title' => 'Rotary Finishing Cabinets | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional rotary finishing cabinets. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/spotting-tables' => [
+            'title' => 'Spotting Tables | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional spotting tables. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/spotting-cabinet' => [
+            'title' => 'Spotting Cabinet | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional spotting cabinet. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/steam-boilers' => [
+            'title' => 'Steam Boilers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional steam boilers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/trouser-topper' => [
+            'title' => 'Trouser Topper | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional trouser topper. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/finishing-equipment/trouser-topper-creased-trousers' => [
+            'title' => 'Trouser Topper · Creased Trousers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional trouser topper · creased trousers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/ironers/line-6000-flatwork' => [
+            'title' => 'Line 6000 Flatwork Ironers | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Line 6000 Flatwork Ironers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/ironers/cylinder-480mm' => [
+            'title' => 'Ø 480 mm Cylinder Ironers | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Ø 480 mm Cylinder Ironers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/ironers/cylinder-330mm' => [
+            'title' => 'Ø 330 mm Cylinder Ironers | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Ø 330 mm Cylinder Ironers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/ironers/bed-230mm' => [
+            'title' => 'Ø 230 mm Bed-type Ironers | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Ø 230 mm Bed-type Ironers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/mypro-washer' => [
+            'title' => 'myPRO Washer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Washer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/mypro-dryer' => [
+            'title' => 'myPRO Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/mypro-xl' => [
+            'title' => 'myPRO XL | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO XL. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/myprozip' => [
+            'title' => 'myPROzip | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPROzip. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/mypro-finishing' => [
+            'title' => 'myPRO Ironers / Light Finishing | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Ironers / Light Finishing. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/we170p' => [
+            'title' => 'myPRO Edge Washer WE170P | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Edge Washer WE170P. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/we170v' => [
+            'title' => 'myPRO Edge Washer WE170V | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Edge Washer WE170V. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/we2-9' => [
+            'title' => 'myPRO Edge Washer WE2-9 | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Edge Washer WE2-9. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/te1120' => [
+            'title' => 'Condense Dryer TE1120 | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Condense Dryer TE1120. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/te1120hp' => [
+            'title' => 'Heat Pump Dryer TE1120HP | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Heat Pump Dryer TE1120HP. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/td2-8' => [
+            'title' => 'Condense Dryer TD2-8 | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Condense Dryer TD2-8. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/td2-9hp' => [
+            'title' => 'Heat Pump Dryer TD2-9HP | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Heat Pump Dryer TD2-9HP. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/is1103' => [
+            'title' => 'myPRO Steam Ironer IS1103 | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Steam Ironer IS1103. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/semi-professional/is185' => [
+            'title' => 'myPRO Steam Ironer IS185 | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional myPRO Steam Ironer IS185. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6' => [
+            'title' => 'TD6 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6 commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-6' => [
+            'title' => 'TD6-6 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6-6 commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-11' => [
+            'title' => 'TD6-11 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6-11 commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-14' => [
+            'title' => 'TD6-14 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6-14 commercial tumble dryer. Review equipment information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-16' => [
+            'title' => 'TD6-16 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6-16 commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-30' => [
+            'title' => 'TD6-30 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6-30 commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-45' => [
+            'title' => 'TD6-45 Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional TD6-45 commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-45sld' => [
+            'title' => 'TD6-45SLD Commercial Tumble Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional TD6-45SLD commercial tumble dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/heat-pump' => [
+            'title' => 'Line 6000 Heat Pump Dryer Variants | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional Line 6000 Heat Pump Dryer Variants. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/stacked-dryers' => [
+            'title' => 'Line 6000 Stacked Dryer Variants | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional Line 6000 Stacked Dryer Variants. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/td6-lac' => [
+            'title' => 'TD6-LAC Commercial Tumble Dryers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional TD6-LAC commercial tumble dryers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/quickdry-condense' => [
+            'title' => 'Quickdry Condense | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional quickdry condense. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/pd9c' => [
+            'title' => 'PD9C Compact Dryer | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional PD9C Compact Dryer. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/tumble-dryers/t-series' => [
+            'title' => 'T-Series Tumble Dryers | Electrolux Professional | ILS',
+            'description' => 'Explore Electrolux Professional T-Series Tumble Dryers. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+        '/equipment/wet-cleaning/lagoon-advanced-care' => [
+            'title' => 'Lagoon Advanced Care | Electrolux Professional | ILS',
+            'description' => 'Explore the Electrolux Professional Lagoon Advanced Care. Review technical information and request advice or a quotation from Irish Laundry Systems.',
+        ],
+
     ],
 
 ];
