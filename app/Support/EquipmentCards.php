@@ -272,6 +272,8 @@ class EquipmentCards
         $match = array_values(array_filter($cards, fn ($c) => $c['slug'] === $slug));
 
         return [
+            'slug'  => $slug,
+            'order' => array_search($slug, array_column($cards, 'slug'), true),
             'card'  => $match[0]['name'],
             'range' => implode(' / ', array_unique(array_column($match, 'range'))),
             'tags'  => array_values(array_unique(array_merge(...array_column($match, 'tags')))),
@@ -301,6 +303,11 @@ class EquipmentCards
     /** Every category page's cards in one shape: slug, name, range, tags, kg. */
     private static function normalisedCards(string $category): array
     {
+        static $cache = [];
+        if (isset($cache[$category])) {
+            return $cache[$category];
+        }
+
         $rows = match ($category) {
             'commercial-washers'  => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], self::kgFrom($c['topLine'])], self::washerFamilies()),
             'tumble-dryers'       => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], self::kgFrom($c['topLine'])], self::dryerFamilies()),
@@ -315,6 +322,6 @@ class EquipmentCards
             default => [],
         };
 
-        return array_map(fn ($r) => array_combine(['slug', 'name', 'range', 'tags', 'kg'], $r), $rows);
+        return $cache[$category] = array_map(fn ($r) => array_combine(['slug', 'name', 'range', 'tags', 'kg'], $r), $rows);
     }
 }

@@ -144,7 +144,7 @@
                             @endforelse
                         </div>
                     @else
-                        <span class="text-muted">This product has no card of its own on the category page.</span>
+                        <span class="text-muted">Not in the category page's product list (no card of its own).</span>
                     @endif
                     <div class="form-text text-muted small mt-2">Read-only — range and tags are set in the site code.</div>
                 </div>

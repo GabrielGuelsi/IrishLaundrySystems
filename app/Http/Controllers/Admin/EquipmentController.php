@@ -15,7 +15,44 @@ class EquipmentController extends Controller
     {
         $equipment = Equipment::orderBy('sort_order')->orderBy('name')->get();
 
-        return view('admin.equipment.index', compact('equipment'));
+        // Same structure as the public category pages: one group per category, one row per
+        // card, the sizes listed inside that card under it, then products with no card.
+        $groups = [];
+        $categories = Equipment::CATEGORIES + $equipment->pluck('category', 'category')->all();
+
+        foreach ($categories as $category => $label) {
+            $families = [];
+            $noCard = [];
+
+            foreach ($equipment->where('category', $category) as $item) {
+                $card = $item->site_card;
+                if (! $card) {
+                    $noCard[] = $item;
+                    continue;
+                }
+                $families[$card['slug']] ??= ['card' => $card, 'main' => null, 'sizes' => []];
+                if ($card['own'] && ! $families[$card['slug']]['main']) {
+                    $families[$card['slug']]['main'] = $item;
+                } else {
+                    $families[$card['slug']]['sizes'][] = $item;
+                }
+            }
+
+            if (! $families && ! $noCard) {
+                continue;
+            }
+
+            uasort($families, fn ($a, $b) => $a['card']['order'] <=> $b['card']['order']);
+            foreach ($families as &$family) {
+                usort($family['sizes'], fn ($a, $b) => strnatcmp($a->slug, $b->slug));
+            }
+            unset($family);
+            usort($noCard, fn ($a, $b) => strnatcmp($a->slug, $b->slug));
+
+            $groups[] = ['label' => $label, 'families' => $families, 'noCard' => $noCard];
+        }
+
+        return view('admin.equipment.index', compact('equipment', 'groups'));
     }
 
     public function create()
