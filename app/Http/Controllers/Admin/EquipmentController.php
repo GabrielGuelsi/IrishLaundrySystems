@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Equipment;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -26,7 +27,7 @@ class EquipmentController extends Controller
     {
         $validated = $request->validate([
             'name'       => 'required|string|max:255',
-            'category'   => 'required|in:washers,tumble-dryers,barrier-washers,drying-cabinets,ironers',
+            'category'   => ['required', Rule::in(array_keys(Equipment::CATEGORIES))],
             'capacity'   => 'nullable|string|max:100',
             'summary'    => 'nullable|string',
             'sectors'    => 'nullable|array',
@@ -68,7 +69,7 @@ class EquipmentController extends Controller
     {
         $validated = $request->validate([
             'name'       => 'required|string|max:255',
-            'category'   => 'required|in:washers,tumble-dryers,barrier-washers,drying-cabinets,ironers',
+            'category'   => ['required', Rule::in(array_keys(Equipment::CATEGORIES))],
             'capacity'   => 'nullable|string|max:100',
             'summary'    => 'nullable|string',
             'sectors'    => 'nullable|array',

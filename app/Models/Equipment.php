@@ -8,6 +8,19 @@ use Illuminate\Support\Str;
 
 class Equipment extends Model
 {
+    /** The equipment categories the public site serves (slug => label), in site order. */
+    public const CATEGORIES = [
+        'commercial-washers'  => 'Commercial Washers',
+        'tumble-dryers'       => 'Tumble Dryers',
+        'ironers'             => 'Ironers',
+        'finishing-equipment' => 'Finishing Equipment',
+        'drying-cabinets'     => 'Drying Cabinets',
+        'barrier-washers'     => 'Barrier Washers',
+        'semi-professional'   => 'Semi-Professional',
+        'wet-cleaning'        => 'Wet Cleaning',
+        'accessories'         => 'Accessories',
+    ];
+
     protected $fillable = [
         'name',
         'slug',
@@ -35,6 +48,12 @@ class Equipment extends Model
                 $equipment->slug = Str::slug($equipment->name);
             }
         });
+    }
+
+    /** The card this product appears in on its category page (read-only Range / Tags for the admin). */
+    public function getSiteCardAttribute(): ?array
+    {
+        return \App\Support\EquipmentCards::siteCard((string) $this->category, (string) $this->slug);
     }
 
     /**

@@ -348,17 +348,9 @@
             // Barrier washer catalogue. NOTE: WB6 is the current real range; append further
             // products (Pullman, Cleanroom options, etc.) here when supplied — the filters auto-populate.
             // One card per WB6 model (same product across kg shares one image).
-            $bwSites  = ['Healthcare','Care Facilities','Pharmaceutical','Food Processing','Commercial Laundry'];
-            $bwBadges = ['ERGOCERT','Hygiene Watchdog','AIDO','Power Balance'];
-            $bwFit    = 'Line 6000 Evolution barrier washer with clean/dirty separation, guided operation and long-term support.';
             $bwImg    = '/images/pages/barrier-washers/line6000-barrier-washer.webp';
             // Cards for models with their own photo; imageless sizes folded into the nearest card's range.
-            $barrierFamilies = [
-                ['name' => 'WB6-13',  'slug' => 'wb6-13',  'profile' => 'Line 6000 Evolution', 'capLabel' => '13–18 kg',  'kg' => ['13','18'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-13.jpg'],
-                ['name' => 'WB6-20',  'slug' => 'wb6-20',  'profile' => 'Line 6000 Evolution', 'capLabel' => '20–27 kg',  'kg' => ['20','27'],      'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-20.jpg'],
-                ['name' => 'WB6-35',  'slug' => 'wb6-35',  'profile' => 'Line 6000 Evolution', 'capLabel' => '35–70 kg',  'kg' => ['35','50','70'], 'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-35.jpg'],
-                ['name' => 'WB6-110', 'slug' => 'wb6-110', 'profile' => 'Line 6000 Evolution', 'capLabel' => '90–110 kg', 'kg' => ['90','110'],     'sites' => $bwSites, 'badges' => $bwBadges, 'fit' => $bwFit, 'img' => '/images/pages/barrier-washers/WB6-110.jpg'],
-            ];
+            $barrierFamilies = \App\Support\EquipmentCards::barrierFamilies();
             $profileOpts = []; $capOpts = []; $siteOpts = [];
             foreach($barrierFamilies as $f) {
                 $profileOpts[$f['profile']] = ($profileOpts[$f['profile']] ?? 0) + 1;

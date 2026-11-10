@@ -329,55 +329,7 @@
 
         @php
             $route = fn($slug) => route('equipment.product', ['category' => 'semi-professional', 'product' => $slug]);
-            $myproModels = [
-                ['group' => 'myPRO Edge Washers', 'line' => 'myPRO Edge', 'type' => 'Washer',
-                 'name' => 'WE170P', 'topLine' => 'myPRO Edge Washer', 'slug' => 'we170p',
-                 'fit' => 'Semi-professional washer for small sites moving beyond domestic appliances.',
-                 'badges' => ['Semi-professional', 'Daily use', 'Small sites'],
-                 'img' => '/images/pages/semi-professional/myPRO%20Edge%20-%20WashersWE170P.jpg'],
-                ['group' => 'myPRO Edge Washers', 'line' => 'myPRO Edge', 'type' => 'Washer',
-                 'name' => 'WE170V', 'topLine' => 'myPRO Edge Washer', 'slug' => 'we170v',
-                 'fit' => 'myPRO Edge washer variant for everyday commercial washing.',
-                 'badges' => ['Semi-professional', 'Daily use', 'Small sites'],
-                 'img' => '/images/pages/semi-professional/myPRO%20Edge%20-%20WashersWE170V.jpg'],
-                ['group' => 'myPRO Edge Washers', 'line' => 'myPRO Edge', 'type' => 'Washer',
-                 'name' => 'WE2-9', 'topLine' => 'myPRO Edge Washer', 'slug' => 'we2-9',
-                 'fit' => 'Larger myPRO Edge washer for sites handling heavier daily volumes.',
-                 'badges' => ['Semi-professional', 'Heavier loads', 'Busier sites'],
-                 'img' => '/images/pages/semi-professional/myPRO%20Edge%20-%20Washers%20we2-9.jpg'],
-
-                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Condense Dryer',
-                 'name' => 'TE1120', 'topLine' => 'Condense Dryer', 'slug' => 'te1120',
-                 'fit' => 'Condense dryer that pairs with myPRO Edge washers where venting is not possible.',
-                 'badges' => ['No venting needed', 'Pairs with washers'],
-                 'img' => '/images/pages/semi-professional/Condense%20dryerte1120.jpg'],
-                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Heat Pump Dryer',
-                 'name' => 'TE1120HP', 'topLine' => 'Heat Pump Dryer', 'slug' => 'te1120hp',
-                 'fit' => 'Heat pump dryer for lower energy use across regular drying cycles.',
-                 'badges' => ['Lower energy use', 'Heat pump'],
-                 'img' => '/images/pages/semi-professional/Heat%20pump%20dryersTE1120HP.jpg'],
-                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Condense Dryer',
-                 'name' => 'TD2-8', 'topLine' => 'Condense Dryer', 'slug' => 'td2-8',
-                 'fit' => 'Compact condense dryer for smaller laundry rooms without external venting.',
-                 'badges' => ['No venting needed', 'Compact'],
-                 'img' => '/images/pages/semi-professional/Condense%20dryertd2-8.jpg'],
-                ['group' => 'myPRO Edge Dryers', 'line' => 'myPRO Edge', 'type' => 'Heat Pump Dryer',
-                 'name' => 'TD2-9HP', 'topLine' => 'Heat Pump Dryer', 'slug' => 'td2-9hp',
-                 'fit' => 'Heat pump dryer for sites prioritising running costs and gentler drying.',
-                 'badges' => ['Lower energy use', 'Heat pump', 'Gentler drying'],
-                 'img' => '/images/pages/semi-professional/Heat%20pump%20dryers%20TD2-9HP.jpg'],
-
-                ['group' => 'Ironing & Light Finishing', 'line' => 'myPRO', 'type' => 'Steam Ironer',
-                 'name' => 'IS1103', 'topLine' => 'myPRO Steam Ironer', 'slug' => 'is1103',
-                 'fit' => 'A myPRO steam ironer for practical garment and flatwork finishing.',
-                 'badges' => ['Light ironing', 'Practical finishing'],
-                 'img' => '/images/pages/semi-professional/IS1103.jpg'],
-                ['group' => 'Ironing & Light Finishing', 'line' => 'myPRO', 'type' => 'Steam Ironer',
-                 'name' => 'IS185', 'topLine' => 'myPRO Steam Ironer', 'slug' => 'is185',
-                 'fit' => 'A foldable myPRO steam ironer for a more consistent finish than hand ironing.',
-                 'badges' => ['Light finishing', 'Foldable format'],
-                 'img' => '/images/pages/semi-professional/myPRO%20-%20IronersIS185.jpg'],
-            ];
+            $myproModels = \App\Support\EquipmentCards::myproModels();
 
             $groupOrder = ['myPRO Edge Washers', 'myPRO Edge Dryers', 'Ironing & Light Finishing'];
             $lineOrder  = ['myPRO Edge', 'myPRO'];

@@ -42,7 +42,7 @@
                             <label class="form-label fw-semibold small">Category <span class="text-danger">*</span></label>
                             <select name="category" required
                                     class="form-select @error('category') is-invalid @enderror">
-                                @foreach (['washers' => 'Washers', 'tumble-dryers' => 'Tumble Dryers', 'ironers' => 'Ironers'] as $val => $label)
+                                @foreach (\App\Models\Equipment::CATEGORIES as $val => $label)
                                 <option value="{{ $val }}" {{ old('category', $equipment->category) === $val ? 'selected' : '' }}>{{ $label }}</option>
                                 @endforeach
                             </select>
@@ -123,6 +123,30 @@
                     <div id="image-preview" class="mt-2 d-none">
                         <img id="image-preview-img" src="" alt="Preview" class="img-fluid rounded" style="max-height:150px;">
                     </div>
+                </div>
+            </div>
+
+            @php $card = $equipment->site_card; @endphp
+            <div class="card shadow-sm mb-4">
+                <div class="card-header fw-semibold">On the category page</div>
+                <div class="card-body small">
+                    @if ($card)
+                        <div class="text-muted">Card</div>
+                        <div class="fw-semibold mb-2">{{ $card['card'] }}@unless ($card['own']) <span class="fw-normal text-muted">(this size is listed inside it)</span>@endunless</div>
+                        <div class="text-muted">Range</div>
+                        <div class="fw-semibold mb-2">{{ $card['range'] }}</div>
+                        <div class="text-muted mb-1">Tags</div>
+                        <div>
+                            @forelse ($card['tags'] as $tag)
+                            <span class="badge rounded-pill text-bg-light border fw-normal">{{ $tag }}</span>
+                            @empty
+                            <span class="text-muted">—</span>
+                            @endforelse
+                        </div>
+                    @else
+                        <span class="text-muted">This product has no card of its own on the category page.</span>
+                    @endif
+                    <div class="form-text text-muted small mt-2">Read-only — range and tags are set in the site code.</div>
                 </div>
             </div>
 

@@ -33,6 +33,8 @@
                         <th style="width:60px">Image</th>
                         <th>Name</th>
                         <th>Category</th>
+                        <th>Range <span class="fw-normal text-muted small">(on site)</span></th>
+                        <th>Tags <span class="fw-normal text-muted small">(on site)</span></th>
                         <th>Capacity</th>
                         <th>Status</th>
                         <th class="text-end">Actions</th>
@@ -59,7 +61,23 @@
                             <div class="text-muted small font-monospace">{{ $item->slug }}</div>
                         </td>
                         <td class="align-middle">
-                            <span class="badge bg-secondary">{{ $item->category }}</span>
+                            <span class="badge bg-secondary">{{ \App\Models\Equipment::CATEGORIES[$item->category] ?? $item->category }}</span>
+                        </td>
+                        @php $card = $item->site_card; @endphp
+                        <td class="align-middle small">
+                            @if ($card)
+                                {{ $card['range'] }}
+                                @unless ($card['own'])
+                                <div class="text-muted" style="font-size:.75rem">Listed inside the {{ $card['card'] }} card</div>
+                                @endunless
+                            @else
+                                <span class="text-muted">No card on the category page</span>
+                            @endif
+                        </td>
+                        <td class="align-middle" style="max-width:260px">
+                            @foreach ($card['tags'] ?? [] as $tag)
+                            <span class="badge rounded-pill text-bg-light border fw-normal">{{ $tag }}</span>
+                            @endforeach
                         </td>
                         <td class="align-middle small text-muted">{{ $item->capacity ?? '—' }}</td>
                         <td class="align-middle">
