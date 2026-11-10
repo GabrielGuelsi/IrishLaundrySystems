@@ -261,17 +261,7 @@
         {{-- Drying cabinet families — one card/image per range, filterable by type and line (like the washers page) --}}
         @php
             // One card per model; same product across kg shares one image.
-            $cabinetFamilies = [
-                ['name' => 'DC6-4',    'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-4',   'type' => 'Standard',  'fit' => 'Single-door drying cabinet, 600 mm wide.',  'img' => '/images/pages/drying-cabinets/Standard%20Drying%20Cabinets.jpg'],
-                ['name' => 'DC6-8',    'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-8',   'type' => 'Standard',  'fit' => 'Two-door drying cabinet, 1200 mm wide.',    'img' => '/images/pages/drying-cabinets/Standard%20Drying%20CabinetsDC6-8.jpg'],
-                ['name' => 'DC6-14',   'cat' => 'Standard Drying Cabinets',    'slug' => 'dc6-14',  'type' => 'Standard',  'fit' => 'Two-door drying cabinet, 1800 mm wide.',    'img' => '/images/pages/drying-cabinets/standard-dc6-14.jpg'],
-                ['name' => 'DC6-15WW', 'cat' => 'Standard Drying Cabinets',    'slug' => 'workwear-drying-cabinet',  'type' => 'Standard',  'fit' => 'Drying cabinet for workwear, work suits, shoes, gloves and flat drying.', 'img' => '/images/pages/drying-cabinets/workwear-dc6-15ww.jpg'],
-                ['name' => 'DC7-4HP',  'cat' => 'Drying Cabinets – Heat Pump', 'slug' => 'dc7-4hp', 'type' => 'Heat Pump', 'fit' => 'Single-door heat pump drying cabinet, 600 mm wide.', 'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pumpdc7-4hp.jpg'],
-                ['name' => 'DC7-4HPh', 'cat' => 'Drying Cabinets – Heat Pump', 'slug' => 'dc7-4hph','type' => 'Heat Pump', 'fit' => 'Single-door heat pump drying cabinet, 600 mm wide, with condensate tank.', 'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20PumpDC7-4HPH.jpg'],
-                ['name' => 'DC7-8HP',  'cat' => 'Drying Cabinets – Heat Pump', 'slug' => 'dc7-8hp', 'type' => 'Heat Pump', 'fit' => 'Two-door heat pump drying cabinet, 1200 mm wide.', 'img' => '/images/pages/drying-cabinets/heatpump-dc7-10hp.jpg'],
-                ['name' => 'DC7-10HP', 'cat' => 'Drying Cabinets – Heat Pump', 'slug' => 'dc7-10hp','type' => 'Heat Pump', 'fit' => 'Two-door heat pump drying cabinet, 1395 mm wide.', 'img' => '/images/pages/drying-cabinets/heatpump-dc7-10hp.jpg'],
-                ['name' => 'DC6-14HP', 'cat' => 'Drying Cabinets – Heat Pump', 'slug' => 'dc6-14hp','type' => 'Heat Pump', 'fit' => 'Two-door heat pump drying cabinet, 1800 mm wide.', 'img' => '/images/pages/drying-cabinets/Drying%20Cabinets%20-%20Heat%20Pumpdc6-14hp.jpg'],
-            ];
+            $cabinetFamilies = \App\Support\EquipmentCards::cabinetFamilies();
         @endphp
 
         @php

@@ -321,47 +321,7 @@
 
         {{-- Ironer configurations — 8 buyer-facing cards; Ø480 cards list their available widths inside the card --}}
         @php
-            $ironerCards = [
-                ['cyl' => 'Ø330 mm', 'delivery' => null, 'auto' => null,
-                 'name' => 'Ø330 mm Cylinder Ironers', 'slug' => 'cylinder-330mm', 'img' => '/images/pages/ironers/cylinder-330-ic633.jpg',
-                 'fit' => 'Mid-size cylinder ironers for steady on-premise finishing.',
-                 'widths' => [['w' => '1600 mm', 'm' => 'IC63316'], ['w' => '2000 mm', 'm' => 'IC63320']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Front Delivery', 'auto' => 'No Automation',
-                 'name' => 'Ø480 Front Delivery — No Automation', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Front-delivery ironing without automation, returned to the front of the machine.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IC64821'], ['w' => '2500 mm', 'm' => 'IC64825'], ['w' => '3200 mm', 'm' => 'IC64832']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Front Delivery', 'auto' => 'Length Folding',
-                 'name' => 'Ø480 Front Delivery — Length Folding', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Front delivery with length folding for finished, folded flatwork.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IC64821LF'], ['w' => '2500 mm', 'm' => 'IC64825LF'], ['w' => '3200 mm', 'm' => 'IC64832LF']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Front Delivery', 'auto' => 'Feeding & Length Folding',
-                 'name' => 'Ø480 Front Delivery — Feeding & Length Folding', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Front delivery with feeding and length folding to reduce handling.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IC64821FLF'], ['w' => '2500 mm', 'm' => 'IC64825FLF'], ['w' => '3200 mm', 'm' => 'IC64832FLF']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Front Delivery', 'auto' => 'Feeding, Folding & Stacking',
-                 'name' => 'Ø480 Front Delivery — Feeding, Folding & Stacking', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Front delivery with feeding, folding and stacking for high-volume output.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IV64821FFS'], ['w' => '2500 mm', 'm' => 'IV64825FFS'], ['w' => '3200 mm', 'm' => 'IV64832FFS']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Rear Delivery', 'auto' => 'No Automation',
-                 'name' => 'Ø480 Rear Delivery — No Automation', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Rear-delivery ironing without automation, separating loading and collection.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IC64821R'], ['w' => '2500 mm', 'm' => 'IC64825R'], ['w' => '3200 mm', 'm' => 'IC64832R']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Rear Delivery', 'auto' => 'Length Folding',
-                 'name' => 'Ø480 Rear Delivery — Length Folding', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Rear delivery with length folding for finished, folded flatwork.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IC64821RLF'], ['w' => '2500 mm', 'm' => 'IC64825RLF'], ['w' => '3200 mm', 'm' => 'IC64832RLF']]],
-
-                ['cyl' => 'Ø480 mm', 'delivery' => 'Rear Delivery', 'auto' => 'Length Folding & Integrated Feeder',
-                 'name' => 'Ø480 Rear Delivery — Length Folding & Integrated Feeder', 'slug' => 'cylinder-480mm', 'img' => '/images/pages/ironers/cylinder-480-ic648.jpg',
-                 'fit' => 'Rear delivery with length folding and an integrated feeder for higher output.',
-                 'widths' => [['w' => '2100 mm', 'm' => 'IC64821FRL'], ['w' => '2500 mm', 'm' => 'IC64825FRL'], ['w' => '3200 mm', 'm' => 'IC64832FRL']]],
-            ];
+            $ironerCards = \App\Support\EquipmentCards::ironerCards();
 
             // facet option lists (fixed order) + counts derived from the cards
             $cylOrder = ['Ø330 mm', 'Ø480 mm'];

@@ -273,41 +273,7 @@
                 return null;
             };
             // One card per TYPE; size/version variants are listed as the type's models.
-            $finishingGroups = [
-                ['group' => 'Form & Shirt Finishers', 'items' => [
-                    ['cat' => 'Traditional Form Finishers', 'models' => ['FF1', 'FF2', 'FF3']],
-                    ['cat' => 'Multi-Form Finishers',       'models' => ['FFM1', 'FFM2']],
-                    ['cat' => 'Tensioning Form Finishers',  'models' => ['FFT6-WC']],
-                ]],
-                ['group' => 'Ironing Tables', 'items' => [
-                    ['cat' => 'Vacuum Ironing Tables',                'models' => ['FIT1', 'FIT2A', 'FIT2B', 'FIT3A', 'FIT3B']],
-                    ['cat' => 'Wet Cleaning Ironing Tables',          'models' => ['FIT1-WC', 'FIT2-WC']],
-                    ['cat' => 'Vac / Blow / Steaming Ironing Tables', 'models' => ['FIT4A', 'FIT4B']],
-                    ['cat' => 'Rectangular Vacuum Ironing Tables',    'models' => ['FIT5A', 'FIT5B']],
-                    ['cat' => 'Vacuum / Blowing Ironing Tables',      'models' => ['FIT6A', 'FIT6B', 'FIT7']],
-                ]],
-                ['group' => 'Presses', 'items' => [
-                    ['cat' => 'Dry Work Presses · Air Operated',      'models' => ['FPA1-D', 'FPA2-D', 'FPA3-D', 'FPA4-D']],
-                    ['cat' => 'Dry Work Presses · Manually Operated', 'models' => ['FPM1-D', 'FPM2-D', 'FPM3-D', 'FPM4-D']],
-                    ['cat' => 'Laundry Presses · Air Operated',       'models' => ['FPA1-WC', 'FPA2-WC', 'FPA3-WC', 'FPA4-WC', 'FPA5-WC', 'FPA6-WC']],
-                    ['cat' => 'Laundry Presses · Manually Operated',  'models' => ['FPM-WC']],
-                ]],
-                ['group' => 'Finishing Cabinets', 'items' => [
-                    ['cat' => 'Finishing Cabinets',        'models' => ['FC48']],
-                    ['cat' => 'Rotary Finishing Cabinets', 'models' => ['FRC1', 'FRC2', 'FRC3']],
-                ]],
-                ['group' => 'Spotting Tables & Cabinets', 'items' => [
-                    ['cat' => 'Spotting Tables',  'models' => ['FSU1', 'FSU2', 'FSU3', 'FSU7']],
-                    ['cat' => 'Spotting Cabinet', 'models' => ['FSU4']],
-                ]],
-                ['group' => 'Steam Boilers', 'items' => [
-                    ['cat' => 'Steam Boilers', 'models' => ['FSB3.3', 'FSB18C', 'FSB24C']],
-                ]],
-                ['group' => 'Trouser Toppers', 'items' => [
-                    ['cat' => 'Trouser Topper',                    'models' => ['FTT1']],
-                    ['cat' => 'Trouser Topper · Creased Trousers', 'models' => ['FTT2']],
-                ]],
-            ];
+            $finishingGroups = \App\Support\EquipmentCards::finishingGroups();
 
             // Short, factual description shared by every model in a category.
             $finCatDesc = [

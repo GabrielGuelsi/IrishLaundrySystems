@@ -4,7 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Equipment;
+use App\Support\EquipmentCards;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
@@ -14,7 +16,53 @@ class EquipmentController extends Controller
     {
         $equipment = Equipment::orderBy('sort_order')->orderBy('name')->get();
 
-        return view('admin.equipment.index', compact('equipment'));
+        // Identical to the public category pages: one group per category, every card of the
+        // page's product list in page order, the sizes listed inside a card nested under it,
+        // then the products that have no card.
+        $groups = [];
+        $categories = Equipment::CATEGORIES + $equipment->pluck('category', 'category')->all();
+
+        foreach ($categories as $category => $label) {
+            $own = [];
+            $sizes = [];
+            $noCard = [];
+
+            foreach ($equipment->where('category', $category) as $item) {
+                $card = $item->site_card;
+                if (! $card) {
+                    $noCard[] = $item;
+                } elseif ($card['own'] && ! isset($own[$card['slug']])) {
+                    $own[$card['slug']] = $item;
+                } else {
+                    $sizes[$card['slug']][] = $item;
+                }
+            }
+
+            $cards = [];
+            $firstCardFor = [];
+            foreach (EquipmentCards::cardsFor($category) as $card) {
+                $first = ! isset($firstCardFor[$card['slug']]);
+                $firstCardFor[$card['slug']] ??= $card['card'];
+                $nested = $first ? ($sizes[$card['slug']] ?? []) : [];
+                usort($nested, fn ($a, $b) => strnatcmp($a->slug, $b->slug));
+
+                $cards[] = [
+                    'card'   => $card,
+                    'item'   => $first ? ($own[$card['slug']] ?? null) : null,
+                    'sameAs' => $first ? null : $firstCardFor[$card['slug']],
+                    'sizes'  => $nested,
+                ];
+            }
+
+            if (! $cards && ! $noCard) {
+                continue;
+            }
+            usort($noCard, fn ($a, $b) => strnatcmp($a->slug, $b->slug));
+
+            $groups[] = ['label' => $label, 'cards' => $cards, 'noCard' => $noCard];
+        }
+
+        return view('admin.equipment.index', compact('equipment', 'groups'));
     }
 
     public function create()
@@ -26,7 +74,7 @@ class EquipmentController extends Controller
     {
         $validated = $request->validate([
             'name'       => 'required|string|max:255',
-            'category'   => 'required|in:washers,tumble-dryers,barrier-washers,drying-cabinets,ironers',
+            'category'   => ['required', Rule::in(array_keys(Equipment::CATEGORIES))],
             'capacity'   => 'nullable|string|max:100',
             'summary'    => 'nullable|string',
             'sectors'    => 'nullable|array',
@@ -68,7 +116,7 @@ class EquipmentController extends Controller
     {
         $validated = $request->validate([
             'name'       => 'required|string|max:255',
-            'category'   => 'required|in:washers,tumble-dryers,barrier-washers,drying-cabinets,ironers',
+            'category'   => ['required', Rule::in(array_keys(Equipment::CATEGORIES))],
             'capacity'   => 'nullable|string|max:100',
             'summary'    => 'nullable|string',
             'sectors'    => 'nullable|array',
