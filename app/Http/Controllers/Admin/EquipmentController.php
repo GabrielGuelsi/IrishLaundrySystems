@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Equipment;
+use App\Support\EquipmentCards;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Storage;
@@ -15,41 +16,50 @@ class EquipmentController extends Controller
     {
         $equipment = Equipment::orderBy('sort_order')->orderBy('name')->get();
 
-        // Same structure as the public category pages: one group per category, one row per
-        // card, the sizes listed inside that card under it, then products with no card.
+        // Identical to the public category pages: one group per category, every card of the
+        // page's product list in page order, the sizes listed inside a card nested under it,
+        // then the products that have no card.
         $groups = [];
         $categories = Equipment::CATEGORIES + $equipment->pluck('category', 'category')->all();
 
         foreach ($categories as $category => $label) {
-            $families = [];
+            $own = [];
+            $sizes = [];
             $noCard = [];
 
             foreach ($equipment->where('category', $category) as $item) {
                 $card = $item->site_card;
                 if (! $card) {
                     $noCard[] = $item;
-                    continue;
-                }
-                $families[$card['slug']] ??= ['card' => $card, 'main' => null, 'sizes' => []];
-                if ($card['own'] && ! $families[$card['slug']]['main']) {
-                    $families[$card['slug']]['main'] = $item;
+                } elseif ($card['own'] && ! isset($own[$card['slug']])) {
+                    $own[$card['slug']] = $item;
                 } else {
-                    $families[$card['slug']]['sizes'][] = $item;
+                    $sizes[$card['slug']][] = $item;
                 }
             }
 
-            if (! $families && ! $noCard) {
+            $cards = [];
+            $firstCardFor = [];
+            foreach (EquipmentCards::cardsFor($category) as $card) {
+                $first = ! isset($firstCardFor[$card['slug']]);
+                $firstCardFor[$card['slug']] ??= $card['card'];
+                $nested = $first ? ($sizes[$card['slug']] ?? []) : [];
+                usort($nested, fn ($a, $b) => strnatcmp($a->slug, $b->slug));
+
+                $cards[] = [
+                    'card'   => $card,
+                    'item'   => $first ? ($own[$card['slug']] ?? null) : null,
+                    'sameAs' => $first ? null : $firstCardFor[$card['slug']],
+                    'sizes'  => $nested,
+                ];
+            }
+
+            if (! $cards && ! $noCard) {
                 continue;
             }
-
-            uasort($families, fn ($a, $b) => $a['card']['order'] <=> $b['card']['order']);
-            foreach ($families as &$family) {
-                usort($family['sizes'], fn ($a, $b) => strnatcmp($a->slug, $b->slug));
-            }
-            unset($family);
             usort($noCard, fn ($a, $b) => strnatcmp($a->slug, $b->slug));
 
-            $groups[] = ['label' => $label, 'families' => $families, 'noCard' => $noCard];
+            $groups[] = ['label' => $label, 'cards' => $cards, 'noCard' => $noCard];
         }
 
         return view('admin.equipment.index', compact('equipment', 'groups'));

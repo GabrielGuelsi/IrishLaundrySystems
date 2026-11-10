@@ -16,7 +16,15 @@
     <td class="align-middle">
         <div class="{{ $kind === 'size' ? 'ps-4' : '' }}">
             @if ($kind === 'size')<i class="bi bi-arrow-return-right text-muted me-1"></i>@endif
-            <span class="{{ $kind === 'card' ? 'fw-bold' : 'fw-semibold' }}">{{ $item->name }}</span>
+            @if ($kind === 'card')
+                {{-- The card's title exactly as the site shows it; the admin record's name below if different. --}}
+                <span class="fw-bold">{{ $card['card'] }}</span>
+                @if ($item->name !== $card['card'])
+                <div class="text-muted small">Product: {{ $item->name }}</div>
+                @endif
+            @else
+                <span class="fw-semibold">{{ $item->name }}</span>
+            @endif
             <div class="text-muted small font-monospace {{ $kind === 'size' ? 'ps-4' : '' }}">{{ $item->slug }}</div>
         </div>
     </td>

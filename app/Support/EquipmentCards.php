@@ -300,6 +300,27 @@ class EquipmentCards
         return preg_match('/(\d+)\s*kg/', $text, $m) ? [(int) $m[1]] : [];
     }
 
+    /**
+     * Every card in a category page's product list, in page order, exactly as the site shows
+     * them (cards that only link to another category are included).
+     *
+     * @return list<array{slug: string, card: string, range: string, tags: string[], href: ?string}>
+     */
+    public static function cardsFor(string $category): array
+    {
+        $links = $category === 'commercial-washers'
+            ? array_column(self::washerFamilies(), 'route', 'name')
+            : [];
+
+        return array_map(fn ($c) => [
+            'slug'  => $c['slug'],
+            'card'  => $c['name'],
+            'range' => $c['range'],
+            'tags'  => $c['tags'],
+            'href'  => $links[$c['name']] ?? null,
+        ], self::normalisedCards($category));
+    }
+
     /** Every category page's cards in one shape: slug, name, range, tags, kg. */
     private static function normalisedCards(string $category): array
     {
