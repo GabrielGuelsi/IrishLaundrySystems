@@ -131,6 +131,9 @@
                 <div class="card-header fw-semibold">On the category page</div>
                 <div class="card-body small">
                     @if ($card)
+                        @if (! empty($card['img']))
+                        <img src="{{ $card['img'] }}" alt="{{ $card['card'] }}" class="img-fluid rounded border bg-white mb-2" style="max-height:150px;object-fit:contain;">
+                        @endif
                         <div class="text-muted">Card</div>
                         <div class="fw-semibold mb-2">{{ $card['card'] }}@unless ($card['own']) <span class="fw-normal text-muted">(this size is listed inside it)</span>@endunless</div>
                         <div class="text-muted">Range</div>

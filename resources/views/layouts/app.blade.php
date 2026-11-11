@@ -840,6 +840,21 @@
         })();
     </script>
 
+    <!-- Product card "Request Advice" buttons scroll to the form on the same page; start the
+         message with the product the visitor picked (only when the message is still empty). -->
+    <script>
+        document.addEventListener('click', function (e) {
+            var link = e.target.closest && e.target.closest('a[data-product-cta]');
+            if (!link) return;
+            var card = link.closest('[x-show]') || link.parentElement;
+            var title = card && card.querySelector('h3, h4');
+            var message = document.getElementById('cta_message');
+            if (title && message && !message.value.trim()) {
+                message.value = 'I would like advice on: ' + title.innerText.replace(/\s+/g, ' ').trim() + '\n';
+            }
+        });
+    </script>
+
     <!-- Scroll reveal -->
     <script>
         document.addEventListener('DOMContentLoaded', function () {

@@ -1,4 +1,8 @@
 User-agent: *
-Disallow:
+# Technical CAD files (Electrolux drawings) are downloads for installers, not pages:
+# keep crawlers on the product pages instead.
+Disallow: /pdfs/*.dwg$
+Disallow: /pdfs/*.rfa$
+Disallow: /admin
 
 Sitemap: https://irishlaundrysystems.com/sitemap.xml

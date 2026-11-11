@@ -55,3 +55,16 @@
         @endif
     </div>
 </section>
+
+{{-- FAQPage structured data: the same questions and answers shown above, for search engines and AI answers. --}}
+@if (count($faqs))
+<script type="application/ld+json">{!! json_encode([
+    '@context' => 'https://schema.org',
+    '@type' => 'FAQPage',
+    'mainEntity' => array_map(fn ($f) => [
+        '@type' => 'Question',
+        'name' => trim(strip_tags($f['question'])),
+        'acceptedAnswer' => ['@type' => 'Answer', 'text' => trim(strip_tags($f['answer']))],
+    ], array_values($faqs)),
+], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG) !!}</script>
+@endif

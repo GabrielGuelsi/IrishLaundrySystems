@@ -427,11 +427,11 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($ironerCards as $c)
                     <div x-show="matches({{ \Illuminate\Support\Js::from(['cyl'=>$c['cyl'],'delivery'=>$c['delivery'],'auto'=>$c['auto']]) }})" class="flex flex-col">
-                        <div class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                        <a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $c['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $c['img'] }}" alt="{{ $c['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
-                        </div>
+                        </a>
                         <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $c['cyl'] }}</span>@if($c['delivery'])<span class="text-gray-400"> &middot; {{ $c['delivery'] }}</span>@endif</p>
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $c['name'] }}</h3>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3"><a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $c['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $c['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $c['fit'] }}</p>
 
                         {{-- Available sizes (widths) as options inside the card --}}
@@ -443,7 +443,7 @@
                         </div>
 
                         <div class="mt-auto">
-                            <a href="{{ route('contact') }}" class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors w-full">
+                            <a href="#ironer-form" data-product-cta class="inline-flex items-center justify-center gap-2 bg-navy hover:bg-navy/90 text-white font-body font-bold px-5 py-2.5 rounded-lg text-sm transition-colors w-full">
                                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/></svg>
                                 Request Ironer Advice
                             </a>
@@ -454,7 +454,7 @@
 
                 {{-- Empty state --}}
                 <div x-show="count === 0" x-cloak class="text-center py-16">
-                    <p class="font-body text-gray-500 text-base">No ironers match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="{{ route('contact') }}" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
+                    <p class="font-body text-gray-500 text-base">No ironers match that combination. <button @click="clearAll()" class="text-[#148af4] font-bold hover:underline">Clear filters</button> or <a href="#ironer-form" class="text-[#148af4] font-bold hover:underline">talk to our team</a>.</p>
                 </div>
 
                 {{-- View full range --}}
