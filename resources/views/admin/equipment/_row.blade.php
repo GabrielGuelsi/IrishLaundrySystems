@@ -2,16 +2,9 @@
 <tr class="{{ $kind === 'size' ? 'small' : '' }}">
     <td class="text-muted small align-middle">{{ $item->sort_order }}</td>
     <td class="align-middle">
-        @if ($item->image_path)
-        <img src="{{ $item->image_url }}"
-             alt="{{ $item->name }}"
-             class="rounded" style="width:48px;height:36px;object-fit:cover;">
-        @else
-        <div class="bg-light rounded d-flex align-items-center justify-content-center"
-             style="width:48px;height:36px;">
-            <i class="bi bi-image text-muted small"></i>
-        </div>
-        @endif
+        {{-- A card row shows the photo the site's card shows; other rows the product's own photo. --}}
+        @php $thumb = $kind === 'card' && ! empty($card['img']) ? $card['img'] : ($item->image_path ? $item->image_url : null); @endphp
+        @include('admin.equipment._thumb', ['src' => $thumb, 'alt' => $item->name])
     </td>
     <td class="align-middle">
         <div class="{{ $kind === 'size' ? 'ps-4' : '' }}">

@@ -59,7 +59,7 @@
                             {{-- A card on the site with no product of its own in this category --}}
                             <tr>
                                 <td></td>
-                                <td></td>
+                                <td class="align-middle">@include('admin.equipment._thumb', ['src' => $row['card']['img'], 'alt' => $row['card']['card']])</td>
                                 <td class="align-middle">
                                     <span class="fw-bold">{{ $row['card']['card'] }}</span>
                                     <div class="text-muted small">

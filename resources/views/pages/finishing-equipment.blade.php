@@ -262,16 +262,7 @@
             $finPlaceholder = '/images/logo/electrolux-partner.png';
             // Resolve a model image from images/pages/finishing-equipment/,
             // trying common extensions. Returns null (→ placeholder) when nothing is found.
-            $finResolve = function ($code) {
-                foreach (['images/pages/finishing-equipment/'] as $dir) {
-                    foreach (['jpg', 'jpeg', 'png', 'webp'] as $ext) {
-                        if (file_exists(public_path($dir . $code . '.' . $ext))) {
-                            return '/' . $dir . $code . '.' . $ext;
-                        }
-                    }
-                }
-                return null;
-            };
+            $finResolve = fn ($code) => \App\Support\EquipmentCards::finishingModelImage($code);
             // One card per TYPE; size/version variants are listed as the type's models.
             $finishingGroups = \App\Support\EquipmentCards::finishingGroups();
 

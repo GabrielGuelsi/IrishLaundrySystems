@@ -275,6 +275,7 @@ class EquipmentCards
             'slug'  => $slug,
             'order' => array_search($slug, array_column($cards, 'slug'), true),
             'card'  => $match[0]['name'],
+            'img'   => $match[0]['img'],
             'range' => implode(' / ', array_unique(array_column($match, 'range'))),
             'tags'  => array_values(array_unique(array_merge(...array_column($match, 'tags')))),
             'own'   => $own,
@@ -300,6 +301,21 @@ class EquipmentCards
         return preg_match('/(\d+)\s*kg/', $text, $m) ? [(int) $m[1]] : [];
     }
 
+    /** Placeholder the finishing page shows on a card with no model photo yet. */
+    public const FINISHING_PLACEHOLDER = '/images/logo/electrolux-partner.png';
+
+    /** A finishing model's photo in images/pages/finishing-equipment/, by model code; null if none yet. */
+    public static function finishingModelImage(string $code): ?string
+    {
+        foreach (['jpg', 'jpeg', 'png', 'webp'] as $ext) {
+            if (file_exists(public_path('images/pages/finishing-equipment/'.$code.'.'.$ext))) {
+                return '/images/pages/finishing-equipment/'.$code.'.'.$ext;
+            }
+        }
+
+        return null;
+    }
+
     /**
      * Every card in a category page's product list, in page order, exactly as the site shows
      * them (cards that only link to another category are included).
@@ -317,6 +333,7 @@ class EquipmentCards
             'card'  => $c['name'],
             'range' => $c['range'],
             'tags'  => $c['tags'],
+            'img'   => $c['img'],
             'href'  => $links[$c['name']] ?? null,
         ], self::normalisedCards($category));
     }
@@ -330,19 +347,23 @@ class EquipmentCards
         }
 
         $rows = match ($category) {
-            'commercial-washers'  => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], self::kgFrom($c['topLine'])], self::washerFamilies()),
-            'tumble-dryers'       => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], self::kgFrom($c['topLine'])], self::dryerFamilies()),
-            'barrier-washers'     => array_map(fn ($c) => [$c['slug'], $c['name'], $c['profile'].' · '.$c['capLabel'], $c['badges'] ?? [], array_map('intval', $c['kg'])], self::barrierFamilies()),
-            'drying-cabinets'     => array_map(fn ($c) => [$c['slug'], $c['name'], $c['cat'], [$c['type']], []], self::cabinetFamilies()),
-            'ironers'             => array_map(fn ($c) => [$c['slug'], $c['name'], $c['cyl'].' cylinder', array_values(array_filter([$c['delivery'], $c['auto']])), []], self::ironerCards()),
-            'semi-professional'   => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], []], self::myproModels()),
+            'commercial-washers'  => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], self::kgFrom($c['topLine']), $c['img']], self::washerFamilies()),
+            'tumble-dryers'       => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], self::kgFrom($c['topLine']), $c['img']], self::dryerFamilies()),
+            'barrier-washers'     => array_map(fn ($c) => [$c['slug'], $c['name'], $c['profile'].' · '.$c['capLabel'], $c['badges'] ?? [], array_map('intval', $c['kg']), $c['img']], self::barrierFamilies()),
+            'drying-cabinets'     => array_map(fn ($c) => [$c['slug'], $c['name'], $c['cat'], [$c['type']], [], $c['img']], self::cabinetFamilies()),
+            'ironers'             => array_map(fn ($c) => [$c['slug'], $c['name'], $c['cyl'].' cylinder', array_values(array_filter([$c['delivery'], $c['auto']])), [], $c['img']], self::ironerCards()),
+            'semi-professional'   => array_map(fn ($c) => [$c['slug'], $c['name'], $c['topLine'], $c['badges'] ?? [], [], $c['img']], self::myproModels()),
             'finishing-equipment' => array_merge(...array_map(
-                fn ($g) => array_map(fn ($it) => [Str::slug($it['cat']), $it['cat'], $g['group'], $it['models'], []], $g['items']),
+                fn ($g) => array_map(fn ($it) => [
+                    Str::slug($it['cat']), $it['cat'], $g['group'], $it['models'], [],
+                    // same rule as the page: first model with a photo, else the placeholder
+                    array_reduce($it['models'], fn ($found, $m) => $found ?? self::finishingModelImage($m)) ?? self::FINISHING_PLACEHOLDER,
+                ], $g['items']),
                 self::finishingGroups()
             )),
             default => [],
         };
 
-        return $cache[$category] = array_map(fn ($r) => array_combine(['slug', 'name', 'range', 'tags', 'kg'], $r), $rows);
+        return $cache[$category] = array_map(fn ($r) => array_combine(['slug', 'name', 'range', 'tags', 'kg', 'img'], $r), $rows);
     }
 }
