@@ -427,11 +427,11 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-6 gap-y-10">
                     @foreach($ironerCards as $c)
                     <div x-show="matches({{ \Illuminate\Support\Js::from(['cyl'=>$c['cyl'],'delivery'=>$c['delivery'],'auto'=>$c['auto']]) }})" class="flex flex-col">
-                        <div class="flex items-center justify-center h-44 lg:h-48 mb-5">
+                        <a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $c['slug']]) }}" class="flex items-center justify-center h-44 lg:h-48 mb-5">
                             <img src="{{ $c['img'] }}" alt="{{ $c['name'] }}" class="max-h-full w-auto object-contain transition-transform duration-300 hover:-translate-y-1.5">
-                        </div>
+                        </a>
                         <p class="font-body text-xs mb-1.5"><span class="font-bold text-[#148af4]">{{ $c['cyl'] }}</span>@if($c['delivery'])<span class="text-gray-400"> &middot; {{ $c['delivery'] }}</span>@endif</p>
-                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3">{{ $c['name'] }}</h3>
+                        <h3 class="font-heading font-bold text-navy text-lg leading-snug mb-3"><a href="{{ route('equipment.product', ['category' => 'ironers', 'product' => $c['slug']]) }}" class="hover:text-[#148af4] transition-colors">{{ $c['name'] }}</a></h3>
                         <p class="font-body text-gray-500 text-sm leading-relaxed mb-4">{{ $c['fit'] }}</p>
 
                         {{-- Available sizes (widths) as options inside the card --}}
